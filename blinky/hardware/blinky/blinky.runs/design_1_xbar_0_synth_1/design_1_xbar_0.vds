@@ -1,0 +1,250 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Tue Oct  5 17:00:07 2021
+# Process ID: 18336
+# Current directory: /home/anubhav/workspace/blinky/hardware/blinky/blinky.runs/design_1_xbar_0_synth_1
+# Command line: vivado -log design_1_xbar_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_xbar_0.tcl
+# Log file: /home/anubhav/workspace/blinky/hardware/blinky/blinky.runs/design_1_xbar_0_synth_1/design_1_xbar_0.vds
+# Journal file: /home/anubhav/workspace/blinky/hardware/blinky/blinky.runs/design_1_xbar_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source design_1_xbar_0.tcl -notrace
+Command: synth_design -top design_1_xbar_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 18468
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2537.375 ; gain = 0.000 ; free physical = 1615 ; free virtual = 7210
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [/home/anubhav/workspace/blinky/hardware/blinky/blinky.gen/sources_1/bd/design_1/ip/design_1_xbar_0/synth/design_1_xbar_0.v:59]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_25_axi_crossbar' [/home/anubhav/workspace/blinky/hardware/blinky/blinky.gen/sources_1/bd/design_1/ipshared/3917/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_25_crossbar_sasd' [/home/anubhav/workspace/blinky/hardware/blinky/blinky.gen/sources_1/bd/design_1/ipshared/3917/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_25_addr_decoder' [/home/anubhav/workspace/blinky/hardware/blinky/blinky.gen/sources_1/bd/design_1/ipshared/3917/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' [/home/anubhav/workspace/blinky/hardware/blinky/blinky.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_carry_and' [/home/anubhav/workspace/blinky/hardware/blinky/blinky.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_carry_and' (1#1) [/home/anubhav/workspace/blinky/hardware/blinky/blinky.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' (2#1) [/home/anubhav/workspace/blinky/hardware/blinky/blinky.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' [/home/anubhav/workspace/blinky/hardware/blinky/blinky.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' (2#1) [/home/anubhav/workspace/blinky/hardware/blinky/blinky.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_25_addr_decoder' (3#1) [/home/anubhav/workspace/blinky/hardware/blinky/blinky.gen/sources_1/bd/design_1/ipshared/3917/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_25_decerr_slave' [/home/anubhav/workspace/blinky/hardware/blinky/blinky.gen/sources_1/bd/design_1/ipshared/3917/hdl/axi_crossbar_v2_1_vl_rfs.v:3501]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_25_decerr_slave' (4#1) [/home/anubhav/workspace/blinky/hardware/blinky/blinky.gen/sources_1/bd/design_1/ipshared/3917/hdl/axi_crossbar_v2_1_vl_rfs.v:3501]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_25_addr_arbiter_sasd' [/home/anubhav/workspace/blinky/hardware/blinky/blinky.gen/sources_1/bd/design_1/ipshared/3917/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_25_addr_arbiter_sasd' (5#1) [/home/anubhav/workspace/blinky/hardware/blinky/blinky.gen/sources_1/bd/design_1/ipshared/3917/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_25_splitter' [/home/anubhav/workspace/blinky/hardware/blinky/blinky.gen/sources_1/bd/design_1/ipshared/3917/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_25_splitter' (6#1) [/home/anubhav/workspace/blinky/hardware/blinky/blinky.gen/sources_1/bd/design_1/ipshared/3917/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_25_splitter__parameterized0' [/home/anubhav/workspace/blinky/hardware/blinky/blinky.gen/sources_1/bd/design_1/ipshared/3917/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_25_splitter__parameterized0' (6#1) [/home/anubhav/workspace/blinky/hardware/blinky/blinky.gen/sources_1/bd/design_1/ipshared/3917/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' [/home/anubhav/workspace/blinky/hardware/blinky/blinky.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' (7#1) [/home/anubhav/workspace/blinky/hardware/blinky/blinky.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' [/home/anubhav/workspace/blinky/hardware/blinky/blinky.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' (7#1) [/home/anubhav/workspace/blinky/hardware/blinky/blinky.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' [/home/anubhav/workspace/blinky/hardware/blinky/blinky.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' (7#1) [/home/anubhav/workspace/blinky/hardware/blinky/blinky.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_24_axic_register_slice' [/home/anubhav/workspace/blinky/hardware/blinky/blinky.gen/sources_1/bd/design_1/ipshared/8f68/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_24_axic_register_slice' (8#1) [/home/anubhav/workspace/blinky/hardware/blinky/blinky.gen/sources_1/bd/design_1/ipshared/8f68/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' [/home/anubhav/workspace/blinky/hardware/blinky/blinky.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' (8#1) [/home/anubhav/workspace/blinky/hardware/blinky/blinky.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_25_crossbar_sasd' (9#1) [/home/anubhav/workspace/blinky/hardware/blinky/blinky.gen/sources_1/bd/design_1/ipshared/3917/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_25_axi_crossbar' (10#1) [/home/anubhav/workspace/blinky/hardware/blinky/blinky.gen/sources_1/bd/design_1/ipshared/3917/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (11#1) [/home/anubhav/workspace/blinky/hardware/blinky/blinky.gen/sources_1/bd/design_1/ip/design_1_xbar_0/synth/design_1_xbar_0.v:59]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2537.375 ; gain = 0.000 ; free physical = 2349 ; free virtual = 7944
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 2537.375 ; gain = 0.000 ; free physical = 2300 ; free virtual = 7896
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 2537.375 ; gain = 0.000 ; free physical = 2300 ; free virtual = 7896
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2537.375 ; gain = 0.000 ; free physical = 2290 ; free virtual = 7885
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/anubhav/workspace/blinky/hardware/blinky/blinky.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/anubhav/workspace/blinky/hardware/blinky/blinky.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/anubhav/workspace/blinky/hardware/blinky/blinky.runs/design_1_xbar_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/anubhav/workspace/blinky/hardware/blinky/blinky.runs/design_1_xbar_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2569.277 ; gain = 0.000 ; free physical = 2027 ; free virtual = 7622
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2569.277 ; gain = 0.000 ; free physical = 2023 ; free virtual = 7619
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 2569.277 ; gain = 31.902 ; free physical = 1853 ; free virtual = 7449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 2569.277 ; gain = 31.902 ; free physical = 1853 ; free virtual = 7448
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/anubhav/workspace/blinky/hardware/blinky/blinky.runs/design_1_xbar_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 2569.277 ; gain = 31.902 ; free physical = 1852 ; free virtual = 7448
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2569.277 ; gain = 31.902 ; free physical = 1455 ; free virtual = 7052
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 1     
+	               36 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 14    
++---Muxes : 
+	   2 Input   64 Bit        Muxes := 1     
+	   2 Input   36 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 30    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2569.277 ; gain = 31.902 ; free physical = 992 ; free virtual = 6592
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 2569.277 ; gain = 31.902 ; free physical = 1695 ; free virtual = 7300
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 2569.277 ; gain = 31.902 ; free physical = 1685 ; free virtual = 7289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2569.277 ; gain = 31.902 ; free physical = 1681 ; free virtual = 7285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 2569.277 ; gain = 31.902 ; free physical = 1640 ; free virtual = 7244
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 2569.277 ; gain = 31.902 ; free physical = 1640 ; free virtual = 7244
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 2569.277 ; gain = 31.902 ; free physical = 1640 ; free virtual = 7244
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 2569.277 ; gain = 31.902 ; free physical = 1640 ; free virtual = 7244
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 2569.277 ; gain = 31.902 ; free physical = 1640 ; free virtual = 7244
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 2569.277 ; gain = 31.902 ; free physical = 1640 ; free virtual = 7244
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     2|
+|2     |LUT2 |     9|
+|3     |LUT3 |     5|
+|4     |LUT4 |    49|
+|5     |LUT5 |    16|
+|6     |LUT6 |    54|
+|7     |FDRE |   130|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 2569.277 ; gain = 31.902 ; free physical = 1640 ; free virtual = 7244
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 2569.277 ; gain = 0.000 ; free physical = 1671 ; free virtual = 7275
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 2569.285 ; gain = 31.902 ; free physical = 1671 ; free virtual = 7275
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2569.285 ; gain = 0.000 ; free physical = 1744 ; free virtual = 7348
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2569.285 ; gain = 0.000 ; free physical = 1664 ; free virtual = 7268
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: f0c3a11b
+INFO: [Common 17-83] Releasing license: Synthesis
+44 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:36 . Memory (MB): peak = 2569.285 ; gain = 32.023 ; free physical = 1812 ; free virtual = 7416
+INFO: [Common 17-1381] The checkpoint '/home/anubhav/workspace/blinky/hardware/blinky/blinky.runs/design_1_xbar_0_synth_1/design_1_xbar_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_xbar_0, cache-ID = c4a139485d7b48e3
+INFO: [Coretcl 2-1174] Renamed 7 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/anubhav/workspace/blinky/hardware/blinky/blinky.runs/design_1_xbar_0_synth_1/design_1_xbar_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_xbar_0_utilization_synth.rpt -pb design_1_xbar_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Oct  5 17:00:59 2021...

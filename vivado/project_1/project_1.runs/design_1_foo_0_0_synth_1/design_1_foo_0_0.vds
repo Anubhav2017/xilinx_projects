@@ -1,0 +1,407 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Tue Oct  5 19:29:06 2021
+# Process ID: 24853
+# Current directory: /home/anubhav/workspace/vivado/project_1/project_1.runs/design_1_foo_0_0_synth_1
+# Command line: vivado -log design_1_foo_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_foo_0_0.tcl
+# Log file: /home/anubhav/workspace/vivado/project_1/project_1.runs/design_1_foo_0_0_synth_1/design_1_foo_0_0.vds
+# Journal file: /home/anubhav/workspace/vivado/project_1/project_1.runs/design_1_foo_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source design_1_foo_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/anubhav/workspace/mvp/solution1'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2021.1/data/ip'.
+Command: synth_design -top design_1_foo_0_0 -part xc7z010clg400-2 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 24907
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2537.379 ; gain = 0.000 ; free physical = 1092 ; free virtual = 7318
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_foo_0_0' [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_foo_0_0/synth/design_1_foo_0_0.v:59]
+INFO: [Synth 8-6157] synthesizing module 'foo' [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/d778/hdl/verilog/foo.v:12]
+INFO: [Synth 8-6157] synthesizing module 'foo_foo_Pipeline_VITIS_LOOP_9_1' [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/d778/hdl/verilog/foo_foo_Pipeline_VITIS_LOOP_9_1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'foo_flow_control_loop_pipe_sequential_init' [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/d778/hdl/verilog/foo_flow_control_loop_pipe_sequential_init.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'foo_flow_control_loop_pipe_sequential_init' (1#1) [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/d778/hdl/verilog/foo_flow_control_loop_pipe_sequential_init.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'foo_foo_Pipeline_VITIS_LOOP_9_1' (2#1) [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/d778/hdl/verilog/foo_foo_Pipeline_VITIS_LOOP_9_1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'foo_control_s_axi' [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/d778/hdl/verilog/foo_control_s_axi.v:6]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/d778/hdl/verilog/foo_control_s_axi.v:184]
+INFO: [Synth 8-6155] done synthesizing module 'foo_control_s_axi' (3#1) [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/d778/hdl/verilog/foo_control_s_axi.v:6]
+INFO: [Synth 8-6157] synthesizing module 'foo_gmem_m_axi' [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/d778/hdl/verilog/foo_gmem_m_axi.v:8]
+INFO: [Synth 8-6157] synthesizing module 'foo_gmem_m_axi_write' [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/d778/hdl/verilog/foo_gmem_m_axi.v:1653]
+INFO: [Synth 8-6157] synthesizing module 'foo_gmem_m_axi_fifo' [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/d778/hdl/verilog/foo_gmem_m_axi.v:418]
+INFO: [Synth 8-6155] done synthesizing module 'foo_gmem_m_axi_fifo' (4#1) [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/d778/hdl/verilog/foo_gmem_m_axi.v:418]
+INFO: [Synth 8-6157] synthesizing module 'foo_gmem_m_axi_reg_slice' [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/d778/hdl/verilog/foo_gmem_m_axi.v:314]
+INFO: [Synth 8-6155] done synthesizing module 'foo_gmem_m_axi_reg_slice' (5#1) [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/d778/hdl/verilog/foo_gmem_m_axi.v:314]
+INFO: [Synth 8-6157] synthesizing module 'foo_gmem_m_axi_fifo__parameterized0' [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/d778/hdl/verilog/foo_gmem_m_axi.v:418]
+INFO: [Synth 8-6155] done synthesizing module 'foo_gmem_m_axi_fifo__parameterized0' (5#1) [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/d778/hdl/verilog/foo_gmem_m_axi.v:418]
+INFO: [Synth 8-6157] synthesizing module 'foo_gmem_m_axi_buffer' [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/d778/hdl/verilog/foo_gmem_m_axi.v:529]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/d778/hdl/verilog/foo_gmem_m_axi.v:581]
+INFO: [Synth 8-6155] done synthesizing module 'foo_gmem_m_axi_buffer' (6#1) [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/d778/hdl/verilog/foo_gmem_m_axi.v:529]
+INFO: [Synth 8-6157] synthesizing module 'foo_gmem_m_axi_fifo__parameterized1' [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/d778/hdl/verilog/foo_gmem_m_axi.v:418]
+INFO: [Synth 8-6155] done synthesizing module 'foo_gmem_m_axi_fifo__parameterized1' (6#1) [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/d778/hdl/verilog/foo_gmem_m_axi.v:418]
+INFO: [Synth 8-6157] synthesizing module 'foo_gmem_m_axi_fifo__parameterized2' [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/d778/hdl/verilog/foo_gmem_m_axi.v:418]
+INFO: [Synth 8-6155] done synthesizing module 'foo_gmem_m_axi_fifo__parameterized2' (6#1) [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/d778/hdl/verilog/foo_gmem_m_axi.v:418]
+INFO: [Synth 8-6155] done synthesizing module 'foo_gmem_m_axi_write' (7#1) [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/d778/hdl/verilog/foo_gmem_m_axi.v:1653]
+INFO: [Synth 8-6157] synthesizing module 'foo_gmem_m_axi_read' [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/d778/hdl/verilog/foo_gmem_m_axi.v:931]
+INFO: [Synth 8-6157] synthesizing module 'foo_gmem_m_axi_buffer__parameterized0' [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/d778/hdl/verilog/foo_gmem_m_axi.v:529]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/d778/hdl/verilog/foo_gmem_m_axi.v:581]
+INFO: [Synth 8-6155] done synthesizing module 'foo_gmem_m_axi_buffer__parameterized0' (7#1) [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/d778/hdl/verilog/foo_gmem_m_axi.v:529]
+INFO: [Synth 8-6157] synthesizing module 'foo_gmem_m_axi_reg_slice__parameterized0' [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/d778/hdl/verilog/foo_gmem_m_axi.v:314]
+INFO: [Synth 8-6155] done synthesizing module 'foo_gmem_m_axi_reg_slice__parameterized0' (7#1) [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/d778/hdl/verilog/foo_gmem_m_axi.v:314]
+INFO: [Synth 8-6155] done synthesizing module 'foo_gmem_m_axi_read' (8#1) [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/d778/hdl/verilog/foo_gmem_m_axi.v:931]
+INFO: [Synth 8-6157] synthesizing module 'foo_gmem_m_axi_throttle' [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/d778/hdl/verilog/foo_gmem_m_axi.v:709]
+INFO: [Synth 8-6155] done synthesizing module 'foo_gmem_m_axi_throttle' (9#1) [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/d778/hdl/verilog/foo_gmem_m_axi.v:709]
+INFO: [Synth 8-6155] done synthesizing module 'foo_gmem_m_axi' (10#1) [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/d778/hdl/verilog/foo_gmem_m_axi.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'foo' (11#1) [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/d778/hdl/verilog/foo.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_foo_0_0' (12#1) [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_foo_0_0/synth/design_1_foo_0_0.v:59]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2537.379 ; gain = 0.000 ; free physical = 1147 ; free virtual = 7015
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2537.379 ; gain = 0.000 ; free physical = 2040 ; free virtual = 7908
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2537.379 ; gain = 0.000 ; free physical = 2040 ; free virtual = 7908
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2537.379 ; gain = 0.000 ; free physical = 2020 ; free virtual = 7888
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_foo_0_0/constraints/foo_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_foo_0_0/constraints/foo_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/anubhav/workspace/vivado/project_1/project_1.runs/design_1_foo_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/anubhav/workspace/vivado/project_1/project_1.runs/design_1_foo_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2569.281 ; gain = 0.000 ; free physical = 1908 ; free virtual = 7777
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.09 . Memory (MB): peak = 2569.281 ; gain = 0.000 ; free physical = 1895 ; free virtual = 7766
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2569.281 ; gain = 31.902 ; free physical = 1997 ; free virtual = 7878
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2569.281 ; gain = 31.902 ; free physical = 1997 ; free virtual = 7878
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/anubhav/workspace/vivado/project_1/project_1.runs/design_1_foo_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2569.281 ; gain = 31.902 ; free physical = 1997 ; free virtual = 7878
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'foo_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'foo_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'foo_gmem_m_axi_reg_slice'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'foo_gmem_m_axi_reg_slice__parameterized0'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'foo_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'foo_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'foo_gmem_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'foo_gmem_m_axi_reg_slice__parameterized0'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2569.281 ; gain = 31.902 ; free physical = 1987 ; free virtual = 7867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   64 Bit       Adders := 4     
+	   2 Input   63 Bit       Adders := 2     
+	   2 Input   52 Bit       Adders := 2     
+	   2 Input   32 Bit       Adders := 3     
+	   2 Input   12 Bit       Adders := 2     
+	   2 Input    9 Bit       Adders := 3     
+	   2 Input    8 Bit       Adders := 7     
+	   2 Input    6 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 3     
+	   2 Input    3 Bit       Adders := 8     
++---Registers : 
+	               96 Bit    Registers := 6     
+	               64 Bit    Registers := 10    
+	               63 Bit    Registers := 2     
+	               62 Bit    Registers := 3     
+	               52 Bit    Registers := 2     
+	               36 Bit    Registers := 3     
+	               35 Bit    Registers := 3     
+	               34 Bit    Registers := 2     
+	               32 Bit    Registers := 14    
+	               10 Bit    Registers := 4     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 8     
+	                6 Bit    Registers := 3     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 9     
+	                1 Bit    Registers := 69    
++---RAMs : 
+	               9K Bit	(256 X 36 bit)          RAMs := 1     
+	               8K Bit	(256 X 35 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   96 Bit        Muxes := 2     
+	   2 Input   64 Bit        Muxes := 10    
+	   2 Input   52 Bit        Muxes := 2     
+	   2 Input   36 Bit        Muxes := 1     
+	   2 Input   35 Bit        Muxes := 1     
+	   2 Input   34 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 1     
+	   4 Input   12 Bit        Muxes := 2     
+	   2 Input   10 Bit        Muxes := 4     
+	   2 Input    9 Bit        Muxes := 2     
+	  10 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 10    
+	   4 Input    8 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 2     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 7     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 9     
+	   6 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 42    
+	   3 Input    2 Bit        Muxes := 9     
+	   5 Input    2 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 64    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2569.281 ; gain = 31.902 ; free physical = 1671 ; free virtual = 7563
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++------------+-------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object                                | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+-------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst        | gmem_m_axi_U/bus_write/buff_wdata/mem_reg | 256 x 36(READ_FIRST)   | W |   | 256 x 36(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|inst        | gmem_m_axi_U/bus_read/buff_rdata/mem_reg  | 256 x 35(READ_FIRST)   | W |   | 256 x 35(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
++------------+-------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 2569.281 ; gain = 31.902 ; free physical = 1918 ; free virtual = 7807
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 2569.281 ; gain = 31.902 ; free physical = 2744 ; free virtual = 8638
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++------------+-------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object                                | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+-------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst        | gmem_m_axi_U/bus_write/buff_wdata/mem_reg | 256 x 36(READ_FIRST)   | W |   | 256 x 36(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|inst        | gmem_m_axi_U/bus_read/buff_rdata/mem_reg  | 256 x 35(READ_FIRST)   | W |   | 256 x 35(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
++------------+-------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem_m_axi_U/bus_read/buff_rdata/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 2569.281 ; gain = 31.902 ; free physical = 2725 ; free virtual = 8610
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 2569.281 ; gain = 31.902 ; free physical = 2699 ; free virtual = 8592
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 2569.281 ; gain = 31.902 ; free physical = 2699 ; free virtual = 8592
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 2569.281 ; gain = 31.902 ; free physical = 2696 ; free virtual = 8590
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 2569.281 ; gain = 31.902 ; free physical = 2695 ; free virtual = 8589
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 2569.281 ; gain = 31.902 ; free physical = 2694 ; free virtual = 8588
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 2569.281 ; gain = 31.902 ; free physical = 2694 ; free virtual = 8588
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+-----------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                                                    | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+-----------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|foo         | grp_foo_Pipeline_VITIS_LOOP_9_1_fu_84/icmp_ln9_reg_200_pp0_iter3_reg_reg[0] | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++------------+-----------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+
+Dynamic Shift Register Report:
++------------+-------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name    | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+-------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | mem_reg[4]  | 8      | 8          | 8      | 0       | 0      | 0      | 0      | 
+|dsrl__1     | mem_reg[4]  | 96     | 96         | 96     | 0       | 0      | 0      | 0      | 
+|dsrl__2     | mem_reg[14] | 2      | 2          | 2      | 0       | 0      | 0      | 0      | 
+|dsrl__3     | mem_reg[4]  | 2      | 2          | 2      | 0       | 0      | 0      | 0      | 
++------------+-------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |   158|
+|2     |LUT1     |    19|
+|3     |LUT2     |   178|
+|4     |LUT3     |   687|
+|5     |LUT4     |   147|
+|6     |LUT5     |    80|
+|7     |LUT6     |   352|
+|8     |RAMB18E1 |     2|
+|9     |SRL16E   |   134|
+|10    |FDRE     |  2239|
+|11    |FDSE     |     5|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 2569.281 ; gain = 31.902 ; free physical = 2694 ; free virtual = 8588
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 2569.281 ; gain = 0.000 ; free physical = 2749 ; free virtual = 8643
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 2569.289 ; gain = 31.902 ; free physical = 2749 ; free virtual = 8643
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.07 . Memory (MB): peak = 2569.289 ; gain = 0.000 ; free physical = 2849 ; free virtual = 8731
+INFO: [Netlist 29-17] Analyzing 160 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2569.289 ; gain = 0.000 ; free physical = 2794 ; free virtual = 8670
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 48f1110a
+INFO: [Common 17-83] Releasing license: Synthesis
+64 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:50 ; elapsed = 00:00:44 . Memory (MB): peak = 2569.289 ; gain = 32.023 ; free physical = 2956 ; free virtual = 8832
+INFO: [Common 17-1381] The checkpoint '/home/anubhav/workspace/vivado/project_1/project_1.runs/design_1_foo_0_0_synth_1/design_1_foo_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_foo_0_0, cache-ID = 9af91241b6c99d0d
+INFO: [Coretcl 2-1174] Renamed 19 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/anubhav/workspace/vivado/project_1/project_1.runs/design_1_foo_0_0_synth_1/design_1_foo_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_foo_0_0_utilization_synth.rpt -pb design_1_foo_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Oct  5 19:30:11 2021...

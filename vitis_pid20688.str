@@ -1,0 +1,258 @@
+/*
+
+Xilinx Vitis v2021.1.0 (64-bit) [Major: 2021, Minor: 1]
+SW Build 3245906 on 2021-06-09-18:10:55
+
+Process ID (PID): 20688
+License: Customer
+
+Current time: 	Tue Oct 05 17:06:46 IST 2021
+Time zone: 	India Standard Time (Asia/Kolkata)
+
+OS: Ubuntu
+OS Version: 4.15.0-142-generic
+OS Architecture: amd64
+Available processors (cores): 4
+
+Display: :0
+Screen size: 1920x1080
+Available screens: 2
+Available disk space: 245 GB
+
+Java version: 	11.0.2 64-bit
+Java home: 	/tools/Xilinx/Vitis/2021.1/tps/lnx64/jre11.0.2
+Java executable location: 	/tools/Xilinx/Vitis/2021.1/tps/lnx64/jre11.0.2/bin/java
+Java initial memory (-Xms): 	64 MB
+Java maximum memory (-Xmx):	 1,024 MB
+
+Java library paths: /tools/Xilinx/Vitis/2021.1/tps/lnx64/javafx-sdk-11.0.2/lib:/tools/Xilinx/Vitis/2021.1/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vitis/2021.1/lib/lnx64.o:/tools/Xilinx/Vitis/2021.1/tps/lnx64/jre11.0.2/lib/:/tools/Xilinx/Vitis/2021.1/tps/lnx64/jre11.0.2/lib//server:/tools/Xilinx/Vitis/2021.1/lib/lnx64.o:/tools/Xilinx/Vitis/2021.1/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vitis/2021.1/lib/lnx64.o:/tools/Xilinx/Vitis/2021.1/tps/lnx64/python-3.8.3/lib:/tools/Xilinx/Vitis/2021.1/aietools/lib/lnx64.o:/tools/Xilinx/Vivado/2021.1/bin/../lnx64/tools/dot/lib:/tools/Xilinx/Vitis/2021.1/bin/../lnx64/tools/dot/lib:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+
+Java class paths: /tools/Xilinx/Vitis/2021.1/eclipse/lnx64.o//plugins/org.eclipse.equinox.launcher_1.5.700.v20200207-2156.jar
+LD_LIBRARY_PATH: /tools/Xilinx/Vitis
+
+User name: 	anubhav
+User home directory: /home/anubhav
+User working directory: /home/anubhav/workspace
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /tools/Xilinx/Vitis
+HDI_APPROOT: /tools/Xilinx/Vitis/2021.1
+RDI_DATADIR: /tools/Xilinx/Vitis/2021.1/data
+RDI_BINDIR: /tools/Xilinx/Vitis/2021.1/bin
+
+Vitis preferences directory: /home/anubhav/.Xilinx/Vitis/2021.1/
+Vitis workspace directory: /home/anubhav/workspace/blinky/software
+Vitis workspace log file location: /home/anubhav/workspace/blinky/software/.metadata/.log
+Engine tmp dir: 	
+
+Xilinx Environment Variables
+----------------------------
+XILINX_DSP: 
+XILINX_HLS: /tools/Xilinx/Vitis_HLS/2021.1
+XILINX_PLANAHEAD: /tools/Xilinx/Vitis/2021.1
+XILINX_SDK: /tools/Xilinx/Vitis/2021.1
+XILINX_VITIS: /tools/Xilinx/Vitis/2021.1
+XILINX_VIVADO: /tools/Xilinx/Vivado/2021.1
+XILINX_VIVADO_HLS: /tools/Xilinx/Vivado/2021.1
+_RDI_DONT_SET_XILINX_AS_PATH: True
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+selectButton("Next", "New Application Project (Create a New Application Project)", "NewAppProjectWizard", "Button.NEXT");
+selectTab("Create a new platform from hardware", "New Application Project (Platform)", "NewAppProjectWizard", "CTabItem.CREATE_A_NEW_PLATFORM");
+selectButton("Browse", "New Application Project (Platform)", "NewAppProjectWizard", "Button.BROWSE");
+setFileDialog("/home/anubhav/workspace/blinky/hardware/blinky/design_1_wrapper.xsa", "Create Platform from XSA", "SDXFileDialog", "Button.OK");
+selectButton("Next", "New Application Project (Platform)", "NewAppProjectWizard", "Button.NEXT");
+setTextField("blinky", "New Application Project (Application Project Details)", "NewAppProjectWizard", "Text.APPLICATION_PROJECT_NAME");
+selectTreeTable("ps7_cortexa9_0", "New Application Project (Application Project Details)", "NewAppProjectWizard", "ProjectDetailsPage");
+selectTable("Create new", "New Application Project (Application Project Details)", "NewAppProjectWizard", "Table");
+selectButton("Next", "New Application Project (Application Project Details)", "NewAppProjectWizard", "Button.NEXT");
+selectButton("Next", "New Application Project (Domain)", "NewAppProjectWizard", "Button.NEXT");
+selectButton("Finish", "New Application Project (Templates)", "NewAppProjectWizard", "Button.FINISH");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+activateView("blinky_system", "blinky_system/blinky_system.sprj", "SystemSettingsEditor", "CTabItem.BLINKY_SYSTEM");
+selectTreeTable("helloworld.c", "blinky_system > blinky > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("helloworld.c", "blinky_system > blinky > src", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Outline", "ContentOutline", "CTabItem.OUTLINE");
+selectTree("xgpio.h", "blinky_system > blinky > src", EventType.DOUBLE_CLICK, "Outline", "ContentOutline", "Tree.helloworld_c");
+activateView("*helloworld.c", "blinky/src/helloworld.c", "Editor", "CTabItem.*HELLOWORLD_C");
+selectToolBarMenuButton("Open Console", "helloworld.c", "ConsoleView", "ToolItem.OPEN_CONSOLE");
+selectToolBarMenuButton("Display Selected Console", "helloworld.c", "ConsoleView", "ToolItem.DISPLAY_SELECTED");
+selectToolBarMenuButton("Open Console", "helloworld.c", "ConsoleView", "ToolItem.OPEN_CONSOLE");
+selectMenuItem("1 New Console View", "helloworld.c", "WorkbenchWindow", "MenuItem.1_NEW_CONSOLE_VIEW");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+closeView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectToolBarMenuButton("Display Selected Console", "helloworld.c", "ConsoleView", "ToolItem.DISPLAY_SELECTED");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectToolBarButton("Display Selected Console", "Console", "ConsoleView", "ToolItem.DISPLAY_SELECTED");
+selectToolBarButton("Open Console", "Console", "ConsoleView", "ToolItem.OPEN_CONSOLE");
+selectMenuItem("1 New Console View", "Console", "WorkbenchWindow", "MenuItem.1_NEW_CONSOLE_VIEW");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+closeView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectMenuItem("Xilinx", "blinky", "WorkbenchWindow", "MenuItem.XILINX");
+selectMenuItem("Vitis Shell", "blinky", "WorkbenchWindow", "MenuItem.VITIS_SHELL");
+selectMenuItem("Xilinx", "blinky", "WorkbenchWindow", "MenuItem.XILINX");
+selectMenuItem("XSCT Console", "blinky", "WorkbenchWindow", "MenuItem.XSCT_CONSOLE");
+activateView("XSCT Console", "XSDBConsoleView", "CTabItem.XSCT_CONSOLE");
+closeView("XSCT Console", "XSDBConsoleView", "CTabItem.XSCT_CONSOLE");
+activateView("Assistant", "SDXAssistantView", "CTabItem.ASSISTANT");
+selectToolBarButton("Build Debug for project blinky", "Assistant", "SDXAssistantView", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("Debug", "blinky_system > blinky", "Console", "ConsoleView", "TreeViewer.NavigatorContentServiceContentProvider");
+selectToolBarButton("Build Debug for project blinky", "blinky", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectToolBarMenuButton("Build Debug for project blinky", "blinky", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Assistant", "SDXAssistantView", "CTabItem.ASSISTANT");
+selectTreeTable("blinky", "blinky_system", EventType.POPUP_TRIGGER_CLICK, "Assistant", "SDXAssistantView", "TreeViewer.AssistantContentProvider");
+selectMenuItem("Clean", "Assistant", "WorkbenchWindow", "MenuItem.CLEAN");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("blinky", "blinky_system", EventType.POPUP_TRIGGER_CLICK, "Assistant", "SDXAssistantView", "TreeViewer.AssistantContentProvider");
+selectMenuItem("Build", "Assistant", "WorkbenchWindow", "MenuItem.BUILD");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectProblemsView("Errors", "blinky_system", "ConsoleView", "TreeViewer.MarkerViewerContentProvider");
+selectToolBarMenuButton("Build Debug for project blinky", "blinky", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Assistant", "SDXAssistantView", "CTabItem.ASSISTANT");
+selectTreeTable("blinky", "blinky_system", EventType.POPUP_TRIGGER_CLICK, "Assistant", "SDXAssistantView", "TreeViewer.AssistantContentProvider");
+selectMenuItem("Clean", "Assistant", "WorkbenchWindow", "MenuItem.CLEAN");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectToolBarButton("Build Debug for project blinky", "Assistant", "SDXAssistantView", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("Debug", "blinky_system > blinky", "Console", "ConsoleView", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Assistant", "SDXAssistantView", "CTabItem.ASSISTANT");
+selectTreeTable("blinky_system", "blinky_system > blinky", EventType.POPUP_TRIGGER_CLICK, "Assistant", "SDXAssistantView", "TreeViewer.AssistantContentProvider");
+selectMenuItem("Debug", "Assistant", "SDXAssistantView", "MenuItem.DEBUG");
+selectMenuItem("Debug Configurations", "blinky_system", "WorkbenchWindow", "MenuItem.DEBUG_CONFIGURATIONS");
+selectTree("System Project Debug", "blinky_system > blinky", EventType.DOUBLE_CLICK, "Debug Configurations", "LaunchConfigurationsDialog", "Tree");
+selectTree("SystemDebugger_blinky_system", "System Project Debug", "Debug Configurations", "LaunchConfigurationsDialog", "Tree");
+selectTab("Target Setup", "Debug Configurations", "LaunchConfigurationsDialog", "CTabItem.TARGET_SETUP");
+selectButton("Debug", "Debug Configurations", "LaunchConfigurationsDialog", "Button.DEBUG");
+activateView("Assistant", "SDXAssistantView", "CTabItem.ASSISTANT");
+selectToolBarMenuButton("Debug", "blinky", "WorkbenchWindow", "ToolItem.DEBUG");
+selectButton("OK", "Error Launching Program", "ErrorDialog", "Button.OK");
+activateView("Debug", "LaunchView", "CTabItem.DEBUG");
+closeView("Debug", "LaunchView", "CTabItem.DEBUG");
+activateView("Assistant", "SDXAssistantView", "CTabItem.ASSISTANT");
+selectToolBarButton("Debug", "blinky_system", "WorkbenchWindow", "ToolItem.DEBUG");
+selectButton("OK", "Error Launching Program", "ErrorDialog", "Button.OK");
+selectToolBarButton("Launch Target Connections", "blinky", "WorkbenchWindow", "ToolItem.LAUNCH_TARGET_CONNECTIONS");
+selectTreeTable("Hardware Server", "Target Connections", "TargetManagerDialog", "TreeViewer.ViewContentProvider");
+selectToolBarMenuButton("Manage configurations for the current project", "blinky", "WorkbenchWindow", "ToolItem.MANAGE_CONFIGURATIONS");
+selectToolBarButton("Debug", "blinky", "WorkbenchWindow", "ToolItem.DEBUG");
+selectButton("OK", "Error Launching Program", "ErrorDialog", "Button.OK");
+activateView("Assistant", "SDXAssistantView", "CTabItem.ASSISTANT");
+selectToolBarButton("Build Debug for project blinky_system", "Assistant", "SDXAssistantView", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("Debug", "blinky_system > blinky", "Console", "ConsoleView", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectMenuItem("Xilinx", "blinky", "WorkbenchWindow", "MenuItem.XILINX");
+selectMenuItem("Program Device", "blinky", "WorkbenchWindow", "MenuItem.PROGRAM_DEVICE");
+selectButton("Program", "Program Device", "SdxProgramFpgaDialog", "Button.PROGRAM");
+selectButton("OK", "Program Device", "ErrorDialog", "Button.OK");
+selectMenuItem("Xilinx", "blinky", "WorkbenchWindow", "MenuItem.XILINX");
+selectMenuItem("Program Device", "blinky", "WorkbenchWindow", "MenuItem.PROGRAM_DEVICE");
+selectButton("Select", "Program Device", "SdxProgramFpgaDialog", "Button.SELECT");
+selectCheckBox("Auto Detect", Boolean.TRUE, "Select the device", "MultiCableDevicesListDialog", "Button.AUTO_DETECT");
+selectMenuItem("Help", "blinky", "WorkbenchWindow", "MenuItem.HELP");
+selectMenuItem("Add Devices", "blinky", "WorkbenchWindow", "MenuItem.ADD_DEVICES");
+selectMenuItem("Xilinx", "blinky", "WorkbenchWindow", "MenuItem.XILINX");
+selectMenuItem("Program Device", "blinky", "WorkbenchWindow", "MenuItem.PROGRAM_DEVICE");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("blinky", "blinky_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Run As", "Explorer", "ProjectExplorer", "MenuItem.RUN_AS");
+selectMenuItem("Run Configurations", "blinky", "WorkbenchWindow", "MenuItem.RUN_CONFIGURATIONS");
+selectTree("Single Application Debug", "blinky_system", "Run Configurations", "LaunchConfigurationsDialog", "Tree");
+selectTreeTable("blinky", "blinky_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Run As", "Explorer", "ProjectExplorer", "MenuItem.RUN_AS");
+selectMenuItem("3 Launch Hardware", "blinky", "WorkbenchWindow", "MenuItem.3_LAUNCH_HARDWARE");
+selectMenuItem("File", "blinky", "WorkbenchWindow", "MenuItem.FILE");
+selectMenuItem("New", "blinky", "WorkbenchWindow", "MenuItem.NEW");
+selectMenuItem("Application Project", "blinky", "WorkbenchWindow", "MenuItem.APPLICATION_PROJECT");
+selectButton("Next", "New Application Project (Create a New Application Project)", "NewAppProjectWizard", "Button.NEXT");
+selectTab("Create a new platform from hardware", "New Application Project (Platform)", "NewAppProjectWizard", "CTabItem.CREATE_A_NEW_PLATFORM");
+selectTab("Select a platform from repository", "New Application Project (Platform)", "NewAppProjectWizard", "CTabItem.SELECT_A_PLATFORM");
+selectTreeTable("design_1_wrapper", "New Application Project (Platform)", "NewAppProjectWizard", "TreeViewer.ArrayTreeContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("ps7_cortexa9_0", "design_1_wrapper", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("bsp", "design_1_wrapper > ps7_cortexa9_0 > standalone_ps7_cortexa9_0", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("xgpio_l.h", "design_1_wrapper > ps7_cortexa9_0 > standalone_ps7_cortexa9_0 > bsp > ps7_cortexa9_0 > libsrc > gpio_v4_8 > src", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("gpio_v4_8", "design_1_wrapper > ps7_cortexa9_0 > standalone_ps7_cortexa9_0 > bsp > ps7_cortexa9_0 > libsrc", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("File", "blinky", "WorkbenchWindow", "MenuItem.FILE");
+selectMenuItem("Import", "blinky", "WorkbenchWindow", "MenuItem.IMPORT");
+selectCheckBox("Hide projects that already exist in the workspace", Boolean.FALSE, "helloworld.c", "CEditor", "Button.HIDE_PROJECTS_THAT");
+selectRadioButton("Vitis project exported zip file", "Import Projects (Import Type)", "SdxArchiveImportWizard", "Button.VITIS_PROJECT_EXPORTED");
+selectRadioButton("Import projects from Git", "Import Projects (Import Type)", "SdxArchiveImportWizard", "Button.IMPORT_PROJECTS");
+selectButton("Cancel", "Import Projects (Import Type)", "SdxArchiveImportWizard", "Button.CANCEL");
+selectMenuItem("Xilinx", "blinky", "WorkbenchWindow", "MenuItem.XILINX");
+selectMenuItem("Examples", "blinky", "WorkbenchWindow", "MenuItem.EXAMPLES");
+selectTreeTable("Vitis Accel Examples Repository", EventType.DOUBLE_CLICK, "Vitis IDE Examples", "ExampleDownloadManagerDialog", "TreeViewer.DownloadTreeContentProvider");
+selectHyperlink("https://github.com/Xilinx/Vitis_Accel_Examples.git", "Vitis IDE Examples", "ExampleDownloadManagerDialog", "Link.URL");
+selectMenuItem("File", "blinky", "WorkbenchWindow", "MenuItem.FILE");
+selectMenuItem("New", "blinky", "WorkbenchWindow", "MenuItem.NEW");
+selectMenuItem("Application Project", "blinky", "WorkbenchWindow", "MenuItem.APPLICATION_PROJECT");
+selectButton("Next", "New Application Project (Create a New Application Project)", "NewAppProjectWizard", "Button.NEXT");
+selectTab("Create a new platform from hardware", "New Application Project (Platform)", "NewAppProjectWizard", "CTabItem.CREATE_A_NEW_PLATFORM");
+selectButton("Browse", "New Application Project (Platform)", "NewAppProjectWizard", "Button.BROWSE");
+setFileDialog("/home/anubhav/workspace/vivado/project_1/mvp_wrapper.xsa", "Create Platform from XSA", "SDXFileDialog", "Button.OK");
+selectButton("Next", "New Application Project (Platform)", "NewAppProjectWizard", "Button.NEXT");
+setTextField("mvp_app", "New Application Project (Application Project Details)", "NewAppProjectWizard", "Text.APPLICATION_PROJECT_NAME");
+selectButton("Next", "New Application Project (Application Project Details)", "NewAppProjectWizard", "Button.NEXT");
+selectButton("Next", "New Application Project (Domain)", "NewAppProjectWizard", "Button.NEXT");
+selectTreeTable("Hello World", "Embedded software development templates", "New Application Project (Templates)", "NewAppProjectWizard", "TreeViewer.TemplateContentProvider");
+selectTreeTable("Dhrystone", "Embedded software development templates", "New Application Project (Templates)", "NewAppProjectWizard", "TreeViewer.TemplateContentProvider");
+selectTreeTable("Empty Application", "Embedded software development templates", "New Application Project (Templates)", "NewAppProjectWizard", "TreeViewer.TemplateContentProvider");
+selectButton("Finish", "New Application Project (Templates)", "NewAppProjectWizard", "Button.FINISH");
+activateView("blinky", "blinky/blinky.prj", "SDXSettingsEditor", "CTabItem.BLINKY");
+activateView("blinky_system", "blinky_system/blinky_system.sprj", "SystemSettingsEditor", "CTabItem.BLINKY_SYSTEM");
+selectTreeTable("helloworld.c", "blinky_system > blinky > src", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("design_1_wrapper", "blinky_system > blinky > src", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("src", "mvp_app_system > mvp_app", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("New", "Explorer", "ProjectExplorer", "MenuItem.NEW");
+selectMenuItem("File", "mvp_app", "WorkbenchWindow", "MenuItem.FILE");
+setTextField("hello.c", "Create New File (File)", "BasicNewFileResourceWizard", "Text.FILE_NAME");
+selectButton("Finish", "Create New File (File)", "BasicNewFileResourceWizard", "Button.FINISH");
+activateView("blinky", "blinky/blinky.prj", "SDXSettingsEditor", "CTabItem.BLINKY");
+selectTreeTable("helloworld.c", "blinky_system > blinky > src", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("hello.c", "mvp_app/src/hello.c", "CEditor", "CTabItem.HELLO_C");
+selectTreeTable("ps7_cortexa9_0", "mvp_wrapper > ps7_cortexa9_0 > standalone_ps7_cortexa9_0 > bsp", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("xfoo.h", "mvp_wrapper > ps7_cortexa9_0 > standalone_ps7_cortexa9_0 > bsp > ps7_cortexa9_0 > libsrc > foo_v1_0 > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("*hello.c", "mvp_app/src/hello.c", "Editor", "CTabItem.*HELLO_C");
+activateView("xfoo.h", "mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_", "CEditor", "CTabItem.XFOO_H");
+activateView("*hello.c", "mvp_app/src/hello.c", "Editor", "CTabItem.*HELLO_C");
+selectTreeTable("lscript.ld", "mvp_app_system > mvp_app > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+closeView("lscript.ld", "mvp_app/src/lscript.ld", "LscriptEditor", "CTabItem.LSCRIPT_LD");
+activateView("xfoo.h", "mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_", "CEditor", "CTabItem.XFOO_H");
+selectTreeTable("lscript.ld", "blinky_system > blinky > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("*hello.c", "mvp_app/src/hello.c", "Editor", "CTabItem.*HELLO_C");
+selectMenuItem("Xilinx", "mvp_app", "WorkbenchWindow", "MenuItem.XILINX");
+selectMenuItem("Program Device", "mvp_app", "WorkbenchWindow", "MenuItem.PROGRAM_DEVICE");
+selectButton("Select", "Program Device", "SdxProgramFpgaDialog", "Button.SELECT");
+selectCheckBox("Auto Detect", Boolean.TRUE, "Select the device", "MultiCableDevicesListDialog", "Button.AUTO_DETECT");
+selectCheckBox("Auto Detect", Boolean.FALSE, "Select the device", "MultiCableDevicesListDialog", "Button.AUTO_DETECT");
+selectCheckBox("Auto Detect", Boolean.TRUE, "Select the device", "MultiCableDevicesListDialog", "Button.AUTO_DETECT");
+selectCheckBox("Auto Detect", Boolean.FALSE, "Select the device", "MultiCableDevicesListDialog", "Button.AUTO_DETECT");
+selectToolBarButton("Help", "Select the device", "MultiCableDevicesListDialog", "ToolItem.HELP");
+selectButton("New", "Program Device", "SdxProgramFpgaDialog", "Button.NEW");
+selectButton("Select", "Program Device", "SdxProgramFpgaDialog", "Button.SELECT");
+selectCheckBox("Auto Detect", Boolean.TRUE, "Select the device", "MultiCableDevicesListDialog", "Button.AUTO_DETECT");
+selectCheckBox("Auto Detect", Boolean.FALSE, "Select the device", "MultiCableDevicesListDialog", "Button.AUTO_DETECT");
+selectButton("Cancel", "Select the device", "MultiCableDevicesListDialog", "Button.CANCEL");
+selectToolBarButton("Debug", "mvp_app", "WorkbenchWindow", "ToolItem.DEBUG");
+selectMenuItem("Xilinx", "mvp_app", "WorkbenchWindow", "MenuItem.XILINX");
+selectMenuItem("Program Device", "mvp_app", "WorkbenchWindow", "MenuItem.PROGRAM_DEVICE");
+selectButton("OK", "Error Launching Program", "ErrorDialog", "Button.OK");
+selectToolBarMenuButton("Run", "mvp_app", "WorkbenchWindow", "ToolItem.RUN");
+selectMenuItem("Xilinx", "mvp_app", "WorkbenchWindow", "MenuItem.XILINX");
+selectMenuItem("Program Device", "mvp_app", "WorkbenchWindow", "MenuItem.PROGRAM_DEVICE");
+selectButton("Program", "Program Device", "SdxProgramFpgaDialog", "Button.PROGRAM");
+selectButton("OK", "Program Device", "ErrorDialog", "Button.OK");
+selectButton("Exit", "Confirm Exit", "MessageDialogWithToggle", "Button.EXIT");
+// Exiting Xilinx Vitis with a status code '0' at 10/6/21, 10:57:58 AM IST
+// Elapsed time: 17:51:11
+

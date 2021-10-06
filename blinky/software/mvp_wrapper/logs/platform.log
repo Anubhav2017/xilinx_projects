@@ -1,0 +1,1510 @@
+TRACE::2021-10-05.19:36:37::SCWPlatform::Trying to open the hw design at /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:37::SCWPlatform::DSA given /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:37::SCWPlatform::DSA absoulate path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:37::SCWPlatform::DSA directory /home/anubhav/workspace/blinky/software/mvp_wrapper/hw
+TRACE::2021-10-05.19:36:37::SCWPlatform:: Platform Path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:37::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2021-10-05.19:36:37::SCWPlatform::Do not have an existing db opened. 
+TRACE::2021-10-05.19:36:38::SCWPlatform::Opened new HwDB with name design_1_wrapper_6
+TRACE::2021-10-05.19:36:38::SCWWriter::formatted JSON is {
+	"platformName":	"mvp_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"mvp_wrapper",
+	"platHandOff":	"/home/anubhav/workspace/vivado/project_1/mvp_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/mvp_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	""
+}
+TRACE::2021-10-05.19:36:38::SCWWriter::formatted JSON is {
+	"platformName":	"mvp_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"mvp_wrapper",
+	"platHandOff":	"/home/anubhav/workspace/vivado/project_1/mvp_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/mvp_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"mvp_wrapper",
+	"systems":	[{
+			"systemName":	"mvp_wrapper",
+			"systemDesc":	"mvp_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"mvp_wrapper"
+		}]
+}
+TRACE::2021-10-05.19:36:38::SCWPlatform::Boot application domains not present, creating them
+TRACE::2021-10-05.19:36:38::SCWDomain::checking for install qemu data   : 
+TRACE::2021-10-05.19:36:38::SCWDomain:: Using the QEMU Data from install at  : /tools/Xilinx/Vitis/2021.1/data/emulation/platforms/zynq/sw/a9_standalone/qemu/
+TRACE::2021-10-05.19:36:38::SCWDomain:: Using the QEMU args  from install at  : /tools/Xilinx/Vitis/2021.1/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt
+TRACE::2021-10-05.19:36:38::SCWPlatform::Trying to open the hw design at /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:38::SCWPlatform::DSA given /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:38::SCWPlatform::DSA absoulate path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:38::SCWPlatform::DSA directory /home/anubhav/workspace/blinky/software/mvp_wrapper/hw
+TRACE::2021-10-05.19:36:38::SCWPlatform:: Platform Path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:38::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2021-10-05.19:36:38::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2021-10-05.19:36:38::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2021-10-05.19:36:38::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-10-05.19:36:38::SCWPlatform::Trying to open the hw design at /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:38::SCWPlatform::DSA given /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:38::SCWPlatform::DSA absoulate path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:38::SCWPlatform::DSA directory /home/anubhav/workspace/blinky/software/mvp_wrapper/hw
+TRACE::2021-10-05.19:36:38::SCWPlatform:: Platform Path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:38::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2021-10-05.19:36:38::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2021-10-05.19:36:38::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2021-10-05.19:36:38::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-10-05.19:36:38::SCWPlatform::Trying to open the hw design at /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:38::SCWPlatform::DSA given /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:38::SCWPlatform::DSA absoulate path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:38::SCWPlatform::DSA directory /home/anubhav/workspace/blinky/software/mvp_wrapper/hw
+TRACE::2021-10-05.19:36:38::SCWPlatform:: Platform Path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:38::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2021-10-05.19:36:38::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2021-10-05.19:36:38::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2021-10-05.19:36:38::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-10-05.19:36:38::SCWPlatform::Boot application domain added for zynq_fsbl
+TRACE::2021-10-05.19:36:38::SCWPlatform::Generating the sources  .
+TRACE::2021-10-05.19:36:38::SCWBDomain::Generating boot domain sources.
+TRACE::2021-10-05.19:36:38::SCWBDomain:: Generating the zynq_fsbl Application.
+TRACE::2021-10-05.19:36:38::SCWPlatform::Trying to open the hw design at /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:38::SCWPlatform::DSA given /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:38::SCWPlatform::DSA absoulate path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:38::SCWPlatform::DSA directory /home/anubhav/workspace/blinky/software/mvp_wrapper/hw
+TRACE::2021-10-05.19:36:38::SCWPlatform:: Platform Path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:38::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2021-10-05.19:36:38::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2021-10-05.19:36:38::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2021-10-05.19:36:38::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-10-05.19:36:38::SCWMssOS::Checking the sw design at  /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-10-05.19:36:38::SCWMssOS::DEBUG:  swdes dump  /home/anubhav/workspace/blinky/software/design_1_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/home/anubhav/workspace/blinky/software/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-10-05.19:36:38::SCWMssOS::No sw design opened at  /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-10-05.19:36:38::SCWMssOS::mss does not exists at /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-10-05.19:36:38::SCWMssOS::Creating sw design at  /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-10-05.19:36:38::SCWMssOS::Adding the swdes entry, created swdb /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-10-05.19:36:38::SCWMssOS::updating the scw layer changes to swdes at   /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-10-05.19:36:38::SCWMssOS::Writing mss at /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-10-05.19:36:38::SCWMssOS::Completed writing the mss file at /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp
+TRACE::2021-10-05.19:36:38::SCWMssOS::Picking up changes from newly written mss file into SCW Layer. 
+TRACE::2021-10-05.19:36:38::SCWMssOS::Updated the changes from newly written mss file into SCW Layer. 
+TRACE::2021-10-05.19:36:38::SCWBDomain::Completed writing the mss file at /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp
+TRACE::2021-10-05.19:36:41::SCWPlatform::Generating sources Done.
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to open the hw design at /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA given /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA absoulate path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA directory /home/anubhav/workspace/blinky/software/mvp_wrapper/hw
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Platform Path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-10-05.19:36:41::SCWMssOS::Checking the sw design at  /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::DEBUG:  swdes dump  /home/anubhav/workspace/blinky/software/design_1_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/home/anubhav/workspace/blinky/software/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-10-05.19:36:41::SCWMssOS::No sw design opened at  /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::mss exists loading the mss file  /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::Opened the sw design from mss  /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::Adding the swdes entry /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system_1
+TRACE::2021-10-05.19:36:41::SCWMssOS::updating the scw layer about changes
+TRACE::2021-10-05.19:36:41::SCWMssOS::Opened the sw design.  /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::Saving the mss changes /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-10-05.19:36:41::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-10-05.19:36:41::SCWMssOS::Commit changes completed.
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to open the hw design at /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA given /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA absoulate path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA directory /home/anubhav/workspace/blinky/software/mvp_wrapper/hw
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Platform Path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-10-05.19:36:41::SCWMssOS::Checking the sw design at  /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::DEBUG:  swdes dump  /home/anubhav/workspace/blinky/software/design_1_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/home/anubhav/workspace/blinky/software/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+
+TRACE::2021-10-05.19:36:41::SCWMssOS::Sw design exists and opened at  /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to open the hw design at /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA given /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA absoulate path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA directory /home/anubhav/workspace/blinky/software/mvp_wrapper/hw
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Platform Path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-10-05.19:36:41::SCWMssOS::Checking the sw design at  /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::DEBUG:  swdes dump  /home/anubhav/workspace/blinky/software/design_1_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/home/anubhav/workspace/blinky/software/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+
+TRACE::2021-10-05.19:36:41::SCWMssOS::Sw design exists and opened at  /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to open the hw design at /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA given /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA absoulate path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA directory /home/anubhav/workspace/blinky/software/mvp_wrapper/hw
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Platform Path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-10-05.19:36:41::SCWMssOS::Checking the sw design at  /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::DEBUG:  swdes dump  /home/anubhav/workspace/blinky/software/design_1_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/home/anubhav/workspace/blinky/software/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+
+TRACE::2021-10-05.19:36:41::SCWMssOS::Sw design exists and opened at  /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWWriter::formatted JSON is {
+	"platformName":	"mvp_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"mvp_wrapper",
+	"platHandOff":	"/home/anubhav/workspace/vivado/project_1/mvp_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/mvp_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"mvp_wrapper",
+	"systems":	[{
+			"systemName":	"mvp_wrapper",
+			"systemDesc":	"mvp_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"mvp_wrapper",
+			"sysActiveDom":	"zynq_fsbl",
+			"sysDefaultDom":	"",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.5",
+					"mssFile":	"",
+					"md5Digest":	"b532d39694d502b2e702835710231c3c",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.5", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2021-10-05.19:36:41::SCWMssOS::Saving the mss changes /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-10-05.19:36:41::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-10-05.19:36:41::SCWMssOS::Commit changes completed.
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to open the hw design at /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA given /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA absoulate path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA directory /home/anubhav/workspace/blinky/software/mvp_wrapper/hw
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Platform Path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-10-05.19:36:41::SCWMssOS::Checking the sw design at  /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::DEBUG:  swdes dump  /home/anubhav/workspace/blinky/software/design_1_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/home/anubhav/workspace/blinky/software/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+
+TRACE::2021-10-05.19:36:41::SCWMssOS::Sw design exists and opened at  /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to open the hw design at /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA given /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA absoulate path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA directory /home/anubhav/workspace/blinky/software/mvp_wrapper/hw
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Platform Path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-10-05.19:36:41::SCWMssOS::Checking the sw design at  /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::DEBUG:  swdes dump  /home/anubhav/workspace/blinky/software/design_1_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/home/anubhav/workspace/blinky/software/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+
+TRACE::2021-10-05.19:36:41::SCWMssOS::Sw design exists and opened at  /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to open the hw design at /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA given /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA absoulate path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA directory /home/anubhav/workspace/blinky/software/mvp_wrapper/hw
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Platform Path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-10-05.19:36:41::SCWMssOS::Checking the sw design at  /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::DEBUG:  swdes dump  /home/anubhav/workspace/blinky/software/design_1_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/home/anubhav/workspace/blinky/software/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+
+TRACE::2021-10-05.19:36:41::SCWMssOS::Sw design exists and opened at  /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWWriter::formatted JSON is {
+	"platformName":	"mvp_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"mvp_wrapper",
+	"platHandOff":	"/home/anubhav/workspace/vivado/project_1/mvp_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/mvp_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"mvp_wrapper",
+	"systems":	[{
+			"systemName":	"mvp_wrapper",
+			"systemDesc":	"mvp_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"mvp_wrapper",
+			"sysActiveDom":	"zynq_fsbl",
+			"sysDefaultDom":	"",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.5",
+					"mssFile":	"",
+					"md5Digest":	"b532d39694d502b2e702835710231c3c",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.5", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to open the hw design at /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA given /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA absoulate path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA directory /home/anubhav/workspace/blinky/software/mvp_wrapper/hw
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Platform Path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-10-05.19:36:41::SCWDomain::checking for install qemu data   : 
+TRACE::2021-10-05.19:36:41::SCWDomain:: Using the QEMU Data from install at  : /tools/Xilinx/Vitis/2021.1/data/emulation/platforms/zynq/sw/a9_standalone/qemu/
+TRACE::2021-10-05.19:36:41::SCWDomain:: Using the QEMU args  from install at  : /tools/Xilinx/Vitis/2021.1/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to open the hw design at /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA given /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA absoulate path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA directory /home/anubhav/workspace/blinky/software/mvp_wrapper/hw
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Platform Path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to open the hw design at /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA given /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA absoulate path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA directory /home/anubhav/workspace/blinky/software/mvp_wrapper/hw
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Platform Path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to open the hw design at /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA given /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA absoulate path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA directory /home/anubhav/workspace/blinky/software/mvp_wrapper/hw
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Platform Path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-10-05.19:36:41::SCWMssOS::Checking the sw design at  /home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::DEBUG:  swdes dump  /home/anubhav/workspace/blinky/software/design_1_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/home/anubhav/workspace/blinky/software/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+
+TRACE::2021-10-05.19:36:41::SCWMssOS::No sw design opened at  /home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::mss does not exists at /home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::Creating sw design at  /home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::Adding the swdes entry, created swdb /home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss with des name /home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::updating the scw layer changes to swdes at   /home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::Writing mss at /home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::Completed writing the mss file at /home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp
+TRACE::2021-10-05.19:36:41::SCWMssOS::Picking up changes from newly written mss file into SCW Layer. 
+TRACE::2021-10-05.19:36:41::SCWMssOS::Updated the changes from newly written mss file into SCW Layer. 
+TRACE::2021-10-05.19:36:41::SCWMssOS::Completed writing the mss file at /home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp
+TRACE::2021-10-05.19:36:41::SCWMssOS::Forcing BSP Sources regeneration.
+TRACE::2021-10-05.19:36:41::SCWMssOS::Saving the mss changes /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-10-05.19:36:41::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-10-05.19:36:41::SCWMssOS::Commit changes completed.
+TRACE::2021-10-05.19:36:41::SCWMssOS::Saving the mss changes /home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::Adding the swdes entry, mss present, able to open swdb /home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss with des name system_2
+TRACE::2021-10-05.19:36:41::SCWMssOS::Writing the mss file completed /home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::Commit changes completed.
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to open the hw design at /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA given /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA absoulate path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA directory /home/anubhav/workspace/blinky/software/mvp_wrapper/hw
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Platform Path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-10-05.19:36:41::SCWMssOS::Checking the sw design at  /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::DEBUG:  swdes dump  /home/anubhav/workspace/blinky/software/design_1_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/home/anubhav/workspace/blinky/software/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_2||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+
+TRACE::2021-10-05.19:36:41::SCWMssOS::Sw design exists and opened at  /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to open the hw design at /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA given /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA absoulate path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA directory /home/anubhav/workspace/blinky/software/mvp_wrapper/hw
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Platform Path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-10-05.19:36:41::SCWMssOS::Checking the sw design at  /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::DEBUG:  swdes dump  /home/anubhav/workspace/blinky/software/design_1_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/home/anubhav/workspace/blinky/software/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_2||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+
+TRACE::2021-10-05.19:36:41::SCWMssOS::Sw design exists and opened at  /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to open the hw design at /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA given /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA absoulate path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA directory /home/anubhav/workspace/blinky/software/mvp_wrapper/hw
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Platform Path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-10-05.19:36:41::SCWMssOS::Checking the sw design at  /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::DEBUG:  swdes dump  /home/anubhav/workspace/blinky/software/design_1_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/home/anubhav/workspace/blinky/software/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_2||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+
+TRACE::2021-10-05.19:36:41::SCWMssOS::Sw design exists and opened at  /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to open the hw design at /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA given /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA absoulate path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA directory /home/anubhav/workspace/blinky/software/mvp_wrapper/hw
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Platform Path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-10-05.19:36:41::SCWMssOS::Checking the sw design at  /home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::DEBUG:  swdes dump  /home/anubhav/workspace/blinky/software/design_1_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/home/anubhav/workspace/blinky/software/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_2||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+
+TRACE::2021-10-05.19:36:41::SCWMssOS::Sw design exists and opened at  /home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to open the hw design at /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA given /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA absoulate path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA directory /home/anubhav/workspace/blinky/software/mvp_wrapper/hw
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Platform Path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-10-05.19:36:41::SCWMssOS::Checking the sw design at  /home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::DEBUG:  swdes dump  /home/anubhav/workspace/blinky/software/design_1_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/home/anubhav/workspace/blinky/software/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_2||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+
+TRACE::2021-10-05.19:36:41::SCWMssOS::Sw design exists and opened at  /home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to open the hw design at /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA given /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA absoulate path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA directory /home/anubhav/workspace/blinky/software/mvp_wrapper/hw
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Platform Path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-10-05.19:36:41::SCWMssOS::Checking the sw design at  /home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::DEBUG:  swdes dump  /home/anubhav/workspace/blinky/software/design_1_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/home/anubhav/workspace/blinky/software/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_2||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+
+TRACE::2021-10-05.19:36:41::SCWMssOS::Sw design exists and opened at  /home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWWriter::formatted JSON is {
+	"platformName":	"mvp_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"mvp_wrapper",
+	"platHandOff":	"/home/anubhav/workspace/vivado/project_1/mvp_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/mvp_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"mvp_wrapper",
+	"systems":	[{
+			"systemName":	"mvp_wrapper",
+			"systemDesc":	"mvp_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"mvp_wrapper",
+			"sysActiveDom":	"standalone_ps7_cortexa9_0",
+			"sysDefaultDom":	"standalone_ps7_cortexa9_0",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.5",
+					"mssFile":	"",
+					"md5Digest":	"b532d39694d502b2e702835710231c3c",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.5", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_ps7_cortexa9_0",
+					"domainDispName":	"standalone_ps7_cortexa9_0",
+					"domainDesc":	"standalone_ps7_cortexa9_0",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"/tools/Xilinx/Vitis/2021.1/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt",
+					"qemuData":	"/tools/Xilinx/Vitis/2021.1/data/emulation/platforms/zynq/sw/a9_standalone/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.5",
+					"mssFile":	"",
+					"md5Digest":	"9bd7fb7e515ee1b31f43815399dbf932",
+					"compatibleApp":	"empty_application",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2021-10-05.19:36:41::SCWPlatform::Started generating the artifacts platform mvp_wrapper
+TRACE::2021-10-05.19:36:41::SCWPlatform::Sanity checking of platform is completed
+LOG::2021-10-05.19:36:41::SCWPlatform::Started generating the artifacts for system configuration mvp_wrapper
+LOG::2021-10-05.19:36:41::SCWSystem::Checking the domain zynq_fsbl
+LOG::2021-10-05.19:36:41::SCWSystem::Doing application build for :  zynq_fsbl
+TRACE::2021-10-05.19:36:41::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2021-10-05.19:36:41::SCWDomain::Skipping the build for domain :  zynq_fsbl
+LOG::2021-10-05.19:36:41::SCWSystem::Checking the domain standalone_ps7_cortexa9_0
+LOG::2021-10-05.19:36:41::SCWSystem::Not a boot domain 
+LOG::2021-10-05.19:36:41::SCWSystem::Started Processing the domain standalone_ps7_cortexa9_0
+TRACE::2021-10-05.19:36:41::SCWDomain::Generating domain artifcats
+TRACE::2021-10-05.19:36:41::SCWMssOS::Generating standalone artifcats
+TRACE::2021-10-05.19:36:41::SCWMssOS::Copying the qemu file from  /tools/Xilinx/Vitis/2021.1/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt To /home/anubhav/workspace/blinky/software/mvp_wrapper/export/mvp_wrapper/sw/mvp_wrapper/qemu/
+TRACE::2021-10-05.19:36:41::SCWMssOS::Copying the qemu file from  /tools/Xilinx/Vitis/2021.1/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt To /home/anubhav/workspace/blinky/software/mvp_wrapper/export/mvp_wrapper/sw/mvp_wrapper/standalone_ps7_cortexa9_0/qemu/
+TRACE::2021-10-05.19:36:41::SCWMssOS:: Copying the user libraries. 
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to open the hw design at /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA given /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA absoulate path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA directory /home/anubhav/workspace/blinky/software/mvp_wrapper/hw
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Platform Path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-10-05.19:36:41::SCWMssOS::Checking the sw design at  /home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::DEBUG:  swdes dump  /home/anubhav/workspace/blinky/software/design_1_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/home/anubhav/workspace/blinky/software/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_2||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+
+TRACE::2021-10-05.19:36:41::SCWMssOS::Sw design exists and opened at  /home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::Completed writing the mss file at /home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp
+TRACE::2021-10-05.19:36:41::SCWMssOS::Mss edits present, copying mssfile into export location /home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2021-10-05.19:36:41::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2021-10-05.19:36:41::SCWDomain::Skipping the build for domain :  standalone_ps7_cortexa9_0
+TRACE::2021-10-05.19:36:41::SCWMssOS::skipping the bsp build ... 
+TRACE::2021-10-05.19:36:41::SCWMssOS::Copying to export directory.
+TRACE::2021-10-05.19:36:41::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2021-10-05.19:36:41::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+TRACE::2021-10-05.19:36:41::SCWMssOS:: Completed Standalone Artifacts creation 
+LOG::2021-10-05.19:36:41::SCWSystem::Completed Processing the domain standalone_ps7_cortexa9_0
+LOG::2021-10-05.19:36:41::SCWSystem::Completed Processing the sysconfig mvp_wrapper
+LOG::2021-10-05.19:36:41::SCWPlatform::Completed generating the artifacts for system configuration mvp_wrapper
+TRACE::2021-10-05.19:36:41::SCWPlatform::Started preparing the platform 
+TRACE::2021-10-05.19:36:41::SCWSystem::Writing the bif file for system config mvp_wrapper
+TRACE::2021-10-05.19:36:41::SCWSystem::dir created 
+TRACE::2021-10-05.19:36:41::SCWSystem::Writing the bif 
+TRACE::2021-10-05.19:36:41::SCWPlatform::Started writing the spfm file 
+TRACE::2021-10-05.19:36:41::SCWPlatform::Started writing the xpfm file 
+TRACE::2021-10-05.19:36:41::SCWPlatform::Completed generating the platform
+TRACE::2021-10-05.19:36:41::SCWMssOS::Saving the mss changes /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-10-05.19:36:41::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-10-05.19:36:41::SCWMssOS::Commit changes completed.
+TRACE::2021-10-05.19:36:41::SCWMssOS::Saving the mss changes /home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-10-05.19:36:41::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-10-05.19:36:41::SCWMssOS::Commit changes completed.
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to open the hw design at /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA given /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA absoulate path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA directory /home/anubhav/workspace/blinky/software/mvp_wrapper/hw
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Platform Path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-10-05.19:36:41::SCWMssOS::Checking the sw design at  /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::DEBUG:  swdes dump  /home/anubhav/workspace/blinky/software/design_1_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/home/anubhav/workspace/blinky/software/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_2||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+
+TRACE::2021-10-05.19:36:41::SCWMssOS::Sw design exists and opened at  /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to open the hw design at /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA given /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA absoulate path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA directory /home/anubhav/workspace/blinky/software/mvp_wrapper/hw
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Platform Path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-10-05.19:36:41::SCWMssOS::Checking the sw design at  /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::DEBUG:  swdes dump  /home/anubhav/workspace/blinky/software/design_1_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/home/anubhav/workspace/blinky/software/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_2||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+
+TRACE::2021-10-05.19:36:41::SCWMssOS::Sw design exists and opened at  /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to open the hw design at /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA given /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA absoulate path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA directory /home/anubhav/workspace/blinky/software/mvp_wrapper/hw
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Platform Path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-10-05.19:36:41::SCWMssOS::Checking the sw design at  /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::DEBUG:  swdes dump  /home/anubhav/workspace/blinky/software/design_1_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/home/anubhav/workspace/blinky/software/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_2||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+
+TRACE::2021-10-05.19:36:41::SCWMssOS::Sw design exists and opened at  /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to open the hw design at /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA given /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA absoulate path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA directory /home/anubhav/workspace/blinky/software/mvp_wrapper/hw
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Platform Path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-10-05.19:36:41::SCWMssOS::Checking the sw design at  /home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::DEBUG:  swdes dump  /home/anubhav/workspace/blinky/software/design_1_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/home/anubhav/workspace/blinky/software/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_2||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+
+TRACE::2021-10-05.19:36:41::SCWMssOS::Sw design exists and opened at  /home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to open the hw design at /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA given /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA absoulate path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA directory /home/anubhav/workspace/blinky/software/mvp_wrapper/hw
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Platform Path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-10-05.19:36:41::SCWMssOS::Checking the sw design at  /home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::DEBUG:  swdes dump  /home/anubhav/workspace/blinky/software/design_1_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/home/anubhav/workspace/blinky/software/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_2||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+
+TRACE::2021-10-05.19:36:41::SCWMssOS::Sw design exists and opened at  /home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to open the hw design at /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA given /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA absoulate path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA directory /home/anubhav/workspace/blinky/software/mvp_wrapper/hw
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Platform Path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-10-05.19:36:41::SCWMssOS::Checking the sw design at  /home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::DEBUG:  swdes dump  /home/anubhav/workspace/blinky/software/design_1_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/home/anubhav/workspace/blinky/software/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_2||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+
+TRACE::2021-10-05.19:36:41::SCWMssOS::Sw design exists and opened at  /home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWWriter::formatted JSON is {
+	"platformName":	"mvp_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"mvp_wrapper",
+	"platHandOff":	"/home/anubhav/workspace/vivado/project_1/mvp_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/mvp_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"mvp_wrapper",
+	"systems":	[{
+			"systemName":	"mvp_wrapper",
+			"systemDesc":	"mvp_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"mvp_wrapper",
+			"sysActiveDom":	"standalone_ps7_cortexa9_0",
+			"sysDefaultDom":	"standalone_ps7_cortexa9_0",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.5",
+					"mssFile":	"",
+					"md5Digest":	"b532d39694d502b2e702835710231c3c",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.5", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_ps7_cortexa9_0",
+					"domainDispName":	"standalone_ps7_cortexa9_0",
+					"domainDesc":	"standalone_ps7_cortexa9_0",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"/tools/Xilinx/Vitis/2021.1/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt",
+					"qemuData":	"/tools/Xilinx/Vitis/2021.1/data/emulation/platforms/zynq/sw/a9_standalone/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.5",
+					"mssFile":	"",
+					"md5Digest":	"9bd7fb7e515ee1b31f43815399dbf932",
+					"compatibleApp":	"empty_application",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2021-10-05.19:36:41::SCWPlatform::updated the xpfm file.
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to open the hw design at /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA given /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA absoulate path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA directory /home/anubhav/workspace/blinky/software/mvp_wrapper/hw
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Platform Path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-10-05.19:36:41::SCWMssOS::Checking the sw design at  /home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::DEBUG:  swdes dump  /home/anubhav/workspace/blinky/software/design_1_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/home/anubhav/workspace/blinky/software/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_2||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+
+TRACE::2021-10-05.19:36:41::SCWMssOS::Sw design exists and opened at  /home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::Saving the mss changes /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-10-05.19:36:41::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-10-05.19:36:41::SCWMssOS::Commit changes completed.
+TRACE::2021-10-05.19:36:41::SCWMssOS::Saving the mss changes /home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-10-05.19:36:41::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-10-05.19:36:41::SCWMssOS::Commit changes completed.
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to open the hw design at /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA given /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA absoulate path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA directory /home/anubhav/workspace/blinky/software/mvp_wrapper/hw
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Platform Path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-10-05.19:36:41::SCWMssOS::Checking the sw design at  /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::DEBUG:  swdes dump  /home/anubhav/workspace/blinky/software/design_1_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/home/anubhav/workspace/blinky/software/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_2||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+
+TRACE::2021-10-05.19:36:41::SCWMssOS::Sw design exists and opened at  /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to open the hw design at /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA given /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA absoulate path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA directory /home/anubhav/workspace/blinky/software/mvp_wrapper/hw
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Platform Path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-10-05.19:36:41::SCWMssOS::Checking the sw design at  /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::DEBUG:  swdes dump  /home/anubhav/workspace/blinky/software/design_1_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/home/anubhav/workspace/blinky/software/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_2||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+
+TRACE::2021-10-05.19:36:41::SCWMssOS::Sw design exists and opened at  /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to open the hw design at /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA given /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA absoulate path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA directory /home/anubhav/workspace/blinky/software/mvp_wrapper/hw
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Platform Path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-10-05.19:36:41::SCWMssOS::Checking the sw design at  /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::DEBUG:  swdes dump  /home/anubhav/workspace/blinky/software/design_1_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/home/anubhav/workspace/blinky/software/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_2||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+
+TRACE::2021-10-05.19:36:41::SCWMssOS::Sw design exists and opened at  /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to open the hw design at /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA given /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA absoulate path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA directory /home/anubhav/workspace/blinky/software/mvp_wrapper/hw
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Platform Path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-10-05.19:36:41::SCWMssOS::Checking the sw design at  /home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::DEBUG:  swdes dump  /home/anubhav/workspace/blinky/software/design_1_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/home/anubhav/workspace/blinky/software/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_2||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+
+TRACE::2021-10-05.19:36:41::SCWMssOS::Sw design exists and opened at  /home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to open the hw design at /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA given /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA absoulate path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA directory /home/anubhav/workspace/blinky/software/mvp_wrapper/hw
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Platform Path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-10-05.19:36:41::SCWMssOS::Checking the sw design at  /home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::DEBUG:  swdes dump  /home/anubhav/workspace/blinky/software/design_1_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/home/anubhav/workspace/blinky/software/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_2||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+
+TRACE::2021-10-05.19:36:41::SCWMssOS::Sw design exists and opened at  /home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to open the hw design at /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA given /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA absoulate path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA directory /home/anubhav/workspace/blinky/software/mvp_wrapper/hw
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Platform Path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-10-05.19:36:41::SCWMssOS::Checking the sw design at  /home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::DEBUG:  swdes dump  /home/anubhav/workspace/blinky/software/design_1_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/home/anubhav/workspace/blinky/software/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_2||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+
+TRACE::2021-10-05.19:36:41::SCWMssOS::Sw design exists and opened at  /home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWWriter::formatted JSON is {
+	"platformName":	"mvp_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"mvp_wrapper",
+	"platHandOff":	"/home/anubhav/workspace/vivado/project_1/mvp_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/mvp_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"mvp_wrapper",
+	"systems":	[{
+			"systemName":	"mvp_wrapper",
+			"systemDesc":	"mvp_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"mvp_wrapper",
+			"sysActiveDom":	"standalone_ps7_cortexa9_0",
+			"sysDefaultDom":	"standalone_ps7_cortexa9_0",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.5",
+					"mssFile":	"",
+					"md5Digest":	"b532d39694d502b2e702835710231c3c",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.5", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_ps7_cortexa9_0",
+					"domainDispName":	"standalone_ps7_cortexa9_0",
+					"domainDesc":	"standalone_ps7_cortexa9_0",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"/tools/Xilinx/Vitis/2021.1/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt",
+					"qemuData":	"/tools/Xilinx/Vitis/2021.1/data/emulation/platforms/zynq/sw/a9_standalone/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.5",
+					"mssFile":	"",
+					"md5Digest":	"9bd7fb7e515ee1b31f43815399dbf932",
+					"compatibleApp":	"empty_application",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to open the hw design at /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA given /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA absoulate path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA directory /home/anubhav/workspace/blinky/software/mvp_wrapper/hw
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Platform Path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-10-05.19:36:41::SCWMssOS::Checking the sw design at  /home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::DEBUG:  swdes dump  /home/anubhav/workspace/blinky/software/design_1_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/home/anubhav/workspace/blinky/software/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_2||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+
+TRACE::2021-10-05.19:36:41::SCWMssOS::Sw design exists and opened at  /home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to open the hw design at /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA given /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA absoulate path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA directory /home/anubhav/workspace/blinky/software/mvp_wrapper/hw
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Platform Path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-10-05.19:36:41::SCWMssOS::Checking the sw design at  /home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::DEBUG:  swdes dump  /home/anubhav/workspace/blinky/software/design_1_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/home/anubhav/workspace/blinky/software/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_2||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+
+TRACE::2021-10-05.19:36:41::SCWMssOS::Sw design exists and opened at  /home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::Saving the mss changes /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-10-05.19:36:41::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-10-05.19:36:41::SCWMssOS::Commit changes completed.
+TRACE::2021-10-05.19:36:41::SCWMssOS::Saving the mss changes /home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-10-05.19:36:41::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-10-05.19:36:41::SCWMssOS::Commit changes completed.
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to open the hw design at /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA given /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA absoulate path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA directory /home/anubhav/workspace/blinky/software/mvp_wrapper/hw
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Platform Path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-10-05.19:36:41::SCWMssOS::Checking the sw design at  /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::DEBUG:  swdes dump  /home/anubhav/workspace/blinky/software/design_1_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/home/anubhav/workspace/blinky/software/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_2||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+
+TRACE::2021-10-05.19:36:41::SCWMssOS::Sw design exists and opened at  /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to open the hw design at /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA given /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA absoulate path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA directory /home/anubhav/workspace/blinky/software/mvp_wrapper/hw
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Platform Path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-10-05.19:36:41::SCWMssOS::Checking the sw design at  /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::DEBUG:  swdes dump  /home/anubhav/workspace/blinky/software/design_1_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/home/anubhav/workspace/blinky/software/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_2||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+
+TRACE::2021-10-05.19:36:41::SCWMssOS::Sw design exists and opened at  /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to open the hw design at /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA given /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA absoulate path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA directory /home/anubhav/workspace/blinky/software/mvp_wrapper/hw
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Platform Path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-10-05.19:36:41::SCWMssOS::Checking the sw design at  /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::DEBUG:  swdes dump  /home/anubhav/workspace/blinky/software/design_1_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/home/anubhav/workspace/blinky/software/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_2||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+
+TRACE::2021-10-05.19:36:41::SCWMssOS::Sw design exists and opened at  /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to open the hw design at /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA given /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA absoulate path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA directory /home/anubhav/workspace/blinky/software/mvp_wrapper/hw
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Platform Path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-10-05.19:36:41::SCWMssOS::Checking the sw design at  /home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::DEBUG:  swdes dump  /home/anubhav/workspace/blinky/software/design_1_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/home/anubhav/workspace/blinky/software/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_2||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+
+TRACE::2021-10-05.19:36:41::SCWMssOS::Sw design exists and opened at  /home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to open the hw design at /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA given /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA absoulate path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA directory /home/anubhav/workspace/blinky/software/mvp_wrapper/hw
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Platform Path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-10-05.19:36:41::SCWMssOS::Checking the sw design at  /home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::DEBUG:  swdes dump  /home/anubhav/workspace/blinky/software/design_1_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/home/anubhav/workspace/blinky/software/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_2||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+
+TRACE::2021-10-05.19:36:41::SCWMssOS::Sw design exists and opened at  /home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to open the hw design at /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA given /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA absoulate path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA directory /home/anubhav/workspace/blinky/software/mvp_wrapper/hw
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Platform Path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-10-05.19:36:41::SCWMssOS::Checking the sw design at  /home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::DEBUG:  swdes dump  /home/anubhav/workspace/blinky/software/design_1_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/home/anubhav/workspace/blinky/software/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_2||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+
+TRACE::2021-10-05.19:36:41::SCWMssOS::Sw design exists and opened at  /home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWWriter::formatted JSON is {
+	"platformName":	"mvp_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"mvp_wrapper",
+	"platHandOff":	"/home/anubhav/workspace/vivado/project_1/mvp_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/mvp_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"mvp_wrapper",
+	"systems":	[{
+			"systemName":	"mvp_wrapper",
+			"systemDesc":	"mvp_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"mvp_wrapper",
+			"sysActiveDom":	"standalone_ps7_cortexa9_0",
+			"sysDefaultDom":	"standalone_ps7_cortexa9_0",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.5",
+					"mssFile":	"",
+					"md5Digest":	"b532d39694d502b2e702835710231c3c",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.5", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_ps7_cortexa9_0",
+					"domainDispName":	"standalone_ps7_cortexa9_0",
+					"domainDesc":	"standalone_ps7_cortexa9_0",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"/tools/Xilinx/Vitis/2021.1/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt",
+					"qemuData":	"/tools/Xilinx/Vitis/2021.1/data/emulation/platforms/zynq/sw/a9_standalone/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.5",
+					"mssFile":	"",
+					"md5Digest":	"9bd7fb7e515ee1b31f43815399dbf932",
+					"compatibleApp":	"empty_application",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2021-10-05.19:36:41::SCWPlatform::Started generating the artifacts platform mvp_wrapper
+TRACE::2021-10-05.19:36:41::SCWPlatform::Sanity checking of platform is completed
+LOG::2021-10-05.19:36:41::SCWPlatform::Started generating the artifacts for system configuration mvp_wrapper
+LOG::2021-10-05.19:36:41::SCWSystem::Started Processing the domain standalone_ps7_cortexa9_0
+TRACE::2021-10-05.19:36:41::SCWDomain::Generating domain artifcats
+TRACE::2021-10-05.19:36:41::SCWMssOS::Generating standalone artifcats
+TRACE::2021-10-05.19:36:41::SCWMssOS::Copying the qemu file from  /tools/Xilinx/Vitis/2021.1/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt To /home/anubhav/workspace/blinky/software/mvp_wrapper/export/mvp_wrapper/sw/mvp_wrapper/qemu/
+TRACE::2021-10-05.19:36:41::SCWMssOS::Copying the qemu file from  /tools/Xilinx/Vitis/2021.1/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt To /home/anubhav/workspace/blinky/software/mvp_wrapper/export/mvp_wrapper/sw/mvp_wrapper/standalone_ps7_cortexa9_0/qemu/
+TRACE::2021-10-05.19:36:41::SCWMssOS:: Copying the user libraries. 
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to open the hw design at /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA given /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA absoulate path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA directory /home/anubhav/workspace/blinky/software/mvp_wrapper/hw
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Platform Path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-10-05.19:36:41::SCWMssOS::Checking the sw design at  /home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::DEBUG:  swdes dump  /home/anubhav/workspace/blinky/software/design_1_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/home/anubhav/workspace/blinky/software/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_2||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+
+TRACE::2021-10-05.19:36:41::SCWMssOS::Sw design exists and opened at  /home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::Completed writing the mss file at /home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp
+TRACE::2021-10-05.19:36:41::SCWMssOS::Mss edits present, copying mssfile into export location /home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2021-10-05.19:36:41::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2021-10-05.19:36:41::SCWDomain::Building the domain as part of full build :  standalone_ps7_cortexa9_0
+TRACE::2021-10-05.19:36:41::SCWMssOS::skipping the bsp build ... 
+TRACE::2021-10-05.19:36:41::SCWMssOS::Copying to export directory.
+TRACE::2021-10-05.19:36:41::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2021-10-05.19:36:41::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+TRACE::2021-10-05.19:36:41::SCWMssOS:: Completed Standalone Artifacts creation 
+LOG::2021-10-05.19:36:41::SCWSystem::Completed Processing the domain standalone_ps7_cortexa9_0
+LOG::2021-10-05.19:36:41::SCWSystem::Completed Processing the sysconfig mvp_wrapper
+LOG::2021-10-05.19:36:41::SCWPlatform::Completed generating the artifacts for system configuration mvp_wrapper
+TRACE::2021-10-05.19:36:41::SCWPlatform::Started preparing the platform 
+TRACE::2021-10-05.19:36:41::SCWSystem::Writing the bif file for system config mvp_wrapper
+TRACE::2021-10-05.19:36:41::SCWSystem::dir created 
+TRACE::2021-10-05.19:36:41::SCWSystem::Writing the bif 
+TRACE::2021-10-05.19:36:41::SCWPlatform::Started writing the spfm file 
+TRACE::2021-10-05.19:36:41::SCWPlatform::Started writing the xpfm file 
+TRACE::2021-10-05.19:36:41::SCWPlatform::Completed generating the platform
+TRACE::2021-10-05.19:36:41::SCWMssOS::Saving the mss changes /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-10-05.19:36:41::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-10-05.19:36:41::SCWMssOS::Commit changes completed.
+TRACE::2021-10-05.19:36:41::SCWMssOS::Saving the mss changes /home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-10-05.19:36:41::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-10-05.19:36:41::SCWMssOS::Commit changes completed.
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to open the hw design at /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA given /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA absoulate path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA directory /home/anubhav/workspace/blinky/software/mvp_wrapper/hw
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Platform Path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-10-05.19:36:41::SCWMssOS::Checking the sw design at  /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::DEBUG:  swdes dump  /home/anubhav/workspace/blinky/software/design_1_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/home/anubhav/workspace/blinky/software/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_2||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+
+TRACE::2021-10-05.19:36:41::SCWMssOS::Sw design exists and opened at  /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to open the hw design at /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA given /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA absoulate path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA directory /home/anubhav/workspace/blinky/software/mvp_wrapper/hw
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Platform Path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-10-05.19:36:41::SCWMssOS::Checking the sw design at  /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::DEBUG:  swdes dump  /home/anubhav/workspace/blinky/software/design_1_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/home/anubhav/workspace/blinky/software/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_2||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+
+TRACE::2021-10-05.19:36:41::SCWMssOS::Sw design exists and opened at  /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to open the hw design at /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA given /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA absoulate path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA directory /home/anubhav/workspace/blinky/software/mvp_wrapper/hw
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Platform Path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-10-05.19:36:41::SCWMssOS::Checking the sw design at  /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::DEBUG:  swdes dump  /home/anubhav/workspace/blinky/software/design_1_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/home/anubhav/workspace/blinky/software/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_2||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+
+TRACE::2021-10-05.19:36:41::SCWMssOS::Sw design exists and opened at  /home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to open the hw design at /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA given /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA absoulate path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA directory /home/anubhav/workspace/blinky/software/mvp_wrapper/hw
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Platform Path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-10-05.19:36:41::SCWMssOS::Checking the sw design at  /home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::DEBUG:  swdes dump  /home/anubhav/workspace/blinky/software/design_1_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/home/anubhav/workspace/blinky/software/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_2||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+
+TRACE::2021-10-05.19:36:41::SCWMssOS::Sw design exists and opened at  /home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to open the hw design at /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA given /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA absoulate path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA directory /home/anubhav/workspace/blinky/software/mvp_wrapper/hw
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Platform Path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-10-05.19:36:41::SCWMssOS::Checking the sw design at  /home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::DEBUG:  swdes dump  /home/anubhav/workspace/blinky/software/design_1_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/home/anubhav/workspace/blinky/software/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_2||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+
+TRACE::2021-10-05.19:36:41::SCWMssOS::Sw design exists and opened at  /home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to open the hw design at /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA given /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA absoulate path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform::DSA directory /home/anubhav/workspace/blinky/software/mvp_wrapper/hw
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Platform Path /home/anubhav/workspace/blinky/software/mvp_wrapper/hw/mvp_wrapper.xsa
+TRACE::2021-10-05.19:36:41::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2021-10-05.19:36:41::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2021-10-05.19:36:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-10-05.19:36:41::SCWMssOS::Checking the sw design at  /home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWMssOS::DEBUG:  swdes dump  /home/anubhav/workspace/blinky/software/design_1_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+/home/anubhav/workspace/blinky/software/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_2||
+/home/anubhav/workspace/blinky/software/mvp_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+
+TRACE::2021-10-05.19:36:41::SCWMssOS::Sw design exists and opened at  /home/anubhav/workspace/blinky/software/mvp_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2021-10-05.19:36:41::SCWWriter::formatted JSON is {
+	"platformName":	"mvp_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"mvp_wrapper",
+	"platHandOff":	"/home/anubhav/workspace/vivado/project_1/mvp_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/mvp_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"mvp_wrapper",
+	"systems":	[{
+			"systemName":	"mvp_wrapper",
+			"systemDesc":	"mvp_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"mvp_wrapper",
+			"sysActiveDom":	"standalone_ps7_cortexa9_0",
+			"sysDefaultDom":	"standalone_ps7_cortexa9_0",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.5",
+					"mssFile":	"",
+					"md5Digest":	"b532d39694d502b2e702835710231c3c",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.5", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_ps7_cortexa9_0",
+					"domainDispName":	"standalone_ps7_cortexa9_0",
+					"domainDesc":	"standalone_ps7_cortexa9_0",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"/tools/Xilinx/Vitis/2021.1/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt",
+					"qemuData":	"/tools/Xilinx/Vitis/2021.1/data/emulation/platforms/zynq/sw/a9_standalone/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.5",
+					"mssFile":	"",
+					"md5Digest":	"9bd7fb7e515ee1b31f43815399dbf932",
+					"compatibleApp":	"empty_application",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2021-10-05.19:36:41::SCWPlatform::updated the xpfm file.

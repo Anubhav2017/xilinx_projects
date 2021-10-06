@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="mvp_app" location="/home/anubhav/workspace/blinky/software/mvp_app" platform="/home/anubhav/workspace/blinky/software/mvp_wrapper/export/mvp_wrapper/mvp_wrapper.xpfm" platformUID="xilinx:::0.0(custom)" systemProject="mvp_app_system" sysConfig="mvp_wrapper" runtime="cpp" cpu="standalone_ps7_cortexa9_0" cpuInstance="ps7_cortexa9_0" os="standalone" language="CPP" mssSignature="1e15a01b52999a35163c99346e4368f1">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.1895710310" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.2110773594" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="empty_application"/>
+</sdkproject:SdkProject>

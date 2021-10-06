@@ -1,0 +1,305 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Tue Oct  5 19:30:16 2021
+# Process ID: 25267
+# Current directory: /home/anubhav/workspace/vivado/project_1/project_1.runs/design_1_auto_us_0_synth_1
+# Command line: vivado -log design_1_auto_us_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_auto_us_0.tcl
+# Log file: /home/anubhav/workspace/vivado/project_1/project_1.runs/design_1_auto_us_0_synth_1/design_1_auto_us_0.vds
+# Journal file: /home/anubhav/workspace/vivado/project_1/project_1.runs/design_1_auto_us_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source design_1_auto_us_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/anubhav/workspace/mvp/solution1'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2021.1/data/ip'.
+Command: synth_design -top design_1_auto_us_0 -part xc7z010clg400-2 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 25349
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2544.379 ; gain = 0.000 ; free physical = 1386 ; free virtual = 7265
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_0' [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_us_0/synth/design_1_auto_us_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'axi_dwidth_converter_v2_1_24_top' [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3d13/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:14462]
+INFO: [Synth 8-6157] synthesizing module 'axi_dwidth_converter_v2_1_24_axi_upsizer' [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3d13/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:7038]
+INFO: [Synth 8-6157] synthesizing module 'axi_dwidth_converter_v2_1_24_w_upsizer' [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3d13/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:5563]
+INFO: [Synth 8-6155] done synthesizing module 'axi_dwidth_converter_v2_1_24_w_upsizer' (1#1) [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3d13/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:5563]
+INFO: [Synth 8-6157] synthesizing module 'axi_dwidth_converter_v2_1_24_a_upsizer' [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3d13/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:3603]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_command_fifo' [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:655]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_command_fifo' (2#1) [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:655]
+INFO: [Synth 8-6155] done synthesizing module 'axi_dwidth_converter_v2_1_24_a_upsizer' (3#1) [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3d13/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:3603]
+INFO: [Synth 8-6157] synthesizing module 'axi_dwidth_converter_v2_1_24_r_upsizer' [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3d13/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:4653]
+INFO: [Synth 8-6155] done synthesizing module 'axi_dwidth_converter_v2_1_24_r_upsizer' (4#1) [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3d13/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:4653]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_24_axi_register_slice' [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/8f68/hdl/axi_register_slice_v2_1_vl_rfs.v:3726]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' (5#1) [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' (6#1) [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_24_axic_register_slice' [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/8f68/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_24_axic_register_slice' (7#1) [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/8f68/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_24_axic_register_slice__parameterized0' [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/8f68/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_24_axic_register_slice__parameterized0' (7#1) [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/8f68/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_24_axic_register_slice__parameterized1' [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/8f68/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_24_axic_register_slice__parameterized1' (7#1) [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/8f68/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_24_axic_register_slice__parameterized2' [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/8f68/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_24_axic_register_slice__parameterized2' (7#1) [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/8f68/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_24_axi_register_slice' (8#1) [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/8f68/hdl/axi_register_slice_v2_1_vl_rfs.v:3726]
+WARNING: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_24_axi_register_slice' is unconnected for instance 'mi_register_slice_inst' [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3d13/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:8475]
+WARNING: [Synth 8-7023] instance 'mi_register_slice_inst' of module 'axi_register_slice_v2_1_24_axi_register_slice' has 93 connections declared, but only 92 given [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3d13/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:8475]
+INFO: [Synth 8-6157] synthesizing module 'axi_dwidth_converter_v2_1_24_a_upsizer__parameterized0' [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3d13/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:3603]
+INFO: [Synth 8-6155] done synthesizing module 'axi_dwidth_converter_v2_1_24_a_upsizer__parameterized0' (8#1) [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3d13/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:3603]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_24_axi_register_slice__parameterized0' [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/8f68/hdl/axi_register_slice_v2_1_vl_rfs.v:3726]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' (8#1) [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' (8#1) [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_24_axic_register_slice__parameterized3' [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/8f68/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_24_axic_register_slice__parameterized3' (8#1) [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/8f68/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_24_axic_register_slice__parameterized4' [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/8f68/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_24_axic_register_slice__parameterized4' (8#1) [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/8f68/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_24_axic_register_slice__parameterized5' [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/8f68/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_24_axic_register_slice__parameterized5' (8#1) [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/8f68/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_24_axi_register_slice__parameterized0' (8#1) [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/8f68/hdl/axi_register_slice_v2_1_vl_rfs.v:3726]
+WARNING: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_24_axi_register_slice' is unconnected for instance 'si_register_slice_inst' [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3d13/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:7379]
+WARNING: [Synth 8-7023] instance 'si_register_slice_inst' of module 'axi_register_slice_v2_1_24_axi_register_slice' has 93 connections declared, but only 92 given [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3d13/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:7379]
+INFO: [Synth 8-6155] done synthesizing module 'axi_dwidth_converter_v2_1_24_axi_upsizer' (9#1) [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3d13/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:7038]
+INFO: [Synth 8-6155] done synthesizing module 'axi_dwidth_converter_v2_1_24_top' (10#1) [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3d13/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:14462]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_0' (11#1) [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_us_0/synth/design_1_auto_us_0.v:58]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2544.379 ; gain = 0.000 ; free physical = 2053 ; free virtual = 7988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2544.379 ; gain = 0.000 ; free physical = 2083 ; free virtual = 7993
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2544.379 ; gain = 0.000 ; free physical = 2083 ; free virtual = 7993
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2544.379 ; gain = 0.000 ; free physical = 2075 ; free virtual = 7985
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/anubhav/workspace/vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/anubhav/workspace/vivado/project_1/project_1.runs/design_1_auto_us_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/anubhav/workspace/vivado/project_1/project_1.runs/design_1_auto_us_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2576.281 ; gain = 0.000 ; free physical = 1941 ; free virtual = 7887
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2576.281 ; gain = 0.000 ; free physical = 1940 ; free virtual = 7886
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 2576.281 ; gain = 31.902 ; free physical = 2861 ; free virtual = 8779
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 2576.281 ; gain = 31.902 ; free physical = 2861 ; free virtual = 8779
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/anubhav/workspace/vivado/project_1/project_1.runs/design_1_auto_us_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 2576.281 ; gain = 31.902 ; free physical = 2861 ; free virtual = 8779
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 2576.281 ; gain = 31.902 ; free physical = 2846 ; free virtual = 8766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    8 Bit       Adders := 4     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 2     
+	   2 Input    3 Bit       Adders := 4     
++---Registers : 
+	               94 Bit    Registers := 2     
+	               87 Bit    Registers := 2     
+	               73 Bit    Registers := 2     
+	               68 Bit    Registers := 2     
+	               64 Bit    Registers := 1     
+	               38 Bit    Registers := 2     
+	               36 Bit    Registers := 2     
+	               30 Bit    Registers := 2     
+	                8 Bit    Registers := 18    
+	                5 Bit    Registers := 2     
+	                3 Bit    Registers := 6     
+	                2 Bit    Registers := 11    
+	                1 Bit    Registers := 53    
++---Muxes : 
+	   2 Input   73 Bit        Muxes := 2     
+	   2 Input   68 Bit        Muxes := 2     
+	   2 Input   64 Bit        Muxes := 6     
+	   2 Input   38 Bit        Muxes := 2     
+	   2 Input   36 Bit        Muxes := 2     
+	   2 Input   32 Bit        Muxes := 3     
+	   2 Input    8 Bit        Muxes := 22    
+	   8 Input    8 Bit        Muxes := 4     
+	   2 Input    3 Bit        Muxes := 11    
+	   8 Input    3 Bit        Muxes := 6     
+	   2 Input    2 Bit        Muxes := 7     
+	   2 Input    1 Bit        Muxes := 59    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 2576.281 ; gain = 31.902 ; free physical = 2147 ; free virtual = 8070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 2576.281 ; gain = 31.902 ; free physical = 2193 ; free virtual = 8117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 2576.281 ; gain = 31.902 ; free physical = 2088 ; free virtual = 8034
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 2576.281 ; gain = 31.902 ; free physical = 2027 ; free virtual = 7973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 2576.281 ; gain = 31.902 ; free physical = 1839 ; free virtual = 7776
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 2576.281 ; gain = 31.902 ; free physical = 1839 ; free virtual = 7776
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 2576.281 ; gain = 31.902 ; free physical = 1838 ; free virtual = 7775
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 2576.281 ; gain = 31.902 ; free physical = 1838 ; free virtual = 7775
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 2576.281 ; gain = 31.902 ; free physical = 1837 ; free virtual = 7774
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 2576.281 ; gain = 31.902 ; free physical = 1837 ; free virtual = 7774
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Dynamic Shift Register Report:
++------------+-------------------------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name                      | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+-------------------------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | USE_RTL_FIFO.data_srl_reg[31] | 30     | 30         | 0      | 30      | 0      | 0      | 0      | 
+|dsrl__2     | USE_RTL_FIFO.data_srl_reg[31] | 30     | 30         | 0      | 30      | 0      | 0      | 0      | 
++------------+-------------------------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |LUT1    |     5|
+|2     |LUT2    |    26|
+|3     |LUT3    |   113|
+|4     |LUT4    |    27|
+|5     |LUT5    |   134|
+|6     |LUT6    |   153|
+|7     |SRLC32E |    49|
+|8     |FDRE    |   624|
+|9     |FDSE    |     4|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 2576.281 ; gain = 31.902 ; free physical = 1837 ; free virtual = 7774
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 2576.281 ; gain = 0.000 ; free physical = 1889 ; free virtual = 7826
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 2576.289 ; gain = 31.902 ; free physical = 1889 ; free virtual = 7826
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2576.289 ; gain = 0.000 ; free physical = 1489 ; free virtual = 7426
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2576.289 ; gain = 0.000 ; free physical = 1078 ; free virtual = 7015
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 86cb1dc3
+INFO: [Common 17-83] Releasing license: Synthesis
+57 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:48 ; elapsed = 00:00:43 . Memory (MB): peak = 2576.289 ; gain = 32.023 ; free physical = 1167 ; free virtual = 7103
+INFO: [Common 17-1381] The checkpoint '/home/anubhav/workspace/vivado/project_1/project_1.runs/design_1_auto_us_0_synth_1/design_1_auto_us_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_auto_us_0, cache-ID = 5e87ab3b9eed0a06
+INFO: [Coretcl 2-1174] Renamed 13 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/anubhav/workspace/vivado/project_1/project_1.runs/design_1_auto_us_0_synth_1/design_1_auto_us_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_auto_us_0_utilization_synth.rpt -pb design_1_auto_us_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Oct  5 19:31:15 2021...

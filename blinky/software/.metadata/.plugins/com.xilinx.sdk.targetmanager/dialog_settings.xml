@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="blinky_system-bitFile" value="${project_loc:blinky}/_ide/bitstream/design_1_wrapper.bit"/>
+	<item key="blinky_system-bmmFile" value=""/>
+	<item key="blinky_system-target" value="Local"/>
+	<item key="blinky_system-device" value="Auto Detect"/>
+	<item key="blinky_system-partial_bit" value="false"/>
+	<item key="blinky_system-skip_rev_check" value="false"/>
+	<item key="programfpga.sdxproject" value="blinky_system"/>
+</section>

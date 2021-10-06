@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindInfo>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op icmp" ID="" IMPL="auto" LATENCY="0" OPTYPE="icmp" PRAGMA="" RTLNAME="icmp_ln9_fu_126_p2" SOURCE="hello.cpp:9" VARIABLE="icmp_ln9" MODULE="foo_Pipeline_VITIS_LOOP_9_1" LOOP="VITIS_LOOP_9_1" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="add_ln9_fu_132_p2" SOURCE="hello.cpp:9" VARIABLE="add_ln9" MODULE="foo_Pipeline_VITIS_LOOP_9_1" LOOP="VITIS_LOOP_9_1" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="add_ln11_fu_142_p2" SOURCE="hello.cpp:11" VARIABLE="add_ln11" MODULE="foo_Pipeline_VITIS_LOOP_9_1" LOOP="VITIS_LOOP_9_1" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="add_ln11_1_fu_158_p2" SOURCE="hello.cpp:11" VARIABLE="add_ln11_1" MODULE="foo_Pipeline_VITIS_LOOP_9_1" LOOP="VITIS_LOOP_9_1" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="add_ln11_2_fu_184_p2" SOURCE="hello.cpp:11" VARIABLE="add_ln11_2" MODULE="foo_Pipeline_VITIS_LOOP_9_1" LOOP="VITIS_LOOP_9_1" DSP="0" BRAM="0" URAM="0"/>
+</BindInfo>

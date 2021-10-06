@@ -1,0 +1,41 @@
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2021.1/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'anubhav' on host 'timeMachine' (Linux_x86_64 version 4.15.0-142-generic) on Sat Oct 02 11:52:45 IST 2021
+INFO: [HLS 200-10] On os Ubuntu 16.04.7 LTS
+INFO: [HLS 200-10] In directory '/home/anubhav/workspace'
+Sourcing Tcl script '/home/anubhav/workspace/mvp/solution1/export.tcl'
+INFO: [HLS 200-1510] Running: open_project mvp 
+INFO: [HLS 200-10] Opening project '/home/anubhav/workspace/mvp'.
+INFO: [HLS 200-1510] Running: set_top foo 
+INFO: [HLS 200-1510] Running: add_files hello.cpp 
+INFO: [HLS 200-10] Adding design file 'hello.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb test.cpp 
+INFO: [HLS 200-10] Adding test bench file 'test.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution '/home/anubhav/workspace/mvp/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.5ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010-clg400-2'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.1;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z010clg400-2 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 0.5 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2021.1/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Sat Oct  2 11:53:00 2021...
+INFO: [HLS 200-802] Generated output file mvp/solution1/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 16.05 seconds. CPU system time: 0.78 seconds. Elapsed time: 16.46 seconds; current allocated memory: 209.202 MB.
