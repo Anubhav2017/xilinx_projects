@@ -1,0 +1,62 @@
+01:34:38 INFO  : Launching XSCT server: xsct -n  -interactive /home/anubhav/workspace/arr_add/vitis_ws/temp_xsdb_launch_script.tcl
+01:34:43 INFO  : Registering command handlers for Vitis TCF services
+01:34:45 INFO  : XSCT server has started successfully.
+01:34:45 INFO  : Successfully done setting XSCT server connection channel  
+01:34:46 INFO  : plnx-install-location is set to ''
+01:34:46 INFO  : Successfully done setting workspace for the tool. 
+01:34:46 INFO  : Successfully done query RDI_DATADIR 
+01:34:47 INFO  : Platform repository initialization has completed.
+01:37:10 INFO  : Result from executing command 'getProjects': vadd_hw
+01:37:10 INFO  : Result from executing command 'getPlatforms': ULTRA96V2|/opt/xilinx/platforms/ULTRA96V2/ULTRA96V2.xpfm;u96v2_sbc_base|/opt/xilinx/platforms/u96v2_sbc_base/u96v2_sbc_base.xpfm
+01:37:10 WARN  : An unexpected exception occurred in the module 'platform project logging'
+01:37:10 INFO  : Platform 'vadd_hw' is added to custom repositories.
+01:37:19 INFO  : Platform 'vadd_hw' is added to custom repositories.
+01:41:50 INFO  : Result from executing command 'getProjects': vadd_hw
+01:41:50 INFO  : Result from executing command 'getPlatforms': ULTRA96V2|/opt/xilinx/platforms/ULTRA96V2/ULTRA96V2.xpfm;u96v2_sbc_base|/opt/xilinx/platforms/u96v2_sbc_base/u96v2_sbc_base.xpfm;vadd_hw|/home/anubhav/workspace/arr_add/vitis_ws/vadd_hw/export/vadd_hw/vadd_hw.xpfm
+01:41:53 INFO  : Checking for BSP changes to sync application flags for project 'arr_add'...
+01:42:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:42:09 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+01:42:09 INFO  : 'jtag frequency' command is executed.
+01:42:09 INFO  : Context for 'APU' is selected.
+01:42:09 INFO  : System reset is completed.
+01:42:12 INFO  : 'after 3000' command is executed.
+01:42:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+01:42:15 INFO  : Device configured successfully with "/home/anubhav/workspace/arr_add/vitis_ws/arr_add/_ide/bitstream/vadd_hw.bit"
+01:42:15 INFO  : Context for 'APU' is selected.
+01:42:15 INFO  : Hardware design and registers information is loaded from '/home/anubhav/workspace/arr_add/vitis_ws/vadd_hw/export/vadd_hw/hw/vadd_hw.xsa'.
+01:42:15 INFO  : 'configparams force-mem-access 1' command is executed.
+01:42:15 INFO  : Context for 'APU' is selected.
+01:42:15 INFO  : Sourcing of '/home/anubhav/workspace/arr_add/vitis_ws/arr_add/_ide/psinit/ps7_init.tcl' is done.
+01:42:16 INFO  : 'ps7_init' command is executed.
+01:42:16 INFO  : 'ps7_post_config' command is executed.
+01:42:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:42:16 INFO  : The application '/home/anubhav/workspace/arr_add/vitis_ws/arr_add/Debug/arr_add.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:42:16 INFO  : 'configparams force-mem-access 0' command is executed.
+01:42:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file /home/anubhav/workspace/arr_add/vitis_ws/arr_add/_ide/bitstream/vadd_hw.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/anubhav/workspace/arr_add/vitis_ws/vadd_hw/export/vadd_hw/hw/vadd_hw.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/anubhav/workspace/arr_add/vitis_ws/arr_add/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/anubhav/workspace/arr_add/vitis_ws/arr_add/Debug/arr_add.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:42:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:42:16 INFO  : 'con' command is executed.
+01:42:16 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+01:42:16 INFO  : Launch script is exported to file '/home/anubhav/workspace/arr_add/vitis_ws/arr_add_system/_ide/scripts/systemdebugger_arr_add_system_standalone.tcl'
+02:23:23 INFO  : Disconnected from the channel tcfchan#2.

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="dotmul" location="/home/anubhav/workspace/dot_mul/dotmul" platform="/home/anubhav/workspace/dot_mul/dot_mul/export/dot_mul/dot_mul.xpfm" platformUID="xilinx:pynq-z2::0.0(custom)" systemProject="dotmul_system" sysConfig="dot_mul" runtime="cpp" cpu="standalone_ps7_cortexa9_0" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="37af255add74b3ee73a6dca99cc7ee2e">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.1769682401">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.425379739" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>

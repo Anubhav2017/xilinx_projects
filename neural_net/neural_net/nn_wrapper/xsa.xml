@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root VersionMajor="1" VersionMinor="15">
+  <GenAppInfo Name="Vivado" Version="2020.2" CL="3064766" TimeStamp="Thu Dec 16 22:44:46 2021"/>
+  <DSA Vendor="xilinx" BoardId="pynq-z2" Name="name" VersionMajor="0" VersionMinor="0" Description="" FeatureRomTimestamp="0" DcpLogicFunctionStripped="false" DcpEncrypt="false" Unified="true" Fixed="false" DefaultOutputType="sd_card">
+    <Build UsesPR="false" PlatformState="pre_synth" AcceleratorBinaryContent="bitstream" ValidBinaryContentValues="dcp,bitstream" TopModuleName="design_1_wrapper"/>
+    <Board Name="tul.com.tw:pynq-z2:1.0" Vendor="tul.com.tw" Part="xc7z020clg400-1" BoardPart="tul.com.tw:pynq-z2:part0:1.0">
+      <Images>
+        <Img Type="HDPI" File="pynq_z2.jpg"/>
+        <Img Type="MDPI" File=""/>
+        <Img Type="LDPI" File=""/>
+      </Images>
+    </Board>
+    <Devices>
+      <Device Name="fpga0" Type="8" FpgaDevice="zynq:xc7z020:clg400:-1">
+        <Core Name="OCL_REGION_0" Type="clc_region" ComputeUnits="60" DRBDName="design_1.bd"/>
+      </Device>
+    </Devices>
+    <Files>
+      <File Type="HPFM" Name="nn_wrapper.hpfm"/>
+      <File Type="REBUILD_TCL" Name="prj/rebuild.tcl"/>
+      <File Type="IP_REPO_PATH" Name="iprepo"/>
+      <File Type="IP_CACHE_DIR" Name="ipcache"/>
+      <File Type="BOARD_REPO_PATH" Name="board"/>
+    </Files>
+  </DSA>
+</Root>

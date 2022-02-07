@@ -1,0 +1,1208 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 155.743 MB.
+INFO: [HLS 200-10] Analyzing design file 'vadd.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.47 seconds. CPU system time: 0.18 seconds. Elapsed time: 0.33 seconds; current allocated memory: 156.823 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'float_vadd(float*, float*, float*, int)' (vadd.cpp:6:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'float_vadd(float*, float*, float*, int)' (vadd.cpp:6:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'float_vadd(float*, float*, float*, int)' (vadd.cpp:6:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.9 seconds. CPU system time: 0.3 seconds. Elapsed time: 3.62 seconds; current allocated memory: 157.775 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 157.776 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 158.730 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-77] The top function 'float_vadd' (vadd.cpp:6) has no outputs. Possible cause(s) are: (1) Output parameters are passed by value; (2) intended outputs (parameters or global variables) are never written; (3) there are infinite loops.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 158.199 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.09 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.1 seconds; current allocated memory: 178.246 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 169.981 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'float_vadd' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'float_vadd' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 170.219 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 170.422 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'float_vadd' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'float_vadd/gmem' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'float_vadd/a' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'float_vadd/b' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'float_vadd/c' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'float_vadd/dimension' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'float_vadd' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'a', 'b', 'c', 'dimension' and 'return' to AXI-Lite port control.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWVALID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWVALID' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWREADY' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWADDR' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWADDR' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWID' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWLEN' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWLEN' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWSIZE' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWSIZE' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWBURST' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWBURST' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWLOCK' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWLOCK' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWCACHE' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWCACHE' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWPROT' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWPROT' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWQOS' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWQOS' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWREGION' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWREGION' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWUSER' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWUSER' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_WVALID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_WVALID' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_WREADY' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_WDATA' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_WDATA' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_WSTRB' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_WSTRB' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_WLAST' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_WLAST' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_WID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_WID' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_WUSER' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_WUSER' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARVALID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARVALID' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARREADY' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARADDR' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARADDR' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARID' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARLEN' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARLEN' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARSIZE' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARSIZE' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARBURST' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARBURST' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARLOCK' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARLOCK' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARCACHE' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARCACHE' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARPROT' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARPROT' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARQOS' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARQOS' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARREGION' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARREGION' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARUSER' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARUSER' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_RVALID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_RREADY' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_RREADY' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_RDATA' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_RLAST' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_RID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_RUSER' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_RRESP' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_BVALID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 155.743 MB.
+INFO: [HLS 200-10] Analyzing design file 'vadd.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.43 seconds. CPU system time: 0.17 seconds. Elapsed time: 0.3 seconds; current allocated memory: 156.823 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'float_vadd(float volatile*, float volatile*, float volatile*, int)' (vadd.cpp:6:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'float_vadd(float volatile*, float volatile*, float volatile*, int)' (vadd.cpp:6:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'float_vadd(float volatile*, float volatile*, float volatile*, int)' (vadd.cpp:6:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.95 seconds. CPU system time: 0.24 seconds. Elapsed time: 3.57 seconds; current allocated memory: 157.775 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 157.776 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 158.731 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-77] The top function 'float_vadd' (vadd.cpp:6) has no outputs. Possible cause(s) are: (1) Output parameters are passed by value; (2) intended outputs (parameters or global variables) are never written; (3) there are infinite loops.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 158.201 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 178.246 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 169.979 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'float_vadd' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'float_vadd' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 170.217 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 170.419 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'float_vadd' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'float_vadd/gmem' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'float_vadd/a' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'float_vadd/b' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'float_vadd/c' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'float_vadd/dimension' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'float_vadd' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'a', 'b', 'c', 'dimension' and 'return' to AXI-Lite port control.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWVALID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWVALID' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWREADY' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWADDR' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWADDR' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWID' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWLEN' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWLEN' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWSIZE' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWSIZE' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWBURST' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWBURST' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWLOCK' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWLOCK' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWCACHE' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWCACHE' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWPROT' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWPROT' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWQOS' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWQOS' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWREGION' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWREGION' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWUSER' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWUSER' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_WVALID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_WVALID' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_WREADY' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_WDATA' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_WDATA' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_WSTRB' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_WSTRB' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_WLAST' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_WLAST' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_WID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_WID' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_WUSER' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_WUSER' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARVALID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARVALID' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARREADY' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARADDR' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARADDR' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARID' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARLEN' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARLEN' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARSIZE' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARSIZE' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARBURST' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARBURST' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARLOCK' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARLOCK' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARCACHE' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARCACHE' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARPROT' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARPROT' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARQOS' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARQOS' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARREGION' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARREGION' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARUSER' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARUSER' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_RVALID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_RREADY' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_RREADY' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_RDATA' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_RLAST' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_RID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_RUSER' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_RRESP' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_BVALID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 155.796 MB.
+INFO: [HLS 200-10] Analyzing design file 'vadd.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.44 seconds. CPU system time: 0.16 seconds. Elapsed time: 0.31 seconds; current allocated memory: 156.939 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'float_vadd(float volatile*, float volatile*, float volatile*, int)' (vadd.cpp:6:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'float_vadd(float volatile*, float volatile*, float volatile*, int)' (vadd.cpp:6:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'float_vadd(float volatile*, float volatile*, float volatile*, int)' (vadd.cpp:6:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.92 seconds. CPU system time: 0.29 seconds. Elapsed time: 3.64 seconds; current allocated memory: 157.843 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 157.844 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 158.816 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-77] The top function 'float_vadd' (vadd.cpp:6) has no outputs. Possible cause(s) are: (1) Output parameters are passed by value; (2) intended outputs (parameters or global variables) are never written; (3) there are infinite loops.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 158.266 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.11 seconds. CPU system time: 0 seconds. Elapsed time: 0.12 seconds; current allocated memory: 178.348 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 170.136 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'float_vadd' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'float_vadd' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 170.329 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 170.472 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'float_vadd' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'float_vadd/gmem' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'float_vadd/a' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'float_vadd/b' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'float_vadd/c' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'float_vadd/dimension' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'float_vadd' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'a', 'b', 'c', 'dimension' and 'return' to AXI-Lite port control.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWVALID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWVALID' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWREADY' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWADDR' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWADDR' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWID' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWLEN' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWLEN' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWSIZE' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWSIZE' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWBURST' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWBURST' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWLOCK' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWLOCK' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWCACHE' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWCACHE' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWPROT' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWPROT' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWQOS' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWQOS' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWREGION' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWREGION' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWUSER' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWUSER' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_WVALID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_WVALID' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_WREADY' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_WDATA' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_WDATA' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_WSTRB' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_WSTRB' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_WLAST' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_WLAST' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_WID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_WID' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_WUSER' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_WUSER' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARVALID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARVALID' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARREADY' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARADDR' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARADDR' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARID' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARLEN' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARLEN' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARSIZE' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARSIZE' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARBURST' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARBURST' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARLOCK' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARLOCK' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARCACHE' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARCACHE' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARPROT' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARPROT' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARQOS' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARQOS' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARREGION' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARREGION' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARUSER' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARUSER' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_RVALID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_RREADY' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_RREADY' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_RDATA' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_RLAST' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_RID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_RUSER' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_RRESP' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_BVALID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 155.796 MB.
+INFO: [HLS 200-10] Analyzing design file 'vadd.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.47 seconds. CPU system time: 0.16 seconds. Elapsed time: 0.32 seconds; current allocated memory: 156.939 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'float_vadd(float volatile*, float volatile*, float volatile*, int)' (vadd.cpp:6:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'float_vadd(float volatile*, float volatile*, float volatile*, int)' (vadd.cpp:6:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'float_vadd(float volatile*, float volatile*, float volatile*, int)' (vadd.cpp:6:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.99 seconds. CPU system time: 0.25 seconds. Elapsed time: 3.68 seconds; current allocated memory: 157.844 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 157.845 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 158.816 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-77] The top function 'float_vadd' (vadd.cpp:6) has no outputs. Possible cause(s) are: (1) Output parameters are passed by value; (2) intended outputs (parameters or global variables) are never written; (3) there are infinite loops.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 158.266 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 178.348 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 170.139 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'float_vadd' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'float_vadd' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 170.333 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 170.476 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'float_vadd' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'float_vadd/gmem' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'float_vadd/a' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'float_vadd/b' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'float_vadd/c' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'float_vadd/dimension' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'float_vadd' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'a', 'b', 'c', 'dimension' and 'return' to AXI-Lite port control.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWVALID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWVALID' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWREADY' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWADDR' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWADDR' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWID' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWLEN' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWLEN' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWSIZE' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWSIZE' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWBURST' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWBURST' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWLOCK' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWLOCK' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWCACHE' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWCACHE' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWPROT' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWPROT' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWQOS' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWQOS' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWREGION' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWREGION' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWUSER' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWUSER' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_WVALID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_WVALID' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_WREADY' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_WDATA' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_WDATA' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_WSTRB' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_WSTRB' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_WLAST' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_WLAST' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_WID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_WID' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_WUSER' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_WUSER' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARVALID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARVALID' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARREADY' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARADDR' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARADDR' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARID' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARLEN' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARLEN' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARSIZE' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARSIZE' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARBURST' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARBURST' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARLOCK' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARLOCK' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARCACHE' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARCACHE' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARPROT' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARPROT' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARQOS' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARQOS' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARREGION' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARREGION' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARUSER' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARUSER' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_RVALID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_RREADY' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_RREADY' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_RDATA' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_RLAST' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_RID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_RUSER' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_RRESP' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_BVALID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 155.796 MB.
+INFO: [HLS 200-10] Analyzing design file 'vadd.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.43 seconds. CPU system time: 0.13 seconds. Elapsed time: 0.28 seconds; current allocated memory: 156.939 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'float_vadd(float volatile*, float volatile*, float volatile*, int)' (vadd.cpp:6:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'float_vadd(float volatile*, float volatile*, float volatile*, int)' (vadd.cpp:6:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'float_vadd(float volatile*, float volatile*, float volatile*, int)' (vadd.cpp:6:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 4.09 seconds. CPU system time: 0.28 seconds. Elapsed time: 3.74 seconds; current allocated memory: 157.844 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 157.845 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.02 seconds; current allocated memory: 158.816 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-77] The top function 'float_vadd' (vadd.cpp:6) has no outputs. Possible cause(s) are: (1) Output parameters are passed by value; (2) intended outputs (parameters or global variables) are never written; (3) there are infinite loops.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 158.268 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.1 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 178.348 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 170.138 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'float_vadd' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'float_vadd' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 170.330 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 170.473 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'float_vadd' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'float_vadd/gmem' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'float_vadd/a' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'float_vadd/b' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'float_vadd/c' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'float_vadd/dimension' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'float_vadd' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'a', 'b', 'c', 'dimension' and 'return' to AXI-Lite port control.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWVALID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWVALID' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWREADY' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWADDR' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWADDR' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWID' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWLEN' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWLEN' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWSIZE' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWSIZE' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWBURST' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWBURST' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWLOCK' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWLOCK' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWCACHE' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWCACHE' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWPROT' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWPROT' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWQOS' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWQOS' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWREGION' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWREGION' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWUSER' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWUSER' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_WVALID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_WVALID' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_WREADY' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_WDATA' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_WDATA' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_WSTRB' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_WSTRB' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_WLAST' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_WLAST' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_WID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_WID' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_WUSER' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_WUSER' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARVALID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARVALID' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARREADY' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARADDR' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARADDR' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARID' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARLEN' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARLEN' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARSIZE' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARSIZE' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARBURST' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARBURST' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARLOCK' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARLOCK' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARCACHE' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARCACHE' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARPROT' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARPROT' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARQOS' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARQOS' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARREGION' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARREGION' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARUSER' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARUSER' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_RVALID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_RREADY' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_RREADY' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_RDATA' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_RLAST' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_RID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_RUSER' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_RRESP' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_BVALID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 155.796 MB.
+INFO: [HLS 200-10] Analyzing design file 'vadd.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.44 seconds. CPU system time: 0.17 seconds. Elapsed time: 0.3 seconds; current allocated memory: 156.939 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'float_vadd(int volatile*, int volatile*, int volatile*, int)' (vadd.cpp:6:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'float_vadd(int volatile*, int volatile*, int volatile*, int)' (vadd.cpp:6:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'float_vadd(int volatile*, int volatile*, int volatile*, int)' (vadd.cpp:6:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 4.06 seconds. CPU system time: 0.27 seconds. Elapsed time: 3.72 seconds; current allocated memory: 157.843 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 157.844 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.01 seconds; current allocated memory: 158.815 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-77] The top function 'float_vadd' (vadd.cpp:6) has no outputs. Possible cause(s) are: (1) Output parameters are passed by value; (2) intended outputs (parameters or global variables) are never written; (3) there are infinite loops.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 158.266 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.1 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.11 seconds; current allocated memory: 178.347 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 170.138 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'float_vadd' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'float_vadd' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.01 seconds; current allocated memory: 170.330 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 170.473 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'float_vadd' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'float_vadd/gmem' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'float_vadd/a' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'float_vadd/b' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'float_vadd/c' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'float_vadd/dimension' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'float_vadd' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'a', 'b', 'c', 'dimension' and 'return' to AXI-Lite port control.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWVALID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWVALID' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWREADY' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWADDR' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWADDR' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWID' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWLEN' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWLEN' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWSIZE' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWSIZE' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWBURST' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWBURST' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWLOCK' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWLOCK' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWCACHE' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWCACHE' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWPROT' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWPROT' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWQOS' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWQOS' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWREGION' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWREGION' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWUSER' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWUSER' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_WVALID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_WVALID' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_WREADY' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_WDATA' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_WDATA' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_WSTRB' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_WSTRB' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_WLAST' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_WLAST' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_WID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_WID' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_WUSER' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_WUSER' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARVALID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARVALID' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARREADY' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARADDR' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARADDR' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARID' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARLEN' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARLEN' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARSIZE' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARSIZE' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARBURST' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARBURST' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARLOCK' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARLOCK' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARCACHE' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARCACHE' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARPROT' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARPROT' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARQOS' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARQOS' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARREGION' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARREGION' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARUSER' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARUSER' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_RVALID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_RREADY' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_RREADY' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_RDATA' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_RLAST' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_RID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_RUSER' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_RRESP' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_BVALID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: set_directive_top -name float_vadd float_vadd 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 155.748 MB.
+INFO: [HLS 200-10] Analyzing design file 'vadd.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.51 seconds. CPU system time: 0.18 seconds. Elapsed time: 0.34 seconds; current allocated memory: 156.907 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'float_vadd(int volatile*, int volatile*, int volatile*, int)' (vadd.cpp:6:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'float_vadd(int volatile*, int volatile*, int volatile*, int)' (vadd.cpp:6:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'float_vadd(int volatile*, int volatile*, int volatile*, int)' (vadd.cpp:6:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.94 seconds. CPU system time: 0.3 seconds. Elapsed time: 3.69 seconds; current allocated memory: 157.890 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 157.891 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 158.831 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-77] The top function 'float_vadd' (vadd.cpp:6) has no outputs. Possible cause(s) are: (1) Output parameters are passed by value; (2) intended outputs (parameters or global variables) are never written; (3) there are infinite loops.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 158.285 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.1 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.11 seconds; current allocated memory: 178.347 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 170.137 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'float_vadd' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'float_vadd' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 170.345 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 170.489 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'float_vadd' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'float_vadd/gmem' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'float_vadd/a' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'float_vadd/b' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'float_vadd/c' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'float_vadd/dimension' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'float_vadd' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'a', 'b', 'c', 'dimension' and 'return' to AXI-Lite port control.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWVALID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWVALID' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWREADY' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWADDR' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWADDR' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWID' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWLEN' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWLEN' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWSIZE' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWSIZE' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWBURST' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWBURST' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWLOCK' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWLOCK' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWCACHE' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWCACHE' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWPROT' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWPROT' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWQOS' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWQOS' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWREGION' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWREGION' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_AWUSER' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_AWUSER' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_WVALID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_WVALID' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_WREADY' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_WDATA' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_WDATA' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_WSTRB' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_WSTRB' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_WLAST' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_WLAST' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_WID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_WID' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_WUSER' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_WUSER' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARVALID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARVALID' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARREADY' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARADDR' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARADDR' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARID' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARLEN' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARLEN' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARSIZE' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARSIZE' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARBURST' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARBURST' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARLOCK' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARLOCK' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARCACHE' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARCACHE' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARPROT' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARPROT' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARQOS' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARQOS' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARREGION' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARREGION' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_ARUSER' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_ARUSER' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_RVALID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_RREADY' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'float_vadd/m_axi_gmem_RREADY' to 0.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_RDATA' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_RLAST' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_RID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_RUSER' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_RRESP' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'float_vadd/m_axi_gmem_BVALID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================

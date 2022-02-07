@@ -1,0 +1,6 @@
+forward_fcc_fadd_32ns_32ns_32_5_full_dsp_1
+forward_fcc_fmul_32ns_32ns_32_4_max_dsp_1
+forward_fcc_CTRL_s_axi
+forward_fcc_control_s_axi
+forward_fcc_gmem_m_axi
+forward_fcc

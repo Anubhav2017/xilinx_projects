@@ -1,0 +1,7 @@
+/*vadd2_platform*/
+the_ROM_image:
+{
+  [bootloader]<vadd2_platform/boot/fsbl.elf>
+   <bitstream> 
+  <elf,ps7_cortexa9_0>
+}

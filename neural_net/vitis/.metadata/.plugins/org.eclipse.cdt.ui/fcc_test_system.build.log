@@ -1,0 +1,6 @@
+00:41:29 **** Incremental Build of configuration Emulation-SW for project fcc_test_system ****
+make all 
+Package not supported, if the system project is in Emulation Target, and only Baremetal Or Embedded Linux Applications present
+
+00:41:29 Build Finished (took 73ms)
+

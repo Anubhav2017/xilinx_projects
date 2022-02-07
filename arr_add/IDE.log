@@ -1,0 +1,30 @@
+20:22:44 INFO  : Launching XSCT server: xsct -n  -interactive /home/anubhav/workspace/arr_add/temp_xsdb_launch_script.tcl
+20:22:45 INFO  : Registering command handlers for Vitis TCF services
+20:22:50 INFO  : Platform repository initialization has completed.
+20:22:50 INFO  : XSCT server has started successfully.
+20:22:51 INFO  : plnx-install-location is set to ''
+20:22:51 INFO  : Successfully done setting XSCT server connection channel  
+20:22:51 INFO  : Successfully done query RDI_DATADIR 
+20:22:51 INFO  : Successfully done setting workspace for the tool. 
+20:24:10 ERROR : An exception occurred while trying to create platform project 'vadd'
+20:24:10 INFO  : Platform creation cancelled by the user.
+20:25:12 ERROR : An exception occurred while trying to create platform project 'vadd'
+20:25:12 INFO  : Platform creation cancelled by the user.
+20:26:34 INFO  : Launching XSCT server: xsct -n  -interactive /home/anubhav/workspace/arr_add/temp_xsdb_launch_script.tcl
+20:26:34 INFO  : Registering command handlers for Vitis TCF services
+20:26:39 INFO  : XSCT server has started successfully.
+20:26:39 INFO  : plnx-install-location is set to ''
+20:26:39 INFO  : Successfully done setting XSCT server connection channel  
+20:26:39 INFO  : Successfully done setting workspace for the tool. 
+20:26:39 INFO  : Successfully done query RDI_DATADIR 
+20:26:39 INFO  : Platform repository initialization has completed.
+20:26:56 INFO  : Launching XSCT server: xsct -n  -interactive /home/anubhav/workspace/arr_add/temp_xsdb_launch_script.tcl
+20:26:57 INFO  : Registering command handlers for Vitis TCF services
+20:27:01 INFO  : Platform repository initialization has completed.
+20:27:02 INFO  : XSCT server has started successfully.
+20:27:02 INFO  : plnx-install-location is set to ''
+20:27:02 INFO  : Successfully done setting XSCT server connection channel  
+20:27:02 INFO  : Successfully done query RDI_DATADIR 
+20:27:02 INFO  : Successfully done setting workspace for the tool. 
+20:27:42 ERROR : An exception occurred while trying to create platform project 'vadd'
+20:27:42 INFO  : Platform creation cancelled by the user.

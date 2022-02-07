@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="fcc_test" location="/home/anubhav/workspace/neural_net/vitis/fcc_test" platform="/home/anubhav/workspace/neural_net/vitis/nn_wrapper/export/nn_wrapper/nn_wrapper.xpfm" platformUID="xilinx:pynq-z2:name:0.0(custom)" systemProject="fcc_test_system" sysConfig="nn_wrapper" runtime="cpp" cpu="standalone_ps7_cortexa9_0" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="aa8cedc98d1740467ac2cd0dc1ff37aa">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.636903917">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.1090820412" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="vitis_app_system-bitFile" value="${project_loc:vitis_app}/_ide/bitstream/vadd.bit"/>
+	<item key="vitis_app_system-bmmFile" value=""/>
+	<item key="vitis_app_system-target" value="Local"/>
+	<item key="vitis_app_system-device" value="Auto Detect"/>
+	<item key="vitis_app_system-partial_bit" value="false"/>
+	<item key="vitis_app_system-skip_rev_check" value="false"/>
+	<item key="programfpga.sdxproject" value="vitis_app_system"/>
+	<item key="devices_info_Local" value="{&quot;cables&quot;:[{&quot;name&quot;:&quot;Xilinx TUL 1234-tulA&quot;,&quot;indexContextMap&quot;:{&quot;2&quot;:&quot;jsn-TUL-1234-tulA-4ba00477-0&quot;,&quot;3&quot;:&quot;jsn-TUL-1234-tulA-23727093-0&quot;}}]}"/>
+</section>

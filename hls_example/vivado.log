@@ -1,0 +1,546 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jan 27 16:24:50 2022
+# Process ID: 27823
+# Current directory: /home/anubhav/workspace/hls_example
+# Command line: vivado
+# Log file: /home/anubhav/workspace/hls_example/vivado.log
+# Journal file: /home/anubhav/workspace/hls_example/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/anubhav/workspace'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository '/home/anubhav/workspace' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is '/home/anubhav/workspace/vadd_2/vivado/vadd_2'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:hls:forward_fcc:1.0'. The one found in IP location '/home/anubhav/workspace/neural_net/neural_net/nn_wrapper/iprepo/ip_repo/forward_fcc/solution1/impl/ip' will take precedence over the same IP in location /home/anubhav/workspace/ip_repo/forward_fcc/solution1/impl/ip
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'design_1.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+design_1_vadd_0_0
+
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:13 . Memory (MB): peak = 7415.629 ; gain = 83.312 ; free physical = 1897 ; free virtual = 7913
+open_bd_design {/home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.srcs/sources_1/bd/design_1/design_1.bd}
+Reading block design file </home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.srcs/sources_1/bd/design_1/design_1.bd>...
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:hls:vadd:1.0 - vadd_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding component instance block -- xilinx.com:ip:axi_bram_ctrl:4.1 - axi_bram_ctrl_0
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - axi_bram_ctrl_0_bram
+Excluding slave segment /vadd_0/s_axi_control/Reg from address space /vadd_0/Data_m_axi_gmem.
+Successfully read diagram <design_1> from block design file </home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:09 . Memory (MB): peak = 8873.371 ; gain = 1434.727 ; free physical = 1726 ; free virtual = 7822
+update_compile_order -fileset sources_1
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:hls:vadd:1.0 [get_ips  design_1_vadd_0_0] -log ip_upgrade.log
+Upgrading '/home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3422] Upgraded design_1_vadd_0_0 (Vadd 1.0) from revision 2112345249 to revision 2112350784
+WARNING: [IP_Flow 19-4706] Upgraded port 'm_axi_gmem_ARADDR' width 64 differs from original width 32
+WARNING: [IP_Flow 19-4706] Upgraded port 'm_axi_gmem_AWADDR' width 64 differs from original width 32
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'design_1_vadd_0_0'. These changes may impact your design.
+Excluding slave segment /vadd_0/s_axi_control/Reg from address space /vadd_0/Data_m_axi_gmem.
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'design_1_vadd_0_0' has identified issues that may require user intervention. Please review the upgrade log '/home/anubhav/workspace/vadd_2/vivado/vadd_2/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+Wrote  : </home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : </home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to '/home/anubhav/workspace/vadd_2/vivado/vadd_2/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips design_1_vadd_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.srcs/sources_1/bd/design_1/design_1.bd]
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_M_AXI_GP0_FREQMHZ(10) on '/processing_system7_0' with propagated value(100). Command ignored
+Wrote  : </home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.srcs/sources_1/bd/design_1/design_1.bd> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/s00_couplers/auto_pc/m_axi_rid'(12) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_rid'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/s00_couplers/auto_pc/m_axi_bid'(12) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_bid'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_awid'(13) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_awid'(12) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_arid'(13) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_arid'(12) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_arlock'(1) to pin: '/ps7_0_axi_periph/s01_couplers/M_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_awlock'(1) to pin: '/ps7_0_axi_periph/s01_couplers/M_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_bram_ctrl_0_bram/addra'(32) to pin: '/axi_bram_ctrl_0/bram_addr_a'(13) - Only lower order bits will be connected.
+VHDL Output written to : /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.gen/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/s00_couplers/auto_pc/m_axi_rid'(12) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_rid'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/s00_couplers/auto_pc/m_axi_bid'(12) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_bid'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_awid'(13) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_awid'(12) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_arid'(13) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_arid'(12) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_arlock'(1) to pin: '/ps7_0_axi_periph/s01_couplers/M_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_awlock'(1) to pin: '/ps7_0_axi_periph/s01_couplers/M_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_bram_ctrl_0_bram/addra'(32) to pin: '/axi_bram_ctrl_0/bram_addr_a'(13) - Only lower order bits will be connected.
+VHDL Output written to : /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.gen/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block vadd_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m00_couplers/auto_pc .
+Exporting to file /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.gen/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.gen/sources_1/bd/design_1/synth/design_1.hwdef
+generate_target: Time (s): cpu = 00:00:22 ; elapsed = 00:00:15 . Memory (MB): peak = 9039.414 ; gain = 0.000 ; free physical = 1466 ; free virtual = 7594
+catch { config_ip_cache -export [get_ips -all design_1_vadd_0_0] }
+catch { config_ip_cache -export [get_ips -all design_1_xbar_0] }
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_1] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_1, cache-ID = 35725c0547d67d7e; cache size = 5.286 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_0] }
+export_ip_user_files -of_objects [get_files /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs design_1_xbar_0_synth_1 design_1_vadd_0_0_synth_1 design_1_auto_pc_0_synth_1 -jobs 3
+[Thu Jan 27 16:26:23 2022] Launched design_1_xbar_0_synth_1, design_1_vadd_0_0_synth_1, design_1_auto_pc_0_synth_1...
+Run output will be captured here:
+design_1_xbar_0_synth_1: /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.runs/design_1_xbar_0_synth_1/runme.log
+design_1_vadd_0_0_synth_1: /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.runs/design_1_vadd_0_0_synth_1/runme.log
+design_1_auto_pc_0_synth_1: /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.runs/design_1_auto_pc_0_synth_1/runme.log
+export_simulation -of_objects [get_files /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.srcs/sources_1/bd/design_1/design_1.bd] -directory /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.ip_user_files/sim_scripts -ip_user_files_dir /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.ip_user_files -ipstatic_source_dir /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.cache/compile_simlib/modelsim} {questa=/home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.cache/compile_simlib/questa} {ies=/home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.cache/compile_simlib/ies} {xcelium=/home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.cache/compile_simlib/xcelium} {vcs=/home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.cache/compile_simlib/vcs} {riviera=/home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+validate_bd_design -force
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_M_AXI_GP0_FREQMHZ(10) on '/processing_system7_0' with propagated value(100). Command ignored
+validate_bd_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 9123.438 ; gain = 0.000 ; free physical = 1553 ; free virtual = 5669
+regenerate_bd_layout
+delete_bd_objs [get_bd_intf_nets ps7_0_axi_periph_M00_AXI] [get_bd_intf_nets vadd_0_m_axi_gmem] [get_bd_cells vadd_0]
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/anubhav/workspace'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository '/home/anubhav/workspace' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is '/home/anubhav/workspace/vadd_2/vivado/vadd_2'.)
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:hls:forward_fcc:1.0'. The one found in IP location '/home/anubhav/workspace/neural_net/neural_net/nn_wrapper/iprepo/ip_repo/forward_fcc/solution1/impl/ip' will take precedence over the same IP in location /home/anubhav/workspace/ip_repo/forward_fcc/solution1/impl/ip
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:vadd:1.0 vadd_0
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/vadd_0/m_axi_gmem} Slave {/axi_bram_ctrl_0/S_AXI} ddr_seg {Auto} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins vadd_0/m_axi_gmem]
+Slave segment '/axi_bram_ctrl_0/S_AXI/Mem0' is being assigned into address space '/vadd_0/Data_m_axi_gmem' at <0x4001_0000 [ 8K ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/vadd_0/s_axi_control} ddr_seg {Auto} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins vadd_0/s_axi_control]
+Slave segment '/vadd_0/s_axi_control/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x4000_0000 [ 64K ]>.
+Slave segment '/vadd_0/s_axi_control/Reg' is being assigned into address space '/vadd_0/Data_m_axi_gmem' at <0x4000_0000 [ 64K ]>.
+INFO: [BD 41-1051] The usage register of slave segment /vadd_0/s_axi_control/Reg does not match the usage memory of address space /vadd_0/Data_m_axi_gmem and will be excluded. Use the include_bd_addr_seg command to override this precaution and make the slave segment visible within this address space.
+Excluding slave segment /vadd_0/s_axi_control/Reg from address space /vadd_0/Data_m_axi_gmem.
+endgroup
+regenerate_bd_layout
+set_property range 16K [get_bd_addr_segs {processing_system7_0/Data/SEG_axi_bram_ctrl_0_Mem0}]
+set_property range 16K [get_bd_addr_segs {vadd_0/Data_m_axi_gmem/SEG_axi_bram_ctrl_0_Mem0}]
+save_bd_design
+Wrote  : </home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : </home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+reset_run design_1_xbar_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_M_AXI_GP0_FREQMHZ(10) on '/processing_system7_0' with propagated value(100). Command ignored
+Wrote  : </home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.srcs/sources_1/bd/design_1/design_1.bd> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/s00_couplers/auto_pc/m_axi_rid'(12) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_rid'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/s00_couplers/auto_pc/m_axi_bid'(12) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_bid'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_awid'(13) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_awid'(12) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_arid'(13) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_arid'(12) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_arlock'(1) to pin: '/ps7_0_axi_periph/s01_couplers/M_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_awlock'(1) to pin: '/ps7_0_axi_periph/s01_couplers/M_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_bram_ctrl_0_bram/addra'(32) to pin: '/axi_bram_ctrl_0/bram_addr_a'(14) - Only lower order bits will be connected.
+VHDL Output written to : /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.gen/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/s00_couplers/auto_pc/m_axi_rid'(12) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_rid'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/s00_couplers/auto_pc/m_axi_bid'(12) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_bid'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_awid'(13) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_awid'(12) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_arid'(13) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_arid'(12) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_arlock'(1) to pin: '/ps7_0_axi_periph/s01_couplers/M_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_awlock'(1) to pin: '/ps7_0_axi_periph/s01_couplers/M_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_bram_ctrl_0_bram/addra'(32) to pin: '/axi_bram_ctrl_0/bram_addr_a'(14) - Only lower order bits will be connected.
+VHDL Output written to : /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.gen/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_0_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block vadd_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m00_couplers/auto_pc .
+Exporting to file /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.gen/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.gen/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_auto_pc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_auto_pc_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_axi_bram_ctrl_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_axi_bram_ctrl_0_bram_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_vadd_0_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_xbar_0
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_1, cache-ID = 35725c0547d67d7e; cache size = 11.122 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_bram_ctrl_0_bram_0, cache-ID = 6d365e7596f90ff0; cache size = 14.956 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_vadd_0_1, cache-ID = 5db1224acefdb517; cache size = 11.122 MB.
+[Thu Jan 27 16:31:19 2022] Launched design_1_axi_bram_ctrl_0_0_synth_1, design_1_xbar_0_synth_1, design_1_auto_pc_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_axi_bram_ctrl_0_0_synth_1: /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.runs/design_1_axi_bram_ctrl_0_0_synth_1/runme.log
+design_1_xbar_0_synth_1: /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.runs/design_1_xbar_0_synth_1/runme.log
+design_1_auto_pc_0_synth_1: /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.runs/design_1_auto_pc_0_synth_1/runme.log
+synth_1: /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.runs/synth_1/runme.log
+[Thu Jan 27 16:31:19 2022] Launched impl_1...
+Run output will be captured here: /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:21 ; elapsed = 00:00:17 . Memory (MB): peak = 9396.180 ; gain = 127.180 ; free physical = 3370 ; free virtual = 7577
+write_hw_platform -fixed -include_bit -force -file /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2_wrapper.xsa
+INFO: [Vivado 12-4895] Creating Hardware Platform: /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2_wrapper.xsa ...
+INFO: [Hsi 55-2053] elapsed time for repository (/tools/Xilinx/Vivado/2020.2/data/embeddedsw) loading 0 seconds
+INFO: [Vivado 12-12467] The Hardware Platform can be used for Hardware
+INFO: [Vivado 12-4896] Successfully created Hardware Platform: /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2_wrapper.xsa
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: /home/anubhav/workspace/arr_add/arr_add/solution1/impl/ip/component.xml. It will be created.
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/anubhav/workspace'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository '/home/anubhav/workspace' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is '/home/anubhav/workspace/vadd_2/vivado/vadd_2'.)
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:hls:forward_fcc:1.0'. The one found in IP location '/home/anubhav/workspace/neural_net/neural_net/nn_wrapper/iprepo/ip_repo/forward_fcc/solution1/impl/ip' will take precedence over the same IP in location /home/anubhav/workspace/ip_repo/forward_fcc/solution1/impl/ip
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+report_ip_status -name ip_status
+open_bd_design {/home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.srcs/sources_1/bd/design_1/design_1.bd}
+delete_bd_objs [get_bd_intf_nets ps7_0_axi_periph_M00_AXI] [get_bd_intf_nets vadd_0_m_axi_gmem] [get_bd_cells vadd_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:vadd:1.0 vadd_0
+endgroup
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: /home/anubhav/workspace/arr_add/arr_add/solution1/impl/ip/component.xml. It will be created.
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/anubhav/workspace'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository '/home/anubhav/workspace' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is '/home/anubhav/workspace/vadd_2/vivado/vadd_2'.)
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:hls:forward_fcc:1.0'. The one found in IP location '/home/anubhav/workspace/neural_net/neural_net/nn_wrapper/iprepo/ip_repo/forward_fcc/solution1/impl/ip' will take precedence over the same IP in location /home/anubhav/workspace/ip_repo/forward_fcc/solution1/impl/ip
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+report_ip_status -name ip_status
+delete_bd_objs [get_bd_cells vadd_0]
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:vadd:1.0 vadd_0
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/vadd_0/m_axi_gmem} Slave {/axi_bram_ctrl_0/S_AXI} ddr_seg {Auto} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins vadd_0/m_axi_gmem]
+Slave segment '/axi_bram_ctrl_0/S_AXI/Mem0' is being assigned into address space '/vadd_0/Data_m_axi_gmem' at <0x4001_0000 [ 16K ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/vadd_0/s_axi_control} ddr_seg {Auto} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins vadd_0/s_axi_control]
+Slave segment '/vadd_0/s_axi_control/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x4000_0000 [ 64K ]>.
+Slave segment '/vadd_0/s_axi_control/Reg' is being assigned into address space '/vadd_0/Data_m_axi_gmem' at <0x4000_0000 [ 64K ]>.
+INFO: [BD 41-1051] The usage register of slave segment /vadd_0/s_axi_control/Reg does not match the usage memory of address space /vadd_0/Data_m_axi_gmem and will be excluded. Use the include_bd_addr_seg command to override this precaution and make the slave segment visible within this address space.
+Excluding slave segment /vadd_0/s_axi_control/Reg from address space /vadd_0/Data_m_axi_gmem.
+endgroup
+regenerate_bd_layout
+open_bd_design {/home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.srcs/sources_1/bd/design_1/design_1.bd}
+save_bd_design
+Wrote  : </home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : </home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_M_AXI_GP0_FREQMHZ(10) on '/processing_system7_0' with propagated value(100). Command ignored
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/vadd_0/ap_start
+
+Wrote  : </home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.srcs/sources_1/bd/design_1/design_1.bd> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/s00_couplers/auto_pc/m_axi_rid'(12) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_rid'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/s00_couplers/auto_pc/m_axi_bid'(12) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_bid'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_awid'(13) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_awid'(12) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_arid'(13) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_arid'(12) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_arlock'(1) to pin: '/ps7_0_axi_periph/s01_couplers/M_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_awlock'(1) to pin: '/ps7_0_axi_periph/s01_couplers/M_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_bram_ctrl_0_bram/addra'(32) to pin: '/axi_bram_ctrl_0/bram_addr_a'(14) - Only lower order bits will be connected.
+VHDL Output written to : /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.gen/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/s00_couplers/auto_pc/m_axi_rid'(12) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_rid'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/s00_couplers/auto_pc/m_axi_bid'(12) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_bid'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_awid'(13) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_awid'(12) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_arid'(13) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_arid'(12) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_arlock'(1) to pin: '/ps7_0_axi_periph/s01_couplers/M_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_awlock'(1) to pin: '/ps7_0_axi_periph/s01_couplers/M_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_bram_ctrl_0_bram/addra'(32) to pin: '/axi_bram_ctrl_0/bram_addr_a'(14) - Only lower order bits will be connected.
+VHDL Output written to : /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.gen/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block vadd_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m00_couplers/auto_pc .
+Exporting to file /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.gen/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.gen/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_auto_pc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_auto_pc_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_vadd_0_3
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = b58aef92001704dd; cache size = 15.553 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_1, cache-ID = 35725c0547d67d7e; cache size = 15.553 MB.
+[Thu Jan 27 18:23:15 2022] Launched design_1_vadd_0_3_synth_1, synth_1...
+Run output will be captured here:
+design_1_vadd_0_3_synth_1: /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.runs/design_1_vadd_0_3_synth_1/runme.log
+synth_1: /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.runs/synth_1/runme.log
+[Thu Jan 27 18:23:15 2022] Launched impl_1...
+Run output will be captured here: /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:17 ; elapsed = 00:00:16 . Memory (MB): peak = 9652.168 ; gain = 91.000 ; free physical = 3237 ; free virtual = 7782
+validate_bd_design -force
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_M_AXI_GP0_FREQMHZ(10) on '/processing_system7_0' with propagated value(100). Command ignored
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/vadd_0/ap_start
+
+validate_bd_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 9652.168 ; gain = 0.000 ; free physical = 2880 ; free virtual = 7427
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: /home/anubhav/workspace/arr_add/arr_add/solution1/impl/ip/component.xml. It will be created.
+delete_bd_objs [get_bd_intf_nets ps7_0_axi_periph_M00_AXI] [get_bd_intf_nets vadd_0_m_axi_gmem] [get_bd_cells vadd_0]
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/anubhav/workspace'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository '/home/anubhav/workspace' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is '/home/anubhav/workspace/vadd_2/vivado/vadd_2'.)
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:hls:forward_fcc:1.0'. The one found in IP location '/home/anubhav/workspace/neural_net/neural_net/nn_wrapper/iprepo/ip_repo/forward_fcc/solution1/impl/ip' will take precedence over the same IP in location /home/anubhav/workspace/ip_repo/forward_fcc/solution1/impl/ip
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+report_ip_status -name ip_status
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:vadd:1.0 vadd_0
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/vadd_0/m_axi_gmem} Slave {/axi_bram_ctrl_0/S_AXI} ddr_seg {Auto} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins vadd_0/m_axi_gmem]
+Slave segment '/axi_bram_ctrl_0/S_AXI/Mem0' is being assigned into address space '/vadd_0/Data_m_axi_gmem' at <0x4001_0000 [ 16K ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/vadd_0/s_axi_control} ddr_seg {Auto} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins vadd_0/s_axi_control]
+Slave segment '/vadd_0/s_axi_control/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x4000_0000 [ 64K ]>.
+Slave segment '/vadd_0/s_axi_control/Reg' is being assigned into address space '/vadd_0/Data_m_axi_gmem' at <0x4000_0000 [ 64K ]>.
+INFO: [BD 41-1051] The usage register of slave segment /vadd_0/s_axi_control/Reg does not match the usage memory of address space /vadd_0/Data_m_axi_gmem and will be excluded. Use the include_bd_addr_seg command to override this precaution and make the slave segment visible within this address space.
+Excluding slave segment /vadd_0/s_axi_control/Reg from address space /vadd_0/Data_m_axi_gmem.
+endgroup
+regenerate_bd_layout
+save_bd_design
+Wrote  : </home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : </home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_M_AXI_GP0_FREQMHZ(10) on '/processing_system7_0' with propagated value(100). Command ignored
+Wrote  : </home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.srcs/sources_1/bd/design_1/design_1.bd> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/s00_couplers/auto_pc/m_axi_rid'(12) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_rid'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/s00_couplers/auto_pc/m_axi_bid'(12) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_bid'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_awid'(13) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_awid'(12) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_arid'(13) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_arid'(12) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_arlock'(1) to pin: '/ps7_0_axi_periph/s01_couplers/M_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_awlock'(1) to pin: '/ps7_0_axi_periph/s01_couplers/M_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_bram_ctrl_0_bram/addra'(32) to pin: '/axi_bram_ctrl_0/bram_addr_a'(14) - Only lower order bits will be connected.
+VHDL Output written to : /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.gen/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/s00_couplers/auto_pc/m_axi_rid'(12) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_rid'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/s00_couplers/auto_pc/m_axi_bid'(12) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_bid'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_awid'(13) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_awid'(12) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_arid'(13) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_arid'(12) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_arlock'(1) to pin: '/ps7_0_axi_periph/s01_couplers/M_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_awlock'(1) to pin: '/ps7_0_axi_periph/s01_couplers/M_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_bram_ctrl_0_bram/addra'(32) to pin: '/axi_bram_ctrl_0/bram_addr_a'(14) - Only lower order bits will be connected.
+INFO: [Common 17-365] Interrupt caught but 'launch_runs' cannot be canceled. Please wait for command to finish.
+VHDL Output written to : /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.gen/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1171] User-interrupt detected : Generation halted successfully for IP Integrator design /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.srcs/sources_1/bd/design_1/design_1.bd
+INFO: [Common 17-681] Processing pending cancel.
+validate_bd_design -force
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_M_AXI_GP0_FREQMHZ(10) on '/processing_system7_0' with propagated value(100). Command ignored
+validate_bd_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 9676.180 ; gain = 0.000 ; free physical = 3253 ; free virtual = 7794
+save_bd_design
+Wrote  : </home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : </home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run design_1_axi_bram_ctrl_0_0_synth_1
+reset_run design_1_xbar_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/s00_couplers/auto_pc/m_axi_rid'(12) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_rid'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/s00_couplers/auto_pc/m_axi_bid'(12) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_bid'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_awid'(13) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_awid'(12) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_arid'(13) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_arid'(12) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_arlock'(1) to pin: '/ps7_0_axi_periph/s01_couplers/M_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_awlock'(1) to pin: '/ps7_0_axi_periph/s01_couplers/M_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_bram_ctrl_0_bram/addra'(32) to pin: '/axi_bram_ctrl_0/bram_addr_a'(14) - Only lower order bits will be connected.
+VHDL Output written to : /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.gen/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/s00_couplers/auto_pc/m_axi_rid'(12) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_rid'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/s00_couplers/auto_pc/m_axi_bid'(12) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_bid'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_awid'(13) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_awid'(12) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_arid'(13) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_arid'(12) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_arlock'(1) to pin: '/ps7_0_axi_periph/s01_couplers/M_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_awlock'(1) to pin: '/ps7_0_axi_periph/s01_couplers/M_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_bram_ctrl_0_bram/addra'(32) to pin: '/axi_bram_ctrl_0/bram_addr_a'(14) - Only lower order bits will be connected.
+VHDL Output written to : /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.gen/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block vadd_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m00_couplers/auto_pc .
+Exporting to file /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.gen/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.gen/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_auto_pc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_auto_pc_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_axi_bram_ctrl_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_axi_bram_ctrl_0_bram_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_processing_system7_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_rst_ps7_0_100M_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_vadd_0_4
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_xbar_0
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = b58aef92001704dd; cache size = 18.910 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_1, cache-ID = 35725c0547d67d7e; cache size = 18.910 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_rst_ps7_0_100M_0, cache-ID = 981f6ca5d8193852; cache size = 19.953 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_bram_ctrl_0_0, cache-ID = fcfc4d936d0e74e6; cache size = 18.910 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_bram_ctrl_0_bram_0, cache-ID = 6d365e7596f90ff0; cache size = 14.956 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_processing_system7_0_0, cache-ID = acedd47448707f85; cache size = 18.910 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_xbar_0, cache-ID = 1293f8d948d6005e; cache size = 18.910 MB.
+[Thu Jan 27 18:27:30 2022] Launched design_1_vadd_0_4_synth_1, synth_1...
+Run output will be captured here:
+design_1_vadd_0_4_synth_1: /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.runs/design_1_vadd_0_4_synth_1/runme.log
+synth_1: /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.runs/synth_1/runme.log
+[Thu Jan 27 18:27:30 2022] Launched impl_1...
+Run output will be captured here: /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 9676.180 ; gain = 0.000 ; free physical = 3241 ; free virtual = 7791
+write_hw_platform -fixed -include_bit -force -file /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd2_wrapper.xsa
+INFO: [Vivado 12-4895] Creating Hardware Platform: /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd2_wrapper.xsa ...
+INFO: [Vivado 12-12467] The Hardware Platform can be used for Hardware
+INFO: [Vivado 12-4896] Successfully created Hardware Platform: /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd2_wrapper.xsa
+report_ip_status -name ip_status 
+write_hw_platform -fixed -include_bit -force -file /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd2.xsa
+INFO: [Vivado 12-4895] Creating Hardware Platform: /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd2.xsa ...
+INFO: [Vivado 12-12467] The Hardware Platform can be used for Hardware
+INFO: [Vivado 12-4896] Successfully created Hardware Platform: /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd2.xsa
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: /home/anubhav/workspace/arr_add/arr_add/solution1/impl/ip/component.xml. It will be created.
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/anubhav/workspace'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository '/home/anubhav/workspace' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is '/home/anubhav/workspace/vadd_2/vivado/vadd_2'.)
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:hls:forward_fcc:1.0'. The one found in IP location '/home/anubhav/workspace/neural_net/neural_net/nn_wrapper/iprepo/ip_repo/forward_fcc/solution1/impl/ip' will take precedence over the same IP in location /home/anubhav/workspace/ip_repo/forward_fcc/solution1/impl/ip
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+report_ip_status -name ip_status
+open_bd_design {/home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.srcs/sources_1/bd/design_1/design_1.bd}
+delete_bd_objs [get_bd_intf_nets ps7_0_axi_periph_M00_AXI] [get_bd_intf_nets vadd_0_m_axi_gmem] [get_bd_cells vadd_0]
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: /home/anubhav/workspace/arr_add/arr_add/solution1/impl/ip/component.xml. It will be created.
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/anubhav/workspace'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository '/home/anubhav/workspace' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is '/home/anubhav/workspace/vadd_2/vivado/vadd_2'.)
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:hls:forward_fcc:1.0'. The one found in IP location '/home/anubhav/workspace/neural_net/neural_net/nn_wrapper/iprepo/ip_repo/forward_fcc/solution1/impl/ip' will take precedence over the same IP in location /home/anubhav/workspace/ip_repo/forward_fcc/solution1/impl/ip
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+report_ip_status -name ip_status
+regenerate_bd_layout
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:vadd:1.0 vadd_0
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/vadd_0/m_axi_gmem} Slave {/axi_bram_ctrl_0/S_AXI} ddr_seg {Auto} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins vadd_0/m_axi_gmem]
+Slave segment '/axi_bram_ctrl_0/S_AXI/Mem0' is being assigned into address space '/vadd_0/Data_m_axi_gmem' at <0x4001_0000 [ 16K ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/vadd_0/s_axi_control} ddr_seg {Auto} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins vadd_0/s_axi_control]
+Slave segment '/vadd_0/s_axi_control/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x4000_0000 [ 64K ]>.
+Slave segment '/vadd_0/s_axi_control/Reg' is being assigned into address space '/vadd_0/Data_m_axi_gmem' at <0x4000_0000 [ 64K ]>.
+INFO: [BD 41-1051] The usage register of slave segment /vadd_0/s_axi_control/Reg does not match the usage memory of address space /vadd_0/Data_m_axi_gmem and will be excluded. Use the include_bd_addr_seg command to override this precaution and make the slave segment visible within this address space.
+Excluding slave segment /vadd_0/s_axi_control/Reg from address space /vadd_0/Data_m_axi_gmem.
+endgroup
+regenerate_bd_layout
+save_bd_design
+Wrote  : </home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : </home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+open_bd_design {/home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.srcs/sources_1/bd/design_1/design_1.bd}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_M_AXI_GP0_FREQMHZ(10) on '/processing_system7_0' with propagated value(100). Command ignored
+Wrote  : </home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.srcs/sources_1/bd/design_1/design_1.bd> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/s00_couplers/auto_pc/m_axi_rid'(12) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_rid'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/s00_couplers/auto_pc/m_axi_bid'(12) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_bid'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_awid'(13) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_awid'(12) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_arid'(13) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_arid'(12) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_arlock'(1) to pin: '/ps7_0_axi_periph/s01_couplers/M_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_awlock'(1) to pin: '/ps7_0_axi_periph/s01_couplers/M_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_bram_ctrl_0_bram/addra'(32) to pin: '/axi_bram_ctrl_0/bram_addr_a'(14) - Only lower order bits will be connected.
+VHDL Output written to : /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.gen/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/s00_couplers/auto_pc/m_axi_rid'(12) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_rid'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/s00_couplers/auto_pc/m_axi_bid'(12) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_bid'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_awid'(13) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_awid'(12) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_arid'(13) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_arid'(12) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_arlock'(1) to pin: '/ps7_0_axi_periph/s01_couplers/M_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_awlock'(1) to pin: '/ps7_0_axi_periph/s01_couplers/M_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_bram_ctrl_0_bram/addra'(32) to pin: '/axi_bram_ctrl_0/bram_addr_a'(14) - Only lower order bits will be connected.
+VHDL Output written to : /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.gen/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block vadd_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m00_couplers/auto_pc .
+Exporting to file /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.gen/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.gen/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_auto_pc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_auto_pc_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_vadd_0_5
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = b58aef92001704dd; cache size = 22.282 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_1, cache-ID = 35725c0547d67d7e; cache size = 22.282 MB.
+[Thu Jan 27 19:35:06 2022] Launched design_1_vadd_0_5_synth_1, synth_1...
+Run output will be captured here:
+design_1_vadd_0_5_synth_1: /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.runs/design_1_vadd_0_5_synth_1/runme.log
+synth_1: /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.runs/synth_1/runme.log
+[Thu Jan 27 19:35:06 2022] Launched impl_1...
+Run output will be captured here: /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:19 ; elapsed = 00:00:17 . Memory (MB): peak = 9871.387 ; gain = 0.000 ; free physical = 2523 ; free virtual = 7310
+report_ip_status -name ip_status 
+write_hw_platform -fixed -include_bit -force -file /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd2.xsa
+INFO: [Vivado 12-4895] Creating Hardware Platform: /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd2.xsa ...
+INFO: [Vivado 12-12467] The Hardware Platform can be used for Hardware
+INFO: [Vivado 12-4896] Successfully created Hardware Platform: /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd2.xsa
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: /home/anubhav/workspace/arr_add/arr_add/solution1/impl/ip/component.xml. It will be created.
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/anubhav/workspace'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository '/home/anubhav/workspace' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is '/home/anubhav/workspace/vadd_2/vivado/vadd_2'.)
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:hls:forward_fcc:1.0'. The one found in IP location '/home/anubhav/workspace/neural_net/neural_net/nn_wrapper/iprepo/ip_repo/forward_fcc/solution1/impl/ip' will take precedence over the same IP in location /home/anubhav/workspace/ip_repo/forward_fcc/solution1/impl/ip
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+report_ip_status -name ip_status
+open_bd_design {/home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {/home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {/home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.srcs/sources_1/bd/design_1/design_1.bd}
+delete_bd_objs [get_bd_intf_nets vadd_0_m_axi_gmem] [get_bd_intf_nets ps7_0_axi_periph_M00_AXI] [get_bd_cells vadd_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:vadd:1.0 vadd_0
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/vadd_0/m_axi_gmem} Slave {/axi_bram_ctrl_0/S_AXI} ddr_seg {Auto} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins vadd_0/m_axi_gmem]
+Slave segment '/axi_bram_ctrl_0/S_AXI/Mem0' is being assigned into address space '/vadd_0/Data_m_axi_gmem' at <0x4001_0000 [ 16K ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/vadd_0/s_axi_control} ddr_seg {Auto} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins vadd_0/s_axi_control]
+Slave segment '/vadd_0/s_axi_control/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x4000_0000 [ 64K ]>.
+Slave segment '/vadd_0/s_axi_control/Reg' is being assigned into address space '/vadd_0/Data_m_axi_gmem' at <0x4000_0000 [ 64K ]>.
+INFO: [BD 41-1051] The usage register of slave segment /vadd_0/s_axi_control/Reg does not match the usage memory of address space /vadd_0/Data_m_axi_gmem and will be excluded. Use the include_bd_addr_seg command to override this precaution and make the slave segment visible within this address space.
+Excluding slave segment /vadd_0/s_axi_control/Reg from address space /vadd_0/Data_m_axi_gmem.
+endgroup
+regenerate_bd_layout
+save_bd_design
+Wrote  : </home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : </home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_M_AXI_GP0_FREQMHZ(10) on '/processing_system7_0' with propagated value(100). Command ignored
+Wrote  : </home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.srcs/sources_1/bd/design_1/design_1.bd> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/s00_couplers/auto_pc/m_axi_rid'(12) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_rid'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/s00_couplers/auto_pc/m_axi_bid'(12) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_bid'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_awid'(13) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_awid'(12) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_arid'(13) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_arid'(12) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_arlock'(1) to pin: '/ps7_0_axi_periph/s01_couplers/M_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_awlock'(1) to pin: '/ps7_0_axi_periph/s01_couplers/M_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_bram_ctrl_0_bram/addra'(32) to pin: '/axi_bram_ctrl_0/bram_addr_a'(14) - Only lower order bits will be connected.
+VHDL Output written to : /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.gen/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/s00_couplers/auto_pc/m_axi_rid'(12) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_rid'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/s00_couplers/auto_pc/m_axi_bid'(12) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_bid'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_awid'(13) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_awid'(12) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_arid'(13) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_arid'(12) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_arlock'(1) to pin: '/ps7_0_axi_periph/s01_couplers/M_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_awlock'(1) to pin: '/ps7_0_axi_periph/s01_couplers/M_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_bram_ctrl_0_bram/addra'(32) to pin: '/axi_bram_ctrl_0/bram_addr_a'(14) - Only lower order bits will be connected.
+VHDL Output written to : /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.gen/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block vadd_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m00_couplers/auto_pc .
+Exporting to file /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.gen/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.gen/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_auto_pc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_auto_pc_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_vadd_0_6
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = b58aef92001704dd; cache size = 25.510 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_1, cache-ID = 35725c0547d67d7e; cache size = 25.510 MB.
+[Thu Jan 27 20:53:22 2022] Launched design_1_vadd_0_6_synth_1, synth_1...
+Run output will be captured here:
+design_1_vadd_0_6_synth_1: /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.runs/design_1_vadd_0_6_synth_1/runme.log
+synth_1: /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.runs/synth_1/runme.log
+[Thu Jan 27 20:53:22 2022] Launched impl_1...
+Run output will be captured here: /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd_2.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 9921.383 ; gain = 0.000 ; free physical = 1481 ; free virtual = 6467
+write_hw_platform -fixed -include_bit -force -file /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd2.xsa
+INFO: [Vivado 12-4895] Creating Hardware Platform: /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd2.xsa ...
+INFO: [Vivado 12-12467] The Hardware Platform can be used for Hardware
+INFO: [Vivado 12-4896] Successfully created Hardware Platform: /home/anubhav/workspace/vadd_2/vivado/vadd_2/vadd2.xsa

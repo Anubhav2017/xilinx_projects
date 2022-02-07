@@ -1,0 +1,1292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1642856577440">
+  <ports id="1" name="gmem" type="PortType" coreId="49" bitwidth="32" direction="DirInOut" iftype="IfTypeFifo">
+    <dataInputObjs>getelementptr</dataInputObjs>
+    <dataInputObjs>getelementptr</dataInputObjs>
+    <dataInputObjs>getelementptr</dataInputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+  </ports>
+  <ports id="2" name="a" type="PortType" originalName="a" coreId="49" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="3" name="b" type="PortType" originalName="b" coreId="49" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="4" name="c" type="PortType" originalName="c" coreId="49" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <edges id="113" source_obj="//@ports.3" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="115" source_obj="//@ports.2" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="117" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="120" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="125" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="126" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="127" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.1/@node_objs.0" is_back_edge="1"/>
+  <edges id="128" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.1/@node_objs.0" is_back_edge="1"/>
+  <edges id="131" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="132" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="135" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.2"/>
+  <edges id="136" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="139" source_obj="//@blocks.1/@node_objs.3" sink_obj="//@blocks.1/@node_objs.4"/>
+  <edges id="140" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1/@node_objs.4"/>
+  <edges id="141" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.1/@node_objs.4"/>
+  <edges id="144" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="146" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="147" source_obj="//@blocks.2/@node_objs.1" sink_obj="//@blocks.2/@node_objs.2"/>
+  <edges id="148" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.2/@node_objs.2"/>
+  <edges id="149" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.2/@node_objs.3"/>
+  <edges id="150" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.4"/>
+  <edges id="151" source_obj="//@blocks.2/@node_objs.3" sink_obj="//@blocks.2/@node_objs.4"/>
+  <edges id="154" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.2/@node_objs.5"/>
+  <edges id="157" source_obj="//@blocks.2/@node_objs.5" sink_obj="//@blocks.2/@node_objs.6"/>
+  <edges id="158" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.7"/>
+  <edges id="159" source_obj="//@blocks.2/@node_objs.6" sink_obj="//@blocks.2/@node_objs.8"/>
+  <edges id="160" source_obj="//@blocks.2/@node_objs.7" sink_obj="//@blocks.2/@node_objs.8"/>
+  <edges id="161" source_obj="//@blocks.2/@node_objs.8" sink_obj="//@blocks.2/@node_objs.9"/>
+  <edges id="162" source_obj="//@blocks.2/@node_objs.9" sink_obj="//@blocks.2/@node_objs.10"/>
+  <edges id="163" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.2/@node_objs.10"/>
+  <edges id="165" source_obj="//@blocks.2/@node_objs.10" sink_obj="//@blocks.2/@node_objs.11"/>
+  <edges id="168" source_obj="//@blocks.2/@node_objs.11" sink_obj="//@blocks.2/@node_objs.12"/>
+  <edges id="169" source_obj="//@blocks.2/@node_objs.2" sink_obj="//@blocks.2/@node_objs.13"/>
+  <edges id="170" source_obj="//@blocks.2/@node_objs.13" sink_obj="//@blocks.2/@node_objs.14"/>
+  <edges id="171" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.2/@node_objs.14"/>
+  <edges id="172" source_obj="//@blocks.2/@node_objs.14" sink_obj="//@blocks.2/@node_objs.15"/>
+  <edges id="173" source_obj="//@ports.0" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="174" source_obj="//@blocks.2/@node_objs.15" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="177" source_obj="//@blocks.2/@node_objs.16" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="180" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.2/@node_objs.18"/>
+  <edges id="181" source_obj="//@blocks.3/@node_objs.1" sink_obj="//@blocks.3/@node_objs.0" is_back_edge="1"/>
+  <edges id="182" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.3/@node_objs.0" is_back_edge="1"/>
+  <edges id="184" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="185" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="187" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="189" source_obj="//@blocks.3/@node_objs.2" sink_obj="//@blocks.3/@node_objs.3"/>
+  <edges id="190" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.3/@node_objs.3"/>
+  <edges id="191" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.3/@node_objs.3"/>
+  <edges id="192" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="193" source_obj="//@blocks.2/@node_objs.4" sink_obj="//@blocks.4/@node_objs.1"/>
+  <edges id="194" source_obj="//@blocks.4/@node_objs.0" sink_obj="//@blocks.4/@node_objs.1"/>
+  <edges id="195" source_obj="//@blocks.4/@node_objs.1" sink_obj="//@blocks.4/@node_objs.2"/>
+  <edges id="196" sink_obj="//@blocks.4/@node_objs.3"/>
+  <edges id="199" source_obj="//@blocks.4/@node_objs.2" sink_obj="//@blocks.4/@node_objs.3"/>
+  <edges id="200" source_obj="//@blocks.4/@node_objs.3" sink_obj="//@blocks.4/@node_objs.4"/>
+  <edges id="202" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.4/@node_objs.5"/>
+  <edges id="204" source_obj="//@blocks.4/@node_objs.5" sink_obj="//@blocks.4/@node_objs.6"/>
+  <edges id="205" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.4/@node_objs.7"/>
+  <edges id="206" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="207" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="209" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="210" source_obj="//@regions.0/@basic_blocks.1/@node_objs.20" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1" is_back_edge="1"/>
+  <edges id="211" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1" is_back_edge="1"/>
+  <edges id="212" source_obj="//@blocks.4/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="213" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="214" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="216" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="218" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="219" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="220" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="221" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="222" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="223" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="224" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="225" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="226" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="229" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="234" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
+  <edges id="236" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <edges id="238" source_obj="//@regions.0/@basic_blocks.1/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.7"/>
+  <edges id="240" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.8"/>
+  <edges id="242" source_obj="//@regions.0/@basic_blocks.1/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.9"/>
+  <edges id="243" source_obj="//@regions.0/@basic_blocks.1/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.10"/>
+  <edges id="244" source_obj="//@regions.0/@basic_blocks.1/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.10"/>
+  <edges id="245" source_obj="//@regions.0/@basic_blocks.1/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.11"/>
+  <edges id="246" source_obj="//@regions.0/@basic_blocks.1/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.12"/>
+  <edges id="247" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.12"/>
+  <edges id="248" source_obj="//@regions.0/@basic_blocks.1/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.13"/>
+  <edges id="249" source_obj="//@blocks.4/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.13"/>
+  <edges id="251" source_obj="//@regions.0/@basic_blocks.1/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.14"/>
+  <edges id="254" source_obj="//@regions.0/@basic_blocks.1/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.15"/>
+  <edges id="255" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.16"/>
+  <edges id="256" source_obj="//@regions.0/@basic_blocks.1/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.16"/>
+  <edges id="258" source_obj="//@regions.0/@basic_blocks.1/@node_objs.16" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.17"/>
+  <edges id="261" source_obj="//@regions.0/@basic_blocks.1/@node_objs.16" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.18"/>
+  <edges id="262" source_obj="//@regions.0/@basic_blocks.1/@node_objs.18" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.19"/>
+  <edges id="263" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.19"/>
+  <edges id="264" source_obj="//@regions.0/@basic_blocks.1/@node_objs.19" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.20"/>
+  <edges id="265" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.20"/>
+  <edges id="266" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.21"/>
+  <edges id="267" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@blocks.5/@node_objs.0"/>
+  <edges id="268" source_obj="//@blocks.4/@node_objs.3" sink_obj="//@blocks.5/@node_objs.0"/>
+  <edges id="271" source_obj="//@blocks.2/@node_objs.16" sink_obj="//@blocks.5/@node_objs.1"/>
+  <edges id="272" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@blocks.5/@node_objs.1"/>
+  <edges id="275" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.5/@node_objs.2"/>
+  <edges id="278" source_obj="//@blocks.2/@node_objs.16" sink_obj="//@blocks.6/@node_objs.0"/>
+  <edges id="279" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.6/@node_objs.1"/>
+  <edges id="492" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="493" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.7"/>
+  <edges id="494" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2"/>
+  <edges id="495" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.3"/>
+  <edges id="496" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.6"/>
+  <edges id="497" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.4"/>
+  <edges id="498" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="499" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.5"/>
+  <edges id="500" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="501" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="502" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.3" is_back_edge="1"/>
+  <edges id="503" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.1" is_back_edge="1"/>
+  <edges id="504" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.1/@node_objs.17" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.18"/>
+  <edges id="505" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.18"/>
+  <edges id="506" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.1/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
+  <edges id="507" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.1/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.17"/>
+  <edges id="508" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.17" sink_obj="//@blocks.5/@node_objs.1"/>
+  <edges id="-173" source_obj="//@blocks.2/@node_objs.16" sink_obj="//@ports.0"/>
+  <edges id="-225" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@ports.0"/>
+  <edges id="-255" source_obj="//@regions.0/@basic_blocks.1/@node_objs.16" sink_obj="//@ports.0"/>
+  <blocks id="23" name="block_23" type="BlockType">
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>block_30</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="c_read" lineNumber="4" originalName="c" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." coreName="s_axilite" implIndex="UNSUPPORTED" control="auto" coreId="114" contextFuncName="dot_matrix" bitwidth="32" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="4" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+      <dataInputObjs>c</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="18" name="b_read" lineNumber="4" originalName="b" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." coreName="s_axilite" implIndex="UNSUPPORTED" control="auto" coreId="114" contextFuncName="dot_matrix" bitwidth="32" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="4" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+      <dataInputObjs>b</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="a_read" lineNumber="4" originalName="a" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." coreName="s_axilite" implIndex="UNSUPPORTED" control="auto" coreId="114" contextFuncName="dot_matrix" bitwidth="32" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="4" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+      <dataInputObjs>a</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="trunc_ln17_1" lineNumber="17" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." rtlName="trunc_ln17_1_fu_220_p4" coreId="1889785610" contextFuncName="dot_matrix" bitwidth="30" opcode="partselect" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="17" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="sext_ln17" lineNumber="17" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." rtlName="sext_ln17_fu_230_p1" coreId="737" contextFuncName="dot_matrix" bitwidth="31" opcode="sext" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="17" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="br_ln17" lineNumber="17" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." coreId="1216746968" contextFuncName="dot_matrix" opcode="br" m_display="0" m_delay="1.58" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="17" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+      <controlInputObjs>block_30</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="dot_mat/dot_matrix.cpp">
+      <validLinenumbers>4</validLinenumbers>
+      <validLinenumbers>17</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="30" name="block_30" type="BlockType">
+    <controlInputObjs>block_23</controlInputObjs>
+    <controlInputObjs>0_end</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_110</controlOutputObjs>
+    <controlOutputObjs>0_begin</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="i" lineNumber="17" originalName="i" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." coreId="0" contextFuncName="dot_matrix" bitwidth="2" opcode="phi" nodeLabel="1.0" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="17" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      <controlInputObjs>0_end</controlInputObjs>
+      <controlInputObjs>block_23</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="add_ln17_1" lineNumber="17" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." rtlName="add_ln17_1_fu_234_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="dot_matrix" bitwidth="2" opcode="add" nodeLabel="1.0" m_display="0" m_delay="1.56" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="17" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="zext_ln17" lineNumber="17" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." rtlName="zext_ln17_fu_240_p1" coreId="1216418960" contextFuncName="dot_matrix" bitwidth="5" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="17" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="icmp_ln17" lineNumber="17" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." rtlName="icmp_ln17_fu_244_p2" opType="icmp" coreId="132" contextFuncName="dot_matrix" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="0.95" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="17" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="br_ln17" lineNumber="17" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." coreId="0" contextFuncName="dot_matrix" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="17" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>0_begin</controlInputObjs>
+      <controlInputObjs>block_110</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="dot_mat/dot_matrix.cpp">
+      <validLinenumbers>17</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="52" name="0_begin" type="BlockType">
+    <controlInputObjs>block_30</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>block_58</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="shl_ln" lineNumber="17" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." rtlName="shl_ln_fu_250_p3" coreId="0" contextFuncName="dot_matrix" bitwidth="4" opcode="bitconcatenate" nodeLabel="1.0" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="17" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="33" name="zext_ln17_1" lineNumber="17" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." rtlName="zext_ln17_1_fu_258_p1" coreId="2281701504" contextFuncName="dot_matrix" bitwidth="5" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="17" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="34" name="sub_ln30" lineNumber="30" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." rtlName="sub_ln30_fu_262_p2" coreName="Adder" implIndex="fabric" control="auto" opType="sub" coreId="1" contextFuncName="dot_matrix" bitwidth="5" opcode="sub" nodeLabel="1.0" m_display="0" m_delay="1.73" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="30" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="35" name="i_cast" lineNumber="17" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." rtlName="i_cast_fu_268_p1" coreId="3552825" contextFuncName="dot_matrix" bitwidth="4" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="17" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="36" name="empty_19" lineNumber="17" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." rtlName="empty_19_fu_272_p2" coreName="Adder" implIndex="fabric" control="auto" opType="sub" coreId="1" contextFuncName="dot_matrix" bitwidth="4" opcode="sub" nodeLabel="1.0" m_display="0" m_delay="1.73" m_topoIndex="16" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="17" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="37" name="shl_ln17_1" lineNumber="17" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." rtlName="shl_ln17_1_fu_278_p3" coreId="33" contextFuncName="dot_matrix" bitwidth="6" opcode="bitconcatenate" nodeLabel="1.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="17" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="38" name="zext_ln17_2" lineNumber="17" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." rtlName="zext_ln17_2_fu_286_p1" coreId="1216752448" contextFuncName="dot_matrix" bitwidth="7" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="17" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="39" name="zext_ln17_3" lineNumber="17" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." rtlName="zext_ln17_3_fu_290_p1" coreId="1216718472" contextFuncName="dot_matrix" bitwidth="7" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="17" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="40" name="sub_ln17" lineNumber="17" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." rtlName="sub_ln17_fu_294_p2" coreName="Adder" implIndex="fabric" control="auto" opType="sub" coreId="1" contextFuncName="dot_matrix" bitwidth="7" opcode="sub" nodeLabel="1.0" m_display="0" m_delay="1.82" m_topoIndex="20" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="17" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="41" name="sext_ln17_1" lineNumber="17" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." rtlName="sext_ln17_1_fu_300_p1" coreId="0" contextFuncName="dot_matrix" bitwidth="32" opcode="sext" nodeLabel="1.0" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="17" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="42" name="add_ln17" lineNumber="17" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." rtlName="add_ln17_fu_304_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="dot_matrix" bitwidth="32" opcode="add" nodeLabel="1.0" m_display="0" m_delay="2.55" m_topoIndex="22" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="17" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="44" name="trunc_ln" lineNumber="22" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." rtlName="trunc_ln_reg_511" coreId="0" contextFuncName="dot_matrix" bitwidth="30" opcode="partselect" nodeLabel="1.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="22" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="45" name="sext_ln30" lineNumber="30" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." rtlName="sext_ln30_fu_328_p1" coreId="1713401447" contextFuncName="dot_matrix" bitwidth="31" opcode="sext" nodeLabel="2.0" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="30" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="46" name="sext_ln20" lineNumber="20" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." rtlName="sext_ln20_fu_319_p1" coreId="1752461154" contextFuncName="dot_matrix" bitwidth="31" opcode="sext" nodeLabel="1.0" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="20" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="47" name="add_ln30" lineNumber="30" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." rtlName="add_ln30_fu_323_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="dot_matrix" bitwidth="31" opcode="add" nodeLabel="1.0" m_display="0" m_delay="2.49" m_topoIndex="25" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="30" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="48" name="sext_ln30_1" lineNumber="30" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." rtlName="sext_ln30_1_fu_331_p1" coreId="1701669236" contextFuncName="dot_matrix" bitwidth="32" opcode="sext" nodeLabel="2.0" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="30" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="49" name="gmem_addr" lineNumber="30" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." coreId="1702043749" contextFuncName="dot_matrix" bitwidth="32" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="30" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+      <dataInputObjs>gmem</dataInputObjs>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataOutputObjs>writereq</dataOutputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+      <dataOutputObjs>writeresp</dataOutputObjs>
+      <dataOutputObjs>gmem</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="50" name="p_wr_req" lineNumber="30" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." coreName="m_axi" implIndex="m_axi" control="auto" opType="writereq" coreId="113" contextFuncName="dot_matrix" bitwidth="1" opcode="writereq" nodeLabel="2.0" m_display="0" m_delay="7.3" m_topoIndex="30" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="30" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="51" name="br_ln20" lineNumber="20" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." coreId="1931502951" contextFuncName="dot_matrix" opcode="br" nodeLabel="2.0" m_display="0" m_delay="1.58" m_topoIndex="31" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="20" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+      <controlInputObjs>block_58</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="dot_mat/dot_matrix.cpp">
+      <validLinenumbers>17</validLinenumbers>
+      <validLinenumbers>30</validLinenumbers>
+      <validLinenumbers>22</validLinenumbers>
+      <validLinenumbers>20</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="58" name="block_58" type="BlockType">
+    <controlInputObjs>0_begin</controlInputObjs>
+    <controlInputObjs>block_104</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>0_end</controlOutputObjs>
+    <controlOutputObjs>.split2</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="53" name="j" lineNumber="20" originalName="j" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." coreId="0" contextFuncName="dot_matrix" bitwidth="2" opcode="phi" nodeLabel="3.0" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="20" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      <controlInputObjs>block_104</controlInputObjs>
+      <controlInputObjs>0_begin</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="54" name="add_ln20" lineNumber="20" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." rtlName="add_ln20_fu_341_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="dot_matrix" bitwidth="2" opcode="add" nodeLabel="3.0" m_display="0" m_delay="1.56" m_topoIndex="33" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="20" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="55" name="icmp_ln20" lineNumber="20" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." rtlName="icmp_ln20_fu_347_p2" opType="icmp" coreId="0" contextFuncName="dot_matrix" bitwidth="1" opcode="icmp" nodeLabel="3.0" m_display="0" m_delay="0.95" m_topoIndex="34" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="20" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="57" name="br_ln20" lineNumber="20" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." coreId="1216767296" contextFuncName="dot_matrix" opcode="br" nodeLabel="3.0" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="20" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>.split2</controlInputObjs>
+      <controlInputObjs>0_end</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="dot_mat/dot_matrix.cpp">
+      <validLinenumbers>20</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="68" name=".split2" type="BlockType">
+    <controlInputObjs>block_58</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>block_75</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="60" name="j_cast" lineNumber="20" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." rtlName="j_cast_fu_353_p1" coreId="132" contextFuncName="dot_matrix" bitwidth="4" opcode="zext" nodeLabel="3.0" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="20" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="61" name="empty_21" lineNumber="17" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." rtlName="empty_21_fu_357_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="dot_matrix" bitwidth="4" opcode="add" nodeLabel="3.0" m_display="0" m_delay="1.73" m_topoIndex="37" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="17" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="62" name="p_cast" lineNumber="17" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." rtlName="p_cast_fu_362_p1" coreId="0" contextFuncName="dot_matrix" bitwidth="32" opcode="zext" nodeLabel="3.0" m_display="0" m_topoIndex="38" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="17" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="63" name="c_t_addr" lineNumber="17" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." coreId="132" contextFuncName="dot_matrix" bitwidth="4" opcode="getelementptr" nodeLabel="3.0" m_display="0" m_topoIndex="39" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="17" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="64" name="c_t_load" lineNumber="27" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" contextFuncName="dot_matrix" bitwidth="32" opcode="load" nodeLabel="3.0" nodeLatency="1" m_display="0" m_delay="2.32" m_topoIndex="40" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="27" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="65" name="shl_ln1" lineNumber="25" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." rtlName="shl_ln1_fu_367_p3" coreId="0" contextFuncName="dot_matrix" bitwidth="4" opcode="bitconcatenate" nodeLabel="4.0" m_display="0" m_topoIndex="41" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="25" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="66" name="zext_ln22" lineNumber="22" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." rtlName="zext_ln22_fu_375_p1" coreId="8" contextFuncName="dot_matrix" bitwidth="32" opcode="zext" nodeLabel="4.0" m_display="0" m_topoIndex="42" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="22" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="67" name="br_ln22" lineNumber="22" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." coreId="2281701504" contextFuncName="dot_matrix" opcode="br" nodeLabel="4.0" m_display="0" m_delay="1.58" m_topoIndex="43" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="22" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+      <controlInputObjs>block_75</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="dot_mat/dot_matrix.cpp">
+      <validLinenumbers>20</validLinenumbers>
+      <validLinenumbers>17</validLinenumbers>
+      <validLinenumbers>27</validLinenumbers>
+      <validLinenumbers>25</validLinenumbers>
+      <validLinenumbers>22</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="104" name="block_104" type="BlockType">
+    <controlInputObjs>block_75</controlInputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_58</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="101" name="c_t_addr_write_ln27" lineNumber="27" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" contextFuncName="dot_matrix" opcode="store" nodeLabel="18.0" m_display="0" m_delay="2.32" m_topoIndex="71" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="27" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataInputObjs>getelementptr</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="102" name="gmem_addr_write_ln30" lineNumber="30" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." coreName="m_axi" implIndex="UNSUPPORTED" control="auto" coreId="113" contextFuncName="dot_matrix" opcode="write" nodeLabel="18.0" m_display="0" m_delay="7.3" m_topoIndex="72" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="30" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataInputObjs>phi</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="103" name="br_ln0" coreId="0" opcode="br" nodeLabel="18.0" m_display="0" m_topoIndex="73" m_clusterGroupNumber="-1">
+      <controlInputObjs>block_58</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="dot_mat/dot_matrix.cpp">
+      <validLinenumbers>27</validLinenumbers>
+      <validLinenumbers>30</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="108" name="0_end" type="BlockType">
+    <controlInputObjs>block_58</controlInputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_30</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="105" name="p_wr_resp" lineNumber="30" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." coreName="m_axi" implIndex="m_axi" control="auto" opType="writereq" coreId="113" contextFuncName="dot_matrix" bitwidth="1" opcode="writeresp" nodeLabel="19.0" nodeLatency="4" m_display="0" m_delay="7.3" m_topoIndex="74" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="30" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="107" name="br_ln0" coreId="0" opcode="br" nodeLabel="23.0" m_display="0" m_topoIndex="75" m_clusterGroupNumber="-1">
+      <controlInputObjs>block_30</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="dot_mat/dot_matrix.cpp">
+      <validLinenumbers>30</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="110" name="block_110" type="BlockType">
+    <controlInputObjs>block_30</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="109" name="_ln35" lineNumber="35" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." coreId="0" contextFuncName="dot_matrix" opcode="ret" nodeLabel="1.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="35" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="dot_mat/dot_matrix.cpp">
+      <validLinenumbers>35</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="2" typeName="Pipeline" id="423" pipe_depth="13" RegionName="k_cycle">
+    <basic_blocks id="75" name="block_75" type="BlockType">
+      <controlInputObjs>.split2</controlInputObjs>
+      <controlInputObjs>.split</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>block_104</controlOutputObjs>
+      <controlOutputObjs>.split</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="69" name="k" lineNumber="24" originalName="k" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." coreId="0" contextFuncName="dot_matrix" bitwidth="2" opcode="phi" nodeLabel="5.0" m_display="0" m_topoIndex="44" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="24" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <controlInputObjs>.split</controlInputObjs>
+        <controlInputObjs>.split2</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="70" name="empty_22" lineNumber="27" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." coreId="22033" contextFuncName="dot_matrix" bitwidth="32" opcode="phi" nodeLabel="17.0" m_display="0" m_topoIndex="68" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="27" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+        <controlInputObjs>.split</controlInputObjs>
+        <controlInputObjs>.split2</controlInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="71" name="add_ln22" lineNumber="22" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." rtlName="add_ln22_fu_394_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="dot_matrix" bitwidth="2" opcode="add" nodeLabel="6.0" m_display="0" m_delay="1.56" m_topoIndex="49" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="22" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="72" name="icmp_ln22" lineNumber="22" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." rtlName="icmp_ln22_fu_379_p2" opType="icmp" coreId="842478637" contextFuncName="dot_matrix" bitwidth="1" opcode="icmp" nodeLabel="5.0" m_display="0" m_delay="0.95" m_topoIndex="45" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="22" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="74" name="br_ln22" lineNumber="22" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." coreId="0" contextFuncName="dot_matrix" opcode="br" nodeLabel="5.0" m_display="0" m_topoIndex="46" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="22" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>.split</controlInputObjs>
+        <controlInputObjs>block_104</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="dot_mat/dot_matrix.cpp">
+        <validLinenumbers>24</validLinenumbers>
+        <validLinenumbers>27</validLinenumbers>
+        <validLinenumbers>22</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="100" name=".split" type="BlockType">
+      <controlInputObjs>block_75</controlInputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>block_75</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="78" name="zext_ln24" lineNumber="24" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." rtlName="zext_ln24_fu_385_p1" coreId="0" contextFuncName="dot_matrix" bitwidth="31" opcode="zext" nodeLabel="5.0" m_display="0" m_topoIndex="47" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="24" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="79" name="add_ln24" lineNumber="24" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." rtlName="add_ln24_fu_389_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="dot_matrix" bitwidth="31" opcode="add" nodeLabel="5.0" m_display="0" m_delay="2.49" m_topoIndex="48" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="24" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="80" name="sext_ln24" lineNumber="24" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." rtlName="sext_ln24_fu_400_p1" coreId="0" contextFuncName="dot_matrix" bitwidth="32" opcode="sext" nodeLabel="6.0" m_display="0" m_topoIndex="50" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="24" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="81" name="gmem_addr_1" lineNumber="24" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." coreId="0" contextFuncName="dot_matrix" bitwidth="32" opcode="getelementptr" nodeLabel="6.0" m_display="0" m_topoIndex="51" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="24" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+        <dataInputObjs>gmem</dataInputObjs>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataOutputObjs>readreq</dataOutputObjs>
+        <dataOutputObjs>read</dataOutputObjs>
+        <dataOutputObjs>gmem</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="82" name="gmem_load_req" lineNumber="24" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." coreName="m_axi" implIndex="m_axi" control="auto" opType="readreq" coreId="113" contextFuncName="dot_matrix" bitwidth="1" opcode="readreq" nodeLabel="6.0" nodeLatency="6" m_display="0" m_delay="7.3" m_topoIndex="52" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="24" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="83" name="gmem_addr_1_read" lineNumber="24" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." coreName="m_axi" implIndex="UNSUPPORTED" control="auto" coreId="113" contextFuncName="dot_matrix" bitwidth="32" opcode="read" nodeLabel="13.0" m_display="0" m_delay="7.3" m_topoIndex="65" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="24" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="84" name="shl_ln25_1" lineNumber="25" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." rtlName="shl_ln25_1_fu_410_p3" coreId="0" contextFuncName="dot_matrix" bitwidth="6" opcode="bitconcatenate" nodeLabel="6.0" m_display="0" m_topoIndex="53" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="25" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="85" name="zext_ln25" lineNumber="25" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." rtlName="zext_ln25_fu_418_p1" coreId="0" contextFuncName="dot_matrix" bitwidth="7" opcode="zext" nodeLabel="6.0" m_display="0" m_topoIndex="54" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="25" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataOutputObjs>sub</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="86" name="shl_ln25_2" lineNumber="25" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." rtlName="shl_ln25_2_fu_422_p3" coreId="0" contextFuncName="dot_matrix" bitwidth="4" opcode="bitconcatenate" nodeLabel="6.0" m_display="0" m_topoIndex="55" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="25" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="87" name="zext_ln25_1" lineNumber="25" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." rtlName="zext_ln25_1_fu_430_p1" coreId="1216790520" contextFuncName="dot_matrix" bitwidth="7" opcode="zext" nodeLabel="6.0" m_display="0" m_topoIndex="56" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="25" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataOutputObjs>sub</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="88" name="sub_ln25" lineNumber="25" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." rtlName="sub_ln25_fu_434_p2" coreName="Adder" implIndex="fabric" control="auto" opType="sub" coreId="1" contextFuncName="dot_matrix" bitwidth="7" opcode="sub" nodeLabel="6.0" m_display="0" m_delay="1.82" m_topoIndex="57" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="25" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="89" name="sext_ln25_1" lineNumber="25" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." rtlName="sext_ln25_1_fu_440_p1" coreId="1216792368" contextFuncName="dot_matrix" bitwidth="32" opcode="sext" nodeLabel="6.0" m_display="0" m_topoIndex="58" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="25" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+        <dataInputObjs>sub</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="90" name="add_ln25" lineNumber="25" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." rtlName="add_ln25_fu_444_p2" coreName="TAddSub" implIndex="tadder" control="auto" opType="add" coreId="10" contextFuncName="dot_matrix" bitwidth="32" opcode="add" nodeLabel="6.0" m_display="0" m_topoIndex="59" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="25" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="91" name="add_ln25_1" lineNumber="25" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." rtlName="add_ln25_1_fu_449_p2" coreName="TAddSub" implIndex="tadder" control="auto" opType="add" coreId="10" contextFuncName="dot_matrix" bitwidth="32" opcode="add" nodeLabel="6.0" m_display="0" m_delay="4.37" m_topoIndex="60" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="25" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="92" name="trunc_ln1" lineNumber="25" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." rtlName="trunc_ln1_reg_575" coreId="1216795432" contextFuncName="dot_matrix" bitwidth="30" opcode="partselect" nodeLabel="6.0" m_display="0" m_topoIndex="61" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="25" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="93" name="sext_ln25" lineNumber="25" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." rtlName="sext_ln25_fu_464_p1" coreId="1216796777" contextFuncName="dot_matrix" bitwidth="32" opcode="sext" nodeLabel="7.0" m_display="0" m_topoIndex="62" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="25" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="94" name="gmem_addr_2" lineNumber="25" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." coreId="0" contextFuncName="dot_matrix" bitwidth="32" opcode="getelementptr" nodeLabel="7.0" m_display="0" m_topoIndex="63" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="25" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+        <dataInputObjs>gmem</dataInputObjs>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataOutputObjs>readreq</dataOutputObjs>
+        <dataOutputObjs>read</dataOutputObjs>
+        <dataOutputObjs>gmem</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="95" name="gmem_load_1_req" lineNumber="25" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." coreName="m_axi" implIndex="m_axi" control="auto" opType="readreq" coreId="113" contextFuncName="dot_matrix" bitwidth="1" opcode="readreq" nodeLabel="7.0" nodeLatency="6" m_display="0" m_delay="7.3" m_topoIndex="64" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="25" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="96" name="gmem_addr_2_read" lineNumber="25" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." coreName="m_axi" implIndex="UNSUPPORTED" control="auto" coreId="113" contextFuncName="dot_matrix" bitwidth="32" opcode="read" nodeLabel="14.0" m_display="0" m_delay="7.3" m_topoIndex="66" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="25" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="97" name="mul_ln27" lineNumber="27" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." rtlName="mul_32s_32s_32_2_1_U1" opType="mul" coreId="0" contextFuncName="dot_matrix" bitwidth="32" opcode="mul" nodeLabel="15.0" nodeLatency="1" m_display="0" m_delay="6.91" m_topoIndex="67" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="27" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="98" name="add_ln27" lineNumber="27" fileName="dot_mat/dot_matrix.cpp" fileDirectory=".." rtlName="add_ln27_fu_478_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="dot_matrix" bitwidth="32" opcode="add" nodeLabel="17.0" m_display="0" m_delay="2.55" m_topoIndex="69" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dot_mat/dot_matrix.cpp" linenumber="27" fileDirectory="/home/anubhav/workspace/ip_repo" functionName="dot_matrix"/>
+        <dataInputObjs>mul</dataInputObjs>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="99" name="br_ln0" coreId="0" opcode="br" nodeLabel="17.0" m_display="0" m_topoIndex="70" m_clusterGroupNumber="-1">
+        <controlInputObjs>block_75</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="dot_mat/dot_matrix.cpp">
+        <validLinenumbers>24</validLinenumbers>
+        <validLinenumbers>25</validLinenumbers>
+        <validLinenumbers>27</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <ScheduleInfo time="7"/>
+  <ScheduleInfo time="8"/>
+  <ScheduleInfo time="9"/>
+  <ScheduleInfo time="10"/>
+  <ScheduleInfo time="11"/>
+  <ScheduleInfo time="12"/>
+  <ScheduleInfo time="13"/>
+  <ScheduleInfo time="14"/>
+  <ScheduleInfo time="15"/>
+  <ScheduleInfo time="16"/>
+  <ScheduleInfo time="17"/>
+  <ScheduleInfo time="18"/>
+  <ScheduleInfo time="19"/>
+  <ScheduleInfo time="20"/>
+  <ScheduleInfo time="21"/>
+  <ScheduleInfo time="22"/>
+  <ScheduleInfo time="23"/>
+  <regnodes realName="trunc_ln1_reg_575">
+    <nodeIds>92</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln17_1_reg_498">
+    <nodeIds>25</nodeIds>
+  </regnodes>
+  <regnodes realName="gmem_addr_1_reg_569">
+    <nodeIds>81</nodeIds>
+  </regnodes>
+  <regnodes realName="sext_ln17_reg_493">
+    <nodeIds>21</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln_reg_511">
+    <nodeIds>44</nodeIds>
+  </regnodes>
+  <regnodes realName="i_reg_173">
+    <nodeIds>24</nodeIds>
+  </regnodes>
+  <regnodes realName="mul_ln27_reg_596">
+    <nodeIds>97</nodeIds>
+  </regnodes>
+  <regnodes realName="gmem_addr_2_read_reg_591">
+    <nodeIds>96</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln22_reg_564">
+    <nodeIds>71</nodeIds>
+  </regnodes>
+  <regnodes realName="c_t_load_reg_545">
+    <nodeIds>64</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln30_reg_516">
+    <nodeIds>47</nodeIds>
+  </regnodes>
+  <regnodes realName="gmem_addr_2_reg_580">
+    <nodeIds>94</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln24_reg_559">
+    <nodeIds>79</nodeIds>
+  </regnodes>
+  <regnodes realName="b_read_reg_483">
+    <nodeIds>18</nodeIds>
+  </regnodes>
+  <regnodes realName="a_read_reg_488">
+    <nodeIds>19</nodeIds>
+  </regnodes>
+  <regnodes realName="empty_19_reg_506">
+    <nodeIds>36</nodeIds>
+  </regnodes>
+  <regnodes realName="zext_ln22_reg_550">
+    <nodeIds>66</nodeIds>
+  </regnodes>
+  <regnodes realName="k_reg_196">
+    <nodeIds>69</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln20_reg_532">
+    <nodeIds>54</nodeIds>
+  </regnodes>
+  <regnodes realName="empty_22_reg_208">
+    <nodeIds>70</nodeIds>
+  </regnodes>
+  <regnodes realName="j_reg_184">
+    <nodeIds>53</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln22_reg_555">
+    <nodeIds>72</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln27_reg_601">
+    <nodeIds>98</nodeIds>
+  </regnodes>
+  <regnodes realName="c_t_addr_reg_540">
+    <nodeIds>63</nodeIds>
+  </regnodes>
+  <regnodes realName="gmem_addr_reg_526">
+    <nodeIds>49</nodeIds>
+  </regnodes>
+  <regnodes realName="gmem_addr_1_read_reg_586">
+    <nodeIds>83</nodeIds>
+  </regnodes>
+  <regnodes realName="sext_ln30_reg_521">
+    <nodeIds>45</nodeIds>
+  </regnodes>
+  <expressionNodes realName="zext_ln17_2_fu_286">
+    <nodeIds>38</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="gmem_addr_fu_334">
+    <nodeIds>49</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="shl_ln25_2_fu_422">
+    <nodeIds>86</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln1_fu_454">
+    <nodeIds>92</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln20_fu_319">
+    <nodeIds>46</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="empty_21_fu_357">
+    <nodeIds>61</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="empty_22_phi_fu_213">
+    <nodeIds>70</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="shl_ln17_1_fu_278">
+    <nodeIds>37</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln17_1_fu_234">
+    <nodeIds>25</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="gmem_addr_2_fu_467">
+    <nodeIds>94</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="c_t_addr_gep_fu_160">
+    <nodeIds>63</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_cast_fu_362">
+    <nodeIds>62</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln24_fu_385">
+    <nodeIds>78</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln17_fu_304">
+    <nodeIds>42</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="j_cast_fu_353">
+    <nodeIds>60</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="empty_19_fu_272">
+    <nodeIds>36</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_phi_fu_177">
+    <nodeIds>24</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="k_phi_fu_200">
+    <nodeIds>69</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln17_fu_240">
+    <nodeIds>26</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln25_1_fu_440">
+    <nodeIds>89</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln25_fu_464">
+    <nodeIds>93</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln24_fu_400">
+    <nodeIds>80</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln25_fu_418">
+    <nodeIds>85</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln27_fu_478">
+    <nodeIds>98</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln17_1_fu_300">
+    <nodeIds>41</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln_fu_309">
+    <nodeIds>44</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln22_fu_394">
+    <nodeIds>71</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln25_1_fu_449">
+    <nodeIds>91</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sub_ln25_fu_434">
+    <nodeIds>88</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="gmem_addr_1_fu_403">
+    <nodeIds>81</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln17_fu_244">
+    <nodeIds>27</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="shl_ln_fu_250">
+    <nodeIds>32</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="j_phi_fu_188">
+    <nodeIds>53</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln17_1_fu_220">
+    <nodeIds>20</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="shl_ln1_fu_367">
+    <nodeIds>65</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln22_fu_379">
+    <nodeIds>72</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln20_fu_341">
+    <nodeIds>54</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln17_fu_230">
+    <nodeIds>21</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sub_ln30_fu_262">
+    <nodeIds>34</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln30_fu_328">
+    <nodeIds>45</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln24_fu_389">
+    <nodeIds>79</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln25_fu_444">
+    <nodeIds>90</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln30_fu_323">
+    <nodeIds>47</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="shl_ln25_1_fu_410">
+    <nodeIds>84</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln25_1_fu_430">
+    <nodeIds>87</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln17_3_fu_290">
+    <nodeIds>39</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln30_1_fu_331">
+    <nodeIds>48</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln20_fu_347">
+    <nodeIds>55</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sub_ln17_fu_294">
+    <nodeIds>40</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln17_1_fu_258">
+    <nodeIds>33</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln22_fu_375">
+    <nodeIds>66</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_cast_fu_268">
+    <nodeIds>35</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_fu_474">
+    <nodeIds>97</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="grp_readreq_fu_134">
+    <nodeIds>95</nodeIds>
+  </ioNodes>
+  <ioNodes realName="c_read_read_fu_102">
+    <nodeIds>17</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_readreq_fu_127">
+    <nodeIds>82</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln30_write_fu_151">
+    <nodeIds>102</nodeIds>
+  </ioNodes>
+  <ioNodes realName="gmem_addr_2_read_read_fu_146">
+    <nodeIds>96</nodeIds>
+  </ioNodes>
+  <ioNodes realName="gmem_addr_1_read_read_fu_141">
+    <nodeIds>83</nodeIds>
+  </ioNodes>
+  <ioNodes realName="a_read_read_fu_114">
+    <nodeIds>19</nodeIds>
+  </ioNodes>
+  <ioNodes realName="b_read_read_fu_108">
+    <nodeIds>18</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_writeresp_fu_120">
+    <nodeIds>50</nodeIds>
+    <nodeIds>105</nodeIds>
+  </ioNodes>
+  <memoryPorts dataString="c_t">
+    <nodeIds>64</nodeIds>
+    <nodeIds>101</nodeIds>
+  </memoryPorts>
+  <ioPorts name="a">
+    <contents name="read">
+      <nodeIds>19</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="b">
+    <contents name="read">
+      <nodeIds>18</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="c">
+    <contents name="read">
+      <nodeIds>17</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="gmem"/>
+  <fsm>
+    <states id="1">
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="109" stage="1" latency="1"/>
+    </states>
+    <states id="3">
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="51" stage="1" latency="1"/>
+    </states>
+    <states id="4">
+      <operations id="53" stage="1" latency="1"/>
+      <operations id="54" stage="1" latency="1"/>
+      <operations id="55" stage="1" latency="1"/>
+      <operations id="56" stage="1" latency="1"/>
+      <operations id="57" stage="1" latency="1"/>
+      <operations id="60" stage="1" latency="1"/>
+      <operations id="61" stage="1" latency="1"/>
+      <operations id="62" stage="1" latency="1"/>
+      <operations id="63" stage="1" latency="1"/>
+      <operations id="64" stage="2" latency="2"/>
+    </states>
+    <states id="5">
+      <operations id="59" stage="1" latency="1"/>
+      <operations id="64" stage="1" latency="2"/>
+      <operations id="65" stage="1" latency="1"/>
+      <operations id="66" stage="1" latency="1"/>
+      <operations id="67" stage="1" latency="1"/>
+    </states>
+    <states id="6">
+      <operations id="69" stage="1" latency="1"/>
+      <operations id="72" stage="1" latency="1"/>
+      <operations id="74" stage="1" latency="1"/>
+      <operations id="78" stage="1" latency="1"/>
+      <operations id="79" stage="1" latency="1"/>
+    </states>
+    <states id="7">
+      <operations id="71" stage="1" latency="1"/>
+      <operations id="80" stage="1" latency="1"/>
+      <operations id="81" stage="1" latency="1"/>
+      <operations id="82" stage="7" latency="7"/>
+      <operations id="84" stage="1" latency="1"/>
+      <operations id="85" stage="1" latency="1"/>
+      <operations id="86" stage="1" latency="1"/>
+      <operations id="87" stage="1" latency="1"/>
+      <operations id="88" stage="1" latency="1"/>
+      <operations id="89" stage="1" latency="1"/>
+      <operations id="90" stage="1" latency="1"/>
+      <operations id="91" stage="1" latency="1"/>
+      <operations id="92" stage="1" latency="1"/>
+    </states>
+    <states id="8">
+      <operations id="82" stage="6" latency="7"/>
+      <operations id="93" stage="1" latency="1"/>
+      <operations id="94" stage="1" latency="1"/>
+      <operations id="95" stage="7" latency="7"/>
+    </states>
+    <states id="9">
+      <operations id="82" stage="5" latency="7"/>
+      <operations id="95" stage="6" latency="7"/>
+    </states>
+    <states id="10">
+      <operations id="82" stage="4" latency="7"/>
+      <operations id="95" stage="5" latency="7"/>
+    </states>
+    <states id="11">
+      <operations id="82" stage="3" latency="7"/>
+      <operations id="95" stage="4" latency="7"/>
+    </states>
+    <states id="12">
+      <operations id="82" stage="2" latency="7"/>
+      <operations id="95" stage="3" latency="7"/>
+    </states>
+    <states id="13">
+      <operations id="82" stage="1" latency="7"/>
+      <operations id="95" stage="2" latency="7"/>
+    </states>
+    <states id="14">
+      <operations id="83" stage="1" latency="1"/>
+      <operations id="95" stage="1" latency="7"/>
+    </states>
+    <states id="15">
+      <operations id="96" stage="1" latency="1"/>
+    </states>
+    <states id="16">
+      <operations id="97" stage="2" latency="2"/>
+    </states>
+    <states id="17">
+      <operations id="70" stage="1" latency="1"/>
+      <operations id="73" stage="1" latency="1"/>
+      <operations id="97" stage="1" latency="2"/>
+    </states>
+    <states id="18">
+      <operations id="76" stage="1" latency="1"/>
+      <operations id="77" stage="1" latency="1"/>
+      <operations id="98" stage="1" latency="1"/>
+      <operations id="99" stage="1" latency="1"/>
+    </states>
+    <states id="19">
+      <operations id="101" stage="1" latency="1"/>
+      <operations id="102" stage="1" latency="1"/>
+      <operations id="103" stage="1" latency="1"/>
+    </states>
+    <states id="20">
+      <operations id="105" stage="5" latency="5"/>
+    </states>
+    <states id="21">
+      <operations id="105" stage="4" latency="5"/>
+    </states>
+    <states id="22">
+      <operations id="105" stage="3" latency="5"/>
+    </states>
+    <states id="23">
+      <operations id="105" stage="2" latency="5"/>
+    </states>
+    <states id="24">
+      <operations id="105" stage="1" latency="5"/>
+      <operations id="106" stage="1" latency="1"/>
+      <operations id="107" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="20">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="19" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="20" outState="21">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="21" outState="22">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="22" outState="23">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="23" outState="24">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="24" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="7" outState="8">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="8" outState="9">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="9" outState="10">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="10" outState="11">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="11" outState="12">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="12" outState="13">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="13" outState="14">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="14" outState="15">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="15" outState="16">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="16" outState="17">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="18" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="17" outState="19">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="17" outState="18">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="dot_matrix" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="214" mMaxLatency="214">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>10</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>23</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="i_cycle" mII="-1" mDepth="-1" mMinTripCount="3" mMaxTripCount="3" mMinLatency="213" mMaxLatency="213" mType="1">
+      <subRegions>4</subRegions>
+      <subRegions>5</subRegions>
+      <subRegions>9</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Region 1" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMaxLatency="1">
+      <basicBlocks>30</basicBlocks>
+      <basicBlocks>52</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="5" mTag="j_cycle" mII="-1" mDepth="-1" mMinTripCount="3" mMaxTripCount="3" mMinLatency="63" mMaxLatency="63" mType="1">
+      <subRegions>6</subRegions>
+      <subRegions>7</subRegions>
+      <subRegions>8</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="6" mTag="Region 2" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMaxLatency="1">
+      <basicBlocks>58</basicBlocks>
+      <basicBlocks>68</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="7" mTag="k_cycle" mII="2" mDepth="13" mMinTripCount="3" mMaxTripCount="3" mMinLatency="17" mMaxLatency="17" mType="1">
+      <basicBlocks>75</basicBlocks>
+      <basicBlocks>100</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="8" mTag="Region 3" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>104</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="9" mTag="Region 4" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="4" mMaxLatency="4">
+      <basicBlocks>108</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="10" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>110</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

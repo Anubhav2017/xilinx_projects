@@ -1,0 +1,298 @@
+23:51:26 INFO  : Launching XSCT server: xsct -n  -interactive /home/anubhav/workspace/neural_net/vitis/temp_xsdb_launch_script.tcl
+23:51:27 INFO  : Registering command handlers for Vitis TCF services
+23:51:32 INFO  : XSCT server has started successfully.
+23:51:32 INFO  : Successfully done setting XSCT server connection channel  
+23:51:32 INFO  : plnx-install-location is set to ''
+23:51:32 INFO  : Successfully done setting workspace for the tool. 
+23:51:32 INFO  : Successfully done query RDI_DATADIR 
+23:51:33 INFO  : Platform repository initialization has completed.
+23:55:31 INFO  : Result from executing command 'getProjects': nn_wrapper
+23:55:31 INFO  : Result from executing command 'getPlatforms': ULTRA96V2|/opt/xilinx/platforms/ULTRA96V2/ULTRA96V2.xpfm;u96v2_sbc_base|/opt/xilinx/platforms/u96v2_sbc_base/u96v2_sbc_base.xpfm
+23:55:31 WARN  : An unexpected exception occurred in the module 'platform project logging'
+23:55:31 INFO  : Platform 'nn_wrapper' is added to custom repositories.
+23:55:40 INFO  : Platform 'nn_wrapper' is added to custom repositories.
+00:15:05 INFO  : Result from executing command 'getProjects': nn_wrapper
+00:15:05 INFO  : Result from executing command 'getPlatforms': ULTRA96V2|/opt/xilinx/platforms/ULTRA96V2/ULTRA96V2.xpfm;nn_wrapper|/home/anubhav/workspace/neural_net/vitis/nn_wrapper/export/nn_wrapper/nn_wrapper.xpfm;u96v2_sbc_base|/opt/xilinx/platforms/u96v2_sbc_base/u96v2_sbc_base.xpfm
+00:15:09 INFO  : Checking for BSP changes to sync application flags for project 'fcc_test'...
+00:37:49 INFO  : Checking for BSP changes to sync application flags for project 'fcc_test'...
+00:38:30 INFO  : Checking for BSP changes to sync application flags for project 'fcc_test'...
+00:41:28 INFO  : Checking for BSP changes to sync application flags for project 'fcc_test'...
+00:41:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:41:42 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+00:41:42 INFO  : 'jtag frequency' command is executed.
+00:41:42 INFO  : Context for 'APU' is selected.
+00:41:43 INFO  : System reset is completed.
+00:41:46 INFO  : 'after 3000' command is executed.
+00:41:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+00:41:48 INFO  : Device configured successfully with "/home/anubhav/workspace/neural_net/vitis/fcc_test/_ide/bitstream/nn_wrapper.bit"
+00:41:48 INFO  : Context for 'APU' is selected.
+00:41:48 INFO  : Hardware design and registers information is loaded from '/home/anubhav/workspace/neural_net/vitis/nn_wrapper/export/nn_wrapper/hw/nn_wrapper.xsa'.
+00:41:48 INFO  : 'configparams force-mem-access 1' command is executed.
+00:41:48 INFO  : Context for 'APU' is selected.
+00:41:48 INFO  : Sourcing of '/home/anubhav/workspace/neural_net/vitis/fcc_test/_ide/psinit/ps7_init.tcl' is done.
+00:41:49 INFO  : 'ps7_init' command is executed.
+00:41:49 INFO  : 'ps7_post_config' command is executed.
+00:41:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:41:49 INFO  : The application '/home/anubhav/workspace/neural_net/vitis/fcc_test/Debug/fcc_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+00:41:49 INFO  : 'configparams force-mem-access 0' command is executed.
+00:41:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file /home/anubhav/workspace/neural_net/vitis/fcc_test/_ide/bitstream/nn_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/anubhav/workspace/neural_net/vitis/nn_wrapper/export/nn_wrapper/hw/nn_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/anubhav/workspace/neural_net/vitis/fcc_test/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/anubhav/workspace/neural_net/vitis/fcc_test/Debug/fcc_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+00:41:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:41:49 INFO  : 'con' command is executed.
+00:41:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+00:41:49 INFO  : Launch script is exported to file '/home/anubhav/workspace/neural_net/vitis/fcc_test_system/_ide/scripts/debugger_fcc_test-default.tcl'
+00:44:42 INFO  : Checking for BSP changes to sync application flags for project 'fcc_test'...
+00:44:55 INFO  : Checking for BSP changes to sync application flags for project 'fcc_test'...
+00:45:00 INFO  : Disconnected from the channel tcfchan#2.
+00:45:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:45:09 INFO  : Checking for BSP changes to sync application flags for project 'fcc_test'...
+00:45:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+00:45:10 ERROR : Could not find ARM device on the board for connection 'Local'.
+Check if the target is in:
+1. Split JTAG - No operations are possible with ARM DAP.
+2. Non JTAG bootmode - Bootrom may need time to enable DAP.
+Please try again.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+00:45:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:45:21 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+00:45:21 INFO  : 'jtag frequency' command is executed.
+00:45:21 INFO  : Context for 'APU' is selected.
+00:45:22 INFO  : System reset is completed.
+00:45:25 INFO  : 'after 3000' command is executed.
+00:45:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+00:45:27 INFO  : Device configured successfully with "/home/anubhav/workspace/neural_net/vitis/fcc_test/_ide/bitstream/nn_wrapper.bit"
+00:45:27 INFO  : Context for 'APU' is selected.
+00:45:27 INFO  : Hardware design and registers information is loaded from '/home/anubhav/workspace/neural_net/vitis/nn_wrapper/export/nn_wrapper/hw/nn_wrapper.xsa'.
+00:45:27 INFO  : 'configparams force-mem-access 1' command is executed.
+00:45:27 INFO  : Context for 'APU' is selected.
+00:45:27 INFO  : Sourcing of '/home/anubhav/workspace/neural_net/vitis/fcc_test/_ide/psinit/ps7_init.tcl' is done.
+00:45:28 INFO  : 'ps7_init' command is executed.
+00:45:28 INFO  : 'ps7_post_config' command is executed.
+00:45:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:45:28 INFO  : The application '/home/anubhav/workspace/neural_net/vitis/fcc_test/Debug/fcc_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+00:45:28 INFO  : 'configparams force-mem-access 0' command is executed.
+00:45:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file /home/anubhav/workspace/neural_net/vitis/fcc_test/_ide/bitstream/nn_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/anubhav/workspace/neural_net/vitis/nn_wrapper/export/nn_wrapper/hw/nn_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/anubhav/workspace/neural_net/vitis/fcc_test/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/anubhav/workspace/neural_net/vitis/fcc_test/Debug/fcc_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+00:45:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:45:28 INFO  : 'con' command is executed.
+00:45:28 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+00:45:28 INFO  : Launch script is exported to file '/home/anubhav/workspace/neural_net/vitis/fcc_test_system/_ide/scripts/debugger_fcc_test-default.tcl'
+00:57:53 ERROR : (XSDB Server)Hangup
+
+02:07:17 INFO  : Launching XSCT server: xsct -n  -interactive /home/anubhav/workspace/neural_net/vitis/temp_xsdb_launch_script.tcl
+02:07:20 INFO  : XSCT server has started successfully.
+02:07:20 INFO  : plnx-install-location is set to ''
+02:07:20 INFO  : Successfully done setting XSCT server connection channel  
+02:07:20 INFO  : Successfully done setting workspace for the tool. 
+02:07:24 INFO  : Platform repository initialization has completed.
+02:07:24 INFO  : Registering command handlers for Vitis TCF services
+02:07:24 INFO  : Successfully done query RDI_DATADIR 
+02:18:53 INFO  : Hardware specification for platform project 'nn_wrapper' is updated.
+02:19:27 INFO  : Result from executing command 'getProjects': nn_wrapper
+02:19:27 INFO  : Result from executing command 'getPlatforms': ULTRA96V2|/opt/xilinx/platforms/ULTRA96V2/ULTRA96V2.xpfm;nn_wrapper|/home/anubhav/workspace/neural_net/vitis/nn_wrapper/export/nn_wrapper/nn_wrapper.xpfm;u96v2_sbc_base|/opt/xilinx/platforms/u96v2_sbc_base/u96v2_sbc_base.xpfm
+02:22:29 INFO  : Checking for BSP changes to sync application flags for project 'fcc_test'...
+02:22:30 INFO  : Updating application flags with new BSP settings...
+02:22:31 INFO  : Successfully updated application flags for project fcc_test.
+02:22:38 INFO  : The hardware specfication used by project 'fcc_test' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+02:22:38 INFO  : The file '/home/anubhav/workspace/neural_net/vitis/fcc_test/_ide/bitstream/nn_wrapper.bit' stored in project is removed.
+02:22:38 INFO  : The updated bitstream files are copied from platform to folder '/home/anubhav/workspace/neural_net/vitis/fcc_test/_ide/bitstream' in project 'fcc_test'.
+02:22:38 INFO  : The file '/home/anubhav/workspace/neural_net/vitis/fcc_test/_ide/psinit/ps7_init.tcl' stored in project is removed.
+02:22:43 INFO  : The updated ps init files are copied from platform to folder '/home/anubhav/workspace/neural_net/vitis/fcc_test/_ide/psinit' in project 'fcc_test'.
+02:22:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:22:44 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+02:22:44 INFO  : 'jtag frequency' command is executed.
+02:22:44 INFO  : Context for 'APU' is selected.
+02:22:44 INFO  : System reset is completed.
+02:22:47 INFO  : 'after 3000' command is executed.
+02:22:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+02:22:50 INFO  : Device configured successfully with "/home/anubhav/workspace/neural_net/vitis/fcc_test/_ide/bitstream/nn_wrapper.bit"
+02:22:50 INFO  : Context for 'APU' is selected.
+02:22:50 INFO  : Hardware design and registers information is loaded from '/home/anubhav/workspace/neural_net/vitis/nn_wrapper/export/nn_wrapper/hw/nn_wrapper.xsa'.
+02:22:50 INFO  : 'configparams force-mem-access 1' command is executed.
+02:22:50 INFO  : Context for 'APU' is selected.
+02:22:50 INFO  : Sourcing of '/home/anubhav/workspace/neural_net/vitis/fcc_test/_ide/psinit/ps7_init.tcl' is done.
+02:22:50 INFO  : 'ps7_init' command is executed.
+02:22:50 INFO  : 'ps7_post_config' command is executed.
+02:22:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:22:50 INFO  : The application '/home/anubhav/workspace/neural_net/vitis/fcc_test/Debug/fcc_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+02:22:50 INFO  : 'configparams force-mem-access 0' command is executed.
+02:22:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file /home/anubhav/workspace/neural_net/vitis/fcc_test/_ide/bitstream/nn_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/anubhav/workspace/neural_net/vitis/nn_wrapper/export/nn_wrapper/hw/nn_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/anubhav/workspace/neural_net/vitis/fcc_test/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/anubhav/workspace/neural_net/vitis/fcc_test/Debug/fcc_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+02:22:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:22:51 INFO  : 'con' command is executed.
+02:22:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+02:22:51 INFO  : Launch script is exported to file '/home/anubhav/workspace/neural_net/vitis/fcc_test_system/_ide/scripts/debugger_fcc_test-default.tcl'
+02:23:13 INFO  : Disconnected from the channel tcfchan#3.
+02:23:35 INFO  : Launching XSCT server: xsct -n  -interactive /home/anubhav/workspace/neural_net/vitis/temp_xsdb_launch_script.tcl
+02:23:39 INFO  : XSCT server has started successfully.
+02:23:39 INFO  : plnx-install-location is set to ''
+02:23:39 INFO  : Successfully done setting XSCT server connection channel  
+02:23:39 INFO  : Successfully done setting workspace for the tool. 
+02:23:42 INFO  : Platform repository initialization has completed.
+02:23:42 INFO  : Successfully done query RDI_DATADIR 
+02:23:42 INFO  : Registering command handlers for Vitis TCF services
+02:24:04 INFO  : Checking for BSP changes to sync application flags for project 'fcc_test'...
+02:24:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:24:10 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+02:24:10 INFO  : 'jtag frequency' command is executed.
+02:24:10 INFO  : Context for 'APU' is selected.
+02:24:10 INFO  : System reset is completed.
+02:24:13 INFO  : 'after 3000' command is executed.
+02:24:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+02:24:15 INFO  : Device configured successfully with "/home/anubhav/workspace/neural_net/vitis/fcc_test/_ide/bitstream/nn_wrapper.bit"
+02:24:15 INFO  : Context for 'APU' is selected.
+02:24:15 INFO  : Hardware design and registers information is loaded from '/home/anubhav/workspace/neural_net/vitis/nn_wrapper/export/nn_wrapper/hw/nn_wrapper.xsa'.
+02:24:15 INFO  : 'configparams force-mem-access 1' command is executed.
+02:24:15 INFO  : Context for 'APU' is selected.
+02:24:15 INFO  : Sourcing of '/home/anubhav/workspace/neural_net/vitis/fcc_test/_ide/psinit/ps7_init.tcl' is done.
+02:24:16 INFO  : 'ps7_init' command is executed.
+02:24:16 INFO  : 'ps7_post_config' command is executed.
+02:24:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:24:16 INFO  : The application '/home/anubhav/workspace/neural_net/vitis/fcc_test/Debug/fcc_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+02:24:16 INFO  : 'configparams force-mem-access 0' command is executed.
+02:24:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file /home/anubhav/workspace/neural_net/vitis/fcc_test/_ide/bitstream/nn_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/anubhav/workspace/neural_net/vitis/nn_wrapper/export/nn_wrapper/hw/nn_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/anubhav/workspace/neural_net/vitis/fcc_test/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/anubhav/workspace/neural_net/vitis/fcc_test/Debug/fcc_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+02:24:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:24:16 INFO  : 'con' command is executed.
+02:24:16 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+02:24:16 INFO  : Launch script is exported to file '/home/anubhav/workspace/neural_net/vitis/fcc_test_system/_ide/scripts/debugger_fcc_test-default.tcl'
+02:25:49 INFO  : Checking for BSP changes to sync application flags for project 'fcc_test'...
+02:26:05 INFO  : Disconnected from the channel tcfchan#1.
+02:26:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:26:06 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+02:26:06 INFO  : 'jtag frequency' command is executed.
+02:26:06 INFO  : Context for 'APU' is selected.
+02:26:06 INFO  : System reset is completed.
+02:26:09 INFO  : 'after 3000' command is executed.
+02:26:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+02:26:12 INFO  : Device configured successfully with "/home/anubhav/workspace/neural_net/vitis/fcc_test/_ide/bitstream/nn_wrapper.bit"
+02:26:12 INFO  : Context for 'APU' is selected.
+02:26:14 INFO  : Hardware design and registers information is loaded from '/home/anubhav/workspace/neural_net/vitis/nn_wrapper/export/nn_wrapper/hw/nn_wrapper.xsa'.
+02:26:14 INFO  : 'configparams force-mem-access 1' command is executed.
+02:26:14 INFO  : Context for 'APU' is selected.
+02:26:14 INFO  : Sourcing of '/home/anubhav/workspace/neural_net/vitis/fcc_test/_ide/psinit/ps7_init.tcl' is done.
+02:26:14 INFO  : 'ps7_init' command is executed.
+02:26:14 INFO  : 'ps7_post_config' command is executed.
+02:26:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:26:14 INFO  : The application '/home/anubhav/workspace/neural_net/vitis/fcc_test/Debug/fcc_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+02:26:14 INFO  : 'configparams force-mem-access 0' command is executed.
+02:26:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file /home/anubhav/workspace/neural_net/vitis/fcc_test/_ide/bitstream/nn_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/anubhav/workspace/neural_net/vitis/nn_wrapper/export/nn_wrapper/hw/nn_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/anubhav/workspace/neural_net/vitis/fcc_test/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/anubhav/workspace/neural_net/vitis/fcc_test/Debug/fcc_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+02:26:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:26:14 INFO  : 'con' command is executed.
+02:26:14 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+02:26:14 INFO  : Launch script is exported to file '/home/anubhav/workspace/neural_net/vitis/fcc_test_system/_ide/scripts/debugger_fcc_test-default.tcl'
+02:28:07 INFO  : Disconnected from the channel tcfchan#2.

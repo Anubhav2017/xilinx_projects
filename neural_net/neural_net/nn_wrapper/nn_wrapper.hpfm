@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!-- nn_wrapper.hpfm -->
+<xd:repository xmlns:xd="http://www.xilinx.com/xd" xd:name="name" xd:library="pynq-z2" xd:version="0.0" xd:vendor="xilinx">
+  <xd:component xd:name="name" xd:library="pynq-z2" xd:version="0.0" xd:vendor="xilinx" xd:type="platform" xd:BRAM="140" xd:DSP="220" xd:FF="106400" xd:LUT="53200">
+    <xd:platformInfo>
+      <xd:deviceInfo xd:name="xc7z020clg400-1" xd:architecture="zynq" xd:device="xc7z020" xd:package="clg400" xd:speedGrade="-1"/>
+      <xd:registeredDevices xd:kio="0" xd:uio="0"/>
+      <xd:description></xd:description>
+      <xd:systemClocks xd:defaultClock="0">
+        <xd:clock xd:name="CPU" xd:instanceRef="processing_system7_0" xd:componentRef="processing_system7" xd:frequency="650.000000" xd:period="1.538462" xd:status="reserved"/>
+        <xd:clock xd:name="processing_system7_0_FCLK_CLK0" xd:instanceRef="processing_system7_0" xd:componentRef="processing_system7" xd:id="0" xd:frequency="100.000000" xd:period="10.000000" xd:normalizedPeriod="6.500000" xd:clkDomain="design_1_processing_system7_0_0_FCLK_CLK0" xd:status="fixed"/>
+      </xd:systemClocks>
+    </xd:platformInfo>
+    <xd:busInterface xd:busTypeRef="clock" xd:name="processing_system7_0_FCLK_CLK0" xd:instanceRef="processing_system7_0" xd:componentRef="processing_system7" xd:mode="master" xd:busInterfaceRef="FCLK_CLK0"/>
+    <xd:busInterface xd:busTypeRef="reset" xd:name="rst_ps7_0_100M_peripheral_reset" xd:instanceRef="rst_ps7_0_100M" xd:componentRef="proc_sys_reset" xd:mode="master" xd:clockRef="processing_system7_0_FCLK_CLK0" xd:busInterfaceRef="peripheral_reset" xd:clkDomain="design_1_processing_system7_0_0_FCLK_CLK0" xd:slr="default"/>
+    <xd:busInterface xd:busTypeRef="reset" xd:name="rst_ps7_0_100M_interconnect_aresetn" xd:instanceRef="rst_ps7_0_100M" xd:componentRef="proc_sys_reset" xd:mode="master" xd:clockRef="processing_system7_0_FCLK_CLK0" xd:busInterfaceRef="interconnect_aresetn" xd:clkDomain="design_1_processing_system7_0_0_FCLK_CLK0" xd:slr="default"/>
+    <xd:busInterface xd:busTypeRef="reset" xd:name="rst_ps7_0_100M_peripheral_aresetn" xd:instanceRef="rst_ps7_0_100M" xd:componentRef="proc_sys_reset" xd:mode="master" xd:clockRef="processing_system7_0_FCLK_CLK0" xd:busInterfaceRef="peripheral_aresetn" xd:clkDomain="design_1_processing_system7_0_0_FCLK_CLK0" xd:slr="default"/>
+    <xd:resourceEstimates xd:BRAM="0" xd:DSP="0" xd:FF="0" xd:LUT="0"/>
+  </xd:component>
+</xd:repository>

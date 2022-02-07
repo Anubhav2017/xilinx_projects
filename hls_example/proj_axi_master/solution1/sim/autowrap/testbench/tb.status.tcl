@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /home/anubhav/workspace/hls_example/proj_axi_master/solution1/./sim/autowrap/testbench/example.cpp_pre.cpp.tb.cpp

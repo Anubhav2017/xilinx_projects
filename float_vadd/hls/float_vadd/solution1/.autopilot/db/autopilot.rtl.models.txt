@@ -1,0 +1,5 @@
+float_vadd_fadd_32ns_32ns_32_5_full_dsp_1
+float_vadd_a_t
+float_vadd_control_s_axi
+float_vadd_gmem_m_axi
+float_vadd

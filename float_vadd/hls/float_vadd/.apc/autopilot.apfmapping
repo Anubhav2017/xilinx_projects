@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="vadd.cpp" path="/home/anubhav/workspace/float_vadd/hls/vadd.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="tb.cpp" path="/home/anubhav/workspace/float_vadd/hls/tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

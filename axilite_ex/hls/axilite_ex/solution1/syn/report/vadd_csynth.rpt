@@ -1,0 +1,131 @@
+
+
+================================================================
+== Vitis HLS Report for 'vadd'
+================================================================
+* Date:           Sun Jan 30 01:49:18 2022
+
+* Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
+* Project:        axilite_ex
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  5.669 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        0|        0|      0 ns|      0 ns|    1|    1|     none|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|     16|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        0|    -|      92|    104|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|      -|    -|
+|Register         |        -|    -|       -|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|      92|    120|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +-------------+-----------+---------+----+----+-----+-----+
+    |   Instance  |   Module  | BRAM_18K| DSP| FF | LUT | URAM|
+    +-------------+-----------+---------+----+----+-----+-----+
+    |gen_s_axi_U  |gen_s_axi  |        0|   0|  92|  104|    0|
+    +-------------+-----------+---------+----+----+-----+-----+
+    |Total        |           |        0|   0|  92|  104|    0|
+    +-------------+-----------+---------+----+----+-----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-------------------+----------+----+---+----+------------+------------+
+    |   Variable Name   | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-------------------+----------+----+---+----+------------+------------+
+    |add_ln11_fu_57_p2  |         +|   0|  0|   8|           8|           8|
+    |c_o                |         +|   0|  0|   8|           8|           8|
+    +-------------------+----------+----+---+----+------------+------------+
+    |Total              |          |   0|  0|  16|          16|          16|
+    +-------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------+-----+-----+------------+--------------+--------------+
+|     RTL Ports     | Dir | Bits|  Protocol  | Source Object|    C Type    |
++-------------------+-----+-----+------------+--------------+--------------+
+|s_axi_gen_AWVALID  |   in|    1|       s_axi|           gen|       pointer|
+|s_axi_gen_AWREADY  |  out|    1|       s_axi|           gen|       pointer|
+|s_axi_gen_AWADDR   |   in|    6|       s_axi|           gen|       pointer|
+|s_axi_gen_WVALID   |   in|    1|       s_axi|           gen|       pointer|
+|s_axi_gen_WREADY   |  out|    1|       s_axi|           gen|       pointer|
+|s_axi_gen_WDATA    |   in|   32|       s_axi|           gen|       pointer|
+|s_axi_gen_WSTRB    |   in|    4|       s_axi|           gen|       pointer|
+|s_axi_gen_ARVALID  |   in|    1|       s_axi|           gen|       pointer|
+|s_axi_gen_ARREADY  |  out|    1|       s_axi|           gen|       pointer|
+|s_axi_gen_ARADDR   |   in|    6|       s_axi|           gen|       pointer|
+|s_axi_gen_RVALID   |  out|    1|       s_axi|           gen|       pointer|
+|s_axi_gen_RREADY   |   in|    1|       s_axi|           gen|       pointer|
+|s_axi_gen_RDATA    |  out|   32|       s_axi|           gen|       pointer|
+|s_axi_gen_RRESP    |  out|    2|       s_axi|           gen|       pointer|
+|s_axi_gen_BVALID   |  out|    1|       s_axi|           gen|       pointer|
+|s_axi_gen_BREADY   |   in|    1|       s_axi|           gen|       pointer|
+|s_axi_gen_BRESP    |  out|    2|       s_axi|           gen|       pointer|
+|ap_clk             |   in|    1|  ap_ctrl_hs|          vadd|  return value|
+|ap_rst_n           |   in|    1|  ap_ctrl_hs|          vadd|  return value|
+|interrupt          |  out|    1|  ap_ctrl_hs|          vadd|  return value|
++-------------------+-----+-----+------------+--------------+--------------+
+

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdx:platform sdx:vendor="xilinx.com"
+              sdx:library="sdx"
+              sdx:name="vadd_hw"
+              sdx:version="1.0"
+              sdx:schemaVersion="1.0"
+              xmlns:sdx="http://www.xilinx.com/sdx">
+    <sdx:description>
+vadd_hw
+    </sdx:description>
+    <sdx:systemConfigurations sdx:defaultConfiguration="vadd_hw">
+        <sdx:configuration sdx:name="vadd_hw"
+                           sdx:displayName="vadd_hw"
+                           sdx:defaultProcessorGroup="standalone_ps7_cortexa9_0"
+                           sdx:runtimes="cpp">
+            <sdx:description>vadd_hw</sdx:description>
+            <sdx:bootImages sdx:default="standard">
+                <sdx:image sdx:name="standard"
+                            sdx:bif="vadd_hw/boot/vadd_hw.bif"
+                            sdx:readme="vadd_hw/boot/generic.readme"
+                            sdx:qemuArguments="vadd_hw/qemu/qemu_args.txt"
+                            />
+                <sdx:image sdx:name="standalone_ps7_cortexa9_0"
+                            sdx:bif="vadd_hw/boot/vadd_hw.bif"
+                            sdx:readme="vadd_hw/boot/generic.readme"
+                            sdx:qemuArguments="vadd_hw/standalone_ps7_cortexa9_0/qemu/qemu_args.txt"
+                            />
+            </sdx:bootImages>
+            <sdx:processorGroup sdx:name="standalone_ps7_cortexa9_0"
+                                sdx:displayName="standalone_ps7_cortexa9_0"
+                                sdx:cpuType="cortex-a9"
+                                sdx:cpuInstance="ps7_cortexa9_0">
+                <sdx:os sdx:name="standalone"
+                        sdx:displayName="standalone"
+                        sdx:bspLibraryPaths="vadd_hw/standalone_ps7_cortexa9_0/bsplib/lib"
+                        sdx:bspIncludePaths="vadd_hw/standalone_ps7_cortexa9_0/bspinclude/include"
+                        sdx:bspConfig="vadd_hw/standalone_ps7_cortexa9_0/system.mss"
+                />
+            </sdx:processorGroup>
+        </sdx:configuration>
+    </sdx:systemConfigurations>
+</sdx:platform>

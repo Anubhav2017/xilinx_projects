@@ -1,0 +1,123 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'vadd'" level="0">
+<item name = "Date">Sun Jan 30 01:49:19 2022
+</item>
+<item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)</item>
+<item name = "Project">axilite_ex</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 5.669 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">0, 0, 0 ns, 0 ns, 1, 1, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 16, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">0, -, 92, 104, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, -, -</column>
+<column name="Register">-, -, -, -, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, ~0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="gen_s_axi_U">gen_s_axi, 0, 0, 92, 104, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln11_fu_57_p2">+, 0, 0, 8, 8, 8</column>
+<column name="c_o">+, 0, 0, 8, 8, 8</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="s_axi_gen_AWVALID">in, 1, s_axi, gen, pointer</column>
+<column name="s_axi_gen_AWREADY">out, 1, s_axi, gen, pointer</column>
+<column name="s_axi_gen_AWADDR">in, 6, s_axi, gen, pointer</column>
+<column name="s_axi_gen_WVALID">in, 1, s_axi, gen, pointer</column>
+<column name="s_axi_gen_WREADY">out, 1, s_axi, gen, pointer</column>
+<column name="s_axi_gen_WDATA">in, 32, s_axi, gen, pointer</column>
+<column name="s_axi_gen_WSTRB">in, 4, s_axi, gen, pointer</column>
+<column name="s_axi_gen_ARVALID">in, 1, s_axi, gen, pointer</column>
+<column name="s_axi_gen_ARREADY">out, 1, s_axi, gen, pointer</column>
+<column name="s_axi_gen_ARADDR">in, 6, s_axi, gen, pointer</column>
+<column name="s_axi_gen_RVALID">out, 1, s_axi, gen, pointer</column>
+<column name="s_axi_gen_RREADY">in, 1, s_axi, gen, pointer</column>
+<column name="s_axi_gen_RDATA">out, 32, s_axi, gen, pointer</column>
+<column name="s_axi_gen_RRESP">out, 2, s_axi, gen, pointer</column>
+<column name="s_axi_gen_BVALID">out, 1, s_axi, gen, pointer</column>
+<column name="s_axi_gen_BREADY">in, 1, s_axi, gen, pointer</column>
+<column name="s_axi_gen_BRESP">out, 2, s_axi, gen, pointer</column>
+<column name="ap_clk">in, 1, ap_ctrl_hs, vadd, return value</column>
+<column name="ap_rst_n">in, 1, ap_ctrl_hs, vadd, return value</column>
+<column name="interrupt">out, 1, ap_ctrl_hs, vadd, return value</column>
+</table>
+</item>
+</section>
+</profile>

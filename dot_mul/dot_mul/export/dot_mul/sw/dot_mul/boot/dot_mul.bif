@@ -1,0 +1,7 @@
+/*dot_mul*/
+the_ROM_image:
+{
+  [bootloader]<dot_mul/boot/fsbl.elf>
+   <bitstream> 
+  <elf,ps7_cortexa9_0>
+}
