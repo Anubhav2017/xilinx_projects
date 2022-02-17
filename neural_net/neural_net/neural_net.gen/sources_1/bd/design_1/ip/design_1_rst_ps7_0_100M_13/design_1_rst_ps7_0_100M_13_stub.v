@@ -1,11 +1,11 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-// Date        : Thu Dec 16 13:10:18 2021
-// Host        : timeMachine running 64-bit Ubuntu 18.04.6 LTS
+// Date        : Thu Feb 17 11:32:27 2022
+// Host        : anubhav-acer running 64-bit Ubuntu 20.04.3 LTS
 // Command     : write_verilog -force -mode synth_stub -rename_top design_1_rst_ps7_0_100M_13 -prefix
-//               design_1_rst_ps7_0_100M_13_ design_1_rst_ps7_0_100M_9_stub.v
-// Design      : design_1_rst_ps7_0_100M_9
+//               design_1_rst_ps7_0_100M_13_ design_1_rst_ps7_0_100M_13_stub.v
+// Design      : design_1_rst_ps7_0_100M_13
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg400-1
 // --------------------------------------------------------------------------------

@@ -12,5 +12,5 @@
   <xd:arg xd:name="xdimension" xd:originalName="xdimension" xd:direction="in" xd:interfaceRef="s_axi_CTRL" xd:busTypeRef="axilite" xd:dataWidth="1" xd:offset="0x30" xd:handshakeRef="ap_none"/>
   <xd:arg xd:name="ydimension" xd:originalName="ydimension" xd:direction="in" xd:interfaceRef="s_axi_CTRL" xd:busTypeRef="axilite" xd:dataWidth="1" xd:offset="0x38" xd:handshakeRef="ap_none"/>
   <xd:latencyEstimates xd:best-case="10" xd:worst-case="undef" xd:average-case="undef"/>
-  <xd:resourceEstimates xd:LUT="3209" xd:FF="2796" xd:BRAM="6" xd:DSP="5"/>
+  <xd:resourceEstimates xd:LUT="6512" xd:FF="4488" xd:BRAM="7" xd:DSP="5"/>
 </xd:acceleratorMap>

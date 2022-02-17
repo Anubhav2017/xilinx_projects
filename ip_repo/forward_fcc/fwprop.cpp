@@ -30,12 +30,13 @@ void forward_fcc(volatile float* x,volatile float* w,volatile float* y,volatile 
 	memcpy(b_t,(const float*)b,ydim*sizeof(float));
 	memcpy(w_t,(const float*)w,ydim*xdim*sizeof(float));
 
-    for(int i=0; i< ydim;i++){
-
+    LOOP1:for(int i=0; i< ydim;i++){
+#pragma HLS UNROLL factor=10
     	y_t[i]=0;
 
 
-        for (int j=0; j<xdim;j++){
+        LOOP2:for (int j=0; j<xdim;j++){
+#pragma HLS PIPELINE
             y_t[i]+= w_t[i*xdim+j]*x_t[j];
         }
     }

@@ -1,0 +1,379 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Feb 17 01:21:07 2022
+# Process ID: 52145
+# Current directory: /home/anubhav/workspace/neural_net/neural_net/neural_net.runs/design_1_forward_fcc_0_8_synth_1
+# Command line: vivado -log design_1_forward_fcc_0_8.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_forward_fcc_0_8.tcl
+# Log file: /home/anubhav/workspace/neural_net/neural_net/neural_net.runs/design_1_forward_fcc_0_8_synth_1/design_1_forward_fcc_0_8.vds
+# Journal file: /home/anubhav/workspace/neural_net/neural_net/neural_net.runs/design_1_forward_fcc_0_8_synth_1/vivado.jou
+#-----------------------------------------------------------
+source design_1_forward_fcc_0_8.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/anubhav/workspace/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2338.648 ; gain = 0.000 ; free physical = 1239 ; free virtual = 2691
+Command: synth_design -top design_1_forward_fcc_0_8 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 52364
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:53 . Memory (MB): peak = 2338.719 ; gain = 0.000 ; free physical = 121 ; free virtual = 476
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_forward_fcc_0_8' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_forward_fcc_0_8/synth/design_1_forward_fcc_0_8.v:59]
+INFO: [Synth 8-6157] synthesizing module 'forward_fcc' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/4b36/hdl/verilog/forward_fcc.v:12]
+	Parameter ap_ST_fsm_state1 bound to: 98'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001 
+	Parameter ap_ST_fsm_state2 bound to: 98'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010 
+	Parameter ap_ST_fsm_state3 bound to: 98'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100 
+	Parameter ap_ST_fsm_state4 bound to: 98'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000 
+	Parameter ap_ST_fsm_state5 bound to: 98'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000 
+	Parameter ap_ST_fsm_state6 bound to: 98'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000 
+	Parameter ap_ST_fsm_state7 bound to: 98'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000 
+	Parameter ap_ST_fsm_state8 bound to: 98'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 98'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000 
+	Parameter ap_ST_fsm_state12 bound to: 98'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000 
+	Parameter ap_ST_fsm_state13 bound to: 98'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000 
+	Parameter ap_ST_fsm_state14 bound to: 98'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000 
+	Parameter ap_ST_fsm_state15 bound to: 98'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000 
+	Parameter ap_ST_fsm_state16 bound to: 98'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000 
+	Parameter ap_ST_fsm_state17 bound to: 98'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000 
+	Parameter ap_ST_fsm_state18 bound to: 98'b00000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000 
+	Parameter ap_ST_fsm_state19 bound to: 98'b00000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000 
+	Parameter ap_ST_fsm_pp1_stage0 bound to: 98'b00000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000 
+	Parameter ap_ST_fsm_state23 bound to: 98'b00000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000 
+	Parameter ap_ST_fsm_state24 bound to: 98'b00000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000 
+	Parameter ap_ST_fsm_state25 bound to: 98'b00000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000 
+	Parameter ap_ST_fsm_state26 bound to: 98'b00000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000 
+	Parameter ap_ST_fsm_state27 bound to: 98'b00000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000 
+	Parameter ap_ST_fsm_state28 bound to: 98'b00000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000 
+	Parameter ap_ST_fsm_state29 bound to: 98'b00000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000 
+	Parameter ap_ST_fsm_state30 bound to: 98'b00000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000 
+	Parameter ap_ST_fsm_state31 bound to: 98'b00000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000 
+	Parameter ap_ST_fsm_state32 bound to: 98'b00000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000 
+	Parameter ap_ST_fsm_pp2_stage0 bound to: 98'b00000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000 
+	Parameter ap_ST_fsm_state36 bound to: 98'b00000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000 
+	Parameter ap_ST_fsm_state37 bound to: 98'b00000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000 
+	Parameter ap_ST_fsm_pp3_stage0 bound to: 98'b00000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000 
+	Parameter ap_ST_fsm_pp3_stage1 bound to: 98'b00000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000 
+	Parameter ap_ST_fsm_pp3_stage2 bound to: 98'b00000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000 
+	Parameter ap_ST_fsm_pp3_stage3 bound to: 98'b00000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state49 bound to: 98'b00000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000 
+	Parameter ap_ST_fsm_pp4_stage0 bound to: 98'b00000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_pp4_stage1 bound to: 98'b00000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_pp4_stage2 bound to: 98'b00000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_pp4_stage3 bound to: 98'b00000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state61 bound to: 98'b00000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state62 bound to: 98'b00000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_pp5_stage0 bound to: 98'b00000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_pp5_stage1 bound to: 98'b00000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_pp5_stage2 bound to: 98'b00000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_pp5_stage3 bound to: 98'b00000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state74 bound to: 98'b00000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state75 bound to: 98'b00000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_pp6_stage0 bound to: 98'b00000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_pp6_stage1 bound to: 98'b00000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_pp6_stage2 bound to: 98'b00000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_pp6_stage3 bound to: 98'b00000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state87 bound to: 98'b00000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state88 bound to: 98'b00000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_pp7_stage0 bound to: 98'b00000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_pp7_stage1 bound to: 98'b00000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_pp7_stage2 bound to: 98'b00000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_pp7_stage3 bound to: 98'b00000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state100 bound to: 98'b00000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state101 bound to: 98'b00000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_pp8_stage0 bound to: 98'b00000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_pp8_stage1 bound to: 98'b00000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_pp8_stage2 bound to: 98'b00000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_pp8_stage3 bound to: 98'b00000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state113 bound to: 98'b00000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state114 bound to: 98'b00000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_pp9_stage0 bound to: 98'b00000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_pp9_stage1 bound to: 98'b00000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_pp9_stage2 bound to: 98'b00000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_pp9_stage3 bound to: 98'b00000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state126 bound to: 98'b00000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state127 bound to: 98'b00000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_pp10_stage0 bound to: 98'b00000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_pp10_stage1 bound to: 98'b00000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_pp10_stage2 bound to: 98'b00000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_pp10_stage3 bound to: 98'b00000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state139 bound to: 98'b00000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state140 bound to: 98'b00000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_pp11_stage0 bound to: 98'b00000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_pp11_stage1 bound to: 98'b00000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_pp11_stage2 bound to: 98'b00000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_pp11_stage3 bound to: 98'b00000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state152 bound to: 98'b00000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state153 bound to: 98'b00000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_pp12_stage0 bound to: 98'b00000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_pp12_stage1 bound to: 98'b00000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_pp12_stage2 bound to: 98'b00000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_pp12_stage3 bound to: 98'b00000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state165 bound to: 98'b00000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state166 bound to: 98'b00000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_pp13_stage0 bound to: 98'b00000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state175 bound to: 98'b00000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_pp14_stage0 bound to: 98'b00000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state179 bound to: 98'b00001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state180 bound to: 98'b00010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state181 bound to: 98'b00100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state182 bound to: 98'b01000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state183 bound to: 98'b10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_S_AXI_CTRL_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CTRL_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_GMEM_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_GMEM_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_GMEM_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_GMEM_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_GMEM_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_GMEM_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_GMEM_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_GMEM_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_GMEM_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_M_AXI_GMEM_PROT_VALUE bound to: 3'b000 
+	Parameter C_M_AXI_GMEM_CACHE_VALUE bound to: 4'b0011 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CTRL_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_M_AXI_GMEM_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_M_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'forward_fcc_CTRL_s_axi' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/4b36/hdl/verilog/forward_fcc_CTRL_s_axi.v:6]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_AP_CTRL bound to: 6'b000000 
+	Parameter ADDR_GIE bound to: 6'b000100 
+	Parameter ADDR_IER bound to: 6'b001000 
+	Parameter ADDR_ISR bound to: 6'b001100 
+	Parameter ADDR_X_DATA_0 bound to: 6'b010000 
+	Parameter ADDR_X_CTRL bound to: 6'b010100 
+	Parameter ADDR_W_DATA_0 bound to: 6'b011000 
+	Parameter ADDR_W_CTRL bound to: 6'b011100 
+	Parameter ADDR_Y_DATA_0 bound to: 6'b100000 
+	Parameter ADDR_Y_CTRL bound to: 6'b100100 
+	Parameter ADDR_B_DATA_0 bound to: 6'b101000 
+	Parameter ADDR_B_CTRL bound to: 6'b101100 
+	Parameter ADDR_XDIMENSION_DATA_0 bound to: 6'b110000 
+	Parameter ADDR_XDIMENSION_CTRL bound to: 6'b110100 
+	Parameter ADDR_YDIMENSION_DATA_0 bound to: 6'b111000 
+	Parameter ADDR_YDIMENSION_CTRL bound to: 6'b111100 
+	Parameter WRIDLE bound to: 2'b00 
+	Parameter WRDATA bound to: 2'b01 
+	Parameter WRRESP bound to: 2'b10 
+	Parameter WRRESET bound to: 2'b11 
+	Parameter RDIDLE bound to: 2'b00 
+	Parameter RDDATA bound to: 2'b01 
+	Parameter RDRESET bound to: 2'b10 
+	Parameter ADDR_BITS bound to: 6 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/4b36/hdl/verilog/forward_fcc_CTRL_s_axi.v:227]
+INFO: [Synth 8-6155] done synthesizing module 'forward_fcc_CTRL_s_axi' (1#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/4b36/hdl/verilog/forward_fcc_CTRL_s_axi.v:6]
+INFO: [Synth 8-6157] synthesizing module 'forward_fcc_gmem_m_axi' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/4b36/hdl/verilog/forward_fcc_gmem_m_axi.v:8]
+	Parameter CONSERVATIVE bound to: 0 - type: integer 
+	Parameter NUM_READ_OUTSTANDING bound to: 16 - type: integer 
+	Parameter NUM_WRITE_OUTSTANDING bound to: 16 - type: integer 
+	Parameter MAX_READ_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter MAX_WRITE_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_TARGET_ADDR bound to: 0 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_PROT_VALUE bound to: 3'b000 
+	Parameter C_CACHE_VALUE bound to: 4'b0011 
+	Parameter USER_DW bound to: 32 - type: integer 
+	Parameter USER_AW bound to: 32 - type: integer 
+	Parameter USER_MAXREQS bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'forward_fcc_gmem_m_axi_write' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/4b36/hdl/verilog/forward_fcc_gmem_m_axi.v:1729]
+	Parameter NUM_WRITE_OUTSTANDING bound to: 16 - type: integer 
+	Parameter MAX_WRITE_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_TARGET_ADDR bound to: 0 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_PROT_VALUE bound to: 3'b000 
+	Parameter C_CACHE_VALUE bound to: 4'b0011 
+	Parameter USER_DW bound to: 32 - type: integer 
+	Parameter USER_AW bound to: 32 - type: integer 
+	Parameter USER_MAXREQS bound to: 5 - type: integer 
+	Parameter USER_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter USER_DATA_BYTES bound to: 4 - type: integer 
+	Parameter USER_ADDR_ALIGN bound to: 2 - type: integer 
+	Parameter BUS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter BUS_DATA_BYTES bound to: 4 - type: integer 
+	Parameter BUS_ADDR_ALIGN bound to: 2 - type: integer 
+	Parameter NUM_WRITE_WIDTH bound to: 4 - type: integer 
+	Parameter TARGET_ADDR bound to: 0 - type: integer 
+	Parameter BOUNDARY_BEATS bound to: 10'b1111111111 
+INFO: [Synth 8-6157] synthesizing module 'forward_fcc_gmem_m_axi_fifo' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/4b36/hdl/verilog/forward_fcc_gmem_m_axi.v:418]
+	Parameter DATA_BITS bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 5 - type: integer 
+	Parameter DEPTH_BITS bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'forward_fcc_gmem_m_axi_fifo' (2#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/4b36/hdl/verilog/forward_fcc_gmem_m_axi.v:418]
+INFO: [Synth 8-6157] synthesizing module 'forward_fcc_gmem_m_axi_reg_slice' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/4b36/hdl/verilog/forward_fcc_gmem_m_axi.v:314]
+	Parameter N bound to: 64 - type: integer 
+	Parameter ZERO bound to: 2'b10 
+	Parameter ONE bound to: 2'b11 
+	Parameter TWO bound to: 2'b01 
+INFO: [Synth 8-6155] done synthesizing module 'forward_fcc_gmem_m_axi_reg_slice' (3#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/4b36/hdl/verilog/forward_fcc_gmem_m_axi.v:314]
+INFO: [Synth 8-6157] synthesizing module 'forward_fcc_gmem_m_axi_fifo__parameterized0' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/4b36/hdl/verilog/forward_fcc_gmem_m_axi.v:418]
+	Parameter DATA_BITS bound to: 64 - type: integer 
+	Parameter DEPTH bound to: 5 - type: integer 
+	Parameter DEPTH_BITS bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'forward_fcc_gmem_m_axi_fifo__parameterized0' (3#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/4b36/hdl/verilog/forward_fcc_gmem_m_axi.v:418]
+INFO: [Synth 8-6157] synthesizing module 'forward_fcc_gmem_m_axi_buffer' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/4b36/hdl/verilog/forward_fcc_gmem_m_axi.v:529]
+	Parameter MEM_STYLE bound to: block - type: string 
+	Parameter DATA_WIDTH bound to: 36 - type: integer 
+	Parameter ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 256 - type: integer 
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/4b36/hdl/verilog/forward_fcc_gmem_m_axi.v:582]
+INFO: [Synth 8-6155] done synthesizing module 'forward_fcc_gmem_m_axi_buffer' (4#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/4b36/hdl/verilog/forward_fcc_gmem_m_axi.v:529]
+INFO: [Synth 8-6157] synthesizing module 'forward_fcc_gmem_m_axi_fifo__parameterized1' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/4b36/hdl/verilog/forward_fcc_gmem_m_axi.v:418]
+	Parameter DATA_BITS bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 15 - type: integer 
+	Parameter DEPTH_BITS bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'forward_fcc_gmem_m_axi_fifo__parameterized1' (4#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/4b36/hdl/verilog/forward_fcc_gmem_m_axi.v:418]
+INFO: [Synth 8-6157] synthesizing module 'forward_fcc_gmem_m_axi_fifo__parameterized2' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/4b36/hdl/verilog/forward_fcc_gmem_m_axi.v:418]
+	Parameter DATA_BITS bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 5 - type: integer 
+	Parameter DEPTH_BITS bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'forward_fcc_gmem_m_axi_fifo__parameterized2' (4#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/4b36/hdl/verilog/forward_fcc_gmem_m_axi.v:418]
+INFO: [Synth 8-6155] done synthesizing module 'forward_fcc_gmem_m_axi_write' (5#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/4b36/hdl/verilog/forward_fcc_gmem_m_axi.v:1729]
+INFO: [Synth 8-6157] synthesizing module 'forward_fcc_gmem_m_axi_read' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/4b36/hdl/verilog/forward_fcc_gmem_m_axi.v:932]
+	Parameter NUM_READ_OUTSTANDING bound to: 16 - type: integer 
+	Parameter MAX_READ_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_TARGET_ADDR bound to: 0 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_PROT_VALUE bound to: 3'b000 
+	Parameter C_CACHE_VALUE bound to: 4'b0011 
+	Parameter USER_DW bound to: 32 - type: integer 
+	Parameter USER_AW bound to: 32 - type: integer 
+	Parameter USER_MAXREQS bound to: 5 - type: integer 
+	Parameter USER_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter USER_DATA_BYTES bound to: 4 - type: integer 
+	Parameter USER_ADDR_ALIGN bound to: 2 - type: integer 
+	Parameter BUS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter BUS_DATA_BYTES bound to: 4 - type: integer 
+	Parameter BUS_ADDR_ALIGN bound to: 2 - type: integer 
+	Parameter NUM_READ_WIDTH bound to: 4 - type: integer 
+	Parameter TARGET_ADDR bound to: 0 - type: integer 
+	Parameter BOUNDARY_BEATS bound to: 10'b1111111111 
+INFO: [Synth 8-6157] synthesizing module 'forward_fcc_gmem_m_axi_buffer__parameterized0' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/4b36/hdl/verilog/forward_fcc_gmem_m_axi.v:529]
+	Parameter MEM_STYLE bound to: block - type: string 
+	Parameter DATA_WIDTH bound to: 35 - type: integer 
+	Parameter ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 256 - type: integer 
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/4b36/hdl/verilog/forward_fcc_gmem_m_axi.v:582]
+INFO: [Synth 8-6155] done synthesizing module 'forward_fcc_gmem_m_axi_buffer__parameterized0' (5#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/4b36/hdl/verilog/forward_fcc_gmem_m_axi.v:529]
+INFO: [Synth 8-6157] synthesizing module 'forward_fcc_gmem_m_axi_reg_slice__parameterized0' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/4b36/hdl/verilog/forward_fcc_gmem_m_axi.v:314]
+	Parameter N bound to: 34 - type: integer 
+	Parameter ZERO bound to: 2'b10 
+	Parameter ONE bound to: 2'b11 
+	Parameter TWO bound to: 2'b01 
+INFO: [Synth 8-6155] done synthesizing module 'forward_fcc_gmem_m_axi_reg_slice__parameterized0' (5#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/4b36/hdl/verilog/forward_fcc_gmem_m_axi.v:314]
+INFO: [Synth 8-6155] done synthesizing module 'forward_fcc_gmem_m_axi_read' (6#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/4b36/hdl/verilog/forward_fcc_gmem_m_axi.v:932]
+INFO: [Synth 8-6157] synthesizing module 'forward_fcc_gmem_m_axi_throttle' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/4b36/hdl/verilog/forward_fcc_gmem_m_axi.v:710]
+	Parameter USED_FIX bound to: 0 - type: integer 
+	Parameter FIX_VALUE bound to: 4 - type: integer 
+	Parameter ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter DEPTH bound to: 16 - type: integer 
+	Parameter USER_MAXREQS bound to: 16 - type: integer 
+	Parameter CONSERVATIVE bound to: 0 - type: integer 
+	Parameter AVERAGE_MODE bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'forward_fcc_gmem_m_axi_throttle' (7#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/4b36/hdl/verilog/forward_fcc_gmem_m_axi.v:710]
+INFO: [Synth 8-6155] done synthesizing module 'forward_fcc_gmem_m_axi' (8#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/4b36/hdl/verilog/forward_fcc_gmem_m_axi.v:8]
+INFO: [Synth 8-6157] synthesizing module 'forward_fcc_x_t' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/4b36/hdl/verilog/forward_fcc_x_t.v:37]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 100 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'forward_fcc_x_t_ram' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/4b36/hdl/verilog/forward_fcc_x_t.v:6]
+	Parameter DWIDTH bound to: 32 - type: integer 
+	Parameter AWIDTH bound to: 7 - type: integer 
+	Parameter MEM_SIZE bound to: 100 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'forward_fcc_x_t_ram' (9#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/4b36/hdl/verilog/forward_fcc_x_t.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'forward_fcc_x_t' (10#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/4b36/hdl/verilog/forward_fcc_x_t.v:37]
+INFO: [Synth 8-6157] synthesizing module 'forward_fcc_y_t' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/4b36/hdl/verilog/forward_fcc_y_t.v:52]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 100 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'forward_fcc_y_t_ram' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/4b36/hdl/verilog/forward_fcc_y_t.v:6]
+	Parameter DWIDTH bound to: 32 - type: integer 
+	Parameter AWIDTH bound to: 7 - type: integer 
+	Parameter MEM_SIZE bound to: 100 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'forward_fcc_y_t_ram' (11#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/4b36/hdl/verilog/forward_fcc_y_t.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'forward_fcc_y_t' (12#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/4b36/hdl/verilog/forward_fcc_y_t.v:52]
+INFO: [Synth 8-6157] synthesizing module 'forward_fcc_fadd_32ns_32ns_32_5_full_dsp_1' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/4b36/hdl/verilog/forward_fcc_fadd_32ns_32ns_32_5_full_dsp_1.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'forward_fcc_ap_fadd_3_full_dsp_32' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/4b36/hdl/ip/forward_fcc_ap_fadd_3_full_dsp_32.v:60]
+INFO: [Synth 8-6157] synthesizing module 'LUT1' [/tools/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39137]
+INFO: [Synth 8-6155] done synthesizing module 'LUT1' (13#1) [/tools/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39137]
+INFO: [Synth 8-6155] done synthesizing module 'forward_fcc_ap_fadd_3_full_dsp_32' (32#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/4b36/hdl/ip/forward_fcc_ap_fadd_3_full_dsp_32.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'forward_fcc_fadd_32ns_32ns_32_5_full_dsp_1' (33#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/4b36/hdl/verilog/forward_fcc_fadd_32ns_32ns_32_5_full_dsp_1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'forward_fcc_fmul_32ns_32ns_32_4_max_dsp_1' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/4b36/hdl/verilog/forward_fcc_fmul_32ns_32ns_32_4_max_dsp_1.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'forward_fcc_ap_fmul_2_max_dsp_32' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/4b36/hdl/ip/forward_fcc_ap_fmul_2_max_dsp_32.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'forward_fcc_ap_fmul_2_max_dsp_32' (41#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/4b36/hdl/ip/forward_fcc_ap_fmul_2_max_dsp_32.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'forward_fcc_fmul_32ns_32ns_32_4_max_dsp_1' (42#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/4b36/hdl/verilog/forward_fcc_fmul_32ns_32ns_32_4_max_dsp_1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'forward_fcc_mul_32s_32s_32_2_1' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/4b36/hdl/verilog/forward_fcc_mul_32s_32s_32_2_1.v:25]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 2 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'forward_fcc_mul_32s_32s_32_2_1_Multiplier_0' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/4b36/hdl/verilog/forward_fcc_mul_32s_32s_32_2_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'forward_fcc_mul_32s_32s_32_2_1_Multiplier_0' (43#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/4b36/hdl/verilog/forward_fcc_mul_32s_32s_32_2_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'forward_fcc_mul_32s_32s_32_2_1' (44#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/4b36/hdl/verilog/forward_fcc_mul_32s_32s_32_2_1.v:25]
+INFO: [Synth 8-6157] synthesizing module 'forward_fcc_mul_7s_7s_7_1_1' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/4b36/hdl/verilog/forward_fcc_mul_7s_7s_7_1_1.v:16]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 7 - type: integer 
+	Parameter din1_WIDTH bound to: 7 - type: integer 
+	Parameter dout_WIDTH bound to: 7 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'forward_fcc_mul_7s_7s_7_1_1_Multiplier_1' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/4b36/hdl/verilog/forward_fcc_mul_7s_7s_7_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'forward_fcc_mul_7s_7s_7_1_1_Multiplier_1' (45#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/4b36/hdl/verilog/forward_fcc_mul_7s_7s_7_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'forward_fcc_mul_7s_7s_7_1_1' (46#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/4b36/hdl/verilog/forward_fcc_mul_7s_7s_7_1_1.v:16]
+INFO: [Synth 8-6155] done synthesizing module 'forward_fcc' (47#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/4b36/hdl/verilog/forward_fcc.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_forward_fcc_0_8' (48#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_forward_fcc_0_8/synth/design_1_forward_fcc_0_8.v:59]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 03:36:24 . Memory (MB): peak = 2362.648 ; gain = 23.930 ; free physical = 127 ; free virtual = 603
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 03:36:52 . Memory (MB): peak = 2380.461 ; gain = 41.742 ; free physical = 138 ; free virtual = 601
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:17 ; elapsed = 03:36:53 . Memory (MB): peak = 2380.461 ; gain = 41.742 ; free physical = 138 ; free virtual = 601
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.17 ; elapsed = 00:00:02 . Memory (MB): peak = 2386.398 ; gain = 0.000 ; free physical = 127 ; free virtual = 560
+INFO: [Netlist 29-17] Analyzing 110 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds

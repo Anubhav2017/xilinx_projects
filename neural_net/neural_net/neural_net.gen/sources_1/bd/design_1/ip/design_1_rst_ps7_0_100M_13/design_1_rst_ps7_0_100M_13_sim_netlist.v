@@ -1,11 +1,11 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-// Date        : Thu Dec 16 13:10:18 2021
-// Host        : timeMachine running 64-bit Ubuntu 18.04.6 LTS
+// Date        : Thu Feb 17 11:32:28 2022
+// Host        : anubhav-acer running 64-bit Ubuntu 20.04.3 LTS
 // Command     : write_verilog -force -mode funcsim -rename_top design_1_rst_ps7_0_100M_13 -prefix
-//               design_1_rst_ps7_0_100M_13_ design_1_rst_ps7_0_100M_9_sim_netlist.v
-// Design      : design_1_rst_ps7_0_100M_9
+//               design_1_rst_ps7_0_100M_13_ design_1_rst_ps7_0_100M_13_sim_netlist.v
+// Design      : design_1_rst_ps7_0_100M_13
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
 // Device      : xc7z020clg400-1
@@ -199,7 +199,7 @@ module design_1_rst_ps7_0_100M_13_cdc_sync_0
         .O(lpf_exr_reg));
 endmodule
 
-(* CHECK_LICENSE_TYPE = "design_1_rst_ps7_0_100M_9,proc_sys_reset,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "proc_sys_reset,Vivado 2020.2" *) 
+(* CHECK_LICENSE_TYPE = "design_1_rst_ps7_0_100M_13,proc_sys_reset,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "proc_sys_reset,Vivado 2020.2" *) 
 (* NotValidForBitStream *)
 module design_1_rst_ps7_0_100M_13
    (slowest_sync_clk,

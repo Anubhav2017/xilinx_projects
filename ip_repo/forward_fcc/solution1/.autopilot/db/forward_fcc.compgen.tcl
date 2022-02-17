@@ -335,7 +335,7 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_multicycle_mul, che
 
 
 # Memory (RAM/ROM)  definition:
-set ID 9
+set ID 18
 set hasByteEnable 0
 set MemName forward_fcc_x_t
 set CoreName ap_simcore_mem
@@ -420,11 +420,11 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 10
+set ID 19
 set hasByteEnable 0
 set MemName forward_fcc_y_t
 set CoreName ap_simcore_mem
-set PortList { 0 1 }
+set PortList { 2 2 }
 set DataWd 32
 set AddrRange 100
 set AddrWd 7
@@ -573,7 +573,7 @@ dict set axilite_register_dict CTRL $port_CTRL
 if {${::AESL::PGuard_simmodel_gen}} {
 	if {[info proc ::AESL_LIB_XILADAPTER::s_axilite_gen] == "::AESL_LIB_XILADAPTER::s_axilite_gen"} {
 		eval "::AESL_LIB_XILADAPTER::s_axilite_gen { \
-			id 11 \
+			id 20 \
 			corename forward_fcc_CTRL_axilite \
 			name forward_fcc_CTRL_s_axi \
 			ports {$port_CTRL} \
@@ -594,7 +594,7 @@ if {${::AESL::PGuard_rtl_comp_handler}} {
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::m_axi_gen] == "::AESL_LIB_XILADAPTER::m_axi_gen"} {
 eval "::AESL_LIB_XILADAPTER::m_axi_gen { \
-    id 12 \
+    id 21 \
     corename {m_axi} \
     op interface \
     max_latency -1 \ 

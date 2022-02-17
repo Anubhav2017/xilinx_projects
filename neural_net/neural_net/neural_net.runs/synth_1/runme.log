@@ -19,96 +19,98 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 17686
+INFO: [Synth 8-7075] Helper process launched with PID 6853
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2394.934 ; gain = 0.000 ; free physical = 1738 ; free virtual = 7586
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2366.406 ; gain = 0.000 ; free physical = 3416 ; free virtual = 5934
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
 INFO: [Synth 8-6157] synthesizing module 'design_1' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:13]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_bram_ctrl_0_0' [/home/anubhav/workspace/neural_net/neural_net/neural_net.runs/synth_1/.Xil/Vivado-17653-timeMachine/realtime/design_1_axi_bram_ctrl_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_bram_ctrl_0_0' (1#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.runs/synth_1/.Xil/Vivado-17653-timeMachine/realtime/design_1_axi_bram_ctrl_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_bram_ctrl_0_bram_0' [/home/anubhav/workspace/neural_net/neural_net/neural_net.runs/synth_1/.Xil/Vivado-17653-timeMachine/realtime/design_1_axi_bram_ctrl_0_bram_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_bram_ctrl_0_bram_0' (2#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.runs/synth_1/.Xil/Vivado-17653-timeMachine/realtime/design_1_axi_bram_ctrl_0_bram_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_bram_ctrl_0_0' [/home/anubhav/workspace/neural_net/neural_net/neural_net.runs/synth_1/.Xil/Vivado-6798-anubhav-acer/realtime/design_1_axi_bram_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_bram_ctrl_0_0' (1#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.runs/synth_1/.Xil/Vivado-6798-anubhav-acer/realtime/design_1_axi_bram_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_bram_ctrl_0_bram_0' [/home/anubhav/workspace/neural_net/neural_net/neural_net.runs/synth_1/.Xil/Vivado-6798-anubhav-acer/realtime/design_1_axi_bram_ctrl_0_bram_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_bram_ctrl_0_bram_0' (2#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.runs/synth_1/.Xil/Vivado-6798-anubhav-acer/realtime/design_1_axi_bram_ctrl_0_bram_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'rsta_busy' of module 'design_1_axi_bram_ctrl_0_bram_0' is unconnected for instance 'axi_bram_ctrl_0_bram' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:309]
 WARNING: [Synth 8-7023] instance 'axi_bram_ctrl_0_bram' of module 'design_1_axi_bram_ctrl_0_bram_0' has 8 connections declared, but only 7 given [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:309]
-INFO: [Synth 8-6157] synthesizing module 'design_1_backward_fcc_0_2' [/home/anubhav/workspace/neural_net/neural_net/neural_net.runs/synth_1/.Xil/Vivado-17653-timeMachine/realtime/design_1_backward_fcc_0_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_backward_fcc_0_2' (3#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.runs/synth_1/.Xil/Vivado-17653-timeMachine/realtime/design_1_backward_fcc_0_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_backward_fcc_0_2' [/home/anubhav/workspace/neural_net/neural_net/neural_net.runs/synth_1/.Xil/Vivado-6798-anubhav-acer/realtime/design_1_backward_fcc_0_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_backward_fcc_0_2' (3#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.runs/synth_1/.Xil/Vivado-6798-anubhav-acer/realtime/design_1_backward_fcc_0_2_stub.v:6]
 WARNING: [Synth 8-7071] port 'interrupt' of module 'design_1_backward_fcc_0_2' is unconnected for instance 'backward_fcc_0' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:317]
 WARNING: [Synth 8-7071] port 'm_axi_gmem_AWREGION' of module 'design_1_backward_fcc_0_2' is unconnected for instance 'backward_fcc_0' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:317]
 WARNING: [Synth 8-7071] port 'm_axi_gmem_ARREGION' of module 'design_1_backward_fcc_0_2' is unconnected for instance 'backward_fcc_0' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:317]
 WARNING: [Synth 8-7023] instance 'backward_fcc_0' of module 'design_1_backward_fcc_0_2' has 55 connections declared, but only 52 given [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:317]
-INFO: [Synth 8-6157] synthesizing module 'design_1_forward_fcc_0_8' [/home/anubhav/workspace/neural_net/neural_net/neural_net.runs/synth_1/.Xil/Vivado-17653-timeMachine/realtime/design_1_forward_fcc_0_8_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_forward_fcc_0_8' (4#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.runs/synth_1/.Xil/Vivado-17653-timeMachine/realtime/design_1_forward_fcc_0_8_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_forward_fcc_0_8' [/home/anubhav/workspace/neural_net/neural_net/neural_net.runs/synth_1/.Xil/Vivado-6798-anubhav-acer/realtime/design_1_forward_fcc_0_8_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_forward_fcc_0_8' (4#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.runs/synth_1/.Xil/Vivado-6798-anubhav-acer/realtime/design_1_forward_fcc_0_8_stub.v:6]
 WARNING: [Synth 8-7071] port 'interrupt' of module 'design_1_forward_fcc_0_8' is unconnected for instance 'forward_fcc_0' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:370]
 WARNING: [Synth 8-7071] port 'm_axi_gmem_AWREGION' of module 'design_1_forward_fcc_0_8' is unconnected for instance 'forward_fcc_0' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:370]
 WARNING: [Synth 8-7071] port 'm_axi_gmem_ARREGION' of module 'design_1_forward_fcc_0_8' is unconnected for instance 'forward_fcc_0' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:370]
 WARNING: [Synth 8-7023] instance 'forward_fcc_0' of module 'design_1_forward_fcc_0_8' has 55 connections declared, but only 52 given [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:370]
-INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_0' [/home/anubhav/workspace/neural_net/neural_net/neural_net.runs/synth_1/.Xil/Vivado-17653-timeMachine/realtime/design_1_processing_system7_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_0' (5#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.runs/synth_1/.Xil/Vivado-17653-timeMachine/realtime/design_1_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_0' [/home/anubhav/workspace/neural_net/neural_net/neural_net.runs/synth_1/.Xil/Vivado-6798-anubhav-acer/realtime/design_1_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_0' (5#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.runs/synth_1/.Xil/Vivado-6798-anubhav-acer/realtime/design_1_processing_system7_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'USB0_PORT_INDCTL' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:425]
 WARNING: [Synth 8-7071] port 'USB0_VBUS_PWRSELECT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:425]
 WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'design_1_processing_system7_0_0' has 65 connections declared, but only 63 given [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:425]
 INFO: [Synth 8-6157] synthesizing module 'design_1_ps7_0_axi_periph_13' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:686]
-INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_15SPJYW' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:2133]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [/home/anubhav/workspace/neural_net/neural_net/neural_net.runs/synth_1/.Xil/Vivado-17653-timeMachine/realtime/design_1_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (6#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.runs/synth_1/.Xil/Vivado-17653-timeMachine/realtime/design_1_auto_pc_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_auto_pc_0' is unconnected for instance 'auto_pc' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:2372]
-WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_auto_pc_0' is unconnected for instance 'auto_pc' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:2372]
-WARNING: [Synth 8-7023] instance 'auto_pc' of module 'design_1_auto_pc_0' has 60 connections declared, but only 58 given [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:2372]
-INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_15SPJYW' (7#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:2133]
-INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_XU9C55' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:2433]
-INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_XU9C55' (8#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:2433]
-INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_14WQB4R' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:2691]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_1' [/home/anubhav/workspace/neural_net/neural_net/neural_net.runs/synth_1/.Xil/Vivado-17653-timeMachine/realtime/design_1_auto_pc_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_1' (9#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.runs/synth_1/.Xil/Vivado-17653-timeMachine/realtime/design_1_auto_pc_1_stub.v:6]
-WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_auto_pc_1' is unconnected for instance 'auto_pc' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:2930]
-WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_auto_pc_1' is unconnected for instance 'auto_pc' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:2930]
-WARNING: [Synth 8-7023] instance 'auto_pc' of module 'design_1_auto_pc_1' has 60 connections declared, but only 58 given [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:2930]
-INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_14WQB4R' (10#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:2691]
-INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_UYSKKA' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:2991]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_2' [/home/anubhav/workspace/neural_net/neural_net/neural_net.runs/synth_1/.Xil/Vivado-17653-timeMachine/realtime/design_1_auto_pc_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_2' (11#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.runs/synth_1/.Xil/Vivado-17653-timeMachine/realtime/design_1_auto_pc_2_stub.v:6]
-WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'design_1_auto_pc_2' is unconnected for instance 'auto_pc' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:3306]
-WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'design_1_auto_pc_2' is unconnected for instance 'auto_pc' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:3306]
-WARNING: [Synth 8-7023] instance 'auto_pc' of module 'design_1_auto_pc_2' has 79 connections declared, but only 77 given [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:3306]
-INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_UYSKKA' (12#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:2991]
-INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_ZQDCSB' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:3386]
-INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_ZQDCSB' (13#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:3386]
-INFO: [Synth 8-6157] synthesizing module 's02_couplers_imp_THVDEH' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:3630]
-INFO: [Synth 8-6155] done synthesizing module 's02_couplers_imp_THVDEH' (14#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:3630]
-INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [/home/anubhav/workspace/neural_net/neural_net/neural_net.runs/synth_1/.Xil/Vivado-17653-timeMachine/realtime/design_1_xbar_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (15#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.runs/synth_1/.Xil/Vivado-17653-timeMachine/realtime/design_1_xbar_0_stub.v:6]
-WARNING: [Synth 8-689] width (14) of port connection 's_axi_bid' does not match port width (42) of module 'design_1_xbar_0' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:2116]
-WARNING: [Synth 8-689] width (14) of port connection 's_axi_rid' does not match port width (42) of module 'design_1_xbar_0' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:2121]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_ps7_0_axi_periph_13' (16#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:686]
-INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps7_0_100M_13' [/home/anubhav/workspace/neural_net/neural_net/neural_net.runs/synth_1/.Xil/Vivado-17653-timeMachine/realtime/design_1_rst_ps7_0_100M_13_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps7_0_100M_13' (17#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.runs/synth_1/.Xil/Vivado-17653-timeMachine/realtime/design_1_rst_ps7_0_100M_13_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_15SPJYW' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:2337]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [/home/anubhav/workspace/neural_net/neural_net/neural_net.runs/synth_1/.Xil/Vivado-6798-anubhav-acer/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (6#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.runs/synth_1/.Xil/Vivado-6798-anubhav-acer/realtime/design_1_auto_pc_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_auto_pc_0' is unconnected for instance 'auto_pc' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:2576]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_auto_pc_0' is unconnected for instance 'auto_pc' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:2576]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'design_1_auto_pc_0' has 60 connections declared, but only 58 given [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:2576]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_15SPJYW' (7#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:2337]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_XU9C55' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:2637]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_XU9C55' (8#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:2637]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_14WQB4R' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:2895]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_1' [/home/anubhav/workspace/neural_net/neural_net/neural_net.runs/synth_1/.Xil/Vivado-6798-anubhav-acer/realtime/design_1_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_1' (9#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.runs/synth_1/.Xil/Vivado-6798-anubhav-acer/realtime/design_1_auto_pc_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_auto_pc_1' is unconnected for instance 'auto_pc' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:3134]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_auto_pc_1' is unconnected for instance 'auto_pc' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:3134]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'design_1_auto_pc_1' has 60 connections declared, but only 58 given [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:3134]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_14WQB4R' (10#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:2895]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_UYSKKA' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:3195]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_2' [/home/anubhav/workspace/neural_net/neural_net/neural_net.runs/synth_1/.Xil/Vivado-6798-anubhav-acer/realtime/design_1_auto_pc_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_2' (11#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.runs/synth_1/.Xil/Vivado-6798-anubhav-acer/realtime/design_1_auto_pc_2_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'design_1_auto_pc_2' is unconnected for instance 'auto_pc' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:3510]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'design_1_auto_pc_2' is unconnected for instance 'auto_pc' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:3510]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'design_1_auto_pc_2' has 79 connections declared, but only 77 given [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:3510]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_UYSKKA' (12#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:3195]
+INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_ZQDCSB' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:3590]
+INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_ZQDCSB' (13#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:3590]
+INFO: [Synth 8-6157] synthesizing module 'design_1_s01_mmu_0' [/home/anubhav/workspace/neural_net/neural_net/neural_net.runs/synth_1/.Xil/Vivado-6798-anubhav-acer/realtime/design_1_s01_mmu_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_s01_mmu_0' (14#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.runs/synth_1/.Xil/Vivado-6798-anubhav-acer/realtime/design_1_s01_mmu_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 's02_couplers_imp_THVDEH' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:3834]
+INFO: [Synth 8-6155] done synthesizing module 's02_couplers_imp_THVDEH' (15#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:3834]
+INFO: [Synth 8-6157] synthesizing module 'design_1_s02_mmu_0' [/home/anubhav/workspace/neural_net/neural_net/neural_net.runs/synth_1/.Xil/Vivado-6798-anubhav-acer/realtime/design_1_s02_mmu_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_s02_mmu_0' (16#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.runs/synth_1/.Xil/Vivado-6798-anubhav-acer/realtime/design_1_s02_mmu_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [/home/anubhav/workspace/neural_net/neural_net/neural_net.runs/synth_1/.Xil/Vivado-6798-anubhav-acer/realtime/design_1_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (17#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.runs/synth_1/.Xil/Vivado-6798-anubhav-acer/realtime/design_1_xbar_0_stub.v:6]
+WARNING: [Synth 8-689] width (14) of port connection 's_axi_bid' does not match port width (42) of module 'design_1_xbar_0' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:2320]
+WARNING: [Synth 8-689] width (14) of port connection 's_axi_rid' does not match port width (42) of module 'design_1_xbar_0' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:2325]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ps7_0_axi_periph_13' (18#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:686]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps7_0_100M_13' [/home/anubhav/workspace/neural_net/neural_net/neural_net.runs/synth_1/.Xil/Vivado-6798-anubhav-acer/realtime/design_1_rst_ps7_0_100M_13_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps7_0_100M_13' (19#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.runs/synth_1/.Xil/Vivado-6798-anubhav-acer/realtime/design_1_rst_ps7_0_100M_13_stub.v:6]
 WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_1_rst_ps7_0_100M_13' is unconnected for instance 'rst_ps7_0_100M' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:677]
 WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_rst_ps7_0_100M_13' is unconnected for instance 'rst_ps7_0_100M' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:677]
 WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_rst_ps7_0_100M_13' is unconnected for instance 'rst_ps7_0_100M' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:677]
 WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_rst_ps7_0_100M_13' is unconnected for instance 'rst_ps7_0_100M' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:677]
 WARNING: [Synth 8-7023] instance 'rst_ps7_0_100M' of module 'design_1_rst_ps7_0_100M_13' has 10 connections declared, but only 6 given [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:677]
-INFO: [Synth 8-6155] done synthesizing module 'design_1' (18#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (19#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (20#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (21#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2394.934 ; gain = 0.000 ; free physical = 2512 ; free virtual = 8362
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2366.406 ; gain = 0.000 ; free physical = 4171 ; free virtual = 6690
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2394.934 ; gain = 0.000 ; free physical = 2523 ; free virtual = 8372
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2366.406 ; gain = 0.000 ; free physical = 4202 ; free virtual = 6720
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2394.934 ; gain = 0.000 ; free physical = 2523 ; free virtual = 8372
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2366.406 ; gain = 0.000 ; free physical = 4202 ; free virtual = 6720
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2394.934 ; gain = 0.000 ; free physical = 2515 ; free virtual = 8364
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2366.406 ; gain = 0.000 ; free physical = 4195 ; free virtual = 6713
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc] for cell 'design_1_i/processing_system7_0'
-Finished Parsing XDC File [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc] for cell 'design_1_i/processing_system7_0'
 Parsing XDC File [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/xbar'
 Finished Parsing XDC File [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/xbar'
 Parsing XDC File [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2/design_1_auto_pc_3_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
@@ -117,35 +119,41 @@ Parsing XDC File [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/s
 Finished Parsing XDC File [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_1_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/m00_couplers/auto_pc'
 Parsing XDC File [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1/design_1_auto_pc_1_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/m02_couplers/auto_pc'
 Finished Parsing XDC File [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1/design_1_auto_pc_1_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/m02_couplers/auto_pc'
-Parsing XDC File [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_13/design_1_rst_ps7_0_100M_13/design_1_rst_ps7_0_100M_9_in_context.xdc] for cell 'design_1_i/rst_ps7_0_100M'
-Finished Parsing XDC File [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_13/design_1_rst_ps7_0_100M_13/design_1_rst_ps7_0_100M_9_in_context.xdc] for cell 'design_1_i/rst_ps7_0_100M'
+Parsing XDC File [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_s01_mmu_0/design_1_s01_mmu_0/design_1_s01_mmu_0_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/s01_mmu'
+Finished Parsing XDC File [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_s01_mmu_0/design_1_s01_mmu_0/design_1_s01_mmu_0_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/s01_mmu'
+Parsing XDC File [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_s02_mmu_0/design_1_s02_mmu_0/design_1_s01_mmu_0_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/s02_mmu'
+Finished Parsing XDC File [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_s02_mmu_0/design_1_s02_mmu_0/design_1_s01_mmu_0_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/s02_mmu'
 Parsing XDC File [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0_in_context.xdc] for cell 'design_1_i/axi_bram_ctrl_0'
 Finished Parsing XDC File [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0_in_context.xdc] for cell 'design_1_i/axi_bram_ctrl_0'
 Parsing XDC File [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_bram_0/design_1_axi_bram_ctrl_0_bram_0/design_1_axi_bram_ctrl_0_bram_0_in_context.xdc] for cell 'design_1_i/axi_bram_ctrl_0_bram'
 Finished Parsing XDC File [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_bram_0/design_1_axi_bram_ctrl_0_bram_0/design_1_axi_bram_ctrl_0_bram_0_in_context.xdc] for cell 'design_1_i/axi_bram_ctrl_0_bram'
-Parsing XDC File [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_forward_fcc_0_8/design_1_forward_fcc_0_8/design_1_forward_fcc_0_8_in_context.xdc] for cell 'design_1_i/forward_fcc_0'
-Finished Parsing XDC File [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_forward_fcc_0_8/design_1_forward_fcc_0_8/design_1_forward_fcc_0_8_in_context.xdc] for cell 'design_1_i/forward_fcc_0'
 Parsing XDC File [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_backward_fcc_0_2/design_1_backward_fcc_0_2/design_1_backward_fcc_0_2_in_context.xdc] for cell 'design_1_i/backward_fcc_0'
 Finished Parsing XDC File [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_backward_fcc_0_2/design_1_backward_fcc_0_2/design_1_backward_fcc_0_2_in_context.xdc] for cell 'design_1_i/backward_fcc_0'
+Parsing XDC File [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_forward_fcc_0_8/design_1_forward_fcc_0_8/design_1_forward_fcc_0_8_in_context.xdc] for cell 'design_1_i/forward_fcc_0'
+Finished Parsing XDC File [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_forward_fcc_0_8/design_1_forward_fcc_0_8/design_1_forward_fcc_0_8_in_context.xdc] for cell 'design_1_i/forward_fcc_0'
+Parsing XDC File [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc] for cell 'design_1_i/processing_system7_0'
+Finished Parsing XDC File [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc] for cell 'design_1_i/processing_system7_0'
+Parsing XDC File [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_13/design_1_rst_ps7_0_100M_13/design_1_rst_ps7_0_100M_13_in_context.xdc] for cell 'design_1_i/rst_ps7_0_100M'
+Finished Parsing XDC File [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_13/design_1_rst_ps7_0_100M_13/design_1_rst_ps7_0_100M_13_in_context.xdc] for cell 'design_1_i/rst_ps7_0_100M'
 Parsing XDC File [/home/anubhav/workspace/neural_net/neural_net/neural_net.runs/synth_1/dont_touch.xdc]
 Finished Parsing XDC File [/home/anubhav/workspace/neural_net/neural_net/neural_net.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2426.723 ; gain = 0.000 ; free physical = 2429 ; free virtual = 8278
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2430.367 ; gain = 0.000 ; free physical = 4104 ; free virtual = 6623
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2426.723 ; gain = 0.000 ; free physical = 2429 ; free virtual = 8278
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2430.367 ; gain = 0.000 ; free physical = 4104 ; free virtual = 6623
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/axi_bram_ctrl_0_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 2426.723 ; gain = 31.789 ; free physical = 2498 ; free virtual = 8347
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2430.367 ; gain = 63.961 ; free physical = 4176 ; free virtual = 6695
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 2426.723 ; gain = 31.789 ; free physical = 2498 ; free virtual = 8347
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2430.367 ; gain = 63.961 ; free physical = 4176 ; free virtual = 6695
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -411,22 +419,24 @@ Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_porb. (constraint 
 Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_srstb. (constraint file  /home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 260).
 Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_srstb. (constraint file  /home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 261).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/processing_system7_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps7_0_axi_periph/xbar. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps7_0_axi_periph/m00_couplers/auto_pc. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps7_0_axi_periph/m02_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps7_0_axi_periph/s01_mmu. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps7_0_axi_periph/s02_mmu. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps7_0_axi_periph. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/rst_ps7_0_100M. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_bram_ctrl_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_bram_ctrl_0_bram. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/forward_fcc_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/backward_fcc_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/forward_fcc_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/processing_system7_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/rst_ps7_0_100M. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2426.723 ; gain = 31.789 ; free physical = 2498 ; free virtual = 8347
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 2430.367 ; gain = 63.961 ; free physical = 4176 ; free virtual = 6695
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2426.723 ; gain = 31.789 ; free physical = 2498 ; free virtual = 8349
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2430.367 ; gain = 63.961 ; free physical = 4176 ; free virtual = 6696
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -448,25 +458,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2426.723 ; gain = 31.789 ; free physical = 2483 ; free virtual = 8337
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2430.367 ; gain = 63.961 ; free physical = 4161 ; free virtual = 6684
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 2426.723 ; gain = 31.789 ; free physical = 2362 ; free virtual = 8216
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2430.367 ; gain = 63.961 ; free physical = 4038 ; free virtual = 6561
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 2426.723 ; gain = 31.789 ; free physical = 2362 ; free virtual = 8216
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2430.367 ; gain = 63.961 ; free physical = 4038 ; free virtual = 6561
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 2426.723 ; gain = 31.789 ; free physical = 2360 ; free virtual = 8214
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2430.367 ; gain = 63.961 ; free physical = 4036 ; free virtual = 6559
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -484,37 +494,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2426.723 ; gain = 31.789 ; free physical = 2360 ; free virtual = 8214
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2430.367 ; gain = 63.961 ; free physical = 4030 ; free virtual = 6554
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2426.723 ; gain = 31.789 ; free physical = 2360 ; free virtual = 8214
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2430.367 ; gain = 63.961 ; free physical = 4030 ; free virtual = 6554
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2426.723 ; gain = 31.789 ; free physical = 2360 ; free virtual = 8214
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2430.367 ; gain = 63.961 ; free physical = 4030 ; free virtual = 6554
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2426.723 ; gain = 31.789 ; free physical = 2360 ; free virtual = 8214
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2430.367 ; gain = 63.961 ; free physical = 4030 ; free virtual = 6554
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2426.723 ; gain = 31.789 ; free physical = 2360 ; free virtual = 8214
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2430.367 ; gain = 63.961 ; free physical = 4030 ; free virtual = 6554
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2426.723 ; gain = 31.789 ; free physical = 2360 ; free virtual = 8214
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2430.367 ; gain = 63.961 ; free physical = 4030 ; free virtual = 6554
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -524,16 +534,18 @@ Report BlackBoxes:
 +------+--------------------------------+----------+
 |      |BlackBox name                   |Instances |
 +------+--------------------------------+----------+
-|1     |design_1_xbar_0                 |         1|
-|2     |design_1_auto_pc_0              |         1|
-|3     |design_1_auto_pc_1              |         1|
-|4     |design_1_auto_pc_2              |         1|
-|5     |design_1_axi_bram_ctrl_0_0      |         1|
-|6     |design_1_axi_bram_ctrl_0_bram_0 |         1|
-|7     |design_1_backward_fcc_0_2       |         1|
-|8     |design_1_forward_fcc_0_8        |         1|
-|9     |design_1_processing_system7_0_0 |         1|
-|10    |design_1_rst_ps7_0_100M_13      |         1|
+|1     |design_1_s01_mmu_0              |         1|
+|2     |design_1_s02_mmu_0              |         1|
+|3     |design_1_xbar_0                 |         1|
+|4     |design_1_auto_pc_0              |         1|
+|5     |design_1_auto_pc_1              |         1|
+|6     |design_1_auto_pc_2              |         1|
+|7     |design_1_axi_bram_ctrl_0_0      |         1|
+|8     |design_1_axi_bram_ctrl_0_bram_0 |         1|
+|9     |design_1_backward_fcc_0_2       |         1|
+|10    |design_1_forward_fcc_0_8        |         1|
+|11    |design_1_processing_system7_0_0 |         1|
+|12    |design_1_rst_ps7_0_100M_13      |         1|
 +------+--------------------------------+----------+
 
 Report Cell Usage: 
@@ -547,26 +559,28 @@ Report Cell Usage:
 |7     |design_1_forward_fcc_0        |     1|
 |8     |design_1_processing_system7_0 |     1|
 |9     |design_1_rst_ps7_0_100M       |     1|
-|10    |design_1_xbar                 |     1|
+|10    |design_1_s01_mmu              |     1|
+|11    |design_1_s02_mmu              |     1|
+|12    |design_1_xbar                 |     1|
 +------+------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2426.723 ; gain = 31.789 ; free physical = 2360 ; free virtual = 8214
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2430.367 ; gain = 63.961 ; free physical = 4030 ; free virtual = 6554
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2426.723 ; gain = 0.000 ; free physical = 2418 ; free virtual = 8272
-Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2426.730 ; gain = 31.789 ; free physical = 2418 ; free virtual = 8272
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2430.367 ; gain = 0.000 ; free physical = 4088 ; free virtual = 6612
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2430.367 ; gain = 63.961 ; free physical = 4088 ; free virtual = 6612
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:05 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2426.730 ; gain = 0.000 ; free physical = 2501 ; free virtual = 8355
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2430.367 ; gain = 0.000 ; free physical = 4172 ; free virtual = 6696
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2432.660 ; gain = 0.000 ; free physical = 2443 ; free virtual = 8297
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2430.367 ; gain = 0.000 ; free physical = 4111 ; free virtual = 6635
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-53 Infos, 30 Warnings, 0 Critical Warnings and 0 Errors encountered.
+57 Infos, 30 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:27 . Memory (MB): peak = 2438.598 ; gain = 43.891 ; free physical = 2578 ; free virtual = 8432
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:19 . Memory (MB): peak = 2430.367 ; gain = 64.031 ; free physical = 4246 ; free virtual = 6769
 INFO: [Common 17-1381] The checkpoint '/home/anubhav/workspace/neural_net/neural_net/neural_net.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Feb  4 01:39:17 2022...
+INFO: [Common 17-206] Exiting Vivado at Thu Feb 17 13:07:39 2022...

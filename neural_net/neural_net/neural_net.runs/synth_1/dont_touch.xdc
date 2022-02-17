@@ -4,17 +4,11 @@
 # Block Designs: bd/design_1/design_1.bd
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1 || ORIG_REF_NAME==design_1} -quiet] -quiet
 
-# IP: bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_processing_system7_0_0 || ORIG_REF_NAME==design_1_processing_system7_0_0} -quiet] -quiet
-
 # IP: bd/design_1/ip/design_1_xbar_0/design_1_xbar_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_xbar_0 || ORIG_REF_NAME==design_1_xbar_0} -quiet] -quiet
 
 # IP: bd/design_1/ip/design_1_ps7_0_axi_periph_13/design_1_ps7_0_axi_periph_13.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_ps7_0_axi_periph_13 || ORIG_REF_NAME==design_1_ps7_0_axi_periph_13} -quiet] -quiet
-
-# IP: bd/design_1/ip/design_1_rst_ps7_0_100M_13/design_1_rst_ps7_0_100M_13.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_rst_ps7_0_100M_13 || ORIG_REF_NAME==design_1_rst_ps7_0_100M_13} -quiet] -quiet
 
 # IP: bd/design_1/ip/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axi_bram_ctrl_0_0 || ORIG_REF_NAME==design_1_axi_bram_ctrl_0_0} -quiet] -quiet
@@ -22,11 +16,17 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_ax
 # IP: bd/design_1/ip/design_1_axi_bram_ctrl_0_bram_0/design_1_axi_bram_ctrl_0_bram_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axi_bram_ctrl_0_bram_0 || ORIG_REF_NAME==design_1_axi_bram_ctrl_0_bram_0} -quiet] -quiet
 
+# IP: bd/design_1/ip/design_1_backward_fcc_0_2/design_1_backward_fcc_0_2.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_backward_fcc_0_2 || ORIG_REF_NAME==design_1_backward_fcc_0_2} -quiet] -quiet
+
 # IP: bd/design_1/ip/design_1_forward_fcc_0_8/design_1_forward_fcc_0_8.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_forward_fcc_0_8 || ORIG_REF_NAME==design_1_forward_fcc_0_8} -quiet] -quiet
 
-# IP: bd/design_1/ip/design_1_backward_fcc_0_2/design_1_backward_fcc_0_2.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_backward_fcc_0_2 || ORIG_REF_NAME==design_1_backward_fcc_0_2} -quiet] -quiet
+# IP: bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_processing_system7_0_0 || ORIG_REF_NAME==design_1_processing_system7_0_0} -quiet] -quiet
+
+# IP: bd/design_1/ip/design_1_rst_ps7_0_100M_13/design_1_rst_ps7_0_100M_13.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_rst_ps7_0_100M_13 || ORIG_REF_NAME==design_1_rst_ps7_0_100M_13} -quiet] -quiet
 
 # IP: bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_auto_pc_2 || ORIG_REF_NAME==design_1_auto_pc_2} -quiet] -quiet
@@ -36,5 +36,11 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_au
 
 # IP: bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_auto_pc_1 || ORIG_REF_NAME==design_1_auto_pc_1} -quiet] -quiet
+
+# IP: bd/design_1/ip/design_1_s01_mmu_0/design_1_s01_mmu_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_s01_mmu_0 || ORIG_REF_NAME==design_1_s01_mmu_0} -quiet] -quiet
+
+# IP: bd/design_1/ip/design_1_s02_mmu_0/design_1_s02_mmu_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_s02_mmu_0 || ORIG_REF_NAME==design_1_s02_mmu_0} -quiet] -quiet
 
 # XDC: /home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/design_1_ooc.xdc

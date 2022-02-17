@@ -1,8 +1,8 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-| Date         : Fri Feb  4 01:39:17 2022
-| Host         : timeMachine running 64-bit Ubuntu 18.04.6 LTS
+| Date         : Thu Feb 17 13:07:39 2022
+| Host         : anubhav-acer running 64-bit Ubuntu 20.04.3 LTS
 | Command      : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
 | Design       : design_1_wrapper
 | Device       : 7z020clg400-1
@@ -176,6 +176,8 @@ Table of Contents
 |             Ref Name            | Used |
 +---------------------------------+------+
 | design_1_xbar_0                 |    1 |
+| design_1_s02_mmu_0              |    1 |
+| design_1_s01_mmu_0              |    1 |
 | design_1_rst_ps7_0_100M_13      |    1 |
 | design_1_processing_system7_0_0 |    1 |
 | design_1_forward_fcc_0_8        |    1 |

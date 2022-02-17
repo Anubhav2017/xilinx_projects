@@ -795,3 +795,531 @@ Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=0
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: set_directive_top -name backward_fcc backward_fcc 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 171.873 MB.
+INFO: [HLS 200-10] Analyzing design file 'backward_fcc/backprop.cpp' ... 
+WARNING: [HLS 207-1017] unknown pragma ignored: backward_fcc/backprop.cpp:58:9
+WARNING: [HLS 207-1017] unknown pragma ignored: backward_fcc/backprop.cpp:67:9
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.36 seconds. CPU system time: 0.31 seconds. Elapsed time: 4.65 seconds; current allocated memory: 173.052 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'backward_fcc(float volatile*, float volatile*, float volatile*, float volatile*, float volatile*, int, int, float)' (backward_fcc/backprop.cpp:6:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'backward_fcc(float volatile*, float volatile*, float volatile*, float volatile*, float volatile*, int, int, float)' (backward_fcc/backprop.cpp:6:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'backward_fcc(float volatile*, float volatile*, float volatile*, float volatile*, float volatile*, int, int, float)' (backward_fcc/backprop.cpp:6:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'backward_fcc(float volatile*, float volatile*, float volatile*, float volatile*, float volatile*, int, int, float)' (backward_fcc/backprop.cpp:6:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'backward_fcc(float volatile*, float volatile*, float volatile*, float volatile*, float volatile*, int, int, float)' (backward_fcc/backprop.cpp:6:0)
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 32 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-115] Multiple burst writes of variable length and bit width 32 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-115] Multiple burst writes of variable length and bit width 32 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-115] Multiple burst writes of variable length and bit width 32 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 32 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 32 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 32 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 32 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.55 seconds. CPU system time: 0.33 seconds. Elapsed time: 5.32 seconds; current allocated memory: 175.635 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 175.637 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.25 seconds; current allocated memory: 177.351 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 176.319 MB.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-2' in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-3' in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-4' in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-5' in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-6' in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_46_1' (backward_fcc/backprop.cpp:46) in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_61_4' (backward_fcc/backprop.cpp:61) in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_69_6' (backward_fcc/backprop.cpp:69) in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-10' in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-11' in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-12' in function 'backward_fcc' automatically.
+INFO: [XFORM 203-501] Unrolling loop 'VITIS_LOOP_46_1' (backward_fcc/backprop.cpp:46) in function 'backward_fcc' partially with a factor of 10.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.34 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.36 seconds; current allocated memory: 197.750 MB.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_57_3' (backward_fcc/backprop.cpp:57:28) in function 'backward_fcc' the outer loop is not a perfect loop.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_66_5' (backward_fcc/backprop.cpp:66:27) in function 'backward_fcc' the outer loop is not a perfect loop because there is nontrivial logic in the loop latch.
+INFO: [HLS 200-472] Inferring partial write operation for 'x_t' 
+INFO: [HLS 200-472] Inferring partial write operation for 'b_t' 
+INFO: [HLS 200-472] Inferring partial write operation for 'w_t' 
+INFO: [HLS 200-472] Inferring partial write operation for 'dx_t' 
+INFO: [HLS 200-472] Inferring partial write operation for 'dy_t' 
+INFO: [HLS 200-472] Inferring partial write operation for 'dx_t' (backward_fcc/backprop.cpp:49:12)
+INFO: [HLS 200-472] Inferring partial write operation for 'db' (backward_fcc/backprop.cpp:59:8)
+INFO: [HLS 200-472] Inferring partial write operation for 'dw' (backward_fcc/backprop.cpp:62:19)
+INFO: [HLS 200-472] Inferring partial write operation for 'w_t' (backward_fcc/backprop.cpp:71:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'b_t' (backward_fcc/backprop.cpp:75:10)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.29 seconds. CPU system time: 0 seconds. Elapsed time: 0.33 seconds; current allocated memory: 192.737 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'backward_fcc' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'backward_fcc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul15_le) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=empty_59) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=empty_62) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-1457] Automatically inferring 1WnR RAM type for array 'w_t'. Use bind_storage pragma to overwrite if needed.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'Loop 1'
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'Loop 2'
+INFO: [SCHED 204-61] Pipelining loop 'Loop 3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'Loop 3'
+INFO: [SCHED 204-61] Pipelining loop 'Loop 4'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'Loop 4'
+INFO: [SCHED 204-61] Pipelining loop 'Loop 5'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'Loop 5'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_46_1'.
+WARNING: [HLS 200-885] Unable to schedule 'store' operation ('dx_t_addr_4_write_ln49', backward_fcc/backprop.cpp:49) of variable 'mul18_le_2', backward_fcc/backprop.cpp:49 on array 'dx_t', backward_fcc/backprop.cpp:32 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'dx_t'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 5, Depth = 11, loop 'VITIS_LOOP_46_1'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_61_4'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 7, loop 'VITIS_LOOP_61_4'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_69_6'.
+WARNING: [HLS 200-880] The II Violation in module 'backward_fcc' (loop 'VITIS_LOOP_69_6'): Unable to enforce a carried dependence constraint (II = 1, distance = 2, offset = 1) between 'store' operation ('w_t_addr_2_write_ln71', backward_fcc/backprop.cpp:71) of variable 'sub', backward_fcc/backprop.cpp:71 on array 'w_t', backward_fcc/backprop.cpp:30 and 'load' operation ('w_t_load_1', backward_fcc/backprop.cpp:71) on array 'w_t', backward_fcc/backprop.cpp:30.
+WARNING: [HLS 200-880] The II Violation in module 'backward_fcc' (loop 'VITIS_LOOP_69_6'): Unable to enforce a carried dependence constraint (II = 2, distance = 2, offset = 1) between 'store' operation ('w_t_addr_2_write_ln71', backward_fcc/backprop.cpp:71) of variable 'sub', backward_fcc/backprop.cpp:71 on array 'w_t', backward_fcc/backprop.cpp:30 and 'load' operation ('w_t_load_1', backward_fcc/backprop.cpp:71) on array 'w_t', backward_fcc/backprop.cpp:30.
+WARNING: [HLS 200-880] The II Violation in module 'backward_fcc' (loop 'VITIS_LOOP_69_6'): Unable to enforce a carried dependence constraint (II = 3, distance = 2, offset = 1) between 'store' operation ('w_t_addr_2_write_ln71', backward_fcc/backprop.cpp:71) of variable 'sub', backward_fcc/backprop.cpp:71 on array 'w_t', backward_fcc/backprop.cpp:30 and 'load' operation ('w_t_load_1', backward_fcc/backprop.cpp:71) on array 'w_t', backward_fcc/backprop.cpp:30.
+WARNING: [HLS 200-880] The II Violation in module 'backward_fcc' (loop 'VITIS_LOOP_69_6'): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 0) between 'store' operation ('reuse_reg_write_ln71', backward_fcc/backprop.cpp:71) of variable 'sub', backward_fcc/backprop.cpp:71 on local variable 'reuse_reg' and 'load' operation ('reuse_reg_load') on local variable 'reuse_reg'.
+WARNING: [HLS 200-880] The II Violation in module 'backward_fcc' (loop 'VITIS_LOOP_69_6'): Unable to enforce a carried dependence constraint (II = 5, distance = 1, offset = 0) between 'store' operation ('reuse_reg_write_ln71', backward_fcc/backprop.cpp:71) of variable 'sub', backward_fcc/backprop.cpp:71 on local variable 'reuse_reg' and 'load' operation ('reuse_reg_load') on local variable 'reuse_reg'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 6, Depth = 12, loop 'VITIS_LOOP_69_6'
+INFO: [SCHED 204-61] Pipelining loop 'Loop 9'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'Loop 9'
+INFO: [SCHED 204-61] Pipelining loop 'Loop 10'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'Loop 10'
+INFO: [SCHED 204-61] Pipelining loop 'Loop 11'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'Loop 11'
+WARNING: [HLS 200-871] Estimated clock period (9.77025ns) exceeds the target (target clock period: 10ns, clock uncertainty: 2.7ns, effective delay budget: 7.3ns).
+WARNING: [HLS 200-1016] The critical path in module 'backward_fcc' consists of the following:	'getelementptr' operation ('gmem_addr_5') [468]  (0 ns)
+	bus request on port 'gmem' [469]  (7.3 ns)
+	blocking operation 2.47 ns on control path)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.59 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.66 seconds; current allocated memory: 194.496 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.64 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.69 seconds; current allocated memory: 196.604 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'backward_fcc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'backward_fcc/gmem' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'backward_fcc/x' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'backward_fcc/w' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'backward_fcc/b' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'backward_fcc/dx' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'backward_fcc/dy' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'backward_fcc/xdimension' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'backward_fcc/ydimension' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'backward_fcc/lr' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'backward_fcc' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'x', 'w', 'b', 'dx', 'dy', 'xdimension', 'ydimension', 'lr' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_4_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fsub_32ns_32ns_32_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_32s_32_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_14s_14s_14_4_1': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'backward_fcc'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.48 seconds. CPU system time: 0 seconds. Elapsed time: 0.53 seconds; current allocated memory: 200.967 MB.
+INFO: [RTMG 210-282] Generating pipelined core: 'backward_fcc_mul_32s_32s_32_2_1_Multiplier_0'
+INFO: [RTMG 210-278] Implementing memory 'backward_fcc_x_t_ram (RAM)' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'backward_fcc_w_t_ram (RAM_1WnR)' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'backward_fcc_dx_t_ram (RAM)' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'backward_fcc_dw_ram (RAM)' using auto RAMs.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 2.34 seconds. CPU system time: 0.06 seconds. Elapsed time: 2.55 seconds; current allocated memory: 217.076 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=0
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: set_directive_top -name backward_fcc backward_fcc 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 155.889 MB.
+INFO: [HLS 200-10] Analyzing design file 'backward_fcc/backprop.cpp' ... 
+WARNING: [HLS 207-1017] unknown pragma ignored: backward_fcc/backprop.cpp:58:9
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.22 seconds. CPU system time: 0.22 seconds. Elapsed time: 2.91 seconds; current allocated memory: 156.593 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'backward_fcc(float volatile*, float volatile*, float volatile*, float volatile*, float volatile*, int, int, float)' (backward_fcc/backprop.cpp:6:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'backward_fcc(float volatile*, float volatile*, float volatile*, float volatile*, float volatile*, int, int, float)' (backward_fcc/backprop.cpp:6:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'backward_fcc(float volatile*, float volatile*, float volatile*, float volatile*, float volatile*, int, int, float)' (backward_fcc/backprop.cpp:6:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'backward_fcc(float volatile*, float volatile*, float volatile*, float volatile*, float volatile*, int, int, float)' (backward_fcc/backprop.cpp:6:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'backward_fcc(float volatile*, float volatile*, float volatile*, float volatile*, float volatile*, int, int, float)' (backward_fcc/backprop.cpp:6:0)
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 32 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-115] Multiple burst writes of variable length and bit width 32 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-115] Multiple burst writes of variable length and bit width 32 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-115] Multiple burst writes of variable length and bit width 32 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 32 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 32 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 32 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 32 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2.95 seconds. CPU system time: 0.26 seconds. Elapsed time: 4.57 seconds; current allocated memory: 159.470 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 159.472 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.08 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.42 seconds; current allocated memory: 161.110 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 160.099 MB.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-2' in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-3' in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-4' in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-5' in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-6' in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'LOOP1' (backward_fcc/backprop.cpp:46) in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'LOOP4' (backward_fcc/backprop.cpp:61) in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-9' in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-10' in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-11' in function 'backward_fcc' automatically.
+INFO: [XFORM 203-501] Unrolling loop 'LOOP1' (backward_fcc/backprop.cpp:46) in function 'backward_fcc' partially with a factor of 10.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.31 seconds. CPU system time: 0 seconds. Elapsed time: 0.32 seconds; current allocated memory: 181.425 MB.
+WARNING: [HLS 200-960] Cannot flatten loop 'LOOP3' (backward_fcc/backprop.cpp:57:17) in function 'backward_fcc' the outer loop is not a perfect loop because there is nontrivial logic in the loop latch.
+INFO: [HLS 200-472] Inferring partial write operation for 'x_t' 
+INFO: [HLS 200-472] Inferring partial write operation for 'b_t' 
+INFO: [HLS 200-472] Inferring partial write operation for 'w_t' 
+INFO: [HLS 200-472] Inferring partial write operation for 'dx_t' 
+INFO: [HLS 200-472] Inferring partial write operation for 'dy_t' 
+INFO: [HLS 200-472] Inferring partial write operation for 'dx_t' (backward_fcc/backprop.cpp:49:12)
+INFO: [HLS 200-472] Inferring partial write operation for 'w_t' (backward_fcc/backprop.cpp:63:19)
+INFO: [HLS 200-472] Inferring partial write operation for 'b_t' (backward_fcc/backprop.cpp:65:10)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.22 seconds. CPU system time: 0 seconds. Elapsed time: 0.23 seconds; current allocated memory: 176.235 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'backward_fcc' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'backward_fcc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul15_le) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=empty_56) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-1457] Automatically inferring 1WnR RAM type for array 'w_t'. Use bind_storage pragma to overwrite if needed.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'Loop 1'
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'Loop 2'
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=0
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: set_directive_top -name backward_fcc backward_fcc 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 171.916 MB.
+INFO: [HLS 200-10] Analyzing design file 'backward_fcc/backprop.cpp' ... 
+WARNING: [HLS 207-1017] unknown pragma ignored: backward_fcc/backprop.cpp:58:9
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.33 seconds. CPU system time: 0.16 seconds. Elapsed time: 0.24 seconds; current allocated memory: 172.650 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'backward_fcc(float volatile*, float volatile*, float volatile*, float volatile*, float volatile*, int, int, float)' (backward_fcc/backprop.cpp:6:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'backward_fcc(float volatile*, float volatile*, float volatile*, float volatile*, float volatile*, int, int, float)' (backward_fcc/backprop.cpp:6:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'backward_fcc(float volatile*, float volatile*, float volatile*, float volatile*, float volatile*, int, int, float)' (backward_fcc/backprop.cpp:6:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'backward_fcc(float volatile*, float volatile*, float volatile*, float volatile*, float volatile*, int, int, float)' (backward_fcc/backprop.cpp:6:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'backward_fcc(float volatile*, float volatile*, float volatile*, float volatile*, float volatile*, int, int, float)' (backward_fcc/backprop.cpp:6:0)
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 32 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-115] Multiple burst writes of variable length and bit width 32 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-115] Multiple burst writes of variable length and bit width 32 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-115] Multiple burst writes of variable length and bit width 32 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 32 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 32 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 32 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 32 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.18 seconds. CPU system time: 0.21 seconds. Elapsed time: 3.01 seconds; current allocated memory: 175.472 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 175.474 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.02 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.07 seconds; current allocated memory: 177.126 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 176.118 MB.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-2' in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-3' in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-4' in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-5' in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-6' in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'LOOP1' (backward_fcc/backprop.cpp:46) in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'LOOP4' (backward_fcc/backprop.cpp:61) in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-9' in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-10' in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-11' in function 'backward_fcc' automatically.
+INFO: [XFORM 203-501] Unrolling loop 'LOOP1' (backward_fcc/backprop.cpp:46) in function 'backward_fcc' partially with a factor of 10.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.28 seconds. CPU system time: 0 seconds. Elapsed time: 0.3 seconds; current allocated memory: 197.438 MB.
+WARNING: [HLS 200-960] Cannot flatten loop 'LOOP3' (backward_fcc/backprop.cpp:57:17) in function 'backward_fcc' the outer loop is not a perfect loop because there is nontrivial logic in the loop latch.
+INFO: [HLS 200-472] Inferring partial write operation for 'x_t' 
+INFO: [HLS 200-472] Inferring partial write operation for 'b_t' 
+INFO: [HLS 200-472] Inferring partial write operation for 'w_t' 
+INFO: [HLS 200-472] Inferring partial write operation for 'dx_t' 
+INFO: [HLS 200-472] Inferring partial write operation for 'dy_t' 
+INFO: [HLS 200-472] Inferring partial write operation for 'dx_t' (backward_fcc/backprop.cpp:49:12)
+INFO: [HLS 200-472] Inferring partial write operation for 'w_t' (backward_fcc/backprop.cpp:62:19)
+INFO: [HLS 200-472] Inferring partial write operation for 'b_t' (backward_fcc/backprop.cpp:64:10)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.22 seconds. CPU system time: 0 seconds. Elapsed time: 0.22 seconds; current allocated memory: 192.236 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'backward_fcc' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'backward_fcc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul15_le) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=empty_56) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-1457] Automatically inferring 1WnR RAM type for array 'w_t'. Use bind_storage pragma to overwrite if needed.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'Loop 1'
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'Loop 2'
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=0
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: set_directive_top -name backward_fcc backward_fcc 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 155.914 MB.
+INFO: [HLS 200-10] Analyzing design file 'backward_fcc/backprop.cpp' ... 
+WARNING: [HLS 207-1017] unknown pragma ignored: backward_fcc/backprop.cpp:58:9
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.34 seconds. CPU system time: 0.16 seconds. Elapsed time: 0.25 seconds; current allocated memory: 156.649 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'backward_fcc(float volatile*, float volatile*, float volatile*, float volatile*, float volatile*, int, int, float)' (backward_fcc/backprop.cpp:6:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'backward_fcc(float volatile*, float volatile*, float volatile*, float volatile*, float volatile*, int, int, float)' (backward_fcc/backprop.cpp:6:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'backward_fcc(float volatile*, float volatile*, float volatile*, float volatile*, float volatile*, int, int, float)' (backward_fcc/backprop.cpp:6:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'backward_fcc(float volatile*, float volatile*, float volatile*, float volatile*, float volatile*, int, int, float)' (backward_fcc/backprop.cpp:6:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'backward_fcc(float volatile*, float volatile*, float volatile*, float volatile*, float volatile*, int, int, float)' (backward_fcc/backprop.cpp:6:0)
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 32 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-115] Multiple burst writes of variable length and bit width 32 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-115] Multiple burst writes of variable length and bit width 32 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-115] Multiple burst writes of variable length and bit width 32 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 32 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 32 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 32 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 32 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.19 seconds. CPU system time: 0.21 seconds. Elapsed time: 2.98 seconds; current allocated memory: 159.471 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 159.473 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 161.126 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 160.114 MB.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-2' in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-3' in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-4' in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-5' in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-6' in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'LOOP1' (backward_fcc/backprop.cpp:46) in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'LOOP4' (backward_fcc/backprop.cpp:61) in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-9' in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-10' in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-11' in function 'backward_fcc' automatically.
+INFO: [XFORM 203-501] Unrolling loop 'LOOP1' (backward_fcc/backprop.cpp:46) in function 'backward_fcc' partially with a factor of 10.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.28 seconds. CPU system time: 0 seconds. Elapsed time: 0.28 seconds; current allocated memory: 181.442 MB.
+WARNING: [HLS 200-960] Cannot flatten loop 'LOOP3' (backward_fcc/backprop.cpp:57:17) in function 'backward_fcc' the outer loop is not a perfect loop because there is nontrivial logic in the loop latch.
+INFO: [HLS 200-472] Inferring partial write operation for 'x_t' 
+INFO: [HLS 200-472] Inferring partial write operation for 'b_t' 
+INFO: [HLS 200-472] Inferring partial write operation for 'w_t' 
+INFO: [HLS 200-472] Inferring partial write operation for 'dx_t' 
+INFO: [HLS 200-472] Inferring partial write operation for 'dy_t' 
+INFO: [HLS 200-472] Inferring partial write operation for 'dx_t' (backward_fcc/backprop.cpp:49:12)
+INFO: [HLS 200-472] Inferring partial write operation for 'w_t' (backward_fcc/backprop.cpp:63:19)
+INFO: [HLS 200-472] Inferring partial write operation for 'b_t' (backward_fcc/backprop.cpp:65:10)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.23 seconds. CPU system time: 0 seconds. Elapsed time: 0.23 seconds; current allocated memory: 176.248 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'backward_fcc' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'backward_fcc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul15_le) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=empty_56) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-1457] Automatically inferring 1WnR RAM type for array 'w_t'. Use bind_storage pragma to overwrite if needed.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'Loop 1'
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'Loop 2'
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=0
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: set_directive_top -name backward_fcc backward_fcc 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 155.914 MB.
+INFO: [HLS 200-10] Analyzing design file 'backward_fcc/backprop.cpp' ... 
+WARNING: [HLS 207-1017] unknown pragma ignored: backward_fcc/backprop.cpp:39:9
+WARNING: [HLS 207-1017] unknown pragma ignored: backward_fcc/backprop.cpp:60:9
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.35 seconds. CPU system time: 0.15 seconds. Elapsed time: 0.24 seconds; current allocated memory: 156.650 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'backward_fcc(float volatile*, float volatile*, float volatile*, float volatile*, float volatile*, int, int, float)' (backward_fcc/backprop.cpp:6:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'backward_fcc(float volatile*, float volatile*, float volatile*, float volatile*, float volatile*, int, int, float)' (backward_fcc/backprop.cpp:6:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'backward_fcc(float volatile*, float volatile*, float volatile*, float volatile*, float volatile*, int, int, float)' (backward_fcc/backprop.cpp:6:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'backward_fcc(float volatile*, float volatile*, float volatile*, float volatile*, float volatile*, int, int, float)' (backward_fcc/backprop.cpp:6:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'backward_fcc(float volatile*, float volatile*, float volatile*, float volatile*, float volatile*, int, int, float)' (backward_fcc/backprop.cpp:6:0)
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 32 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-115] Multiple burst writes of variable length and bit width 32 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-115] Multiple burst writes of variable length and bit width 32 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-115] Multiple burst writes of variable length and bit width 32 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 32 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 32 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 32 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 32 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.3 seconds. CPU system time: 0.26 seconds. Elapsed time: 3.16 seconds; current allocated memory: 159.488 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 159.490 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 161.129 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 160.117 MB.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-2' in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-3' in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-4' in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-5' in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-6' in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'LOOP1' (backward_fcc/backprop.cpp:48) in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'LOOP4' (backward_fcc/backprop.cpp:63) in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-9' in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-10' in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-11' in function 'backward_fcc' automatically.
+INFO: [XFORM 203-501] Unrolling loop 'LOOP1' (backward_fcc/backprop.cpp:48) in function 'backward_fcc' partially with a factor of 10.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.29 seconds. CPU system time: 0 seconds. Elapsed time: 0.3 seconds; current allocated memory: 181.433 MB.
+WARNING: [HLS 200-960] Cannot flatten loop 'LOOP3' (backward_fcc/backprop.cpp:59:17) in function 'backward_fcc' the outer loop is not a perfect loop because there is nontrivial logic in the loop latch.
+INFO: [HLS 200-472] Inferring partial write operation for 'x_t' 
+INFO: [HLS 200-472] Inferring partial write operation for 'b_t' 
+INFO: [HLS 200-472] Inferring partial write operation for 'w_t' 
+INFO: [HLS 200-472] Inferring partial write operation for 'dx_t' 
+INFO: [HLS 200-472] Inferring partial write operation for 'dy_t' 
+INFO: [HLS 200-472] Inferring partial write operation for 'dx_t' (backward_fcc/backprop.cpp:51:12)
+INFO: [HLS 200-472] Inferring partial write operation for 'w_t' (backward_fcc/backprop.cpp:65:19)
+INFO: [HLS 200-472] Inferring partial write operation for 'b_t' (backward_fcc/backprop.cpp:67:10)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.23 seconds. CPU system time: 0 seconds. Elapsed time: 0.22 seconds; current allocated memory: 176.248 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'backward_fcc' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'backward_fcc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul15_le) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=empty_56) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-1457] Automatically inferring 1WnR RAM type for array 'w_t'. Use bind_storage pragma to overwrite if needed.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'Loop 1'
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2'.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=0
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: set_directive_top -name backward_fcc backward_fcc 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 155.914 MB.
+INFO: [HLS 200-10] Analyzing design file 'backward_fcc/backprop.cpp' ... 
+WARNING: [HLS 207-1017] unknown pragma ignored: backward_fcc/backprop.cpp:39:9
+WARNING: [HLS 207-1017] unknown pragma ignored: backward_fcc/backprop.cpp:40:9
+WARNING: [HLS 207-1017] unknown pragma ignored: backward_fcc/backprop.cpp:41:9
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.33 seconds. CPU system time: 0.13 seconds. Elapsed time: 0.23 seconds; current allocated memory: 156.713 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'backward_fcc(float volatile*, float volatile*, float volatile*, float volatile*, float volatile*, int, int, float)' (backward_fcc/backprop.cpp:6:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'backward_fcc(float volatile*, float volatile*, float volatile*, float volatile*, float volatile*, int, int, float)' (backward_fcc/backprop.cpp:6:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'backward_fcc(float volatile*, float volatile*, float volatile*, float volatile*, float volatile*, int, int, float)' (backward_fcc/backprop.cpp:6:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'backward_fcc(float volatile*, float volatile*, float volatile*, float volatile*, float volatile*, int, int, float)' (backward_fcc/backprop.cpp:6:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'backward_fcc(float volatile*, float volatile*, float volatile*, float volatile*, float volatile*, int, int, float)' (backward_fcc/backprop.cpp:6:0)
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 32 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-115] Multiple burst writes of variable length and bit width 32 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-115] Multiple burst writes of variable length and bit width 32 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-115] Multiple burst writes of variable length and bit width 32 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 32 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 32 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 32 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 32 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.2 seconds. CPU system time: 0.24 seconds. Elapsed time: 3.01 seconds; current allocated memory: 159.489 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 159.491 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 161.132 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 160.123 MB.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-2' in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-3' in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-4' in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-5' in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-6' in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-9' in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-10' in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-11' in function 'backward_fcc' automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'LOOP3' (backward_fcc/backprop.cpp:61) in function 'backward_fcc' for pipelining.
+WARNING: [HLS 200-936] Cannot unroll loop 'LOOP4' (backward_fcc/backprop.cpp:65) in function 'backward_fcc': cannot completely unroll a loop with a variable trip count.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.23 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.23 seconds; current allocated memory: 181.110 MB.
+WARNING: [HLS 200-960] Cannot flatten loop 'LOOP3' (backward_fcc/backprop.cpp:61:17) in function 'backward_fcc' the outer loop is not a perfect loop because there is nontrivial logic in the loop latch.
+INFO: [HLS 200-472] Inferring partial write operation for 'x_t' 
+INFO: [HLS 200-472] Inferring partial write operation for 'b_t' 
+INFO: [HLS 200-472] Inferring partial write operation for 'w_t' 
+INFO: [HLS 200-472] Inferring partial write operation for 'dx_t' 
+INFO: [HLS 200-472] Inferring partial write operation for 'dy_t' 
+INFO: [HLS 200-472] Inferring partial write operation for 'dx_t' (backward_fcc/backprop.cpp:53:12)
+INFO: [HLS 200-472] Inferring partial write operation for 'w_t' (backward_fcc/backprop.cpp:67:19)
+INFO: [HLS 200-472] Inferring partial write operation for 'b_t' (backward_fcc/backprop.cpp:69:10)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.18 seconds. CPU system time: 0 seconds. Elapsed time: 0.18 seconds; current allocated memory: 175.057 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'backward_fcc' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'backward_fcc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul15_le) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=empty_47) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'Loop 1'
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'Loop 2'
+INFO==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
