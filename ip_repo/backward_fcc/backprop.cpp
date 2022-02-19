@@ -36,9 +36,7 @@ void backward_fcc(volatile float* x, volatile float* w, volatile float* b, volat
 	float db[MAX_SIZE];
 	float dw[MAX_SIZE*MAX_SIZE];
 
-#pragma ARRAY_PARTITION variable=dx_t type=block factor=4
-#pragma ARRAY_PARTITION variable=dw type=block factor=4
-#pragma ARRAY_PARTITION variable=w_t type=block factor=4
+
 
 	memcpy(x_t,(const float*)x,xdim*sizeof(float));
 	memcpy(b_t,(const float*)b,ydim*sizeof(float));
@@ -57,17 +55,18 @@ void backward_fcc(volatile float* x, volatile float* w, volatile float* b, volat
 	//compute gradient of weights
 
 
+
 	//compute gradient of biases
 	LOOP3:for (int i=0;i<ydim;i++){
 	#pragma HLS pipeline II=1
-		db[i] = dy_t[i];
-
 		LOOP4:for(int j=0;j<xdim;j++){
-					dw[i*xdim+j] = dy_t[i]*x_t[j];
-					w_t[i*xdim+j]-=lr*dw[i*xdim+j];
-				}
-		b_t[i] -= lr*db[i];
+
+			dw[i*xdim+j] = dy_t[i]*x_t[j];
+			w_t[i*xdim+j]-=lr*dw[i*xdim+j];
+		}
+		b_t[i] -= lr*dy_t[i];
 	}
+
 
 
 

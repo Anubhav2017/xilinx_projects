@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'backward_fcc'" level="0">
-<item name = "Date">Thu Feb 17 16:02:08 2022
+<item name = "Date">Sat Feb 19 17:10:55 2022
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)</item>
 <item name = "Project">backward_fcc</item>
@@ -100,20 +100,20 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln50_1_fu_836_p2">+, 0, 0, 39, 32, 1</column>
-<column name="add_ln50_fu_822_p2">+, 0, 0, 17, 14, 2</column>
-<column name="add_ln53_fu_856_p2">+, 0, 0, 17, 14, 14</column>
-<column name="add_ln61_fu_866_p2">+, 0, 0, 39, 32, 1</column>
-<column name="add_ln65_fu_889_p2">+, 0, 0, 39, 32, 1</column>
-<column name="add_ln67_fu_913_p2">+, 0, 0, 17, 14, 14</column>
+<column name="add_ln48_1_fu_836_p2">+, 0, 0, 39, 32, 1</column>
+<column name="add_ln48_fu_822_p2">+, 0, 0, 17, 14, 2</column>
+<column name="add_ln51_fu_856_p2">+, 0, 0, 17, 14, 14</column>
+<column name="add_ln60_fu_866_p2">+, 0, 0, 39, 32, 1</column>
+<column name="add_ln62_fu_889_p2">+, 0, 0, 39, 32, 1</column>
+<column name="add_ln65_fu_913_p2">+, 0, 0, 17, 14, 14</column>
 <column name="empty_26_fu_634_p2">+, 0, 0, 69, 62, 1</column>
 <column name="empty_30_fu_676_p2">+, 0, 0, 69, 62, 1</column>
 <column name="empty_34_fu_722_p2">+, 0, 0, 69, 62, 1</column>
 <column name="empty_38_fu_756_p2">+, 0, 0, 69, 62, 1</column>
 <column name="empty_42_fu_799_p2">+, 0, 0, 69, 62, 1</column>
-<column name="empty_49_fu_932_p2">+, 0, 0, 69, 62, 1</column>
-<column name="empty_53_fu_968_p2">+, 0, 0, 69, 62, 1</column>
-<column name="empty_57_fu_1004_p2">+, 0, 0, 69, 62, 1</column>
+<column name="empty_50_fu_932_p2">+, 0, 0, 69, 62, 1</column>
+<column name="empty_54_fu_968_p2">+, 0, 0, 69, 62, 1</column>
+<column name="empty_58_fu_1004_p2">+, 0, 0, 69, 62, 1</column>
 <column name="ap_block_pp0_stage0_11001">and, 0, 0, 2, 1, 1</column>
 <column name="ap_block_pp1_stage0_11001">and, 0, 0, 2, 1, 1</column>
 <column name="ap_block_pp2_stage0_11001">and, 0, 0, 2, 1, 1</column>
@@ -147,12 +147,12 @@
 <column name="exitcond7920_fu_728_p2">icmp, 0, 0, 28, 62, 62</column>
 <column name="exitcond8021_fu_682_p2">icmp, 0, 0, 28, 62, 62</column>
 <column name="exitcond8122_fu_640_p2">icmp, 0, 0, 28, 62, 62</column>
-<column name="icmp_ln43_fu_605_p2">icmp, 0, 0, 18, 32, 1</column>
-<column name="icmp_ln44_fu_657_p2">icmp, 0, 0, 18, 32, 1</column>
-<column name="icmp_ln45_fu_703_p2">icmp, 0, 0, 18, 32, 1</column>
-<column name="icmp_ln50_fu_842_p2">icmp, 0, 0, 18, 32, 32</column>
-<column name="icmp_ln61_fu_872_p2">icmp, 0, 0, 18, 32, 32</column>
-<column name="icmp_ln65_fu_899_p2">icmp, 0, 0, 18, 32, 32</column>
+<column name="icmp_ln41_fu_605_p2">icmp, 0, 0, 18, 32, 1</column>
+<column name="icmp_ln42_fu_657_p2">icmp, 0, 0, 18, 32, 1</column>
+<column name="icmp_ln43_fu_703_p2">icmp, 0, 0, 18, 32, 1</column>
+<column name="icmp_ln48_fu_842_p2">icmp, 0, 0, 18, 32, 32</column>
+<column name="icmp_ln60_fu_872_p2">icmp, 0, 0, 18, 32, 32</column>
+<column name="icmp_ln62_fu_899_p2">icmp, 0, 0, 18, 32, 32</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
 <column name="ap_enable_pp1">xor, 0, 0, 2, 1, 2</column>
 <column name="ap_enable_pp2">xor, 0, 0, 2, 1, 2</column>
@@ -230,10 +230,10 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="add_ln50_reg_1267">14, 0, 14, 0</column>
-<column name="add_ln61_reg_1306">32, 0, 32, 0</column>
-<column name="add_ln65_reg_1344">32, 0, 32, 0</column>
-<column name="add_ln67_reg_1357">14, 0, 14, 0</column>
+<column name="add_ln48_reg_1267">14, 0, 14, 0</column>
+<column name="add_ln60_reg_1306">32, 0, 32, 0</column>
+<column name="add_ln62_reg_1344">32, 0, 32, 0</column>
+<column name="add_ln65_reg_1357">14, 0, 14, 0</column>
 <column name="ap_CS_fsm">99, 0, 99, 0</column>
 <column name="ap_enable_reg_pp0_iter0">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
@@ -284,7 +284,8 @@
 <column name="empty_41_reg_1232_pp3_iter1_reg">7, 0, 7, 0</column>
 <column name="empty_45_reg_1257">7, 0, 7, 0</column>
 <column name="empty_45_reg_1257_pp4_iter1_reg">7, 0, 7, 0</column>
-<column name="empty_47_reg_1339">14, 0, 14, 0</column>
+<column name="empty_47_reg_1319">7, 0, 7, 0</column>
+<column name="empty_48_reg_1339">14, 0, 14, 0</column>
 <column name="empty_reg_1091">14, 0, 14, 0</column>
 <column name="exitcond10_reg_1428">1, 0, 1, 0</column>
 <column name="exitcond10_reg_1428_pp8_iter1_reg">1, 0, 1, 0</column>
@@ -307,11 +308,12 @@
 <column name="gmem_addr_3_read_reg_1237">32, 0, 32, 0</column>
 <column name="gmem_addr_4_read_reg_1262">32, 0, 32, 0</column>
 <column name="gmem_addr_read_reg_1133">32, 0, 32, 0</column>
+<column name="i_1_cast_cast_reg_1329">7, 0, 32, 25</column>
 <column name="i_1_reg_478">32, 0, 32, 0</column>
 <column name="i_reg_467">32, 0, 32, 0</column>
-<column name="icmp_ln43_reg_1102">1, 0, 1, 0</column>
-<column name="icmp_ln44_reg_1138">1, 0, 1, 0</column>
-<column name="icmp_ln45_reg_1182">1, 0, 1, 0</column>
+<column name="icmp_ln41_reg_1102">1, 0, 1, 0</column>
+<column name="icmp_ln42_reg_1138">1, 0, 1, 0</column>
+<column name="icmp_ln43_reg_1182">1, 0, 1, 0</column>
 <column name="j_reg_489">32, 0, 32, 0</column>
 <column name="loop_index22_reg_511">62, 0, 62, 0</column>
 <column name="loop_index28_reg_500">62, 0, 62, 0</column>
@@ -323,24 +325,22 @@
 <column name="loop_index_reg_522">62, 0, 62, 0</column>
 <column name="lr_read_reg_1038">32, 0, 32, 0</column>
 <column name="mul15_le_reg_1282">14, 0, 14, 0</column>
-<column name="mul_ln45_reg_1174">32, 0, 32, 0</column>
-<column name="p_cast8_reg_1324">30, 0, 30, 0</column>
+<column name="mul_ln43_reg_1174">32, 0, 32, 0</column>
+<column name="p_cast9_reg_1324">30, 0, 30, 0</column>
 <column name="reg_568">32, 0, 32, 0</column>
 <column name="reg_573">32, 0, 32, 0</column>
 <column name="reg_579">32, 0, 32, 0</column>
 <column name="reg_586">32, 0, 32, 0</column>
 <column name="reg_592">32, 0, 32, 0</column>
-<column name="sext_ln43_reg_1106">62, 0, 62, 0</column>
-<column name="sext_ln44_reg_1142">62, 0, 62, 0</column>
-<column name="sext_ln45_reg_1186">62, 0, 62, 0</column>
-<column name="trunc_ln63_reg_1319">7, 0, 7, 0</column>
+<column name="sext_ln41_reg_1106">62, 0, 62, 0</column>
+<column name="sext_ln42_reg_1142">62, 0, 62, 0</column>
+<column name="sext_ln43_reg_1186">62, 0, 62, 0</column>
 <column name="w_read_reg_1081">32, 0, 32, 0</column>
 <column name="w_t_addr_2_reg_1372">14, 0, 14, 0</column>
 <column name="x_read_reg_1086">32, 0, 32, 0</column>
 <column name="x_t_load_reg_1367">32, 0, 32, 0</column>
 <column name="xdimension_read_reg_1055">32, 0, 32, 0</column>
 <column name="ydimension_read_reg_1043">32, 0, 32, 0</column>
-<column name="zext_ln63_reg_1329">7, 0, 32, 25</column>
 <column name="dx_t_addr_1_reg_1296">64, 32, 7, 0</column>
 </table>
 </item>

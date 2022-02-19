@@ -1459,23 +1459,29 @@ __attribute__((sdx_kernel("forward_fcc", 0))) void forward_fcc(volatile float* x
  float b_t[100];
  float w_t[100];
 
+ float mulbuffer_t[100];
+
  memcpy(x_t,(const float*)x,xdim*sizeof(float));
  memcpy(b_t,(const float*)b,ydim*sizeof(float));
  memcpy(w_t,(const float*)w,ydim*xdim*sizeof(float));
 
     LOOP1:for(int i=0; i< ydim;i++){
-#pragma HLS UNROLL factor=10
- y_t[i]=0;
 
+     y_t[i]=b[i];
 
         LOOP2:for (int j=0; j<xdim;j++){
-#pragma HLS PIPELINE
- y_t[i]+= w_t[i*xdim+j]*x_t[j];
+#pragma HLS PIPELINE II=2
+
+ mulbuffer_t[j]= w_t[i*xdim+j]*x_t[j];
+        }
+
+        LOOPADD: for(int j=0;j<xdim;j++){
+#pragma HLS PIPELINE II=11
+
+ y_t[i]+= mulbuffer_t[j];
         }
     }
-    VITIS_LOOP_43_1: for(int i=0;i<ydim;i++){
-     y_t[i] += b_t[i];
-    }
+
 
     memcpy((float *)y,y_t,ydim*sizeof(float));
 

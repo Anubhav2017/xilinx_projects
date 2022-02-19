@@ -1469,9 +1469,7 @@ __attribute__((sdx_kernel("backward_fcc", 0))) void backward_fcc(volatile float*
  float db[100];
  float dw[100*100];
 
-#pragma ARRAY_PARTITION variable=dx_t type=block factor=4
-#pragma ARRAY_PARTITION variable=dw type=block factor=4
-#pragma ARRAY_PARTITION variable=w_t type=block factor=4
+
 
  memcpy(x_t,(const float*)x,xdim*sizeof(float));
  memcpy(b_t,(const float*)b,ydim*sizeof(float));
@@ -1491,16 +1489,17 @@ __attribute__((sdx_kernel("backward_fcc", 0))) void backward_fcc(volatile float*
 
 
 
+
  LOOP3:for (int i=0;i<ydim;i++){
 #pragma HLS pipeline II=1
- db[i] = dy_t[i];
+ LOOP4:for(int j=0;j<xdim;j++){
 
-  LOOP4:for(int j=0;j<xdim;j++){
-     dw[i*xdim+j] = dy_t[i]*x_t[j];
-     w_t[i*xdim+j]-=lr*dw[i*xdim+j];
-    }
-  b_t[i] -= lr*db[i];
+   dw[i*xdim+j] = dy_t[i]*x_t[j];
+   w_t[i*xdim+j]-=lr*dw[i*xdim+j];
+  }
+  b_t[i] -= lr*dy_t[i];
  }
+
 
 
 

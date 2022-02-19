@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
-    <originFiles name="fwprop.cpp" path="/home/anubhav/xilinx_projects/ip_repo/forward_fcc/fwprop.cpp"/>
+    <originFiles name="fwprop.cpp" path="/home/anubhav/workspace/ip_repo/forward_fcc/fwprop.cpp"/>
   </source>
   <testbench/>
 </autopilotfilemapping:AutoPilotFileMapping>

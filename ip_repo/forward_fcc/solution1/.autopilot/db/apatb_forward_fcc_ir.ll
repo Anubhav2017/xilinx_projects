@@ -1,4 +1,4 @@
-; ModuleID = '/home/anubhav/xilinx_projects/ip_repo/forward_fcc/solution1/.autopilot/db/a.g.ld.5.gdce.bc'
+; ModuleID = '/home/anubhav/workspace/ip_repo/forward_fcc/solution1/.autopilot/db/a.g.ld.5.gdce.bc'
 source_filename = "llvm-link"
 target datalayout = "e-m:e-i64:64-i128:128-i256:256-i512:512-i1024:1024-i2048:2048-i4096:4096-n8:16:32:64-S128-v16:16-v24:32-v32:32-v48:64-v96:128-v192:256-v256:256-v512:512-v1024:1024"
 target triple = "fpga64-xilinx-none"
@@ -6,7 +6,7 @@ target triple = "fpga64-xilinx-none"
 ; Function Attrs: argmemonly nounwind
 declare void @llvm.memcpy.p0i8.p0i8.i64(i8* nocapture writeonly, i8* nocapture readonly, i64, i1) #0
 
-; Function Attrs: argmemonly noinline
+; Function Attrs: noinline
 define void @apatb_forward_fcc_ir(float* %x, float* %w, float* %y, float* %b, i32 %xdimension, i32 %ydimension) local_unnamed_addr #1 {
 entry:
   %x_copy = alloca [200 x float], align 512
@@ -94,7 +94,7 @@ entry:
 declare void @forward_fcc_hw_stub(float*, float*, float*, float*, i32, i32)
 
 attributes #0 = { argmemonly nounwind }
-attributes #1 = { argmemonly noinline "fpga.wrapper.func"="wrapper" }
+attributes #1 = { noinline "fpga.wrapper.func"="wrapper" }
 attributes #2 = { argmemonly noinline "fpga.wrapper.func"="copyin" }
 attributes #3 = { argmemonly noinline "fpga.wrapper.func"="onebyonecpy_hls" }
 attributes #4 = { argmemonly noinline "fpga.wrapper.func"="copyout" }

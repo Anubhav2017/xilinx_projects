@@ -3,7 +3,6 @@ forward_fcc_fmul_32ns_32ns_32_4_max_dsp_1
 forward_fcc_mul_32s_32s_32_2_1
 forward_fcc_mul_7s_7s_7_1_1
 forward_fcc_x_t
-forward_fcc_y_t
 forward_fcc_CTRL_s_axi
 forward_fcc_gmem_m_axi
 forward_fcc
