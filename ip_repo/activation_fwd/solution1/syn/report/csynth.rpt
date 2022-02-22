@@ -1,0 +1,28 @@
+
+
+================================================================
+== Synthesis Summary Report of 'activation_fwd'
+================================================================
++ General Information: 
+    * Date:           Tue Feb 22 16:20:45 2022
+    * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
+    * Project:        activation_fwd
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg400-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +--------------------+--------+-------+---------+-----------+----------+---------+------+----------+--------+----+-----------+-----------+-----+
+    |       Modules      |  Issue |       | Latency |  Latency  | Iteration|         | Trip |          |        |    |           |           |     |
+    |       & Loops      |  Type  | Slack | (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined|  BRAM  | DSP|     FF    |    LUT    | URAM|
+    +--------------------+--------+-------+---------+-----------+----------+---------+------+----------+--------+----+-----------+-----------+-----+
+    |+ activation_fwd    |  Timing|   0.00|        -|          -|         -|        -|     -|        no|  5 (1%)|   -|  1632 (1%)|  2291 (4%)|    -|
+    | o Loop 1           |       -|  -7.30|        -|          -|         3|        1|     -|       yes|       -|   -|          -|          -|    -|
+    | o VITIS_LOOP_42_2  |      II|  -7.30|        -|          -|         4|        3|     -|       yes|       -|   -|          -|          -|    -|
+    | o VITIS_LOOP_27_1  |      II|  -7.30|        -|          -|         7|        3|     -|       yes|       -|   -|          -|          -|    -|
+    | o Loop 4           |       -|  -7.30|      128|  1.280e+03|         3|        1|   127|       yes|       -|   -|          -|          -|    -|
+    +--------------------+--------+-------+---------+-----------+----------+---------+------+----------+--------+----+-----------+-----------+-----+
+

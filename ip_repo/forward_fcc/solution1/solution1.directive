@@ -5,11 +5,6 @@
                 <option name="name" value="forward_fcc"/>
             </pragma>
         </directive>
-        <directive functionName="forward_fcc" label="" functionLabel="">
-            <pragma name="TOP">
-                <option name="name" value="forward_fcc"/>
-            </pragma>
-        </directive>
     </sourceFile>
 </AutoPilot:ProjectResources>
 

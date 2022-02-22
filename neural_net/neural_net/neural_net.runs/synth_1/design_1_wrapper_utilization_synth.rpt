@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-| Date         : Thu Feb 17 13:07:39 2022
+| Date         : Tue Feb 22 16:50:42 2022
 | Host         : anubhav-acer running 64-bit Ubuntu 20.04.3 LTS
 | Command      : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
 | Design       : design_1_wrapper
@@ -176,17 +176,24 @@ Table of Contents
 |             Ref Name            | Used |
 +---------------------------------+------+
 | design_1_xbar_0                 |    1 |
+| design_1_s04_mmu_0              |    1 |
+| design_1_s03_mmu_0              |    1 |
 | design_1_s02_mmu_0              |    1 |
 | design_1_s01_mmu_0              |    1 |
+| design_1_s00_mmu_0              |    1 |
 | design_1_rst_ps7_0_100M_13      |    1 |
 | design_1_processing_system7_0_0 |    1 |
 | design_1_forward_fcc_0_8        |    1 |
 | design_1_backward_fcc_0_2       |    1 |
 | design_1_axi_bram_ctrl_0_bram_0 |    1 |
 | design_1_axi_bram_ctrl_0_0      |    1 |
+| design_1_auto_pc_4              |    1 |
+| design_1_auto_pc_3              |    1 |
 | design_1_auto_pc_2              |    1 |
 | design_1_auto_pc_1              |    1 |
 | design_1_auto_pc_0              |    1 |
+| design_1_activation_fwd_0_0     |    1 |
+| design_1_activation_bckwd_0_0   |    1 |
 +---------------------------------+------+
 
 

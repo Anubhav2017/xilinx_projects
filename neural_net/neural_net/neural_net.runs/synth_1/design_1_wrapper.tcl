@@ -70,7 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 3
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z020clg400-1
 
@@ -92,19 +91,26 @@ OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib /home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
 add_files /home/anubhav/workspace/neural_net/neural_net/neural_net.srcs/sources_1/bd/design_1/design_1.bd
 set_property used_in_implementation false [get_files -all /home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_auto_pc_4/design_1_auto_pc_4_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_auto_pc_3/design_1_auto_pc_3_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_s00_mmu_0/design_1_s00_mmu_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_s01_mmu_0/design_1_s01_mmu_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_s02_mmu_0/design_1_s02_mmu_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_s03_mmu_0/design_1_s03_mmu_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_s04_mmu_0/design_1_s04_mmu_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_bram_0/design_1_axi_bram_ctrl_0_bram_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_backward_fcc_0_2/constraints/backward_fcc_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_forward_fcc_0_8/constraints/forward_fcc_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc]
 set_property used_in_implementation false [get_files -all /home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_13/design_1_rst_ps7_0_100M_13_board.xdc]
 set_property used_in_implementation false [get_files -all /home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_13/design_1_rst_ps7_0_100M_13.xdc]
 set_property used_in_implementation false [get_files -all /home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_13/design_1_rst_ps7_0_100M_13_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_s01_mmu_0/design_1_s01_mmu_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_s02_mmu_0/design_1_s02_mmu_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_backward_fcc_0_2/constraints/backward_fcc_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_forward_fcc_0_8/constraints/forward_fcc_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_activation_fwd_0_0/constraints/activation_fwd_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_activation_bckwd_0_0/constraints/activation_bckwd_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/design_1_ooc.xdc]
 
 OPTRACE "Adding files" END { }

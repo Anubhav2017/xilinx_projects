@@ -1,7 +1,7 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-// Date        : Thu Feb 17 11:32:43 2022
+// Date        : Sun Feb 20 11:22:02 2022
 // Host        : anubhav-acer running 64-bit Ubuntu 20.04.3 LTS
 // Command     : write_verilog -force -mode synth_stub
 //               /home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_forward_fcc_0_8/design_1_forward_fcc_0_8_stub.v

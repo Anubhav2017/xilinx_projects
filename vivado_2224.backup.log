@@ -1,0 +1,234 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Feb 17 12:46:31 2022
+# Process ID: 2224
+# Current directory: /home/anubhav/workspace
+# Command line: vivado
+# Log file: /home/anubhav/workspace/vivado.log
+# Journal file: /home/anubhav/workspace/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/anubhav/workspace/neural_net/neural_net/neural_net.xpr
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory '/home/anubhav/.Xilinx/Vivado/2019.2/xhub/board_store'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/anubhav/workspace/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'design_1_xbar_0' generated file not found '/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_xbar_0' generated file not found '/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_xbar_0' generated file not found '/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_xbar_0' generated file not found '/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_xbar_0' generated file not found '/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_auto_pc_2' generated file not found '/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_auto_pc_2' generated file not found '/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_auto_pc_2' generated file not found '/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_auto_pc_2' generated file not found '/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_auto_pc_2' generated file not found '/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_auto_pc_0' generated file not found '/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_auto_pc_0' generated file not found '/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_auto_pc_0' generated file not found '/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_auto_pc_0' generated file not found '/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_auto_pc_0' generated file not found '/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_auto_pc_1' generated file not found '/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_auto_pc_1' generated file not found '/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_auto_pc_1' generated file not found '/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_auto_pc_1' generated file not found '/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_auto_pc_1' generated file not found '/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_s01_mmu_0' generated file not found '/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_s01_mmu_0/design_1_s01_mmu_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_s01_mmu_0' generated file not found '/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_s01_mmu_0/design_1_s01_mmu_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_s01_mmu_0' generated file not found '/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_s01_mmu_0/design_1_s01_mmu_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_s01_mmu_0' generated file not found '/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_s01_mmu_0/design_1_s01_mmu_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_s01_mmu_0' generated file not found '/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_s01_mmu_0/design_1_s01_mmu_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_s02_mmu_0' generated file not found '/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_s02_mmu_0/design_1_s02_mmu_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_s02_mmu_0' generated file not found '/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_s02_mmu_0/design_1_s02_mmu_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_s02_mmu_0' generated file not found '/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_s02_mmu_0/design_1_s02_mmu_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_s02_mmu_0' generated file not found '/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_s02_mmu_0/design_1_s02_mmu_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_s02_mmu_0' generated file not found '/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_s02_mmu_0/design_1_s02_mmu_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_axi_bram_ctrl_0_0' generated file not found '/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_axi_bram_ctrl_0_0' generated file not found '/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_axi_bram_ctrl_0_0' generated file not found '/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_axi_bram_ctrl_0_0' generated file not found '/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_axi_bram_ctrl_0_0' generated file not found '/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_processing_system7_0_0' generated file not found '/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_processing_system7_0_0' generated file not found '/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_processing_system7_0_0' generated file not found '/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_processing_system7_0_0' generated file not found '/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_processing_system7_0_0' generated file not found '/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_rst_ps7_0_100M_13' generated file not found '/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_13/design_1_rst_ps7_0_100M_13.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_rst_ps7_0_100M_13' generated file not found '/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_13/design_1_rst_ps7_0_100M_13_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_rst_ps7_0_100M_13' generated file not found '/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_13/design_1_rst_ps7_0_100M_13_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_rst_ps7_0_100M_13' generated file not found '/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_13/design_1_rst_ps7_0_100M_13_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_rst_ps7_0_100M_13' generated file not found '/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_13/design_1_rst_ps7_0_100M_13_sim_netlist.vhdl'. Please regenerate to continue.
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:15 . Memory (MB): peak = 7256.605 ; gain = 105.121 ; free physical = 4397 ; free virtual = 8379
+open_bd_design {/home/anubhav/workspace/neural_net/neural_net/neural_net.srcs/sources_1/bd/design_1/design_1.bd}
+Reading block design file </home/anubhav/workspace/neural_net/neural_net/neural_net.srcs/sources_1/bd/design_1/design_1.bd>...
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_mmu:2.1 - s01_mmu
+Adding component instance block -- xilinx.com:ip:axi_mmu:2.1 - s02_mmu
+Adding component instance block -- xilinx.com:ip:axi_bram_ctrl:4.1 - axi_bram_ctrl_0
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - axi_bram_ctrl_0_bram
+Adding component instance block -- xilinx.com:hls:backward_fcc:1.0 - backward_fcc_0
+Adding component instance block -- xilinx.com:hls:forward_fcc:1.0 - forward_fcc_0
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Excluding slave segment /backward_fcc_0/s_axi_control/Reg from address space /backward_fcc_0/Data_m_axi_gmem.
+Successfully read diagram <design_1> from block design file </home/anubhav/workspace/neural_net/neural_net/neural_net.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 7604.777 ; gain = 0.000 ; free physical = 4289 ; free virtual = 8316
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 9
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_auto_pc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_auto_pc_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_auto_pc_2
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_axi_bram_ctrl_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_processing_system7_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_rst_ps7_0_100M_13
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_s01_mmu_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_s02_mmu_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_xbar_0
+[Thu Feb 17 12:52:26 2022] Launched design_1_xbar_0_synth_1, design_1_axi_bram_ctrl_0_0_synth_1, design_1_processing_system7_0_0_synth_1, design_1_rst_ps7_0_100M_13_synth_1, design_1_s01_mmu_0_synth_1, design_1_auto_pc_0_synth_1, design_1_s02_mmu_0_synth_1, design_1_auto_pc_1_synth_1, design_1_auto_pc_2_synth_1, synth_1...
+Run output will be captured here:
+design_1_xbar_0_synth_1: /home/anubhav/workspace/neural_net/neural_net/neural_net.runs/design_1_xbar_0_synth_1/runme.log
+design_1_axi_bram_ctrl_0_0_synth_1: /home/anubhav/workspace/neural_net/neural_net/neural_net.runs/design_1_axi_bram_ctrl_0_0_synth_1/runme.log
+design_1_processing_system7_0_0_synth_1: /home/anubhav/workspace/neural_net/neural_net/neural_net.runs/design_1_processing_system7_0_0_synth_1/runme.log
+design_1_rst_ps7_0_100M_13_synth_1: /home/anubhav/workspace/neural_net/neural_net/neural_net.runs/design_1_rst_ps7_0_100M_13_synth_1/runme.log
+design_1_s01_mmu_0_synth_1: /home/anubhav/workspace/neural_net/neural_net/neural_net.runs/design_1_s01_mmu_0_synth_1/runme.log
+design_1_auto_pc_0_synth_1: /home/anubhav/workspace/neural_net/neural_net/neural_net.runs/design_1_auto_pc_0_synth_1/runme.log
+design_1_s02_mmu_0_synth_1: /home/anubhav/workspace/neural_net/neural_net/neural_net.runs/design_1_s02_mmu_0_synth_1/runme.log
+design_1_auto_pc_1_synth_1: /home/anubhav/workspace/neural_net/neural_net/neural_net.runs/design_1_auto_pc_1_synth_1/runme.log
+design_1_auto_pc_2_synth_1: /home/anubhav/workspace/neural_net/neural_net/neural_net.runs/design_1_auto_pc_2_synth_1/runme.log
+synth_1: /home/anubhav/workspace/neural_net/neural_net/neural_net.runs/synth_1/runme.log
+[Thu Feb 17 12:52:26 2022] Launched impl_1...
+Run output will be captured here: /home/anubhav/workspace/neural_net/neural_net/neural_net.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 8851.914 ; gain = 183.859 ; free physical = 4197 ; free virtual = 8257
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.051 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.006 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.051 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.006 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.051 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.006 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+startgroup
+set_property -dict [list CONFIG.PCW_FPGA0_PERIPHERAL_FREQMHZ {100}] [get_bd_cells processing_system7_0]
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.051 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.006 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+endgroup
+set_property PFM.CLOCK {} [get_bd_cells /processing_system7_0]
+set_property PFM.CLOCK {FCLK_CLK0 {id "2" is_default "false" proc_sys_reset "/rst_ps7_0_100M" status "fixed" freq_hz "100000000"}} [get_bd_cells /processing_system7_0]
+set_property PFM.CLOCK {FCLK_CLK0 {id "2" is_default "true" proc_sys_reset "/rst_ps7_0_100M" status "fixed" freq_hz "100000000"}} [get_bd_cells /processing_system7_0]
+reset_run design_1_xbar_0_synth_1
+reset_run design_1_processing_system7_0_0_synth_1
+reset_run design_1_auto_pc_0_synth_1
+save_bd_design
+Wrote  : </home/anubhav/workspace/neural_net/neural_net/neural_net.srcs/sources_1/bd/design_1/design_1.bd> 
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+CRITICAL WARNING: [BD 41-1356] Slave segment </forward_fcc_0/s_axi_CTRL/Reg> is not assigned into address space </backward_fcc_0/Data_m_axi_gmem>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </backward_fcc_0/s_axi_control/Reg> is not assigned into address space </forward_fcc_0/Data_m_axi_gmem>. Please use Address Editor to either assign or exclude it.
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_M_AXI_GP0_FREQMHZ(10) on '/processing_system7_0' with propagated value(100). Command ignored
+CRITICAL WARNING: [BD 41-1356] Slave segment </forward_fcc_0/s_axi_CTRL/Reg> is not assigned into address space </backward_fcc_0/Data_m_axi_gmem>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </backward_fcc_0/s_axi_control/Reg> is not assigned into address space </forward_fcc_0/Data_m_axi_gmem>. Please use Address Editor to either assign or exclude it.
+Wrote  : </home/anubhav/workspace/neural_net/neural_net/neural_net.srcs/sources_1/bd/design_1/design_1.bd> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/s00_couplers/auto_pc/m_axi_bid'(12) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_bid'(14) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/s00_couplers/auto_pc/m_axi_rid'(12) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_rid'(14) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_awid'(14) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_awid'(12) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_arid'(14) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_arid'(12) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/s01_mmu/s_axi_arlock'(1) to pin: '/ps7_0_axi_periph/S01_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/s01_mmu/s_axi_awlock'(1) to pin: '/ps7_0_axi_periph/S01_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/s02_mmu/s_axi_arlock'(1) to pin: '/ps7_0_axi_periph/S02_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/s02_mmu/s_axi_awlock'(1) to pin: '/ps7_0_axi_periph/S02_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_bram_ctrl_0_bram/addra'(32) to pin: '/axi_bram_ctrl_0/bram_addr_a'(16) - Only lower order bits will be connected.
+VHDL Output written to : /home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/s00_couplers/auto_pc/m_axi_bid'(12) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_bid'(14) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/s00_couplers/auto_pc/m_axi_rid'(12) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_rid'(14) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_awid'(14) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_awid'(12) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_arid'(14) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_arid'(12) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/s01_mmu/s_axi_arlock'(1) to pin: '/ps7_0_axi_periph/S01_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/s01_mmu/s_axi_awlock'(1) to pin: '/ps7_0_axi_periph/S01_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/s02_mmu/s_axi_arlock'(1) to pin: '/ps7_0_axi_periph/S02_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/s02_mmu/s_axi_awlock'(1) to pin: '/ps7_0_axi_periph/S02_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_bram_ctrl_0_bram/addra'(32) to pin: '/axi_bram_ctrl_0/bram_addr_a'(16) - Only lower order bits will be connected.
+VHDL Output written to : /home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : /home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_0 .
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI_GP0'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m02_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s01_mmu .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s02_mmu .
+Exporting to file /home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file /home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File /home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_auto_pc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_auto_pc_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_auto_pc_2
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_axi_bram_ctrl_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_processing_system7_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_rst_ps7_0_100M_13
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_s01_mmu_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_s02_mmu_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_xbar_0
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 52f5dc17f98b585d; cache size = 100.331 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_1, cache-ID = 52f5dc17f98b585d; cache size = 100.331 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_2, cache-ID = 35725c0547d67d7e; cache size = 100.331 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_bram_ctrl_0_0, cache-ID = 5f178ca3a324a7a9; cache size = 100.331 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_processing_system7_0_0, cache-ID = e2dea29098f7c42b; cache size = 100.331 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_rst_ps7_0_100M_13, cache-ID = c0354ef372136b1c; cache size = 100.331 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_s01_mmu_0, cache-ID = 0aa44b315ab104b7; cache size = 100.331 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_s02_mmu_0, cache-ID = 0aa44b315ab104b7; cache size = 100.331 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_xbar_0, cache-ID = d76c6f9d99dbf45d; cache size = 100.331 MB.
+[Thu Feb 17 13:07:09 2022] Launched synth_1...
+Run output will be captured here: /home/anubhav/workspace/neural_net/neural_net/neural_net.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 9043.371 ; gain = 0.000 ; free physical = 5170 ; free virtual = 7658
+launch_runs impl_1 -jobs 10
+[Thu Feb 17 13:09:37 2022] Launched impl_1...
+Run output will be captured here: /home/anubhav/workspace/neural_net/neural_net/neural_net.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:00.20 ; elapsed = 00:00:00.19 . Memory (MB): peak = 9043.371 ; gain = 0.000 ; free physical = 4866 ; free virtual = 7463
+INFO: [Netlist 29-17] Analyzing 1395 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 9561.145 ; gain = 17.672 ; free physical = 4284 ; free virtual = 6868
+Restored from archive | CPU: 1.030000 secs | Memory: 25.662933 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 9561.145 ; gain = 17.672 ; free physical = 4284 ; free virtual = 6868
+Generating merged BMM file for the design top 'design_1_wrapper'...
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 9561.145 ; gain = 0.000 ; free physical = 4286 ; free virtual = 6869
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 14 instances were transformed.
+  SRLC32E => SRL16E: 14 instances
+
+open_run: Time (s): cpu = 00:00:27 ; elapsed = 00:00:20 . Memory (MB): peak = 9781.500 ; gain = 738.129 ; free physical = 4120 ; free virtual = 6716
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: /home/anubhav/workspace/ip_repo/backward_fcc/solution1/impl/ip/component.xml. It will be created.

@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Feb 22 16:45:36 2022
+# Process ID: 26053
+# Current directory: /home/anubhav/workspace/neural_net/neural_net/neural_net.runs/design_1_auto_pc_2_synth_1
+# Command line: vivado -log design_1_auto_pc_2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_auto_pc_2.tcl
+# Log file: /home/anubhav/workspace/neural_net/neural_net/neural_net.runs/design_1_auto_pc_2_synth_1/design_1_auto_pc_2.vds
+# Journal file: /home/anubhav/workspace/neural_net/neural_net/neural_net.runs/design_1_auto_pc_2_synth_1/vivado.jou
+#-----------------------------------------------------------
+source design_1_auto_pc_2.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 2224.363 ; gain = 0.047 ; free physical = 4407 ; free virtual = 7134
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/anubhav/workspace/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 2224.363 ; gain = 0.000 ; free physical = 4197 ; free virtual = 6995
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_1_auto_pc_2, cache-ID = 4b6e544290fd9bc8.
+INFO: [Common 17-206] Exiting Vivado at Tue Feb 22 16:46:10 2022...

@@ -1,0 +1,123 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Feb 20 11:19:11 2022
+# Process ID: 229040
+# Current directory: /home/anubhav/workspace
+# Command line: vivado
+# Log file: /home/anubhav/workspace/vivado.log
+# Journal file: /home/anubhav/workspace/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/anubhav/workspace/neural_net/neural_net/neural_net.xpr
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory '/home/anubhav/.Xilinx/Vivado/2019.2/xhub/board_store'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/anubhav/workspace/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'design_1.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+design_1_forward_fcc_0_8
+design_1_backward_fcc_0_2
+
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:09 . Memory (MB): peak = 7373.797 ; gain = 63.125 ; free physical = 1595 ; free virtual = 5799
+update_compile_order -fileset sources_1
+open_bd_design {/home/anubhav/workspace/neural_net/neural_net/neural_net.srcs/sources_1/bd/design_1/design_1.bd}
+Reading block design file </home/anubhav/workspace/neural_net/neural_net/neural_net.srcs/sources_1/bd/design_1/design_1.bd>...
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_mmu:2.1 - s01_mmu
+Adding component instance block -- xilinx.com:ip:axi_mmu:2.1 - s02_mmu
+Adding component instance block -- xilinx.com:ip:axi_bram_ctrl:4.1 - axi_bram_ctrl_0
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - axi_bram_ctrl_0_bram
+Adding component instance block -- xilinx.com:hls:backward_fcc:1.0 - backward_fcc_0
+Adding component instance block -- xilinx.com:hls:forward_fcc:1.0 - forward_fcc_0
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Excluding slave segment /backward_fcc_0/s_axi_control/Reg from address space /backward_fcc_0/Data_m_axi_gmem.
+Successfully read diagram <design_1> from block design file </home/anubhav/workspace/neural_net/neural_net/neural_net.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 7615.914 ; gain = 0.000 ; free physical = 1532 ; free virtual = 5781
+report_ip_status -name ip_status 
+upgrade_ip [get_ips  {design_1_backward_fcc_0_2 design_1_forward_fcc_0_8}] -log ip_upgrade.log
+Upgrading '/home/anubhav/workspace/neural_net/neural_net/neural_net.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3422] Upgraded design_1_backward_fcc_0_2 (Backward_fcc 1.0) from revision 2112380113 to revision 2112383957
+Excluding slave segment /backward_fcc_0/s_axi_control/Reg from address space /backward_fcc_0/Data_m_axi_gmem.
+INFO: [IP_Flow 19-3422] Upgraded design_1_forward_fcc_0_8 (Forward_fcc 1.0) from revision 2112380027 to revision 2112385037
+Wrote  : </home/anubhav/workspace/neural_net/neural_net/neural_net.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : </home/anubhav/workspace/neural_net/neural_net/neural_net.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to '/home/anubhav/workspace/neural_net/neural_net/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips {design_1_backward_fcc_0_2 design_1_forward_fcc_0_8}] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+CRITICAL WARNING: [BD 41-1356] Slave segment </forward_fcc_0/s_axi_CTRL/Reg> is not assigned into address space </backward_fcc_0/Data_m_axi_gmem>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </backward_fcc_0/s_axi_control/Reg> is not assigned into address space </forward_fcc_0/Data_m_axi_gmem>. Please use Address Editor to either assign or exclude it.
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_M_AXI_GP0_FREQMHZ(10) on '/processing_system7_0' with propagated value(100). Command ignored
+CRITICAL WARNING: [BD 41-1356] Slave segment </forward_fcc_0/s_axi_CTRL/Reg> is not assigned into address space </backward_fcc_0/Data_m_axi_gmem>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </backward_fcc_0/s_axi_control/Reg> is not assigned into address space </forward_fcc_0/Data_m_axi_gmem>. Please use Address Editor to either assign or exclude it.
+Wrote  : </home/anubhav/workspace/neural_net/neural_net/neural_net.srcs/sources_1/bd/design_1/design_1.bd> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/s00_couplers/auto_pc/m_axi_bid'(12) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_bid'(14) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/s00_couplers/auto_pc/m_axi_rid'(12) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_rid'(14) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_awid'(14) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_awid'(12) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_arid'(14) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_arid'(12) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/s01_mmu/s_axi_arlock'(1) to pin: '/ps7_0_axi_periph/S01_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/s01_mmu/s_axi_awlock'(1) to pin: '/ps7_0_axi_periph/S01_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/s02_mmu/s_axi_arlock'(1) to pin: '/ps7_0_axi_periph/S02_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/s02_mmu/s_axi_awlock'(1) to pin: '/ps7_0_axi_periph/S02_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_bram_ctrl_0_bram/addra'(32) to pin: '/axi_bram_ctrl_0/bram_addr_a'(16) - Only lower order bits will be connected.
+VHDL Output written to : /home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/s00_couplers/auto_pc/m_axi_bid'(12) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_bid'(14) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/s00_couplers/auto_pc/m_axi_rid'(12) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_rid'(14) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_awid'(14) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_awid'(12) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_arid'(14) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_arid'(12) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/s01_mmu/s_axi_arlock'(1) to pin: '/ps7_0_axi_periph/S01_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/s01_mmu/s_axi_awlock'(1) to pin: '/ps7_0_axi_periph/S01_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/s02_mmu/s_axi_arlock'(1) to pin: '/ps7_0_axi_periph/S02_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/s02_mmu/s_axi_awlock'(1) to pin: '/ps7_0_axi_periph/S02_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_bram_ctrl_0_bram/addra'(32) to pin: '/axi_bram_ctrl_0/bram_addr_a'(16) - Only lower order bits will be connected.
+VHDL Output written to : /home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : /home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block backward_fcc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block forward_fcc_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m02_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s01_mmu .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s02_mmu .
+Exporting to file /home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file /home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File /home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_auto_pc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_auto_pc_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_auto_pc_2
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_backward_fcc_0_2
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_forward_fcc_0_8
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_s01_mmu_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_s02_mmu_0
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 52f5dc17f98b585d; cache size = 100.331 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_1, cache-ID = 52f5dc17f98b585d; cache size = 100.331 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_2, cache-ID = 35725c0547d67d7e; cache size = 100.331 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_s01_mmu_0, cache-ID = 0aa44b315ab104b7; cache size = 100.331 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_s02_mmu_0, cache-ID = 0aa44b315ab104b7; cache size = 100.331 MB.
+[Sun Feb 20 11:21:02 2022] Launched design_1_backward_fcc_0_2_synth_1, design_1_forward_fcc_0_8_synth_1, synth_1...
+Run output will be captured here:
+design_1_backward_fcc_0_2_synth_1: /home/anubhav/workspace/neural_net/neural_net/neural_net.runs/design_1_backward_fcc_0_2_synth_1/runme.log
+design_1_forward_fcc_0_8_synth_1: /home/anubhav/workspace/neural_net/neural_net/neural_net.runs/design_1_forward_fcc_0_8_synth_1/runme.log
+synth_1: /home/anubhav/workspace/neural_net/neural_net/neural_net.runs/synth_1/runme.log
+[Sun Feb 20 11:21:02 2022] Launched impl_1...
+Run output will be captured here: /home/anubhav/workspace/neural_net/neural_net/neural_net.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:21 ; elapsed = 00:00:19 . Memory (MB): peak = 9028.363 ; gain = 0.000 ; free physical = 2775 ; free virtual = 7076
+report_ip_status -name ip_status 
+file copy -force /home/anubhav/workspace/neural_net/neural_net/neural_net.runs/impl_1/design_1_wrapper.bit /home/anubhav/workspace/neural_net/nn.bit
+file copy -force /home/anubhav/workspace/neural_net/neural_net/neural_net.runs/impl_1/design_1_wrapper.bit /home/anubhav/workspace/neural_net/nn.bit
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Feb 20 14:02:01 2022...

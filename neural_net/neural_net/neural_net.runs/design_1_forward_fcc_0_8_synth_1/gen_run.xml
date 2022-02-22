@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="design_1_forward_fcc_0_8_synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1645077513">
+<GenRun Id="design_1_forward_fcc_0_8_synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1645336260">
   <File Type="REPORTS-TCL" Name="design_1_forward_fcc_0_8_reports.tcl"/>
   <File Type="PA-TCL" Name="design_1_forward_fcc_0_8.tcl"/>
   <File Type="RDS-DCP" Name="design_1_forward_fcc_0_8.dcp"/>

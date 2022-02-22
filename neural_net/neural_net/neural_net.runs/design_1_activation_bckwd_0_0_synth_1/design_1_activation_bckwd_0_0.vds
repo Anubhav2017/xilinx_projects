@@ -1,0 +1,531 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Feb 22 16:40:13 2022
+# Process ID: 25235
+# Current directory: /home/anubhav/workspace/neural_net/neural_net/neural_net.runs/design_1_activation_bckwd_0_0_synth_1
+# Command line: vivado -log design_1_activation_bckwd_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_activation_bckwd_0_0.tcl
+# Log file: /home/anubhav/workspace/neural_net/neural_net/neural_net.runs/design_1_activation_bckwd_0_0_synth_1/design_1_activation_bckwd_0_0.vds
+# Journal file: /home/anubhav/workspace/neural_net/neural_net/neural_net.runs/design_1_activation_bckwd_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source design_1_activation_bckwd_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/anubhav/workspace/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+Command: synth_design -top design_1_activation_bckwd_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 25304
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:23 . Memory (MB): peak = 2351.562 ; gain = 0.000 ; free physical = 430 ; free virtual = 1630
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_activation_bckwd_0_0' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_activation_bckwd_0_0/synth/design_1_activation_bckwd_0_0.v:59]
+INFO: [Synth 8-6157] synthesizing module 'activation_bckwd' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/703e/hdl/verilog/activation_bckwd.v:12]
+	Parameter ap_ST_fsm_state1 bound to: 1 - type: integer 
+	Parameter ap_ST_fsm_state2 bound to: 2 - type: integer 
+	Parameter ap_ST_fsm_state3 bound to: 4 - type: integer 
+	Parameter ap_ST_fsm_state4 bound to: 8 - type: integer 
+	Parameter ap_ST_fsm_state5 bound to: 16 - type: integer 
+	Parameter ap_ST_fsm_state6 bound to: 32 - type: integer 
+	Parameter ap_ST_fsm_state7 bound to: 64 - type: integer 
+	Parameter ap_ST_fsm_state8 bound to: 128 - type: integer 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 256 - type: integer 
+	Parameter ap_ST_fsm_state12 bound to: 512 - type: integer 
+	Parameter ap_ST_fsm_state13 bound to: 1024 - type: integer 
+	Parameter ap_ST_fsm_state14 bound to: 2048 - type: integer 
+	Parameter ap_ST_fsm_state15 bound to: 4096 - type: integer 
+	Parameter ap_ST_fsm_state16 bound to: 8192 - type: integer 
+	Parameter ap_ST_fsm_state17 bound to: 16384 - type: integer 
+	Parameter ap_ST_fsm_state18 bound to: 32768 - type: integer 
+	Parameter ap_ST_fsm_pp1_stage0 bound to: 65536 - type: integer 
+	Parameter ap_ST_fsm_state22 bound to: 131072 - type: integer 
+	Parameter ap_ST_fsm_pp2_stage0 bound to: 262144 - type: integer 
+	Parameter ap_ST_fsm_pp2_stage1 bound to: 524288 - type: integer 
+	Parameter ap_ST_fsm_pp2_stage2 bound to: 1048576 - type: integer 
+	Parameter ap_ST_fsm_state27 bound to: 2097152 - type: integer 
+	Parameter ap_ST_fsm_pp3_stage0 bound to: 4194304 - type: integer 
+	Parameter ap_ST_fsm_pp3_stage1 bound to: 8388608 - type: integer 
+	Parameter ap_ST_fsm_pp3_stage2 bound to: 16777216 - type: integer 
+	Parameter ap_ST_fsm_state35 bound to: 33554432 - type: integer 
+	Parameter ap_ST_fsm_pp4_stage0 bound to: 67108864 - type: integer 
+	Parameter ap_ST_fsm_state39 bound to: 134217728 - type: integer 
+	Parameter ap_ST_fsm_state40 bound to: 268435456 - type: integer 
+	Parameter ap_ST_fsm_state41 bound to: 536870912 - type: integer 
+	Parameter ap_ST_fsm_state42 bound to: 1073741824 - type: integer 
+	Parameter ap_ST_fsm_state43 bound to: -2147483648 - type: integer 
+	Parameter C_S_AXI_CTRL_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CTRL_ADDR_WIDTH bound to: 7 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_GMEM_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_GMEM_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_M_AXI_GMEM_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_GMEM_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_GMEM_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_GMEM_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_GMEM_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_GMEM_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_GMEM_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_M_AXI_GMEM_PROT_VALUE bound to: 3'b000 
+	Parameter C_M_AXI_GMEM_CACHE_VALUE bound to: 4'b0011 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CTRL_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_M_AXI_GMEM_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_M_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'activation_bckwd_CTRL_s_axi' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/703e/hdl/verilog/activation_bckwd_CTRL_s_axi.v:6]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 7 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_AP_CTRL bound to: 7'b0000000 
+	Parameter ADDR_GIE bound to: 7'b0000100 
+	Parameter ADDR_IER bound to: 7'b0001000 
+	Parameter ADDR_ISR bound to: 7'b0001100 
+	Parameter ADDR_X_DATA_0 bound to: 7'b0010000 
+	Parameter ADDR_X_DATA_1 bound to: 7'b0010100 
+	Parameter ADDR_X_CTRL bound to: 7'b0011000 
+	Parameter ADDR_DX_DATA_0 bound to: 7'b0011100 
+	Parameter ADDR_DX_DATA_1 bound to: 7'b0100000 
+	Parameter ADDR_DX_CTRL bound to: 7'b0100100 
+	Parameter ADDR_DY_DATA_0 bound to: 7'b0101000 
+	Parameter ADDR_DY_DATA_1 bound to: 7'b0101100 
+	Parameter ADDR_DY_CTRL bound to: 7'b0110000 
+	Parameter ADDR_DIMENSION_DATA_0 bound to: 7'b0110100 
+	Parameter ADDR_DIMENSION_CTRL bound to: 7'b0111000 
+	Parameter ADDR_TYPE_R_DATA_0 bound to: 7'b0111100 
+	Parameter ADDR_TYPE_R_CTRL bound to: 7'b1000000 
+	Parameter WRIDLE bound to: 2'b00 
+	Parameter WRDATA bound to: 2'b01 
+	Parameter WRRESP bound to: 2'b10 
+	Parameter WRRESET bound to: 2'b11 
+	Parameter RDIDLE bound to: 2'b00 
+	Parameter RDDATA bound to: 2'b01 
+	Parameter RDRESET bound to: 2'b10 
+	Parameter ADDR_BITS bound to: 7 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/703e/hdl/verilog/activation_bckwd_CTRL_s_axi.v:229]
+INFO: [Synth 8-6155] done synthesizing module 'activation_bckwd_CTRL_s_axi' (1#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/703e/hdl/verilog/activation_bckwd_CTRL_s_axi.v:6]
+INFO: [Synth 8-6157] synthesizing module 'activation_bckwd_gmem_m_axi' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/703e/hdl/verilog/activation_bckwd_gmem_m_axi.v:8]
+	Parameter CONSERVATIVE bound to: 0 - type: integer 
+	Parameter NUM_READ_OUTSTANDING bound to: 16 - type: integer 
+	Parameter NUM_WRITE_OUTSTANDING bound to: 16 - type: integer 
+	Parameter MAX_READ_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter MAX_WRITE_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_TARGET_ADDR bound to: 0 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_PROT_VALUE bound to: 3'b000 
+	Parameter C_CACHE_VALUE bound to: 4'b0011 
+	Parameter USER_DW bound to: 32 - type: integer 
+	Parameter USER_AW bound to: 64 - type: integer 
+	Parameter USER_MAXREQS bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'activation_bckwd_gmem_m_axi_write' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/703e/hdl/verilog/activation_bckwd_gmem_m_axi.v:1729]
+	Parameter NUM_WRITE_OUTSTANDING bound to: 16 - type: integer 
+	Parameter MAX_WRITE_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_TARGET_ADDR bound to: 0 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_PROT_VALUE bound to: 3'b000 
+	Parameter C_CACHE_VALUE bound to: 4'b0011 
+	Parameter USER_DW bound to: 32 - type: integer 
+	Parameter USER_AW bound to: 64 - type: integer 
+	Parameter USER_MAXREQS bound to: 5 - type: integer 
+	Parameter USER_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter USER_DATA_BYTES bound to: 4 - type: integer 
+	Parameter USER_ADDR_ALIGN bound to: 2 - type: integer 
+	Parameter BUS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter BUS_DATA_BYTES bound to: 4 - type: integer 
+	Parameter BUS_ADDR_ALIGN bound to: 2 - type: integer 
+	Parameter NUM_WRITE_WIDTH bound to: 4 - type: integer 
+	Parameter TARGET_ADDR bound to: 0 - type: integer 
+	Parameter BOUNDARY_BEATS bound to: 10'b1111111111 
+INFO: [Synth 8-6157] synthesizing module 'activation_bckwd_gmem_m_axi_fifo' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/703e/hdl/verilog/activation_bckwd_gmem_m_axi.v:418]
+	Parameter DATA_BITS bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 5 - type: integer 
+	Parameter DEPTH_BITS bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'activation_bckwd_gmem_m_axi_fifo' (2#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/703e/hdl/verilog/activation_bckwd_gmem_m_axi.v:418]
+INFO: [Synth 8-6157] synthesizing module 'activation_bckwd_gmem_m_axi_reg_slice' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/703e/hdl/verilog/activation_bckwd_gmem_m_axi.v:314]
+	Parameter N bound to: 96 - type: integer 
+	Parameter ZERO bound to: 2'b10 
+	Parameter ONE bound to: 2'b11 
+	Parameter TWO bound to: 2'b01 
+INFO: [Synth 8-6155] done synthesizing module 'activation_bckwd_gmem_m_axi_reg_slice' (3#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/703e/hdl/verilog/activation_bckwd_gmem_m_axi.v:314]
+INFO: [Synth 8-6157] synthesizing module 'activation_bckwd_gmem_m_axi_fifo__parameterized0' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/703e/hdl/verilog/activation_bckwd_gmem_m_axi.v:418]
+	Parameter DATA_BITS bound to: 96 - type: integer 
+	Parameter DEPTH bound to: 5 - type: integer 
+	Parameter DEPTH_BITS bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'activation_bckwd_gmem_m_axi_fifo__parameterized0' (3#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/703e/hdl/verilog/activation_bckwd_gmem_m_axi.v:418]
+INFO: [Synth 8-6157] synthesizing module 'activation_bckwd_gmem_m_axi_buffer' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/703e/hdl/verilog/activation_bckwd_gmem_m_axi.v:529]
+	Parameter MEM_STYLE bound to: block - type: string 
+	Parameter DATA_WIDTH bound to: 36 - type: integer 
+	Parameter ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 256 - type: integer 
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/703e/hdl/verilog/activation_bckwd_gmem_m_axi.v:582]
+INFO: [Synth 8-6155] done synthesizing module 'activation_bckwd_gmem_m_axi_buffer' (4#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/703e/hdl/verilog/activation_bckwd_gmem_m_axi.v:529]
+INFO: [Synth 8-6157] synthesizing module 'activation_bckwd_gmem_m_axi_fifo__parameterized1' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/703e/hdl/verilog/activation_bckwd_gmem_m_axi.v:418]
+	Parameter DATA_BITS bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 15 - type: integer 
+	Parameter DEPTH_BITS bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'activation_bckwd_gmem_m_axi_fifo__parameterized1' (4#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/703e/hdl/verilog/activation_bckwd_gmem_m_axi.v:418]
+INFO: [Synth 8-6157] synthesizing module 'activation_bckwd_gmem_m_axi_fifo__parameterized2' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/703e/hdl/verilog/activation_bckwd_gmem_m_axi.v:418]
+	Parameter DATA_BITS bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 5 - type: integer 
+	Parameter DEPTH_BITS bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'activation_bckwd_gmem_m_axi_fifo__parameterized2' (4#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/703e/hdl/verilog/activation_bckwd_gmem_m_axi.v:418]
+INFO: [Synth 8-6155] done synthesizing module 'activation_bckwd_gmem_m_axi_write' (5#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/703e/hdl/verilog/activation_bckwd_gmem_m_axi.v:1729]
+INFO: [Synth 8-6157] synthesizing module 'activation_bckwd_gmem_m_axi_read' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/703e/hdl/verilog/activation_bckwd_gmem_m_axi.v:932]
+	Parameter NUM_READ_OUTSTANDING bound to: 16 - type: integer 
+	Parameter MAX_READ_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_TARGET_ADDR bound to: 0 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_PROT_VALUE bound to: 3'b000 
+	Parameter C_CACHE_VALUE bound to: 4'b0011 
+	Parameter USER_DW bound to: 32 - type: integer 
+	Parameter USER_AW bound to: 64 - type: integer 
+	Parameter USER_MAXREQS bound to: 5 - type: integer 
+	Parameter USER_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter USER_DATA_BYTES bound to: 4 - type: integer 
+	Parameter USER_ADDR_ALIGN bound to: 2 - type: integer 
+	Parameter BUS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter BUS_DATA_BYTES bound to: 4 - type: integer 
+	Parameter BUS_ADDR_ALIGN bound to: 2 - type: integer 
+	Parameter NUM_READ_WIDTH bound to: 4 - type: integer 
+	Parameter TARGET_ADDR bound to: 0 - type: integer 
+	Parameter BOUNDARY_BEATS bound to: 10'b1111111111 
+INFO: [Synth 8-6157] synthesizing module 'activation_bckwd_gmem_m_axi_buffer__parameterized0' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/703e/hdl/verilog/activation_bckwd_gmem_m_axi.v:529]
+	Parameter MEM_STYLE bound to: block - type: string 
+	Parameter DATA_WIDTH bound to: 35 - type: integer 
+	Parameter ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 256 - type: integer 
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/703e/hdl/verilog/activation_bckwd_gmem_m_axi.v:582]
+INFO: [Synth 8-6155] done synthesizing module 'activation_bckwd_gmem_m_axi_buffer__parameterized0' (5#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/703e/hdl/verilog/activation_bckwd_gmem_m_axi.v:529]
+INFO: [Synth 8-6157] synthesizing module 'activation_bckwd_gmem_m_axi_reg_slice__parameterized0' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/703e/hdl/verilog/activation_bckwd_gmem_m_axi.v:314]
+	Parameter N bound to: 34 - type: integer 
+	Parameter ZERO bound to: 2'b10 
+	Parameter ONE bound to: 2'b11 
+	Parameter TWO bound to: 2'b01 
+INFO: [Synth 8-6155] done synthesizing module 'activation_bckwd_gmem_m_axi_reg_slice__parameterized0' (5#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/703e/hdl/verilog/activation_bckwd_gmem_m_axi.v:314]
+INFO: [Synth 8-6155] done synthesizing module 'activation_bckwd_gmem_m_axi_read' (6#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/703e/hdl/verilog/activation_bckwd_gmem_m_axi.v:932]
+INFO: [Synth 8-6157] synthesizing module 'activation_bckwd_gmem_m_axi_throttle' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/703e/hdl/verilog/activation_bckwd_gmem_m_axi.v:710]
+	Parameter USED_FIX bound to: 0 - type: integer 
+	Parameter FIX_VALUE bound to: 4 - type: integer 
+	Parameter ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter DEPTH bound to: 16 - type: integer 
+	Parameter USER_MAXREQS bound to: 16 - type: integer 
+	Parameter CONSERVATIVE bound to: 0 - type: integer 
+	Parameter AVERAGE_MODE bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'activation_bckwd_gmem_m_axi_throttle' (7#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/703e/hdl/verilog/activation_bckwd_gmem_m_axi.v:710]
+INFO: [Synth 8-6155] done synthesizing module 'activation_bckwd_gmem_m_axi' (8#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/703e/hdl/verilog/activation_bckwd_gmem_m_axi.v:8]
+INFO: [Synth 8-6157] synthesizing module 'activation_bckwd_x_t' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/703e/hdl/verilog/activation_bckwd_x_t.v:47]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 100 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'activation_bckwd_x_t_ram' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/703e/hdl/verilog/activation_bckwd_x_t.v:6]
+	Parameter DWIDTH bound to: 32 - type: integer 
+	Parameter AWIDTH bound to: 7 - type: integer 
+	Parameter MEM_SIZE bound to: 100 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'activation_bckwd_x_t_ram' (9#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/703e/hdl/verilog/activation_bckwd_x_t.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'activation_bckwd_x_t' (10#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/703e/hdl/verilog/activation_bckwd_x_t.v:47]
+INFO: [Synth 8-6157] synthesizing module 'activation_bckwd_dx_t' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/703e/hdl/verilog/activation_bckwd_dx_t.v:50]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 100 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'activation_bckwd_dx_t_ram' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/703e/hdl/verilog/activation_bckwd_dx_t.v:6]
+	Parameter DWIDTH bound to: 32 - type: integer 
+	Parameter AWIDTH bound to: 7 - type: integer 
+	Parameter MEM_SIZE bound to: 100 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'activation_bckwd_dx_t_ram' (11#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/703e/hdl/verilog/activation_bckwd_dx_t.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'activation_bckwd_dx_t' (12#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/703e/hdl/verilog/activation_bckwd_dx_t.v:50]
+INFO: [Synth 8-6157] synthesizing module 'activation_bckwd_fcmp_32ns_32ns_1_2_no_dsp_1' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/703e/hdl/verilog/activation_bckwd_fcmp_32ns_32ns_1_2_no_dsp_1.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 2 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 1 - type: integer 
+	Parameter AP_OEQ bound to: 5'b00001 
+	Parameter AP_OGT bound to: 5'b00010 
+	Parameter AP_OGE bound to: 5'b00011 
+	Parameter AP_OLT bound to: 5'b00100 
+	Parameter AP_OLE bound to: 5'b00101 
+	Parameter AP_ONE bound to: 5'b00110 
+	Parameter AP_UNO bound to: 5'b01000 
+	Parameter OP_EQ bound to: 8'b00010100 
+	Parameter OP_GT bound to: 8'b00100100 
+	Parameter OP_GE bound to: 8'b00110100 
+	Parameter OP_LT bound to: 8'b00001100 
+	Parameter OP_LE bound to: 8'b00011100 
+	Parameter OP_NE bound to: 8'b00101100 
+	Parameter OP_UO bound to: 8'b00000100 
+INFO: [Synth 8-6157] synthesizing module 'activation_bckwd_ap_fcmp_0_no_dsp_32' [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/703e/hdl/ip/activation_bckwd_ap_fcmp_0_no_dsp_32.v:60]
+INFO: [Synth 8-6157] synthesizing module 'LUT1' [/tools/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39137]
+INFO: [Synth 8-6155] done synthesizing module 'LUT1' (13#1) [/tools/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39137]
+INFO: [Synth 8-6155] done synthesizing module 'activation_bckwd_ap_fcmp_0_no_dsp_32' (25#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/703e/hdl/ip/activation_bckwd_ap_fcmp_0_no_dsp_32.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'activation_bckwd_fcmp_32ns_32ns_1_2_no_dsp_1' (26#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/703e/hdl/verilog/activation_bckwd_fcmp_32ns_32ns_1_2_no_dsp_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'activation_bckwd' (27#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ipshared/703e/hdl/verilog/activation_bckwd.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_activation_bckwd_0_0' (28#1) [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_activation_bckwd_0_0/synth/design_1_activation_bckwd_0_0.v:59]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:33 . Memory (MB): peak = 2351.562 ; gain = 0.000 ; free physical = 390 ; free virtual = 1413
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:34 . Memory (MB): peak = 2351.562 ; gain = 0.000 ; free physical = 376 ; free virtual = 1378
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:34 . Memory (MB): peak = 2351.562 ; gain = 0.000 ; free physical = 376 ; free virtual = 1378
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.08 . Memory (MB): peak = 2351.562 ; gain = 0.000 ; free physical = 337 ; free virtual = 1347
+INFO: [Netlist 29-17] Analyzing 84 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_activation_bckwd_0_0/constraints/activation_bckwd_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/anubhav/workspace/neural_net/neural_net/neural_net.gen/sources_1/bd/design_1/ip/design_1_activation_bckwd_0_0/constraints/activation_bckwd_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/anubhav/workspace/neural_net/neural_net/neural_net.runs/design_1_activation_bckwd_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/anubhav/workspace/neural_net/neural_net/neural_net.runs/design_1_activation_bckwd_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2505.336 ; gain = 0.000 ; free physical = 147 ; free virtual = 768
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.23 ; elapsed = 00:00:02 . Memory (MB): peak = 2505.336 ; gain = 0.000 ; free physical = 126 ; free virtual = 713
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:02:28 . Memory (MB): peak = 2505.336 ; gain = 153.773 ; free physical = 3697 ; free virtual = 4226
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:02:29 . Memory (MB): peak = 2505.336 ; gain = 153.773 ; free physical = 3693 ; free virtual = 4229
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/anubhav/workspace/neural_net/neural_net/neural_net.runs/design_1_activation_bckwd_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:02:31 . Memory (MB): peak = 2505.336 ; gain = 153.773 ; free physical = 3684 ; free virtual = 4229
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'activation_bckwd_CTRL_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'activation_bckwd_CTRL_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'activation_bckwd_gmem_m_axi_reg_slice'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'activation_bckwd_gmem_m_axi_reg_slice__parameterized0'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'activation_bckwd_CTRL_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'activation_bckwd_CTRL_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'activation_bckwd_gmem_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'activation_bckwd_gmem_m_axi_reg_slice__parameterized0'
+INFO: [Synth 8-3971] The signal "activation_bckwd_dx_t_ram:/ram_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:02:36 . Memory (MB): peak = 2505.336 ; gain = 153.773 ; free physical = 3578 ; free virtual = 4178
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'activation_bckwd_fcmp_32ns_32ns_1_2_no_dsp_1:/activation_bckwd_ap_fcmp_0_no_dsp_32_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized5) to 'activation_bckwd_fcmp_32ns_32ns_1_2_no_dsp_1:/activation_bckwd_ap_fcmp_0_no_dsp_32_u/inst/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'activation_bckwd_fcmp_32ns_32ns_1_2_no_dsp_1:/activation_bckwd_ap_fcmp_0_no_dsp_32_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized5) to 'activation_bckwd_fcmp_32ns_32ns_1_2_no_dsp_1:/activation_bckwd_ap_fcmp_0_no_dsp_32_u/inst/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'activation_bckwd_fcmp_32ns_32ns_1_2_no_dsp_1:/activation_bckwd_ap_fcmp_0_no_dsp_32_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized5) to 'activation_bckwd_fcmp_32ns_32ns_1_2_no_dsp_1:/activation_bckwd_ap_fcmp_0_no_dsp_32_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'activation_bckwd_fcmp_32ns_32ns_1_2_no_dsp_1:/activation_bckwd_ap_fcmp_0_no_dsp_32_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized5) to 'activation_bckwd_fcmp_32ns_32ns_1_2_no_dsp_1:/activation_bckwd_ap_fcmp_0_no_dsp_32_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3971] The signal "inst/dx_t_U/activation_bckwd_dx_t_ram_U/ram_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:02:55 . Memory (MB): peak = 2505.336 ; gain = 153.773 ; free physical = 3041 ; free virtual = 3834
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:03:09 . Memory (MB): peak = 2505.336 ; gain = 153.773 ; free physical = 2334 ; free virtual = 3270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:03:15 . Memory (MB): peak = 2505.336 ; gain = 153.773 ; free physical = 2284 ; free virtual = 3284
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem_m_axi_U/bus_read/buff_rdata/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/x_t_U/activation_bckwd_x_t_ram_U/ram0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/x_t_U/activation_bckwd_x_t_ram_U/ram0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/dy_t_U/activation_bckwd_x_t_ram_U/ram0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/dy_t_U/activation_bckwd_x_t_ram_U/ram0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:47 ; elapsed = 00:03:20 . Memory (MB): peak = 2505.336 ; gain = 153.773 ; free physical = 2032 ; free virtual = 3056
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:50 ; elapsed = 00:03:24 . Memory (MB): peak = 2505.336 ; gain = 153.773 ; free physical = 2599 ; free virtual = 3652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:50 ; elapsed = 00:03:24 . Memory (MB): peak = 2505.336 ; gain = 153.773 ; free physical = 2599 ; free virtual = 3652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:50 ; elapsed = 00:03:24 . Memory (MB): peak = 2505.336 ; gain = 153.773 ; free physical = 2593 ; free virtual = 3648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:50 ; elapsed = 00:03:24 . Memory (MB): peak = 2505.336 ; gain = 153.773 ; free physical = 2591 ; free virtual = 3646
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:51 ; elapsed = 00:03:24 . Memory (MB): peak = 2505.336 ; gain = 153.773 ; free physical = 2584 ; free virtual = 3643
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:51 ; elapsed = 00:03:24 . Memory (MB): peak = 2505.336 ; gain = 153.773 ; free physical = 2582 ; free virtual = 3642
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |   175|
+|2     |LUT1     |    92|
+|3     |LUT2     |   270|
+|4     |LUT3     |   900|
+|5     |LUT4     |   369|
+|6     |LUT5     |   292|
+|7     |LUT6     |   585|
+|8     |MUXCY    |    62|
+|9     |RAMB18E1 |     2|
+|10    |RAMB36E1 |     3|
+|12    |SRL16E   |   194|
+|13    |FDRE     |  3312|
+|14    |FDSE     |     4|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:51 ; elapsed = 00:03:25 . Memory (MB): peak = 2505.336 ; gain = 153.773 ; free physical = 2572 ; free virtual = 3639
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:47 ; elapsed = 00:03:00 . Memory (MB): peak = 2505.336 ; gain = 0.000 ; free physical = 2760 ; free virtual = 3851
+Synthesis Optimization Complete : Time (s): cpu = 00:00:51 ; elapsed = 00:03:26 . Memory (MB): peak = 2505.336 ; gain = 153.773 ; free physical = 2760 ; free virtual = 3851
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.07 . Memory (MB): peak = 2505.336 ; gain = 0.000 ; free physical = 2852 ; free virtual = 3954
+INFO: [Netlist 29-17] Analyzing 242 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2505.336 ; gain = 0.000 ; free physical = 2790 ; free virtual = 3901
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 18 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 18 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+86 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:02 ; elapsed = 00:03:38 . Memory (MB): peak = 2505.336 ; gain = 153.844 ; free physical = 2947 ; free virtual = 4061
+INFO: [Common 17-1381] The checkpoint '/home/anubhav/workspace/neural_net/neural_net/neural_net.runs/design_1_activation_bckwd_0_0_synth_1/design_1_activation_bckwd_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_activation_bckwd_0_0, cache-ID = 879bd5349e9e8755
+INFO: [Coretcl 2-1174] Renamed 57 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/anubhav/workspace/neural_net/neural_net/neural_net.runs/design_1_activation_bckwd_0_0_synth_1/design_1_activation_bckwd_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_activation_bckwd_0_0_utilization_synth.rpt -pb design_1_activation_bckwd_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Feb 22 16:44:23 2022...
