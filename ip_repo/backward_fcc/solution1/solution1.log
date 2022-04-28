@@ -3787,3 +3787,166 @@ INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3,
 Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=0
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: set_directive_top -name backward_fcc backward_fcc 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 155.907 MB.
+INFO: [HLS 200-10] Analyzing design file 'backward_fcc/backprop.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.35 seconds. CPU system time: 0.13 seconds. Elapsed time: 0.24 seconds; current allocated memory: 157.159 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'backward_fcc(float volatile*, float volatile*, float volatile*, float volatile*, float volatile*, float volatile*, int, int)' (backward_fcc/backprop.cpp:6:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'backward_fcc(float volatile*, float volatile*, float volatile*, float volatile*, float volatile*, float volatile*, int, int)' (backward_fcc/backprop.cpp:6:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'backward_fcc(float volatile*, float volatile*, float volatile*, float volatile*, float volatile*, float volatile*, int, int)' (backward_fcc/backprop.cpp:6:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'backward_fcc(float volatile*, float volatile*, float volatile*, float volatile*, float volatile*, float volatile*, int, int)' (backward_fcc/backprop.cpp:6:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'backward_fcc(float volatile*, float volatile*, float volatile*, float volatile*, float volatile*, float volatile*, int, int)' (backward_fcc/backprop.cpp:6:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'backward_fcc(float volatile*, float volatile*, float volatile*, float volatile*, float volatile*, float volatile*, int, int)' (backward_fcc/backprop.cpp:6:0)
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 32 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-115] Multiple burst writes of variable length and bit width 32 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-115] Multiple burst writes of variable length and bit width 32 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-115] Multiple burst writes of variable length and bit width 32 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-115] Multiple burst writes of variable length and bit width 32 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 32 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 32 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 32 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.46 seconds. CPU system time: 0.23 seconds. Elapsed time: 3.29 seconds; current allocated memory: 159.727 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 159.729 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 161.510 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 160.525 MB.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-2' in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-3' in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-4' in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-5' in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_41_2' (backward_fcc/backprop.cpp:41) in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_47_4' (backward_fcc/backprop.cpp:47) in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_53_6' (backward_fcc/backprop.cpp:53) in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_60_7' (backward_fcc/backprop.cpp:60) in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-10' in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-11' in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-12' in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-13' in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_71_9' (backward_fcc/backprop.cpp:71) in function 'backward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_77_11' (backward_fcc/backprop.cpp:77) in function 'backward_fcc' automatically.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.3 seconds. CPU system time: 0 seconds. Elapsed time: 0.31 seconds; current allocated memory: 181.853 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_40_1' (backward_fcc/backprop.cpp:40:27) in function 'backward_fcc'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_46_3' (backward_fcc/backprop.cpp:46:27) in function 'backward_fcc'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_52_5' (backward_fcc/backprop.cpp:52:27) in function 'backward_fcc'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_70_8' (backward_fcc/backprop.cpp:70:27) in function 'backward_fcc'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_76_10' (backward_fcc/backprop.cpp:76:32) in function 'backward_fcc'.
+INFO: [HLS 200-444] Inferring multiple bus burst read of variable length on port 'gmem' (backward_fcc/backprop.cpp:42:28). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+INFO: [HLS 200-444] Inferring multiple bus burst read of variable length on port 'gmem' (backward_fcc/backprop.cpp:48:24). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+INFO: [HLS 200-444] Inferring multiple bus burst write of variable length on port 'gmem' (backward_fcc/backprop.cpp:72:26). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+INFO: [HLS 200-444] Inferring multiple bus burst write of variable length on port 'gmem' (backward_fcc/backprop.cpp:78:26). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+INFO: [HLS 200-472] Inferring partial write operation for 'xbuf' 
+INFO: [HLS 200-472] Inferring partial write operation for 'dbbuf' 
+INFO: [HLS 200-472] Inferring partial write operation for 'dxbuf' 
+INFO: [HLS 200-472] Inferring partial write operation for 'dybuf' 
+INFO: [HLS 200-472] Inferring partial write operation for 'dwbuf' (backward_fcc/backprop.cpp:42:26)
+INFO: [HLS 200-472] Inferring partial write operation for 'wbuf' (backward_fcc/backprop.cpp:48:22)
+INFO: [HLS 200-472] Inferring partial write operation for 'dxbuf' (backward_fcc/backprop.cpp:54:19)
+INFO: [HLS 200-472] Inferring partial write operation for 'dwbuf' (backward_fcc/backprop.cpp:55:22)
+INFO: [HLS 200-472] Inferring partial write operation for 'dbbuf' (backward_fcc/backprop.cpp:61:15)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.29 seconds. CPU system time: 0 seconds. Elapsed time: 0.29 seconds; current allocated memory: 177.031 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'backward_fcc' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'backward_fcc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln54) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln72) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln78) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'Loop 1'
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'Loop 2'
+INFO: [SCHED 204-61] Pipelining loop 'Loop 3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'Loop 3'
+INFO: [SCHED 204-61] Pipelining loop 'Loop 4'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'Loop 4'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_40_1_VITIS_LOOP_41_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 77, loop 'VITIS_LOOP_40_1_VITIS_LOOP_41_2'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_46_3_VITIS_LOOP_47_4'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 77, loop 'VITIS_LOOP_46_3_VITIS_LOOP_47_4'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_52_5_VITIS_LOOP_53_6'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 12, loop 'VITIS_LOOP_52_5_VITIS_LOOP_53_6'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_60_7'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 8, loop 'VITIS_LOOP_60_7'
+INFO: [SCHED 204-61] Pipelining loop 'Loop 9'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'Loop 9'
+INFO: [SCHED 204-61] Pipelining loop 'Loop 10'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'Loop 10'
+INFO: [SCHED 204-61] Pipelining loop 'Loop 11'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'Loop 11'
+INFO: [SCHED 204-61] Pipelining loop 'Loop 12'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'Loop 12'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_70_8_VITIS_LOOP_71_9'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 75, loop 'VITIS_LOOP_70_8_VITIS_LOOP_71_9'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_76_10_VITIS_LOOP_77_11'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 76, loop 'VITIS_LOOP_76_10_VITIS_LOOP_77_11'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.72 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.75 seconds; current allocated memory: 179.525 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1.51 seconds. CPU system time: 0 seconds. Elapsed time: 1.51 seconds; current allocated memory: 183.296 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'backward_fcc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'backward_fcc/gmem' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'backward_fcc/x' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'backward_fcc/w' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'backward_fcc/dx' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'backward_fcc/dy' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'backward_fcc/dw' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'backward_fcc/db' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'backward_fcc/xdim' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'backward_fcc/ydim' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'backward_fcc' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'x', 'w', 'dx', 'dy', 'dw', 'db', 'xdim', 'ydim' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_4_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_7ns_8ns_14ns_14_4_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_30s_30s_30_2_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_31ns_32ns_63_2_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32ns_32ns_64_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_32s_32_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_7ns_8ns_14_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_63ns_32ns_63_67_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_64ns_32ns_64_68_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'backward_fcc'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.8 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.82 seconds; current allocated memory: 192.830 MB.
+INFO: [RTMG 210-282] Generating pipelined core: 'backward_fcc_mul_31ns_32ns_63_2_1_Multiplier_0'
+INFO: [RTMG 210-282] Generating pipelined core: 'backward_fcc_urem_63ns_32ns_63_67_1_div'
+INFO: [RTMG 210-282] Generating pipelined core: 'backward_fcc_mul_30s_30s_30_2_1_Multiplier_1'
+INFO: [RTMG 210-282] Generating pipelined core: 'backward_fcc_mul_7ns_8ns_14_1_1_Multiplier_2'
+INFO: [RTMG 210-282] Generating pipelined core: 'backward_fcc_mul_32s_32s_32_2_1_Multiplier_3'
+INFO: [RTMG 210-282] Generating pipelined core: 'backward_fcc_mul_32ns_32ns_64_2_1_Multiplier_4'
+INFO: [RTMG 210-282] Generating pipelined core: 'backward_fcc_urem_64ns_32ns_64_68_1_div'
+INFO: [RTMG 210-278] Implementing memory 'backward_fcc_xbuf_ram (RAM)' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'backward_fcc_wbuf_ram (RAM)' using auto RAMs.
+INFO: ==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================

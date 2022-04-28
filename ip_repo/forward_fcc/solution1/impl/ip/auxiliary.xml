@@ -9,8 +9,8 @@
   <xd:arg xd:name="w" xd:originalName="w" xd:direction="in" xd:interfaceRef="s_axi_CTRL" xd:busTypeRef="axilite" xd:aximmInterfaceRef="m_axi_gmem" xd:dataWidth="32" xd:offset="0x18" xd:handshakeRef="ap_none"/>
   <xd:arg xd:name="y" xd:originalName="y" xd:direction="in" xd:interfaceRef="s_axi_CTRL" xd:busTypeRef="axilite" xd:aximmInterfaceRef="m_axi_gmem" xd:dataWidth="32" xd:offset="0x20" xd:handshakeRef="ap_none"/>
   <xd:arg xd:name="b" xd:originalName="b" xd:direction="in" xd:interfaceRef="s_axi_CTRL" xd:busTypeRef="axilite" xd:aximmInterfaceRef="m_axi_gmem" xd:dataWidth="32" xd:offset="0x28" xd:handshakeRef="ap_none"/>
-  <xd:arg xd:name="xdimension" xd:originalName="xdimension" xd:direction="in" xd:interfaceRef="s_axi_CTRL" xd:busTypeRef="axilite" xd:dataWidth="1" xd:offset="0x30" xd:handshakeRef="ap_none"/>
-  <xd:arg xd:name="ydimension" xd:originalName="ydimension" xd:direction="in" xd:interfaceRef="s_axi_CTRL" xd:busTypeRef="axilite" xd:dataWidth="1" xd:offset="0x38" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="xdim" xd:originalName="xdim" xd:direction="in" xd:interfaceRef="s_axi_CTRL" xd:busTypeRef="axilite" xd:dataWidth="1" xd:offset="0x30" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="ydim" xd:originalName="ydim" xd:direction="in" xd:interfaceRef="s_axi_CTRL" xd:busTypeRef="axilite" xd:dataWidth="1" xd:offset="0x38" xd:handshakeRef="ap_none"/>
   <xd:latencyEstimates xd:best-case="undef" xd:worst-case="undef" xd:average-case="undef"/>
-  <xd:resourceEstimates xd:LUT="2945" xd:FF="2649" xd:BRAM="6" xd:DSP="5"/>
+  <xd:resourceEstimates xd:LUT="10068" xd:FF="12200" xd:BRAM="36" xd:DSP="5"/>
 </xd:acceleratorMap>

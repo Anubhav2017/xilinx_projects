@@ -17,8 +17,8 @@ set C_modelArgList {
 	{ w int 32 regular {axi_slave 0}  }
 	{ y int 32 regular {axi_slave 0}  }
 	{ b int 32 regular {axi_slave 0}  }
-	{ xdimension int 32 regular {axi_slave 0}  }
-	{ ydimension int 32 regular {axi_slave 0}  }
+	{ xdim int 32 regular {axi_slave 0}  }
+	{ ydim int 32 regular {axi_slave 0}  }
 }
 set C_modelArgMapList {[ 
 	{ "Name" : "gmem", "interface" : "axi_master", "bitwidth" : 32, "direction" : "READWRITE", "bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "x","cData": "int","bit_use": { "low": 0,"up": 0},"offset": { "type": "dynamic","port_name": "x","bundle": "CTRL"},"direction": "READONLY","cArray": [{"low" : 0,"up" : 0,"step" : 0}]},{"cName": "w","cData": "int","bit_use": { "low": 0,"up": 0},"offset": { "type": "dynamic","port_name": "w","bundle": "CTRL"},"direction": "READONLY","cArray": [{"low" : 0,"up" : 0,"step" : 0}]},{"cName": "y","cData": "int","bit_use": { "low": 0,"up": 0},"offset": { "type": "dynamic","port_name": "y","bundle": "CTRL"},"direction": "WRITEONLY","cArray": [{"low" : 0,"up" : 0,"step" : 0}]},{"cName": "b","cData": "int","bit_use": { "low": 0,"up": 0},"offset": { "type": "dynamic","port_name": "b","bundle": "CTRL"},"direction": "READONLY","cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}]} , 
@@ -26,8 +26,8 @@ set C_modelArgMapList {[
  	{ "Name" : "w", "interface" : "axi_slave", "bundle":"CTRL","type":"ap_none","bitwidth" : 32, "direction" : "READONLY", "offset" : {"in":24}, "offset_end" : {"in":31}} , 
  	{ "Name" : "y", "interface" : "axi_slave", "bundle":"CTRL","type":"ap_none","bitwidth" : 32, "direction" : "READONLY", "offset" : {"in":32}, "offset_end" : {"in":39}} , 
  	{ "Name" : "b", "interface" : "axi_slave", "bundle":"CTRL","type":"ap_none","bitwidth" : 32, "direction" : "READONLY", "offset" : {"in":40}, "offset_end" : {"in":47}} , 
- 	{ "Name" : "xdimension", "interface" : "axi_slave", "bundle":"CTRL","type":"ap_none","bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "xdimension","cData": "int","bit_use": { "low": 0,"up": 0},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}], "offset" : {"in":48}, "offset_end" : {"in":55}} , 
- 	{ "Name" : "ydimension", "interface" : "axi_slave", "bundle":"CTRL","type":"ap_none","bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "ydimension","cData": "int","bit_use": { "low": 0,"up": 0},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}], "offset" : {"in":56}, "offset_end" : {"in":63}} ]}
+ 	{ "Name" : "xdim", "interface" : "axi_slave", "bundle":"CTRL","type":"ap_none","bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "xdim","cData": "int","bit_use": { "low": 0,"up": 0},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}], "offset" : {"in":48}, "offset_end" : {"in":55}} , 
+ 	{ "Name" : "ydim", "interface" : "axi_slave", "bundle":"CTRL","type":"ap_none","bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "ydim","cData": "int","bit_use": { "low": 0,"up": 0},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}], "offset" : {"in":56}, "offset_end" : {"in":63}} ]}
 # RTL Port declarations: 
 set portNum 65
 set portList { 
@@ -98,7 +98,7 @@ set portList {
 	{ interrupt sc_out sc_logic 1 signal -1 } 
 }
 set NewPortList {[ 
-	{ "name": "s_axi_CTRL_AWADDR", "direction": "in", "datatype": "sc_lv", "bitwidth":6, "type": "signal", "bundle":{"name": "CTRL", "role": "AWADDR" },"address":[{"name":"forward_fcc","role":"start","value":"0","valid_bit":"0"},{"name":"forward_fcc","role":"continue","value":"0","valid_bit":"4"},{"name":"forward_fcc","role":"auto_start","value":"0","valid_bit":"7"},{"name":"x","role":"data","value":"16"},{"name":"w","role":"data","value":"24"},{"name":"y","role":"data","value":"32"},{"name":"b","role":"data","value":"40"},{"name":"xdimension","role":"data","value":"48"},{"name":"ydimension","role":"data","value":"56"}] },
+	{ "name": "s_axi_CTRL_AWADDR", "direction": "in", "datatype": "sc_lv", "bitwidth":6, "type": "signal", "bundle":{"name": "CTRL", "role": "AWADDR" },"address":[{"name":"forward_fcc","role":"start","value":"0","valid_bit":"0"},{"name":"forward_fcc","role":"continue","value":"0","valid_bit":"4"},{"name":"forward_fcc","role":"auto_start","value":"0","valid_bit":"7"},{"name":"x","role":"data","value":"16"},{"name":"w","role":"data","value":"24"},{"name":"y","role":"data","value":"32"},{"name":"b","role":"data","value":"40"},{"name":"xdim","role":"data","value":"48"},{"name":"ydim","role":"data","value":"56"}] },
 	{ "name": "s_axi_CTRL_AWVALID", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "CTRL", "role": "AWVALID" } },
 	{ "name": "s_axi_CTRL_AWREADY", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "CTRL", "role": "AWREADY" } },
 	{ "name": "s_axi_CTRL_WVALID", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "CTRL", "role": "WVALID" } },
@@ -165,7 +165,7 @@ set NewPortList {[
  	{ "name": "m_axi_gmem_BUSER", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem", "role": "BUSER" }}  ]}
 
 set RtlHierarchyInfo {[
-	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13"],
 		"CDFG" : "forward_fcc",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -190,29 +190,32 @@ set RtlHierarchyInfo {[
 			{"Name" : "w", "Type" : "None", "Direction" : "I"},
 			{"Name" : "y", "Type" : "None", "Direction" : "I"},
 			{"Name" : "b", "Type" : "None", "Direction" : "I"},
-			{"Name" : "xdimension", "Type" : "None", "Direction" : "I"},
-			{"Name" : "ydimension", "Type" : "None", "Direction" : "I"}]},
+			{"Name" : "xdim", "Type" : "None", "Direction" : "I"},
+			{"Name" : "ydim", "Type" : "None", "Direction" : "I"}]},
 	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.CTRL_s_axi_U", "Parent" : "0"},
 	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.gmem_m_axi_U", "Parent" : "0"},
-	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.x_t_U", "Parent" : "0"},
-	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.y_t_U", "Parent" : "0"},
-	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.w_t_U", "Parent" : "0"},
-	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mulbuffer_t_U", "Parent" : "0"},
-	{"ID" : "7", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fadd_32ns_32ns_32_5_full_dsp_1_U1", "Parent" : "0"},
-	{"ID" : "8", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fmul_32ns_32ns_32_4_max_dsp_1_U2", "Parent" : "0"},
-	{"ID" : "9", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_32s_32s_32_2_1_U3", "Parent" : "0"},
-	{"ID" : "10", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_7s_7s_7_1_1_U4", "Parent" : "0"}]}
+	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.ybuf_U", "Parent" : "0"},
+	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.bbuf_U", "Parent" : "0"},
+	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.wbuf_U", "Parent" : "0"},
+	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fadd_32ns_32ns_32_5_full_dsp_1_U1", "Parent" : "0"},
+	{"ID" : "7", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fmul_32ns_32ns_32_4_max_dsp_1_U2", "Parent" : "0"},
+	{"ID" : "8", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_32ns_32ns_64_2_1_U3", "Parent" : "0"},
+	{"ID" : "9", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.urem_64ns_32ns_64_68_1_U4", "Parent" : "0"},
+	{"ID" : "10", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_30s_30s_30_2_1_U5", "Parent" : "0"},
+	{"ID" : "11", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_7ns_8ns_14_1_1_U6", "Parent" : "0"},
+	{"ID" : "12", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_32s_32s_32_2_1_U7", "Parent" : "0"},
+	{"ID" : "13", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_7ns_8ns_14_1_1_U8", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
 	forward_fcc {
-		gmem {Type IO LastRead 30 FirstWrite 31}
+		gmem {Type IO LastRead 79 FirstWrite 66}
 		x {Type I LastRead 0 FirstWrite -1}
 		w {Type I LastRead 0 FirstWrite -1}
 		y {Type I LastRead 0 FirstWrite -1}
 		b {Type I LastRead 0 FirstWrite -1}
-		xdimension {Type I LastRead 0 FirstWrite -1}
-		ydimension {Type I LastRead 0 FirstWrite -1}}}
+		xdim {Type I LastRead 0 FirstWrite -1}
+		ydim {Type I LastRead 0 FirstWrite -1}}}
 
 set hasDtUnsupportedChannel 0
 
@@ -225,6 +228,7 @@ set PipelineEnableSignalInfo {[
 	{"Pipeline" : "0", "EnableSignal" : "ap_enable_pp0"}
 	{"Pipeline" : "1", "EnableSignal" : "ap_enable_pp1"}
 	{"Pipeline" : "2", "EnableSignal" : "ap_enable_pp2"}
+	{"Pipeline" : "3", "EnableSignal" : "ap_enable_pp3"}
 	{"Pipeline" : "4", "EnableSignal" : "ap_enable_pp4"}
 ]}
 

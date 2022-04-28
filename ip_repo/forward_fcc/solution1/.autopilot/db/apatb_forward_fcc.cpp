@@ -33,11 +33,11 @@ using namespace sc_dt;
 #define AUTOTB_TVIN_b "../tv/cdatafile/c.forward_fcc.autotvin_b.dat"
 #define AUTOTB_TVOUT_b "../tv/cdatafile/c.forward_fcc.autotvout_b.dat"
 // wrapc file define:
-#define AUTOTB_TVIN_xdimension "../tv/cdatafile/c.forward_fcc.autotvin_xdimension.dat"
-#define AUTOTB_TVOUT_xdimension "../tv/cdatafile/c.forward_fcc.autotvout_xdimension.dat"
+#define AUTOTB_TVIN_xdim "../tv/cdatafile/c.forward_fcc.autotvin_xdim.dat"
+#define AUTOTB_TVOUT_xdim "../tv/cdatafile/c.forward_fcc.autotvout_xdim.dat"
 // wrapc file define:
-#define AUTOTB_TVIN_ydimension "../tv/cdatafile/c.forward_fcc.autotvin_ydimension.dat"
-#define AUTOTB_TVOUT_ydimension "../tv/cdatafile/c.forward_fcc.autotvout_ydimension.dat"
+#define AUTOTB_TVIN_ydim "../tv/cdatafile/c.forward_fcc.autotvin_ydim.dat"
+#define AUTOTB_TVOUT_ydim "../tv/cdatafile/c.forward_fcc.autotvout_ydim.dat"
 
 #define INTER_TCL "../tv/cdatafile/ref.tcl"
 
@@ -52,9 +52,9 @@ using namespace sc_dt;
 // tvout file define:
 #define AUTOTB_TVOUT_PC_b "../tv/rtldatafile/rtl.forward_fcc.autotvout_b.dat"
 // tvout file define:
-#define AUTOTB_TVOUT_PC_xdimension "../tv/rtldatafile/rtl.forward_fcc.autotvout_xdimension.dat"
+#define AUTOTB_TVOUT_PC_xdim "../tv/rtldatafile/rtl.forward_fcc.autotvout_xdim.dat"
 // tvout file define:
-#define AUTOTB_TVOUT_PC_ydimension "../tv/rtldatafile/rtl.forward_fcc.autotvout_ydimension.dat"
+#define AUTOTB_TVOUT_PC_ydim "../tv/rtldatafile/rtl.forward_fcc.autotvout_ydim.dat"
 
 class INTER_TCL_FILE {
   public:
@@ -65,8 +65,8 @@ INTER_TCL_FILE(const char* name) {
   w_depth = 0;
   y_depth = 0;
   b_depth = 0;
-  xdimension_depth = 0;
-  ydimension_depth = 0;
+  xdim_depth = 0;
+  ydim_depth = 0;
   trans_num =0;
 }
 ~INTER_TCL_FILE() {
@@ -89,8 +89,8 @@ string get_depth_list () {
   total_list << "{w " << w_depth << "}\n";
   total_list << "{y " << y_depth << "}\n";
   total_list << "{b " << b_depth << "}\n";
-  total_list << "{xdimension " << xdimension_depth << "}\n";
-  total_list << "{ydimension " << ydimension_depth << "}\n";
+  total_list << "{xdim " << xdim_depth << "}\n";
+  total_list << "{ydim " << ydim_depth << "}\n";
   return total_list.str();
 }
 void set_num (int num , int* class_num) {
@@ -105,8 +105,8 @@ void set_string(std::string list, std::string* class_list) {
     int w_depth;
     int y_depth;
     int b_depth;
-    int xdimension_depth;
-    int ydimension_depth;
+    int xdim_depth;
+    int ydim_depth;
     int trans_num;
   private:
     ofstream mFile;
@@ -150,7 +150,7 @@ static void RTLOutputCheckAndReplacement(std::string &AESL_token, std::string Po
 }
 extern "C" void forward_fcc_hw_stub_wrapper(volatile void *, volatile void *, volatile void *, volatile void *, int, int);
 
-extern "C" void apatb_forward_fcc_hw(volatile void * __xlx_apatb_param_x, volatile void * __xlx_apatb_param_w, volatile void * __xlx_apatb_param_y, volatile void * __xlx_apatb_param_b, int __xlx_apatb_param_xdimension, int __xlx_apatb_param_ydimension) {
+extern "C" void apatb_forward_fcc_hw(volatile void * __xlx_apatb_param_x, volatile void * __xlx_apatb_param_w, volatile void * __xlx_apatb_param_y, volatile void * __xlx_apatb_param_b, int __xlx_apatb_param_xdim, int __xlx_apatb_param_ydim) {
   refine_signal_handler();
   fstream wrapc_switch_file_token;
   wrapc_switch_file_token.open(".hls_cosim_wrapc_switch.log");
@@ -239,12 +239,12 @@ aesl_fh.touch(AUTOTB_TVOUT_y);
 //b
 aesl_fh.touch(AUTOTB_TVIN_b);
 aesl_fh.touch(AUTOTB_TVOUT_b);
-//xdimension
-aesl_fh.touch(AUTOTB_TVIN_xdimension);
-aesl_fh.touch(AUTOTB_TVOUT_xdimension);
-//ydimension
-aesl_fh.touch(AUTOTB_TVIN_ydimension);
-aesl_fh.touch(AUTOTB_TVOUT_ydimension);
+//xdim
+aesl_fh.touch(AUTOTB_TVIN_xdim);
+aesl_fh.touch(AUTOTB_TVOUT_xdim);
+//ydim
+aesl_fh.touch(AUTOTB_TVIN_ydim);
+aesl_fh.touch(AUTOTB_TVOUT_ydim);
 CodeState = DUMP_INPUTS;
 unsigned __xlx_offset_byte_param_x = 0;
 unsigned __xlx_offset_byte_param_w = 0;
@@ -351,36 +351,36 @@ sc_bv<32> __xlx_tmp_lv = ((int*)__xlx_apatb_param_b)[j];
   sprintf(__xlx_sprintf_buffer.data(), "[[/transaction]] \n");
   aesl_fh.write(AUTOTB_TVIN_b, __xlx_sprintf_buffer.data());
 }
-// print xdimension Transactions
+// print xdim Transactions
 {
   sprintf(__xlx_sprintf_buffer.data(), "[[transaction]] %d\n", AESL_transaction);
-  aesl_fh.write(AUTOTB_TVIN_xdimension, __xlx_sprintf_buffer.data());
+  aesl_fh.write(AUTOTB_TVIN_xdim, __xlx_sprintf_buffer.data());
   {
-    sc_bv<32> __xlx_tmp_lv = *((int*)&__xlx_apatb_param_xdimension);
+    sc_bv<32> __xlx_tmp_lv = *((int*)&__xlx_apatb_param_xdim);
 
     sprintf(__xlx_sprintf_buffer.data(), "%s\n", __xlx_tmp_lv.to_string(SC_HEX).c_str());
-    aesl_fh.write(AUTOTB_TVIN_xdimension, __xlx_sprintf_buffer.data()); 
+    aesl_fh.write(AUTOTB_TVIN_xdim, __xlx_sprintf_buffer.data()); 
   }
-  tcl_file.set_num(1, &tcl_file.xdimension_depth);
+  tcl_file.set_num(1, &tcl_file.xdim_depth);
   sprintf(__xlx_sprintf_buffer.data(), "[[/transaction]] \n");
-  aesl_fh.write(AUTOTB_TVIN_xdimension, __xlx_sprintf_buffer.data());
+  aesl_fh.write(AUTOTB_TVIN_xdim, __xlx_sprintf_buffer.data());
 }
-// print ydimension Transactions
+// print ydim Transactions
 {
   sprintf(__xlx_sprintf_buffer.data(), "[[transaction]] %d\n", AESL_transaction);
-  aesl_fh.write(AUTOTB_TVIN_ydimension, __xlx_sprintf_buffer.data());
+  aesl_fh.write(AUTOTB_TVIN_ydim, __xlx_sprintf_buffer.data());
   {
-    sc_bv<32> __xlx_tmp_lv = *((int*)&__xlx_apatb_param_ydimension);
+    sc_bv<32> __xlx_tmp_lv = *((int*)&__xlx_apatb_param_ydim);
 
     sprintf(__xlx_sprintf_buffer.data(), "%s\n", __xlx_tmp_lv.to_string(SC_HEX).c_str());
-    aesl_fh.write(AUTOTB_TVIN_ydimension, __xlx_sprintf_buffer.data()); 
+    aesl_fh.write(AUTOTB_TVIN_ydim, __xlx_sprintf_buffer.data()); 
   }
-  tcl_file.set_num(1, &tcl_file.ydimension_depth);
+  tcl_file.set_num(1, &tcl_file.ydim_depth);
   sprintf(__xlx_sprintf_buffer.data(), "[[/transaction]] \n");
-  aesl_fh.write(AUTOTB_TVIN_ydimension, __xlx_sprintf_buffer.data());
+  aesl_fh.write(AUTOTB_TVIN_ydim, __xlx_sprintf_buffer.data());
 }
 CodeState = CALL_C_DUT;
-forward_fcc_hw_stub_wrapper(__xlx_apatb_param_x, __xlx_apatb_param_w, __xlx_apatb_param_y, __xlx_apatb_param_b, __xlx_apatb_param_xdimension, __xlx_apatb_param_ydimension);
+forward_fcc_hw_stub_wrapper(__xlx_apatb_param_x, __xlx_apatb_param_w, __xlx_apatb_param_y, __xlx_apatb_param_b, __xlx_apatb_param_xdim, __xlx_apatb_param_ydim);
 CodeState = DUMP_OUTPUTS;
 // print gmem Transactions
 {

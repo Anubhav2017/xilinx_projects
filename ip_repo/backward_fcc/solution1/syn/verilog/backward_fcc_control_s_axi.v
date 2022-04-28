@@ -31,12 +31,12 @@ module backward_fcc_control_s_axi
     output wire                          interrupt,
     output wire [31:0]                   x,
     output wire [31:0]                   w,
-    output wire [31:0]                   b,
     output wire [31:0]                   dx,
     output wire [31:0]                   dy,
-    output wire [31:0]                   xdimension,
-    output wire [31:0]                   ydimension,
-    output wire [31:0]                   lr,
+    output wire [31:0]                   dw,
+    output wire [31:0]                   db,
+    output wire [31:0]                   xdim,
+    output wire [31:0]                   ydim,
     output wire                          ap_start,
     input  wire                          ap_done,
     input  wire                          ap_ready,
@@ -67,55 +67,55 @@ module backward_fcc_control_s_axi
 // 0x18 : Data signal of w
 //        bit 31~0 - w[31:0] (Read/Write)
 // 0x1c : reserved
-// 0x20 : Data signal of b
-//        bit 31~0 - b[31:0] (Read/Write)
-// 0x24 : reserved
-// 0x28 : Data signal of dx
+// 0x20 : Data signal of dx
 //        bit 31~0 - dx[31:0] (Read/Write)
-// 0x2c : reserved
-// 0x30 : Data signal of dy
+// 0x24 : reserved
+// 0x28 : Data signal of dy
 //        bit 31~0 - dy[31:0] (Read/Write)
+// 0x2c : reserved
+// 0x30 : Data signal of dw
+//        bit 31~0 - dw[31:0] (Read/Write)
 // 0x34 : reserved
-// 0x38 : Data signal of xdimension
-//        bit 31~0 - xdimension[31:0] (Read/Write)
+// 0x38 : Data signal of db
+//        bit 31~0 - db[31:0] (Read/Write)
 // 0x3c : reserved
-// 0x40 : Data signal of ydimension
-//        bit 31~0 - ydimension[31:0] (Read/Write)
+// 0x40 : Data signal of xdim
+//        bit 31~0 - xdim[31:0] (Read/Write)
 // 0x44 : reserved
-// 0x48 : Data signal of lr
-//        bit 31~0 - lr[31:0] (Read/Write)
+// 0x48 : Data signal of ydim
+//        bit 31~0 - ydim[31:0] (Read/Write)
 // 0x4c : reserved
 // (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
 //------------------------Parameter----------------------
 localparam
-    ADDR_AP_CTRL           = 7'h00,
-    ADDR_GIE               = 7'h04,
-    ADDR_IER               = 7'h08,
-    ADDR_ISR               = 7'h0c,
-    ADDR_X_DATA_0          = 7'h10,
-    ADDR_X_CTRL            = 7'h14,
-    ADDR_W_DATA_0          = 7'h18,
-    ADDR_W_CTRL            = 7'h1c,
-    ADDR_B_DATA_0          = 7'h20,
-    ADDR_B_CTRL            = 7'h24,
-    ADDR_DX_DATA_0         = 7'h28,
-    ADDR_DX_CTRL           = 7'h2c,
-    ADDR_DY_DATA_0         = 7'h30,
-    ADDR_DY_CTRL           = 7'h34,
-    ADDR_XDIMENSION_DATA_0 = 7'h38,
-    ADDR_XDIMENSION_CTRL   = 7'h3c,
-    ADDR_YDIMENSION_DATA_0 = 7'h40,
-    ADDR_YDIMENSION_CTRL   = 7'h44,
-    ADDR_LR_DATA_0         = 7'h48,
-    ADDR_LR_CTRL           = 7'h4c,
-    WRIDLE                 = 2'd0,
-    WRDATA                 = 2'd1,
-    WRRESP                 = 2'd2,
-    WRRESET                = 2'd3,
-    RDIDLE                 = 2'd0,
-    RDDATA                 = 2'd1,
-    RDRESET                = 2'd2,
+    ADDR_AP_CTRL     = 7'h00,
+    ADDR_GIE         = 7'h04,
+    ADDR_IER         = 7'h08,
+    ADDR_ISR         = 7'h0c,
+    ADDR_X_DATA_0    = 7'h10,
+    ADDR_X_CTRL      = 7'h14,
+    ADDR_W_DATA_0    = 7'h18,
+    ADDR_W_CTRL      = 7'h1c,
+    ADDR_DX_DATA_0   = 7'h20,
+    ADDR_DX_CTRL     = 7'h24,
+    ADDR_DY_DATA_0   = 7'h28,
+    ADDR_DY_CTRL     = 7'h2c,
+    ADDR_DW_DATA_0   = 7'h30,
+    ADDR_DW_CTRL     = 7'h34,
+    ADDR_DB_DATA_0   = 7'h38,
+    ADDR_DB_CTRL     = 7'h3c,
+    ADDR_XDIM_DATA_0 = 7'h40,
+    ADDR_XDIM_CTRL   = 7'h44,
+    ADDR_YDIM_DATA_0 = 7'h48,
+    ADDR_YDIM_CTRL   = 7'h4c,
+    WRIDLE           = 2'd0,
+    WRDATA           = 2'd1,
+    WRRESP           = 2'd2,
+    WRRESET          = 2'd3,
+    RDIDLE           = 2'd0,
+    RDDATA           = 2'd1,
+    RDRESET          = 2'd2,
     ADDR_BITS                = 7;
 
 //------------------------Local signal-------------------
@@ -141,12 +141,12 @@ localparam
     reg  [1:0]                    int_isr = 2'b0;
     reg  [31:0]                   int_x = 'b0;
     reg  [31:0]                   int_w = 'b0;
-    reg  [31:0]                   int_b = 'b0;
     reg  [31:0]                   int_dx = 'b0;
     reg  [31:0]                   int_dy = 'b0;
-    reg  [31:0]                   int_xdimension = 'b0;
-    reg  [31:0]                   int_ydimension = 'b0;
-    reg  [31:0]                   int_lr = 'b0;
+    reg  [31:0]                   int_dw = 'b0;
+    reg  [31:0]                   int_db = 'b0;
+    reg  [31:0]                   int_xdim = 'b0;
+    reg  [31:0]                   int_ydim = 'b0;
 
 //------------------------Instantiation------------------
 
@@ -261,23 +261,23 @@ always @(posedge ACLK) begin
                 ADDR_W_DATA_0: begin
                     rdata <= int_w[31:0];
                 end
-                ADDR_B_DATA_0: begin
-                    rdata <= int_b[31:0];
-                end
                 ADDR_DX_DATA_0: begin
                     rdata <= int_dx[31:0];
                 end
                 ADDR_DY_DATA_0: begin
                     rdata <= int_dy[31:0];
                 end
-                ADDR_XDIMENSION_DATA_0: begin
-                    rdata <= int_xdimension[31:0];
+                ADDR_DW_DATA_0: begin
+                    rdata <= int_dw[31:0];
                 end
-                ADDR_YDIMENSION_DATA_0: begin
-                    rdata <= int_ydimension[31:0];
+                ADDR_DB_DATA_0: begin
+                    rdata <= int_db[31:0];
                 end
-                ADDR_LR_DATA_0: begin
-                    rdata <= int_lr[31:0];
+                ADDR_XDIM_DATA_0: begin
+                    rdata <= int_xdim[31:0];
+                end
+                ADDR_YDIM_DATA_0: begin
+                    rdata <= int_ydim[31:0];
                 end
             endcase
         end
@@ -286,16 +286,16 @@ end
 
 
 //------------------------Register logic-----------------
-assign interrupt  = int_gie & (|int_isr);
-assign ap_start   = int_ap_start;
-assign x          = int_x;
-assign w          = int_w;
-assign b          = int_b;
-assign dx         = int_dx;
-assign dy         = int_dy;
-assign xdimension = int_xdimension;
-assign ydimension = int_ydimension;
-assign lr         = int_lr;
+assign interrupt = int_gie & (|int_isr);
+assign ap_start  = int_ap_start;
+assign x         = int_x;
+assign w         = int_w;
+assign dx        = int_dx;
+assign dy        = int_dy;
+assign dw        = int_dw;
+assign db        = int_db;
+assign xdim      = int_xdim;
+assign ydim      = int_ydim;
 // int_ap_start
 always @(posedge ACLK) begin
     if (ARESET)
@@ -412,16 +412,6 @@ always @(posedge ACLK) begin
     end
 end
 
-// int_b[31:0]
-always @(posedge ACLK) begin
-    if (ARESET)
-        int_b[31:0] <= 0;
-    else if (ACLK_EN) begin
-        if (w_hs && waddr == ADDR_B_DATA_0)
-            int_b[31:0] <= (WDATA[31:0] & wmask) | (int_b[31:0] & ~wmask);
-    end
-end
-
 // int_dx[31:0]
 always @(posedge ACLK) begin
     if (ARESET)
@@ -442,33 +432,43 @@ always @(posedge ACLK) begin
     end
 end
 
-// int_xdimension[31:0]
+// int_dw[31:0]
 always @(posedge ACLK) begin
     if (ARESET)
-        int_xdimension[31:0] <= 0;
+        int_dw[31:0] <= 0;
     else if (ACLK_EN) begin
-        if (w_hs && waddr == ADDR_XDIMENSION_DATA_0)
-            int_xdimension[31:0] <= (WDATA[31:0] & wmask) | (int_xdimension[31:0] & ~wmask);
+        if (w_hs && waddr == ADDR_DW_DATA_0)
+            int_dw[31:0] <= (WDATA[31:0] & wmask) | (int_dw[31:0] & ~wmask);
     end
 end
 
-// int_ydimension[31:0]
+// int_db[31:0]
 always @(posedge ACLK) begin
     if (ARESET)
-        int_ydimension[31:0] <= 0;
+        int_db[31:0] <= 0;
     else if (ACLK_EN) begin
-        if (w_hs && waddr == ADDR_YDIMENSION_DATA_0)
-            int_ydimension[31:0] <= (WDATA[31:0] & wmask) | (int_ydimension[31:0] & ~wmask);
+        if (w_hs && waddr == ADDR_DB_DATA_0)
+            int_db[31:0] <= (WDATA[31:0] & wmask) | (int_db[31:0] & ~wmask);
     end
 end
 
-// int_lr[31:0]
+// int_xdim[31:0]
 always @(posedge ACLK) begin
     if (ARESET)
-        int_lr[31:0] <= 0;
+        int_xdim[31:0] <= 0;
     else if (ACLK_EN) begin
-        if (w_hs && waddr == ADDR_LR_DATA_0)
-            int_lr[31:0] <= (WDATA[31:0] & wmask) | (int_lr[31:0] & ~wmask);
+        if (w_hs && waddr == ADDR_XDIM_DATA_0)
+            int_xdim[31:0] <= (WDATA[31:0] & wmask) | (int_xdim[31:0] & ~wmask);
+    end
+end
+
+// int_ydim[31:0]
+always @(posedge ACLK) begin
+    if (ARESET)
+        int_ydim[31:0] <= 0;
+    else if (ACLK_EN) begin
+        if (w_hs && waddr == ADDR_YDIM_DATA_0)
+            int_ydim[31:0] <= (WDATA[31:0] & wmask) | (int_ydim[31:0] & ~wmask);
     end
 end
 

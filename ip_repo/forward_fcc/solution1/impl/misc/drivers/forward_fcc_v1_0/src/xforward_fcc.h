@@ -95,10 +95,10 @@ void XForward_fcc_Set_y(XForward_fcc *InstancePtr, u32 Data);
 u32 XForward_fcc_Get_y(XForward_fcc *InstancePtr);
 void XForward_fcc_Set_b(XForward_fcc *InstancePtr, u32 Data);
 u32 XForward_fcc_Get_b(XForward_fcc *InstancePtr);
-void XForward_fcc_Set_xdimension(XForward_fcc *InstancePtr, u32 Data);
-u32 XForward_fcc_Get_xdimension(XForward_fcc *InstancePtr);
-void XForward_fcc_Set_ydimension(XForward_fcc *InstancePtr, u32 Data);
-u32 XForward_fcc_Get_ydimension(XForward_fcc *InstancePtr);
+void XForward_fcc_Set_xdim(XForward_fcc *InstancePtr, u32 Data);
+u32 XForward_fcc_Get_xdim(XForward_fcc *InstancePtr);
+void XForward_fcc_Set_ydim(XForward_fcc *InstancePtr, u32 Data);
+u32 XForward_fcc_Get_ydim(XForward_fcc *InstancePtr);
 
 void XForward_fcc_InterruptGlobalEnable(XForward_fcc *InstancePtr);
 void XForward_fcc_InterruptGlobalDisable(XForward_fcc *InstancePtr);

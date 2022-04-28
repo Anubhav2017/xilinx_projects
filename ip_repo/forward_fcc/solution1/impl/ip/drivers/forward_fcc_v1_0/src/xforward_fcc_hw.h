@@ -33,28 +33,28 @@
 // 0x28 : Data signal of b
 //        bit 31~0 - b[31:0] (Read/Write)
 // 0x2c : reserved
-// 0x30 : Data signal of xdimension
-//        bit 31~0 - xdimension[31:0] (Read/Write)
+// 0x30 : Data signal of xdim
+//        bit 31~0 - xdim[31:0] (Read/Write)
 // 0x34 : reserved
-// 0x38 : Data signal of ydimension
-//        bit 31~0 - ydimension[31:0] (Read/Write)
+// 0x38 : Data signal of ydim
+//        bit 31~0 - ydim[31:0] (Read/Write)
 // 0x3c : reserved
 // (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
-#define XFORWARD_FCC_CTRL_ADDR_AP_CTRL         0x00
-#define XFORWARD_FCC_CTRL_ADDR_GIE             0x04
-#define XFORWARD_FCC_CTRL_ADDR_IER             0x08
-#define XFORWARD_FCC_CTRL_ADDR_ISR             0x0c
-#define XFORWARD_FCC_CTRL_ADDR_X_DATA          0x10
-#define XFORWARD_FCC_CTRL_BITS_X_DATA          32
-#define XFORWARD_FCC_CTRL_ADDR_W_DATA          0x18
-#define XFORWARD_FCC_CTRL_BITS_W_DATA          32
-#define XFORWARD_FCC_CTRL_ADDR_Y_DATA          0x20
-#define XFORWARD_FCC_CTRL_BITS_Y_DATA          32
-#define XFORWARD_FCC_CTRL_ADDR_B_DATA          0x28
-#define XFORWARD_FCC_CTRL_BITS_B_DATA          32
-#define XFORWARD_FCC_CTRL_ADDR_XDIMENSION_DATA 0x30
-#define XFORWARD_FCC_CTRL_BITS_XDIMENSION_DATA 32
-#define XFORWARD_FCC_CTRL_ADDR_YDIMENSION_DATA 0x38
-#define XFORWARD_FCC_CTRL_BITS_YDIMENSION_DATA 32
+#define XFORWARD_FCC_CTRL_ADDR_AP_CTRL   0x00
+#define XFORWARD_FCC_CTRL_ADDR_GIE       0x04
+#define XFORWARD_FCC_CTRL_ADDR_IER       0x08
+#define XFORWARD_FCC_CTRL_ADDR_ISR       0x0c
+#define XFORWARD_FCC_CTRL_ADDR_X_DATA    0x10
+#define XFORWARD_FCC_CTRL_BITS_X_DATA    32
+#define XFORWARD_FCC_CTRL_ADDR_W_DATA    0x18
+#define XFORWARD_FCC_CTRL_BITS_W_DATA    32
+#define XFORWARD_FCC_CTRL_ADDR_Y_DATA    0x20
+#define XFORWARD_FCC_CTRL_BITS_Y_DATA    32
+#define XFORWARD_FCC_CTRL_ADDR_B_DATA    0x28
+#define XFORWARD_FCC_CTRL_BITS_B_DATA    32
+#define XFORWARD_FCC_CTRL_ADDR_XDIM_DATA 0x30
+#define XFORWARD_FCC_CTRL_BITS_XDIM_DATA 32
+#define XFORWARD_FCC_CTRL_ADDR_YDIM_DATA 0x38
+#define XFORWARD_FCC_CTRL_BITS_YDIM_DATA 32
 

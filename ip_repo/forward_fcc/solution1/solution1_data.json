@@ -103,7 +103,7 @@
         }
       ]
     },
-    "xdimension": {
+    "xdim": {
       "index": "4",
       "direction": "in",
       "srcType": "int",
@@ -111,12 +111,12 @@
       "hwRefs": [{
           "type": "register",
           "interface": "s_axi_CTRL",
-          "name": "xdimension",
+          "name": "xdim",
           "usage": "data",
           "direction": "in"
         }]
     },
-    "ydimension": {
+    "ydim": {
       "index": "5",
       "direction": "in",
       "srcType": "int",
@@ -124,7 +124,7 @@
       "hwRefs": [{
           "type": "register",
           "interface": "s_axi_CTRL",
-          "name": "ydimension",
+          "name": "ydim",
           "usage": "data",
           "direction": "in"
         }]
@@ -174,9 +174,13 @@
       "impl\/vhdl\/forward_fcc_fadd_32ns_32ns_32_5_full_dsp_1.vhd",
       "impl\/vhdl\/forward_fcc_fmul_32ns_32ns_32_4_max_dsp_1.vhd",
       "impl\/vhdl\/forward_fcc_gmem_m_axi.vhd",
-      "impl\/vhdl\/forward_fcc_mul_7s_7s_7_1_1.vhd",
+      "impl\/vhdl\/forward_fcc_mul_7ns_8ns_14_1_1.vhd",
+      "impl\/vhdl\/forward_fcc_mul_30s_30s_30_2_1.vhd",
+      "impl\/vhdl\/forward_fcc_mul_32ns_32ns_64_2_1.vhd",
       "impl\/vhdl\/forward_fcc_mul_32s_32s_32_2_1.vhd",
-      "impl\/vhdl\/forward_fcc_x_t.vhd",
+      "impl\/vhdl\/forward_fcc_urem_64ns_32ns_64_68_1.vhd",
+      "impl\/vhdl\/forward_fcc_wbuf.vhd",
+      "impl\/vhdl\/forward_fcc_ybuf.vhd",
       "impl\/vhdl\/forward_fcc.vhd"
     ],
     "Verilog": [
@@ -184,9 +188,13 @@
       "impl\/verilog\/forward_fcc_fadd_32ns_32ns_32_5_full_dsp_1.v",
       "impl\/verilog\/forward_fcc_fmul_32ns_32ns_32_4_max_dsp_1.v",
       "impl\/verilog\/forward_fcc_gmem_m_axi.v",
-      "impl\/verilog\/forward_fcc_mul_7s_7s_7_1_1.v",
+      "impl\/verilog\/forward_fcc_mul_7ns_8ns_14_1_1.v",
+      "impl\/verilog\/forward_fcc_mul_30s_30s_30_2_1.v",
+      "impl\/verilog\/forward_fcc_mul_32ns_32ns_64_2_1.v",
       "impl\/verilog\/forward_fcc_mul_32s_32s_32_2_1.v",
-      "impl\/verilog\/forward_fcc_x_t.v",
+      "impl\/verilog\/forward_fcc_urem_64ns_32ns_64_68_1.v",
+      "impl\/verilog\/forward_fcc_wbuf.v",
+      "impl\/verilog\/forward_fcc_ybuf.v",
       "impl\/verilog\/forward_fcc.v"
     ],
     "SwDriver": [
@@ -598,34 +606,34 @@
         },
         {
           "offset": "0x30",
-          "name": "xdimension",
+          "name": "xdim",
           "access": "W",
           "resetValue": "0x0",
-          "description": "Data signal of xdimension",
+          "description": "Data signal of xdim",
           "range": "32",
           "fields": [{
               "offset": "0",
               "width": "32",
-              "name": "xdimension",
+              "name": "xdim",
               "access": "W",
               "resetValue": "0",
-              "description": "Bit 31 to 0 of xdimension"
+              "description": "Bit 31 to 0 of xdim"
             }]
         },
         {
           "offset": "0x38",
-          "name": "ydimension",
+          "name": "ydim",
           "access": "W",
           "resetValue": "0x0",
-          "description": "Data signal of ydimension",
+          "description": "Data signal of ydim",
           "range": "32",
           "fields": [{
               "offset": "0",
               "width": "32",
-              "name": "ydimension",
+              "name": "ydim",
               "access": "W",
               "resetValue": "0",
-              "description": "Bit 31 to 0 of ydimension"
+              "description": "Bit 31 to 0 of ydim"
             }]
         }
       ],
@@ -931,11 +939,18 @@
         "Timing": {
           "Target": "10.00",
           "Uncertainty": "2.70",
-          "Estimate": "7.300"
+          "Estimate": "14.512"
         },
         "Loops": [
           {
-            "Name": "Loop 1",
+            "Name": "Lread_w_VITIS_LOOP_26_1",
+            "TripCount": "",
+            "Latency": "",
+            "PipelineII": "1",
+            "PipelineDepth": "78"
+          },
+          {
+            "Name": "Loop 2",
             "TripCount": "",
             "LatencyMin": "2",
             "LatencyMax": "?",
@@ -944,7 +959,7 @@
             "PipelineDepth": "3"
           },
           {
-            "Name": "Loop 2",
+            "Name": "Loop 3",
             "TripCount": "",
             "LatencyMin": "2",
             "LatencyMax": "?",
@@ -957,32 +972,17 @@
             "TripCount": "",
             "Latency": "",
             "PipelineII": "",
-            "PipelineDepthMin": "4",
-            "PipelineDepthMax": "?",
-            "PipelineDepth": "4 ~ ?",
-            "Loops": [
-              {
+            "PipelineDepth": "",
+            "Loops": [{
                 "Name": "LOOP2",
                 "TripCount": "",
-                "LatencyMin": "6",
-                "LatencyMax": "?",
-                "Latency": "6 ~ ?",
-                "PipelineII": "2",
-                "PipelineDepth": "7"
-              },
-              {
-                "Name": "LOOPADD",
-                "TripCount": "",
-                "LatencyMin": "7",
-                "LatencyMax": "?",
-                "Latency": "7 ~ ?",
-                "PipelineII": "7",
-                "PipelineDepth": "7"
-              }
-            ]
+                "Latency": "",
+                "PipelineII": "4",
+                "PipelineDepth": "11"
+              }]
           },
           {
-            "Name": "Loop 4",
+            "Name": "Loop 5",
             "TripCount": "",
             "LatencyMin": "2",
             "LatencyMax": "?",
@@ -992,18 +992,18 @@
           }
         ],
         "Area": {
-          "BRAM_18K": "6",
+          "BRAM_18K": "36",
           "AVAIL_BRAM": "280",
-          "UTIL_BRAM": "2",
+          "UTIL_BRAM": "12",
           "DSP": "5",
           "AVAIL_DSP": "220",
           "UTIL_DSP": "2",
-          "FF": "2649",
+          "FF": "12200",
           "AVAIL_FF": "106400",
-          "UTIL_FF": "2",
-          "LUT": "2945",
+          "UTIL_FF": "11",
+          "LUT": "10068",
           "AVAIL_LUT": "53200",
-          "UTIL_LUT": "5",
+          "UTIL_LUT": "18",
           "URAM": "0",
           "AVAIL_URAM": "0",
           "UTIL_URAM": "0"
@@ -1013,7 +1013,7 @@
   "GenerateBdFiles": "0",
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2022-02-19 18:17:23 IST",
+    "Time": "2022-04-25 19:29:49 IST",
     "ToolName": "vivado_hls",
     "ToolVersion": "2020.2"
   }

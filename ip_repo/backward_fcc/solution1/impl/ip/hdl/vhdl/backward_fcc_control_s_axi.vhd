@@ -34,12 +34,12 @@ port (
     interrupt             :out  STD_LOGIC;
     x                     :out  STD_LOGIC_VECTOR(31 downto 0);
     w                     :out  STD_LOGIC_VECTOR(31 downto 0);
-    b                     :out  STD_LOGIC_VECTOR(31 downto 0);
     dx                    :out  STD_LOGIC_VECTOR(31 downto 0);
     dy                    :out  STD_LOGIC_VECTOR(31 downto 0);
-    xdimension            :out  STD_LOGIC_VECTOR(31 downto 0);
-    ydimension            :out  STD_LOGIC_VECTOR(31 downto 0);
-    lr                    :out  STD_LOGIC_VECTOR(31 downto 0);
+    dw                    :out  STD_LOGIC_VECTOR(31 downto 0);
+    db                    :out  STD_LOGIC_VECTOR(31 downto 0);
+    xdim                  :out  STD_LOGIC_VECTOR(31 downto 0);
+    ydim                  :out  STD_LOGIC_VECTOR(31 downto 0);
     ap_start              :out  STD_LOGIC;
     ap_done               :in   STD_LOGIC;
     ap_ready              :in   STD_LOGIC;
@@ -72,23 +72,23 @@ end entity backward_fcc_control_s_axi;
 -- 0x18 : Data signal of w
 --        bit 31~0 - w[31:0] (Read/Write)
 -- 0x1c : reserved
--- 0x20 : Data signal of b
---        bit 31~0 - b[31:0] (Read/Write)
--- 0x24 : reserved
--- 0x28 : Data signal of dx
+-- 0x20 : Data signal of dx
 --        bit 31~0 - dx[31:0] (Read/Write)
--- 0x2c : reserved
--- 0x30 : Data signal of dy
+-- 0x24 : reserved
+-- 0x28 : Data signal of dy
 --        bit 31~0 - dy[31:0] (Read/Write)
+-- 0x2c : reserved
+-- 0x30 : Data signal of dw
+--        bit 31~0 - dw[31:0] (Read/Write)
 -- 0x34 : reserved
--- 0x38 : Data signal of xdimension
---        bit 31~0 - xdimension[31:0] (Read/Write)
+-- 0x38 : Data signal of db
+--        bit 31~0 - db[31:0] (Read/Write)
 -- 0x3c : reserved
--- 0x40 : Data signal of ydimension
---        bit 31~0 - ydimension[31:0] (Read/Write)
+-- 0x40 : Data signal of xdim
+--        bit 31~0 - xdim[31:0] (Read/Write)
 -- 0x44 : reserved
--- 0x48 : Data signal of lr
---        bit 31~0 - lr[31:0] (Read/Write)
+-- 0x48 : Data signal of ydim
+--        bit 31~0 - ydim[31:0] (Read/Write)
 -- 0x4c : reserved
 -- (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
@@ -97,26 +97,26 @@ architecture behave of backward_fcc_control_s_axi is
     signal wstate  : states := wrreset;
     signal rstate  : states := rdreset;
     signal wnext, rnext: states;
-    constant ADDR_AP_CTRL           : INTEGER := 16#00#;
-    constant ADDR_GIE               : INTEGER := 16#04#;
-    constant ADDR_IER               : INTEGER := 16#08#;
-    constant ADDR_ISR               : INTEGER := 16#0c#;
-    constant ADDR_X_DATA_0          : INTEGER := 16#10#;
-    constant ADDR_X_CTRL            : INTEGER := 16#14#;
-    constant ADDR_W_DATA_0          : INTEGER := 16#18#;
-    constant ADDR_W_CTRL            : INTEGER := 16#1c#;
-    constant ADDR_B_DATA_0          : INTEGER := 16#20#;
-    constant ADDR_B_CTRL            : INTEGER := 16#24#;
-    constant ADDR_DX_DATA_0         : INTEGER := 16#28#;
-    constant ADDR_DX_CTRL           : INTEGER := 16#2c#;
-    constant ADDR_DY_DATA_0         : INTEGER := 16#30#;
-    constant ADDR_DY_CTRL           : INTEGER := 16#34#;
-    constant ADDR_XDIMENSION_DATA_0 : INTEGER := 16#38#;
-    constant ADDR_XDIMENSION_CTRL   : INTEGER := 16#3c#;
-    constant ADDR_YDIMENSION_DATA_0 : INTEGER := 16#40#;
-    constant ADDR_YDIMENSION_CTRL   : INTEGER := 16#44#;
-    constant ADDR_LR_DATA_0         : INTEGER := 16#48#;
-    constant ADDR_LR_CTRL           : INTEGER := 16#4c#;
+    constant ADDR_AP_CTRL     : INTEGER := 16#00#;
+    constant ADDR_GIE         : INTEGER := 16#04#;
+    constant ADDR_IER         : INTEGER := 16#08#;
+    constant ADDR_ISR         : INTEGER := 16#0c#;
+    constant ADDR_X_DATA_0    : INTEGER := 16#10#;
+    constant ADDR_X_CTRL      : INTEGER := 16#14#;
+    constant ADDR_W_DATA_0    : INTEGER := 16#18#;
+    constant ADDR_W_CTRL      : INTEGER := 16#1c#;
+    constant ADDR_DX_DATA_0   : INTEGER := 16#20#;
+    constant ADDR_DX_CTRL     : INTEGER := 16#24#;
+    constant ADDR_DY_DATA_0   : INTEGER := 16#28#;
+    constant ADDR_DY_CTRL     : INTEGER := 16#2c#;
+    constant ADDR_DW_DATA_0   : INTEGER := 16#30#;
+    constant ADDR_DW_CTRL     : INTEGER := 16#34#;
+    constant ADDR_DB_DATA_0   : INTEGER := 16#38#;
+    constant ADDR_DB_CTRL     : INTEGER := 16#3c#;
+    constant ADDR_XDIM_DATA_0 : INTEGER := 16#40#;
+    constant ADDR_XDIM_CTRL   : INTEGER := 16#44#;
+    constant ADDR_YDIM_DATA_0 : INTEGER := 16#48#;
+    constant ADDR_YDIM_CTRL   : INTEGER := 16#4c#;
     constant ADDR_BITS         : INTEGER := 7;
 
     signal waddr               : UNSIGNED(ADDR_BITS-1 downto 0);
@@ -141,12 +141,12 @@ architecture behave of backward_fcc_control_s_axi is
     signal int_isr             : UNSIGNED(1 downto 0) := (others => '0');
     signal int_x               : UNSIGNED(31 downto 0) := (others => '0');
     signal int_w               : UNSIGNED(31 downto 0) := (others => '0');
-    signal int_b               : UNSIGNED(31 downto 0) := (others => '0');
     signal int_dx              : UNSIGNED(31 downto 0) := (others => '0');
     signal int_dy              : UNSIGNED(31 downto 0) := (others => '0');
-    signal int_xdimension      : UNSIGNED(31 downto 0) := (others => '0');
-    signal int_ydimension      : UNSIGNED(31 downto 0) := (others => '0');
-    signal int_lr              : UNSIGNED(31 downto 0) := (others => '0');
+    signal int_dw              : UNSIGNED(31 downto 0) := (others => '0');
+    signal int_db              : UNSIGNED(31 downto 0) := (others => '0');
+    signal int_xdim            : UNSIGNED(31 downto 0) := (others => '0');
+    signal int_ydim            : UNSIGNED(31 downto 0) := (others => '0');
 
 
 begin
@@ -278,18 +278,18 @@ begin
                         rdata_data <= RESIZE(int_x(31 downto 0), 32);
                     when ADDR_W_DATA_0 =>
                         rdata_data <= RESIZE(int_w(31 downto 0), 32);
-                    when ADDR_B_DATA_0 =>
-                        rdata_data <= RESIZE(int_b(31 downto 0), 32);
                     when ADDR_DX_DATA_0 =>
                         rdata_data <= RESIZE(int_dx(31 downto 0), 32);
                     when ADDR_DY_DATA_0 =>
                         rdata_data <= RESIZE(int_dy(31 downto 0), 32);
-                    when ADDR_XDIMENSION_DATA_0 =>
-                        rdata_data <= RESIZE(int_xdimension(31 downto 0), 32);
-                    when ADDR_YDIMENSION_DATA_0 =>
-                        rdata_data <= RESIZE(int_ydimension(31 downto 0), 32);
-                    when ADDR_LR_DATA_0 =>
-                        rdata_data <= RESIZE(int_lr(31 downto 0), 32);
+                    when ADDR_DW_DATA_0 =>
+                        rdata_data <= RESIZE(int_dw(31 downto 0), 32);
+                    when ADDR_DB_DATA_0 =>
+                        rdata_data <= RESIZE(int_db(31 downto 0), 32);
+                    when ADDR_XDIM_DATA_0 =>
+                        rdata_data <= RESIZE(int_xdim(31 downto 0), 32);
+                    when ADDR_YDIM_DATA_0 =>
+                        rdata_data <= RESIZE(int_ydim(31 downto 0), 32);
                     when others =>
                         NULL;
                     end case;
@@ -303,12 +303,12 @@ begin
     ap_start             <= int_ap_start;
     x                    <= STD_LOGIC_VECTOR(int_x);
     w                    <= STD_LOGIC_VECTOR(int_w);
-    b                    <= STD_LOGIC_VECTOR(int_b);
     dx                   <= STD_LOGIC_VECTOR(int_dx);
     dy                   <= STD_LOGIC_VECTOR(int_dy);
-    xdimension           <= STD_LOGIC_VECTOR(int_xdimension);
-    ydimension           <= STD_LOGIC_VECTOR(int_ydimension);
-    lr                   <= STD_LOGIC_VECTOR(int_lr);
+    dw                   <= STD_LOGIC_VECTOR(int_dw);
+    db                   <= STD_LOGIC_VECTOR(int_db);
+    xdim                 <= STD_LOGIC_VECTOR(int_xdim);
+    ydim                 <= STD_LOGIC_VECTOR(int_ydim);
 
     process (ACLK)
     begin
@@ -461,17 +461,6 @@ begin
     begin
         if (ACLK'event and ACLK = '1') then
             if (ACLK_EN = '1') then
-                if (w_hs = '1' and waddr = ADDR_B_DATA_0) then
-                    int_b(31 downto 0) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_b(31 downto 0));
-                end if;
-            end if;
-        end if;
-    end process;
-
-    process (ACLK)
-    begin
-        if (ACLK'event and ACLK = '1') then
-            if (ACLK_EN = '1') then
                 if (w_hs = '1' and waddr = ADDR_DX_DATA_0) then
                     int_dx(31 downto 0) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_dx(31 downto 0));
                 end if;
@@ -494,8 +483,8 @@ begin
     begin
         if (ACLK'event and ACLK = '1') then
             if (ACLK_EN = '1') then
-                if (w_hs = '1' and waddr = ADDR_XDIMENSION_DATA_0) then
-                    int_xdimension(31 downto 0) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_xdimension(31 downto 0));
+                if (w_hs = '1' and waddr = ADDR_DW_DATA_0) then
+                    int_dw(31 downto 0) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_dw(31 downto 0));
                 end if;
             end if;
         end if;
@@ -505,8 +494,8 @@ begin
     begin
         if (ACLK'event and ACLK = '1') then
             if (ACLK_EN = '1') then
-                if (w_hs = '1' and waddr = ADDR_YDIMENSION_DATA_0) then
-                    int_ydimension(31 downto 0) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_ydimension(31 downto 0));
+                if (w_hs = '1' and waddr = ADDR_DB_DATA_0) then
+                    int_db(31 downto 0) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_db(31 downto 0));
                 end if;
             end if;
         end if;
@@ -516,8 +505,19 @@ begin
     begin
         if (ACLK'event and ACLK = '1') then
             if (ACLK_EN = '1') then
-                if (w_hs = '1' and waddr = ADDR_LR_DATA_0) then
-                    int_lr(31 downto 0) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_lr(31 downto 0));
+                if (w_hs = '1' and waddr = ADDR_XDIM_DATA_0) then
+                    int_xdim(31 downto 0) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_xdim(31 downto 0));
+                end if;
+            end if;
+        end if;
+    end process;
+
+    process (ACLK)
+    begin
+        if (ACLK'event and ACLK = '1') then
+            if (ACLK_EN = '1') then
+                if (w_hs = '1' and waddr = ADDR_YDIM_DATA_0) then
+                    int_ydim(31 downto 0) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_ydim(31 downto 0));
                 end if;
             end if;
         end if;

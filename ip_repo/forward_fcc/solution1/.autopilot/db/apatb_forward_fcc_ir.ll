@@ -7,7 +7,7 @@ target triple = "fpga64-xilinx-none"
 declare void @llvm.memcpy.p0i8.p0i8.i64(i8* nocapture writeonly, i8* nocapture readonly, i64, i1) #0
 
 ; Function Attrs: noinline
-define void @apatb_forward_fcc_ir(float* %x, float* %w, float* %y, float* %b, i32 %xdimension, i32 %ydimension) local_unnamed_addr #1 {
+define void @apatb_forward_fcc_ir(float* %x, float* %w, float* %y, float* %b, i32 %xdim, i32 %ydim) local_unnamed_addr #1 {
 entry:
   %x_copy = alloca [200 x float], align 512
   %w_copy = alloca [200 x float], align 512
@@ -22,7 +22,7 @@ entry:
   %5 = getelementptr inbounds [200 x float], [200 x float]* %w_copy, i32 0, i32 0
   %6 = getelementptr inbounds [200 x float], [200 x float]* %y_copy, i32 0, i32 0
   %7 = getelementptr inbounds [200 x float], [200 x float]* %b_copy, i32 0, i32 0
-  call void @apatb_forward_fcc_hw(float* %4, float* %5, float* %6, float* %7, i32 %xdimension, i32 %ydimension)
+  call void @apatb_forward_fcc_hw(float* %4, float* %5, float* %6, float* %7, i32 %xdim, i32 %ydim)
   call fastcc void @copy_out([200 x float]* %0, [200 x float]* nonnull align 512 %x_copy, [200 x float]* %1, [200 x float]* nonnull align 512 %w_copy, [200 x float]* %2, [200 x float]* nonnull align 512 %y_copy, [200 x float]* %3, [200 x float]* nonnull align 512 %b_copy)
   ret void
 }

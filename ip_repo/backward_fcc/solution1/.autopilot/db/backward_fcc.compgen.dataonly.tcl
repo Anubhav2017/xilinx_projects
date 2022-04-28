@@ -18,7 +18,7 @@ w {
 	offset 24
 	offset_end 31
 }
-b { 
+dx { 
 	dir I
 	width 32
 	depth 1
@@ -26,7 +26,7 @@ b {
 	offset 32
 	offset_end 39
 }
-dx { 
+dy { 
 	dir I
 	width 32
 	depth 1
@@ -34,7 +34,7 @@ dx {
 	offset 40
 	offset_end 47
 }
-dy { 
+dw { 
 	dir I
 	width 32
 	depth 1
@@ -42,7 +42,7 @@ dy {
 	offset 48
 	offset_end 55
 }
-xdimension { 
+db { 
 	dir I
 	width 32
 	depth 1
@@ -50,7 +50,7 @@ xdimension {
 	offset 56
 	offset_end 63
 }
-ydimension { 
+xdim { 
 	dir I
 	width 32
 	depth 1
@@ -58,7 +58,7 @@ ydimension {
 	offset 64
 	offset_end 71
 }
-lr { 
+ydim { 
 	dir I
 	width 32
 	depth 1

@@ -1433,78 +1433,83 @@ extern "C++" const char *basename (const char *__filename)
 
 
 
-__attribute__((sdx_kernel("backward_fcc", 0))) void backward_fcc(volatile float* x, volatile float* w, volatile float* b, volatile float* dx, volatile float* dy, int xdimension, int ydimension,float lr){
+__attribute__((sdx_kernel("backward_fcc", 0))) void backward_fcc(volatile float* x, volatile float* w, volatile float* dx, volatile float* dy, volatile float* dw, volatile float* db, int xdim, int ydim){
 #pragma HLS TOP name=backward_fcc
 # 6 "backward_fcc/backprop.cpp"
 
 #pragma HLS INTERFACE m_axi depth=100 port=x offset=slave bundle=gmem
 #pragma HLS INTERFACE m_axi depth=100 port=w offset=slave bundle=gmem
-#pragma HLS INTERFACE m_axi depth=100 port=b offset=slave bundle=gmem
 #pragma HLS INTERFACE m_axi depth=100 port=dx offset=slave bundle=gmem
 #pragma HLS INTERFACE m_axi depth=100 port=dy offset=slave bundle=gmem
+#pragma HLS INTERFACE m_axi depth=100 port=dw offset=slave bundle=gmem
+#pragma HLS INTERFACE m_axi depth=100 port=db offset=slave bundle=gmem
 
-#pragma HLS INTERFACE s_axilite port=xdimension bundle=control
-#pragma HLS INTERFACE s_axilite port=ydimension bundle=control
-#pragma HLS INTERFACE s_axilite port=lr bundle=control
+#pragma HLS INTERFACE s_axilite port=xdim bundle=control
+#pragma HLS INTERFACE s_axilite port=ydim bundle=control
 #pragma HLS INTERFACE s_axilite port=x bundle=control
 #pragma HLS INTERFACE s_axilite port=w bundle=control
-#pragma HLS INTERFACE s_axilite port=b bundle=control
+#pragma HLS INTERFACE s_axilite port=dw bundle=control
+#pragma HLS INTERFACE s_axilite port=db bundle=control
 #pragma HLS INTERFACE s_axilite port=dx bundle=control
 #pragma HLS INTERFACE s_axilite port=dy bundle=control
 #pragma HLS INTERFACE s_axilite port=return bundle=control
 
 
- int xdim=xdimension;
- int ydim=ydimension;
-
- float x_t[100];
- float y_t[100];
- float b_t[100];
- float w_t[100*100];
-
- float dx_t[100];
- float dy_t[100];
 
 
- float db[100];
- float dw[100*100];
+ float xbuf[100];
+ float wbuf[100][100];
+ float dxbuf[100];
+ float dwbuf[100][100];
+ float dybuf[100];
+ float dbbuf[100];
 
 
+ memcpy(xbuf,(const float*)x,xdim*sizeof(float));
+ memcpy(dbbuf,(const float*)db,ydim*sizeof(float));
+ memcpy(dxbuf,(const float*)dx,xdim*sizeof(float));
+ memcpy(dybuf,(const float*)dy,ydim*sizeof(float));
 
- memcpy(x_t,(const float*)x,xdim*sizeof(float));
- memcpy(b_t,(const float*)b,ydim*sizeof(float));
- memcpy(w_t,(const float*)w,ydim*xdim*sizeof(float));
- memcpy(dx_t,(const float*)dx,xdim*sizeof(float));
- memcpy(dy_t,(const float*)dy,ydim*sizeof(float));
+ VITIS_LOOP_40_1: for(int i=0;i<ydim;i++){
+         VITIS_LOOP_41_2: for(int j=0;j<xdim;j++){
+             dwbuf[i][j] = dw[i*xdim+j];
+         }
+     }
 
+ VITIS_LOOP_46_3: for(int i=0;i<ydim;i++){
+      VITIS_LOOP_47_4: for(int j=0;j<xdim;j++){
+          wbuf[i][j] = w[i*xdim+j];
+      }
+ }
 
- LOOP1:for(int i=0;i<xdim;i++){
-#pragma HLS pipeline II=1
- LOOP2:for(int j=0;j<ydim;j++){
-   dx_t[i] = dy_t[j] * w_t[i+j*xdim];
+ VITIS_LOOP_52_5: for(int i=0;i<ydim;i++){
+     VITIS_LOOP_53_6: for(int j=0;j<xdim;j++){
+         dxbuf[j] = dybuf[i] * wbuf[i][j];
+         dwbuf[i][j] += dybuf[i]*xbuf[j];
+     }
+
   }
 
+ VITIS_LOOP_60_7: for (int i=0;i<ydim;i++){
+     dbbuf[i] += dybuf[i];
  }
 
 
+ memcpy((float*)db,dbbuf,ydim*sizeof(float));
+ memcpy((float*)dw,dwbuf,ydim*xdim*sizeof(float));
+ memcpy((float*)w,wbuf,ydim*xdim*sizeof(float));
+ memcpy((float*)dx,dxbuf,xdim*sizeof(float));
 
+ VITIS_LOOP_70_8: for(int i=0;i<ydim;i++){
+         VITIS_LOOP_71_9: for(int j=0;j<xdim;j++){
+             dw[i*xdim+j]=dwbuf[i][j] ;
+         }
+     }
 
-
- LOOP3:for (int i=0;i<ydim;i++){
-#pragma HLS pipeline II=1
- LOOP4:for(int j=0;j<xdim;j++){
-
-   dw[i*xdim+j] = dy_t[i]*x_t[j];
-   w_t[i*xdim+j]-=lr*dw[i*xdim+j];
-  }
-  b_t[i] -= lr*dy_t[i];
- }
-
-
-
-
- memcpy((float*)b,b_t,ydim*sizeof(float));
- memcpy((float*)w,w_t,ydim*xdim*sizeof(float));
- memcpy((float*)dx,dx_t,xdim*sizeof(float));
+     VITIS_LOOP_76_10: for(int i=0;i<ydim;i++){
+         VITIS_LOOP_77_11: for(int j=0;j<xdim;j++){
+             w[i*xdim+j] = wbuf[i][j] ;
+         }
+     }
 
 }

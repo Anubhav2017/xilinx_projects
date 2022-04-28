@@ -1,0 +1,83 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=0
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 155.766 MB.
+INFO: [HLS 200-10] Analyzing design file 'conv_fwd/main.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.32 seconds. CPU system time: 0.14 seconds. Elapsed time: 0.23 seconds; current allocated memory: 156.986 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'conv_fwd(float volatile*, float volatile*, float volatile*, float volatile*, int, int, int, int, int, int)' (conv_fwd/main.cpp:7:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'conv_fwd(float volatile*, float volatile*, float volatile*, float volatile*, int, int, int, int, int, int)' (conv_fwd/main.cpp:7:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'conv_fwd(float volatile*, float volatile*, float volatile*, float volatile*, int, int, int, int, int, int)' (conv_fwd/main.cpp:7:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'conv_fwd(float volatile*, float volatile*, float volatile*, float volatile*, int, int, int, int, int, int)' (conv_fwd/main.cpp:7:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.04 seconds. CPU system time: 0.2 seconds. Elapsed time: 2.81 seconds; current allocated memory: 158.926 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 158.928 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 160.720 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 159.767 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_36_3' (conv_fwd/main.cpp:36) in function 'conv_fwd' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_47_7' (conv_fwd/main.cpp:47) in function 'conv_fwd' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_54_8' (conv_fwd/main.cpp:54) in function 'conv_fwd' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_64_14' (conv_fwd/main.cpp:64) in function 'conv_fwd' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_76_17' (conv_fwd/main.cpp:76) in function 'conv_fwd' automatically.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.25 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.26 seconds; current allocated memory: 180.936 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_35_2' (conv_fwd/main.cpp:35:34) in function 'conv_fwd'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_34_1' (conv_fwd/main.cpp:34:30) in function 'conv_fwd'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_46_6' (conv_fwd/main.cpp:46:38) in function 'conv_fwd'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_45_5' (conv_fwd/main.cpp:45:34) in function 'conv_fwd'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_44_4' (conv_fwd/main.cpp:44:30) in function 'conv_fwd'.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_63_13' (conv_fwd/main.cpp:63:47) in function 'conv_fwd' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_61_12' (conv_fwd/main.cpp:61:43) in function 'conv_fwd' the outer loop is not a perfect loop.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_60_11' (conv_fwd/main.cpp:60:39) in function 'conv_fwd'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_59_10' (conv_fwd/main.cpp:59:35) in function 'conv_fwd'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_58_9' (conv_fwd/main.cpp:58:30) in function 'conv_fwd'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_75_16' (conv_fwd/main.cpp:75:35) in function 'conv_fwd'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_74_15' (conv_fwd/main.cpp:74:31) in function 'conv_fwd'.
+INFO: [HLS 200-444] Inferring multiple bus burst read of variable length on port 'gmem' (conv_fwd/main.cpp:37:33). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+INFO: [HLS 200-444] Inferring multiple bus burst read of variable length on port 'gmem' (conv_fwd/main.cpp:48:40). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+INFO: [HLS 200-444] Inferring multiple bus burst read of variable length on port 'gmem' (conv_fwd/main.cpp:55:19). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+INFO: [HLS 200-444] Inferring multiple bus burst write of variable length on port 'gmem' (conv_fwd/main.cpp:77:40). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+INFO: [HLS 200-472] Inferring partial write operation for 'xbuf' (conv_fwd/main.cpp:37:31)
+INFO: [HLS 200-472] Inferring partial write operation for 'wbuf' (conv_fwd/main.cpp:48:38)
+INFO: [HLS 200-472] Inferring partial write operation for 'bbuf' (conv_fwd/main.cpp:55:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'ybuf' (conv_fwd/main.cpp:65:43)
+INFO: [HLS 200-472] Inferring partial write operation for 'ybuf' (conv_fwd/main.cpp:62:34)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.27 seconds. CPU system time: 0 seconds. Elapsed time: 0.28 seconds; current allocated memory: 176.418 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'conv_fwd' ...
+WARNING: [SYN 201-107] Renaming port name 'conv_fwd/W' to 'conv_fwd/W_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv_fwd' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP48 latency (root=add_ln37) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=add_ln62) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln64) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=add_ln77) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_34_1_VITIS_LOOP_35_2_VITIS_LOOP_36_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 110, loop 'VITIS_LOOP_34_1_VITIS_LOOP_35_2_VITIS_LOOP_36_3'
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================

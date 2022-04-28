@@ -1433,10 +1433,9 @@ extern "C++" const char *basename (const char *__filename)
 
 
 
-
-__attribute__((sdx_kernel("forward_fcc", 0))) void forward_fcc(volatile float* x,volatile float* w,volatile float* y,volatile float* b, int xdimension, int ydimension){
+__attribute__((sdx_kernel("forward_fcc", 0))) void forward_fcc(volatile float* x,volatile float* w,volatile float* y,volatile float* b, int xdim, int ydim){
 #pragma HLS TOP name=forward_fcc
-# 7 "forward_fcc/fwprop.cpp"
+# 6 "forward_fcc/fwprop.cpp"
 
 #pragma HLS INTERFACE s_axilite port=return bundle=CTRL
 #pragma HLS INTERFACE m_axi port=x depth=200 offset=slave bundle=gmem
@@ -1447,43 +1446,37 @@ __attribute__((sdx_kernel("forward_fcc", 0))) void forward_fcc(volatile float* x
 #pragma HLS INTERFACE s_axilite port=w bundle=CTRL
 #pragma HLS INTERFACE s_axilite port=y bundle=CTRL
 #pragma HLS INTERFACE s_axilite port=b bundle=CTRL
-#pragma HLS INTERFACE s_axilite port=xdimension bundle=CTRL
-#pragma HLS INTERFACE s_axilite port=ydimension bundle=CTRL
+#pragma HLS INTERFACE s_axilite port=xdim bundle=CTRL
+#pragma HLS INTERFACE s_axilite port=ydim bundle=CTRL
 
 
- const int xdim=xdimension;
- const int ydim=ydimension;
+ float xbuf[100];
+ float ybuf[100];
+ float bbuf[100];
+ float wbuf[100][100];
 
- float x_t[100];
- float y_t[100];
- float b_t[100];
- float w_t[100];
+ Lread_w: for(int i=0;i<ydim;i++){
+    VITIS_LOOP_26_1: for(int j=0;j<xdim;j++){
+     wbuf[i][j] = w[i*xdim+j];
+    }
 
- float mulbuffer_t[100];
+     }
 
- memcpy(x_t,(const float*)x,xdim*sizeof(float));
- memcpy(b_t,(const float*)b,ydim*sizeof(float));
- memcpy(w_t,(const float*)w,ydim*xdim*sizeof(float));
+ memcpy(xbuf,(const float*)x,xdim*sizeof(float));
+ memcpy(bbuf,(const float*)b,ydim*sizeof(float));
+ memcpy(wbuf,(const float*)w,ydim*xdim*sizeof(float));
 
     LOOP1:for(int i=0; i< ydim;i++){
 
-     y_t[i]=b[i];
+     ybuf[i]=bbuf[i];
 
         LOOP2:for (int j=0; j<xdim;j++){
-#pragma HLS PIPELINE II=2
-
- mulbuffer_t[j]= w_t[i*xdim+j]*x_t[j];
-        }
-
-        LOOPADD: for(int j=0;j<xdim;j++){
-#pragma HLS PIPELINE II=11
-
- y_t[i]+= mulbuffer_t[j];
+            ybuf[i] += wbuf[i][j]*x[j];
         }
     }
 
 
-    memcpy((float *)y,y_t,ydim*sizeof(float));
+    memcpy((float *)y,ybuf,ydim*sizeof(float));
 
     return;
 

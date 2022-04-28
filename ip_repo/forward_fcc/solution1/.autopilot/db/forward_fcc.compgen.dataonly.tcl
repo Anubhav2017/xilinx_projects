@@ -34,7 +34,7 @@ b {
 	offset 40
 	offset_end 47
 }
-xdimension { 
+xdim { 
 	dir I
 	width 32
 	depth 1
@@ -42,7 +42,7 @@ xdimension {
 	offset 48
 	offset_end 55
 }
-ydimension { 
+ydim { 
 	dir I
 	width 32
 	depth 1

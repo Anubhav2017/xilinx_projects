@@ -52,7 +52,7 @@ set Interface "wire"
 set DataType "void"
 set Port [list $PortName $Interface $DataType $Pointer $Dims $Const    $Volatile $ArrayOpt]
 lappend PortList $Port
-set PortName "xdimension"
+set PortName "xdim"
 set BitWidth "32"
 set ArrayOpt ""
 set Const "0"
@@ -64,7 +64,7 @@ set Interface "wire"
 set DataType "int"
 set Port [list $PortName $Interface $DataType $Pointer $Dims $Const    $Volatile $ArrayOpt]
 lappend PortList $Port
-set PortName "ydimension"
+set PortName "ydim"
 set BitWidth "32"
 set ArrayOpt ""
 set Const "0"

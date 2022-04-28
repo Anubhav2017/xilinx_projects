@@ -33,7 +33,7 @@ class AESL_RUNTIME_BC {
     string mName;
 };
 extern "C" void forward_fcc(int*, int, int, int, int, int, int);
-extern "C" void apatb_forward_fcc_hw(volatile void * __xlx_apatb_param_x, volatile void * __xlx_apatb_param_w, volatile void * __xlx_apatb_param_y, volatile void * __xlx_apatb_param_b, int __xlx_apatb_param_xdimension, int __xlx_apatb_param_ydimension) {
+extern "C" void apatb_forward_fcc_hw(volatile void * __xlx_apatb_param_x, volatile void * __xlx_apatb_param_w, volatile void * __xlx_apatb_param_y, volatile void * __xlx_apatb_param_b, int __xlx_apatb_param_xdim, int __xlx_apatb_param_ydim) {
   // Collect __xlx_x_w_y_b__tmp_vec
   vector<sc_bv<32> >__xlx_x_w_y_b__tmp_vec;
   for (int j = 0, e = 200; j != e; ++j) {
@@ -65,7 +65,7 @@ extern "C" void apatb_forward_fcc_hw(volatile void * __xlx_apatb_param_x, volati
     __xlx_x_w_y_b__input_buffer[i] = __xlx_x_w_y_b__tmp_vec[i].range(31, 0).to_uint64();
   }
   // DUT call
-  forward_fcc(__xlx_x_w_y_b__input_buffer, __xlx_offset_byte_param_x, __xlx_offset_byte_param_w, __xlx_offset_byte_param_y, __xlx_offset_byte_param_b, __xlx_apatb_param_xdimension, __xlx_apatb_param_ydimension);
+  forward_fcc(__xlx_x_w_y_b__input_buffer, __xlx_offset_byte_param_x, __xlx_offset_byte_param_w, __xlx_offset_byte_param_y, __xlx_offset_byte_param_b, __xlx_apatb_param_xdim, __xlx_apatb_param_ydim);
 // print __xlx_apatb_param_x
   sc_bv<32>*__xlx_x_output_buffer = new sc_bv<32>[__xlx_size_param_x];
   for (int i = 0; i < __xlx_size_param_x; ++i) {

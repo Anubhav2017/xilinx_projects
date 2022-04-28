@@ -10,7 +10,7 @@
 <InvalidType>0</InvalidType>
 </RtlPorts>
 <RtlPorts>
-<name>xdimension</name>
+<name>xdim</name>
 <CType>
 <TypeName>int</TypeName>
 <TypeWidth>32</TypeWidth>
@@ -20,7 +20,7 @@
 <InvalidType>0</InvalidType>
 </RtlPorts>
 <RtlPorts>
-<name>ydimension</name>
+<name>ydim</name>
 <CType>
 <TypeName>int</TypeName>
 <TypeWidth>32</TypeWidth>

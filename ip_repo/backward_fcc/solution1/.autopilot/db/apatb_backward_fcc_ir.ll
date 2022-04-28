@@ -6,38 +6,42 @@ target triple = "fpga64-xilinx-none"
 ; Function Attrs: argmemonly nounwind
 declare void @llvm.memcpy.p0i8.p0i8.i64(i8* nocapture writeonly, i8* nocapture readonly, i64, i1) #0
 
-; Function Attrs: argmemonly noinline
-define void @apatb_backward_fcc_ir(float* %x, float* %w, float* %b, float* %dx, float* %dy, i32 %xdimension, i32 %ydimension, float %lr) local_unnamed_addr #1 {
+; Function Attrs: noinline
+define void @apatb_backward_fcc_ir(float* %x, float* %w, float* %dx, float* %dy, float* %dw, float* %db, i32 %xdim, i32 %ydim) local_unnamed_addr #1 {
 entry:
   %x_copy = alloca [100 x float], align 512
   %w_copy = alloca [100 x float], align 512
-  %b_copy = alloca [100 x float], align 512
   %dx_copy = alloca [100 x float], align 512
   %dy_copy = alloca [100 x float], align 512
+  %dw_copy = alloca [100 x float], align 512
+  %db_copy = alloca [100 x float], align 512
   %0 = bitcast float* %x to [100 x float]*
   %1 = bitcast float* %w to [100 x float]*
-  %2 = bitcast float* %b to [100 x float]*
-  %3 = bitcast float* %dx to [100 x float]*
-  %4 = bitcast float* %dy to [100 x float]*
-  call fastcc void @copy_in([100 x float]* %0, [100 x float]* nonnull align 512 %x_copy, [100 x float]* %1, [100 x float]* nonnull align 512 %w_copy, [100 x float]* %2, [100 x float]* nonnull align 512 %b_copy, [100 x float]* %3, [100 x float]* nonnull align 512 %dx_copy, [100 x float]* %4, [100 x float]* nonnull align 512 %dy_copy)
-  %5 = getelementptr inbounds [100 x float], [100 x float]* %x_copy, i32 0, i32 0
-  %6 = getelementptr inbounds [100 x float], [100 x float]* %w_copy, i32 0, i32 0
-  %7 = getelementptr inbounds [100 x float], [100 x float]* %b_copy, i32 0, i32 0
+  %2 = bitcast float* %dx to [100 x float]*
+  %3 = bitcast float* %dy to [100 x float]*
+  %4 = bitcast float* %dw to [100 x float]*
+  %5 = bitcast float* %db to [100 x float]*
+  call fastcc void @copy_in([100 x float]* %0, [100 x float]* nonnull align 512 %x_copy, [100 x float]* %1, [100 x float]* nonnull align 512 %w_copy, [100 x float]* %2, [100 x float]* nonnull align 512 %dx_copy, [100 x float]* %3, [100 x float]* nonnull align 512 %dy_copy, [100 x float]* %4, [100 x float]* nonnull align 512 %dw_copy, [100 x float]* %5, [100 x float]* nonnull align 512 %db_copy)
+  %6 = getelementptr inbounds [100 x float], [100 x float]* %x_copy, i32 0, i32 0
+  %7 = getelementptr inbounds [100 x float], [100 x float]* %w_copy, i32 0, i32 0
   %8 = getelementptr inbounds [100 x float], [100 x float]* %dx_copy, i32 0, i32 0
   %9 = getelementptr inbounds [100 x float], [100 x float]* %dy_copy, i32 0, i32 0
-  call void @apatb_backward_fcc_hw(float* %5, float* %6, float* %7, float* %8, float* %9, i32 %xdimension, i32 %ydimension, float %lr)
-  call fastcc void @copy_out([100 x float]* %0, [100 x float]* nonnull align 512 %x_copy, [100 x float]* %1, [100 x float]* nonnull align 512 %w_copy, [100 x float]* %2, [100 x float]* nonnull align 512 %b_copy, [100 x float]* %3, [100 x float]* nonnull align 512 %dx_copy, [100 x float]* %4, [100 x float]* nonnull align 512 %dy_copy)
+  %10 = getelementptr inbounds [100 x float], [100 x float]* %dw_copy, i32 0, i32 0
+  %11 = getelementptr inbounds [100 x float], [100 x float]* %db_copy, i32 0, i32 0
+  call void @apatb_backward_fcc_hw(float* %6, float* %7, float* %8, float* %9, float* %10, float* %11, i32 %xdim, i32 %ydim)
+  call fastcc void @copy_out([100 x float]* %0, [100 x float]* nonnull align 512 %x_copy, [100 x float]* %1, [100 x float]* nonnull align 512 %w_copy, [100 x float]* %2, [100 x float]* nonnull align 512 %dx_copy, [100 x float]* %3, [100 x float]* nonnull align 512 %dy_copy, [100 x float]* %4, [100 x float]* nonnull align 512 %dw_copy, [100 x float]* %5, [100 x float]* nonnull align 512 %db_copy)
   ret void
 }
 
 ; Function Attrs: argmemonly noinline
-define internal fastcc void @copy_in([100 x float]* readonly, [100 x float]* noalias align 512, [100 x float]* readonly, [100 x float]* noalias align 512, [100 x float]* readonly, [100 x float]* noalias align 512, [100 x float]* readonly, [100 x float]* noalias align 512, [100 x float]* readonly, [100 x float]* noalias align 512) unnamed_addr #2 {
+define internal fastcc void @copy_in([100 x float]* readonly, [100 x float]* noalias align 512, [100 x float]* readonly, [100 x float]* noalias align 512, [100 x float]* readonly, [100 x float]* noalias align 512, [100 x float]* readonly, [100 x float]* noalias align 512, [100 x float]* readonly, [100 x float]* noalias align 512, [100 x float]* readonly, [100 x float]* noalias align 512) unnamed_addr #2 {
 entry:
   call fastcc void @onebyonecpy_hls.p0a100f32([100 x float]* align 512 %1, [100 x float]* %0)
   call fastcc void @onebyonecpy_hls.p0a100f32([100 x float]* align 512 %3, [100 x float]* %2)
   call fastcc void @onebyonecpy_hls.p0a100f32([100 x float]* align 512 %5, [100 x float]* %4)
   call fastcc void @onebyonecpy_hls.p0a100f32([100 x float]* align 512 %7, [100 x float]* %6)
   call fastcc void @onebyonecpy_hls.p0a100f32([100 x float]* align 512 %9, [100 x float]* %8)
+  call fastcc void @onebyonecpy_hls.p0a100f32([100 x float]* align 512 %11, [100 x float]* %10)
   ret void
 }
 
@@ -68,40 +72,43 @@ ret:                                              ; preds = %for.loop, %entry
 }
 
 ; Function Attrs: argmemonly noinline
-define internal fastcc void @copy_out([100 x float]*, [100 x float]* noalias readonly align 512, [100 x float]*, [100 x float]* noalias readonly align 512, [100 x float]*, [100 x float]* noalias readonly align 512, [100 x float]*, [100 x float]* noalias readonly align 512, [100 x float]*, [100 x float]* noalias readonly align 512) unnamed_addr #4 {
+define internal fastcc void @copy_out([100 x float]*, [100 x float]* noalias readonly align 512, [100 x float]*, [100 x float]* noalias readonly align 512, [100 x float]*, [100 x float]* noalias readonly align 512, [100 x float]*, [100 x float]* noalias readonly align 512, [100 x float]*, [100 x float]* noalias readonly align 512, [100 x float]*, [100 x float]* noalias readonly align 512) unnamed_addr #4 {
 entry:
   call fastcc void @onebyonecpy_hls.p0a100f32([100 x float]* %0, [100 x float]* align 512 %1)
   call fastcc void @onebyonecpy_hls.p0a100f32([100 x float]* %2, [100 x float]* align 512 %3)
   call fastcc void @onebyonecpy_hls.p0a100f32([100 x float]* %4, [100 x float]* align 512 %5)
   call fastcc void @onebyonecpy_hls.p0a100f32([100 x float]* %6, [100 x float]* align 512 %7)
   call fastcc void @onebyonecpy_hls.p0a100f32([100 x float]* %8, [100 x float]* align 512 %9)
+  call fastcc void @onebyonecpy_hls.p0a100f32([100 x float]* %10, [100 x float]* align 512 %11)
   ret void
 }
 
-declare void @apatb_backward_fcc_hw(float*, float*, float*, float*, float*, i32, i32, float)
+declare void @apatb_backward_fcc_hw(float*, float*, float*, float*, float*, float*, i32, i32)
 
-define void @backward_fcc_hw_stub_wrapper(float*, float*, float*, float*, float*, i32, i32, float) #5 {
+define void @backward_fcc_hw_stub_wrapper(float*, float*, float*, float*, float*, float*, i32, i32) #5 {
 entry:
   %8 = bitcast float* %0 to [100 x float]*
   %9 = bitcast float* %1 to [100 x float]*
   %10 = bitcast float* %2 to [100 x float]*
   %11 = bitcast float* %3 to [100 x float]*
   %12 = bitcast float* %4 to [100 x float]*
-  call void @copy_out([100 x float]* null, [100 x float]* %8, [100 x float]* null, [100 x float]* %9, [100 x float]* null, [100 x float]* %10, [100 x float]* null, [100 x float]* %11, [100 x float]* null, [100 x float]* %12)
-  %13 = bitcast [100 x float]* %8 to float*
-  %14 = bitcast [100 x float]* %9 to float*
-  %15 = bitcast [100 x float]* %10 to float*
-  %16 = bitcast [100 x float]* %11 to float*
-  %17 = bitcast [100 x float]* %12 to float*
-  call void @backward_fcc_hw_stub(float* %13, float* %14, float* %15, float* %16, float* %17, i32 %5, i32 %6, float %7)
-  call void @copy_in([100 x float]* null, [100 x float]* %8, [100 x float]* null, [100 x float]* %9, [100 x float]* null, [100 x float]* %10, [100 x float]* null, [100 x float]* %11, [100 x float]* null, [100 x float]* %12)
+  %13 = bitcast float* %5 to [100 x float]*
+  call void @copy_out([100 x float]* null, [100 x float]* %8, [100 x float]* null, [100 x float]* %9, [100 x float]* null, [100 x float]* %10, [100 x float]* null, [100 x float]* %11, [100 x float]* null, [100 x float]* %12, [100 x float]* null, [100 x float]* %13)
+  %14 = bitcast [100 x float]* %8 to float*
+  %15 = bitcast [100 x float]* %9 to float*
+  %16 = bitcast [100 x float]* %10 to float*
+  %17 = bitcast [100 x float]* %11 to float*
+  %18 = bitcast [100 x float]* %12 to float*
+  %19 = bitcast [100 x float]* %13 to float*
+  call void @backward_fcc_hw_stub(float* %14, float* %15, float* %16, float* %17, float* %18, float* %19, i32 %6, i32 %7)
+  call void @copy_in([100 x float]* null, [100 x float]* %8, [100 x float]* null, [100 x float]* %9, [100 x float]* null, [100 x float]* %10, [100 x float]* null, [100 x float]* %11, [100 x float]* null, [100 x float]* %12, [100 x float]* null, [100 x float]* %13)
   ret void
 }
 
-declare void @backward_fcc_hw_stub(float*, float*, float*, float*, float*, i32, i32, float)
+declare void @backward_fcc_hw_stub(float*, float*, float*, float*, float*, float*, i32, i32)
 
 attributes #0 = { argmemonly nounwind }
-attributes #1 = { argmemonly noinline "fpga.wrapper.func"="wrapper" }
+attributes #1 = { noinline "fpga.wrapper.func"="wrapper" }
 attributes #2 = { argmemonly noinline "fpga.wrapper.func"="copyin" }
 attributes #3 = { argmemonly noinline "fpga.wrapper.func"="onebyonecpy_hls" }
 attributes #4 = { argmemonly noinline "fpga.wrapper.func"="copyout" }

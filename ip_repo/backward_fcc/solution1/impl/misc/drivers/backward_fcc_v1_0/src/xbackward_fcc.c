@@ -107,23 +107,6 @@ u32 XBackward_fcc_Get_w(XBackward_fcc *InstancePtr) {
     return Data;
 }
 
-void XBackward_fcc_Set_b(XBackward_fcc *InstancePtr, u32 Data) {
-    Xil_AssertVoid(InstancePtr != NULL);
-    Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
-
-    XBackward_fcc_WriteReg(InstancePtr->Control_BaseAddress, XBACKWARD_FCC_CONTROL_ADDR_B_DATA, Data);
-}
-
-u32 XBackward_fcc_Get_b(XBackward_fcc *InstancePtr) {
-    u32 Data;
-
-    Xil_AssertNonvoid(InstancePtr != NULL);
-    Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
-
-    Data = XBackward_fcc_ReadReg(InstancePtr->Control_BaseAddress, XBACKWARD_FCC_CONTROL_ADDR_B_DATA);
-    return Data;
-}
-
 void XBackward_fcc_Set_dx(XBackward_fcc *InstancePtr, u32 Data) {
     Xil_AssertVoid(InstancePtr != NULL);
     Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
@@ -158,54 +141,71 @@ u32 XBackward_fcc_Get_dy(XBackward_fcc *InstancePtr) {
     return Data;
 }
 
-void XBackward_fcc_Set_xdimension(XBackward_fcc *InstancePtr, u32 Data) {
+void XBackward_fcc_Set_dw(XBackward_fcc *InstancePtr, u32 Data) {
     Xil_AssertVoid(InstancePtr != NULL);
     Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    XBackward_fcc_WriteReg(InstancePtr->Control_BaseAddress, XBACKWARD_FCC_CONTROL_ADDR_XDIMENSION_DATA, Data);
+    XBackward_fcc_WriteReg(InstancePtr->Control_BaseAddress, XBACKWARD_FCC_CONTROL_ADDR_DW_DATA, Data);
 }
 
-u32 XBackward_fcc_Get_xdimension(XBackward_fcc *InstancePtr) {
+u32 XBackward_fcc_Get_dw(XBackward_fcc *InstancePtr) {
     u32 Data;
 
     Xil_AssertNonvoid(InstancePtr != NULL);
     Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    Data = XBackward_fcc_ReadReg(InstancePtr->Control_BaseAddress, XBACKWARD_FCC_CONTROL_ADDR_XDIMENSION_DATA);
+    Data = XBackward_fcc_ReadReg(InstancePtr->Control_BaseAddress, XBACKWARD_FCC_CONTROL_ADDR_DW_DATA);
     return Data;
 }
 
-void XBackward_fcc_Set_ydimension(XBackward_fcc *InstancePtr, u32 Data) {
+void XBackward_fcc_Set_db(XBackward_fcc *InstancePtr, u32 Data) {
     Xil_AssertVoid(InstancePtr != NULL);
     Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    XBackward_fcc_WriteReg(InstancePtr->Control_BaseAddress, XBACKWARD_FCC_CONTROL_ADDR_YDIMENSION_DATA, Data);
+    XBackward_fcc_WriteReg(InstancePtr->Control_BaseAddress, XBACKWARD_FCC_CONTROL_ADDR_DB_DATA, Data);
 }
 
-u32 XBackward_fcc_Get_ydimension(XBackward_fcc *InstancePtr) {
+u32 XBackward_fcc_Get_db(XBackward_fcc *InstancePtr) {
     u32 Data;
 
     Xil_AssertNonvoid(InstancePtr != NULL);
     Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    Data = XBackward_fcc_ReadReg(InstancePtr->Control_BaseAddress, XBACKWARD_FCC_CONTROL_ADDR_YDIMENSION_DATA);
+    Data = XBackward_fcc_ReadReg(InstancePtr->Control_BaseAddress, XBACKWARD_FCC_CONTROL_ADDR_DB_DATA);
     return Data;
 }
 
-void XBackward_fcc_Set_lr(XBackward_fcc *InstancePtr, u32 Data) {
+void XBackward_fcc_Set_xdim(XBackward_fcc *InstancePtr, u32 Data) {
     Xil_AssertVoid(InstancePtr != NULL);
     Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    XBackward_fcc_WriteReg(InstancePtr->Control_BaseAddress, XBACKWARD_FCC_CONTROL_ADDR_LR_DATA, Data);
+    XBackward_fcc_WriteReg(InstancePtr->Control_BaseAddress, XBACKWARD_FCC_CONTROL_ADDR_XDIM_DATA, Data);
 }
 
-u32 XBackward_fcc_Get_lr(XBackward_fcc *InstancePtr) {
+u32 XBackward_fcc_Get_xdim(XBackward_fcc *InstancePtr) {
     u32 Data;
 
     Xil_AssertNonvoid(InstancePtr != NULL);
     Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    Data = XBackward_fcc_ReadReg(InstancePtr->Control_BaseAddress, XBACKWARD_FCC_CONTROL_ADDR_LR_DATA);
+    Data = XBackward_fcc_ReadReg(InstancePtr->Control_BaseAddress, XBACKWARD_FCC_CONTROL_ADDR_XDIM_DATA);
+    return Data;
+}
+
+void XBackward_fcc_Set_ydim(XBackward_fcc *InstancePtr, u32 Data) {
+    Xil_AssertVoid(InstancePtr != NULL);
+    Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
+
+    XBackward_fcc_WriteReg(InstancePtr->Control_BaseAddress, XBACKWARD_FCC_CONTROL_ADDR_YDIM_DATA, Data);
+}
+
+u32 XBackward_fcc_Get_ydim(XBackward_fcc *InstancePtr) {
+    u32 Data;
+
+    Xil_AssertNonvoid(InstancePtr != NULL);
+    Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
+
+    Data = XBackward_fcc_ReadReg(InstancePtr->Control_BaseAddress, XBACKWARD_FCC_CONTROL_ADDR_YDIM_DATA);
     return Data;
 }
 

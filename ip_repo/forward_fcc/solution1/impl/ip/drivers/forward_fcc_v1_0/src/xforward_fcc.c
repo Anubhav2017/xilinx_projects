@@ -141,37 +141,37 @@ u32 XForward_fcc_Get_b(XForward_fcc *InstancePtr) {
     return Data;
 }
 
-void XForward_fcc_Set_xdimension(XForward_fcc *InstancePtr, u32 Data) {
+void XForward_fcc_Set_xdim(XForward_fcc *InstancePtr, u32 Data) {
     Xil_AssertVoid(InstancePtr != NULL);
     Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    XForward_fcc_WriteReg(InstancePtr->Ctrl_BaseAddress, XFORWARD_FCC_CTRL_ADDR_XDIMENSION_DATA, Data);
+    XForward_fcc_WriteReg(InstancePtr->Ctrl_BaseAddress, XFORWARD_FCC_CTRL_ADDR_XDIM_DATA, Data);
 }
 
-u32 XForward_fcc_Get_xdimension(XForward_fcc *InstancePtr) {
+u32 XForward_fcc_Get_xdim(XForward_fcc *InstancePtr) {
     u32 Data;
 
     Xil_AssertNonvoid(InstancePtr != NULL);
     Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    Data = XForward_fcc_ReadReg(InstancePtr->Ctrl_BaseAddress, XFORWARD_FCC_CTRL_ADDR_XDIMENSION_DATA);
+    Data = XForward_fcc_ReadReg(InstancePtr->Ctrl_BaseAddress, XFORWARD_FCC_CTRL_ADDR_XDIM_DATA);
     return Data;
 }
 
-void XForward_fcc_Set_ydimension(XForward_fcc *InstancePtr, u32 Data) {
+void XForward_fcc_Set_ydim(XForward_fcc *InstancePtr, u32 Data) {
     Xil_AssertVoid(InstancePtr != NULL);
     Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    XForward_fcc_WriteReg(InstancePtr->Ctrl_BaseAddress, XFORWARD_FCC_CTRL_ADDR_YDIMENSION_DATA, Data);
+    XForward_fcc_WriteReg(InstancePtr->Ctrl_BaseAddress, XFORWARD_FCC_CTRL_ADDR_YDIM_DATA, Data);
 }
 
-u32 XForward_fcc_Get_ydimension(XForward_fcc *InstancePtr) {
+u32 XForward_fcc_Get_ydim(XForward_fcc *InstancePtr) {
     u32 Data;
 
     Xil_AssertNonvoid(InstancePtr != NULL);
     Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    Data = XForward_fcc_ReadReg(InstancePtr->Ctrl_BaseAddress, XFORWARD_FCC_CTRL_ADDR_YDIMENSION_DATA);
+    Data = XForward_fcc_ReadReg(InstancePtr->Ctrl_BaseAddress, XFORWARD_FCC_CTRL_ADDR_YDIM_DATA);
     return Data;
 }
 
