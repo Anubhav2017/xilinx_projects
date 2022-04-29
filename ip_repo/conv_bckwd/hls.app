@@ -1,4 +1,4 @@
-<project xmlns="com.autoesl.autopilot.project" top="conv_bckwd" name="conv_bckwd">
+<project xmlns="com.autoesl.autopilot.project" name="conv_bckwd" top="conv_bckwd">
     <includePaths/>
     <libraryPaths/>
     <Simulation>

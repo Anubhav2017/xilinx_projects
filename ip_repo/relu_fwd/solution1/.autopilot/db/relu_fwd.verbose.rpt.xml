@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'relu_fwd'" level="0">
-<item name = "Date">Thu Apr 28 13:47:26 2022
+<item name = "Date">Fri Apr 29 11:49:22 2022
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)</item>
 <item name = "Project">relu_fwd</item>
@@ -35,8 +35,8 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- VITIS_LOOP_18_1">4, ?, 5, 1, 1, 1 ~ ?, yes</column>
-<column name="- VITIS_LOOP_28_2">2, 128, 3, 1, 1, 1 ~ 127, yes</column>
+<column name="- VITIS_LOOP_21_1">2, ?, 3, 1, 1, 1 ~ ?, yes</column>
+<column name="- VITIS_LOOP_31_2">2, 128, 3, 1, 1, 1 ~ 127, yes</column>
 </table>
 </item>
 </section>
@@ -49,14 +49,14 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="DSP">-, -, -, -, -</column>
-<column name="Expression">-, -, 0, 160, -</column>
+<column name="Expression">-, -, 0, 126, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">2, -, 726, 940, -</column>
+<column name="Instance">2, -, 751, 1037, -</column>
 <column name="Memory">1, -, 0, 0, -</column>
 <column name="Multiplexer">-, -, -, 203, -</column>
-<column name="Register">-, -, 529, 64, -</column>
+<column name="Register">-, -, 292, -, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
-<specialColumn name="Utilization (%)">1, 0, 1, 2, 0</specialColumn>
+<specialColumn name="Utilization (%)">1, 0, ~0, 2, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
@@ -64,8 +64,7 @@
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="CTRL_s_axi_U">CTRL_s_axi, 0, 0, 214, 360, 0</column>
-<column name="fcmp_32ns_32ns_1_2_no_dsp_1_U1">fcmp_32ns_32ns_1_2_no_dsp_1, 0, 0, 0, 0, 0</column>
-<column name="gmem_m_axi_U">gmem_m_axi, 2, 0, 512, 580, 0</column>
+<column name="gmem_m_axi_U">gmem_m_axi, 2, 0, 537, 677, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -74,7 +73,7 @@
 </item>
 <item name = "Memory"><table name="" hasTotal="1">
 <keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
-<column name="ybuf_U">ybuf, 1, 0, 0, 0, 100, 32, 1, 3200</column>
+<column name="ybuf_V_U">ybuf_V, 1, 0, 0, 0, 100, 15, 1, 1500</column>
 </table>
 </item>
 <item name = "FIFO"><table name="" hasTotal="1">
@@ -83,21 +82,18 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln18_fu_230_p2">+, 0, 0, 14, 7, 1</column>
-<column name="add_ln28_fu_315_p2">+, 0, 0, 14, 7, 1</column>
-<column name="and_ln20_fu_277_p2">and, 0, 0, 2, 1, 1</column>
-<column name="ap_block_pp0_stage0_00001">and, 0, 0, 2, 1, 1</column>
+<column name="add_ln21_fu_215_p2">+, 0, 0, 14, 7, 1</column>
+<column name="add_ln31_fu_272_p2">+, 0, 0, 14, 7, 1</column>
+<column name="ap_block_pp0_stage0_11001">and, 0, 0, 2, 1, 1</column>
 <column name="ap_block_pp1_stage0_11001">and, 0, 0, 2, 1, 1</column>
 <column name="ap_block_state10_pp0_stage0_iter1">and, 0, 0, 2, 1, 1</column>
-<column name="ap_block_state17_io">and, 0, 0, 2, 1, 1</column>
-<column name="ap_block_state22">and, 0, 0, 2, 1, 1</column>
-<column name="icmp_ln18_1_fu_240_p2">icmp, 0, 0, 17, 31, 31</column>
-<column name="icmp_ln18_fu_201_p2">icmp, 0, 0, 18, 32, 1</column>
-<column name="icmp_ln20_1_fu_268_p2">icmp, 0, 0, 15, 23, 1</column>
-<column name="icmp_ln20_fu_263_p2">icmp, 0, 0, 11, 8, 2</column>
-<column name="icmp_ln28_fu_325_p2">icmp, 0, 0, 17, 31, 31</column>
-<column name="or_ln20_fu_273_p2">or, 0, 0, 2, 1, 1</column>
-<column name="xbuf_1_fu_283_p3">select, 0, 0, 32, 1, 32</column>
+<column name="ap_block_state15_io">and, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state20">and, 0, 0, 2, 1, 1</column>
+<column name="icmp_ln1494_fu_239_p2">icmp, 0, 0, 13, 16, 1</column>
+<column name="icmp_ln21_1_fu_225_p2">icmp, 0, 0, 17, 31, 31</column>
+<column name="icmp_ln21_fu_186_p2">icmp, 0, 0, 18, 32, 1</column>
+<column name="icmp_ln31_fu_282_p2">icmp, 0, 0, 17, 31, 31</column>
+<column name="ybuf_V_d0">select, 0, 0, 15, 1, 15</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
 <column name="ap_enable_pp1">xor, 0, 0, 2, 1, 2</column>
 <column name="ap_enable_reg_pp0_iter1">xor, 0, 0, 2, 2, 1</column>
@@ -108,52 +104,45 @@
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
 <column name="ap_NS_fsm">81, 17, 1, 17</column>
 <column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
-<column name="ap_enable_reg_pp0_iter4">9, 2, 1, 2</column>
+<column name="ap_enable_reg_pp0_iter2">9, 2, 1, 2</column>
 <column name="ap_enable_reg_pp1_iter1">9, 2, 1, 2</column>
 <column name="ap_enable_reg_pp1_iter2">9, 2, 1, 2</column>
-<column name="ap_phi_mux_i_phi_fu_177_p4">9, 2, 7, 14</column>
+<column name="ap_phi_mux_i_phi_fu_167_p4">9, 2, 7, 14</column>
 <column name="gmem_blk_n_AR">9, 2, 1, 2</column>
 <column name="gmem_blk_n_AW">9, 2, 1, 2</column>
 <column name="gmem_blk_n_B">9, 2, 1, 2</column>
 <column name="gmem_blk_n_R">9, 2, 1, 2</column>
 <column name="gmem_blk_n_W">9, 2, 1, 2</column>
-<column name="i_1_reg_185">9, 2, 7, 14</column>
-<column name="i_reg_173">9, 2, 7, 14</column>
-<column name="ybuf_address0">14, 3, 7, 21</column>
+<column name="i_1_reg_175">9, 2, 7, 14</column>
+<column name="i_reg_163">9, 2, 7, 14</column>
+<column name="ybuf_V_address0">14, 3, 7, 21</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="add_ln18_reg_367">7, 0, 7, 0</column>
+<column name="add_ln21_reg_324">7, 0, 7, 0</column>
 <column name="ap_CS_fsm">16, 0, 16, 0</column>
 <column name="ap_enable_reg_pp0_iter0">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter2">1, 0, 1, 0</column>
-<column name="ap_enable_reg_pp0_iter3">1, 0, 1, 0</column>
-<column name="ap_enable_reg_pp0_iter4">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp1_iter0">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp1_iter1">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp1_iter2">1, 0, 1, 0</column>
-<column name="dim_read_reg_339">32, 0, 32, 0</column>
-<column name="gmem_addr_read_reg_376">32, 0, 32, 0</column>
-<column name="gmem_addr_reg_355">64, 0, 64, 0</column>
-<column name="i_1_reg_185">7, 0, 7, 0</column>
-<column name="i_reg_173">7, 0, 7, 0</column>
-<column name="icmp_ln18_1_reg_372">1, 0, 1, 0</column>
-<column name="icmp_ln18_reg_351">1, 0, 1, 0</column>
-<column name="icmp_ln20_1_reg_402">1, 0, 1, 0</column>
-<column name="icmp_ln20_reg_397">1, 0, 1, 0</column>
-<column name="icmp_ln28_reg_423">1, 0, 1, 0</column>
-<column name="icmp_ln28_reg_423_pp1_iter1_reg">1, 0, 1, 0</column>
-<column name="tmp_reg_381">8, 0, 8, 0</column>
-<column name="trunc_ln18_reg_361">31, 0, 31, 0</column>
-<column name="trunc_ln20_reg_386">23, 0, 23, 0</column>
-<column name="xbuf_1_reg_407">32, 0, 32, 0</column>
-<column name="xbuf_reg_391">32, 0, 32, 0</column>
-<column name="y_read_reg_346">64, 0, 64, 0</column>
-<column name="ybuf_load_reg_432">32, 0, 32, 0</column>
-<column name="i_reg_173">64, 32, 7, 0</column>
-<column name="icmp_ln18_1_reg_372">64, 32, 1, 0</column>
+<column name="dim_read_reg_296">32, 0, 32, 0</column>
+<column name="gmem_addr_reg_312">64, 0, 64, 0</column>
+<column name="i_1_reg_175">7, 0, 7, 0</column>
+<column name="i_reg_163">7, 0, 7, 0</column>
+<column name="i_reg_163_pp0_iter1_reg">7, 0, 7, 0</column>
+<column name="icmp_ln21_1_reg_329">1, 0, 1, 0</column>
+<column name="icmp_ln21_1_reg_329_pp0_iter1_reg">1, 0, 1, 0</column>
+<column name="icmp_ln21_reg_308">1, 0, 1, 0</column>
+<column name="icmp_ln31_reg_354">1, 0, 1, 0</column>
+<column name="icmp_ln31_reg_354_pp1_iter1_reg">1, 0, 1, 0</column>
+<column name="trunc_ln17_reg_338">15, 0, 15, 0</column>
+<column name="trunc_ln21_reg_318">31, 0, 31, 0</column>
+<column name="xbuf_V_reg_333">16, 0, 16, 0</column>
+<column name="y_read_reg_303">64, 0, 64, 0</column>
+<column name="ybuf_V_load_reg_363">15, 0, 15, 0</column>
 </table>
 </item>
 </section>

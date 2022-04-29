@@ -5,7 +5,7 @@
 
 `timescale 1 ns / 1 ps
 
-module backward_fcc_mul_31ns_32ns_63_2_1_Multiplier_0(clk, ce, a, b, p);
+module backward_fcc_mul_31ns_32ns_63_2_1_Multiplier_2(clk, ce, a, b, p);
 input clk;
 input ce;
 input [31 - 1 : 0] a;
@@ -44,7 +44,7 @@ output[dout_WIDTH - 1:0] dout;
 
 
 
-backward_fcc_mul_31ns_32ns_63_2_1_Multiplier_0 backward_fcc_mul_31ns_32ns_63_2_1_Multiplier_0_U(
+backward_fcc_mul_31ns_32ns_63_2_1_Multiplier_2 backward_fcc_mul_31ns_32ns_63_2_1_Multiplier_2_U(
     .clk( clk ),
     .ce( ce ),
     .a( din0 ),

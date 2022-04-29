@@ -7,9 +7,10 @@ open_project relu_bckwd
 set_top relu_bckwd
 add_files relu_bckwd/main.cpp
 open_solution "solution1" -flow_target vivado
-set_part {xc7z020clg400-1}
+set_part {xc7z020-clg400-1}
 create_clock -period 10 -name default
-#source "./relu_bckwd/solution1/directives.tcl"
+config_export -format ip_catalog -rtl verilog
+source "./relu_bckwd/solution1/directives.tcl"
 #csim_design
 csynth_design
 #cosim_design

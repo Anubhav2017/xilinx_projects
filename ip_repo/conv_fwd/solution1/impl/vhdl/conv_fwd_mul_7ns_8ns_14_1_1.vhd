@@ -7,14 +7,14 @@ use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
 
-entity conv_fwd_mul_7ns_8ns_14_1_1_Multiplier_6 is
+entity conv_fwd_mul_7ns_8ns_14_1_1_Multiplier_7 is
 port (
     a: in std_logic_vector(7 - 1 downto 0);
     b: in std_logic_vector(8 - 1 downto 0);
     p: out std_logic_vector(14 - 1 downto 0));
 end entity;
 
-architecture behav of conv_fwd_mul_7ns_8ns_14_1_1_Multiplier_6 is
+architecture behav of conv_fwd_mul_7ns_8ns_14_1_1_Multiplier_7 is
     signal a_i : std_logic_vector(7 - 1 downto 0);
     signal b_i : std_logic_vector(8 - 1 downto 0);
 begin
@@ -39,7 +39,7 @@ entity conv_fwd_mul_7ns_8ns_14_1_1 is
 end entity;
 
 architecture arch of conv_fwd_mul_7ns_8ns_14_1_1 is
-    component conv_fwd_mul_7ns_8ns_14_1_1_Multiplier_6 is
+    component conv_fwd_mul_7ns_8ns_14_1_1_Multiplier_7 is
         port (
             a : IN STD_LOGIC_VECTOR;
             b : IN STD_LOGIC_VECTOR;
@@ -49,7 +49,7 @@ architecture arch of conv_fwd_mul_7ns_8ns_14_1_1 is
 
 
 begin
-    conv_fwd_mul_7ns_8ns_14_1_1_Multiplier_6_U :  component conv_fwd_mul_7ns_8ns_14_1_1_Multiplier_6
+    conv_fwd_mul_7ns_8ns_14_1_1_Multiplier_7_U :  component conv_fwd_mul_7ns_8ns_14_1_1_Multiplier_7
     port map (
         a => din0,
         b => din1,

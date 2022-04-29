@@ -29,37 +29,37 @@
 		<link>
 			<name>source</name>
 			<type>2</type>
-			<location>/home/anubhav/workspace/ip_repo/relu_fwd/.apc/.src</location>
+			<location>/home/anubhav/xilinx_projects/ip_repo/relu_fwd/.apc/.src</location>
 		</link>
 		<link>
 			<name>testbench</name>
 			<type>2</type>
-			<location>/home/anubhav/workspace/ip_repo/relu_fwd/.apc/.tb</location>
+			<location>/home/anubhav/xilinx_projects/ip_repo/relu_fwd/.apc/.tb</location>
 		</link>
 		<link>
 			<name>solution1/constraints</name>
 			<type>2</type>
-			<location>/home/anubhav/workspace/ip_repo/relu_fwd/solution1/.tcls</location>
+			<location>/home/anubhav/xilinx_projects/ip_repo/relu_fwd/solution1/.tcls</location>
 		</link>
 		<link>
 			<name>source/main.cpp</name>
 			<type>1</type>
-			<location>/home/anubhav/workspace/ip_repo/relu_fwd/main.cpp</location>
+			<location>/home/anubhav/xilinx_projects/ip_repo/relu_fwd/main.cpp</location>
 		</link>
 		<link>
 			<name>solution1/constraints/.xml.directive</name>
 			<type>1</type>
-			<location>/home/anubhav/workspace/ip_repo/relu_fwd/solution1/solution1.directive</location>
+			<location>/home/anubhav/xilinx_projects/ip_repo/relu_fwd/solution1/solution1.directive</location>
 		</link>
 		<link>
 			<name>solution1/constraints/directives.tcl</name>
 			<type>1</type>
-			<location>/home/anubhav/workspace/ip_repo/relu_fwd/solution1/directives.tcl</location>
+			<location>/home/anubhav/xilinx_projects/ip_repo/relu_fwd/solution1/directives.tcl</location>
 		</link>
 		<link>
 			<name>solution1/constraints/script.tcl</name>
 			<type>1</type>
-			<location>/home/anubhav/workspace/ip_repo/relu_fwd/solution1/script.tcl</location>
+			<location>/home/anubhav/xilinx_projects/ip_repo/relu_fwd/solution1/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>

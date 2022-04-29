@@ -1,8 +1,11 @@
 #define MAX_SIZE 100
 #define MAX_FILTERS 10
 #define MAX_WINDOW_SIZE 5
+#include <ap_fixed.h>
 
-void conv_bckwd(float* x, float* w, float* y, float* dx,float* dw,float* db, float* dy , int F, int C, int H, int W, int FH, int FW){
+typedef ap_fixed<16,9> fixed;
+
+void conv_bckwd(fixed* x, fixed* w, fixed* y, fixed* dx,fixed* dw,fixed* db, fixed* dy , int F, int C, int H, int W, int FH, int FW){
 
 #pragma HLS INTERFACE s_axilite port=return bundle=CTRL
 #pragma HLS INTERFACE m_axi port=x depth=200 offset=slave bundle=gmem
@@ -30,9 +33,9 @@ void conv_bckwd(float* x, float* w, float* y, float* dx,float* dw,float* db, flo
 #pragma HLS INTERFACE s_axilite port=FW bundle=CTRL
 
     //populate cache
-	float xbuf[MAX_FILTERS][MAX_SIZE][MAX_SIZE];
-	float wbuf[MAX_FILTERS][MAX_FILTERS][MAX_WINDOW_SIZE][MAX_WINDOW_SIZE];
-    float dybuf[MAX_FILTERS][MAX_SIZE][MAX_SIZE];
+	fixed xbuf[MAX_FILTERS][MAX_SIZE][MAX_SIZE];
+	fixed wbuf[MAX_FILTERS][MAX_FILTERS][MAX_WINDOW_SIZE][MAX_WINDOW_SIZE];
+    fixed dybuf[MAX_FILTERS][MAX_SIZE][MAX_SIZE];
 
     for(int i=0;i<C;i++){
         for(int j=0;j<H;j++){
@@ -60,7 +63,7 @@ void conv_bckwd(float* x, float* w, float* y, float* dx,float* dw,float* db, flo
     int outW=W-FW+1;
 
     //incoming gradient
-//    float ybuf[F][outH][outW];
+//    fixed ybuf[F][outH][outW];
 
 
     for(int i=0;i<F;i++){
@@ -74,9 +77,9 @@ void conv_bckwd(float* x, float* w, float* y, float* dx,float* dw,float* db, flo
 
     //gradients to be calculated
 
-    float dxbuf[MAX_FILTERS][MAX_SIZE][MAX_SIZE];
-    float dwbuf[MAX_FILTERS][MAX_FILTERS][MAX_WINDOW_SIZE][MAX_WINDOW_SIZE];
-    float dbbuf[MAX_FILTERS];
+    fixed dxbuf[MAX_FILTERS][MAX_SIZE][MAX_SIZE];
+    fixed dwbuf[MAX_FILTERS][MAX_FILTERS][MAX_WINDOW_SIZE][MAX_WINDOW_SIZE];
+    fixed dbbuf[MAX_FILTERS];
 
 
     for(int i=0;i<F;i++){

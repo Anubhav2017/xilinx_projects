@@ -18,8 +18,8 @@
     "x": {
       "index": "0",
       "direction": "inout",
-      "srcType": "float*",
-      "srcSize": "32",
+      "srcType": "ap_fixed<16, 9, AP_TRN, AP_WRAP, 0>*",
+      "srcSize": "16",
       "hwRefs": [
         {
           "type": "interface",
@@ -47,8 +47,8 @@
     "y": {
       "index": "1",
       "direction": "inout",
-      "srcType": "float*",
-      "srcSize": "32",
+      "srcType": "ap_fixed<16, 9, AP_TRN, AP_WRAP, 0>*",
+      "srcSize": "16",
       "hwRefs": [
         {
           "type": "interface",
@@ -89,7 +89,10 @@
   },
   "HlsSolution": {
     "FlowTarget": "vivado",
-    "DirectiveTcl": ["set_directive_top relu_fwd -name relu_fwd"],
+    "DirectiveTcl": [
+      "set_directive_top relu_fwd -name relu_fwd",
+      "set_directive_top relu_fwd -name relu_fwd"
+    ],
     "ProfileOption": "0",
     "ProfileType": "none",
     "KernelName": "relu_fwd"
@@ -119,16 +122,14 @@
     "CSource": ["..\/main.cpp"],
     "Vhdl": [
       "impl\/vhdl\/relu_fwd_CTRL_s_axi.vhd",
-      "impl\/vhdl\/relu_fwd_fcmp_32ns_32ns_1_2_no_dsp_1.vhd",
       "impl\/vhdl\/relu_fwd_gmem_m_axi.vhd",
-      "impl\/vhdl\/relu_fwd_ybuf.vhd",
+      "impl\/vhdl\/relu_fwd_ybuf_V.vhd",
       "impl\/vhdl\/relu_fwd.vhd"
     ],
     "Verilog": [
       "impl\/verilog\/relu_fwd_CTRL_s_axi.v",
-      "impl\/verilog\/relu_fwd_fcmp_32ns_32ns_1_2_no_dsp_1.v",
       "impl\/verilog\/relu_fwd_gmem_m_axi.v",
-      "impl\/verilog\/relu_fwd_ybuf.v",
+      "impl\/verilog\/relu_fwd_ybuf_V.v",
       "impl\/verilog\/relu_fwd.v"
     ],
     "SwDriver": [
@@ -142,19 +143,14 @@
       "impl\/misc\/drivers\/relu_fwd_v1_0\/src\/xrelu_fwd_sinit.c"
     ],
     "IpMisc": ["impl\/misc\/logo.png"],
-    "Subcore": ["impl\/misc\/relu_fwd_ap_fcmp_0_no_dsp_32_ip.tcl"],
     "DesignXml": ".autopilot\/db\/relu_fwd.design.xml",
     "DebugDir": ".debug",
-    "ProtoInst": ["\/home\/anubhav\/workspace\/ip_repo\/relu_fwd\/solution1\/.debug\/relu_fwd.protoinst"]
+    "ProtoInst": ["\/home\/anubhav\/xilinx_projects\/ip_repo\/relu_fwd\/solution1\/.debug\/relu_fwd.protoinst"]
   },
   "SubcoreInfo": {
     "HasXpmMemory": false,
     "HasClockedDsp": false,
-    "Ip": [{
-        "Name": "relu_fwd_ap_fcmp_0_no_dsp_32",
-        "Vlnv": "xilinx.com:ip:floating_point:7.1",
-        "Params": "CONFIG.a_precision_type Single CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 8 CONFIG.c_a_fraction_width 24 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 0 CONFIG.c_mult_usage No_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 1 CONFIG.c_result_fraction_width 0 CONFIG.component_name relu_fwd_ap_fcmp_0_no_dsp_32 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken false CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Compare CONFIG.result_precision_type Custom CONFIG.result_tlast_behv Null"
-      }]
+    "Ip": []
   },
   "Interfaces": {
     "ap_clk": {
@@ -269,8 +265,8 @@
         },
         {
           "constraint_type": "bitwidth",
-          "orig_bitwidth": "32",
-          "final_bitwidth": "32",
+          "orig_bitwidth": "16",
+          "final_bitwidth": "16",
           "argName": "x"
         }
       ]
@@ -853,16 +849,16 @@
         },
         "Loops": [
           {
-            "Name": "VITIS_LOOP_18_1",
+            "Name": "VITIS_LOOP_21_1",
             "TripCount": "",
-            "LatencyMin": "4",
+            "LatencyMin": "2",
             "LatencyMax": "?",
-            "Latency": "4 ~ ?",
+            "Latency": "2 ~ ?",
             "PipelineII": "1",
-            "PipelineDepth": "5"
+            "PipelineDepth": "3"
           },
           {
-            "Name": "VITIS_LOOP_28_2",
+            "Name": "VITIS_LOOP_31_2",
             "TripCount": "",
             "LatencyMin": "2",
             "LatencyMax": "128",
@@ -875,10 +871,10 @@
           "BRAM_18K": "3",
           "AVAIL_BRAM": "280",
           "UTIL_BRAM": "1",
-          "FF": "1255",
+          "FF": "1043",
           "AVAIL_FF": "106400",
-          "UTIL_FF": "1",
-          "LUT": "1367",
+          "UTIL_FF": "~0",
+          "LUT": "1366",
           "AVAIL_LUT": "53200",
           "UTIL_LUT": "2",
           "DSP": "0",
@@ -893,7 +889,7 @@
   "GenerateBdFiles": "0",
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2022-04-28 13:47:27 IST",
+    "Time": "2022-04-29 11:49:23 IST",
     "ToolName": "vivado_hls",
     "ToolVersion": "2020.2"
   }

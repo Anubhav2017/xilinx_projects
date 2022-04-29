@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'forward_fcc'" level="0">
-<item name = "Date">Mon Apr 25 19:29:47 2022
+<item name = "Date">Fri Apr 29 11:31:28 2022
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)</item>
 <item name = "Project">forward_fcc</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 14.512 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 7.300 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -35,11 +35,12 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- Lread_w_VITIS_LOOP_26_1">?, ?, 78, 1, 1, ?, yes</column>
+<column name="- Lread_w">?, ?, 4 ~ ?, -, -, ?, no</column>
+<column name=" + VITIS_LOOP_29_1">2, ?, 3, 1, 1, 1 ~ ?, yes</column>
 <column name="- Loop 2">2, ?, 3, 1, 1, 1 ~ ?, yes</column>
 <column name="- Loop 3">2, ?, 3, 1, 1, 1 ~ ?, yes</column>
-<column name="- LOOP1">?, ?, ?, -, -, ?, no</column>
-<column name=" + LOOP2">?, ?, 11, 4, 1, ?, yes</column>
+<column name="- LOOP1">?, ?, 3 ~ ?, -, -, ?, no</column>
+<column name=" + LOOP2">5, ?, 6, 1, 1, 1 ~ ?, yes</column>
 <column name="- Loop 5">2, ?, 3, 1, 1, 1 ~ ?, yes</column>
 </table>
 </item>

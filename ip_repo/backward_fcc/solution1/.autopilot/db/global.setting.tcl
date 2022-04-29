@@ -8,7 +8,7 @@ set PipelineFlag 0
 set DataflowTaskPipelineFlag 1
 set TrivialPipelineFlag 0
 set noPortSwitchingFlag 0
-set FloatingPointFlag 1
+set FloatingPointFlag 0
 set FftOrFirFlag 0
 set NbRWValue 0
 set intNbAccess 0
@@ -44,7 +44,7 @@ set SCTraceOption all
 set TargetInfo xc7z020:-clg400:-1
 set SourceFiles {sc {} c ../backprop.cpp}
 set SourceFlags {sc {} c {{}}}
-set DirectiveFile /home/anubhav/workspace/ip_repo/backward_fcc/solution1/solution1.directive
+set DirectiveFile /home/anubhav/xilinx_projects/ip_repo/backward_fcc/solution1/solution1.directive
 set TBFiles {verilog ../test.cpp bc ../test.cpp vhdl ../test.cpp sc ../test.cpp cas ../test.cpp c {}}
 set SpecLanguage C
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}

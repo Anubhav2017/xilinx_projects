@@ -1,4 +1,4 @@
-INFO-FLOW: Workspace /home/anubhav/workspace/ip_repo/conv_fwd/solution1 opened at Wed Apr 27 11:32:54 IST 2022
+INFO-FLOW: Workspace /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1 opened at Fri Apr 29 11:44:26 IST 2022
 Execute     ap_set_clock -name default -period 10 -default=false 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 Execute     import_lib /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynq/zynq 
@@ -17,8 +17,10 @@ Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/int
 Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
 Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
 Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command       ap_source done; 0.13 sec.
 Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
 Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.19 sec.
 Execute     import_lib /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynq/zynq_fpv6 
 Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
 Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
@@ -37,6 +39,7 @@ Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/
 Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
 Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
 Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.15 sec.
 Execute     import_lib /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynq/zynq 
 Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
 Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
@@ -55,13 +58,14 @@ Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/
 Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
 Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
 Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.12 sec.
 Execute     set_part xc7z020-clg400-1 
 INFO-FLOW: DBG:set_part: XILINX_VIVADO=/tools/Xilinx/Vivado/2020.2
 INFO-FLOW: DBG:set_part: RDI_DATADIR=/tools/Xilinx/Vivado/2020.2/data:/tools/Xilinx/Vitis_HLS/2020.2/data
 Execute       ap_part_info -name xc7z020-clg400-1 -data single -quiet 
 DBG:HLSDevice: Trying to load device library: /tools/Xilinx/Vitis_HLS/2020.2/lib/lnx64.o/librdi_hlsvwrap.so
 DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /tools/Xilinx/Vivado/2020.2/data/parts/arch.xml
-Command       ap_part_info done; 0.74 sec.
+Command       ap_part_info done; 1.64 sec.
 Execute       ap_part_info -name xc7z020-clg400-1 -data info 
 Execute       add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
 Execute         get_default_platform 
@@ -92,12 +96,15 @@ Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx
 Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
 Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
 Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command           ap_source done; 0.13 sec.
 Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
 Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command         ap_source done; 0.19 sec.
+Command       add_library done; 0.27 sec.
 INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
 Execute       ap_part_info -name xc7z020-clg400-1 -data info 
 Execute       config_compile -quiet -complex-mul-dsp=0 
-Command     set_part done; 0.85 sec.
+Command     set_part done; 1.96 sec.
 Execute     ap_part_info -data single -name xc7z020-clg400-1 
 Execute     ap_part_info -name xc7z020-clg400-1 -data resources 
 Execute     config_chip_info -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP 220} {BRAM 280} {URAM 0} 
@@ -114,13 +121,19 @@ Execute     get_config_rtl -register_reset_num
 Execute     send_msg_by_id INFO @200-1464@%s config_interface -m_axi_addr64=0 
 INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=0
 Execute     config_interface -m_axi_addr64=0 
-Command   open_solution done; 1.08 sec.
-Execute   set_part xc7z020clg400-1 
-INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -format=ip_catalog 
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+Execute     config_export -format=ip_catalog 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -rtl=verilog 
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 2.5 sec.
+Execute   set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
 INFO-FLOW: DBG:set_part: XILINX_VIVADO=/tools/Xilinx/Vivado/2020.2
 INFO-FLOW: DBG:set_part: RDI_DATADIR=/tools/Xilinx/Vivado/2020.2/data:/tools/Xilinx/Vitis_HLS/2020.2/data
-Execute     ap_part_info -name xc7z020clg400-1 -data single -quiet 
-Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     ap_part_info -name xc7z020-clg400-1 -data single -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
 Execute     add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
 Execute       get_default_platform 
 Execute       open_platform DefaultPlatform 
@@ -150,15 +163,24 @@ Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/i
 Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
 Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
 Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.13 sec.
 Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
 Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.19 sec.
+Command     add_library done; 0.25 sec.
 Execute     ap_part_info -name xc7z020-clg400-1 -data info 
 Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.29 sec.
 Execute   create_clock -period 10 -name default 
 INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
 Execute   config_interface -m_axi_addr64=0 
 INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 
+Execute   config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
 Execute   source ./conv_fwd/solution1/directives.tcl 
+Execute     set_directive_top -name conv_fwd conv_fwd 
+INFO: [HLS 200-1510] Running: set_directive_top -name conv_fwd conv_fwd 
+INFO-FLOW: Setting directive 'TOP' name=conv_fwd 
 Execute   csynth_design 
 INFO: [HLS 200-1510] Running: csynth_design 
 Execute     get_config_compile -effort 
@@ -171,7 +193,7 @@ Execute     get_config_compile -skip_syncheck
 Execute     get_config_compile -skip_transform 
 Execute     get_config_compile -keep_printf 
 Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
-INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 155.766 MB.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 155.934 MB.
 INFO: [HLS 200-10] Analyzing design file 'conv_fwd/main.cpp' ... 
 INFO-FLOW: Compiling one TU...
 Execute       get_config_compile -pragma_strict_mode 
@@ -179,59 +201,70 @@ INFO-FLOW: Handling conv_fwd/main.cpp as C++
 Execute       ap_part_info -name xc7z020-clg400-1 -data info 
 INFO-FLOW: Running: GCC PP 39
 INFO-FLOW: Source preprocessing
-Execute       ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang conv_fwd/main.cpp -foptimization-record-file=/home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/clang.main.cpp.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vitis_HLS/2020.2/tps/lnx64/gcc-6.2.0 -fhls -fno-exceptions -E -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -fno-threadsafe-statics -fno-use-cxa-atexit -I /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/39 -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot -I /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/main.pp.0.cpp > /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/clang.main.cpp.out.log 2> /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/clang.main.cpp.err.log 
-INFO-FLOW: Done: GCC PP 39 time: 0 seconds per iteration
+Execute       ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang conv_fwd/main.cpp -foptimization-record-file=/home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/clang.main.cpp.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vitis_HLS/2020.2/tps/lnx64/gcc-6.2.0 -fhls -fno-exceptions -E -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -fno-threadsafe-statics -fno-use-cxa-atexit -I /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/39 -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot -I /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/main.pp.0.cpp > /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/clang.main.cpp.out.log 2> /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/clang.main.cpp.err.log 
+Command       ap_eval done; 0.12 sec.
+INFO-FLOW: Done: GCC PP 39 time: 0.1 seconds per iteration
 Execute       set_directive_top conv_fwd -name=conv_fwd 
+INFO-FLOW: Setting directive 'TOP' name=conv_fwd 
+INFO-FLOW: Setting directive 'TOP' name=conv_fwd 
 INFO-FLOW: Setting directive 'TOP' name=conv_fwd 
 INFO-FLOW: Setting directive 'TOP' name=conv_fwd 
 Execute       source /tools/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
 Execute       source /tools/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
 Execute         source /tools/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/try/try.tcl 
 INFO-FLOW: Setting directive 'TOP' name=conv_fwd 
+INFO-FLOW: Setting directive 'TOP' name=conv_fwd 
 Execute       list_core -type functional_unit 
-Execute       clang_tidy xilinx-systemc-detector /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/main.pp.0.cpp std=gnu++14 -target fpga  -directive=/home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/.systemc_flag 
-INFO-FLOW: exec /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=/home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/.systemc_flag -fix-errors /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/main.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Execute       clang_tidy xilinx-systemc-detector /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/main.pp.0.cpp std=gnu++14 -target fpga  -directive=/home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=/home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/.systemc_flag -fix-errors /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/main.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 0.79 sec.
 INFO-FLOW: Running: clang-tidy CDT preprocess 39
-Execute       clang_tidy xilinx-directive2pragma /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/main.pp.0.cpp std=gnu++14 -target fpga  -directive=/home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/all.directive.json 
-INFO-FLOW: exec /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=/home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/all.directive.json -fix-errors /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/main.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
-Execute       clang_tidy xilinx-constantarray-param,xilinx-remove-assert /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/main.pp.0.cpp std=gnu++14 -target fpga  
-INFO-FLOW: exec /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-constantarray-param,xilinx-remove-assert -fix-errors /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/main.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
-INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 0 seconds per iteration
+Execute       clang_tidy xilinx-directive2pragma /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/main.pp.0.cpp std=gnu++14 -target fpga  -directive=/home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=/home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/all.directive.json -fix-errors /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/main.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 1 sec.
+Execute       clang_tidy xilinx-constantarray-param,xilinx-remove-assert /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/main.pp.0.cpp std=gnu++14 -target fpga  
+INFO-FLOW: exec /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-constantarray-param,xilinx-remove-assert -fix-errors /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/main.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 0.64 sec.
+INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 1.6 seconds per iteration
 INFO-FLOW: Calling xilinx-label-all-loops ... 
-Execute       clang_tidy -errorcheck xilinx-label-all-loops,xilinx-top-parameters,xilinx-array-stream-check,xilinx-warn-mayneed-no-ctor-attribute /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/main.pp.0.cpp std=gnu++14 -target fpga  
-Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=/home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/clang-tidy.main.pp.0.cpp.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-top-parameters,xilinx-array-stream-check,xilinx-warn-mayneed-no-ctor-attribute -fix-errors /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/main.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/clang-tidy.main.pp.0.cpp.out.log 2> /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/clang-tidy.main.pp.0.cpp.err.log 
+Execute       clang_tidy -errorcheck xilinx-label-all-loops,xilinx-top-parameters,xilinx-array-stream-check,xilinx-warn-mayneed-no-ctor-attribute /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/main.pp.0.cpp std=gnu++14 -target fpga  
+Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=/home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/clang-tidy.main.pp.0.cpp.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-top-parameters,xilinx-array-stream-check,xilinx-warn-mayneed-no-ctor-attribute -fix-errors /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/main.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/clang-tidy.main.pp.0.cpp.out.log 2> /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/clang-tidy.main.pp.0.cpp.err.log 
+Command         ap_eval done; 0.9 sec.
 Execute         source /tools/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
 Execute           source /tools/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl 
+Command       clang_tidy done; 0.97 sec.
 Execute       get_config_dataflow -strict_mode 
-Execute       ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/xilinx-dataflow-lawyer.main.pp.0.cpp.diag.yml /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/main.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/xilinx-dataflow-lawyer.main.pp.0.cpp.out.log 2> /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/xilinx-dataflow-lawyer.main.pp.0.cpp.err.log 
+Execute       ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/xilinx-dataflow-lawyer.main.pp.0.cpp.diag.yml /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/main.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/xilinx-dataflow-lawyer.main.pp.0.cpp.out.log 2> /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/xilinx-dataflow-lawyer.main.pp.0.cpp.err.log 
+Command       ap_eval done; 0.45 sec.
 Execute       ap_part_info -name xc7z020-clg400-1 -data info 
 INFO-FLOW: compiling source code to llvm bc
-Execute       ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/clang.main.pp.0.cpp.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/main.pp.0.cpp -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot -I /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/main.bc > /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/clang.main.pp.0.cpp.out.log 2> /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/clang.main.pp.0.cpp.err.log 
-INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.32 seconds. CPU system time: 0.14 seconds. Elapsed time: 0.23 seconds; current allocated memory: 156.986 MB.
+Execute       ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/clang.main.pp.0.cpp.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/main.pp.0.cpp -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot -I /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/main.bc > /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/clang.main.pp.0.cpp.out.log 2> /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/clang.main.pp.0.cpp.err.log 
+Command       ap_eval done; 0.46 sec.
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 4.87 seconds. CPU system time: 0.31 seconds. Elapsed time: 4.47 seconds; current allocated memory: 157.339 MB.
 INFO-FLOW: Linking Debug ...
 INFO-FLOW: Linking dut bc code.
-Execute       run_link_or_opt -out /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/a.g.ld.0.bc -args  "/home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/main.g.bc"  
-Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/llvm-link /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/main.g.bc -o /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/a.g.ld.0.bc > /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/llvm-link.a.g.ld.0.bc.out.log 2> /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/llvm-link.a.g.ld.0.bc.err.log 
+Execute       run_link_or_opt -out /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/a.g.ld.0.bc -args  "/home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/main.g.bc"  
+Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/llvm-link /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/main.g.bc -o /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/a.g.ld.0.bc > /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/llvm-link.a.g.ld.0.bc.out.log 2> /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/llvm-link.a.g.ld.0.bc.err.log 
 INFO-FLOW: 
-Execute       run_link_or_opt -opt -out /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/a.g.ld.1.lower.bc -args /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics 
-Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/opt.a.g.ld.1.lower.bc.diag.yml /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics -o /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/a.g.ld.1.lower.bc > /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/opt.a.g.ld.1.lower.bc.out.log 2> /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/opt.a.g.ld.1.lower.bc.err.log 
+Execute       run_link_or_opt -opt -out /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/a.g.ld.1.lower.bc -args /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics 
+Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/opt.a.g.ld.1.lower.bc.diag.yml /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics -o /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/a.g.ld.1.lower.bc > /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/opt.a.g.ld.1.lower.bc.out.log 2> /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/opt.a.g.ld.1.lower.bc.err.log 
 INFO-FLOW: 
 INFO-FLOW: Linking math bc lib
-Execute       run_link_or_opt -out /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/a.g.ld.2.m1.bc -args /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed /tools/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libhlsm_39.bc /tools/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libhlsmc++_39.bc 
-Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/llvm-link /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed /tools/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libhlsm_39.bc /tools/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libhlsmc++_39.bc -o /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/a.g.ld.2.m1.bc > /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/llvm-link.a.g.ld.2.m1.bc.out.log 2> /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/llvm-link.a.g.ld.2.m1.bc.err.log 
-Command         ap_eval done; 1.86 sec.
+Execute       run_link_or_opt -out /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/a.g.ld.2.m1.bc -args /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed /tools/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libhlsm_39.bc /tools/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libhlsmc++_39.bc 
+Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/llvm-link /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed /tools/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libhlsm_39.bc /tools/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libhlsmc++_39.bc -o /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/a.g.ld.2.m1.bc > /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/llvm-link.a.g.ld.2.m1.bc.out.log 2> /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/llvm-link.a.g.ld.2.m1.bc.err.log 
+Command         ap_eval done; 2.52 sec.
 INFO-FLOW: 
-Command       run_link_or_opt done; 1.86 sec.
-Execute       run_link_or_opt -opt -out /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/a.g.ld.3.fpc.bc -args /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=conv_fwd -reflow-float-conversion 
-Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/opt.a.g.ld.3.fpc.bc.diag.yml /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=conv_fwd -reflow-float-conversion -o /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/a.g.ld.3.fpc.bc > /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/opt.a.g.ld.3.fpc.bc.out.log 2> /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/opt.a.g.ld.3.fpc.bc.err.log 
-Command         ap_eval done; 0.66 sec.
+Command       run_link_or_opt done; 2.52 sec.
+Execute       run_link_or_opt -opt -out /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/a.g.ld.3.fpc.bc -args /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=conv_fwd -reflow-float-conversion 
+Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/opt.a.g.ld.3.fpc.bc.diag.yml /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=conv_fwd -reflow-float-conversion -o /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/a.g.ld.3.fpc.bc > /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/opt.a.g.ld.3.fpc.bc.out.log 2> /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/opt.a.g.ld.3.fpc.bc.err.log 
+Command         ap_eval done; 0.92 sec.
 INFO-FLOW: 
-Command       run_link_or_opt done; 0.66 sec.
-Execute       run_link_or_opt -out /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/a.g.ld.4.m2.bc -args /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/a.g.ld.3.fpc.bc -only-needed /tools/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libfloatconversion_39.bc 
-Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/llvm-link /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/a.g.ld.3.fpc.bc -only-needed /tools/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libfloatconversion_39.bc -o /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/a.g.ld.4.m2.bc > /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/llvm-link.a.g.ld.4.m2.bc.out.log 2> /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/llvm-link.a.g.ld.4.m2.bc.err.log 
+Command       run_link_or_opt done; 0.92 sec.
+Execute       run_link_or_opt -out /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/a.g.ld.4.m2.bc -args /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/a.g.ld.3.fpc.bc -only-needed /tools/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libfloatconversion_39.bc 
+Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/llvm-link /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/a.g.ld.3.fpc.bc -only-needed /tools/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libfloatconversion_39.bc -o /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/a.g.ld.4.m2.bc > /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/llvm-link.a.g.ld.4.m2.bc.out.log 2> /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/llvm-link.a.g.ld.4.m2.bc.err.log 
 INFO-FLOW: 
-Execute       run_link_or_opt -opt -out /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/a.g.ld.5.gdce.bc -args /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=conv_fwd 
-Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/opt.a.g.ld.5.gdce.bc.diag.yml /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=conv_fwd -o /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/a.g.ld.5.gdce.bc > /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/opt.a.g.ld.5.gdce.bc.out.log 2> /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/opt.a.g.ld.5.gdce.bc.err.log 
+Execute       run_link_or_opt -opt -out /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/a.g.ld.5.gdce.bc -args /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=conv_fwd 
+Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/opt.a.g.ld.5.gdce.bc.diag.yml /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=conv_fwd -o /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/a.g.ld.5.gdce.bc > /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/opt.a.g.ld.5.gdce.bc.out.log 2> /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/opt.a.g.ld.5.gdce.bc.err.log 
 INFO-FLOW: 
 Execute       get_solution -flow_target 
 Execute       get_config_export -xo 
@@ -270,70 +303,73 @@ Execute       send_msg_by_id INFO @200-777@%s Vivado
 INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
 Execute       is_m_axi_addr64 
 INFO-FLOW: Doing LTO.
-Execute       ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/clang.a.g.ld.0.bc.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fhls -mllvm -hls-top-function-name=conv_fwd -mllvm -hls-db-dir -mllvm /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db -emit-llvm -c -target fpga64-xilinx-none -mllvm -xcl-xmlinfo=/home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/kernel.internal.xml -mllvm -top-io-mapping-info=/home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/top-io-fe.xml -mllvm -hls-bitcode-version=3.1 -mllvm -reflow-enable-slave-interface-default-setting=true -mllvm -gen-kernel-xml=false -mllvm -default-maxi-offset=off -mllvm -maxi-latency=0 -mllvm -hls-maxi-data-size-in-bits=8 -mllvm -hls-maxi-max-data-size-in-bits=1024 -mllvm -hls-max-widen-size-in-bits=0 -mllvm -xcl-kernel-max-mem-ports=0 -mllvm -maxi-read-trans=16 -mllvm -maxi-write-trans=16 -mllvm -maxi-read-burst-len=16 -mllvm -maxi-write-burst-len=16 -mllvm -reflow-enable-saxi-64bits=0 -mllvm -assume-maxi-align=0 -mllvm -no-unaligned-maxi-accesses -mllvm -reflow-pipeline-style-llvm-setting=0 -mllvm -disable-inlined-alloca-merging=true -mllvm -reflow-enable-maxi-addr-32bits -x ir /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/a.g.ld.5.gdce.bc -o /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/a.g.lto.bc > /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/clang.a.g.ld.0.bc.out.log 2> /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/clang.a.g.ld.0.bc.err.log 
-WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'conv_fwd(float volatile*, float volatile*, float volatile*, float volatile*, int, int, int, int, int, int)' (conv_fwd/main.cpp:7:0)
-WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'conv_fwd(float volatile*, float volatile*, float volatile*, float volatile*, int, int, int, int, int, int)' (conv_fwd/main.cpp:7:0)
-WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'conv_fwd(float volatile*, float volatile*, float volatile*, float volatile*, int, int, int, int, int, int)' (conv_fwd/main.cpp:7:0)
-WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'conv_fwd(float volatile*, float volatile*, float volatile*, float volatile*, int, int, int, int, int, int)' (conv_fwd/main.cpp:7:0)
-INFO-FLOW: DBG:CMD: copy_raw_kernel_xml ap_link_39: kernel.xml not generated: /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/kernel.internal.xml
-INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.04 seconds. CPU system time: 0.2 seconds. Elapsed time: 2.81 seconds; current allocated memory: 158.926 MB.
-INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 158.928 MB.
+Execute       ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/clang.a.g.ld.0.bc.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fhls -mllvm -hls-top-function-name=conv_fwd -mllvm -hls-db-dir -mllvm /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db -emit-llvm -c -target fpga64-xilinx-none -mllvm -xcl-xmlinfo=/home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/kernel.internal.xml -mllvm -top-io-mapping-info=/home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/top-io-fe.xml -mllvm -hls-bitcode-version=3.1 -mllvm -reflow-enable-slave-interface-default-setting=true -mllvm -gen-kernel-xml=false -mllvm -default-maxi-offset=off -mllvm -maxi-latency=0 -mllvm -hls-maxi-data-size-in-bits=8 -mllvm -hls-maxi-max-data-size-in-bits=1024 -mllvm -hls-max-widen-size-in-bits=0 -mllvm -xcl-kernel-max-mem-ports=0 -mllvm -maxi-read-trans=16 -mllvm -maxi-write-trans=16 -mllvm -maxi-read-burst-len=16 -mllvm -maxi-write-burst-len=16 -mllvm -reflow-enable-saxi-64bits=0 -mllvm -assume-maxi-align=0 -mllvm -no-unaligned-maxi-accesses -mllvm -reflow-pipeline-style-llvm-setting=0 -mllvm -disable-inlined-alloca-merging=true -mllvm -reflow-enable-maxi-addr-32bits -x ir /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/a.g.ld.5.gdce.bc -o /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/a.g.lto.bc > /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/clang.a.g.ld.0.bc.out.log 2> /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/clang.a.g.ld.0.bc.err.log 
+Command       ap_eval done; 0.16 sec.
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'conv_fwd(ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, int, int, int, int)' (conv_fwd/main.cpp:9:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'conv_fwd(ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, int, int, int, int)' (conv_fwd/main.cpp:9:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'conv_fwd(ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, int, int, int, int)' (conv_fwd/main.cpp:9:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'conv_fwd(ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, int, int, int, int)' (conv_fwd/main.cpp:9:0)
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 16 in loop 'VITIS_LOOP_38_3'(conv_fwd/main.cpp:38:30) has been inferred on port 'gmem' (conv_fwd/main.cpp:38:30)
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 16 in loop 'VITIS_LOOP_49_7'(conv_fwd/main.cpp:49:34) has been inferred on port 'gmem' (conv_fwd/main.cpp:49:34)
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 16 in loop 'VITIS_LOOP_56_8'(conv_fwd/main.cpp:56:22) has been inferred on port 'gmem' (conv_fwd/main.cpp:56:22)
+INFO: [HLS 214-115] Multiple burst writes of variable length and bit width 16 in loop 'VITIS_LOOP_78_17'(conv_fwd/main.cpp:78:31) has been inferred on port 'gmem' (conv_fwd/main.cpp:78:31)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i16.s_struct.ap_fixeds' into 'conv_fwd(ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, int, int, int, int)' (conv_fwd/main.cpp:79:40)
+INFO-FLOW: DBG:CMD: copy_raw_kernel_xml ap_link_39: kernel.xml not generated: /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/kernel.internal.xml
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.8 seconds. CPU system time: 0.21 seconds. Elapsed time: 4.02 seconds; current allocated memory: 159.408 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 159.409 MB.
 Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
 Execute         cleanup_all_models 
 INFO: [HLS 200-10] Starting code transformations ...
 INFO-FLOW: Running Standard Transforms...
-Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top conv_fwd -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/a.g.0.bc -o /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
-INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 160.720 MB.
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top conv_fwd -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/a.g.0.bc -o /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.08 seconds; current allocated memory: 164.235 MB.
 INFO: [HLS 200-10] Checking synthesizability ...
 INFO-FLOW: Checking Synthesizability 1/2..
-Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -array-seg-normalize -instcombine -dce -data-pack -instcombine -dce -inst-simplify -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/a.g.1.bc -o /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/a.g.2.prechk.bc -f 
+Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -array-seg-normalize -instcombine -dce -data-pack -instcombine -dce -inst-simplify -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/a.g.1.bc -o /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/a.g.2.prechk.bc -f 
 INFO-FLOW: Checking Synthesizability 2/2..
-Execute         transform -syn-check /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/a.g.2.prechk.bc -o /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
-INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 159.767 MB.
+Execute         transform -syn-check /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/a.g.2.prechk.bc -o /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.11 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 168.181 MB.
 INFO-FLOW: Compiler optimizing ...
-INFO-FLOW: Share syncheck's 1.bc for syn flow: copy /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/a.g.1.bc to /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/a.o.1.bc
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/a.g.1.bc to /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/a.o.1.bc
 INFO-FLOW: Presyn 1...
-Execute         transform -hls -tmp /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db -interface-port-rename -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -function-uniquify -directive-preproc -mem2reg -dse -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -accesses-merge -function-inline -complex-op-raise -inst-simplify -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin2 -bitwidthmin2 -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -hls-dead-arg-elim -deadargelim -directive-preproc -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/a.o.1.bc -o /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/a.o.1.tmp.bc -f 
-INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_36_3' (conv_fwd/main.cpp:36) in function 'conv_fwd' automatically.
-INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_47_7' (conv_fwd/main.cpp:47) in function 'conv_fwd' automatically.
-INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_54_8' (conv_fwd/main.cpp:54) in function 'conv_fwd' automatically.
-INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_64_14' (conv_fwd/main.cpp:64) in function 'conv_fwd' automatically.
-INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_76_17' (conv_fwd/main.cpp:76) in function 'conv_fwd' automatically.
-Command         transform done; 0.18 sec.
+Execute         transform -hls -tmp /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db -interface-port-rename -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -function-uniquify -directive-preproc -mem2reg -dse -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -accesses-merge -function-inline -complex-op-raise -inst-simplify -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin2 -bitwidthmin2 -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -hls-dead-arg-elim -deadargelim -directive-preproc -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/a.o.1.bc -o /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/a.o.1.tmp.bc -f 
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_38_3' (conv_fwd/main.cpp:38) in function 'conv_fwd' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_49_7' (conv_fwd/main.cpp:49) in function 'conv_fwd' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_56_8' (conv_fwd/main.cpp:56) in function 'conv_fwd' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_66_14' (conv_fwd/main.cpp:66) in function 'conv_fwd' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_78_17' (conv_fwd/main.cpp:78) in function 'conv_fwd' automatically.
+Command         transform done; 0.3 sec.
 INFO-FLOW: Presyn 2...
-Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin2 -bitwidthmin2 -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -barrier -norm-name /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/a.o.1.tmp.bc -o /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
-INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.25 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.26 seconds; current allocated memory: 180.936 MB.
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin2 -bitwidthmin2 -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -barrier -norm-name /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/a.o.1.tmp.bc -o /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
+Command         transform done; 0.15 sec.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.44 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.45 seconds; current allocated memory: 194.639 MB.
 Execute         get_config_compile -enable_loop_extract 
 Execute         get_config_compile -disable_auto_rewind 
 Execute         get_config_compile -enable_auto_rewind 
 INFO-FLOW: Building ssdm...
-Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -aggr-aa -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin2 -bitwidthmin2 -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -float-op-raise -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -dyn-mem-reuse -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -bitwidth -dump-loop-dep-to-ir -check-all-ssdm -cdfg-build /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/a.o.2.bc -o /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
-INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_35_2' (conv_fwd/main.cpp:35:34) in function 'conv_fwd'.
-INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_34_1' (conv_fwd/main.cpp:34:30) in function 'conv_fwd'.
-INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_46_6' (conv_fwd/main.cpp:46:38) in function 'conv_fwd'.
-INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_45_5' (conv_fwd/main.cpp:45:34) in function 'conv_fwd'.
-INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_44_4' (conv_fwd/main.cpp:44:30) in function 'conv_fwd'.
-WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_63_13' (conv_fwd/main.cpp:63:47) in function 'conv_fwd' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
-WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_61_12' (conv_fwd/main.cpp:61:43) in function 'conv_fwd' the outer loop is not a perfect loop.
-INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_60_11' (conv_fwd/main.cpp:60:39) in function 'conv_fwd'.
-INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_59_10' (conv_fwd/main.cpp:59:35) in function 'conv_fwd'.
-INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_58_9' (conv_fwd/main.cpp:58:30) in function 'conv_fwd'.
-INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_75_16' (conv_fwd/main.cpp:75:35) in function 'conv_fwd'.
-INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_74_15' (conv_fwd/main.cpp:74:31) in function 'conv_fwd'.
-INFO: [HLS 200-444] Inferring multiple bus burst read of variable length on port 'gmem' (conv_fwd/main.cpp:37:33). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
-INFO: [HLS 200-444] Inferring multiple bus burst read of variable length on port 'gmem' (conv_fwd/main.cpp:48:40). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
-INFO: [HLS 200-444] Inferring multiple bus burst read of variable length on port 'gmem' (conv_fwd/main.cpp:55:19). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
-INFO: [HLS 200-444] Inferring multiple bus burst write of variable length on port 'gmem' (conv_fwd/main.cpp:77:40). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
-INFO: [HLS 200-472] Inferring partial write operation for 'xbuf' (conv_fwd/main.cpp:37:31)
-INFO: [HLS 200-472] Inferring partial write operation for 'wbuf' (conv_fwd/main.cpp:48:38)
-INFO: [HLS 200-472] Inferring partial write operation for 'bbuf' (conv_fwd/main.cpp:55:17)
-INFO: [HLS 200-472] Inferring partial write operation for 'ybuf' (conv_fwd/main.cpp:65:43)
-INFO: [HLS 200-472] Inferring partial write operation for 'ybuf' (conv_fwd/main.cpp:62:34)
-Command         transform done; 0.28 sec.
-INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.27 seconds. CPU system time: 0 seconds. Elapsed time: 0.28 seconds; current allocated memory: 176.418 MB.
+Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -aggr-aa -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin2 -bitwidthmin2 -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -float-op-raise -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -dyn-mem-reuse -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -bitwidth -dump-loop-dep-to-ir -check-all-ssdm -cdfg-build /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/a.o.2.bc -o /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_37_2' (conv_fwd/main.cpp:37:34) in function 'conv_fwd' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_36_1' (conv_fwd/main.cpp:36:30) in function 'conv_fwd'.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_48_6' (conv_fwd/main.cpp:48:38) in function 'conv_fwd' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_47_5' (conv_fwd/main.cpp:47:34) in function 'conv_fwd'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_46_4' (conv_fwd/main.cpp:46:30) in function 'conv_fwd'.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_65_13' (conv_fwd/main.cpp:65:47) in function 'conv_fwd' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_63_12' (conv_fwd/main.cpp:63:43) in function 'conv_fwd' the outer loop is not a perfect loop.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_62_11' (conv_fwd/main.cpp:62:39) in function 'conv_fwd'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_61_10' (conv_fwd/main.cpp:61:35) in function 'conv_fwd'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_60_9' (conv_fwd/main.cpp:60:30) in function 'conv_fwd'.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_77_16' (conv_fwd/main.cpp:77:35) in function 'conv_fwd' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_76_15' (conv_fwd/main.cpp:76:31) in function 'conv_fwd'.
+INFO: [HLS 200-472] Inferring partial write operation for 'xbuf.V' (conv_fwd/main.cpp:39:31)
+INFO: [HLS 200-472] Inferring partial write operation for 'wbuf.V' (conv_fwd/main.cpp:50:38)
+INFO: [HLS 200-472] Inferring partial write operation for 'bbuf.V' (conv_fwd/main.cpp:57:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'ybuf.V' 
+INFO: [HLS 200-472] Inferring partial write operation for 'ybuf.V' (conv_fwd/main.cpp:64:34)
+Command         transform done; 0.38 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.37 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.38 seconds; current allocated memory: 191.911 MB.
 INFO-FLOW: Finish building internal data model.
-Command       opt_and_import_c done; 0.63 sec.
-Command     elaborate done; 3.68 sec.
+Command       opt_and_import_c done; 1.03 sec.
+Command     elaborate done; 9.53 sec.
 Execute     autosyn -from_csynth_design=1 
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO-FLOW: Synthesizing C/C++ design ...
@@ -359,36 +395,29 @@ INFO: [HLS 200-10] -------------------------------------------------------------
 Execute       set_default_model conv_fwd 
 Execute       schedule -model conv_fwd 
 INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [HLS 200-486] Changing DSP48 latency (root=add_ln37) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP48 latency (root=add_ln62) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln64) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP48 latency (root=add_ln77) to 3 in order to utilize available DSP registers.
-INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_34_1_VITIS_LOOP_35_2_VITIS_LOOP_36_3'.
-INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 110, loop 'VITIS_LOOP_34_1_VITIS_LOOP_35_2_VITIS_LOOP_36_3'
-INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_44_4_VITIS_LOOP_46_6_VITIS_LOOP_47_7'.
-INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 141, loop 'VITIS_LOOP_44_4_VITIS_LOOP_46_6_VITIS_LOOP_47_7'
-INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_54_8'.
-INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_54_8'
-INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_64_14'.
-WARNING: [HLS 200-881] Unable to enforce a carried constraint (II = 1) between 'fadd' operation ('add', conv_fwd/main.cpp:65) and 'fadd' operation ('add', conv_fwd/main.cpp:65).
-WARNING: [HLS 200-881] Unable to enforce a carried constraint (II = 2) between 'fadd' operation ('add', conv_fwd/main.cpp:65) and 'fadd' operation ('add', conv_fwd/main.cpp:65).
-WARNING: [HLS 200-881] Unable to enforce a carried constraint (II = 3) between 'fadd' operation ('add', conv_fwd/main.cpp:65) and 'fadd' operation ('add', conv_fwd/main.cpp:65).
-INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 4, Depth = 11, loop 'VITIS_LOOP_64_14'
-INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_74_15_VITIS_LOOP_75_16_VITIS_LOOP_76_17'.
-INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 107, loop 'VITIS_LOOP_74_15_VITIS_LOOP_75_16_VITIS_LOOP_76_17'
-WARNING: [HLS 200-871] Estimated clock period (14.512ns) exceeds the target (target clock period: 10ns, clock uncertainty: 2.7ns, effective delay budget: 7.3ns).
-WARNING: [HLS 200-1016] The critical path in module 'conv_fwd' consists of the following:	'fadd' operation ('add', conv_fwd/main.cpp:65) [429]  (7.26 ns)
-	'phi' operation ('empty_34', conv_fwd/main.cpp:65) with incoming values : ('bbuf_load', conv_fwd/main.cpp:58) ('add', conv_fwd/main.cpp:65) [408]  (0 ns)
-	'fadd' operation ('add', conv_fwd/main.cpp:65) [429]  (7.26 ns)
-
+INFO: [HLS 200-486] Changing DSP48 latency (root=add_ln39) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=add_ln64) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln66) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln1192) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=add_ln79) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_38_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_38_3'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_49_7'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_49_7'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_56_8'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_56_8'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_66_14'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, loop 'VITIS_LOOP_66_14'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_78_17'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_78_17'
 INFO: [SCHED 204-11] Finished scheduling.
-Command       schedule done; 0.76 sec.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.75 seconds. CPU system time: 0 seconds. Elapsed time: 0.76 seconds; current allocated memory: 179.206 MB.
-Execute       syn_report -verbosereport -o /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.verbose.sched.rpt 
+Command       schedule done; 0.45 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.46 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.46 seconds; current allocated memory: 193.516 MB.
+Execute       syn_report -verbosereport -o /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.verbose.sched.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
-Command       syn_report done; 1 sec.
-Execute       db_write -o /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.sched.adb -f 
+Command       syn_report done; 0.39 sec.
+Execute       db_write -o /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.sched.adb -f 
 INFO-FLOW: Finish scheduling conv_fwd.
 Execute       set_default_model conv_fwd 
 Execute       bind -model conv_fwd 
@@ -397,13 +426,13 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-Command       bind done; 0.45 sec.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 1.46 seconds. CPU system time: 0.01 seconds. Elapsed time: 1.47 seconds; current allocated memory: 183.393 MB.
-Execute       syn_report -verbosereport -o /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.verbose.bind.rpt 
+Command       bind done; 0.28 sec.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.67 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.69 seconds; current allocated memory: 195.454 MB.
+Execute       syn_report -verbosereport -o /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.verbose.bind.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
-Command       syn_report done; 0.76 sec.
-Execute       db_write -o /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.bind.adb -f 
+Command       syn_report done; 0.5 sec.
+Execute       db_write -o /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.bind.adb -f 
 INFO-FLOW: Finish binding conv_fwd.
 Execute       get_model_list conv_fwd -filter all-wo-channel 
 INFO-FLOW: Preprocessing for RTLGen ...
@@ -415,7 +444,7 @@ INFO: [HLS 200-10] -------------------------------------------------------------
 Execute       get_config_rtl -module_prefix 
 Execute       get_config_rtl -module_prefix 
 Execute       get_config_rtl -module_auto_prefix 
-Execute       create_rtl_model conv_fwd -top_prefix  -sub_prefix conv_fwd_ -mg_file /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.compgen.tcl 
+Execute       create_rtl_model conv_fwd -top_prefix  -sub_prefix conv_fwd_ -mg_file /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.compgen.tcl 
 WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
 INFO: [RTGEN 206-500] Setting interface mode on port 'conv_fwd/gmem' to 'm_axi'.
 INFO: [RTGEN 206-500] Setting interface mode on port 'conv_fwd/x' to 's_axilite & ap_none'.
@@ -431,54 +460,50 @@ INFO: [RTGEN 206-500] Setting interface mode on port 'conv_fwd/FW' to 's_axilite
 INFO: [RTGEN 206-500] Setting interface mode on function 'conv_fwd' to 's_axilite & ap_ctrl_hs'.
 INFO: [RTGEN 206-100] Bundling port 'F', 'C', 'H', 'W_r', 'FH', 'FW' and 'return' to AXI-Lite port CTRL.
 INFO: [RTGEN 206-100] Bundling port 'x', 'w', 'y' and 'b' to AXI-Lite port control.
-INFO: [RTGEN 206-104] Estimated max fanout for 'conv_fwd' is 9684 from HDL expression: (1'b0 == ap_block_pp1_stage0_11001)
-INFO: [RTGEN 206-100] Generating core module 'am_addmul_11ns_10ns_8ns_17_4_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'ama_addmuladd_11ns_10ns_8ns_17ns_17_4_1': 2 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_5_full_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_4_max_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'mul_30s_30s_30_2_1': 12 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'am_addmul_11ns_10ns_8ns_17_4_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ama_addmuladd_11ns_10ns_8ns_17ns_17_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_16s_23ns_23_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_31ns_32ns_63_2_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'mul_31ns_64ns_95_5_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'mul_31ns_96ns_127_5_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_31ns_96ns_127_5_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_31s_31s_31_2_1': 8 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'mul_32ns_32ns_64_2_1': 3 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'mul_32ns_64ns_96_5_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32ns_64ns_96_5_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'mul_4ns_8ns_11_1_1': 3 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'mul_7ns_8ns_14_1_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'mul_mul_14ns_8ns_17_4_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'urem_127ns_32ns_127_131_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'urem_95ns_32ns_95_99_1': 2 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'urem_96ns_32ns_96_100_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'conv_fwd'.
-Command       create_rtl_model done; 0.36 sec.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1.11 seconds. CPU system time: 0.01 seconds. Elapsed time: 1.14 seconds; current allocated memory: 195.577 MB.
-Execute       source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.rtl_wrap.cfg.tcl 
-Execute       gen_rtl conv_fwd -istop -style xilinx -f -lang vhdl -o /home/anubhav/workspace/ip_repo/conv_fwd/solution1/syn/vhdl/conv_fwd 
-Command       gen_rtl done; 0.34 sec.
-Execute       gen_rtl conv_fwd -istop -style xilinx -f -lang vlog -o /home/anubhav/workspace/ip_repo/conv_fwd/solution1/syn/verilog/conv_fwd 
-Command       gen_rtl done; 0.17 sec.
-Execute       syn_report -csynth -model conv_fwd -o /home/anubhav/workspace/ip_repo/conv_fwd/solution1/syn/report/conv_fwd_csynth.rpt 
+Command       create_rtl_model done; 0.15 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.66 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.68 seconds; current allocated memory: 199.497 MB.
+Execute       source /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.rtl_wrap.cfg.tcl 
+Execute       gen_rtl conv_fwd -istop -style xilinx -f -lang vhdl -o /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/syn/vhdl/conv_fwd 
+Command       gen_rtl done; 0.28 sec.
+Execute       gen_rtl conv_fwd -istop -style xilinx -f -lang vlog -o /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/syn/verilog/conv_fwd 
+Command       gen_rtl done; 0.14 sec.
+Execute       syn_report -csynth -model conv_fwd -o /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/syn/report/conv_fwd_csynth.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
-Command       syn_report done; 0.17 sec.
-Execute       syn_report -rtlxml -model conv_fwd -o /home/anubhav/workspace/ip_repo/conv_fwd/solution1/syn/report/conv_fwd_csynth.xml 
+Command       syn_report done; 0.15 sec.
+Execute       syn_report -rtlxml -model conv_fwd -o /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/syn/report/conv_fwd_csynth.xml 
 Execute         get_solution -flow_target
 Execute           get_solution -flow_target 
-Command       syn_report done; 0.16 sec.
-Execute       syn_report -verbosereport -model conv_fwd -o /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.verbose.rpt 
+Command       syn_report done; 0.13 sec.
+Execute       syn_report -verbosereport -model conv_fwd -o /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.verbose.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
-Command       syn_report done; 0.94 sec.
-Execute       db_write -model conv_fwd -f -o /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.adb 
-Command       db_write done; 0.2 sec.
-Execute       gen_tb_info conv_fwd -p /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db -o /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd 
-Execute       export_constraint_db -f -tool general -o /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.constraint.tcl 
-Execute       syn_report -designview -model conv_fwd -o /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.design.xml 
-Command       syn_report done; 0.32 sec.
-Execute       syn_report -csynthDesign -model conv_fwd -o /home/anubhav/workspace/ip_repo/conv_fwd/solution1/syn/report/csynth.rpt 
+Command       syn_report done; 0.64 sec.
+Execute       db_write -model conv_fwd -f -o /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.adb 
+Command       db_write done; 0.17 sec.
+Execute       gen_tb_info conv_fwd -p /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db -o /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd 
+Execute       export_constraint_db -f -tool general -o /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.constraint.tcl 
+Execute       syn_report -designview -model conv_fwd -o /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.design.xml 
+Command       syn_report done; 0.28 sec.
+Execute       syn_report -csynthDesign -model conv_fwd -o /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/syn/report/csynth.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
 Execute       get_config_rtl -disable_wave_debug 
-Execute       syn_report -wcfg -model conv_fwd -o /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd_dataflow_ana.wcfg 
-Execute       syn_report -protoinst -model conv_fwd -o /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.protoinst 
+Execute       syn_report -wcfg -model conv_fwd -o /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd_dataflow_ana.wcfg 
+Execute       syn_report -protoinst -model conv_fwd -o /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.protoinst 
 Execute       get_config_debug -directory 
 Execute       sc_get_clocks conv_fwd 
 Execute       get_config_export -vivado_clock 
@@ -488,43 +513,37 @@ Execute       get_config_rtl -module_auto_prefix
 Execute       sc_get_portdomain conv_fwd 
 INFO-FLOW: Model list for RTL component generation: conv_fwd
 INFO-FLOW: Handling components in module [conv_fwd] ... 
-Execute       source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.compgen.tcl 
-INFO-FLOW: Found component conv_fwd_fadd_32ns_32ns_32_5_full_dsp_1.
-INFO-FLOW: Append model conv_fwd_fadd_32ns_32ns_32_5_full_dsp_1
-INFO-FLOW: Found component conv_fwd_fmul_32ns_32ns_32_4_max_dsp_1.
-INFO-FLOW: Append model conv_fwd_fmul_32ns_32ns_32_4_max_dsp_1
+Execute       source /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.compgen.tcl 
 INFO-FLOW: Found component conv_fwd_mul_32ns_32ns_64_2_1.
 INFO-FLOW: Append model conv_fwd_mul_32ns_32ns_64_2_1
-INFO-FLOW: Found component conv_fwd_mul_32ns_64ns_96_5_1.
-INFO-FLOW: Append model conv_fwd_mul_32ns_64ns_96_5_1
-INFO-FLOW: Found component conv_fwd_urem_96ns_32ns_96_100_1.
-INFO-FLOW: Append model conv_fwd_urem_96ns_32ns_96_100_1
-INFO-FLOW: Found component conv_fwd_mul_30s_30s_30_2_1.
-INFO-FLOW: Append model conv_fwd_mul_30s_30s_30_2_1
+INFO-FLOW: Found component conv_fwd_mul_31s_31s_31_2_1.
+INFO-FLOW: Append model conv_fwd_mul_31s_31s_31_2_1
 INFO-FLOW: Found component conv_fwd_mul_4ns_8ns_11_1_1.
 INFO-FLOW: Append model conv_fwd_mul_4ns_8ns_11_1_1
-INFO-FLOW: Found component conv_fwd_mul_31ns_96ns_127_5_1.
-INFO-FLOW: Append model conv_fwd_mul_31ns_96ns_127_5_1
-INFO-FLOW: Found component conv_fwd_urem_127ns_32ns_127_131_1.
-INFO-FLOW: Append model conv_fwd_urem_127ns_32ns_127_131_1
 INFO-FLOW: Found component conv_fwd_mul_31ns_64ns_95_5_1.
 INFO-FLOW: Append model conv_fwd_mul_31ns_64ns_95_5_1
+INFO-FLOW: Found component conv_fwd_mul_32ns_64ns_96_5_1.
+INFO-FLOW: Append model conv_fwd_mul_32ns_64ns_96_5_1
+INFO-FLOW: Found component conv_fwd_mul_31ns_96ns_127_5_1.
+INFO-FLOW: Append model conv_fwd_mul_31ns_96ns_127_5_1
+INFO-FLOW: Found component conv_fwd_mul_31ns_32ns_63_2_1.
+INFO-FLOW: Append model conv_fwd_mul_31ns_32ns_63_2_1
 INFO-FLOW: Found component conv_fwd_mul_7ns_8ns_14_1_1.
 INFO-FLOW: Append model conv_fwd_mul_7ns_8ns_14_1_1
-INFO-FLOW: Found component conv_fwd_urem_95ns_32ns_95_99_1.
-INFO-FLOW: Append model conv_fwd_urem_95ns_32ns_95_99_1
 INFO-FLOW: Found component conv_fwd_am_addmul_11ns_10ns_8ns_17_4_1.
 INFO-FLOW: Append model conv_fwd_am_addmul_11ns_10ns_8ns_17_4_1
 INFO-FLOW: Found component conv_fwd_ama_addmuladd_11ns_10ns_8ns_17ns_17_4_1.
 INFO-FLOW: Append model conv_fwd_ama_addmuladd_11ns_10ns_8ns_17ns_17_4_1
 INFO-FLOW: Found component conv_fwd_mul_mul_14ns_8ns_17_4_1.
 INFO-FLOW: Append model conv_fwd_mul_mul_14ns_8ns_17_4_1
-INFO-FLOW: Found component conv_fwd_xbuf.
-INFO-FLOW: Append model conv_fwd_xbuf
-INFO-FLOW: Found component conv_fwd_wbuf.
-INFO-FLOW: Append model conv_fwd_wbuf
-INFO-FLOW: Found component conv_fwd_bbuf.
-INFO-FLOW: Append model conv_fwd_bbuf
+INFO-FLOW: Found component conv_fwd_mac_muladd_16s_16s_23ns_23_4_1.
+INFO-FLOW: Append model conv_fwd_mac_muladd_16s_16s_23ns_23_4_1
+INFO-FLOW: Found component conv_fwd_xbuf_V.
+INFO-FLOW: Append model conv_fwd_xbuf_V
+INFO-FLOW: Found component conv_fwd_wbuf_V.
+INFO-FLOW: Append model conv_fwd_wbuf_V
+INFO-FLOW: Found component conv_fwd_bbuf_V.
+INFO-FLOW: Append model conv_fwd_bbuf_V
 INFO-FLOW: Found component conv_fwd_CTRL_s_axi.
 INFO-FLOW: Append model conv_fwd_CTRL_s_axi
 INFO-FLOW: Found component conv_fwd_control_s_axi.
@@ -533,25 +552,22 @@ INFO-FLOW: Found component conv_fwd_gmem_m_axi.
 INFO-FLOW: Append model conv_fwd_gmem_m_axi
 INFO-FLOW: Append model conv_fwd
 INFO-FLOW: Generating RTL model list ...
-INFO-FLOW: All models in this session: conv_fwd_fadd_32ns_32ns_32_5_full_dsp_1 conv_fwd_fmul_32ns_32ns_32_4_max_dsp_1 conv_fwd_mul_32ns_32ns_64_2_1 conv_fwd_mul_32ns_64ns_96_5_1 conv_fwd_urem_96ns_32ns_96_100_1 conv_fwd_mul_30s_30s_30_2_1 conv_fwd_mul_4ns_8ns_11_1_1 conv_fwd_mul_31ns_96ns_127_5_1 conv_fwd_urem_127ns_32ns_127_131_1 conv_fwd_mul_31ns_64ns_95_5_1 conv_fwd_mul_7ns_8ns_14_1_1 conv_fwd_urem_95ns_32ns_95_99_1 conv_fwd_am_addmul_11ns_10ns_8ns_17_4_1 conv_fwd_ama_addmuladd_11ns_10ns_8ns_17ns_17_4_1 conv_fwd_mul_mul_14ns_8ns_17_4_1 conv_fwd_xbuf conv_fwd_wbuf conv_fwd_bbuf conv_fwd_CTRL_s_axi conv_fwd_control_s_axi conv_fwd_gmem_m_axi conv_fwd
-INFO-FLOW: To file: write model conv_fwd_fadd_32ns_32ns_32_5_full_dsp_1
-INFO-FLOW: To file: write model conv_fwd_fmul_32ns_32ns_32_4_max_dsp_1
+INFO-FLOW: All models in this session: conv_fwd_mul_32ns_32ns_64_2_1 conv_fwd_mul_31s_31s_31_2_1 conv_fwd_mul_4ns_8ns_11_1_1 conv_fwd_mul_31ns_64ns_95_5_1 conv_fwd_mul_32ns_64ns_96_5_1 conv_fwd_mul_31ns_96ns_127_5_1 conv_fwd_mul_31ns_32ns_63_2_1 conv_fwd_mul_7ns_8ns_14_1_1 conv_fwd_am_addmul_11ns_10ns_8ns_17_4_1 conv_fwd_ama_addmuladd_11ns_10ns_8ns_17ns_17_4_1 conv_fwd_mul_mul_14ns_8ns_17_4_1 conv_fwd_mac_muladd_16s_16s_23ns_23_4_1 conv_fwd_xbuf_V conv_fwd_wbuf_V conv_fwd_bbuf_V conv_fwd_CTRL_s_axi conv_fwd_control_s_axi conv_fwd_gmem_m_axi conv_fwd
 INFO-FLOW: To file: write model conv_fwd_mul_32ns_32ns_64_2_1
-INFO-FLOW: To file: write model conv_fwd_mul_32ns_64ns_96_5_1
-INFO-FLOW: To file: write model conv_fwd_urem_96ns_32ns_96_100_1
-INFO-FLOW: To file: write model conv_fwd_mul_30s_30s_30_2_1
+INFO-FLOW: To file: write model conv_fwd_mul_31s_31s_31_2_1
 INFO-FLOW: To file: write model conv_fwd_mul_4ns_8ns_11_1_1
-INFO-FLOW: To file: write model conv_fwd_mul_31ns_96ns_127_5_1
-INFO-FLOW: To file: write model conv_fwd_urem_127ns_32ns_127_131_1
 INFO-FLOW: To file: write model conv_fwd_mul_31ns_64ns_95_5_1
+INFO-FLOW: To file: write model conv_fwd_mul_32ns_64ns_96_5_1
+INFO-FLOW: To file: write model conv_fwd_mul_31ns_96ns_127_5_1
+INFO-FLOW: To file: write model conv_fwd_mul_31ns_32ns_63_2_1
 INFO-FLOW: To file: write model conv_fwd_mul_7ns_8ns_14_1_1
-INFO-FLOW: To file: write model conv_fwd_urem_95ns_32ns_95_99_1
 INFO-FLOW: To file: write model conv_fwd_am_addmul_11ns_10ns_8ns_17_4_1
 INFO-FLOW: To file: write model conv_fwd_ama_addmuladd_11ns_10ns_8ns_17ns_17_4_1
 INFO-FLOW: To file: write model conv_fwd_mul_mul_14ns_8ns_17_4_1
-INFO-FLOW: To file: write model conv_fwd_xbuf
-INFO-FLOW: To file: write model conv_fwd_wbuf
-INFO-FLOW: To file: write model conv_fwd_bbuf
+INFO-FLOW: To file: write model conv_fwd_mac_muladd_16s_16s_23ns_23_4_1
+INFO-FLOW: To file: write model conv_fwd_xbuf_V
+INFO-FLOW: To file: write model conv_fwd_wbuf_V
+INFO-FLOW: To file: write model conv_fwd_bbuf_V
 INFO-FLOW: To file: write model conv_fwd_CTRL_s_axi
 INFO-FLOW: To file: write model conv_fwd_control_s_axi
 INFO-FLOW: To file: write model conv_fwd_gmem_m_axi
@@ -569,18 +585,18 @@ Execute       get_config_export -format
 Execute       get_config_rtl -module_auto_prefix 
 INFO-FLOW: DBG:CMD:   auto_impl: set ipname to top (module_auto_prefix): conv_fwd
 INFO-FLOW: DBG:CMD: auto_generate_csynth_design
-INFO-FLOW: DBG:CMD:     auto_generate --sim-model -phase csynth_design -d /home/anubhav/workspace/ip_repo/conv_fwd/solution1
+INFO-FLOW: DBG:CMD:     auto_generate --sim-model -phase csynth_design -d /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1
 Execute       get_solution -flow_target 
 Execute       get_config_export -xo 
 Execute       get_config_export -format 
-Execute       source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
-INFO-FLOW: DBG:CMD: read_platform_lib /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl
+Execute       source /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl
 Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/common.gen 
 Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/APCoreGen.gen 
 Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op.gen 
 Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op_simcore.gen 
 Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/interface.gen 
-Execute       source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
 Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
 Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
 Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
@@ -594,6 +610,7 @@ Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/i
 Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
 Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
 Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.11 sec.
 Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
 Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
 Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
@@ -609,16 +626,12 @@ Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/i
 Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
 INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
 INFO-FLOW: DBG:CMD:       generate_ip_cores sim=1 export=0 expOnly=0 dstVlogDir=syn/verilog
-Execute       source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
 Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
 Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-Execute       source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
-Execute       source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
-Execute       source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.compgen.tcl 
-Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
-Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
-Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.compgen.tcl 
 Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
 Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
 Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
@@ -628,41 +641,37 @@ Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet
 Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
 Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
 Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-INFO: [RTMG 210-282] Generating pipelined core: 'conv_fwd_mul_32ns_64ns_96_5_1_Multiplier_1'
-Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
-Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-INFO: [RTMG 210-282] Generating pipelined core: 'conv_fwd_urem_96ns_32ns_96_100_1_div'
+INFO: [RTMG 210-282] Generating pipelined core: 'conv_fwd_mul_31s_31s_31_2_1_Multiplier_1'
 Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
 Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
 Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
 Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-INFO: [RTMG 210-282] Generating pipelined core: 'conv_fwd_mul_30s_30s_30_2_1_Multiplier_2'
+INFO: [RTMG 210-282] Generating pipelined core: 'conv_fwd_mul_4ns_8ns_11_1_1_Multiplier_2'
 Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
 Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
 Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
 Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-INFO: [RTMG 210-282] Generating pipelined core: 'conv_fwd_mul_4ns_8ns_11_1_1_Multiplier_3'
+INFO: [RTMG 210-282] Generating pipelined core: 'conv_fwd_mul_31ns_64ns_95_5_1_Multiplier_3'
 Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
 Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
 Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
 Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-INFO: [RTMG 210-282] Generating pipelined core: 'conv_fwd_mul_31ns_96ns_127_5_1_Multiplier_4'
-Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
-Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-INFO: [RTMG 210-282] Generating pipelined core: 'conv_fwd_urem_127ns_32ns_127_131_1_div'
+INFO: [RTMG 210-282] Generating pipelined core: 'conv_fwd_mul_32ns_64ns_96_5_1_Multiplier_4'
 Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
 Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
 Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
 Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-INFO: [RTMG 210-282] Generating pipelined core: 'conv_fwd_mul_31ns_64ns_95_5_1_Multiplier_5'
+INFO: [RTMG 210-282] Generating pipelined core: 'conv_fwd_mul_31ns_96ns_127_5_1_Multiplier_5'
 Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
 Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
 Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
 Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-INFO: [RTMG 210-282] Generating pipelined core: 'conv_fwd_mul_7ns_8ns_14_1_1_Multiplier_6'
+INFO: [RTMG 210-282] Generating pipelined core: 'conv_fwd_mul_31ns_32ns_63_2_1_Multiplier_6'
 Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
 Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-INFO: [RTMG 210-282] Generating pipelined core: 'conv_fwd_urem_95ns_32ns_95_99_1_div'
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-282] Generating pipelined core: 'conv_fwd_mul_7ns_8ns_14_1_1_Multiplier_7'
 Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
 Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
 Execute         ap_part_info -name xc7z020-clg400-1 -data info 
@@ -671,33 +680,36 @@ Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet
 Execute         ap_part_info -name xc7z020-clg400-1 -data info 
 Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
 Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-INFO: [RTMG 210-278] Implementing memory 'conv_fwd_xbuf_ram (RAM)' using auto RAMs.
 Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
 Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-INFO: [RTMG 210-278] Implementing memory 'conv_fwd_wbuf_ram (RAM)' using auto RAMs.
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+INFO: [RTMG 210-278] Implementing memory 'conv_fwd_xbuf_V_ram (RAM)' using auto RAMs.
 Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
 Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-INFO: [RTMG 210-278] Implementing memory 'conv_fwd_bbuf_ram (RAM)' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'conv_fwd_wbuf_V_ram (RAM)' using auto RAMs.
 Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
 Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-278] Implementing memory 'conv_fwd_bbuf_V_ram (RAM)' using auto RAMs.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         source ./CTRL.slave.tcl 
 Execute         source ./CTRL.slave.tcl 
 Execute         source ./control.slave.tcl 
-Execute         source ./CTRL.slave.tcl 
 Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
 Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-Command       ap_source done; 0.32 sec.
-INFO-FLOW: DBG:CMD:     auto_generate -export -impltomg_flag -rtl both -tool Vivado -pcore_version 1.00.a -phase csynth_design -d /home/anubhav/workspace/ip_repo/conv_fwd/solution1
+Command       ap_source done; 0.48 sec.
+INFO-FLOW: DBG:CMD:     auto_generate -export -impltomg_flag -rtl both -tool Vivado -pcore_version 1.00.a -phase csynth_design -d /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1
 Execute       get_solution -flow_target 
 Execute       get_config_export -xo 
 Execute       get_config_export -format 
-Execute       source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
-INFO-FLOW: DBG:CMD: read_platform_lib /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl
+Execute       source /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl
 Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/common.gen 
 Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/APCoreGen.gen 
 Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op.gen 
 Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op_simcore.gen 
 Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/interface.gen 
-Execute       source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
 Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
 Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
 Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
@@ -711,6 +723,7 @@ Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/i
 Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
 Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
 Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.11 sec.
 Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
 Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
 Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
@@ -725,22 +738,18 @@ Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/i
 Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
 Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
 INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=conv_fwd xml_exists=0
-Execute       source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.rtl_wrap.cfg.tcl 
-Execute       source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.rtl_wrap.cfg.tcl 
-Execute       source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.rtl_wrap.cfg.tcl 
-Execute       source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.tbgen.tcl 
-Execute       source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.tbgen.tcl 
+Execute       source /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.rtl_wrap.cfg.tcl 
+Execute       source /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.rtl_wrap.cfg.tcl 
+Execute       source /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.rtl_wrap.cfg.tcl 
+Execute       source /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.tbgen.tcl 
+Execute       source /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.tbgen.tcl 
 INFO-FLOW: DBG:CMD:       export_impl_rtl
 INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
-Execute       source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
-Execute       source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.compgen.tcl 
-Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
-Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
-Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.compgen.tcl 
 INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
-Execute       source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
-Execute       source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.compgen.tcl 
+Execute       source /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.compgen.tcl 
 Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
 Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
 Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
@@ -756,37 +765,37 @@ Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet
 Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
 Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
 INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
-Execute       source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
-Execute       source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.compgen.tcl 
+Execute       source /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.compgen.tcl 
 Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
 Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
 Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
 Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-Execute       source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
 Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
 Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-Execute       source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.constraint.tcl 
-Execute       source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.tbgen.tcl 
+Execute       source /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.constraint.tcl 
+Execute       source /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.tbgen.tcl 
 INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=0
 INFO-FLOW: DBG:CMD: Skipping loadAnalyze_DB, #g_database=11
-INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=1 g_has_adaptors=false generate_bd_files=0 #modelList=22 #gSsdmPorts=0
+INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=1 g_has_adaptors=false generate_bd_files=0 #modelList=19 #gSsdmPorts=0
 Execute       source /tools/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/fileutil/fileutil.tcl 
-Execute       source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
-Execute       source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
-Execute       source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/top-io-be.tcl 
-Execute       source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.tbgen.tcl 
-Execute       source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.compgen.dataonly.tcl 
-Execute       source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.compgen.dataonly.tcl 
-Execute       source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.compgen.dataonly.tcl 
-Execute       source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.compgen.dataonly.tcl 
-Execute       source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.tbgen.tcl 
-Execute       source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.rtl_wrap.cfg.tcl 
-Execute       source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.compgen.dataonly.tcl 
+Execute       source /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/top-io-be.tcl 
+Execute       source /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.tbgen.tcl 
+Execute       source /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.compgen.dataonly.tcl 
+Execute       source /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.compgen.dataonly.tcl 
+Execute       source /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.compgen.dataonly.tcl 
+Execute       source /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.compgen.dataonly.tcl 
+Execute       source /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.tbgen.tcl 
+Execute       source /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.rtl_wrap.cfg.tcl 
+Execute       source /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.compgen.dataonly.tcl 
 Execute       get_config_export -format 
 Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
 Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-Execute       source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.tbgen.tcl 
-Execute       source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.tbgen.tcl 
+Execute       source /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
 Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
 Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
 Execute       get_solution -flow_target 
@@ -794,788 +803,24 @@ Execute       get_config_rtl -kernel_profile
 Execute       get_config_rtl -kernel_profile 
 Execute       get_config_rtl -stall_sig_gen 
 Execute       get_config_rtl -profile 
-Execute       source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.constraint.tcl 
+Execute       source /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.constraint.tcl 
 Execute       sc_get_clocks conv_fwd 
-Execute       source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
 Execute       get_config_debug -directory 
-Execute       source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/impl/misc/conv_fwd_ap_fadd_3_full_dsp_32_ip.tcl 
-Execute       source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/impl/misc/conv_fwd_ap_fmul_2_max_dsp_32_ip.tcl 
 INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
-INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 3.44 seconds. CPU system time: 0.05 seconds. Elapsed time: 3.49 seconds; current allocated memory: 215.078 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 3.33 seconds. CPU system time: 0.07 seconds. Elapsed time: 3.4 seconds; current allocated memory: 215.575 MB.
 INFO: [VHDL 208-304] Generating VHDL RTL for conv_fwd.
 INFO: [VLOG 209-307] Generating Verilog RTL for conv_fwd.
-INFO-FLOW: DBG:CMD:       update_csynth_xml_report append design.xml content design_xml=/home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.design.xml
+INFO-FLOW: DBG:CMD:       update_csynth_xml_report append design.xml content design_xml=/home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.design.xml
 INFO-FLOW: DBG:CMD:       update_csynth_xml_report json2reportxml
+Execute       send_msg_by_id INFO @200-1603@%s  and missed bursts 
+INFO: [HLS 200-1603] Design has MAXI bursts and missed bursts, see Vitis HLS GUI synthesis summary report for detailed information.
 INFO-FLOW: DBG:CMD:       update_csynth_xml_report done
 Execute       syn_report -model conv_fwd -printsummary 
-INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
-INFO: [HLS 200-789] **** Estimated Fmax: 68.91 MHz
-Command     autosyn done; 7 sec.
-Command   csynth_design done; 10.68 sec.
-INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 10.87 seconds. CPU system time: 0.42 seconds. Elapsed time: 10.68 seconds; current allocated memory: 215.708 MB.
-Command ap_source done; 11.86 sec.
-Execute cleanup_all 
-INFO-FLOW: Workspace /home/anubhav/workspace/ip_repo/conv_fwd/solution1 opened at Wed Apr 27 11:33:39 IST 2022
-Execute     ap_set_clock -name default -period 10 -default=false 
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-Execute     import_lib /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynq/zynq 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
-Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
-Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
-Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
-Execute     import_lib /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynq/zynq_fpv6 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
-Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
-Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
-Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
-Execute     set_part xc7z020clg400-1 
-INFO-FLOW: DBG:set_part: XILINX_VIVADO=/tools/Xilinx/Vivado/2020.2
-INFO-FLOW: DBG:set_part: RDI_DATADIR=/tools/Xilinx/Vivado/2020.2/data:/tools/Xilinx/Vitis_HLS/2020.2/data
-Execute       ap_part_info -name xc7z020clg400-1 -data single -quiet 
-DBG:HLSDevice: Trying to load device library: /tools/Xilinx/Vitis_HLS/2020.2/lib/lnx64.o/librdi_hlsvwrap.so
-DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /tools/Xilinx/Vivado/2020.2/data/parts/arch.xml
-Command       ap_part_info done; 0.74 sec.
-Execute       ap_part_info -name xc7z020clg400-1 -data info 
-Execute       add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
-Execute         get_default_platform 
-Execute         open_platform DefaultPlatform 
-Execute         ap_part_info -data single -name xc7z020-clg400-1 
-Execute         ap_part_info -name xc7z020-clg400-1 -data resources 
-Execute         config_chip_info -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP 220} {BRAM 280} {URAM 0} 
-Execute         ap_part_info -name xc7z020-clg400-1 -data info 
-Execute         config_chip_info -speed slow 
-Execute         ap_part_info -name xc7z020-clg400-1 -data info 
-Execute         config_library_info -library zynq_slow 
-Execute         config_library_info -family zynq 
-Execute         config_library_info -part xc7z020:-clg400:-1 
-Execute         import_lib /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynq/zynq 
-Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute             source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
-Execute             source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
-Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
-Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/zynq_dsp48e1.hlp 
-Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
-Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
-Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
-Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute             source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
-Execute             source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
-Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
-Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
-Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
-Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
-Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
-INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
-Execute       ap_part_info -name xc7z020-clg400-1 -data info 
-Execute       config_compile -quiet -complex-mul-dsp=0 
-Command     set_part done; 0.85 sec.
-Execute     ap_part_info -data single -name xc7z020clg400-1 
-Execute     ap_part_info -name xc7z020clg400-1 -data resources 
-Execute     config_chip_info -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP 220} {BRAM 280} {URAM 0} 
-Execute     ap_part_info -name xc7z020clg400-1 -data info 
-Execute     config_chip_info -speed slow 
-Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
-INFO: [HLS 200-1505] Using flow_target 'vivado'
-Execute     get_config_interface -m_axi_latency 
-Execute     get_config_interface -m_axi_alignment_byte_size 
-Execute     get_config_interface -m_axi_max_widen_bitwidth 
-Execute     get_config_interface -default_interface 
-Execute     get_config_interface -m_axi_offset 
-Execute     get_config_rtl -register_reset_num 
-Execute     send_msg_by_id INFO @200-1464@%s config_interface -m_axi_addr64=0 
-INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=0
-Execute     config_interface -m_axi_addr64=0 
-Command   open_solution done; 1 sec.
-Execute   set_part xc7z020clg400-1 
-INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
-INFO-FLOW: DBG:set_part: XILINX_VIVADO=/tools/Xilinx/Vivado/2020.2
-INFO-FLOW: DBG:set_part: RDI_DATADIR=/tools/Xilinx/Vivado/2020.2/data:/tools/Xilinx/Vitis_HLS/2020.2/data
-Execute     ap_part_info -name xc7z020clg400-1 -data single -quiet 
-Execute     ap_part_info -name xc7z020clg400-1 -data info 
-Execute     add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
-Execute       get_default_platform 
-Execute       open_platform DefaultPlatform 
-Execute       ap_part_info -data single -name xc7z020-clg400-1 
-Execute       ap_part_info -name xc7z020-clg400-1 -data resources 
-Execute       config_chip_info -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP 220} {BRAM 280} {URAM 0} 
-Execute       ap_part_info -name xc7z020-clg400-1 -data info 
-Execute       config_chip_info -speed slow 
-Execute       ap_part_info -name xc7z020-clg400-1 -data info 
-Execute       config_library_info -library zynq_slow 
-Execute       config_library_info -family zynq 
-Execute       config_library_info -part xc7z020:-clg400:-1 
-Execute       import_lib /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynq/zynq 
-Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
-Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
-Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/zynq_dsp48e1.hlp 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
-Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
-Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
-Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
-Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
-Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
-Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
-Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
-Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
-Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
-Execute     ap_part_info -name xc7z020-clg400-1 -data info 
-Execute     config_compile -quiet -complex-mul-dsp=0 
-Execute   create_clock -period 10 -name default 
-INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
-Execute     ap_set_clock -name default -period 10 -default=false 
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-Execute   config_interface -m_axi_addr64=0 
-INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 
-Execute   source ./conv_fwd/solution1/directives.tcl 
-Execute   export_design -rtl verilog -format ip_catalog 
-INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog 
-Execute     get_config_export -clock_margin 
-Execute     get_config_export -custom_script 
-Execute     get_config_export -description 
-Execute     get_config_export -display_name 
-Execute     get_config_export -driver_input_dir 
-Execute     get_config_export -ipname 
-Execute     get_config_export -library 
-Execute     get_config_export -output 
-Execute     get_config_export -qor_test 
-Execute     get_config_export -sim 
-Execute     get_config_export -taxonomy 
-Execute     get_config_export -use_ip 
-Execute     get_config_export -use_netlist 
-Execute     get_config_export -vendor 
-Execute     get_config_export -version 
-Execute     get_config_export -xo 
-Execute     config_export -format=ip_catalog -rtl=verilog 
-INFO-FLOW: DBG:CMD: export_design_wrap: -format ip_catalog -rtl verilog
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
-Execute     get_config_export -vivado_clock 
-Execute     get_top 
-Execute     get_config_export -ipname 
-Execute     get_config_export -xo 
-Execute     get_config_export -format 
-Execute     get_config_rtl -module_auto_prefix 
-INFO-FLOW: DBG:CMD:   auto_impl: set ipname to top (module_auto_prefix): conv_fwd
-Execute     get_solution -flow_target 
-Execute     get_config_export -xo 
-Execute     get_config_export -format 
-INFO-FLOW: DBG:CMD:   auto_impl: pack: -export -rtl verilog
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
-INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
-INFO-FLOW: DBG:CMD: automg_wrap -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
-INFO-FLOW: DBG:CMD:     auto_generate -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
-Execute     get_solution -flow_target 
-Execute     get_config_export -xo 
-Execute     get_config_export -format 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
-INFO-FLOW: DBG:CMD: read_platform_lib /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl
-Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/common.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/APCoreGen.gen 
-Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op.gen 
-Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op_simcore.gen 
-Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/interface.gen 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
-Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
-Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
-Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
-Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
-INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
-INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=conv_fwd xml_exists=1
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.rtl_wrap.cfg.tcl 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.rtl_wrap.cfg.tcl 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.rtl_wrap.cfg.tcl 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.tbgen.tcl 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.tbgen.tcl 
-INFO-FLOW: DBG:CMD:       export_impl_rtl
-INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.compgen.tcl 
-Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
-Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
-Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-Execute     get_config_export -disable_deadlock_detection 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.tbgen.tcl 
-Execute     get_config_rtl -module_prefix 
-INFO-FLOW: DBG:CMD:       cosim_export_main adding deadlock detection to conv_fwd
-INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.compgen.tcl 
-Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
-Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
-Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
-Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
-Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
-Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
-Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
-Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.compgen.tcl 
-Execute     get_config_export -disable_deadlock_detection 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.tbgen.tcl 
-Execute     get_config_rtl -module_prefix 
-INFO-FLOW: DBG:CMD:       cosim_export_main adding deadlock detection to conv_fwd
-Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
-Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
-Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
-Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
-Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.constraint.tcl 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.tbgen.tcl 
-INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=0
-INFO-FLOW: DBG:CMD:       copying IP vlog from /home/anubhav/workspace/ip_repo/conv_fwd/solution1/impl/verilog
-INFO-FLOW: DBG:CMD:       copying IP vhdl from /home/anubhav/workspace/ip_repo/conv_fwd/solution1/impl/vhdl
-INFO-FLOW: DBG:CMD:       copy ip_driver_dir 1_0 /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/driver
-Execute     get_config_export -format 
-INFO-FLOW: DBG:CMD:       generate_ip_script #gSsdmPorts=0 g_lang=vlog is_sdaccel=false is_sdsoc=true xo_file=
-Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
-Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
-Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.compgen.dataonly.tcl 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.compgen.dataonly.tcl 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.compgen.dataonly.tcl 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.compgen.dataonly.tcl 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.tbgen.tcl 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
-Execute     get_config_debug -directory 
-INFO-FLOW: DBG:CMD:       generate_ip_auxiliary
-Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
-Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
-INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=conv_fwd
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.rtl_wrap.cfg.tcl 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.rtl_wrap.cfg.tcl 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.rtl_wrap.cfg.tcl 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.tbgen.tcl 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.tbgen.tcl 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.tbgen.tcl 
-INFO-FLOW: DBG:CMD:       generate_top_info
-INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=conv_fwd
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.rtl_wrap.cfg.tcl 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.rtl_wrap.cfg.tcl 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.rtl_wrap.cfg.tcl 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.tbgen.tcl 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.tbgen.tcl 
-Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
-Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
-Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
-Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
-Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.tbgen.tcl 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.constraint.tcl 
-INFO-FLOW: DBG:CMD:       generate_ipi_example_script
-Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
-Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
-Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-INFO-FLOW: DBG:CMD:       generate_syn_sh
-Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
-Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
-INFO-FLOW: DBG:CMD:       generate_imp_constraints
-Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
-Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.constraint.tcl 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.tbgen.tcl 
-INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
-Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
-Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-INFO-FLOW: DBG:CMD: read_platform_lib /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl
-Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/common.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/APCoreGen.gen 
-Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op.gen 
-Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op_simcore.gen 
-Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/interface.gen 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
-Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
-Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
-Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
-Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
-Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
-Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-INFO-FLOW: DBG:CMD:     exec /home/anubhav/workspace/ip_repo/conv_fwd/solution1/impl/ip/pack.sh
-Execute     get_config_export -output 
-Execute     send_msg_by_id INFO @200-802@%s conv_fwd/solution1/impl/export.zip 
-INFO: [HLS 200-802] Generated output file conv_fwd/solution1/impl/export.zip
-Command   export_design done; 17.17 sec.
-INFO: [HLS 200-111] Finished Command export_design CPU user time: 15.64 seconds. CPU system time: 0.82 seconds. Elapsed time: 17.17 seconds; current allocated memory: 165.731 MB.
-Command ap_source done; 18.27 sec.
-Execute cleanup_all 
-INFO-FLOW: Workspace /home/anubhav/workspace/ip_repo/conv_fwd/solution1 opened at Wed Apr 27 11:48:55 IST 2022
-Execute     ap_set_clock -name default -period 10 -default=false 
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-Execute     import_lib /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynq/zynq 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
-Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
-Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
-Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
-Execute     import_lib /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynq/zynq_fpv6 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
-Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
-Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
-Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
-Execute     set_part xc7z020clg400-1 
-INFO-FLOW: DBG:set_part: XILINX_VIVADO=/tools/Xilinx/Vivado/2020.2
-INFO-FLOW: DBG:set_part: RDI_DATADIR=/tools/Xilinx/Vivado/2020.2/data:/tools/Xilinx/Vitis_HLS/2020.2/data
-Execute       ap_part_info -name xc7z020clg400-1 -data single -quiet 
-DBG:HLSDevice: Trying to load device library: /tools/Xilinx/Vitis_HLS/2020.2/lib/lnx64.o/librdi_hlsvwrap.so
-DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /tools/Xilinx/Vivado/2020.2/data/parts/arch.xml
-Command       ap_part_info done; 0.73 sec.
-Execute       ap_part_info -name xc7z020clg400-1 -data info 
-Execute       add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
-Execute         get_default_platform 
-Execute         open_platform DefaultPlatform 
-Execute         ap_part_info -data single -name xc7z020-clg400-1 
-Execute         ap_part_info -name xc7z020-clg400-1 -data resources 
-Execute         config_chip_info -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP 220} {BRAM 280} {URAM 0} 
-Execute         ap_part_info -name xc7z020-clg400-1 -data info 
-Execute         config_chip_info -speed slow 
-Execute         ap_part_info -name xc7z020-clg400-1 -data info 
-Execute         config_library_info -library zynq_slow 
-Execute         config_library_info -family zynq 
-Execute         config_library_info -part xc7z020:-clg400:-1 
-Execute         import_lib /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynq/zynq 
-Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute             source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
-Execute             source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
-Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
-Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/zynq_dsp48e1.hlp 
-Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
-Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
-Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
-Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute             source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
-Execute             source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
-Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
-Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
-Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
-Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
-Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
-INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
-Execute       ap_part_info -name xc7z020-clg400-1 -data info 
-Execute       config_compile -quiet -complex-mul-dsp=0 
-Command     set_part done; 0.84 sec.
-Execute     ap_part_info -data single -name xc7z020clg400-1 
-Execute     ap_part_info -name xc7z020clg400-1 -data resources 
-Execute     config_chip_info -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP 220} {BRAM 280} {URAM 0} 
-Execute     ap_part_info -name xc7z020clg400-1 -data info 
-Execute     config_chip_info -speed slow 
-Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
-INFO: [HLS 200-1505] Using flow_target 'vivado'
-Execute     get_config_interface -m_axi_latency 
-Execute     get_config_interface -m_axi_alignment_byte_size 
-Execute     get_config_interface -m_axi_max_widen_bitwidth 
-Execute     get_config_interface -default_interface 
-Execute     get_config_interface -m_axi_offset 
-Execute     get_config_rtl -register_reset_num 
-Execute     send_msg_by_id INFO @200-1464@%s config_interface -m_axi_addr64=0 
-INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=0
-Execute     config_interface -m_axi_addr64=0 
-Execute     send_msg_by_id INFO @200-1464@%s config_export -format=ip_catalog 
-INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
-Execute     config_export -format=ip_catalog 
-Execute     send_msg_by_id INFO @200-1464@%s config_export -rtl=verilog 
-INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
-Execute     config_export -rtl=verilog 
-Command   open_solution done; 1.01 sec.
-Execute   set_part xc7z020clg400-1 
-INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
-INFO-FLOW: DBG:set_part: XILINX_VIVADO=/tools/Xilinx/Vivado/2020.2
-INFO-FLOW: DBG:set_part: RDI_DATADIR=/tools/Xilinx/Vivado/2020.2/data:/tools/Xilinx/Vitis_HLS/2020.2/data
-Execute     ap_part_info -name xc7z020clg400-1 -data single -quiet 
-Execute     ap_part_info -name xc7z020clg400-1 -data info 
-Execute     add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
-Execute       get_default_platform 
-Execute       open_platform DefaultPlatform 
-Execute       ap_part_info -data single -name xc7z020-clg400-1 
-Execute       ap_part_info -name xc7z020-clg400-1 -data resources 
-Execute       config_chip_info -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP 220} {BRAM 280} {URAM 0} 
-Execute       ap_part_info -name xc7z020-clg400-1 -data info 
-Execute       config_chip_info -speed slow 
-Execute       ap_part_info -name xc7z020-clg400-1 -data info 
-Execute       config_library_info -library zynq_slow 
-Execute       config_library_info -family zynq 
-Execute       config_library_info -part xc7z020:-clg400:-1 
-Execute       import_lib /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynq/zynq 
-Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
-Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
-Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/zynq_dsp48e1.hlp 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
-Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
-Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
-Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
-Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
-Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
-Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
-Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
-Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
-Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
-Execute     ap_part_info -name xc7z020-clg400-1 -data info 
-Execute     config_compile -quiet -complex-mul-dsp=0 
-Execute   create_clock -period 10 -name default 
-INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
-Execute     ap_set_clock -name default -period 10 -default=false 
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-Execute   config_interface -m_axi_addr64=0 
-INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 
-Execute   config_export -format ip_catalog -rtl verilog 
-INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
-Execute   source ./conv_fwd/solution1/directives.tcl 
-Execute   export_design -rtl verilog -format ip_catalog 
-INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog 
-Execute     get_config_export -clock_margin 
-Execute     get_config_export -custom_script 
-Execute     get_config_export -description 
-Execute     get_config_export -display_name 
-Execute     get_config_export -driver_input_dir 
-Execute     get_config_export -ipname 
-Execute     get_config_export -library 
-Execute     get_config_export -output 
-Execute     get_config_export -qor_test 
-Execute     get_config_export -sim 
-Execute     get_config_export -taxonomy 
-Execute     get_config_export -use_ip 
-Execute     get_config_export -use_netlist 
-Execute     get_config_export -vendor 
-Execute     get_config_export -version 
-Execute     get_config_export -xo 
-Execute     config_export -format=ip_catalog -rtl=verilog 
-INFO-FLOW: DBG:CMD: export_design_wrap: -format ip_catalog -rtl verilog
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
-Execute     get_config_export -vivado_clock 
-Execute     get_top 
-Execute     get_config_export -ipname 
-Execute     get_config_export -xo 
-Execute     get_config_export -format 
-Execute     get_config_rtl -module_auto_prefix 
-INFO-FLOW: DBG:CMD:   auto_impl: set ipname to top (module_auto_prefix): conv_fwd
-Execute     get_solution -flow_target 
-Execute     get_config_export -xo 
-Execute     get_config_export -format 
-INFO-FLOW: DBG:CMD:   auto_impl: pack: -export -rtl verilog
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
-INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
-INFO-FLOW: DBG:CMD: automg_wrap -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
-INFO-FLOW: DBG:CMD:     auto_generate -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
-Execute     get_solution -flow_target 
-Execute     get_config_export -xo 
-Execute     get_config_export -format 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
-INFO-FLOW: DBG:CMD: read_platform_lib /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl
-Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/common.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/APCoreGen.gen 
-Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op.gen 
-Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op_simcore.gen 
-Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/interface.gen 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
-Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
-Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
-Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
-Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
-INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
-INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=conv_fwd xml_exists=1
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.rtl_wrap.cfg.tcl 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.rtl_wrap.cfg.tcl 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.rtl_wrap.cfg.tcl 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.tbgen.tcl 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.tbgen.tcl 
-INFO-FLOW: DBG:CMD:       export_impl_rtl
-INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.compgen.tcl 
-Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
-Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
-Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-Execute     get_config_export -disable_deadlock_detection 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.tbgen.tcl 
-Execute     get_config_rtl -module_prefix 
-INFO-FLOW: DBG:CMD:       cosim_export_main adding deadlock detection to conv_fwd
-INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.compgen.tcl 
-Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
-Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
-Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
-Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
-Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
-Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
-Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
-Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.compgen.tcl 
-Execute     get_config_export -disable_deadlock_detection 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.tbgen.tcl 
-Execute     get_config_rtl -module_prefix 
-INFO-FLOW: DBG:CMD:       cosim_export_main adding deadlock detection to conv_fwd
-Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
-Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
-Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
-Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
-Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.constraint.tcl 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.tbgen.tcl 
-INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=0
-INFO-FLOW: DBG:CMD:       copying IP vlog from /home/anubhav/workspace/ip_repo/conv_fwd/solution1/impl/verilog
-INFO-FLOW: DBG:CMD:       copying IP vhdl from /home/anubhav/workspace/ip_repo/conv_fwd/solution1/impl/vhdl
-INFO-FLOW: DBG:CMD:       copy ip_driver_dir 1_0 /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/driver
-Execute     get_config_export -format 
-INFO-FLOW: DBG:CMD:       generate_ip_script #gSsdmPorts=0 g_lang=vlog is_sdaccel=false is_sdsoc=true xo_file=
-Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
-Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
-Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.compgen.dataonly.tcl 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.compgen.dataonly.tcl 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.compgen.dataonly.tcl 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.compgen.dataonly.tcl 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.tbgen.tcl 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
-Execute     get_config_debug -directory 
-INFO-FLOW: DBG:CMD:       generate_ip_auxiliary
-Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
-Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
-INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=conv_fwd
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.rtl_wrap.cfg.tcl 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.rtl_wrap.cfg.tcl 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.rtl_wrap.cfg.tcl 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.tbgen.tcl 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.tbgen.tcl 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.tbgen.tcl 
-INFO-FLOW: DBG:CMD:       generate_top_info
-INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=conv_fwd
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.rtl_wrap.cfg.tcl 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.rtl_wrap.cfg.tcl 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.rtl_wrap.cfg.tcl 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.tbgen.tcl 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.tbgen.tcl 
-Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
-Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
-Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
-Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
-Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.tbgen.tcl 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.constraint.tcl 
-INFO-FLOW: DBG:CMD:       generate_ipi_example_script
-Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
-Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
-Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-INFO-FLOW: DBG:CMD:       generate_syn_sh
-Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
-Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
-INFO-FLOW: DBG:CMD:       generate_imp_constraints
-Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
-Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.constraint.tcl 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/conv_fwd.tbgen.tcl 
-INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
-Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
-Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-INFO-FLOW: DBG:CMD: read_platform_lib /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl
-Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/common.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/APCoreGen.gen 
-Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op.gen 
-Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op_simcore.gen 
-Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/interface.gen 
-Execute     source /home/anubhav/workspace/ip_repo/conv_fwd/solution1/.autopilot/db/global.setting.tcl 
-Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
-Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
-Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
-Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
-Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
-Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
-INFO-FLOW: DBG:CMD:     exec /home/anubhav/workspace/ip_repo/conv_fwd/solution1/impl/ip/pack.sh
-Execute     get_config_export -output 
-Execute     send_msg_by_id INFO @200-802@%s conv_fwd/solution1/impl/export.zip 
-INFO: [HLS 200-802] Generated output file conv_fwd/solution1/impl/export.zip
-Command   export_design done; 17.12 sec.
-INFO: [HLS 200-111] Finished Command export_design CPU user time: 15.59 seconds. CPU system time: 0.91 seconds. Elapsed time: 17.12 seconds; current allocated memory: 165.858 MB.
-Command ap_source done; 18.23 sec.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 136.99 MHz
+Command     autosyn done; 5.41 sec.
+Command   csynth_design done; 14.94 sec.
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 14.98 seconds. CPU system time: 0.67 seconds. Elapsed time: 14.94 seconds; current allocated memory: 216.260 MB.
+Command ap_source done; 17.75 sec.
 Execute cleanup_all 

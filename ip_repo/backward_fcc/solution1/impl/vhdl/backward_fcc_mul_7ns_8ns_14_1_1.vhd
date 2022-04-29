@@ -7,14 +7,14 @@ use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
 
-entity backward_fcc_mul_7ns_8ns_14_1_1_Multiplier_2 is
+entity backward_fcc_mul_7ns_8ns_14_1_1_Multiplier_1 is
 port (
     a: in std_logic_vector(7 - 1 downto 0);
     b: in std_logic_vector(8 - 1 downto 0);
     p: out std_logic_vector(14 - 1 downto 0));
 end entity;
 
-architecture behav of backward_fcc_mul_7ns_8ns_14_1_1_Multiplier_2 is
+architecture behav of backward_fcc_mul_7ns_8ns_14_1_1_Multiplier_1 is
     signal a_i : std_logic_vector(7 - 1 downto 0);
     signal b_i : std_logic_vector(8 - 1 downto 0);
 begin
@@ -39,7 +39,7 @@ entity backward_fcc_mul_7ns_8ns_14_1_1 is
 end entity;
 
 architecture arch of backward_fcc_mul_7ns_8ns_14_1_1 is
-    component backward_fcc_mul_7ns_8ns_14_1_1_Multiplier_2 is
+    component backward_fcc_mul_7ns_8ns_14_1_1_Multiplier_1 is
         port (
             a : IN STD_LOGIC_VECTOR;
             b : IN STD_LOGIC_VECTOR;
@@ -49,7 +49,7 @@ architecture arch of backward_fcc_mul_7ns_8ns_14_1_1 is
 
 
 begin
-    backward_fcc_mul_7ns_8ns_14_1_1_Multiplier_2_U :  component backward_fcc_mul_7ns_8ns_14_1_1_Multiplier_2
+    backward_fcc_mul_7ns_8ns_14_1_1_Multiplier_1_U :  component backward_fcc_mul_7ns_8ns_14_1_1_Multiplier_1
     port map (
         a => din0,
         b => din1,

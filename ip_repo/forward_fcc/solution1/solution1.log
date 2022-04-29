@@ -4064,3 +4064,269 @@ WARNING: [HLS 200-1016] The critical path in module 'forward_fcc' consists of th
 Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=0
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=/home/anubhav/workspace/ip_repo/forward_fcc/forward_fcc.zip
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output /home/anubhav/workspace/ip_repo/forward_fcc/forward_fcc.zip -rtl verilog 
+INFO: [HLS 200-1510] Running: set_directive_top -name forward_fcc forward_fcc 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 155.964 MB.
+INFO: [HLS 200-10] Analyzing design file 'forward_fcc/fwprop.cpp' ... 
+ERROR: [HLS 207-3712] invalid operands to binary expression ('fixed' (aka 'ap_fixed<16, 9>') and 'volatile fixed' (aka 'volatile ap_fixed<16, 9>')): forward_fcc/fwprop.cpp:44:34
+INFO: [HLS 207-4373] candidate function not viable: no known conversion from 'volatile fixed' (aka 'volatile ap_fixed<16, 9>') to 'bool' for 2nd argument: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h:2215:1692
+INFO: [HLS 207-4373] candidate function not viable: no known conversion from 'volatile fixed' (aka 'volatile ap_fixed<16, 9>') to 'char' for 2nd argument: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h:2216:1773
+INFO: [HLS 207-4373] candidate function not viable: no known conversion from 'volatile fixed' (aka 'volatile ap_fixed<16, 9>') to 'signed char' for 2nd argument: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h:2217:1711
+INFO: [HLS 207-4373] candidate function not viable: no known conversion from 'volatile fixed' (aka 'volatile ap_fixed<16, 9>') to 'unsigned char' for 2nd argument: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h:2218:1728
+INFO: [HLS 207-4373] candidate function not viable: no known conversion from 'volatile fixed' (aka 'volatile ap_fixed<16, 9>') to 'short' for 2nd argument: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h:2219:1921
+INFO: [HLS 207-4373] candidate function not viable: no known conversion from 'volatile fixed' (aka 'volatile ap_fixed<16, 9>') to 'unsigned short' for 2nd argument: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h:2220:1966
+INFO: [HLS 207-4373] candidate function not viable: no known conversion from 'volatile fixed' (aka 'volatile ap_fixed<16, 9>') to 'int' for 2nd argument: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h:2221:1877
+INFO: [HLS 207-4373] candidate function not viable: no known conversion from 'volatile fixed' (aka 'volatile ap_fixed<16, 9>') to 'unsigned int' for 2nd argument: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h:2222:1922
+INFO: [HLS 207-4373] candidate function not viable: no known conversion from 'volatile fixed' (aka 'volatile ap_fixed<16, 9>') to 'long' for 2nd argument: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h:2223:1899
+INFO: [HLS 207-4373] candidate function not viable: no known conversion from 'volatile fixed' (aka 'volatile ap_fixed<16, 9>') to 'unsigned long' for 2nd argument: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h:2224:1944
+INFO: [HLS 207-4373] candidate function not viable: no known conversion from 'volatile fixed' (aka 'volatile ap_fixed<16, 9>') to 'ap_slong' (aka 'long long') for 2nd argument: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h:2225:1987
+INFO: [HLS 207-4373] candidate function not viable: no known conversion from 'volatile fixed' (aka 'volatile ap_fixed<16, 9>') to 'ap_ulong' (aka 'unsigned long long') for 2nd argument: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h:2226:1996
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1345:170
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1421:77
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1421:289
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1422:78
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1422:292
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1423:79
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1423:295
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1455:139
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1455:382
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1456:148
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1456:409
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1457:138
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1457:386
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1458:139
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1458:391
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1459:151
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1459:419
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1460:152
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1460:431
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1461:149
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1461:411
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1462:150
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1462:423
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1463:150
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1463:415
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1464:151
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1464:427
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1465:154
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1465:431
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1466:155
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1466:434
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_range_ref' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1679:174
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1679:489
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1788:168
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_bit_ref' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1788:470
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_range_ref' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h:1117:1249
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_range_ref' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h:1117:1525
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_range_ref' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h:1118:1330
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_range_ref' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h:1118:1624
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_range_ref' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h:1119:1268
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_range_ref' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h:1119:1549
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_range_ref' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h:1120:1285
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_range_ref' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h:1120:1570
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_range_ref' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h:1121:1361
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_range_ref' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h:1121:1662
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_range_ref' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h:1122:1406
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_range_ref' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h:1122:1718
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_range_ref' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h:1123:1335
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_range_ref' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h:1123:1630
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_range_ref' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h:1124:1380
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_range_ref' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h:1124:1686
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_range_ref' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h:1125:1348
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_range_ref' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h:1125:1646
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_range_ref' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h:1126:1393
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_range_ref' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h:1126:1702
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_range_ref' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h:1127:1400
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_range_ref' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h:1127:1710
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_range_ref' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h:1128:1409
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_range_ref' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h:1128:1721
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h:2305:244
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h:2305:678
+INFO: [HLS 207-4385] candidate template ignored: deduced type 'const ap_fixed_base<16, 9, true, (ap_q_mode)5U, (ap_o_mode)3U, 0>' of 1st parameter does not match adjusted type 'volatile fixed' (aka 'volatile ap_fixed<16, 9>') of argument [with _AP_W2 = 16, _AP_I2 = 9, _AP_S2 = true, _AP_Q2 = AP_TRN, _AP_O2 = AP_WRAP, _AP_N2 = 0]: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h:1112:86
+INFO: [HLS 207-4385] candidate template ignored: deduced type 'const ap_fixed_base<16, 9, true, (ap_q_mode)5U, (ap_o_mode)3U, 0>' of 2nd parameter does not match adjusted type 'volatile fixed' (aka 'volatile ap_fixed<16, 9>') of argument [with _AP_W = 16, _AP_I = 9, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h:2215:2061
+INFO: [HLS 207-4385] candidate template ignored: deduced type 'const ap_fixed_base<16, 9, true, (ap_q_mode)5U, (ap_o_mode)3U, 0>' of 2nd parameter does not match adjusted type 'volatile fixed' (aka 'volatile ap_fixed<16, 9>') of argument [with _AP_W = 16, _AP_I = 9, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h:2216:2160
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=0
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=/home/anubhav/workspace/ip_repo/forward_fcc/forward_fcc.zip
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output /home/anubhav/workspace/ip_repo/forward_fcc/forward_fcc.zip -rtl verilog 
+INFO: [HLS 200-1510] Running: set_directive_top -name forward_fcc forward_fcc 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 155.934 MB.
+INFO: [HLS 200-10] Analyzing design file 'forward_fcc/fwprop.cpp' ... 
+ERROR: [HLS 207-3712] invalid operands to binary expression ('fixed' (aka 'ap_fixed<16, 9>') and 'volatile fixed' (aka 'volatile ap_fixed<16, 9>')): forward_fcc/fwprop.cpp:44:33
+INFO: [HLS 207-4373] candidate function not viable: no known conversion from 'volatile fixed' (aka 'volatile ap_fixed<16, 9>') to 'bool' for 2nd argument: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h:2215:1692
+INFO: [HLS 207-4373] candidate function not viable: no known conversion from 'volatile fixed' (aka 'volatile ap_fixed<16, 9>') to 'char' for 2nd argument: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h:2216:1773
+INFO: [HLS 207-4373] candidate function not viable: no known conversion from 'volatile fixed' (aka 'volatile ap_fixed<16, 9>') to 'signed char' for 2nd argument: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h:2217:1711
+INFO: [HLS 207-4373] candidate function not viable: no known conversion from 'volatile fixed' (aka 'volatile ap_fixed<16, 9>') to 'unsigned char' for 2nd argument: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h:2218:1728
+INFO: [HLS 207-4373] candidate function not viable: no known conversion from 'volatile fixed' (aka 'volatile ap_fixed<16, 9>') to 'short' for 2nd argument: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h:2219:1921
+INFO: [HLS 207-4373] candidate function not viable: no known conversion from 'volatile fixed' (aka 'volatile ap_fixed<16, 9>') to 'unsigned short' for 2nd argument: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h:2220:1966
+INFO: [HLS 207-4373] candidate function not viable: no known conversion from 'volatile fixed' (aka 'volatile ap_fixed<16, 9>') to 'int' for 2nd argument: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h:2221:1877
+INFO: [HLS 207-4373] candidate function not viable: no known conversion from 'volatile fixed' (aka 'volatile ap_fixed<16, 9>') to 'unsigned int' for 2nd argument: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h:2222:1922
+INFO: [HLS 207-4373] candidate function not viable: no known conversion from 'volatile fixed' (aka 'volatile ap_fixed<16, 9>') to 'long' for 2nd argument: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h:2223:1899
+INFO: [HLS 207-4373] candidate function not viable: no known conversion from 'volatile fixed' (aka 'volatile ap_fixed<16, 9>') to 'unsigned long' for 2nd argument: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h:2224:1944
+INFO: [HLS 207-4373] candidate function not viable: no known conversion from 'volatile fixed' (aka 'volatile ap_fixed<16, 9>') to 'ap_slong' (aka 'long long') for 2nd argument: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h:2225:1987
+INFO: [HLS 207-4373] candidate function not viable: no known conversion from 'volatile fixed' (aka 'volatile ap_fixed<16, 9>') to 'ap_ulong' (aka 'unsigned long long') for 2nd argument: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h:2226:1996
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1345:170
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1421:77
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1421:289
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1422:78
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1422:292
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1423:79
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1423:295
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1455:139
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1455:382
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1456:148
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1456:409
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1457:138
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1457:386
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1458:139
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1458:391
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1459:151
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1459:419
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1460:152
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1460:431
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1461:149
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1461:411
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1462:150
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1462:423
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1463:150
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1463:415
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1464:151
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1464:427
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1465:154
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1465:431
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1466:155
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1466:434
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_range_ref' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1679:174
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1679:489
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1788:168
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_bit_ref' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:1788:470
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_range_ref' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h:1117:1249
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_range_ref' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h:1117:1525
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_range_ref' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h:1118:1330
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_range_ref' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h:1118:1624
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_range_ref' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h:1119:1268
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_range_ref' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h:1119:1549
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_range_ref' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h:1120:1285
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_range_ref' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h:1120:1570
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_range_ref' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h:1121:1361
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_range_ref' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h:1121:1662
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_range_ref' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h:1122:1406
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_range_ref' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h:1122:1718
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_range_ref' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h:1123:1335
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_range_ref' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h:1123:1630
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_range_ref' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h:1124:1380
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_range_ref' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h:1124:1686
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_range_ref' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h:1125:1348
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_range_ref' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h:1125:1646
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_range_ref' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h:1126:1393
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_range_ref' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h:1126:1702
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_range_ref' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h:1127:1400
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_range_ref' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h:1127:1710
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_range_ref' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h:1128:1409
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_range_ref' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h:1128:1721
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h:2305:244
+INFO: [HLS 207-4401] candidate template ignored: could not match 'ap_int_base' against 'ap_fixed': /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h:2305:678
+INFO: [HLS 207-4385] candidate template ignored: deduced type 'const ap_fixed_base<16, 9, true, (ap_q_mode)5U, (ap_o_mode)3U, 0>' of 1st parameter does not match adjusted type 'volatile fixed' (aka 'volatile ap_fixed<16, 9>') of argument [with _AP_W2 = 16, _AP_I2 = 9, _AP_S2 = true, _AP_Q2 = AP_TRN, _AP_O2 = AP_WRAP, _AP_N2 = 0]: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h:1112:86
+INFO: [HLS 207-4385] candidate template ignored: deduced type 'const ap_fixed_base<16, 9, true, (ap_q_mode)5U, (ap_o_mode)3U, 0>' of 2nd parameter does not match adjusted type 'volatile fixed' (aka 'volatile ap_fixed<16, 9>') of argument [with _AP_W = 16, _AP_I = 9, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h:2215:2061
+INFO: [HLS 207-4385] candidate template ignored: deduced type 'const ap_fixed_base<16, 9, true, (ap_q_mode)5U, (ap_o_mode)3U, 0>' of 2nd parameter does not match adjusted type 'volatile fixed' (aka 'volatile ap_fixed<16, 9>') of argument [with _AP_W = 16, _AP_I = 9, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h:2216:2160
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=0
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=/home/anubhav/workspace/ip_repo/forward_fcc/forward_fcc.zip
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output /home/anubhav/workspace/ip_repo/forward_fcc/forward_fcc.zip -rtl verilog 
+INFO: [HLS 200-1510] Running: set_directive_top -name forward_fcc forward_fcc 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0 seconds; current allocated memory: 155.934 MB.
+INFO: [HLS 200-10] Analyzing design file 'forward_fcc/fwprop.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 4.86 seconds. CPU system time: 0.26 seconds. Elapsed time: 4.08 seconds; current allocated memory: 157.067 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'forward_fcc(ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int)' (forward_fcc/fwprop.cpp:9:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'forward_fcc(ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int)' (forward_fcc/fwprop.cpp:9:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'forward_fcc(ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int)' (forward_fcc/fwprop.cpp:9:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'forward_fcc(ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int)' (forward_fcc/fwprop.cpp:9:0)
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 16 in loop 'VITIS_LOOP_29_1'(forward_fcc/fwprop.cpp:29:22) has been inferred on port 'gmem' (forward_fcc/fwprop.cpp:29:22)
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 16 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 16 in loop 'LOOP2'(forward_fcc/fwprop.cpp:43:15) has been inferred on port 'gmem' (forward_fcc/fwprop.cpp:43:15)
+INFO: [HLS 214-115] Multiple burst writes of variable length and bit width 16 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 16 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i16.s_struct.ap_fixeds' into 'forward_fcc(ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int)'
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.64 seconds. CPU system time: 0.27 seconds. Elapsed time: 4.1 seconds; current allocated memory: 159.317 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 159.319 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 163.707 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 167.828 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_29_1' (forward_fcc/fwprop.cpp:29) in function 'forward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-3' in function 'forward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-4' in function 'forward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'LOOP2' (forward_fcc/fwprop.cpp:43) in function 'forward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-6' in function 'forward_fcc' automatically.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.28 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.29 seconds; current allocated memory: 193.733 MB.
+WARNING: [HLS 200-960] Cannot flatten loop 'Lread_w' (forward_fcc/fwprop.cpp:28:19) in function 'forward_fcc' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+WARNING: [HLS 200-960] Cannot flatten loop 'LOOP1' (forward_fcc/fwprop.cpp:39:19) in function 'forward_fcc' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+INFO: [HLS 200-472] Inferring partial write operation for 'wbuf.V' (forward_fcc/fwprop.cpp:30:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'bbuf.V' 
+INFO: [HLS 200-472] Inferring partial write operation for 'wbuf.V' 
+INFO: [HLS 200-472] Inferring partial write operation for 'ybuf.V' (forward_fcc/fwprop.cpp:41:13)
+INFO: [HLS 200-472] Inferring partial write operation for 'ybuf.V' 
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.19 seconds. CPU system time: 0 seconds. Elapsed time: 0.2 seconds; current allocated memory: 189.265 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'forward_fcc' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'forward_fcc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln727) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_29_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_29_1'
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'Loop 2'
+INFO: [SCHED 204-61] Pipelining loop 'Loop 3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'Loop 3'
+INFO: [SCHED 204-61] Pipelining loop 'LOOP2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 6, loop 'LOOP2'
+INFO: [SCHED 204-61] Pipelining loop 'Loop 5'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'Loop 5'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.2 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.23 seconds; current allocated memory: 190.048 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================

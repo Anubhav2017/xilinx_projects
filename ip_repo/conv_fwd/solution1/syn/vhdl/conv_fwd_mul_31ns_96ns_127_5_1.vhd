@@ -6,7 +6,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
-entity conv_fwd_mul_31ns_96ns_127_5_1_Multiplier_4 is
+entity conv_fwd_mul_31ns_96ns_127_5_1_Multiplier_5 is
 port (
     clk: in std_logic;
     ce: in std_logic;
@@ -15,7 +15,7 @@ port (
     p: out std_logic_vector(127 - 1 downto 0));
 end entity;
 
-architecture behav of conv_fwd_mul_31ns_96ns_127_5_1_Multiplier_4 is
+architecture behav of conv_fwd_mul_31ns_96ns_127_5_1_Multiplier_5 is
     signal tmp_product : std_logic_vector(127 - 1 downto 0);
     signal a_i : std_logic_vector(31 - 1 downto 0);
     signal b_i : std_logic_vector(96 - 1 downto 0);
@@ -67,7 +67,7 @@ entity conv_fwd_mul_31ns_96ns_127_5_1 is
 end entity;
 
 architecture arch of conv_fwd_mul_31ns_96ns_127_5_1 is
-    component conv_fwd_mul_31ns_96ns_127_5_1_Multiplier_4 is
+    component conv_fwd_mul_31ns_96ns_127_5_1_Multiplier_5 is
         port (
             clk : IN STD_LOGIC;
             ce : IN STD_LOGIC;
@@ -79,7 +79,7 @@ architecture arch of conv_fwd_mul_31ns_96ns_127_5_1 is
 
 
 begin
-    conv_fwd_mul_31ns_96ns_127_5_1_Multiplier_4_U :  component conv_fwd_mul_31ns_96ns_127_5_1_Multiplier_4
+    conv_fwd_mul_31ns_96ns_127_5_1_Multiplier_5_U :  component conv_fwd_mul_31ns_96ns_127_5_1_Multiplier_5
     port map (
         clk => clk,
         ce => ce,

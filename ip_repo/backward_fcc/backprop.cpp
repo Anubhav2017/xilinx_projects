@@ -1,9 +1,12 @@
 #include<stdio.h>
 #include<string.h>
+#include <ap_fixed.h>
 
 #define MAX_SIZE 100
 
-void backward_fcc(volatile float* x, volatile float* w,  volatile float* dx, volatile float* dy, volatile float* dw, volatile float* db, int xdim, int ydim){
+typedef ap_fixed<16,9> fixed;
+
+void backward_fcc( fixed* x, fixed* w, fixed* dx, fixed* dy, fixed* dw, fixed* db, int xdim, int ydim){
 #pragma HLS INTERFACE m_axi depth=100 port=x offset=slave bundle=gmem
 #pragma HLS INTERFACE m_axi depth=100 port=w offset=slave bundle=gmem
 #pragma HLS INTERFACE m_axi depth=100 port=dx offset=slave bundle=gmem
@@ -24,18 +27,18 @@ void backward_fcc(volatile float* x, volatile float* w,  volatile float* dx, vol
 
 
 
-	float xbuf[MAX_SIZE];
-	float wbuf[MAX_SIZE][MAX_SIZE];
-	float dxbuf[MAX_SIZE];
-	float dwbuf[MAX_SIZE][MAX_SIZE];
-	float dybuf[MAX_SIZE];
-	float dbbuf[MAX_SIZE];
+	fixed xbuf[MAX_SIZE];
+	fixed wbuf[MAX_SIZE][MAX_SIZE];
+	fixed dxbuf[MAX_SIZE];
+	fixed dwbuf[MAX_SIZE][MAX_SIZE];
+	fixed dybuf[MAX_SIZE];
+	fixed dbbuf[MAX_SIZE];
 
 
-	memcpy(xbuf,(const float*)x,xdim*sizeof(float));
-	memcpy(dbbuf,(const float*)db,ydim*sizeof(float));
-	memcpy(dxbuf,(const float*)dx,xdim*sizeof(float));
-	memcpy(dybuf,(const float*)dy,ydim*sizeof(float));
+	memcpy(xbuf,(const fixed*)x,xdim*sizeof(fixed));
+	memcpy(dbbuf,(const fixed*)db,ydim*sizeof(fixed));
+	memcpy(dxbuf,(const fixed*)dx,xdim*sizeof(fixed));
+	memcpy(dybuf,(const fixed*)dy,ydim*sizeof(fixed));
 
 	for(int i=0;i<ydim;i++){
 	        for(int j=0;j<xdim;j++){
@@ -62,10 +65,10 @@ void backward_fcc(volatile float* x, volatile float* w,  volatile float* dx, vol
 	}
 
 
-	memcpy((float*)db,dbbuf,ydim*sizeof(float));
-	memcpy((float*)dw,dwbuf,ydim*xdim*sizeof(float));
-	memcpy((float*)w,wbuf,ydim*xdim*sizeof(float));
-	memcpy((float*)dx,dxbuf,xdim*sizeof(float));
+	memcpy((fixed*)db,dbbuf,ydim*sizeof(fixed));
+	memcpy((fixed*)dw,dwbuf,ydim*xdim*sizeof(fixed));
+	memcpy((fixed*)w,wbuf,ydim*xdim*sizeof(fixed));
+	memcpy((fixed*)dx,dxbuf,xdim*sizeof(fixed));
 
 	for(int i=0;i<ydim;i++){
 	        for(int j=0;j<xdim;j++){

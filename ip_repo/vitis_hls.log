@@ -1,40 +1,35 @@
 INFO: Applying HLS Y2K22 patch v1.2 for IP revision
 INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2020.2/bin/unwrapped/lnx64.o/vitis_hls'
-INFO: [HLS 200-10] For user 'anubhav' on host 'anubhav-acer' (Linux_x86_64 version 5.13.0-40-generic) on Thu Apr 28 15:26:00 IST 2022
-INFO: [HLS 200-10] On os Ubuntu 20.04.4 LTS
-INFO: [HLS 200-10] In directory '/home/anubhav/workspace/ip_repo'
-Sourcing Tcl script '/home/anubhav/workspace/ip_repo/lossfun/solution1/csynth.tcl'
-INFO: [HLS 200-1510] Running: open_project lossfun 
-INFO: [HLS 200-10] Opening project '/home/anubhav/workspace/ip_repo/lossfun'.
-INFO: [HLS 200-1510] Running: set_top loss_derivative 
-INFO: [HLS 200-1510] Running: add_files lossfun/main.cpp 
-INFO: [HLS 200-10] Adding design file 'lossfun/main.cpp' to the project
+INFO: [HLS 200-10] For user 'anubhav' on host 'timeMachine' (Linux_x86_64 version 4.15.0-176-generic) on Fri Apr 29 11:49:39 IST 2022
+INFO: [HLS 200-10] On os Ubuntu 18.04.6 LTS
+INFO: [HLS 200-10] In directory '/home/anubhav/xilinx_projects/ip_repo'
+Sourcing Tcl script '/home/anubhav/xilinx_projects/ip_repo/relu_fwd/solution1/export.tcl'
+INFO: [HLS 200-1510] Running: open_project relu_fwd 
+INFO: [HLS 200-10] Opening project '/home/anubhav/xilinx_projects/ip_repo/relu_fwd'.
+INFO: [HLS 200-1510] Running: set_top relu_fwd 
+INFO: [HLS 200-1510] Running: add_files relu_fwd/main.cpp 
+INFO: [HLS 200-10] Adding design file 'relu_fwd/main.cpp' to the project
 INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
-INFO: [HLS 200-10] Opening solution '/home/anubhav/workspace/ip_repo/lossfun/solution1'.
+INFO: [HLS 200-10] Opening solution '/home/anubhav/xilinx_projects/ip_repo/relu_fwd/solution1'.
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
 INFO: [HLS 200-1505] Using flow_target 'vivado'
 Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-1505.html
-INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
 INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-INFO: [HLS 200-1510] Running: csynth_design 
-INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0 seconds; current allocated memory: 155.705 MB.
-INFO: [HLS 200-10] Analyzing design file 'lossfun/main.cpp' ... 
-ERROR: [HLS 214-124] use of undeclared identifier 'size': /home/anubhav/workspace/ip_repo/lossfun/main.cpp:26
-ERROR: [HLS 214-124] use of undeclared identifier 'exp': /home/anubhav/workspace/ip_repo/lossfun/main.cpp:45
-ERROR: [HLS 214-124] use of undeclared identifier 'exp': /home/anubhav/workspace/ip_repo/lossfun/main.cpp:49
-ERROR: [HLS 214-124] use of undeclared identifier 'log'; did you mean 'long'?: /home/anubhav/workspace/ip_repo/lossfun/main.cpp:52
-INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 0.45 seconds. CPU system time: 0.13 seconds. Elapsed time: 0.36 seconds; current allocated memory: 156.803 MB.
-Syntax check failed in clang-tidy
-    while executing
-"source /home/anubhav/workspace/ip_repo/lossfun/solution1/csynth.tcl"
-    invoked from within
-"hls::main /home/anubhav/workspace/ip_repo/lossfun/solution1/csynth.tcl"
-    ("uplevel" body line 1)
-    invoked from within
-"uplevel 1 hls::main {*}$newargs"
-    (procedure "hls_proc" line 16)
-    invoked from within
-"hls_proc [info nameofexecutable] $argv"
-INFO: [HLS 200-112] Total CPU user time: 2.05 seconds. Total CPU system time: 0.42 seconds. Total elapsed time: 1.63 seconds; peak allocated memory: 156.473 MB.
+INFO: [HLS 200-1510] Running: set_directive_top -name relu_fwd relu_fwd 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 29 11:49:55 2022...
+INFO: [HLS 200-802] Generated output file relu_fwd/solution1/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 14.99 seconds. CPU system time: 1.18 seconds. Elapsed time: 16.08 seconds; current allocated memory: 180.860 MB.

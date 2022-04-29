@@ -38,14 +38,14 @@ typedef uint64_t u64;
 #else
 typedef struct {
     u16 DeviceId;
-    u32 Control_BaseAddress;
     u32 Ctrl_BaseAddress;
+    u32 Control_BaseAddress;
 } XConv_fwd_Config;
 #endif
 
 typedef struct {
-    u64 Control_BaseAddress;
     u64 Ctrl_BaseAddress;
+    u64 Control_BaseAddress;
     u32 IsReady;
 } XConv_fwd;
 
@@ -89,14 +89,6 @@ u32 XConv_fwd_IsReady(XConv_fwd *InstancePtr);
 void XConv_fwd_EnableAutoRestart(XConv_fwd *InstancePtr);
 void XConv_fwd_DisableAutoRestart(XConv_fwd *InstancePtr);
 
-void XConv_fwd_Set_x(XConv_fwd *InstancePtr, u32 Data);
-u32 XConv_fwd_Get_x(XConv_fwd *InstancePtr);
-void XConv_fwd_Set_w(XConv_fwd *InstancePtr, u32 Data);
-u32 XConv_fwd_Get_w(XConv_fwd *InstancePtr);
-void XConv_fwd_Set_y(XConv_fwd *InstancePtr, u32 Data);
-u32 XConv_fwd_Get_y(XConv_fwd *InstancePtr);
-void XConv_fwd_Set_b(XConv_fwd *InstancePtr, u32 Data);
-u32 XConv_fwd_Get_b(XConv_fwd *InstancePtr);
 void XConv_fwd_Set_F(XConv_fwd *InstancePtr, u32 Data);
 u32 XConv_fwd_Get_F(XConv_fwd *InstancePtr);
 void XConv_fwd_Set_C(XConv_fwd *InstancePtr, u32 Data);
@@ -109,6 +101,14 @@ void XConv_fwd_Set_FH(XConv_fwd *InstancePtr, u32 Data);
 u32 XConv_fwd_Get_FH(XConv_fwd *InstancePtr);
 void XConv_fwd_Set_FW(XConv_fwd *InstancePtr, u32 Data);
 u32 XConv_fwd_Get_FW(XConv_fwd *InstancePtr);
+void XConv_fwd_Set_x(XConv_fwd *InstancePtr, u32 Data);
+u32 XConv_fwd_Get_x(XConv_fwd *InstancePtr);
+void XConv_fwd_Set_w(XConv_fwd *InstancePtr, u32 Data);
+u32 XConv_fwd_Get_w(XConv_fwd *InstancePtr);
+void XConv_fwd_Set_y(XConv_fwd *InstancePtr, u32 Data);
+u32 XConv_fwd_Get_y(XConv_fwd *InstancePtr);
+void XConv_fwd_Set_b(XConv_fwd *InstancePtr, u32 Data);
+u32 XConv_fwd_Get_b(XConv_fwd *InstancePtr);
 
 void XConv_fwd_InterruptGlobalEnable(XConv_fwd *InstancePtr);
 void XConv_fwd_InterruptGlobalDisable(XConv_fwd *InstancePtr);

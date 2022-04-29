@@ -8,7 +8,7 @@
 
 typedef ap_fixed<16,9> fixed;
 
-float loss_derivative(fixed* x, fixed* dx, int y,int x_size, int N){
+fixed loss_derivative(fixed* x, fixed* dx, int y,int x_size, int N){
 
 #pragma HLS INTERFACE s_axilite port=return bundle=CTRL
 #pragma HLS INTERFACE m_axi port=x depth=200 offset=slave bundle=gmem
@@ -30,7 +30,7 @@ float loss_derivative(fixed* x, fixed* dx, int y,int x_size, int N){
     fixed loss =0;
 
 
-    float max = x[0];
+    fixed max = x[0];
     for(int i=1;i<x_size;i++){
         if(x[i] > max){
             max = x[i];
@@ -41,7 +41,7 @@ float loss_derivative(fixed* x, fixed* dx, int y,int x_size, int N){
         log_probs[i] = x[i] - max;
     }
 
-    float sum = 0;
+    fixed sum = 0;
 
     for(int i=0;i<x_size;i++){
         sum += exp(log_probs[i]);

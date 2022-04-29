@@ -29,42 +29,42 @@
 		<link>
 			<name>source</name>
 			<type>2</type>
-			<location>/home/anubhav/workspace/ip_repo/backward_fcc/.apc/.src</location>
+			<location>/home/anubhav/xilinx_projects/ip_repo/backward_fcc/.apc/.src</location>
 		</link>
 		<link>
 			<name>testbench</name>
 			<type>2</type>
-			<location>/home/anubhav/workspace/ip_repo/backward_fcc/.apc/.tb</location>
+			<location>/home/anubhav/xilinx_projects/ip_repo/backward_fcc/.apc/.tb</location>
 		</link>
 		<link>
 			<name>solution1/constraints</name>
 			<type>2</type>
-			<location>/home/anubhav/workspace/ip_repo/backward_fcc/solution1/.tcls</location>
+			<location>/home/anubhav/xilinx_projects/ip_repo/backward_fcc/solution1/.tcls</location>
 		</link>
 		<link>
 			<name>source/backprop.cpp</name>
 			<type>1</type>
-			<location>/home/anubhav/workspace/ip_repo/backward_fcc/backprop.cpp</location>
+			<location>/home/anubhav/xilinx_projects/ip_repo/backward_fcc/backprop.cpp</location>
 		</link>
 		<link>
 			<name>testbench/test.cpp</name>
 			<type>1</type>
-			<location>/home/anubhav/workspace/ip_repo/backward_fcc/test.cpp</location>
+			<location>/home/anubhav/xilinx_projects/ip_repo/backward_fcc/test.cpp</location>
 		</link>
 		<link>
 			<name>solution1/constraints/.xml.directive</name>
 			<type>1</type>
-			<location>/home/anubhav/workspace/ip_repo/backward_fcc/solution1/solution1.directive</location>
+			<location>/home/anubhav/xilinx_projects/ip_repo/backward_fcc/solution1/solution1.directive</location>
 		</link>
 		<link>
 			<name>solution1/constraints/directives.tcl</name>
 			<type>1</type>
-			<location>/home/anubhav/workspace/ip_repo/backward_fcc/solution1/directives.tcl</location>
+			<location>/home/anubhav/xilinx_projects/ip_repo/backward_fcc/solution1/directives.tcl</location>
 		</link>
 		<link>
 			<name>solution1/constraints/script.tcl</name>
 			<type>1</type>
-			<location>/home/anubhav/workspace/ip_repo/backward_fcc/solution1/script.tcl</location>
+			<location>/home/anubhav/xilinx_projects/ip_repo/backward_fcc/solution1/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>
