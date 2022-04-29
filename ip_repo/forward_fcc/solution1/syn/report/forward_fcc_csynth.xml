@@ -42,7 +42,7 @@
 <max>-1</max>
 </range>
 </IterationLatency>
-<VITIS_LOOP_29_1>
+<VITIS_LOOP_25_1>
 <TripCount>undef</TripCount>
 <Latency>
 <range>
@@ -58,7 +58,7 @@
 </AbsoluteTimeLatency>
 <PipelineII>1</PipelineII>
 <PipelineDepth>3</PipelineDepth>
-</VITIS_LOOP_29_1>
+</VITIS_LOOP_25_1>
 </Lread_w>
 <Loop2>
 <TripCount>undef</TripCount>

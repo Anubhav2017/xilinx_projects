@@ -36,30 +36,30 @@ extern "C" void forward_fcc(short*, int, int, int, int, int, int);
 extern "C" void apatb_forward_fcc_hw(volatile void * __xlx_apatb_param_x, volatile void * __xlx_apatb_param_w, volatile void * __xlx_apatb_param_y, volatile void * __xlx_apatb_param_b, int __xlx_apatb_param_xdim, int __xlx_apatb_param_ydim) {
   // Collect __xlx_x_w_y_b__tmp_vec
   vector<sc_bv<16> >__xlx_x_w_y_b__tmp_vec;
-  for (int j = 0, e = 200; j != e; ++j) {
+  for (int j = 0, e = 20; j != e; ++j) {
     __xlx_x_w_y_b__tmp_vec.push_back(((short*)__xlx_apatb_param_x)[j]);
   }
-  int __xlx_size_param_x = 200;
+  int __xlx_size_param_x = 20;
   int __xlx_offset_param_x = 0;
   int __xlx_offset_byte_param_x = 0*2;
-  for (int j = 0, e = 200; j != e; ++j) {
+  for (int j = 0, e = 20; j != e; ++j) {
     __xlx_x_w_y_b__tmp_vec.push_back(((short*)__xlx_apatb_param_w)[j]);
   }
-  int __xlx_size_param_w = 200;
-  int __xlx_offset_param_w = 200;
-  int __xlx_offset_byte_param_w = 200*2;
-  for (int j = 0, e = 200; j != e; ++j) {
+  int __xlx_size_param_w = 20;
+  int __xlx_offset_param_w = 20;
+  int __xlx_offset_byte_param_w = 20*2;
+  for (int j = 0, e = 20; j != e; ++j) {
     __xlx_x_w_y_b__tmp_vec.push_back(((short*)__xlx_apatb_param_y)[j]);
   }
-  int __xlx_size_param_y = 200;
-  int __xlx_offset_param_y = 400;
-  int __xlx_offset_byte_param_y = 400*2;
-  for (int j = 0, e = 200; j != e; ++j) {
+  int __xlx_size_param_y = 20;
+  int __xlx_offset_param_y = 40;
+  int __xlx_offset_byte_param_y = 40*2;
+  for (int j = 0, e = 20; j != e; ++j) {
     __xlx_x_w_y_b__tmp_vec.push_back(((short*)__xlx_apatb_param_b)[j]);
   }
-  int __xlx_size_param_b = 200;
-  int __xlx_offset_param_b = 600;
-  int __xlx_offset_byte_param_b = 600*2;
+  int __xlx_size_param_b = 20;
+  int __xlx_offset_param_b = 60;
+  int __xlx_offset_byte_param_b = 60*2;
   short* __xlx_x_w_y_b__input_buffer= new short[__xlx_x_w_y_b__tmp_vec.size()];
   for (int i = 0; i < __xlx_x_w_y_b__tmp_vec.size(); ++i) {
     __xlx_x_w_y_b__input_buffer[i] = __xlx_x_w_y_b__tmp_vec[i].range(15, 0).to_uint64();

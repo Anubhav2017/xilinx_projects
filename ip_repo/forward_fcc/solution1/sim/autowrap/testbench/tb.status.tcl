@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /home/anubhav/xilinx_projects/ip_repo/forward_fcc/solution1/./sim/autowrap/testbench/fwprop.cpp_pre.cpp.tb.cpp

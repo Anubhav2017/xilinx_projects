@@ -38,14 +38,14 @@
 </range>
 </IterationLatency>
 <PipelineDepth>4 ~ ?</PipelineDepth>
-<VITIS_LOOP_29_1>
-<Name>VITIS_LOOP_29_1</Name>
+<VITIS_LOOP_25_1>
+<Name>VITIS_LOOP_25_1</Name>
 <TripCount>undef</TripCount>
 <Latency>2 ~ ?</Latency>
 <AbsoluteTimeLatency>20.000 ns ~ ?</AbsoluteTimeLatency>
 <PipelineII>1</PipelineII>
 <PipelineDepth>3</PipelineDepth>
-</VITIS_LOOP_29_1>
+</VITIS_LOOP_25_1>
 </Lread_w>
 <Loop2>
 <Name>Loop 2</Name>

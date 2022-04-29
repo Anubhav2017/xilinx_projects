@@ -4330,3 +4330,347 @@ INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.2 seconds. CPU system 
 Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=0
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=/home/anubhav/workspace/ip_repo/forward_fcc/forward_fcc.zip
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output /home/anubhav/workspace/ip_repo/forward_fcc/forward_fcc.zip -rtl verilog 
+INFO: [HLS 200-1510] Running: set_directive_top -name forward_fcc forward_fcc 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 155.929 MB.
+INFO: [HLS 200-10] Analyzing design file 'forward_fcc/fwprop.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 3.4 seconds. CPU system time: 0.21 seconds. Elapsed time: 2.95 seconds; current allocated memory: 157.153 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'forward_fcc(ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int)' (forward_fcc/fwprop.cpp:5:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'forward_fcc(ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int)' (forward_fcc/fwprop.cpp:5:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'forward_fcc(ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int)' (forward_fcc/fwprop.cpp:5:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'forward_fcc(ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int)' (forward_fcc/fwprop.cpp:5:0)
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 16 in loop 'VITIS_LOOP_25_1'(forward_fcc/fwprop.cpp:25:22) has been inferred on port 'gmem' (forward_fcc/fwprop.cpp:25:22)
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 16 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 16 in loop 'LOOP2'(forward_fcc/fwprop.cpp:39:15) has been inferred on port 'gmem' (forward_fcc/fwprop.cpp:39:15)
+INFO: [HLS 214-115] Multiple burst writes of variable length and bit width 16 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 16 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i16.s_struct.ap_fixeds' into 'forward_fcc(ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int)'
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2.72 seconds. CPU system time: 0.18 seconds. Elapsed time: 2.91 seconds; current allocated memory: 159.344 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 159.346 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 163.736 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 167.854 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_25_1' (forward_fcc/fwprop.cpp:25) in function 'forward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-3' in function 'forward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-4' in function 'forward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'LOOP2' (forward_fcc/fwprop.cpp:39) in function 'forward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-6' in function 'forward_fcc' automatically.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.21 seconds. CPU system time: 0 seconds. Elapsed time: 0.2 seconds; current allocated memory: 193.767 MB.
+WARNING: [HLS 200-960] Cannot flatten loop 'Lread_w' (forward_fcc/fwprop.cpp:24:19) in function 'forward_fcc' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+WARNING: [HLS 200-960] Cannot flatten loop 'LOOP1' (forward_fcc/fwprop.cpp:35:19) in function 'forward_fcc' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+INFO: [HLS 200-472] Inferring partial write operation for 'wbuf.V' (forward_fcc/fwprop.cpp:26:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'bbuf.V' 
+INFO: [HLS 200-472] Inferring partial write operation for 'wbuf.V' 
+INFO: [HLS 200-472] Inferring partial write operation for 'ybuf.V' (forward_fcc/fwprop.cpp:37:13)
+INFO: [HLS 200-472] Inferring partial write operation for 'ybuf.V' 
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.14 seconds. CPU system time: 0 seconds. Elapsed time: 0.14 seconds; current allocated memory: 189.300 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'forward_fcc' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'forward_fcc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln727) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_25_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_25_1'
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'Loop 2'
+INFO: [SCHED 204-61] Pipelining loop 'Loop 3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'Loop 3'
+INFO: [SCHED 204-61] Pipelining loop 'LOOP2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 6, loop 'LOOP2'
+INFO: [SCHED 204-61] Pipelining loop 'Loop 5'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'Loop 5'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.14 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.15 seconds; current allocated memory: 190.096 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=0
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=/home/anubhav/workspace/ip_repo/forward_fcc/forward_fcc.zip
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output /home/anubhav/workspace/ip_repo/forward_fcc/forward_fcc.zip -rtl verilog 
+INFO: [HLS 200-1510] Running: set_directive_top -name forward_fcc forward_fcc 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0.01 seconds. Elapsed time: 0 seconds; current allocated memory: 155.929 MB.
+INFO: [HLS 200-10] Analyzing design file 'forward_fcc/fwprop.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 3.23 seconds. CPU system time: 0.19 seconds. Elapsed time: 2.83 seconds; current allocated memory: 157.153 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'forward_fcc(ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int)' (forward_fcc/fwprop.cpp:5:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'forward_fcc(ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int)' (forward_fcc/fwprop.cpp:5:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'forward_fcc(ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int)' (forward_fcc/fwprop.cpp:5:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'forward_fcc(ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int)' (forward_fcc/fwprop.cpp:5:0)
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 16 in loop 'VITIS_LOOP_25_1'(forward_fcc/fwprop.cpp:25:22) has been inferred on port 'gmem' (forward_fcc/fwprop.cpp:25:22)
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 16 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 16 in loop 'LOOP2'(forward_fcc/fwprop.cpp:39:15) has been inferred on port 'gmem' (forward_fcc/fwprop.cpp:39:15)
+INFO: [HLS 214-115] Multiple burst writes of variable length and bit width 16 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 16 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i16.s_struct.ap_fixeds' into 'forward_fcc(ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int)'
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2.71 seconds. CPU system time: 0.2 seconds. Elapsed time: 2.91 seconds; current allocated memory: 159.345 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 159.346 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 163.736 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 167.856 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_25_1' (forward_fcc/fwprop.cpp:25) in function 'forward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-3' in function 'forward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-4' in function 'forward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'LOOP2' (forward_fcc/fwprop.cpp:39) in function 'forward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-6' in function 'forward_fcc' automatically.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.18 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.21 seconds; current allocated memory: 193.765 MB.
+WARNING: [HLS 200-960] Cannot flatten loop 'Lread_w' (forward_fcc/fwprop.cpp:24:19) in function 'forward_fcc' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+WARNING: [HLS 200-960] Cannot flatten loop 'LOOP1' (forward_fcc/fwprop.cpp:35:19) in function 'forward_fcc' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+INFO: [HLS 200-472] Inferring partial write operation for 'wbuf.V' (forward_fcc/fwprop.cpp:26:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'bbuf.V' 
+INFO: [HLS 200-472] Inferring partial write operation for 'wbuf.V' 
+INFO: [HLS 200-472] Inferring partial write operation for 'ybuf.V' (forward_fcc/fwprop.cpp:37:13)
+INFO: [HLS 200-472] Inferring partial write operation for 'ybuf.V' 
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.13 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.14 seconds; current allocated memory: 189.294 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'forward_fcc' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'forward_fcc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln727) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_25_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_25_1'
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'Loop 2'
+INFO: [SCHED 204-61] Pipelining loop 'Loop 3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'Loop 3'
+INFO: [SCHED 204-61] Pipelining loop 'LOOP2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 6, loop 'LOOP2'
+INFO: [SCHED 204-61] Pipelining loop 'Loop 5'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'Loop 5'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.14 seconds. CPU system time: 0 seconds. Elapsed time: 0.14 seconds; current allocated memory: 190.095 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=0
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=/home/anubhav/workspace/ip_repo/forward_fcc/forward_fcc.zip
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output /home/anubhav/workspace/ip_repo/forward_fcc/forward_fcc.zip -rtl verilog 
+INFO: [HLS 200-1510] Running: set_directive_top -name forward_fcc forward_fcc 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 155.937 MB.
+INFO: [HLS 200-10] Analyzing design file 'forward_fcc/fwprop.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 3.22 seconds. CPU system time: 0.21 seconds. Elapsed time: 2.81 seconds; current allocated memory: 157.176 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'forward_fcc(ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int)' (forward_fcc/fwprop.cpp:5:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'forward_fcc(ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int)' (forward_fcc/fwprop.cpp:5:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'forward_fcc(ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int)' (forward_fcc/fwprop.cpp:5:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'forward_fcc(ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int)' (forward_fcc/fwprop.cpp:5:0)
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 16 in loop 'VITIS_LOOP_25_1'(forward_fcc/fwprop.cpp:25:22) has been inferred on port 'gmem' (forward_fcc/fwprop.cpp:25:22)
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 16 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 16 in loop 'LOOP2'(forward_fcc/fwprop.cpp:39:15) has been inferred on port 'gmem' (forward_fcc/fwprop.cpp:39:15)
+INFO: [HLS 214-115] Multiple burst writes of variable length and bit width 16 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 16 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i16.s_struct.ap_fixeds' into 'forward_fcc(ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int)'
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2.81 seconds. CPU system time: 0.2 seconds. Elapsed time: 3.01 seconds; current allocated memory: 159.433 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 159.435 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 163.825 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 167.946 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_25_1' (forward_fcc/fwprop.cpp:25) in function 'forward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-3' in function 'forward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-4' in function 'forward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'LOOP2' (forward_fcc/fwprop.cpp:39) in function 'forward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-6' in function 'forward_fcc' automatically.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.2 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.2 seconds; current allocated memory: 193.869 MB.
+WARNING: [HLS 200-960] Cannot flatten loop 'Lread_w' (forward_fcc/fwprop.cpp:24:19) in function 'forward_fcc' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+WARNING: [HLS 200-960] Cannot flatten loop 'LOOP1' (forward_fcc/fwprop.cpp:35:19) in function 'forward_fcc' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+INFO: [HLS 200-472] Inferring partial write operation for 'wbuf.V' (forward_fcc/fwprop.cpp:26:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'bbuf.V' 
+INFO: [HLS 200-472] Inferring partial write operation for 'wbuf.V' 
+INFO: [HLS 200-472] Inferring partial write operation for 'ybuf.V' (forward_fcc/fwprop.cpp:37:13)
+INFO: [HLS 200-472] Inferring partial write operation for 'ybuf.V' 
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.14 seconds. CPU system time: 0 seconds. Elapsed time: 0.14 seconds; current allocated memory: 189.414 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'forward_fcc' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'forward_fcc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln727) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_25_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_25_1'
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'Loop 2'
+INFO: [SCHED 204-61] Pipelining loop 'Loop 3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'Loop 3'
+INFO: [SCHED 204-61] Pipelining loop 'LOOP2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 6, loop 'LOOP2'
+INFO: [SCHED 204-61] Pipelining loop 'Loop 5'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'Loop 5'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.14 seconds. CPU system time: 0 seconds. Elapsed time: 0.15 seconds; current allocated memory: 190.165 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=0
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=/home/anubhav/workspace/ip_repo/forward_fcc/forward_fcc.zip
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output /home/anubhav/workspace/ip_repo/forward_fcc/forward_fcc.zip -rtl verilog 
+INFO: [HLS 200-1510] Running: set_directive_top -name forward_fcc forward_fcc 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 155.937 MB.
+INFO: [HLS 200-10] Analyzing design file 'forward_fcc/fwprop.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 3.17 seconds. CPU system time: 0.23 seconds. Elapsed time: 2.75 seconds; current allocated memory: 157.176 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'forward_fcc(ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int)' (forward_fcc/fwprop.cpp:5:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'forward_fcc(ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int)' (forward_fcc/fwprop.cpp:5:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'forward_fcc(ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int)' (forward_fcc/fwprop.cpp:5:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'forward_fcc(ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int)' (forward_fcc/fwprop.cpp:5:0)
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 16 in loop 'VITIS_LOOP_25_1'(forward_fcc/fwprop.cpp:25:22) has been inferred on port 'gmem' (forward_fcc/fwprop.cpp:25:22)
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 16 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 16 in loop 'LOOP2'(forward_fcc/fwprop.cpp:39:15) has been inferred on port 'gmem' (forward_fcc/fwprop.cpp:39:15)
+INFO: [HLS 214-115] Multiple burst writes of variable length and bit width 16 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 16 in loop 'anonymous'() has been inferred on port 'gmem'
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i16.s_struct.ap_fixeds' into 'forward_fcc(ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int)'
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2.77 seconds. CPU system time: 0.14 seconds. Elapsed time: 2.92 seconds; current allocated memory: 159.433 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 159.435 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 163.824 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 167.944 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_25_1' (forward_fcc/fwprop.cpp:25) in function 'forward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-3' in function 'forward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-4' in function 'forward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'LOOP2' (forward_fcc/fwprop.cpp:39) in function 'forward_fcc' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-6' in function 'forward_fcc' automatically.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.2 seconds. CPU system time: 0 seconds. Elapsed time: 0.2 seconds; current allocated memory: 193.868 MB.
+WARNING: [HLS 200-960] Cannot flatten loop 'Lread_w' (forward_fcc/fwprop.cpp:24:19) in function 'forward_fcc' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+WARNING: [HLS 200-960] Cannot flatten loop 'LOOP1' (forward_fcc/fwprop.cpp:35:19) in function 'forward_fcc' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+INFO: [HLS 200-472] Inferring partial write operation for 'wbuf.V' (forward_fcc/fwprop.cpp:26:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'bbuf.V' 
+INFO: [HLS 200-472] Inferring partial write operation for 'wbuf.V' 
+INFO: [HLS 200-472] Inferring partial write operation for 'ybuf.V' (forward_fcc/fwprop.cpp:37:13)
+INFO: [HLS 200-472] Inferring partial write operation for 'ybuf.V' 
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.14 seconds. CPU system time: 0 seconds. Elapsed time: 0.15 seconds; current allocated memory: 189.415 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'forward_fcc' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'forward_fcc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln727) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_25_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_25_1'
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'Loop 2'
+INFO: [SCHED 204-61] Pipelining loop 'Loop 3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'Loop 3'
+INFO: [SCHED 204-61] Pipelining loop 'LOOP2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 6, loop 'LOOP2'
+INFO: [SCHED 204-61] Pipelining loop 'Loop 5'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'Loop 5'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.13 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.14 seconds; current allocated memory: 190.164 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================

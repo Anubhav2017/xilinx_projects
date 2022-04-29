@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'forward_fcc'" level="0">
-<item name = "Date">Fri Apr 29 11:31:28 2022
+<item name = "Date">Fri Apr 29 16:23:10 2022
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)</item>
 <item name = "Project">forward_fcc</item>
@@ -36,7 +36,7 @@
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
 <column name="- Lread_w">?, ?, 4 ~ ?, -, -, ?, no</column>
-<column name=" + VITIS_LOOP_29_1">2, ?, 3, 1, 1, 1 ~ ?, yes</column>
+<column name=" + VITIS_LOOP_25_1">2, ?, 3, 1, 1, 1 ~ ?, yes</column>
 <column name="- Loop 2">2, ?, 3, 1, 1, 1 ~ ?, yes</column>
 <column name="- Loop 3">2, ?, 3, 1, 1, 1 ~ ?, yes</column>
 <column name="- LOOP1">?, ?, 3 ~ ?, -, -, ?, no</column>
@@ -95,11 +95,11 @@
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
 <column name="add_ln1116_fu_671_p2">+, 0, 0, 17, 14, 14</column>
-<column name="add_ln28_fu_393_p2">+, 0, 0, 39, 32, 1</column>
-<column name="add_ln29_fu_463_p2">+, 0, 0, 38, 31, 1</column>
-<column name="add_ln30_fu_482_p2">+, 0, 0, 17, 14, 14</column>
-<column name="add_ln39_fu_603_p2">+, 0, 0, 39, 32, 1</column>
-<column name="add_ln43_fu_652_p2">+, 0, 0, 38, 31, 1</column>
+<column name="add_ln24_fu_393_p2">+, 0, 0, 39, 32, 1</column>
+<column name="add_ln25_fu_463_p2">+, 0, 0, 38, 31, 1</column>
+<column name="add_ln26_fu_482_p2">+, 0, 0, 17, 14, 14</column>
+<column name="add_ln35_fu_603_p2">+, 0, 0, 39, 32, 1</column>
+<column name="add_ln39_fu_652_p2">+, 0, 0, 38, 31, 1</column>
 <column name="empty_28_fu_438_p2">+, 0, 0, 39, 32, 32</column>
 <column name="empty_32_fu_514_p2">+, 0, 0, 70, 63, 1</column>
 <column name="empty_35_fu_565_p2">+, 0, 0, 70, 63, 1</column>
@@ -122,12 +122,12 @@
 <column name="exitcond5_fu_710_p2">icmp, 0, 0, 28, 63, 63</column>
 <column name="exitcond878_fu_571_p2">icmp, 0, 0, 28, 63, 63</column>
 <column name="exitcond889_fu_520_p2">icmp, 0, 0, 28, 63, 63</column>
-<column name="icmp_ln28_fu_399_p2">icmp, 0, 0, 18, 32, 32</column>
-<column name="icmp_ln29_fu_473_p2">icmp, 0, 0, 18, 32, 32</column>
-<column name="icmp_ln36_fu_417_p2">icmp, 0, 0, 18, 32, 1</column>
-<column name="icmp_ln37_fu_537_p2">icmp, 0, 0, 18, 32, 1</column>
-<column name="icmp_ln39_fu_609_p2">icmp, 0, 0, 18, 32, 32</column>
-<column name="icmp_ln43_fu_662_p2">icmp, 0, 0, 18, 32, 32</column>
+<column name="icmp_ln24_fu_399_p2">icmp, 0, 0, 18, 32, 32</column>
+<column name="icmp_ln25_fu_473_p2">icmp, 0, 0, 18, 32, 32</column>
+<column name="icmp_ln32_fu_417_p2">icmp, 0, 0, 18, 32, 1</column>
+<column name="icmp_ln33_fu_537_p2">icmp, 0, 0, 18, 32, 1</column>
+<column name="icmp_ln35_fu_609_p2">icmp, 0, 0, 18, 32, 32</column>
+<column name="icmp_ln39_fu_662_p2">icmp, 0, 0, 18, 32, 32</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
 <column name="ap_enable_pp1">xor, 0, 0, 2, 1, 2</column>
 <column name="ap_enable_pp2">xor, 0, 0, 2, 1, 2</column>
@@ -178,10 +178,10 @@
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
 <column name="add_ln1116_reg_966">14, 0, 14, 0</column>
-<column name="add_ln28_reg_783">32, 0, 32, 0</column>
-<column name="add_ln30_reg_830">14, 0, 14, 0</column>
-<column name="add_ln30_reg_830_pp0_iter1_reg">14, 0, 14, 0</column>
-<column name="add_ln39_reg_918">32, 0, 32, 0</column>
+<column name="add_ln24_reg_783">32, 0, 32, 0</column>
+<column name="add_ln26_reg_830">14, 0, 14, 0</column>
+<column name="add_ln26_reg_830_pp0_iter1_reg">14, 0, 14, 0</column>
+<column name="add_ln35_reg_918">32, 0, 32, 0</column>
 <column name="ap_CS_fsm">50, 0, 50, 0</column>
 <column name="ap_enable_reg_pp0_iter0">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
@@ -226,23 +226,23 @@
 <column name="gmem_addr_read_reg_866">16, 0, 16, 0</column>
 <column name="i_1_reg_339">32, 0, 32, 0</column>
 <column name="i_reg_295">32, 0, 32, 0</column>
-<column name="icmp_ln29_reg_826">1, 0, 1, 0</column>
-<column name="icmp_ln29_reg_826_pp0_iter1_reg">1, 0, 1, 0</column>
-<column name="icmp_ln36_reg_801">1, 0, 1, 0</column>
-<column name="icmp_ln37_reg_878">1, 0, 1, 0</column>
-<column name="icmp_ln43_reg_962">1, 0, 1, 0</column>
+<column name="icmp_ln25_reg_826">1, 0, 1, 0</column>
+<column name="icmp_ln25_reg_826_pp0_iter1_reg">1, 0, 1, 0</column>
+<column name="icmp_ln32_reg_801">1, 0, 1, 0</column>
+<column name="icmp_ln33_reg_878">1, 0, 1, 0</column>
+<column name="icmp_ln39_reg_962">1, 0, 1, 0</column>
 <column name="j_1_reg_350">31, 0, 31, 0</column>
 <column name="j_reg_306">31, 0, 31, 0</column>
 <column name="loop_index72_reg_328">63, 0, 63, 0</column>
 <column name="loop_index78_reg_317">63, 0, 63, 0</column>
 <column name="loop_index_reg_372">63, 0, 63, 0</column>
 <column name="mul_ln1116_reg_947">14, 0, 14, 0</column>
-<column name="mul_ln30_reg_810">14, 0, 14, 0</column>
-<column name="mul_ln37_reg_871">32, 0, 32, 0</column>
+<column name="mul_ln26_reg_810">14, 0, 14, 0</column>
+<column name="mul_ln33_reg_871">32, 0, 32, 0</column>
 <column name="rhs_reg_361">16, 0, 16, 0</column>
-<column name="sext_ln36_reg_840">63, 0, 63, 0</column>
-<column name="sext_ln37_reg_882">63, 0, 63, 0</column>
-<column name="trunc_ln41_reg_926">7, 0, 7, 0</column>
+<column name="sext_ln32_reg_840">63, 0, 63, 0</column>
+<column name="sext_ln33_reg_882">63, 0, 63, 0</column>
+<column name="trunc_ln37_reg_926">7, 0, 7, 0</column>
 <column name="w_read_reg_763">32, 0, 32, 0</column>
 <column name="x_read_reg_769">32, 0, 32, 0</column>
 <column name="xdim_read_reg_744">32, 0, 32, 0</column>
@@ -250,7 +250,7 @@
 <column name="ybuf_V_addr_reg_936">7, 0, 7, 0</column>
 <column name="ybuf_V_load_reg_1015">16, 0, 16, 0</column>
 <column name="ydim_read_reg_733">32, 0, 32, 0</column>
-<column name="icmp_ln43_reg_962">64, 32, 1, 0</column>
+<column name="icmp_ln39_reg_962">64, 32, 1, 0</column>
 </table>
 </item>
 </section>

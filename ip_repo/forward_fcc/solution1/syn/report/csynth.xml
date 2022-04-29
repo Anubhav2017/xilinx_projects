@@ -39,7 +39,7 @@
                         <max>-1</max>
                     </range>
                 </IterationLatency>
-                <VITIS_LOOP_29_1>
+                <VITIS_LOOP_25_1>
                     <TripCount>undef</TripCount>
                     <Latency>
                         <range>
@@ -55,7 +55,7 @@
                     </AbsoluteTimeLatency>
                     <PipelineII>1</PipelineII>
                     <PipelineDepth>3</PipelineDepth>
-                </VITIS_LOOP_29_1>
+                </VITIS_LOOP_25_1>
             </Lread_w>
             <Loop2>
                 <TripCount>undef</TripCount>
@@ -987,14 +987,14 @@
                             </range>
                         </IterationLatency>
                         <PipelineDepth>4 ~ ?</PipelineDepth>
-                        <VITIS_LOOP_29_1>
-                            <Name>VITIS_LOOP_29_1</Name>
+                        <VITIS_LOOP_25_1>
+                            <Name>VITIS_LOOP_25_1</Name>
                             <TripCount>undef</TripCount>
                             <Latency>2 ~ ?</Latency>
                             <AbsoluteTimeLatency>20.000 ns ~ ?</AbsoluteTimeLatency>
                             <PipelineII>1</PipelineII>
                             <PipelineDepth>3</PipelineDepth>
-                        </VITIS_LOOP_29_1>
+                        </VITIS_LOOP_25_1>
                     </Lread_w>
                     <Loop2>
                         <Name>Loop 2</Name>
@@ -2144,17 +2144,17 @@
             <item name="Burst Summary">
                 <table>
                     <keys size="3">HW Interface, Message, Location</keys>
-                    <column name="m_axi_gmem">Multiple burst reads of variable length and bit width 16 in loop 'VITIS_LOOP_29_1', forward_fcc/fwprop.cpp:29:22</column>
-                    <column name="m_axi_gmem">Multiple burst reads of variable length and bit width 16 in loop 'LOOP2', forward_fcc/fwprop.cpp:43:15</column>
+                    <column name="m_axi_gmem">Multiple burst reads of variable length and bit width 16 in loop 'VITIS_LOOP_25_1', forward_fcc/fwprop.cpp:25:22</column>
+                    <column name="m_axi_gmem">Multiple burst reads of variable length and bit width 16 in loop 'LOOP2', forward_fcc/fwprop.cpp:39:15</column>
                 </table>
             </item>
             <item name="Burst Missed">
                 <table>
                     <keys size="5">HW Interface, Variable, Problem, Resolution, Location</keys>
-                    <column name="m_axi_gmem">x, Access call is in the conditional branch, 214-232, forward_fcc/fwprop.cpp:43:15</column>
-                    <column name="m_axi_gmem">w, Access call is in the conditional branch, 214-232, forward_fcc/fwprop.cpp:29:22</column>
-                    <column name="m_axi_gmem">x, Could not widen since Type i16 size is greater than or equal to alignment 0(bytes), , forward_fcc/fwprop.cpp:43:15</column>
-                    <column name="m_axi_gmem">w, Could not widen since Type i16 size is greater than or equal to alignment 0(bytes), , forward_fcc/fwprop.cpp:29:22</column>
+                    <column name="m_axi_gmem">x, Access call is in the conditional branch, 214-232, forward_fcc/fwprop.cpp:39:15</column>
+                    <column name="m_axi_gmem">w, Access call is in the conditional branch, 214-232, forward_fcc/fwprop.cpp:25:22</column>
+                    <column name="m_axi_gmem">x, Could not widen since Type i16 size is greater than or equal to alignment 0(bytes), , forward_fcc/fwprop.cpp:39:15</column>
+                    <column name="m_axi_gmem">w, Could not widen since Type i16 size is greater than or equal to alignment 0(bytes), , forward_fcc/fwprop.cpp:25:22</column>
                 </table>
             </item>
         </section>

@@ -1,4 +1,4 @@
-<project xmlns="com.autoesl.autopilot.project" top="loss_derivative" name="lossfun">
+<project xmlns="com.autoesl.autopilot.project" name="lossfun" top="loss_derivative">
     <includePaths/>
     <libraryPaths/>
     <Simulation>

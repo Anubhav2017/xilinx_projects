@@ -2,6 +2,9 @@
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
     <originFiles name="fwprop.cpp" path="/home/anubhav/xilinx_projects/ip_repo/forward_fcc/fwprop.cpp"/>
+    <originFiles name="fwprop.h" path="/home/anubhav/xilinx_projects/ip_repo/forward_fcc/fwprop.h"/>
   </source>
-  <testbench/>
+  <testbench>
+    <originFiles name="tb.cpp" path="/home/anubhav/xilinx_projects/ip_repo/forward_fcc/tb.cpp"/>
+  </testbench>
 </autopilotfilemapping:AutoPilotFileMapping>

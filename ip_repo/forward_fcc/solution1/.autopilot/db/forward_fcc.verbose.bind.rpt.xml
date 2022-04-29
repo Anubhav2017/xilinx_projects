@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'forward_fcc'" level="0">
-<item name = "Date">Fri Apr 29 11:31:28 2022
+<item name = "Date">Fri Apr 29 16:23:10 2022
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)</item>
 <item name = "Project">forward_fcc</item>
@@ -36,7 +36,7 @@
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
 <column name="- Lread_w">?, ?, 4 ~ ?, -, -, ?, no</column>
-<column name=" + VITIS_LOOP_29_1">2, ?, 3, 1, 1, 1 ~ ?, yes</column>
+<column name=" + VITIS_LOOP_25_1">2, ?, 3, 1, 1, 1 ~ ?, yes</column>
 <column name="- Loop 2">2, ?, 3, 1, 1, 1 ~ ?, yes</column>
 <column name="- Loop 3">2, ?, 3, 1, 1, 1 ~ ?, yes</column>
 <column name="- LOOP1">?, ?, 3 ~ ?, -, -, ?, no</column>

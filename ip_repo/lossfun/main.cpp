@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<string.h>
 #include <ap_fixed.h>
+#include "hls_math.h"
 
 #define MAX_SIZE 100
 #define MAX_FILTERS 10
@@ -32,35 +33,39 @@ fixed loss_derivative(fixed* x, fixed* dx, int y,int x_size, int N){
 
     fixed max = x[0];
     for(int i=1;i<x_size;i++){
-        if(x[i] > max){
-            max = x[i];
+        if(xbuff[i] > max){
+            max = xbuff[i];
         }
     }
 
     for(int i=0;i<x_size;i++){
-        log_probs[i] = x[i] - max;
+        log_probs[i] = xbuff[i] - max;
     }
 
     fixed sum = 0;
 
     for(int i=0;i<x_size;i++){
-        sum += exp(log_probs[i]);
+        sum += hls::exp(log_probs[i]);
     }
 
     for(int i=0;i<x_size;i++){
-        probs[i] = exp(log_probs[i])/sum;
+        probs[i] = hls::exp(log_probs[i])/sum;
     }
 
-    loss -= log(probs[y]);
+    loss = loss - hls::log(probs[y]);
 
     for(int i=0;i<x_size;i++){
         if(i == y){
-            dx[i] = (probs[i] - 1)/N;
+            dxbuff[i] = (probs[i] - 1)/N;
         }
         else{
-            dx[i] = probs[i]/N;
+            dxbuff[i] = probs[i]/N;
         }
     }
+
+    memcpy((fixed*)dx, dxbuff,  x_size*sizeof(fixed));
+
+
 
     return loss;
 }

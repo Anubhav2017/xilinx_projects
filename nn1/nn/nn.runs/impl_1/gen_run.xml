@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1651227322">
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BITSTR-SYSDEF" Name="fwd_fcc_test_wrapper.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="fwd_fcc_test_wrapper.ltx"/>
+  <File Type="BG-BGN" Name="fwd_fcc_test_wrapper.bgn"/>
+  <File Type="NPI_FILE" Name="fwd_fcc_test_wrapper.npi"/>
+  <File Type="BG-DRC" Name="fwd_fcc_test_wrapper.drc"/>
+  <File Type="RNPI_FILE" Name="fwd_fcc_test_wrapper.rnpi"/>
+  <File Type="CFI_FILE" Name="fwd_fcc_test_wrapper.cfi"/>
+  <File Type="RCFI_FILE" Name="fwd_fcc_test_wrapper.rcfi"/>
+  <File Type="PDI-FILE" Name="fwd_fcc_test_wrapper.pdi"/>
+  <File Type="BITSTR-MMI" Name="fwd_fcc_test_wrapper.mmi"/>
+  <File Type="BITSTR-BMM" Name="fwd_fcc_test_wrapper_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="fwd_fcc_test_wrapper.nky"/>
+  <File Type="BITSTR-RBT" Name="fwd_fcc_test_wrapper.rbt"/>
+  <File Type="BITSTR-MSK" Name="fwd_fcc_test_wrapper.msk"/>
+  <File Type="RBD_FILE" Name="fwd_fcc_test_wrapper.rbd"/>
+  <File Type="BG-BIN" Name="fwd_fcc_test_wrapper.bin"/>
+  <File Type="BG-BIT" Name="fwd_fcc_test_wrapper.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="fwd_fcc_test_wrapper_bus_skew_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="fwd_fcc_test_wrapper_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="fwd_fcc_test_wrapper_bus_skew_postroute_physopted.rpt"/>
+  <File Type="RDI-RDI" Name="fwd_fcc_test_wrapper.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="fwd_fcc_test_wrapper_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="fwd_fcc_test_wrapper_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="fwd_fcc_test_wrapper_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="fwd_fcc_test_wrapper_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="fwd_fcc_test_wrapper_postroute_physopt.dcp"/>
+  <File Type="ROUTE-BUS-SKEW" Name="fwd_fcc_test_wrapper_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="fwd_fcc_test_wrapper_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="fwd_fcc_test_wrapper_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="fwd_fcc_test_wrapper_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="fwd_fcc_test_wrapper_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="fwd_fcc_test_wrapper_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="fwd_fcc_test_wrapper_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="fwd_fcc_test_wrapper_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="fwd_fcc_test_wrapper_power_routed.rpx"/>
+  <File Type="PLACE-UTIL-PB" Name="fwd_fcc_test_wrapper_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="fwd_fcc_test_wrapper_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="fwd_fcc_test_wrapper_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="fwd_fcc_test_wrapper_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="fwd_fcc_test_wrapper_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="fwd_fcc_test_wrapper_pwropt.dcp"/>
+  <File Type="OPT-TIMING" Name="fwd_fcc_test_wrapper_timing_summary_opted.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="fwd_fcc_test_wrapper_incremental_reuse_placed.rpt"/>
+  <File Type="OPT-HWDEF" Name="fwd_fcc_test_wrapper.hwdef"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="fwd_fcc_test_wrapper_bus_skew_routed.rpx"/>
+  <File Type="REPORTS-TCL" Name="fwd_fcc_test_wrapper_reports.tcl"/>
+  <File Type="PWROPT-DRC" Name="fwd_fcc_test_wrapper_drc_pwropted.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="fwd_fcc_test_wrapper_bus_skew_routed.pb"/>
+  <File Type="PA-TCL" Name="fwd_fcc_test_wrapper.tcl"/>
+  <File Type="INIT-TIMING" Name="fwd_fcc_test_wrapper_timing_summary_init.rpt"/>
+  <File Type="PLACE-CTRL" Name="fwd_fcc_test_wrapper_control_sets_placed.rpt"/>
+  <File Type="PWROPT-TIMING" Name="fwd_fcc_test_wrapper_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="fwd_fcc_test_wrapper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="OPT-DCP" Name="fwd_fcc_test_wrapper_opt.dcp"/>
+  <File Type="OPT-DRC" Name="fwd_fcc_test_wrapper_drc_opted.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="fwd_fcc_test_wrapper_methodology_drc_opted.rpt"/>
+  <File Type="PLACE-TIMING" Name="fwd_fcc_test_wrapper_timing_summary_placed.rpt"/>
+  <File Type="ROUTE-DRC" Name="fwd_fcc_test_wrapper_drc_routed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="fwd_fcc_test_wrapper_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="fwd_fcc_test_wrapper_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="fwd_fcc_test_wrapper_drc_routed.pb"/>
+  <File Type="PHYSOPT-DCP" Name="fwd_fcc_test_wrapper_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="fwd_fcc_test_wrapper_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="fwd_fcc_test_wrapper_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-PWR" Name="fwd_fcc_test_wrapper_power_routed.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="fwd_fcc_test_wrapper_routed_error.dcp"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="fwd_fcc_test_wrapper_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-DCP" Name="fwd_fcc_test_wrapper_routed.dcp"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="fwd_fcc_test_wrapper_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="fwd_fcc_test_wrapper_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC-RPX" Name="fwd_fcc_test_wrapper_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="fwd_fcc_test_wrapper_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="fwd_fcc_test_wrapper_power_summary_routed.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/fwd_fcc_test/fwd_fcc_test.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PGENDIR/sources_1/bd/fwd_fcc_test/hdl/fwd_fcc_test_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="fwd_fcc_test_wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="fwd_fcc_test_rst_ps7_0_100M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="fwd_fcc_test_processing_system7_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="fwd_fcc_test_forward_fcc_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="fwd_fcc_test_axi_bram_ctrl_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="fwd_fcc_test_axi_bram_ctrl_0_bram_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="fwd_fcc_test_axi_smc_0"/>
+</GenRun>
