@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'relu_bckwd'
 ================================================================
 + General Information: 
-    * Date:           Thu Apr 28 14:32:19 2022
+    * Date:           Mon May  2 11:47:23 2022
     * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
     * Project:        relu_bckwd
     * Solution:       solution1 (Vivado IP Flow Target)
@@ -19,8 +19,8 @@
     |       Modules      |  Issue |       | Latency |  Latency  | Iteration|         | Trip |          |        |    |           |           |     |
     |       & Loops      |  Type  | Slack | (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined|  BRAM  | DSP|     FF    |    LUT    | URAM|
     +--------------------+--------+-------+---------+-----------+----------+---------+------+----------+--------+----+-----------+-----------+-----+
-    |+ relu_bckwd        |  Timing|   0.00|        -|          -|         -|        -|     -|        no|  3 (1%)|   -|  1510 (1%)|  1628 (3%)|    -|
-    | o VITIS_LOOP_19_1  |      II|  -7.30|        -|          -|        12|        2|     -|       yes|       -|   -|          -|          -|    -|
+    |+ relu_bckwd        |  Timing|   0.00|        -|          -|         -|        -|     -|        no|  3 (1%)|   -|  1432 (1%)|  1692 (3%)|    -|
+    | o VITIS_LOOP_19_1  |      II|  -7.30|        -|          -|        11|        2|     -|       yes|       -|   -|          -|          -|    -|
     | o VITIS_LOOP_31_2  |       -|  -7.30|      128|  1.280e+03|         3|        1|   127|       yes|       -|   -|          -|          -|    -|
     +--------------------+--------+-------+---------+-----------+----------+---------+------+----------+--------+----+-----------+-----------+-----+
 

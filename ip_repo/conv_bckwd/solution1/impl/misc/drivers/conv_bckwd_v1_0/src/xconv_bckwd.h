@@ -91,8 +91,6 @@ void XConv_bckwd_Set_x(XConv_bckwd *InstancePtr, u32 Data);
 u32 XConv_bckwd_Get_x(XConv_bckwd *InstancePtr);
 void XConv_bckwd_Set_w(XConv_bckwd *InstancePtr, u32 Data);
 u32 XConv_bckwd_Get_w(XConv_bckwd *InstancePtr);
-void XConv_bckwd_Set_y(XConv_bckwd *InstancePtr, u32 Data);
-u32 XConv_bckwd_Get_y(XConv_bckwd *InstancePtr);
 void XConv_bckwd_Set_dx(XConv_bckwd *InstancePtr, u32 Data);
 u32 XConv_bckwd_Get_dx(XConv_bckwd *InstancePtr);
 void XConv_bckwd_Set_dw(XConv_bckwd *InstancePtr, u32 Data);

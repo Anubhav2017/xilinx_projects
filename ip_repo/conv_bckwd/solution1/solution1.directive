@@ -5,11 +5,6 @@
                 <option name="name" value="conv_bckwd"/>
             </pragma>
         </directive>
-        <directive functionName="conv_bckwd" label="" functionLabel="">
-            <pragma name="TOP">
-                <option name="name" value="conv_bckwd"/>
-            </pragma>
-        </directive>
     </sourceFile>
 </AutoPilot:ProjectResources>
 

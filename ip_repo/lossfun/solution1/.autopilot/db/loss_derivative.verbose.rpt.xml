@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'loss_derivative'" level="0">
-<item name = "Date">Fri Apr 29 13:57:25 2022
+<item name = "Date">Mon May  2 12:15:43 2022
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)</item>
 <item name = "Project">lossfun</item>
@@ -38,11 +38,11 @@
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
 <column name="- Loop 1">2, ?, 3, 1, 1, 1 ~ ?, yes</column>
-<column name="- VITIS_LOOP_35_1">?, ?, 2, 1, 1, ?, yes</column>
-<column name="- VITIS_LOOP_41_2">2, 128, 3, 1, 1, 1 ~ 127, yes</column>
-<column name="- VITIS_LOOP_47_3">8, 134, 9, 1, 1, 1 ~ 127, yes</column>
-<column name="- VITIS_LOOP_51_4">35, 161, 36, 1, 1, 1 ~ 127, yes</column>
-<column name="- VITIS_LOOP_57_5">0, 150, 25, 1, 1, 0 ~ 127, yes</column>
+<column name="- VITIS_LOOP_26_1">?, ?, 2, 1, 1, ?, yes</column>
+<column name="- VITIS_LOOP_32_2">2, 128, 3, 1, 1, 1 ~ 127, yes</column>
+<column name="- VITIS_LOOP_38_3">8, 134, 9, 1, 1, 1 ~ 127, yes</column>
+<column name="- VITIS_LOOP_42_4">35, 161, 36, 1, 1, 1 ~ 127, yes</column>
+<column name="- VITIS_LOOP_48_5">0, 150, 25, 1, 1, 0 ~ 127, yes</column>
 <column name="- Loop 7">2, 128, 3, 1, 1, 1 ~ 127, yes</column>
 </table>
 </item>
@@ -99,11 +99,11 @@
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
 <column name="add_ln1148_fu_691_p2">+, 0, 0, 24, 17, 9</column>
-<column name="add_ln35_fu_519_p2">+, 0, 0, 39, 32, 1</column>
-<column name="add_ln41_fu_549_p2">+, 0, 0, 14, 7, 1</column>
-<column name="add_ln47_fu_575_p2">+, 0, 0, 14, 7, 1</column>
-<column name="add_ln51_fu_605_p2">+, 0, 0, 14, 7, 1</column>
-<column name="add_ln57_fu_653_p2">+, 0, 0, 14, 7, 1</column>
+<column name="add_ln26_fu_519_p2">+, 0, 0, 39, 32, 1</column>
+<column name="add_ln32_fu_549_p2">+, 0, 0, 14, 7, 1</column>
+<column name="add_ln38_fu_575_p2">+, 0, 0, 14, 7, 1</column>
+<column name="add_ln42_fu_605_p2">+, 0, 0, 14, 7, 1</column>
+<column name="add_ln48_fu_653_p2">+, 0, 0, 14, 7, 1</column>
 <column name="empty_42_fu_483_p2">+, 0, 0, 14, 7, 1</column>
 <column name="empty_49_fu_734_p2">+, 0, 0, 14, 7, 1</column>
 <column name="sum_V_1_fu_595_p2">+, 0, 0, 23, 16, 16</column>
@@ -118,14 +118,14 @@
 <column name="exitcond2_fu_744_p2">icmp, 0, 0, 18, 32, 32</column>
 <column name="exitcond4729_fu_493_p2">icmp, 0, 0, 18, 32, 32</column>
 <column name="icmp_ln1494_fu_530_p2">icmp, 0, 0, 13, 16, 16</column>
-<column name="icmp_ln29_fu_466_p2">icmp, 0, 0, 18, 32, 1</column>
-<column name="icmp_ln35_fu_514_p2">icmp, 0, 0, 18, 32, 32</column>
-<column name="icmp_ln41_1_fu_559_p2">icmp, 0, 0, 18, 32, 32</column>
-<column name="icmp_ln41_fu_544_p2">icmp, 0, 0, 18, 32, 1</column>
-<column name="icmp_ln47_fu_585_p2">icmp, 0, 0, 18, 32, 32</column>
-<column name="icmp_ln51_fu_615_p2">icmp, 0, 0, 18, 32, 32</column>
-<column name="icmp_ln57_fu_663_p2">icmp, 0, 0, 18, 32, 32</column>
-<column name="icmp_ln58_fu_673_p2">icmp, 0, 0, 18, 32, 32</column>
+<column name="icmp_ln20_fu_466_p2">icmp, 0, 0, 18, 32, 1</column>
+<column name="icmp_ln26_fu_514_p2">icmp, 0, 0, 18, 32, 32</column>
+<column name="icmp_ln32_1_fu_559_p2">icmp, 0, 0, 18, 32, 32</column>
+<column name="icmp_ln32_fu_544_p2">icmp, 0, 0, 18, 32, 1</column>
+<column name="icmp_ln38_fu_585_p2">icmp, 0, 0, 18, 32, 32</column>
+<column name="icmp_ln42_fu_615_p2">icmp, 0, 0, 18, 32, 32</column>
+<column name="icmp_ln48_fu_663_p2">icmp, 0, 0, 18, 32, 32</column>
+<column name="icmp_ln49_fu_673_p2">icmp, 0, 0, 18, 32, 32</column>
 <column name="max_V_2_fu_536_p3">select, 0, 0, 16, 1, 16</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
 <column name="ap_enable_pp1">xor, 0, 0, 2, 1, 2</column>
@@ -289,13 +289,13 @@
 <column name="i_4_cast_reg_948">7, 0, 64, 57</column>
 <column name="i_4_reg_399">7, 0, 7, 0</column>
 <column name="i_reg_333">32, 0, 32, 0</column>
-<column name="icmp_ln29_reg_790">1, 0, 1, 0</column>
-<column name="icmp_ln35_reg_825">1, 0, 1, 0</column>
-<column name="icmp_ln41_1_reg_853">1, 0, 1, 0</column>
-<column name="icmp_ln41_1_reg_853_pp2_iter1_reg">1, 0, 1, 0</column>
-<column name="icmp_ln47_reg_877">1, 0, 1, 0</column>
-<column name="icmp_ln51_reg_901">1, 0, 1, 0</column>
-<column name="icmp_ln58_reg_953">1, 0, 1, 0</column>
+<column name="icmp_ln20_reg_790">1, 0, 1, 0</column>
+<column name="icmp_ln26_reg_825">1, 0, 1, 0</column>
+<column name="icmp_ln32_1_reg_853">1, 0, 1, 0</column>
+<column name="icmp_ln32_1_reg_853_pp2_iter1_reg">1, 0, 1, 0</column>
+<column name="icmp_ln38_reg_877">1, 0, 1, 0</column>
+<column name="icmp_ln42_reg_901">1, 0, 1, 0</column>
+<column name="icmp_ln49_reg_953">1, 0, 1, 0</column>
 <column name="loop_index451_reg_321">7, 0, 7, 0</column>
 <column name="loop_index451_reg_321_pp0_iter1_reg">7, 0, 7, 0</column>
 <column name="loop_index_reg_410">7, 0, 7, 0</column>
@@ -317,9 +317,9 @@
 <column name="y_read_reg_774">32, 0, 32, 0</column>
 <column name="i_3_cast7_reg_905">64, 32, 64, 57</column>
 <column name="i_4_cast_reg_948">64, 32, 64, 57</column>
-<column name="icmp_ln47_reg_877">64, 32, 1, 0</column>
-<column name="icmp_ln51_reg_901">64, 32, 1, 0</column>
-<column name="icmp_ln58_reg_953">64, 32, 1, 0</column>
+<column name="icmp_ln38_reg_877">64, 32, 1, 0</column>
+<column name="icmp_ln42_reg_901">64, 32, 1, 0</column>
+<column name="icmp_ln49_reg_953">64, 32, 1, 0</column>
 </table>
 </item>
 </section>

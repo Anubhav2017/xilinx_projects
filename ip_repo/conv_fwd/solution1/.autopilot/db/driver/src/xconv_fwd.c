@@ -11,8 +11,8 @@ int XConv_fwd_CfgInitialize(XConv_fwd *InstancePtr, XConv_fwd_Config *ConfigPtr)
     Xil_AssertNonvoid(InstancePtr != NULL);
     Xil_AssertNonvoid(ConfigPtr != NULL);
 
-    InstancePtr->Ctrl_BaseAddress = ConfigPtr->Ctrl_BaseAddress;
     InstancePtr->Control_BaseAddress = ConfigPtr->Control_BaseAddress;
+    InstancePtr->Ctrl_BaseAddress = ConfigPtr->Ctrl_BaseAddress;
     InstancePtr->IsReady = XIL_COMPONENT_IS_READY;
 
     return XST_SUCCESS;
@@ -72,6 +72,74 @@ void XConv_fwd_DisableAutoRestart(XConv_fwd *InstancePtr) {
     Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
     XConv_fwd_WriteReg(InstancePtr->Ctrl_BaseAddress, XCONV_FWD_CTRL_ADDR_AP_CTRL, 0);
+}
+
+void XConv_fwd_Set_x(XConv_fwd *InstancePtr, u32 Data) {
+    Xil_AssertVoid(InstancePtr != NULL);
+    Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
+
+    XConv_fwd_WriteReg(InstancePtr->Control_BaseAddress, XCONV_FWD_CONTROL_ADDR_X_DATA, Data);
+}
+
+u32 XConv_fwd_Get_x(XConv_fwd *InstancePtr) {
+    u32 Data;
+
+    Xil_AssertNonvoid(InstancePtr != NULL);
+    Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
+
+    Data = XConv_fwd_ReadReg(InstancePtr->Control_BaseAddress, XCONV_FWD_CONTROL_ADDR_X_DATA);
+    return Data;
+}
+
+void XConv_fwd_Set_w(XConv_fwd *InstancePtr, u32 Data) {
+    Xil_AssertVoid(InstancePtr != NULL);
+    Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
+
+    XConv_fwd_WriteReg(InstancePtr->Control_BaseAddress, XCONV_FWD_CONTROL_ADDR_W_DATA, Data);
+}
+
+u32 XConv_fwd_Get_w(XConv_fwd *InstancePtr) {
+    u32 Data;
+
+    Xil_AssertNonvoid(InstancePtr != NULL);
+    Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
+
+    Data = XConv_fwd_ReadReg(InstancePtr->Control_BaseAddress, XCONV_FWD_CONTROL_ADDR_W_DATA);
+    return Data;
+}
+
+void XConv_fwd_Set_y(XConv_fwd *InstancePtr, u32 Data) {
+    Xil_AssertVoid(InstancePtr != NULL);
+    Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
+
+    XConv_fwd_WriteReg(InstancePtr->Control_BaseAddress, XCONV_FWD_CONTROL_ADDR_Y_DATA, Data);
+}
+
+u32 XConv_fwd_Get_y(XConv_fwd *InstancePtr) {
+    u32 Data;
+
+    Xil_AssertNonvoid(InstancePtr != NULL);
+    Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
+
+    Data = XConv_fwd_ReadReg(InstancePtr->Control_BaseAddress, XCONV_FWD_CONTROL_ADDR_Y_DATA);
+    return Data;
+}
+
+void XConv_fwd_Set_b(XConv_fwd *InstancePtr, u32 Data) {
+    Xil_AssertVoid(InstancePtr != NULL);
+    Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
+
+    XConv_fwd_WriteReg(InstancePtr->Control_BaseAddress, XCONV_FWD_CONTROL_ADDR_B_DATA, Data);
+}
+
+u32 XConv_fwd_Get_b(XConv_fwd *InstancePtr) {
+    u32 Data;
+
+    Xil_AssertNonvoid(InstancePtr != NULL);
+    Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
+
+    Data = XConv_fwd_ReadReg(InstancePtr->Control_BaseAddress, XCONV_FWD_CONTROL_ADDR_B_DATA);
+    return Data;
 }
 
 void XConv_fwd_Set_F(XConv_fwd *InstancePtr, u32 Data) {
@@ -173,74 +241,6 @@ u32 XConv_fwd_Get_FW(XConv_fwd *InstancePtr) {
     Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
     Data = XConv_fwd_ReadReg(InstancePtr->Ctrl_BaseAddress, XCONV_FWD_CTRL_ADDR_FW_DATA);
-    return Data;
-}
-
-void XConv_fwd_Set_x(XConv_fwd *InstancePtr, u32 Data) {
-    Xil_AssertVoid(InstancePtr != NULL);
-    Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
-
-    XConv_fwd_WriteReg(InstancePtr->Control_BaseAddress, XCONV_FWD_CONTROL_ADDR_X_DATA, Data);
-}
-
-u32 XConv_fwd_Get_x(XConv_fwd *InstancePtr) {
-    u32 Data;
-
-    Xil_AssertNonvoid(InstancePtr != NULL);
-    Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
-
-    Data = XConv_fwd_ReadReg(InstancePtr->Control_BaseAddress, XCONV_FWD_CONTROL_ADDR_X_DATA);
-    return Data;
-}
-
-void XConv_fwd_Set_w(XConv_fwd *InstancePtr, u32 Data) {
-    Xil_AssertVoid(InstancePtr != NULL);
-    Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
-
-    XConv_fwd_WriteReg(InstancePtr->Control_BaseAddress, XCONV_FWD_CONTROL_ADDR_W_DATA, Data);
-}
-
-u32 XConv_fwd_Get_w(XConv_fwd *InstancePtr) {
-    u32 Data;
-
-    Xil_AssertNonvoid(InstancePtr != NULL);
-    Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
-
-    Data = XConv_fwd_ReadReg(InstancePtr->Control_BaseAddress, XCONV_FWD_CONTROL_ADDR_W_DATA);
-    return Data;
-}
-
-void XConv_fwd_Set_y(XConv_fwd *InstancePtr, u32 Data) {
-    Xil_AssertVoid(InstancePtr != NULL);
-    Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
-
-    XConv_fwd_WriteReg(InstancePtr->Control_BaseAddress, XCONV_FWD_CONTROL_ADDR_Y_DATA, Data);
-}
-
-u32 XConv_fwd_Get_y(XConv_fwd *InstancePtr) {
-    u32 Data;
-
-    Xil_AssertNonvoid(InstancePtr != NULL);
-    Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
-
-    Data = XConv_fwd_ReadReg(InstancePtr->Control_BaseAddress, XCONV_FWD_CONTROL_ADDR_Y_DATA);
-    return Data;
-}
-
-void XConv_fwd_Set_b(XConv_fwd *InstancePtr, u32 Data) {
-    Xil_AssertVoid(InstancePtr != NULL);
-    Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
-
-    XConv_fwd_WriteReg(InstancePtr->Control_BaseAddress, XCONV_FWD_CONTROL_ADDR_B_DATA, Data);
-}
-
-u32 XConv_fwd_Get_b(XConv_fwd *InstancePtr) {
-    u32 Data;
-
-    Xil_AssertNonvoid(InstancePtr != NULL);
-    Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
-
-    Data = XConv_fwd_ReadReg(InstancePtr->Control_BaseAddress, XCONV_FWD_CONTROL_ADDR_B_DATA);
     return Data;
 }
 

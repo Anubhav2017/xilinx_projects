@@ -151,6 +151,7 @@ extern "C" {
 }
 # 2 "<built-in>" 2
 # 1 "lossfun/main.cpp" 2
+# 1 "lossfun/lossfun.h" 1
 # 1 "/usr/include/stdio.h" 1 3 4
 # 27 "/usr/include/stdio.h" 3 4
 # 1 "/usr/include/bits/libc-header-start.h" 1 3 4
@@ -1027,7 +1028,7 @@ extern int __uflow (FILE *);
 extern int __overflow (FILE *, int);
 # 873 "/usr/include/stdio.h" 3 4
 }
-# 2 "lossfun/main.cpp" 2
+# 2 "lossfun/lossfun.h" 2
 # 1 "/usr/include/string.h" 1 3 4
 # 26 "/usr/include/string.h" 3 4
 # 1 "/usr/include/bits/libc-header-start.h" 1 3 4
@@ -1429,7 +1430,7 @@ extern "C++" const char *basename (const char *__filename)
      throw () __asm ("basename") __attribute__ ((__nonnull__ (1)));
 # 499 "/usr/include/string.h" 3 4
 }
-# 3 "lossfun/main.cpp" 2
+# 3 "lossfun/lossfun.h" 2
 # 1 "/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed.h" 1
 # 55 "/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed.h"
 # 1 "/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_common.h" 1
@@ -6846,7 +6847,7 @@ inline bool operator!=(
 
 }
 # 396 "/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed.h" 2
-# 4 "lossfun/main.cpp" 2
+# 4 "lossfun/lossfun.h" 2
 # 1 "/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_math.h" 1
 # 40 "/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_math.h"
 # 1 "/tools/Xilinx/Vitis_HLS/2020.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../include/c++/6.2.0/cmath" 1 3
@@ -28561,7 +28562,7 @@ namespace hls {
     uint32_t logb(uint32_t);
 
 };
-# 5 "lossfun/main.cpp" 2
+# 5 "lossfun/lossfun.h" 2
 
 
 
@@ -28569,9 +28570,12 @@ namespace hls {
 
 typedef ap_fixed<16,9> fixed;
 
+__attribute__((sdx_kernel("loss_derivative", 0))) fixed loss_derivative(fixed* x, fixed* dx, int y,int x_size, int N);
+# 2 "lossfun/main.cpp" 2
+
 __attribute__((sdx_kernel("loss_derivative", 0))) fixed loss_derivative(fixed* x, fixed* dx, int y,int x_size, int N){
 #pragma HLS TOP name=loss_derivative
-# 12 "lossfun/main.cpp"
+# 3 "lossfun/main.cpp"
 
 
 #pragma HLS INTERFACE s_axilite port=return bundle=CTRL
@@ -28595,29 +28599,29 @@ __attribute__((sdx_kernel("loss_derivative", 0))) fixed loss_derivative(fixed* x
 
 
     fixed max = x[0];
-    VITIS_LOOP_35_1: for(int i=1;i<x_size;i++){
+    VITIS_LOOP_26_1: for(int i=1;i<x_size;i++){
         if(xbuff[i] > max){
             max = xbuff[i];
         }
     }
 
-    VITIS_LOOP_41_2: for(int i=0;i<x_size;i++){
+    VITIS_LOOP_32_2: for(int i=0;i<x_size;i++){
         log_probs[i] = xbuff[i] - max;
     }
 
     fixed sum = 0;
 
-    VITIS_LOOP_47_3: for(int i=0;i<x_size;i++){
+    VITIS_LOOP_38_3: for(int i=0;i<x_size;i++){
         sum += hls::exp(log_probs[i]);
     }
 
-    VITIS_LOOP_51_4: for(int i=0;i<x_size;i++){
+    VITIS_LOOP_42_4: for(int i=0;i<x_size;i++){
         probs[i] = hls::exp(log_probs[i])/sum;
     }
 
     loss = loss - hls::log(probs[y]);
 
-    VITIS_LOOP_57_5: for(int i=0;i<x_size;i++){
+    VITIS_LOOP_48_5: for(int i=0;i<x_size;i++){
         if(i == y){
             dxbuff[i] = (probs[i] - 1)/N;
         }

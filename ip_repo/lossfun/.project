@@ -42,9 +42,19 @@
 			<location>/home/anubhav/xilinx_projects/ip_repo/lossfun/solution1/.tcls</location>
 		</link>
 		<link>
+			<name>source/lossfun.h</name>
+			<type>1</type>
+			<location>/home/anubhav/xilinx_projects/ip_repo/lossfun/lossfun.h</location>
+		</link>
+		<link>
 			<name>source/main.cpp</name>
 			<type>1</type>
 			<location>/home/anubhav/xilinx_projects/ip_repo/lossfun/main.cpp</location>
+		</link>
+		<link>
+			<name>testbench/tb.cpp</name>
+			<type>1</type>
+			<location>/home/anubhav/xilinx_projects/ip_repo/lossfun/tb.cpp</location>
 		</link>
 		<link>
 			<name>solution1/constraints/.xml.directive</name>

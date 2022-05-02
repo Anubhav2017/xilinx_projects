@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1651220846245">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1651473944167">
   <ports id="1" name="gmem" type="PortType" coreId="0" bitwidth="16" direction="DirInOut" iftype="IfTypeFifo">
     <dataInputObjs>getelementptr</dataInputObjs>
     <dataInputObjs>getelementptr</dataInputObjs>
@@ -14,7 +14,7 @@
   <ports id="3" name="dx" type="PortType" originalName="dx" coreId="49" bitwidth="64">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="4" name="y" type="PortType" originalName="y" coreId="456058944" bitwidth="32">
+  <ports id="4" name="y" type="PortType" originalName="y" coreId="1463902992" bitwidth="32">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
   <ports id="5" name="x_size" type="PortType" originalName="x_size" coreId="49" bitwidth="32">
@@ -339,53 +339,53 @@
       <dataOutputObjs>partselect</dataOutputObjs>
       <dataOutputObjs>partselect</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="42" name="log_probs_V" lineNumber="24" originalName="log_probs.V" fileName="lossfun/main.cpp" fileDirectory=".." rtlName="log_probs_V_U" coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" contextFuncName="loss_derivative" bitwidth="16" opcode="alloca" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="lossfun/main.cpp" linenumber="24" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="42" name="log_probs_V" lineNumber="15" originalName="log_probs.V" fileName="lossfun/main.cpp" fileDirectory=".." rtlName="log_probs_V_U" coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" contextFuncName="loss_derivative" bitwidth="16" opcode="alloca" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="lossfun/main.cpp" linenumber="15" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
       <dataOutputObjs>getelementptr</dataOutputObjs>
       <dataOutputObjs>getelementptr</dataOutputObjs>
       <dataOutputObjs>getelementptr</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="43" name="probs_V" lineNumber="25" originalName="probs.V" fileName="lossfun/main.cpp" fileDirectory=".." rtlName="probs_V_U" coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" contextFuncName="loss_derivative" bitwidth="16" opcode="alloca" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="lossfun/main.cpp" linenumber="25" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="43" name="probs_V" lineNumber="16" originalName="probs.V" fileName="lossfun/main.cpp" fileDirectory=".." rtlName="probs_V_U" coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" contextFuncName="loss_derivative" bitwidth="16" opcode="alloca" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="lossfun/main.cpp" linenumber="16" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
       <dataOutputObjs>getelementptr</dataOutputObjs>
       <dataOutputObjs>getelementptr</dataOutputObjs>
       <dataOutputObjs>getelementptr</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="44" name="xbuff_V" lineNumber="26" originalName="xbuff.V" fileName="lossfun/main.cpp" fileDirectory=".." rtlName="xbuff_V_U" coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" contextFuncName="loss_derivative" bitwidth="16" opcode="alloca" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="lossfun/main.cpp" linenumber="26" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="44" name="xbuff_V" lineNumber="17" originalName="xbuff.V" fileName="lossfun/main.cpp" fileDirectory=".." rtlName="xbuff_V_U" coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" contextFuncName="loss_derivative" bitwidth="16" opcode="alloca" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="lossfun/main.cpp" linenumber="17" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
       <dataOutputObjs>getelementptr</dataOutputObjs>
       <dataOutputObjs>getelementptr</dataOutputObjs>
       <dataOutputObjs>getelementptr</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="45" name="dxbuff_V" lineNumber="27" originalName="dxbuff.V" fileName="lossfun/main.cpp" fileDirectory=".." rtlName="dxbuff_V_U" coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" contextFuncName="loss_derivative" bitwidth="16" opcode="alloca" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="lossfun/main.cpp" linenumber="27" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="45" name="dxbuff_V" lineNumber="18" originalName="dxbuff.V" fileName="lossfun/main.cpp" fileDirectory=".." rtlName="dxbuff_V_U" coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" contextFuncName="loss_derivative" bitwidth="16" opcode="alloca" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="lossfun/main.cpp" linenumber="18" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
       <dataOutputObjs>getelementptr</dataOutputObjs>
       <dataOutputObjs>getelementptr</dataOutputObjs>
       <dataOutputObjs>getelementptr</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="46" name="icmp_ln29" lineNumber="29" fileName="lossfun/main.cpp" fileDirectory=".." rtlName="icmp_ln29_fu_466_p2" opType="icmp" coreId="49" contextFuncName="loss_derivative" bitwidth="1" opcode="icmp" m_display="0" m_delay="2.47" m_topoIndex="10" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="lossfun/main.cpp" linenumber="29" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="46" name="icmp_ln20" lineNumber="20" fileName="lossfun/main.cpp" fileDirectory=".." rtlName="icmp_ln20_fu_466_p2" opType="icmp" coreId="49" contextFuncName="loss_derivative" bitwidth="1" opcode="icmp" m_display="0" m_delay="2.47" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="lossfun/main.cpp" linenumber="20" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>br</dataOutputObjs>
       <dataOutputObjs>br</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="47" name="br_ln29" lineNumber="29" fileName="lossfun/main.cpp" fileDirectory=".." coreId="49" contextFuncName="loss_derivative" opcode="br" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="lossfun/main.cpp" linenumber="29" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="47" name="br_ln20" lineNumber="20" fileName="lossfun/main.cpp" fileDirectory=".." coreId="113" contextFuncName="loss_derivative" opcode="br" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="lossfun/main.cpp" linenumber="20" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
       <dataInputObjs>icmp</dataInputObjs>
       <controlInputObjs>loop-memcpy-residual-header453</controlInputObjs>
       <controlInputObjs>loop-memcpy-expansion450.preheader</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="lossfun/main.cpp">
-      <validLinenumbers>24</validLinenumbers>
-      <validLinenumbers>25</validLinenumbers>
-      <validLinenumbers>26</validLinenumbers>
-      <validLinenumbers>27</validLinenumbers>
-      <validLinenumbers>29</validLinenumbers>
+      <validLinenumbers>15</validLinenumbers>
+      <validLinenumbers>16</validLinenumbers>
+      <validLinenumbers>17</validLinenumbers>
+      <validLinenumbers>18</validLinenumbers>
+      <validLinenumbers>20</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
   <blocks id="54" name="loop-memcpy-expansion450.preheader" type="BlockType">
@@ -393,16 +393,16 @@
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>loop-memcpy-expansion450</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="49" name="p_cast" rtlName="grp_fu_443_p4" coreId="113" bitwidth="63" opcode="partselect" nodeLabel="1.0" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="49" name="p_cast" rtlName="grp_fu_443_p4" coreId="129" bitwidth="63" opcode="partselect" nodeLabel="1.0" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>sext</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="50" name="p_cast_cast" rtlName="p_cast_cast_fu_472_p1" coreId="455140752" bitwidth="64" opcode="sext" nodeLabel="1.0" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="50" name="p_cast_cast" rtlName="p_cast_cast_fu_472_p1" coreId="1463507936" bitwidth="64" opcode="sext" nodeLabel="1.0" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
       <dataInputObjs>partselect</dataInputObjs>
       <dataOutputObjs>getelementptr</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="51" name="gmem_addr" coreId="49" bitwidth="16" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="51" name="gmem_addr" coreId="1463716416" bitwidth="16" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
       <dataInputObjs>gmem</dataInputObjs>
       <dataInputObjs>sext</dataInputObjs>
       <dataOutputObjs>readreq</dataOutputObjs>
@@ -413,7 +413,7 @@
       <dataInputObjs>getelementptr</dataInputObjs>
       <dataInputObjs>read</dataInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="53" name="br_ln0" coreId="129" opcode="br" nodeLabel="7.0" m_display="0" m_delay="1.58" m_topoIndex="16" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="53" name="br_ln0" coreId="177" opcode="br" nodeLabel="7.0" m_display="0" m_delay="1.58" m_topoIndex="16" m_clusterGroupNumber="-1">
       <controlInputObjs>loop-memcpy-expansion450</controlInputObjs>
     </node_objs>
   </blocks>
@@ -421,7 +421,7 @@
     <controlInputObjs>loop-memcpy-expansion450</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>loop-memcpy-residual-header453</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="69" name="br_ln0" coreId="456033416" opcode="br" nodeLabel="11.0" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="69" name="br_ln0" coreId="2385" opcode="br" nodeLabel="11.0" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
       <controlInputObjs>loop-memcpy-residual-header453</controlInputObjs>
     </node_objs>
   </blocks>
@@ -433,42 +433,42 @@
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>block_83</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="71" name="trunc_ln" lineNumber="34" fileName="lossfun/main.cpp" fileDirectory=".." rtlName="grp_fu_443_p4" coreId="132" contextFuncName="loss_derivative" bitwidth="63" opcode="partselect" nodeLabel="11.0" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="lossfun/main.cpp" linenumber="34" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="71" name="trunc_ln" lineNumber="25" fileName="lossfun/main.cpp" fileDirectory=".." rtlName="grp_fu_443_p4" coreId="1464138328" contextFuncName="loss_derivative" bitwidth="63" opcode="partselect" nodeLabel="11.0" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="lossfun/main.cpp" linenumber="25" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>sext</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="72" name="sext_ln34" lineNumber="34" fileName="lossfun/main.cpp" fileDirectory=".." rtlName="sext_ln34_fu_503_p1" coreId="456189897" contextFuncName="loss_derivative" bitwidth="64" opcode="sext" nodeLabel="11.0" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="lossfun/main.cpp" linenumber="34" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="72" name="sext_ln25" lineNumber="25" fileName="lossfun/main.cpp" fileDirectory=".." rtlName="sext_ln25_fu_503_p1" coreId="14" contextFuncName="loss_derivative" bitwidth="64" opcode="sext" nodeLabel="11.0" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="lossfun/main.cpp" linenumber="25" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
       <dataInputObjs>partselect</dataInputObjs>
       <dataOutputObjs>getelementptr</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="73" name="gmem_addr_1" lineNumber="34" fileName="lossfun/main.cpp" fileDirectory=".." coreId="456190672" contextFuncName="loss_derivative" bitwidth="16" opcode="getelementptr" nodeLabel="11.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="lossfun/main.cpp" linenumber="34" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="73" name="gmem_addr_1" lineNumber="25" fileName="lossfun/main.cpp" fileDirectory=".." coreId="49" contextFuncName="loss_derivative" bitwidth="16" opcode="getelementptr" nodeLabel="11.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="lossfun/main.cpp" linenumber="25" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
       <dataInputObjs>gmem</dataInputObjs>
       <dataInputObjs>sext</dataInputObjs>
       <dataOutputObjs>readreq</dataOutputObjs>
       <dataOutputObjs>read</dataOutputObjs>
       <dataOutputObjs>gmem</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="74" name="max_V_req" lineNumber="34" fileName="lossfun/main.cpp" fileDirectory=".." coreName="m_axi" implIndex="m_axi" control="auto" opType="readreq" coreId="113" contextFuncName="loss_derivative" bitwidth="1" opcode="readreq" nodeLabel="11.0" nodeLatency="6" m_display="0" m_delay="7.3" m_topoIndex="31" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="lossfun/main.cpp" linenumber="34" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="74" name="max_V_req" lineNumber="25" fileName="lossfun/main.cpp" fileDirectory=".." coreName="m_axi" implIndex="m_axi" control="auto" opType="readreq" coreId="113" contextFuncName="loss_derivative" bitwidth="1" opcode="readreq" nodeLabel="11.0" nodeLatency="6" m_display="0" m_delay="7.3" m_topoIndex="31" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="lossfun/main.cpp" linenumber="25" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
       <dataInputObjs>getelementptr</dataInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="75" name="max_V" lineNumber="34" originalName="max.V" fileName="lossfun/main.cpp" fileDirectory=".." coreName="m_axi" implIndex="UNSUPPORTED" control="auto" coreId="113" contextFuncName="loss_derivative" bitwidth="16" opcode="read" nodeLabel="18.0" m_display="0" m_delay="7.3" m_topoIndex="32" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="lossfun/main.cpp" linenumber="34" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="75" name="max_V" lineNumber="25" originalName="max.V" fileName="lossfun/main.cpp" fileDirectory=".." coreName="m_axi" implIndex="UNSUPPORTED" control="auto" coreId="113" contextFuncName="loss_derivative" bitwidth="16" opcode="read" nodeLabel="18.0" m_display="0" m_delay="7.3" m_topoIndex="32" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="lossfun/main.cpp" linenumber="25" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
       <dataInputObjs>getelementptr</dataInputObjs>
       <dataOutputObjs>phi</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="76" name="br_ln35" lineNumber="35" fileName="lossfun/main.cpp" fileDirectory=".." coreId="0" contextFuncName="loss_derivative" opcode="br" nodeLabel="19.0" m_display="0" m_delay="1.58" m_topoIndex="33" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="lossfun/main.cpp" linenumber="35" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="76" name="br_ln26" lineNumber="26" fileName="lossfun/main.cpp" fileDirectory=".." coreId="0" contextFuncName="loss_derivative" opcode="br" nodeLabel="19.0" m_display="0" m_delay="1.58" m_topoIndex="33" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="lossfun/main.cpp" linenumber="26" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
       <controlInputObjs>block_83</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="lossfun/main.cpp">
-      <validLinenumbers>34</validLinenumbers>
-      <validLinenumbers>35</validLinenumbers>
+      <validLinenumbers>25</validLinenumbers>
+      <validLinenumbers>26</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
   <blocks id="95" name="._crit_edge438.loopexit" type="BlockType">
@@ -476,20 +476,20 @@
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>_ZN13ap_fixed_baseILi17ELi10ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi16ELi9ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i98.preheader</controlOutputObjs>
     <controlOutputObjs>._crit_edge421</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="93" name="icmp_ln41" lineNumber="41" fileName="lossfun/main.cpp" fileDirectory=".." rtlName="icmp_ln41_fu_544_p2" opType="icmp" coreId="456173568" contextFuncName="loss_derivative" bitwidth="1" opcode="icmp" nodeLabel="22.0" m_display="0" m_delay="2.47" m_topoIndex="45" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="lossfun/main.cpp" linenumber="41" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="93" name="icmp_ln32" lineNumber="32" fileName="lossfun/main.cpp" fileDirectory=".." rtlName="icmp_ln32_fu_544_p2" opType="icmp" coreId="0" contextFuncName="loss_derivative" bitwidth="1" opcode="icmp" nodeLabel="22.0" m_display="0" m_delay="2.47" m_topoIndex="45" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="lossfun/main.cpp" linenumber="32" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>br</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="94" name="br_ln41" lineNumber="41" fileName="lossfun/main.cpp" fileDirectory=".." coreId="1140850816" contextFuncName="loss_derivative" opcode="br" nodeLabel="22.0" m_display="0" m_topoIndex="46" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="lossfun/main.cpp" linenumber="41" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="94" name="br_ln32" lineNumber="32" fileName="lossfun/main.cpp" fileDirectory=".." coreId="0" contextFuncName="loss_derivative" opcode="br" nodeLabel="22.0" m_display="0" m_topoIndex="46" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="lossfun/main.cpp" linenumber="32" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
       <dataInputObjs>icmp</dataInputObjs>
       <controlInputObjs>._crit_edge421</controlInputObjs>
       <controlInputObjs>_ZN13ap_fixed_baseILi17ELi10ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi16ELi9ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i98.preheader</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="lossfun/main.cpp">
-      <validLinenumbers>41</validLinenumbers>
+      <validLinenumbers>32</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
   <blocks id="97" name="_ZN13ap_fixed_baseILi17ELi10ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi16ELi9ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i98.preheader" type="BlockType">
@@ -497,7 +497,7 @@
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>_ZN13ap_fixed_baseILi17ELi10ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi16ELi9ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i98</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="96" name="br_ln0" coreId="456175832" opcode="br" nodeLabel="22.0" m_display="0" m_delay="1.58" m_topoIndex="47" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="96" name="br_ln0" coreId="1464125321" opcode="br" nodeLabel="22.0" m_display="0" m_delay="1.58" m_topoIndex="47" m_clusterGroupNumber="-1">
       <controlInputObjs>_ZN13ap_fixed_baseILi17ELi10ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi16ELi9ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i98</controlInputObjs>
     </node_objs>
   </blocks>
@@ -507,7 +507,7 @@
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>_ZN13ap_fixed_baseILi17ELi10ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi16ELi9ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i.i</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="115" name="br_ln0" coreId="132" opcode="br" nodeLabel="26.0" m_display="0" m_delay="1.58" m_topoIndex="60" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="115" name="br_ln0" coreId="1464155312" opcode="br" nodeLabel="26.0" m_display="0" m_delay="1.58" m_topoIndex="60" m_clusterGroupNumber="-1">
       <controlInputObjs>_ZN13ap_fixed_baseILi17ELi10ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi16ELi9ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i.i</controlInputObjs>
     </node_objs>
   </blocks>
@@ -516,12 +516,12 @@
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>_ZNK13ap_fixed_baseILi16ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEdvILi16ELi9ELb1ELS0_5ELS1_3ELi0EEENS2_5RTypeIXT_EXT0_EXT1_EE3divERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="134" name="sum_V_cast" lineNumber="703" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="sum_V_cast_fu_601_p1" coreId="1702129263" contextFuncName="operator_assign_17_10_true_AP_TRN_AP_WRAP_0" bitwidth="23" opcode="sext" nodeLabel="36.0" m_display="0" m_topoIndex="73" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="134" name="sum_V_cast" lineNumber="703" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="sum_V_cast_fu_601_p1" coreId="1852404335" contextFuncName="operator_assign_17_10_true_AP_TRN_AP_WRAP_0" bitwidth="23" opcode="sext" nodeLabel="36.0" m_display="0" m_topoIndex="73" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" linenumber="703" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator=&amp;lt;17, 10, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
       <dataInputObjs>phi</dataInputObjs>
       <dataOutputObjs>sdiv</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="135" name="br_ln0" coreId="1953391986" opcode="br" nodeLabel="36.0" m_display="0" m_delay="1.58" m_topoIndex="74" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="135" name="br_ln0" coreId="2037672306" opcode="br" nodeLabel="36.0" m_display="0" m_delay="1.58" m_topoIndex="74" m_clusterGroupNumber="-1">
       <controlInputObjs>_ZNK13ap_fixed_baseILi16ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEdvILi16ELi9ELb1ELS0_5ELS1_3ELi0EEENS2_5RTypeIXT_EXT0_EXT1_EE3divERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h">
@@ -532,7 +532,7 @@
     <controlInputObjs>_ZNK13ap_fixed_baseILi16ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEdvILi16ELi9ELb1ELS0_5ELS1_3ELi0EEENS2_5RTypeIXT_EXT0_EXT1_EE3divERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>._crit_edge421</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="157" name="br_ln0" coreId="1734439795" opcode="br" nodeLabel="73.0" m_display="0" m_topoIndex="90" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="157" name="br_ln0" coreId="536879616" opcode="br" nodeLabel="73.0" m_display="0" m_topoIndex="90" m_clusterGroupNumber="-1">
       <controlInputObjs>._crit_edge421</controlInputObjs>
     </node_objs>
   </blocks>
@@ -543,25 +543,25 @@
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>block_174</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="159" name="zext_ln55" lineNumber="55" fileName="lossfun/main.cpp" fileDirectory=".." rtlName="zext_ln55_fu_642_p1" coreId="808531245" contextFuncName="loss_derivative" bitwidth="64" opcode="zext" nodeLabel="73.0" m_display="0" m_topoIndex="91" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="lossfun/main.cpp" linenumber="55" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="159" name="zext_ln46" lineNumber="46" fileName="lossfun/main.cpp" fileDirectory=".." rtlName="zext_ln46_fu_642_p1" coreId="1853187616" contextFuncName="loss_derivative" bitwidth="64" opcode="zext" nodeLabel="73.0" m_display="0" m_topoIndex="91" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="lossfun/main.cpp" linenumber="46" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>getelementptr</dataOutputObjs>
       <dataOutputObjs>getelementptr</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="160" name="probs_V_addr_1" lineNumber="55" fileName="lossfun/main.cpp" fileDirectory=".." coreId="796093551" contextFuncName="loss_derivative" bitwidth="7" opcode="getelementptr" nodeLabel="73.0" m_display="0" m_topoIndex="92" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="lossfun/main.cpp" linenumber="55" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="160" name="probs_V_addr_1" lineNumber="46" fileName="lossfun/main.cpp" fileDirectory=".." coreId="1914708526" contextFuncName="loss_derivative" bitwidth="7" opcode="getelementptr" nodeLabel="73.0" m_display="0" m_topoIndex="92" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="lossfun/main.cpp" linenumber="46" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
       <dataInputObjs>alloca</dataInputObjs>
       <dataInputObjs>zext</dataInputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="161" name="x_V_2" lineNumber="55" originalName="x.V" fileName="lossfun/main.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" contextFuncName="loss_derivative" bitwidth="16" opcode="load" nodeLabel="73.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="93" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="lossfun/main.cpp" linenumber="55" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="161" name="x_V_2" lineNumber="46" originalName="x.V" fileName="lossfun/main.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" contextFuncName="loss_derivative" bitwidth="16" opcode="load" nodeLabel="73.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="93" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="lossfun/main.cpp" linenumber="46" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
       <dataInputObjs>getelementptr</dataInputObjs>
       <dataOutputObjs>call</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="162" name="op2_V_1" lineNumber="1208" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_math.h" fileDirectory=".." rtlName="grp_log_16_9_s_fu_421" coreId="1330007625" contextFuncName="log_16_9_s" bitwidth="16" opcode="call" nodeLabel="75.0" nodeLatency="10" m_display="0" m_delay="5.51" m_topoIndex="95" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="162" name="op2_V_1" lineNumber="1208" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_math.h" fileDirectory=".." rtlName="grp_log_16_9_s_fu_421" coreId="570453615" contextFuncName="log_16_9_s" bitwidth="16" opcode="call" nodeLabel="75.0" nodeLatency="10" m_display="0" m_delay="5.51" m_topoIndex="95" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_math.h" linenumber="1208" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="log&amp;lt;16, 9&amp;gt;"/>
       <dataInputObjs>load</dataInputObjs>
       <dataOutputObjs>sub</dataOutputObjs>
@@ -573,20 +573,20 @@
       <dataOutputObjs>ret</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="164" name="dxbuff_V_addr" lineNumber="55" fileName="lossfun/main.cpp" fileDirectory=".." coreId="6645601" contextFuncName="loss_derivative" bitwidth="7" opcode="getelementptr" nodeLabel="73.0" m_display="0" m_topoIndex="94" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="lossfun/main.cpp" linenumber="55" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="164" name="dxbuff_V_addr" lineNumber="46" fileName="lossfun/main.cpp" fileDirectory=".." coreId="1948254264" contextFuncName="loss_derivative" bitwidth="7" opcode="getelementptr" nodeLabel="73.0" m_display="0" m_topoIndex="94" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="lossfun/main.cpp" linenumber="46" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
       <dataInputObjs>alloca</dataInputObjs>
       <dataInputObjs>zext</dataInputObjs>
       <dataOutputObjs>store</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="165" name="br_ln57" lineNumber="57" fileName="lossfun/main.cpp" fileDirectory=".." coreId="543518049" contextFuncName="loss_derivative" opcode="br" nodeLabel="85.0" m_display="0" m_delay="1.58" m_topoIndex="97" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="lossfun/main.cpp" linenumber="57" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="165" name="br_ln48" lineNumber="48" fileName="lossfun/main.cpp" fileDirectory=".." coreId="543450484" contextFuncName="loss_derivative" opcode="br" nodeLabel="85.0" m_display="0" m_delay="1.58" m_topoIndex="97" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="lossfun/main.cpp" linenumber="48" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
       <controlInputObjs>block_174</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="lossfun/main.cpp">
-      <validLinenumbers>55</validLinenumbers>
-      <validLinenumbers>57</validLinenumbers>
+      <validLinenumbers>46</validLinenumbers>
+      <validLinenumbers>48</validLinenumbers>
     </fileValidLineNumbers>
     <fileValidLineNumbers fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h">
       <validLinenumbers>703</validLinenumbers>
@@ -600,14 +600,14 @@
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>loop-memcpy-expansion.preheader</controlOutputObjs>
     <controlOutputObjs>loop-memcpy-residual-header</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="199" name="br_ln66" lineNumber="66" fileName="lossfun/main.cpp" fileDirectory=".." coreId="132" contextFuncName="loss_derivative" opcode="br" nodeLabel="111.0" m_display="0" m_topoIndex="122" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="lossfun/main.cpp" linenumber="66" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="199" name="br_ln57" lineNumber="57" fileName="lossfun/main.cpp" fileDirectory=".." coreId="1464220480" contextFuncName="loss_derivative" opcode="br" nodeLabel="111.0" m_display="0" m_topoIndex="122" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="lossfun/main.cpp" linenumber="57" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
       <dataInputObjs>icmp</dataInputObjs>
       <controlInputObjs>loop-memcpy-residual-header</controlInputObjs>
       <controlInputObjs>loop-memcpy-expansion.preheader</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="lossfun/main.cpp">
-      <validLinenumbers>66</validLinenumbers>
+      <validLinenumbers>57</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
   <blocks id="206" name="loop-memcpy-expansion.preheader" type="BlockType">
@@ -615,16 +615,16 @@
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>loop-memcpy-expansion</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="201" name="p_cast2" rtlName="p_cast2_fu_714_p4" coreId="456271960" bitwidth="63" opcode="partselect" nodeLabel="111.0" m_display="0" m_topoIndex="123" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="201" name="p_cast2" rtlName="p_cast2_fu_714_p4" coreId="0" bitwidth="63" opcode="partselect" nodeLabel="111.0" m_display="0" m_topoIndex="123" m_clusterGroupNumber="-1">
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>sext</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="202" name="p_cast2_cast" rtlName="p_cast2_cast_fu_723_p1" coreId="456253529" bitwidth="64" opcode="sext" nodeLabel="111.0" m_display="0" m_topoIndex="124" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="202" name="p_cast2_cast" rtlName="p_cast2_cast_fu_723_p1" coreId="0" bitwidth="64" opcode="sext" nodeLabel="111.0" m_display="0" m_topoIndex="124" m_clusterGroupNumber="-1">
       <dataInputObjs>partselect</dataInputObjs>
       <dataOutputObjs>getelementptr</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="203" name="gmem_addr_2" coreId="8" bitwidth="16" opcode="getelementptr" nodeLabel="111.0" m_display="0" m_topoIndex="125" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="203" name="gmem_addr_2" coreId="1464226208" bitwidth="16" opcode="getelementptr" nodeLabel="111.0" m_display="0" m_topoIndex="125" m_clusterGroupNumber="-1">
       <dataInputObjs>gmem</dataInputObjs>
       <dataInputObjs>sext</dataInputObjs>
       <dataOutputObjs>writereq</dataOutputObjs>
@@ -644,16 +644,16 @@
     <controlInputObjs>loop-memcpy-expansion</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>loop-memcpy-residual-header</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="221" name="empty_51" lineNumber="70" fileName="lossfun/main.cpp" fileDirectory=".." coreName="m_axi" implIndex="m_axi" control="auto" opType="writereq" coreId="113" contextFuncName="loss_derivative" bitwidth="1" opcode="writeresp" nodeLabel="115.0" nodeLatency="4" m_display="0" m_delay="7.3" m_topoIndex="138" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="lossfun/main.cpp" linenumber="70" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="221" name="empty_51" lineNumber="61" fileName="lossfun/main.cpp" fileDirectory=".." coreName="m_axi" implIndex="m_axi" control="auto" opType="writereq" coreId="113" contextFuncName="loss_derivative" bitwidth="1" opcode="writeresp" nodeLabel="115.0" nodeLatency="4" m_display="0" m_delay="7.3" m_topoIndex="138" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="lossfun/main.cpp" linenumber="61" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
       <dataInputObjs>getelementptr</dataInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="222" name="br_ln70" lineNumber="70" fileName="lossfun/main.cpp" fileDirectory=".." coreId="0" contextFuncName="loss_derivative" opcode="br" nodeLabel="119.0" m_display="0" m_topoIndex="139" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="lossfun/main.cpp" linenumber="70" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="222" name="br_ln61" lineNumber="61" fileName="lossfun/main.cpp" fileDirectory=".." coreId="8" contextFuncName="loss_derivative" opcode="br" nodeLabel="119.0" m_display="0" m_topoIndex="139" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="lossfun/main.cpp" linenumber="61" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
       <controlInputObjs>loop-memcpy-residual-header</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="lossfun/main.cpp">
-      <validLinenumbers>70</validLinenumbers>
+      <validLinenumbers>61</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
   <blocks id="225" name="loop-memcpy-residual-header" type="BlockType">
@@ -661,13 +661,13 @@
     <controlInputObjs>loop-memcpy-residual-header.loopexit</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>br</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="224" name="_ln70" lineNumber="70" fileName="lossfun/main.cpp" fileDirectory=".." coreId="1140850816" contextFuncName="loss_derivative" opcode="ret" nodeLabel="119.0" m_display="0" m_topoIndex="140" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="lossfun/main.cpp" linenumber="70" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="224" name="_ln61" lineNumber="61" fileName="lossfun/main.cpp" fileDirectory=".." coreId="0" contextFuncName="loss_derivative" opcode="ret" nodeLabel="119.0" m_display="0" m_topoIndex="140" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="lossfun/main.cpp" linenumber="61" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
       <dataInputObjs>sub</dataInputObjs>
       <dataOutputObjs>ap_return</dataOutputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="lossfun/main.cpp">
-      <validLinenumbers>70</validLinenumbers>
+      <validLinenumbers>61</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
   <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="1066" pipe_depth="3" RegionName="Loop 1">
@@ -678,7 +678,7 @@
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>loop-memcpy-residual-header453.loopexit</controlOutputObjs>
       <controlOutputObjs>loop-memcpy-expansion450.split</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="55" name="loop_index451" coreId="241" bitwidth="7" opcode="phi" nodeLabel="8.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="55" name="loop_index451" coreId="289" bitwidth="7" opcode="phi" nodeLabel="8.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
@@ -696,12 +696,12 @@
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="59" name="exitcond4729" rtlName="exitcond4729_fu_493_p2" opType="icmp" coreId="337" bitwidth="1" opcode="icmp" nodeLabel="8.0" m_display="0" m_delay="2.47" m_topoIndex="20" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="59" name="exitcond4729" rtlName="exitcond4729_fu_493_p2" opType="icmp" coreId="49" bitwidth="1" opcode="icmp" nodeLabel="8.0" m_display="0" m_delay="2.47" m_topoIndex="20" m_clusterGroupNumber="-1">
         <dataInputObjs>zext</dataInputObjs>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>br</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="61" name="br_ln0" coreId="49" opcode="br" nodeLabel="8.0" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="61" name="br_ln0" coreId="337" opcode="br" nodeLabel="8.0" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
         <dataInputObjs>icmp</dataInputObjs>
         <controlInputObjs>loop-memcpy-expansion450.split</controlInputObjs>
         <controlInputObjs>loop-memcpy-residual-header453.loopexit</controlInputObjs>
@@ -712,7 +712,7 @@
       <controlOutputObjs>phi</controlOutputObjs>
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>loop-memcpy-expansion450</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="63" name="loop_index451_cast3" rtlName="loop_index451_cast3_fu_498_p1" coreId="433" bitwidth="64" opcode="zext" nodeLabel="10.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="63" name="loop_index451_cast3" rtlName="loop_index451_cast3_fu_498_p1" coreId="0" bitwidth="64" opcode="zext" nodeLabel="10.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
@@ -720,7 +720,7 @@
         <dataInputObjs>getelementptr</dataInputObjs>
         <dataOutputObjs>store</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="65" name="xbuff_V_addr" coreId="161" bitwidth="7" opcode="getelementptr" nodeLabel="10.0" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="65" name="xbuff_V_addr" coreId="433" bitwidth="7" opcode="getelementptr" nodeLabel="10.0" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
         <dataInputObjs>alloca</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>store</dataOutputObjs>
@@ -730,12 +730,12 @@
         <dataInputObjs>read</dataInputObjs>
         <dataInputObjs>getelementptr</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="67" name="br_ln0" coreId="49" opcode="br" nodeLabel="10.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="67" name="br_ln0" coreId="132" opcode="br" nodeLabel="10.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
         <controlInputObjs>loop-memcpy-expansion450</controlInputObjs>
       </node_objs>
     </basic_blocks>
   </regions>
-  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="1067" pipe_depth="2" RegionName="VITIS_LOOP_35_1">
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="1067" pipe_depth="2" RegionName="VITIS_LOOP_26_1">
     <basic_blocks id="83" name="block_83" type="BlockType">
       <controlInputObjs>loop-memcpy-residual-header453</controlInputObjs>
       <controlInputObjs>.split7</controlInputObjs>
@@ -743,8 +743,8 @@
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>.split7</controlOutputObjs>
       <controlOutputObjs>._crit_edge438.loopexit</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="78" name="i" lineNumber="35" originalName="i" fileName="lossfun/main.cpp" fileDirectory=".." coreId="456159360" contextFuncName="loss_derivative" bitwidth="32" opcode="phi" nodeLabel="20.0" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="35" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="78" name="i" lineNumber="26" originalName="i" fileName="lossfun/main.cpp" fileDirectory=".." coreId="0" contextFuncName="loss_derivative" bitwidth="32" opcode="phi" nodeLabel="20.0" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="26" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
         <dataOutputObjs>add</dataOutputObjs>
@@ -753,7 +753,7 @@
         <controlInputObjs>.split7</controlInputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="79" name="max_V_1" originalName="max.V" coreId="456162160" bitwidth="16" opcode="phi" nodeLabel="21.0" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="79" name="max_V_1" originalName="max.V" coreId="0" bitwidth="16" opcode="phi" nodeLabel="21.0" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
         <dataInputObjs>read</dataInputObjs>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
@@ -762,20 +762,20 @@
         <controlInputObjs>loop-memcpy-residual-header453</controlInputObjs>
         <controlInputObjs>.split7</controlInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="81" name="icmp_ln35" lineNumber="35" fileName="lossfun/main.cpp" fileDirectory=".." rtlName="icmp_ln35_fu_514_p2" opType="icmp" coreId="456161232" contextFuncName="loss_derivative" bitwidth="1" opcode="icmp" nodeLabel="20.0" m_display="0" m_delay="2.47" m_topoIndex="36" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="35" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="81" name="icmp_ln26" lineNumber="26" fileName="lossfun/main.cpp" fileDirectory=".." rtlName="icmp_ln26_fu_514_p2" opType="icmp" coreId="0" contextFuncName="loss_derivative" bitwidth="1" opcode="icmp" nodeLabel="20.0" m_display="0" m_delay="2.47" m_topoIndex="36" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="26" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>br</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="82" name="br_ln35" lineNumber="35" fileName="lossfun/main.cpp" fileDirectory=".." coreId="0" contextFuncName="loss_derivative" opcode="br" nodeLabel="20.0" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="35" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="82" name="br_ln26" lineNumber="26" fileName="lossfun/main.cpp" fileDirectory=".." coreId="0" contextFuncName="loss_derivative" opcode="br" nodeLabel="20.0" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="26" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
         <dataInputObjs>icmp</dataInputObjs>
         <controlInputObjs>._crit_edge438.loopexit</controlInputObjs>
         <controlInputObjs>.split7</controlInputObjs>
       </node_objs>
       <fileValidLineNumbers fileName="lossfun/main.cpp">
-        <validLinenumbers>35</validLinenumbers>
+        <validLinenumbers>26</validLinenumbers>
       </fileValidLineNumbers>
     </basic_blocks>
     <basic_blocks id="92" name=".split7" type="BlockType">
@@ -784,18 +784,18 @@
       <controlOutputObjs>phi</controlOutputObjs>
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>block_83</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="84" name="add_ln35" lineNumber="35" fileName="lossfun/main.cpp" fileDirectory=".." rtlName="add_ln35_fu_519_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="loss_derivative" bitwidth="32" opcode="add" nodeLabel="20.0" m_display="0" m_delay="2.55" m_topoIndex="38" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="35" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="84" name="add_ln26" lineNumber="26" fileName="lossfun/main.cpp" fileDirectory=".." rtlName="add_ln26_fu_519_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="loss_derivative" bitwidth="32" opcode="add" nodeLabel="20.0" m_display="0" m_delay="2.55" m_topoIndex="38" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="26" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>phi</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="85" name="i_cast4" lineNumber="35" fileName="lossfun/main.cpp" fileDirectory=".." rtlName="i_cast4_fu_525_p1" coreId="0" contextFuncName="loss_derivative" bitwidth="64" opcode="zext" nodeLabel="20.0" m_display="0" m_topoIndex="39" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="35" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="85" name="i_cast4" lineNumber="26" fileName="lossfun/main.cpp" fileDirectory=".." rtlName="i_cast4_fu_525_p1" coreId="5361" contextFuncName="loss_derivative" bitwidth="64" opcode="zext" nodeLabel="20.0" m_display="0" m_topoIndex="39" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="26" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="87" name="xbuff_V_addr_1" lineNumber="1494" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." coreId="0" contextFuncName="operator_gt_16_9_true_AP_TRN_AP_WRAP_0" bitwidth="7" opcode="getelementptr" nodeLabel="20.0" m_display="0" m_topoIndex="40" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="87" name="xbuff_V_addr_1" lineNumber="1494" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." coreId="84" contextFuncName="operator_gt_16_9_true_AP_TRN_AP_WRAP_0" bitwidth="7" opcode="getelementptr" nodeLabel="20.0" m_display="0" m_topoIndex="40" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" linenumber="1494" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator&amp;gt;&amp;lt;16, 9, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
@@ -808,32 +808,32 @@
         <dataOutputObjs>icmp</dataOutputObjs>
         <dataOutputObjs>select</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="89" name="icmp_ln1494" lineNumber="1494" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="icmp_ln1494_fu_530_p2" opType="icmp" coreId="13" contextFuncName="operator_gt_16_9_true_AP_TRN_AP_WRAP_0" bitwidth="1" opcode="icmp" nodeLabel="21.0" m_display="0" m_delay="2.42" m_topoIndex="42" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="89" name="icmp_ln1494" lineNumber="1494" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="icmp_ln1494_fu_530_p2" opType="icmp" coreId="0" contextFuncName="operator_gt_16_9_true_AP_TRN_AP_WRAP_0" bitwidth="1" opcode="icmp" nodeLabel="21.0" m_display="0" m_delay="2.42" m_topoIndex="42" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" linenumber="1494" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator&amp;gt;&amp;lt;16, 9, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
         <dataInputObjs>load</dataInputObjs>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>select</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="90" name="max_V_2" lineNumber="36" originalName="max.V" fileName="lossfun/main.cpp" fileDirectory=".." rtlName="max_V_2_fu_536_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="loss_derivative" bitwidth="16" opcode="select" nodeLabel="21.0" m_display="0" m_delay="0.8" m_topoIndex="43" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="36" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="90" name="max_V_2" lineNumber="27" originalName="max.V" fileName="lossfun/main.cpp" fileDirectory=".." rtlName="max_V_2_fu_536_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="loss_derivative" bitwidth="16" opcode="select" nodeLabel="21.0" m_display="0" m_delay="0.8" m_topoIndex="43" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="27" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
         <dataInputObjs>icmp</dataInputObjs>
         <dataInputObjs>load</dataInputObjs>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>phi</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="91" name="br_ln0" coreId="456172920" opcode="br" nodeLabel="21.0" m_display="0" m_topoIndex="44" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="91" name="br_ln0" coreId="4294967295" opcode="br" nodeLabel="21.0" m_display="0" m_topoIndex="44" m_clusterGroupNumber="-1">
         <controlInputObjs>block_83</controlInputObjs>
       </node_objs>
       <fileValidLineNumbers fileName="lossfun/main.cpp">
-        <validLinenumbers>35</validLinenumbers>
-        <validLinenumbers>36</validLinenumbers>
+        <validLinenumbers>26</validLinenumbers>
+        <validLinenumbers>27</validLinenumbers>
       </fileValidLineNumbers>
       <fileValidLineNumbers fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h">
         <validLinenumbers>1494</validLinenumbers>
       </fileValidLineNumbers>
     </basic_blocks>
   </regions>
-  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="1068" pipe_depth="3" RegionName="VITIS_LOOP_41_2">
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="1068" pipe_depth="3" RegionName="VITIS_LOOP_32_2">
     <basic_blocks id="105" name="_ZN13ap_fixed_baseILi17ELi10ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi16ELi9ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i98" type="BlockType">
       <controlInputObjs>_ZN13ap_fixed_baseILi17ELi10ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi16ELi9ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i98.preheader</controlInputObjs>
       <controlInputObjs>_ZN13ap_fixed_baseILi17ELi10ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi16ELi9ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i98.split</controlInputObjs>
@@ -841,8 +841,8 @@
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>_ZN13ap_fixed_baseILi17ELi10ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi16ELi9ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i.i.preheader</controlOutputObjs>
       <controlOutputObjs>_ZN13ap_fixed_baseILi17ELi10ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi16ELi9ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i98.split</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="98" name="i_1" lineNumber="41" originalName="i" fileName="lossfun/main.cpp" fileDirectory=".." coreId="0" contextFuncName="loss_derivative" bitwidth="7" opcode="phi" nodeLabel="23.0" m_display="0" m_topoIndex="48" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="41" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="98" name="i_1" lineNumber="32" originalName="i" fileName="lossfun/main.cpp" fileDirectory=".." coreId="0" contextFuncName="loss_derivative" bitwidth="7" opcode="phi" nodeLabel="23.0" m_display="0" m_topoIndex="48" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="32" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
@@ -851,31 +851,31 @@
         <controlInputObjs>_ZN13ap_fixed_baseILi17ELi10ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi16ELi9ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i98.preheader</controlInputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="99" name="add_ln41" lineNumber="41" fileName="lossfun/main.cpp" fileDirectory=".." rtlName="add_ln41_fu_549_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="loss_derivative" bitwidth="7" opcode="add" nodeLabel="23.0" m_display="0" m_delay="1.87" m_topoIndex="49" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="41" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="99" name="add_ln32" lineNumber="32" fileName="lossfun/main.cpp" fileDirectory=".." rtlName="add_ln32_fu_549_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="loss_derivative" bitwidth="7" opcode="add" nodeLabel="23.0" m_display="0" m_delay="1.87" m_topoIndex="49" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="32" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>phi</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="100" name="i_1_cast" lineNumber="41" fileName="lossfun/main.cpp" fileDirectory=".." rtlName="i_1_cast_fu_555_p1" coreId="0" contextFuncName="loss_derivative" bitwidth="32" opcode="zext" nodeLabel="23.0" m_display="0" m_topoIndex="50" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="41" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="100" name="i_1_cast" lineNumber="32" fileName="lossfun/main.cpp" fileDirectory=".." rtlName="i_1_cast_fu_555_p1" coreId="2147483776" contextFuncName="loss_derivative" bitwidth="32" opcode="zext" nodeLabel="23.0" m_display="0" m_topoIndex="50" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="32" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="102" name="icmp_ln41_1" lineNumber="41" fileName="lossfun/main.cpp" fileDirectory=".." rtlName="icmp_ln41_1_fu_559_p2" opType="icmp" coreId="313" contextFuncName="loss_derivative" bitwidth="1" opcode="icmp" nodeLabel="23.0" m_display="0" m_delay="2.47" m_topoIndex="51" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="41" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="102" name="icmp_ln32_1" lineNumber="32" fileName="lossfun/main.cpp" fileDirectory=".." rtlName="icmp_ln32_1_fu_559_p2" opType="icmp" coreId="0" contextFuncName="loss_derivative" bitwidth="1" opcode="icmp" nodeLabel="23.0" m_display="0" m_delay="2.47" m_topoIndex="51" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="32" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
         <dataInputObjs>zext</dataInputObjs>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>br</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="104" name="br_ln41" lineNumber="41" fileName="lossfun/main.cpp" fileDirectory=".." coreId="456180216" contextFuncName="loss_derivative" opcode="br" nodeLabel="23.0" m_display="0" m_topoIndex="52" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="41" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="104" name="br_ln32" lineNumber="32" fileName="lossfun/main.cpp" fileDirectory=".." coreId="4294967295" contextFuncName="loss_derivative" opcode="br" nodeLabel="23.0" m_display="0" m_topoIndex="52" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="32" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
         <dataInputObjs>icmp</dataInputObjs>
         <controlInputObjs>_ZN13ap_fixed_baseILi17ELi10ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi16ELi9ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i98.split</controlInputObjs>
         <controlInputObjs>_ZN13ap_fixed_baseILi17ELi10ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi16ELi9ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i.i.preheader</controlInputObjs>
       </node_objs>
       <fileValidLineNumbers fileName="lossfun/main.cpp">
-        <validLinenumbers>41</validLinenumbers>
+        <validLinenumbers>32</validLinenumbers>
       </fileValidLineNumbers>
     </basic_blocks>
     <basic_blocks id="114" name="_ZN13ap_fixed_baseILi17ELi10ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi16ELi9ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i98.split" type="BlockType">
@@ -883,8 +883,8 @@
       <controlOutputObjs>phi</controlOutputObjs>
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>_ZN13ap_fixed_baseILi17ELi10ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi16ELi9ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i98</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="106" name="i_1_cast5" lineNumber="41" fileName="lossfun/main.cpp" fileDirectory=".." rtlName="i_1_cast5_fu_564_p1" coreId="0" contextFuncName="loss_derivative" bitwidth="64" opcode="zext" nodeLabel="23.0" m_display="0" m_topoIndex="53" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="41" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="106" name="i_1_cast5" lineNumber="32" fileName="lossfun/main.cpp" fileDirectory=".." rtlName="i_1_cast5_fu_564_p1" coreId="1179796820" contextFuncName="loss_derivative" bitwidth="64" opcode="zext" nodeLabel="23.0" m_display="0" m_topoIndex="53" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="32" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
@@ -907,31 +907,31 @@
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>store</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="111" name="log_probs_V_addr" lineNumber="42" fileName="lossfun/main.cpp" fileDirectory=".." coreId="10" contextFuncName="loss_derivative" bitwidth="7" opcode="getelementptr" nodeLabel="25.0" m_display="0" m_topoIndex="57" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="42" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="111" name="log_probs_V_addr" lineNumber="33" fileName="lossfun/main.cpp" fileDirectory=".." coreId="49" contextFuncName="loss_derivative" bitwidth="7" opcode="getelementptr" nodeLabel="25.0" m_display="0" m_topoIndex="57" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="33" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>store</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="112" name="log_probs_V_addr_write_ln42" lineNumber="42" fileName="lossfun/main.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" contextFuncName="loss_derivative" opcode="store" nodeLabel="25.0" m_display="0" m_delay="3.25" m_topoIndex="58" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="42" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="112" name="log_probs_V_addr_write_ln33" lineNumber="33" fileName="lossfun/main.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" contextFuncName="loss_derivative" opcode="store" nodeLabel="25.0" m_display="0" m_delay="3.25" m_topoIndex="58" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="33" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
         <dataInputObjs>sub</dataInputObjs>
         <dataInputObjs>getelementptr</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="113" name="br_ln0" coreId="456199177" opcode="br" nodeLabel="25.0" m_display="0" m_topoIndex="59" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="113" name="br_ln0" coreId="2147483776" opcode="br" nodeLabel="25.0" m_display="0" m_topoIndex="59" m_clusterGroupNumber="-1">
         <controlInputObjs>_ZN13ap_fixed_baseILi17ELi10ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi16ELi9ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i98</controlInputObjs>
       </node_objs>
       <fileValidLineNumbers fileName="lossfun/main.cpp">
-        <validLinenumbers>41</validLinenumbers>
-        <validLinenumbers>42</validLinenumbers>
+        <validLinenumbers>32</validLinenumbers>
+        <validLinenumbers>33</validLinenumbers>
       </fileValidLineNumbers>
       <fileValidLineNumbers fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h">
         <validLinenumbers>703</validLinenumbers>
       </fileValidLineNumbers>
     </basic_blocks>
   </regions>
-  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="1069" pipe_depth="9" RegionName="VITIS_LOOP_47_3">
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="1069" pipe_depth="9" RegionName="VITIS_LOOP_38_3">
     <basic_blocks id="125" name="_ZN13ap_fixed_baseILi17ELi10ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi16ELi9ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i.i" type="BlockType">
       <controlInputObjs>_ZN13ap_fixed_baseILi17ELi10ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi16ELi9ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i.i.preheader</controlInputObjs>
       <controlInputObjs>_ZN13ap_fixed_baseILi17ELi10ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi16ELi9ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i.i.split</controlInputObjs>
@@ -939,8 +939,8 @@
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>_ZNK13ap_fixed_baseILi16ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEdvILi16ELi9ELb1ELS0_5ELS1_3ELi0EEENS2_5RTypeIXT_EXT0_EXT1_EE3divERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.preheader</controlOutputObjs>
       <controlOutputObjs>_ZN13ap_fixed_baseILi17ELi10ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi16ELi9ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i.i.split</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="117" name="i_2" lineNumber="47" originalName="i" fileName="lossfun/main.cpp" fileDirectory=".." coreId="0" contextFuncName="loss_derivative" bitwidth="7" opcode="phi" nodeLabel="27.0" m_display="0" m_topoIndex="61" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="47" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="117" name="i_2" lineNumber="38" originalName="i" fileName="lossfun/main.cpp" fileDirectory=".." coreId="1464155936" contextFuncName="loss_derivative" bitwidth="7" opcode="phi" nodeLabel="27.0" m_display="0" m_topoIndex="61" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="38" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
@@ -949,7 +949,7 @@
         <controlInputObjs>_ZN13ap_fixed_baseILi17ELi10ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi16ELi9ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i.i.preheader</controlInputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="118" name="sum_V" originalName="sum.V" coreId="456202392" bitwidth="16" opcode="phi" nodeLabel="35.0" m_display="0" m_topoIndex="62" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="118" name="sum_V" originalName="sum.V" coreId="1464022633" bitwidth="16" opcode="phi" nodeLabel="35.0" m_display="0" m_topoIndex="62" m_clusterGroupNumber="-1">
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>sext</dataOutputObjs>
         <dataOutputObjs>add</dataOutputObjs>
@@ -957,31 +957,31 @@
         <controlInputObjs>_ZN13ap_fixed_baseILi17ELi10ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi16ELi9ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i.i.preheader</controlInputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="119" name="add_ln47" lineNumber="47" fileName="lossfun/main.cpp" fileDirectory=".." rtlName="add_ln47_fu_575_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="loss_derivative" bitwidth="7" opcode="add" nodeLabel="27.0" m_display="0" m_delay="1.87" m_topoIndex="63" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="47" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="119" name="add_ln38" lineNumber="38" fileName="lossfun/main.cpp" fileDirectory=".." rtlName="add_ln38_fu_575_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="loss_derivative" bitwidth="7" opcode="add" nodeLabel="27.0" m_display="0" m_delay="1.87" m_topoIndex="63" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="38" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>phi</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="120" name="i_2_cast" lineNumber="47" fileName="lossfun/main.cpp" fileDirectory=".." rtlName="i_2_cast_fu_581_p1" coreId="456204064" contextFuncName="loss_derivative" bitwidth="32" opcode="zext" nodeLabel="27.0" m_display="0" m_topoIndex="64" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="47" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="120" name="i_2_cast" lineNumber="38" fileName="lossfun/main.cpp" fileDirectory=".." rtlName="i_2_cast_fu_581_p1" coreId="539117390" contextFuncName="loss_derivative" bitwidth="32" opcode="zext" nodeLabel="27.0" m_display="0" m_topoIndex="64" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="38" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="122" name="icmp_ln47" lineNumber="47" fileName="lossfun/main.cpp" fileDirectory=".." rtlName="icmp_ln47_fu_585_p2" opType="icmp" coreId="0" contextFuncName="loss_derivative" bitwidth="1" opcode="icmp" nodeLabel="27.0" m_display="0" m_delay="2.47" m_topoIndex="65" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="47" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="122" name="icmp_ln38" lineNumber="38" fileName="lossfun/main.cpp" fileDirectory=".." rtlName="icmp_ln38_fu_585_p2" opType="icmp" coreId="574449505" contextFuncName="loss_derivative" bitwidth="1" opcode="icmp" nodeLabel="27.0" m_display="0" m_delay="2.47" m_topoIndex="65" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="38" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
         <dataInputObjs>zext</dataInputObjs>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>br</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="124" name="br_ln47" lineNumber="47" fileName="lossfun/main.cpp" fileDirectory=".." coreId="49" contextFuncName="loss_derivative" opcode="br" nodeLabel="27.0" m_display="0" m_topoIndex="66" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="47" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="124" name="br_ln38" lineNumber="38" fileName="lossfun/main.cpp" fileDirectory=".." coreId="775500320" contextFuncName="loss_derivative" opcode="br" nodeLabel="27.0" m_display="0" m_topoIndex="66" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="38" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
         <dataInputObjs>icmp</dataInputObjs>
         <controlInputObjs>_ZN13ap_fixed_baseILi17ELi10ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi16ELi9ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i.i.split</controlInputObjs>
         <controlInputObjs>_ZNK13ap_fixed_baseILi16ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEdvILi16ELi9ELb1ELS0_5ELS1_3ELi0EEENS2_5RTypeIXT_EXT0_EXT1_EE3divERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.preheader</controlInputObjs>
       </node_objs>
       <fileValidLineNumbers fileName="lossfun/main.cpp">
-        <validLinenumbers>47</validLinenumbers>
+        <validLinenumbers>38</validLinenumbers>
       </fileValidLineNumbers>
     </basic_blocks>
     <basic_blocks id="133" name="_ZN13ap_fixed_baseILi17ELi10ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi16ELi9ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i.i.split" type="BlockType">
@@ -990,24 +990,24 @@
       <controlOutputObjs>phi</controlOutputObjs>
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>_ZN13ap_fixed_baseILi17ELi10ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi16ELi9ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i.i</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="126" name="i_2_cast6" lineNumber="47" fileName="lossfun/main.cpp" fileDirectory=".." rtlName="i_2_cast6_fu_590_p1" coreId="0" contextFuncName="loss_derivative" bitwidth="64" opcode="zext" nodeLabel="27.0" m_display="0" m_topoIndex="67" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="47" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="126" name="i_2_cast6" lineNumber="38" fileName="lossfun/main.cpp" fileDirectory=".." rtlName="i_2_cast6_fu_590_p1" coreId="2147483776" contextFuncName="loss_derivative" bitwidth="64" opcode="zext" nodeLabel="27.0" m_display="0" m_topoIndex="67" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="38" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="128" name="log_probs_V_addr_1" lineNumber="48" fileName="lossfun/main.cpp" fileDirectory=".." coreId="456207712" contextFuncName="loss_derivative" bitwidth="7" opcode="getelementptr" nodeLabel="27.0" m_display="0" m_topoIndex="68" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="48" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="128" name="log_probs_V_addr_1" lineNumber="39" fileName="lossfun/main.cpp" fileDirectory=".." coreId="544106784" contextFuncName="loss_derivative" bitwidth="7" opcode="getelementptr" nodeLabel="27.0" m_display="0" m_topoIndex="68" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="39" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>load</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="129" name="x_V" lineNumber="48" originalName="x.V" fileName="lossfun/main.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" contextFuncName="loss_derivative" bitwidth="16" opcode="load" nodeLabel="27.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="69" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="48" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="129" name="x_V" lineNumber="39" originalName="x.V" fileName="lossfun/main.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" contextFuncName="loss_derivative" bitwidth="16" opcode="load" nodeLabel="27.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="69" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="39" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
         <dataInputObjs>getelementptr</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="130" name="op2_V" lineNumber="1190" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_math.h" fileDirectory=".." rtlName="grp_exp_16_9_s_fu_432" coreId="0" contextFuncName="exp_16_9_s" bitwidth="16" opcode="call" nodeLabel="29.0" nodeLatency="5" m_display="0" m_delay="4.44" m_topoIndex="70" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="130" name="op2_V" lineNumber="1190" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_math.h" fileDirectory=".." rtlName="grp_exp_16_9_s_fu_432" coreId="1464163672" contextFuncName="exp_16_9_s" bitwidth="16" opcode="call" nodeLabel="29.0" nodeLatency="5" m_display="0" m_delay="4.44" m_topoIndex="70" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_math.h" linenumber="1190" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="exp&amp;lt;16, 9&amp;gt;"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
@@ -1019,12 +1019,12 @@
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>phi</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="132" name="br_ln0" coreId="0" opcode="br" nodeLabel="35.0" m_display="0" m_topoIndex="72" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="132" name="br_ln0" coreId="1936683105" opcode="br" nodeLabel="35.0" m_display="0" m_topoIndex="72" m_clusterGroupNumber="-1">
         <controlInputObjs>_ZN13ap_fixed_baseILi17ELi10ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi16ELi9ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i.i</controlInputObjs>
       </node_objs>
       <fileValidLineNumbers fileName="lossfun/main.cpp">
-        <validLinenumbers>47</validLinenumbers>
-        <validLinenumbers>48</validLinenumbers>
+        <validLinenumbers>38</validLinenumbers>
+        <validLinenumbers>39</validLinenumbers>
       </fileValidLineNumbers>
       <fileValidLineNumbers fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h">
         <validLinenumbers>703</validLinenumbers>
@@ -1034,7 +1034,7 @@
       </fileValidLineNumbers>
     </basic_blocks>
   </regions>
-  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="1070" pipe_depth="36" RegionName="VITIS_LOOP_51_4">
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="1070" pipe_depth="36" RegionName="VITIS_LOOP_42_4">
     <basic_blocks id="144" name="_ZNK13ap_fixed_baseILi16ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEdvILi16ELi9ELb1ELS0_5ELS1_3ELi0EEENS2_5RTypeIXT_EXT0_EXT1_EE3divERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit" type="BlockType">
       <controlInputObjs>_ZNK13ap_fixed_baseILi16ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEdvILi16ELi9ELb1ELS0_5ELS1_3ELi0EEENS2_5RTypeIXT_EXT0_EXT1_EE3divERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.preheader</controlInputObjs>
       <controlInputObjs>_ZNK13ap_fixed_baseILi16ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEdvILi16ELi9ELb1ELS0_5ELS1_3ELi0EEENS2_5RTypeIXT_EXT0_EXT1_EE3divERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.split</controlInputObjs>
@@ -1042,8 +1042,8 @@
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>._crit_edge421.loopexit</controlOutputObjs>
       <controlOutputObjs>_ZNK13ap_fixed_baseILi16ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEdvILi16ELi9ELb1ELS0_5ELS1_3ELi0EEENS2_5RTypeIXT_EXT0_EXT1_EE3divERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.split</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="137" name="i_3" lineNumber="51" originalName="i" fileName="lossfun/main.cpp" fileDirectory=".." coreId="1717924464" contextFuncName="loss_derivative" bitwidth="7" opcode="phi" nodeLabel="37.0" m_display="0" m_topoIndex="75" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="51" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="137" name="i_3" lineNumber="42" originalName="i" fileName="lossfun/main.cpp" fileDirectory=".." coreId="1830840174" contextFuncName="loss_derivative" bitwidth="7" opcode="phi" nodeLabel="37.0" m_display="0" m_topoIndex="75" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="42" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
@@ -1052,31 +1052,31 @@
         <controlInputObjs>_ZNK13ap_fixed_baseILi16ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEdvILi16ELi9ELb1ELS0_5ELS1_3ELi0EEENS2_5RTypeIXT_EXT0_EXT1_EE3divERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.preheader</controlInputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="138" name="add_ln51" lineNumber="51" fileName="lossfun/main.cpp" fileDirectory=".." rtlName="add_ln51_fu_605_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="loss_derivative" bitwidth="7" opcode="add" nodeLabel="37.0" m_display="0" m_delay="1.87" m_topoIndex="76" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="51" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="138" name="add_ln42" lineNumber="42" fileName="lossfun/main.cpp" fileDirectory=".." rtlName="add_ln42_fu_605_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="loss_derivative" bitwidth="7" opcode="add" nodeLabel="37.0" m_display="0" m_delay="1.87" m_topoIndex="76" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="42" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>phi</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="139" name="i_3_cast" lineNumber="51" fileName="lossfun/main.cpp" fileDirectory=".." rtlName="i_3_cast_fu_611_p1" coreId="1031365995" contextFuncName="loss_derivative" bitwidth="32" opcode="zext" nodeLabel="37.0" m_display="0" m_topoIndex="77" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="51" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="139" name="i_3_cast" lineNumber="42" fileName="lossfun/main.cpp" fileDirectory=".." rtlName="i_3_cast_fu_611_p1" coreId="1869573152" contextFuncName="loss_derivative" bitwidth="32" opcode="zext" nodeLabel="37.0" m_display="0" m_topoIndex="77" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="42" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="141" name="icmp_ln51" lineNumber="51" fileName="lossfun/main.cpp" fileDirectory=".." rtlName="icmp_ln51_fu_615_p2" opType="icmp" coreId="1397508187" contextFuncName="loss_derivative" bitwidth="1" opcode="icmp" nodeLabel="37.0" m_display="0" m_delay="2.47" m_topoIndex="78" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="51" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="141" name="icmp_ln42" lineNumber="42" fileName="lossfun/main.cpp" fileDirectory=".." rtlName="icmp_ln42_fu_615_p2" opType="icmp" coreId="997420912" contextFuncName="loss_derivative" bitwidth="1" opcode="icmp" nodeLabel="37.0" m_display="0" m_delay="2.47" m_topoIndex="78" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="42" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
         <dataInputObjs>zext</dataInputObjs>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>br</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="143" name="br_ln51" lineNumber="51" fileName="lossfun/main.cpp" fileDirectory=".." coreId="539120725" contextFuncName="loss_derivative" opcode="br" nodeLabel="37.0" m_display="0" m_topoIndex="79" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="51" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="143" name="br_ln42" lineNumber="42" fileName="lossfun/main.cpp" fileDirectory=".." coreId="1702258035" contextFuncName="loss_derivative" opcode="br" nodeLabel="37.0" m_display="0" m_topoIndex="79" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="42" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
         <dataInputObjs>icmp</dataInputObjs>
         <controlInputObjs>_ZNK13ap_fixed_baseILi16ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEdvILi16ELi9ELb1ELS0_5ELS1_3ELi0EEENS2_5RTypeIXT_EXT0_EXT1_EE3divERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.split</controlInputObjs>
         <controlInputObjs>._crit_edge421.loopexit</controlInputObjs>
       </node_objs>
       <fileValidLineNumbers fileName="lossfun/main.cpp">
-        <validLinenumbers>51</validLinenumbers>
+        <validLinenumbers>42</validLinenumbers>
       </fileValidLineNumbers>
     </basic_blocks>
     <basic_blocks id="156" name="_ZNK13ap_fixed_baseILi16ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEdvILi16ELi9ELb1ELS0_5ELS1_3ELi0EEENS2_5RTypeIXT_EXT0_EXT1_EE3divERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.split" type="BlockType">
@@ -1084,65 +1084,65 @@
       <controlOutputObjs>phi</controlOutputObjs>
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>_ZNK13ap_fixed_baseILi16ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEdvILi16ELi9ELb1ELS0_5ELS1_3ELi0EEENS2_5RTypeIXT_EXT0_EXT1_EE3divERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="145" name="i_3_cast7" lineNumber="51" fileName="lossfun/main.cpp" fileDirectory=".." rtlName="i_3_cast7_fu_620_p1" coreId="1869357100" contextFuncName="loss_derivative" bitwidth="64" opcode="zext" nodeLabel="37.0" m_display="0" m_topoIndex="80" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="51" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="145" name="i_3_cast7" lineNumber="42" fileName="lossfun/main.cpp" fileDirectory=".." rtlName="i_3_cast7_fu_620_p1" coreId="574452846" contextFuncName="loss_derivative" bitwidth="64" opcode="zext" nodeLabel="37.0" m_display="0" m_topoIndex="80" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="42" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="147" name="log_probs_V_addr_2" lineNumber="52" fileName="lossfun/main.cpp" fileDirectory=".." coreId="1698394991" contextFuncName="loss_derivative" bitwidth="7" opcode="getelementptr" nodeLabel="37.0" m_display="0" m_topoIndex="81" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="52" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="147" name="log_probs_V_addr_2" lineNumber="43" fileName="lossfun/main.cpp" fileDirectory=".." coreId="544434464" contextFuncName="loss_derivative" bitwidth="7" opcode="getelementptr" nodeLabel="37.0" m_display="0" m_topoIndex="81" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="43" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>load</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="148" name="x_V_1" lineNumber="52" originalName="x.V" fileName="lossfun/main.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" contextFuncName="loss_derivative" bitwidth="16" opcode="load" nodeLabel="37.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="82" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="52" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="148" name="x_V_1" lineNumber="43" originalName="x.V" fileName="lossfun/main.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" contextFuncName="loss_derivative" bitwidth="16" opcode="load" nodeLabel="37.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="82" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="43" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
         <dataInputObjs>getelementptr</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="149" name="op_V_1" lineNumber="1190" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_math.h" fileDirectory=".." rtlName="grp_exp_16_9_s_fu_432" coreId="976304178" contextFuncName="exp_16_9_s" bitwidth="16" opcode="call" nodeLabel="39.0" nodeLatency="5" m_display="0" m_delay="4.44" m_topoIndex="83" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="149" name="op_V_1" lineNumber="1190" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_math.h" fileDirectory=".." rtlName="grp_exp_16_9_s_fu_432" coreId="1953459305" contextFuncName="exp_16_9_s" bitwidth="16" opcode="call" nodeLabel="39.0" nodeLatency="5" m_display="0" m_delay="4.44" m_topoIndex="83" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_math.h" linenumber="1190" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="exp&amp;lt;16, 9&amp;gt;"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>bitconcatenate</dataOutputObjs>
         <constName>exp_16_9_s</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="150" name="t" lineNumber="728" originalName="t" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="grp_fu_633_p0" coreId="1014003813" contextFuncName="operator_assign_16_9_true_AP_TRN_AP_WRAP_0" bitwidth="23" opcode="bitconcatenate" nodeLabel="45.0" m_display="0" m_topoIndex="84" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="150" name="t" lineNumber="728" originalName="t" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="grp_fu_633_p0" coreId="1768321121" contextFuncName="operator_assign_16_9_true_AP_TRN_AP_WRAP_0" bitwidth="23" opcode="bitconcatenate" nodeLabel="45.0" m_display="0" m_topoIndex="84" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" linenumber="728" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator=&amp;lt;16, 9, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>sdiv</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="151" name="sdiv_ln1148" lineNumber="1148" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="sdiv_23ns_16s_16_27_1_U21" opType="sdiv" coreId="1902080097" contextFuncName="operator_div_16_9_true_AP_TRN_AP_WRAP_0" bitwidth="16" opcode="sdiv" nodeLabel="45.0" nodeLatency="26" m_display="0" m_delay="4.07" m_topoIndex="85" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="151" name="sdiv_ln1148" lineNumber="1148" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="sdiv_23ns_16s_16_27_1_U21" opType="sdiv" coreId="1013212536" contextFuncName="operator_div_16_9_true_AP_TRN_AP_WRAP_0" bitwidth="16" opcode="sdiv" nodeLabel="45.0" nodeLatency="26" m_display="0" m_delay="4.07" m_topoIndex="85" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" linenumber="1148" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator/&amp;lt;16, 9, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataInputObjs>sext</dataInputObjs>
         <dataOutputObjs>trunc</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="152" name="trunc_ln703" lineNumber="703" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="probs_V_d0" coreId="1763716138" contextFuncName="operator_assign_24_17_true_AP_TRN_AP_WRAP_0" bitwidth="16" opcode="trunc" nodeLabel="72.0" m_display="0" m_topoIndex="86" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="152" name="trunc_ln703" lineNumber="703" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="probs_V_d0" coreId="539768105" contextFuncName="operator_assign_24_17_true_AP_TRN_AP_WRAP_0" bitwidth="16" opcode="trunc" nodeLabel="72.0" m_display="0" m_topoIndex="86" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" linenumber="703" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator=&amp;lt;24, 17, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
         <dataInputObjs>sdiv</dataInputObjs>
         <dataOutputObjs>store</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="153" name="probs_V_addr" lineNumber="52" fileName="lossfun/main.cpp" fileDirectory=".." coreId="1601200424" contextFuncName="loss_derivative" bitwidth="7" opcode="getelementptr" nodeLabel="72.0" m_display="0" m_topoIndex="87" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="52" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="153" name="probs_V_addr" lineNumber="43" fileName="lossfun/main.cpp" fileDirectory=".." coreId="859467888" contextFuncName="loss_derivative" bitwidth="7" opcode="getelementptr" nodeLabel="72.0" m_display="0" m_topoIndex="87" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="43" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>store</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="154" name="probs_V_addr_write_ln52" lineNumber="52" fileName="lossfun/main.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" contextFuncName="loss_derivative" opcode="store" nodeLabel="72.0" m_display="0" m_delay="3.25" m_topoIndex="88" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="52" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="154" name="probs_V_addr_write_ln43" lineNumber="43" fileName="lossfun/main.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" contextFuncName="loss_derivative" opcode="store" nodeLabel="72.0" m_display="0" m_delay="3.25" m_topoIndex="88" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="43" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
         <dataInputObjs>trunc</dataInputObjs>
         <dataInputObjs>getelementptr</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="155" name="br_ln0" coreId="979725673" opcode="br" nodeLabel="72.0" m_display="0" m_topoIndex="89" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="155" name="br_ln0" coreId="1528955000" opcode="br" nodeLabel="72.0" m_display="0" m_topoIndex="89" m_clusterGroupNumber="-1">
         <controlInputObjs>_ZNK13ap_fixed_baseILi16ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEdvILi16ELi9ELb1ELS0_5ELS1_3ELi0EEENS2_5RTypeIXT_EXT0_EXT1_EE3divERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit</controlInputObjs>
       </node_objs>
       <fileValidLineNumbers fileName="lossfun/main.cpp">
-        <validLinenumbers>51</validLinenumbers>
-        <validLinenumbers>52</validLinenumbers>
+        <validLinenumbers>42</validLinenumbers>
+        <validLinenumbers>43</validLinenumbers>
       </fileValidLineNumbers>
       <fileValidLineNumbers fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h">
         <validLinenumbers>728</validLinenumbers>
@@ -1154,7 +1154,7 @@
       </fileValidLineNumbers>
     </basic_blocks>
   </regions>
-  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="1071" pipe_depth="25" RegionName="VITIS_LOOP_57_5">
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="1071" pipe_depth="25" RegionName="VITIS_LOOP_48_5">
     <basic_blocks id="174" name="block_174" type="BlockType">
       <controlInputObjs>._crit_edge421</controlInputObjs>
       <controlInputObjs>block_198</controlInputObjs>
@@ -1162,8 +1162,8 @@
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>._crit_edge.loopexit</controlOutputObjs>
       <controlOutputObjs>.split</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="167" name="i_4" lineNumber="57" originalName="i" fileName="lossfun/main.cpp" fileDirectory=".." coreId="1043267618" contextFuncName="loss_derivative" bitwidth="7" opcode="phi" nodeLabel="86.0" m_display="0" m_topoIndex="98" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="57" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="167" name="i_4" lineNumber="48" originalName="i" fileName="lossfun/main.cpp" fileDirectory=".." coreId="1919950848" contextFuncName="loss_derivative" bitwidth="7" opcode="phi" nodeLabel="86.0" m_display="0" m_topoIndex="98" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="48" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
@@ -1172,32 +1172,32 @@
         <controlInputObjs>block_198</controlInputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="168" name="add_ln57" lineNumber="57" fileName="lossfun/main.cpp" fileDirectory=".." rtlName="add_ln57_fu_653_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="loss_derivative" bitwidth="7" opcode="add" nodeLabel="86.0" m_display="0" m_delay="1.87" m_topoIndex="99" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="57" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="168" name="add_ln48" lineNumber="48" fileName="lossfun/main.cpp" fileDirectory=".." rtlName="add_ln48_fu_653_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="loss_derivative" bitwidth="7" opcode="add" nodeLabel="86.0" m_display="0" m_delay="1.87" m_topoIndex="99" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="48" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>phi</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="169" name="i_4_cast4" lineNumber="57" fileName="lossfun/main.cpp" fileDirectory=".." rtlName="i_4_cast4_fu_659_p1" coreId="1701865808" contextFuncName="loss_derivative" bitwidth="32" opcode="zext" nodeLabel="86.0" m_display="0" m_topoIndex="100" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="57" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="169" name="i_4_cast4" lineNumber="48" fileName="lossfun/main.cpp" fileDirectory=".." rtlName="i_4_cast4_fu_659_p1" coreId="1830839397" contextFuncName="loss_derivative" bitwidth="32" opcode="zext" nodeLabel="86.0" m_display="0" m_topoIndex="100" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="48" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="171" name="icmp_ln57" lineNumber="57" fileName="lossfun/main.cpp" fileDirectory=".." rtlName="icmp_ln57_fu_663_p2" opType="icmp" coreId="840979276" contextFuncName="loss_derivative" bitwidth="1" opcode="icmp" nodeLabel="86.0" m_display="0" m_delay="2.47" m_topoIndex="101" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="57" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="171" name="icmp_ln48" lineNumber="48" fileName="lossfun/main.cpp" fileDirectory=".." rtlName="icmp_ln48_fu_663_p2" opType="icmp" coreId="1885949986" contextFuncName="loss_derivative" bitwidth="1" opcode="icmp" nodeLabel="86.0" m_display="0" m_delay="2.47" m_topoIndex="101" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="48" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
         <dataInputObjs>zext</dataInputObjs>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>br</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="173" name="br_ln57" lineNumber="57" fileName="lossfun/main.cpp" fileDirectory=".." coreId="570456436" contextFuncName="loss_derivative" opcode="br" nodeLabel="86.0" m_display="0" m_topoIndex="102" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="57" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="173" name="br_ln48" lineNumber="48" fileName="lossfun/main.cpp" fileDirectory=".." coreId="1986360064" contextFuncName="loss_derivative" opcode="br" nodeLabel="86.0" m_display="0" m_topoIndex="102" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="48" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
         <dataInputObjs>icmp</dataInputObjs>
         <controlInputObjs>.split</controlInputObjs>
         <controlInputObjs>._crit_edge.loopexit</controlInputObjs>
       </node_objs>
       <fileValidLineNumbers fileName="lossfun/main.cpp">
-        <validLinenumbers>57</validLinenumbers>
+        <validLinenumbers>48</validLinenumbers>
       </fileValidLineNumbers>
     </basic_blocks>
     <basic_blocks id="181" name=".split" type="BlockType">
@@ -1205,40 +1205,40 @@
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>_ZN13ap_fixed_baseILi40ELi33ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi16ELi9ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i.i</controlOutputObjs>
       <controlOutputObjs>_ZN8ap_fixedILi16ELi9EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi17ELi10ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="175" name="i_4_cast" lineNumber="57" fileName="lossfun/main.cpp" fileDirectory=".." rtlName="i_4_cast_fu_668_p1" coreId="49" contextFuncName="loss_derivative" bitwidth="64" opcode="zext" nodeLabel="86.0" m_display="0" m_topoIndex="103" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="57" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="175" name="i_4_cast" lineNumber="48" fileName="lossfun/main.cpp" fileDirectory=".." rtlName="i_4_cast_fu_668_p1" coreId="1769239916" contextFuncName="loss_derivative" bitwidth="64" opcode="zext" nodeLabel="86.0" m_display="0" m_topoIndex="103" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="48" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="177" name="icmp_ln58" lineNumber="58" fileName="lossfun/main.cpp" fileDirectory=".." rtlName="icmp_ln58_fu_673_p2" opType="icmp" coreId="132" contextFuncName="loss_derivative" bitwidth="1" opcode="icmp" nodeLabel="86.0" m_display="0" m_delay="2.47" m_topoIndex="104" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="58" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="177" name="icmp_ln49" lineNumber="49" fileName="lossfun/main.cpp" fileDirectory=".." rtlName="icmp_ln49_fu_673_p2" opType="icmp" coreId="0" contextFuncName="loss_derivative" bitwidth="1" opcode="icmp" nodeLabel="86.0" m_display="0" m_delay="2.47" m_topoIndex="104" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="49" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
         <dataInputObjs>zext</dataInputObjs>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>br</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="178" name="probs_V_addr_2" lineNumber="57" fileName="lossfun/main.cpp" fileDirectory=".." coreId="0" contextFuncName="loss_derivative" bitwidth="7" opcode="getelementptr" nodeLabel="86.0" m_display="0" m_topoIndex="105" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="57" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="178" name="probs_V_addr_2" lineNumber="48" fileName="lossfun/main.cpp" fileDirectory=".." coreId="49" contextFuncName="loss_derivative" bitwidth="7" opcode="getelementptr" nodeLabel="86.0" m_display="0" m_topoIndex="105" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="48" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>load</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="179" name="t_V" lineNumber="57" originalName="t.V" fileName="lossfun/main.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" contextFuncName="loss_derivative" bitwidth="16" opcode="load" nodeLabel="86.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="106" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="57" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="179" name="t_V" lineNumber="48" originalName="t.V" fileName="lossfun/main.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" contextFuncName="loss_derivative" bitwidth="16" opcode="load" nodeLabel="86.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="106" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="48" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
         <dataInputObjs>getelementptr</dataInputObjs>
         <dataOutputObjs>sext</dataOutputObjs>
         <dataOutputObjs>sext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="180" name="br_ln58" lineNumber="58" fileName="lossfun/main.cpp" fileDirectory=".." coreId="132" contextFuncName="loss_derivative" opcode="br" nodeLabel="86.0" m_display="0" m_topoIndex="107" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="58" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="180" name="br_ln49" lineNumber="49" fileName="lossfun/main.cpp" fileDirectory=".." coreId="0" contextFuncName="loss_derivative" opcode="br" nodeLabel="86.0" m_display="0" m_topoIndex="107" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="49" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
         <dataInputObjs>icmp</dataInputObjs>
         <controlInputObjs>_ZN8ap_fixedILi16ELi9EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi17ELi10ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit</controlInputObjs>
         <controlInputObjs>_ZN13ap_fixed_baseILi40ELi33ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi16ELi9ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i.i</controlInputObjs>
       </node_objs>
       <fileValidLineNumbers fileName="lossfun/main.cpp">
-        <validLinenumbers>57</validLinenumbers>
-        <validLinenumbers>58</validLinenumbers>
+        <validLinenumbers>48</validLinenumbers>
+        <validLinenumbers>49</validLinenumbers>
       </fileValidLineNumbers>
     </basic_blocks>
     <basic_blocks id="188" name="_ZN8ap_fixedILi16ELi9EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi17ELi10ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit" type="BlockType">
@@ -1250,26 +1250,26 @@
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>sdiv</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="183" name="sdiv_ln1148_2" lineNumber="1148" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="sdiv_17s_32ns_16_21_1_U22" opType="sdiv" coreId="0" contextFuncName="operator_div_32_32_true_AP_TRN_AP_WRAP_0" bitwidth="16" opcode="sdiv" nodeLabel="88.0" nodeLatency="20" m_display="0" m_delay="4.33" m_topoIndex="110" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="183" name="sdiv_ln1148_2" lineNumber="1148" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="sdiv_17s_32ns_16_21_1_U22" opType="sdiv" coreId="49" contextFuncName="operator_div_32_32_true_AP_TRN_AP_WRAP_0" bitwidth="16" opcode="sdiv" nodeLabel="88.0" nodeLatency="20" m_display="0" m_delay="4.33" m_topoIndex="110" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" linenumber="1148" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator/&amp;lt;32, 32, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
         <dataInputObjs>sext</dataInputObjs>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>trunc</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="184" name="trunc_ln703_2" lineNumber="703" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="trunc_ln703_2_fu_706_p1" coreId="456257200" contextFuncName="operator_assign_17_10_true_AP_TRN_AP_WRAP_0" bitwidth="16" opcode="trunc" nodeLabel="110.0" m_display="0" m_topoIndex="115" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="184" name="trunc_ln703_2" lineNumber="703" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="trunc_ln703_2_fu_706_p1" coreId="2147483776" contextFuncName="operator_assign_17_10_true_AP_TRN_AP_WRAP_0" bitwidth="16" opcode="trunc" nodeLabel="110.0" m_display="0" m_topoIndex="115" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" linenumber="703" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator=&amp;lt;17, 10, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
         <dataInputObjs>sdiv</dataInputObjs>
         <dataOutputObjs>store</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="185" name="dxbuff_V_addr_1" lineNumber="62" fileName="lossfun/main.cpp" fileDirectory=".." coreId="0" contextFuncName="loss_derivative" bitwidth="7" opcode="getelementptr" nodeLabel="110.0" m_display="0" m_topoIndex="116" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="62" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="185" name="dxbuff_V_addr_1" lineNumber="53" fileName="lossfun/main.cpp" fileDirectory=".." coreId="2147483776" contextFuncName="loss_derivative" bitwidth="7" opcode="getelementptr" nodeLabel="110.0" m_display="0" m_topoIndex="116" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="53" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>store</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="186" name="dxbuff_V_addr_1_write_ln62" lineNumber="62" fileName="lossfun/main.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" contextFuncName="loss_derivative" opcode="store" nodeLabel="110.0" m_display="0" m_delay="3.25" m_topoIndex="117" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="62" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="186" name="dxbuff_V_addr_1_write_ln53" lineNumber="53" fileName="lossfun/main.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" contextFuncName="loss_derivative" opcode="store" nodeLabel="110.0" m_display="0" m_delay="3.25" m_topoIndex="117" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="53" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
         <dataInputObjs>trunc</dataInputObjs>
         <dataInputObjs>getelementptr</dataInputObjs>
       </node_objs>
@@ -1277,7 +1277,7 @@
         <controlInputObjs>block_198</controlInputObjs>
       </node_objs>
       <fileValidLineNumbers fileName="lossfun/main.cpp">
-        <validLinenumbers>62</validLinenumbers>
+        <validLinenumbers>53</validLinenumbers>
       </fileValidLineNumbers>
       <fileValidLineNumbers fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h">
         <validLinenumbers>1148</validLinenumbers>
@@ -1288,7 +1288,7 @@
       <controlInputObjs>.split</controlInputObjs>
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>block_198</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="189" name="sext_ln2221" lineNumber="2221" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="sext_ln2221_fu_687_p1" coreId="456261200" contextFuncName="operator_div_40_33_true_AP_TRN_AP_WRAP_0" bitwidth="17" opcode="sext" nodeLabel="88.0" m_display="0" m_topoIndex="111" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="189" name="sext_ln2221" lineNumber="2221" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="sext_ln2221_fu_687_p1" coreId="0" contextFuncName="operator_div_40_33_true_AP_TRN_AP_WRAP_0" bitwidth="17" opcode="sext" nodeLabel="88.0" m_display="0" m_topoIndex="111" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" linenumber="2221" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator/&amp;lt;40, 33, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
@@ -1299,34 +1299,34 @@
         <dataOutputObjs>sext</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="191" name="sext_ln1148" lineNumber="1148" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="grp_fu_701_p0" coreId="456264288" contextFuncName="operator_div_32_32_true_AP_TRN_AP_WRAP_0" bitwidth="32" opcode="sext" nodeLabel="88.0" m_display="0" m_topoIndex="113" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="191" name="sext_ln1148" lineNumber="1148" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="grp_fu_701_p0" coreId="1464216009" contextFuncName="operator_div_32_32_true_AP_TRN_AP_WRAP_0" bitwidth="32" opcode="sext" nodeLabel="88.0" m_display="0" m_topoIndex="113" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" linenumber="1148" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator/&amp;lt;32, 32, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>sdiv</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="192" name="sdiv_ln1148_1" lineNumber="1148" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="sdiv_18s_32ns_16_22_1_U23" opType="sdiv" coreId="456265504" contextFuncName="operator_div_32_32_true_AP_TRN_AP_WRAP_0" bitwidth="16" opcode="sdiv" nodeLabel="88.0" nodeLatency="21" m_display="0" m_delay="4.33" m_topoIndex="114" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="192" name="sdiv_ln1148_1" lineNumber="1148" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="sdiv_18s_32ns_16_22_1_U23" opType="sdiv" coreId="28271" contextFuncName="operator_div_32_32_true_AP_TRN_AP_WRAP_0" bitwidth="16" opcode="sdiv" nodeLabel="88.0" nodeLatency="21" m_display="0" m_delay="4.33" m_topoIndex="114" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" linenumber="1148" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator/&amp;lt;32, 32, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
         <dataInputObjs>sext</dataInputObjs>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>trunc</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="193" name="trunc_ln703_1" lineNumber="703" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="trunc_ln703_1_fu_710_p1" coreId="132" contextFuncName="operator_assign_41_34_true_AP_TRN_AP_WRAP_0" bitwidth="16" opcode="trunc" nodeLabel="110.0" m_display="0" m_topoIndex="119" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="193" name="trunc_ln703_1" lineNumber="703" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="trunc_ln703_1_fu_710_p1" coreId="1464218616" contextFuncName="operator_assign_41_34_true_AP_TRN_AP_WRAP_0" bitwidth="16" opcode="trunc" nodeLabel="110.0" m_display="0" m_topoIndex="119" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" linenumber="703" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator=&amp;lt;41, 34, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
         <dataInputObjs>sdiv</dataInputObjs>
         <dataOutputObjs>store</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="194" name="dxbuff_V_addr_write_ln59" lineNumber="59" fileName="lossfun/main.cpp" fileDirectory=".." rtlName="mul_29s_6ns_29_2_1_U24" coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" contextFuncName="loss_derivative" opcode="store" nodeLabel="110.0" m_display="0" m_delay="3.25" m_topoIndex="120" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="59" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="194" name="dxbuff_V_addr_write_ln50" lineNumber="50" fileName="lossfun/main.cpp" fileDirectory=".." rtlName="mul_29s_6ns_29_2_1_U24" coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" contextFuncName="loss_derivative" opcode="store" nodeLabel="110.0" m_display="0" m_delay="3.25" m_topoIndex="120" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="50" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
         <dataInputObjs>trunc</dataInputObjs>
         <dataInputObjs>getelementptr</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="195" name="br_ln60" lineNumber="60" fileName="lossfun/main.cpp" fileDirectory=".." coreId="456270480" contextFuncName="loss_derivative" opcode="br" nodeLabel="110.0" m_display="0" m_topoIndex="121" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="60" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="195" name="br_ln51" lineNumber="51" fileName="lossfun/main.cpp" fileDirectory=".." coreId="1464221376" contextFuncName="loss_derivative" opcode="br" nodeLabel="110.0" m_display="0" m_topoIndex="121" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="lossfun/main.cpp" linenumber="51" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="loss_derivative"/>
         <controlInputObjs>block_198</controlInputObjs>
       </node_objs>
       <fileValidLineNumbers fileName="lossfun/main.cpp">
-        <validLinenumbers>59</validLinenumbers>
-        <validLinenumbers>60</validLinenumbers>
+        <validLinenumbers>50</validLinenumbers>
+        <validLinenumbers>51</validLinenumbers>
       </fileValidLineNumbers>
       <fileValidLineNumbers fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h">
         <validLinenumbers>2221</validLinenumbers>
@@ -1341,7 +1341,7 @@
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>block_174</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="197" name="br_ln0" coreId="0" opcode="br" nodeLabel="86.0" m_display="0" m_topoIndex="108" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="197" name="br_ln0" coreId="2147483776" opcode="br" nodeLabel="86.0" m_display="0" m_topoIndex="108" m_clusterGroupNumber="-1">
         <controlInputObjs>block_174</controlInputObjs>
       </node_objs>
     </basic_blocks>
@@ -1354,7 +1354,7 @@
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>loop-memcpy-residual-header.loopexit</controlOutputObjs>
       <controlOutputObjs>loop-memcpy-expansion.split</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="207" name="loop_index" coreId="0" bitwidth="7" opcode="phi" nodeLabel="112.0" m_display="0" m_topoIndex="128" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="207" name="loop_index" coreId="1464224088" bitwidth="7" opcode="phi" nodeLabel="112.0" m_display="0" m_topoIndex="128" m_clusterGroupNumber="-1">
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
@@ -1368,16 +1368,16 @@
         <dataOutputObjs>phi</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="209" name="loop_index_cast1" rtlName="loop_index_cast1_fu_740_p1" coreId="1140850816" bitwidth="32" opcode="zext" nodeLabel="112.0" m_display="0" m_topoIndex="130" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="209" name="loop_index_cast1" rtlName="loop_index_cast1_fu_740_p1" coreId="0" bitwidth="32" opcode="zext" nodeLabel="112.0" m_display="0" m_topoIndex="130" m_clusterGroupNumber="-1">
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="211" name="exitcond2" rtlName="exitcond2_fu_744_p2" opType="icmp" coreId="456272176" bitwidth="1" opcode="icmp" nodeLabel="112.0" m_display="0" m_delay="2.47" m_topoIndex="131" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="211" name="exitcond2" rtlName="exitcond2_fu_744_p2" opType="icmp" coreId="1464232560" bitwidth="1" opcode="icmp" nodeLabel="112.0" m_display="0" m_delay="2.47" m_topoIndex="131" m_clusterGroupNumber="-1">
         <dataInputObjs>zext</dataInputObjs>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>br</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="213" name="br_ln0" coreId="456278792" opcode="br" nodeLabel="112.0" m_display="0" m_topoIndex="132" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="213" name="br_ln0" coreId="0" opcode="br" nodeLabel="112.0" m_display="0" m_topoIndex="132" m_clusterGroupNumber="-1">
         <dataInputObjs>icmp</dataInputObjs>
         <controlInputObjs>loop-memcpy-expansion.split</controlInputObjs>
         <controlInputObjs>loop-memcpy-residual-header.loopexit</controlInputObjs>
@@ -1388,11 +1388,11 @@
       <controlOutputObjs>phi</controlOutputObjs>
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>loop-memcpy-expansion</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="215" name="loop_index_cast" rtlName="loop_index_cast_fu_749_p1" coreId="1140850816" bitwidth="64" opcode="zext" nodeLabel="112.0" m_display="0" m_topoIndex="133" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="215" name="loop_index_cast" rtlName="loop_index_cast_fu_749_p1" coreId="1464233952" bitwidth="64" opcode="zext" nodeLabel="112.0" m_display="0" m_topoIndex="133" m_clusterGroupNumber="-1">
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="216" name="dxbuff_V_addr_2" coreId="456282080" bitwidth="7" opcode="getelementptr" nodeLabel="112.0" m_display="0" m_topoIndex="134" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="216" name="dxbuff_V_addr_2" coreId="0" bitwidth="7" opcode="getelementptr" nodeLabel="112.0" m_display="0" m_topoIndex="134" m_clusterGroupNumber="-1">
         <dataInputObjs>alloca</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>load</dataOutputObjs>
@@ -1535,9 +1535,6 @@
   <regnodes realName="gmem_addr_reg_794">
     <nodeIds>51</nodeIds>
   </regnodes>
-  <regnodes realName="icmp_ln51_reg_901">
-    <nodeIds>141</nodeIds>
-  </regnodes>
   <regnodes realName="sdiv_ln1148_1_reg_977">
     <nodeIds>192</nodeIds>
   </regnodes>
@@ -1553,9 +1550,6 @@
   <regnodes realName="dxbuff_V_addr_reg_930">
     <nodeIds>164</nodeIds>
   </regnodes>
-  <regnodes realName="add_ln41_reg_848">
-    <nodeIds>99</nodeIds>
-  </regnodes>
   <regnodes realName="dx_read_reg_780">
     <nodeIds>40</nodeIds>
   </regnodes>
@@ -1569,9 +1563,6 @@
   <regnodes realName="dxbuff_V_load_reg_1002">
     <nodeIds>217</nodeIds>
   </regnodes>
-  <regnodes realName="icmp_ln29_reg_790">
-    <nodeIds>46</nodeIds>
-  </regnodes>
   <regnodes realName="dxbuff_V_addr_2_reg_997">
     <nodeIds>216</nodeIds>
   </regnodes>
@@ -1580,6 +1571,9 @@
   </regnodes>
   <regnodes realName="i_2_reg_365">
     <nodeIds>117</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln38_reg_877">
+    <nodeIds>122</nodeIds>
   </regnodes>
   <regnodes realName="sum_V_cast_reg_891">
     <nodeIds>134</nodeIds>
@@ -1600,14 +1594,11 @@
   <regnodes realName="probs_V_addr_2_reg_957">
     <nodeIds>178</nodeIds>
   </regnodes>
-  <regnodes realName="icmp_ln41_reg_844">
-    <nodeIds>93</nodeIds>
-  </regnodes>
   <regnodes realName="y_read_reg_774">
     <nodeIds>39</nodeIds>
   </regnodes>
-  <regnodes realName="icmp_ln41_1_reg_853">
-    <nodeIds>102</nodeIds>
+  <regnodes realName="add_ln32_reg_848">
+    <nodeIds>99</nodeIds>
   </regnodes>
   <regnodes realName="gmem_addr_2_reg_982">
     <nodeIds>203</nodeIds>
@@ -1615,11 +1606,14 @@
   <regnodes realName="log_probs_V_addr_1_reg_881">
     <nodeIds>128</nodeIds>
   </regnodes>
-  <regnodes realName="icmp_ln47_reg_877">
-    <nodeIds>122</nodeIds>
-  </regnodes>
   <regnodes realName="exitcond2_reg_993">
     <nodeIds>211</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln26_reg_829">
+    <nodeIds>84</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln38_reg_872">
+    <nodeIds>119</nodeIds>
   </regnodes>
   <regnodes realName="sub_ln703_reg_867">
     <nodeIds>110</nodeIds>
@@ -1627,11 +1621,17 @@
   <regnodes realName="empty_42_reg_800">
     <nodeIds>56</nodeIds>
   </regnodes>
+  <regnodes realName="icmp_ln49_reg_953">
+    <nodeIds>177</nodeIds>
+  </regnodes>
   <regnodes realName="sum_V_reg_376">
     <nodeIds>118</nodeIds>
   </regnodes>
   <regnodes realName="i_4_reg_399">
     <nodeIds>167</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln42_reg_901">
+    <nodeIds>141</nodeIds>
   </regnodes>
   <regnodes realName="exitcond4729_reg_805">
     <nodeIds>59</nodeIds>
@@ -1642,17 +1642,17 @@
   <regnodes realName="i_3_cast7_reg_905">
     <nodeIds>145</nodeIds>
   </regnodes>
+  <regnodes realName="add_ln48_reg_939">
+    <nodeIds>168</nodeIds>
+  </regnodes>
   <regnodes realName="loss_V_reg_935">
     <nodeIds>163</nodeIds>
-  </regnodes>
-  <regnodes realName="icmp_ln35_reg_825">
-    <nodeIds>81</nodeIds>
   </regnodes>
   <regnodes realName="x_read_reg_785">
     <nodeIds>41</nodeIds>
   </regnodes>
-  <regnodes realName="icmp_ln58_reg_953">
-    <nodeIds>177</nodeIds>
+  <regnodes realName="add_ln42_reg_896">
+    <nodeIds>138</nodeIds>
   </regnodes>
   <regnodes realName="N_read_reg_754">
     <nodeIds>37</nodeIds>
@@ -1660,20 +1660,14 @@
   <regnodes realName="xbuff_V_addr_1_reg_834">
     <nodeIds>87</nodeIds>
   </regnodes>
-  <regnodes realName="add_ln35_reg_829">
-    <nodeIds>84</nodeIds>
-  </regnodes>
   <regnodes realName="log_probs_V_addr_2_reg_910">
     <nodeIds>147</nodeIds>
   </regnodes>
+  <regnodes realName="icmp_ln32_reg_844">
+    <nodeIds>93</nodeIds>
+  </regnodes>
   <regnodes realName="x_size_read_reg_760">
     <nodeIds>38</nodeIds>
-  </regnodes>
-  <regnodes realName="add_ln47_reg_872">
-    <nodeIds>119</nodeIds>
-  </regnodes>
-  <regnodes realName="add_ln57_reg_939">
-    <nodeIds>168</nodeIds>
   </regnodes>
   <regnodes realName="sdiv_ln1148_2_reg_972">
     <nodeIds>183</nodeIds>
@@ -1681,8 +1675,8 @@
   <regnodes realName="sext_ln1148_1_reg_962">
     <nodeIds>182</nodeIds>
   </regnodes>
-  <regnodes realName="add_ln51_reg_896">
-    <nodeIds>138</nodeIds>
+  <regnodes realName="icmp_ln48_reg_944">
+    <nodeIds>171</nodeIds>
   </regnodes>
   <regnodes realName="empty_49_reg_988">
     <nodeIds>208</nodeIds>
@@ -1695,6 +1689,9 @@
   </regnodes>
   <regnodes realName="i_1_cast5_reg_857">
     <nodeIds>106</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln32_1_reg_853">
+    <nodeIds>102</nodeIds>
   </regnodes>
   <regnodes realName="xbuff_V_addr_2_reg_862">
     <nodeIds>108</nodeIds>
@@ -1712,14 +1709,17 @@
     <nodeIds>161</nodeIds>
     <nodeIds>179</nodeIds>
   </regnodes>
+  <regnodes realName="icmp_ln26_reg_825">
+    <nodeIds>81</nodeIds>
+  </regnodes>
   <regnodes realName="max_V_1_reg_344">
     <nodeIds>79</nodeIds>
   </regnodes>
+  <regnodes realName="icmp_ln20_reg_790">
+    <nodeIds>46</nodeIds>
+  </regnodes>
   <regnodes realName="sum_V_1_reg_886">
     <nodeIds>131</nodeIds>
-  </regnodes>
-  <regnodes realName="icmp_ln57_reg_944">
-    <nodeIds>171</nodeIds>
   </regnodes>
   <expressionNodes realName="xbuff_V_addr_gep_fu_218">
     <nodeIds>65</nodeIds>
@@ -1739,9 +1739,6 @@
   <expressionNodes realName="empty_42_fu_483">
     <nodeIds>56</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="add_ln35_fu_519">
-    <nodeIds>84</nodeIds>
-  </expressionNodes>
   <expressionNodes realName="exitcond2_fu_744">
     <nodeIds>211</nodeIds>
   </expressionNodes>
@@ -1751,17 +1748,14 @@
   <expressionNodes realName="p_cast2_cast_fu_723">
     <nodeIds>202</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="icmp_ln41_1_fu_559">
-    <nodeIds>102</nodeIds>
-  </expressionNodes>
   <expressionNodes realName="log_probs_V_addr_2_gep_fu_263">
     <nodeIds>147</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="icmp_ln58_fu_673">
-    <nodeIds>177</nodeIds>
-  </expressionNodes>
   <expressionNodes realName="t_fu_625">
     <nodeIds>150</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln32_1_fu_559">
+    <nodeIds>102</nodeIds>
   </expressionNodes>
   <expressionNodes realName="trunc_ln703_fu_638">
     <nodeIds>152</nodeIds>
@@ -1778,9 +1772,6 @@
   <expressionNodes realName="loop_index_cast1_fu_740">
     <nodeIds>209</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="icmp_ln35_fu_514">
-    <nodeIds>81</nodeIds>
-  </expressionNodes>
   <expressionNodes realName="i_2_cast6_fu_590">
     <nodeIds>126</nodeIds>
   </expressionNodes>
@@ -1790,50 +1781,50 @@
   <expressionNodes realName="sum_V_cast_fu_601">
     <nodeIds>134</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="add_ln51_fu_605">
-    <nodeIds>138</nodeIds>
-  </expressionNodes>
   <expressionNodes realName="i_4_phi_fu_403">
     <nodeIds>167</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="add_ln41_fu_549">
+  <expressionNodes realName="add_ln32_fu_549">
     <nodeIds>99</nodeIds>
   </expressionNodes>
   <expressionNodes realName="probs_V_addr_2_gep_fu_295">
     <nodeIds>178</nodeIds>
   </expressionNodes>
+  <expressionNodes realName="add_ln42_fu_605">
+    <nodeIds>138</nodeIds>
+  </expressionNodes>
   <expressionNodes realName="i_phi_fu_337">
     <nodeIds>78</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="sext_ln34_fu_503">
+  <expressionNodes realName="sext_ln25_fu_503">
     <nodeIds>72</nodeIds>
   </expressionNodes>
   <expressionNodes realName="icmp_ln1494_fu_530">
     <nodeIds>89</nodeIds>
   </expressionNodes>
+  <expressionNodes realName="add_ln48_fu_653">
+    <nodeIds>168</nodeIds>
+  </expressionNodes>
   <expressionNodes realName="i_1_cast_fu_555">
     <nodeIds>100</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="icmp_ln47_fu_585">
-    <nodeIds>122</nodeIds>
   </expressionNodes>
   <expressionNodes realName="sext_ln1148_fu_697">
     <nodeIds>191</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="icmp_ln29_fu_466">
-    <nodeIds>46</nodeIds>
-  </expressionNodes>
   <expressionNodes realName="loop_index451_phi_fu_325">
     <nodeIds>55</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln38_fu_585">
+    <nodeIds>122</nodeIds>
   </expressionNodes>
   <expressionNodes realName="empty_49_fu_734">
     <nodeIds>208</nodeIds>
   </expressionNodes>
+  <expressionNodes realName="icmp_ln32_fu_544">
+    <nodeIds>93</nodeIds>
+  </expressionNodes>
   <expressionNodes realName="i_cast4_fu_525">
     <nodeIds>85</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="icmp_ln41_fu_544">
-    <nodeIds>93</nodeIds>
   </expressionNodes>
   <expressionNodes realName="loss_V_fu_647">
     <nodeIds>163</nodeIds>
@@ -1856,6 +1847,9 @@
   <expressionNodes realName="sext_ln2221_fu_687">
     <nodeIds>189</nodeIds>
   </expressionNodes>
+  <expressionNodes realName="add_ln26_fu_519">
+    <nodeIds>84</nodeIds>
+  </expressionNodes>
   <expressionNodes realName="sum_V_phi_fu_380">
     <nodeIds>118</nodeIds>
   </expressionNodes>
@@ -1868,14 +1862,14 @@
   <expressionNodes realName="max_V_1_phi_fu_347">
     <nodeIds>79</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="add_ln57_fu_653">
-    <nodeIds>168</nodeIds>
-  </expressionNodes>
   <expressionNodes realName="sub_ln703_fu_569">
     <nodeIds>110</nodeIds>
   </expressionNodes>
   <expressionNodes realName="dxbuff_V_alloca_fu_146">
     <nodeIds>45</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln49_fu_673">
+    <nodeIds>177</nodeIds>
   </expressionNodes>
   <expressionNodes realName="loop_index_phi_fu_414">
     <nodeIds>207</nodeIds>
@@ -1901,8 +1895,17 @@
   <expressionNodes realName="probs_V_addr_1_gep_fu_282">
     <nodeIds>160</nodeIds>
   </expressionNodes>
+  <expressionNodes realName="icmp_ln26_fu_514">
+    <nodeIds>81</nodeIds>
+  </expressionNodes>
   <expressionNodes realName="xbuff_V_addr_1_gep_fu_230">
     <nodeIds>87</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln42_fu_615">
+    <nodeIds>141</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln46_fu_642">
+    <nodeIds>159</nodeIds>
   </expressionNodes>
   <expressionNodes realName="loop_index_cast_fu_749">
     <nodeIds>215</nodeIds>
@@ -1910,26 +1913,14 @@
   <expressionNodes realName="sum_V_1_fu_595">
     <nodeIds>131</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="icmp_ln51_fu_615">
-    <nodeIds>141</nodeIds>
-  </expressionNodes>
   <expressionNodes realName="i_2_cast_fu_581">
     <nodeIds>120</nodeIds>
   </expressionNodes>
   <expressionNodes realName="xbuff_V_addr_2_gep_fu_237">
     <nodeIds>108</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="zext_ln55_fu_642">
-    <nodeIds>159</nodeIds>
-  </expressionNodes>
   <expressionNodes realName="trunc_ln703_2_fu_706">
     <nodeIds>184</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="icmp_ln57_fu_663">
-    <nodeIds>171</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="add_ln47_fu_575">
-    <nodeIds>119</nodeIds>
   </expressionNodes>
   <expressionNodes realName="i_3_phi_fu_392">
     <nodeIds>137</nodeIds>
@@ -1940,11 +1931,20 @@
   <expressionNodes realName="xbuff_V_alloca_fu_142">
     <nodeIds>44</nodeIds>
   </expressionNodes>
+  <expressionNodes realName="icmp_ln48_fu_663">
+    <nodeIds>171</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln38_fu_575">
+    <nodeIds>119</nodeIds>
+  </expressionNodes>
   <expressionNodes realName="p_cast_cast_fu_472">
     <nodeIds>50</nodeIds>
   </expressionNodes>
   <expressionNodes realName="add_ln1148_fu_691">
     <nodeIds>190</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln20_fu_466">
+    <nodeIds>46</nodeIds>
   </expressionNodes>
   <expressionNodes realName="probs_V_alloca_fu_138">
     <nodeIds>43</nodeIds>
@@ -3033,7 +3033,7 @@
       <basicBlocks>77</basicBlocks>
       <mDfPipe/>
     </cfgRegions>
-    <cfgRegions mId="6" mTag="VITIS_LOOP_35_1" mII="1" mDepth="2" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="-1" mMaxLatency="-1" mType="1">
+    <cfgRegions mId="6" mTag="VITIS_LOOP_26_1" mII="1" mDepth="2" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="-1" mMaxLatency="-1" mType="1">
       <basicBlocks>83</basicBlocks>
       <basicBlocks>92</basicBlocks>
       <mDfPipe/>
@@ -3043,7 +3043,7 @@
       <basicBlocks>97</basicBlocks>
       <mDfPipe/>
     </cfgRegions>
-    <cfgRegions mId="8" mTag="VITIS_LOOP_41_2" mII="1" mDepth="3" mMinTripCount="1" mMaxTripCount="127" mMinLatency="2" mMaxLatency="128" mType="1">
+    <cfgRegions mId="8" mTag="VITIS_LOOP_32_2" mII="1" mDepth="3" mMinTripCount="1" mMaxTripCount="127" mMinLatency="2" mMaxLatency="128" mType="1">
       <basicBlocks>105</basicBlocks>
       <basicBlocks>114</basicBlocks>
       <mDfPipe/>
@@ -3052,7 +3052,7 @@
       <basicBlocks>116</basicBlocks>
       <mDfPipe/>
     </cfgRegions>
-    <cfgRegions mId="10" mTag="VITIS_LOOP_47_3" mII="1" mDepth="9" mMinTripCount="1" mMaxTripCount="127" mMinLatency="8" mMaxLatency="134" mType="1">
+    <cfgRegions mId="10" mTag="VITIS_LOOP_38_3" mII="1" mDepth="9" mMinTripCount="1" mMaxTripCount="127" mMinLatency="8" mMaxLatency="134" mType="1">
       <basicBlocks>125</basicBlocks>
       <basicBlocks>133</basicBlocks>
       <mDfPipe/>
@@ -3061,7 +3061,7 @@
       <basicBlocks>136</basicBlocks>
       <mDfPipe/>
     </cfgRegions>
-    <cfgRegions mId="12" mTag="VITIS_LOOP_51_4" mII="1" mDepth="36" mMinTripCount="1" mMaxTripCount="127" mMinLatency="35" mMaxLatency="161" mType="1">
+    <cfgRegions mId="12" mTag="VITIS_LOOP_42_4" mII="1" mDepth="36" mMinTripCount="1" mMaxTripCount="127" mMinLatency="35" mMaxLatency="161" mType="1">
       <basicBlocks>144</basicBlocks>
       <basicBlocks>156</basicBlocks>
       <mDfPipe/>
@@ -3074,7 +3074,7 @@
       <basicBlocks>166</basicBlocks>
       <mDfPipe/>
     </cfgRegions>
-    <cfgRegions mId="15" mTag="VITIS_LOOP_57_5" mII="1" mDepth="25" mMaxTripCount="127" mMaxLatency="150" mType="1">
+    <cfgRegions mId="15" mTag="VITIS_LOOP_48_5" mII="1" mDepth="25" mMaxTripCount="127" mMaxLatency="150" mType="1">
       <basicBlocks>174</basicBlocks>
       <basicBlocks>181</basicBlocks>
       <basicBlocks>188</basicBlocks>

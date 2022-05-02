@@ -1,12 +1,6 @@
-#define MAX_SIZE 100
-#define MAX_FILTERS 10
-#define MAX_WINDOW_SIZE 5
-#include <ap_fixed.h>
+#include "conv_fwd.h"
 
-typedef ap_fixed<16,9> fixed;
-
-
-void conv_fwd(fixed* x, fixed* w, fixed* y, fixed* b, int F, int C, int H, int W, int FH, int FW){
+void conv_fwd(fixed_t* x, fixed_t* w, fixed_t* y, fixed_t* b, int F, int C, int H, int W, int FH, int FW){
 
 #pragma HLS INTERFACE s_axilite port=return bundle=CTRL
 #pragma HLS INTERFACE m_axi port=x depth=200 offset=slave bundle=gmem
@@ -24,14 +18,14 @@ void conv_fwd(fixed* x, fixed* w, fixed* y, fixed* b, int F, int C, int H, int W
 
 
 
-    fixed xbuf[MAX_FILTERS][MAX_SIZE][MAX_SIZE];
-    fixed wbuf[MAX_FILTERS][MAX_FILTERS][MAX_WINDOW_SIZE][MAX_WINDOW_SIZE];
+    fixed_t xbuf[MAX_FILTERS][MAX_SIZE][MAX_SIZE];
+    fixed_t wbuf[MAX_FILTERS][MAX_FILTERS][MAX_WINDOW_SIZE][MAX_WINDOW_SIZE];
 
     int outH=H-FH+1;
     int outW=W-FW+1;
 
-    fixed ybuf[MAX_FILTERS][MAX_SIZE][MAX_SIZE];
-    fixed bbuf[MAX_FILTERS];
+    fixed_t ybuf[MAX_FILTERS][MAX_SIZE][MAX_SIZE];
+    fixed_t bbuf[MAX_FILTERS];
 
     for(int i=0;i<C;i++){
         for(int j=0;j<H;j++){

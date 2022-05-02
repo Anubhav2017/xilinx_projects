@@ -1,10 +1,4 @@
-#include<stdio.h>
-#include<string.h>
-#include <ap_fixed.h>
-
-#define MAX_SIZE 100
-
-typedef ap_fixed<16,9> fixed;
+#include "backprop.h"
 
 void backward_fcc( fixed* x, fixed* w, fixed* dx, fixed* dy, fixed* dw, fixed* db, int xdim, int ydim){
 #pragma HLS INTERFACE m_axi depth=100 port=x offset=slave bundle=gmem

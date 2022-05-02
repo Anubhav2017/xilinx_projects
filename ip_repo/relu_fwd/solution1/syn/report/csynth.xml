@@ -29,7 +29,7 @@
             <Interval-max>undef</Interval-max>
         </SummaryOfOverallLatency>
         <SummaryOfLoopLatency>
-            <VITIS_LOOP_21_1>
+            <VITIS_LOOP_18_1>
                 <TripCount>undef</TripCount>
                 <Latency>
                     <range>
@@ -45,8 +45,8 @@
                 </AbsoluteTimeLatency>
                 <PipelineII>1</PipelineII>
                 <PipelineDepth>3</PipelineDepth>
-            </VITIS_LOOP_21_1>
-            <VITIS_LOOP_31_2>
+            </VITIS_LOOP_18_1>
+            <VITIS_LOOP_28_2>
                 <TripCount>
                     <range>
                         <min>1</min>
@@ -67,7 +67,7 @@
                 </AbsoluteTimeLatency>
                 <PipelineII>1</PipelineII>
                 <PipelineDepth>3</PipelineDepth>
-            </VITIS_LOOP_31_2>
+            </VITIS_LOOP_28_2>
         </SummaryOfLoopLatency>
     </PerformanceEstimates>
     <AreaEstimates>
@@ -907,16 +907,16 @@
                     <PipelineType>none</PipelineType>
                 </SummaryOfOverallLatency>
                 <SummaryOfLoopLatency>
-                    <VITIS_LOOP_21_1>
-                        <Name>VITIS_LOOP_21_1</Name>
+                    <VITIS_LOOP_18_1>
+                        <Name>VITIS_LOOP_18_1</Name>
                         <TripCount>undef</TripCount>
                         <Latency>2 ~ ?</Latency>
                         <AbsoluteTimeLatency>20.000 ns ~ ?</AbsoluteTimeLatency>
                         <PipelineII>1</PipelineII>
                         <PipelineDepth>3</PipelineDepth>
-                    </VITIS_LOOP_21_1>
-                    <VITIS_LOOP_31_2>
-                        <Name>VITIS_LOOP_31_2</Name>
+                    </VITIS_LOOP_18_1>
+                    <VITIS_LOOP_28_2>
+                        <Name>VITIS_LOOP_28_2</Name>
                         <TripCount>
                             <range>
                                 <min>1</min>
@@ -927,7 +927,7 @@
                         <AbsoluteTimeLatency>20.000 ns ~ 1.280 us</AbsoluteTimeLatency>
                         <PipelineII>1</PipelineII>
                         <PipelineDepth>3</PipelineDepth>
-                    </VITIS_LOOP_31_2>
+                    </VITIS_LOOP_28_2>
                 </SummaryOfLoopLatency>
             </PerformanceEstimates>
             <AreaEstimates>
@@ -2005,14 +2005,14 @@
             <item name="Burst Summary">
                 <table>
                     <keys size="3">HW Interface, Message, Location</keys>
-                    <column name="m_axi_gmem">Multiple burst reads of variable length and bit width 16 in loop 'VITIS_LOOP_21_1', relu_fwd/main.cpp:21:22</column>
-                    <column name="m_axi_gmem">Multiple burst writes of variable length and bit width 16 in loop 'VITIS_LOOP_31_2', relu_fwd/main.cpp:31:22</column>
+                    <column name="m_axi_gmem">Multiple burst reads of variable length and bit width 16 in loop 'VITIS_LOOP_18_1', relu_fwd/main.cpp:18:22</column>
+                    <column name="m_axi_gmem">Multiple burst writes of variable length and bit width 16 in loop 'VITIS_LOOP_28_2', relu_fwd/main.cpp:28:22</column>
                 </table>
             </item>
             <item name="Burst Missed">
                 <table>
                     <keys size="5">HW Interface, Variable, Problem, Resolution, Location</keys>
-                    <column name="m_axi_gmem">x, Could not widen since Type i16 size is greater than or equal to alignment 0(bytes), , relu_fwd/main.cpp:21:22</column>
+                    <column name="m_axi_gmem">x, Could not widen since Type i16 size is greater than or equal to alignment 0(bytes), , relu_fwd/main.cpp:18:22</column>
                 </table>
             </item>
         </section>

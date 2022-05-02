@@ -5,11 +5,6 @@
                 <option name="name" value="conv_fwd"/>
             </pragma>
         </directive>
-        <directive functionName="conv_fwd" label="" functionLabel="">
-            <pragma name="TOP">
-                <option name="name" value="conv_fwd"/>
-            </pragma>
-        </directive>
     </sourceFile>
 </AutoPilot:ProjectResources>
 

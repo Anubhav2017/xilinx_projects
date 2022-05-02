@@ -1,6 +1,6 @@
-#define MAX_SIZE 100
+#include "relu_bckwd.h"
 
-void relu_bckwd(float* x, float* dx, float* dy, int dim){
+void relu_bckwd(fixed* x, fixed* dx, fixed* dy, int dim){
 
 #pragma HLS INTERFACE s_axilite port=return bundle=CTRL
 #pragma HLS INTERFACE m_axi port=x depth=200 offset=slave bundle=gmem
@@ -12,9 +12,9 @@ void relu_bckwd(float* x, float* dx, float* dy, int dim){
 #pragma HLS INTERFACE s_axilite port=dy bundle=CTRL
 #pragma HLS INTERFACE s_axilite port=dim bundle=CTRL
 
-    float xbuf[MAX_SIZE];
-    float dxbuf[MAX_SIZE];
-    float dybuf[MAX_SIZE];
+    fixed xbuf[MAX_SIZE];
+    fixed dxbuf[MAX_SIZE];
+    fixed dybuf[MAX_SIZE];
 
     for(int i=0;i<dim;i++){
         xbuf[i] = x[i];

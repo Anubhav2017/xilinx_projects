@@ -18,7 +18,7 @@ w {
 	offset 24
 	offset_end 31
 }
-y { 
+dx { 
 	dir I
 	width 32
 	depth 1
@@ -26,7 +26,7 @@ y {
 	offset 32
 	offset_end 39
 }
-dx { 
+dw { 
 	dir I
 	width 32
 	depth 1
@@ -34,7 +34,7 @@ dx {
 	offset 40
 	offset_end 47
 }
-dw { 
+db { 
 	dir I
 	width 32
 	depth 1
@@ -42,7 +42,7 @@ dw {
 	offset 48
 	offset_end 55
 }
-db { 
+dy { 
 	dir I
 	width 32
 	depth 1
@@ -50,7 +50,7 @@ db {
 	offset 56
 	offset_end 63
 }
-dy { 
+F { 
 	dir I
 	width 32
 	depth 1
@@ -58,7 +58,7 @@ dy {
 	offset 64
 	offset_end 71
 }
-F { 
+C { 
 	dir I
 	width 32
 	depth 1
@@ -66,7 +66,7 @@ F {
 	offset 72
 	offset_end 79
 }
-C { 
+H { 
 	dir I
 	width 32
 	depth 1
@@ -74,7 +74,7 @@ C {
 	offset 80
 	offset_end 87
 }
-H { 
+W_r { 
 	dir I
 	width 32
 	depth 1
@@ -82,7 +82,7 @@ H {
 	offset 88
 	offset_end 95
 }
-W_r { 
+FH { 
 	dir I
 	width 32
 	depth 1
@@ -90,21 +90,13 @@ W_r {
 	offset 96
 	offset_end 103
 }
-FH { 
+FW { 
 	dir I
 	width 32
 	depth 1
 	mode ap_none
 	offset 104
 	offset_end 111
-}
-FW { 
-	dir I
-	width 32
-	depth 1
-	mode ap_none
-	offset 112
-	offset_end 119
 }
 ap_start { }
 ap_done { }

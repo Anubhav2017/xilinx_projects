@@ -1,5 +1,4 @@
-relu_bckwd_fcmp_32ns_32ns_1_2_no_dsp_1
-relu_bckwd_dxbuf
+relu_bckwd_dxbuf_V
 relu_bckwd_CTRL_s_axi
 relu_bckwd_gmem_m_axi
 relu_bckwd

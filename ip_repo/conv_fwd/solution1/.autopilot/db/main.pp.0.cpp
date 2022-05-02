@@ -151,6 +151,7 @@ extern "C" {
 }
 # 2 "<built-in>" 2
 # 1 "conv_fwd/main.cpp" 2
+# 1 "conv_fwd/conv_fwd.h" 1
 
 
 
@@ -5570,14 +5571,16 @@ inline bool operator!=(
 
 }
 # 396 "/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed.h" 2
-# 5 "conv_fwd/main.cpp" 2
+# 5 "conv_fwd/conv_fwd.h" 2
 
-typedef ap_fixed<16,9> fixed;
+typedef ap_fixed<16,9> fixed_t;
 
+__attribute__((sdx_kernel("conv_fwd", 0))) void conv_fwd(fixed_t* x, fixed_t* w, fixed_t* y, fixed_t* b, int F, int C, int H, int W, int FH, int FW);
+# 2 "conv_fwd/main.cpp" 2
 
-__attribute__((sdx_kernel("conv_fwd", 0))) void conv_fwd(fixed* x, fixed* w, fixed* y, fixed* b, int F, int C, int H, int W, int FH, int FW){
+__attribute__((sdx_kernel("conv_fwd", 0))) void conv_fwd(fixed_t* x, fixed_t* w, fixed_t* y, fixed_t* b, int F, int C, int H, int W, int FH, int FW){
 #pragma HLS TOP name=conv_fwd
-# 9 "conv_fwd/main.cpp"
+# 3 "conv_fwd/main.cpp"
 
 
 #pragma HLS INTERFACE s_axilite port=return bundle=CTRL
@@ -5596,18 +5599,18 @@ __attribute__((sdx_kernel("conv_fwd", 0))) void conv_fwd(fixed* x, fixed* w, fix
 
 
 
- fixed xbuf[10][100][100];
-    fixed wbuf[10][10][5][5];
+ fixed_t xbuf[10][100][100];
+    fixed_t wbuf[10][10][5][5];
 
     int outH=H-FH+1;
     int outW=W-FW+1;
 
-    fixed ybuf[10][100][100];
-    fixed bbuf[10];
+    fixed_t ybuf[10][100][100];
+    fixed_t bbuf[10];
 
-    VITIS_LOOP_36_1: for(int i=0;i<C;i++){
-        VITIS_LOOP_37_2: for(int j=0;j<H;j++){
-            VITIS_LOOP_38_3: for(int k=0;k<W;k++){
+    VITIS_LOOP_30_1: for(int i=0;i<C;i++){
+        VITIS_LOOP_31_2: for(int j=0;j<H;j++){
+            VITIS_LOOP_32_3: for(int k=0;k<W;k++){
                 xbuf[i][j][k] = x[i*H*W+j*W+k];
             }
         }
@@ -5615,27 +5618,27 @@ __attribute__((sdx_kernel("conv_fwd", 0))) void conv_fwd(fixed* x, fixed* w, fix
     }
 
 
-    VITIS_LOOP_46_4: for(int i=0;i<F;i++){
-        VITIS_LOOP_47_5: for(int j=0;j<C;j++){
-            VITIS_LOOP_48_6: for(int k=0;k<FH;k++){
-                VITIS_LOOP_49_7: for(int l=0;l<FW;l++){
+    VITIS_LOOP_40_4: for(int i=0;i<F;i++){
+        VITIS_LOOP_41_5: for(int j=0;j<C;j++){
+            VITIS_LOOP_42_6: for(int k=0;k<FH;k++){
+                VITIS_LOOP_43_7: for(int l=0;l<FW;l++){
                     wbuf[i][j][k][l] = w[i*C*FH*FW+j*FH*FW+k*FW+l];
                 }
             }
         }
     }
 
-    VITIS_LOOP_56_8: for(int i=0;i<F;i++){
+    VITIS_LOOP_50_8: for(int i=0;i<F;i++){
         bbuf[i] = b[i];
     }
 
-    VITIS_LOOP_60_9: for(int f=0;f<F;f++){
-        VITIS_LOOP_61_10: for(int c=0;c<C;c++){
-            VITIS_LOOP_62_11: for(int h=0;h<outH;h++){
-                VITIS_LOOP_63_12: for(int w=0;w<outW;w++){
+    VITIS_LOOP_54_9: for(int f=0;f<F;f++){
+        VITIS_LOOP_55_10: for(int c=0;c<C;c++){
+            VITIS_LOOP_56_11: for(int h=0;h<outH;h++){
+                VITIS_LOOP_57_12: for(int w=0;w<outW;w++){
                     ybuf[f][h][w]=bbuf[f];
-                    VITIS_LOOP_65_13: for(int fh=0;fh<FH;fh++){
-                        VITIS_LOOP_66_14: for(int fw=0;fw<FW;fw++){
+                    VITIS_LOOP_59_13: for(int fh=0;fh<FH;fh++){
+                        VITIS_LOOP_60_14: for(int fw=0;fw<FW;fw++){
                             ybuf[f][h][w] += xbuf[c][h+fh][w+fw]*wbuf[f][c][fh][fw];
                         }
                     }
@@ -5645,9 +5648,9 @@ __attribute__((sdx_kernel("conv_fwd", 0))) void conv_fwd(fixed* x, fixed* w, fix
     }
 
 
-    VITIS_LOOP_76_15: for(int i=0;i<F;i++){
-        VITIS_LOOP_77_16: for(int j=0;j<outH;j++){
-            VITIS_LOOP_78_17: for(int k=0;k<outW;k++){
+    VITIS_LOOP_70_15: for(int i=0;i<F;i++){
+        VITIS_LOOP_71_16: for(int j=0;j<outH;j++){
+            VITIS_LOOP_72_17: for(int k=0;k<outW;k++){
                 y[i*outH*outW+j*outW+k]= ybuf[i][j][k];
 
             }

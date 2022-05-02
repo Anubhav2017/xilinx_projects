@@ -1,37 +1,27 @@
 #include<iostream>
+#include <ap_fixed.h>
+#include "backprop.h"
+
+typedef ap_fixed<16,9> fixed;
+
+const int xdim=3;
+const int ydim=1;
+
+fixed x[xdim] = {1.0,1.5,2.0};
+fixed w[xdim*ydim]={0.0,1.0,2.0};
+fixed dx[xdim]={0.0,0.0,0.0};
+fixed dy[ydim]={1.5};
+fixed dw[xdim*ydim]={0.0,0.0,0.0};
+fixed db[ydim]={0.0};
 
 using namespace std;
 
-void backward_fcc(volatile float* x, volatile float* w, volatile float* b, volatile float* dx, volatile float* dy, int xdimension, int ydimension,float lr);
 
 int main(){
 
-	int xdim=3;
-	int ydim=1;
+	backward_fcc(x,w,dx,dy,dw,db,3,1);
 
-	float x[xdim];
-	float y[ydim];
-	float w[xdim*ydim];
-	float dx[xdim];
-	float dy[ydim];
-	float b[ydim];
-
-
-	for(int i=0;i<xdim;i++){
-		x[i]=i*0.5;
-		dx[i]=0;
-		w[i]=i;
-	}
-
-	for(int i=0;i<ydim;i++){
-		dy[i]=1.5;
-		b[i]=2.5;
-		y[i]=0;
-	}
-
-	backward_fcc(x,w,b,dx,dy,3,1,0.1);
-
-	for(int i=0;i<xdim;i++){
-		cout << w[i]<<" ";
+	for(int i=0;i<1;i++){
+		cout << db[i]<<" ";
 	}
 }

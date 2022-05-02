@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'loss_derivative'
 ================================================================
-* Date:           Fri Apr 29 13:57:25 2022
+* Date:           Mon May  2 12:15:43 2022
 
 * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
 * Project:        lossfun
@@ -48,11 +48,11 @@
         |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  |  Count  | Pipelined|
         +-------------------+---------+---------+----------+-----------+-----------+---------+----------+
         |- Loop 1           |        2|        ?|         3|          1|          1|    1 ~ ?|       yes|
-        |- VITIS_LOOP_35_1  |        ?|        ?|         2|          1|          1|        ?|       yes|
-        |- VITIS_LOOP_41_2  |        2|      128|         3|          1|          1|  1 ~ 127|       yes|
-        |- VITIS_LOOP_47_3  |        8|      134|         9|          1|          1|  1 ~ 127|       yes|
-        |- VITIS_LOOP_51_4  |       35|      161|        36|          1|          1|  1 ~ 127|       yes|
-        |- VITIS_LOOP_57_5  |        0|      150|        25|          1|          1|  0 ~ 127|       yes|
+        |- VITIS_LOOP_26_1  |        ?|        ?|         2|          1|          1|        ?|       yes|
+        |- VITIS_LOOP_32_2  |        2|      128|         3|          1|          1|  1 ~ 127|       yes|
+        |- VITIS_LOOP_38_3  |        8|      134|         9|          1|          1|  1 ~ 127|       yes|
+        |- VITIS_LOOP_42_4  |       35|      161|        36|          1|          1|  1 ~ 127|       yes|
+        |- VITIS_LOOP_48_5  |        0|      150|        25|          1|          1|  0 ~ 127|       yes|
         |- Loop 7           |        2|      128|         3|          1|          1|  1 ~ 127|       yes|
         +-------------------+---------+---------+----------+-----------+-----------+---------+----------+
 
@@ -120,11 +120,11 @@
     |           Variable Name           | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
     +-----------------------------------+----------+----+---+----+------------+------------+
     |add_ln1148_fu_691_p2               |         +|   0|  0|  24|          17|           9|
-    |add_ln35_fu_519_p2                 |         +|   0|  0|  39|          32|           1|
-    |add_ln41_fu_549_p2                 |         +|   0|  0|  14|           7|           1|
-    |add_ln47_fu_575_p2                 |         +|   0|  0|  14|           7|           1|
-    |add_ln51_fu_605_p2                 |         +|   0|  0|  14|           7|           1|
-    |add_ln57_fu_653_p2                 |         +|   0|  0|  14|           7|           1|
+    |add_ln26_fu_519_p2                 |         +|   0|  0|  39|          32|           1|
+    |add_ln32_fu_549_p2                 |         +|   0|  0|  14|           7|           1|
+    |add_ln38_fu_575_p2                 |         +|   0|  0|  14|           7|           1|
+    |add_ln42_fu_605_p2                 |         +|   0|  0|  14|           7|           1|
+    |add_ln48_fu_653_p2                 |         +|   0|  0|  14|           7|           1|
     |empty_42_fu_483_p2                 |         +|   0|  0|  14|           7|           1|
     |empty_49_fu_734_p2                 |         +|   0|  0|  14|           7|           1|
     |sum_V_1_fu_595_p2                  |         +|   0|  0|  23|          16|          16|
@@ -139,14 +139,14 @@
     |exitcond2_fu_744_p2                |      icmp|   0|  0|  18|          32|          32|
     |exitcond4729_fu_493_p2             |      icmp|   0|  0|  18|          32|          32|
     |icmp_ln1494_fu_530_p2              |      icmp|   0|  0|  13|          16|          16|
-    |icmp_ln29_fu_466_p2                |      icmp|   0|  0|  18|          32|           1|
-    |icmp_ln35_fu_514_p2                |      icmp|   0|  0|  18|          32|          32|
-    |icmp_ln41_1_fu_559_p2              |      icmp|   0|  0|  18|          32|          32|
-    |icmp_ln41_fu_544_p2                |      icmp|   0|  0|  18|          32|           1|
-    |icmp_ln47_fu_585_p2                |      icmp|   0|  0|  18|          32|          32|
-    |icmp_ln51_fu_615_p2                |      icmp|   0|  0|  18|          32|          32|
-    |icmp_ln57_fu_663_p2                |      icmp|   0|  0|  18|          32|          32|
-    |icmp_ln58_fu_673_p2                |      icmp|   0|  0|  18|          32|          32|
+    |icmp_ln20_fu_466_p2                |      icmp|   0|  0|  18|          32|           1|
+    |icmp_ln26_fu_514_p2                |      icmp|   0|  0|  18|          32|          32|
+    |icmp_ln32_1_fu_559_p2              |      icmp|   0|  0|  18|          32|          32|
+    |icmp_ln32_fu_544_p2                |      icmp|   0|  0|  18|          32|           1|
+    |icmp_ln38_fu_585_p2                |      icmp|   0|  0|  18|          32|          32|
+    |icmp_ln42_fu_615_p2                |      icmp|   0|  0|  18|          32|          32|
+    |icmp_ln48_fu_663_p2                |      icmp|   0|  0|  18|          32|          32|
+    |icmp_ln49_fu_673_p2                |      icmp|   0|  0|  18|          32|          32|
     |max_V_2_fu_536_p3                  |    select|   0|  0|  16|           1|          16|
     |ap_enable_pp0                      |       xor|   0|  0|   2|           1|           2|
     |ap_enable_pp1                      |       xor|   0|  0|   2|           1|           2|
@@ -318,13 +318,13 @@
     |i_4_cast_reg_948                      |   7|   0|   64|         57|
     |i_4_reg_399                           |   7|   0|    7|          0|
     |i_reg_333                             |  32|   0|   32|          0|
-    |icmp_ln29_reg_790                     |   1|   0|    1|          0|
-    |icmp_ln35_reg_825                     |   1|   0|    1|          0|
-    |icmp_ln41_1_reg_853                   |   1|   0|    1|          0|
-    |icmp_ln41_1_reg_853_pp2_iter1_reg     |   1|   0|    1|          0|
-    |icmp_ln47_reg_877                     |   1|   0|    1|          0|
-    |icmp_ln51_reg_901                     |   1|   0|    1|          0|
-    |icmp_ln58_reg_953                     |   1|   0|    1|          0|
+    |icmp_ln20_reg_790                     |   1|   0|    1|          0|
+    |icmp_ln26_reg_825                     |   1|   0|    1|          0|
+    |icmp_ln32_1_reg_853                   |   1|   0|    1|          0|
+    |icmp_ln32_1_reg_853_pp2_iter1_reg     |   1|   0|    1|          0|
+    |icmp_ln38_reg_877                     |   1|   0|    1|          0|
+    |icmp_ln42_reg_901                     |   1|   0|    1|          0|
+    |icmp_ln49_reg_953                     |   1|   0|    1|          0|
     |loop_index451_reg_321                 |   7|   0|    7|          0|
     |loop_index451_reg_321_pp0_iter1_reg   |   7|   0|    7|          0|
     |loop_index_reg_410                    |   7|   0|    7|          0|
@@ -346,9 +346,9 @@
     |y_read_reg_774                        |  32|   0|   32|          0|
     |i_3_cast7_reg_905                     |  64|  32|   64|         57|
     |i_4_cast_reg_948                      |  64|  32|   64|         57|
-    |icmp_ln47_reg_877                     |  64|  32|    1|          0|
-    |icmp_ln51_reg_901                     |  64|  32|    1|          0|
-    |icmp_ln58_reg_953                     |  64|  32|    1|          0|
+    |icmp_ln38_reg_877                     |  64|  32|    1|          0|
+    |icmp_ln42_reg_901                     |  64|  32|    1|          0|
+    |icmp_ln49_reg_953                     |  64|  32|    1|          0|
     +--------------------------------------+----+----+-----+-----------+
     |Total                                 |1054| 160| 1093|        342|
     +--------------------------------------+----+----+-----+-----------+
@@ -623,12 +623,12 @@ ST_1 : Operation 140 [1/1] (1.00ns)   --->   "%x_size_read = read i32 @_ssdm_op_
 ST_1 : Operation 141 [1/1] (1.00ns)   --->   "%y_read = read i32 @_ssdm_op_Read.s_axilite.i32, i32 %y"   --->   Operation 141 'read' 'y_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 114 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
 ST_1 : Operation 142 [1/1] (1.00ns)   --->   "%dx_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %dx"   --->   Operation 142 'read' 'dx_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 114 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
 ST_1 : Operation 143 [1/1] (1.00ns)   --->   "%x_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %x"   --->   Operation 143 'read' 'x_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 114 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
-ST_1 : Operation 144 [1/1] (3.25ns)   --->   "%log_probs_V = alloca i64 1" [lossfun/main.cpp:24]   --->   Operation 144 'alloca' 'log_probs_V' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 100> <RAM>
-ST_1 : Operation 145 [1/1] (3.25ns)   --->   "%probs_V = alloca i64 1" [lossfun/main.cpp:25]   --->   Operation 145 'alloca' 'probs_V' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 100> <RAM>
-ST_1 : Operation 146 [1/1] (3.25ns)   --->   "%xbuff_V = alloca i64 1" [lossfun/main.cpp:26]   --->   Operation 146 'alloca' 'xbuff_V' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 100> <RAM>
-ST_1 : Operation 147 [1/1] (3.25ns)   --->   "%dxbuff_V = alloca i64 1" [lossfun/main.cpp:27]   --->   Operation 147 'alloca' 'dxbuff_V' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 100> <RAM>
-ST_1 : Operation 148 [1/1] (2.47ns)   --->   "%icmp_ln29 = icmp_ne  i32 %x_size_read, i32 0" [lossfun/main.cpp:29]   --->   Operation 148 'icmp' 'icmp_ln29' <Predicate = true> <Delay = 2.47> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 149 [1/1] (0.00ns)   --->   "%br_ln29 = br i1 %icmp_ln29, void %loop-memcpy-residual-header453, void %loop-memcpy-expansion450.preheader" [lossfun/main.cpp:29]   --->   Operation 149 'br' 'br_ln29' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 144 [1/1] (3.25ns)   --->   "%log_probs_V = alloca i64 1" [lossfun/main.cpp:15]   --->   Operation 144 'alloca' 'log_probs_V' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 100> <RAM>
+ST_1 : Operation 145 [1/1] (3.25ns)   --->   "%probs_V = alloca i64 1" [lossfun/main.cpp:16]   --->   Operation 145 'alloca' 'probs_V' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 100> <RAM>
+ST_1 : Operation 146 [1/1] (3.25ns)   --->   "%xbuff_V = alloca i64 1" [lossfun/main.cpp:17]   --->   Operation 146 'alloca' 'xbuff_V' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 100> <RAM>
+ST_1 : Operation 147 [1/1] (3.25ns)   --->   "%dxbuff_V = alloca i64 1" [lossfun/main.cpp:18]   --->   Operation 147 'alloca' 'dxbuff_V' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 100> <RAM>
+ST_1 : Operation 148 [1/1] (2.47ns)   --->   "%icmp_ln20 = icmp_ne  i32 %x_size_read, i32 0" [lossfun/main.cpp:20]   --->   Operation 148 'icmp' 'icmp_ln20' <Predicate = true> <Delay = 2.47> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 149 [1/1] (0.00ns)   --->   "%br_ln20 = br i1 %icmp_ln20, void %loop-memcpy-residual-header453, void %loop-memcpy-expansion450.preheader" [lossfun/main.cpp:20]   --->   Operation 149 'br' 'br_ln20' <Predicate = true> <Delay = 0.00>
 
 State 2 <SV = 1> <Delay = 7.30>
 ST_2 : Operation 150 [1/1] (0.00ns)   --->   "%p_cast = partselect i63 @_ssdm_op_PartSelect.i63.i64.i32.i32, i64 %x_read, i32 1, i32 63"   --->   Operation 150 'partselect' 'p_cast' <Predicate = true> <Delay = 0.00>
@@ -674,258 +674,258 @@ ST_11 : Operation 171 [1/1] (3.25ns)   --->   "%store_ln0 = store i16 %gmem_addr
 ST_11 : Operation 172 [1/1] (0.00ns)   --->   "%br_ln0 = br void %loop-memcpy-expansion450"   --->   Operation 172 'br' 'br_ln0' <Predicate = (!exitcond4729)> <Delay = 0.00>
 
 State 12 <SV = 9> <Delay = 7.30>
-ST_12 : Operation 173 [1/1] (0.00ns)   --->   "%br_ln0 = br void %loop-memcpy-residual-header453"   --->   Operation 173 'br' 'br_ln0' <Predicate = (icmp_ln29)> <Delay = 0.00>
-ST_12 : Operation 174 [1/1] (0.00ns)   --->   "%trunc_ln = partselect i63 @_ssdm_op_PartSelect.i63.i64.i32.i32, i64 %x_read, i32 1, i32 63" [lossfun/main.cpp:34]   --->   Operation 174 'partselect' 'trunc_ln' <Predicate = true> <Delay = 0.00>
-ST_12 : Operation 175 [1/1] (0.00ns)   --->   "%sext_ln34 = sext i63 %trunc_ln" [lossfun/main.cpp:34]   --->   Operation 175 'sext' 'sext_ln34' <Predicate = true> <Delay = 0.00>
-ST_12 : Operation 176 [1/1] (0.00ns)   --->   "%gmem_addr_1 = getelementptr i16 %gmem, i64 %sext_ln34" [lossfun/main.cpp:34]   --->   Operation 176 'getelementptr' 'gmem_addr_1' <Predicate = true> <Delay = 0.00>
-ST_12 : Operation 177 [7/7] (7.30ns)   --->   "%max_V_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i16P1A, i64 %gmem_addr_1, i32 1" [lossfun/main.cpp:34]   --->   Operation 177 'readreq' 'max_V_req' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_12 : Operation 173 [1/1] (0.00ns)   --->   "%br_ln0 = br void %loop-memcpy-residual-header453"   --->   Operation 173 'br' 'br_ln0' <Predicate = (icmp_ln20)> <Delay = 0.00>
+ST_12 : Operation 174 [1/1] (0.00ns)   --->   "%trunc_ln = partselect i63 @_ssdm_op_PartSelect.i63.i64.i32.i32, i64 %x_read, i32 1, i32 63" [lossfun/main.cpp:25]   --->   Operation 174 'partselect' 'trunc_ln' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 175 [1/1] (0.00ns)   --->   "%sext_ln25 = sext i63 %trunc_ln" [lossfun/main.cpp:25]   --->   Operation 175 'sext' 'sext_ln25' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 176 [1/1] (0.00ns)   --->   "%gmem_addr_1 = getelementptr i16 %gmem, i64 %sext_ln25" [lossfun/main.cpp:25]   --->   Operation 176 'getelementptr' 'gmem_addr_1' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 177 [7/7] (7.30ns)   --->   "%max_V_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i16P1A, i64 %gmem_addr_1, i32 1" [lossfun/main.cpp:25]   --->   Operation 177 'readreq' 'max_V_req' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 13 <SV = 10> <Delay = 7.30>
-ST_13 : Operation 178 [6/7] (7.30ns)   --->   "%max_V_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i16P1A, i64 %gmem_addr_1, i32 1" [lossfun/main.cpp:34]   --->   Operation 178 'readreq' 'max_V_req' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_13 : Operation 178 [6/7] (7.30ns)   --->   "%max_V_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i16P1A, i64 %gmem_addr_1, i32 1" [lossfun/main.cpp:25]   --->   Operation 178 'readreq' 'max_V_req' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 14 <SV = 11> <Delay = 7.30>
-ST_14 : Operation 179 [5/7] (7.30ns)   --->   "%max_V_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i16P1A, i64 %gmem_addr_1, i32 1" [lossfun/main.cpp:34]   --->   Operation 179 'readreq' 'max_V_req' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_14 : Operation 179 [5/7] (7.30ns)   --->   "%max_V_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i16P1A, i64 %gmem_addr_1, i32 1" [lossfun/main.cpp:25]   --->   Operation 179 'readreq' 'max_V_req' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 15 <SV = 12> <Delay = 7.30>
-ST_15 : Operation 180 [4/7] (7.30ns)   --->   "%max_V_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i16P1A, i64 %gmem_addr_1, i32 1" [lossfun/main.cpp:34]   --->   Operation 180 'readreq' 'max_V_req' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_15 : Operation 180 [4/7] (7.30ns)   --->   "%max_V_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i16P1A, i64 %gmem_addr_1, i32 1" [lossfun/main.cpp:25]   --->   Operation 180 'readreq' 'max_V_req' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 16 <SV = 13> <Delay = 7.30>
-ST_16 : Operation 181 [3/7] (7.30ns)   --->   "%max_V_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i16P1A, i64 %gmem_addr_1, i32 1" [lossfun/main.cpp:34]   --->   Operation 181 'readreq' 'max_V_req' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_16 : Operation 181 [3/7] (7.30ns)   --->   "%max_V_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i16P1A, i64 %gmem_addr_1, i32 1" [lossfun/main.cpp:25]   --->   Operation 181 'readreq' 'max_V_req' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 17 <SV = 14> <Delay = 7.30>
-ST_17 : Operation 182 [2/7] (7.30ns)   --->   "%max_V_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i16P1A, i64 %gmem_addr_1, i32 1" [lossfun/main.cpp:34]   --->   Operation 182 'readreq' 'max_V_req' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_17 : Operation 182 [2/7] (7.30ns)   --->   "%max_V_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i16P1A, i64 %gmem_addr_1, i32 1" [lossfun/main.cpp:25]   --->   Operation 182 'readreq' 'max_V_req' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 18 <SV = 15> <Delay = 7.30>
-ST_18 : Operation 183 [1/7] (7.30ns)   --->   "%max_V_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i16P1A, i64 %gmem_addr_1, i32 1" [lossfun/main.cpp:34]   --->   Operation 183 'readreq' 'max_V_req' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_18 : Operation 183 [1/7] (7.30ns)   --->   "%max_V_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i16P1A, i64 %gmem_addr_1, i32 1" [lossfun/main.cpp:25]   --->   Operation 183 'readreq' 'max_V_req' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 19 <SV = 16> <Delay = 7.30>
-ST_19 : Operation 184 [1/1] (7.30ns)   --->   "%max_V = read i16 @_ssdm_op_Read.m_axi.i16P1A, i64 %gmem_addr_1" [lossfun/main.cpp:34]   --->   Operation 184 'read' 'max_V' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_19 : Operation 184 [1/1] (7.30ns)   --->   "%max_V = read i16 @_ssdm_op_Read.m_axi.i16P1A, i64 %gmem_addr_1" [lossfun/main.cpp:25]   --->   Operation 184 'read' 'max_V' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 20 <SV = 17> <Delay = 1.58>
-ST_20 : Operation 185 [1/1] (1.58ns)   --->   "%br_ln35 = br void" [lossfun/main.cpp:35]   --->   Operation 185 'br' 'br_ln35' <Predicate = true> <Delay = 1.58>
+ST_20 : Operation 185 [1/1] (1.58ns)   --->   "%br_ln26 = br void" [lossfun/main.cpp:26]   --->   Operation 185 'br' 'br_ln26' <Predicate = true> <Delay = 1.58>
 
 State 21 <SV = 18> <Delay = 3.25>
-ST_21 : Operation 186 [1/1] (0.00ns)   --->   "%i = phi i32 1, void %loop-memcpy-residual-header453, i32 %add_ln35, void %.split7" [lossfun/main.cpp:35]   --->   Operation 186 'phi' 'i' <Predicate = true> <Delay = 0.00>
+ST_21 : Operation 186 [1/1] (0.00ns)   --->   "%i = phi i32 1, void %loop-memcpy-residual-header453, i32 %add_ln26, void %.split7" [lossfun/main.cpp:26]   --->   Operation 186 'phi' 'i' <Predicate = true> <Delay = 0.00>
 ST_21 : Operation 187 [1/1] (0.00ns)   --->   "%max_V_1 = phi i16 %max_V, void %loop-memcpy-residual-header453, i16 %max_V_2, void %.split7"   --->   Operation 187 'phi' 'max_V_1' <Predicate = true> <Delay = 0.00>
 ST_21 : Operation 188 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 1, i32 0, void @p_str"   --->   Operation 188 'specpipeline' 'specpipeline_ln0' <Predicate = true> <Delay = 0.00>
-ST_21 : Operation 189 [1/1] (2.47ns)   --->   "%icmp_ln35 = icmp_ult  i32 %i, i32 %x_size_read" [lossfun/main.cpp:35]   --->   Operation 189 'icmp' 'icmp_ln35' <Predicate = true> <Delay = 2.47> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_21 : Operation 190 [1/1] (0.00ns)   --->   "%br_ln35 = br i1 %icmp_ln35, void %._crit_edge438.loopexit, void %.split7" [lossfun/main.cpp:35]   --->   Operation 190 'br' 'br_ln35' <Predicate = true> <Delay = 0.00>
-ST_21 : Operation 191 [1/1] (2.55ns)   --->   "%add_ln35 = add i32 %i, i32 1" [lossfun/main.cpp:35]   --->   Operation 191 'add' 'add_ln35' <Predicate = (icmp_ln35)> <Delay = 2.55> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_21 : Operation 192 [1/1] (0.00ns)   --->   "%i_cast4 = zext i32 %i" [lossfun/main.cpp:35]   --->   Operation 192 'zext' 'i_cast4' <Predicate = (icmp_ln35)> <Delay = 0.00>
-ST_21 : Operation 193 [1/1] (0.00ns)   --->   "%xbuff_V_addr_1 = getelementptr i16 %xbuff_V, i64 0, i64 %i_cast4"   --->   Operation 193 'getelementptr' 'xbuff_V_addr_1' <Predicate = (icmp_ln35)> <Delay = 0.00>
-ST_21 : Operation 194 [2/2] (3.25ns)   --->   "%xbuff_V_load = load i7 %xbuff_V_addr_1"   --->   Operation 194 'load' 'xbuff_V_load' <Predicate = (icmp_ln35)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 100> <RAM>
+ST_21 : Operation 189 [1/1] (2.47ns)   --->   "%icmp_ln26 = icmp_ult  i32 %i, i32 %x_size_read" [lossfun/main.cpp:26]   --->   Operation 189 'icmp' 'icmp_ln26' <Predicate = true> <Delay = 2.47> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_21 : Operation 190 [1/1] (0.00ns)   --->   "%br_ln26 = br i1 %icmp_ln26, void %._crit_edge438.loopexit, void %.split7" [lossfun/main.cpp:26]   --->   Operation 190 'br' 'br_ln26' <Predicate = true> <Delay = 0.00>
+ST_21 : Operation 191 [1/1] (2.55ns)   --->   "%add_ln26 = add i32 %i, i32 1" [lossfun/main.cpp:26]   --->   Operation 191 'add' 'add_ln26' <Predicate = (icmp_ln26)> <Delay = 2.55> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_21 : Operation 192 [1/1] (0.00ns)   --->   "%i_cast4 = zext i32 %i" [lossfun/main.cpp:26]   --->   Operation 192 'zext' 'i_cast4' <Predicate = (icmp_ln26)> <Delay = 0.00>
+ST_21 : Operation 193 [1/1] (0.00ns)   --->   "%xbuff_V_addr_1 = getelementptr i16 %xbuff_V, i64 0, i64 %i_cast4"   --->   Operation 193 'getelementptr' 'xbuff_V_addr_1' <Predicate = (icmp_ln26)> <Delay = 0.00>
+ST_21 : Operation 194 [2/2] (3.25ns)   --->   "%xbuff_V_load = load i7 %xbuff_V_addr_1"   --->   Operation 194 'load' 'xbuff_V_load' <Predicate = (icmp_ln26)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 100> <RAM>
 
 State 22 <SV = 19> <Delay = 6.48>
-ST_22 : Operation 195 [1/1] (0.00ns)   --->   "%specloopname_ln34 = specloopname void @_ssdm_op_SpecLoopName, void @empty_14" [lossfun/main.cpp:34]   --->   Operation 195 'specloopname' 'specloopname_ln34' <Predicate = (icmp_ln35)> <Delay = 0.00>
-ST_22 : Operation 196 [1/2] (3.25ns)   --->   "%xbuff_V_load = load i7 %xbuff_V_addr_1"   --->   Operation 196 'load' 'xbuff_V_load' <Predicate = (icmp_ln35)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 100> <RAM>
-ST_22 : Operation 197 [1/1] (2.42ns)   --->   "%icmp_ln1494 = icmp_sgt  i16 %xbuff_V_load, i16 %max_V_1"   --->   Operation 197 'icmp' 'icmp_ln1494' <Predicate = (icmp_ln35)> <Delay = 2.42> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_22 : Operation 198 [1/1] (0.80ns)   --->   "%max_V_2 = select i1 %icmp_ln1494, i16 %xbuff_V_load, i16 %max_V_1" [lossfun/main.cpp:36]   --->   Operation 198 'select' 'max_V_2' <Predicate = (icmp_ln35)> <Delay = 0.80> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_22 : Operation 199 [1/1] (0.00ns)   --->   "%br_ln0 = br void"   --->   Operation 199 'br' 'br_ln0' <Predicate = (icmp_ln35)> <Delay = 0.00>
+ST_22 : Operation 195 [1/1] (0.00ns)   --->   "%specloopname_ln25 = specloopname void @_ssdm_op_SpecLoopName, void @empty_14" [lossfun/main.cpp:25]   --->   Operation 195 'specloopname' 'specloopname_ln25' <Predicate = (icmp_ln26)> <Delay = 0.00>
+ST_22 : Operation 196 [1/2] (3.25ns)   --->   "%xbuff_V_load = load i7 %xbuff_V_addr_1"   --->   Operation 196 'load' 'xbuff_V_load' <Predicate = (icmp_ln26)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 100> <RAM>
+ST_22 : Operation 197 [1/1] (2.42ns)   --->   "%icmp_ln1494 = icmp_sgt  i16 %xbuff_V_load, i16 %max_V_1"   --->   Operation 197 'icmp' 'icmp_ln1494' <Predicate = (icmp_ln26)> <Delay = 2.42> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_22 : Operation 198 [1/1] (0.80ns)   --->   "%max_V_2 = select i1 %icmp_ln1494, i16 %xbuff_V_load, i16 %max_V_1" [lossfun/main.cpp:27]   --->   Operation 198 'select' 'max_V_2' <Predicate = (icmp_ln26)> <Delay = 0.80> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_22 : Operation 199 [1/1] (0.00ns)   --->   "%br_ln0 = br void"   --->   Operation 199 'br' 'br_ln0' <Predicate = (icmp_ln26)> <Delay = 0.00>
 
 State 23 <SV = 19> <Delay = 2.47>
-ST_23 : Operation 200 [1/1] (2.47ns)   --->   "%icmp_ln41 = icmp_sgt  i32 %x_size_read, i32 0" [lossfun/main.cpp:41]   --->   Operation 200 'icmp' 'icmp_ln41' <Predicate = true> <Delay = 2.47> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_23 : Operation 201 [1/1] (0.00ns)   --->   "%br_ln41 = br i1 %icmp_ln41, void %._crit_edge421, void %_ZN13ap_fixed_baseILi17ELi10ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi16ELi9ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i98.preheader" [lossfun/main.cpp:41]   --->   Operation 201 'br' 'br_ln41' <Predicate = true> <Delay = 0.00>
-ST_23 : Operation 202 [1/1] (1.58ns)   --->   "%br_ln0 = br void %_ZN13ap_fixed_baseILi17ELi10ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi16ELi9ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i98"   --->   Operation 202 'br' 'br_ln0' <Predicate = (icmp_ln41)> <Delay = 1.58>
+ST_23 : Operation 200 [1/1] (2.47ns)   --->   "%icmp_ln32 = icmp_sgt  i32 %x_size_read, i32 0" [lossfun/main.cpp:32]   --->   Operation 200 'icmp' 'icmp_ln32' <Predicate = true> <Delay = 2.47> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_23 : Operation 201 [1/1] (0.00ns)   --->   "%br_ln32 = br i1 %icmp_ln32, void %._crit_edge421, void %_ZN13ap_fixed_baseILi17ELi10ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi16ELi9ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i98.preheader" [lossfun/main.cpp:32]   --->   Operation 201 'br' 'br_ln32' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 202 [1/1] (1.58ns)   --->   "%br_ln0 = br void %_ZN13ap_fixed_baseILi17ELi10ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi16ELi9ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i98"   --->   Operation 202 'br' 'br_ln0' <Predicate = (icmp_ln32)> <Delay = 1.58>
 
 State 24 <SV = 20> <Delay = 3.25>
-ST_24 : Operation 203 [1/1] (0.00ns)   --->   "%i_1 = phi i7 %add_ln41, void %_ZN13ap_fixed_baseILi17ELi10ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi16ELi9ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i98.split, i7 0, void %_ZN13ap_fixed_baseILi17ELi10ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi16ELi9ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i98.preheader" [lossfun/main.cpp:41]   --->   Operation 203 'phi' 'i_1' <Predicate = true> <Delay = 0.00>
-ST_24 : Operation 204 [1/1] (1.87ns)   --->   "%add_ln41 = add i7 %i_1, i7 1" [lossfun/main.cpp:41]   --->   Operation 204 'add' 'add_ln41' <Predicate = true> <Delay = 1.87> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_24 : Operation 205 [1/1] (0.00ns)   --->   "%i_1_cast = zext i7 %i_1" [lossfun/main.cpp:41]   --->   Operation 205 'zext' 'i_1_cast' <Predicate = true> <Delay = 0.00>
+ST_24 : Operation 203 [1/1] (0.00ns)   --->   "%i_1 = phi i7 %add_ln32, void %_ZN13ap_fixed_baseILi17ELi10ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi16ELi9ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i98.split, i7 0, void %_ZN13ap_fixed_baseILi17ELi10ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi16ELi9ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i98.preheader" [lossfun/main.cpp:32]   --->   Operation 203 'phi' 'i_1' <Predicate = true> <Delay = 0.00>
+ST_24 : Operation 204 [1/1] (1.87ns)   --->   "%add_ln32 = add i7 %i_1, i7 1" [lossfun/main.cpp:32]   --->   Operation 204 'add' 'add_ln32' <Predicate = true> <Delay = 1.87> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_24 : Operation 205 [1/1] (0.00ns)   --->   "%i_1_cast = zext i7 %i_1" [lossfun/main.cpp:32]   --->   Operation 205 'zext' 'i_1_cast' <Predicate = true> <Delay = 0.00>
 ST_24 : Operation 206 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 1, i32 0, void @p_str"   --->   Operation 206 'specpipeline' 'specpipeline_ln0' <Predicate = true> <Delay = 0.00>
-ST_24 : Operation 207 [1/1] (2.47ns)   --->   "%icmp_ln41_1 = icmp_eq  i32 %i_1_cast, i32 %x_size_read" [lossfun/main.cpp:41]   --->   Operation 207 'icmp' 'icmp_ln41_1' <Predicate = true> <Delay = 2.47> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_24 : Operation 207 [1/1] (2.47ns)   --->   "%icmp_ln32_1 = icmp_eq  i32 %i_1_cast, i32 %x_size_read" [lossfun/main.cpp:32]   --->   Operation 207 'icmp' 'icmp_ln32_1' <Predicate = true> <Delay = 2.47> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
 ST_24 : Operation 208 [1/1] (0.00ns)   --->   "%empty_44 = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 1, i64 127, i64 0"   --->   Operation 208 'speclooptripcount' 'empty_44' <Predicate = true> <Delay = 0.00>
-ST_24 : Operation 209 [1/1] (0.00ns)   --->   "%br_ln41 = br i1 %icmp_ln41_1, void %_ZN13ap_fixed_baseILi17ELi10ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi16ELi9ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i98.split, void %_ZN13ap_fixed_baseILi17ELi10ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi16ELi9ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i.i.preheader" [lossfun/main.cpp:41]   --->   Operation 209 'br' 'br_ln41' <Predicate = true> <Delay = 0.00>
-ST_24 : Operation 210 [1/1] (0.00ns)   --->   "%i_1_cast5 = zext i7 %i_1" [lossfun/main.cpp:41]   --->   Operation 210 'zext' 'i_1_cast5' <Predicate = (!icmp_ln41_1)> <Delay = 0.00>
-ST_24 : Operation 211 [1/1] (0.00ns)   --->   "%xbuff_V_addr_2 = getelementptr i16 %xbuff_V, i64 0, i64 %i_1_cast5"   --->   Operation 211 'getelementptr' 'xbuff_V_addr_2' <Predicate = (!icmp_ln41_1)> <Delay = 0.00>
-ST_24 : Operation 212 [2/2] (3.25ns)   --->   "%xbuff_V_load_1 = load i7 %xbuff_V_addr_2"   --->   Operation 212 'load' 'xbuff_V_load_1' <Predicate = (!icmp_ln41_1)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 100> <RAM>
+ST_24 : Operation 209 [1/1] (0.00ns)   --->   "%br_ln32 = br i1 %icmp_ln32_1, void %_ZN13ap_fixed_baseILi17ELi10ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi16ELi9ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i98.split, void %_ZN13ap_fixed_baseILi17ELi10ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi16ELi9ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i.i.preheader" [lossfun/main.cpp:32]   --->   Operation 209 'br' 'br_ln32' <Predicate = true> <Delay = 0.00>
+ST_24 : Operation 210 [1/1] (0.00ns)   --->   "%i_1_cast5 = zext i7 %i_1" [lossfun/main.cpp:32]   --->   Operation 210 'zext' 'i_1_cast5' <Predicate = (!icmp_ln32_1)> <Delay = 0.00>
+ST_24 : Operation 211 [1/1] (0.00ns)   --->   "%xbuff_V_addr_2 = getelementptr i16 %xbuff_V, i64 0, i64 %i_1_cast5"   --->   Operation 211 'getelementptr' 'xbuff_V_addr_2' <Predicate = (!icmp_ln32_1)> <Delay = 0.00>
+ST_24 : Operation 212 [2/2] (3.25ns)   --->   "%xbuff_V_load_1 = load i7 %xbuff_V_addr_2"   --->   Operation 212 'load' 'xbuff_V_load_1' <Predicate = (!icmp_ln32_1)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 100> <RAM>
 
 State 25 <SV = 21> <Delay = 5.33>
-ST_25 : Operation 213 [1/2] (3.25ns)   --->   "%xbuff_V_load_1 = load i7 %xbuff_V_addr_2"   --->   Operation 213 'load' 'xbuff_V_load_1' <Predicate = (!icmp_ln41_1)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 100> <RAM>
-ST_25 : Operation 214 [1/1] (2.07ns)   --->   "%sub_ln703 = sub i16 %xbuff_V_load_1, i16 %max_V_1"   --->   Operation 214 'sub' 'sub_ln703' <Predicate = (!icmp_ln41_1)> <Delay = 2.07> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_25 : Operation 213 [1/2] (3.25ns)   --->   "%xbuff_V_load_1 = load i7 %xbuff_V_addr_2"   --->   Operation 213 'load' 'xbuff_V_load_1' <Predicate = (!icmp_ln32_1)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 100> <RAM>
+ST_25 : Operation 214 [1/1] (2.07ns)   --->   "%sub_ln703 = sub i16 %xbuff_V_load_1, i16 %max_V_1"   --->   Operation 214 'sub' 'sub_ln703' <Predicate = (!icmp_ln32_1)> <Delay = 2.07> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 
 State 26 <SV = 22> <Delay = 3.25>
-ST_26 : Operation 215 [1/1] (0.00ns)   --->   "%specloopname_ln41 = specloopname void @_ssdm_op_SpecLoopName, void @empty_12" [lossfun/main.cpp:41]   --->   Operation 215 'specloopname' 'specloopname_ln41' <Predicate = (!icmp_ln41_1)> <Delay = 0.00>
-ST_26 : Operation 216 [1/1] (0.00ns)   --->   "%log_probs_V_addr = getelementptr i16 %log_probs_V, i64 0, i64 %i_1_cast5" [lossfun/main.cpp:42]   --->   Operation 216 'getelementptr' 'log_probs_V_addr' <Predicate = (!icmp_ln41_1)> <Delay = 0.00>
-ST_26 : Operation 217 [1/1] (3.25ns)   --->   "%store_ln42 = store i16 %sub_ln703, i7 %log_probs_V_addr" [lossfun/main.cpp:42]   --->   Operation 217 'store' 'store_ln42' <Predicate = (!icmp_ln41_1)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 100> <RAM>
-ST_26 : Operation 218 [1/1] (0.00ns)   --->   "%br_ln0 = br void %_ZN13ap_fixed_baseILi17ELi10ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi16ELi9ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i98"   --->   Operation 218 'br' 'br_ln0' <Predicate = (!icmp_ln41_1)> <Delay = 0.00>
+ST_26 : Operation 215 [1/1] (0.00ns)   --->   "%specloopname_ln32 = specloopname void @_ssdm_op_SpecLoopName, void @empty_12" [lossfun/main.cpp:32]   --->   Operation 215 'specloopname' 'specloopname_ln32' <Predicate = (!icmp_ln32_1)> <Delay = 0.00>
+ST_26 : Operation 216 [1/1] (0.00ns)   --->   "%log_probs_V_addr = getelementptr i16 %log_probs_V, i64 0, i64 %i_1_cast5" [lossfun/main.cpp:33]   --->   Operation 216 'getelementptr' 'log_probs_V_addr' <Predicate = (!icmp_ln32_1)> <Delay = 0.00>
+ST_26 : Operation 217 [1/1] (3.25ns)   --->   "%store_ln33 = store i16 %sub_ln703, i7 %log_probs_V_addr" [lossfun/main.cpp:33]   --->   Operation 217 'store' 'store_ln33' <Predicate = (!icmp_ln32_1)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 100> <RAM>
+ST_26 : Operation 218 [1/1] (0.00ns)   --->   "%br_ln0 = br void %_ZN13ap_fixed_baseILi17ELi10ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi16ELi9ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i98"   --->   Operation 218 'br' 'br_ln0' <Predicate = (!icmp_ln32_1)> <Delay = 0.00>
 
 State 27 <SV = 21> <Delay = 1.58>
 ST_27 : Operation 219 [1/1] (1.58ns)   --->   "%br_ln0 = br void %_ZN13ap_fixed_baseILi17ELi10ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi16ELi9ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i.i"   --->   Operation 219 'br' 'br_ln0' <Predicate = true> <Delay = 1.58>
 
 State 28 <SV = 22> <Delay = 3.25>
-ST_28 : Operation 220 [1/1] (0.00ns)   --->   "%i_2 = phi i7 %add_ln47, void %_ZN13ap_fixed_baseILi17ELi10ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi16ELi9ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i.i.split, i7 0, void %_ZN13ap_fixed_baseILi17ELi10ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi16ELi9ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i.i.preheader" [lossfun/main.cpp:47]   --->   Operation 220 'phi' 'i_2' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 220 [1/1] (0.00ns)   --->   "%i_2 = phi i7 %add_ln38, void %_ZN13ap_fixed_baseILi17ELi10ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi16ELi9ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i.i.split, i7 0, void %_ZN13ap_fixed_baseILi17ELi10ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi16ELi9ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i.i.preheader" [lossfun/main.cpp:38]   --->   Operation 220 'phi' 'i_2' <Predicate = true> <Delay = 0.00>
 ST_28 : Operation 221 [1/1] (0.00ns)   --->   "%sum_V = phi i16 %sum_V_1, void %_ZN13ap_fixed_baseILi17ELi10ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi16ELi9ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i.i.split, i16 0, void %_ZN13ap_fixed_baseILi17ELi10ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi16ELi9ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i.i.preheader"   --->   Operation 221 'phi' 'sum_V' <Predicate = true> <Delay = 0.00>
-ST_28 : Operation 222 [1/1] (1.87ns)   --->   "%add_ln47 = add i7 %i_2, i7 1" [lossfun/main.cpp:47]   --->   Operation 222 'add' 'add_ln47' <Predicate = true> <Delay = 1.87> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_28 : Operation 223 [1/1] (0.00ns)   --->   "%i_2_cast = zext i7 %i_2" [lossfun/main.cpp:47]   --->   Operation 223 'zext' 'i_2_cast' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 222 [1/1] (1.87ns)   --->   "%add_ln38 = add i7 %i_2, i7 1" [lossfun/main.cpp:38]   --->   Operation 222 'add' 'add_ln38' <Predicate = true> <Delay = 1.87> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_28 : Operation 223 [1/1] (0.00ns)   --->   "%i_2_cast = zext i7 %i_2" [lossfun/main.cpp:38]   --->   Operation 223 'zext' 'i_2_cast' <Predicate = true> <Delay = 0.00>
 ST_28 : Operation 224 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 1, i32 0, void @p_str"   --->   Operation 224 'specpipeline' 'specpipeline_ln0' <Predicate = true> <Delay = 0.00>
-ST_28 : Operation 225 [1/1] (2.47ns)   --->   "%icmp_ln47 = icmp_eq  i32 %i_2_cast, i32 %x_size_read" [lossfun/main.cpp:47]   --->   Operation 225 'icmp' 'icmp_ln47' <Predicate = true> <Delay = 2.47> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_28 : Operation 225 [1/1] (2.47ns)   --->   "%icmp_ln38 = icmp_eq  i32 %i_2_cast, i32 %x_size_read" [lossfun/main.cpp:38]   --->   Operation 225 'icmp' 'icmp_ln38' <Predicate = true> <Delay = 2.47> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
 ST_28 : Operation 226 [1/1] (0.00ns)   --->   "%empty_45 = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 1, i64 127, i64 0"   --->   Operation 226 'speclooptripcount' 'empty_45' <Predicate = true> <Delay = 0.00>
-ST_28 : Operation 227 [1/1] (0.00ns)   --->   "%br_ln47 = br i1 %icmp_ln47, void %_ZN13ap_fixed_baseILi17ELi10ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi16ELi9ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i.i.split, void %_ZNK13ap_fixed_baseILi16ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEdvILi16ELi9ELb1ELS0_5ELS1_3ELi0EEENS2_5RTypeIXT_EXT0_EXT1_EE3divERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.preheader" [lossfun/main.cpp:47]   --->   Operation 227 'br' 'br_ln47' <Predicate = true> <Delay = 0.00>
-ST_28 : Operation 228 [1/1] (0.00ns)   --->   "%i_2_cast6 = zext i7 %i_2" [lossfun/main.cpp:47]   --->   Operation 228 'zext' 'i_2_cast6' <Predicate = (!icmp_ln47)> <Delay = 0.00>
-ST_28 : Operation 229 [1/1] (0.00ns)   --->   "%log_probs_V_addr_1 = getelementptr i16 %log_probs_V, i64 0, i64 %i_2_cast6" [lossfun/main.cpp:48]   --->   Operation 229 'getelementptr' 'log_probs_V_addr_1' <Predicate = (!icmp_ln47)> <Delay = 0.00>
-ST_28 : Operation 230 [2/2] (3.25ns)   --->   "%x_V = load i7 %log_probs_V_addr_1" [lossfun/main.cpp:48]   --->   Operation 230 'load' 'x_V' <Predicate = (!icmp_ln47)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 100> <RAM>
+ST_28 : Operation 227 [1/1] (0.00ns)   --->   "%br_ln38 = br i1 %icmp_ln38, void %_ZN13ap_fixed_baseILi17ELi10ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi16ELi9ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i.i.split, void %_ZNK13ap_fixed_baseILi16ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEdvILi16ELi9ELb1ELS0_5ELS1_3ELi0EEENS2_5RTypeIXT_EXT0_EXT1_EE3divERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.preheader" [lossfun/main.cpp:38]   --->   Operation 227 'br' 'br_ln38' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 228 [1/1] (0.00ns)   --->   "%i_2_cast6 = zext i7 %i_2" [lossfun/main.cpp:38]   --->   Operation 228 'zext' 'i_2_cast6' <Predicate = (!icmp_ln38)> <Delay = 0.00>
+ST_28 : Operation 229 [1/1] (0.00ns)   --->   "%log_probs_V_addr_1 = getelementptr i16 %log_probs_V, i64 0, i64 %i_2_cast6" [lossfun/main.cpp:39]   --->   Operation 229 'getelementptr' 'log_probs_V_addr_1' <Predicate = (!icmp_ln38)> <Delay = 0.00>
+ST_28 : Operation 230 [2/2] (3.25ns)   --->   "%x_V = load i7 %log_probs_V_addr_1" [lossfun/main.cpp:39]   --->   Operation 230 'load' 'x_V' <Predicate = (!icmp_ln38)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 100> <RAM>
 
 State 29 <SV = 23> <Delay = 3.25>
-ST_29 : Operation 231 [1/2] (3.25ns)   --->   "%x_V = load i7 %log_probs_V_addr_1" [lossfun/main.cpp:48]   --->   Operation 231 'load' 'x_V' <Predicate = (!icmp_ln47)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 100> <RAM>
+ST_29 : Operation 231 [1/2] (3.25ns)   --->   "%x_V = load i7 %log_probs_V_addr_1" [lossfun/main.cpp:39]   --->   Operation 231 'load' 'x_V' <Predicate = (!icmp_ln38)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 100> <RAM>
 
 State 30 <SV = 24> <Delay = 4.44>
-ST_30 : Operation 232 [6/6] (4.44ns)   --->   "%op2_V = call i16 @exp<16, 9>, i16 %x_V, i11 %f_x_lsb_table_V, i25 %exp_x_msb_2_m_1_table_V, i25 %exp_x_msb_1_table_V" [/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_math.h:1190]   --->   Operation 232 'call' 'op2_V' <Predicate = (!icmp_ln47)> <Delay = 4.44> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_30 : Operation 232 [6/6] (4.44ns)   --->   "%op2_V = call i16 @exp<16, 9>, i16 %x_V, i11 %f_x_lsb_table_V, i25 %exp_x_msb_2_m_1_table_V, i25 %exp_x_msb_1_table_V" [/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_math.h:1190]   --->   Operation 232 'call' 'op2_V' <Predicate = (!icmp_ln38)> <Delay = 4.44> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 31 <SV = 25> <Delay = 7.30>
-ST_31 : Operation 233 [5/6] (7.30ns)   --->   "%op2_V = call i16 @exp<16, 9>, i16 %x_V, i11 %f_x_lsb_table_V, i25 %exp_x_msb_2_m_1_table_V, i25 %exp_x_msb_1_table_V" [/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_math.h:1190]   --->   Operation 233 'call' 'op2_V' <Predicate = (!icmp_ln47)> <Delay = 7.30> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_31 : Operation 233 [5/6] (7.30ns)   --->   "%op2_V = call i16 @exp<16, 9>, i16 %x_V, i11 %f_x_lsb_table_V, i25 %exp_x_msb_2_m_1_table_V, i25 %exp_x_msb_1_table_V" [/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_math.h:1190]   --->   Operation 233 'call' 'op2_V' <Predicate = (!icmp_ln38)> <Delay = 7.30> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 32 <SV = 26> <Delay = 7.30>
-ST_32 : Operation 234 [4/6] (7.30ns)   --->   "%op2_V = call i16 @exp<16, 9>, i16 %x_V, i11 %f_x_lsb_table_V, i25 %exp_x_msb_2_m_1_table_V, i25 %exp_x_msb_1_table_V" [/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_math.h:1190]   --->   Operation 234 'call' 'op2_V' <Predicate = (!icmp_ln47)> <Delay = 7.30> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_32 : Operation 234 [4/6] (7.30ns)   --->   "%op2_V = call i16 @exp<16, 9>, i16 %x_V, i11 %f_x_lsb_table_V, i25 %exp_x_msb_2_m_1_table_V, i25 %exp_x_msb_1_table_V" [/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_math.h:1190]   --->   Operation 234 'call' 'op2_V' <Predicate = (!icmp_ln38)> <Delay = 7.30> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 33 <SV = 27> <Delay = 7.30>
-ST_33 : Operation 235 [3/6] (7.30ns)   --->   "%op2_V = call i16 @exp<16, 9>, i16 %x_V, i11 %f_x_lsb_table_V, i25 %exp_x_msb_2_m_1_table_V, i25 %exp_x_msb_1_table_V" [/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_math.h:1190]   --->   Operation 235 'call' 'op2_V' <Predicate = (!icmp_ln47)> <Delay = 7.30> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_33 : Operation 235 [3/6] (7.30ns)   --->   "%op2_V = call i16 @exp<16, 9>, i16 %x_V, i11 %f_x_lsb_table_V, i25 %exp_x_msb_2_m_1_table_V, i25 %exp_x_msb_1_table_V" [/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_math.h:1190]   --->   Operation 235 'call' 'op2_V' <Predicate = (!icmp_ln38)> <Delay = 7.30> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 34 <SV = 28> <Delay = 7.30>
-ST_34 : Operation 236 [2/6] (7.30ns)   --->   "%op2_V = call i16 @exp<16, 9>, i16 %x_V, i11 %f_x_lsb_table_V, i25 %exp_x_msb_2_m_1_table_V, i25 %exp_x_msb_1_table_V" [/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_math.h:1190]   --->   Operation 236 'call' 'op2_V' <Predicate = (!icmp_ln47)> <Delay = 7.30> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_34 : Operation 236 [2/6] (7.30ns)   --->   "%op2_V = call i16 @exp<16, 9>, i16 %x_V, i11 %f_x_lsb_table_V, i25 %exp_x_msb_2_m_1_table_V, i25 %exp_x_msb_1_table_V" [/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_math.h:1190]   --->   Operation 236 'call' 'op2_V' <Predicate = (!icmp_ln38)> <Delay = 7.30> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 35 <SV = 29> <Delay = 5.27>
-ST_35 : Operation 237 [1/6] (5.27ns)   --->   "%op2_V = call i16 @exp<16, 9>, i16 %x_V, i11 %f_x_lsb_table_V, i25 %exp_x_msb_2_m_1_table_V, i25 %exp_x_msb_1_table_V" [/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_math.h:1190]   --->   Operation 237 'call' 'op2_V' <Predicate = (!icmp_ln47)> <Delay = 5.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_35 : Operation 237 [1/6] (5.27ns)   --->   "%op2_V = call i16 @exp<16, 9>, i16 %x_V, i11 %f_x_lsb_table_V, i25 %exp_x_msb_2_m_1_table_V, i25 %exp_x_msb_1_table_V" [/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_math.h:1190]   --->   Operation 237 'call' 'op2_V' <Predicate = (!icmp_ln38)> <Delay = 5.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 36 <SV = 30> <Delay = 2.07>
-ST_36 : Operation 238 [1/1] (0.00ns)   --->   "%specloopname_ln45 = specloopname void @_ssdm_op_SpecLoopName, void @empty_2" [lossfun/main.cpp:45]   --->   Operation 238 'specloopname' 'specloopname_ln45' <Predicate = (!icmp_ln47)> <Delay = 0.00>
-ST_36 : Operation 239 [1/1] (2.07ns)   --->   "%sum_V_1 = add i16 %op2_V, i16 %sum_V"   --->   Operation 239 'add' 'sum_V_1' <Predicate = (!icmp_ln47)> <Delay = 2.07> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_36 : Operation 240 [1/1] (0.00ns)   --->   "%br_ln0 = br void %_ZN13ap_fixed_baseILi17ELi10ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi16ELi9ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i.i"   --->   Operation 240 'br' 'br_ln0' <Predicate = (!icmp_ln47)> <Delay = 0.00>
+ST_36 : Operation 238 [1/1] (0.00ns)   --->   "%specloopname_ln36 = specloopname void @_ssdm_op_SpecLoopName, void @empty_2" [lossfun/main.cpp:36]   --->   Operation 238 'specloopname' 'specloopname_ln36' <Predicate = (!icmp_ln38)> <Delay = 0.00>
+ST_36 : Operation 239 [1/1] (2.07ns)   --->   "%sum_V_1 = add i16 %op2_V, i16 %sum_V"   --->   Operation 239 'add' 'sum_V_1' <Predicate = (!icmp_ln38)> <Delay = 2.07> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_36 : Operation 240 [1/1] (0.00ns)   --->   "%br_ln0 = br void %_ZN13ap_fixed_baseILi17ELi10ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi16ELi9ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i.i"   --->   Operation 240 'br' 'br_ln0' <Predicate = (!icmp_ln38)> <Delay = 0.00>
 
 State 37 <SV = 23> <Delay = 1.58>
 ST_37 : Operation 241 [1/1] (0.00ns)   --->   "%sum_V_cast = sext i16 %sum_V"   --->   Operation 241 'sext' 'sum_V_cast' <Predicate = true> <Delay = 0.00>
 ST_37 : Operation 242 [1/1] (1.58ns)   --->   "%br_ln0 = br void %_ZNK13ap_fixed_baseILi16ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEdvILi16ELi9ELb1ELS0_5ELS1_3ELi0EEENS2_5RTypeIXT_EXT0_EXT1_EE3divERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit"   --->   Operation 242 'br' 'br_ln0' <Predicate = true> <Delay = 1.58>
 
 State 38 <SV = 24> <Delay = 3.25>
-ST_38 : Operation 243 [1/1] (0.00ns)   --->   "%i_3 = phi i7 %add_ln51, void %_ZNK13ap_fixed_baseILi16ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEdvILi16ELi9ELb1ELS0_5ELS1_3ELi0EEENS2_5RTypeIXT_EXT0_EXT1_EE3divERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.split, i7 0, void %_ZNK13ap_fixed_baseILi16ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEdvILi16ELi9ELb1ELS0_5ELS1_3ELi0EEENS2_5RTypeIXT_EXT0_EXT1_EE3divERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.preheader" [lossfun/main.cpp:51]   --->   Operation 243 'phi' 'i_3' <Predicate = true> <Delay = 0.00>
-ST_38 : Operation 244 [1/1] (1.87ns)   --->   "%add_ln51 = add i7 %i_3, i7 1" [lossfun/main.cpp:51]   --->   Operation 244 'add' 'add_ln51' <Predicate = true> <Delay = 1.87> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_38 : Operation 245 [1/1] (0.00ns)   --->   "%i_3_cast = zext i7 %i_3" [lossfun/main.cpp:51]   --->   Operation 245 'zext' 'i_3_cast' <Predicate = true> <Delay = 0.00>
+ST_38 : Operation 243 [1/1] (0.00ns)   --->   "%i_3 = phi i7 %add_ln42, void %_ZNK13ap_fixed_baseILi16ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEdvILi16ELi9ELb1ELS0_5ELS1_3ELi0EEENS2_5RTypeIXT_EXT0_EXT1_EE3divERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.split, i7 0, void %_ZNK13ap_fixed_baseILi16ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEdvILi16ELi9ELb1ELS0_5ELS1_3ELi0EEENS2_5RTypeIXT_EXT0_EXT1_EE3divERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.preheader" [lossfun/main.cpp:42]   --->   Operation 243 'phi' 'i_3' <Predicate = true> <Delay = 0.00>
+ST_38 : Operation 244 [1/1] (1.87ns)   --->   "%add_ln42 = add i7 %i_3, i7 1" [lossfun/main.cpp:42]   --->   Operation 244 'add' 'add_ln42' <Predicate = true> <Delay = 1.87> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_38 : Operation 245 [1/1] (0.00ns)   --->   "%i_3_cast = zext i7 %i_3" [lossfun/main.cpp:42]   --->   Operation 245 'zext' 'i_3_cast' <Predicate = true> <Delay = 0.00>
 ST_38 : Operation 246 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 1, i32 0, void @p_str"   --->   Operation 246 'specpipeline' 'specpipeline_ln0' <Predicate = true> <Delay = 0.00>
-ST_38 : Operation 247 [1/1] (2.47ns)   --->   "%icmp_ln51 = icmp_eq  i32 %i_3_cast, i32 %x_size_read" [lossfun/main.cpp:51]   --->   Operation 247 'icmp' 'icmp_ln51' <Predicate = true> <Delay = 2.47> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_38 : Operation 247 [1/1] (2.47ns)   --->   "%icmp_ln42 = icmp_eq  i32 %i_3_cast, i32 %x_size_read" [lossfun/main.cpp:42]   --->   Operation 247 'icmp' 'icmp_ln42' <Predicate = true> <Delay = 2.47> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
 ST_38 : Operation 248 [1/1] (0.00ns)   --->   "%empty_46 = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 1, i64 127, i64 0"   --->   Operation 248 'speclooptripcount' 'empty_46' <Predicate = true> <Delay = 0.00>
-ST_38 : Operation 249 [1/1] (0.00ns)   --->   "%br_ln51 = br i1 %icmp_ln51, void %_ZNK13ap_fixed_baseILi16ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEdvILi16ELi9ELb1ELS0_5ELS1_3ELi0EEENS2_5RTypeIXT_EXT0_EXT1_EE3divERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.split, void %._crit_edge421.loopexit" [lossfun/main.cpp:51]   --->   Operation 249 'br' 'br_ln51' <Predicate = true> <Delay = 0.00>
-ST_38 : Operation 250 [1/1] (0.00ns)   --->   "%i_3_cast7 = zext i7 %i_3" [lossfun/main.cpp:51]   --->   Operation 250 'zext' 'i_3_cast7' <Predicate = (!icmp_ln51)> <Delay = 0.00>
-ST_38 : Operation 251 [1/1] (0.00ns)   --->   "%log_probs_V_addr_2 = getelementptr i16 %log_probs_V, i64 0, i64 %i_3_cast7" [lossfun/main.cpp:52]   --->   Operation 251 'getelementptr' 'log_probs_V_addr_2' <Predicate = (!icmp_ln51)> <Delay = 0.00>
-ST_38 : Operation 252 [2/2] (3.25ns)   --->   "%x_V_1 = load i7 %log_probs_V_addr_2" [lossfun/main.cpp:52]   --->   Operation 252 'load' 'x_V_1' <Predicate = (!icmp_ln51)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 100> <RAM>
+ST_38 : Operation 249 [1/1] (0.00ns)   --->   "%br_ln42 = br i1 %icmp_ln42, void %_ZNK13ap_fixed_baseILi16ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEdvILi16ELi9ELb1ELS0_5ELS1_3ELi0EEENS2_5RTypeIXT_EXT0_EXT1_EE3divERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.split, void %._crit_edge421.loopexit" [lossfun/main.cpp:42]   --->   Operation 249 'br' 'br_ln42' <Predicate = true> <Delay = 0.00>
+ST_38 : Operation 250 [1/1] (0.00ns)   --->   "%i_3_cast7 = zext i7 %i_3" [lossfun/main.cpp:42]   --->   Operation 250 'zext' 'i_3_cast7' <Predicate = (!icmp_ln42)> <Delay = 0.00>
+ST_38 : Operation 251 [1/1] (0.00ns)   --->   "%log_probs_V_addr_2 = getelementptr i16 %log_probs_V, i64 0, i64 %i_3_cast7" [lossfun/main.cpp:43]   --->   Operation 251 'getelementptr' 'log_probs_V_addr_2' <Predicate = (!icmp_ln42)> <Delay = 0.00>
+ST_38 : Operation 252 [2/2] (3.25ns)   --->   "%x_V_1 = load i7 %log_probs_V_addr_2" [lossfun/main.cpp:43]   --->   Operation 252 'load' 'x_V_1' <Predicate = (!icmp_ln42)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 100> <RAM>
 
 State 39 <SV = 25> <Delay = 3.25>
-ST_39 : Operation 253 [1/2] (3.25ns)   --->   "%x_V_1 = load i7 %log_probs_V_addr_2" [lossfun/main.cpp:52]   --->   Operation 253 'load' 'x_V_1' <Predicate = (!icmp_ln51)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 100> <RAM>
+ST_39 : Operation 253 [1/2] (3.25ns)   --->   "%x_V_1 = load i7 %log_probs_V_addr_2" [lossfun/main.cpp:43]   --->   Operation 253 'load' 'x_V_1' <Predicate = (!icmp_ln42)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 100> <RAM>
 
 State 40 <SV = 26> <Delay = 4.44>
-ST_40 : Operation 254 [6/6] (4.44ns)   --->   "%op_V_1 = call i16 @exp<16, 9>, i16 %x_V_1, i11 %f_x_lsb_table_V, i25 %exp_x_msb_2_m_1_table_V, i25 %exp_x_msb_1_table_V" [/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_math.h:1190]   --->   Operation 254 'call' 'op_V_1' <Predicate = (!icmp_ln51)> <Delay = 4.44> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_40 : Operation 254 [6/6] (4.44ns)   --->   "%op_V_1 = call i16 @exp<16, 9>, i16 %x_V_1, i11 %f_x_lsb_table_V, i25 %exp_x_msb_2_m_1_table_V, i25 %exp_x_msb_1_table_V" [/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_math.h:1190]   --->   Operation 254 'call' 'op_V_1' <Predicate = (!icmp_ln42)> <Delay = 4.44> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 41 <SV = 27> <Delay = 7.30>
-ST_41 : Operation 255 [5/6] (7.30ns)   --->   "%op_V_1 = call i16 @exp<16, 9>, i16 %x_V_1, i11 %f_x_lsb_table_V, i25 %exp_x_msb_2_m_1_table_V, i25 %exp_x_msb_1_table_V" [/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_math.h:1190]   --->   Operation 255 'call' 'op_V_1' <Predicate = (!icmp_ln51)> <Delay = 7.30> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_41 : Operation 255 [5/6] (7.30ns)   --->   "%op_V_1 = call i16 @exp<16, 9>, i16 %x_V_1, i11 %f_x_lsb_table_V, i25 %exp_x_msb_2_m_1_table_V, i25 %exp_x_msb_1_table_V" [/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_math.h:1190]   --->   Operation 255 'call' 'op_V_1' <Predicate = (!icmp_ln42)> <Delay = 7.30> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 42 <SV = 28> <Delay = 7.30>
-ST_42 : Operation 256 [4/6] (7.30ns)   --->   "%op_V_1 = call i16 @exp<16, 9>, i16 %x_V_1, i11 %f_x_lsb_table_V, i25 %exp_x_msb_2_m_1_table_V, i25 %exp_x_msb_1_table_V" [/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_math.h:1190]   --->   Operation 256 'call' 'op_V_1' <Predicate = (!icmp_ln51)> <Delay = 7.30> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_42 : Operation 256 [4/6] (7.30ns)   --->   "%op_V_1 = call i16 @exp<16, 9>, i16 %x_V_1, i11 %f_x_lsb_table_V, i25 %exp_x_msb_2_m_1_table_V, i25 %exp_x_msb_1_table_V" [/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_math.h:1190]   --->   Operation 256 'call' 'op_V_1' <Predicate = (!icmp_ln42)> <Delay = 7.30> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 43 <SV = 29> <Delay = 7.30>
-ST_43 : Operation 257 [3/6] (7.30ns)   --->   "%op_V_1 = call i16 @exp<16, 9>, i16 %x_V_1, i11 %f_x_lsb_table_V, i25 %exp_x_msb_2_m_1_table_V, i25 %exp_x_msb_1_table_V" [/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_math.h:1190]   --->   Operation 257 'call' 'op_V_1' <Predicate = (!icmp_ln51)> <Delay = 7.30> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_43 : Operation 257 [3/6] (7.30ns)   --->   "%op_V_1 = call i16 @exp<16, 9>, i16 %x_V_1, i11 %f_x_lsb_table_V, i25 %exp_x_msb_2_m_1_table_V, i25 %exp_x_msb_1_table_V" [/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_math.h:1190]   --->   Operation 257 'call' 'op_V_1' <Predicate = (!icmp_ln42)> <Delay = 7.30> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 44 <SV = 30> <Delay = 7.30>
-ST_44 : Operation 258 [2/6] (7.30ns)   --->   "%op_V_1 = call i16 @exp<16, 9>, i16 %x_V_1, i11 %f_x_lsb_table_V, i25 %exp_x_msb_2_m_1_table_V, i25 %exp_x_msb_1_table_V" [/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_math.h:1190]   --->   Operation 258 'call' 'op_V_1' <Predicate = (!icmp_ln51)> <Delay = 7.30> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_44 : Operation 258 [2/6] (7.30ns)   --->   "%op_V_1 = call i16 @exp<16, 9>, i16 %x_V_1, i11 %f_x_lsb_table_V, i25 %exp_x_msb_2_m_1_table_V, i25 %exp_x_msb_1_table_V" [/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_math.h:1190]   --->   Operation 258 'call' 'op_V_1' <Predicate = (!icmp_ln42)> <Delay = 7.30> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 45 <SV = 31> <Delay = 5.27>
-ST_45 : Operation 259 [1/6] (5.27ns)   --->   "%op_V_1 = call i16 @exp<16, 9>, i16 %x_V_1, i11 %f_x_lsb_table_V, i25 %exp_x_msb_2_m_1_table_V, i25 %exp_x_msb_1_table_V" [/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_math.h:1190]   --->   Operation 259 'call' 'op_V_1' <Predicate = (!icmp_ln51)> <Delay = 5.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_45 : Operation 259 [1/6] (5.27ns)   --->   "%op_V_1 = call i16 @exp<16, 9>, i16 %x_V_1, i11 %f_x_lsb_table_V, i25 %exp_x_msb_2_m_1_table_V, i25 %exp_x_msb_1_table_V" [/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_math.h:1190]   --->   Operation 259 'call' 'op_V_1' <Predicate = (!icmp_ln42)> <Delay = 5.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 46 <SV = 32> <Delay = 4.07>
-ST_46 : Operation 260 [1/1] (0.00ns)   --->   "%t = bitconcatenate i23 @_ssdm_op_BitConcatenate.i23.i16.i7, i16 %op_V_1, i7 0"   --->   Operation 260 'bitconcatenate' 't' <Predicate = (!icmp_ln51)> <Delay = 0.00>
-ST_46 : Operation 261 [27/27] (4.07ns)   --->   "%sdiv_ln1148 = sdiv i23 %t, i23 %sum_V_cast"   --->   Operation 261 'sdiv' 'sdiv_ln1148' <Predicate = (!icmp_ln51)> <Delay = 4.07> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_46 : Operation 260 [1/1] (0.00ns)   --->   "%t = bitconcatenate i23 @_ssdm_op_BitConcatenate.i23.i16.i7, i16 %op_V_1, i7 0"   --->   Operation 260 'bitconcatenate' 't' <Predicate = (!icmp_ln42)> <Delay = 0.00>
+ST_46 : Operation 261 [27/27] (4.07ns)   --->   "%sdiv_ln1148 = sdiv i23 %t, i23 %sum_V_cast"   --->   Operation 261 'sdiv' 'sdiv_ln1148' <Predicate = (!icmp_ln42)> <Delay = 4.07> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 47 <SV = 33> <Delay = 4.07>
-ST_47 : Operation 262 [26/27] (4.07ns)   --->   "%sdiv_ln1148 = sdiv i23 %t, i23 %sum_V_cast"   --->   Operation 262 'sdiv' 'sdiv_ln1148' <Predicate = (!icmp_ln51)> <Delay = 4.07> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_47 : Operation 262 [26/27] (4.07ns)   --->   "%sdiv_ln1148 = sdiv i23 %t, i23 %sum_V_cast"   --->   Operation 262 'sdiv' 'sdiv_ln1148' <Predicate = (!icmp_ln42)> <Delay = 4.07> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 48 <SV = 34> <Delay = 4.07>
-ST_48 : Operation 263 [25/27] (4.07ns)   --->   "%sdiv_ln1148 = sdiv i23 %t, i23 %sum_V_cast"   --->   Operation 263 'sdiv' 'sdiv_ln1148' <Predicate = (!icmp_ln51)> <Delay = 4.07> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_48 : Operation 263 [25/27] (4.07ns)   --->   "%sdiv_ln1148 = sdiv i23 %t, i23 %sum_V_cast"   --->   Operation 263 'sdiv' 'sdiv_ln1148' <Predicate = (!icmp_ln42)> <Delay = 4.07> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 49 <SV = 35> <Delay = 4.07>
-ST_49 : Operation 264 [24/27] (4.07ns)   --->   "%sdiv_ln1148 = sdiv i23 %t, i23 %sum_V_cast"   --->   Operation 264 'sdiv' 'sdiv_ln1148' <Predicate = (!icmp_ln51)> <Delay = 4.07> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_49 : Operation 264 [24/27] (4.07ns)   --->   "%sdiv_ln1148 = sdiv i23 %t, i23 %sum_V_cast"   --->   Operation 264 'sdiv' 'sdiv_ln1148' <Predicate = (!icmp_ln42)> <Delay = 4.07> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 50 <SV = 36> <Delay = 4.07>
-ST_50 : Operation 265 [23/27] (4.07ns)   --->   "%sdiv_ln1148 = sdiv i23 %t, i23 %sum_V_cast"   --->   Operation 265 'sdiv' 'sdiv_ln1148' <Predicate = (!icmp_ln51)> <Delay = 4.07> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_50 : Operation 265 [23/27] (4.07ns)   --->   "%sdiv_ln1148 = sdiv i23 %t, i23 %sum_V_cast"   --->   Operation 265 'sdiv' 'sdiv_ln1148' <Predicate = (!icmp_ln42)> <Delay = 4.07> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 51 <SV = 37> <Delay = 4.07>
-ST_51 : Operation 266 [22/27] (4.07ns)   --->   "%sdiv_ln1148 = sdiv i23 %t, i23 %sum_V_cast"   --->   Operation 266 'sdiv' 'sdiv_ln1148' <Predicate = (!icmp_ln51)> <Delay = 4.07> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_51 : Operation 266 [22/27] (4.07ns)   --->   "%sdiv_ln1148 = sdiv i23 %t, i23 %sum_V_cast"   --->   Operation 266 'sdiv' 'sdiv_ln1148' <Predicate = (!icmp_ln42)> <Delay = 4.07> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 52 <SV = 38> <Delay = 4.07>
-ST_52 : Operation 267 [21/27] (4.07ns)   --->   "%sdiv_ln1148 = sdiv i23 %t, i23 %sum_V_cast"   --->   Operation 267 'sdiv' 'sdiv_ln1148' <Predicate = (!icmp_ln51)> <Delay = 4.07> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_52 : Operation 267 [21/27] (4.07ns)   --->   "%sdiv_ln1148 = sdiv i23 %t, i23 %sum_V_cast"   --->   Operation 267 'sdiv' 'sdiv_ln1148' <Predicate = (!icmp_ln42)> <Delay = 4.07> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 53 <SV = 39> <Delay = 4.07>
-ST_53 : Operation 268 [20/27] (4.07ns)   --->   "%sdiv_ln1148 = sdiv i23 %t, i23 %sum_V_cast"   --->   Operation 268 'sdiv' 'sdiv_ln1148' <Predicate = (!icmp_ln51)> <Delay = 4.07> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_53 : Operation 268 [20/27] (4.07ns)   --->   "%sdiv_ln1148 = sdiv i23 %t, i23 %sum_V_cast"   --->   Operation 268 'sdiv' 'sdiv_ln1148' <Predicate = (!icmp_ln42)> <Delay = 4.07> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 54 <SV = 40> <Delay = 4.07>
-ST_54 : Operation 269 [19/27] (4.07ns)   --->   "%sdiv_ln1148 = sdiv i23 %t, i23 %sum_V_cast"   --->   Operation 269 'sdiv' 'sdiv_ln1148' <Predicate = (!icmp_ln51)> <Delay = 4.07> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_54 : Operation 269 [19/27] (4.07ns)   --->   "%sdiv_ln1148 = sdiv i23 %t, i23 %sum_V_cast"   --->   Operation 269 'sdiv' 'sdiv_ln1148' <Predicate = (!icmp_ln42)> <Delay = 4.07> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 55 <SV = 41> <Delay = 4.07>
-ST_55 : Operation 270 [18/27] (4.07ns)   --->   "%sdiv_ln1148 = sdiv i23 %t, i23 %sum_V_cast"   --->   Operation 270 'sdiv' 'sdiv_ln1148' <Predicate = (!icmp_ln51)> <Delay = 4.07> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_55 : Operation 270 [18/27] (4.07ns)   --->   "%sdiv_ln1148 = sdiv i23 %t, i23 %sum_V_cast"   --->   Operation 270 'sdiv' 'sdiv_ln1148' <Predicate = (!icmp_ln42)> <Delay = 4.07> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 56 <SV = 42> <Delay = 4.07>
-ST_56 : Operation 271 [17/27] (4.07ns)   --->   "%sdiv_ln1148 = sdiv i23 %t, i23 %sum_V_cast"   --->   Operation 271 'sdiv' 'sdiv_ln1148' <Predicate = (!icmp_ln51)> <Delay = 4.07> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_56 : Operation 271 [17/27] (4.07ns)   --->   "%sdiv_ln1148 = sdiv i23 %t, i23 %sum_V_cast"   --->   Operation 271 'sdiv' 'sdiv_ln1148' <Predicate = (!icmp_ln42)> <Delay = 4.07> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 57 <SV = 43> <Delay = 4.07>
-ST_57 : Operation 272 [16/27] (4.07ns)   --->   "%sdiv_ln1148 = sdiv i23 %t, i23 %sum_V_cast"   --->   Operation 272 'sdiv' 'sdiv_ln1148' <Predicate = (!icmp_ln51)> <Delay = 4.07> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_57 : Operation 272 [16/27] (4.07ns)   --->   "%sdiv_ln1148 = sdiv i23 %t, i23 %sum_V_cast"   --->   Operation 272 'sdiv' 'sdiv_ln1148' <Predicate = (!icmp_ln42)> <Delay = 4.07> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 58 <SV = 44> <Delay = 4.07>
-ST_58 : Operation 273 [15/27] (4.07ns)   --->   "%sdiv_ln1148 = sdiv i23 %t, i23 %sum_V_cast"   --->   Operation 273 'sdiv' 'sdiv_ln1148' <Predicate = (!icmp_ln51)> <Delay = 4.07> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_58 : Operation 273 [15/27] (4.07ns)   --->   "%sdiv_ln1148 = sdiv i23 %t, i23 %sum_V_cast"   --->   Operation 273 'sdiv' 'sdiv_ln1148' <Predicate = (!icmp_ln42)> <Delay = 4.07> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 59 <SV = 45> <Delay = 4.07>
-ST_59 : Operation 274 [14/27] (4.07ns)   --->   "%sdiv_ln1148 = sdiv i23 %t, i23 %sum_V_cast"   --->   Operation 274 'sdiv' 'sdiv_ln1148' <Predicate = (!icmp_ln51)> <Delay = 4.07> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_59 : Operation 274 [14/27] (4.07ns)   --->   "%sdiv_ln1148 = sdiv i23 %t, i23 %sum_V_cast"   --->   Operation 274 'sdiv' 'sdiv_ln1148' <Predicate = (!icmp_ln42)> <Delay = 4.07> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 60 <SV = 46> <Delay = 4.07>
-ST_60 : Operation 275 [13/27] (4.07ns)   --->   "%sdiv_ln1148 = sdiv i23 %t, i23 %sum_V_cast"   --->   Operation 275 'sdiv' 'sdiv_ln1148' <Predicate = (!icmp_ln51)> <Delay = 4.07> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_60 : Operation 275 [13/27] (4.07ns)   --->   "%sdiv_ln1148 = sdiv i23 %t, i23 %sum_V_cast"   --->   Operation 275 'sdiv' 'sdiv_ln1148' <Predicate = (!icmp_ln42)> <Delay = 4.07> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 61 <SV = 47> <Delay = 4.07>
-ST_61 : Operation 276 [12/27] (4.07ns)   --->   "%sdiv_ln1148 = sdiv i23 %t, i23 %sum_V_cast"   --->   Operation 276 'sdiv' 'sdiv_ln1148' <Predicate = (!icmp_ln51)> <Delay = 4.07> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_61 : Operation 276 [12/27] (4.07ns)   --->   "%sdiv_ln1148 = sdiv i23 %t, i23 %sum_V_cast"   --->   Operation 276 'sdiv' 'sdiv_ln1148' <Predicate = (!icmp_ln42)> <Delay = 4.07> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 62 <SV = 48> <Delay = 4.07>
-ST_62 : Operation 277 [11/27] (4.07ns)   --->   "%sdiv_ln1148 = sdiv i23 %t, i23 %sum_V_cast"   --->   Operation 277 'sdiv' 'sdiv_ln1148' <Predicate = (!icmp_ln51)> <Delay = 4.07> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_62 : Operation 277 [11/27] (4.07ns)   --->   "%sdiv_ln1148 = sdiv i23 %t, i23 %sum_V_cast"   --->   Operation 277 'sdiv' 'sdiv_ln1148' <Predicate = (!icmp_ln42)> <Delay = 4.07> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 63 <SV = 49> <Delay = 4.07>
-ST_63 : Operation 278 [10/27] (4.07ns)   --->   "%sdiv_ln1148 = sdiv i23 %t, i23 %sum_V_cast"   --->   Operation 278 'sdiv' 'sdiv_ln1148' <Predicate = (!icmp_ln51)> <Delay = 4.07> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_63 : Operation 278 [10/27] (4.07ns)   --->   "%sdiv_ln1148 = sdiv i23 %t, i23 %sum_V_cast"   --->   Operation 278 'sdiv' 'sdiv_ln1148' <Predicate = (!icmp_ln42)> <Delay = 4.07> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 64 <SV = 50> <Delay = 4.07>
-ST_64 : Operation 279 [9/27] (4.07ns)   --->   "%sdiv_ln1148 = sdiv i23 %t, i23 %sum_V_cast"   --->   Operation 279 'sdiv' 'sdiv_ln1148' <Predicate = (!icmp_ln51)> <Delay = 4.07> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_64 : Operation 279 [9/27] (4.07ns)   --->   "%sdiv_ln1148 = sdiv i23 %t, i23 %sum_V_cast"   --->   Operation 279 'sdiv' 'sdiv_ln1148' <Predicate = (!icmp_ln42)> <Delay = 4.07> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 65 <SV = 51> <Delay = 4.07>
-ST_65 : Operation 280 [8/27] (4.07ns)   --->   "%sdiv_ln1148 = sdiv i23 %t, i23 %sum_V_cast"   --->   Operation 280 'sdiv' 'sdiv_ln1148' <Predicate = (!icmp_ln51)> <Delay = 4.07> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_65 : Operation 280 [8/27] (4.07ns)   --->   "%sdiv_ln1148 = sdiv i23 %t, i23 %sum_V_cast"   --->   Operation 280 'sdiv' 'sdiv_ln1148' <Predicate = (!icmp_ln42)> <Delay = 4.07> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 66 <SV = 52> <Delay = 4.07>
-ST_66 : Operation 281 [7/27] (4.07ns)   --->   "%sdiv_ln1148 = sdiv i23 %t, i23 %sum_V_cast"   --->   Operation 281 'sdiv' 'sdiv_ln1148' <Predicate = (!icmp_ln51)> <Delay = 4.07> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_66 : Operation 281 [7/27] (4.07ns)   --->   "%sdiv_ln1148 = sdiv i23 %t, i23 %sum_V_cast"   --->   Operation 281 'sdiv' 'sdiv_ln1148' <Predicate = (!icmp_ln42)> <Delay = 4.07> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 67 <SV = 53> <Delay = 4.07>
-ST_67 : Operation 282 [6/27] (4.07ns)   --->   "%sdiv_ln1148 = sdiv i23 %t, i23 %sum_V_cast"   --->   Operation 282 'sdiv' 'sdiv_ln1148' <Predicate = (!icmp_ln51)> <Delay = 4.07> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_67 : Operation 282 [6/27] (4.07ns)   --->   "%sdiv_ln1148 = sdiv i23 %t, i23 %sum_V_cast"   --->   Operation 282 'sdiv' 'sdiv_ln1148' <Predicate = (!icmp_ln42)> <Delay = 4.07> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 68 <SV = 54> <Delay = 4.07>
-ST_68 : Operation 283 [5/27] (4.07ns)   --->   "%sdiv_ln1148 = sdiv i23 %t, i23 %sum_V_cast"   --->   Operation 283 'sdiv' 'sdiv_ln1148' <Predicate = (!icmp_ln51)> <Delay = 4.07> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_68 : Operation 283 [5/27] (4.07ns)   --->   "%sdiv_ln1148 = sdiv i23 %t, i23 %sum_V_cast"   --->   Operation 283 'sdiv' 'sdiv_ln1148' <Predicate = (!icmp_ln42)> <Delay = 4.07> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 69 <SV = 55> <Delay = 4.07>
-ST_69 : Operation 284 [4/27] (4.07ns)   --->   "%sdiv_ln1148 = sdiv i23 %t, i23 %sum_V_cast"   --->   Operation 284 'sdiv' 'sdiv_ln1148' <Predicate = (!icmp_ln51)> <Delay = 4.07> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_69 : Operation 284 [4/27] (4.07ns)   --->   "%sdiv_ln1148 = sdiv i23 %t, i23 %sum_V_cast"   --->   Operation 284 'sdiv' 'sdiv_ln1148' <Predicate = (!icmp_ln42)> <Delay = 4.07> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 70 <SV = 56> <Delay = 4.07>
-ST_70 : Operation 285 [3/27] (4.07ns)   --->   "%sdiv_ln1148 = sdiv i23 %t, i23 %sum_V_cast"   --->   Operation 285 'sdiv' 'sdiv_ln1148' <Predicate = (!icmp_ln51)> <Delay = 4.07> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_70 : Operation 285 [3/27] (4.07ns)   --->   "%sdiv_ln1148 = sdiv i23 %t, i23 %sum_V_cast"   --->   Operation 285 'sdiv' 'sdiv_ln1148' <Predicate = (!icmp_ln42)> <Delay = 4.07> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 71 <SV = 57> <Delay = 4.07>
-ST_71 : Operation 286 [2/27] (4.07ns)   --->   "%sdiv_ln1148 = sdiv i23 %t, i23 %sum_V_cast"   --->   Operation 286 'sdiv' 'sdiv_ln1148' <Predicate = (!icmp_ln51)> <Delay = 4.07> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_71 : Operation 286 [2/27] (4.07ns)   --->   "%sdiv_ln1148 = sdiv i23 %t, i23 %sum_V_cast"   --->   Operation 286 'sdiv' 'sdiv_ln1148' <Predicate = (!icmp_ln42)> <Delay = 4.07> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 72 <SV = 58> <Delay = 4.07>
-ST_72 : Operation 287 [1/27] (4.07ns)   --->   "%sdiv_ln1148 = sdiv i23 %t, i23 %sum_V_cast"   --->   Operation 287 'sdiv' 'sdiv_ln1148' <Predicate = (!icmp_ln51)> <Delay = 4.07> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_72 : Operation 287 [1/27] (4.07ns)   --->   "%sdiv_ln1148 = sdiv i23 %t, i23 %sum_V_cast"   --->   Operation 287 'sdiv' 'sdiv_ln1148' <Predicate = (!icmp_ln42)> <Delay = 4.07> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 73 <SV = 59> <Delay = 3.25>
-ST_73 : Operation 288 [1/1] (0.00ns)   --->   "%specloopname_ln51 = specloopname void @_ssdm_op_SpecLoopName, void @empty_16" [lossfun/main.cpp:51]   --->   Operation 288 'specloopname' 'specloopname_ln51' <Predicate = (!icmp_ln51)> <Delay = 0.00>
-ST_73 : Operation 289 [1/1] (0.00ns)   --->   "%trunc_ln703 = trunc i16 %sdiv_ln1148"   --->   Operation 289 'trunc' 'trunc_ln703' <Predicate = (!icmp_ln51)> <Delay = 0.00>
-ST_73 : Operation 290 [1/1] (0.00ns)   --->   "%probs_V_addr = getelementptr i16 %probs_V, i64 0, i64 %i_3_cast7" [lossfun/main.cpp:52]   --->   Operation 290 'getelementptr' 'probs_V_addr' <Predicate = (!icmp_ln51)> <Delay = 0.00>
-ST_73 : Operation 291 [1/1] (3.25ns)   --->   "%store_ln52 = store i16 %trunc_ln703, i7 %probs_V_addr" [lossfun/main.cpp:52]   --->   Operation 291 'store' 'store_ln52' <Predicate = (!icmp_ln51)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 100> <RAM>
-ST_73 : Operation 292 [1/1] (0.00ns)   --->   "%br_ln0 = br void %_ZNK13ap_fixed_baseILi16ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEdvILi16ELi9ELb1ELS0_5ELS1_3ELi0EEENS2_5RTypeIXT_EXT0_EXT1_EE3divERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit"   --->   Operation 292 'br' 'br_ln0' <Predicate = (!icmp_ln51)> <Delay = 0.00>
+ST_73 : Operation 288 [1/1] (0.00ns)   --->   "%specloopname_ln42 = specloopname void @_ssdm_op_SpecLoopName, void @empty_16" [lossfun/main.cpp:42]   --->   Operation 288 'specloopname' 'specloopname_ln42' <Predicate = (!icmp_ln42)> <Delay = 0.00>
+ST_73 : Operation 289 [1/1] (0.00ns)   --->   "%trunc_ln703 = trunc i16 %sdiv_ln1148"   --->   Operation 289 'trunc' 'trunc_ln703' <Predicate = (!icmp_ln42)> <Delay = 0.00>
+ST_73 : Operation 290 [1/1] (0.00ns)   --->   "%probs_V_addr = getelementptr i16 %probs_V, i64 0, i64 %i_3_cast7" [lossfun/main.cpp:43]   --->   Operation 290 'getelementptr' 'probs_V_addr' <Predicate = (!icmp_ln42)> <Delay = 0.00>
+ST_73 : Operation 291 [1/1] (3.25ns)   --->   "%store_ln43 = store i16 %trunc_ln703, i7 %probs_V_addr" [lossfun/main.cpp:43]   --->   Operation 291 'store' 'store_ln43' <Predicate = (!icmp_ln42)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 100> <RAM>
+ST_73 : Operation 292 [1/1] (0.00ns)   --->   "%br_ln0 = br void %_ZNK13ap_fixed_baseILi16ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEdvILi16ELi9ELb1ELS0_5ELS1_3ELi0EEENS2_5RTypeIXT_EXT0_EXT1_EE3divERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit"   --->   Operation 292 'br' 'br_ln0' <Predicate = (!icmp_ln42)> <Delay = 0.00>
 
 State 74 <SV = 25> <Delay = 3.25>
-ST_74 : Operation 293 [1/1] (0.00ns)   --->   "%br_ln0 = br void %._crit_edge421"   --->   Operation 293 'br' 'br_ln0' <Predicate = (icmp_ln41)> <Delay = 0.00>
-ST_74 : Operation 294 [1/1] (0.00ns)   --->   "%zext_ln55 = zext i32 %y_read" [lossfun/main.cpp:55]   --->   Operation 294 'zext' 'zext_ln55' <Predicate = true> <Delay = 0.00>
-ST_74 : Operation 295 [1/1] (0.00ns)   --->   "%probs_V_addr_1 = getelementptr i16 %probs_V, i64 0, i64 %zext_ln55" [lossfun/main.cpp:55]   --->   Operation 295 'getelementptr' 'probs_V_addr_1' <Predicate = true> <Delay = 0.00>
-ST_74 : Operation 296 [2/2] (3.25ns)   --->   "%x_V_2 = load i7 %probs_V_addr_1" [lossfun/main.cpp:55]   --->   Operation 296 'load' 'x_V_2' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 100> <RAM>
-ST_74 : Operation 297 [1/1] (0.00ns)   --->   "%dxbuff_V_addr = getelementptr i16 %dxbuff_V, i64 0, i64 %zext_ln55" [lossfun/main.cpp:55]   --->   Operation 297 'getelementptr' 'dxbuff_V_addr' <Predicate = true> <Delay = 0.00>
+ST_74 : Operation 293 [1/1] (0.00ns)   --->   "%br_ln0 = br void %._crit_edge421"   --->   Operation 293 'br' 'br_ln0' <Predicate = (icmp_ln32)> <Delay = 0.00>
+ST_74 : Operation 294 [1/1] (0.00ns)   --->   "%zext_ln46 = zext i32 %y_read" [lossfun/main.cpp:46]   --->   Operation 294 'zext' 'zext_ln46' <Predicate = true> <Delay = 0.00>
+ST_74 : Operation 295 [1/1] (0.00ns)   --->   "%probs_V_addr_1 = getelementptr i16 %probs_V, i64 0, i64 %zext_ln46" [lossfun/main.cpp:46]   --->   Operation 295 'getelementptr' 'probs_V_addr_1' <Predicate = true> <Delay = 0.00>
+ST_74 : Operation 296 [2/2] (3.25ns)   --->   "%x_V_2 = load i7 %probs_V_addr_1" [lossfun/main.cpp:46]   --->   Operation 296 'load' 'x_V_2' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 100> <RAM>
+ST_74 : Operation 297 [1/1] (0.00ns)   --->   "%dxbuff_V_addr = getelementptr i16 %dxbuff_V, i64 0, i64 %zext_ln46" [lossfun/main.cpp:46]   --->   Operation 297 'getelementptr' 'dxbuff_V_addr' <Predicate = true> <Delay = 0.00>
 
 State 75 <SV = 26> <Delay = 3.25>
-ST_75 : Operation 298 [1/2] (3.25ns)   --->   "%x_V_2 = load i7 %probs_V_addr_1" [lossfun/main.cpp:55]   --->   Operation 298 'load' 'x_V_2' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 100> <RAM>
+ST_75 : Operation 298 [1/2] (3.25ns)   --->   "%x_V_2 = load i7 %probs_V_addr_1" [lossfun/main.cpp:46]   --->   Operation 298 'load' 'x_V_2' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 100> <RAM>
 
 State 76 <SV = 27> <Delay = 5.51>
 ST_76 : Operation 299 [11/11] (5.51ns)   --->   "%op2_V_1 = call i16 @log<16, 9>, i16 %x_V_2, i6 %log_apfixed_reduce_log_inverse_lut_table_array_V, i22 %log_apfixed_reduce_log0_lut_table_ap_fixed_29_7_ap_q_mode_5_ap_o_mode_3_0_0_5_64_array_V, i18 %log_apfixed_reduce_log_lut_table_ap_fixed_29_7_ap_q_mode_5_ap_o_mode_3_0_4_4_16_array_V" [/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_math.h:1208]   --->   Operation 299 'call' 'op2_V_1' <Predicate = true> <Delay = 5.51> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
@@ -960,134 +960,134 @@ ST_85 : Operation 308 [2/11] (6.91ns)   --->   "%op2_V_1 = call i16 @log<16, 9>,
 State 86 <SV = 37> <Delay = 6.12>
 ST_86 : Operation 309 [1/11] (4.05ns)   --->   "%op2_V_1 = call i16 @log<16, 9>, i16 %x_V_2, i6 %log_apfixed_reduce_log_inverse_lut_table_array_V, i22 %log_apfixed_reduce_log0_lut_table_ap_fixed_29_7_ap_q_mode_5_ap_o_mode_3_0_0_5_64_array_V, i18 %log_apfixed_reduce_log_lut_table_ap_fixed_29_7_ap_q_mode_5_ap_o_mode_3_0_4_4_16_array_V" [/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_math.h:1208]   --->   Operation 309 'call' 'op2_V_1' <Predicate = true> <Delay = 4.05> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 ST_86 : Operation 310 [1/1] (2.07ns)   --->   "%loss_V = sub i16 0, i16 %op2_V_1"   --->   Operation 310 'sub' 'loss_V' <Predicate = true> <Delay = 2.07> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_86 : Operation 311 [1/1] (1.58ns)   --->   "%br_ln57 = br void" [lossfun/main.cpp:57]   --->   Operation 311 'br' 'br_ln57' <Predicate = true> <Delay = 1.58>
+ST_86 : Operation 311 [1/1] (1.58ns)   --->   "%br_ln48 = br void" [lossfun/main.cpp:48]   --->   Operation 311 'br' 'br_ln48' <Predicate = true> <Delay = 1.58>
 
 State 87 <SV = 38> <Delay = 3.25>
-ST_87 : Operation 312 [1/1] (0.00ns)   --->   "%i_4 = phi i7 0, void %._crit_edge421, i7 %add_ln57, void" [lossfun/main.cpp:57]   --->   Operation 312 'phi' 'i_4' <Predicate = true> <Delay = 0.00>
-ST_87 : Operation 313 [1/1] (1.87ns)   --->   "%add_ln57 = add i7 %i_4, i7 1" [lossfun/main.cpp:57]   --->   Operation 313 'add' 'add_ln57' <Predicate = true> <Delay = 1.87> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_87 : Operation 314 [1/1] (0.00ns)   --->   "%i_4_cast4 = zext i7 %i_4" [lossfun/main.cpp:57]   --->   Operation 314 'zext' 'i_4_cast4' <Predicate = true> <Delay = 0.00>
+ST_87 : Operation 312 [1/1] (0.00ns)   --->   "%i_4 = phi i7 0, void %._crit_edge421, i7 %add_ln48, void" [lossfun/main.cpp:48]   --->   Operation 312 'phi' 'i_4' <Predicate = true> <Delay = 0.00>
+ST_87 : Operation 313 [1/1] (1.87ns)   --->   "%add_ln48 = add i7 %i_4, i7 1" [lossfun/main.cpp:48]   --->   Operation 313 'add' 'add_ln48' <Predicate = true> <Delay = 1.87> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_87 : Operation 314 [1/1] (0.00ns)   --->   "%i_4_cast4 = zext i7 %i_4" [lossfun/main.cpp:48]   --->   Operation 314 'zext' 'i_4_cast4' <Predicate = true> <Delay = 0.00>
 ST_87 : Operation 315 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 1, i32 0, void @p_str"   --->   Operation 315 'specpipeline' 'specpipeline_ln0' <Predicate = true> <Delay = 0.00>
-ST_87 : Operation 316 [1/1] (2.47ns)   --->   "%icmp_ln57 = icmp_eq  i32 %i_4_cast4, i32 %x_size_read" [lossfun/main.cpp:57]   --->   Operation 316 'icmp' 'icmp_ln57' <Predicate = true> <Delay = 2.47> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_87 : Operation 316 [1/1] (2.47ns)   --->   "%icmp_ln48 = icmp_eq  i32 %i_4_cast4, i32 %x_size_read" [lossfun/main.cpp:48]   --->   Operation 316 'icmp' 'icmp_ln48' <Predicate = true> <Delay = 2.47> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
 ST_87 : Operation 317 [1/1] (0.00ns)   --->   "%empty_47 = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 0, i64 127, i64 0"   --->   Operation 317 'speclooptripcount' 'empty_47' <Predicate = true> <Delay = 0.00>
-ST_87 : Operation 318 [1/1] (0.00ns)   --->   "%br_ln57 = br i1 %icmp_ln57, void %.split, void %._crit_edge.loopexit" [lossfun/main.cpp:57]   --->   Operation 318 'br' 'br_ln57' <Predicate = true> <Delay = 0.00>
-ST_87 : Operation 319 [1/1] (0.00ns)   --->   "%i_4_cast = zext i7 %i_4" [lossfun/main.cpp:57]   --->   Operation 319 'zext' 'i_4_cast' <Predicate = (!icmp_ln57)> <Delay = 0.00>
-ST_87 : Operation 320 [1/1] (2.47ns)   --->   "%icmp_ln58 = icmp_eq  i32 %i_4_cast4, i32 %y_read" [lossfun/main.cpp:58]   --->   Operation 320 'icmp' 'icmp_ln58' <Predicate = (!icmp_ln57)> <Delay = 2.47> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_87 : Operation 321 [1/1] (0.00ns)   --->   "%probs_V_addr_2 = getelementptr i16 %probs_V, i64 0, i64 %i_4_cast" [lossfun/main.cpp:57]   --->   Operation 321 'getelementptr' 'probs_V_addr_2' <Predicate = (!icmp_ln57)> <Delay = 0.00>
-ST_87 : Operation 322 [2/2] (3.25ns)   --->   "%t_V = load i7 %probs_V_addr_2" [lossfun/main.cpp:57]   --->   Operation 322 'load' 't_V' <Predicate = (!icmp_ln57)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 100> <RAM>
-ST_87 : Operation 323 [1/1] (0.00ns)   --->   "%br_ln58 = br i1 %icmp_ln58, void %_ZN8ap_fixedILi16ELi9EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi17ELi10ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit, void %_ZN13ap_fixed_baseILi40ELi33ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi16ELi9ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i.i" [lossfun/main.cpp:58]   --->   Operation 323 'br' 'br_ln58' <Predicate = (!icmp_ln57)> <Delay = 0.00>
-ST_87 : Operation 324 [1/1] (0.00ns)   --->   "%br_ln0 = br void"   --->   Operation 324 'br' 'br_ln0' <Predicate = (!icmp_ln57)> <Delay = 0.00>
+ST_87 : Operation 318 [1/1] (0.00ns)   --->   "%br_ln48 = br i1 %icmp_ln48, void %.split, void %._crit_edge.loopexit" [lossfun/main.cpp:48]   --->   Operation 318 'br' 'br_ln48' <Predicate = true> <Delay = 0.00>
+ST_87 : Operation 319 [1/1] (0.00ns)   --->   "%i_4_cast = zext i7 %i_4" [lossfun/main.cpp:48]   --->   Operation 319 'zext' 'i_4_cast' <Predicate = (!icmp_ln48)> <Delay = 0.00>
+ST_87 : Operation 320 [1/1] (2.47ns)   --->   "%icmp_ln49 = icmp_eq  i32 %i_4_cast4, i32 %y_read" [lossfun/main.cpp:49]   --->   Operation 320 'icmp' 'icmp_ln49' <Predicate = (!icmp_ln48)> <Delay = 2.47> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_87 : Operation 321 [1/1] (0.00ns)   --->   "%probs_V_addr_2 = getelementptr i16 %probs_V, i64 0, i64 %i_4_cast" [lossfun/main.cpp:48]   --->   Operation 321 'getelementptr' 'probs_V_addr_2' <Predicate = (!icmp_ln48)> <Delay = 0.00>
+ST_87 : Operation 322 [2/2] (3.25ns)   --->   "%t_V = load i7 %probs_V_addr_2" [lossfun/main.cpp:48]   --->   Operation 322 'load' 't_V' <Predicate = (!icmp_ln48)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 100> <RAM>
+ST_87 : Operation 323 [1/1] (0.00ns)   --->   "%br_ln49 = br i1 %icmp_ln49, void %_ZN8ap_fixedILi16ELi9EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi17ELi10ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit, void %_ZN13ap_fixed_baseILi40ELi33ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi16ELi9ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i.i" [lossfun/main.cpp:49]   --->   Operation 323 'br' 'br_ln49' <Predicate = (!icmp_ln48)> <Delay = 0.00>
+ST_87 : Operation 324 [1/1] (0.00ns)   --->   "%br_ln0 = br void"   --->   Operation 324 'br' 'br_ln0' <Predicate = (!icmp_ln48)> <Delay = 0.00>
 
 State 88 <SV = 39> <Delay = 3.25>
-ST_88 : Operation 325 [1/1] (0.00ns)   --->   "%specloopname_ln57 = specloopname void @_ssdm_op_SpecLoopName, void @empty_11" [lossfun/main.cpp:57]   --->   Operation 325 'specloopname' 'specloopname_ln57' <Predicate = true> <Delay = 0.00>
-ST_88 : Operation 326 [1/2] (3.25ns)   --->   "%t_V = load i7 %probs_V_addr_2" [lossfun/main.cpp:57]   --->   Operation 326 'load' 't_V' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 100> <RAM>
+ST_88 : Operation 325 [1/1] (0.00ns)   --->   "%specloopname_ln48 = specloopname void @_ssdm_op_SpecLoopName, void @empty_11" [lossfun/main.cpp:48]   --->   Operation 325 'specloopname' 'specloopname_ln48' <Predicate = true> <Delay = 0.00>
+ST_88 : Operation 326 [1/2] (3.25ns)   --->   "%t_V = load i7 %probs_V_addr_2" [lossfun/main.cpp:48]   --->   Operation 326 'load' 't_V' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 100> <RAM>
 
 State 89 <SV = 40> <Delay = 6.41>
-ST_89 : Operation 327 [1/1] (0.00ns)   --->   "%sext_ln1148_1 = sext i16 %t_V"   --->   Operation 327 'sext' 'sext_ln1148_1' <Predicate = (!icmp_ln58)> <Delay = 0.00>
-ST_89 : Operation 328 [21/21] (4.33ns)   --->   "%sdiv_ln1148_2 = sdiv i32 %sext_ln1148_1, i32 %N_read"   --->   Operation 328 'sdiv' 'sdiv_ln1148_2' <Predicate = (!icmp_ln58)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
-ST_89 : Operation 329 [1/1] (0.00ns)   --->   "%sext_ln2221 = sext i16 %t_V"   --->   Operation 329 'sext' 'sext_ln2221' <Predicate = (icmp_ln58)> <Delay = 0.00>
-ST_89 : Operation 330 [1/1] (2.07ns)   --->   "%add_ln1148 = add i17 %sext_ln2221, i17 130944"   --->   Operation 330 'add' 'add_ln1148' <Predicate = (icmp_ln58)> <Delay = 2.07> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_89 : Operation 331 [1/1] (0.00ns)   --->   "%sext_ln1148 = sext i17 %add_ln1148"   --->   Operation 331 'sext' 'sext_ln1148' <Predicate = (icmp_ln58)> <Delay = 0.00>
-ST_89 : Operation 332 [22/22] (4.33ns)   --->   "%sdiv_ln1148_1 = sdiv i32 %sext_ln1148, i32 %N_read"   --->   Operation 332 'sdiv' 'sdiv_ln1148_1' <Predicate = (icmp_ln58)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_89 : Operation 327 [1/1] (0.00ns)   --->   "%sext_ln1148_1 = sext i16 %t_V"   --->   Operation 327 'sext' 'sext_ln1148_1' <Predicate = (!icmp_ln49)> <Delay = 0.00>
+ST_89 : Operation 328 [21/21] (4.33ns)   --->   "%sdiv_ln1148_2 = sdiv i32 %sext_ln1148_1, i32 %N_read"   --->   Operation 328 'sdiv' 'sdiv_ln1148_2' <Predicate = (!icmp_ln49)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_89 : Operation 329 [1/1] (0.00ns)   --->   "%sext_ln2221 = sext i16 %t_V"   --->   Operation 329 'sext' 'sext_ln2221' <Predicate = (icmp_ln49)> <Delay = 0.00>
+ST_89 : Operation 330 [1/1] (2.07ns)   --->   "%add_ln1148 = add i17 %sext_ln2221, i17 130944"   --->   Operation 330 'add' 'add_ln1148' <Predicate = (icmp_ln49)> <Delay = 2.07> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_89 : Operation 331 [1/1] (0.00ns)   --->   "%sext_ln1148 = sext i17 %add_ln1148"   --->   Operation 331 'sext' 'sext_ln1148' <Predicate = (icmp_ln49)> <Delay = 0.00>
+ST_89 : Operation 332 [22/22] (4.33ns)   --->   "%sdiv_ln1148_1 = sdiv i32 %sext_ln1148, i32 %N_read"   --->   Operation 332 'sdiv' 'sdiv_ln1148_1' <Predicate = (icmp_ln49)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 90 <SV = 41> <Delay = 4.33>
-ST_90 : Operation 333 [20/21] (4.33ns)   --->   "%sdiv_ln1148_2 = sdiv i32 %sext_ln1148_1, i32 %N_read"   --->   Operation 333 'sdiv' 'sdiv_ln1148_2' <Predicate = (!icmp_ln58)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
-ST_90 : Operation 334 [21/22] (4.33ns)   --->   "%sdiv_ln1148_1 = sdiv i32 %sext_ln1148, i32 %N_read"   --->   Operation 334 'sdiv' 'sdiv_ln1148_1' <Predicate = (icmp_ln58)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_90 : Operation 333 [20/21] (4.33ns)   --->   "%sdiv_ln1148_2 = sdiv i32 %sext_ln1148_1, i32 %N_read"   --->   Operation 333 'sdiv' 'sdiv_ln1148_2' <Predicate = (!icmp_ln49)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_90 : Operation 334 [21/22] (4.33ns)   --->   "%sdiv_ln1148_1 = sdiv i32 %sext_ln1148, i32 %N_read"   --->   Operation 334 'sdiv' 'sdiv_ln1148_1' <Predicate = (icmp_ln49)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 91 <SV = 42> <Delay = 4.33>
-ST_91 : Operation 335 [19/21] (4.33ns)   --->   "%sdiv_ln1148_2 = sdiv i32 %sext_ln1148_1, i32 %N_read"   --->   Operation 335 'sdiv' 'sdiv_ln1148_2' <Predicate = (!icmp_ln58)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
-ST_91 : Operation 336 [20/22] (4.33ns)   --->   "%sdiv_ln1148_1 = sdiv i32 %sext_ln1148, i32 %N_read"   --->   Operation 336 'sdiv' 'sdiv_ln1148_1' <Predicate = (icmp_ln58)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_91 : Operation 335 [19/21] (4.33ns)   --->   "%sdiv_ln1148_2 = sdiv i32 %sext_ln1148_1, i32 %N_read"   --->   Operation 335 'sdiv' 'sdiv_ln1148_2' <Predicate = (!icmp_ln49)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_91 : Operation 336 [20/22] (4.33ns)   --->   "%sdiv_ln1148_1 = sdiv i32 %sext_ln1148, i32 %N_read"   --->   Operation 336 'sdiv' 'sdiv_ln1148_1' <Predicate = (icmp_ln49)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 92 <SV = 43> <Delay = 4.33>
-ST_92 : Operation 337 [18/21] (4.33ns)   --->   "%sdiv_ln1148_2 = sdiv i32 %sext_ln1148_1, i32 %N_read"   --->   Operation 337 'sdiv' 'sdiv_ln1148_2' <Predicate = (!icmp_ln58)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
-ST_92 : Operation 338 [19/22] (4.33ns)   --->   "%sdiv_ln1148_1 = sdiv i32 %sext_ln1148, i32 %N_read"   --->   Operation 338 'sdiv' 'sdiv_ln1148_1' <Predicate = (icmp_ln58)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_92 : Operation 337 [18/21] (4.33ns)   --->   "%sdiv_ln1148_2 = sdiv i32 %sext_ln1148_1, i32 %N_read"   --->   Operation 337 'sdiv' 'sdiv_ln1148_2' <Predicate = (!icmp_ln49)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_92 : Operation 338 [19/22] (4.33ns)   --->   "%sdiv_ln1148_1 = sdiv i32 %sext_ln1148, i32 %N_read"   --->   Operation 338 'sdiv' 'sdiv_ln1148_1' <Predicate = (icmp_ln49)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 93 <SV = 44> <Delay = 4.33>
-ST_93 : Operation 339 [17/21] (4.33ns)   --->   "%sdiv_ln1148_2 = sdiv i32 %sext_ln1148_1, i32 %N_read"   --->   Operation 339 'sdiv' 'sdiv_ln1148_2' <Predicate = (!icmp_ln58)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
-ST_93 : Operation 340 [18/22] (4.33ns)   --->   "%sdiv_ln1148_1 = sdiv i32 %sext_ln1148, i32 %N_read"   --->   Operation 340 'sdiv' 'sdiv_ln1148_1' <Predicate = (icmp_ln58)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_93 : Operation 339 [17/21] (4.33ns)   --->   "%sdiv_ln1148_2 = sdiv i32 %sext_ln1148_1, i32 %N_read"   --->   Operation 339 'sdiv' 'sdiv_ln1148_2' <Predicate = (!icmp_ln49)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_93 : Operation 340 [18/22] (4.33ns)   --->   "%sdiv_ln1148_1 = sdiv i32 %sext_ln1148, i32 %N_read"   --->   Operation 340 'sdiv' 'sdiv_ln1148_1' <Predicate = (icmp_ln49)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 94 <SV = 45> <Delay = 4.33>
-ST_94 : Operation 341 [16/21] (4.33ns)   --->   "%sdiv_ln1148_2 = sdiv i32 %sext_ln1148_1, i32 %N_read"   --->   Operation 341 'sdiv' 'sdiv_ln1148_2' <Predicate = (!icmp_ln58)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
-ST_94 : Operation 342 [17/22] (4.33ns)   --->   "%sdiv_ln1148_1 = sdiv i32 %sext_ln1148, i32 %N_read"   --->   Operation 342 'sdiv' 'sdiv_ln1148_1' <Predicate = (icmp_ln58)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_94 : Operation 341 [16/21] (4.33ns)   --->   "%sdiv_ln1148_2 = sdiv i32 %sext_ln1148_1, i32 %N_read"   --->   Operation 341 'sdiv' 'sdiv_ln1148_2' <Predicate = (!icmp_ln49)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_94 : Operation 342 [17/22] (4.33ns)   --->   "%sdiv_ln1148_1 = sdiv i32 %sext_ln1148, i32 %N_read"   --->   Operation 342 'sdiv' 'sdiv_ln1148_1' <Predicate = (icmp_ln49)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 95 <SV = 46> <Delay = 4.33>
-ST_95 : Operation 343 [15/21] (4.33ns)   --->   "%sdiv_ln1148_2 = sdiv i32 %sext_ln1148_1, i32 %N_read"   --->   Operation 343 'sdiv' 'sdiv_ln1148_2' <Predicate = (!icmp_ln58)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
-ST_95 : Operation 344 [16/22] (4.33ns)   --->   "%sdiv_ln1148_1 = sdiv i32 %sext_ln1148, i32 %N_read"   --->   Operation 344 'sdiv' 'sdiv_ln1148_1' <Predicate = (icmp_ln58)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_95 : Operation 343 [15/21] (4.33ns)   --->   "%sdiv_ln1148_2 = sdiv i32 %sext_ln1148_1, i32 %N_read"   --->   Operation 343 'sdiv' 'sdiv_ln1148_2' <Predicate = (!icmp_ln49)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_95 : Operation 344 [16/22] (4.33ns)   --->   "%sdiv_ln1148_1 = sdiv i32 %sext_ln1148, i32 %N_read"   --->   Operation 344 'sdiv' 'sdiv_ln1148_1' <Predicate = (icmp_ln49)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 96 <SV = 47> <Delay = 4.33>
-ST_96 : Operation 345 [14/21] (4.33ns)   --->   "%sdiv_ln1148_2 = sdiv i32 %sext_ln1148_1, i32 %N_read"   --->   Operation 345 'sdiv' 'sdiv_ln1148_2' <Predicate = (!icmp_ln58)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
-ST_96 : Operation 346 [15/22] (4.33ns)   --->   "%sdiv_ln1148_1 = sdiv i32 %sext_ln1148, i32 %N_read"   --->   Operation 346 'sdiv' 'sdiv_ln1148_1' <Predicate = (icmp_ln58)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_96 : Operation 345 [14/21] (4.33ns)   --->   "%sdiv_ln1148_2 = sdiv i32 %sext_ln1148_1, i32 %N_read"   --->   Operation 345 'sdiv' 'sdiv_ln1148_2' <Predicate = (!icmp_ln49)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_96 : Operation 346 [15/22] (4.33ns)   --->   "%sdiv_ln1148_1 = sdiv i32 %sext_ln1148, i32 %N_read"   --->   Operation 346 'sdiv' 'sdiv_ln1148_1' <Predicate = (icmp_ln49)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 97 <SV = 48> <Delay = 4.33>
-ST_97 : Operation 347 [13/21] (4.33ns)   --->   "%sdiv_ln1148_2 = sdiv i32 %sext_ln1148_1, i32 %N_read"   --->   Operation 347 'sdiv' 'sdiv_ln1148_2' <Predicate = (!icmp_ln58)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
-ST_97 : Operation 348 [14/22] (4.33ns)   --->   "%sdiv_ln1148_1 = sdiv i32 %sext_ln1148, i32 %N_read"   --->   Operation 348 'sdiv' 'sdiv_ln1148_1' <Predicate = (icmp_ln58)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_97 : Operation 347 [13/21] (4.33ns)   --->   "%sdiv_ln1148_2 = sdiv i32 %sext_ln1148_1, i32 %N_read"   --->   Operation 347 'sdiv' 'sdiv_ln1148_2' <Predicate = (!icmp_ln49)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_97 : Operation 348 [14/22] (4.33ns)   --->   "%sdiv_ln1148_1 = sdiv i32 %sext_ln1148, i32 %N_read"   --->   Operation 348 'sdiv' 'sdiv_ln1148_1' <Predicate = (icmp_ln49)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 98 <SV = 49> <Delay = 4.33>
-ST_98 : Operation 349 [12/21] (4.33ns)   --->   "%sdiv_ln1148_2 = sdiv i32 %sext_ln1148_1, i32 %N_read"   --->   Operation 349 'sdiv' 'sdiv_ln1148_2' <Predicate = (!icmp_ln58)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
-ST_98 : Operation 350 [13/22] (4.33ns)   --->   "%sdiv_ln1148_1 = sdiv i32 %sext_ln1148, i32 %N_read"   --->   Operation 350 'sdiv' 'sdiv_ln1148_1' <Predicate = (icmp_ln58)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_98 : Operation 349 [12/21] (4.33ns)   --->   "%sdiv_ln1148_2 = sdiv i32 %sext_ln1148_1, i32 %N_read"   --->   Operation 349 'sdiv' 'sdiv_ln1148_2' <Predicate = (!icmp_ln49)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_98 : Operation 350 [13/22] (4.33ns)   --->   "%sdiv_ln1148_1 = sdiv i32 %sext_ln1148, i32 %N_read"   --->   Operation 350 'sdiv' 'sdiv_ln1148_1' <Predicate = (icmp_ln49)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 99 <SV = 50> <Delay = 4.33>
-ST_99 : Operation 351 [11/21] (4.33ns)   --->   "%sdiv_ln1148_2 = sdiv i32 %sext_ln1148_1, i32 %N_read"   --->   Operation 351 'sdiv' 'sdiv_ln1148_2' <Predicate = (!icmp_ln58)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
-ST_99 : Operation 352 [12/22] (4.33ns)   --->   "%sdiv_ln1148_1 = sdiv i32 %sext_ln1148, i32 %N_read"   --->   Operation 352 'sdiv' 'sdiv_ln1148_1' <Predicate = (icmp_ln58)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_99 : Operation 351 [11/21] (4.33ns)   --->   "%sdiv_ln1148_2 = sdiv i32 %sext_ln1148_1, i32 %N_read"   --->   Operation 351 'sdiv' 'sdiv_ln1148_2' <Predicate = (!icmp_ln49)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_99 : Operation 352 [12/22] (4.33ns)   --->   "%sdiv_ln1148_1 = sdiv i32 %sext_ln1148, i32 %N_read"   --->   Operation 352 'sdiv' 'sdiv_ln1148_1' <Predicate = (icmp_ln49)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 100 <SV = 51> <Delay = 4.33>
-ST_100 : Operation 353 [10/21] (4.33ns)   --->   "%sdiv_ln1148_2 = sdiv i32 %sext_ln1148_1, i32 %N_read"   --->   Operation 353 'sdiv' 'sdiv_ln1148_2' <Predicate = (!icmp_ln58)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
-ST_100 : Operation 354 [11/22] (4.33ns)   --->   "%sdiv_ln1148_1 = sdiv i32 %sext_ln1148, i32 %N_read"   --->   Operation 354 'sdiv' 'sdiv_ln1148_1' <Predicate = (icmp_ln58)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_100 : Operation 353 [10/21] (4.33ns)   --->   "%sdiv_ln1148_2 = sdiv i32 %sext_ln1148_1, i32 %N_read"   --->   Operation 353 'sdiv' 'sdiv_ln1148_2' <Predicate = (!icmp_ln49)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_100 : Operation 354 [11/22] (4.33ns)   --->   "%sdiv_ln1148_1 = sdiv i32 %sext_ln1148, i32 %N_read"   --->   Operation 354 'sdiv' 'sdiv_ln1148_1' <Predicate = (icmp_ln49)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 101 <SV = 52> <Delay = 4.33>
-ST_101 : Operation 355 [9/21] (4.33ns)   --->   "%sdiv_ln1148_2 = sdiv i32 %sext_ln1148_1, i32 %N_read"   --->   Operation 355 'sdiv' 'sdiv_ln1148_2' <Predicate = (!icmp_ln58)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
-ST_101 : Operation 356 [10/22] (4.33ns)   --->   "%sdiv_ln1148_1 = sdiv i32 %sext_ln1148, i32 %N_read"   --->   Operation 356 'sdiv' 'sdiv_ln1148_1' <Predicate = (icmp_ln58)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_101 : Operation 355 [9/21] (4.33ns)   --->   "%sdiv_ln1148_2 = sdiv i32 %sext_ln1148_1, i32 %N_read"   --->   Operation 355 'sdiv' 'sdiv_ln1148_2' <Predicate = (!icmp_ln49)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_101 : Operation 356 [10/22] (4.33ns)   --->   "%sdiv_ln1148_1 = sdiv i32 %sext_ln1148, i32 %N_read"   --->   Operation 356 'sdiv' 'sdiv_ln1148_1' <Predicate = (icmp_ln49)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 102 <SV = 53> <Delay = 4.33>
-ST_102 : Operation 357 [8/21] (4.33ns)   --->   "%sdiv_ln1148_2 = sdiv i32 %sext_ln1148_1, i32 %N_read"   --->   Operation 357 'sdiv' 'sdiv_ln1148_2' <Predicate = (!icmp_ln58)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
-ST_102 : Operation 358 [9/22] (4.33ns)   --->   "%sdiv_ln1148_1 = sdiv i32 %sext_ln1148, i32 %N_read"   --->   Operation 358 'sdiv' 'sdiv_ln1148_1' <Predicate = (icmp_ln58)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_102 : Operation 357 [8/21] (4.33ns)   --->   "%sdiv_ln1148_2 = sdiv i32 %sext_ln1148_1, i32 %N_read"   --->   Operation 357 'sdiv' 'sdiv_ln1148_2' <Predicate = (!icmp_ln49)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_102 : Operation 358 [9/22] (4.33ns)   --->   "%sdiv_ln1148_1 = sdiv i32 %sext_ln1148, i32 %N_read"   --->   Operation 358 'sdiv' 'sdiv_ln1148_1' <Predicate = (icmp_ln49)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 103 <SV = 54> <Delay = 4.33>
-ST_103 : Operation 359 [7/21] (4.33ns)   --->   "%sdiv_ln1148_2 = sdiv i32 %sext_ln1148_1, i32 %N_read"   --->   Operation 359 'sdiv' 'sdiv_ln1148_2' <Predicate = (!icmp_ln58)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
-ST_103 : Operation 360 [8/22] (4.33ns)   --->   "%sdiv_ln1148_1 = sdiv i32 %sext_ln1148, i32 %N_read"   --->   Operation 360 'sdiv' 'sdiv_ln1148_1' <Predicate = (icmp_ln58)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_103 : Operation 359 [7/21] (4.33ns)   --->   "%sdiv_ln1148_2 = sdiv i32 %sext_ln1148_1, i32 %N_read"   --->   Operation 359 'sdiv' 'sdiv_ln1148_2' <Predicate = (!icmp_ln49)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_103 : Operation 360 [8/22] (4.33ns)   --->   "%sdiv_ln1148_1 = sdiv i32 %sext_ln1148, i32 %N_read"   --->   Operation 360 'sdiv' 'sdiv_ln1148_1' <Predicate = (icmp_ln49)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 104 <SV = 55> <Delay = 4.33>
-ST_104 : Operation 361 [6/21] (4.33ns)   --->   "%sdiv_ln1148_2 = sdiv i32 %sext_ln1148_1, i32 %N_read"   --->   Operation 361 'sdiv' 'sdiv_ln1148_2' <Predicate = (!icmp_ln58)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
-ST_104 : Operation 362 [7/22] (4.33ns)   --->   "%sdiv_ln1148_1 = sdiv i32 %sext_ln1148, i32 %N_read"   --->   Operation 362 'sdiv' 'sdiv_ln1148_1' <Predicate = (icmp_ln58)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_104 : Operation 361 [6/21] (4.33ns)   --->   "%sdiv_ln1148_2 = sdiv i32 %sext_ln1148_1, i32 %N_read"   --->   Operation 361 'sdiv' 'sdiv_ln1148_2' <Predicate = (!icmp_ln49)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_104 : Operation 362 [7/22] (4.33ns)   --->   "%sdiv_ln1148_1 = sdiv i32 %sext_ln1148, i32 %N_read"   --->   Operation 362 'sdiv' 'sdiv_ln1148_1' <Predicate = (icmp_ln49)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 105 <SV = 56> <Delay = 4.33>
-ST_105 : Operation 363 [5/21] (4.33ns)   --->   "%sdiv_ln1148_2 = sdiv i32 %sext_ln1148_1, i32 %N_read"   --->   Operation 363 'sdiv' 'sdiv_ln1148_2' <Predicate = (!icmp_ln58)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
-ST_105 : Operation 364 [6/22] (4.33ns)   --->   "%sdiv_ln1148_1 = sdiv i32 %sext_ln1148, i32 %N_read"   --->   Operation 364 'sdiv' 'sdiv_ln1148_1' <Predicate = (icmp_ln58)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_105 : Operation 363 [5/21] (4.33ns)   --->   "%sdiv_ln1148_2 = sdiv i32 %sext_ln1148_1, i32 %N_read"   --->   Operation 363 'sdiv' 'sdiv_ln1148_2' <Predicate = (!icmp_ln49)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_105 : Operation 364 [6/22] (4.33ns)   --->   "%sdiv_ln1148_1 = sdiv i32 %sext_ln1148, i32 %N_read"   --->   Operation 364 'sdiv' 'sdiv_ln1148_1' <Predicate = (icmp_ln49)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 106 <SV = 57> <Delay = 4.33>
-ST_106 : Operation 365 [4/21] (4.33ns)   --->   "%sdiv_ln1148_2 = sdiv i32 %sext_ln1148_1, i32 %N_read"   --->   Operation 365 'sdiv' 'sdiv_ln1148_2' <Predicate = (!icmp_ln58)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
-ST_106 : Operation 366 [5/22] (4.33ns)   --->   "%sdiv_ln1148_1 = sdiv i32 %sext_ln1148, i32 %N_read"   --->   Operation 366 'sdiv' 'sdiv_ln1148_1' <Predicate = (icmp_ln58)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_106 : Operation 365 [4/21] (4.33ns)   --->   "%sdiv_ln1148_2 = sdiv i32 %sext_ln1148_1, i32 %N_read"   --->   Operation 365 'sdiv' 'sdiv_ln1148_2' <Predicate = (!icmp_ln49)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_106 : Operation 366 [5/22] (4.33ns)   --->   "%sdiv_ln1148_1 = sdiv i32 %sext_ln1148, i32 %N_read"   --->   Operation 366 'sdiv' 'sdiv_ln1148_1' <Predicate = (icmp_ln49)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 107 <SV = 58> <Delay = 4.33>
-ST_107 : Operation 367 [3/21] (4.33ns)   --->   "%sdiv_ln1148_2 = sdiv i32 %sext_ln1148_1, i32 %N_read"   --->   Operation 367 'sdiv' 'sdiv_ln1148_2' <Predicate = (!icmp_ln58)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
-ST_107 : Operation 368 [4/22] (4.33ns)   --->   "%sdiv_ln1148_1 = sdiv i32 %sext_ln1148, i32 %N_read"   --->   Operation 368 'sdiv' 'sdiv_ln1148_1' <Predicate = (icmp_ln58)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_107 : Operation 367 [3/21] (4.33ns)   --->   "%sdiv_ln1148_2 = sdiv i32 %sext_ln1148_1, i32 %N_read"   --->   Operation 367 'sdiv' 'sdiv_ln1148_2' <Predicate = (!icmp_ln49)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_107 : Operation 368 [4/22] (4.33ns)   --->   "%sdiv_ln1148_1 = sdiv i32 %sext_ln1148, i32 %N_read"   --->   Operation 368 'sdiv' 'sdiv_ln1148_1' <Predicate = (icmp_ln49)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 108 <SV = 59> <Delay = 4.33>
-ST_108 : Operation 369 [2/21] (4.33ns)   --->   "%sdiv_ln1148_2 = sdiv i32 %sext_ln1148_1, i32 %N_read"   --->   Operation 369 'sdiv' 'sdiv_ln1148_2' <Predicate = (!icmp_ln58)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
-ST_108 : Operation 370 [3/22] (4.33ns)   --->   "%sdiv_ln1148_1 = sdiv i32 %sext_ln1148, i32 %N_read"   --->   Operation 370 'sdiv' 'sdiv_ln1148_1' <Predicate = (icmp_ln58)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_108 : Operation 369 [2/21] (4.33ns)   --->   "%sdiv_ln1148_2 = sdiv i32 %sext_ln1148_1, i32 %N_read"   --->   Operation 369 'sdiv' 'sdiv_ln1148_2' <Predicate = (!icmp_ln49)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_108 : Operation 370 [3/22] (4.33ns)   --->   "%sdiv_ln1148_1 = sdiv i32 %sext_ln1148, i32 %N_read"   --->   Operation 370 'sdiv' 'sdiv_ln1148_1' <Predicate = (icmp_ln49)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 109 <SV = 60> <Delay = 4.33>
-ST_109 : Operation 371 [1/21] (4.33ns)   --->   "%sdiv_ln1148_2 = sdiv i32 %sext_ln1148_1, i32 %N_read"   --->   Operation 371 'sdiv' 'sdiv_ln1148_2' <Predicate = (!icmp_ln58)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
-ST_109 : Operation 372 [2/22] (4.33ns)   --->   "%sdiv_ln1148_1 = sdiv i32 %sext_ln1148, i32 %N_read"   --->   Operation 372 'sdiv' 'sdiv_ln1148_1' <Predicate = (icmp_ln58)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_109 : Operation 371 [1/21] (4.33ns)   --->   "%sdiv_ln1148_2 = sdiv i32 %sext_ln1148_1, i32 %N_read"   --->   Operation 371 'sdiv' 'sdiv_ln1148_2' <Predicate = (!icmp_ln49)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_109 : Operation 372 [2/22] (4.33ns)   --->   "%sdiv_ln1148_1 = sdiv i32 %sext_ln1148, i32 %N_read"   --->   Operation 372 'sdiv' 'sdiv_ln1148_1' <Predicate = (icmp_ln49)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 110 <SV = 61> <Delay = 4.33>
-ST_110 : Operation 373 [1/22] (4.33ns)   --->   "%sdiv_ln1148_1 = sdiv i32 %sext_ln1148, i32 %N_read"   --->   Operation 373 'sdiv' 'sdiv_ln1148_1' <Predicate = (icmp_ln58)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_110 : Operation 373 [1/22] (4.33ns)   --->   "%sdiv_ln1148_1 = sdiv i32 %sext_ln1148, i32 %N_read"   --->   Operation 373 'sdiv' 'sdiv_ln1148_1' <Predicate = (icmp_ln49)> <Delay = 4.33> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 21> <II = 1> <Delay = 4.33> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 111 <SV = 62> <Delay = 3.25>
-ST_111 : Operation 374 [1/1] (0.00ns)   --->   "%trunc_ln703_2 = trunc i16 %sdiv_ln1148_2"   --->   Operation 374 'trunc' 'trunc_ln703_2' <Predicate = (!icmp_ln58)> <Delay = 0.00>
-ST_111 : Operation 375 [1/1] (0.00ns)   --->   "%dxbuff_V_addr_1 = getelementptr i16 %dxbuff_V, i64 0, i64 %i_4_cast" [lossfun/main.cpp:62]   --->   Operation 375 'getelementptr' 'dxbuff_V_addr_1' <Predicate = (!icmp_ln58)> <Delay = 0.00>
-ST_111 : Operation 376 [1/1] (3.25ns)   --->   "%store_ln62 = store i16 %trunc_ln703_2, i7 %dxbuff_V_addr_1" [lossfun/main.cpp:62]   --->   Operation 376 'store' 'store_ln62' <Predicate = (!icmp_ln58)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 100> <RAM>
-ST_111 : Operation 377 [1/1] (0.00ns)   --->   "%br_ln0 = br void"   --->   Operation 377 'br' 'br_ln0' <Predicate = (!icmp_ln58)> <Delay = 0.00>
-ST_111 : Operation 378 [1/1] (0.00ns)   --->   "%trunc_ln703_1 = trunc i16 %sdiv_ln1148_1"   --->   Operation 378 'trunc' 'trunc_ln703_1' <Predicate = (icmp_ln58)> <Delay = 0.00>
-ST_111 : Operation 379 [1/1] (3.25ns)   --->   "%store_ln59 = store i16 %trunc_ln703_1, i7 %dxbuff_V_addr" [lossfun/main.cpp:59]   --->   Operation 379 'store' 'store_ln59' <Predicate = (icmp_ln58)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 100> <RAM>
-ST_111 : Operation 380 [1/1] (0.00ns)   --->   "%br_ln60 = br void" [lossfun/main.cpp:60]   --->   Operation 380 'br' 'br_ln60' <Predicate = (icmp_ln58)> <Delay = 0.00>
+ST_111 : Operation 374 [1/1] (0.00ns)   --->   "%trunc_ln703_2 = trunc i16 %sdiv_ln1148_2"   --->   Operation 374 'trunc' 'trunc_ln703_2' <Predicate = (!icmp_ln49)> <Delay = 0.00>
+ST_111 : Operation 375 [1/1] (0.00ns)   --->   "%dxbuff_V_addr_1 = getelementptr i16 %dxbuff_V, i64 0, i64 %i_4_cast" [lossfun/main.cpp:53]   --->   Operation 375 'getelementptr' 'dxbuff_V_addr_1' <Predicate = (!icmp_ln49)> <Delay = 0.00>
+ST_111 : Operation 376 [1/1] (3.25ns)   --->   "%store_ln53 = store i16 %trunc_ln703_2, i7 %dxbuff_V_addr_1" [lossfun/main.cpp:53]   --->   Operation 376 'store' 'store_ln53' <Predicate = (!icmp_ln49)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 100> <RAM>
+ST_111 : Operation 377 [1/1] (0.00ns)   --->   "%br_ln0 = br void"   --->   Operation 377 'br' 'br_ln0' <Predicate = (!icmp_ln49)> <Delay = 0.00>
+ST_111 : Operation 378 [1/1] (0.00ns)   --->   "%trunc_ln703_1 = trunc i16 %sdiv_ln1148_1"   --->   Operation 378 'trunc' 'trunc_ln703_1' <Predicate = (icmp_ln49)> <Delay = 0.00>
+ST_111 : Operation 379 [1/1] (3.25ns)   --->   "%store_ln50 = store i16 %trunc_ln703_1, i7 %dxbuff_V_addr" [lossfun/main.cpp:50]   --->   Operation 379 'store' 'store_ln50' <Predicate = (icmp_ln49)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 100> <RAM>
+ST_111 : Operation 380 [1/1] (0.00ns)   --->   "%br_ln51 = br void" [lossfun/main.cpp:51]   --->   Operation 380 'br' 'br_ln51' <Predicate = (icmp_ln49)> <Delay = 0.00>
 
 State 112 <SV = 39> <Delay = 7.30>
-ST_112 : Operation 381 [1/1] (0.00ns)   --->   "%br_ln66 = br i1 %icmp_ln29, void %loop-memcpy-residual-header, void %loop-memcpy-expansion.preheader" [lossfun/main.cpp:66]   --->   Operation 381 'br' 'br_ln66' <Predicate = true> <Delay = 0.00>
-ST_112 : Operation 382 [1/1] (0.00ns)   --->   "%p_cast2 = partselect i63 @_ssdm_op_PartSelect.i63.i64.i32.i32, i64 %dx_read, i32 1, i32 63"   --->   Operation 382 'partselect' 'p_cast2' <Predicate = (icmp_ln29)> <Delay = 0.00>
-ST_112 : Operation 383 [1/1] (0.00ns)   --->   "%p_cast2_cast = sext i63 %p_cast2"   --->   Operation 383 'sext' 'p_cast2_cast' <Predicate = (icmp_ln29)> <Delay = 0.00>
-ST_112 : Operation 384 [1/1] (0.00ns)   --->   "%gmem_addr_2 = getelementptr i16 %gmem, i64 %p_cast2_cast"   --->   Operation 384 'getelementptr' 'gmem_addr_2' <Predicate = (icmp_ln29)> <Delay = 0.00>
-ST_112 : Operation 385 [1/1] (7.30ns)   --->   "%empty_48 = writereq i1 @_ssdm_op_WriteReq.m_axi.p1i16, i64 %gmem_addr_2, i32 %x_size_read"   --->   Operation 385 'writereq' 'empty_48' <Predicate = (icmp_ln29)> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
-ST_112 : Operation 386 [1/1] (1.58ns)   --->   "%br_ln0 = br void %loop-memcpy-expansion"   --->   Operation 386 'br' 'br_ln0' <Predicate = (icmp_ln29)> <Delay = 1.58>
+ST_112 : Operation 381 [1/1] (0.00ns)   --->   "%br_ln57 = br i1 %icmp_ln20, void %loop-memcpy-residual-header, void %loop-memcpy-expansion.preheader" [lossfun/main.cpp:57]   --->   Operation 381 'br' 'br_ln57' <Predicate = true> <Delay = 0.00>
+ST_112 : Operation 382 [1/1] (0.00ns)   --->   "%p_cast2 = partselect i63 @_ssdm_op_PartSelect.i63.i64.i32.i32, i64 %dx_read, i32 1, i32 63"   --->   Operation 382 'partselect' 'p_cast2' <Predicate = (icmp_ln20)> <Delay = 0.00>
+ST_112 : Operation 383 [1/1] (0.00ns)   --->   "%p_cast2_cast = sext i63 %p_cast2"   --->   Operation 383 'sext' 'p_cast2_cast' <Predicate = (icmp_ln20)> <Delay = 0.00>
+ST_112 : Operation 384 [1/1] (0.00ns)   --->   "%gmem_addr_2 = getelementptr i16 %gmem, i64 %p_cast2_cast"   --->   Operation 384 'getelementptr' 'gmem_addr_2' <Predicate = (icmp_ln20)> <Delay = 0.00>
+ST_112 : Operation 385 [1/1] (7.30ns)   --->   "%empty_48 = writereq i1 @_ssdm_op_WriteReq.m_axi.p1i16, i64 %gmem_addr_2, i32 %x_size_read"   --->   Operation 385 'writereq' 'empty_48' <Predicate = (icmp_ln20)> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_112 : Operation 386 [1/1] (1.58ns)   --->   "%br_ln0 = br void %loop-memcpy-expansion"   --->   Operation 386 'br' 'br_ln0' <Predicate = (icmp_ln20)> <Delay = 1.58>
 
 State 113 <SV = 40> <Delay = 3.25>
 ST_113 : Operation 387 [1/1] (0.00ns)   --->   "%loop_index = phi i7 %empty_49, void %loop-memcpy-expansion.split, i7 0, void %loop-memcpy-expansion.preheader"   --->   Operation 387 'phi' 'loop_index' <Predicate = true> <Delay = 0.00>
@@ -1109,21 +1109,21 @@ ST_115 : Operation 398 [1/1] (7.30ns)   --->   "%write_ln0 = write void @_ssdm_o
 ST_115 : Operation 399 [1/1] (0.00ns)   --->   "%br_ln0 = br void %loop-memcpy-expansion"   --->   Operation 399 'br' 'br_ln0' <Predicate = (!exitcond2)> <Delay = 0.00>
 
 State 116 <SV = 41> <Delay = 7.30>
-ST_116 : Operation 400 [5/5] (7.30ns)   --->   "%empty_51 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i16, i64 %gmem_addr_2" [lossfun/main.cpp:70]   --->   Operation 400 'writeresp' 'empty_51' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_116 : Operation 400 [5/5] (7.30ns)   --->   "%empty_51 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i16, i64 %gmem_addr_2" [lossfun/main.cpp:61]   --->   Operation 400 'writeresp' 'empty_51' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 117 <SV = 42> <Delay = 7.30>
-ST_117 : Operation 401 [4/5] (7.30ns)   --->   "%empty_51 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i16, i64 %gmem_addr_2" [lossfun/main.cpp:70]   --->   Operation 401 'writeresp' 'empty_51' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_117 : Operation 401 [4/5] (7.30ns)   --->   "%empty_51 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i16, i64 %gmem_addr_2" [lossfun/main.cpp:61]   --->   Operation 401 'writeresp' 'empty_51' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 118 <SV = 43> <Delay = 7.30>
-ST_118 : Operation 402 [3/5] (7.30ns)   --->   "%empty_51 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i16, i64 %gmem_addr_2" [lossfun/main.cpp:70]   --->   Operation 402 'writeresp' 'empty_51' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_118 : Operation 402 [3/5] (7.30ns)   --->   "%empty_51 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i16, i64 %gmem_addr_2" [lossfun/main.cpp:61]   --->   Operation 402 'writeresp' 'empty_51' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 119 <SV = 44> <Delay = 7.30>
-ST_119 : Operation 403 [2/5] (7.30ns)   --->   "%empty_51 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i16, i64 %gmem_addr_2" [lossfun/main.cpp:70]   --->   Operation 403 'writeresp' 'empty_51' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_119 : Operation 403 [2/5] (7.30ns)   --->   "%empty_51 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i16, i64 %gmem_addr_2" [lossfun/main.cpp:61]   --->   Operation 403 'writeresp' 'empty_51' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 120 <SV = 45> <Delay = 7.30>
-ST_120 : Operation 404 [1/5] (7.30ns)   --->   "%empty_51 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i16, i64 %gmem_addr_2" [lossfun/main.cpp:70]   --->   Operation 404 'writeresp' 'empty_51' <Predicate = (icmp_ln29)> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
-ST_120 : Operation 405 [1/1] (0.00ns)   --->   "%br_ln70 = br void %loop-memcpy-residual-header" [lossfun/main.cpp:70]   --->   Operation 405 'br' 'br_ln70' <Predicate = (icmp_ln29)> <Delay = 0.00>
-ST_120 : Operation 406 [1/1] (0.00ns)   --->   "%ret_ln70 = ret i16 %loss_V" [lossfun/main.cpp:70]   --->   Operation 406 'ret' 'ret_ln70' <Predicate = true> <Delay = 0.00>
+ST_120 : Operation 404 [1/5] (7.30ns)   --->   "%empty_51 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i16, i64 %gmem_addr_2" [lossfun/main.cpp:61]   --->   Operation 404 'writeresp' 'empty_51' <Predicate = (icmp_ln20)> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_120 : Operation 405 [1/1] (0.00ns)   --->   "%br_ln61 = br void %loop-memcpy-residual-header" [lossfun/main.cpp:61]   --->   Operation 405 'br' 'br_ln61' <Predicate = (icmp_ln20)> <Delay = 0.00>
+ST_120 : Operation 406 [1/1] (0.00ns)   --->   "%ret_ln61 = ret i16 %loss_V" [lossfun/main.cpp:61]   --->   Operation 406 'ret' 'ret_ln61' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -1182,8 +1182,8 @@ log_probs_V          (alloca           ) [ 0011111111111111111111111111111111111
 probs_V              (alloca           ) [ 0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111000000000]
 xbuff_V              (alloca           ) [ 0011111111111111111111111110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 dxbuff_V             (alloca           ) [ 0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100000]
-icmp_ln29            (icmp             ) [ 0111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111]
-br_ln29              (br               ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
+icmp_ln20            (icmp             ) [ 0111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111]
+br_ln20              (br               ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 p_cast               (partselect       ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 p_cast_cast          (sext             ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 gmem_addr            (getelementptr    ) [ 0001111111110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
@@ -1203,99 +1203,99 @@ store_ln0            (store            ) [ 0000000000000000000000000000000000000
 br_ln0               (br               ) [ 0000000011110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 br_ln0               (br               ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 trunc_ln             (partselect       ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
-sext_ln34            (sext             ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
+sext_ln25            (sext             ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 gmem_addr_1          (getelementptr    ) [ 0000000000000111111100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 max_V_req            (readreq          ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 max_V                (read             ) [ 0000000000000000000011100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
-br_ln35              (br               ) [ 0000000000000000000011100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
+br_ln26              (br               ) [ 0000000000000000000011100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 i                    (phi              ) [ 0000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 max_V_1              (phi              ) [ 0000000000000000000001111110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 specpipeline_ln0     (specpipeline     ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
-icmp_ln35            (icmp             ) [ 0000000000000000000001100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
-br_ln35              (br               ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
-add_ln35             (add              ) [ 0000000000000000000011100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
+icmp_ln26            (icmp             ) [ 0000000000000000000001100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
+br_ln26              (br               ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
+add_ln26             (add              ) [ 0000000000000000000011100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 i_cast4              (zext             ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 xbuff_V_addr_1       (getelementptr    ) [ 0000000000000000000001100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
-specloopname_ln34    (specloopname     ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
+specloopname_ln25    (specloopname     ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 xbuff_V_load         (load             ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 icmp_ln1494          (icmp             ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 max_V_2              (select           ) [ 0000000000000000000011100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 br_ln0               (br               ) [ 0000000000000000000011100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
-icmp_ln41            (icmp             ) [ 0000000000000000000000011111111111111111111111111111111111111111111111111110000000000000000000000000000000000000000000000]
-br_ln41              (br               ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
+icmp_ln32            (icmp             ) [ 0000000000000000000000011111111111111111111111111111111111111111111111111110000000000000000000000000000000000000000000000]
+br_ln32              (br               ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 br_ln0               (br               ) [ 0000000000000000000000011110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 i_1                  (phi              ) [ 0000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
-add_ln41             (add              ) [ 0000000000000000000000011110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
+add_ln32             (add              ) [ 0000000000000000000000011110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 i_1_cast             (zext             ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 specpipeline_ln0     (specpipeline     ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
-icmp_ln41_1          (icmp             ) [ 0000000000000000000000001110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
+icmp_ln32_1          (icmp             ) [ 0000000000000000000000001110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 empty_44             (speclooptripcount) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
-br_ln41              (br               ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
+br_ln32              (br               ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 i_1_cast5            (zext             ) [ 0000000000000000000000001110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 xbuff_V_addr_2       (getelementptr    ) [ 0000000000000000000000001100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 xbuff_V_load_1       (load             ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 sub_ln703            (sub              ) [ 0000000000000000000000001010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
-specloopname_ln41    (specloopname     ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
+specloopname_ln32    (specloopname     ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 log_probs_V_addr     (getelementptr    ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
-store_ln42           (store            ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
+store_ln33           (store            ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 br_ln0               (br               ) [ 0000000000000000000000011110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 br_ln0               (br               ) [ 0000000000000000000000000001111111111000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 i_2                  (phi              ) [ 0000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 sum_V                (phi              ) [ 0000000000000000000000000000111111111100000000000000000000000000000000000000000000000000000000000000000000000000000000000]
-add_ln47             (add              ) [ 0000000000000000000000000001111111111000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
+add_ln38             (add              ) [ 0000000000000000000000000001111111111000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 i_2_cast             (zext             ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 specpipeline_ln0     (specpipeline     ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
-icmp_ln47            (icmp             ) [ 0000000000000000000000000000111111111000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
+icmp_ln38            (icmp             ) [ 0000000000000000000000000000111111111000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 empty_45             (speclooptripcount) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
-br_ln47              (br               ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
+br_ln38              (br               ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 i_2_cast6            (zext             ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 log_probs_V_addr_1   (getelementptr    ) [ 0000000000000000000000000000110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 x_V                  (load             ) [ 0000000000000000000000000000101000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 op2_V                (call             ) [ 0000000000000000000000000000100000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
-specloopname_ln45    (specloopname     ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
+specloopname_ln36    (specloopname     ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 sum_V_1              (add              ) [ 0000000000000000000000000001111111111000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 br_ln0               (br               ) [ 0000000000000000000000000001111111111000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 sum_V_cast           (sext             ) [ 0000000000000000000000000000000000000011111111111111111111111111111111111100000000000000000000000000000000000000000000000]
 br_ln0               (br               ) [ 0000000000000000000000000000000000000111111111111111111111111111111111111100000000000000000000000000000000000000000000000]
 i_3                  (phi              ) [ 0000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000]
-add_ln51             (add              ) [ 0000000000000000000000000000000000000111111111111111111111111111111111111100000000000000000000000000000000000000000000000]
+add_ln42             (add              ) [ 0000000000000000000000000000000000000111111111111111111111111111111111111100000000000000000000000000000000000000000000000]
 i_3_cast             (zext             ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 specpipeline_ln0     (specpipeline     ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
-icmp_ln51            (icmp             ) [ 0000000000000000000000000000000000000011111111111111111111111111111111111100000000000000000000000000000000000000000000000]
+icmp_ln42            (icmp             ) [ 0000000000000000000000000000000000000011111111111111111111111111111111111100000000000000000000000000000000000000000000000]
 empty_46             (speclooptripcount) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
-br_ln51              (br               ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
+br_ln42              (br               ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 i_3_cast7            (zext             ) [ 0000000000000000000000000000000000000011111111111111111111111111111111111100000000000000000000000000000000000000000000000]
 log_probs_V_addr_2   (getelementptr    ) [ 0000000000000000000000000000000000000011000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 x_V_1                (load             ) [ 0000000000000000000000000000000000000010100000000000000000000000000000000000000000000000000000000000000000000000000000000]
 op_V_1               (call             ) [ 0000000000000000000000000000000000000010000000100000000000000000000000000000000000000000000000000000000000000000000000000]
 t                    (bitconcatenate   ) [ 0000000000000000000000000000000000000010000000011111111111111111111111111000000000000000000000000000000000000000000000000]
 sdiv_ln1148          (sdiv             ) [ 0000000000000000000000000000000000000010000000000000000000000000000000000100000000000000000000000000000000000000000000000]
-specloopname_ln51    (specloopname     ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
+specloopname_ln42    (specloopname     ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 trunc_ln703          (trunc            ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 probs_V_addr         (getelementptr    ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
-store_ln52           (store            ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
+store_ln43           (store            ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 br_ln0               (br               ) [ 0000000000000000000000000000000000000111111111111111111111111111111111111100000000000000000000000000000000000000000000000]
 br_ln0               (br               ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
-zext_ln55            (zext             ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
+zext_ln46            (zext             ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 probs_V_addr_1       (getelementptr    ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000]
 dxbuff_V_addr        (getelementptr    ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000001111111111111111111111111111111111111000000000]
 x_V_2                (load             ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000]
 op2_V_1              (call             ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 loss_V               (sub              ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111111111111111111111111111111111]
-br_ln57              (br               ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111111111111111111111000000000]
+br_ln48              (br               ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111111111111111111111000000000]
 i_4                  (phi              ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111111111111111111111111000000000]
-add_ln57             (add              ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111111111111111111111000000000]
+add_ln48             (add              ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111111111111111111111000000000]
 i_4_cast4            (zext             ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 specpipeline_ln0     (specpipeline     ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
-icmp_ln57            (icmp             ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111111111111111111111111000000000]
+icmp_ln48            (icmp             ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111111111111111111111111000000000]
 empty_47             (speclooptripcount) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
-br_ln57              (br               ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
+br_ln48              (br               ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 i_4_cast             (zext             ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111111111111111111111111000000000]
-icmp_ln58            (icmp             ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111111111111111111111111000000000]
+icmp_ln49            (icmp             ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111111111111111111111111000000000]
 probs_V_addr_2       (getelementptr    ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000001100000000000000000000000000000000]
-br_ln58              (br               ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
+br_ln49              (br               ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 br_ln0               (br               ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111111111111111111111000000000]
-specloopname_ln57    (specloopname     ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
+specloopname_ln48    (specloopname     ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 t_V                  (load             ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000001010000000000000000000000000000000]
 sext_ln1148_1        (sext             ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000001001111111111111111111100000000000]
 sext_ln2221          (sext             ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
@@ -1305,12 +1305,12 @@ sdiv_ln1148_2        (sdiv             ) [ 0000000000000000000000000000000000000
 sdiv_ln1148_1        (sdiv             ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000001000000000]
 trunc_ln703_2        (trunc            ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 dxbuff_V_addr_1      (getelementptr    ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
-store_ln62           (store            ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
+store_ln53           (store            ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 br_ln0               (br               ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 trunc_ln703_1        (trunc            ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
-store_ln59           (store            ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
-br_ln60              (br               ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
-br_ln66              (br               ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
+store_ln50           (store            ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
+br_ln51              (br               ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
+br_ln57              (br               ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 p_cast2              (partselect       ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 p_cast2_cast         (sext             ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 gmem_addr_2          (getelementptr    ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111]
@@ -1329,8 +1329,8 @@ dxbuff_V_load        (load             ) [ 0000000000000000000000000000000000000
 write_ln0            (write            ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 br_ln0               (br               ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000111100000]
 empty_51             (writeresp        ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
-br_ln70              (br               ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
-ret_ln70             (ret              ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
+br_ln61              (br               ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
+ret_ln61             (ret              ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 </LifeTime>
 
 <model>
@@ -2200,7 +2200,7 @@ ret_ln70             (ret              ) [ 0000000000000000000000000000000000000
 </pin_list>
 <bind>
 <opcode="load(27) store(28) " fcode="load"/>
-<opset="store_ln42/26 x_V/28 x_V_1/38 "/>
+<opset="store_ln33/26 x_V/28 x_V_1/38 "/>
 </bind>
 </comp>
 
@@ -2252,7 +2252,7 @@ ret_ln70             (ret              ) [ 0000000000000000000000000000000000000
 </pin_list>
 <bind>
 <opcode="load(27) store(28) " fcode="load"/>
-<opset="store_ln52/73 x_V_2/74 t_V/87 "/>
+<opset="store_ln43/73 x_V_2/74 t_V/87 "/>
 </bind>
 </comp>
 
@@ -2317,7 +2317,7 @@ ret_ln70             (ret              ) [ 0000000000000000000000000000000000000
 </pin_list>
 <bind>
 <opcode="load(27) store(28) " fcode="load"/>
-<opset="store_ln62/111 store_ln59/111 dxbuff_V_load/113 "/>
+<opset="store_ln53/111 store_ln50/111 dxbuff_V_load/113 "/>
 </bind>
 </comp>
 
@@ -2624,7 +2624,7 @@ ret_ln70             (ret              ) [ 0000000000000000000000000000000000000
 </bind>
 </comp>
 
-<comp id="466" class="1004" name="icmp_ln29_fu_466">
+<comp id="466" class="1004" name="icmp_ln20_fu_466">
 <pin_list>
 <pin id="467" dir="0" index="0" bw="32" slack="0"/>
 <pin id="468" dir="0" index="1" bw="32" slack="0"/>
@@ -2632,7 +2632,7 @@ ret_ln70             (ret              ) [ 0000000000000000000000000000000000000
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln29/1 "/>
+<opset="icmp_ln20/1 "/>
 </bind>
 </comp>
 
@@ -2705,14 +2705,14 @@ ret_ln70             (ret              ) [ 0000000000000000000000000000000000000
 </bind>
 </comp>
 
-<comp id="503" class="1004" name="sext_ln34_fu_503">
+<comp id="503" class="1004" name="sext_ln25_fu_503">
 <pin_list>
 <pin id="504" dir="0" index="0" bw="63" slack="0"/>
 <pin id="505" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="sext(35) " fcode="sext"/>
-<opset="sext_ln34/12 "/>
+<opset="sext_ln25/12 "/>
 </bind>
 </comp>
 
@@ -2728,7 +2728,7 @@ ret_ln70             (ret              ) [ 0000000000000000000000000000000000000
 </bind>
 </comp>
 
-<comp id="514" class="1004" name="icmp_ln35_fu_514">
+<comp id="514" class="1004" name="icmp_ln26_fu_514">
 <pin_list>
 <pin id="515" dir="0" index="0" bw="32" slack="0"/>
 <pin id="516" dir="0" index="1" bw="32" slack="18"/>
@@ -2736,11 +2736,11 @@ ret_ln70             (ret              ) [ 0000000000000000000000000000000000000
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln35/21 "/>
+<opset="icmp_ln26/21 "/>
 </bind>
 </comp>
 
-<comp id="519" class="1004" name="add_ln35_fu_519">
+<comp id="519" class="1004" name="add_ln26_fu_519">
 <pin_list>
 <pin id="520" dir="0" index="0" bw="32" slack="0"/>
 <pin id="521" dir="0" index="1" bw="1" slack="0"/>
@@ -2748,7 +2748,7 @@ ret_ln70             (ret              ) [ 0000000000000000000000000000000000000
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="add_ln35/21 "/>
+<opset="add_ln26/21 "/>
 </bind>
 </comp>
 
@@ -2788,7 +2788,7 @@ ret_ln70             (ret              ) [ 0000000000000000000000000000000000000
 </bind>
 </comp>
 
-<comp id="544" class="1004" name="icmp_ln41_fu_544">
+<comp id="544" class="1004" name="icmp_ln32_fu_544">
 <pin_list>
 <pin id="545" dir="0" index="0" bw="32" slack="19"/>
 <pin id="546" dir="0" index="1" bw="32" slack="0"/>
@@ -2796,11 +2796,11 @@ ret_ln70             (ret              ) [ 0000000000000000000000000000000000000
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln41/23 "/>
+<opset="icmp_ln32/23 "/>
 </bind>
 </comp>
 
-<comp id="549" class="1004" name="add_ln41_fu_549">
+<comp id="549" class="1004" name="add_ln32_fu_549">
 <pin_list>
 <pin id="550" dir="0" index="0" bw="7" slack="0"/>
 <pin id="551" dir="0" index="1" bw="1" slack="0"/>
@@ -2808,7 +2808,7 @@ ret_ln70             (ret              ) [ 0000000000000000000000000000000000000
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="add_ln41/24 "/>
+<opset="add_ln32/24 "/>
 </bind>
 </comp>
 
@@ -2823,7 +2823,7 @@ ret_ln70             (ret              ) [ 0000000000000000000000000000000000000
 </bind>
 </comp>
 
-<comp id="559" class="1004" name="icmp_ln41_1_fu_559">
+<comp id="559" class="1004" name="icmp_ln32_1_fu_559">
 <pin_list>
 <pin id="560" dir="0" index="0" bw="32" slack="0"/>
 <pin id="561" dir="0" index="1" bw="32" slack="20"/>
@@ -2831,7 +2831,7 @@ ret_ln70             (ret              ) [ 0000000000000000000000000000000000000
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln41_1/24 "/>
+<opset="icmp_ln32_1/24 "/>
 </bind>
 </comp>
 
@@ -2858,7 +2858,7 @@ ret_ln70             (ret              ) [ 0000000000000000000000000000000000000
 </bind>
 </comp>
 
-<comp id="575" class="1004" name="add_ln47_fu_575">
+<comp id="575" class="1004" name="add_ln38_fu_575">
 <pin_list>
 <pin id="576" dir="0" index="0" bw="7" slack="0"/>
 <pin id="577" dir="0" index="1" bw="1" slack="0"/>
@@ -2866,7 +2866,7 @@ ret_ln70             (ret              ) [ 0000000000000000000000000000000000000
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="add_ln47/28 "/>
+<opset="add_ln38/28 "/>
 </bind>
 </comp>
 
@@ -2881,7 +2881,7 @@ ret_ln70             (ret              ) [ 0000000000000000000000000000000000000
 </bind>
 </comp>
 
-<comp id="585" class="1004" name="icmp_ln47_fu_585">
+<comp id="585" class="1004" name="icmp_ln38_fu_585">
 <pin_list>
 <pin id="586" dir="0" index="0" bw="32" slack="0"/>
 <pin id="587" dir="0" index="1" bw="32" slack="22"/>
@@ -2889,7 +2889,7 @@ ret_ln70             (ret              ) [ 0000000000000000000000000000000000000
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln47/28 "/>
+<opset="icmp_ln38/28 "/>
 </bind>
 </comp>
 
@@ -2927,7 +2927,7 @@ ret_ln70             (ret              ) [ 0000000000000000000000000000000000000
 </bind>
 </comp>
 
-<comp id="605" class="1004" name="add_ln51_fu_605">
+<comp id="605" class="1004" name="add_ln42_fu_605">
 <pin_list>
 <pin id="606" dir="0" index="0" bw="7" slack="0"/>
 <pin id="607" dir="0" index="1" bw="1" slack="0"/>
@@ -2935,7 +2935,7 @@ ret_ln70             (ret              ) [ 0000000000000000000000000000000000000
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="add_ln51/38 "/>
+<opset="add_ln42/38 "/>
 </bind>
 </comp>
 
@@ -2950,7 +2950,7 @@ ret_ln70             (ret              ) [ 0000000000000000000000000000000000000
 </bind>
 </comp>
 
-<comp id="615" class="1004" name="icmp_ln51_fu_615">
+<comp id="615" class="1004" name="icmp_ln42_fu_615">
 <pin_list>
 <pin id="616" dir="0" index="0" bw="32" slack="0"/>
 <pin id="617" dir="0" index="1" bw="32" slack="24"/>
@@ -2958,7 +2958,7 @@ ret_ln70             (ret              ) [ 0000000000000000000000000000000000000
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln51/38 "/>
+<opset="icmp_ln42/38 "/>
 </bind>
 </comp>
 
@@ -3009,14 +3009,14 @@ ret_ln70             (ret              ) [ 0000000000000000000000000000000000000
 </bind>
 </comp>
 
-<comp id="642" class="1004" name="zext_ln55_fu_642">
+<comp id="642" class="1004" name="zext_ln46_fu_642">
 <pin_list>
 <pin id="643" dir="0" index="0" bw="32" slack="25"/>
 <pin id="644" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln55/74 "/>
+<opset="zext_ln46/74 "/>
 </bind>
 </comp>
 
@@ -3032,7 +3032,7 @@ ret_ln70             (ret              ) [ 0000000000000000000000000000000000000
 </bind>
 </comp>
 
-<comp id="653" class="1004" name="add_ln57_fu_653">
+<comp id="653" class="1004" name="add_ln48_fu_653">
 <pin_list>
 <pin id="654" dir="0" index="0" bw="7" slack="0"/>
 <pin id="655" dir="0" index="1" bw="1" slack="0"/>
@@ -3040,7 +3040,7 @@ ret_ln70             (ret              ) [ 0000000000000000000000000000000000000
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="add_ln57/87 "/>
+<opset="add_ln48/87 "/>
 </bind>
 </comp>
 
@@ -3055,7 +3055,7 @@ ret_ln70             (ret              ) [ 0000000000000000000000000000000000000
 </bind>
 </comp>
 
-<comp id="663" class="1004" name="icmp_ln57_fu_663">
+<comp id="663" class="1004" name="icmp_ln48_fu_663">
 <pin_list>
 <pin id="664" dir="0" index="0" bw="32" slack="0"/>
 <pin id="665" dir="0" index="1" bw="32" slack="38"/>
@@ -3063,7 +3063,7 @@ ret_ln70             (ret              ) [ 0000000000000000000000000000000000000
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln57/87 "/>
+<opset="icmp_ln48/87 "/>
 </bind>
 </comp>
 
@@ -3078,7 +3078,7 @@ ret_ln70             (ret              ) [ 0000000000000000000000000000000000000
 </bind>
 </comp>
 
-<comp id="673" class="1004" name="icmp_ln58_fu_673">
+<comp id="673" class="1004" name="icmp_ln49_fu_673">
 <pin_list>
 <pin id="674" dir="0" index="0" bw="32" slack="0"/>
 <pin id="675" dir="0" index="1" bw="32" slack="38"/>
@@ -3086,7 +3086,7 @@ ret_ln70             (ret              ) [ 0000000000000000000000000000000000000
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln58/87 "/>
+<opset="icmp_ln49/87 "/>
 </bind>
 </comp>
 
@@ -3314,13 +3314,13 @@ ret_ln70             (ret              ) [ 0000000000000000000000000000000000000
 </bind>
 </comp>
 
-<comp id="790" class="1005" name="icmp_ln29_reg_790">
+<comp id="790" class="1005" name="icmp_ln20_reg_790">
 <pin_list>
 <pin id="791" dir="0" index="0" bw="1" slack="9"/>
 <pin id="792" dir="1" index="1" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<opset="icmp_ln29 "/>
+<opset="icmp_ln20 "/>
 </bind>
 </comp>
 
@@ -3384,23 +3384,23 @@ ret_ln70             (ret              ) [ 0000000000000000000000000000000000000
 </bind>
 </comp>
 
-<comp id="825" class="1005" name="icmp_ln35_reg_825">
+<comp id="825" class="1005" name="icmp_ln26_reg_825">
 <pin_list>
 <pin id="826" dir="0" index="0" bw="1" slack="1"/>
 <pin id="827" dir="1" index="1" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<opset="icmp_ln35 "/>
+<opset="icmp_ln26 "/>
 </bind>
 </comp>
 
-<comp id="829" class="1005" name="add_ln35_reg_829">
+<comp id="829" class="1005" name="add_ln26_reg_829">
 <pin_list>
 <pin id="830" dir="0" index="0" bw="32" slack="0"/>
 <pin id="831" dir="1" index="1" bw="32" slack="0"/>
 </pin_list>
 <bind>
-<opset="add_ln35 "/>
+<opset="add_ln26 "/>
 </bind>
 </comp>
 
@@ -3424,33 +3424,33 @@ ret_ln70             (ret              ) [ 0000000000000000000000000000000000000
 </bind>
 </comp>
 
-<comp id="844" class="1005" name="icmp_ln41_reg_844">
+<comp id="844" class="1005" name="icmp_ln32_reg_844">
 <pin_list>
 <pin id="845" dir="0" index="0" bw="1" slack="1"/>
 <pin id="846" dir="1" index="1" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<opset="icmp_ln41 "/>
+<opset="icmp_ln32 "/>
 </bind>
 </comp>
 
-<comp id="848" class="1005" name="add_ln41_reg_848">
+<comp id="848" class="1005" name="add_ln32_reg_848">
 <pin_list>
 <pin id="849" dir="0" index="0" bw="7" slack="0"/>
 <pin id="850" dir="1" index="1" bw="7" slack="0"/>
 </pin_list>
 <bind>
-<opset="add_ln41 "/>
+<opset="add_ln32 "/>
 </bind>
 </comp>
 
-<comp id="853" class="1005" name="icmp_ln41_1_reg_853">
+<comp id="853" class="1005" name="icmp_ln32_1_reg_853">
 <pin_list>
 <pin id="854" dir="0" index="0" bw="1" slack="1"/>
 <pin id="855" dir="1" index="1" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<opset="icmp_ln41_1 "/>
+<opset="icmp_ln32_1 "/>
 </bind>
 </comp>
 
@@ -3484,23 +3484,23 @@ ret_ln70             (ret              ) [ 0000000000000000000000000000000000000
 </bind>
 </comp>
 
-<comp id="872" class="1005" name="add_ln47_reg_872">
+<comp id="872" class="1005" name="add_ln38_reg_872">
 <pin_list>
 <pin id="873" dir="0" index="0" bw="7" slack="0"/>
 <pin id="874" dir="1" index="1" bw="7" slack="0"/>
 </pin_list>
 <bind>
-<opset="add_ln47 "/>
+<opset="add_ln38 "/>
 </bind>
 </comp>
 
-<comp id="877" class="1005" name="icmp_ln47_reg_877">
+<comp id="877" class="1005" name="icmp_ln38_reg_877">
 <pin_list>
 <pin id="878" dir="0" index="0" bw="1" slack="1"/>
 <pin id="879" dir="1" index="1" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<opset="icmp_ln47 "/>
+<opset="icmp_ln38 "/>
 </bind>
 </comp>
 
@@ -3534,23 +3534,23 @@ ret_ln70             (ret              ) [ 0000000000000000000000000000000000000
 </bind>
 </comp>
 
-<comp id="896" class="1005" name="add_ln51_reg_896">
+<comp id="896" class="1005" name="add_ln42_reg_896">
 <pin_list>
 <pin id="897" dir="0" index="0" bw="7" slack="0"/>
 <pin id="898" dir="1" index="1" bw="7" slack="0"/>
 </pin_list>
 <bind>
-<opset="add_ln51 "/>
+<opset="add_ln42 "/>
 </bind>
 </comp>
 
-<comp id="901" class="1005" name="icmp_ln51_reg_901">
+<comp id="901" class="1005" name="icmp_ln42_reg_901">
 <pin_list>
 <pin id="902" dir="0" index="0" bw="1" slack="1"/>
 <pin id="903" dir="1" index="1" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<opset="icmp_ln51 "/>
+<opset="icmp_ln42 "/>
 </bind>
 </comp>
 
@@ -3624,23 +3624,23 @@ ret_ln70             (ret              ) [ 0000000000000000000000000000000000000
 </bind>
 </comp>
 
-<comp id="939" class="1005" name="add_ln57_reg_939">
+<comp id="939" class="1005" name="add_ln48_reg_939">
 <pin_list>
 <pin id="940" dir="0" index="0" bw="7" slack="0"/>
 <pin id="941" dir="1" index="1" bw="7" slack="0"/>
 </pin_list>
 <bind>
-<opset="add_ln57 "/>
+<opset="add_ln48 "/>
 </bind>
 </comp>
 
-<comp id="944" class="1005" name="icmp_ln57_reg_944">
+<comp id="944" class="1005" name="icmp_ln48_reg_944">
 <pin_list>
 <pin id="945" dir="0" index="0" bw="1" slack="1"/>
 <pin id="946" dir="1" index="1" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<opset="icmp_ln57 "/>
+<opset="icmp_ln48 "/>
 </bind>
 </comp>
 
@@ -3654,13 +3654,13 @@ ret_ln70             (ret              ) [ 0000000000000000000000000000000000000
 </bind>
 </comp>
 
-<comp id="953" class="1005" name="icmp_ln58_reg_953">
+<comp id="953" class="1005" name="icmp_ln49_reg_953">
 <pin_list>
 <pin id="954" dir="0" index="0" bw="1" slack="2"/>
 <pin id="955" dir="1" index="1" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<opset="icmp_ln58 "/>
+<opset="icmp_ln49 "/>
 </bind>
 </comp>
 
@@ -4346,7 +4346,7 @@ ret_ln70             (ret              ) [ 0000000000000000000000000000000000000
 	Port: loss_derivative : log_apfixed_reduce_log_lut_table_ap_fixed_29_7_ap_q_mode_5_ap_o_mode_3_0_4_4_16_array_V | {81 82 }
   - Chain level:
 	State 1
-		br_ln29 : 1
+		br_ln20 : 1
 	State 2
 		p_cast_cast : 1
 		gmem_addr : 2
@@ -4367,7 +4367,7 @@ ret_ln70             (ret              ) [ 0000000000000000000000000000000000000
 		xbuff_V_addr : 1
 		store_ln0 : 2
 	State 12
-		sext_ln34 : 1
+		sext_ln25 : 1
 		gmem_addr_1 : 2
 		max_V_req : 3
 	State 13
@@ -4379,9 +4379,9 @@ ret_ln70             (ret              ) [ 0000000000000000000000000000000000000
 	State 19
 	State 20
 	State 21
-		icmp_ln35 : 1
-		br_ln35 : 2
-		add_ln35 : 1
+		icmp_ln26 : 1
+		br_ln26 : 2
+		add_ln26 : 1
 		i_cast4 : 1
 		xbuff_V_addr_1 : 2
 		xbuff_V_load : 3
@@ -4389,25 +4389,25 @@ ret_ln70             (ret              ) [ 0000000000000000000000000000000000000
 		icmp_ln1494 : 1
 		max_V_2 : 2
 	State 23
-		br_ln41 : 1
+		br_ln32 : 1
 	State 24
-		add_ln41 : 1
+		add_ln32 : 1
 		i_1_cast : 1
-		icmp_ln41_1 : 2
-		br_ln41 : 3
+		icmp_ln32_1 : 2
+		br_ln32 : 3
 		i_1_cast5 : 1
 		xbuff_V_addr_2 : 2
 		xbuff_V_load_1 : 3
 	State 25
 		sub_ln703 : 1
 	State 26
-		store_ln42 : 1
+		store_ln33 : 1
 	State 27
 	State 28
-		add_ln47 : 1
+		add_ln38 : 1
 		i_2_cast : 1
-		icmp_ln47 : 2
-		br_ln47 : 3
+		icmp_ln38 : 2
+		br_ln38 : 3
 		i_2_cast6 : 1
 		log_probs_V_addr_1 : 2
 		x_V : 3
@@ -4421,10 +4421,10 @@ ret_ln70             (ret              ) [ 0000000000000000000000000000000000000
 	State 36
 	State 37
 	State 38
-		add_ln51 : 1
+		add_ln42 : 1
 		i_3_cast : 1
-		icmp_ln51 : 2
-		br_ln51 : 3
+		icmp_ln42 : 2
+		br_ln42 : 3
 		i_3_cast7 : 1
 		log_probs_V_addr_2 : 2
 		x_V_1 : 3
@@ -4464,7 +4464,7 @@ ret_ln70             (ret              ) [ 0000000000000000000000000000000000000
 	State 71
 	State 72
 	State 73
-		store_ln52 : 1
+		store_ln43 : 1
 	State 74
 		probs_V_addr_1 : 1
 		x_V_2 : 2
@@ -4483,15 +4483,15 @@ ret_ln70             (ret              ) [ 0000000000000000000000000000000000000
 	State 86
 		loss_V : 1
 	State 87
-		add_ln57 : 1
+		add_ln48 : 1
 		i_4_cast4 : 1
-		icmp_ln57 : 2
-		br_ln57 : 3
+		icmp_ln48 : 2
+		br_ln48 : 3
 		i_4_cast : 1
-		icmp_ln58 : 2
+		icmp_ln49 : 2
 		probs_V_addr_2 : 2
 		t_V : 3
-		br_ln58 : 3
+		br_ln49 : 3
 	State 88
 	State 89
 		sdiv_ln1148_2 : 1
@@ -4520,8 +4520,8 @@ ret_ln70             (ret              ) [ 0000000000000000000000000000000000000
 	State 109
 	State 110
 	State 111
-		store_ln62 : 1
-		store_ln59 : 1
+		store_ln53 : 1
+		store_ln50 : 1
 	State 112
 		p_cast2_cast : 1
 		gmem_addr_2 : 2
@@ -4558,25 +4558,25 @@ ret_ln70             (ret              ) [ 0000000000000000000000000000000000000
 |   call   |    grp_log_16_9_s_fu_421    |    2    | 11.8906 |   942   |   759   |
 |          |    grp_exp_16_9_s_fu_432    |    2    |  4.764  |   153   |   325   |
 |----------|-----------------------------|---------|---------|---------|---------|
-|          |       icmp_ln29_fu_466      |    0    |    0    |    0    |    18   |
+|          |       icmp_ln20_fu_466      |    0    |    0    |    0    |    18   |
 |          |     exitcond4729_fu_493     |    0    |    0    |    0    |    18   |
-|          |       icmp_ln35_fu_514      |    0    |    0    |    0    |    18   |
+|          |       icmp_ln26_fu_514      |    0    |    0    |    0    |    18   |
 |          |      icmp_ln1494_fu_530     |    0    |    0    |    0    |    13   |
-|          |       icmp_ln41_fu_544      |    0    |    0    |    0    |    18   |
-|   icmp   |      icmp_ln41_1_fu_559     |    0    |    0    |    0    |    18   |
-|          |       icmp_ln47_fu_585      |    0    |    0    |    0    |    18   |
-|          |       icmp_ln51_fu_615      |    0    |    0    |    0    |    18   |
-|          |       icmp_ln57_fu_663      |    0    |    0    |    0    |    18   |
-|          |       icmp_ln58_fu_673      |    0    |    0    |    0    |    18   |
+|          |       icmp_ln32_fu_544      |    0    |    0    |    0    |    18   |
+|   icmp   |      icmp_ln32_1_fu_559     |    0    |    0    |    0    |    18   |
+|          |       icmp_ln38_fu_585      |    0    |    0    |    0    |    18   |
+|          |       icmp_ln42_fu_615      |    0    |    0    |    0    |    18   |
+|          |       icmp_ln48_fu_663      |    0    |    0    |    0    |    18   |
+|          |       icmp_ln49_fu_673      |    0    |    0    |    0    |    18   |
 |          |       exitcond2_fu_744      |    0    |    0    |    0    |    18   |
 |----------|-----------------------------|---------|---------|---------|---------|
 |          |       empty_42_fu_483       |    0    |    0    |    0    |    14   |
-|          |       add_ln35_fu_519       |    0    |    0    |    0    |    39   |
-|          |       add_ln41_fu_549       |    0    |    0    |    0    |    14   |
-|          |       add_ln47_fu_575       |    0    |    0    |    0    |    14   |
+|          |       add_ln26_fu_519       |    0    |    0    |    0    |    39   |
+|          |       add_ln32_fu_549       |    0    |    0    |    0    |    14   |
+|          |       add_ln38_fu_575       |    0    |    0    |    0    |    14   |
 |    add   |        sum_V_1_fu_595       |    0    |    0    |    0    |    23   |
-|          |       add_ln51_fu_605       |    0    |    0    |    0    |    14   |
-|          |       add_ln57_fu_653       |    0    |    0    |    0    |    14   |
+|          |       add_ln42_fu_605       |    0    |    0    |    0    |    14   |
+|          |       add_ln48_fu_653       |    0    |    0    |    0    |    14   |
 |          |      add_ln1148_fu_691      |    0    |    0    |    0    |    23   |
 |          |       empty_49_fu_734       |    0    |    0    |    0    |    14   |
 |----------|-----------------------------|---------|---------|---------|---------|
@@ -4606,7 +4606,7 @@ ret_ln70             (ret              ) [ 0000000000000000000000000000000000000
 |          |        p_cast2_fu_714       |    0    |    0    |    0    |    0    |
 |----------|-----------------------------|---------|---------|---------|---------|
 |          |      p_cast_cast_fu_472     |    0    |    0    |    0    |    0    |
-|          |       sext_ln34_fu_503      |    0    |    0    |    0    |    0    |
+|          |       sext_ln25_fu_503      |    0    |    0    |    0    |    0    |
 |          |      sum_V_cast_fu_601      |    0    |    0    |    0    |    0    |
 |   sext   |     sext_ln1148_1_fu_678    |    0    |    0    |    0    |    0    |
 |          |      sext_ln2221_fu_687     |    0    |    0    |    0    |    0    |
@@ -4622,7 +4622,7 @@ ret_ln70             (ret              ) [ 0000000000000000000000000000000000000
 |   zext   |       i_2_cast6_fu_590      |    0    |    0    |    0    |    0    |
 |          |       i_3_cast_fu_611       |    0    |    0    |    0    |    0    |
 |          |       i_3_cast7_fu_620      |    0    |    0    |    0    |    0    |
-|          |       zext_ln55_fu_642      |    0    |    0    |    0    |    0    |
+|          |       zext_ln46_fu_642      |    0    |    0    |    0    |    0    |
 |          |       i_4_cast4_fu_659      |    0    |    0    |    0    |    0    |
 |          |       i_4_cast_fu_668       |    0    |    0    |    0    |    0    |
 |          |   loop_index_cast1_fu_740   |    0    |    0    |    0    |    0    |
@@ -4660,11 +4660,11 @@ Memories:
 |                          |   FF   |
 +--------------------------+--------+
 |      N_read_reg_754      |   32   |
-|     add_ln35_reg_829     |   32   |
-|     add_ln41_reg_848     |    7   |
-|     add_ln47_reg_872     |    7   |
-|     add_ln51_reg_896     |    7   |
-|     add_ln57_reg_939     |    7   |
+|     add_ln26_reg_829     |   32   |
+|     add_ln32_reg_848     |    7   |
+|     add_ln38_reg_872     |    7   |
+|     add_ln42_reg_896     |    7   |
+|     add_ln48_reg_939     |    7   |
 |      dx_read_reg_780     |   64   |
 |  dxbuff_V_addr_2_reg_997 |    7   |
 |   dxbuff_V_addr_reg_930  |    7   |
@@ -4685,14 +4685,14 @@ Memories:
 |     i_4_cast_reg_948     |   64   |
 |        i_4_reg_399       |    7   |
 |         i_reg_333        |   32   |
-|     icmp_ln29_reg_790    |    1   |
-|     icmp_ln35_reg_825    |    1   |
-|    icmp_ln41_1_reg_853   |    1   |
-|     icmp_ln41_reg_844    |    1   |
-|     icmp_ln47_reg_877    |    1   |
-|     icmp_ln51_reg_901    |    1   |
-|     icmp_ln57_reg_944    |    1   |
-|     icmp_ln58_reg_953    |    1   |
+|     icmp_ln20_reg_790    |    1   |
+|     icmp_ln26_reg_825    |    1   |
+|    icmp_ln32_1_reg_853   |    1   |
+|     icmp_ln32_reg_844    |    1   |
+|     icmp_ln38_reg_877    |    1   |
+|     icmp_ln42_reg_901    |    1   |
+|     icmp_ln48_reg_944    |    1   |
+|     icmp_ln49_reg_953    |    1   |
 |log_probs_V_addr_1_reg_881|    7   |
 |log_probs_V_addr_2_reg_910|    7   |
 |   loop_index451_reg_321  |    7   |

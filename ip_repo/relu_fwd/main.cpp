@@ -1,7 +1,4 @@
-#define MAX_SIZE 100
-#include <ap_fixed.h>
-
-typedef ap_fixed<16,9> fixed;
+#include "relu_fwd.h"
 
 void relu_fwd(fixed* x, fixed* y, int dim){
 

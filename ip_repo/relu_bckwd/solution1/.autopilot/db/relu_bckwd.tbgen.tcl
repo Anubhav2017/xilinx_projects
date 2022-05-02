@@ -12,14 +12,14 @@ set isEnableWaveformDebug 1
 set C_modelName {relu_bckwd}
 set C_modelType { void 0 }
 set C_modelArgList {
-	{ gmem int 32 regular {axi_master 2}  }
+	{ gmem int 16 regular {axi_master 2}  }
 	{ x int 64 regular {axi_slave 0}  }
 	{ dx int 64 regular {axi_slave 0}  }
 	{ dy int 64 regular {axi_slave 0}  }
 	{ dim int 32 regular {axi_slave 0}  }
 }
 set C_modelArgMapList {[ 
-	{ "Name" : "gmem", "interface" : "axi_master", "bitwidth" : 32, "direction" : "READWRITE", "bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "x","cData": "int","bit_use": { "low": 0,"up": 0},"offset": { "type": "dynamic","port_name": "x","bundle": "CTRL"},"direction": "READONLY","cArray": [{"low" : 0,"up" : 0,"step" : 0}]},{"cName": "dx","cData": "int","bit_use": { "low": 0,"up": 0},"offset": { "type": "dynamic","port_name": "dx","bundle": "CTRL"},"direction": "WRITEONLY","cArray": [{"low" : 0,"up" : 0,"step" : 0}]},{"cName": "dy","cData": "int","bit_use": { "low": 0,"up": 0},"offset": { "type": "dynamic","port_name": "dy","bundle": "CTRL"},"direction": "READONLY","cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}]} , 
+	{ "Name" : "gmem", "interface" : "axi_master", "bitwidth" : 16, "direction" : "READWRITE", "bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "x","cData": "short","bit_use": { "low": 0,"up": 0},"offset": { "type": "dynamic","port_name": "x","bundle": "CTRL"},"direction": "READONLY","cArray": [{"low" : 0,"up" : 0,"step" : 0}]},{"cName": "dx","cData": "short","bit_use": { "low": 0,"up": 0},"offset": { "type": "dynamic","port_name": "dx","bundle": "CTRL"},"direction": "WRITEONLY","cArray": [{"low" : 0,"up" : 0,"step" : 0}]},{"cName": "dy","cData": "short","bit_use": { "low": 0,"up": 0},"offset": { "type": "dynamic","port_name": "dy","bundle": "CTRL"},"direction": "READONLY","cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}]} , 
  	{ "Name" : "x", "interface" : "axi_slave", "bundle":"CTRL","type":"ap_none","bitwidth" : 64, "direction" : "READONLY", "offset" : {"in":16}, "offset_end" : {"in":27}} , 
  	{ "Name" : "dx", "interface" : "axi_slave", "bundle":"CTRL","type":"ap_none","bitwidth" : 64, "direction" : "READONLY", "offset" : {"in":28}, "offset_end" : {"in":39}} , 
  	{ "Name" : "dy", "interface" : "axi_slave", "bundle":"CTRL","type":"ap_none","bitwidth" : 64, "direction" : "READONLY", "offset" : {"in":40}, "offset_end" : {"in":51}} , 
@@ -161,7 +161,7 @@ set NewPortList {[
  	{ "name": "m_axi_gmem_BUSER", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem", "role": "BUSER" }}  ]}
 
 set RtlHierarchyInfo {[
-	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4"],
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3"],
 		"CDFG" : "relu_bckwd",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -188,8 +188,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "dim", "Type" : "None", "Direction" : "I"}]},
 	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.CTRL_s_axi_U", "Parent" : "0"},
 	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.gmem_m_axi_U", "Parent" : "0"},
-	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.dxbuf_U", "Parent" : "0"},
-	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fcmp_32ns_32ns_1_2_no_dsp_1_U1", "Parent" : "0"}]}
+	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.dxbuf_V_U", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {

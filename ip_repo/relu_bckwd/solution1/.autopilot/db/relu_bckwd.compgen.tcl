@@ -1,109 +1,12 @@
 # This script segment is generated automatically by AutoPilot
 
-set id 1
-set name relu_bckwd_fcmp_32ns_32ns_1_2_no_dsp_1
-set corename simcore_fcmp
-set op fcmp
-set stage_num 2
-set max_latency -1
-set registered_input 1
-set impl_style no_dsp
-set Futype4reduceCEFanout 1
-set clk_width 1
-set clk_signed 0
-set reset_width 1
-set reset_signed 0
-set in0_width 32
-set in0_signed 0
-set in1_width 32
-set in1_signed 0
-set ce_width 1
-set ce_signed 0
-set opcode_width 5
-set opcode_signed 0
-set out_width 1
-if {${::AESL::PGuard_simmodel_gen}} {
-if {[info proc ap_gen_simcore_fcmp] == "ap_gen_simcore_fcmp"} {
-eval "ap_gen_simcore_fcmp { \
-    id ${id} \
-    name ${name} \
-    corename ${corename} \
-    op ${op} \
-    reset_level 1 \
-    sync_rst true \
-    stage_num ${stage_num} \
-    max_latency ${max_latency} \
-    registered_input ${registered_input} \
-    style ${impl_style} \
-    Futype4reduceCEFanout ${Futype4reduceCEFanout} \
-    clk_width ${clk_width} \
-    clk_signed ${clk_signed} \
-    reset_width ${reset_width} \
-    reset_signed ${reset_signed} \
-    in0_width ${in0_width} \
-    in0_signed ${in0_signed} \
-    in1_width ${in1_width} \
-    in1_signed ${in1_signed} \
-    ce_width ${ce_width} \
-    ce_signed ${ce_signed} \
-    opcode_width ${opcode_width} \
-    opcode_signed ${opcode_signed} \
-    out_width ${out_width} \
-}"
-} else {
-puts "@W \[IMPL-100\] Cannot find ap_gen_simcore_fcmp, check your AutoPilot builtin lib"
-}
-}
-
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler ${name}
-}
-
-
-set op fcmp
-set corename FCompare
-if {${::AESL::PGuard_autocg_gen} && (${::AESL::PGuard_autocg_fpip} || ${::AESL::PGuard_autocg_fpv6en} || ${::AESL::PGuard_autocg_hpen})} {
-if {[info proc ::AESL_LIB_XILINX_FPV6::fpv6_gen] == "::AESL_LIB_XILINX_FPV6::fpv6_gen"} {
-eval "::AESL_LIB_XILINX_FPV6::fpv6_gen { \
-    id ${id} \
-    name ${name} \
-    corename ${corename} \
-    op ${op} \
-    reset_level 1 \
-    sync_rst true \
-    stage_num ${stage_num} \
-    max_latency ${max_latency} \
-    registered_input ${registered_input} \
-    style ${impl_style} \
-    Futype4reduceCEFanout ${Futype4reduceCEFanout} \
-    clk_width ${clk_width} \
-    clk_signed ${clk_signed} \
-    reset_width ${reset_width} \
-    reset_signed ${reset_signed} \
-    in0_width ${in0_width} \
-    in0_signed ${in0_signed} \
-    in1_width ${in1_width} \
-    in1_signed ${in1_signed} \
-    ce_width ${ce_width} \
-    ce_signed ${ce_signed} \
-    opcode_width ${opcode_width} \
-    opcode_signed ${opcode_signed} \
-    out_width ${out_width} \
-}"
-} else {
-puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_XILINX_FPV6::fpv6_gen, check your platform lib"
-}
-}
-
-
 # Memory (RAM/ROM)  definition:
-set ID 3
+set ID 1
 set hasByteEnable 0
-set MemName relu_bckwd_dxbuf
+set MemName relu_bckwd_dxbuf_V
 set CoreName ap_simcore_mem
 set PortList { 2 3 }
-set DataWd 32
+set DataWd 16
 set AddrRange 100
 set AddrWd 7
 set impl_style auto
@@ -235,7 +138,7 @@ dict set axilite_register_dict CTRL $port_CTRL
 if {${::AESL::PGuard_simmodel_gen}} {
 	if {[info proc ::AESL_LIB_XILADAPTER::s_axilite_gen] == "::AESL_LIB_XILADAPTER::s_axilite_gen"} {
 		eval "::AESL_LIB_XILADAPTER::s_axilite_gen { \
-			id 4 \
+			id 2 \
 			corename relu_bckwd_CTRL_axilite \
 			name relu_bckwd_CTRL_s_axi \
 			ports {$port_CTRL} \
@@ -256,7 +159,7 @@ if {${::AESL::PGuard_rtl_comp_handler}} {
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::m_axi_gen] == "::AESL_LIB_XILADAPTER::m_axi_gen"} {
 eval "::AESL_LIB_XILADAPTER::m_axi_gen { \
-    id 5 \
+    id 3 \
     corename {m_axi} \
     op interface \
     max_latency -1 \ 

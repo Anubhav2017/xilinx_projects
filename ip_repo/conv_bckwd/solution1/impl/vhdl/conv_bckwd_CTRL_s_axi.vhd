@@ -34,7 +34,6 @@ port (
     interrupt             :out  STD_LOGIC;
     x                     :out  STD_LOGIC_VECTOR(31 downto 0);
     w                     :out  STD_LOGIC_VECTOR(31 downto 0);
-    y                     :out  STD_LOGIC_VECTOR(31 downto 0);
     dx                    :out  STD_LOGIC_VECTOR(31 downto 0);
     dw                    :out  STD_LOGIC_VECTOR(31 downto 0);
     db                    :out  STD_LOGIC_VECTOR(31 downto 0);
@@ -77,39 +76,36 @@ end entity conv_bckwd_CTRL_s_axi;
 -- 0x18 : Data signal of w
 --        bit 31~0 - w[31:0] (Read/Write)
 -- 0x1c : reserved
--- 0x20 : Data signal of y
---        bit 31~0 - y[31:0] (Read/Write)
--- 0x24 : reserved
--- 0x28 : Data signal of dx
+-- 0x20 : Data signal of dx
 --        bit 31~0 - dx[31:0] (Read/Write)
--- 0x2c : reserved
--- 0x30 : Data signal of dw
+-- 0x24 : reserved
+-- 0x28 : Data signal of dw
 --        bit 31~0 - dw[31:0] (Read/Write)
--- 0x34 : reserved
--- 0x38 : Data signal of db
+-- 0x2c : reserved
+-- 0x30 : Data signal of db
 --        bit 31~0 - db[31:0] (Read/Write)
--- 0x3c : reserved
--- 0x40 : Data signal of dy
+-- 0x34 : reserved
+-- 0x38 : Data signal of dy
 --        bit 31~0 - dy[31:0] (Read/Write)
--- 0x44 : reserved
--- 0x48 : Data signal of F
+-- 0x3c : reserved
+-- 0x40 : Data signal of F
 --        bit 31~0 - F[31:0] (Read/Write)
--- 0x4c : reserved
--- 0x50 : Data signal of C
+-- 0x44 : reserved
+-- 0x48 : Data signal of C
 --        bit 31~0 - C[31:0] (Read/Write)
--- 0x54 : reserved
--- 0x58 : Data signal of H
+-- 0x4c : reserved
+-- 0x50 : Data signal of H
 --        bit 31~0 - H[31:0] (Read/Write)
--- 0x5c : reserved
--- 0x60 : Data signal of W_r
+-- 0x54 : reserved
+-- 0x58 : Data signal of W_r
 --        bit 31~0 - W_r[31:0] (Read/Write)
--- 0x64 : reserved
--- 0x68 : Data signal of FH
+-- 0x5c : reserved
+-- 0x60 : Data signal of FH
 --        bit 31~0 - FH[31:0] (Read/Write)
--- 0x6c : reserved
--- 0x70 : Data signal of FW
+-- 0x64 : reserved
+-- 0x68 : Data signal of FW
 --        bit 31~0 - FW[31:0] (Read/Write)
--- 0x74 : reserved
+-- 0x6c : reserved
 -- (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
 architecture behave of conv_bckwd_CTRL_s_axi is
@@ -125,28 +121,26 @@ architecture behave of conv_bckwd_CTRL_s_axi is
     constant ADDR_X_CTRL     : INTEGER := 16#14#;
     constant ADDR_W_DATA_0   : INTEGER := 16#18#;
     constant ADDR_W_CTRL     : INTEGER := 16#1c#;
-    constant ADDR_Y_DATA_0   : INTEGER := 16#20#;
-    constant ADDR_Y_CTRL     : INTEGER := 16#24#;
-    constant ADDR_DX_DATA_0  : INTEGER := 16#28#;
-    constant ADDR_DX_CTRL    : INTEGER := 16#2c#;
-    constant ADDR_DW_DATA_0  : INTEGER := 16#30#;
-    constant ADDR_DW_CTRL    : INTEGER := 16#34#;
-    constant ADDR_DB_DATA_0  : INTEGER := 16#38#;
-    constant ADDR_DB_CTRL    : INTEGER := 16#3c#;
-    constant ADDR_DY_DATA_0  : INTEGER := 16#40#;
-    constant ADDR_DY_CTRL    : INTEGER := 16#44#;
-    constant ADDR_F_DATA_0   : INTEGER := 16#48#;
-    constant ADDR_F_CTRL     : INTEGER := 16#4c#;
-    constant ADDR_C_DATA_0   : INTEGER := 16#50#;
-    constant ADDR_C_CTRL     : INTEGER := 16#54#;
-    constant ADDR_H_DATA_0   : INTEGER := 16#58#;
-    constant ADDR_H_CTRL     : INTEGER := 16#5c#;
-    constant ADDR_W_R_DATA_0 : INTEGER := 16#60#;
-    constant ADDR_W_R_CTRL   : INTEGER := 16#64#;
-    constant ADDR_FH_DATA_0  : INTEGER := 16#68#;
-    constant ADDR_FH_CTRL    : INTEGER := 16#6c#;
-    constant ADDR_FW_DATA_0  : INTEGER := 16#70#;
-    constant ADDR_FW_CTRL    : INTEGER := 16#74#;
+    constant ADDR_DX_DATA_0  : INTEGER := 16#20#;
+    constant ADDR_DX_CTRL    : INTEGER := 16#24#;
+    constant ADDR_DW_DATA_0  : INTEGER := 16#28#;
+    constant ADDR_DW_CTRL    : INTEGER := 16#2c#;
+    constant ADDR_DB_DATA_0  : INTEGER := 16#30#;
+    constant ADDR_DB_CTRL    : INTEGER := 16#34#;
+    constant ADDR_DY_DATA_0  : INTEGER := 16#38#;
+    constant ADDR_DY_CTRL    : INTEGER := 16#3c#;
+    constant ADDR_F_DATA_0   : INTEGER := 16#40#;
+    constant ADDR_F_CTRL     : INTEGER := 16#44#;
+    constant ADDR_C_DATA_0   : INTEGER := 16#48#;
+    constant ADDR_C_CTRL     : INTEGER := 16#4c#;
+    constant ADDR_H_DATA_0   : INTEGER := 16#50#;
+    constant ADDR_H_CTRL     : INTEGER := 16#54#;
+    constant ADDR_W_R_DATA_0 : INTEGER := 16#58#;
+    constant ADDR_W_R_CTRL   : INTEGER := 16#5c#;
+    constant ADDR_FH_DATA_0  : INTEGER := 16#60#;
+    constant ADDR_FH_CTRL    : INTEGER := 16#64#;
+    constant ADDR_FW_DATA_0  : INTEGER := 16#68#;
+    constant ADDR_FW_CTRL    : INTEGER := 16#6c#;
     constant ADDR_BITS         : INTEGER := 7;
 
     signal waddr               : UNSIGNED(ADDR_BITS-1 downto 0);
@@ -171,7 +165,6 @@ architecture behave of conv_bckwd_CTRL_s_axi is
     signal int_isr             : UNSIGNED(1 downto 0) := (others => '0');
     signal int_x               : UNSIGNED(31 downto 0) := (others => '0');
     signal int_w               : UNSIGNED(31 downto 0) := (others => '0');
-    signal int_y               : UNSIGNED(31 downto 0) := (others => '0');
     signal int_dx              : UNSIGNED(31 downto 0) := (others => '0');
     signal int_dw              : UNSIGNED(31 downto 0) := (others => '0');
     signal int_db              : UNSIGNED(31 downto 0) := (others => '0');
@@ -313,8 +306,6 @@ begin
                         rdata_data <= RESIZE(int_x(31 downto 0), 32);
                     when ADDR_W_DATA_0 =>
                         rdata_data <= RESIZE(int_w(31 downto 0), 32);
-                    when ADDR_Y_DATA_0 =>
-                        rdata_data <= RESIZE(int_y(31 downto 0), 32);
                     when ADDR_DX_DATA_0 =>
                         rdata_data <= RESIZE(int_dx(31 downto 0), 32);
                     when ADDR_DW_DATA_0 =>
@@ -348,7 +339,6 @@ begin
     ap_start             <= int_ap_start;
     x                    <= STD_LOGIC_VECTOR(int_x);
     w                    <= STD_LOGIC_VECTOR(int_w);
-    y                    <= STD_LOGIC_VECTOR(int_y);
     dx                   <= STD_LOGIC_VECTOR(int_dx);
     dw                   <= STD_LOGIC_VECTOR(int_dw);
     db                   <= STD_LOGIC_VECTOR(int_db);
@@ -502,17 +492,6 @@ begin
             if (ACLK_EN = '1') then
                 if (w_hs = '1' and waddr = ADDR_W_DATA_0) then
                     int_w(31 downto 0) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_w(31 downto 0));
-                end if;
-            end if;
-        end if;
-    end process;
-
-    process (ACLK)
-    begin
-        if (ACLK'event and ACLK = '1') then
-            if (ACLK_EN = '1') then
-                if (w_hs = '1' and waddr = ADDR_Y_DATA_0) then
-                    int_y(31 downto 0) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_y(31 downto 0));
                 end if;
             end if;
         end if;

@@ -130,7 +130,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>456058944</coreId>
+						<coreId>1463902992</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -420,7 +420,7 @@
 						<name>log_probs_V</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>24</lineNumber>
+						<lineNumber>15</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -436,7 +436,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>24</second>
+										<second>15</second>
 									</item>
 								</second>
 							</item>
@@ -473,7 +473,7 @@
 						<name>probs_V</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>25</lineNumber>
+						<lineNumber>16</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -489,7 +489,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>25</second>
+										<second>16</second>
 									</item>
 								</second>
 							</item>
@@ -526,7 +526,7 @@
 						<name>xbuff_V</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>26</lineNumber>
+						<lineNumber>17</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -542,7 +542,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>26</second>
+										<second>17</second>
 									</item>
 								</second>
 							</item>
@@ -579,7 +579,7 @@
 						<name>dxbuff_V</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>27</lineNumber>
+						<lineNumber>18</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -595,7 +595,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>27</second>
+										<second>18</second>
 									</item>
 								</second>
 							</item>
@@ -629,10 +629,10 @@
 					<Obj>
 						<type>0</type>
 						<id>46</id>
-						<name>icmp_ln29</name>
+						<name>icmp_ln20</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>29</lineNumber>
+						<lineNumber>20</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -648,7 +648,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>29</second>
+										<second>20</second>
 									</item>
 								</second>
 							</item>
@@ -683,10 +683,10 @@
 					<Obj>
 						<type>0</type>
 						<id>47</id>
-						<name>br_ln29</name>
+						<name>br_ln20</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>29</lineNumber>
+						<lineNumber>20</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -702,7 +702,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>29</second>
+										<second>20</second>
 									</item>
 								</second>
 							</item>
@@ -713,7 +713,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>49</coreId>
+						<coreId>113</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -754,7 +754,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>113</coreId>
+						<coreId>129</coreId>
 					</Obj>
 					<bitwidth>63</bitwidth>
 				</Value>
@@ -796,7 +796,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>455140752</coreId>
+						<coreId>1463507936</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -835,7 +835,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>49</coreId>
+						<coreId>1463716416</coreId>
 					</Obj>
 					<bitwidth>16</bitwidth>
 				</Value>
@@ -916,7 +916,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>129</coreId>
+						<coreId>177</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -955,7 +955,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>241</coreId>
+						<coreId>289</coreId>
 					</Obj>
 					<bitwidth>7</bitwidth>
 				</Value>
@@ -1076,7 +1076,7 @@
 						<opType>icmp</opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>337</coreId>
+						<coreId>49</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -1116,7 +1116,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>49</coreId>
+						<coreId>337</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -1157,7 +1157,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>433</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -1237,7 +1237,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>161</coreId>
+						<coreId>433</coreId>
 					</Obj>
 					<bitwidth>7</bitwidth>
 				</Value>
@@ -1318,7 +1318,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>49</coreId>
+						<coreId>132</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -1357,7 +1357,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>456033416</coreId>
+						<coreId>2385</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -1383,7 +1383,7 @@
 						<name>trunc_ln</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>25</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -1399,7 +1399,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>34</second>
+										<second>25</second>
 									</item>
 								</second>
 							</item>
@@ -1410,7 +1410,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>132</coreId>
+						<coreId>1464138328</coreId>
 					</Obj>
 					<bitwidth>63</bitwidth>
 				</Value>
@@ -1436,10 +1436,10 @@
 					<Obj>
 						<type>0</type>
 						<id>72</id>
-						<name>sext_ln34</name>
+						<name>sext_ln25</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>25</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -1455,7 +1455,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>34</second>
+										<second>25</second>
 									</item>
 								</second>
 							</item>
@@ -1466,7 +1466,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>456189897</coreId>
+						<coreId>14</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -1492,7 +1492,7 @@
 						<name>gmem_addr_1</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>25</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -1508,7 +1508,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>34</second>
+										<second>25</second>
 									</item>
 								</second>
 							</item>
@@ -1519,7 +1519,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>456190672</coreId>
+						<coreId>49</coreId>
 					</Obj>
 					<bitwidth>16</bitwidth>
 				</Value>
@@ -1546,7 +1546,7 @@
 						<name>max_V_req</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>25</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -1562,7 +1562,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>34</second>
+										<second>25</second>
 									</item>
 								</second>
 							</item>
@@ -1602,7 +1602,7 @@
 						<name>max_V</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>34</lineNumber>
+						<lineNumber>25</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -1618,7 +1618,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>34</second>
+										<second>25</second>
 									</item>
 								</second>
 							</item>
@@ -1655,10 +1655,10 @@
 					<Obj>
 						<type>0</type>
 						<id>76</id>
-						<name>br_ln35</name>
+						<name>br_ln26</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>35</lineNumber>
+						<lineNumber>26</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -1674,7 +1674,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>35</second>
+										<second>26</second>
 									</item>
 								</second>
 							</item>
@@ -1711,7 +1711,7 @@
 						<name>i</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>35</lineNumber>
+						<lineNumber>26</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -1727,7 +1727,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>35</second>
+										<second>26</second>
 									</item>
 								</second>
 							</item>
@@ -1738,7 +1738,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>456159360</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -1780,7 +1780,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>456162160</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>16</bitwidth>
 				</Value>
@@ -1806,10 +1806,10 @@
 					<Obj>
 						<type>0</type>
 						<id>81</id>
-						<name>icmp_ln35</name>
+						<name>icmp_ln26</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>35</lineNumber>
+						<lineNumber>26</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -1825,7 +1825,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>35</second>
+										<second>26</second>
 									</item>
 								</second>
 							</item>
@@ -1836,7 +1836,7 @@
 						<opType>icmp</opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>456161232</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -1860,10 +1860,10 @@
 					<Obj>
 						<type>0</type>
 						<id>82</id>
-						<name>br_ln35</name>
+						<name>br_ln26</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>35</lineNumber>
+						<lineNumber>26</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -1879,7 +1879,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>35</second>
+										<second>26</second>
 									</item>
 								</second>
 							</item>
@@ -1915,10 +1915,10 @@
 					<Obj>
 						<type>0</type>
 						<id>84</id>
-						<name>add_ln35</name>
+						<name>add_ln26</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>35</lineNumber>
+						<lineNumber>26</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -1934,7 +1934,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>35</second>
+										<second>26</second>
 									</item>
 								</second>
 							</item>
@@ -1972,7 +1972,7 @@
 						<name>i_cast4</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>35</lineNumber>
+						<lineNumber>26</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -1988,7 +1988,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>35</second>
+										<second>26</second>
 									</item>
 								</second>
 							</item>
@@ -1999,7 +1999,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>0</coreId>
+						<coreId>5361</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -2052,7 +2052,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>0</coreId>
+						<coreId>84</coreId>
 					</Obj>
 					<bitwidth>7</bitwidth>
 				</Value>
@@ -2160,7 +2160,7 @@
 						<opType>icmp</opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>13</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -2187,7 +2187,7 @@
 						<name>max_V_2</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>36</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -2203,7 +2203,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>36</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -2255,7 +2255,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>456172920</coreId>
+						<coreId>4294967295</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -2278,10 +2278,10 @@
 					<Obj>
 						<type>0</type>
 						<id>93</id>
-						<name>icmp_ln41</name>
+						<name>icmp_ln32</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>41</lineNumber>
+						<lineNumber>32</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -2297,7 +2297,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>41</second>
+										<second>32</second>
 									</item>
 								</second>
 							</item>
@@ -2308,7 +2308,7 @@
 						<opType>icmp</opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>456173568</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -2332,10 +2332,10 @@
 					<Obj>
 						<type>0</type>
 						<id>94</id>
-						<name>br_ln41</name>
+						<name>br_ln32</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>41</lineNumber>
+						<lineNumber>32</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -2351,7 +2351,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>41</second>
+										<second>32</second>
 									</item>
 								</second>
 							</item>
@@ -2362,7 +2362,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1140850816</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -2403,7 +2403,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>456175832</coreId>
+						<coreId>1464125321</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -2429,7 +2429,7 @@
 						<name>i_1</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>41</lineNumber>
+						<lineNumber>32</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -2445,7 +2445,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>41</second>
+										<second>32</second>
 									</item>
 								</second>
 							</item>
@@ -2482,10 +2482,10 @@
 					<Obj>
 						<type>0</type>
 						<id>99</id>
-						<name>add_ln41</name>
+						<name>add_ln32</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>41</lineNumber>
+						<lineNumber>32</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -2501,7 +2501,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>41</second>
+										<second>32</second>
 									</item>
 								</second>
 							</item>
@@ -2539,7 +2539,7 @@
 						<name>i_1_cast</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>41</lineNumber>
+						<lineNumber>32</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -2555,7 +2555,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>41</second>
+										<second>32</second>
 									</item>
 								</second>
 							</item>
@@ -2566,7 +2566,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>0</coreId>
+						<coreId>2147483776</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -2589,10 +2589,10 @@
 					<Obj>
 						<type>0</type>
 						<id>102</id>
-						<name>icmp_ln41_1</name>
+						<name>icmp_ln32_1</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>41</lineNumber>
+						<lineNumber>32</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -2608,7 +2608,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>41</second>
+										<second>32</second>
 									</item>
 								</second>
 							</item>
@@ -2619,7 +2619,7 @@
 						<opType>icmp</opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>313</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -2643,10 +2643,10 @@
 					<Obj>
 						<type>0</type>
 						<id>104</id>
-						<name>br_ln41</name>
+						<name>br_ln32</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>41</lineNumber>
+						<lineNumber>32</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -2662,7 +2662,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>41</second>
+										<second>32</second>
 									</item>
 								</second>
 							</item>
@@ -2673,7 +2673,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>456180216</coreId>
+						<coreId>4294967295</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -2701,7 +2701,7 @@
 						<name>i_1_cast5</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>41</lineNumber>
+						<lineNumber>32</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -2717,7 +2717,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>41</second>
+										<second>32</second>
 									</item>
 								</second>
 							</item>
@@ -2728,7 +2728,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>0</coreId>
+						<coreId>1179796820</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -2916,7 +2916,7 @@
 						<name>log_probs_V_addr</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>42</lineNumber>
+						<lineNumber>33</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -2932,7 +2932,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>42</second>
+										<second>33</second>
 									</item>
 								</second>
 							</item>
@@ -2943,7 +2943,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>10</coreId>
+						<coreId>49</coreId>
 					</Obj>
 					<bitwidth>7</bitwidth>
 				</Value>
@@ -2968,10 +2968,10 @@
 					<Obj>
 						<type>0</type>
 						<id>112</id>
-						<name>log_probs_V_addr_write_ln42</name>
+						<name>log_probs_V_addr_write_ln33</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>42</lineNumber>
+						<lineNumber>33</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -2987,7 +2987,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>42</second>
+										<second>33</second>
 									</item>
 								</second>
 							</item>
@@ -3038,7 +3038,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>456199177</coreId>
+						<coreId>2147483776</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -3077,7 +3077,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>132</coreId>
+						<coreId>1464155312</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -3103,7 +3103,7 @@
 						<name>i_2</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>47</lineNumber>
+						<lineNumber>38</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -3119,7 +3119,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>47</second>
+										<second>38</second>
 									</item>
 								</second>
 							</item>
@@ -3130,7 +3130,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>0</coreId>
+						<coreId>1464155936</coreId>
 					</Obj>
 					<bitwidth>7</bitwidth>
 				</Value>
@@ -3172,7 +3172,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>456202392</coreId>
+						<coreId>1464022633</coreId>
 					</Obj>
 					<bitwidth>16</bitwidth>
 				</Value>
@@ -3198,10 +3198,10 @@
 					<Obj>
 						<type>0</type>
 						<id>119</id>
-						<name>add_ln47</name>
+						<name>add_ln38</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>47</lineNumber>
+						<lineNumber>38</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -3217,7 +3217,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>47</second>
+										<second>38</second>
 									</item>
 								</second>
 							</item>
@@ -3255,7 +3255,7 @@
 						<name>i_2_cast</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>47</lineNumber>
+						<lineNumber>38</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -3271,7 +3271,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>47</second>
+										<second>38</second>
 									</item>
 								</second>
 							</item>
@@ -3282,7 +3282,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>456204064</coreId>
+						<coreId>539117390</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -3305,10 +3305,10 @@
 					<Obj>
 						<type>0</type>
 						<id>122</id>
-						<name>icmp_ln47</name>
+						<name>icmp_ln38</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>47</lineNumber>
+						<lineNumber>38</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -3324,7 +3324,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>47</second>
+										<second>38</second>
 									</item>
 								</second>
 							</item>
@@ -3335,7 +3335,7 @@
 						<opType>icmp</opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>0</coreId>
+						<coreId>574449505</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -3359,10 +3359,10 @@
 					<Obj>
 						<type>0</type>
 						<id>124</id>
-						<name>br_ln47</name>
+						<name>br_ln38</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>47</lineNumber>
+						<lineNumber>38</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -3378,7 +3378,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>47</second>
+										<second>38</second>
 									</item>
 								</second>
 							</item>
@@ -3389,7 +3389,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>49</coreId>
+						<coreId>775500320</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -3417,7 +3417,7 @@
 						<name>i_2_cast6</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>47</lineNumber>
+						<lineNumber>38</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -3433,7 +3433,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>47</second>
+										<second>38</second>
 									</item>
 								</second>
 							</item>
@@ -3444,7 +3444,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>0</coreId>
+						<coreId>2147483776</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -3470,7 +3470,7 @@
 						<name>log_probs_V_addr_1</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>48</lineNumber>
+						<lineNumber>39</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -3486,7 +3486,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>48</second>
+										<second>39</second>
 									</item>
 								</second>
 							</item>
@@ -3497,7 +3497,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>456207712</coreId>
+						<coreId>544106784</coreId>
 					</Obj>
 					<bitwidth>7</bitwidth>
 				</Value>
@@ -3525,7 +3525,7 @@
 						<name>x_V</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>48</lineNumber>
+						<lineNumber>39</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -3541,7 +3541,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>48</second>
+										<second>39</second>
 									</item>
 								</second>
 							</item>
@@ -3605,7 +3605,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>0</coreId>
+						<coreId>1464163672</coreId>
 					</Obj>
 					<bitwidth>16</bitwidth>
 				</Value>
@@ -3702,7 +3702,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>0</coreId>
+						<coreId>1936683105</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -3755,7 +3755,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1702129263</coreId>
+						<coreId>1852404335</coreId>
 					</Obj>
 					<bitwidth>23</bitwidth>
 				</Value>
@@ -3794,7 +3794,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1953391986</coreId>
+						<coreId>2037672306</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -3820,7 +3820,7 @@
 						<name>i_3</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>51</lineNumber>
+						<lineNumber>42</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -3836,7 +3836,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>51</second>
+										<second>42</second>
 									</item>
 								</second>
 							</item>
@@ -3847,7 +3847,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1717924464</coreId>
+						<coreId>1830840174</coreId>
 					</Obj>
 					<bitwidth>7</bitwidth>
 				</Value>
@@ -3873,10 +3873,10 @@
 					<Obj>
 						<type>0</type>
 						<id>138</id>
-						<name>add_ln51</name>
+						<name>add_ln42</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>51</lineNumber>
+						<lineNumber>42</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -3892,7 +3892,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>51</second>
+										<second>42</second>
 									</item>
 								</second>
 							</item>
@@ -3930,7 +3930,7 @@
 						<name>i_3_cast</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>51</lineNumber>
+						<lineNumber>42</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -3946,7 +3946,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>51</second>
+										<second>42</second>
 									</item>
 								</second>
 							</item>
@@ -3957,7 +3957,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1031365995</coreId>
+						<coreId>1869573152</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -3980,10 +3980,10 @@
 					<Obj>
 						<type>0</type>
 						<id>141</id>
-						<name>icmp_ln51</name>
+						<name>icmp_ln42</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>51</lineNumber>
+						<lineNumber>42</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -3999,7 +3999,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>51</second>
+										<second>42</second>
 									</item>
 								</second>
 							</item>
@@ -4010,7 +4010,7 @@
 						<opType>icmp</opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1397508187</coreId>
+						<coreId>997420912</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -4034,10 +4034,10 @@
 					<Obj>
 						<type>0</type>
 						<id>143</id>
-						<name>br_ln51</name>
+						<name>br_ln42</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>51</lineNumber>
+						<lineNumber>42</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -4053,7 +4053,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>51</second>
+										<second>42</second>
 									</item>
 								</second>
 							</item>
@@ -4064,7 +4064,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>539120725</coreId>
+						<coreId>1702258035</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -4092,7 +4092,7 @@
 						<name>i_3_cast7</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>51</lineNumber>
+						<lineNumber>42</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -4108,7 +4108,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>51</second>
+										<second>42</second>
 									</item>
 								</second>
 							</item>
@@ -4119,7 +4119,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1869357100</coreId>
+						<coreId>574452846</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -4145,7 +4145,7 @@
 						<name>log_probs_V_addr_2</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>52</lineNumber>
+						<lineNumber>43</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -4161,7 +4161,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>52</second>
+										<second>43</second>
 									</item>
 								</second>
 							</item>
@@ -4172,7 +4172,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1698394991</coreId>
+						<coreId>544434464</coreId>
 					</Obj>
 					<bitwidth>7</bitwidth>
 				</Value>
@@ -4200,7 +4200,7 @@
 						<name>x_V_1</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>52</lineNumber>
+						<lineNumber>43</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -4216,7 +4216,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>52</second>
+										<second>43</second>
 									</item>
 								</second>
 							</item>
@@ -4280,7 +4280,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>976304178</coreId>
+						<coreId>1953459305</coreId>
 					</Obj>
 					<bitwidth>16</bitwidth>
 				</Value>
@@ -4337,7 +4337,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1014003813</coreId>
+						<coreId>1768321121</coreId>
 					</Obj>
 					<bitwidth>23</bitwidth>
 				</Value>
@@ -4392,7 +4392,7 @@
 						<opType>sdiv</opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1902080097</coreId>
+						<coreId>1013212536</coreId>
 					</Obj>
 					<bitwidth>16</bitwidth>
 				</Value>
@@ -4446,7 +4446,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1763716138</coreId>
+						<coreId>539768105</coreId>
 					</Obj>
 					<bitwidth>16</bitwidth>
 				</Value>
@@ -4472,7 +4472,7 @@
 						<name>probs_V_addr</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>52</lineNumber>
+						<lineNumber>43</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -4488,7 +4488,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>52</second>
+										<second>43</second>
 									</item>
 								</second>
 							</item>
@@ -4499,7 +4499,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1601200424</coreId>
+						<coreId>859467888</coreId>
 					</Obj>
 					<bitwidth>7</bitwidth>
 				</Value>
@@ -4524,10 +4524,10 @@
 					<Obj>
 						<type>0</type>
 						<id>154</id>
-						<name>probs_V_addr_write_ln52</name>
+						<name>probs_V_addr_write_ln43</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>52</lineNumber>
+						<lineNumber>43</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -4543,7 +4543,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>52</second>
+										<second>43</second>
 									</item>
 								</second>
 							</item>
@@ -4594,7 +4594,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>979725673</coreId>
+						<coreId>1528955000</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -4633,7 +4633,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1734439795</coreId>
+						<coreId>536879616</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -4656,10 +4656,10 @@
 					<Obj>
 						<type>0</type>
 						<id>159</id>
-						<name>zext_ln55</name>
+						<name>zext_ln46</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>55</lineNumber>
+						<lineNumber>46</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -4675,7 +4675,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>55</second>
+										<second>46</second>
 									</item>
 								</second>
 							</item>
@@ -4686,7 +4686,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>808531245</coreId>
+						<coreId>1853187616</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -4712,7 +4712,7 @@
 						<name>probs_V_addr_1</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>55</lineNumber>
+						<lineNumber>46</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -4728,7 +4728,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>55</second>
+										<second>46</second>
 									</item>
 								</second>
 							</item>
@@ -4739,7 +4739,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>796093551</coreId>
+						<coreId>1914708526</coreId>
 					</Obj>
 					<bitwidth>7</bitwidth>
 				</Value>
@@ -4767,7 +4767,7 @@
 						<name>x_V_2</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>55</lineNumber>
+						<lineNumber>46</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -4783,7 +4783,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>55</second>
+										<second>46</second>
 									</item>
 								</second>
 							</item>
@@ -4847,7 +4847,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1330007625</coreId>
+						<coreId>570453615</coreId>
 					</Obj>
 					<bitwidth>16</bitwidth>
 				</Value>
@@ -4931,7 +4931,7 @@
 						<name>dxbuff_V_addr</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>55</lineNumber>
+						<lineNumber>46</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -4947,7 +4947,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>55</second>
+										<second>46</second>
 									</item>
 								</second>
 							</item>
@@ -4958,7 +4958,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>6645601</coreId>
+						<coreId>1948254264</coreId>
 					</Obj>
 					<bitwidth>7</bitwidth>
 				</Value>
@@ -4983,10 +4983,10 @@
 					<Obj>
 						<type>0</type>
 						<id>165</id>
-						<name>br_ln57</name>
+						<name>br_ln48</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>57</lineNumber>
+						<lineNumber>48</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -5002,7 +5002,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>57</second>
+										<second>48</second>
 									</item>
 								</second>
 							</item>
@@ -5013,7 +5013,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>543518049</coreId>
+						<coreId>543450484</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -5039,7 +5039,7 @@
 						<name>i_4</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>57</lineNumber>
+						<lineNumber>48</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -5055,7 +5055,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>57</second>
+										<second>48</second>
 									</item>
 								</second>
 							</item>
@@ -5066,7 +5066,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1043267618</coreId>
+						<coreId>1919950848</coreId>
 					</Obj>
 					<bitwidth>7</bitwidth>
 				</Value>
@@ -5092,10 +5092,10 @@
 					<Obj>
 						<type>0</type>
 						<id>168</id>
-						<name>add_ln57</name>
+						<name>add_ln48</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>57</lineNumber>
+						<lineNumber>48</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -5111,7 +5111,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>57</second>
+										<second>48</second>
 									</item>
 								</second>
 							</item>
@@ -5149,7 +5149,7 @@
 						<name>i_4_cast4</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>57</lineNumber>
+						<lineNumber>48</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -5165,7 +5165,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>57</second>
+										<second>48</second>
 									</item>
 								</second>
 							</item>
@@ -5176,7 +5176,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1701865808</coreId>
+						<coreId>1830839397</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -5199,10 +5199,10 @@
 					<Obj>
 						<type>0</type>
 						<id>171</id>
-						<name>icmp_ln57</name>
+						<name>icmp_ln48</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>57</lineNumber>
+						<lineNumber>48</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -5218,7 +5218,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>57</second>
+										<second>48</second>
 									</item>
 								</second>
 							</item>
@@ -5229,7 +5229,7 @@
 						<opType>icmp</opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>840979276</coreId>
+						<coreId>1885949986</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -5253,10 +5253,10 @@
 					<Obj>
 						<type>0</type>
 						<id>173</id>
-						<name>br_ln57</name>
+						<name>br_ln48</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>57</lineNumber>
+						<lineNumber>48</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -5272,7 +5272,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>57</second>
+										<second>48</second>
 									</item>
 								</second>
 							</item>
@@ -5283,7 +5283,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>570456436</coreId>
+						<coreId>1986360064</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -5311,7 +5311,7 @@
 						<name>i_4_cast</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>57</lineNumber>
+						<lineNumber>48</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -5327,7 +5327,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>57</second>
+										<second>48</second>
 									</item>
 								</second>
 							</item>
@@ -5338,7 +5338,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>49</coreId>
+						<coreId>1769239916</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -5361,10 +5361,10 @@
 					<Obj>
 						<type>0</type>
 						<id>177</id>
-						<name>icmp_ln58</name>
+						<name>icmp_ln49</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>58</lineNumber>
+						<lineNumber>49</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -5380,7 +5380,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>58</second>
+										<second>49</second>
 									</item>
 								</second>
 							</item>
@@ -5391,7 +5391,7 @@
 						<opType>icmp</opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>132</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -5418,7 +5418,7 @@
 						<name>probs_V_addr_2</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>57</lineNumber>
+						<lineNumber>48</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -5434,7 +5434,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>57</second>
+										<second>48</second>
 									</item>
 								</second>
 							</item>
@@ -5445,7 +5445,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>0</coreId>
+						<coreId>49</coreId>
 					</Obj>
 					<bitwidth>7</bitwidth>
 				</Value>
@@ -5473,7 +5473,7 @@
 						<name>t_V</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>57</lineNumber>
+						<lineNumber>48</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -5489,7 +5489,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>57</second>
+										<second>48</second>
 									</item>
 								</second>
 							</item>
@@ -5523,10 +5523,10 @@
 					<Obj>
 						<type>0</type>
 						<id>180</id>
-						<name>br_ln58</name>
+						<name>br_ln49</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>58</lineNumber>
+						<lineNumber>49</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -5542,7 +5542,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>58</second>
+										<second>49</second>
 									</item>
 								</second>
 							</item>
@@ -5553,7 +5553,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>132</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -5661,7 +5661,7 @@
 						<opType>sdiv</opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>0</coreId>
+						<coreId>49</coreId>
 					</Obj>
 					<bitwidth>16</bitwidth>
 				</Value>
@@ -5715,7 +5715,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>456257200</coreId>
+						<coreId>2147483776</coreId>
 					</Obj>
 					<bitwidth>16</bitwidth>
 				</Value>
@@ -5741,7 +5741,7 @@
 						<name>dxbuff_V_addr_1</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>62</lineNumber>
+						<lineNumber>53</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -5757,7 +5757,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>62</second>
+										<second>53</second>
 									</item>
 								</second>
 							</item>
@@ -5768,7 +5768,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>0</coreId>
+						<coreId>2147483776</coreId>
 					</Obj>
 					<bitwidth>7</bitwidth>
 				</Value>
@@ -5793,10 +5793,10 @@
 					<Obj>
 						<type>0</type>
 						<id>186</id>
-						<name>dxbuff_V_addr_1_write_ln62</name>
+						<name>dxbuff_V_addr_1_write_ln53</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>62</lineNumber>
+						<lineNumber>53</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -5812,7 +5812,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>62</second>
+										<second>53</second>
 									</item>
 								</second>
 							</item>
@@ -5916,7 +5916,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>456261200</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>17</bitwidth>
 				</Value>
@@ -6023,7 +6023,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>456264288</coreId>
+						<coreId>1464216009</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -6076,7 +6076,7 @@
 						<opType>sdiv</opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>456265504</coreId>
+						<coreId>28271</coreId>
 					</Obj>
 					<bitwidth>16</bitwidth>
 				</Value>
@@ -6130,7 +6130,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>132</coreId>
+						<coreId>1464218616</coreId>
 					</Obj>
 					<bitwidth>16</bitwidth>
 				</Value>
@@ -6153,10 +6153,10 @@
 					<Obj>
 						<type>0</type>
 						<id>194</id>
-						<name>dxbuff_V_addr_write_ln59</name>
+						<name>dxbuff_V_addr_write_ln50</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>59</lineNumber>
+						<lineNumber>50</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -6172,7 +6172,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>59</second>
+										<second>50</second>
 									</item>
 								</second>
 							</item>
@@ -6207,10 +6207,10 @@
 					<Obj>
 						<type>0</type>
 						<id>195</id>
-						<name>br_ln60</name>
+						<name>br_ln51</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>60</lineNumber>
+						<lineNumber>51</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -6226,7 +6226,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>60</second>
+										<second>51</second>
 									</item>
 								</second>
 							</item>
@@ -6237,7 +6237,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>456270480</coreId>
+						<coreId>1464221376</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -6276,7 +6276,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>0</coreId>
+						<coreId>2147483776</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -6299,10 +6299,10 @@
 					<Obj>
 						<type>0</type>
 						<id>199</id>
-						<name>br_ln66</name>
+						<name>br_ln57</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>66</lineNumber>
+						<lineNumber>57</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -6318,7 +6318,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>66</second>
+										<second>57</second>
 									</item>
 								</second>
 							</item>
@@ -6329,7 +6329,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>132</coreId>
+						<coreId>1464220480</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -6370,7 +6370,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>456271960</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>63</bitwidth>
 				</Value>
@@ -6412,7 +6412,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>456253529</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -6451,7 +6451,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>8</coreId>
+						<coreId>1464226208</coreId>
 					</Obj>
 					<bitwidth>16</bitwidth>
 				</Value>
@@ -6571,7 +6571,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>0</coreId>
+						<coreId>1464224088</coreId>
 					</Obj>
 					<bitwidth>7</bitwidth>
 				</Value>
@@ -6653,7 +6653,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1140850816</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -6692,7 +6692,7 @@
 						<opType>icmp</opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>456272176</coreId>
+						<coreId>1464232560</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -6732,7 +6732,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>456278792</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -6773,7 +6773,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1140850816</coreId>
+						<coreId>1464233952</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -6812,7 +6812,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>456282080</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>7</bitwidth>
 				</Value>
@@ -6963,7 +6963,7 @@
 						<name>empty_51</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>70</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -6979,7 +6979,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>70</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -7014,10 +7014,10 @@
 					<Obj>
 						<type>0</type>
 						<id>222</id>
-						<name>br_ln70</name>
+						<name>br_ln61</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>70</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -7033,7 +7033,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>70</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -7044,7 +7044,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>0</coreId>
+						<coreId>8</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -7067,10 +7067,10 @@
 					<Obj>
 						<type>0</type>
 						<id>224</id>
-						<name>_ln70</name>
+						<name>_ln61</name>
 						<fileName>lossfun/main.cpp</fileName>
 						<fileDirectory>/home/anubhav/xilinx_projects/ip_repo</fileDirectory>
-						<lineNumber>70</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>loss_derivative</contextFuncName>
 						<contextNormFuncName>loss_derivative</contextNormFuncName>
 						<inlineStackInfo>
@@ -7086,7 +7086,7 @@
 											<first>lossfun/main.cpp</first>
 											<second>loss_derivative</second>
 										</first>
-										<second>70</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -7097,7 +7097,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1140850816</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -7196,7 +7196,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>456067488</coreId>
+						<coreId>1463911536</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -7308,7 +7308,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>456046992</coreId>
+						<coreId>49</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -7420,7 +7420,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>68</coreId>
+						<coreId>49</coreId>
 					</Obj>
 					<bitwidth>17</bitwidth>
 				</Value>
@@ -7448,7 +7448,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>97</coreId>
+						<coreId>1463891040</coreId>
 					</Obj>
 					<bitwidth>2</bitwidth>
 				</Value>
@@ -7581,7 +7581,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>49</coreId>
+					<coreId>33</coreId>
 				</Obj>
 				<node_objs>
 					<count>5</count>
@@ -7613,7 +7613,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>0</coreId>
+					<coreId>33</coreId>
 				</Obj>
 				<node_objs>
 					<count>1</count>
@@ -7641,7 +7641,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>49</coreId>
+					<coreId>28271</coreId>
 				</Obj>
 				<node_objs>
 					<count>6</count>
@@ -7674,7 +7674,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>456159056</coreId>
+					<coreId>2147483776</coreId>
 				</Obj>
 				<node_objs>
 					<count>4</count>
@@ -7705,7 +7705,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>456162601</coreId>
+					<coreId>1464112288</coreId>
 				</Obj>
 				<node_objs>
 					<count>7</count>
@@ -7739,7 +7739,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>456141144</coreId>
+					<coreId>0</coreId>
 				</Obj>
 				<node_objs>
 					<count>2</count>
@@ -7768,7 +7768,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>456175248</coreId>
+					<coreId>1464125320</coreId>
 				</Obj>
 				<node_objs>
 					<count>1</count>
@@ -7796,7 +7796,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>4294967295</coreId>
+					<coreId>0</coreId>
 				</Obj>
 				<node_objs>
 					<count>5</count>
@@ -7828,7 +7828,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>456180520</coreId>
+					<coreId>0</coreId>
 				</Obj>
 				<node_objs>
 					<count>7</count>
@@ -7862,7 +7862,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>1140850816</coreId>
+					<coreId>49</coreId>
 				</Obj>
 				<node_objs>
 					<count>1</count>
@@ -7890,7 +7890,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>132</coreId>
+					<coreId>1464155792</coreId>
 				</Obj>
 				<node_objs>
 					<count>6</count>
@@ -7923,7 +7923,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>4</coreId>
+					<coreId>0</coreId>
 				</Obj>
 				<node_objs>
 					<count>6</count>
@@ -7956,7 +7956,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>2037672306</coreId>
+					<coreId>1935961711</coreId>
 				</Obj>
 				<node_objs>
 					<count>2</count>
@@ -7985,7 +7985,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>574454117</coreId>
+					<coreId>1919252069</coreId>
 				</Obj>
 				<node_objs>
 					<count>5</count>
@@ -8017,7 +8017,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>1213488979</coreId>
+					<coreId>1931502951</coreId>
 				</Obj>
 				<node_objs>
 					<count>10</count>
@@ -8054,7 +8054,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>1768645477</coreId>
+					<coreId>1701650532</coreId>
 				</Obj>
 				<node_objs>
 					<count>1</count>
@@ -8082,7 +8082,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>1348423508</coreId>
+					<coreId>1769234806</coreId>
 				</Obj>
 				<node_objs>
 					<count>7</count>
@@ -8148,7 +8148,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>456055088</coreId>
+					<coreId>1411398176</coreId>
 				</Obj>
 				<node_objs>
 					<count>5</count>
@@ -8180,7 +8180,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>1834970975</coreId>
+					<coreId>0</coreId>
 				</Obj>
 				<node_objs>
 					<count>6</count>
@@ -8213,7 +8213,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>456260440</coreId>
+					<coreId>0</coreId>
 				</Obj>
 				<node_objs>
 					<count>7</count>
@@ -8247,7 +8247,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>456269856</coreId>
+					<coreId>0</coreId>
 				</Obj>
 				<node_objs>
 					<count>1</count>
@@ -8303,7 +8303,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>132</coreId>
+					<coreId>0</coreId>
 				</Obj>
 				<node_objs>
 					<count>5</count>
@@ -8335,7 +8335,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>132</coreId>
+					<coreId>1464228224</coreId>
 				</Obj>
 				<node_objs>
 					<count>5</count>
@@ -8399,7 +8399,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>0</coreId>
+					<coreId>1464229312</coreId>
 				</Obj>
 				<node_objs>
 					<count>2</count>
@@ -8428,7 +8428,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>0</coreId>
+					<coreId>1464239216</coreId>
 				</Obj>
 				<node_objs>
 					<count>1</count>
@@ -10821,8 +10821,8 @@
 		</item>
 		<item class_id_reference="22" object_id="_515">
 			<mId>6</mId>
-			<mTag>VITIS_LOOP_35_1</mTag>
-			<mNormTag>VITIS_LOOP_35_1</mNormTag>
+			<mTag>VITIS_LOOP_26_1</mTag>
+			<mNormTag>VITIS_LOOP_26_1</mNormTag>
 			<mType>1</mType>
 			<sub_regions>
 				<count>0</count>
@@ -10869,8 +10869,8 @@
 		</item>
 		<item class_id_reference="22" object_id="_517">
 			<mId>8</mId>
-			<mTag>VITIS_LOOP_41_2</mTag>
-			<mNormTag>VITIS_LOOP_41_2</mNormTag>
+			<mTag>VITIS_LOOP_32_2</mTag>
+			<mNormTag>VITIS_LOOP_32_2</mNormTag>
 			<mType>1</mType>
 			<sub_regions>
 				<count>0</count>
@@ -10916,8 +10916,8 @@
 		</item>
 		<item class_id_reference="22" object_id="_519">
 			<mId>10</mId>
-			<mTag>VITIS_LOOP_47_3</mTag>
-			<mNormTag>VITIS_LOOP_47_3</mNormTag>
+			<mTag>VITIS_LOOP_38_3</mTag>
+			<mNormTag>VITIS_LOOP_38_3</mNormTag>
 			<mType>1</mType>
 			<sub_regions>
 				<count>0</count>
@@ -10963,8 +10963,8 @@
 		</item>
 		<item class_id_reference="22" object_id="_521">
 			<mId>12</mId>
-			<mTag>VITIS_LOOP_51_4</mTag>
-			<mNormTag>VITIS_LOOP_51_4</mNormTag>
+			<mTag>VITIS_LOOP_42_4</mTag>
+			<mNormTag>VITIS_LOOP_42_4</mNormTag>
 			<mType>1</mType>
 			<sub_regions>
 				<count>0</count>
@@ -11033,8 +11033,8 @@
 		</item>
 		<item class_id_reference="22" object_id="_524">
 			<mId>15</mId>
-			<mTag>VITIS_LOOP_57_5</mTag>
-			<mNormTag>VITIS_LOOP_57_5</mNormTag>
+			<mTag>VITIS_LOOP_48_5</mTag>
+			<mNormTag>VITIS_LOOP_48_5</mNormTag>
 			<mType>1</mType>
 			<sub_regions>
 				<count>0</count>
@@ -16735,7 +16735,7 @@
 			<pipe_depth>3</pipe_depth>
 		</item>
 		<item class_id_reference="44" object_id="_1066">
-			<region_name>VITIS_LOOP_35_1</region_name>
+			<region_name>VITIS_LOOP_26_1</region_name>
 			<basic_blocks>
 				<count>2</count>
 				<item_version>0</item_version>
@@ -16752,7 +16752,7 @@
 			<pipe_depth>2</pipe_depth>
 		</item>
 		<item class_id_reference="44" object_id="_1067">
-			<region_name>VITIS_LOOP_41_2</region_name>
+			<region_name>VITIS_LOOP_32_2</region_name>
 			<basic_blocks>
 				<count>2</count>
 				<item_version>0</item_version>
@@ -16769,7 +16769,7 @@
 			<pipe_depth>3</pipe_depth>
 		</item>
 		<item class_id_reference="44" object_id="_1068">
-			<region_name>VITIS_LOOP_47_3</region_name>
+			<region_name>VITIS_LOOP_38_3</region_name>
 			<basic_blocks>
 				<count>2</count>
 				<item_version>0</item_version>
@@ -16786,7 +16786,7 @@
 			<pipe_depth>9</pipe_depth>
 		</item>
 		<item class_id_reference="44" object_id="_1069">
-			<region_name>VITIS_LOOP_51_4</region_name>
+			<region_name>VITIS_LOOP_42_4</region_name>
 			<basic_blocks>
 				<count>2</count>
 				<item_version>0</item_version>
@@ -16803,7 +16803,7 @@
 			<pipe_depth>36</pipe_depth>
 		</item>
 		<item class_id_reference="44" object_id="_1070">
-			<region_name>VITIS_LOOP_57_5</region_name>
+			<region_name>VITIS_LOOP_48_5</region_name>
 			<basic_blocks>
 				<count>5</count>
 				<item_version>0</item_version>
@@ -17761,7 +17761,7 @@
 			</second>
 		</item>
 		<item>
-			<first>add_ln35_fu_519</first>
+			<first>add_ln26_fu_519</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -17769,7 +17769,7 @@
 			</second>
 		</item>
 		<item>
-			<first>add_ln41_fu_549</first>
+			<first>add_ln32_fu_549</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -17777,7 +17777,7 @@
 			</second>
 		</item>
 		<item>
-			<first>add_ln47_fu_575</first>
+			<first>add_ln38_fu_575</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -17785,7 +17785,7 @@
 			</second>
 		</item>
 		<item>
-			<first>add_ln51_fu_605</first>
+			<first>add_ln42_fu_605</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -17793,7 +17793,7 @@
 			</second>
 		</item>
 		<item>
-			<first>add_ln57_fu_653</first>
+			<first>add_ln48_fu_653</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18018,7 +18018,7 @@
 			</second>
 		</item>
 		<item>
-			<first>icmp_ln29_fu_466</first>
+			<first>icmp_ln20_fu_466</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18026,7 +18026,7 @@
 			</second>
 		</item>
 		<item>
-			<first>icmp_ln35_fu_514</first>
+			<first>icmp_ln26_fu_514</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18034,7 +18034,7 @@
 			</second>
 		</item>
 		<item>
-			<first>icmp_ln41_1_fu_559</first>
+			<first>icmp_ln32_1_fu_559</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18042,7 +18042,7 @@
 			</second>
 		</item>
 		<item>
-			<first>icmp_ln41_fu_544</first>
+			<first>icmp_ln32_fu_544</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18050,7 +18050,7 @@
 			</second>
 		</item>
 		<item>
-			<first>icmp_ln47_fu_585</first>
+			<first>icmp_ln38_fu_585</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18058,7 +18058,7 @@
 			</second>
 		</item>
 		<item>
-			<first>icmp_ln51_fu_615</first>
+			<first>icmp_ln42_fu_615</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18066,7 +18066,7 @@
 			</second>
 		</item>
 		<item>
-			<first>icmp_ln57_fu_663</first>
+			<first>icmp_ln48_fu_663</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18074,7 +18074,7 @@
 			</second>
 		</item>
 		<item>
-			<first>icmp_ln58_fu_673</first>
+			<first>icmp_ln49_fu_673</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18266,7 +18266,7 @@
 			</second>
 		</item>
 		<item>
-			<first>sext_ln34_fu_503</first>
+			<first>sext_ln25_fu_503</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18370,7 +18370,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln55_fu_642</first>
+			<first>zext_ln46_fu_642</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -19270,7 +19270,7 @@
 			</second>
 		</item>
 		<item>
-			<first>add_ln35_reg_829</first>
+			<first>add_ln26_reg_829</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -19278,7 +19278,7 @@
 			</second>
 		</item>
 		<item>
-			<first>add_ln41_reg_848</first>
+			<first>add_ln32_reg_848</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -19286,7 +19286,7 @@
 			</second>
 		</item>
 		<item>
-			<first>add_ln47_reg_872</first>
+			<first>add_ln38_reg_872</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -19294,7 +19294,7 @@
 			</second>
 		</item>
 		<item>
-			<first>add_ln51_reg_896</first>
+			<first>add_ln42_reg_896</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -19302,7 +19302,7 @@
 			</second>
 		</item>
 		<item>
-			<first>add_ln57_reg_939</first>
+			<first>add_ln48_reg_939</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -19470,7 +19470,7 @@
 			</second>
 		</item>
 		<item>
-			<first>icmp_ln29_reg_790</first>
+			<first>icmp_ln20_reg_790</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -19478,7 +19478,7 @@
 			</second>
 		</item>
 		<item>
-			<first>icmp_ln35_reg_825</first>
+			<first>icmp_ln26_reg_825</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -19486,7 +19486,7 @@
 			</second>
 		</item>
 		<item>
-			<first>icmp_ln41_1_reg_853</first>
+			<first>icmp_ln32_1_reg_853</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -19494,7 +19494,7 @@
 			</second>
 		</item>
 		<item>
-			<first>icmp_ln41_reg_844</first>
+			<first>icmp_ln32_reg_844</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -19502,7 +19502,7 @@
 			</second>
 		</item>
 		<item>
-			<first>icmp_ln47_reg_877</first>
+			<first>icmp_ln38_reg_877</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -19510,7 +19510,7 @@
 			</second>
 		</item>
 		<item>
-			<first>icmp_ln51_reg_901</first>
+			<first>icmp_ln42_reg_901</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -19518,7 +19518,7 @@
 			</second>
 		</item>
 		<item>
-			<first>icmp_ln57_reg_944</first>
+			<first>icmp_ln48_reg_944</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -19526,7 +19526,7 @@
 			</second>
 		</item>
 		<item>
-			<first>icmp_ln58_reg_953</first>
+			<first>icmp_ln49_reg_953</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

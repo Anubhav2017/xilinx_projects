@@ -31,7 +31,6 @@ module conv_bckwd_CTRL_s_axi
     output wire                          interrupt,
     output wire [31:0]                   x,
     output wire [31:0]                   w,
-    output wire [31:0]                   y,
     output wire [31:0]                   dx,
     output wire [31:0]                   dw,
     output wire [31:0]                   db,
@@ -72,39 +71,36 @@ module conv_bckwd_CTRL_s_axi
 // 0x18 : Data signal of w
 //        bit 31~0 - w[31:0] (Read/Write)
 // 0x1c : reserved
-// 0x20 : Data signal of y
-//        bit 31~0 - y[31:0] (Read/Write)
-// 0x24 : reserved
-// 0x28 : Data signal of dx
+// 0x20 : Data signal of dx
 //        bit 31~0 - dx[31:0] (Read/Write)
-// 0x2c : reserved
-// 0x30 : Data signal of dw
+// 0x24 : reserved
+// 0x28 : Data signal of dw
 //        bit 31~0 - dw[31:0] (Read/Write)
-// 0x34 : reserved
-// 0x38 : Data signal of db
+// 0x2c : reserved
+// 0x30 : Data signal of db
 //        bit 31~0 - db[31:0] (Read/Write)
-// 0x3c : reserved
-// 0x40 : Data signal of dy
+// 0x34 : reserved
+// 0x38 : Data signal of dy
 //        bit 31~0 - dy[31:0] (Read/Write)
-// 0x44 : reserved
-// 0x48 : Data signal of F
+// 0x3c : reserved
+// 0x40 : Data signal of F
 //        bit 31~0 - F[31:0] (Read/Write)
-// 0x4c : reserved
-// 0x50 : Data signal of C
+// 0x44 : reserved
+// 0x48 : Data signal of C
 //        bit 31~0 - C[31:0] (Read/Write)
-// 0x54 : reserved
-// 0x58 : Data signal of H
+// 0x4c : reserved
+// 0x50 : Data signal of H
 //        bit 31~0 - H[31:0] (Read/Write)
-// 0x5c : reserved
-// 0x60 : Data signal of W_r
+// 0x54 : reserved
+// 0x58 : Data signal of W_r
 //        bit 31~0 - W_r[31:0] (Read/Write)
-// 0x64 : reserved
-// 0x68 : Data signal of FH
+// 0x5c : reserved
+// 0x60 : Data signal of FH
 //        bit 31~0 - FH[31:0] (Read/Write)
-// 0x6c : reserved
-// 0x70 : Data signal of FW
+// 0x64 : reserved
+// 0x68 : Data signal of FW
 //        bit 31~0 - FW[31:0] (Read/Write)
-// 0x74 : reserved
+// 0x6c : reserved
 // (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
 //------------------------Parameter----------------------
@@ -117,28 +113,26 @@ localparam
     ADDR_X_CTRL     = 7'h14,
     ADDR_W_DATA_0   = 7'h18,
     ADDR_W_CTRL     = 7'h1c,
-    ADDR_Y_DATA_0   = 7'h20,
-    ADDR_Y_CTRL     = 7'h24,
-    ADDR_DX_DATA_0  = 7'h28,
-    ADDR_DX_CTRL    = 7'h2c,
-    ADDR_DW_DATA_0  = 7'h30,
-    ADDR_DW_CTRL    = 7'h34,
-    ADDR_DB_DATA_0  = 7'h38,
-    ADDR_DB_CTRL    = 7'h3c,
-    ADDR_DY_DATA_0  = 7'h40,
-    ADDR_DY_CTRL    = 7'h44,
-    ADDR_F_DATA_0   = 7'h48,
-    ADDR_F_CTRL     = 7'h4c,
-    ADDR_C_DATA_0   = 7'h50,
-    ADDR_C_CTRL     = 7'h54,
-    ADDR_H_DATA_0   = 7'h58,
-    ADDR_H_CTRL     = 7'h5c,
-    ADDR_W_R_DATA_0 = 7'h60,
-    ADDR_W_R_CTRL   = 7'h64,
-    ADDR_FH_DATA_0  = 7'h68,
-    ADDR_FH_CTRL    = 7'h6c,
-    ADDR_FW_DATA_0  = 7'h70,
-    ADDR_FW_CTRL    = 7'h74,
+    ADDR_DX_DATA_0  = 7'h20,
+    ADDR_DX_CTRL    = 7'h24,
+    ADDR_DW_DATA_0  = 7'h28,
+    ADDR_DW_CTRL    = 7'h2c,
+    ADDR_DB_DATA_0  = 7'h30,
+    ADDR_DB_CTRL    = 7'h34,
+    ADDR_DY_DATA_0  = 7'h38,
+    ADDR_DY_CTRL    = 7'h3c,
+    ADDR_F_DATA_0   = 7'h40,
+    ADDR_F_CTRL     = 7'h44,
+    ADDR_C_DATA_0   = 7'h48,
+    ADDR_C_CTRL     = 7'h4c,
+    ADDR_H_DATA_0   = 7'h50,
+    ADDR_H_CTRL     = 7'h54,
+    ADDR_W_R_DATA_0 = 7'h58,
+    ADDR_W_R_CTRL   = 7'h5c,
+    ADDR_FH_DATA_0  = 7'h60,
+    ADDR_FH_CTRL    = 7'h64,
+    ADDR_FW_DATA_0  = 7'h68,
+    ADDR_FW_CTRL    = 7'h6c,
     WRIDLE          = 2'd0,
     WRDATA          = 2'd1,
     WRRESP          = 2'd2,
@@ -171,7 +165,6 @@ localparam
     reg  [1:0]                    int_isr = 2'b0;
     reg  [31:0]                   int_x = 'b0;
     reg  [31:0]                   int_w = 'b0;
-    reg  [31:0]                   int_y = 'b0;
     reg  [31:0]                   int_dx = 'b0;
     reg  [31:0]                   int_dw = 'b0;
     reg  [31:0]                   int_db = 'b0;
@@ -296,9 +289,6 @@ always @(posedge ACLK) begin
                 ADDR_W_DATA_0: begin
                     rdata <= int_w[31:0];
                 end
-                ADDR_Y_DATA_0: begin
-                    rdata <= int_y[31:0];
-                end
                 ADDR_DX_DATA_0: begin
                     rdata <= int_dx[31:0];
                 end
@@ -340,7 +330,6 @@ assign interrupt = int_gie & (|int_isr);
 assign ap_start  = int_ap_start;
 assign x         = int_x;
 assign w         = int_w;
-assign y         = int_y;
 assign dx        = int_dx;
 assign dw        = int_dw;
 assign db        = int_db;
@@ -464,16 +453,6 @@ always @(posedge ACLK) begin
     else if (ACLK_EN) begin
         if (w_hs && waddr == ADDR_W_DATA_0)
             int_w[31:0] <= (WDATA[31:0] & wmask) | (int_w[31:0] & ~wmask);
-    end
-end
-
-// int_y[31:0]
-always @(posedge ACLK) begin
-    if (ARESET)
-        int_y[31:0] <= 0;
-    else if (ACLK_EN) begin
-        if (w_hs && waddr == ADDR_Y_DATA_0)
-            int_y[31:0] <= (WDATA[31:0] & wmask) | (int_y[31:0] & ~wmask);
     end
 end
 

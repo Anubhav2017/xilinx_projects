@@ -15,7 +15,6 @@ set C_modelArgList {
 	{ gmem int 16 regular {axi_master 2}  }
 	{ x int 32 regular {axi_slave 0}  }
 	{ w int 32 regular {axi_slave 0}  }
-	{ y int 32 unused {axi_slave 0}  }
 	{ dx int 32 regular {axi_slave 0}  }
 	{ dw int 32 regular {axi_slave 0}  }
 	{ db int 32 regular {axi_slave 0}  }
@@ -28,20 +27,19 @@ set C_modelArgList {
 	{ FW int 32 regular {axi_slave 0}  }
 }
 set C_modelArgMapList {[ 
-	{ "Name" : "gmem", "interface" : "axi_master", "bitwidth" : 16, "direction" : "READWRITE", "bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "x","cData": "short","bit_use": { "low": 0,"up": 0},"offset": { "type": "dynamic","port_name": "x","bundle": "CTRL"},"direction": "READONLY","cArray": [{"low" : 0,"up" : 0,"step" : 0}]},{"cName": "w","cData": "short","bit_use": { "low": 0,"up": 0},"offset": { "type": "dynamic","port_name": "w","bundle": "CTRL"},"direction": "READONLY","cArray": [{"low" : 0,"up" : 0,"step" : 0}]},{"cName": "y","cData": "short","bit_use": { "low": 0,"up": 0},"offset": { "type": "dynamic","port_name": "y","bundle": "CTRL"},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]},{"cName": "dx","cData": "short","bit_use": { "low": 0,"up": 0},"offset": { "type": "dynamic","port_name": "dx","bundle": "CTRL"},"direction": "READWRITE","cArray": [{"low" : 0,"up" : 0,"step" : 0}]},{"cName": "dw","cData": "short","bit_use": { "low": 0,"up": 0},"offset": { "type": "dynamic","port_name": "dw","bundle": "CTRL"},"direction": "READWRITE","cArray": [{"low" : 0,"up" : 0,"step" : 0}]},{"cName": "db","cData": "short","bit_use": { "low": 0,"up": 0},"offset": { "type": "dynamic","port_name": "db","bundle": "CTRL"},"direction": "WRITEONLY","cArray": [{"low" : 0,"up" : 0,"step" : 0}]},{"cName": "dy","cData": "short","bit_use": { "low": 0,"up": 0},"offset": { "type": "dynamic","port_name": "dy","bundle": "CTRL"},"direction": "READONLY","cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}]} , 
+	{ "Name" : "gmem", "interface" : "axi_master", "bitwidth" : 16, "direction" : "READWRITE", "bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "x","cData": "short","bit_use": { "low": 0,"up": 0},"offset": { "type": "dynamic","port_name": "x","bundle": "CTRL"},"direction": "READONLY","cArray": [{"low" : 0,"up" : 0,"step" : 0}]},{"cName": "w","cData": "short","bit_use": { "low": 0,"up": 0},"offset": { "type": "dynamic","port_name": "w","bundle": "CTRL"},"direction": "READONLY","cArray": [{"low" : 0,"up" : 0,"step" : 0}]},{"cName": "dx","cData": "short","bit_use": { "low": 0,"up": 0},"offset": { "type": "dynamic","port_name": "dx","bundle": "CTRL"},"direction": "READWRITE","cArray": [{"low" : 0,"up" : 0,"step" : 0}]},{"cName": "dw","cData": "short","bit_use": { "low": 0,"up": 0},"offset": { "type": "dynamic","port_name": "dw","bundle": "CTRL"},"direction": "READWRITE","cArray": [{"low" : 0,"up" : 0,"step" : 0}]},{"cName": "db","cData": "short","bit_use": { "low": 0,"up": 0},"offset": { "type": "dynamic","port_name": "db","bundle": "CTRL"},"direction": "WRITEONLY","cArray": [{"low" : 0,"up" : 0,"step" : 0}]},{"cName": "dy","cData": "short","bit_use": { "low": 0,"up": 0},"offset": { "type": "dynamic","port_name": "dy","bundle": "CTRL"},"direction": "READONLY","cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}]} , 
  	{ "Name" : "x", "interface" : "axi_slave", "bundle":"CTRL","type":"ap_none","bitwidth" : 32, "direction" : "READONLY", "offset" : {"in":16}, "offset_end" : {"in":23}} , 
  	{ "Name" : "w", "interface" : "axi_slave", "bundle":"CTRL","type":"ap_none","bitwidth" : 32, "direction" : "READONLY", "offset" : {"in":24}, "offset_end" : {"in":31}} , 
- 	{ "Name" : "y", "interface" : "axi_slave", "bundle":"CTRL","type":"ap_none","bitwidth" : 32, "direction" : "READONLY", "offset" : {"in":32}, "offset_end" : {"in":39}} , 
- 	{ "Name" : "dx", "interface" : "axi_slave", "bundle":"CTRL","type":"ap_none","bitwidth" : 32, "direction" : "READONLY", "offset" : {"in":40}, "offset_end" : {"in":47}} , 
- 	{ "Name" : "dw", "interface" : "axi_slave", "bundle":"CTRL","type":"ap_none","bitwidth" : 32, "direction" : "READONLY", "offset" : {"in":48}, "offset_end" : {"in":55}} , 
- 	{ "Name" : "db", "interface" : "axi_slave", "bundle":"CTRL","type":"ap_none","bitwidth" : 32, "direction" : "READONLY", "offset" : {"in":56}, "offset_end" : {"in":63}} , 
- 	{ "Name" : "dy", "interface" : "axi_slave", "bundle":"CTRL","type":"ap_none","bitwidth" : 32, "direction" : "READONLY", "offset" : {"in":64}, "offset_end" : {"in":71}} , 
- 	{ "Name" : "F", "interface" : "axi_slave", "bundle":"CTRL","type":"ap_none","bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "F","cData": "int","bit_use": { "low": 0,"up": 0},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}], "offset" : {"in":72}, "offset_end" : {"in":79}} , 
- 	{ "Name" : "C", "interface" : "axi_slave", "bundle":"CTRL","type":"ap_none","bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "C","cData": "int","bit_use": { "low": 0,"up": 0},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}], "offset" : {"in":80}, "offset_end" : {"in":87}} , 
- 	{ "Name" : "H", "interface" : "axi_slave", "bundle":"CTRL","type":"ap_none","bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "H","cData": "int","bit_use": { "low": 0,"up": 0},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}], "offset" : {"in":88}, "offset_end" : {"in":95}} , 
- 	{ "Name" : "W_r", "interface" : "axi_slave", "bundle":"CTRL","type":"ap_none","bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "W","cData": "int","bit_use": { "low": 0,"up": 0},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}], "offset" : {"in":96}, "offset_end" : {"in":103}} , 
- 	{ "Name" : "FH", "interface" : "axi_slave", "bundle":"CTRL","type":"ap_none","bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "FH","cData": "int","bit_use": { "low": 0,"up": 0},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}], "offset" : {"in":104}, "offset_end" : {"in":111}} , 
- 	{ "Name" : "FW", "interface" : "axi_slave", "bundle":"CTRL","type":"ap_none","bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "FW","cData": "int","bit_use": { "low": 0,"up": 0},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}], "offset" : {"in":112}, "offset_end" : {"in":119}} ]}
+ 	{ "Name" : "dx", "interface" : "axi_slave", "bundle":"CTRL","type":"ap_none","bitwidth" : 32, "direction" : "READONLY", "offset" : {"in":32}, "offset_end" : {"in":39}} , 
+ 	{ "Name" : "dw", "interface" : "axi_slave", "bundle":"CTRL","type":"ap_none","bitwidth" : 32, "direction" : "READONLY", "offset" : {"in":40}, "offset_end" : {"in":47}} , 
+ 	{ "Name" : "db", "interface" : "axi_slave", "bundle":"CTRL","type":"ap_none","bitwidth" : 32, "direction" : "READONLY", "offset" : {"in":48}, "offset_end" : {"in":55}} , 
+ 	{ "Name" : "dy", "interface" : "axi_slave", "bundle":"CTRL","type":"ap_none","bitwidth" : 32, "direction" : "READONLY", "offset" : {"in":56}, "offset_end" : {"in":63}} , 
+ 	{ "Name" : "F", "interface" : "axi_slave", "bundle":"CTRL","type":"ap_none","bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "F","cData": "int","bit_use": { "low": 0,"up": 0},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}], "offset" : {"in":64}, "offset_end" : {"in":71}} , 
+ 	{ "Name" : "C", "interface" : "axi_slave", "bundle":"CTRL","type":"ap_none","bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "C","cData": "int","bit_use": { "low": 0,"up": 0},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}], "offset" : {"in":72}, "offset_end" : {"in":79}} , 
+ 	{ "Name" : "H", "interface" : "axi_slave", "bundle":"CTRL","type":"ap_none","bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "H","cData": "int","bit_use": { "low": 0,"up": 0},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}], "offset" : {"in":80}, "offset_end" : {"in":87}} , 
+ 	{ "Name" : "W_r", "interface" : "axi_slave", "bundle":"CTRL","type":"ap_none","bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "W","cData": "int","bit_use": { "low": 0,"up": 0},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}], "offset" : {"in":88}, "offset_end" : {"in":95}} , 
+ 	{ "Name" : "FH", "interface" : "axi_slave", "bundle":"CTRL","type":"ap_none","bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "FH","cData": "int","bit_use": { "low": 0,"up": 0},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}], "offset" : {"in":96}, "offset_end" : {"in":103}} , 
+ 	{ "Name" : "FW", "interface" : "axi_slave", "bundle":"CTRL","type":"ap_none","bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "FW","cData": "int","bit_use": { "low": 0,"up": 0},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}], "offset" : {"in":104}, "offset_end" : {"in":111}} ]}
 # RTL Port declarations: 
 set portNum 65
 set portList { 
@@ -112,7 +110,7 @@ set portList {
 	{ interrupt sc_out sc_logic 1 signal -1 } 
 }
 set NewPortList {[ 
-	{ "name": "s_axi_CTRL_AWADDR", "direction": "in", "datatype": "sc_lv", "bitwidth":7, "type": "signal", "bundle":{"name": "CTRL", "role": "AWADDR" },"address":[{"name":"conv_bckwd","role":"start","value":"0","valid_bit":"0"},{"name":"conv_bckwd","role":"continue","value":"0","valid_bit":"4"},{"name":"conv_bckwd","role":"auto_start","value":"0","valid_bit":"7"},{"name":"x","role":"data","value":"16"},{"name":"w","role":"data","value":"24"},{"name":"y","role":"data","value":"32"},{"name":"dx","role":"data","value":"40"},{"name":"dw","role":"data","value":"48"},{"name":"db","role":"data","value":"56"},{"name":"dy","role":"data","value":"64"},{"name":"F","role":"data","value":"72"},{"name":"C","role":"data","value":"80"},{"name":"H","role":"data","value":"88"},{"name":"W_r","role":"data","value":"96"},{"name":"FH","role":"data","value":"104"},{"name":"FW","role":"data","value":"112"}] },
+	{ "name": "s_axi_CTRL_AWADDR", "direction": "in", "datatype": "sc_lv", "bitwidth":7, "type": "signal", "bundle":{"name": "CTRL", "role": "AWADDR" },"address":[{"name":"conv_bckwd","role":"start","value":"0","valid_bit":"0"},{"name":"conv_bckwd","role":"continue","value":"0","valid_bit":"4"},{"name":"conv_bckwd","role":"auto_start","value":"0","valid_bit":"7"},{"name":"x","role":"data","value":"16"},{"name":"w","role":"data","value":"24"},{"name":"dx","role":"data","value":"32"},{"name":"dw","role":"data","value":"40"},{"name":"db","role":"data","value":"48"},{"name":"dy","role":"data","value":"56"},{"name":"F","role":"data","value":"64"},{"name":"C","role":"data","value":"72"},{"name":"H","role":"data","value":"80"},{"name":"W_r","role":"data","value":"88"},{"name":"FH","role":"data","value":"96"},{"name":"FW","role":"data","value":"104"}] },
 	{ "name": "s_axi_CTRL_AWVALID", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "CTRL", "role": "AWVALID" } },
 	{ "name": "s_axi_CTRL_AWREADY", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "CTRL", "role": "AWREADY" } },
 	{ "name": "s_axi_CTRL_WVALID", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "CTRL", "role": "WVALID" } },
@@ -202,7 +200,6 @@ set RtlHierarchyInfo {[
 					{"Name" : "gmem_blk_n_B", "Type" : "RtlSignal"}]},
 			{"Name" : "x", "Type" : "None", "Direction" : "I"},
 			{"Name" : "w", "Type" : "None", "Direction" : "I"},
-			{"Name" : "y", "Type" : "None", "Direction" : "I"},
 			{"Name" : "dx", "Type" : "None", "Direction" : "I"},
 			{"Name" : "dw", "Type" : "None", "Direction" : "I"},
 			{"Name" : "db", "Type" : "None", "Direction" : "I"},
@@ -273,7 +270,6 @@ set ArgLastReadFirstWriteLatency {
 		gmem {Type IO LastRead 49 FirstWrite 21}
 		x {Type I LastRead 0 FirstWrite -1}
 		w {Type I LastRead 0 FirstWrite -1}
-		y {Type I LastRead -1 FirstWrite -1}
 		dx {Type I LastRead 0 FirstWrite -1}
 		dw {Type I LastRead 0 FirstWrite -1}
 		db {Type I LastRead 0 FirstWrite -1}

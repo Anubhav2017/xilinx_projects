@@ -126,6 +126,10 @@
   },
   "HlsSolution": {
     "FlowTarget": "vivado",
+    "ConfigTcl": [
+      "config_export -format=ip_catalog",
+      "config_export -rtl=verilog"
+    ],
     "DirectiveTcl": [
       "set_directive_top loss_derivative -name loss_derivative",
       "set_directive_top loss_derivative -name loss_derivative"
@@ -1084,14 +1088,14 @@
             "PipelineDepth": "3"
           },
           {
-            "Name": "VITIS_LOOP_35_1",
+            "Name": "VITIS_LOOP_26_1",
             "TripCount": "",
             "Latency": "",
             "PipelineII": "1",
             "PipelineDepth": "2"
           },
           {
-            "Name": "VITIS_LOOP_41_2",
+            "Name": "VITIS_LOOP_32_2",
             "TripCount": "",
             "LatencyMin": "2",
             "LatencyMax": "128",
@@ -1100,7 +1104,7 @@
             "PipelineDepth": "3"
           },
           {
-            "Name": "VITIS_LOOP_47_3",
+            "Name": "VITIS_LOOP_38_3",
             "TripCount": "",
             "LatencyMin": "8",
             "LatencyMax": "134",
@@ -1109,7 +1113,7 @@
             "PipelineDepth": "9"
           },
           {
-            "Name": "VITIS_LOOP_51_4",
+            "Name": "VITIS_LOOP_42_4",
             "TripCount": "",
             "LatencyMin": "35",
             "LatencyMax": "161",
@@ -1118,7 +1122,7 @@
             "PipelineDepth": "36"
           },
           {
-            "Name": "VITIS_LOOP_57_5",
+            "Name": "VITIS_LOOP_48_5",
             "TripCount": "",
             "LatencyMin": "0",
             "LatencyMax": "150",
@@ -1159,7 +1163,7 @@
   "GenerateBdFiles": "0",
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2022-04-29 13:57:28 IST",
+    "Time": "2022-05-02 12:15:45 IST",
     "ToolName": "vivado_hls",
     "ToolVersion": "2020.2"
   }

@@ -89,6 +89,10 @@
   },
   "HlsSolution": {
     "FlowTarget": "vivado",
+    "ConfigTcl": [
+      "config_export -format=ip_catalog",
+      "config_export -rtl=verilog"
+    ],
     "DirectiveTcl": [
       "set_directive_top relu_fwd -name relu_fwd",
       "set_directive_top relu_fwd -name relu_fwd"
@@ -849,7 +853,7 @@
         },
         "Loops": [
           {
-            "Name": "VITIS_LOOP_21_1",
+            "Name": "VITIS_LOOP_18_1",
             "TripCount": "",
             "LatencyMin": "2",
             "LatencyMax": "?",
@@ -858,7 +862,7 @@
             "PipelineDepth": "3"
           },
           {
-            "Name": "VITIS_LOOP_31_2",
+            "Name": "VITIS_LOOP_28_2",
             "TripCount": "",
             "LatencyMin": "2",
             "LatencyMax": "128",
@@ -889,7 +893,7 @@
   "GenerateBdFiles": "0",
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2022-04-29 11:49:23 IST",
+    "Time": "2022-05-02 11:31:49 IST",
     "ToolName": "vivado_hls",
     "ToolVersion": "2020.2"
   }

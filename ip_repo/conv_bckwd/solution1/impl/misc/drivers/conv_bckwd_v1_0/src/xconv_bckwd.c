@@ -107,23 +107,6 @@ u32 XConv_bckwd_Get_w(XConv_bckwd *InstancePtr) {
     return Data;
 }
 
-void XConv_bckwd_Set_y(XConv_bckwd *InstancePtr, u32 Data) {
-    Xil_AssertVoid(InstancePtr != NULL);
-    Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
-
-    XConv_bckwd_WriteReg(InstancePtr->Ctrl_BaseAddress, XCONV_BCKWD_CTRL_ADDR_Y_DATA, Data);
-}
-
-u32 XConv_bckwd_Get_y(XConv_bckwd *InstancePtr) {
-    u32 Data;
-
-    Xil_AssertNonvoid(InstancePtr != NULL);
-    Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
-
-    Data = XConv_bckwd_ReadReg(InstancePtr->Ctrl_BaseAddress, XCONV_BCKWD_CTRL_ADDR_Y_DATA);
-    return Data;
-}
-
 void XConv_bckwd_Set_dx(XConv_bckwd *InstancePtr, u32 Data) {
     Xil_AssertVoid(InstancePtr != NULL);
     Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);

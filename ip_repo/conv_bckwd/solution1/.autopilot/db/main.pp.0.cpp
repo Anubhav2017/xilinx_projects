@@ -151,6 +151,7 @@ extern "C" {
 }
 # 2 "<built-in>" 2
 # 1 "conv_bckwd/main.cpp" 2
+# 1 "conv_bckwd/conv_bckwd.h" 1
 
 
 
@@ -5570,19 +5571,21 @@ inline bool operator!=(
 
 }
 # 396 "/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed.h" 2
-# 5 "conv_bckwd/main.cpp" 2
+# 5 "conv_bckwd/conv_bckwd.h" 2
 
-typedef ap_fixed<16,9> fixed;
+typedef ap_fixed<16,9> fixed_t;
 
-__attribute__((sdx_kernel("conv_bckwd", 0))) void conv_bckwd(fixed* x, fixed* w, fixed* y, fixed* dx,fixed* dw,fixed* db, fixed* dy , int F, int C, int H, int W, int FH, int FW){
+__attribute__((sdx_kernel("conv_bckwd", 0))) void conv_bckwd(fixed_t* x, fixed_t* w, fixed_t* dx,fixed_t* dw,fixed_t* db, fixed_t* dy , int F, int C, int H, int W, int FH, int FW);
+# 2 "conv_bckwd/main.cpp" 2
+
+__attribute__((sdx_kernel("conv_bckwd", 0))) void conv_bckwd(fixed_t* x, fixed_t* w, fixed_t* dx,fixed_t* dw,fixed_t* db, fixed_t* dy , int F, int C, int H, int W, int FH, int FW){
 #pragma HLS TOP name=conv_bckwd
-# 8 "conv_bckwd/main.cpp"
+# 3 "conv_bckwd/main.cpp"
 
 
 #pragma HLS INTERFACE s_axilite port=return bundle=CTRL
 #pragma HLS INTERFACE m_axi port=x depth=200 offset=slave bundle=gmem
 #pragma HLS INTERFACE m_axi port=w depth=200 offset=slave bundle=gmem
-#pragma HLS INTERFACE m_axi port=y depth=200 offset=slave bundle=gmem
 #pragma HLS INTERFACE m_axi port=dx depth=200 offset=slave bundle=gmem
 #pragma HLS INTERFACE m_axi port=dw depth=200 offset=slave bundle=gmem
 #pragma HLS INTERFACE m_axi port=dy depth=200 offset=slave bundle=gmem
@@ -5591,7 +5594,6 @@ __attribute__((sdx_kernel("conv_bckwd", 0))) void conv_bckwd(fixed* x, fixed* w,
 
 #pragma HLS INTERFACE s_axilite port=x bundle=CTRL
 #pragma HLS INTERFACE s_axilite port=w bundle=CTRL
-#pragma HLS INTERFACE s_axilite port=y bundle=CTRL
 #pragma HLS INTERFACE s_axilite port=dx bundle=CTRL
 #pragma HLS INTERFACE s_axilite port=dw bundle=CTRL
 #pragma HLS INTERFACE s_axilite port=dy bundle=CTRL
@@ -5605,13 +5607,13 @@ __attribute__((sdx_kernel("conv_bckwd", 0))) void conv_bckwd(fixed* x, fixed* w,
 #pragma HLS INTERFACE s_axilite port=FW bundle=CTRL
 
 
- fixed xbuf[10][100][100];
- fixed wbuf[10][10][5][5];
-    fixed dybuf[10][100][100];
+ fixed_t xbuf[10][100][100];
+ fixed_t wbuf[10][10][5][5];
+    fixed_t dybuf[10][100][100];
 
-    VITIS_LOOP_40_1: for(int i=0;i<C;i++){
-        VITIS_LOOP_41_2: for(int j=0;j<H;j++){
-            VITIS_LOOP_42_3: for(int k=0;k<W;k++){
+    VITIS_LOOP_33_1: for(int i=0;i<C;i++){
+        VITIS_LOOP_34_2: for(int j=0;j<H;j++){
+            VITIS_LOOP_35_3: for(int k=0;k<W;k++){
                 xbuf[i][j][k] = x[i*H*W+j*W+k];
             }
         }
@@ -5619,10 +5621,10 @@ __attribute__((sdx_kernel("conv_bckwd", 0))) void conv_bckwd(fixed* x, fixed* w,
     }
 
 
-    VITIS_LOOP_50_4: for(int i=0;i<F;i++){
-        VITIS_LOOP_51_5: for(int j=0;j<C;j++){
-            VITIS_LOOP_52_6: for(int k=0;k<FH;k++){
-                VITIS_LOOP_53_7: for(int l=0;l<FW;l++){
+    VITIS_LOOP_43_4: for(int i=0;i<F;i++){
+        VITIS_LOOP_44_5: for(int j=0;j<C;j++){
+            VITIS_LOOP_45_6: for(int k=0;k<FH;k++){
+                VITIS_LOOP_46_7: for(int l=0;l<FW;l++){
                     wbuf[i][j][k][l] = w[i*C*FH*FW+j*FH*FW+k*FW+l];
                 }
             }
@@ -5638,9 +5640,9 @@ __attribute__((sdx_kernel("conv_bckwd", 0))) void conv_bckwd(fixed* x, fixed* w,
 
 
 
-    VITIS_LOOP_69_8: for(int i=0;i<F;i++){
-        VITIS_LOOP_70_9: for(int j=0;j<outH;j++){
-            VITIS_LOOP_71_10: for(int k=0;k<outW;k++){
+    VITIS_LOOP_62_8: for(int i=0;i<F;i++){
+        VITIS_LOOP_63_9: for(int j=0;j<outH;j++){
+            VITIS_LOOP_64_10: for(int k=0;k<outW;k++){
                 dybuf[i][j][k] = dy[i*outH*outW+j*outW+k];
             }
         }
@@ -5649,42 +5651,42 @@ __attribute__((sdx_kernel("conv_bckwd", 0))) void conv_bckwd(fixed* x, fixed* w,
 
 
 
-    fixed dxbuf[10][100][100];
-    fixed dwbuf[10][10][5][5];
-    fixed dbbuf[10];
+    fixed_t dxbuf[10][100][100];
+    fixed_t dwbuf[10][10][5][5];
+    fixed_t dbbuf[10];
 
 
-    VITIS_LOOP_85_11: for(int i=0;i<F;i++){
-        VITIS_LOOP_86_12: for(int j=0;j<C;j++){
-            VITIS_LOOP_87_13: for(int k=0;k<FH;k++){
-                VITIS_LOOP_88_14: for(int l=0;l<FW;l++){
+    VITIS_LOOP_78_11: for(int i=0;i<F;i++){
+        VITIS_LOOP_79_12: for(int j=0;j<C;j++){
+            VITIS_LOOP_80_13: for(int k=0;k<FH;k++){
+                VITIS_LOOP_81_14: for(int l=0;l<FW;l++){
                     dwbuf[i][j][k][l] = dw[i*C*FH*FW+j*FH*FW+k*FW+l];
                 }
             }
         }
     }
 
-    VITIS_LOOP_95_15: for(int i=0;i<C;i++){
-        VITIS_LOOP_96_16: for(int j=0;j<H;j++){
-            VITIS_LOOP_97_17: for(int k=0;k<W;k++){
+    VITIS_LOOP_88_15: for(int i=0;i<C;i++){
+        VITIS_LOOP_89_16: for(int j=0;j<H;j++){
+            VITIS_LOOP_90_17: for(int k=0;k<W;k++){
                 dxbuf[i][j][k] = dx[i*H*W+j*W+k];
             }
         }
 
     }
 
-    VITIS_LOOP_104_18: for(int i=0;i<F;i++){
+    VITIS_LOOP_97_18: for(int i=0;i<F;i++){
         db[i] = dbbuf[i];
     }
 
 
 
-    VITIS_LOOP_110_19: for(int f=0;f<F;f++){
-        VITIS_LOOP_111_20: for(int h=0;h<outH;h++){
-            VITIS_LOOP_112_21: for(int w=0;w<outW;w++){
-                VITIS_LOOP_113_22: for(int c=0;c<C;c++){
-                    VITIS_LOOP_114_23: for(int fh=0;fh<FH;fh++){
-                        VITIS_LOOP_115_24: for(int fw=0;fw<FW;fw++){
+    VITIS_LOOP_103_19: for(int f=0;f<F;f++){
+        VITIS_LOOP_104_20: for(int h=0;h<outH;h++){
+            VITIS_LOOP_105_21: for(int w=0;w<outW;w++){
+                VITIS_LOOP_106_22: for(int c=0;c<C;c++){
+                    VITIS_LOOP_107_23: for(int fh=0;fh<FH;fh++){
+                        VITIS_LOOP_108_24: for(int fw=0;fw<FW;fw++){
                             dwbuf[f][c][fh][fw] += dybuf[f][h][w]*xbuf[c][h+fh][w+fw];
                             dxbuf[c][h+fh][w+fw] += dybuf[f][h][w]*wbuf[f][c][h+fh][w+fw];
                         }
@@ -5697,26 +5699,26 @@ __attribute__((sdx_kernel("conv_bckwd", 0))) void conv_bckwd(fixed* x, fixed* w,
 
 
 
-    VITIS_LOOP_128_25: for(int i=0;i<F;i++){
-        VITIS_LOOP_129_26: for(int j=0;j<C;j++){
-            VITIS_LOOP_130_27: for(int k=0;k<FH;k++){
-                VITIS_LOOP_131_28: for(int l=0;l<FW;l++){
+    VITIS_LOOP_121_25: for(int i=0;i<F;i++){
+        VITIS_LOOP_122_26: for(int j=0;j<C;j++){
+            VITIS_LOOP_123_27: for(int k=0;k<FH;k++){
+                VITIS_LOOP_124_28: for(int l=0;l<FW;l++){
                     dw[i*C*FH*FW+j*FH*FW+k*FW+l] = dwbuf[i][j][k][l];
                 }
             }
         }
     }
 
-    VITIS_LOOP_138_29: for(int i=0;i<C;i++){
-        VITIS_LOOP_139_30: for(int j=0;j<H;j++){
-            VITIS_LOOP_140_31: for(int k=0;k<W;k++){
+    VITIS_LOOP_131_29: for(int i=0;i<C;i++){
+        VITIS_LOOP_132_30: for(int j=0;j<H;j++){
+            VITIS_LOOP_133_31: for(int k=0;k<W;k++){
                 dx[i*H*W+j*W+k] = dxbuf[i][j][k];
             }
         }
 
     }
 
-    VITIS_LOOP_147_32: for(int i=0;i<F;i++){
+    VITIS_LOOP_140_32: for(int i=0;i<F;i++){
         db[i] = dbbuf[i];
     }
 

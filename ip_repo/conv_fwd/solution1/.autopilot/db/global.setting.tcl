@@ -45,12 +45,12 @@ set TargetInfo xc7z020:-clg400:-1
 set SourceFiles {sc {} c ../main.cpp}
 set SourceFlags {sc {} c {{}}}
 set DirectiveFile /home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/solution1.directive
-set TBFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
+set TBFiles {verilog ../test.cpp bc ../test.cpp vhdl ../test.cpp sc ../test.cpp cas ../test.cpp c {}}
 set SpecLanguage C
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
 set TVOutFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
-set TBTops {bc "" c "" sc "" cas "" vhdl "" verilog ""}
-set TBInstNames {bc "" c "" sc "" cas "" vhdl "" verilog ""}
+set TBTops {verilog {} bc {} vhdl {} sc {} cas {} c {}}
+set TBInstNames {verilog {} bc {} vhdl {} sc {} cas {} c {}}
 set XDCFiles {}
 set ExtraGlobalOptions {"area_timing" 1 "clock_gate" 1 "impl_flow" map "power_gate" 0}
 set TBTVFileNotFound {}

@@ -2,6 +2,9 @@
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
     <originFiles name="main.cpp" path="/home/anubhav/xilinx_projects/ip_repo/relu_bckwd/main.cpp"/>
+    <originFiles name="relu_bckwd.h" path="/home/anubhav/xilinx_projects/ip_repo/relu_bckwd/relu_bckwd.h"/>
   </source>
-  <testbench/>
+  <testbench>
+    <originFiles name="tb.cpp" path="/home/anubhav/xilinx_projects/ip_repo/relu_bckwd/tb.cpp"/>
+  </testbench>
 </autopilotfilemapping:AutoPilotFileMapping>

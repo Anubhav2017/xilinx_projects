@@ -42,9 +42,19 @@
 			<location>/home/anubhav/xilinx_projects/ip_repo/conv_fwd/solution1/.tcls</location>
 		</link>
 		<link>
+			<name>source/conv_fwd.h</name>
+			<type>1</type>
+			<location>/home/anubhav/xilinx_projects/ip_repo/conv_fwd/conv_fwd.h</location>
+		</link>
+		<link>
 			<name>source/main.cpp</name>
 			<type>1</type>
 			<location>/home/anubhav/xilinx_projects/ip_repo/conv_fwd/main.cpp</location>
+		</link>
+		<link>
+			<name>testbench/test.cpp</name>
+			<type>1</type>
+			<location>/home/anubhav/xilinx_projects/ip_repo/conv_fwd/test.cpp</location>
 		</link>
 		<link>
 			<name>solution1/constraints/.xml.directive</name>

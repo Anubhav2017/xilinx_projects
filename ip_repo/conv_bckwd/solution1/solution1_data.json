@@ -59,30 +59,8 @@
         }
       ]
     },
-    "y": {
-      "index": "2",
-      "direction": "inout",
-      "srcType": "ap_fixed<16, 9, AP_TRN, AP_WRAP, 0>*",
-      "srcSize": "16",
-      "hwRefs": [
-        {
-          "type": "interface",
-          "interface": "m_axi_gmem",
-          "name": "",
-          "usage": "data",
-          "direction": "out"
-        },
-        {
-          "type": "register",
-          "interface": "s_axi_CTRL",
-          "name": "y",
-          "usage": "address",
-          "direction": "in"
-        }
-      ]
-    },
     "dx": {
-      "index": "3",
+      "index": "2",
       "direction": "inout",
       "srcType": "ap_fixed<16, 9, AP_TRN, AP_WRAP, 0>*",
       "srcSize": "16",
@@ -104,7 +82,7 @@
       ]
     },
     "dw": {
-      "index": "4",
+      "index": "3",
       "direction": "inout",
       "srcType": "ap_fixed<16, 9, AP_TRN, AP_WRAP, 0>*",
       "srcSize": "16",
@@ -126,7 +104,7 @@
       ]
     },
     "db": {
-      "index": "5",
+      "index": "4",
       "direction": "inout",
       "srcType": "ap_fixed<16, 9, AP_TRN, AP_WRAP, 0>*",
       "srcSize": "16",
@@ -148,7 +126,7 @@
       ]
     },
     "dy": {
-      "index": "6",
+      "index": "5",
       "direction": "inout",
       "srcType": "ap_fixed<16, 9, AP_TRN, AP_WRAP, 0>*",
       "srcSize": "16",
@@ -170,7 +148,7 @@
       ]
     },
     "F": {
-      "index": "7",
+      "index": "6",
       "direction": "in",
       "srcType": "int",
       "srcSize": "32",
@@ -183,7 +161,7 @@
         }]
     },
     "C": {
-      "index": "8",
+      "index": "7",
       "direction": "in",
       "srcType": "int",
       "srcSize": "32",
@@ -196,7 +174,7 @@
         }]
     },
     "H": {
-      "index": "9",
+      "index": "8",
       "direction": "in",
       "srcType": "int",
       "srcSize": "32",
@@ -209,7 +187,7 @@
         }]
     },
     "W": {
-      "index": "10",
+      "index": "9",
       "direction": "in",
       "srcType": "int",
       "srcSize": "32",
@@ -222,7 +200,7 @@
         }]
     },
     "FH": {
-      "index": "11",
+      "index": "10",
       "direction": "in",
       "srcType": "int",
       "srcSize": "32",
@@ -235,7 +213,7 @@
         }]
     },
     "FW": {
-      "index": "12",
+      "index": "11",
       "direction": "in",
       "srcType": "int",
       "srcSize": "32",
@@ -687,22 +665,6 @@
         },
         {
           "offset": "0x20",
-          "name": "y",
-          "access": "W",
-          "resetValue": "0x0",
-          "description": "Data signal of y",
-          "range": "32",
-          "fields": [{
-              "offset": "0",
-              "width": "32",
-              "name": "y",
-              "access": "W",
-              "resetValue": "0",
-              "description": "Bit 31 to 0 of y"
-            }]
-        },
-        {
-          "offset": "0x28",
           "name": "dx",
           "access": "W",
           "resetValue": "0x0",
@@ -718,7 +680,7 @@
             }]
         },
         {
-          "offset": "0x30",
+          "offset": "0x28",
           "name": "dw",
           "access": "W",
           "resetValue": "0x0",
@@ -734,7 +696,7 @@
             }]
         },
         {
-          "offset": "0x38",
+          "offset": "0x30",
           "name": "db",
           "access": "W",
           "resetValue": "0x0",
@@ -750,7 +712,7 @@
             }]
         },
         {
-          "offset": "0x40",
+          "offset": "0x38",
           "name": "dy",
           "access": "W",
           "resetValue": "0x0",
@@ -766,7 +728,7 @@
             }]
         },
         {
-          "offset": "0x48",
+          "offset": "0x40",
           "name": "F",
           "access": "W",
           "resetValue": "0x0",
@@ -782,7 +744,7 @@
             }]
         },
         {
-          "offset": "0x50",
+          "offset": "0x48",
           "name": "C",
           "access": "W",
           "resetValue": "0x0",
@@ -798,7 +760,7 @@
             }]
         },
         {
-          "offset": "0x58",
+          "offset": "0x50",
           "name": "H",
           "access": "W",
           "resetValue": "0x0",
@@ -814,7 +776,7 @@
             }]
         },
         {
-          "offset": "0x60",
+          "offset": "0x58",
           "name": "W_r",
           "access": "W",
           "resetValue": "0x0",
@@ -830,7 +792,7 @@
             }]
         },
         {
-          "offset": "0x68",
+          "offset": "0x60",
           "name": "FH",
           "access": "W",
           "resetValue": "0x0",
@@ -846,7 +808,7 @@
             }]
         },
         {
-          "offset": "0x70",
+          "offset": "0x68",
           "name": "FW",
           "access": "W",
           "resetValue": "0x0",
@@ -1168,7 +1130,7 @@
         },
         "Loops": [
           {
-            "Name": "VITIS_LOOP_40_1_VITIS_LOOP_41_2",
+            "Name": "VITIS_LOOP_33_1_VITIS_LOOP_34_2",
             "TripCount": "",
             "Latency": "",
             "PipelineII": "",
@@ -1176,7 +1138,7 @@
             "PipelineDepthMax": "?",
             "PipelineDepth": "5 ~ ?",
             "Loops": [{
-                "Name": "VITIS_LOOP_42_3",
+                "Name": "VITIS_LOOP_35_3",
                 "TripCount": "",
                 "LatencyMin": "2",
                 "LatencyMax": "?",
@@ -1186,7 +1148,7 @@
               }]
           },
           {
-            "Name": "VITIS_LOOP_50_4_VITIS_LOOP_51_5_VITIS_LOOP_52_6",
+            "Name": "VITIS_LOOP_43_4_VITIS_LOOP_44_5_VITIS_LOOP_45_6",
             "TripCount": "",
             "Latency": "",
             "PipelineII": "",
@@ -1194,7 +1156,7 @@
             "PipelineDepthMax": "?",
             "PipelineDepth": "8 ~ ?",
             "Loops": [{
-                "Name": "VITIS_LOOP_53_7",
+                "Name": "VITIS_LOOP_46_7",
                 "TripCount": "",
                 "LatencyMin": "2",
                 "LatencyMax": "?",
@@ -1204,13 +1166,13 @@
               }]
           },
           {
-            "Name": "VITIS_LOOP_69_8_VITIS_LOOP_70_9",
+            "Name": "VITIS_LOOP_62_8_VITIS_LOOP_63_9",
             "TripCount": "",
             "Latency": "",
             "PipelineII": "",
             "PipelineDepth": "",
             "Loops": [{
-                "Name": "VITIS_LOOP_71_10",
+                "Name": "VITIS_LOOP_64_10",
                 "TripCount": "",
                 "Latency": "",
                 "PipelineII": "1",
@@ -1218,7 +1180,7 @@
               }]
           },
           {
-            "Name": "VITIS_LOOP_85_11_VITIS_LOOP_86_12_VITIS_LOOP_87_13",
+            "Name": "VITIS_LOOP_78_11_VITIS_LOOP_79_12_VITIS_LOOP_80_13",
             "TripCount": "",
             "Latency": "",
             "PipelineII": "",
@@ -1226,7 +1188,7 @@
             "PipelineDepthMax": "?",
             "PipelineDepth": "8 ~ ?",
             "Loops": [{
-                "Name": "VITIS_LOOP_88_14",
+                "Name": "VITIS_LOOP_81_14",
                 "TripCount": "",
                 "LatencyMin": "2",
                 "LatencyMax": "?",
@@ -1236,7 +1198,7 @@
               }]
           },
           {
-            "Name": "VITIS_LOOP_95_15_VITIS_LOOP_96_16",
+            "Name": "VITIS_LOOP_88_15_VITIS_LOOP_89_16",
             "TripCount": "",
             "Latency": "",
             "PipelineII": "",
@@ -1244,7 +1206,7 @@
             "PipelineDepthMax": "?",
             "PipelineDepth": "5 ~ ?",
             "Loops": [{
-                "Name": "VITIS_LOOP_97_17",
+                "Name": "VITIS_LOOP_90_17",
                 "TripCount": "",
                 "LatencyMin": "2",
                 "LatencyMax": "?",
@@ -1254,7 +1216,7 @@
               }]
           },
           {
-            "Name": "VITIS_LOOP_104_18",
+            "Name": "VITIS_LOOP_97_18",
             "TripCount": "",
             "LatencyMin": "2",
             "LatencyMax": "?",
@@ -1263,25 +1225,25 @@
             "PipelineDepth": "3"
           },
           {
-            "Name": "VITIS_LOOP_110_19",
+            "Name": "VITIS_LOOP_103_19",
             "TripCount": "",
             "Latency": "",
             "PipelineII": "",
             "PipelineDepth": "",
             "Loops": [{
-                "Name": "VITIS_LOOP_111_20",
+                "Name": "VITIS_LOOP_104_20",
                 "TripCount": "",
                 "Latency": "",
                 "PipelineII": "",
                 "PipelineDepth": "",
                 "Loops": [{
-                    "Name": "VITIS_LOOP_112_21",
+                    "Name": "VITIS_LOOP_105_21",
                     "TripCount": "",
                     "Latency": "",
                     "PipelineII": "",
                     "PipelineDepth": "",
                     "Loops": [{
-                        "Name": "VITIS_LOOP_113_22_VITIS_LOOP_114_23_VITIS_LOOP_115_24",
+                        "Name": "VITIS_LOOP_106_22_VITIS_LOOP_107_23_VITIS_LOOP_108_24",
                         "TripCount": "",
                         "Latency": "",
                         "PipelineII": "2",
@@ -1291,7 +1253,7 @@
               }]
           },
           {
-            "Name": "VITIS_LOOP_128_25_VITIS_LOOP_129_26_VITIS_LOOP_130_27",
+            "Name": "VITIS_LOOP_121_25_VITIS_LOOP_122_26_VITIS_LOOP_123_27",
             "TripCount": "",
             "Latency": "",
             "PipelineII": "",
@@ -1299,7 +1261,7 @@
             "PipelineDepthMax": "?",
             "PipelineDepth": "13 ~ ?",
             "Loops": [{
-                "Name": "VITIS_LOOP_131_28",
+                "Name": "VITIS_LOOP_124_28",
                 "TripCount": "",
                 "LatencyMin": "2",
                 "LatencyMax": "?",
@@ -1309,7 +1271,7 @@
               }]
           },
           {
-            "Name": "VITIS_LOOP_138_29_VITIS_LOOP_139_30",
+            "Name": "VITIS_LOOP_131_29_VITIS_LOOP_132_30",
             "TripCount": "",
             "Latency": "",
             "PipelineII": "",
@@ -1317,7 +1279,7 @@
             "PipelineDepthMax": "?",
             "PipelineDepth": "5 ~ ?",
             "Loops": [{
-                "Name": "VITIS_LOOP_140_31",
+                "Name": "VITIS_LOOP_133_31",
                 "TripCount": "",
                 "LatencyMin": "2",
                 "LatencyMax": "?",
@@ -1327,7 +1289,7 @@
               }]
           },
           {
-            "Name": "VITIS_LOOP_147_32",
+            "Name": "VITIS_LOOP_140_32",
             "TripCount": "",
             "LatencyMin": "2",
             "LatencyMax": "?",
@@ -1343,10 +1305,10 @@
           "DSP": "15",
           "AVAIL_DSP": "220",
           "UTIL_DSP": "6",
-          "FF": "14246",
+          "FF": "14207",
           "AVAIL_FF": "106400",
           "UTIL_FF": "13",
-          "LUT": "12201",
+          "LUT": "12137",
           "AVAIL_LUT": "53200",
           "UTIL_LUT": "22",
           "URAM": "0",
@@ -1358,7 +1320,7 @@
   "GenerateBdFiles": "0",
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2022-04-29 11:47:17 IST",
+    "Time": "2022-05-02 17:26:31 IST",
     "ToolName": "vivado_hls",
     "ToolVersion": "2020.2"
   }

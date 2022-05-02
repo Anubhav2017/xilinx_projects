@@ -1,16 +1,10 @@
-#define MAX_SIZE 100
-#define MAX_FILTERS 10
-#define MAX_WINDOW_SIZE 5
-#include <ap_fixed.h>
+#include"conv_bckwd.h"
 
-typedef ap_fixed<16,9> fixed;
-
-void conv_bckwd(fixed* x, fixed* w, fixed* y, fixed* dx,fixed* dw,fixed* db, fixed* dy , int F, int C, int H, int W, int FH, int FW){
+void conv_bckwd(fixed_t* x, fixed_t* w, fixed_t* dx,fixed_t* dw,fixed_t* db, fixed_t* dy , int F, int C, int H, int W, int FH, int FW){
 
 #pragma HLS INTERFACE s_axilite port=return bundle=CTRL
 #pragma HLS INTERFACE m_axi port=x depth=200 offset=slave bundle=gmem
 #pragma HLS INTERFACE m_axi port=w depth=200 offset=slave bundle=gmem
-#pragma HLS INTERFACE m_axi port=y depth=200 offset=slave bundle=gmem
 #pragma HLS INTERFACE m_axi port=dx depth=200 offset=slave bundle=gmem
 #pragma HLS INTERFACE m_axi port=dw depth=200 offset=slave bundle=gmem
 #pragma HLS INTERFACE m_axi port=dy depth=200 offset=slave bundle=gmem
@@ -19,7 +13,6 @@ void conv_bckwd(fixed* x, fixed* w, fixed* y, fixed* dx,fixed* dw,fixed* db, fix
 
 #pragma HLS INTERFACE s_axilite port=x bundle=CTRL
 #pragma HLS INTERFACE s_axilite port=w bundle=CTRL
-#pragma HLS INTERFACE s_axilite port=y bundle=CTRL
 #pragma HLS INTERFACE s_axilite port=dx bundle=CTRL
 #pragma HLS INTERFACE s_axilite port=dw bundle=CTRL
 #pragma HLS INTERFACE s_axilite port=dy bundle=CTRL
@@ -33,9 +26,9 @@ void conv_bckwd(fixed* x, fixed* w, fixed* y, fixed* dx,fixed* dw,fixed* db, fix
 #pragma HLS INTERFACE s_axilite port=FW bundle=CTRL
 
     //populate cache
-	fixed xbuf[MAX_FILTERS][MAX_SIZE][MAX_SIZE];
-	fixed wbuf[MAX_FILTERS][MAX_FILTERS][MAX_WINDOW_SIZE][MAX_WINDOW_SIZE];
-    fixed dybuf[MAX_FILTERS][MAX_SIZE][MAX_SIZE];
+	fixed_t xbuf[MAX_FILTERS][MAX_SIZE][MAX_SIZE];
+	fixed_t wbuf[MAX_FILTERS][MAX_FILTERS][MAX_WINDOW_SIZE][MAX_WINDOW_SIZE];
+    fixed_t dybuf[MAX_FILTERS][MAX_SIZE][MAX_SIZE];
 
     for(int i=0;i<C;i++){
         for(int j=0;j<H;j++){
@@ -63,7 +56,7 @@ void conv_bckwd(fixed* x, fixed* w, fixed* y, fixed* dx,fixed* dw,fixed* db, fix
     int outW=W-FW+1;
 
     //incoming gradient
-//    fixed ybuf[F][outH][outW];
+//    fixed_t ybuf[F][outH][outW];
 
 
     for(int i=0;i<F;i++){
@@ -77,9 +70,9 @@ void conv_bckwd(fixed* x, fixed* w, fixed* y, fixed* dx,fixed* dw,fixed* db, fix
 
     //gradients to be calculated
 
-    fixed dxbuf[MAX_FILTERS][MAX_SIZE][MAX_SIZE];
-    fixed dwbuf[MAX_FILTERS][MAX_FILTERS][MAX_WINDOW_SIZE][MAX_WINDOW_SIZE];
-    fixed dbbuf[MAX_FILTERS];
+    fixed_t dxbuf[MAX_FILTERS][MAX_SIZE][MAX_SIZE];
+    fixed_t dwbuf[MAX_FILTERS][MAX_FILTERS][MAX_WINDOW_SIZE][MAX_WINDOW_SIZE];
+    fixed_t dbbuf[MAX_FILTERS];
 
 
     for(int i=0;i<F;i++){

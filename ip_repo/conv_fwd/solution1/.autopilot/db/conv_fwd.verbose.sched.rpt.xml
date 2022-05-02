@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'conv_fwd'" level="0">
-<item name = "Date">Fri Apr 29 11:44:39 2022
+<item name = "Date">Mon May  2 14:32:59 2022
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)</item>
 <item name = "Project">conv_fwd</item>
@@ -35,16 +35,16 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- VITIS_LOOP_36_1_VITIS_LOOP_37_2">?, ?, 8 ~ ?, -, -, ?, no</column>
-<column name=" + VITIS_LOOP_38_3">2, ?, 3, 1, 1, 1 ~ ?, yes</column>
-<column name="- VITIS_LOOP_46_4_VITIS_LOOP_47_5_VITIS_LOOP_48_6">?, ?, 13 ~ ?, -, -, ?, no</column>
-<column name=" + VITIS_LOOP_49_7">2, ?, 3, 1, 1, 1 ~ ?, yes</column>
-<column name="- VITIS_LOOP_56_8">2, ?, 3, 1, 1, 1 ~ ?, yes</column>
-<column name="- VITIS_LOOP_60_9_VITIS_LOOP_62_11_VITIS_LOOP_63_12">?, ?, ?, -, -, ?, no</column>
-<column name=" + VITIS_LOOP_65_13">?, ?, 2 ~ ?, -, -, ?, no</column>
-<column name="  ++ VITIS_LOOP_66_14">4, ?, 5, 1, 1, 1 ~ ?, yes</column>
-<column name="- VITIS_LOOP_76_15_VITIS_LOOP_77_16">?, ?, 8 ~ ?, -, -, ?, no</column>
-<column name=" + VITIS_LOOP_78_17">2, ?, 3, 1, 1, 1 ~ ?, yes</column>
+<column name="- VITIS_LOOP_30_1_VITIS_LOOP_31_2">?, ?, 8 ~ ?, -, -, ?, no</column>
+<column name=" + VITIS_LOOP_32_3">2, ?, 3, 1, 1, 1 ~ ?, yes</column>
+<column name="- VITIS_LOOP_40_4_VITIS_LOOP_41_5_VITIS_LOOP_42_6">?, ?, 13 ~ ?, -, -, ?, no</column>
+<column name=" + VITIS_LOOP_43_7">2, ?, 3, 1, 1, 1 ~ ?, yes</column>
+<column name="- VITIS_LOOP_50_8">2, ?, 3, 1, 1, 1 ~ ?, yes</column>
+<column name="- VITIS_LOOP_54_9_VITIS_LOOP_56_11_VITIS_LOOP_57_12">?, ?, ?, -, -, ?, no</column>
+<column name=" + VITIS_LOOP_59_13">?, ?, 2 ~ ?, -, -, ?, no</column>
+<column name="  ++ VITIS_LOOP_60_14">4, ?, 5, 1, 1, 1 ~ ?, yes</column>
+<column name="- VITIS_LOOP_70_15_VITIS_LOOP_71_16">?, ?, 8 ~ ?, -, -, ?, no</column>
+<column name=" + VITIS_LOOP_72_17">2, ?, 3, 1, 1, 1 ~ ?, yes</column>
 </table>
 </item>
 </section>

@@ -2,6 +2,34 @@
 // Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // ==============================================================
+// control
+// 0x00 : reserved
+// 0x04 : reserved
+// 0x08 : reserved
+// 0x0c : reserved
+// 0x10 : Data signal of x
+//        bit 31~0 - x[31:0] (Read/Write)
+// 0x14 : reserved
+// 0x18 : Data signal of w
+//        bit 31~0 - w[31:0] (Read/Write)
+// 0x1c : reserved
+// 0x20 : Data signal of y
+//        bit 31~0 - y[31:0] (Read/Write)
+// 0x24 : reserved
+// 0x28 : Data signal of b
+//        bit 31~0 - b[31:0] (Read/Write)
+// 0x2c : reserved
+// (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
+
+#define XCONV_FWD_CONTROL_ADDR_X_DATA 0x10
+#define XCONV_FWD_CONTROL_BITS_X_DATA 32
+#define XCONV_FWD_CONTROL_ADDR_W_DATA 0x18
+#define XCONV_FWD_CONTROL_BITS_W_DATA 32
+#define XCONV_FWD_CONTROL_ADDR_Y_DATA 0x20
+#define XCONV_FWD_CONTROL_BITS_Y_DATA 32
+#define XCONV_FWD_CONTROL_ADDR_B_DATA 0x28
+#define XCONV_FWD_CONTROL_BITS_B_DATA 32
+
 // CTRL
 // 0x00 : Control signals
 //        bit 0  - ap_start (Read/Write/COH)
@@ -57,32 +85,4 @@
 #define XCONV_FWD_CTRL_BITS_FH_DATA  32
 #define XCONV_FWD_CTRL_ADDR_FW_DATA  0x38
 #define XCONV_FWD_CTRL_BITS_FW_DATA  32
-
-// control
-// 0x00 : reserved
-// 0x04 : reserved
-// 0x08 : reserved
-// 0x0c : reserved
-// 0x10 : Data signal of x
-//        bit 31~0 - x[31:0] (Read/Write)
-// 0x14 : reserved
-// 0x18 : Data signal of w
-//        bit 31~0 - w[31:0] (Read/Write)
-// 0x1c : reserved
-// 0x20 : Data signal of y
-//        bit 31~0 - y[31:0] (Read/Write)
-// 0x24 : reserved
-// 0x28 : Data signal of b
-//        bit 31~0 - b[31:0] (Read/Write)
-// 0x2c : reserved
-// (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
-
-#define XCONV_FWD_CONTROL_ADDR_X_DATA 0x10
-#define XCONV_FWD_CONTROL_BITS_X_DATA 32
-#define XCONV_FWD_CONTROL_ADDR_W_DATA 0x18
-#define XCONV_FWD_CONTROL_BITS_W_DATA 32
-#define XCONV_FWD_CONTROL_ADDR_Y_DATA 0x20
-#define XCONV_FWD_CONTROL_BITS_Y_DATA 32
-#define XCONV_FWD_CONTROL_ADDR_B_DATA 0x28
-#define XCONV_FWD_CONTROL_BITS_B_DATA 32
 
