@@ -3,9 +3,9 @@ INFO: [SIM 4] CSIM will launch GCC as the compiler.
    Compiling ../../../test.cpp in debug mode
    Compiling ../../../main.cpp in debug mode
    Generating csim.exe
-0.09375 0.289063 0 
-0.390625 0.984375 0 
-0 0 0 
+0.09375 0.289063 0.195313 
+0.390625 0.984375 0.59375 
+0.296875 0.695313 0.398438 
 
 1.1875 0.992188 
 1.97656 1.67188 

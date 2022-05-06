@@ -5,12 +5,13 @@
 ############################################################
 open_project relu_fwd
 set_top relu_fwd
-add_files relu_fwd/main.cpp
 add_files relu_fwd/relu_fwd.h
-add_files -tb relu_fwd/tb.cpp
+add_files relu_fwd/main.cpp
+add_files -tb relu_fwd/tb.cpp -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"
 open_solution "solution1" -flow_target vivado
 set_part {xc7z020-clg400-1}
 create_clock -period 10 -name default
+config_interface -m_axi_addr64=0
 config_export -format ip_catalog -rtl verilog
 source "./relu_fwd/solution1/directives.tcl"
 csim_design

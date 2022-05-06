@@ -29,8 +29,8 @@ module relu_fwd_CTRL_s_axi
     output wire                          RVALID,
     input  wire                          RREADY,
     output wire                          interrupt,
-    output wire [63:0]                   x,
-    output wire [63:0]                   y,
+    output wire [31:0]                   x,
+    output wire [31:0]                   y,
     output wire [31:0]                   dim,
     output wire                          ap_start,
     input  wire                          ap_done,
@@ -58,17 +58,13 @@ module relu_fwd_CTRL_s_axi
 //        others - reserved
 // 0x10 : Data signal of x
 //        bit 31~0 - x[31:0] (Read/Write)
-// 0x14 : Data signal of x
-//        bit 31~0 - x[63:32] (Read/Write)
-// 0x18 : reserved
-// 0x1c : Data signal of y
+// 0x14 : reserved
+// 0x18 : Data signal of y
 //        bit 31~0 - y[31:0] (Read/Write)
-// 0x20 : Data signal of y
-//        bit 31~0 - y[63:32] (Read/Write)
-// 0x24 : reserved
-// 0x28 : Data signal of dim
+// 0x1c : reserved
+// 0x20 : Data signal of dim
 //        bit 31~0 - dim[31:0] (Read/Write)
-// 0x2c : reserved
+// 0x24 : reserved
 // (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
 //------------------------Parameter----------------------
@@ -78,13 +74,11 @@ localparam
     ADDR_IER        = 6'h08,
     ADDR_ISR        = 6'h0c,
     ADDR_X_DATA_0   = 6'h10,
-    ADDR_X_DATA_1   = 6'h14,
-    ADDR_X_CTRL     = 6'h18,
-    ADDR_Y_DATA_0   = 6'h1c,
-    ADDR_Y_DATA_1   = 6'h20,
-    ADDR_Y_CTRL     = 6'h24,
-    ADDR_DIM_DATA_0 = 6'h28,
-    ADDR_DIM_CTRL   = 6'h2c,
+    ADDR_X_CTRL     = 6'h14,
+    ADDR_Y_DATA_0   = 6'h18,
+    ADDR_Y_CTRL     = 6'h1c,
+    ADDR_DIM_DATA_0 = 6'h20,
+    ADDR_DIM_CTRL   = 6'h24,
     WRIDLE          = 2'd0,
     WRDATA          = 2'd1,
     WRRESP          = 2'd2,
@@ -115,8 +109,8 @@ localparam
     reg                           int_gie = 1'b0;
     reg  [1:0]                    int_ier = 2'b0;
     reg  [1:0]                    int_isr = 2'b0;
-    reg  [63:0]                   int_x = 'b0;
-    reg  [63:0]                   int_y = 'b0;
+    reg  [31:0]                   int_x = 'b0;
+    reg  [31:0]                   int_y = 'b0;
     reg  [31:0]                   int_dim = 'b0;
 
 //------------------------Instantiation------------------
@@ -229,14 +223,8 @@ always @(posedge ACLK) begin
                 ADDR_X_DATA_0: begin
                     rdata <= int_x[31:0];
                 end
-                ADDR_X_DATA_1: begin
-                    rdata <= int_x[63:32];
-                end
                 ADDR_Y_DATA_0: begin
                     rdata <= int_y[31:0];
-                end
-                ADDR_Y_DATA_1: begin
-                    rdata <= int_y[63:32];
                 end
                 ADDR_DIM_DATA_0: begin
                     rdata <= int_dim[31:0];
@@ -359,16 +347,6 @@ always @(posedge ACLK) begin
     end
 end
 
-// int_x[63:32]
-always @(posedge ACLK) begin
-    if (ARESET)
-        int_x[63:32] <= 0;
-    else if (ACLK_EN) begin
-        if (w_hs && waddr == ADDR_X_DATA_1)
-            int_x[63:32] <= (WDATA[31:0] & wmask) | (int_x[63:32] & ~wmask);
-    end
-end
-
 // int_y[31:0]
 always @(posedge ACLK) begin
     if (ARESET)
@@ -376,16 +354,6 @@ always @(posedge ACLK) begin
     else if (ACLK_EN) begin
         if (w_hs && waddr == ADDR_Y_DATA_0)
             int_y[31:0] <= (WDATA[31:0] & wmask) | (int_y[31:0] & ~wmask);
-    end
-end
-
-// int_y[63:32]
-always @(posedge ACLK) begin
-    if (ARESET)
-        int_y[63:32] <= 0;
-    else if (ACLK_EN) begin
-        if (w_hs && waddr == ADDR_Y_DATA_1)
-            int_y[63:32] <= (WDATA[31:0] & wmask) | (int_y[63:32] & ~wmask);
     end
 end
 

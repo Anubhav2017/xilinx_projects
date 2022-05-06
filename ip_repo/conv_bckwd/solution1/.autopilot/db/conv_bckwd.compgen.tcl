@@ -171,17 +171,17 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_multicycle_mul, che
 
 
 set id 6
-set name conv_bckwd_mul_4ns_8ns_11_1_1
+set name conv_bckwd_mul_3ns_8ns_10_1_1
 set corename simcore_mul
 set op mul
 set stage_num 1
 set max_latency -1
 set registered_input 1
-set in0_width 4
+set in0_width 3
 set in0_signed 0
 set in1_width 8
 set in1_signed 0
-set out_width 11
+set out_width 10
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ap_gen_simcore_mul] == "ap_gen_simcore_mul"} {
 eval "ap_gen_simcore_mul { \
@@ -493,7 +493,7 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_multicycle_mul, che
 
 
 set id 37
-set name conv_bckwd_am_addmul_11ns_10ns_8ns_17_4_1
+set name conv_bckwd_am_addmul_10ns_9ns_8ns_16_4_1
 set corename simcore_am
 set op am
 set stage_num 4
@@ -503,17 +503,17 @@ set clk_width 1
 set clk_signed 0
 set reset_width 1
 set reset_signed 0
-set in0_width 11
+set in0_width 10
 set in0_signed 0
-set in1_width 10
+set in1_width 9
 set in1_signed 0
 set in2_width 8
 set in2_signed 0
 set ce_width 1
 set ce_signed 0
-set out_width 17
+set out_width 16
 set exp (i0+i1)*i2
-set arg_lists {i0 {11 0 +} i1 {10 0 +} s {12 0 +} i2 {8 0 +} p {17 0 +} c_expval {c} acc {0} }
+set arg_lists {i0 {10 0 +} i1 {9 0 +} s {11 0 +} i2 {8 0 +} p {16 0 +} c_expval {c} acc {0} }
 set TrueReset 0
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ap_gen_simcore_am] == "ap_gen_simcore_am"} {
@@ -593,7 +593,7 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_dsp48, check your p
 
 
 set id 41
-set name conv_bckwd_mac_muladd_7ns_8ns_10ns_14_4_1
+set name conv_bckwd_mac_muladd_5ns_8ns_9ns_12_4_1
 set corename simcore_mac
 set op mac
 set stage_num 4
@@ -603,17 +603,17 @@ set clk_width 1
 set clk_signed 0
 set reset_width 1
 set reset_signed 0
-set in0_width 7
+set in0_width 5
 set in0_signed 0
 set in1_width 8
 set in1_signed 0
-set in2_width 10
+set in2_width 9
 set in2_signed 0
 set ce_width 1
 set ce_signed 0
-set out_width 14
+set out_width 12
 set exp i0*i1+i2
-set arg_lists {i0 {7 0 +} i1 {8 0 +} m {14 0 +} i2 {10 0 +} p {14 0 +} c_reg {1} rnd {0} acc {0} }
+set arg_lists {i0 {5 0 +} i1 {8 0 +} m {12 0 +} i2 {9 0 +} p {12 0 +} c_reg {1} rnd {0} acc {0} }
 set TrueReset 0
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ap_gen_simcore_mac] == "ap_gen_simcore_mac"} {
@@ -693,7 +693,7 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_dsp48, check your p
 
 
 set id 42
-set name conv_bckwd_mac_muladd_14ns_8ns_17ns_17_4_1
+set name conv_bckwd_mac_muladd_12ns_8ns_16ns_16_4_1
 set corename simcore_mac
 set op mac
 set stage_num 4
@@ -703,17 +703,17 @@ set clk_width 1
 set clk_signed 0
 set reset_width 1
 set reset_signed 0
-set in0_width 14
+set in0_width 12
 set in0_signed 0
 set in1_width 8
 set in1_signed 0
-set in2_width 17
+set in2_width 16
 set in2_signed 0
 set ce_width 1
 set ce_signed 0
-set out_width 17
+set out_width 16
 set exp i0*i1+i2
-set arg_lists {i0 {14 0 +} i1 {8 0 +} m {17 0 +} i2 {17 0 +} p {17 0 +} c_reg {1} rnd {0} acc {0} }
+set arg_lists {i0 {12 0 +} i1 {8 0 +} m {16 0 +} i2 {16 0 +} p {16 0 +} c_reg {1} rnd {0} acc {0} }
 set TrueReset 0
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ap_gen_simcore_mac] == "ap_gen_simcore_mac"} {
@@ -899,8 +899,8 @@ set MemName conv_bckwd_xbuf_V
 set CoreName ap_simcore_mem
 set PortList { 2 3 }
 set DataWd 16
-set AddrRange 100000
-set AddrWd 17
+set AddrRange 50000
+set AddrWd 16
 set impl_style auto
 set TrueReset 0
 set HasInitializer 0
@@ -984,8 +984,8 @@ set MemName conv_bckwd_wbuf_V
 set CoreName ap_simcore_mem
 set PortList { 2 3 }
 set DataWd 16
-set AddrRange 2500
-set AddrWd 12
+set AddrRange 625
+set AddrWd 10
 set impl_style auto
 set TrueReset 0
 set HasInitializer 0
@@ -1069,8 +1069,8 @@ set MemName conv_bckwd_dxbuf_V
 set CoreName ap_simcore_mem
 set PortList { 0 1 }
 set DataWd 16
-set AddrRange 100000
-set AddrWd 17
+set AddrRange 50000
+set AddrWd 16
 set impl_style auto
 set TrueReset 0
 set HasInitializer 0
@@ -1154,8 +1154,8 @@ set MemName conv_bckwd_dbbuf_V
 set CoreName ap_simcore_mem
 set PortList { 2 3 }
 set DataWd 16
-set AddrRange 10
-set AddrWd 4
+set AddrRange 5
+set AddrWd 3
 set impl_style auto
 set TrueReset 0
 set HasInitializer 0

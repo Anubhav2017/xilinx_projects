@@ -26,23 +26,19 @@
 //        others   - reserved
 // 0x18 : Data signal of x
 //        bit 31~0 - x[31:0] (Read/Write)
-// 0x1c : Data signal of x
-//        bit 31~0 - x[63:32] (Read/Write)
-// 0x20 : reserved
-// 0x24 : Data signal of dx
+// 0x1c : reserved
+// 0x20 : Data signal of dx
 //        bit 31~0 - dx[31:0] (Read/Write)
-// 0x28 : Data signal of dx
-//        bit 31~0 - dx[63:32] (Read/Write)
-// 0x2c : reserved
-// 0x30 : Data signal of y
+// 0x24 : reserved
+// 0x28 : Data signal of y
 //        bit 31~0 - y[31:0] (Read/Write)
-// 0x34 : reserved
-// 0x38 : Data signal of x_size
+// 0x2c : reserved
+// 0x30 : Data signal of x_size
 //        bit 31~0 - x_size[31:0] (Read/Write)
-// 0x3c : reserved
-// 0x40 : Data signal of N
+// 0x34 : reserved
+// 0x38 : Data signal of N
 //        bit 31~0 - N[31:0] (Read/Write)
-// 0x44 : reserved
+// 0x3c : reserved
 // (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
 #define XLOSS_DERIVATIVE_CTRL_ADDR_AP_CTRL     0x00
@@ -52,13 +48,13 @@
 #define XLOSS_DERIVATIVE_CTRL_ADDR_AP_RETURN   0x10
 #define XLOSS_DERIVATIVE_CTRL_BITS_AP_RETURN   16
 #define XLOSS_DERIVATIVE_CTRL_ADDR_X_DATA      0x18
-#define XLOSS_DERIVATIVE_CTRL_BITS_X_DATA      64
-#define XLOSS_DERIVATIVE_CTRL_ADDR_DX_DATA     0x24
-#define XLOSS_DERIVATIVE_CTRL_BITS_DX_DATA     64
-#define XLOSS_DERIVATIVE_CTRL_ADDR_Y_DATA      0x30
+#define XLOSS_DERIVATIVE_CTRL_BITS_X_DATA      32
+#define XLOSS_DERIVATIVE_CTRL_ADDR_DX_DATA     0x20
+#define XLOSS_DERIVATIVE_CTRL_BITS_DX_DATA     32
+#define XLOSS_DERIVATIVE_CTRL_ADDR_Y_DATA      0x28
 #define XLOSS_DERIVATIVE_CTRL_BITS_Y_DATA      32
-#define XLOSS_DERIVATIVE_CTRL_ADDR_X_SIZE_DATA 0x38
+#define XLOSS_DERIVATIVE_CTRL_ADDR_X_SIZE_DATA 0x30
 #define XLOSS_DERIVATIVE_CTRL_BITS_X_SIZE_DATA 32
-#define XLOSS_DERIVATIVE_CTRL_ADDR_N_DATA      0x40
+#define XLOSS_DERIVATIVE_CTRL_ADDR_N_DATA      0x38
 #define XLOSS_DERIVATIVE_CTRL_BITS_N_DATA      32
 

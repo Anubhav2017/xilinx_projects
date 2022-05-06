@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="fwd_fcc_test_auto_us_0_synth_1" LaunchDir="/home/anubhav/xilinx_projects/nn1/nn/nn.runs/fwd_fcc_test_auto_us_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fwd_fcc_test_xbar_3_synth_1" LaunchDir="/home/anubhav/xilinx_projects/nn1/nn/nn.runs/fwd_fcc_test_xbar_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fwd_fcc_test_auto_us_1_synth_1" LaunchDir="/home/anubhav/xilinx_projects/nn1/nn/nn.runs/fwd_fcc_test_auto_us_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="fwd_fcc_test_auto_us_0_synth_1"/>
+	</Run>
+	<Run Id="fwd_fcc_test_conv_fwd_0_0_synth_1" LaunchDir="/home/anubhav/xilinx_projects/nn1/nn/nn.runs/fwd_fcc_test_conv_fwd_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fwd_fcc_test_auto_us_3_synth_1" LaunchDir="/home/anubhav/xilinx_projects/nn1/nn/nn.runs/fwd_fcc_test_auto_us_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="fwd_fcc_test_auto_us_0_synth_1"/>
+	</Run>
+	<Run Id="fwd_fcc_test_auto_us_4_synth_1" LaunchDir="/home/anubhav/xilinx_projects/nn1/nn/nn.runs/fwd_fcc_test_auto_us_4_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fwd_fcc_test_auto_us_2_synth_1" LaunchDir="/home/anubhav/xilinx_projects/nn1/nn/nn.runs/fwd_fcc_test_auto_us_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="fwd_fcc_test_auto_us_0_synth_1"/>
+	</Run>
+	<Run Id="fwd_fcc_test_auto_us_5_synth_1" LaunchDir="/home/anubhav/xilinx_projects/nn1/nn/nn.runs/fwd_fcc_test_auto_us_5_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="fwd_fcc_test_auto_us_0_synth_1"/>
+	</Run>
+	<Run Id="fwd_fcc_test_auto_pc_1_synth_1" LaunchDir="/home/anubhav/xilinx_projects/nn1/nn/nn.runs/fwd_fcc_test_auto_pc_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fwd_fcc_test_relu_bckwd_0_0_synth_1" LaunchDir="/home/anubhav/xilinx_projects/nn1/nn/nn.runs/fwd_fcc_test_relu_bckwd_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fwd_fcc_test_backward_fcc_0_0_synth_1" LaunchDir="/home/anubhav/xilinx_projects/nn1/nn/nn.runs/fwd_fcc_test_backward_fcc_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fwd_fcc_test_xbar_2_synth_1" LaunchDir="/home/anubhav/xilinx_projects/nn1/nn/nn.runs/fwd_fcc_test_xbar_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fwd_fcc_test_relu_fwd_0_0_synth_1" LaunchDir="/home/anubhav/xilinx_projects/nn1/nn/nn.runs/fwd_fcc_test_relu_fwd_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fwd_fcc_test_conv_bckwd_0_0_synth_1" LaunchDir="/home/anubhav/xilinx_projects/nn1/nn/nn.runs/fwd_fcc_test_conv_bckwd_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="/home/anubhav/xilinx_projects/nn1/nn/nn.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="fwd_fcc_test_auto_us_0_synth_1"/>
+		<Parent Id="fwd_fcc_test_xbar_3_synth_1"/>
+		<Parent Id="fwd_fcc_test_auto_us_1_synth_1"/>
+		<Parent Id="fwd_fcc_test_conv_fwd_0_0_synth_1"/>
+		<Parent Id="fwd_fcc_test_auto_us_3_synth_1"/>
+		<Parent Id="fwd_fcc_test_auto_us_4_synth_1"/>
+		<Parent Id="fwd_fcc_test_auto_us_2_synth_1"/>
+		<Parent Id="fwd_fcc_test_auto_us_5_synth_1"/>
+		<Parent Id="fwd_fcc_test_auto_pc_1_synth_1"/>
+		<Parent Id="fwd_fcc_test_relu_bckwd_0_0_synth_1"/>
+		<Parent Id="fwd_fcc_test_backward_fcc_0_0_synth_1"/>
+		<Parent Id="fwd_fcc_test_xbar_2_synth_1"/>
+		<Parent Id="fwd_fcc_test_relu_fwd_0_0_synth_1"/>
+		<Parent Id="fwd_fcc_test_conv_bckwd_0_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

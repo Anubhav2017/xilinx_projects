@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1651470218919">
-  <ports id="1" name="gmem" type="PortType" coreId="52" bitwidth="16" direction="DirInOut" iftype="IfTypeFifo">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1651563139555">
+  <ports id="1" name="gmem" type="PortType" coreId="16" bitwidth="16" direction="DirInOut" iftype="IfTypeFifo">
     <dataInputObjs>getelementptr</dataInputObjs>
     <dataInputObjs>getelementptr</dataInputObjs>
     <dataInputObjs>getelementptr</dataInputObjs>
@@ -26,28 +26,28 @@
     <dataOutputObjs>getelementptr</dataOutputObjs>
     <dataOutputObjs>getelementptr</dataOutputObjs>
   </ports>
-  <ports id="2" name="x" type="PortType" originalName="x" coreId="52" bitwidth="32">
+  <ports id="2" name="x" type="PortType" originalName="x" coreId="49" bitwidth="32">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="3" name="w" type="PortType" originalName="w" coreId="52" bitwidth="32">
+  <ports id="3" name="w" type="PortType" originalName="w" coreId="0" bitwidth="32">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="4" name="dx" type="PortType" originalName="dx" coreId="52" bitwidth="32">
+  <ports id="4" name="dx" type="PortType" originalName="dx" coreId="68" bitwidth="32">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="5" name="dy" type="PortType" originalName="dy" coreId="52" bitwidth="32">
+  <ports id="5" name="dy" type="PortType" originalName="dy" coreId="68" bitwidth="32">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="6" name="dw" type="PortType" originalName="dw" coreId="49" bitwidth="32">
+  <ports id="6" name="dw" type="PortType" originalName="dw" coreId="81" bitwidth="32">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
   <ports id="7" name="db" type="PortType" originalName="db" coreId="49" bitwidth="32">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="8" name="xdim" type="PortType" originalName="xdim" coreId="68" bitwidth="32">
+  <ports id="8" name="xdim" type="PortType" originalName="xdim" coreId="49" bitwidth="32">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="9" name="ydim" type="PortType" originalName="ydim" coreId="68" bitwidth="32">
+  <ports id="9" name="ydim" type="PortType" originalName="ydim" coreId="49" bitwidth="32">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
   <edges id="520" source_obj="//@ports.8" sink_obj="//@blocks.0/@node_objs.0"/>
@@ -955,14 +955,14 @@
       <dataOutputObjs>getelementptr</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="46" name="sext_ln32" lineNumber="32" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="sext_ln32_fu_826_p1" coreId="132" contextFuncName="backward_fcc" bitwidth="63" opcode="sext" nodeLabel="1.0" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="46" name="sext_ln32" lineNumber="32" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="sext_ln32_fu_826_p1" coreId="177" contextFuncName="backward_fcc" bitwidth="63" opcode="sext" nodeLabel="1.0" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="32" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>icmp</dataOutputObjs>
       <dataOutputObjs>icmp</dataOutputObjs>
       <dataOutputObjs>icmp</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="47" name="icmp_ln32" lineNumber="32" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="icmp_ln32_fu_820_p2" opType="icmp" coreId="49" contextFuncName="backward_fcc" bitwidth="1" opcode="icmp" m_display="0" m_delay="2.47" m_topoIndex="15" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="47" name="icmp_ln32" lineNumber="32" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="icmp_ln32_fu_820_p2" opType="icmp" coreId="177" contextFuncName="backward_fcc" bitwidth="1" opcode="icmp" m_display="0" m_delay="2.47" m_topoIndex="15" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="32" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>br</dataOutputObjs>
@@ -970,7 +970,7 @@
       <dataOutputObjs>br</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="48" name="br_ln32" lineNumber="32" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="177" contextFuncName="backward_fcc" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="48" name="br_ln32" lineNumber="32" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="132" contextFuncName="backward_fcc" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="32" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <dataInputObjs>icmp</dataInputObjs>
       <controlInputObjs>loop-memcpy-residual-header230</controlInputObjs>
@@ -991,12 +991,12 @@
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>loop-memcpy-expansion227</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="50" name="p_cast" rtlName="p_cast_fu_829_p4" coreId="177" bitwidth="31" opcode="partselect" nodeLabel="1.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="50" name="p_cast" rtlName="p_cast_fu_829_p4" coreId="225" bitwidth="31" opcode="partselect" nodeLabel="1.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>sext</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="51" name="p_cast_cast" rtlName="p_cast_cast_fu_838_p1" coreId="3484775240" bitwidth="32" opcode="sext" nodeLabel="1.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="51" name="p_cast_cast" rtlName="p_cast_cast_fu_838_p1" coreId="132" bitwidth="32" opcode="sext" nodeLabel="1.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
       <dataInputObjs>partselect</dataInputObjs>
       <dataOutputObjs>getelementptr</dataOutputObjs>
     </node_objs>
@@ -1011,7 +1011,7 @@
       <dataInputObjs>getelementptr</dataInputObjs>
       <dataInputObjs>read</dataInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="54" name="br_ln0" coreId="177" opcode="br" nodeLabel="7.0" m_display="0" m_delay="1.58" m_topoIndex="22" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="54" name="br_ln0" coreId="132" opcode="br" nodeLabel="7.0" m_display="0" m_delay="1.58" m_topoIndex="22" m_clusterGroupNumber="-1">
       <controlInputObjs>loop-memcpy-expansion227</controlInputObjs>
     </node_objs>
   </blocks>
@@ -1019,7 +1019,7 @@
     <controlInputObjs>loop-memcpy-expansion227</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>loop-memcpy-residual-header230</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="70" name="br_ln0" coreId="49" opcode="br" nodeLabel="11.0" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="70" name="br_ln0" coreId="28271" opcode="br" nodeLabel="11.0" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
       <controlInputObjs>loop-memcpy-residual-header230</controlInputObjs>
     </node_objs>
   </blocks>
@@ -1030,7 +1030,7 @@
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>loop-memcpy-expansion221.preheader</controlOutputObjs>
     <controlOutputObjs>loop-memcpy-residual-header224</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="72" name="trunc_ln33" lineNumber="33" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="trunc_ln33_fu_873_p1" coreId="49" contextFuncName="backward_fcc" bitwidth="31" opcode="trunc" nodeLabel="12.0" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="72" name="trunc_ln33" lineNumber="33" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="trunc_ln33_fu_873_p1" coreId="353" contextFuncName="backward_fcc" bitwidth="31" opcode="trunc" nodeLabel="12.0" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="33" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>icmp</dataOutputObjs>
@@ -1039,7 +1039,7 @@
       <dataOutputObjs>icmp</dataOutputObjs>
       <dataOutputObjs>select</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="73" name="sext_ln33" lineNumber="33" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="sext_ln33_fu_876_p1" coreId="132" contextFuncName="backward_fcc" bitwidth="63" opcode="sext" nodeLabel="12.0" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="73" name="sext_ln33" lineNumber="33" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="sext_ln33_fu_876_p1" coreId="0" contextFuncName="backward_fcc" bitwidth="63" opcode="sext" nodeLabel="12.0" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="33" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>icmp</dataOutputObjs>
@@ -1054,7 +1054,7 @@
       <dataOutputObjs>br</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="75" name="br_ln33" lineNumber="33" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="132" contextFuncName="backward_fcc" opcode="br" nodeLabel="12.0" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="75" name="br_ln33" lineNumber="33" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="49" contextFuncName="backward_fcc" opcode="br" nodeLabel="12.0" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="33" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <dataInputObjs>icmp</dataInputObjs>
       <controlInputObjs>loop-memcpy-residual-header224</controlInputObjs>
@@ -1069,16 +1069,16 @@
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>loop-memcpy-expansion221</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="77" name="p_cast1" rtlName="grp_fu_784_p4" coreId="0" bitwidth="31" opcode="partselect" nodeLabel="12.0" m_display="0" m_topoIndex="38" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="77" name="p_cast1" rtlName="grp_fu_784_p4" coreId="4102272976" bitwidth="31" opcode="partselect" nodeLabel="12.0" m_display="0" m_topoIndex="38" m_clusterGroupNumber="-1">
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>sext</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="78" name="p_cast1_cast" rtlName="p_cast1_cast_fu_879_p1" coreId="132" bitwidth="32" opcode="sext" nodeLabel="12.0" m_display="0" m_topoIndex="39" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="78" name="p_cast1_cast" rtlName="p_cast1_cast_fu_879_p1" coreId="913" bitwidth="32" opcode="sext" nodeLabel="12.0" m_display="0" m_topoIndex="39" m_clusterGroupNumber="-1">
       <dataInputObjs>partselect</dataInputObjs>
       <dataOutputObjs>getelementptr</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="79" name="gmem_addr_1" coreId="3485242952" bitwidth="16" opcode="getelementptr" nodeLabel="12.0" m_display="0" m_topoIndex="40" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="79" name="gmem_addr_1" coreId="0" bitwidth="16" opcode="getelementptr" nodeLabel="12.0" m_display="0" m_topoIndex="40" m_clusterGroupNumber="-1">
       <dataInputObjs>gmem</dataInputObjs>
       <dataInputObjs>sext</dataInputObjs>
       <dataOutputObjs>read</dataOutputObjs>
@@ -1089,7 +1089,7 @@
       <dataInputObjs>getelementptr</dataInputObjs>
       <dataInputObjs>read</dataInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="81" name="br_ln0" coreId="3484978328" opcode="br" nodeLabel="18.0" m_display="0" m_delay="1.58" m_topoIndex="42" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="81" name="br_ln0" coreId="4102271856" opcode="br" nodeLabel="18.0" m_display="0" m_delay="1.58" m_topoIndex="42" m_clusterGroupNumber="-1">
       <controlInputObjs>loop-memcpy-expansion221</controlInputObjs>
     </node_objs>
   </blocks>
@@ -1097,7 +1097,7 @@
     <controlInputObjs>loop-memcpy-expansion221</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>loop-memcpy-residual-header224</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="97" name="br_ln0" coreId="83" opcode="br" nodeLabel="22.0" m_display="0" m_topoIndex="53" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="97" name="br_ln0" coreId="193" opcode="br" nodeLabel="22.0" m_display="0" m_topoIndex="53" m_clusterGroupNumber="-1">
       <controlInputObjs>loop-memcpy-residual-header224</controlInputObjs>
     </node_objs>
   </blocks>
@@ -1108,7 +1108,7 @@
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>loop-memcpy-expansion215.preheader</controlOutputObjs>
     <controlOutputObjs>loop-memcpy-residual-header218</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="99" name="br_ln34" lineNumber="34" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="132" contextFuncName="backward_fcc" opcode="br" nodeLabel="22.0" m_display="0" m_topoIndex="54" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="99" name="br_ln34" lineNumber="34" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="0" contextFuncName="backward_fcc" opcode="br" nodeLabel="22.0" m_display="0" m_topoIndex="54" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="34" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <dataInputObjs>icmp</dataInputObjs>
       <controlInputObjs>loop-memcpy-residual-header218</controlInputObjs>
@@ -1123,16 +1123,16 @@
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>loop-memcpy-expansion215</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="101" name="p_cast2" rtlName="grp_fu_793_p4" coreId="4294967295" bitwidth="31" opcode="partselect" nodeLabel="22.0" m_display="0" m_topoIndex="55" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="101" name="p_cast2" rtlName="grp_fu_793_p4" coreId="100" bitwidth="31" opcode="partselect" nodeLabel="22.0" m_display="0" m_topoIndex="55" m_clusterGroupNumber="-1">
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>sext</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="102" name="p_cast2_cast" rtlName="p_cast2_cast_fu_909_p1" coreId="268435584" bitwidth="32" opcode="sext" nodeLabel="22.0" m_display="0" m_topoIndex="56" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="102" name="p_cast2_cast" rtlName="p_cast2_cast_fu_909_p1" coreId="0" bitwidth="32" opcode="sext" nodeLabel="22.0" m_display="0" m_topoIndex="56" m_clusterGroupNumber="-1">
       <dataInputObjs>partselect</dataInputObjs>
       <dataOutputObjs>getelementptr</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="103" name="gmem_addr_2" coreId="2961" bitwidth="16" opcode="getelementptr" nodeLabel="22.0" m_display="0" m_topoIndex="57" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="103" name="gmem_addr_2" coreId="68" bitwidth="16" opcode="getelementptr" nodeLabel="22.0" m_display="0" m_topoIndex="57" m_clusterGroupNumber="-1">
       <dataInputObjs>gmem</dataInputObjs>
       <dataInputObjs>sext</dataInputObjs>
       <dataOutputObjs>read</dataOutputObjs>
@@ -1143,7 +1143,7 @@
       <dataInputObjs>getelementptr</dataInputObjs>
       <dataInputObjs>read</dataInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="105" name="br_ln0" coreId="3484645056" opcode="br" nodeLabel="28.0" m_display="0" m_delay="1.58" m_topoIndex="59" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="105" name="br_ln0" coreId="1" opcode="br" nodeLabel="28.0" m_display="0" m_delay="1.58" m_topoIndex="59" m_clusterGroupNumber="-1">
       <controlInputObjs>loop-memcpy-expansion215</controlInputObjs>
     </node_objs>
   </blocks>
@@ -1151,7 +1151,7 @@
     <controlInputObjs>loop-memcpy-expansion215</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>loop-memcpy-residual-header218</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="121" name="br_ln0" coreId="268435584" opcode="br" nodeLabel="32.0" m_display="0" m_topoIndex="70" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="121" name="br_ln0" coreId="0" opcode="br" nodeLabel="32.0" m_display="0" m_topoIndex="70" m_clusterGroupNumber="-1">
       <controlInputObjs>loop-memcpy-residual-header218</controlInputObjs>
     </node_objs>
   </blocks>
@@ -1162,7 +1162,7 @@
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>loop-memcpy-expansion209.preheader</controlOutputObjs>
     <controlOutputObjs>loop-memcpy-residual-header212</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="123" name="br_ln35" lineNumber="35" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="3968165993" contextFuncName="backward_fcc" opcode="br" nodeLabel="32.0" m_display="0" m_topoIndex="71" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="123" name="br_ln35" lineNumber="35" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="4102315528" contextFuncName="backward_fcc" opcode="br" nodeLabel="32.0" m_display="0" m_topoIndex="71" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="35" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <dataInputObjs>icmp</dataInputObjs>
       <controlInputObjs>loop-memcpy-residual-header212</controlInputObjs>
@@ -1177,12 +1177,12 @@
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>loop-memcpy-expansion209</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="125" name="p_cast3" rtlName="p_cast3_fu_939_p4" coreId="3968167080" bitwidth="31" opcode="partselect" nodeLabel="32.0" m_display="0" m_topoIndex="72" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="125" name="p_cast3" rtlName="p_cast3_fu_939_p4" coreId="0" bitwidth="31" opcode="partselect" nodeLabel="32.0" m_display="0" m_topoIndex="72" m_clusterGroupNumber="-1">
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>sext</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="126" name="p_cast3_cast" rtlName="p_cast3_cast_fu_948_p1" coreId="3968167816" bitwidth="32" opcode="sext" nodeLabel="32.0" m_display="0" m_topoIndex="73" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="126" name="p_cast3_cast" rtlName="p_cast3_cast_fu_948_p1" coreId="4102317856" bitwidth="32" opcode="sext" nodeLabel="32.0" m_display="0" m_topoIndex="73" m_clusterGroupNumber="-1">
       <dataInputObjs>partselect</dataInputObjs>
       <dataOutputObjs>getelementptr</dataOutputObjs>
     </node_objs>
@@ -1197,7 +1197,7 @@
       <dataInputObjs>getelementptr</dataInputObjs>
       <dataInputObjs>read</dataInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="129" name="br_ln0" coreId="132" opcode="br" nodeLabel="38.0" m_display="0" m_delay="1.58" m_topoIndex="76" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="129" name="br_ln0" coreId="402653312" opcode="br" nodeLabel="38.0" m_display="0" m_delay="1.58" m_topoIndex="76" m_clusterGroupNumber="-1">
       <controlInputObjs>loop-memcpy-expansion209</controlInputObjs>
     </node_objs>
   </blocks>
@@ -1205,7 +1205,7 @@
     <controlInputObjs>loop-memcpy-expansion209</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>loop-memcpy-residual-header212</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="145" name="br_ln0" coreId="3968178024" opcode="br" nodeLabel="42.0" m_display="0" m_topoIndex="87" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="145" name="br_ln0" coreId="4102328008" opcode="br" nodeLabel="42.0" m_display="0" m_topoIndex="87" m_clusterGroupNumber="-1">
       <controlInputObjs>loop-memcpy-residual-header212</controlInputObjs>
     </node_objs>
   </blocks>
@@ -1217,13 +1217,13 @@
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>.lr.ph180</controlOutputObjs>
     <controlOutputObjs>._crit_edge151</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="147" name="icmp_ln37" lineNumber="37" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="icmp_ln37_fu_978_p2" opType="icmp" coreId="3968178800" contextFuncName="backward_fcc" bitwidth="1" opcode="icmp" nodeLabel="42.0" m_display="0" m_delay="2.47" m_topoIndex="88" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="147" name="icmp_ln37" lineNumber="37" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="icmp_ln37_fu_978_p2" opType="icmp" coreId="8" contextFuncName="backward_fcc" bitwidth="1" opcode="icmp" nodeLabel="42.0" m_display="0" m_delay="2.47" m_topoIndex="88" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="37" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>br</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="148" name="br_ln37" lineNumber="37" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="49" contextFuncName="backward_fcc" opcode="br" nodeLabel="42.0" m_display="0" m_delay="1.58" m_topoIndex="89" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="148" name="br_ln37" lineNumber="37" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="4102329176" contextFuncName="backward_fcc" opcode="br" nodeLabel="42.0" m_display="0" m_delay="1.58" m_topoIndex="89" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="37" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <dataInputObjs>icmp</dataInputObjs>
       <controlInputObjs>._crit_edge151</controlInputObjs>
@@ -1238,18 +1238,18 @@
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>block_159</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="150" name="cmp47172" rtlName="grp_fu_802_p2" opType="icmp" coreId="0" bitwidth="1" opcode="icmp" nodeLabel="42.0" m_display="0" m_delay="2.47" m_topoIndex="90" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="150" name="cmp47172" rtlName="grp_fu_802_p2" opType="icmp" coreId="4102331680" bitwidth="1" opcode="icmp" nodeLabel="42.0" m_display="0" m_delay="2.47" m_topoIndex="90" m_clusterGroupNumber="-1">
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>br</dataOutputObjs>
       <dataOutputObjs>br</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="151" name="empty_45" rtlName="empty_45_fu_983_p1" coreId="0" bitwidth="31" opcode="trunc" nodeLabel="42.0" m_display="0" m_topoIndex="91" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="151" name="empty_45" rtlName="empty_45_fu_983_p1" coreId="4102332160" bitwidth="31" opcode="trunc" nodeLabel="42.0" m_display="0" m_topoIndex="91" m_clusterGroupNumber="-1">
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>mul</dataOutputObjs>
       <dataOutputObjs>mul</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="152" name="br_ln37" lineNumber="37" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="3968184272" contextFuncName="backward_fcc" opcode="br" nodeLabel="42.0" m_display="0" m_delay="1.58" m_topoIndex="92" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="152" name="br_ln37" lineNumber="37" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="132" contextFuncName="backward_fcc" opcode="br" nodeLabel="42.0" m_display="0" m_delay="1.58" m_topoIndex="92" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="37" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <controlInputObjs>block_159</controlInputObjs>
     </node_objs>
@@ -1264,7 +1264,7 @@
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>.lr.ph170.preheader</controlOutputObjs>
     <controlOutputObjs>.split39</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="154" name="i" lineNumber="37" originalName="i" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="1600418401" contextFuncName="backward_fcc" bitwidth="31" opcode="phi" nodeLabel="43.0" m_display="0" m_topoIndex="93" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="154" name="i" lineNumber="37" originalName="i" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="4102334441" contextFuncName="backward_fcc" bitwidth="31" opcode="phi" nodeLabel="43.0" m_display="0" m_topoIndex="93" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="37" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <dataInputObjs>add</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
@@ -1281,13 +1281,13 @@
       <dataOutputObjs>phi</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="156" name="icmp_ln37_1" lineNumber="37" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="icmp_ln37_1_fu_992_p2" opType="icmp" coreId="49" contextFuncName="backward_fcc" bitwidth="1" opcode="icmp" nodeLabel="43.0" m_display="0" m_delay="2.47" m_topoIndex="95" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="156" name="icmp_ln37_1" lineNumber="37" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="icmp_ln37_1_fu_992_p2" opType="icmp" coreId="402653312" contextFuncName="backward_fcc" bitwidth="1" opcode="icmp" nodeLabel="43.0" m_display="0" m_delay="2.47" m_topoIndex="95" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="37" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <dataInputObjs>phi</dataInputObjs>
       <dataInputObjs>trunc</dataInputObjs>
       <dataOutputObjs>br</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="158" name="br_ln37" lineNumber="37" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="47" contextFuncName="backward_fcc" opcode="br" nodeLabel="43.0" m_display="0" m_topoIndex="96" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="158" name="br_ln37" lineNumber="37" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="49" contextFuncName="backward_fcc" opcode="br" nodeLabel="43.0" m_display="0" m_topoIndex="96" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="37" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <dataInputObjs>icmp</dataInputObjs>
       <controlInputObjs>.split39</controlInputObjs>
@@ -1302,29 +1302,29 @@
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>.lr.ph175</controlOutputObjs>
     <controlOutputObjs>._crit_edge176</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="161" name="empty_47" lineNumber="37" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="empty_47_fu_997_p1" coreId="132" contextFuncName="backward_fcc" bitwidth="7" opcode="trunc" nodeLabel="43.0" m_display="0" m_topoIndex="97" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="161" name="empty_47" lineNumber="37" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="empty_47_fu_997_p1" coreId="0" contextFuncName="backward_fcc" bitwidth="7" opcode="trunc" nodeLabel="43.0" m_display="0" m_topoIndex="97" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="37" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <dataInputObjs>phi</dataInputObjs>
       <dataOutputObjs>zext</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="162" name="zext_ln39" lineNumber="39" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="mul_ln39_fu_1009_p00" coreId="4294967295" contextFuncName="backward_fcc" bitwidth="14" opcode="zext" nodeLabel="45.0" m_display="0" m_topoIndex="100" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="162" name="zext_ln39" lineNumber="39" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="mul_ln39_fu_1009_p00" coreId="78" contextFuncName="backward_fcc" bitwidth="14" opcode="zext" nodeLabel="45.0" m_display="0" m_topoIndex="100" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="39" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <dataInputObjs>trunc</dataInputObjs>
       <dataOutputObjs>mul</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="163" name="mul_ln39" lineNumber="39" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="mul_7ns_8ns_14_1_1_U2" opType="mul" coreId="0" contextFuncName="backward_fcc" bitwidth="14" opcode="mul" nodeLabel="45.0" m_display="0" m_delay="4.17" m_topoIndex="101" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="163" name="mul_ln39" lineNumber="39" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="mul_7ns_8ns_14_1_1_U2" opType="mul" coreId="4102358408" contextFuncName="backward_fcc" bitwidth="14" opcode="mul" nodeLabel="45.0" m_display="0" m_delay="4.17" m_topoIndex="101" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="39" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <dataInputObjs>zext</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="164" name="empty_48" lineNumber="37" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="mul_31s_31s_31_2_1_U1" opType="mul" coreId="0" contextFuncName="backward_fcc" bitwidth="31" opcode="mul" nodeLabel="43.0" nodeLatency="1" m_display="0" m_delay="6.91" m_topoIndex="98" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="164" name="empty_48" lineNumber="37" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="mul_31s_31s_31_2_1_U1" opType="mul" coreId="132" contextFuncName="backward_fcc" bitwidth="31" opcode="mul" nodeLabel="43.0" nodeLatency="1" m_display="0" m_delay="6.91" m_topoIndex="98" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="37" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <dataInputObjs>phi</dataInputObjs>
       <dataInputObjs>trunc</dataInputObjs>
       <dataOutputObjs>bitconcatenate</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="165" name="tmp" lineNumber="37" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="tmp_fu_1015_p3" coreId="49" contextFuncName="backward_fcc" bitwidth="32" opcode="bitconcatenate" nodeLabel="45.0" m_display="0" m_topoIndex="102" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="165" name="tmp" lineNumber="37" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="tmp_fu_1015_p3" coreId="1701978146" contextFuncName="backward_fcc" bitwidth="32" opcode="bitconcatenate" nodeLabel="45.0" m_display="0" m_topoIndex="102" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="37" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <dataInputObjs>mul</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
@@ -1336,7 +1336,7 @@
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>partselect</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="167" name="br_ln38" lineNumber="38" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="4294967295" contextFuncName="backward_fcc" opcode="br" nodeLabel="45.0" m_display="0" m_topoIndex="104" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="167" name="br_ln38" lineNumber="38" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="4102361392" contextFuncName="backward_fcc" opcode="br" nodeLabel="45.0" m_display="0" m_topoIndex="104" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="38" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <dataInputObjs>icmp</dataInputObjs>
       <controlInputObjs>._crit_edge176</controlInputObjs>
@@ -1353,18 +1353,18 @@
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>block_182</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="169" name="trunc_ln1" lineNumber="38" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="trunc_ln1_fu_1027_p4" coreId="268435584" contextFuncName="backward_fcc" bitwidth="31" opcode="partselect" nodeLabel="45.0" m_display="0" m_topoIndex="105" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="169" name="trunc_ln1" lineNumber="38" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="trunc_ln1_fu_1027_p4" coreId="4102362888" contextFuncName="backward_fcc" bitwidth="31" opcode="partselect" nodeLabel="45.0" m_display="0" m_topoIndex="105" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="38" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <dataInputObjs>add</dataInputObjs>
       <dataOutputObjs>sext</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="170" name="sext_ln38" lineNumber="38" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="sext_ln38_fu_1037_p1" coreId="3968196312" contextFuncName="backward_fcc" bitwidth="32" opcode="sext" nodeLabel="45.0" m_display="0" m_topoIndex="106" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="170" name="sext_ln38" lineNumber="38" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="sext_ln38_fu_1037_p1" coreId="49" contextFuncName="backward_fcc" bitwidth="32" opcode="sext" nodeLabel="45.0" m_display="0" m_topoIndex="106" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="38" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <dataInputObjs>partselect</dataInputObjs>
       <dataOutputObjs>getelementptr</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="171" name="gmem_addr_4" lineNumber="38" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="3968196992" contextFuncName="backward_fcc" bitwidth="16" opcode="getelementptr" nodeLabel="45.0" m_display="0" m_topoIndex="107" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="171" name="gmem_addr_4" lineNumber="38" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="539119430" contextFuncName="backward_fcc" bitwidth="16" opcode="getelementptr" nodeLabel="45.0" m_display="0" m_topoIndex="107" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="38" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <dataInputObjs>gmem</dataInputObjs>
       <dataInputObjs>sext</dataInputObjs>
@@ -1377,7 +1377,7 @@
       <dataInputObjs>getelementptr</dataInputObjs>
       <dataInputObjs>read</dataInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="173" name="br_ln38" lineNumber="38" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="3968198816" contextFuncName="backward_fcc" opcode="br" nodeLabel="52.0" m_display="0" m_delay="1.58" m_topoIndex="109" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="173" name="br_ln38" lineNumber="38" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="0" contextFuncName="backward_fcc" opcode="br" nodeLabel="52.0" m_display="0" m_delay="1.58" m_topoIndex="109" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="38" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <controlInputObjs>block_182</controlInputObjs>
     </node_objs>
@@ -1389,7 +1389,7 @@
     <controlInputObjs>block_182</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>._crit_edge176</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="192" name="br_ln0" coreId="132" opcode="br" nodeLabel="56.0" m_display="0" m_topoIndex="122" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="192" name="br_ln0" coreId="4102384536" opcode="br" nodeLabel="56.0" m_display="0" m_topoIndex="122" m_clusterGroupNumber="-1">
       <controlInputObjs>._crit_edge176</controlInputObjs>
     </node_objs>
   </blocks>
@@ -1400,7 +1400,7 @@
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>block_159</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="194" name="br_ln0" coreId="1212371803" opcode="br" nodeLabel="56.0" m_display="0" m_topoIndex="123" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="194" name="br_ln0" coreId="4102384536" opcode="br" nodeLabel="56.0" m_display="0" m_topoIndex="123" m_clusterGroupNumber="-1">
       <controlInputObjs>block_159</controlInputObjs>
     </node_objs>
   </blocks>
@@ -1409,7 +1409,7 @@
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>.lr.ph170</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="196" name="br_ln43" lineNumber="43" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="1768318322" contextFuncName="backward_fcc" opcode="br" nodeLabel="43.0" m_display="0" m_delay="1.58" m_topoIndex="99" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="196" name="br_ln43" lineNumber="43" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="4102386968" contextFuncName="backward_fcc" opcode="br" nodeLabel="43.0" m_display="0" m_delay="1.58" m_topoIndex="99" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="43" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <controlInputObjs>.lr.ph170</controlInputObjs>
     </node_objs>
@@ -1424,7 +1424,7 @@
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>.lr.ph160.preheader</controlOutputObjs>
     <controlOutputObjs>.split35</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="198" name="i_1" lineNumber="43" originalName="i" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="758394930" contextFuncName="backward_fcc" bitwidth="31" opcode="phi" nodeLabel="57.0" m_display="0" m_topoIndex="124" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="198" name="i_1" lineNumber="43" originalName="i" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="0" contextFuncName="backward_fcc" bitwidth="31" opcode="phi" nodeLabel="57.0" m_display="0" m_topoIndex="124" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="43" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <dataInputObjs>add</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
@@ -1441,13 +1441,13 @@
       <dataOutputObjs>phi</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="200" name="icmp_ln43" lineNumber="43" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="icmp_ln43_fu_1081_p2" opType="icmp" coreId="4294967295" contextFuncName="backward_fcc" bitwidth="1" opcode="icmp" nodeLabel="57.0" m_display="0" m_delay="2.47" m_topoIndex="126" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="200" name="icmp_ln43" lineNumber="43" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="icmp_ln43_fu_1081_p2" opType="icmp" coreId="132" contextFuncName="backward_fcc" bitwidth="1" opcode="icmp" nodeLabel="57.0" m_display="0" m_delay="2.47" m_topoIndex="126" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="43" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <dataInputObjs>phi</dataInputObjs>
       <dataInputObjs>trunc</dataInputObjs>
       <dataOutputObjs>br</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="202" name="br_ln43" lineNumber="43" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="268437344" contextFuncName="backward_fcc" opcode="br" nodeLabel="57.0" m_display="0" m_topoIndex="127" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="202" name="br_ln43" lineNumber="43" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="402653312" contextFuncName="backward_fcc" opcode="br" nodeLabel="57.0" m_display="0" m_topoIndex="127" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="43" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <dataInputObjs>icmp</dataInputObjs>
       <controlInputObjs>.split35</controlInputObjs>
@@ -1462,29 +1462,29 @@
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>.lr.ph165</controlOutputObjs>
     <controlOutputObjs>._crit_edge166</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="205" name="empty_53" lineNumber="43" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="empty_53_fu_1086_p1" coreId="3968243848" contextFuncName="backward_fcc" bitwidth="7" opcode="trunc" nodeLabel="57.0" m_display="0" m_topoIndex="128" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="205" name="empty_53" lineNumber="43" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="empty_53_fu_1086_p1" coreId="4102393136" contextFuncName="backward_fcc" bitwidth="7" opcode="trunc" nodeLabel="57.0" m_display="0" m_topoIndex="128" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="43" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <dataInputObjs>phi</dataInputObjs>
       <dataOutputObjs>zext</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="206" name="zext_ln45" lineNumber="45" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="mul_ln45_fu_1110_p00" coreId="4294967295" contextFuncName="backward_fcc" bitwidth="14" opcode="zext" nodeLabel="59.0" m_display="0" m_topoIndex="133" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="206" name="zext_ln45" lineNumber="45" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="mul_ln45_fu_1110_p00" coreId="57857" contextFuncName="backward_fcc" bitwidth="14" opcode="zext" nodeLabel="59.0" m_display="0" m_topoIndex="133" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="45" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <dataInputObjs>trunc</dataInputObjs>
       <dataOutputObjs>mul</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="207" name="mul_ln45" lineNumber="45" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="mul_7ns_8ns_14_1_1_U5" opType="mul" coreId="0" contextFuncName="backward_fcc" bitwidth="14" opcode="mul" nodeLabel="59.0" m_display="0" m_delay="4.17" m_topoIndex="134" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="207" name="mul_ln45" lineNumber="45" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="mul_7ns_8ns_14_1_1_U5" opType="mul" coreId="54785" contextFuncName="backward_fcc" bitwidth="14" opcode="mul" nodeLabel="59.0" m_display="0" m_delay="4.17" m_topoIndex="134" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="45" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <dataInputObjs>zext</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="208" name="empty_54" lineNumber="43" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="mul_31s_31s_31_2_1_U3" opType="mul" coreId="0" contextFuncName="backward_fcc" bitwidth="31" opcode="mul" nodeLabel="57.0" nodeLatency="1" m_display="0" m_delay="6.91" m_topoIndex="129" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="208" name="empty_54" lineNumber="43" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="mul_31s_31s_31_2_1_U3" opType="mul" coreId="4102396224" contextFuncName="backward_fcc" bitwidth="31" opcode="mul" nodeLabel="57.0" nodeLatency="1" m_display="0" m_delay="6.91" m_topoIndex="129" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="43" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <dataInputObjs>phi</dataInputObjs>
       <dataInputObjs>trunc</dataInputObjs>
       <dataOutputObjs>bitconcatenate</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="209" name="tmp_1" lineNumber="43" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="tmp_1_fu_1116_p3" coreId="8" contextFuncName="backward_fcc" bitwidth="32" opcode="bitconcatenate" nodeLabel="59.0" m_display="0" m_topoIndex="135" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="209" name="tmp_1" lineNumber="43" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="tmp_1_fu_1116_p3" coreId="0" contextFuncName="backward_fcc" bitwidth="32" opcode="bitconcatenate" nodeLabel="59.0" m_display="0" m_topoIndex="135" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="43" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <dataInputObjs>mul</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
@@ -1496,7 +1496,7 @@
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>partselect</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="211" name="br_ln44" lineNumber="44" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="3968057728" contextFuncName="backward_fcc" opcode="br" nodeLabel="59.0" m_display="0" m_topoIndex="137" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="211" name="br_ln44" lineNumber="44" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="4102401177" contextFuncName="backward_fcc" opcode="br" nodeLabel="59.0" m_display="0" m_topoIndex="137" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="44" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <dataInputObjs>icmp</dataInputObjs>
       <controlInputObjs>._crit_edge166</controlInputObjs>
@@ -1513,18 +1513,18 @@
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>block_226</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="213" name="trunc_ln2" lineNumber="44" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="trunc_ln2_fu_1128_p4" coreId="132" contextFuncName="backward_fcc" bitwidth="31" opcode="partselect" nodeLabel="59.0" m_display="0" m_topoIndex="138" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="213" name="trunc_ln2" lineNumber="44" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="trunc_ln2_fu_1128_p4" coreId="4" contextFuncName="backward_fcc" bitwidth="31" opcode="partselect" nodeLabel="59.0" m_display="0" m_topoIndex="138" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="44" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <dataInputObjs>add</dataInputObjs>
       <dataOutputObjs>sext</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="214" name="sext_ln44" lineNumber="44" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="sext_ln44_fu_1138_p1" coreId="3968254800" contextFuncName="backward_fcc" bitwidth="32" opcode="sext" nodeLabel="59.0" m_display="0" m_topoIndex="139" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="214" name="sext_ln44" lineNumber="44" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="sext_ln44_fu_1138_p1" coreId="0" contextFuncName="backward_fcc" bitwidth="32" opcode="sext" nodeLabel="59.0" m_display="0" m_topoIndex="139" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="44" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <dataInputObjs>partselect</dataInputObjs>
       <dataOutputObjs>getelementptr</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="215" name="gmem_addr_5" lineNumber="44" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="3968255385" contextFuncName="backward_fcc" bitwidth="16" opcode="getelementptr" nodeLabel="59.0" m_display="0" m_topoIndex="140" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="215" name="gmem_addr_5" lineNumber="44" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="4102405273" contextFuncName="backward_fcc" bitwidth="16" opcode="getelementptr" nodeLabel="59.0" m_display="0" m_topoIndex="140" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="44" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <dataInputObjs>gmem</dataInputObjs>
       <dataInputObjs>sext</dataInputObjs>
@@ -1537,7 +1537,7 @@
       <dataInputObjs>getelementptr</dataInputObjs>
       <dataInputObjs>read</dataInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="217" name="br_ln44" lineNumber="44" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="268435584" contextFuncName="backward_fcc" opcode="br" nodeLabel="66.0" m_display="0" m_delay="1.58" m_topoIndex="142" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="217" name="br_ln44" lineNumber="44" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="4228300630" contextFuncName="backward_fcc" opcode="br" nodeLabel="66.0" m_display="0" m_delay="1.58" m_topoIndex="142" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="44" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <controlInputObjs>block_226</controlInputObjs>
     </node_objs>
@@ -1549,7 +1549,7 @@
     <controlInputObjs>block_226</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>._crit_edge166</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="236" name="br_ln0" coreId="8" opcode="br" nodeLabel="70.0" m_display="0" m_topoIndex="155" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="236" name="br_ln0" coreId="402653312" opcode="br" nodeLabel="70.0" m_display="0" m_topoIndex="155" m_clusterGroupNumber="-1">
       <controlInputObjs>._crit_edge166</controlInputObjs>
     </node_objs>
   </blocks>
@@ -1560,7 +1560,7 @@
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>.lr.ph170</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="238" name="br_ln0" coreId="7855" opcode="br" nodeLabel="70.0" m_display="0" m_topoIndex="156" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="238" name="br_ln0" coreId="29185" opcode="br" nodeLabel="70.0" m_display="0" m_topoIndex="156" m_clusterGroupNumber="-1">
       <controlInputObjs>.lr.ph170</controlInputObjs>
     </node_objs>
   </blocks>
@@ -1571,23 +1571,23 @@
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>_ZN8ap_fixedILi16ELi9EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi32ELi18ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="240" name="zext_ln49" lineNumber="49" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="grp_fu_1101_p00" coreId="3968274808" contextFuncName="backward_fcc" bitwidth="63" opcode="zext" nodeLabel="57.0" m_display="0" m_topoIndex="130" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="240" name="zext_ln49" lineNumber="49" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="grp_fu_1101_p00" coreId="6088" contextFuncName="backward_fcc" bitwidth="63" opcode="zext" nodeLabel="57.0" m_display="0" m_topoIndex="130" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="49" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <dataInputObjs>trunc</dataInputObjs>
       <dataOutputObjs>mul</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="241" name="zext_ln49_1" lineNumber="49" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="grp_fu_1101_p10" coreId="808924209" contextFuncName="backward_fcc" bitwidth="63" opcode="zext" nodeLabel="57.0" m_display="0" m_topoIndex="131" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="241" name="zext_ln49_1" lineNumber="49" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="grp_fu_1101_p10" coreId="132" contextFuncName="backward_fcc" bitwidth="63" opcode="zext" nodeLabel="57.0" m_display="0" m_topoIndex="131" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="49" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>mul</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="242" name="mul_ln49" lineNumber="49" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="mul_31ns_32ns_63_2_1_U4" opType="mul" coreId="3968276416" contextFuncName="backward_fcc" bitwidth="63" opcode="mul" nodeLabel="57.0" nodeLatency="1" m_display="0" m_delay="6.91" m_topoIndex="132" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="242" name="mul_ln49" lineNumber="49" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="mul_31ns_32ns_63_2_1_U4" opType="mul" coreId="6603" contextFuncName="backward_fcc" bitwidth="63" opcode="mul" nodeLabel="57.0" nodeLatency="1" m_display="0" m_delay="6.91" m_topoIndex="132" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="49" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <dataInputObjs>zext</dataInputObjs>
       <dataInputObjs>zext</dataInputObjs>
       <dataOutputObjs>icmp</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="243" name="br_ln49" lineNumber="49" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="20593" contextFuncName="backward_fcc" opcode="br" nodeLabel="71.0" m_display="0" m_delay="1.58" m_topoIndex="157" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="243" name="br_ln49" lineNumber="49" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="6871" contextFuncName="backward_fcc" opcode="br" nodeLabel="71.0" m_display="0" m_delay="1.58" m_topoIndex="157" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="49" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <controlInputObjs>_ZN8ap_fixedILi16ELi9EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi32ELi18ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit</controlInputObjs>
     </node_objs>
@@ -1674,7 +1674,7 @@
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="63" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <dataInputObjs>getelementptr</dataInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="339" name="br_ln63" lineNumber="63" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="5999" contextFuncName="backward_fcc" opcode="br" nodeLabel="92.0" m_display="0" m_topoIndex="233" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="339" name="br_ln63" lineNumber="63" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="0" contextFuncName="backward_fcc" opcode="br" nodeLabel="92.0" m_display="0" m_topoIndex="233" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="63" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <controlInputObjs>loop-memcpy-residual-header206</controlInputObjs>
     </node_objs>
@@ -1689,7 +1689,7 @@
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>loop-memcpy-residual-header194</controlOutputObjs>
     <controlOutputObjs>loop-memcpy-expansion197.preheader</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="341" name="mul_ln63" lineNumber="63" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="mul_32s_32s_32_2_1_U6" opType="mul" coreId="2733" contextFuncName="backward_fcc" bitwidth="32" opcode="mul" nodeLabel="92.0" nodeLatency="1" m_display="0" m_delay="6.91" m_topoIndex="234" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="341" name="mul_ln63" lineNumber="63" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="mul_32s_32s_32_2_1_U6" opType="mul" coreId="0" contextFuncName="backward_fcc" bitwidth="32" opcode="mul" nodeLabel="92.0" nodeLatency="1" m_display="0" m_delay="6.91" m_topoIndex="234" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="63" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <dataInputObjs>read</dataInputObjs>
       <dataInputObjs>read</dataInputObjs>
@@ -1698,19 +1698,19 @@
       <dataOutputObjs>icmp</dataOutputObjs>
       <dataOutputObjs>writereq</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="342" name="sext_ln63" lineNumber="63" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="sext_ln63_fu_1364_p1" coreId="2931" contextFuncName="backward_fcc" bitwidth="63" opcode="sext" nodeLabel="95.0" m_display="0" m_topoIndex="236" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="342" name="sext_ln63" lineNumber="63" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="sext_ln63_fu_1364_p1" coreId="0" contextFuncName="backward_fcc" bitwidth="63" opcode="sext" nodeLabel="95.0" m_display="0" m_topoIndex="236" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="63" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <dataInputObjs>mul</dataInputObjs>
       <dataOutputObjs>icmp</dataOutputObjs>
       <dataOutputObjs>icmp</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="343" name="icmp_ln63" lineNumber="63" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="icmp_ln63_fu_1359_p2" opType="icmp" coreId="3369" contextFuncName="backward_fcc" bitwidth="1" opcode="icmp" nodeLabel="94.0" m_display="0" m_delay="2.47" m_topoIndex="235" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="343" name="icmp_ln63" lineNumber="63" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="icmp_ln63_fu_1359_p2" opType="icmp" coreId="0" contextFuncName="backward_fcc" bitwidth="1" opcode="icmp" nodeLabel="94.0" m_display="0" m_delay="2.47" m_topoIndex="235" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="63" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <dataInputObjs>mul</dataInputObjs>
       <dataOutputObjs>br</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="344" name="br_ln63" lineNumber="63" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="1511" contextFuncName="backward_fcc" opcode="br" nodeLabel="95.0" m_display="0" m_topoIndex="237" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="344" name="br_ln63" lineNumber="63" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="0" contextFuncName="backward_fcc" opcode="br" nodeLabel="95.0" m_display="0" m_topoIndex="237" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="63" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <dataInputObjs>icmp</dataInputObjs>
       <controlInputObjs>loop-memcpy-expansion197.preheader</controlInputObjs>
@@ -1725,16 +1725,16 @@
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>loop-memcpy-expansion197</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="346" name="p_cast7" rtlName="p_cast7_fu_1367_p4" coreId="2" bitwidth="31" opcode="partselect" nodeLabel="95.0" m_display="0" m_topoIndex="238" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="346" name="p_cast7" rtlName="p_cast7_fu_1367_p4" coreId="0" bitwidth="31" opcode="partselect" nodeLabel="95.0" m_display="0" m_topoIndex="238" m_clusterGroupNumber="-1">
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>sext</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="347" name="p_cast7_cast" rtlName="p_cast7_cast_fu_1376_p1" coreId="2" bitwidth="32" opcode="sext" nodeLabel="95.0" m_display="0" m_topoIndex="239" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="347" name="p_cast7_cast" rtlName="p_cast7_cast_fu_1376_p1" coreId="0" bitwidth="32" opcode="sext" nodeLabel="95.0" m_display="0" m_topoIndex="239" m_clusterGroupNumber="-1">
       <dataInputObjs>partselect</dataInputObjs>
       <dataOutputObjs>getelementptr</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="348" name="gmem_addr_7" coreId="2" bitwidth="16" opcode="getelementptr" nodeLabel="95.0" m_display="0" m_topoIndex="240" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="348" name="gmem_addr_7" coreId="0" bitwidth="16" opcode="getelementptr" nodeLabel="95.0" m_display="0" m_topoIndex="240" m_clusterGroupNumber="-1">
       <dataInputObjs>gmem</dataInputObjs>
       <dataInputObjs>sext</dataInputObjs>
       <dataOutputObjs>write</dataOutputObjs>
@@ -1747,7 +1747,7 @@
       <dataInputObjs>getelementptr</dataInputObjs>
       <dataInputObjs>mul</dataInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="350" name="br_ln0" coreId="2" opcode="br" nodeLabel="95.0" m_display="0" m_delay="1.58" m_topoIndex="242" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="350" name="br_ln0" coreId="4102515624" opcode="br" nodeLabel="95.0" m_display="0" m_delay="1.58" m_topoIndex="242" m_clusterGroupNumber="-1">
       <controlInputObjs>loop-memcpy-expansion197</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="backward_fcc/backprop.cpp">
@@ -1784,7 +1784,7 @@
       <dataInputObjs>getelementptr</dataInputObjs>
       <dataInputObjs>mul</dataInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="371" name="br_ln0" coreId="3968144240" opcode="br" nodeLabel="103.0" m_display="0" m_delay="1.58" m_topoIndex="258" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="371" name="br_ln0" coreId="4102287424" opcode="br" nodeLabel="103.0" m_display="0" m_delay="1.58" m_topoIndex="258" m_clusterGroupNumber="-1">
       <controlInputObjs>loop-memcpy-expansion191</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="backward_fcc/backprop.cpp">
@@ -1799,7 +1799,7 @@
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="65" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <dataInputObjs>getelementptr</dataInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="388" name="br_ln65" lineNumber="65" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="0" contextFuncName="backward_fcc" opcode="br" nodeLabel="111.0" m_display="0" m_topoIndex="270" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="388" name="br_ln65" lineNumber="65" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="16" contextFuncName="backward_fcc" opcode="br" nodeLabel="111.0" m_display="0" m_topoIndex="270" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="65" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <controlInputObjs>loop-memcpy-residual-header194</controlInputObjs>
     </node_objs>
@@ -1814,7 +1814,7 @@
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>loop-memcpy-expansion.preheader</controlOutputObjs>
     <controlOutputObjs>loop-memcpy-residual-header</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="390" name="br_ln65" lineNumber="65" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="0" contextFuncName="backward_fcc" opcode="br" nodeLabel="111.0" m_display="0" m_topoIndex="271" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="390" name="br_ln65" lineNumber="65" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="242" contextFuncName="backward_fcc" opcode="br" nodeLabel="111.0" m_display="0" m_topoIndex="271" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="65" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <dataInputObjs>icmp</dataInputObjs>
       <controlInputObjs>loop-memcpy-residual-header</controlInputObjs>
@@ -1829,16 +1829,16 @@
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>loop-memcpy-expansion</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="392" name="p_cast8" rtlName="grp_fu_793_p4" coreId="0" bitwidth="31" opcode="partselect" nodeLabel="111.0" m_display="0" m_topoIndex="272" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="392" name="p_cast8" rtlName="grp_fu_793_p4" coreId="471" bitwidth="31" opcode="partselect" nodeLabel="111.0" m_display="0" m_topoIndex="272" m_clusterGroupNumber="-1">
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>sext</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="393" name="p_cast8_cast" rtlName="p_cast8_cast_fu_1447_p1" coreId="0" bitwidth="32" opcode="sext" nodeLabel="111.0" m_display="0" m_topoIndex="273" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="393" name="p_cast8_cast" rtlName="p_cast8_cast_fu_1447_p1" coreId="1387" bitwidth="32" opcode="sext" nodeLabel="111.0" m_display="0" m_topoIndex="273" m_clusterGroupNumber="-1">
       <dataInputObjs>partselect</dataInputObjs>
       <dataOutputObjs>getelementptr</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="394" name="gmem_addr_9" coreId="0" bitwidth="16" opcode="getelementptr" nodeLabel="111.0" m_display="0" m_topoIndex="274" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="394" name="gmem_addr_9" coreId="667" bitwidth="16" opcode="getelementptr" nodeLabel="111.0" m_display="0" m_topoIndex="274" m_clusterGroupNumber="-1">
       <dataInputObjs>gmem</dataInputObjs>
       <dataInputObjs>sext</dataInputObjs>
       <dataOutputObjs>write</dataOutputObjs>
@@ -1850,7 +1850,7 @@
       <dataInputObjs>getelementptr</dataInputObjs>
       <dataInputObjs>read</dataInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="396" name="br_ln0" coreId="0" opcode="br" nodeLabel="111.0" m_display="0" m_delay="1.58" m_topoIndex="276" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="396" name="br_ln0" coreId="898" opcode="br" nodeLabel="111.0" m_display="0" m_delay="1.58" m_topoIndex="276" m_clusterGroupNumber="-1">
       <controlInputObjs>loop-memcpy-expansion</controlInputObjs>
     </node_objs>
   </blocks>
@@ -1862,7 +1862,7 @@
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="67" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <dataInputObjs>getelementptr</dataInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="413" name="br_ln67" lineNumber="67" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="0" contextFuncName="backward_fcc" opcode="br" nodeLabel="119.0" m_display="0" m_topoIndex="288" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="413" name="br_ln67" lineNumber="67" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="1473" contextFuncName="backward_fcc" opcode="br" nodeLabel="119.0" m_display="0" m_topoIndex="288" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="67" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <controlInputObjs>loop-memcpy-residual-header</controlInputObjs>
     </node_objs>
@@ -1877,7 +1877,7 @@
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>.lr.ph145</controlOutputObjs>
     <controlOutputObjs>._crit_edge146</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="415" name="br_ln67" lineNumber="67" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="0" contextFuncName="backward_fcc" opcode="br" nodeLabel="119.0" m_display="0" m_topoIndex="289" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="415" name="br_ln67" lineNumber="67" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="153" contextFuncName="backward_fcc" opcode="br" nodeLabel="119.0" m_display="0" m_topoIndex="289" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="67" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <dataInputObjs>phi</dataInputObjs>
       <controlInputObjs>._crit_edge146</controlInputObjs>
@@ -1892,7 +1892,7 @@
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>block_428</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="417" name="cmp117137" rtlName="grp_fu_802_p2" opType="icmp" coreId="0" bitwidth="1" opcode="icmp" nodeLabel="119.0" m_display="0" m_delay="2.47" m_topoIndex="290" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="417" name="cmp117137" rtlName="grp_fu_802_p2" opType="icmp" coreId="405" bitwidth="1" opcode="icmp" nodeLabel="119.0" m_display="0" m_delay="2.47" m_topoIndex="290" m_clusterGroupNumber="-1">
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>br</dataOutputObjs>
       <constName>empty</constName>
@@ -1972,7 +1972,7 @@
       <dataInputObjs>phi</dataInputObjs>
       <dataOutputObjs>zext</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="431" name="zext_ln69" lineNumber="69" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="mul_ln69_fu_1519_p00" coreId="1059" contextFuncName="backward_fcc" bitwidth="14" opcode="zext" nodeLabel="122.0" m_display="0" m_topoIndex="305" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="431" name="zext_ln69" lineNumber="69" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="mul_ln69_fu_1519_p00" coreId="0" contextFuncName="backward_fcc" bitwidth="14" opcode="zext" nodeLabel="122.0" m_display="0" m_topoIndex="305" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="69" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <dataInputObjs>trunc</dataInputObjs>
       <dataOutputObjs>mul</dataOutputObjs>
@@ -2001,7 +2001,7 @@
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>partselect</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="436" name="br_ln68" lineNumber="68" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="0" contextFuncName="backward_fcc" opcode="br" nodeLabel="122.0" m_display="0" m_topoIndex="309" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="436" name="br_ln68" lineNumber="68" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="4102563584" contextFuncName="backward_fcc" opcode="br" nodeLabel="122.0" m_display="0" m_topoIndex="309" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="68" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <dataInputObjs>icmp</dataInputObjs>
       <controlInputObjs>._crit_edge141</controlInputObjs>
@@ -2018,18 +2018,18 @@
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>block_451</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="438" name="trunc_ln8" lineNumber="68" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="trunc_ln8_fu_1537_p4" coreId="0" contextFuncName="backward_fcc" bitwidth="31" opcode="partselect" nodeLabel="122.0" m_display="0" m_topoIndex="310" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="438" name="trunc_ln8" lineNumber="68" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="trunc_ln8_fu_1537_p4" coreId="50" contextFuncName="backward_fcc" bitwidth="31" opcode="partselect" nodeLabel="122.0" m_display="0" m_topoIndex="310" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="68" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <dataInputObjs>add</dataInputObjs>
       <dataOutputObjs>sext</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="439" name="sext_ln68" lineNumber="68" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="sext_ln68_fu_1547_p1" coreId="0" contextFuncName="backward_fcc" bitwidth="32" opcode="sext" nodeLabel="122.0" m_display="0" m_topoIndex="311" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="439" name="sext_ln68" lineNumber="68" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="sext_ln68_fu_1547_p1" coreId="4294967295" contextFuncName="backward_fcc" bitwidth="32" opcode="sext" nodeLabel="122.0" m_display="0" m_topoIndex="311" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="68" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <dataInputObjs>partselect</dataInputObjs>
       <dataOutputObjs>getelementptr</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="440" name="gmem_addr_10" lineNumber="68" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="0" contextFuncName="backward_fcc" bitwidth="16" opcode="getelementptr" nodeLabel="122.0" m_display="0" m_topoIndex="312" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="440" name="gmem_addr_10" lineNumber="68" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="4294967295" contextFuncName="backward_fcc" bitwidth="16" opcode="getelementptr" nodeLabel="122.0" m_display="0" m_topoIndex="312" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="68" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <dataInputObjs>gmem</dataInputObjs>
       <dataInputObjs>sext</dataInputObjs>
@@ -2043,7 +2043,7 @@
       <dataInputObjs>getelementptr</dataInputObjs>
       <dataInputObjs>read</dataInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="442" name="br_ln68" lineNumber="68" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="0" contextFuncName="backward_fcc" opcode="br" nodeLabel="123.0" m_display="0" m_delay="1.58" m_topoIndex="314" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="442" name="br_ln68" lineNumber="68" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="4294967295" contextFuncName="backward_fcc" opcode="br" nodeLabel="123.0" m_display="0" m_delay="1.58" m_topoIndex="314" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="68" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <controlInputObjs>block_451</controlInputObjs>
     </node_objs>
@@ -2059,7 +2059,7 @@
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="67" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <dataInputObjs>getelementptr</dataInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="462" name="br_ln67" lineNumber="67" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="209" contextFuncName="backward_fcc" opcode="br" nodeLabel="131.0" m_display="0" m_topoIndex="328" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="462" name="br_ln67" lineNumber="67" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="0" contextFuncName="backward_fcc" opcode="br" nodeLabel="131.0" m_display="0" m_topoIndex="328" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="67" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <controlInputObjs>._crit_edge141</controlInputObjs>
     </node_objs>
@@ -2074,7 +2074,7 @@
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>block_428</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="464" name="br_ln0" coreId="589" opcode="br" nodeLabel="131.0" m_display="0" m_topoIndex="329" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="464" name="br_ln0" coreId="0" opcode="br" nodeLabel="131.0" m_display="0" m_topoIndex="329" m_clusterGroupNumber="-1">
       <controlInputObjs>block_428</controlInputObjs>
     </node_objs>
   </blocks>
@@ -2082,7 +2082,7 @@
     <controlInputObjs>block_428</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>._crit_edge146</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="466" name="br_ln0" coreId="873" opcode="br" nodeLabel="120.0" m_display="0" m_topoIndex="301" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="466" name="br_ln0" coreId="0" opcode="br" nodeLabel="120.0" m_display="0" m_topoIndex="301" m_clusterGroupNumber="-1">
       <controlInputObjs>._crit_edge146</controlInputObjs>
     </node_objs>
   </blocks>
@@ -2093,16 +2093,16 @@
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>block_478</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="468" name="cmp131130" rtlName="grp_fu_802_p2" opType="icmp" coreId="1125" bitwidth="1" opcode="icmp" nodeLabel="120.0" m_display="0" m_delay="2.47" m_topoIndex="302" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="468" name="cmp131130" rtlName="grp_fu_802_p2" opType="icmp" coreId="0" bitwidth="1" opcode="icmp" nodeLabel="120.0" m_display="0" m_delay="2.47" m_topoIndex="302" m_clusterGroupNumber="-1">
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>br</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="469" name="empty_80" rtlName="empty_80_fu_1513_p1" coreId="1285" bitwidth="31" opcode="trunc" nodeLabel="120.0" m_display="0" m_topoIndex="303" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="469" name="empty_80" rtlName="empty_80_fu_1513_p1" coreId="0" bitwidth="31" opcode="trunc" nodeLabel="120.0" m_display="0" m_topoIndex="303" m_clusterGroupNumber="-1">
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>mul</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="470" name="br_ln73" lineNumber="73" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="1421" contextFuncName="backward_fcc" opcode="br" nodeLabel="120.0" m_display="0" m_delay="1.58" m_topoIndex="304" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="470" name="br_ln73" lineNumber="73" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="0" contextFuncName="backward_fcc" opcode="br" nodeLabel="120.0" m_display="0" m_delay="1.58" m_topoIndex="304" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="73" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <controlInputObjs>block_478</controlInputObjs>
     </node_objs>
@@ -2145,7 +2145,7 @@
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>br</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="477" name="br_ln73" lineNumber="73" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="8" contextFuncName="backward_fcc" opcode="br" nodeLabel="132.0" m_display="0" m_topoIndex="334" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="477" name="br_ln73" lineNumber="73" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="734" contextFuncName="backward_fcc" opcode="br" nodeLabel="132.0" m_display="0" m_topoIndex="334" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="73" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <dataInputObjs>icmp</dataInputObjs>
       <controlInputObjs>.split18</controlInputObjs>
@@ -2160,29 +2160,29 @@
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>.lr.ph</controlOutputObjs>
     <controlOutputObjs>._crit_edge</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="480" name="empty_82" lineNumber="73" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="empty_82_fu_1601_p1" coreId="4294967295" contextFuncName="backward_fcc" bitwidth="7" opcode="trunc" nodeLabel="132.0" m_display="0" m_topoIndex="335" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="480" name="empty_82" lineNumber="73" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="empty_82_fu_1601_p1" coreId="4294967294" contextFuncName="backward_fcc" bitwidth="7" opcode="trunc" nodeLabel="132.0" m_display="0" m_topoIndex="335" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="73" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <dataInputObjs>phi</dataInputObjs>
       <dataOutputObjs>zext</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="481" name="zext_ln75" lineNumber="75" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="mul_ln75_fu_1613_p00" coreId="4294967295" contextFuncName="backward_fcc" bitwidth="14" opcode="zext" nodeLabel="134.0" m_display="0" m_topoIndex="338" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="481" name="zext_ln75" lineNumber="75" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="mul_ln75_fu_1613_p00" coreId="4294967294" contextFuncName="backward_fcc" bitwidth="14" opcode="zext" nodeLabel="134.0" m_display="0" m_topoIndex="338" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="75" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <dataInputObjs>trunc</dataInputObjs>
       <dataOutputObjs>mul</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="482" name="mul_ln75" lineNumber="75" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="mul_7ns_8ns_14_1_1_U10" opType="mul" coreId="4294967295" contextFuncName="backward_fcc" bitwidth="14" opcode="mul" nodeLabel="134.0" m_display="0" m_delay="4.17" m_topoIndex="339" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="482" name="mul_ln75" lineNumber="75" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="mul_7ns_8ns_14_1_1_U10" opType="mul" coreId="4294967294" contextFuncName="backward_fcc" bitwidth="14" opcode="mul" nodeLabel="134.0" m_display="0" m_delay="4.17" m_topoIndex="339" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="75" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <dataInputObjs>zext</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="483" name="empty_83" lineNumber="73" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="mul_31s_31s_31_2_1_U9" opType="mul" coreId="4294967295" contextFuncName="backward_fcc" bitwidth="31" opcode="mul" nodeLabel="132.0" nodeLatency="1" m_display="0" m_delay="6.91" m_topoIndex="336" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="483" name="empty_83" lineNumber="73" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="mul_31s_31s_31_2_1_U9" opType="mul" coreId="4294967294" contextFuncName="backward_fcc" bitwidth="31" opcode="mul" nodeLabel="132.0" nodeLatency="1" m_display="0" m_delay="6.91" m_topoIndex="336" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="73" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <dataInputObjs>phi</dataInputObjs>
       <dataInputObjs>trunc</dataInputObjs>
       <dataOutputObjs>bitconcatenate</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="484" name="tmp_3" lineNumber="73" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="tmp_3_fu_1619_p3" coreId="4294967295" contextFuncName="backward_fcc" bitwidth="32" opcode="bitconcatenate" nodeLabel="134.0" m_display="0" m_topoIndex="340" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="484" name="tmp_3" lineNumber="73" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="tmp_3_fu_1619_p3" coreId="4294967294" contextFuncName="backward_fcc" bitwidth="32" opcode="bitconcatenate" nodeLabel="134.0" m_display="0" m_topoIndex="340" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="73" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <dataInputObjs>mul</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
@@ -2194,7 +2194,7 @@
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>partselect</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="486" name="br_ln74" lineNumber="74" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="216" contextFuncName="backward_fcc" opcode="br" nodeLabel="134.0" m_display="0" m_topoIndex="342" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="486" name="br_ln74" lineNumber="74" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="4294967294" contextFuncName="backward_fcc" opcode="br" nodeLabel="134.0" m_display="0" m_topoIndex="342" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="74" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <dataInputObjs>icmp</dataInputObjs>
       <controlInputObjs>._crit_edge</controlInputObjs>
@@ -2211,18 +2211,18 @@
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>block_501</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="488" name="trunc_ln" lineNumber="74" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="trunc_ln_fu_1631_p4" coreId="659" contextFuncName="backward_fcc" bitwidth="31" opcode="partselect" nodeLabel="134.0" m_display="0" m_topoIndex="343" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="488" name="trunc_ln" lineNumber="74" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="trunc_ln_fu_1631_p4" coreId="4294967294" contextFuncName="backward_fcc" bitwidth="31" opcode="partselect" nodeLabel="134.0" m_display="0" m_topoIndex="343" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="74" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <dataInputObjs>add</dataInputObjs>
       <dataOutputObjs>sext</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="489" name="sext_ln74" lineNumber="74" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="sext_ln74_fu_1641_p1" coreId="999" contextFuncName="backward_fcc" bitwidth="32" opcode="sext" nodeLabel="134.0" m_display="0" m_topoIndex="344" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="489" name="sext_ln74" lineNumber="74" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="sext_ln74_fu_1641_p1" coreId="1467" contextFuncName="backward_fcc" bitwidth="32" opcode="sext" nodeLabel="134.0" m_display="0" m_topoIndex="344" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="74" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <dataInputObjs>partselect</dataInputObjs>
       <dataOutputObjs>getelementptr</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="490" name="gmem_addr_11" lineNumber="74" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="1289" contextFuncName="backward_fcc" bitwidth="16" opcode="getelementptr" nodeLabel="134.0" m_display="0" m_topoIndex="345" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="490" name="gmem_addr_11" lineNumber="74" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="1603" contextFuncName="backward_fcc" bitwidth="16" opcode="getelementptr" nodeLabel="134.0" m_display="0" m_topoIndex="345" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="74" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <dataInputObjs>gmem</dataInputObjs>
       <dataInputObjs>sext</dataInputObjs>
@@ -2236,7 +2236,7 @@
       <dataInputObjs>getelementptr</dataInputObjs>
       <dataInputObjs>read</dataInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="492" name="br_ln74" lineNumber="74" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="0" contextFuncName="backward_fcc" opcode="br" nodeLabel="135.0" m_display="0" m_delay="1.58" m_topoIndex="347" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="492" name="br_ln74" lineNumber="74" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="1875" contextFuncName="backward_fcc" opcode="br" nodeLabel="135.0" m_display="0" m_delay="1.58" m_topoIndex="347" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="74" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
       <controlInputObjs>block_501</controlInputObjs>
     </node_objs>
@@ -2267,14 +2267,14 @@
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>block_478</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="514" name="br_ln0" coreId="1158" opcode="br" nodeLabel="143.0" m_display="0" m_topoIndex="362" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="514" name="br_ln0" coreId="0" opcode="br" nodeLabel="143.0" m_display="0" m_topoIndex="362" m_clusterGroupNumber="-1">
       <controlInputObjs>block_478</controlInputObjs>
     </node_objs>
   </blocks>
   <blocks id="517" name="._crit_edge136.loopexit" type="BlockType">
     <controlInputObjs>block_478</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="516" name="_ln79" lineNumber="79" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="3484541264" contextFuncName="backward_fcc" opcode="ret" nodeLabel="132.0" m_display="0" m_topoIndex="337" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="516" name="_ln79" lineNumber="79" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="0" contextFuncName="backward_fcc" opcode="ret" nodeLabel="132.0" m_display="0" m_topoIndex="337" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="79" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
     </node_objs>
     <fileValidLineNumbers fileName="backward_fcc/backprop.cpp">
@@ -2289,7 +2289,7 @@
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>loop-memcpy-residual-header230.loopexit</controlOutputObjs>
       <controlOutputObjs>loop-memcpy-expansion227.split</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="56" name="loop_index228" coreId="15" bitwidth="63" opcode="phi" nodeLabel="8.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="56" name="loop_index228" coreId="49" bitwidth="63" opcode="phi" nodeLabel="8.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
@@ -2303,13 +2303,13 @@
         <dataOutputObjs>phi</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="59" name="exitcond28544" lineNumber="32" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="exitcond28544_fu_855_p2" opType="icmp" coreId="3485274632" contextFuncName="backward_fcc" bitwidth="1" opcode="icmp" nodeLabel="8.0" m_display="0" m_delay="2.78" m_topoIndex="25" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="59" name="exitcond28544" lineNumber="32" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="exitcond28544_fu_855_p2" opType="icmp" coreId="49" contextFuncName="backward_fcc" bitwidth="1" opcode="icmp" nodeLabel="8.0" m_display="0" m_delay="2.78" m_topoIndex="25" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="32" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataInputObjs>sext</dataInputObjs>
         <dataOutputObjs>br</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="61" name="br_ln32" lineNumber="32" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="49" contextFuncName="backward_fcc" opcode="br" nodeLabel="8.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="61" name="br_ln32" lineNumber="32" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="337" contextFuncName="backward_fcc" opcode="br" nodeLabel="8.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="32" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
         <dataInputObjs>icmp</dataInputObjs>
         <controlInputObjs>loop-memcpy-expansion227.split</controlInputObjs>
@@ -2328,15 +2328,15 @@
         <dataInputObjs>getelementptr</dataInputObjs>
         <dataOutputObjs>store</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="64" name="empty_35" rtlName="empty_35_fu_860_p1" coreId="49" bitwidth="7" opcode="trunc" nodeLabel="8.0" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="64" name="empty_35" rtlName="empty_35_fu_860_p1" coreId="337" bitwidth="7" opcode="trunc" nodeLabel="8.0" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="65" name="loop_index228_cast_cast" rtlName="loop_index228_cast_cast_fu_864_p1" coreId="49" bitwidth="32" opcode="zext" nodeLabel="10.0" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="65" name="loop_index228_cast_cast" rtlName="loop_index228_cast_cast_fu_864_p1" coreId="273" bitwidth="32" opcode="zext" nodeLabel="10.0" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
         <dataInputObjs>trunc</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="66" name="xbuf_V_addr" coreId="337" bitwidth="7" opcode="getelementptr" nodeLabel="10.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="66" name="xbuf_V_addr" coreId="52" bitwidth="7" opcode="getelementptr" nodeLabel="10.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
         <dataInputObjs>alloca</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>store</dataOutputObjs>
@@ -2346,7 +2346,7 @@
         <dataInputObjs>read</dataInputObjs>
         <dataInputObjs>getelementptr</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="68" name="br_ln0" coreId="337" opcode="br" nodeLabel="10.0" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="68" name="br_ln0" coreId="385" opcode="br" nodeLabel="10.0" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
         <controlInputObjs>loop-memcpy-expansion227</controlInputObjs>
       </node_objs>
     </basic_blocks>
@@ -2359,7 +2359,7 @@
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>loop-memcpy-residual-header224.loopexit</controlOutputObjs>
       <controlOutputObjs>loop-memcpy-expansion221.split</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="83" name="loop_index222" coreId="49" bitwidth="63" opcode="phi" nodeLabel="19.0" m_display="0" m_topoIndex="43" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="83" name="loop_index222" coreId="4102279865" bitwidth="63" opcode="phi" nodeLabel="19.0" m_display="0" m_topoIndex="43" m_clusterGroupNumber="-1">
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
@@ -2373,13 +2373,13 @@
         <dataOutputObjs>phi</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="86" name="exitcond28443" lineNumber="33" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="exitcond28443_fu_896_p2" opType="icmp" coreId="132" contextFuncName="backward_fcc" bitwidth="1" opcode="icmp" nodeLabel="19.0" m_display="0" m_delay="2.78" m_topoIndex="45" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="86" name="exitcond28443" lineNumber="33" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="exitcond28443_fu_896_p2" opType="icmp" coreId="209" contextFuncName="backward_fcc" bitwidth="1" opcode="icmp" nodeLabel="19.0" m_display="0" m_delay="2.78" m_topoIndex="45" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="33" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataInputObjs>sext</dataInputObjs>
         <dataOutputObjs>br</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="88" name="br_ln33" lineNumber="33" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="481" contextFuncName="backward_fcc" opcode="br" nodeLabel="19.0" m_display="0" m_topoIndex="46" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="88" name="br_ln33" lineNumber="33" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="281" contextFuncName="backward_fcc" opcode="br" nodeLabel="19.0" m_display="0" m_topoIndex="46" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="33" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
         <dataInputObjs>icmp</dataInputObjs>
         <controlInputObjs>loop-memcpy-expansion221.split</controlInputObjs>
@@ -2398,15 +2398,15 @@
         <dataInputObjs>getelementptr</dataInputObjs>
         <dataOutputObjs>store</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="91" name="empty_38" rtlName="empty_38_fu_901_p1" coreId="132" bitwidth="7" opcode="trunc" nodeLabel="19.0" m_display="0" m_topoIndex="47" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="91" name="empty_38" rtlName="empty_38_fu_901_p1" coreId="4102283584" bitwidth="7" opcode="trunc" nodeLabel="19.0" m_display="0" m_topoIndex="47" m_clusterGroupNumber="-1">
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="92" name="loop_index222_cast_cast" rtlName="loop_index222_cast_cast_fu_905_p1" coreId="913" bitwidth="32" opcode="zext" nodeLabel="21.0" m_display="0" m_topoIndex="49" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="92" name="loop_index222_cast_cast" rtlName="loop_index222_cast_cast_fu_905_p1" coreId="4102284016" bitwidth="32" opcode="zext" nodeLabel="21.0" m_display="0" m_topoIndex="49" m_clusterGroupNumber="-1">
         <dataInputObjs>trunc</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="93" name="dbbuf_V_addr" coreId="0" bitwidth="7" opcode="getelementptr" nodeLabel="21.0" m_display="0" m_topoIndex="50" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="93" name="dbbuf_V_addr" coreId="1" bitwidth="7" opcode="getelementptr" nodeLabel="21.0" m_display="0" m_topoIndex="50" m_clusterGroupNumber="-1">
         <dataInputObjs>alloca</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>store</dataOutputObjs>
@@ -2416,7 +2416,7 @@
         <dataInputObjs>read</dataInputObjs>
         <dataInputObjs>getelementptr</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="95" name="br_ln0" coreId="45" opcode="br" nodeLabel="21.0" m_display="0" m_topoIndex="52" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="95" name="br_ln0" coreId="1" opcode="br" nodeLabel="21.0" m_display="0" m_topoIndex="52" m_clusterGroupNumber="-1">
         <controlInputObjs>loop-memcpy-expansion221</controlInputObjs>
       </node_objs>
     </basic_blocks>
@@ -2429,7 +2429,7 @@
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>loop-memcpy-residual-header218.loopexit</controlOutputObjs>
       <controlOutputObjs>loop-memcpy-expansion215.split</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="107" name="loop_index216" coreId="0" bitwidth="63" opcode="phi" nodeLabel="29.0" m_display="0" m_topoIndex="60" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="107" name="loop_index216" coreId="1" bitwidth="63" opcode="phi" nodeLabel="29.0" m_display="0" m_topoIndex="60" m_clusterGroupNumber="-1">
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
@@ -2443,13 +2443,13 @@
         <dataOutputObjs>phi</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="110" name="exitcond28342" lineNumber="32" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="exitcond28342_fu_926_p2" opType="icmp" coreId="49" contextFuncName="backward_fcc" bitwidth="1" opcode="icmp" nodeLabel="29.0" m_display="0" m_delay="2.78" m_topoIndex="62" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="110" name="exitcond28342" lineNumber="32" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="exitcond28342_fu_926_p2" opType="icmp" coreId="1" contextFuncName="backward_fcc" bitwidth="1" opcode="icmp" nodeLabel="29.0" m_display="0" m_delay="2.78" m_topoIndex="62" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="32" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataInputObjs>sext</dataInputObjs>
         <dataOutputObjs>br</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="112" name="br_ln32" lineNumber="32" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="268435584" contextFuncName="backward_fcc" opcode="br" nodeLabel="29.0" m_display="0" m_topoIndex="63" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="112" name="br_ln32" lineNumber="32" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="4102345264" contextFuncName="backward_fcc" opcode="br" nodeLabel="29.0" m_display="0" m_topoIndex="63" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="32" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
         <dataInputObjs>icmp</dataInputObjs>
         <controlInputObjs>loop-memcpy-expansion215.split</controlInputObjs>
@@ -2468,15 +2468,15 @@
         <dataInputObjs>getelementptr</dataInputObjs>
         <dataOutputObjs>store</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="115" name="empty_41" rtlName="empty_41_fu_931_p1" coreId="0" bitwidth="7" opcode="trunc" nodeLabel="29.0" m_display="0" m_topoIndex="64" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="115" name="empty_41" rtlName="empty_41_fu_931_p1" coreId="4102347112" bitwidth="7" opcode="trunc" nodeLabel="29.0" m_display="0" m_topoIndex="64" m_clusterGroupNumber="-1">
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="116" name="loop_index216_cast_cast" rtlName="loop_index216_cast_cast_fu_935_p1" coreId="0" bitwidth="32" opcode="zext" nodeLabel="31.0" m_display="0" m_topoIndex="66" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="116" name="loop_index216_cast_cast" rtlName="loop_index216_cast_cast_fu_935_p1" coreId="4102348552" bitwidth="32" opcode="zext" nodeLabel="31.0" m_display="0" m_topoIndex="66" m_clusterGroupNumber="-1">
         <dataInputObjs>trunc</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="117" name="dxbuf_V_addr" coreId="4294967295" bitwidth="7" opcode="getelementptr" nodeLabel="31.0" m_display="0" m_topoIndex="67" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="117" name="dxbuf_V_addr" coreId="0" bitwidth="7" opcode="getelementptr" nodeLabel="31.0" m_display="0" m_topoIndex="67" m_clusterGroupNumber="-1">
         <dataInputObjs>alloca</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>store</dataOutputObjs>
@@ -2499,7 +2499,7 @@
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>loop-memcpy-residual-header212.loopexit</controlOutputObjs>
       <controlOutputObjs>loop-memcpy-expansion209.split</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="131" name="loop_index210" coreId="3968170880" bitwidth="63" opcode="phi" nodeLabel="39.0" m_display="0" m_topoIndex="77" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="131" name="loop_index210" coreId="4102318744" bitwidth="63" opcode="phi" nodeLabel="39.0" m_display="0" m_topoIndex="77" m_clusterGroupNumber="-1">
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
@@ -2513,13 +2513,13 @@
         <dataOutputObjs>phi</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="134" name="exitcond28241" lineNumber="33" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="exitcond28241_fu_965_p2" opType="icmp" coreId="47" contextFuncName="backward_fcc" bitwidth="1" opcode="icmp" nodeLabel="39.0" m_display="0" m_delay="2.78" m_topoIndex="79" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="134" name="exitcond28241" lineNumber="33" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="exitcond28241_fu_965_p2" opType="icmp" coreId="402653312" contextFuncName="backward_fcc" bitwidth="1" opcode="icmp" nodeLabel="39.0" m_display="0" m_delay="2.78" m_topoIndex="79" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="33" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataInputObjs>sext</dataInputObjs>
         <dataOutputObjs>br</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="136" name="br_ln33" lineNumber="33" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="3968172680" contextFuncName="backward_fcc" opcode="br" nodeLabel="39.0" m_display="0" m_topoIndex="80" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="136" name="br_ln33" lineNumber="33" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="402653312" contextFuncName="backward_fcc" opcode="br" nodeLabel="39.0" m_display="0" m_topoIndex="80" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="33" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
         <dataInputObjs>icmp</dataInputObjs>
         <controlInputObjs>loop-memcpy-expansion209.split</controlInputObjs>
@@ -2538,15 +2538,15 @@
         <dataInputObjs>getelementptr</dataInputObjs>
         <dataOutputObjs>store</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="139" name="empty_44" rtlName="empty_44_fu_970_p1" coreId="0" bitwidth="7" opcode="trunc" nodeLabel="39.0" m_display="0" m_topoIndex="81" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="139" name="empty_44" rtlName="empty_44_fu_970_p1" coreId="4102324265" bitwidth="7" opcode="trunc" nodeLabel="39.0" m_display="0" m_topoIndex="81" m_clusterGroupNumber="-1">
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="140" name="loop_index210_cast_cast" rtlName="loop_index210_cast_cast_fu_974_p1" coreId="0" bitwidth="32" opcode="zext" nodeLabel="41.0" m_display="0" m_topoIndex="83" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="140" name="loop_index210_cast_cast" rtlName="loop_index210_cast_cast_fu_974_p1" coreId="4102325096" bitwidth="32" opcode="zext" nodeLabel="41.0" m_display="0" m_topoIndex="83" m_clusterGroupNumber="-1">
         <dataInputObjs>trunc</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="141" name="dybuf_V_addr" coreId="3968175416" bitwidth="7" opcode="getelementptr" nodeLabel="41.0" m_display="0" m_topoIndex="84" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="141" name="dybuf_V_addr" coreId="4102325264" bitwidth="7" opcode="getelementptr" nodeLabel="41.0" m_display="0" m_topoIndex="84" m_clusterGroupNumber="-1">
         <dataInputObjs>alloca</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>store</dataOutputObjs>
@@ -2556,7 +2556,7 @@
         <dataInputObjs>read</dataInputObjs>
         <dataInputObjs>getelementptr</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="143" name="br_ln0" coreId="0" opcode="br" nodeLabel="41.0" m_display="0" m_topoIndex="86" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="143" name="br_ln0" coreId="4102326441" opcode="br" nodeLabel="41.0" m_display="0" m_topoIndex="86" m_clusterGroupNumber="-1">
         <controlInputObjs>loop-memcpy-expansion209</controlInputObjs>
       </node_objs>
     </basic_blocks>
@@ -2585,12 +2585,12 @@
         <dataOutputObjs>phi</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="177" name="j_cast" lineNumber="38" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="j_cast_fu_1053_p1" coreId="6" contextFuncName="backward_fcc" bitwidth="32" opcode="zext" nodeLabel="53.0" m_display="0" m_topoIndex="112" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="177" name="j_cast" lineNumber="38" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="j_cast_fu_1053_p1" coreId="0" contextFuncName="backward_fcc" bitwidth="32" opcode="zext" nodeLabel="53.0" m_display="0" m_topoIndex="112" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="38" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="179" name="icmp_ln38" lineNumber="38" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="icmp_ln38_fu_1057_p2" opType="icmp" coreId="49" contextFuncName="backward_fcc" bitwidth="1" opcode="icmp" nodeLabel="53.0" m_display="0" m_delay="2.47" m_topoIndex="113" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="179" name="icmp_ln38" lineNumber="38" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="icmp_ln38_fu_1057_p2" opType="icmp" coreId="132" contextFuncName="backward_fcc" bitwidth="1" opcode="icmp" nodeLabel="53.0" m_display="0" m_delay="2.47" m_topoIndex="113" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="38" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
         <dataInputObjs>zext</dataInputObjs>
         <dataInputObjs>read</dataInputObjs>
@@ -2616,7 +2616,7 @@
         <dataInputObjs>getelementptr</dataInputObjs>
         <dataOutputObjs>store</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="185" name="trunc_ln39" lineNumber="39" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="trunc_ln39_fu_1062_p1" coreId="49" contextFuncName="backward_fcc" bitwidth="14" opcode="trunc" nodeLabel="53.0" m_display="0" m_topoIndex="115" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="185" name="trunc_ln39" lineNumber="39" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="trunc_ln39_fu_1062_p1" coreId="4102374568" contextFuncName="backward_fcc" bitwidth="14" opcode="trunc" nodeLabel="53.0" m_display="0" m_topoIndex="115" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="39" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
@@ -2627,12 +2627,12 @@
         <dataInputObjs>trunc</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="187" name="zext_ln39_1" lineNumber="39" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="zext_ln39_1_fu_1071_p1" coreId="3968208416" contextFuncName="backward_fcc" bitwidth="32" opcode="zext" nodeLabel="55.0" m_display="0" m_topoIndex="118" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="187" name="zext_ln39_1" lineNumber="39" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="zext_ln39_1_fu_1071_p1" coreId="402653312" contextFuncName="backward_fcc" bitwidth="32" opcode="zext" nodeLabel="55.0" m_display="0" m_topoIndex="118" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="39" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="188" name="dwbuf_V_addr" lineNumber="39" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="3968261960" contextFuncName="backward_fcc" bitwidth="14" opcode="getelementptr" nodeLabel="55.0" m_display="0" m_topoIndex="119" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="188" name="dwbuf_V_addr" lineNumber="39" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="4102376896" contextFuncName="backward_fcc" bitwidth="14" opcode="getelementptr" nodeLabel="55.0" m_display="0" m_topoIndex="119" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="39" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
@@ -2644,7 +2644,7 @@
         <dataInputObjs>read</dataInputObjs>
         <dataInputObjs>getelementptr</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="190" name="br_ln0" coreId="3968211024" opcode="br" nodeLabel="55.0" m_display="0" m_topoIndex="121" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="190" name="br_ln0" coreId="402653312" opcode="br" nodeLabel="55.0" m_display="0" m_topoIndex="121" m_clusterGroupNumber="-1">
         <controlInputObjs>block_182</controlInputObjs>
       </node_objs>
       <fileValidLineNumbers fileName="backward_fcc/backprop.cpp">
@@ -2660,7 +2660,7 @@
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>._crit_edge166.loopexit</controlOutputObjs>
       <controlOutputObjs>.split33</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="219" name="j_1" lineNumber="44" originalName="j" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="1915" contextFuncName="backward_fcc" bitwidth="31" opcode="phi" nodeLabel="67.0" m_display="0" m_topoIndex="143" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="219" name="j_1" lineNumber="44" originalName="j" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="132" contextFuncName="backward_fcc" bitwidth="31" opcode="phi" nodeLabel="67.0" m_display="0" m_topoIndex="143" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="44" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
@@ -2676,18 +2676,18 @@
         <dataOutputObjs>phi</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="221" name="j_1_cast" lineNumber="44" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="j_1_cast_fu_1154_p1" coreId="132" contextFuncName="backward_fcc" bitwidth="32" opcode="zext" nodeLabel="67.0" m_display="0" m_topoIndex="145" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="221" name="j_1_cast" lineNumber="44" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="j_1_cast_fu_1154_p1" coreId="4102410904" contextFuncName="backward_fcc" bitwidth="32" opcode="zext" nodeLabel="67.0" m_display="0" m_topoIndex="145" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="44" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="223" name="icmp_ln44" lineNumber="44" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="icmp_ln44_fu_1158_p2" opType="icmp" coreId="3968263528" contextFuncName="backward_fcc" bitwidth="1" opcode="icmp" nodeLabel="67.0" m_display="0" m_delay="2.47" m_topoIndex="146" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="223" name="icmp_ln44" lineNumber="44" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="icmp_ln44_fu_1158_p2" opType="icmp" coreId="4228300630" contextFuncName="backward_fcc" bitwidth="1" opcode="icmp" nodeLabel="67.0" m_display="0" m_delay="2.47" m_topoIndex="146" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="44" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
         <dataInputObjs>zext</dataInputObjs>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>br</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="225" name="br_ln44" lineNumber="44" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="3968262568" contextFuncName="backward_fcc" opcode="br" nodeLabel="67.0" m_display="0" m_topoIndex="147" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="225" name="br_ln44" lineNumber="44" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="4102412976" contextFuncName="backward_fcc" opcode="br" nodeLabel="67.0" m_display="0" m_topoIndex="147" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="44" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
         <dataInputObjs>icmp</dataInputObjs>
         <controlInputObjs>.split33</controlInputObjs>
@@ -2707,7 +2707,7 @@
         <dataInputObjs>getelementptr</dataInputObjs>
         <dataOutputObjs>store</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="229" name="trunc_ln45" lineNumber="45" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="trunc_ln45_fu_1163_p1" coreId="0" contextFuncName="backward_fcc" bitwidth="14" opcode="trunc" nodeLabel="67.0" m_display="0" m_topoIndex="148" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="229" name="trunc_ln45" lineNumber="45" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="trunc_ln45_fu_1163_p1" coreId="4102415129" contextFuncName="backward_fcc" bitwidth="14" opcode="trunc" nodeLabel="67.0" m_display="0" m_topoIndex="148" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="45" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
@@ -2718,12 +2718,12 @@
         <dataInputObjs>trunc</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="231" name="zext_ln45_1" lineNumber="45" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="zext_ln45_1_fu_1172_p1" coreId="3968267920" contextFuncName="backward_fcc" bitwidth="32" opcode="zext" nodeLabel="69.0" m_display="0" m_topoIndex="151" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="231" name="zext_ln45_1" lineNumber="45" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="zext_ln45_1_fu_1172_p1" coreId="4102417304" contextFuncName="backward_fcc" bitwidth="32" opcode="zext" nodeLabel="69.0" m_display="0" m_topoIndex="151" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="45" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="232" name="wbuf_V_addr" lineNumber="45" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="3968264048" contextFuncName="backward_fcc" bitwidth="14" opcode="getelementptr" nodeLabel="69.0" m_display="0" m_topoIndex="152" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="232" name="wbuf_V_addr" lineNumber="45" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="4102417304" contextFuncName="backward_fcc" bitwidth="14" opcode="getelementptr" nodeLabel="69.0" m_display="0" m_topoIndex="152" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="45" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
@@ -2735,7 +2735,7 @@
         <dataInputObjs>read</dataInputObjs>
         <dataInputObjs>getelementptr</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="234" name="br_ln0" coreId="49" opcode="br" nodeLabel="69.0" m_display="0" m_topoIndex="154" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="234" name="br_ln0" coreId="4213" opcode="br" nodeLabel="69.0" m_display="0" m_topoIndex="154" m_clusterGroupNumber="-1">
         <controlInputObjs>block_226</controlInputObjs>
       </node_objs>
       <fileValidLineNumbers fileName="backward_fcc/backprop.cpp">
@@ -2751,7 +2751,7 @@
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>_ZN13ap_fixed_baseILi17ELi10ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi16ELi9ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i.i.preheader</controlOutputObjs>
       <controlOutputObjs>._crit_edge156.loopexit</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="245" name="indvar_flatten" lineNumber="49" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="0" contextFuncName="backward_fcc" bitwidth="63" opcode="phi" nodeLabel="72.0" m_display="0" m_topoIndex="158" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="245" name="indvar_flatten" lineNumber="49" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="132" contextFuncName="backward_fcc" bitwidth="63" opcode="phi" nodeLabel="72.0" m_display="0" m_topoIndex="158" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="49" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
@@ -2760,7 +2760,7 @@
         <controlInputObjs>._crit_edge156.loopexit</controlInputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="246" name="i_2" lineNumber="49" originalName="i" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="3968280072" contextFuncName="backward_fcc" bitwidth="31" opcode="phi" nodeLabel="72.0" m_display="0" m_topoIndex="159" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="246" name="i_2" lineNumber="49" originalName="i" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="0" contextFuncName="backward_fcc" bitwidth="31" opcode="phi" nodeLabel="72.0" m_display="0" m_topoIndex="159" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="49" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
@@ -2770,7 +2770,7 @@
         <controlInputObjs>._crit_edge156.loopexit</controlInputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="247" name="j_2" lineNumber="50" originalName="j" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="132" contextFuncName="backward_fcc" bitwidth="32" opcode="phi" nodeLabel="72.0" m_display="0" m_topoIndex="160" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="247" name="j_2" lineNumber="50" originalName="j" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="4102430744" contextFuncName="backward_fcc" bitwidth="32" opcode="phi" nodeLabel="72.0" m_display="0" m_topoIndex="160" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="50" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
@@ -2785,13 +2785,13 @@
         <dataOutputObjs>phi</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="250" name="icmp_ln49" lineNumber="49" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="icmp_ln49_fu_1182_p2" opType="icmp" coreId="3968282552" contextFuncName="backward_fcc" bitwidth="1" opcode="icmp" nodeLabel="72.0" m_display="0" m_delay="2.78" m_topoIndex="162" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="250" name="icmp_ln49" lineNumber="49" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="icmp_ln49_fu_1182_p2" opType="icmp" coreId="19201" contextFuncName="backward_fcc" bitwidth="1" opcode="icmp" nodeLabel="72.0" m_display="0" m_delay="2.78" m_topoIndex="162" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="49" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataInputObjs>mul</dataInputObjs>
         <dataOutputObjs>br</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="251" name="br_ln49" lineNumber="49" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="49" contextFuncName="backward_fcc" opcode="br" nodeLabel="72.0" m_display="0" m_topoIndex="163" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="251" name="br_ln49" lineNumber="49" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="4102433840" contextFuncName="backward_fcc" opcode="br" nodeLabel="72.0" m_display="0" m_topoIndex="163" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="49" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
         <dataInputObjs>icmp</dataInputObjs>
         <controlInputObjs>._crit_edge156.loopexit</controlInputObjs>
@@ -2816,7 +2816,7 @@
         <dataOutputObjs>select</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="255" name="icmp_ln50" lineNumber="50" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="icmp_ln50_fu_1193_p2" opType="icmp" coreId="132" contextFuncName="backward_fcc" bitwidth="1" opcode="icmp" nodeLabel="72.0" m_display="0" m_delay="2.47" m_topoIndex="165" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="255" name="icmp_ln50" lineNumber="50" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="icmp_ln50_fu_1193_p2" opType="icmp" coreId="4102435736" contextFuncName="backward_fcc" bitwidth="1" opcode="icmp" nodeLabel="72.0" m_display="0" m_delay="2.47" m_topoIndex="165" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="50" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataInputObjs>read</dataInputObjs>
@@ -2832,7 +2832,7 @@
         <dataOutputObjs>add</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="257" name="trunc_ln49" lineNumber="49" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="trunc_ln49_fu_1206_p1" coreId="0" contextFuncName="backward_fcc" bitwidth="7" opcode="trunc" nodeLabel="72.0" m_display="0" m_topoIndex="167" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="257" name="trunc_ln49" lineNumber="49" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="trunc_ln49_fu_1206_p1" coreId="4102438832" contextFuncName="backward_fcc" bitwidth="7" opcode="trunc" nodeLabel="72.0" m_display="0" m_topoIndex="167" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="49" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>select</dataOutputObjs>
@@ -2850,12 +2850,12 @@
         <dataOutputObjs>zext</dataOutputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="260" name="zext_ln49_2" lineNumber="49" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="zext_ln49_2_fu_1244_p1" coreId="0" contextFuncName="backward_fcc" bitwidth="32" opcode="zext" nodeLabel="73.0" m_display="0" m_topoIndex="175" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="260" name="zext_ln49_2" lineNumber="49" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="zext_ln49_2_fu_1244_p1" coreId="10515" contextFuncName="backward_fcc" bitwidth="32" opcode="zext" nodeLabel="73.0" m_display="0" m_topoIndex="175" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="49" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="261" name="zext_ln1118_1" lineNumber="1118" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="grp_fu_1680_p00" coreId="5009" contextFuncName="operator_mul_16_9_true_AP_TRN_AP_WRAP_0" bitwidth="14" opcode="zext" nodeLabel="72.0" m_display="0" m_topoIndex="170" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="261" name="zext_ln1118_1" lineNumber="1118" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="grp_fu_1680_p00" coreId="10767" contextFuncName="operator_mul_16_9_true_AP_TRN_AP_WRAP_0" bitwidth="14" opcode="zext" nodeLabel="72.0" m_display="0" m_topoIndex="170" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" linenumber="1118" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator*&amp;lt;16, 9, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>mul</dataOutputObjs>
@@ -2866,7 +2866,7 @@
         <dataOutputObjs>add</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="263" name="dybuf_V_addr_1" lineNumber="49" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="0" contextFuncName="backward_fcc" bitwidth="7" opcode="getelementptr" nodeLabel="73.0" m_display="0" m_topoIndex="176" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="263" name="dybuf_V_addr_1" lineNumber="49" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="12231" contextFuncName="backward_fcc" bitwidth="7" opcode="getelementptr" nodeLabel="73.0" m_display="0" m_topoIndex="176" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="49" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
@@ -3218,7 +3218,7 @@
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>loop-memcpy-expansion191.preheader</controlOutputObjs>
       <controlOutputObjs>loop-memcpy-expansion197.split</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="352" name="loop_index198" coreId="2" bitwidth="63" opcode="phi" nodeLabel="96.0" m_display="0" m_topoIndex="243" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="352" name="loop_index198" coreId="0" bitwidth="63" opcode="phi" nodeLabel="96.0" m_display="0" m_topoIndex="243" m_clusterGroupNumber="-1">
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
@@ -3232,13 +3232,13 @@
         <dataOutputObjs>phi</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="355" name="exitcond24827" lineNumber="63" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="exitcond24827_fu_1393_p2" opType="icmp" coreId="1" contextFuncName="backward_fcc" bitwidth="1" opcode="icmp" nodeLabel="96.0" m_display="0" m_delay="2.78" m_topoIndex="245" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="355" name="exitcond24827" lineNumber="63" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="exitcond24827_fu_1393_p2" opType="icmp" coreId="0" contextFuncName="backward_fcc" bitwidth="1" opcode="icmp" nodeLabel="96.0" m_display="0" m_delay="2.78" m_topoIndex="245" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="63" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataInputObjs>sext</dataInputObjs>
         <dataOutputObjs>br</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="357" name="br_ln63" lineNumber="63" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="1" contextFuncName="backward_fcc" opcode="br" nodeLabel="96.0" m_display="0" m_topoIndex="246" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="357" name="br_ln63" lineNumber="63" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="0" contextFuncName="backward_fcc" opcode="br" nodeLabel="96.0" m_display="0" m_topoIndex="246" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="63" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
         <dataInputObjs>icmp</dataInputObjs>
         <controlInputObjs>loop-memcpy-expansion197.split</controlInputObjs>
@@ -3276,7 +3276,7 @@
         <dataInputObjs>load</dataInputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="364" name="br_ln0" coreId="167838211" opcode="br" nodeLabel="98.0" m_display="0" m_topoIndex="252" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="364" name="br_ln0" coreId="0" opcode="br" nodeLabel="98.0" m_display="0" m_topoIndex="252" m_clusterGroupNumber="-1">
         <controlInputObjs>loop-memcpy-expansion197</controlInputObjs>
       </node_objs>
     </basic_blocks>
@@ -3289,7 +3289,7 @@
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>loop-memcpy-residual-header194.loopexit</controlOutputObjs>
       <controlOutputObjs>loop-memcpy-expansion191.split</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="373" name="loop_index192" coreId="3968348768" bitwidth="63" opcode="phi" nodeLabel="104.0" m_display="0" m_topoIndex="259" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="373" name="loop_index192" coreId="4102483712" bitwidth="63" opcode="phi" nodeLabel="104.0" m_display="0" m_topoIndex="259" m_clusterGroupNumber="-1">
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
@@ -3303,13 +3303,13 @@
         <dataOutputObjs>phi</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="376" name="exitcond24726" lineNumber="63" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="exitcond24726_fu_1433_p2" opType="icmp" coreId="340" contextFuncName="backward_fcc" bitwidth="1" opcode="icmp" nodeLabel="104.0" m_display="0" m_delay="2.78" m_topoIndex="261" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="376" name="exitcond24726" lineNumber="63" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="exitcond24726_fu_1433_p2" opType="icmp" coreId="0" contextFuncName="backward_fcc" bitwidth="1" opcode="icmp" nodeLabel="104.0" m_display="0" m_delay="2.78" m_topoIndex="261" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="63" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataInputObjs>sext</dataInputObjs>
         <dataOutputObjs>br</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="378" name="br_ln63" lineNumber="63" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="1413" contextFuncName="backward_fcc" opcode="br" nodeLabel="104.0" m_display="0" m_topoIndex="262" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="378" name="br_ln63" lineNumber="63" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="0" contextFuncName="backward_fcc" opcode="br" nodeLabel="104.0" m_display="0" m_topoIndex="262" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="63" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
         <dataInputObjs>icmp</dataInputObjs>
         <controlInputObjs>loop-memcpy-expansion191.split</controlInputObjs>
@@ -3324,15 +3324,15 @@
       <controlOutputObjs>phi</controlOutputObjs>
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>loop-memcpy-expansion191</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="380" name="empty_68" rtlName="empty_68_fu_1438_p1" coreId="813" bitwidth="14" opcode="trunc" nodeLabel="104.0" m_display="0" m_topoIndex="263" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="380" name="empty_68" rtlName="empty_68_fu_1438_p1" coreId="0" bitwidth="14" opcode="trunc" nodeLabel="104.0" m_display="0" m_topoIndex="263" m_clusterGroupNumber="-1">
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="381" name="loop_index192_cast_cast" rtlName="loop_index192_cast_cast_fu_1442_p1" coreId="952" bitwidth="32" opcode="zext" nodeLabel="104.0" m_display="0" m_topoIndex="264" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="381" name="loop_index192_cast_cast" rtlName="loop_index192_cast_cast_fu_1442_p1" coreId="0" bitwidth="32" opcode="zext" nodeLabel="104.0" m_display="0" m_topoIndex="264" m_clusterGroupNumber="-1">
         <dataInputObjs>trunc</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="382" name="wbuf_V_addr_2" coreId="1087" bitwidth="14" opcode="getelementptr" nodeLabel="104.0" m_display="0" m_topoIndex="265" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="382" name="wbuf_V_addr_2" coreId="0" bitwidth="14" opcode="getelementptr" nodeLabel="104.0" m_display="0" m_topoIndex="265" m_clusterGroupNumber="-1">
         <dataInputObjs>alloca</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>load</dataOutputObjs>
@@ -3360,7 +3360,7 @@
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>loop-memcpy-residual-header.loopexit</controlOutputObjs>
       <controlOutputObjs>loop-memcpy-expansion.split</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="398" name="loop_index" coreId="0" bitwidth="63" opcode="phi" nodeLabel="112.0" m_display="0" m_topoIndex="277" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="398" name="loop_index" coreId="1118" bitwidth="63" opcode="phi" nodeLabel="112.0" m_display="0" m_topoIndex="277" m_clusterGroupNumber="-1">
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
@@ -3374,13 +3374,13 @@
         <dataOutputObjs>phi</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="401" name="exitcond24625" lineNumber="32" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="exitcond24625_fu_1464_p2" opType="icmp" coreId="0" contextFuncName="backward_fcc" bitwidth="1" opcode="icmp" nodeLabel="112.0" m_display="0" m_delay="2.78" m_topoIndex="279" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="401" name="exitcond24625" lineNumber="32" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="exitcond24625_fu_1464_p2" opType="icmp" coreId="19" contextFuncName="backward_fcc" bitwidth="1" opcode="icmp" nodeLabel="112.0" m_display="0" m_delay="2.78" m_topoIndex="279" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="32" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataInputObjs>sext</dataInputObjs>
         <dataOutputObjs>br</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="403" name="br_ln32" lineNumber="32" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="0" contextFuncName="backward_fcc" opcode="br" nodeLabel="112.0" m_display="0" m_topoIndex="280" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="403" name="br_ln32" lineNumber="32" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="155" contextFuncName="backward_fcc" opcode="br" nodeLabel="112.0" m_display="0" m_topoIndex="280" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="32" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
         <dataInputObjs>icmp</dataInputObjs>
         <controlInputObjs>loop-memcpy-expansion.split</controlInputObjs>
@@ -3395,15 +3395,15 @@
       <controlOutputObjs>phi</controlOutputObjs>
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>loop-memcpy-expansion</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="405" name="empty_71" rtlName="empty_71_fu_1469_p1" coreId="0" bitwidth="7" opcode="trunc" nodeLabel="112.0" m_display="0" m_topoIndex="281" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="405" name="empty_71" rtlName="empty_71_fu_1469_p1" coreId="407" bitwidth="7" opcode="trunc" nodeLabel="112.0" m_display="0" m_topoIndex="281" m_clusterGroupNumber="-1">
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="406" name="loop_index_cast_cast" rtlName="loop_index_cast_cast_fu_1473_p1" coreId="0" bitwidth="32" opcode="zext" nodeLabel="112.0" m_display="0" m_topoIndex="282" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="406" name="loop_index_cast_cast" rtlName="loop_index_cast_cast_fu_1473_p1" coreId="543" bitwidth="32" opcode="zext" nodeLabel="112.0" m_display="0" m_topoIndex="282" m_clusterGroupNumber="-1">
         <dataInputObjs>trunc</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="407" name="dxbuf_V_addr_2" coreId="0" bitwidth="7" opcode="getelementptr" nodeLabel="112.0" m_display="0" m_topoIndex="283" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="407" name="dxbuf_V_addr_2" coreId="679" bitwidth="7" opcode="getelementptr" nodeLabel="112.0" m_display="0" m_topoIndex="283" m_clusterGroupNumber="-1">
         <dataInputObjs>alloca</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>load</dataOutputObjs>
@@ -3418,7 +3418,7 @@
         <dataInputObjs>load</dataInputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="410" name="br_ln0" coreId="0" opcode="br" nodeLabel="114.0" m_display="0" m_topoIndex="286" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="410" name="br_ln0" coreId="1087" opcode="br" nodeLabel="114.0" m_display="0" m_topoIndex="286" m_clusterGroupNumber="-1">
         <controlInputObjs>loop-memcpy-expansion</controlInputObjs>
       </node_objs>
     </basic_blocks>
@@ -3431,7 +3431,7 @@
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>._crit_edge141.loopexit</controlOutputObjs>
       <controlOutputObjs>.split20</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="444" name="j_3" lineNumber="68" originalName="j" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="2" contextFuncName="backward_fcc" bitwidth="31" opcode="phi" nodeLabel="124.0" m_display="0" m_topoIndex="315" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="444" name="j_3" lineNumber="68" originalName="j" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="4294967295" contextFuncName="backward_fcc" bitwidth="31" opcode="phi" nodeLabel="124.0" m_display="0" m_topoIndex="315" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="68" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
@@ -3447,18 +3447,18 @@
         <dataOutputObjs>phi</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="446" name="j_3_cast" lineNumber="68" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="j_3_cast_fu_1563_p1" coreId="291" contextFuncName="backward_fcc" bitwidth="32" opcode="zext" nodeLabel="124.0" m_display="0" m_topoIndex="317" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="446" name="j_3_cast" lineNumber="68" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="j_3_cast_fu_1563_p1" coreId="4294967295" contextFuncName="backward_fcc" bitwidth="32" opcode="zext" nodeLabel="124.0" m_display="0" m_topoIndex="317" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="68" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="448" name="icmp_ln68" lineNumber="68" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="icmp_ln68_fu_1567_p2" opType="icmp" coreId="516" contextFuncName="backward_fcc" bitwidth="1" opcode="icmp" nodeLabel="124.0" m_display="0" m_delay="2.47" m_topoIndex="318" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="448" name="icmp_ln68" lineNumber="68" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="icmp_ln68_fu_1567_p2" opType="icmp" coreId="4294967295" contextFuncName="backward_fcc" bitwidth="1" opcode="icmp" nodeLabel="124.0" m_display="0" m_delay="2.47" m_topoIndex="318" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="68" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
         <dataInputObjs>zext</dataInputObjs>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>br</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="450" name="br_ln68" lineNumber="68" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="1303" contextFuncName="backward_fcc" opcode="br" nodeLabel="124.0" m_display="0" m_topoIndex="319" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="450" name="br_ln68" lineNumber="68" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="4294967295" contextFuncName="backward_fcc" opcode="br" nodeLabel="124.0" m_display="0" m_topoIndex="319" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="68" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
         <dataInputObjs>icmp</dataInputObjs>
         <controlInputObjs>.split20</controlInputObjs>
@@ -3473,7 +3473,7 @@
       <controlOutputObjs>phi</controlOutputObjs>
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>block_451</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="453" name="trunc_ln69" lineNumber="69" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="trunc_ln69_fu_1572_p1" coreId="1030" contextFuncName="backward_fcc" bitwidth="14" opcode="trunc" nodeLabel="124.0" m_display="0" m_topoIndex="320" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="453" name="trunc_ln69" lineNumber="69" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="trunc_ln69_fu_1572_p1" coreId="1600337735" contextFuncName="backward_fcc" bitwidth="14" opcode="trunc" nodeLabel="124.0" m_display="0" m_topoIndex="320" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="69" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
@@ -3484,12 +3484,12 @@
         <dataInputObjs>trunc</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="455" name="zext_ln69_1" lineNumber="69" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="zext_ln69_1_fu_1581_p1" coreId="183" contextFuncName="backward_fcc" bitwidth="32" opcode="zext" nodeLabel="124.0" m_display="0" m_topoIndex="322" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="455" name="zext_ln69_1" lineNumber="69" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="zext_ln69_1_fu_1581_p1" coreId="0" contextFuncName="backward_fcc" bitwidth="32" opcode="zext" nodeLabel="124.0" m_display="0" m_topoIndex="322" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="69" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="456" name="dwbuf_V_addr_3" lineNumber="69" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="435" contextFuncName="backward_fcc" bitwidth="14" opcode="getelementptr" nodeLabel="124.0" m_display="0" m_topoIndex="323" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="456" name="dwbuf_V_addr_3" lineNumber="69" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="0" contextFuncName="backward_fcc" bitwidth="14" opcode="getelementptr" nodeLabel="124.0" m_display="0" m_topoIndex="323" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="69" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
@@ -3507,7 +3507,7 @@
         <dataInputObjs>load</dataInputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="459" name="br_ln0" coreId="1243" opcode="br" nodeLabel="126.0" m_display="0" m_topoIndex="326" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="459" name="br_ln0" coreId="0" opcode="br" nodeLabel="126.0" m_display="0" m_topoIndex="326" m_clusterGroupNumber="-1">
         <controlInputObjs>block_451</controlInputObjs>
       </node_objs>
       <fileValidLineNumbers fileName="backward_fcc/backprop.cpp">
@@ -3523,7 +3523,7 @@
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>._crit_edge.loopexit</controlOutputObjs>
       <controlOutputObjs>.split</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="494" name="j_4" lineNumber="74" originalName="j" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="3485052992" contextFuncName="backward_fcc" bitwidth="31" opcode="phi" nodeLabel="136.0" m_display="0" m_topoIndex="348" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="494" name="j_4" lineNumber="74" originalName="j" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="2127" contextFuncName="backward_fcc" bitwidth="31" opcode="phi" nodeLabel="136.0" m_display="0" m_topoIndex="348" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="74" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
@@ -3539,18 +3539,18 @@
         <dataOutputObjs>phi</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="496" name="j_4_cast" lineNumber="74" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="j_4_cast_fu_1657_p1" coreId="1206" contextFuncName="backward_fcc" bitwidth="32" opcode="zext" nodeLabel="136.0" m_display="0" m_topoIndex="350" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="496" name="j_4_cast" lineNumber="74" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="j_4_cast_fu_1657_p1" coreId="2399" contextFuncName="backward_fcc" bitwidth="32" opcode="zext" nodeLabel="136.0" m_display="0" m_topoIndex="350" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="74" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="498" name="icmp_ln74" lineNumber="74" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="icmp_ln74_fu_1661_p2" opType="icmp" coreId="4294967295" contextFuncName="backward_fcc" bitwidth="1" opcode="icmp" nodeLabel="136.0" m_display="0" m_delay="2.47" m_topoIndex="351" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="498" name="icmp_ln74" lineNumber="74" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="icmp_ln74_fu_1661_p2" opType="icmp" coreId="2535" contextFuncName="backward_fcc" bitwidth="1" opcode="icmp" nodeLabel="136.0" m_display="0" m_delay="2.47" m_topoIndex="351" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="74" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
         <dataInputObjs>zext</dataInputObjs>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>br</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="500" name="br_ln74" lineNumber="74" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="790" contextFuncName="backward_fcc" opcode="br" nodeLabel="136.0" m_display="0" m_topoIndex="352" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="500" name="br_ln74" lineNumber="74" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="2671" contextFuncName="backward_fcc" opcode="br" nodeLabel="136.0" m_display="0" m_topoIndex="352" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="74" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
         <dataInputObjs>icmp</dataInputObjs>
         <controlInputObjs>.split</controlInputObjs>
@@ -3565,7 +3565,7 @@
       <controlOutputObjs>phi</controlOutputObjs>
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>block_501</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="503" name="trunc_ln75" lineNumber="75" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="trunc_ln75_fu_1666_p1" coreId="3485038464" contextFuncName="backward_fcc" bitwidth="14" opcode="trunc" nodeLabel="136.0" m_display="0" m_topoIndex="353" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="503" name="trunc_ln75" lineNumber="75" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="trunc_ln75_fu_1666_p1" coreId="4294967294" contextFuncName="backward_fcc" bitwidth="14" opcode="trunc" nodeLabel="136.0" m_display="0" m_topoIndex="353" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="75" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
@@ -3576,12 +3576,12 @@
         <dataInputObjs>trunc</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="505" name="zext_ln75_1" lineNumber="75" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="zext_ln75_1_fu_1675_p1" coreId="154" contextFuncName="backward_fcc" bitwidth="32" opcode="zext" nodeLabel="136.0" m_display="0" m_topoIndex="355" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="505" name="zext_ln75_1" lineNumber="75" fileName="backward_fcc/backprop.cpp" fileDirectory=".." rtlName="zext_ln75_1_fu_1675_p1" coreId="0" contextFuncName="backward_fcc" bitwidth="32" opcode="zext" nodeLabel="136.0" m_display="0" m_topoIndex="355" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="75" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="506" name="wbuf_V_addr_3" lineNumber="75" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="289" contextFuncName="backward_fcc" bitwidth="14" opcode="getelementptr" nodeLabel="136.0" m_display="0" m_topoIndex="356" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="506" name="wbuf_V_addr_3" lineNumber="75" fileName="backward_fcc/backprop.cpp" fileDirectory=".." coreId="0" contextFuncName="backward_fcc" bitwidth="14" opcode="getelementptr" nodeLabel="136.0" m_display="0" m_topoIndex="356" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="backward_fcc/backprop.cpp" linenumber="75" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="backward_fcc"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
@@ -3599,7 +3599,7 @@
         <dataInputObjs>load</dataInputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="509" name="br_ln0" coreId="4294967295" opcode="br" nodeLabel="138.0" m_display="0" m_topoIndex="359" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="509" name="br_ln0" coreId="0" opcode="br" nodeLabel="138.0" m_display="0" m_topoIndex="359" m_clusterGroupNumber="-1">
         <controlInputObjs>block_501</controlInputObjs>
       </node_objs>
       <fileValidLineNumbers fileName="backward_fcc/backprop.cpp">

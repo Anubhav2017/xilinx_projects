@@ -363,21 +363,29 @@ ap_return {
 }
 x { 
 	dir I
-	width 64
+	width 32
 	depth 1
 	mode ap_none
 	offset 24
-	offset_end 35
+	offset_end 31
 }
 dx { 
 	dir I
-	width 64
+	width 32
 	depth 1
 	mode ap_none
-	offset 36
-	offset_end 47
+	offset 32
+	offset_end 39
 }
 y { 
+	dir I
+	width 32
+	depth 1
+	mode ap_none
+	offset 40
+	offset_end 47
+}
+x_size { 
 	dir I
 	width 32
 	depth 1
@@ -385,21 +393,13 @@ y {
 	offset 48
 	offset_end 55
 }
-x_size { 
+N { 
 	dir I
 	width 32
 	depth 1
 	mode ap_none
 	offset 56
 	offset_end 63
-}
-N { 
-	dir I
-	width 32
-	depth 1
-	mode ap_none
-	offset 64
-	offset_end 71
 }
 }
 dict set axilite_register_dict CTRL $port_CTRL

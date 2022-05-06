@@ -6,8 +6,8 @@
 module conv_bckwd_wbuf_V_ram (addr0, ce0, d0, we0, q0,  clk);
 
 parameter DWIDTH = 16;
-parameter AWIDTH = 12;
-parameter MEM_SIZE = 2500;
+parameter AWIDTH = 10;
+parameter MEM_SIZE = 625;
 
 input[AWIDTH-1:0] addr0;
 input ce0;
@@ -44,8 +44,8 @@ module conv_bckwd_wbuf_V(
     q0);
 
 parameter DataWidth = 32'd16;
-parameter AddressRange = 32'd2500;
-parameter AddressWidth = 32'd12;
+parameter AddressRange = 32'd625;
+parameter AddressWidth = 32'd10;
 input reset;
 input clk;
 input[AddressWidth - 1:0] address0;

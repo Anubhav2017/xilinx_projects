@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'conv_fwd'
 ================================================================
 + General Information: 
-    * Date:           Mon May  2 14:33:02 2022
+    * Date:           Tue May  3 12:46:54 2022
     * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
     * Project:        conv_fwd
     * Solution:       solution1 (Vivado IP Flow Target)

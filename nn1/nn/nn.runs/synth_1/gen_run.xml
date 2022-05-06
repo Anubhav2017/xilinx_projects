@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1651227206">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1651743575">
   <File Type="VDS-TIMING-PB" Name="fwd_fcc_test_wrapper_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="fwd_fcc_test_wrapper_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="fwd_fcc_test_wrapper.dcp"/>
@@ -49,10 +49,10 @@
     </StratHandle>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="fwd_fcc_test_rst_ps7_0_100M_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="fwd_fcc_test_processing_system7_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="fwd_fcc_test_forward_fcc_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="fwd_fcc_test_axi_bram_ctrl_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="fwd_fcc_test_axi_smc_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="fwd_fcc_test_axi_bram_ctrl_0_bram_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="fwd_fcc_test_xbar_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="fwd_fcc_test_backward_fcc_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="fwd_fcc_test_conv_fwd_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="fwd_fcc_test_conv_bckwd_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="fwd_fcc_test_xbar_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="fwd_fcc_test_forward_fcc_0_1"/>
 </GenRun>

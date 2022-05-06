@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'conv_fwd'" level="0">
-<item name = "Date">Mon May  2 14:33:00 2022
+<item name = "Date">Tue May  3 12:46:52 2022
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)</item>
 <item name = "Project">conv_fwd</item>

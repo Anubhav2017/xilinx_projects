@@ -1,0 +1,26 @@
+
+
+================================================================
+== Synthesis Summary Report of 'relu_combined'
+================================================================
++ General Information: 
+    * Date:           Fri May  6 15:04:46 2022
+    * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
+    * Project:        relu_combined
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg400-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +--------------------+------+-------+---------+--------+----------+---------+------+----------+------+----+-----------+-----------+-----+
+    |       Modules      | Issue|       | Latency | Latency| Iteration|         | Trip |          |      |    |           |           |     |
+    |       & Loops      | Type | Slack | (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM | DSP|     FF    |    LUT    | URAM|
+    +--------------------+------+-------+---------+--------+----------+---------+------+----------+------+----+-----------+-----------+-----+
+    |+ relu_combined     |     -|  -2.85|        -|       -|         -|        -|     -|        no|     -|   -|  240 (~0%)|  321 (~0%)|    -|
+    | o VITIS_LOOP_17_1  |     -|  -7.30|        -|       -|         1|        1|     -|       yes|     -|   -|          -|          -|    -|
+    | o VITIS_LOOP_28_2  |     -|  -7.30|        -|       -|         1|        1|     -|       yes|     -|   -|          -|          -|    -|
+    +--------------------+------+-------+---------+--------+----------+---------+------+----------+------+----+-----------+-----------+-----+
+

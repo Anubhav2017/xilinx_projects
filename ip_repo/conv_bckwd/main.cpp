@@ -107,7 +107,7 @@ void conv_bckwd(fixed_t* x, fixed_t* w, fixed_t* dx,fixed_t* dw,fixed_t* db, fix
                     for(int fh=0;fh<FH;fh++){
                         for(int fw=0;fw<FW;fw++){
                             dwbuf[f][c][fh][fw] += dybuf[f][h][w]*xbuf[c][h+fh][w+fw];
-                            dxbuf[c][h+fh][w+fw] += dybuf[f][h][w]*wbuf[f][c][h+fh][w+fw];
+                            dxbuf[c][h+fh][w+fw] += dybuf[f][h][w]*wbuf[f][c][fh][fw];
                         }
                     }
                 }

@@ -8,7 +8,7 @@ use IEEE.NUMERIC_STD.all;
 
 entity loss_derivative_CTRL_s_axi is
 generic (
-    C_S_AXI_ADDR_WIDTH    : INTEGER := 7;
+    C_S_AXI_ADDR_WIDTH    : INTEGER := 6;
     C_S_AXI_DATA_WIDTH    : INTEGER := 32);
 port (
     ACLK                  :in   STD_LOGIC;
@@ -37,8 +37,8 @@ port (
     ap_ready              :in   STD_LOGIC;
     ap_idle               :in   STD_LOGIC;
     ap_return             :in   STD_LOGIC_VECTOR(15 downto 0);
-    x                     :out  STD_LOGIC_VECTOR(63 downto 0);
-    dx                    :out  STD_LOGIC_VECTOR(63 downto 0);
+    x                     :out  STD_LOGIC_VECTOR(31 downto 0);
+    dx                    :out  STD_LOGIC_VECTOR(31 downto 0);
     y                     :out  STD_LOGIC_VECTOR(31 downto 0);
     x_size                :out  STD_LOGIC_VECTOR(31 downto 0);
     N                     :out  STD_LOGIC_VECTOR(31 downto 0)
@@ -69,23 +69,19 @@ end entity loss_derivative_CTRL_s_axi;
 --        others   - reserved
 -- 0x18 : Data signal of x
 --        bit 31~0 - x[31:0] (Read/Write)
--- 0x1c : Data signal of x
---        bit 31~0 - x[63:32] (Read/Write)
--- 0x20 : reserved
--- 0x24 : Data signal of dx
+-- 0x1c : reserved
+-- 0x20 : Data signal of dx
 --        bit 31~0 - dx[31:0] (Read/Write)
--- 0x28 : Data signal of dx
---        bit 31~0 - dx[63:32] (Read/Write)
--- 0x2c : reserved
--- 0x30 : Data signal of y
+-- 0x24 : reserved
+-- 0x28 : Data signal of y
 --        bit 31~0 - y[31:0] (Read/Write)
--- 0x34 : reserved
--- 0x38 : Data signal of x_size
+-- 0x2c : reserved
+-- 0x30 : Data signal of x_size
 --        bit 31~0 - x_size[31:0] (Read/Write)
--- 0x3c : reserved
--- 0x40 : Data signal of N
+-- 0x34 : reserved
+-- 0x38 : Data signal of N
 --        bit 31~0 - N[31:0] (Read/Write)
--- 0x44 : reserved
+-- 0x3c : reserved
 -- (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
 architecture behave of loss_derivative_CTRL_s_axi is
@@ -99,18 +95,16 @@ architecture behave of loss_derivative_CTRL_s_axi is
     constant ADDR_ISR           : INTEGER := 16#0c#;
     constant ADDR_AP_RETURN_0   : INTEGER := 16#10#;
     constant ADDR_X_DATA_0      : INTEGER := 16#18#;
-    constant ADDR_X_DATA_1      : INTEGER := 16#1c#;
-    constant ADDR_X_CTRL        : INTEGER := 16#20#;
-    constant ADDR_DX_DATA_0     : INTEGER := 16#24#;
-    constant ADDR_DX_DATA_1     : INTEGER := 16#28#;
-    constant ADDR_DX_CTRL       : INTEGER := 16#2c#;
-    constant ADDR_Y_DATA_0      : INTEGER := 16#30#;
-    constant ADDR_Y_CTRL        : INTEGER := 16#34#;
-    constant ADDR_X_SIZE_DATA_0 : INTEGER := 16#38#;
-    constant ADDR_X_SIZE_CTRL   : INTEGER := 16#3c#;
-    constant ADDR_N_DATA_0      : INTEGER := 16#40#;
-    constant ADDR_N_CTRL        : INTEGER := 16#44#;
-    constant ADDR_BITS         : INTEGER := 7;
+    constant ADDR_X_CTRL        : INTEGER := 16#1c#;
+    constant ADDR_DX_DATA_0     : INTEGER := 16#20#;
+    constant ADDR_DX_CTRL       : INTEGER := 16#24#;
+    constant ADDR_Y_DATA_0      : INTEGER := 16#28#;
+    constant ADDR_Y_CTRL        : INTEGER := 16#2c#;
+    constant ADDR_X_SIZE_DATA_0 : INTEGER := 16#30#;
+    constant ADDR_X_SIZE_CTRL   : INTEGER := 16#34#;
+    constant ADDR_N_DATA_0      : INTEGER := 16#38#;
+    constant ADDR_N_CTRL        : INTEGER := 16#3c#;
+    constant ADDR_BITS         : INTEGER := 6;
 
     signal waddr               : UNSIGNED(ADDR_BITS-1 downto 0);
     signal wmask               : UNSIGNED(C_S_AXI_DATA_WIDTH-1 downto 0);
@@ -133,8 +127,8 @@ architecture behave of loss_derivative_CTRL_s_axi is
     signal int_ier             : UNSIGNED(1 downto 0) := (others => '0');
     signal int_isr             : UNSIGNED(1 downto 0) := (others => '0');
     signal int_ap_return       : UNSIGNED(15 downto 0);
-    signal int_x               : UNSIGNED(63 downto 0) := (others => '0');
-    signal int_dx              : UNSIGNED(63 downto 0) := (others => '0');
+    signal int_x               : UNSIGNED(31 downto 0) := (others => '0');
+    signal int_dx              : UNSIGNED(31 downto 0) := (others => '0');
     signal int_y               : UNSIGNED(31 downto 0) := (others => '0');
     signal int_x_size          : UNSIGNED(31 downto 0) := (others => '0');
     signal int_N               : UNSIGNED(31 downto 0) := (others => '0');
@@ -269,12 +263,8 @@ begin
                         rdata_data <= RESIZE(int_ap_return(15 downto 0), 32);
                     when ADDR_X_DATA_0 =>
                         rdata_data <= RESIZE(int_x(31 downto 0), 32);
-                    when ADDR_X_DATA_1 =>
-                        rdata_data <= RESIZE(int_x(63 downto 32), 32);
                     when ADDR_DX_DATA_0 =>
                         rdata_data <= RESIZE(int_dx(31 downto 0), 32);
-                    when ADDR_DX_DATA_1 =>
-                        rdata_data <= RESIZE(int_dx(63 downto 32), 32);
                     when ADDR_Y_DATA_0 =>
                         rdata_data <= RESIZE(int_y(31 downto 0), 32);
                     when ADDR_X_SIZE_DATA_0 =>
@@ -451,30 +441,8 @@ begin
     begin
         if (ACLK'event and ACLK = '1') then
             if (ACLK_EN = '1') then
-                if (w_hs = '1' and waddr = ADDR_X_DATA_1) then
-                    int_x(63 downto 32) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_x(63 downto 32));
-                end if;
-            end if;
-        end if;
-    end process;
-
-    process (ACLK)
-    begin
-        if (ACLK'event and ACLK = '1') then
-            if (ACLK_EN = '1') then
                 if (w_hs = '1' and waddr = ADDR_DX_DATA_0) then
                     int_dx(31 downto 0) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_dx(31 downto 0));
-                end if;
-            end if;
-        end if;
-    end process;
-
-    process (ACLK)
-    begin
-        if (ACLK'event and ACLK = '1') then
-            if (ACLK_EN = '1') then
-                if (w_hs = '1' and waddr = ADDR_DX_DATA_1) then
-                    int_dx(63 downto 32) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_dx(63 downto 32));
                 end if;
             end if;
         end if;

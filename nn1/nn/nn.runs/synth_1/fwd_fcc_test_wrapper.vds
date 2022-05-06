@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Fri Apr 29 15:44:43 2022
-# Process ID: 76331
+# Start of session at: Thu May  5 15:10:36 2022
+# Process ID: 222875
 # Current directory: /home/anubhav/xilinx_projects/nn1/nn/nn.runs/synth_1
 # Command line: vivado -log fwd_fcc_test_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fwd_fcc_test_wrapper.tcl
 # Log file: /home/anubhav/xilinx_projects/nn1/nn/nn.runs/synth_1/fwd_fcc_test_wrapper.vds
@@ -20,134 +20,256 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 76419
+INFO: [Synth 8-7075] Helper process launched with PID 222939
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2357.969 ; gain = 0.000 ; free physical = 11677 ; free virtual = 23754
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2357.973 ; gain = 0.000 ; free physical = 13705 ; free virtual = 23366
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'fwd_fcc_test_wrapper' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/hdl/fwd_fcc_test_wrapper.v:12]
 INFO: [Synth 8-6157] synthesizing module 'fwd_fcc_test' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:13]
-INFO: [Synth 8-6157] synthesizing module 'fwd_fcc_test_axi_bram_ctrl_0_0' [/home/anubhav/xilinx_projects/nn1/nn/nn.runs/synth_1/.Xil/Vivado-76331-anubhav-acer/realtime/fwd_fcc_test_axi_bram_ctrl_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'fwd_fcc_test_axi_bram_ctrl_0_0' (1#1) [/home/anubhav/xilinx_projects/nn1/nn/nn.runs/synth_1/.Xil/Vivado-76331-anubhav-acer/realtime/fwd_fcc_test_axi_bram_ctrl_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'fwd_fcc_test_axi_bram_ctrl_0_bram_0' [/home/anubhav/xilinx_projects/nn1/nn/nn.runs/synth_1/.Xil/Vivado-76331-anubhav-acer/realtime/fwd_fcc_test_axi_bram_ctrl_0_bram_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'fwd_fcc_test_axi_bram_ctrl_0_bram_0' (2#1) [/home/anubhav/xilinx_projects/nn1/nn/nn.runs/synth_1/.Xil/Vivado-76331-anubhav-acer/realtime/fwd_fcc_test_axi_bram_ctrl_0_bram_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'rsta_busy' of module 'fwd_fcc_test_axi_bram_ctrl_0_bram_0' is unconnected for instance 'axi_bram_ctrl_0_bram' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:249]
-WARNING: [Synth 8-7023] instance 'axi_bram_ctrl_0_bram' of module 'fwd_fcc_test_axi_bram_ctrl_0_bram_0' has 8 connections declared, but only 7 given [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:249]
-INFO: [Synth 8-6157] synthesizing module 'fwd_fcc_test_axi_smc_0' [/home/anubhav/xilinx_projects/nn1/nn/nn.runs/synth_1/.Xil/Vivado-76331-anubhav-acer/realtime/fwd_fcc_test_axi_smc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'fwd_fcc_test_axi_smc_0' (3#1) [/home/anubhav/xilinx_projects/nn1/nn/nn.runs/synth_1/.Xil/Vivado-76331-anubhav-acer/realtime/fwd_fcc_test_axi_smc_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'M00_AXI_awqos' of module 'fwd_fcc_test_axi_smc_0' is unconnected for instance 'axi_smc' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:257]
-WARNING: [Synth 8-7071] port 'M00_AXI_arqos' of module 'fwd_fcc_test_axi_smc_0' is unconnected for instance 'axi_smc' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:257]
-WARNING: [Synth 8-7071] port 'M01_AXI_awid' of module 'fwd_fcc_test_axi_smc_0' is unconnected for instance 'axi_smc' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:257]
-WARNING: [Synth 8-7071] port 'M01_AXI_awaddr' of module 'fwd_fcc_test_axi_smc_0' is unconnected for instance 'axi_smc' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:257]
-WARNING: [Synth 8-7071] port 'M01_AXI_awlen' of module 'fwd_fcc_test_axi_smc_0' is unconnected for instance 'axi_smc' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:257]
-WARNING: [Synth 8-7071] port 'M01_AXI_awsize' of module 'fwd_fcc_test_axi_smc_0' is unconnected for instance 'axi_smc' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:257]
-WARNING: [Synth 8-7071] port 'M01_AXI_awburst' of module 'fwd_fcc_test_axi_smc_0' is unconnected for instance 'axi_smc' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:257]
-WARNING: [Synth 8-7071] port 'M01_AXI_awlock' of module 'fwd_fcc_test_axi_smc_0' is unconnected for instance 'axi_smc' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:257]
-WARNING: [Synth 8-7071] port 'M01_AXI_awcache' of module 'fwd_fcc_test_axi_smc_0' is unconnected for instance 'axi_smc' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:257]
-WARNING: [Synth 8-7071] port 'M01_AXI_awprot' of module 'fwd_fcc_test_axi_smc_0' is unconnected for instance 'axi_smc' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:257]
-WARNING: [Synth 8-7071] port 'M01_AXI_awregion' of module 'fwd_fcc_test_axi_smc_0' is unconnected for instance 'axi_smc' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:257]
-WARNING: [Synth 8-7071] port 'M01_AXI_awqos' of module 'fwd_fcc_test_axi_smc_0' is unconnected for instance 'axi_smc' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:257]
-WARNING: [Synth 8-7071] port 'M01_AXI_awuser' of module 'fwd_fcc_test_axi_smc_0' is unconnected for instance 'axi_smc' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:257]
-WARNING: [Synth 8-7071] port 'M01_AXI_awvalid' of module 'fwd_fcc_test_axi_smc_0' is unconnected for instance 'axi_smc' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:257]
-WARNING: [Synth 8-7071] port 'M01_AXI_wid' of module 'fwd_fcc_test_axi_smc_0' is unconnected for instance 'axi_smc' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:257]
-WARNING: [Synth 8-7071] port 'M01_AXI_wdata' of module 'fwd_fcc_test_axi_smc_0' is unconnected for instance 'axi_smc' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:257]
-WARNING: [Synth 8-7071] port 'M01_AXI_wstrb' of module 'fwd_fcc_test_axi_smc_0' is unconnected for instance 'axi_smc' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:257]
-WARNING: [Synth 8-7071] port 'M01_AXI_wlast' of module 'fwd_fcc_test_axi_smc_0' is unconnected for instance 'axi_smc' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:257]
-WARNING: [Synth 8-7071] port 'M01_AXI_wuser' of module 'fwd_fcc_test_axi_smc_0' is unconnected for instance 'axi_smc' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:257]
-WARNING: [Synth 8-7071] port 'M01_AXI_wvalid' of module 'fwd_fcc_test_axi_smc_0' is unconnected for instance 'axi_smc' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:257]
-WARNING: [Synth 8-7071] port 'M01_AXI_bready' of module 'fwd_fcc_test_axi_smc_0' is unconnected for instance 'axi_smc' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:257]
-WARNING: [Synth 8-7071] port 'M01_AXI_arid' of module 'fwd_fcc_test_axi_smc_0' is unconnected for instance 'axi_smc' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:257]
-WARNING: [Synth 8-7071] port 'M01_AXI_araddr' of module 'fwd_fcc_test_axi_smc_0' is unconnected for instance 'axi_smc' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:257]
-WARNING: [Synth 8-7071] port 'M01_AXI_arlen' of module 'fwd_fcc_test_axi_smc_0' is unconnected for instance 'axi_smc' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:257]
-WARNING: [Synth 8-7071] port 'M01_AXI_arsize' of module 'fwd_fcc_test_axi_smc_0' is unconnected for instance 'axi_smc' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:257]
-WARNING: [Synth 8-7071] port 'M01_AXI_arburst' of module 'fwd_fcc_test_axi_smc_0' is unconnected for instance 'axi_smc' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:257]
-WARNING: [Synth 8-7071] port 'M01_AXI_arlock' of module 'fwd_fcc_test_axi_smc_0' is unconnected for instance 'axi_smc' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:257]
-WARNING: [Synth 8-7071] port 'M01_AXI_arcache' of module 'fwd_fcc_test_axi_smc_0' is unconnected for instance 'axi_smc' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:257]
-WARNING: [Synth 8-7071] port 'M01_AXI_arprot' of module 'fwd_fcc_test_axi_smc_0' is unconnected for instance 'axi_smc' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:257]
-WARNING: [Synth 8-7071] port 'M01_AXI_arregion' of module 'fwd_fcc_test_axi_smc_0' is unconnected for instance 'axi_smc' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:257]
-WARNING: [Synth 8-7071] port 'M01_AXI_arqos' of module 'fwd_fcc_test_axi_smc_0' is unconnected for instance 'axi_smc' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:257]
-WARNING: [Synth 8-7071] port 'M01_AXI_aruser' of module 'fwd_fcc_test_axi_smc_0' is unconnected for instance 'axi_smc' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:257]
-WARNING: [Synth 8-7071] port 'M01_AXI_arvalid' of module 'fwd_fcc_test_axi_smc_0' is unconnected for instance 'axi_smc' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:257]
-WARNING: [Synth 8-7071] port 'M01_AXI_rready' of module 'fwd_fcc_test_axi_smc_0' is unconnected for instance 'axi_smc' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:257]
-WARNING: [Synth 8-7023] instance 'axi_smc' of module 'fwd_fcc_test_axi_smc_0' has 113 connections declared, but only 79 given [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:257]
-INFO: [Synth 8-6157] synthesizing module 'fwd_fcc_test_forward_fcc_0_0' [/home/anubhav/xilinx_projects/nn1/nn/nn.runs/synth_1/.Xil/Vivado-76331-anubhav-acer/realtime/fwd_fcc_test_forward_fcc_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'fwd_fcc_test_forward_fcc_0_0' (4#1) [/home/anubhav/xilinx_projects/nn1/nn/nn.runs/synth_1/.Xil/Vivado-76331-anubhav-acer/realtime/fwd_fcc_test_forward_fcc_0_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'interrupt' of module 'fwd_fcc_test_forward_fcc_0_0' is unconnected for instance 'forward_fcc_0' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:337]
-WARNING: [Synth 8-7071] port 'm_axi_gmem_AWREGION' of module 'fwd_fcc_test_forward_fcc_0_0' is unconnected for instance 'forward_fcc_0' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:337]
-WARNING: [Synth 8-7071] port 'm_axi_gmem_ARREGION' of module 'fwd_fcc_test_forward_fcc_0_0' is unconnected for instance 'forward_fcc_0' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:337]
-WARNING: [Synth 8-7023] instance 'forward_fcc_0' of module 'fwd_fcc_test_forward_fcc_0_0' has 55 connections declared, but only 52 given [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:337]
-INFO: [Synth 8-6157] synthesizing module 'fwd_fcc_test_processing_system7_0_0' [/home/anubhav/xilinx_projects/nn1/nn/nn.runs/synth_1/.Xil/Vivado-76331-anubhav-acer/realtime/fwd_fcc_test_processing_system7_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'fwd_fcc_test_processing_system7_0_0' (5#1) [/home/anubhav/xilinx_projects/nn1/nn/nn.runs/synth_1/.Xil/Vivado-76331-anubhav-acer/realtime/fwd_fcc_test_processing_system7_0_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'USB0_PORT_INDCTL' of module 'fwd_fcc_test_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:390]
-WARNING: [Synth 8-7071] port 'USB0_VBUS_PWRSELECT' of module 'fwd_fcc_test_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:390]
-WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'fwd_fcc_test_processing_system7_0_0' has 65 connections declared, but only 63 given [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:390]
-INFO: [Synth 8-6157] synthesizing module 'fwd_fcc_test_ps7_0_axi_periph_0' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:525]
-INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_ZB49TD' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:830]
-INFO: [Synth 8-6157] synthesizing module 'fwd_fcc_test_auto_pc_0' [/home/anubhav/xilinx_projects/nn1/nn/nn.runs/synth_1/.Xil/Vivado-76331-anubhav-acer/realtime/fwd_fcc_test_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'fwd_fcc_test_auto_pc_0' (6#1) [/home/anubhav/xilinx_projects/nn1/nn/nn.runs/synth_1/.Xil/Vivado-76331-anubhav-acer/realtime/fwd_fcc_test_auto_pc_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'fwd_fcc_test_auto_pc_0' is unconnected for instance 'auto_pc' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:1065]
-WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'fwd_fcc_test_auto_pc_0' is unconnected for instance 'auto_pc' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:1065]
-WARNING: [Synth 8-7023] instance 'auto_pc' of module 'fwd_fcc_test_auto_pc_0' has 59 connections declared, but only 57 given [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:1065]
-INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_ZB49TD' (7#1) [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:830]
-INFO: [Synth 8-6155] done synthesizing module 'fwd_fcc_test_ps7_0_axi_periph_0' (8#1) [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:525]
-INFO: [Synth 8-6157] synthesizing module 'fwd_fcc_test_rst_ps7_0_100M_0' [/home/anubhav/xilinx_projects/nn1/nn/nn.runs/synth_1/.Xil/Vivado-76331-anubhav-acer/realtime/fwd_fcc_test_rst_ps7_0_100M_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'fwd_fcc_test_rst_ps7_0_100M_0' (9#1) [/home/anubhav/xilinx_projects/nn1/nn/nn.runs/synth_1/.Xil/Vivado-76331-anubhav-acer/realtime/fwd_fcc_test_rst_ps7_0_100M_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'mb_reset' of module 'fwd_fcc_test_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:516]
-WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'fwd_fcc_test_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:516]
-WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'fwd_fcc_test_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:516]
-WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'fwd_fcc_test_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:516]
-WARNING: [Synth 8-7023] instance 'rst_ps7_0_100M' of module 'fwd_fcc_test_rst_ps7_0_100M_0' has 10 connections declared, but only 6 given [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:516]
-INFO: [Synth 8-6155] done synthesizing module 'fwd_fcc_test' (10#1) [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'fwd_fcc_test_wrapper' (11#1) [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/hdl/fwd_fcc_test_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'fwd_fcc_test_axi_mem_intercon_1' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:1139]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1R6ULG' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:4259]
+INFO: [Synth 8-6157] synthesizing module 'fwd_fcc_test_auto_pc_1' [/home/anubhav/xilinx_projects/nn1/nn/nn.runs/synth_1/.Xil/Vivado-222875-anubhav-acer/realtime/fwd_fcc_test_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fwd_fcc_test_auto_pc_1' (1#1) [/home/anubhav/xilinx_projects/nn1/nn/nn.runs/synth_1/.Xil/Vivado-222875-anubhav-acer/realtime/fwd_fcc_test_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1R6ULG' (2#1) [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:4259]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_7I0VQV' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:5840]
+INFO: [Synth 8-6157] synthesizing module 'fwd_fcc_test_auto_us_0' [/home/anubhav/xilinx_projects/nn1/nn/nn.runs/synth_1/.Xil/Vivado-222875-anubhav-acer/realtime/fwd_fcc_test_auto_us_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fwd_fcc_test_auto_us_0' (3#1) [/home/anubhav/xilinx_projects/nn1/nn/nn.runs/synth_1/.Xil/Vivado-222875-anubhav-acer/realtime/fwd_fcc_test_auto_us_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'fwd_fcc_test_auto_us_0' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:6127]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'fwd_fcc_test_auto_us_0' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:6127]
+WARNING: [Synth 8-7023] instance 'auto_us' of module 'fwd_fcc_test_auto_us_0' has 72 connections declared, but only 70 given [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:6127]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_7I0VQV' (4#1) [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:5840]
+INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_3D44TZ' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:6505]
+INFO: [Synth 8-6157] synthesizing module 'fwd_fcc_test_auto_us_1' [/home/anubhav/xilinx_projects/nn1/nn/nn.runs/synth_1/.Xil/Vivado-222875-anubhav-acer/realtime/fwd_fcc_test_auto_us_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fwd_fcc_test_auto_us_1' (5#1) [/home/anubhav/xilinx_projects/nn1/nn/nn.runs/synth_1/.Xil/Vivado-222875-anubhav-acer/realtime/fwd_fcc_test_auto_us_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'fwd_fcc_test_auto_us_1' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:6792]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'fwd_fcc_test_auto_us_1' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:6792]
+WARNING: [Synth 8-7023] instance 'auto_us' of module 'fwd_fcc_test_auto_us_1' has 72 connections declared, but only 70 given [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:6792]
+INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_3D44TZ' (6#1) [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:6505]
+INFO: [Synth 8-6157] synthesizing module 's02_couplers_imp_ESV0AF' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:6865]
+INFO: [Synth 8-6157] synthesizing module 'fwd_fcc_test_auto_us_2' [/home/anubhav/xilinx_projects/nn1/nn/nn.runs/synth_1/.Xil/Vivado-222875-anubhav-acer/realtime/fwd_fcc_test_auto_us_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fwd_fcc_test_auto_us_2' (7#1) [/home/anubhav/xilinx_projects/nn1/nn/nn.runs/synth_1/.Xil/Vivado-222875-anubhav-acer/realtime/fwd_fcc_test_auto_us_2_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'fwd_fcc_test_auto_us_2' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:7152]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'fwd_fcc_test_auto_us_2' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:7152]
+WARNING: [Synth 8-7023] instance 'auto_us' of module 'fwd_fcc_test_auto_us_2' has 72 connections declared, but only 70 given [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:7152]
+INFO: [Synth 8-6155] done synthesizing module 's02_couplers_imp_ESV0AF' (8#1) [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:6865]
+INFO: [Synth 8-6157] synthesizing module 's03_couplers_imp_9K0LBR' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:7225]
+INFO: [Synth 8-6157] synthesizing module 'fwd_fcc_test_auto_us_3' [/home/anubhav/xilinx_projects/nn1/nn/nn.runs/synth_1/.Xil/Vivado-222875-anubhav-acer/realtime/fwd_fcc_test_auto_us_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fwd_fcc_test_auto_us_3' (9#1) [/home/anubhav/xilinx_projects/nn1/nn/nn.runs/synth_1/.Xil/Vivado-222875-anubhav-acer/realtime/fwd_fcc_test_auto_us_3_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'fwd_fcc_test_auto_us_3' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:7512]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'fwd_fcc_test_auto_us_3' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:7512]
+WARNING: [Synth 8-7023] instance 'auto_us' of module 'fwd_fcc_test_auto_us_3' has 72 connections declared, but only 70 given [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:7512]
+INFO: [Synth 8-6155] done synthesizing module 's03_couplers_imp_9K0LBR' (10#1) [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:7225]
+INFO: [Synth 8-6157] synthesizing module 's04_couplers_imp_JVTY9J' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:7585]
+INFO: [Synth 8-6155] done synthesizing module 's04_couplers_imp_JVTY9J' (11#1) [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:7585]
+WARNING: [Synth 8-7071] port 'M_AXI_arregion' of module 's04_couplers_imp_JVTY9J' is unconnected for instance 's04_couplers' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:2791]
+WARNING: [Synth 8-7071] port 'M_AXI_awregion' of module 's04_couplers_imp_JVTY9J' is unconnected for instance 's04_couplers' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:2791]
+WARNING: [Synth 8-7071] port 'S_AXI_bid' of module 's04_couplers_imp_JVTY9J' is unconnected for instance 's04_couplers' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:2791]
+WARNING: [Synth 8-7071] port 'S_AXI_rid' of module 's04_couplers_imp_JVTY9J' is unconnected for instance 's04_couplers' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:2791]
+WARNING: [Synth 8-7023] instance 's04_couplers' of module 's04_couplers_imp_JVTY9J' has 82 connections declared, but only 78 given [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:2791]
+INFO: [Synth 8-6157] synthesizing module 's05_couplers_imp_MC5K6V' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:7871]
+INFO: [Synth 8-6155] done synthesizing module 's05_couplers_imp_MC5K6V' (12#1) [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:7871]
+WARNING: [Synth 8-7071] port 'M_AXI_arregion' of module 's05_couplers_imp_MC5K6V' is unconnected for instance 's05_couplers' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:2870]
+WARNING: [Synth 8-7071] port 'M_AXI_awregion' of module 's05_couplers_imp_MC5K6V' is unconnected for instance 's05_couplers' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:2870]
+WARNING: [Synth 8-7071] port 'S_AXI_bid' of module 's05_couplers_imp_MC5K6V' is unconnected for instance 's05_couplers' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:2870]
+WARNING: [Synth 8-7071] port 'S_AXI_rid' of module 's05_couplers_imp_MC5K6V' is unconnected for instance 's05_couplers' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:2870]
+WARNING: [Synth 8-7023] instance 's05_couplers' of module 's05_couplers_imp_MC5K6V' has 82 connections declared, but only 78 given [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:2870]
+INFO: [Synth 8-6157] synthesizing module 'fwd_fcc_test_xbar_3' [/home/anubhav/xilinx_projects/nn1/nn/nn.runs/synth_1/.Xil/Vivado-222875-anubhav-acer/realtime/fwd_fcc_test_xbar_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fwd_fcc_test_xbar_3' (13#1) [/home/anubhav/xilinx_projects/nn1/nn/nn.runs/synth_1/.Xil/Vivado-222875-anubhav-acer/realtime/fwd_fcc_test_xbar_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fwd_fcc_test_axi_mem_intercon_1' (14#1) [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:1139]
+WARNING: [Synth 8-7071] port 'S04_AXI_arready' of module 'fwd_fcc_test_axi_mem_intercon_1' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:383]
+WARNING: [Synth 8-7071] port 'S04_AXI_awready' of module 'fwd_fcc_test_axi_mem_intercon_1' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:383]
+WARNING: [Synth 8-7071] port 'S04_AXI_bresp' of module 'fwd_fcc_test_axi_mem_intercon_1' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:383]
+WARNING: [Synth 8-7071] port 'S04_AXI_bvalid' of module 'fwd_fcc_test_axi_mem_intercon_1' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:383]
+WARNING: [Synth 8-7071] port 'S04_AXI_rdata' of module 'fwd_fcc_test_axi_mem_intercon_1' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:383]
+WARNING: [Synth 8-7071] port 'S04_AXI_rlast' of module 'fwd_fcc_test_axi_mem_intercon_1' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:383]
+WARNING: [Synth 8-7071] port 'S04_AXI_rresp' of module 'fwd_fcc_test_axi_mem_intercon_1' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:383]
+WARNING: [Synth 8-7071] port 'S04_AXI_rvalid' of module 'fwd_fcc_test_axi_mem_intercon_1' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:383]
+WARNING: [Synth 8-7071] port 'S04_AXI_wready' of module 'fwd_fcc_test_axi_mem_intercon_1' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:383]
+WARNING: [Synth 8-7071] port 'S05_AXI_arready' of module 'fwd_fcc_test_axi_mem_intercon_1' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:383]
+WARNING: [Synth 8-7071] port 'S05_AXI_awready' of module 'fwd_fcc_test_axi_mem_intercon_1' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:383]
+WARNING: [Synth 8-7071] port 'S05_AXI_bresp' of module 'fwd_fcc_test_axi_mem_intercon_1' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:383]
+WARNING: [Synth 8-7071] port 'S05_AXI_bvalid' of module 'fwd_fcc_test_axi_mem_intercon_1' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:383]
+WARNING: [Synth 8-7071] port 'S05_AXI_rdata' of module 'fwd_fcc_test_axi_mem_intercon_1' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:383]
+WARNING: [Synth 8-7071] port 'S05_AXI_rlast' of module 'fwd_fcc_test_axi_mem_intercon_1' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:383]
+WARNING: [Synth 8-7071] port 'S05_AXI_rresp' of module 'fwd_fcc_test_axi_mem_intercon_1' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:383]
+WARNING: [Synth 8-7071] port 'S05_AXI_rvalid' of module 'fwd_fcc_test_axi_mem_intercon_1' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:383]
+WARNING: [Synth 8-7071] port 'S05_AXI_wready' of module 'fwd_fcc_test_axi_mem_intercon_1' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:383]
+WARNING: [Synth 8-7023] instance 'axi_mem_intercon' of module 'fwd_fcc_test_axi_mem_intercon_1' has 264 connections declared, but only 246 given [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:383]
+INFO: [Synth 8-6157] synthesizing module 'fwd_fcc_test_backward_fcc_0_0' [/home/anubhav/xilinx_projects/nn1/nn/nn.runs/synth_1/.Xil/Vivado-222875-anubhav-acer/realtime/fwd_fcc_test_backward_fcc_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fwd_fcc_test_backward_fcc_0_0' (15#1) [/home/anubhav/xilinx_projects/nn1/nn/nn.runs/synth_1/.Xil/Vivado-222875-anubhav-acer/realtime/fwd_fcc_test_backward_fcc_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'interrupt' of module 'fwd_fcc_test_backward_fcc_0_0' is unconnected for instance 'backward_fcc_0' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:630]
+WARNING: [Synth 8-7023] instance 'backward_fcc_0' of module 'fwd_fcc_test_backward_fcc_0_0' has 55 connections declared, but only 54 given [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:630]
+INFO: [Synth 8-6157] synthesizing module 'fwd_fcc_test_conv_bckwd_0_0' [/home/anubhav/xilinx_projects/nn1/nn/nn.runs/synth_1/.Xil/Vivado-222875-anubhav-acer/realtime/fwd_fcc_test_conv_bckwd_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fwd_fcc_test_conv_bckwd_0_0' (16#1) [/home/anubhav/xilinx_projects/nn1/nn/nn.runs/synth_1/.Xil/Vivado-222875-anubhav-acer/realtime/fwd_fcc_test_conv_bckwd_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'interrupt' of module 'fwd_fcc_test_conv_bckwd_0_0' is unconnected for instance 'conv_bckwd_0' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:685]
+WARNING: [Synth 8-7023] instance 'conv_bckwd_0' of module 'fwd_fcc_test_conv_bckwd_0_0' has 55 connections declared, but only 54 given [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:685]
+INFO: [Synth 8-6157] synthesizing module 'fwd_fcc_test_conv_fwd_0_0' [/home/anubhav/xilinx_projects/nn1/nn/nn.runs/synth_1/.Xil/Vivado-222875-anubhav-acer/realtime/fwd_fcc_test_conv_fwd_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fwd_fcc_test_conv_fwd_0_0' (17#1) [/home/anubhav/xilinx_projects/nn1/nn/nn.runs/synth_1/.Xil/Vivado-222875-anubhav-acer/realtime/fwd_fcc_test_conv_fwd_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'interrupt' of module 'fwd_fcc_test_conv_fwd_0_0' is unconnected for instance 'conv_fwd_0' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:740]
+WARNING: [Synth 8-7023] instance 'conv_fwd_0' of module 'fwd_fcc_test_conv_fwd_0_0' has 72 connections declared, but only 71 given [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:740]
+INFO: [Synth 8-6157] synthesizing module 'fwd_fcc_test_forward_fcc_0_1' [/home/anubhav/xilinx_projects/nn1/nn/nn.runs/synth_1/.Xil/Vivado-222875-anubhav-acer/realtime/fwd_fcc_test_forward_fcc_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fwd_fcc_test_forward_fcc_0_1' (18#1) [/home/anubhav/xilinx_projects/nn1/nn/nn.runs/synth_1/.Xil/Vivado-222875-anubhav-acer/realtime/fwd_fcc_test_forward_fcc_0_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'interrupt' of module 'fwd_fcc_test_forward_fcc_0_1' is unconnected for instance 'forward_fcc_0' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:812]
+WARNING: [Synth 8-7023] instance 'forward_fcc_0' of module 'fwd_fcc_test_forward_fcc_0_1' has 55 connections declared, but only 54 given [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:812]
+INFO: [Synth 8-6157] synthesizing module 'fwd_fcc_test_processing_system7_0_0' [/home/anubhav/xilinx_projects/nn1/nn/nn.runs/synth_1/.Xil/Vivado-222875-anubhav-acer/realtime/fwd_fcc_test_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fwd_fcc_test_processing_system7_0_0' (19#1) [/home/anubhav/xilinx_projects/nn1/nn/nn.runs/synth_1/.Xil/Vivado-222875-anubhav-acer/realtime/fwd_fcc_test_processing_system7_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'USB0_PORT_INDCTL' of module 'fwd_fcc_test_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:867]
+WARNING: [Synth 8-7071] port 'USB0_VBUS_PWRSELECT' of module 'fwd_fcc_test_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:867]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RCOUNT' of module 'fwd_fcc_test_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:867]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_WCOUNT' of module 'fwd_fcc_test_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:867]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RACOUNT' of module 'fwd_fcc_test_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:867]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_WACOUNT' of module 'fwd_fcc_test_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:867]
+WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'fwd_fcc_test_processing_system7_0_0' has 110 connections declared, but only 104 given [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:867]
+INFO: [Synth 8-6157] synthesizing module 'fwd_fcc_test_ps7_0_axi_periph_3' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:3030]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_R7XCGY' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:4664]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_R7XCGY' (20#1) [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:4664]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_WIMU8Y' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:4796]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_WIMU8Y' (21#1) [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:4796]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_L623TU' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:4928]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_L623TU' (22#1) [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:4928]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_PCTX5U' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:5060]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_PCTX5U' (23#1) [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:5060]
+INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_HEMQUA' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:5192]
+INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_HEMQUA' (24#1) [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:5192]
+INFO: [Synth 8-6157] synthesizing module 'm05_couplers_imp_BJAKYQ' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:5324]
+INFO: [Synth 8-6155] done synthesizing module 'm05_couplers_imp_BJAKYQ' (25#1) [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:5324]
+WARNING: [Synth 8-7071] port 'M_AXI_arburst' of module 'm05_couplers_imp_BJAKYQ' is unconnected for instance 'm05_couplers' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:4040]
+WARNING: [Synth 8-7071] port 'M_AXI_arcache' of module 'm05_couplers_imp_BJAKYQ' is unconnected for instance 'm05_couplers' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:4040]
+WARNING: [Synth 8-7071] port 'M_AXI_arlen' of module 'm05_couplers_imp_BJAKYQ' is unconnected for instance 'm05_couplers' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:4040]
+WARNING: [Synth 8-7071] port 'M_AXI_arlock' of module 'm05_couplers_imp_BJAKYQ' is unconnected for instance 'm05_couplers' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:4040]
+WARNING: [Synth 8-7071] port 'M_AXI_arprot' of module 'm05_couplers_imp_BJAKYQ' is unconnected for instance 'm05_couplers' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:4040]
+WARNING: [Synth 8-7071] port 'M_AXI_arqos' of module 'm05_couplers_imp_BJAKYQ' is unconnected for instance 'm05_couplers' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:4040]
+WARNING: [Synth 8-7071] port 'M_AXI_arregion' of module 'm05_couplers_imp_BJAKYQ' is unconnected for instance 'm05_couplers' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:4040]
+WARNING: [Synth 8-7071] port 'M_AXI_arsize' of module 'm05_couplers_imp_BJAKYQ' is unconnected for instance 'm05_couplers' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:4040]
+WARNING: [Synth 8-7071] port 'M_AXI_awburst' of module 'm05_couplers_imp_BJAKYQ' is unconnected for instance 'm05_couplers' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:4040]
+WARNING: [Synth 8-7071] port 'M_AXI_awcache' of module 'm05_couplers_imp_BJAKYQ' is unconnected for instance 'm05_couplers' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:4040]
+WARNING: [Synth 8-7071] port 'M_AXI_awlen' of module 'm05_couplers_imp_BJAKYQ' is unconnected for instance 'm05_couplers' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:4040]
+WARNING: [Synth 8-7071] port 'M_AXI_awlock' of module 'm05_couplers_imp_BJAKYQ' is unconnected for instance 'm05_couplers' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:4040]
+WARNING: [Synth 8-7071] port 'M_AXI_awprot' of module 'm05_couplers_imp_BJAKYQ' is unconnected for instance 'm05_couplers' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:4040]
+WARNING: [Synth 8-7071] port 'M_AXI_awqos' of module 'm05_couplers_imp_BJAKYQ' is unconnected for instance 'm05_couplers' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:4040]
+WARNING: [Synth 8-7071] port 'M_AXI_awregion' of module 'm05_couplers_imp_BJAKYQ' is unconnected for instance 'm05_couplers' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:4040]
+WARNING: [Synth 8-7071] port 'M_AXI_awsize' of module 'm05_couplers_imp_BJAKYQ' is unconnected for instance 'm05_couplers' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:4040]
+WARNING: [Synth 8-7071] port 'M_AXI_wlast' of module 'm05_couplers_imp_BJAKYQ' is unconnected for instance 'm05_couplers' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:4040]
+WARNING: [Synth 8-7071] port 'S_AXI_rlast' of module 'm05_couplers_imp_BJAKYQ' is unconnected for instance 'm05_couplers' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:4040]
+WARNING: [Synth 8-7023] instance 'm05_couplers' of module 'm05_couplers_imp_BJAKYQ' has 74 connections declared, but only 56 given [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:4040]
+INFO: [Synth 8-6157] synthesizing module 'm06_couplers_imp_4OZU1U' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:5582]
+INFO: [Synth 8-6155] done synthesizing module 'm06_couplers_imp_4OZU1U' (26#1) [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:5582]
+WARNING: [Synth 8-7071] port 'M_AXI_arburst' of module 'm06_couplers_imp_4OZU1U' is unconnected for instance 'm06_couplers' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:4097]
+WARNING: [Synth 8-7071] port 'M_AXI_arcache' of module 'm06_couplers_imp_4OZU1U' is unconnected for instance 'm06_couplers' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:4097]
+WARNING: [Synth 8-7071] port 'M_AXI_arlen' of module 'm06_couplers_imp_4OZU1U' is unconnected for instance 'm06_couplers' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:4097]
+WARNING: [Synth 8-7071] port 'M_AXI_arlock' of module 'm06_couplers_imp_4OZU1U' is unconnected for instance 'm06_couplers' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:4097]
+WARNING: [Synth 8-7071] port 'M_AXI_arprot' of module 'm06_couplers_imp_4OZU1U' is unconnected for instance 'm06_couplers' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:4097]
+WARNING: [Synth 8-7071] port 'M_AXI_arqos' of module 'm06_couplers_imp_4OZU1U' is unconnected for instance 'm06_couplers' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:4097]
+WARNING: [Synth 8-7071] port 'M_AXI_arregion' of module 'm06_couplers_imp_4OZU1U' is unconnected for instance 'm06_couplers' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:4097]
+WARNING: [Synth 8-7071] port 'M_AXI_arsize' of module 'm06_couplers_imp_4OZU1U' is unconnected for instance 'm06_couplers' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:4097]
+WARNING: [Synth 8-7071] port 'M_AXI_awburst' of module 'm06_couplers_imp_4OZU1U' is unconnected for instance 'm06_couplers' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:4097]
+WARNING: [Synth 8-7071] port 'M_AXI_awcache' of module 'm06_couplers_imp_4OZU1U' is unconnected for instance 'm06_couplers' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:4097]
+WARNING: [Synth 8-7071] port 'M_AXI_awlen' of module 'm06_couplers_imp_4OZU1U' is unconnected for instance 'm06_couplers' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:4097]
+WARNING: [Synth 8-7071] port 'M_AXI_awlock' of module 'm06_couplers_imp_4OZU1U' is unconnected for instance 'm06_couplers' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:4097]
+WARNING: [Synth 8-7071] port 'M_AXI_awprot' of module 'm06_couplers_imp_4OZU1U' is unconnected for instance 'm06_couplers' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:4097]
+WARNING: [Synth 8-7071] port 'M_AXI_awqos' of module 'm06_couplers_imp_4OZU1U' is unconnected for instance 'm06_couplers' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:4097]
+WARNING: [Synth 8-7071] port 'M_AXI_awregion' of module 'm06_couplers_imp_4OZU1U' is unconnected for instance 'm06_couplers' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:4097]
+WARNING: [Synth 8-7071] port 'M_AXI_awsize' of module 'm06_couplers_imp_4OZU1U' is unconnected for instance 'm06_couplers' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:4097]
+WARNING: [Synth 8-7071] port 'M_AXI_wlast' of module 'm06_couplers_imp_4OZU1U' is unconnected for instance 'm06_couplers' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:4097]
+WARNING: [Synth 8-7071] port 'S_AXI_rlast' of module 'm06_couplers_imp_4OZU1U' is unconnected for instance 'm06_couplers' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:4097]
+WARNING: [Synth 8-7023] instance 'm06_couplers' of module 'm06_couplers_imp_4OZU1U' has 74 connections declared, but only 56 given [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:4097]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_ZB49TD' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:6200]
+INFO: [Synth 8-6157] synthesizing module 'fwd_fcc_test_auto_pc_0' [/home/anubhav/xilinx_projects/nn1/nn/nn.runs/synth_1/.Xil/Vivado-222875-anubhav-acer/realtime/fwd_fcc_test_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fwd_fcc_test_auto_pc_0' (27#1) [/home/anubhav/xilinx_projects/nn1/nn/nn.runs/synth_1/.Xil/Vivado-222875-anubhav-acer/realtime/fwd_fcc_test_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_ZB49TD' (28#1) [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:6200]
+INFO: [Synth 8-6157] synthesizing module 'fwd_fcc_test_xbar_2' [/home/anubhav/xilinx_projects/nn1/nn/nn.runs/synth_1/.Xil/Vivado-222875-anubhav-acer/realtime/fwd_fcc_test_xbar_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fwd_fcc_test_xbar_2' (29#1) [/home/anubhav/xilinx_projects/nn1/nn/nn.runs/synth_1/.Xil/Vivado-222875-anubhav-acer/realtime/fwd_fcc_test_xbar_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fwd_fcc_test_ps7_0_axi_periph_3' (30#1) [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:3030]
+WARNING: [Synth 8-7071] port 'M05_AXI_araddr' of module 'fwd_fcc_test_ps7_0_axi_periph_3' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:972]
+WARNING: [Synth 8-7071] port 'M05_AXI_arvalid' of module 'fwd_fcc_test_ps7_0_axi_periph_3' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:972]
+WARNING: [Synth 8-7071] port 'M05_AXI_awaddr' of module 'fwd_fcc_test_ps7_0_axi_periph_3' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:972]
+WARNING: [Synth 8-7071] port 'M05_AXI_awvalid' of module 'fwd_fcc_test_ps7_0_axi_periph_3' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:972]
+WARNING: [Synth 8-7071] port 'M05_AXI_bready' of module 'fwd_fcc_test_ps7_0_axi_periph_3' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:972]
+WARNING: [Synth 8-7071] port 'M05_AXI_rready' of module 'fwd_fcc_test_ps7_0_axi_periph_3' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:972]
+WARNING: [Synth 8-7071] port 'M05_AXI_wdata' of module 'fwd_fcc_test_ps7_0_axi_periph_3' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:972]
+WARNING: [Synth 8-7071] port 'M05_AXI_wstrb' of module 'fwd_fcc_test_ps7_0_axi_periph_3' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:972]
+WARNING: [Synth 8-7071] port 'M05_AXI_wvalid' of module 'fwd_fcc_test_ps7_0_axi_periph_3' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:972]
+WARNING: [Synth 8-7071] port 'M06_AXI_araddr' of module 'fwd_fcc_test_ps7_0_axi_periph_3' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:972]
+WARNING: [Synth 8-7071] port 'M06_AXI_arvalid' of module 'fwd_fcc_test_ps7_0_axi_periph_3' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:972]
+WARNING: [Synth 8-7071] port 'M06_AXI_awaddr' of module 'fwd_fcc_test_ps7_0_axi_periph_3' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:972]
+WARNING: [Synth 8-7071] port 'M06_AXI_awvalid' of module 'fwd_fcc_test_ps7_0_axi_periph_3' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:972]
+WARNING: [Synth 8-7071] port 'M06_AXI_bready' of module 'fwd_fcc_test_ps7_0_axi_periph_3' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:972]
+WARNING: [Synth 8-7071] port 'M06_AXI_rready' of module 'fwd_fcc_test_ps7_0_axi_periph_3' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:972]
+WARNING: [Synth 8-7071] port 'M06_AXI_wdata' of module 'fwd_fcc_test_ps7_0_axi_periph_3' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:972]
+WARNING: [Synth 8-7071] port 'M06_AXI_wstrb' of module 'fwd_fcc_test_ps7_0_axi_periph_3' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:972]
+WARNING: [Synth 8-7071] port 'M06_AXI_wvalid' of module 'fwd_fcc_test_ps7_0_axi_periph_3' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:972]
+WARNING: [Synth 8-7023] instance 'ps7_0_axi_periph' of module 'fwd_fcc_test_ps7_0_axi_periph_3' has 175 connections declared, but only 157 given [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:972]
+INFO: [Synth 8-6157] synthesizing module 'fwd_fcc_test_rst_ps7_0_100M_3' [/home/anubhav/xilinx_projects/nn1/nn/nn.runs/synth_1/.Xil/Vivado-222875-anubhav-acer/realtime/fwd_fcc_test_rst_ps7_0_100M_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fwd_fcc_test_rst_ps7_0_100M_3' (31#1) [/home/anubhav/xilinx_projects/nn1/nn/nn.runs/synth_1/.Xil/Vivado-222875-anubhav-acer/realtime/fwd_fcc_test_rst_ps7_0_100M_3_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'fwd_fcc_test_rst_ps7_0_100M_3' is unconnected for instance 'rst_ps7_0_100M' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:1130]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'fwd_fcc_test_rst_ps7_0_100M_3' is unconnected for instance 'rst_ps7_0_100M' [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:1130]
+INFO: [Common 17-14] Message 'Synth 8-7071' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-7023] instance 'rst_ps7_0_100M' of module 'fwd_fcc_test_rst_ps7_0_100M_3' has 10 connections declared, but only 6 given [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:1130]
+INFO: [Synth 8-6155] done synthesizing module 'fwd_fcc_test' (32#1) [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/synth/fwd_fcc_test.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'fwd_fcc_test_wrapper' (33#1) [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/hdl/fwd_fcc_test_wrapper.v:12]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2357.969 ; gain = 0.000 ; free physical = 12401 ; free virtual = 24483
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2357.973 ; gain = 0.000 ; free physical = 14414 ; free virtual = 24111
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2357.969 ; gain = 0.000 ; free physical = 12460 ; free virtual = 24540
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2357.973 ; gain = 0.000 ; free physical = 14445 ; free virtual = 24145
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2357.969 ; gain = 0.000 ; free physical = 12460 ; free virtual = 24540
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2357.973 ; gain = 0.000 ; free physical = 14445 ; free virtual = 24145
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2357.969 ; gain = 0.000 ; free physical = 12453 ; free virtual = 24533
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2357.973 ; gain = 0.000 ; free physical = 14438 ; free virtual = 24138
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_axi_bram_ctrl_0_0/fwd_fcc_test_axi_bram_ctrl_0_0/fwd_fcc_test_axi_bram_ctrl_0_0_in_context.xdc] for cell 'fwd_fcc_test_i/axi_bram_ctrl_0'
-Finished Parsing XDC File [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_axi_bram_ctrl_0_0/fwd_fcc_test_axi_bram_ctrl_0_0/fwd_fcc_test_axi_bram_ctrl_0_0_in_context.xdc] for cell 'fwd_fcc_test_i/axi_bram_ctrl_0'
-Parsing XDC File [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_axi_bram_ctrl_0_bram_0/fwd_fcc_test_axi_bram_ctrl_0_bram_0/fwd_fcc_test_axi_bram_ctrl_0_bram_0_in_context.xdc] for cell 'fwd_fcc_test_i/axi_bram_ctrl_0_bram'
-Finished Parsing XDC File [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_axi_bram_ctrl_0_bram_0/fwd_fcc_test_axi_bram_ctrl_0_bram_0/fwd_fcc_test_axi_bram_ctrl_0_bram_0_in_context.xdc] for cell 'fwd_fcc_test_i/axi_bram_ctrl_0_bram'
-Parsing XDC File [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_axi_smc_0/fwd_fcc_test_axi_smc_0/fwd_fcc_test_axi_smc_0_in_context.xdc] for cell 'fwd_fcc_test_i/axi_smc'
-Finished Parsing XDC File [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_axi_smc_0/fwd_fcc_test_axi_smc_0/fwd_fcc_test_axi_smc_0_in_context.xdc] for cell 'fwd_fcc_test_i/axi_smc'
-Parsing XDC File [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_forward_fcc_0_0/fwd_fcc_test_forward_fcc_0_0/fwd_fcc_test_forward_fcc_0_0_in_context.xdc] for cell 'fwd_fcc_test_i/forward_fcc_0'
-Finished Parsing XDC File [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_forward_fcc_0_0/fwd_fcc_test_forward_fcc_0_0/fwd_fcc_test_forward_fcc_0_0_in_context.xdc] for cell 'fwd_fcc_test_i/forward_fcc_0'
 Parsing XDC File [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_processing_system7_0_0/fwd_fcc_test_processing_system7_0_0/fwd_fcc_test_processing_system7_0_0_in_context.xdc] for cell 'fwd_fcc_test_i/processing_system7_0'
 Finished Parsing XDC File [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_processing_system7_0_0/fwd_fcc_test_processing_system7_0_0/fwd_fcc_test_processing_system7_0_0_in_context.xdc] for cell 'fwd_fcc_test_i/processing_system7_0'
+Parsing XDC File [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_forward_fcc_0_1/fwd_fcc_test_forward_fcc_0_1/fwd_fcc_test_forward_fcc_0_1_in_context.xdc] for cell 'fwd_fcc_test_i/forward_fcc_0'
+Finished Parsing XDC File [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_forward_fcc_0_1/fwd_fcc_test_forward_fcc_0_1/fwd_fcc_test_forward_fcc_0_1_in_context.xdc] for cell 'fwd_fcc_test_i/forward_fcc_0'
+Parsing XDC File [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_backward_fcc_0_0/fwd_fcc_test_backward_fcc_0_0/fwd_fcc_test_backward_fcc_0_0_in_context.xdc] for cell 'fwd_fcc_test_i/backward_fcc_0'
+Finished Parsing XDC File [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_backward_fcc_0_0/fwd_fcc_test_backward_fcc_0_0/fwd_fcc_test_backward_fcc_0_0_in_context.xdc] for cell 'fwd_fcc_test_i/backward_fcc_0'
+Parsing XDC File [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_conv_fwd_0_0/fwd_fcc_test_conv_fwd_0_0/fwd_fcc_test_conv_fwd_0_0_in_context.xdc] for cell 'fwd_fcc_test_i/conv_fwd_0'
+Finished Parsing XDC File [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_conv_fwd_0_0/fwd_fcc_test_conv_fwd_0_0/fwd_fcc_test_conv_fwd_0_0_in_context.xdc] for cell 'fwd_fcc_test_i/conv_fwd_0'
+Parsing XDC File [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_conv_bckwd_0_0/fwd_fcc_test_conv_bckwd_0_0/fwd_fcc_test_conv_bckwd_0_0_in_context.xdc] for cell 'fwd_fcc_test_i/conv_bckwd_0'
+Finished Parsing XDC File [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_conv_bckwd_0_0/fwd_fcc_test_conv_bckwd_0_0/fwd_fcc_test_conv_bckwd_0_0_in_context.xdc] for cell 'fwd_fcc_test_i/conv_bckwd_0'
+Parsing XDC File [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_xbar_2/fwd_fcc_test_xbar_2/fwd_fcc_test_xbar_2_in_context.xdc] for cell 'fwd_fcc_test_i/ps7_0_axi_periph/xbar'
+Finished Parsing XDC File [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_xbar_2/fwd_fcc_test_xbar_2/fwd_fcc_test_xbar_2_in_context.xdc] for cell 'fwd_fcc_test_i/ps7_0_axi_periph/xbar'
 Parsing XDC File [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_auto_pc_0/fwd_fcc_test_auto_pc_0/fwd_fcc_test_auto_pc_0_in_context.xdc] for cell 'fwd_fcc_test_i/ps7_0_axi_periph/s00_couplers/auto_pc'
 Finished Parsing XDC File [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_auto_pc_0/fwd_fcc_test_auto_pc_0/fwd_fcc_test_auto_pc_0_in_context.xdc] for cell 'fwd_fcc_test_i/ps7_0_axi_periph/s00_couplers/auto_pc'
-Parsing XDC File [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_rst_ps7_0_100M_0/fwd_fcc_test_rst_ps7_0_100M_0/fwd_fcc_test_rst_ps7_0_100M_0_in_context.xdc] for cell 'fwd_fcc_test_i/rst_ps7_0_100M'
-Finished Parsing XDC File [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_rst_ps7_0_100M_0/fwd_fcc_test_rst_ps7_0_100M_0/fwd_fcc_test_rst_ps7_0_100M_0_in_context.xdc] for cell 'fwd_fcc_test_i/rst_ps7_0_100M'
+Parsing XDC File [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_rst_ps7_0_100M_3/fwd_fcc_test_rst_ps7_0_100M_3/fwd_fcc_test_rst_ps7_0_100M_0_in_context.xdc] for cell 'fwd_fcc_test_i/rst_ps7_0_100M'
+Finished Parsing XDC File [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_rst_ps7_0_100M_3/fwd_fcc_test_rst_ps7_0_100M_3/fwd_fcc_test_rst_ps7_0_100M_0_in_context.xdc] for cell 'fwd_fcc_test_i/rst_ps7_0_100M'
+Parsing XDC File [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_xbar_3/fwd_fcc_test_xbar_3/fwd_fcc_test_xbar_3_in_context.xdc] for cell 'fwd_fcc_test_i/axi_mem_intercon/xbar'
+Finished Parsing XDC File [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_xbar_3/fwd_fcc_test_xbar_3/fwd_fcc_test_xbar_3_in_context.xdc] for cell 'fwd_fcc_test_i/axi_mem_intercon/xbar'
+Parsing XDC File [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_auto_us_0/fwd_fcc_test_auto_us_0/fwd_fcc_test_auto_us_0_in_context.xdc] for cell 'fwd_fcc_test_i/axi_mem_intercon/s00_couplers/auto_us'
+Finished Parsing XDC File [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_auto_us_0/fwd_fcc_test_auto_us_0/fwd_fcc_test_auto_us_0_in_context.xdc] for cell 'fwd_fcc_test_i/axi_mem_intercon/s00_couplers/auto_us'
+Parsing XDC File [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_auto_us_1/fwd_fcc_test_auto_us_1/fwd_fcc_test_auto_us_0_in_context.xdc] for cell 'fwd_fcc_test_i/axi_mem_intercon/s01_couplers/auto_us'
+Finished Parsing XDC File [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_auto_us_1/fwd_fcc_test_auto_us_1/fwd_fcc_test_auto_us_0_in_context.xdc] for cell 'fwd_fcc_test_i/axi_mem_intercon/s01_couplers/auto_us'
+Parsing XDC File [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_auto_us_2/fwd_fcc_test_auto_us_2/fwd_fcc_test_auto_us_0_in_context.xdc] for cell 'fwd_fcc_test_i/axi_mem_intercon/s02_couplers/auto_us'
+Finished Parsing XDC File [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_auto_us_2/fwd_fcc_test_auto_us_2/fwd_fcc_test_auto_us_0_in_context.xdc] for cell 'fwd_fcc_test_i/axi_mem_intercon/s02_couplers/auto_us'
+Parsing XDC File [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_auto_us_3/fwd_fcc_test_auto_us_3/fwd_fcc_test_auto_us_0_in_context.xdc] for cell 'fwd_fcc_test_i/axi_mem_intercon/s03_couplers/auto_us'
+Finished Parsing XDC File [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_auto_us_3/fwd_fcc_test_auto_us_3/fwd_fcc_test_auto_us_0_in_context.xdc] for cell 'fwd_fcc_test_i/axi_mem_intercon/s03_couplers/auto_us'
+Parsing XDC File [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_auto_pc_1/fwd_fcc_test_auto_pc_1/fwd_fcc_test_auto_pc_1_in_context.xdc] for cell 'fwd_fcc_test_i/axi_mem_intercon/m00_couplers/auto_pc'
+Finished Parsing XDC File [/home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_auto_pc_1/fwd_fcc_test_auto_pc_1/fwd_fcc_test_auto_pc_1_in_context.xdc] for cell 'fwd_fcc_test_i/axi_mem_intercon/m00_couplers/auto_pc'
 Parsing XDC File [/home/anubhav/xilinx_projects/nn1/nn/nn.runs/synth_1/dont_touch.xdc]
 Finished Parsing XDC File [/home/anubhav/xilinx_projects/nn1/nn/nn.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2421.930 ; gain = 0.000 ; free physical = 12387 ; free virtual = 24459
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2421.934 ; gain = 0.000 ; free physical = 14384 ; free virtual = 24067
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2421.930 ; gain = 0.000 ; free physical = 12387 ; free virtual = 24459
-WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'fwd_fcc_test_i/axi_bram_ctrl_0_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2421.934 ; gain = 0.000 ; free physical = 14384 ; free virtual = 24067
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 12504 ; free virtual = 24526
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2421.934 ; gain = 63.961 ; free physical = 14498 ; free virtual = 24133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 12504 ; free virtual = 24526
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2421.934 ; gain = 63.961 ; free physical = 14498 ; free virtual = 24133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -413,19 +535,27 @@ Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_porb. (constraint 
 Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_srstb. (constraint file  /home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_processing_system7_0_0/fwd_fcc_test_processing_system7_0_0/fwd_fcc_test_processing_system7_0_0_in_context.xdc, line 260).
 Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_srstb. (constraint file  /home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_processing_system7_0_0/fwd_fcc_test_processing_system7_0_0/fwd_fcc_test_processing_system7_0_0_in_context.xdc, line 261).
 Applied set_property KEEP_HIERARCHY = SOFT for fwd_fcc_test_i. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for fwd_fcc_test_i/axi_bram_ctrl_0. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for fwd_fcc_test_i/axi_bram_ctrl_0_bram. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for fwd_fcc_test_i/axi_smc. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for fwd_fcc_test_i/forward_fcc_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for fwd_fcc_test_i/processing_system7_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fwd_fcc_test_i/forward_fcc_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fwd_fcc_test_i/backward_fcc_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fwd_fcc_test_i/conv_fwd_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fwd_fcc_test_i/conv_bckwd_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fwd_fcc_test_i/ps7_0_axi_periph/xbar. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for fwd_fcc_test_i/ps7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for fwd_fcc_test_i/ps7_0_axi_periph. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for fwd_fcc_test_i/rst_ps7_0_100M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fwd_fcc_test_i/axi_mem_intercon/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fwd_fcc_test_i/axi_mem_intercon/s00_couplers/auto_us. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fwd_fcc_test_i/axi_mem_intercon/s01_couplers/auto_us. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fwd_fcc_test_i/axi_mem_intercon/s02_couplers/auto_us. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fwd_fcc_test_i/axi_mem_intercon/s03_couplers/auto_us. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fwd_fcc_test_i/axi_mem_intercon/m00_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fwd_fcc_test_i/axi_mem_intercon. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 12506 ; free virtual = 24529
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2421.934 ; gain = 63.961 ; free physical = 14500 ; free virtual = 24134
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 12507 ; free virtual = 24531
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2421.934 ; gain = 63.961 ; free physical = 14500 ; free virtual = 24136
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -447,25 +577,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 12494 ; free virtual = 24521
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2421.934 ; gain = 63.961 ; free physical = 14492 ; free virtual = 24126
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 12372 ; free virtual = 24397
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2421.934 ; gain = 63.961 ; free physical = 14371 ; free virtual = 24006
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 12372 ; free virtual = 24397
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2421.934 ; gain = 63.961 ; free physical = 14371 ; free virtual = 24006
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 12368 ; free virtual = 24395
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2421.934 ; gain = 63.961 ; free physical = 14392 ; free virtual = 24005
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -483,37 +613,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 12371 ; free virtual = 24394
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2421.934 ; gain = 63.961 ; free physical = 14420 ; free virtual = 24030
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 12371 ; free virtual = 24394
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2421.934 ; gain = 63.961 ; free physical = 14420 ; free virtual = 24030
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 12371 ; free virtual = 24394
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2421.934 ; gain = 63.961 ; free physical = 14420 ; free virtual = 24030
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 12371 ; free virtual = 24394
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2421.934 ; gain = 63.961 ; free physical = 14420 ; free virtual = 24030
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 12371 ; free virtual = 24394
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2421.934 ; gain = 63.961 ; free physical = 14420 ; free virtual = 24030
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 12371 ; free virtual = 24394
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2421.934 ; gain = 63.961 ; free physical = 14420 ; free virtual = 24030
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -523,45 +653,54 @@ Report BlackBoxes:
 +------+------------------------------------+----------+
 |      |BlackBox name                       |Instances |
 +------+------------------------------------+----------+
-|1     |fwd_fcc_test_auto_pc_0              |         1|
-|2     |fwd_fcc_test_axi_bram_ctrl_0_0      |         1|
-|3     |fwd_fcc_test_axi_bram_ctrl_0_bram_0 |         1|
-|4     |fwd_fcc_test_axi_smc_0              |         1|
-|5     |fwd_fcc_test_forward_fcc_0_0        |         1|
-|6     |fwd_fcc_test_processing_system7_0_0 |         1|
-|7     |fwd_fcc_test_rst_ps7_0_100M_0       |         1|
+|1     |fwd_fcc_test_xbar_3                 |         1|
+|2     |fwd_fcc_test_auto_pc_1              |         1|
+|3     |fwd_fcc_test_auto_us_0              |         1|
+|4     |fwd_fcc_test_auto_us_1              |         1|
+|5     |fwd_fcc_test_auto_us_2              |         1|
+|6     |fwd_fcc_test_auto_us_3              |         1|
+|7     |fwd_fcc_test_xbar_2                 |         1|
+|8     |fwd_fcc_test_auto_pc_0              |         1|
+|9     |fwd_fcc_test_backward_fcc_0_0       |         1|
+|10    |fwd_fcc_test_conv_bckwd_0_0         |         1|
+|11    |fwd_fcc_test_conv_fwd_0_0           |         1|
+|12    |fwd_fcc_test_forward_fcc_0_1        |         1|
+|13    |fwd_fcc_test_processing_system7_0_0 |         1|
+|14    |fwd_fcc_test_rst_ps7_0_100M_3       |         1|
 +------+------------------------------------+----------+
 
 Report Cell Usage: 
 +------+----------------------------------+------+
 |      |Cell                              |Count |
 +------+----------------------------------+------+
-|1     |fwd_fcc_test_auto_pc              |     1|
-|2     |fwd_fcc_test_axi_bram_ctrl_0      |     1|
-|3     |fwd_fcc_test_axi_bram_ctrl_0_bram |     1|
-|4     |fwd_fcc_test_axi_smc              |     1|
-|5     |fwd_fcc_test_forward_fcc_0        |     1|
-|6     |fwd_fcc_test_processing_system7_0 |     1|
-|7     |fwd_fcc_test_rst_ps7_0_100M       |     1|
+|1     |fwd_fcc_test_auto_pc              |     2|
+|3     |fwd_fcc_test_auto_us              |     4|
+|7     |fwd_fcc_test_backward_fcc_0       |     1|
+|8     |fwd_fcc_test_conv_bckwd_0         |     1|
+|9     |fwd_fcc_test_conv_fwd_0           |     1|
+|10    |fwd_fcc_test_forward_fcc_0        |     1|
+|11    |fwd_fcc_test_processing_system7_0 |     1|
+|12    |fwd_fcc_test_rst_ps7_0_100M       |     1|
+|13    |fwd_fcc_test_xbar                 |     2|
 +------+----------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 12371 ; free virtual = 24394
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2421.934 ; gain = 63.961 ; free physical = 14420 ; free virtual = 24030
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2421.930 ; gain = 0.000 ; free physical = 12428 ; free virtual = 24451
-Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 12428 ; free virtual = 24451
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2421.934 ; gain = 0.000 ; free physical = 14477 ; free virtual = 24087
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2421.934 ; gain = 63.961 ; free physical = 14477 ; free virtual = 24088
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2421.930 ; gain = 0.000 ; free physical = 12423 ; free virtual = 24446
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2421.934 ; gain = 0.000 ; free physical = 14566 ; free virtual = 24176
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2421.930 ; gain = 0.000 ; free physical = 12454 ; free virtual = 24477
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2421.934 ; gain = 0.000 ; free physical = 14495 ; free virtual = 24113
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-37 Infos, 53 Warnings, 0 Critical Warnings and 0 Errors encountered.
+82 Infos, 116 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:19 . Memory (MB): peak = 2421.930 ; gain = 64.031 ; free physical = 12591 ; free virtual = 24615
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 2421.934 ; gain = 64.031 ; free physical = 14638 ; free virtual = 24252
 INFO: [Common 17-1381] The checkpoint '/home/anubhav/xilinx_projects/nn1/nn/nn.runs/synth_1/fwd_fcc_test_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file fwd_fcc_test_wrapper_utilization_synth.rpt -pb fwd_fcc_test_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Apr 29 15:45:11 2022...
+INFO: [Common 17-206] Exiting Vivado at Thu May  5 15:11:05 2022...

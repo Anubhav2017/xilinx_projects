@@ -47,22 +47,17 @@
                 <PipelineDepth>3</PipelineDepth>
             </VITIS_LOOP_18_1>
             <VITIS_LOOP_28_2>
-                <TripCount>
-                    <range>
-                        <min>1</min>
-                        <max>127</max>
-                    </range>
-                </TripCount>
+                <TripCount>undef</TripCount>
                 <Latency>
                     <range>
                         <min>2</min>
-                        <max>128</max>
+                        <max>-1</max>
                     </range>
                 </Latency>
                 <AbsoluteTimeLatency>
                     <range>
                         <min>20</min>
-                        <max>1280</max>
+                        <max>-10</max>
                     </range>
                 </AbsoluteTimeLatency>
                 <PipelineII>1</PipelineII>
@@ -73,8 +68,8 @@
     <AreaEstimates>
         <Resources>
             <BRAM_18K>3</BRAM_18K>
-            <FF>1043</FF>
-            <LUT>1366</LUT>
+            <FF>963</FF>
+            <LUT>1277</LUT>
             <DSP>0</DSP>
             <URAM>0</URAM>
         </Resources>
@@ -373,7 +368,7 @@
             <IOProtocol>m_axi</IOProtocol>
             <IOConfig/>
             <Dir>out</Dir>
-            <Bits>64</Bits>
+            <Bits>32</Bits>
             <Attribute>unknown</Attribute>
             <CType>int</CType>
         </RtlPorts>
@@ -613,7 +608,7 @@
             <IOProtocol>m_axi</IOProtocol>
             <IOConfig/>
             <Dir>out</Dir>
-            <Bits>64</Bits>
+            <Bits>32</Bits>
             <Attribute>unknown</Attribute>
             <CType>int</CType>
         </RtlPorts>
@@ -917,14 +912,9 @@
                     </VITIS_LOOP_18_1>
                     <VITIS_LOOP_28_2>
                         <Name>VITIS_LOOP_28_2</Name>
-                        <TripCount>
-                            <range>
-                                <min>1</min>
-                                <max>127</max>
-                            </range>
-                        </TripCount>
-                        <Latency>2 ~ 128</Latency>
-                        <AbsoluteTimeLatency>20.000 ns ~ 1.280 us</AbsoluteTimeLatency>
+                        <TripCount>undef</TripCount>
+                        <Latency>2 ~ ?</Latency>
+                        <AbsoluteTimeLatency>20.000 ns ~ ?</AbsoluteTimeLatency>
                         <PipelineII>1</PipelineII>
                         <PipelineDepth>3</PipelineDepth>
                     </VITIS_LOOP_28_2>
@@ -935,10 +925,10 @@
                     <BRAM_18K>3</BRAM_18K>
                     <AVAIL_BRAM>280</AVAIL_BRAM>
                     <UTIL_BRAM>1</UTIL_BRAM>
-                    <FF>1043</FF>
+                    <FF>963</FF>
                     <AVAIL_FF>106400</AVAIL_FF>
                     <UTIL_FF>~0</UTIL_FF>
-                    <LUT>1366</LUT>
+                    <LUT>1277</LUT>
                     <AVAIL_LUT>53200</AVAIL_LUT>
                     <UTIL_LUT>2</UTIL_LUT>
                     <DSP>0</DSP>
@@ -1236,7 +1226,7 @@
                     <IOProtocol>m_axi</IOProtocol>
                     <IOConfig/>
                     <Dir>out</Dir>
-                    <Bits>64</Bits>
+                    <Bits>32</Bits>
                     <Attribute>unknown</Attribute>
                     <CType>int</CType>
                 </RtlPorts>
@@ -1476,7 +1466,7 @@
                     <IOProtocol>m_axi</IOProtocol>
                     <IOConfig/>
                     <Dir>out</Dir>
-                    <Bits>64</Bits>
+                    <Bits>32</Bits>
                     <Attribute>unknown</Attribute>
                     <CType>int</CType>
                 </RtlPorts>
@@ -1752,15 +1742,13 @@
         <Arg ArgName="x" index="0" direction="inout" srcType="ap_fixed&lt;16, 9, AP_TRN, AP_WRAP, 0&gt;*" srcSize="16">
             <hwRefs>
                 <hwRef type="interface" interface="m_axi_gmem" name="" usage="data" direction="out"/>
-                <hwRef type="register" interface="s_axi_CTRL" name="x_1" usage="address" direction="in"/>
-                <hwRef type="register" interface="s_axi_CTRL" name="x_2" usage="address" direction="in"/>
+                <hwRef type="register" interface="s_axi_CTRL" name="x" usage="address" direction="in"/>
             </hwRefs>
         </Arg>
         <Arg ArgName="y" index="1" direction="inout" srcType="ap_fixed&lt;16, 9, AP_TRN, AP_WRAP, 0&gt;*" srcSize="16">
             <hwRefs>
                 <hwRef type="interface" interface="m_axi_gmem" name="" usage="data" direction="out"/>
-                <hwRef type="register" interface="s_axi_CTRL" name="y_1" usage="address" direction="in"/>
-                <hwRef type="register" interface="s_axi_CTRL" name="y_2" usage="address" direction="in"/>
+                <hwRef type="register" interface="s_axi_CTRL" name="y" usage="address" direction="in"/>
             </hwRefs>
         </Arg>
         <Arg ArgName="dim" index="2" direction="in" srcType="int" srcSize="32">
@@ -1804,7 +1792,7 @@
                 <port>interrupt</port>
             </ports>
         </Interface>
-        <Interface InterfaceName="m_axi_gmem" type="axi4full" busTypeName="aximm" mode="master" dataWidth="32" addrWidth="64" portPrefix="m_axi_gmem_" paramPrefix="C_M_AXI_GMEM_" offsetSlaveName="s_axi_CTRL" preferredUsageValue="MEMORY">
+        <Interface InterfaceName="m_axi_gmem" type="axi4full" busTypeName="aximm" mode="master" dataWidth="32" addrWidth="32" portPrefix="m_axi_gmem_" paramPrefix="C_M_AXI_GMEM_" offsetSlaveName="s_axi_CTRL" preferredUsageValue="MEMORY">
             <busParams>
                 <busParam busParamName="NUM_READ_OUTSTANDING">16</busParam>
                 <busParam busParamName="NUM_WRITE_OUTSTANDING">16</busParam>
@@ -1920,27 +1908,17 @@
                         <field offset="2" width="30" name="RESERVED" access="R" resetValue="0" description="Reserved.  0s on read."/>
                     </fields>
                 </register>
-                <register offset="0x10" name="x_1" access="W" resetValue="0x0" description="Data signal of x" range="32">
+                <register offset="0x10" name="x" access="W" resetValue="0x0" description="Data signal of x" range="32">
                     <fields>
                         <field offset="0" width="32" name="x" access="W" resetValue="0" description="Bit 31 to 0 of x"/>
                     </fields>
                 </register>
-                <register offset="0x14" name="x_2" access="W" resetValue="0x0" description="Data signal of x" range="32">
-                    <fields>
-                        <field offset="0" width="32" name="x" access="W" resetValue="0" description="Bit 63 to 32 of x"/>
-                    </fields>
-                </register>
-                <register offset="0x1c" name="y_1" access="W" resetValue="0x0" description="Data signal of y" range="32">
+                <register offset="0x18" name="y" access="W" resetValue="0x0" description="Data signal of y" range="32">
                     <fields>
                         <field offset="0" width="32" name="y" access="W" resetValue="0" description="Bit 31 to 0 of y"/>
                     </fields>
                 </register>
-                <register offset="0x20" name="y_2" access="W" resetValue="0x0" description="Data signal of y" range="32">
-                    <fields>
-                        <field offset="0" width="32" name="y" access="W" resetValue="0" description="Bit 63 to 32 of y"/>
-                    </fields>
-                </register>
-                <register offset="0x28" name="dim" access="W" resetValue="0x0" description="Data signal of dim" range="32">
+                <register offset="0x20" name="dim" access="W" resetValue="0x0" description="Data signal of dim" range="32">
                     <fields>
                         <field offset="0" width="32" name="dim" access="W" resetValue="0" description="Bit 31 to 0 of dim"/>
                     </fields>
@@ -1956,7 +1934,7 @@
             <item name="M_AXI">
                 <table>
                     <keys size="12">Interface, Data Width (SW-&gt;HW), Address Width, Latency, Offset, Offset Interfaces, Register, Max Widen Bitwidth, Max Read Burst Length, Max Write Burst Length, Num Read Outstanding, Num Write Outstanding</keys>
-                    <column name="m_axi_gmem">16 -&gt; 16, 64, 0, slave, s_axi_CTRL, 0, 0, 16, 16, 16, 16</column>
+                    <column name="m_axi_gmem">16 -&gt; 16, 32, 0, slave, s_axi_CTRL, 0, 0, 16, 16, 16, 16</column>
                 </table>
             </item>
             <item name="S_AXILITE">
@@ -1990,12 +1968,10 @@
                 <table isCollapsed="1">
                     <keys size="5">Argument, HW Name, HW Type, HW Usage, HW Info</keys>
                     <column name="x">m_axi_gmem, interface, , </column>
-                    <column name="x">s_axi_CTRL x_1, register, offset, offset=0x10 range=32</column>
-                    <column name="x">s_axi_CTRL x_2, register, offset, offset=0x14 range=32</column>
+                    <column name="x">s_axi_CTRL x, register, offset, offset=0x10 range=32</column>
                     <column name="y">m_axi_gmem, interface, , </column>
-                    <column name="y">s_axi_CTRL y_1, register, offset, offset=0x1c range=32</column>
-                    <column name="y">s_axi_CTRL y_2, register, offset, offset=0x20 range=32</column>
-                    <column name="dim">s_axi_CTRL dim, register, , offset=0x28 range=32</column>
+                    <column name="y">s_axi_CTRL y, register, offset, offset=0x18 range=32</column>
+                    <column name="dim">s_axi_CTRL dim, register, , offset=0x20 range=32</column>
                 </table>
             </item>
         </section>

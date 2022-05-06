@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'exp_16_9_s'" level="0">
-<item name = "Date">Mon May  2 12:15:42 2022
+<item name = "Date">Tue May  3 12:52:36 2022
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)</item>
 <item name = "Project">lossfun</item>
@@ -82,29 +82,29 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="exp_x_msb_2_lsb_m_1_V_fu_404_p2">+, 0, 0, 32, 25, 25</column>
-<column name="ret_V_fu_394_p2">+, 0, 0, 27, 20, 20</column>
-<column name="y_l_V_fu_444_p2">+, 0, 0, 32, 25, 25</column>
-<column name="and_ln202_fu_263_p2">and, 0, 0, 2, 1, 1</column>
-<column name="icmp_ln1494_fu_257_p2">icmp, 0, 0, 11, 11, 11</column>
-<column name="icmp_ln1498_fu_251_p2">icmp, 0, 0, 9, 4, 3</column>
-<column name="overf_1_fu_480_p2">icmp, 0, 0, 8, 2, 1</column>
-<column name="or_ln202_1_fu_317_p2">or, 0, 0, 2, 1, 1</column>
-<column name="or_ln202_2_fu_323_p2">or, 0, 0, 2, 1, 1</column>
-<column name="or_ln202_3_fu_329_p2">or, 0, 0, 2, 1, 1</column>
-<column name="or_ln202_4_fu_458_p2">or, 0, 0, 2, 1, 1</column>
-<column name="or_ln202_fu_311_p2">or, 0, 0, 2, 1, 1</column>
-<column name="overf_2_fu_494_p2">or, 0, 0, 2, 1, 1</column>
+<column name="exp_x_msb_2_lsb_m_1_V_fu_402_p2">+, 0, 0, 32, 25, 25</column>
+<column name="ret_V_fu_392_p2">+, 0, 0, 27, 20, 20</column>
+<column name="y_l_V_fu_442_p2">+, 0, 0, 32, 25, 25</column>
+<column name="and_ln202_fu_261_p2">and, 0, 0, 2, 1, 1</column>
+<column name="icmp_ln1494_fu_255_p2">icmp, 0, 0, 11, 11, 11</column>
+<column name="icmp_ln1498_fu_249_p2">icmp, 0, 0, 9, 4, 3</column>
+<column name="overf_1_fu_478_p2">icmp, 0, 0, 8, 2, 1</column>
+<column name="or_ln202_1_fu_315_p2">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln202_2_fu_321_p2">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln202_3_fu_327_p2">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln202_4_fu_456_p2">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln202_fu_309_p2">or, 0, 0, 2, 1, 1</column>
+<column name="overf_2_fu_492_p2">or, 0, 0, 2, 1, 1</column>
 <column name="ap_return">select, 0, 0, 16, 1, 15</column>
-<column name="p_Val2_s_fu_462_p3">select, 0, 0, 22, 1, 22</column>
-<column name="select_ln640_fu_436_p3">select, 0, 0, 2, 1, 2</column>
+<column name="p_Val2_s_fu_460_p3">select, 0, 0, 22, 1, 22</column>
+<column name="select_ln640_fu_434_p3">select, 0, 0, 2, 1, 2</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
-<column name="overf_fu_189_p2">xor, 0, 0, 2, 1, 1</column>
-<column name="xor_ln222_1_fu_217_p2">xor, 0, 0, 2, 1, 1</column>
-<column name="xor_ln222_2_fu_231_p2">xor, 0, 0, 2, 1, 1</column>
-<column name="xor_ln222_3_fu_245_p2">xor, 0, 0, 2, 1, 1</column>
-<column name="xor_ln222_fu_203_p2">xor, 0, 0, 2, 1, 1</column>
-<column name="xor_ln640_fu_431_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="overf_fu_187_p2">xor, 0, 0, 2, 1, 1</column>
+<column name="xor_ln222_1_fu_215_p2">xor, 0, 0, 2, 1, 1</column>
+<column name="xor_ln222_2_fu_229_p2">xor, 0, 0, 2, 1, 1</column>
+<column name="xor_ln222_3_fu_243_p2">xor, 0, 0, 2, 1, 1</column>
+<column name="xor_ln222_fu_201_p2">xor, 0, 0, 2, 1, 1</column>
+<column name="xor_ln640_fu_429_p2">xor, 0, 0, 2, 1, 2</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
@@ -119,25 +119,25 @@
 <column name="ap_enable_reg_pp0_iter3">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter4">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter5">1, 0, 1, 0</column>
-<column name="exp_x_msb_1_V_reg_582">25, 0, 25, 0</column>
-<column name="exp_x_msb_1_V_reg_582_pp0_iter4_reg">25, 0, 25, 0</column>
-<column name="exp_x_msb_2_lsb_m_1_V_reg_577">25, 0, 25, 0</column>
-<column name="exp_x_msb_2_m_1_V_reg_561">25, 0, 25, 0</column>
-<column name="exp_x_msb_2_m_1_V_reg_561_pp0_iter2_reg">25, 0, 25, 0</column>
-<column name="f_x_lsb_V_reg_555">11, 0, 11, 0</column>
-<column name="f_x_lsb_V_reg_555_pp0_iter2_reg">11, 0, 11, 0</column>
-<column name="or_ln202_1_reg_545">1, 0, 1, 0</column>
-<column name="or_ln202_3_reg_550">1, 0, 1, 0</column>
-<column name="p_Result_s_reg_524">4, 0, 4, 0</column>
-<column name="p_Result_s_reg_524_pp0_iter1_reg">4, 0, 4, 0</column>
-<column name="tmp_reg_518">1, 0, 1, 0</column>
-<column name="trunc_ln3_reg_567">19, 0, 19, 0</column>
-<column name="trunc_ln640_1_reg_529">1, 0, 1, 0</column>
-<column name="y_lo_s_V_reg_588">25, 0, 25, 0</column>
-<column name="or_ln202_1_reg_545">64, 32, 1, 0</column>
-<column name="or_ln202_3_reg_550">64, 32, 1, 0</column>
-<column name="tmp_reg_518">64, 32, 1, 0</column>
-<column name="trunc_ln640_1_reg_529">64, 32, 1, 0</column>
+<column name="exp_x_msb_1_V_reg_580">25, 0, 25, 0</column>
+<column name="exp_x_msb_1_V_reg_580_pp0_iter4_reg">25, 0, 25, 0</column>
+<column name="exp_x_msb_2_lsb_m_1_V_reg_575">25, 0, 25, 0</column>
+<column name="exp_x_msb_2_m_1_V_reg_559">25, 0, 25, 0</column>
+<column name="exp_x_msb_2_m_1_V_reg_559_pp0_iter2_reg">25, 0, 25, 0</column>
+<column name="f_x_lsb_V_reg_553">11, 0, 11, 0</column>
+<column name="f_x_lsb_V_reg_553_pp0_iter2_reg">11, 0, 11, 0</column>
+<column name="or_ln202_1_reg_543">1, 0, 1, 0</column>
+<column name="or_ln202_3_reg_548">1, 0, 1, 0</column>
+<column name="p_Result_s_reg_522">4, 0, 4, 0</column>
+<column name="p_Result_s_reg_522_pp0_iter1_reg">4, 0, 4, 0</column>
+<column name="tmp_reg_516">1, 0, 1, 0</column>
+<column name="trunc_ln640_1_reg_527">1, 0, 1, 0</column>
+<column name="trunc_ln6_reg_565">19, 0, 19, 0</column>
+<column name="y_lo_s_V_reg_586">25, 0, 25, 0</column>
+<column name="or_ln202_1_reg_543">64, 32, 1, 0</column>
+<column name="or_ln202_3_reg_548">64, 32, 1, 0</column>
+<column name="tmp_reg_516">64, 32, 1, 0</column>
+<column name="trunc_ln640_1_reg_527">64, 32, 1, 0</column>
 </table>
 </item>
 </section>

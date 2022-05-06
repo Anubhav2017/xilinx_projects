@@ -82,41 +82,37 @@ u32 XLoss_derivative_Get_return(XLoss_derivative *InstancePtr) {
     Data = XLoss_derivative_ReadReg(InstancePtr->Ctrl_BaseAddress, XLOSS_DERIVATIVE_CTRL_ADDR_AP_RETURN);
     return Data;
 }
-void XLoss_derivative_Set_x(XLoss_derivative *InstancePtr, u64 Data) {
+void XLoss_derivative_Set_x(XLoss_derivative *InstancePtr, u32 Data) {
     Xil_AssertVoid(InstancePtr != NULL);
     Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    XLoss_derivative_WriteReg(InstancePtr->Ctrl_BaseAddress, XLOSS_DERIVATIVE_CTRL_ADDR_X_DATA, (u32)(Data));
-    XLoss_derivative_WriteReg(InstancePtr->Ctrl_BaseAddress, XLOSS_DERIVATIVE_CTRL_ADDR_X_DATA + 4, (u32)(Data >> 32));
+    XLoss_derivative_WriteReg(InstancePtr->Ctrl_BaseAddress, XLOSS_DERIVATIVE_CTRL_ADDR_X_DATA, Data);
 }
 
-u64 XLoss_derivative_Get_x(XLoss_derivative *InstancePtr) {
-    u64 Data;
+u32 XLoss_derivative_Get_x(XLoss_derivative *InstancePtr) {
+    u32 Data;
 
     Xil_AssertNonvoid(InstancePtr != NULL);
     Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
     Data = XLoss_derivative_ReadReg(InstancePtr->Ctrl_BaseAddress, XLOSS_DERIVATIVE_CTRL_ADDR_X_DATA);
-    Data += (u64)XLoss_derivative_ReadReg(InstancePtr->Ctrl_BaseAddress, XLOSS_DERIVATIVE_CTRL_ADDR_X_DATA + 4) << 32;
     return Data;
 }
 
-void XLoss_derivative_Set_dx(XLoss_derivative *InstancePtr, u64 Data) {
+void XLoss_derivative_Set_dx(XLoss_derivative *InstancePtr, u32 Data) {
     Xil_AssertVoid(InstancePtr != NULL);
     Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    XLoss_derivative_WriteReg(InstancePtr->Ctrl_BaseAddress, XLOSS_DERIVATIVE_CTRL_ADDR_DX_DATA, (u32)(Data));
-    XLoss_derivative_WriteReg(InstancePtr->Ctrl_BaseAddress, XLOSS_DERIVATIVE_CTRL_ADDR_DX_DATA + 4, (u32)(Data >> 32));
+    XLoss_derivative_WriteReg(InstancePtr->Ctrl_BaseAddress, XLOSS_DERIVATIVE_CTRL_ADDR_DX_DATA, Data);
 }
 
-u64 XLoss_derivative_Get_dx(XLoss_derivative *InstancePtr) {
-    u64 Data;
+u32 XLoss_derivative_Get_dx(XLoss_derivative *InstancePtr) {
+    u32 Data;
 
     Xil_AssertNonvoid(InstancePtr != NULL);
     Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
     Data = XLoss_derivative_ReadReg(InstancePtr->Ctrl_BaseAddress, XLOSS_DERIVATIVE_CTRL_ADDR_DX_DATA);
-    Data += (u64)XLoss_derivative_ReadReg(InstancePtr->Ctrl_BaseAddress, XLOSS_DERIVATIVE_CTRL_ADDR_DX_DATA + 4) << 32;
     return Data;
 }
 

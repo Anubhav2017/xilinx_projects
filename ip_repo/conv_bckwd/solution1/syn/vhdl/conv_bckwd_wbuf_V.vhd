@@ -10,8 +10,8 @@ use ieee.std_logic_unsigned.all;
 entity conv_bckwd_wbuf_V_ram is 
     generic(
             DWIDTH     : integer := 16; 
-            AWIDTH     : integer := 12; 
-            MEM_SIZE    : integer := 2500
+            AWIDTH     : integer := 10; 
+            MEM_SIZE    : integer := 625
     ); 
     port (
           addr0     : in std_logic_vector(AWIDTH-1 downto 0); 
@@ -67,8 +67,8 @@ use IEEE.std_logic_1164.all;
 entity conv_bckwd_wbuf_V is
     generic (
         DataWidth : INTEGER := 16;
-        AddressRange : INTEGER := 2500;
-        AddressWidth : INTEGER := 12);
+        AddressRange : INTEGER := 625;
+        AddressWidth : INTEGER := 10);
     port (
         reset : IN STD_LOGIC;
         clk : IN STD_LOGIC;

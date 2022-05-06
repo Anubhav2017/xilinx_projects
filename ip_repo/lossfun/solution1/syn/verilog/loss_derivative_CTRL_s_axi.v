@@ -5,7 +5,7 @@
 `timescale 1ns/1ps
 module loss_derivative_CTRL_s_axi
 #(parameter
-    C_S_AXI_ADDR_WIDTH = 7,
+    C_S_AXI_ADDR_WIDTH = 6,
     C_S_AXI_DATA_WIDTH = 32
 )(
     input  wire                          ACLK,
@@ -34,8 +34,8 @@ module loss_derivative_CTRL_s_axi
     input  wire                          ap_ready,
     input  wire                          ap_idle,
     input  wire [15:0]                   ap_return,
-    output wire [63:0]                   x,
-    output wire [63:0]                   dx,
+    output wire [31:0]                   x,
+    output wire [31:0]                   dx,
     output wire [31:0]                   y,
     output wire [31:0]                   x_size,
     output wire [31:0]                   N
@@ -64,44 +64,38 @@ module loss_derivative_CTRL_s_axi
 //        others   - reserved
 // 0x18 : Data signal of x
 //        bit 31~0 - x[31:0] (Read/Write)
-// 0x1c : Data signal of x
-//        bit 31~0 - x[63:32] (Read/Write)
-// 0x20 : reserved
-// 0x24 : Data signal of dx
+// 0x1c : reserved
+// 0x20 : Data signal of dx
 //        bit 31~0 - dx[31:0] (Read/Write)
-// 0x28 : Data signal of dx
-//        bit 31~0 - dx[63:32] (Read/Write)
-// 0x2c : reserved
-// 0x30 : Data signal of y
+// 0x24 : reserved
+// 0x28 : Data signal of y
 //        bit 31~0 - y[31:0] (Read/Write)
-// 0x34 : reserved
-// 0x38 : Data signal of x_size
+// 0x2c : reserved
+// 0x30 : Data signal of x_size
 //        bit 31~0 - x_size[31:0] (Read/Write)
-// 0x3c : reserved
-// 0x40 : Data signal of N
+// 0x34 : reserved
+// 0x38 : Data signal of N
 //        bit 31~0 - N[31:0] (Read/Write)
-// 0x44 : reserved
+// 0x3c : reserved
 // (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
 //------------------------Parameter----------------------
 localparam
-    ADDR_AP_CTRL       = 7'h00,
-    ADDR_GIE           = 7'h04,
-    ADDR_IER           = 7'h08,
-    ADDR_ISR           = 7'h0c,
-    ADDR_AP_RETURN_0   = 7'h10,
-    ADDR_X_DATA_0      = 7'h18,
-    ADDR_X_DATA_1      = 7'h1c,
-    ADDR_X_CTRL        = 7'h20,
-    ADDR_DX_DATA_0     = 7'h24,
-    ADDR_DX_DATA_1     = 7'h28,
-    ADDR_DX_CTRL       = 7'h2c,
-    ADDR_Y_DATA_0      = 7'h30,
-    ADDR_Y_CTRL        = 7'h34,
-    ADDR_X_SIZE_DATA_0 = 7'h38,
-    ADDR_X_SIZE_CTRL   = 7'h3c,
-    ADDR_N_DATA_0      = 7'h40,
-    ADDR_N_CTRL        = 7'h44,
+    ADDR_AP_CTRL       = 6'h00,
+    ADDR_GIE           = 6'h04,
+    ADDR_IER           = 6'h08,
+    ADDR_ISR           = 6'h0c,
+    ADDR_AP_RETURN_0   = 6'h10,
+    ADDR_X_DATA_0      = 6'h18,
+    ADDR_X_CTRL        = 6'h1c,
+    ADDR_DX_DATA_0     = 6'h20,
+    ADDR_DX_CTRL       = 6'h24,
+    ADDR_Y_DATA_0      = 6'h28,
+    ADDR_Y_CTRL        = 6'h2c,
+    ADDR_X_SIZE_DATA_0 = 6'h30,
+    ADDR_X_SIZE_CTRL   = 6'h34,
+    ADDR_N_DATA_0      = 6'h38,
+    ADDR_N_CTRL        = 6'h3c,
     WRIDLE             = 2'd0,
     WRDATA             = 2'd1,
     WRRESP             = 2'd2,
@@ -109,7 +103,7 @@ localparam
     RDIDLE             = 2'd0,
     RDDATA             = 2'd1,
     RDRESET            = 2'd2,
-    ADDR_BITS                = 7;
+    ADDR_BITS                = 6;
 
 //------------------------Local signal-------------------
     reg  [1:0]                    wstate = WRRESET;
@@ -133,8 +127,8 @@ localparam
     reg  [1:0]                    int_ier = 2'b0;
     reg  [1:0]                    int_isr = 2'b0;
     reg  [15:0]                   int_ap_return;
-    reg  [63:0]                   int_x = 'b0;
-    reg  [63:0]                   int_dx = 'b0;
+    reg  [31:0]                   int_x = 'b0;
+    reg  [31:0]                   int_dx = 'b0;
     reg  [31:0]                   int_y = 'b0;
     reg  [31:0]                   int_x_size = 'b0;
     reg  [31:0]                   int_N = 'b0;
@@ -252,14 +246,8 @@ always @(posedge ACLK) begin
                 ADDR_X_DATA_0: begin
                     rdata <= int_x[31:0];
                 end
-                ADDR_X_DATA_1: begin
-                    rdata <= int_x[63:32];
-                end
                 ADDR_DX_DATA_0: begin
                     rdata <= int_dx[31:0];
-                end
-                ADDR_DX_DATA_1: begin
-                    rdata <= int_dx[63:32];
                 end
                 ADDR_Y_DATA_0: begin
                     rdata <= int_y[31:0];
@@ -400,16 +388,6 @@ always @(posedge ACLK) begin
     end
 end
 
-// int_x[63:32]
-always @(posedge ACLK) begin
-    if (ARESET)
-        int_x[63:32] <= 0;
-    else if (ACLK_EN) begin
-        if (w_hs && waddr == ADDR_X_DATA_1)
-            int_x[63:32] <= (WDATA[31:0] & wmask) | (int_x[63:32] & ~wmask);
-    end
-end
-
 // int_dx[31:0]
 always @(posedge ACLK) begin
     if (ARESET)
@@ -417,16 +395,6 @@ always @(posedge ACLK) begin
     else if (ACLK_EN) begin
         if (w_hs && waddr == ADDR_DX_DATA_0)
             int_dx[31:0] <= (WDATA[31:0] & wmask) | (int_dx[31:0] & ~wmask);
-    end
-end
-
-// int_dx[63:32]
-always @(posedge ACLK) begin
-    if (ARESET)
-        int_dx[63:32] <= 0;
-    else if (ACLK_EN) begin
-        if (w_hs && waddr == ADDR_DX_DATA_1)
-            int_dx[63:32] <= (WDATA[31:0] & wmask) | (int_dx[63:32] & ~wmask);
     end
 end
 

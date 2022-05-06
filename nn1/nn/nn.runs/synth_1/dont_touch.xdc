@@ -4,28 +4,52 @@
 # Block Designs: bd/fwd_fcc_test/fwd_fcc_test.bd
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==fwd_fcc_test || ORIG_REF_NAME==fwd_fcc_test} -quiet] -quiet
 
-# IP: bd/fwd_fcc_test/ip/fwd_fcc_test_axi_bram_ctrl_0_0/fwd_fcc_test_axi_bram_ctrl_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==fwd_fcc_test_axi_bram_ctrl_0_0 || ORIG_REF_NAME==fwd_fcc_test_axi_bram_ctrl_0_0} -quiet] -quiet
-
-# IP: bd/fwd_fcc_test/ip/fwd_fcc_test_axi_bram_ctrl_0_bram_0/fwd_fcc_test_axi_bram_ctrl_0_bram_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==fwd_fcc_test_axi_bram_ctrl_0_bram_0 || ORIG_REF_NAME==fwd_fcc_test_axi_bram_ctrl_0_bram_0} -quiet] -quiet
-
-# IP: bd/fwd_fcc_test/ip/fwd_fcc_test_axi_smc_0/fwd_fcc_test_axi_smc_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==fwd_fcc_test_axi_smc_0 || ORIG_REF_NAME==fwd_fcc_test_axi_smc_0} -quiet] -quiet
-
-# IP: bd/fwd_fcc_test/ip/fwd_fcc_test_forward_fcc_0_0/fwd_fcc_test_forward_fcc_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==fwd_fcc_test_forward_fcc_0_0 || ORIG_REF_NAME==fwd_fcc_test_forward_fcc_0_0} -quiet] -quiet
-
 # IP: bd/fwd_fcc_test/ip/fwd_fcc_test_processing_system7_0_0/fwd_fcc_test_processing_system7_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==fwd_fcc_test_processing_system7_0_0 || ORIG_REF_NAME==fwd_fcc_test_processing_system7_0_0} -quiet] -quiet
 
-# IP: bd/fwd_fcc_test/ip/fwd_fcc_test_ps7_0_axi_periph_0/fwd_fcc_test_ps7_0_axi_periph_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==fwd_fcc_test_ps7_0_axi_periph_0 || ORIG_REF_NAME==fwd_fcc_test_ps7_0_axi_periph_0} -quiet] -quiet
+# IP: bd/fwd_fcc_test/ip/fwd_fcc_test_forward_fcc_0_1/fwd_fcc_test_forward_fcc_0_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==fwd_fcc_test_forward_fcc_0_1 || ORIG_REF_NAME==fwd_fcc_test_forward_fcc_0_1} -quiet] -quiet
 
-# IP: bd/fwd_fcc_test/ip/fwd_fcc_test_rst_ps7_0_100M_0/fwd_fcc_test_rst_ps7_0_100M_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==fwd_fcc_test_rst_ps7_0_100M_0 || ORIG_REF_NAME==fwd_fcc_test_rst_ps7_0_100M_0} -quiet] -quiet
+# IP: bd/fwd_fcc_test/ip/fwd_fcc_test_backward_fcc_0_0/fwd_fcc_test_backward_fcc_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==fwd_fcc_test_backward_fcc_0_0 || ORIG_REF_NAME==fwd_fcc_test_backward_fcc_0_0} -quiet] -quiet
+
+# IP: bd/fwd_fcc_test/ip/fwd_fcc_test_conv_fwd_0_0/fwd_fcc_test_conv_fwd_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==fwd_fcc_test_conv_fwd_0_0 || ORIG_REF_NAME==fwd_fcc_test_conv_fwd_0_0} -quiet] -quiet
+
+# IP: bd/fwd_fcc_test/ip/fwd_fcc_test_conv_bckwd_0_0/fwd_fcc_test_conv_bckwd_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==fwd_fcc_test_conv_bckwd_0_0 || ORIG_REF_NAME==fwd_fcc_test_conv_bckwd_0_0} -quiet] -quiet
+
+# IP: bd/fwd_fcc_test/ip/fwd_fcc_test_xbar_2/fwd_fcc_test_xbar_2.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==fwd_fcc_test_xbar_2 || ORIG_REF_NAME==fwd_fcc_test_xbar_2} -quiet] -quiet
+
+# IP: bd/fwd_fcc_test/ip/fwd_fcc_test_ps7_0_axi_periph_3/fwd_fcc_test_ps7_0_axi_periph_3.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==fwd_fcc_test_ps7_0_axi_periph_3 || ORIG_REF_NAME==fwd_fcc_test_ps7_0_axi_periph_3} -quiet] -quiet
+
+# IP: bd/fwd_fcc_test/ip/fwd_fcc_test_rst_ps7_0_100M_3/fwd_fcc_test_rst_ps7_0_100M_3.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==fwd_fcc_test_rst_ps7_0_100M_3 || ORIG_REF_NAME==fwd_fcc_test_rst_ps7_0_100M_3} -quiet] -quiet
+
+# IP: bd/fwd_fcc_test/ip/fwd_fcc_test_xbar_3/fwd_fcc_test_xbar_3.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==fwd_fcc_test_xbar_3 || ORIG_REF_NAME==fwd_fcc_test_xbar_3} -quiet] -quiet
+
+# IP: bd/fwd_fcc_test/ip/fwd_fcc_test_axi_mem_intercon_1/fwd_fcc_test_axi_mem_intercon_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==fwd_fcc_test_axi_mem_intercon_1 || ORIG_REF_NAME==fwd_fcc_test_axi_mem_intercon_1} -quiet] -quiet
 
 # IP: bd/fwd_fcc_test/ip/fwd_fcc_test_auto_pc_0/fwd_fcc_test_auto_pc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==fwd_fcc_test_auto_pc_0 || ORIG_REF_NAME==fwd_fcc_test_auto_pc_0} -quiet] -quiet
+
+# IP: bd/fwd_fcc_test/ip/fwd_fcc_test_auto_us_0/fwd_fcc_test_auto_us_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==fwd_fcc_test_auto_us_0 || ORIG_REF_NAME==fwd_fcc_test_auto_us_0} -quiet] -quiet
+
+# IP: bd/fwd_fcc_test/ip/fwd_fcc_test_auto_us_1/fwd_fcc_test_auto_us_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==fwd_fcc_test_auto_us_1 || ORIG_REF_NAME==fwd_fcc_test_auto_us_1} -quiet] -quiet
+
+# IP: bd/fwd_fcc_test/ip/fwd_fcc_test_auto_us_2/fwd_fcc_test_auto_us_2.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==fwd_fcc_test_auto_us_2 || ORIG_REF_NAME==fwd_fcc_test_auto_us_2} -quiet] -quiet
+
+# IP: bd/fwd_fcc_test/ip/fwd_fcc_test_auto_us_3/fwd_fcc_test_auto_us_3.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==fwd_fcc_test_auto_us_3 || ORIG_REF_NAME==fwd_fcc_test_auto_us_3} -quiet] -quiet
+
+# IP: bd/fwd_fcc_test/ip/fwd_fcc_test_auto_pc_1/fwd_fcc_test_auto_pc_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==fwd_fcc_test_auto_pc_1 || ORIG_REF_NAME==fwd_fcc_test_auto_pc_1} -quiet] -quiet
 
 # XDC: /home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/fwd_fcc_test_ooc.xdc

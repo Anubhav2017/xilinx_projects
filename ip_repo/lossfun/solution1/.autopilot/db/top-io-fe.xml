@@ -16,22 +16,22 @@
           <constraint constraint_type="bitwidth" orig_bitwidth="16" final_bitwidth="16"/>
         </hw>
         <hw hw_usage="address" hw_interface="S_AXILite" hw_name="CTRL" hw_bitwidth="16" hw_size_or_depth="0">
-          <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="36"/>
+          <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="32"/>
         </hw>
       </arg>
       <arg id="2" access_type="r" src_name="y" src_type="int" src_isptr="0" src_bitwidth="32" src_size_or_depth="1">
         <hw hw_usage="data" hw_interface="S_AXILite" hw_name="CTRL" hw_bitwidth="32" hw_size_or_depth="1">
-          <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="48"/>
+          <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="40"/>
         </hw>
       </arg>
       <arg id="3" access_type="r" src_name="x_size" src_type="int" src_isptr="0" src_bitwidth="32" src_size_or_depth="1">
         <hw hw_usage="data" hw_interface="S_AXILite" hw_name="CTRL" hw_bitwidth="32" hw_size_or_depth="1">
-          <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="56"/>
+          <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="48"/>
         </hw>
       </arg>
       <arg id="4" access_type="r" src_name="N" src_type="int" src_isptr="0" src_bitwidth="32" src_size_or_depth="1">
         <hw hw_usage="data" hw_interface="S_AXILite" hw_name="CTRL" hw_bitwidth="32" hw_size_or_depth="1">
-          <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="64"/>
+          <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="56"/>
         </hw>
       </arg>
     </args>

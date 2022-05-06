@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'relu_bckwd'
 ================================================================
 + General Information: 
-    * Date:           Mon May  2 11:47:23 2022
+    * Date:           Thu May  5 12:17:39 2022
     * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
     * Project:        relu_bckwd
     * Solution:       solution1 (Vivado IP Flow Target)

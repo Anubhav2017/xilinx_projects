@@ -87,10 +87,10 @@ u32 XRelu_fwd_IsReady(XRelu_fwd *InstancePtr);
 void XRelu_fwd_EnableAutoRestart(XRelu_fwd *InstancePtr);
 void XRelu_fwd_DisableAutoRestart(XRelu_fwd *InstancePtr);
 
-void XRelu_fwd_Set_x(XRelu_fwd *InstancePtr, u64 Data);
-u64 XRelu_fwd_Get_x(XRelu_fwd *InstancePtr);
-void XRelu_fwd_Set_y(XRelu_fwd *InstancePtr, u64 Data);
-u64 XRelu_fwd_Get_y(XRelu_fwd *InstancePtr);
+void XRelu_fwd_Set_x(XRelu_fwd *InstancePtr, u32 Data);
+u32 XRelu_fwd_Get_x(XRelu_fwd *InstancePtr);
+void XRelu_fwd_Set_y(XRelu_fwd *InstancePtr, u32 Data);
+u32 XRelu_fwd_Get_y(XRelu_fwd *InstancePtr);
 void XRelu_fwd_Set_dim(XRelu_fwd *InstancePtr, u32 Data);
 u32 XRelu_fwd_Get_dim(XRelu_fwd *InstancePtr);
 

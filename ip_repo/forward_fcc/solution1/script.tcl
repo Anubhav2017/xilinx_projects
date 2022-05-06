@@ -7,7 +7,7 @@ open_project forward_fcc
 set_top forward_fcc
 add_files forward_fcc/fwprop.cpp
 add_files forward_fcc/fwprop.h
-add_files -tb forward_fcc/tb.cpp
+add_files -tb forward_fcc/tb.cpp -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"
 open_solution "solution1" -flow_target vivado
 set_part {xc7z020-clg400-1}
 create_clock -period 10 -name default

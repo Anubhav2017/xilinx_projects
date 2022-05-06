@@ -1,48 +1,41 @@
 INFO: Applying HLS Y2K22 patch v1.2 for IP revision
 INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2020.2/bin/unwrapped/lnx64.o/vitis_hls'
-INFO: [HLS 200-10] For user 'anubhav' on host 'anubhav-acer' (Linux_x86_64 version 5.13.0-40-generic) on Mon May 02 17:40:00 IST 2022
+INFO: [HLS 200-10] For user 'anubhav' on host 'anubhav-acer' (Linux_x86_64 version 5.13.0-40-generic) on Fri May 06 16:43:53 IST 2022
 INFO: [HLS 200-10] On os Ubuntu 20.04.4 LTS
 INFO: [HLS 200-10] In directory '/home/anubhav/xilinx_projects/ip_repo'
-Sourcing Tcl script '/home/anubhav/xilinx_projects/ip_repo/conv_bckwd/solution1/csim.tcl'
-INFO: [HLS 200-1510] Running: open_project conv_bckwd 
-INFO: [HLS 200-10] Opening project '/home/anubhav/xilinx_projects/ip_repo/conv_bckwd'.
-INFO: [HLS 200-1510] Running: set_top conv_bckwd 
-INFO: [HLS 200-1510] Running: add_files conv_bckwd/conv_bckwd.h 
-INFO: [HLS 200-10] Adding design file 'conv_bckwd/conv_bckwd.h' to the project
-INFO: [HLS 200-1510] Running: add_files conv_bckwd/main.cpp 
-INFO: [HLS 200-10] Adding design file 'conv_bckwd/main.cpp' to the project
-INFO: [HLS 200-1510] Running: add_files -tb conv_bckwd/test.cpp 
-INFO: [HLS 200-10] Adding test bench file 'conv_bckwd/test.cpp' to the project
+Sourcing Tcl script '/home/anubhav/xilinx_projects/ip_repo/fcc_combined/solution1/export.tcl'
+INFO: [HLS 200-1510] Running: open_project fcc_combined 
+INFO: [HLS 200-10] Opening project '/home/anubhav/xilinx_projects/ip_repo/fcc_combined'.
+INFO: [HLS 200-1510] Running: set_top fcc_combined 
+INFO: [HLS 200-1510] Running: add_files fcc_combined/main.cpp 
+INFO: [HLS 200-10] Adding design file 'fcc_combined/main.cpp' to the project
 INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
-INFO: [HLS 200-10] Opening solution '/home/anubhav/xilinx_projects/ip_repo/conv_bckwd/solution1'.
+INFO: [HLS 200-10] Opening solution '/home/anubhav/xilinx_projects/ip_repo/fcc_combined/solution1'.
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
 INFO: [HLS 200-1505] Using flow_target 'vivado'
 Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-1505.html
-INFO: [HLS 200-435] Setting 'open_solution -flow_target vivado' configuration: config_interface -m_axi_offset=off
 INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=0
-INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_offset=slave
 INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
 INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
-INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
 INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
-INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 -m_axi_offset slave 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 
 INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
-INFO: [HLS 200-1510] Running: set_directive_top -name conv_bckwd conv_bckwd 
-INFO: [HLS 200-1510] Running: csim_design -quiet 
-INFO: [SIM 211-2] *************** CSIM start ***************
-INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
-   Compiling ../../../test.cpp in debug mode
-   Compiling ../../../main.cpp in debug mode
-   Generating csim.exe
-0.09375 0.289063 0 
-0.390625 0.984375 0 
-0 0 0 
+INFO: [HLS 200-1510] Running: set_directive_top -name fcc_combined fcc_combined 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
 
-1.1875 0.992188 
-1.97656 1.67188 
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 
-
-INFO: [SIM 211-1] CSim done with 0 errors.
-INFO: [SIM 211-3] *************** CSIM finish ***************
-INFO: [HLS 200-111] Finished Command csim_design CPU user time: 3.43 seconds. CPU system time: 0.22 seconds. Elapsed time: 2.97 seconds; current allocated memory: 156.121 MB.
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Fri May  6 16:44:03 2022...
+INFO: [HLS 200-802] Generated output file fcc_combined/solution1/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 11.34 seconds. CPU system time: 0.76 seconds. Elapsed time: 12.7 seconds; current allocated memory: 166.116 MB.

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
-    <originFiles name="backprop.cpp" path="/home/anubhav/xilinx_projects/ip_repo/backward_fcc/backprop.cpp"/>
     <originFiles name="backprop.h" path="/home/anubhav/xilinx_projects/ip_repo/backward_fcc/backprop.h"/>
+    <originFiles name="backprop.cpp" path="/home/anubhav/xilinx_projects/ip_repo/backward_fcc/backprop.cpp"/>
   </source>
   <testbench>
     <originFiles name="test.cpp" path="/home/anubhav/xilinx_projects/ip_repo/backward_fcc/test.cpp"/>

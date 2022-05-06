@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Fri Apr 29 15:45:24 2022
-# Process ID: 76676
+# Start of session at: Thu May  5 15:11:16 2022
+# Process ID: 223165
 # Current directory: /home/anubhav/xilinx_projects/nn1/nn/nn.runs/impl_1
 # Command line: vivado -log fwd_fcc_test_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source fwd_fcc_test_wrapper.tcl -notrace
 # Log file: /home/anubhav/xilinx_projects/nn1/nn/nn.runs/impl_1/fwd_fcc_test_wrapper.vdi

@@ -132,7 +132,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_1007_p_din0</name>
+<name>grp_fu_1032_p_din0</name>
 <Object>log&lt;16, 9&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -143,7 +143,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_1007_p_din1</name>
+<name>grp_fu_1032_p_din1</name>
 <Object>log&lt;16, 9&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -154,7 +154,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_1007_p_dout0</name>
+<name>grp_fu_1032_p_dout0</name>
 <Object>log&lt;16, 9&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -165,7 +165,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_1007_p_ce</name>
+<name>grp_fu_1032_p_ce</name>
 <Object>log&lt;16, 9&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>

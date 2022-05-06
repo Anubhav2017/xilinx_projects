@@ -57,19 +57,17 @@ int main(){
 	    }
 
 	for(int i=0;i<F;i++){
-		        for(int j=0;j<C;j++){
-		            for(int k=0;k<FH;k++){
-		                for(int l=0;l<FW;l++){
-		                   cout << dw[i*C*FH*FW+j*FH*FW+k*FW+l] << " ";
-		                }
-		                cout << '\n';
-		            }
-		            cout << '\n';
+		for(int j=0;j<C;j++){
+		    for(int k=0;k<FH;k++){
+		       for(int l=0;l<FW;l++){
+		           cout << dw[i*C*FH*FW+j*FH*FW+k*FW+l] << " ";
+		       }
+		           cout << '\n';
+		    }
+		    cout << '\n';
 		        }
 		        cout << '\n';
 		    }
-
-
 
 
 }

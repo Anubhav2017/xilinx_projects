@@ -16,12 +16,12 @@
           <constraint constraint_type="bitwidth" orig_bitwidth="16" final_bitwidth="16"/>
         </hw>
         <hw hw_usage="address" hw_interface="S_AXILite" hw_name="CTRL" hw_bitwidth="16" hw_size_or_depth="0">
-          <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="28"/>
+          <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="24"/>
         </hw>
       </arg>
       <arg id="2" access_type="r" src_name="dim" src_type="int" src_isptr="0" src_bitwidth="32" src_size_or_depth="1">
         <hw hw_usage="data" hw_interface="S_AXILite" hw_name="CTRL" hw_bitwidth="32" hw_size_or_depth="1">
-          <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="40"/>
+          <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="32"/>
         </hw>
       </arg>
     </args>

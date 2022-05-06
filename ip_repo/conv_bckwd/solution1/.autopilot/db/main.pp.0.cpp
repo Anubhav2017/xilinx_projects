@@ -5607,9 +5607,9 @@ __attribute__((sdx_kernel("conv_bckwd", 0))) void conv_bckwd(fixed_t* x, fixed_t
 #pragma HLS INTERFACE s_axilite port=FW bundle=CTRL
 
 
- fixed_t xbuf[10][100][100];
- fixed_t wbuf[10][10][5][5];
-    fixed_t dybuf[10][100][100];
+ fixed_t xbuf[5][100][100];
+ fixed_t wbuf[5][5][5][5];
+    fixed_t dybuf[5][100][100];
 
     VITIS_LOOP_33_1: for(int i=0;i<C;i++){
         VITIS_LOOP_34_2: for(int j=0;j<H;j++){
@@ -5651,9 +5651,9 @@ __attribute__((sdx_kernel("conv_bckwd", 0))) void conv_bckwd(fixed_t* x, fixed_t
 
 
 
-    fixed_t dxbuf[10][100][100];
-    fixed_t dwbuf[10][10][5][5];
-    fixed_t dbbuf[10];
+    fixed_t dxbuf[5][100][100];
+    fixed_t dwbuf[5][5][5][5];
+    fixed_t dbbuf[5];
 
 
     VITIS_LOOP_78_11: for(int i=0;i<F;i++){
@@ -5688,7 +5688,7 @@ __attribute__((sdx_kernel("conv_bckwd", 0))) void conv_bckwd(fixed_t* x, fixed_t
                     VITIS_LOOP_107_23: for(int fh=0;fh<FH;fh++){
                         VITIS_LOOP_108_24: for(int fw=0;fw<FW;fw++){
                             dwbuf[f][c][fh][fw] += dybuf[f][h][w]*xbuf[c][h+fh][w+fw];
-                            dxbuf[c][h+fh][w+fw] += dybuf[f][h][w]*wbuf[f][c][h+fh][w+fw];
+                            dxbuf[c][h+fh][w+fw] += dybuf[f][h][w]*wbuf[f][c][fh][fw];
                         }
                     }
                 }

@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-| Date         : Fri Apr 29 15:45:11 2022
+| Date         : Thu May  5 15:11:05 2022
 | Host         : anubhav-acer running 64-bit Ubuntu 20.04.4 LTS
 | Command      : report_utilization -file fwd_fcc_test_wrapper_utilization_synth.rpt -pb fwd_fcc_test_wrapper_utilization_synth.pb
 | Design       : fwd_fcc_test_wrapper
@@ -175,12 +175,19 @@ Table of Contents
 +-------------------------------------+------+
 |               Ref Name              | Used |
 +-------------------------------------+------+
-| fwd_fcc_test_rst_ps7_0_100M_0       |    1 |
+| fwd_fcc_test_xbar_3                 |    1 |
+| fwd_fcc_test_xbar_2                 |    1 |
+| fwd_fcc_test_rst_ps7_0_100M_3       |    1 |
 | fwd_fcc_test_processing_system7_0_0 |    1 |
-| fwd_fcc_test_forward_fcc_0_0        |    1 |
-| fwd_fcc_test_axi_smc_0              |    1 |
-| fwd_fcc_test_axi_bram_ctrl_0_bram_0 |    1 |
-| fwd_fcc_test_axi_bram_ctrl_0_0      |    1 |
+| fwd_fcc_test_forward_fcc_0_1        |    1 |
+| fwd_fcc_test_conv_fwd_0_0           |    1 |
+| fwd_fcc_test_conv_bckwd_0_0         |    1 |
+| fwd_fcc_test_backward_fcc_0_0       |    1 |
+| fwd_fcc_test_auto_us_3              |    1 |
+| fwd_fcc_test_auto_us_2              |    1 |
+| fwd_fcc_test_auto_us_1              |    1 |
+| fwd_fcc_test_auto_us_0              |    1 |
+| fwd_fcc_test_auto_pc_1              |    1 |
 | fwd_fcc_test_auto_pc_0              |    1 |
 +-------------------------------------+------+
 

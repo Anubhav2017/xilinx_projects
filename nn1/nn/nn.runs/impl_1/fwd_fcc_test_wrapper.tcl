@@ -136,7 +136,7 @@ OPTRACE "set parameters" START { }
   update_ip_catalog
   set_property ip_output_repo /home/anubhav/xilinx_projects/nn1/nn/nn.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
+  set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
   add_files -quiet /home/anubhav/xilinx_projects/nn1/nn/nn.runs/synth_1/fwd_fcc_test_wrapper.dcp

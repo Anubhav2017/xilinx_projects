@@ -3634,12 +3634,12 @@ _ZN9ap_ufixedILi36ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi35ELi2ELb0ELS0_5ELS1_
 </and_exp></or_exp>
 </condition>
 
-<Node id="188" bw="64" op_0_bw="6">
+<Node id="188" bw="32" op_0_bw="6">
 <![CDATA[
-_ZN9ap_ufixedILi36ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi35ELi2ELb0ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit:1 %zext_ln534 = zext i6 %index0_V
+_ZN9ap_ufixedILi36ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi35ELi2ELb0ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit:1 %zext_ln756 = zext i6 %index0_V
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln534"/></StgValue>
+<StgValue><ssdm name="zext_ln756"/></StgValue>
 </operation>
 
 <operation id="170" st_id="2" stage="1" lat="1">
@@ -3650,9 +3650,9 @@ _ZN9ap_ufixedILi36ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi35ELi2ELb0ELS0_5ELS1_
 </and_exp></or_exp>
 </condition>
 
-<Node id="189" bw="6" op_0_bw="6" op_1_bw="64" op_2_bw="64">
+<Node id="189" bw="6" op_0_bw="6" op_1_bw="32" op_2_bw="32">
 <![CDATA[
-_ZN9ap_ufixedILi36ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi35ELi2ELb0ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit:2 %log_apfixed_reduce_log_inverse_lut_table_array_V_addr = getelementptr i6 %log_apfixed_reduce_log_inverse_lut_table_array_V, i64 0, i64 %zext_ln534
+_ZN9ap_ufixedILi36ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi35ELi2ELb0ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit:2 %log_apfixed_reduce_log_inverse_lut_table_array_V_addr = getelementptr i6 %log_apfixed_reduce_log_inverse_lut_table_array_V, i32 0, i32 %zext_ln756
 
 ]]></Node>
 <StgValue><ssdm name="log_apfixed_reduce_log_inverse_lut_table_array_V_addr"/></StgValue>
@@ -3682,9 +3682,9 @@ _ZN9ap_ufixedILi36ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi35ELi2ELb0ELS0_5ELS1_
 </and_exp></or_exp>
 </condition>
 
-<Node id="191" bw="6" op_0_bw="22" op_1_bw="64" op_2_bw="64">
+<Node id="191" bw="6" op_0_bw="22" op_1_bw="32" op_2_bw="32">
 <![CDATA[
-_ZN9ap_ufixedILi36ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi35ELi2ELb0ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit:4 %log_apfixed_reduce_log0_lut_table_ap_fixed_29_7_ap_q_mode_5_ap_o_mode_3_0_0_5_64_array_V_addr = getelementptr i22 %log_apfixed_reduce_log0_lut_table_ap_fixed_29_7_ap_q_mode_5_ap_o_mode_3_0_0_5_64_array_V, i64 0, i64 %zext_ln534
+_ZN9ap_ufixedILi36ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi35ELi2ELb0ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit:4 %log_apfixed_reduce_log0_lut_table_ap_fixed_29_7_ap_q_mode_5_ap_o_mode_3_0_0_5_64_array_V_addr = getelementptr i22 %log_apfixed_reduce_log0_lut_table_ap_fixed_29_7_ap_q_mode_5_ap_o_mode_3_0_0_5_64_array_V, i32 0, i32 %zext_ln756
 
 ]]></Node>
 <StgValue><ssdm name="log_apfixed_reduce_log0_lut_table_ap_fixed_29_7_ap_q_mode_5_ap_o_mode_3_0_0_5_64_array_V_addr"/></StgValue>
@@ -4046,12 +4046,12 @@ _ZN9ap_ufixedILi36ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi35ELi2ELb0ELS0_5ELS1_
 </and_exp></or_exp>
 </condition>
 
-<Node id="212" bw="64" op_0_bw="4">
+<Node id="212" bw="32" op_0_bw="4">
 <![CDATA[
-_ZN9ap_ufixedILi36ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi35ELi2ELb0ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit:25 %zext_ln534_1 = zext i4 %a
+_ZN9ap_ufixedILi36ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi35ELi2ELb0ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit:25 %zext_ln186 = zext i4 %a
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln534_1"/></StgValue>
+<StgValue><ssdm name="zext_ln186"/></StgValue>
 </operation>
 
 <operation id="195" st_id="6" stage="1" lat="1">
@@ -4062,9 +4062,9 @@ _ZN9ap_ufixedILi36ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi35ELi2ELb0ELS0_5ELS1_
 </and_exp></or_exp>
 </condition>
 
-<Node id="213" bw="4" op_0_bw="18" op_1_bw="64" op_2_bw="64">
+<Node id="213" bw="4" op_0_bw="18" op_1_bw="32" op_2_bw="32">
 <![CDATA[
-_ZN9ap_ufixedILi36ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi35ELi2ELb0ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit:26 %log_apfixed_reduce_log_lut_table_ap_fixed_29_7_ap_q_mode_5_ap_o_mode_3_0_4_4_16_array_V_addr = getelementptr i18 %log_apfixed_reduce_log_lut_table_ap_fixed_29_7_ap_q_mode_5_ap_o_mode_3_0_4_4_16_array_V, i64 0, i64 %zext_ln534_1
+_ZN9ap_ufixedILi36ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi35ELi2ELb0ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit:26 %log_apfixed_reduce_log_lut_table_ap_fixed_29_7_ap_q_mode_5_ap_o_mode_3_0_4_4_16_array_V_addr = getelementptr i18 %log_apfixed_reduce_log_lut_table_ap_fixed_29_7_ap_q_mode_5_ap_o_mode_3_0_4_4_16_array_V, i32 0, i32 %zext_ln186
 
 ]]></Node>
 <StgValue><ssdm name="log_apfixed_reduce_log_lut_table_ap_fixed_29_7_ap_q_mode_5_ap_o_mode_3_0_4_4_16_array_V_addr"/></StgValue>
@@ -4444,10 +4444,10 @@ _ZN9ap_ufixedILi36ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi35ELi2ELb0ELS0_5ELS1_
 
 <Node id="225" bw="16" op_0_bw="16" op_1_bw="26" op_2_bw="32" op_3_bw="32">
 <![CDATA[
-_ZN9ap_ufixedILi36ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi35ELi2ELb0ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit:38 %trunc_ln2 = partselect i16 @_ssdm_op_PartSelect.i16.i26.i32.i32, i26 %ret_V_2, i32 10, i32 25
+_ZN9ap_ufixedILi36ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi35ELi2ELb0ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit:38 %trunc_ln5 = partselect i16 @_ssdm_op_PartSelect.i16.i26.i32.i32, i26 %ret_V_2, i32 10, i32 25
 
 ]]></Node>
-<StgValue><ssdm name="trunc_ln2"/></StgValue>
+<StgValue><ssdm name="trunc_ln5"/></StgValue>
 </operation>
 
 <operation id="219" st_id="10" stage="1" lat="1">
@@ -4460,7 +4460,7 @@ _ZN9ap_ufixedILi36ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi35ELi2ELb0ELS0_5ELS1_
 
 <Node id="226" bw="29" op_0_bw="16">
 <![CDATA[
-_ZN9ap_ufixedILi36ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi35ELi2ELb0ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit:39 %sext_ln708 = sext i16 %trunc_ln2
+_ZN9ap_ufixedILi36ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi35ELi2ELb0ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit:39 %sext_ln708 = sext i16 %trunc_ln5
 
 ]]></Node>
 <StgValue><ssdm name="sext_ln708"/></StgValue>

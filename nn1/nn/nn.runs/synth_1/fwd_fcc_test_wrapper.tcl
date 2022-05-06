@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 3
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z020clg400-1
 
@@ -79,7 +80,7 @@ set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
 set_property webtalk.parent_dir /home/anubhav/xilinx_projects/nn1/nn/nn.cache/wt [current_project]
 set_property parent.project_path /home/anubhav/xilinx_projects/nn1/nn/nn.xpr [current_project]
-set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
+set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part tul.com.tw:pynq-z2:part0:1.0 [current_project]
@@ -91,34 +92,30 @@ OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib /home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/hdl/fwd_fcc_test_wrapper.v
 add_files /home/anubhav/xilinx_projects/nn1/nn/nn.srcs/sources_1/bd/fwd_fcc_test/fwd_fcc_test.bd
-set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_axi_bram_ctrl_0_0/fwd_fcc_test_axi_bram_ctrl_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_axi_bram_ctrl_0_bram_0/fwd_fcc_test_axi_bram_ctrl_0_bram_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_axi_smc_0/bd_0/ip/ip_1/bd_2794_psr_aclk_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_axi_smc_0/bd_0/ip/ip_1/bd_2794_psr_aclk_0.xdc]
-set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_axi_smc_0/bd_0/ip/ip_2/bd_2794_arsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_axi_smc_0/bd_0/ip/ip_3/bd_2794_rsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_axi_smc_0/bd_0/ip/ip_4/bd_2794_awsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_axi_smc_0/bd_0/ip/ip_5/bd_2794_wsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_axi_smc_0/bd_0/ip/ip_6/bd_2794_bsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_axi_smc_0/bd_0/ip/ip_10/bd_2794_s00a2s_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_axi_smc_0/bd_0/ip/ip_11/bd_2794_sarn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_axi_smc_0/bd_0/ip/ip_12/bd_2794_srn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_axi_smc_0/bd_0/ip/ip_13/bd_2794_sawn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_axi_smc_0/bd_0/ip/ip_14/bd_2794_swn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_axi_smc_0/bd_0/ip/ip_15/bd_2794_sbn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_axi_smc_0/bd_0/ip/ip_16/bd_2794_m00s2a_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_axi_smc_0/bd_0/ip/ip_17/bd_2794_m00arn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_axi_smc_0/bd_0/ip/ip_18/bd_2794_m00rn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_axi_smc_0/bd_0/ip/ip_19/bd_2794_m00awn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_axi_smc_0/bd_0/ip/ip_20/bd_2794_m00wn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_axi_smc_0/bd_0/ip/ip_21/bd_2794_m00bn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_axi_smc_0/ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_forward_fcc_0_0/constraints/forward_fcc_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_processing_system7_0_0/fwd_fcc_test_processing_system7_0_0.xdc]
-set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_rst_ps7_0_100M_0/fwd_fcc_test_rst_ps7_0_100M_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_rst_ps7_0_100M_0/fwd_fcc_test_rst_ps7_0_100M_0.xdc]
-set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_rst_ps7_0_100M_0/fwd_fcc_test_rst_ps7_0_100M_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_forward_fcc_0_1/constraints/forward_fcc_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_backward_fcc_0_0/constraints/backward_fcc_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_conv_fwd_0_0/constraints/conv_fwd_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_conv_bckwd_0_0/constraints/conv_bckwd_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_xbar_2/fwd_fcc_test_xbar_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_rst_ps7_0_100M_3/fwd_fcc_test_rst_ps7_0_100M_3_board.xdc]
+set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_rst_ps7_0_100M_3/fwd_fcc_test_rst_ps7_0_100M_3.xdc]
+set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_rst_ps7_0_100M_3/fwd_fcc_test_rst_ps7_0_100M_3_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_xbar_3/fwd_fcc_test_xbar_3_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_auto_pc_0/fwd_fcc_test_auto_pc_0_ooc.xdc]
+set_property used_in_synthesis false [get_files -all /home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_auto_us_0/fwd_fcc_test_auto_us_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_auto_us_0/fwd_fcc_test_auto_us_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_auto_us_0/fwd_fcc_test_auto_us_0_ooc.xdc]
+set_property used_in_synthesis false [get_files -all /home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_auto_us_1/fwd_fcc_test_auto_us_1_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_auto_us_1/fwd_fcc_test_auto_us_1_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_auto_us_1/fwd_fcc_test_auto_us_1_ooc.xdc]
+set_property used_in_synthesis false [get_files -all /home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_auto_us_2/fwd_fcc_test_auto_us_2_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_auto_us_2/fwd_fcc_test_auto_us_2_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_auto_us_2/fwd_fcc_test_auto_us_2_ooc.xdc]
+set_property used_in_synthesis false [get_files -all /home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_auto_us_3/fwd_fcc_test_auto_us_3_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_auto_us_3/fwd_fcc_test_auto_us_3_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_auto_us_3/fwd_fcc_test_auto_us_3_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/ip/fwd_fcc_test_auto_pc_1/fwd_fcc_test_auto_pc_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/nn1/nn/nn.gen/sources_1/bd/fwd_fcc_test/fwd_fcc_test_ooc.xdc]
 
 OPTRACE "Adding files" END { }

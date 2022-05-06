@@ -88,10 +88,10 @@ void XLoss_derivative_EnableAutoRestart(XLoss_derivative *InstancePtr);
 void XLoss_derivative_DisableAutoRestart(XLoss_derivative *InstancePtr);
 u32 XLoss_derivative_Get_return(XLoss_derivative *InstancePtr);
 
-void XLoss_derivative_Set_x(XLoss_derivative *InstancePtr, u64 Data);
-u64 XLoss_derivative_Get_x(XLoss_derivative *InstancePtr);
-void XLoss_derivative_Set_dx(XLoss_derivative *InstancePtr, u64 Data);
-u64 XLoss_derivative_Get_dx(XLoss_derivative *InstancePtr);
+void XLoss_derivative_Set_x(XLoss_derivative *InstancePtr, u32 Data);
+u32 XLoss_derivative_Get_x(XLoss_derivative *InstancePtr);
+void XLoss_derivative_Set_dx(XLoss_derivative *InstancePtr, u32 Data);
+u32 XLoss_derivative_Get_dx(XLoss_derivative *InstancePtr);
 void XLoss_derivative_Set_y(XLoss_derivative *InstancePtr, u32 Data);
 u32 XLoss_derivative_Get_y(XLoss_derivative *InstancePtr);
 void XLoss_derivative_Set_x_size(XLoss_derivative *InstancePtr, u32 Data);

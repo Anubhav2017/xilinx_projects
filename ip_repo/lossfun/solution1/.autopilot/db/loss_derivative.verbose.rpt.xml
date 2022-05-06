@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'loss_derivative'" level="0">
-<item name = "Date">Mon May  2 12:15:43 2022
+<item name = "Date">Tue May  3 12:52:37 2022
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)</item>
 <item name = "Project">lossfun</item>
@@ -31,19 +31,19 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_log_16_9_s_fu_421">log_16_9_s, 10, 10, 0.100 us, 0.100 us, 1, 1, yes</column>
-<column name="grp_exp_16_9_s_fu_432">exp_16_9_s, 5, 5, 50.000 ns, 50.000 ns, 1, 1, yes</column>
+<column name="grp_log_16_9_s_fu_422">log_16_9_s, 10, 10, 0.100 us, 0.100 us, 1, 1, yes</column>
+<column name="grp_exp_16_9_s_fu_433">exp_16_9_s, 5, 5, 50.000 ns, 50.000 ns, 1, 1, yes</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
 <column name="- Loop 1">2, ?, 3, 1, 1, 1 ~ ?, yes</column>
 <column name="- VITIS_LOOP_26_1">?, ?, 2, 1, 1, ?, yes</column>
-<column name="- VITIS_LOOP_32_2">2, 128, 3, 1, 1, 1 ~ 127, yes</column>
-<column name="- VITIS_LOOP_38_3">8, 134, 9, 1, 1, 1 ~ 127, yes</column>
-<column name="- VITIS_LOOP_42_4">35, 161, 36, 1, 1, 1 ~ 127, yes</column>
-<column name="- VITIS_LOOP_48_5">0, 150, 25, 1, 1, 0 ~ 127, yes</column>
-<column name="- Loop 7">2, 128, 3, 1, 1, 1 ~ 127, yes</column>
+<column name="- VITIS_LOOP_32_2">2, ?, 3, 1, 1, 1 ~ ?, yes</column>
+<column name="- VITIS_LOOP_38_3">8, ?, 9, 1, 1, 1 ~ ?, yes</column>
+<column name="- VITIS_LOOP_42_4">35, ?, 36, 1, 1, 1 ~ ?, yes</column>
+<column name="- VITIS_LOOP_48_5">?, ?, 25, 1, 1, ?, yes</column>
+<column name="- Loop 7">2, ?, 3, 1, 1, 1 ~ ?, yes</column>
 </table>
 </item>
 </section>
@@ -56,12 +56,12 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="DSP">-, -, -, -, -</column>
-<column name="Expression">-, -, 0, 465, -</column>
+<column name="Expression">-, -, 0, 696, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">3, 4, 8185, 7191, -</column>
+<column name="Instance">3, 4, 8121, 7063, -</column>
 <column name="Memory">4, -, 0, 0, -</column>
-<column name="Multiplexer">-, -, -, 593, -</column>
-<column name="Register">-, -, 1054, 160, -</column>
+<column name="Multiplexer">-, -, -, 584, -</column>
+<column name="Register">-, -, 1262, 160, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
 <specialColumn name="Utilization (%)">2, 1, 8, 15, 0</specialColumn>
 </table>
@@ -70,10 +70,10 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="CTRL_s_axi_U">CTRL_s_axi, 0, 0, 306, 520, 0</column>
-<column name="grp_exp_16_9_s_fu_432">exp_16_9_s, 0, 2, 526, 441, 0</column>
+<column name="CTRL_s_axi_U">CTRL_s_axi, 0, 0, 242, 392, 0</column>
+<column name="grp_exp_16_9_s_fu_433">exp_16_9_s, 0, 2, 526, 441, 0</column>
 <column name="gmem_m_axi_U">gmem_m_axi, 2, 0, 537, 677, 0</column>
-<column name="grp_log_16_9_s_fu_421">log_16_9_s, 1, 2, 799, 997, 0</column>
+<column name="grp_log_16_9_s_fu_422">log_16_9_s, 1, 2, 799, 997, 0</column>
 <column name="mul_29s_6ns_29_2_1_U24">mul_29s_6ns_29_2_1, 0, 0, 95, 46, 0</column>
 <column name="sdiv_17s_32ns_16_21_1_U22">sdiv_17s_32ns_16_21_1, 0, 0, 2283, 1738, 0</column>
 <column name="sdiv_18s_32ns_16_22_1_U23">sdiv_18s_32ns_16_22_1, 0, 0, 2283, 1738, 0</column>
@@ -98,35 +98,36 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln1148_fu_691_p2">+, 0, 0, 24, 17, 9</column>
-<column name="add_ln26_fu_519_p2">+, 0, 0, 39, 32, 1</column>
-<column name="add_ln32_fu_549_p2">+, 0, 0, 14, 7, 1</column>
-<column name="add_ln38_fu_575_p2">+, 0, 0, 14, 7, 1</column>
-<column name="add_ln42_fu_605_p2">+, 0, 0, 14, 7, 1</column>
-<column name="add_ln48_fu_653_p2">+, 0, 0, 14, 7, 1</column>
-<column name="empty_42_fu_483_p2">+, 0, 0, 14, 7, 1</column>
-<column name="empty_49_fu_734_p2">+, 0, 0, 14, 7, 1</column>
-<column name="sum_V_1_fu_595_p2">+, 0, 0, 23, 16, 16</column>
-<column name="loss_V_fu_647_p2">-, 0, 0, 23, 1, 16</column>
-<column name="sub_ln703_fu_569_p2">-, 0, 0, 23, 16, 16</column>
+<column name="add_ln1148_fu_705_p2">+, 0, 0, 24, 17, 9</column>
+<column name="add_ln26_fu_522_p2">+, 0, 0, 39, 32, 1</column>
+<column name="add_ln32_fu_556_p2">+, 0, 0, 38, 31, 1</column>
+<column name="add_ln38_fu_586_p2">+, 0, 0, 38, 31, 1</column>
+<column name="add_ln42_fu_620_p2">+, 0, 0, 38, 31, 1</column>
+<column name="add_ln48_fu_667_p2">+, 0, 0, 39, 32, 1</column>
+<column name="empty_42_fu_487_p2">+, 0, 0, 70, 63, 1</column>
+<column name="empty_50_fu_748_p2">+, 0, 0, 70, 63, 1</column>
+<column name="sum_V_1_fu_610_p2">+, 0, 0, 23, 16, 16</column>
+<column name="loss_V_fu_661_p2">-, 0, 0, 23, 1, 16</column>
+<column name="sub_ln703_fu_580_p2">-, 0, 0, 23, 16, 16</column>
 <column name="ap_block_pp0_stage0_11001">and, 0, 0, 2, 1, 1</column>
 <column name="ap_block_pp6_stage0_11001">and, 0, 0, 2, 1, 1</column>
 <column name="ap_block_state10_pp0_stage0_iter1">and, 0, 0, 2, 1, 1</column>
 <column name="ap_block_state112_io">and, 0, 0, 2, 1, 1</column>
 <column name="ap_block_state115_io">and, 0, 0, 2, 1, 1</column>
 <column name="ap_block_state120">and, 0, 0, 2, 1, 1</column>
-<column name="exitcond2_fu_744_p2">icmp, 0, 0, 18, 32, 32</column>
-<column name="exitcond4729_fu_493_p2">icmp, 0, 0, 18, 32, 32</column>
-<column name="icmp_ln1494_fu_530_p2">icmp, 0, 0, 13, 16, 16</column>
-<column name="icmp_ln20_fu_466_p2">icmp, 0, 0, 18, 32, 1</column>
-<column name="icmp_ln26_fu_514_p2">icmp, 0, 0, 18, 32, 32</column>
-<column name="icmp_ln32_1_fu_559_p2">icmp, 0, 0, 18, 32, 32</column>
-<column name="icmp_ln32_fu_544_p2">icmp, 0, 0, 18, 32, 1</column>
-<column name="icmp_ln38_fu_585_p2">icmp, 0, 0, 18, 32, 32</column>
-<column name="icmp_ln42_fu_615_p2">icmp, 0, 0, 18, 32, 32</column>
-<column name="icmp_ln48_fu_663_p2">icmp, 0, 0, 18, 32, 32</column>
-<column name="icmp_ln49_fu_673_p2">icmp, 0, 0, 18, 32, 32</column>
-<column name="max_V_2_fu_536_p3">select, 0, 0, 16, 1, 16</column>
+<column name="ap_block_state2_io">and, 0, 0, 2, 1, 1</column>
+<column name="exitcond2_fu_754_p2">icmp, 0, 0, 28, 63, 63</column>
+<column name="exitcond4729_fu_493_p2">icmp, 0, 0, 28, 63, 63</column>
+<column name="icmp_ln1494_fu_537_p2">icmp, 0, 0, 13, 16, 16</column>
+<column name="icmp_ln20_fu_467_p2">icmp, 0, 0, 18, 32, 1</column>
+<column name="icmp_ln26_fu_517_p2">icmp, 0, 0, 18, 32, 32</column>
+<column name="icmp_ln32_1_fu_566_p2">icmp, 0, 0, 18, 32, 32</column>
+<column name="icmp_ln32_fu_551_p2">icmp, 0, 0, 18, 32, 1</column>
+<column name="icmp_ln38_fu_596_p2">icmp, 0, 0, 18, 32, 32</column>
+<column name="icmp_ln42_fu_630_p2">icmp, 0, 0, 18, 32, 32</column>
+<column name="icmp_ln48_fu_673_p2">icmp, 0, 0, 18, 32, 32</column>
+<column name="icmp_ln49_fu_678_p2">icmp, 0, 0, 18, 32, 32</column>
+<column name="max_V_2_fu_543_p3">select, 0, 0, 16, 1, 16</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
 <column name="ap_enable_pp1">xor, 0, 0, 2, 1, 2</column>
 <column name="ap_enable_pp2">xor, 0, 0, 2, 1, 2</column>
@@ -159,34 +160,33 @@
 <column name="ap_enable_reg_pp5_iter24">9, 2, 1, 2</column>
 <column name="ap_enable_reg_pp6_iter1">9, 2, 1, 2</column>
 <column name="ap_enable_reg_pp6_iter2">9, 2, 1, 2</column>
-<column name="ap_phi_mux_loop_index451_phi_fu_325_p4">9, 2, 7, 14</column>
 <column name="dxbuff_V_address0">20, 4, 7, 28</column>
 <column name="dxbuff_V_d0">14, 3, 16, 48</column>
-<column name="gmem_ARADDR">14, 3, 64, 192</column>
+<column name="gmem_ARADDR">14, 3, 32, 96</column>
 <column name="gmem_ARLEN">14, 3, 32, 96</column>
 <column name="gmem_blk_n_AR">9, 2, 1, 2</column>
 <column name="gmem_blk_n_AW">9, 2, 1, 2</column>
 <column name="gmem_blk_n_B">9, 2, 1, 2</column>
 <column name="gmem_blk_n_R">9, 2, 1, 2</column>
 <column name="gmem_blk_n_W">9, 2, 1, 2</column>
-<column name="grp_fu_1007_ce">9, 2, 1, 2</column>
-<column name="i_1_reg_354">9, 2, 7, 14</column>
-<column name="i_2_reg_365">9, 2, 7, 14</column>
-<column name="i_3_reg_388">9, 2, 7, 14</column>
-<column name="i_4_reg_399">9, 2, 7, 14</column>
-<column name="i_reg_333">9, 2, 32, 64</column>
+<column name="grp_fu_1032_ce">9, 2, 1, 2</column>
+<column name="i_1_reg_355">9, 2, 31, 62</column>
+<column name="i_2_reg_366">9, 2, 31, 62</column>
+<column name="i_3_reg_389">9, 2, 31, 62</column>
+<column name="i_4_reg_400">9, 2, 32, 64</column>
+<column name="i_reg_334">9, 2, 32, 64</column>
 <column name="log_probs_V_address0">20, 4, 7, 28</column>
-<column name="loop_index451_reg_321">9, 2, 7, 14</column>
-<column name="loop_index_reg_410">9, 2, 7, 14</column>
-<column name="max_V_1_reg_344">9, 2, 16, 32</column>
+<column name="loop_index451_reg_323">9, 2, 63, 126</column>
+<column name="loop_index_reg_411">9, 2, 63, 126</column>
+<column name="max_V_1_reg_345">9, 2, 16, 32</column>
 <column name="probs_V_address0">20, 4, 7, 28</column>
-<column name="sum_V_reg_376">9, 2, 16, 32</column>
+<column name="sum_V_reg_377">9, 2, 16, 32</column>
 <column name="xbuff_V_address0">20, 4, 7, 28</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="N_read_reg_754">32, 0, 32, 0</column>
+<column name="N_read_reg_768">32, 0, 32, 0</column>
 <column name="ap_CS_fsm">46, 0, 46, 0</column>
 <column name="ap_enable_reg_pp0_iter0">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
@@ -269,57 +269,58 @@
 <column name="ap_enable_reg_pp6_iter0">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp6_iter1">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp6_iter2">1, 0, 1, 0</column>
-<column name="dx_read_reg_780">64, 0, 64, 0</column>
-<column name="dxbuff_V_addr_reg_930">7, 0, 7, 0</column>
-<column name="dxbuff_V_load_reg_1002">16, 0, 16, 0</column>
-<column name="empty_42_reg_800">7, 0, 7, 0</column>
-<column name="exitcond2_reg_993">1, 0, 1, 0</column>
-<column name="exitcond2_reg_993_pp6_iter1_reg">1, 0, 1, 0</column>
-<column name="exitcond4729_reg_805">1, 0, 1, 0</column>
-<column name="exitcond4729_reg_805_pp0_iter1_reg">1, 0, 1, 0</column>
-<column name="gmem_addr_read_reg_809">16, 0, 16, 0</column>
-<column name="grp_exp_16_9_s_fu_432_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_log_16_9_s_fu_421_ap_start_reg">1, 0, 1, 0</column>
-<column name="i_1_cast5_reg_857">7, 0, 64, 57</column>
-<column name="i_1_cast5_reg_857_pp2_iter1_reg">7, 0, 64, 57</column>
-<column name="i_1_reg_354">7, 0, 7, 0</column>
-<column name="i_2_reg_365">7, 0, 7, 0</column>
-<column name="i_3_cast7_reg_905">7, 0, 64, 57</column>
-<column name="i_3_reg_388">7, 0, 7, 0</column>
-<column name="i_4_cast_reg_948">7, 0, 64, 57</column>
-<column name="i_4_reg_399">7, 0, 7, 0</column>
-<column name="i_reg_333">32, 0, 32, 0</column>
-<column name="icmp_ln20_reg_790">1, 0, 1, 0</column>
-<column name="icmp_ln26_reg_825">1, 0, 1, 0</column>
-<column name="icmp_ln32_1_reg_853">1, 0, 1, 0</column>
-<column name="icmp_ln32_1_reg_853_pp2_iter1_reg">1, 0, 1, 0</column>
-<column name="icmp_ln38_reg_877">1, 0, 1, 0</column>
-<column name="icmp_ln42_reg_901">1, 0, 1, 0</column>
-<column name="icmp_ln49_reg_953">1, 0, 1, 0</column>
-<column name="loop_index451_reg_321">7, 0, 7, 0</column>
-<column name="loop_index451_reg_321_pp0_iter1_reg">7, 0, 7, 0</column>
-<column name="loop_index_reg_410">7, 0, 7, 0</column>
-<column name="loss_V_reg_935">16, 0, 16, 0</column>
-<column name="max_V_1_reg_344">16, 0, 16, 0</column>
-<column name="max_V_reg_820">16, 0, 16, 0</column>
-<column name="reg_452">16, 0, 16, 0</column>
-<column name="reg_457">16, 0, 16, 0</column>
-<column name="reg_461">16, 0, 16, 0</column>
-<column name="sdiv_ln1148_1_reg_977">16, 0, 16, 0</column>
-<column name="sdiv_ln1148_2_reg_972">16, 0, 16, 0</column>
-<column name="sdiv_ln1148_2_reg_972_pp5_iter23_reg">16, 0, 16, 0</column>
-<column name="sdiv_ln1148_reg_920">16, 0, 16, 0</column>
-<column name="sub_ln703_reg_867">16, 0, 16, 0</column>
-<column name="sum_V_cast_reg_891">23, 0, 23, 0</column>
-<column name="sum_V_reg_376">16, 0, 16, 0</column>
-<column name="x_read_reg_785">64, 0, 64, 0</column>
-<column name="x_size_read_reg_760">32, 0, 32, 0</column>
-<column name="y_read_reg_774">32, 0, 32, 0</column>
-<column name="i_3_cast7_reg_905">64, 32, 64, 57</column>
-<column name="i_4_cast_reg_948">64, 32, 64, 57</column>
-<column name="icmp_ln38_reg_877">64, 32, 1, 0</column>
-<column name="icmp_ln42_reg_901">64, 32, 1, 0</column>
-<column name="icmp_ln49_reg_953">64, 32, 1, 0</column>
+<column name="dx_read_reg_794">32, 0, 32, 0</column>
+<column name="dxbuff_V_addr_reg_959">7, 0, 7, 0</column>
+<column name="dxbuff_V_load_reg_1027">16, 0, 16, 0</column>
+<column name="empty_44_reg_829">7, 0, 7, 0</column>
+<column name="empty_44_reg_829_pp0_iter1_reg">7, 0, 7, 0</column>
+<column name="exitcond2_reg_1018">1, 0, 1, 0</column>
+<column name="exitcond2_reg_1018_pp6_iter1_reg">1, 0, 1, 0</column>
+<column name="exitcond4729_reg_825">1, 0, 1, 0</column>
+<column name="exitcond4729_reg_825_pp0_iter1_reg">1, 0, 1, 0</column>
+<column name="gmem_addr_read_reg_834">16, 0, 16, 0</column>
+<column name="grp_exp_16_9_s_fu_433_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_log_16_9_s_fu_422_ap_start_reg">1, 0, 1, 0</column>
+<column name="i_1_reg_355">31, 0, 31, 0</column>
+<column name="i_2_reg_366">31, 0, 31, 0</column>
+<column name="i_3_reg_389">31, 0, 31, 0</column>
+<column name="i_4_cast_cast_reg_977">7, 0, 32, 25</column>
+<column name="i_4_reg_400">32, 0, 32, 0</column>
+<column name="i_reg_334">32, 0, 32, 0</column>
+<column name="icmp_ln20_reg_804">1, 0, 1, 0</column>
+<column name="icmp_ln26_reg_850">1, 0, 1, 0</column>
+<column name="icmp_ln32_1_reg_878">1, 0, 1, 0</column>
+<column name="icmp_ln32_1_reg_878_pp2_iter1_reg">1, 0, 1, 0</column>
+<column name="icmp_ln38_reg_902">1, 0, 1, 0</column>
+<column name="icmp_ln42_reg_926">1, 0, 1, 0</column>
+<column name="icmp_ln49_reg_973">1, 0, 1, 0</column>
+<column name="loop_index451_reg_323">63, 0, 63, 0</column>
+<column name="loop_index_reg_411">63, 0, 63, 0</column>
+<column name="loss_V_reg_955">16, 0, 16, 0</column>
+<column name="max_V_1_reg_345">16, 0, 16, 0</column>
+<column name="max_V_reg_845">16, 0, 16, 0</column>
+<column name="reg_453">16, 0, 16, 0</column>
+<column name="reg_458">16, 0, 16, 0</column>
+<column name="reg_462">16, 0, 16, 0</column>
+<column name="sdiv_ln1148_1_reg_1002">16, 0, 16, 0</column>
+<column name="sdiv_ln1148_2_reg_997">16, 0, 16, 0</column>
+<column name="sdiv_ln1148_2_reg_997_pp5_iter23_reg">16, 0, 16, 0</column>
+<column name="sdiv_ln1148_reg_945">16, 0, 16, 0</column>
+<column name="sext_ln20_reg_808">63, 0, 63, 0</column>
+<column name="sub_ln703_reg_892">16, 0, 16, 0</column>
+<column name="sum_V_cast_reg_916">23, 0, 23, 0</column>
+<column name="sum_V_reg_377">16, 0, 16, 0</column>
+<column name="x_read_reg_799">32, 0, 32, 0</column>
+<column name="x_size_read_reg_774">32, 0, 32, 0</column>
+<column name="y_read_reg_787">32, 0, 32, 0</column>
+<column name="zext_ln43_reg_930">7, 0, 32, 25</column>
+<column name="zext_ln703_reg_882">7, 0, 32, 25</column>
+<column name="zext_ln703_reg_882_pp2_iter1_reg">7, 0, 32, 25</column>
+<column name="i_4_cast_cast_reg_977">64, 32, 32, 25</column>
+<column name="icmp_ln38_reg_902">64, 32, 1, 0</column>
+<column name="icmp_ln42_reg_926">64, 32, 1, 0</column>
+<column name="icmp_ln49_reg_973">64, 32, 1, 0</column>
+<column name="zext_ln43_reg_930">64, 32, 32, 25</column>
 </table>
 </item>
 </section>
@@ -331,14 +332,14 @@
 <keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
 <column name="s_axi_CTRL_AWVALID">in, 1, s_axi, CTRL, scalar</column>
 <column name="s_axi_CTRL_AWREADY">out, 1, s_axi, CTRL, scalar</column>
-<column name="s_axi_CTRL_AWADDR">in, 7, s_axi, CTRL, scalar</column>
+<column name="s_axi_CTRL_AWADDR">in, 6, s_axi, CTRL, scalar</column>
 <column name="s_axi_CTRL_WVALID">in, 1, s_axi, CTRL, scalar</column>
 <column name="s_axi_CTRL_WREADY">out, 1, s_axi, CTRL, scalar</column>
 <column name="s_axi_CTRL_WDATA">in, 32, s_axi, CTRL, scalar</column>
 <column name="s_axi_CTRL_WSTRB">in, 4, s_axi, CTRL, scalar</column>
 <column name="s_axi_CTRL_ARVALID">in, 1, s_axi, CTRL, scalar</column>
 <column name="s_axi_CTRL_ARREADY">out, 1, s_axi, CTRL, scalar</column>
-<column name="s_axi_CTRL_ARADDR">in, 7, s_axi, CTRL, scalar</column>
+<column name="s_axi_CTRL_ARADDR">in, 6, s_axi, CTRL, scalar</column>
 <column name="s_axi_CTRL_RVALID">out, 1, s_axi, CTRL, scalar</column>
 <column name="s_axi_CTRL_RREADY">in, 1, s_axi, CTRL, scalar</column>
 <column name="s_axi_CTRL_RDATA">out, 32, s_axi, CTRL, scalar</column>
@@ -351,7 +352,7 @@
 <column name="interrupt">out, 1, ap_ctrl_hs, loss_derivative, return value</column>
 <column name="m_axi_gmem_AWVALID">out, 1, m_axi, gmem, pointer</column>
 <column name="m_axi_gmem_AWREADY">in, 1, m_axi, gmem, pointer</column>
-<column name="m_axi_gmem_AWADDR">out, 64, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_AWADDR">out, 32, m_axi, gmem, pointer</column>
 <column name="m_axi_gmem_AWID">out, 1, m_axi, gmem, pointer</column>
 <column name="m_axi_gmem_AWLEN">out, 8, m_axi, gmem, pointer</column>
 <column name="m_axi_gmem_AWSIZE">out, 3, m_axi, gmem, pointer</column>
@@ -371,7 +372,7 @@
 <column name="m_axi_gmem_WUSER">out, 1, m_axi, gmem, pointer</column>
 <column name="m_axi_gmem_ARVALID">out, 1, m_axi, gmem, pointer</column>
 <column name="m_axi_gmem_ARREADY">in, 1, m_axi, gmem, pointer</column>
-<column name="m_axi_gmem_ARADDR">out, 64, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_ARADDR">out, 32, m_axi, gmem, pointer</column>
 <column name="m_axi_gmem_ARID">out, 1, m_axi, gmem, pointer</column>
 <column name="m_axi_gmem_ARLEN">out, 8, m_axi, gmem, pointer</column>
 <column name="m_axi_gmem_ARSIZE">out, 3, m_axi, gmem, pointer</column>

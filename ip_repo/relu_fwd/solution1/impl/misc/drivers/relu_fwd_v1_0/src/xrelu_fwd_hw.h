@@ -23,17 +23,13 @@
 //        others - reserved
 // 0x10 : Data signal of x
 //        bit 31~0 - x[31:0] (Read/Write)
-// 0x14 : Data signal of x
-//        bit 31~0 - x[63:32] (Read/Write)
-// 0x18 : reserved
-// 0x1c : Data signal of y
+// 0x14 : reserved
+// 0x18 : Data signal of y
 //        bit 31~0 - y[31:0] (Read/Write)
-// 0x20 : Data signal of y
-//        bit 31~0 - y[63:32] (Read/Write)
-// 0x24 : reserved
-// 0x28 : Data signal of dim
+// 0x1c : reserved
+// 0x20 : Data signal of dim
 //        bit 31~0 - dim[31:0] (Read/Write)
-// 0x2c : reserved
+// 0x24 : reserved
 // (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
 #define XRELU_FWD_CTRL_ADDR_AP_CTRL  0x00
@@ -41,9 +37,9 @@
 #define XRELU_FWD_CTRL_ADDR_IER      0x08
 #define XRELU_FWD_CTRL_ADDR_ISR      0x0c
 #define XRELU_FWD_CTRL_ADDR_X_DATA   0x10
-#define XRELU_FWD_CTRL_BITS_X_DATA   64
-#define XRELU_FWD_CTRL_ADDR_Y_DATA   0x1c
-#define XRELU_FWD_CTRL_BITS_Y_DATA   64
-#define XRELU_FWD_CTRL_ADDR_DIM_DATA 0x28
+#define XRELU_FWD_CTRL_BITS_X_DATA   32
+#define XRELU_FWD_CTRL_ADDR_Y_DATA   0x18
+#define XRELU_FWD_CTRL_BITS_Y_DATA   32
+#define XRELU_FWD_CTRL_ADDR_DIM_DATA 0x20
 #define XRELU_FWD_CTRL_BITS_DIM_DATA 32
 

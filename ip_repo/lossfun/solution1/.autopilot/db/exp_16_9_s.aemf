@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1651473942699">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1651562557064">
   <ports id="1" name="x" type="PortType" originalName="x_l.V" coreId="0" bitwidth="16">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
@@ -99,7 +99,7 @@
   <edges source_obj="//@regions.0/@basic_blocks.0/@node_objs.63" sink_obj="//@ports.1"/>
   <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="308" pipe_depth="6" RegionName="exp&lt;16, 9>">
     <basic_blocks id="73" name="exp&lt;16, 9>" type="BlockType">
-      <node_objs xsi:type="cdfg:CdfgNode" id="9" name="x_read" lineNumber="189" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h" fileDirectory=".." coreId="4294967292" contextFuncName="exp_16_9_s" bitwidth="16" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="9" name="x_read" lineNumber="189" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h" fileDirectory=".." coreId="31" contextFuncName="exp_16_9_s" bitwidth="16" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h" linenumber="189" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="exp&amp;lt;16, 9&amp;gt;"/>
         <dataInputObjs>x</dataInputObjs>
         <dataOutputObjs>partselect</dataOutputObjs>
@@ -114,24 +114,24 @@
         <dataOutputObjs>partselect</dataOutputObjs>
         <dataOutputObjs>trunc</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="10" name="p_Result_7" lineNumber="340" originalName="__Result__" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_ref.h" fileDirectory=".." rtlName="p_Result_7_fu_151_p4" coreId="1441886160" contextFuncName="operator_assign_23_false" bitwidth="4" opcode="partselect" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="10" name="p_Result_7" lineNumber="340" originalName="__Result__" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_ref.h" fileDirectory=".." rtlName="p_Result_7_fu_149_p4" coreId="1350746864" contextFuncName="operator_assign_23_false" bitwidth="4" opcode="partselect" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_ref.h" linenumber="340" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator=&amp;lt;23, false&amp;gt;"/>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="11" name="trunc_ln640" lineNumber="640" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_ref.h" fileDirectory=".." rtlName="trunc_ln640_fu_161_p1" coreId="1559908144" contextFuncName="get" bitwidth="7" opcode="trunc" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="11" name="trunc_ln640" lineNumber="640" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_ref.h" fileDirectory=".." rtlName="trunc_ln640_fu_159_p1" coreId="1502411616" contextFuncName="get" bitwidth="7" opcode="trunc" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_ref.h" linenumber="640" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="get"/>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>bitconcatenate</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="12" name="p_Result_8" lineNumber="640" originalName="__Result__" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_ref.h" fileDirectory=".." rtlName="p_Result_8_fu_165_p3" coreId="1593141216" contextFuncName="get" bitwidth="11" opcode="bitconcatenate" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="12" name="p_Result_8" lineNumber="640" originalName="__Result__" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_ref.h" fileDirectory=".." rtlName="p_Result_8_fu_163_p3" coreId="1404812064" contextFuncName="get" bitwidth="11" opcode="bitconcatenate" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_ref.h" linenumber="640" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="get"/>
         <dataInputObjs>trunc</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="13" name="tmp" lineNumber="189" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h" fileDirectory=".." rtlName="tmp_reg_518" coreId="1593141216" contextFuncName="exp_16_9_s" bitwidth="1" opcode="bitselect" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="13" name="tmp" lineNumber="189" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h" fileDirectory=".." rtlName="tmp_reg_516" coreId="1404812064" contextFuncName="exp_16_9_s" bitwidth="1" opcode="bitselect" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h" linenumber="189" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="exp&amp;lt;16, 9&amp;gt;"/>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>xor</dataOutputObjs>
@@ -143,133 +143,133 @@
         <dataOutputObjs>bitconcatenate</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="14" name="tmp_48" lineNumber="222" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_ref.h" fileDirectory=".." rtlName="tmp_48_fu_181_p3" coreId="0" contextFuncName="operator_ne_23_12_true_AP_TRN_AP_WRAP_0" bitwidth="1" opcode="bitselect" m_display="0" m_topoIndex="6" m_clusterGroupNumber="1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="14" name="tmp_48" lineNumber="222" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_ref.h" fileDirectory=".." rtlName="tmp_48_fu_179_p3" coreId="84" contextFuncName="operator_ne_23_12_true_AP_TRN_AP_WRAP_0" bitwidth="1" opcode="bitselect" m_display="0" m_topoIndex="6" m_clusterGroupNumber="1">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_ref.h" linenumber="222" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator!=&amp;lt;23, 12, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>xor</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="15" name="overf" lineNumber="222" originalName="overf" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_ref.h" fileDirectory=".." rtlName="overf_fu_189_p2" opType="xor" coreId="2147483776" contextFuncName="operator_ne_23_12_true_AP_TRN_AP_WRAP_0" bitwidth="1" opcode="xor" m_display="0" m_topoIndex="7" m_clusterGroupNumber="1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="15" name="overf" lineNumber="222" originalName="overf" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_ref.h" fileDirectory=".." rtlName="overf_fu_187_p2" opType="xor" coreId="0" contextFuncName="operator_ne_23_12_true_AP_TRN_AP_WRAP_0" bitwidth="1" opcode="xor" m_display="0" m_topoIndex="7" m_clusterGroupNumber="1">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_ref.h" linenumber="222" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator!=&amp;lt;23, 12, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
         <dataInputObjs>bitselect</dataInputObjs>
         <dataInputObjs>bitselect</dataInputObjs>
         <dataOutputObjs>or</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="16" name="tmp_49" lineNumber="222" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_ref.h" fileDirectory=".." rtlName="tmp_49_fu_195_p3" coreId="49" contextFuncName="operator_ne_23_12_true_AP_TRN_AP_WRAP_0" bitwidth="1" opcode="bitselect" m_display="0" m_topoIndex="8" m_clusterGroupNumber="1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="16" name="tmp_49" lineNumber="222" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_ref.h" fileDirectory=".." rtlName="tmp_49_fu_193_p3" coreId="0" contextFuncName="operator_ne_23_12_true_AP_TRN_AP_WRAP_0" bitwidth="1" opcode="bitselect" m_display="0" m_topoIndex="8" m_clusterGroupNumber="1">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_ref.h" linenumber="222" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator!=&amp;lt;23, 12, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>xor</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="xor_ln222" lineNumber="222" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_ref.h" fileDirectory=".." rtlName="xor_ln222_fu_203_p2" opType="xor" coreId="1460308800" contextFuncName="operator_ne_23_12_true_AP_TRN_AP_WRAP_0" bitwidth="1" opcode="xor" m_display="0" m_topoIndex="9" m_clusterGroupNumber="1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="xor_ln222" lineNumber="222" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_ref.h" fileDirectory=".." rtlName="xor_ln222_fu_201_p2" opType="xor" coreId="0" contextFuncName="operator_ne_23_12_true_AP_TRN_AP_WRAP_0" bitwidth="1" opcode="xor" m_display="0" m_topoIndex="9" m_clusterGroupNumber="1">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_ref.h" linenumber="222" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator!=&amp;lt;23, 12, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
         <dataInputObjs>bitselect</dataInputObjs>
         <dataInputObjs>bitselect</dataInputObjs>
         <dataOutputObjs>or</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="18" name="tmp_53" lineNumber="222" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_ref.h" fileDirectory=".." rtlName="tmp_53_fu_209_p3" coreId="0" contextFuncName="operator_ne_23_12_true_AP_TRN_AP_WRAP_0" bitwidth="1" opcode="bitselect" m_display="0" m_topoIndex="10" m_clusterGroupNumber="1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="18" name="tmp_53" lineNumber="222" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_ref.h" fileDirectory=".." rtlName="tmp_53_fu_207_p3" coreId="0" contextFuncName="operator_ne_23_12_true_AP_TRN_AP_WRAP_0" bitwidth="1" opcode="bitselect" m_display="0" m_topoIndex="10" m_clusterGroupNumber="1">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_ref.h" linenumber="222" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator!=&amp;lt;23, 12, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>xor</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="xor_ln222_1" lineNumber="222" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_ref.h" fileDirectory=".." rtlName="xor_ln222_1_fu_217_p2" opType="xor" coreId="1460312736" contextFuncName="operator_ne_23_12_true_AP_TRN_AP_WRAP_0" bitwidth="1" opcode="xor" m_display="0" m_topoIndex="11" m_clusterGroupNumber="1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="xor_ln222_1" lineNumber="222" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_ref.h" fileDirectory=".." rtlName="xor_ln222_1_fu_215_p2" opType="xor" coreId="132" contextFuncName="operator_ne_23_12_true_AP_TRN_AP_WRAP_0" bitwidth="1" opcode="xor" m_display="0" m_topoIndex="11" m_clusterGroupNumber="1">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_ref.h" linenumber="222" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator!=&amp;lt;23, 12, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
         <dataInputObjs>bitselect</dataInputObjs>
         <dataInputObjs>bitselect</dataInputObjs>
         <dataOutputObjs>or</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="tmp_54" lineNumber="222" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_ref.h" fileDirectory=".." rtlName="tmp_54_fu_223_p3" coreId="49" contextFuncName="operator_ne_23_12_true_AP_TRN_AP_WRAP_0" bitwidth="1" opcode="bitselect" m_display="0" m_topoIndex="12" m_clusterGroupNumber="2">
+      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="tmp_54" lineNumber="222" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_ref.h" fileDirectory=".." rtlName="tmp_54_fu_221_p3" coreId="12" contextFuncName="operator_ne_23_12_true_AP_TRN_AP_WRAP_0" bitwidth="1" opcode="bitselect" m_display="0" m_topoIndex="12" m_clusterGroupNumber="2">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_ref.h" linenumber="222" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator!=&amp;lt;23, 12, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>xor</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="xor_ln222_2" lineNumber="222" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_ref.h" fileDirectory=".." rtlName="xor_ln222_2_fu_231_p2" opType="xor" coreId="1460313904" contextFuncName="operator_ne_23_12_true_AP_TRN_AP_WRAP_0" bitwidth="1" opcode="xor" m_display="0" m_topoIndex="13" m_clusterGroupNumber="2">
+      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="xor_ln222_2" lineNumber="222" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_ref.h" fileDirectory=".." rtlName="xor_ln222_2_fu_229_p2" opType="xor" coreId="0" contextFuncName="operator_ne_23_12_true_AP_TRN_AP_WRAP_0" bitwidth="1" opcode="xor" m_display="0" m_topoIndex="13" m_clusterGroupNumber="2">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_ref.h" linenumber="222" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator!=&amp;lt;23, 12, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
         <dataInputObjs>bitselect</dataInputObjs>
         <dataInputObjs>bitselect</dataInputObjs>
         <dataOutputObjs>or</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="tmp_55" lineNumber="222" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_ref.h" fileDirectory=".." rtlName="tmp_55_fu_237_p3" coreId="1" contextFuncName="operator_ne_23_12_true_AP_TRN_AP_WRAP_0" bitwidth="1" opcode="bitselect" m_display="0" m_topoIndex="14" m_clusterGroupNumber="2">
+      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="tmp_55" lineNumber="222" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_ref.h" fileDirectory=".." rtlName="tmp_55_fu_235_p3" coreId="1392598696" contextFuncName="operator_ne_23_12_true_AP_TRN_AP_WRAP_0" bitwidth="1" opcode="bitselect" m_display="0" m_topoIndex="14" m_clusterGroupNumber="2">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_ref.h" linenumber="222" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator!=&amp;lt;23, 12, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>xor</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="23" name="xor_ln222_3" lineNumber="222" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_ref.h" fileDirectory=".." rtlName="xor_ln222_3_fu_245_p2" opType="xor" coreId="132" contextFuncName="operator_ne_23_12_true_AP_TRN_AP_WRAP_0" bitwidth="1" opcode="xor" m_display="0" m_topoIndex="15" m_clusterGroupNumber="2">
+      <node_objs xsi:type="cdfg:CdfgNode" id="23" name="xor_ln222_3" lineNumber="222" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_ref.h" fileDirectory=".." rtlName="xor_ln222_3_fu_243_p2" opType="xor" coreId="49" contextFuncName="operator_ne_23_12_true_AP_TRN_AP_WRAP_0" bitwidth="1" opcode="xor" m_display="0" m_topoIndex="15" m_clusterGroupNumber="2">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_ref.h" linenumber="222" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator!=&amp;lt;23, 12, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
         <dataInputObjs>bitselect</dataInputObjs>
         <dataInputObjs>bitselect</dataInputObjs>
         <dataOutputObjs>or</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="24" name="icmp_ln1498" lineNumber="1498" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="icmp_ln1498_fu_251_p2" opType="icmp" coreId="2147483776" contextFuncName="operator_eq_32_32_true_AP_TRN_AP_WRAP_0" bitwidth="1" opcode="icmp" m_display="0" m_delay="1.3" m_topoIndex="16" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="24" name="icmp_ln1498" lineNumber="1498" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="icmp_ln1498_fu_249_p2" opType="icmp" coreId="1392601776" contextFuncName="operator_eq_32_32_true_AP_TRN_AP_WRAP_0" bitwidth="1" opcode="icmp" m_display="0" m_delay="1.3" m_topoIndex="16" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" linenumber="1498" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator==&amp;lt;32, 32, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
         <dataInputObjs>partselect</dataInputObjs>
         <dataOutputObjs>and</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="25" name="icmp_ln1494" lineNumber="1494" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="icmp_ln1494_fu_257_p2" opType="icmp" coreId="132" contextFuncName="operator_gt_11_0_false_AP_TRN_AP_WRAP_0" bitwidth="1" opcode="icmp" m_display="0" m_delay="1.88" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="25" name="icmp_ln1494" lineNumber="1494" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="icmp_ln1494_fu_255_p2" opType="icmp" coreId="0" contextFuncName="operator_gt_11_0_false_AP_TRN_AP_WRAP_0" bitwidth="1" opcode="icmp" m_display="0" m_delay="1.88" m_topoIndex="17" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" linenumber="1494" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator&amp;gt;&amp;lt;11, 0, false, AP_TRN, AP_WRAP, 0&amp;gt;"/>
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataOutputObjs>and</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="and_ln202" lineNumber="202" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h" fileDirectory=".." rtlName="and_ln202_fu_263_p2" opType="and" coreId="132" contextFuncName="exp_16_9_s" bitwidth="1" opcode="and" m_display="0" m_topoIndex="18" m_clusterGroupNumber="2">
+      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="and_ln202" lineNumber="202" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h" fileDirectory=".." rtlName="and_ln202_fu_261_p2" opType="and" coreId="132" contextFuncName="exp_16_9_s" bitwidth="1" opcode="and" m_display="0" m_topoIndex="18" m_clusterGroupNumber="2">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h" linenumber="202" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="exp&amp;lt;16, 9&amp;gt;"/>
         <dataInputObjs>icmp</dataInputObjs>
         <dataInputObjs>icmp</dataInputObjs>
         <dataOutputObjs>or</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="27" name="xor_ln640" lineNumber="640" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_ref.h" fileDirectory=".." rtlName="xor_ln640_fu_431_p2" opType="xor" coreId="132" contextFuncName="get" bitwidth="1" opcode="xor" nodeLabel="5.0" m_display="0" m_topoIndex="52" m_clusterGroupNumber="3">
+      <node_objs xsi:type="cdfg:CdfgNode" id="27" name="xor_ln640" lineNumber="640" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_ref.h" fileDirectory=".." rtlName="xor_ln640_fu_429_p2" opType="xor" coreId="12" contextFuncName="get" bitwidth="1" opcode="xor" nodeLabel="5.0" m_display="0" m_topoIndex="52" m_clusterGroupNumber="3">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_ref.h" linenumber="640" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="get"/>
         <dataInputObjs>bitselect</dataInputObjs>
         <dataOutputObjs>select</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="28" name="select_ln640" lineNumber="640" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_ref.h" fileDirectory=".." rtlName="select_ln640_fu_436_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="get" bitwidth="22" opcode="select" nodeLabel="5.0" m_display="0" m_topoIndex="53" m_clusterGroupNumber="3">
+      <node_objs xsi:type="cdfg:CdfgNode" id="28" name="select_ln640" lineNumber="640" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_ref.h" fileDirectory=".." rtlName="select_ln640_fu_434_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="get" bitwidth="22" opcode="select" nodeLabel="5.0" m_display="0" m_topoIndex="53" m_clusterGroupNumber="3">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_ref.h" linenumber="640" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="get"/>
         <dataInputObjs>xor</dataInputObjs>
         <dataOutputObjs>select</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="29" name="p_Result_s" lineNumber="640" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_ref.h" fileDirectory=".." rtlName="p_Result_s_reg_524" coreId="0" contextFuncName="get" bitwidth="4" opcode="partselect" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="29" name="p_Result_s" lineNumber="640" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_ref.h" fileDirectory=".." rtlName="p_Result_s_reg_522" coreId="0" contextFuncName="get" bitwidth="4" opcode="partselect" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_ref.h" linenumber="640" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="get"/>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>bitconcatenate</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="p_Result_9" lineNumber="414" originalName="__Result__" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="p_Result_9_fu_335_p3" coreId="1460583728" contextFuncName="operator_assign_23_false" bitwidth="5" opcode="bitconcatenate" nodeLabel="2.0" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="p_Result_9" lineNumber="414" originalName="__Result__" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="p_Result_9_fu_333_p3" coreId="1392713744" contextFuncName="operator_assign_23_false" bitwidth="5" opcode="bitconcatenate" nodeLabel="2.0" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="414" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator=&amp;lt;23, false&amp;gt;"/>
         <dataInputObjs>bitselect</dataInputObjs>
         <dataInputObjs>partselect</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="tmp_60" lineNumber="640" originalName="tmp" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_ref.h" fileDirectory=".." rtlName="tmp_60_fu_279_p4" coreId="49" contextFuncName="get" bitwidth="5" opcode="partselect" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="tmp_60" lineNumber="640" originalName="tmp" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_ref.h" fileDirectory=".." rtlName="tmp_60_fu_277_p4" coreId="1392598608" contextFuncName="get" bitwidth="5" opcode="partselect" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_ref.h" linenumber="640" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="get"/>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="32" name="trunc_ln640_1" lineNumber="640" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_ref.h" fileDirectory=".." rtlName="trunc_ln640_1_fu_289_p1" coreId="0" contextFuncName="get" bitwidth="1" opcode="trunc" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="32" name="trunc_ln640_1" lineNumber="640" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_ref.h" fileDirectory=".." rtlName="trunc_ln640_1_fu_287_p1" coreId="132" contextFuncName="get" bitwidth="1" opcode="trunc" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_ref.h" linenumber="640" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="get"/>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>bitconcatenate</dataOutputObjs>
         <dataOutputObjs>bitconcatenate</dataOutputObjs>
         <dataOutputObjs>bitconcatenate</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="tmp_61" lineNumber="640" originalName="tmp" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_ref.h" fileDirectory=".." rtlName="tmp_61_fu_293_p3" coreId="1460587072" contextFuncName="get" bitwidth="5" opcode="bitconcatenate" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="tmp_61" lineNumber="640" originalName="tmp" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_ref.h" fileDirectory=".." rtlName="tmp_61_fu_291_p3" coreId="132" contextFuncName="get" bitwidth="5" opcode="bitconcatenate" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_ref.h" linenumber="640" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="get"/>
         <dataInputObjs>trunc</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="zext_ln534" lineNumber="534" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" fileDirectory=".." rtlName="zext_ln534_fu_301_p1" coreId="0" contextFuncName="operator_unsigned_long_long" bitwidth="64" opcode="zext" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" linenumber="534" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator unsigned long long"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="zext_ln230" lineNumber="230" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h" fileDirectory=".." rtlName="zext_ln230_fu_299_p1" coreId="49" contextFuncName="exp_16_9_s" bitwidth="32" opcode="zext" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h" linenumber="230" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="exp&amp;lt;16, 9&amp;gt;"/>
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="35" name="f_x_lsb_table_V_addr" lineNumber="230" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h" fileDirectory=".." coreId="1460589200" contextFuncName="exp_16_9_s" bitwidth="5" opcode="getelementptr" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="35" name="f_x_lsb_table_V_addr" lineNumber="230" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h" fileDirectory=".." coreId="2129" contextFuncName="exp_16_9_s" bitwidth="5" opcode="getelementptr" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h" linenumber="230" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="exp&amp;lt;16, 9&amp;gt;"/>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>load</dataOutputObjs>
@@ -281,19 +281,19 @@
         <dataOutputObjs>bitconcatenate</dataOutputObjs>
         <dataOutputObjs>bitconcatenate</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="p_Result_10" lineNumber="340" originalName="__Result__" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_ref.h" fileDirectory=".." rtlName="p_Result_10_fu_341_p4" coreId="0" contextFuncName="operator_assign_11_false" bitwidth="18" opcode="bitconcatenate" nodeLabel="2.0" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="p_Result_10" lineNumber="340" originalName="__Result__" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_ref.h" fileDirectory=".." rtlName="p_Result_10_fu_339_p4" coreId="103079214" contextFuncName="operator_assign_11_false" bitwidth="18" opcode="bitconcatenate" nodeLabel="2.0" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_ref.h" linenumber="340" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator=&amp;lt;11, false&amp;gt;"/>
         <dataInputObjs>trunc</dataInputObjs>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="zext_ln534_2" lineNumber="534" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" fileDirectory=".." rtlName="zext_ln534_2_fu_306_p1" coreId="112" contextFuncName="operator_unsigned_long_long" bitwidth="64" opcode="zext" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" linenumber="534" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator unsigned long long"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="zext_ln245" lineNumber="245" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h" fileDirectory=".." rtlName="zext_ln245_fu_304_p1" coreId="609" contextFuncName="exp_16_9_s" bitwidth="32" opcode="zext" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h" linenumber="245" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="exp&amp;lt;16, 9&amp;gt;"/>
         <dataInputObjs>partselect</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="exp_x_msb_2_m_1_table_V_addr" lineNumber="245" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h" fileDirectory=".." coreId="542329928" contextFuncName="exp_16_9_s" bitwidth="5" opcode="getelementptr" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="exp_x_msb_2_m_1_table_V_addr" lineNumber="245" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h" fileDirectory=".." coreId="49" contextFuncName="exp_16_9_s" bitwidth="5" opcode="getelementptr" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h" linenumber="245" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="exp&amp;lt;16, 9&amp;gt;"/>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>load</dataOutputObjs>
@@ -305,12 +305,12 @@
         <dataOutputObjs>zext</dataOutputObjs>
         <dataOutputObjs>add</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="41" name="zext_ln1116" lineNumber="1116" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="r_V_fu_356_p00" coreId="0" contextFuncName="operator_mul_18_6_false_AP_TRN_AP_WRAP_0" bitwidth="43" opcode="zext" nodeLabel="2.0" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="41" name="zext_ln1116" lineNumber="1116" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="r_V_fu_354_p00" coreId="1392814312" contextFuncName="operator_mul_18_6_false_AP_TRN_AP_WRAP_0" bitwidth="43" opcode="zext" nodeLabel="2.0" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" linenumber="1116" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator*&amp;lt;18, -6, false, AP_TRN, AP_WRAP, 0&amp;gt;"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>mul</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="42" name="zext_ln1118" lineNumber="1118" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="r_V_fu_356_p10" coreId="1460329417" contextFuncName="operator_mul_18_6_false_AP_TRN_AP_WRAP_0" bitwidth="43" opcode="zext" nodeLabel="2.0" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="42" name="zext_ln1118" lineNumber="1118" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="r_V_fu_354_p10" coreId="0" contextFuncName="operator_mul_18_6_false_AP_TRN_AP_WRAP_0" bitwidth="43" opcode="zext" nodeLabel="2.0" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" linenumber="1118" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator*&amp;lt;18, -6, false, AP_TRN, AP_WRAP, 0&amp;gt;"/>
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataOutputObjs>mul</dataOutputObjs>
@@ -321,52 +321,52 @@
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>partselect</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="44" name="trunc_ln3" lineNumber="703" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="trunc_ln3_reg_567" coreId="49" contextFuncName="operator_assign_19_6_false_AP_TRN_AP_WRAP_0" bitwidth="19" opcode="partselect" nodeLabel="2.0" m_display="0" m_topoIndex="38" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="44" name="trunc_ln6" lineNumber="703" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="trunc_ln6_reg_565" coreId="1392818128" contextFuncName="operator_assign_19_6_false_AP_TRN_AP_WRAP_0" bitwidth="19" opcode="partselect" nodeLabel="2.0" m_display="0" m_topoIndex="38" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" linenumber="703" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator=&amp;lt;19, -6, false, AP_TRN, AP_WRAP, 0&amp;gt;"/>
         <dataInputObjs>mul</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="45" name="zext_ln703_1" lineNumber="703" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="zext_ln703_1_fu_377_p1" coreId="1397508130" contextFuncName="operator_assign_19_6_false_AP_TRN_AP_WRAP_0" bitwidth="20" opcode="zext" nodeLabel="3.0" m_display="0" m_topoIndex="42" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="45" name="zext_ln703_1" lineNumber="703" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="zext_ln703_1_fu_375_p1" coreId="0" contextFuncName="operator_assign_19_6_false_AP_TRN_AP_WRAP_0" bitwidth="20" opcode="zext" nodeLabel="3.0" m_display="0" m_topoIndex="42" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" linenumber="703" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator=&amp;lt;19, -6, false, AP_TRN, AP_WRAP, 0&amp;gt;"/>
         <dataInputObjs>partselect</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="46" name="rhs_1" lineNumber="728" originalName="rhs" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="rhs_1_fu_380_p5" coreId="1460334928" contextFuncName="operator_assign_18_6_false_AP_TRN_AP_WRAP_0" bitwidth="19" opcode="bitconcatenate" nodeLabel="3.0" m_display="0" m_topoIndex="43" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="46" name="rhs_1" lineNumber="728" originalName="rhs" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="rhs_1_fu_378_p5" coreId="6" contextFuncName="operator_assign_18_6_false_AP_TRN_AP_WRAP_0" bitwidth="19" opcode="bitconcatenate" nodeLabel="3.0" m_display="0" m_topoIndex="43" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" linenumber="728" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator=&amp;lt;18, -6, false, AP_TRN, AP_WRAP, 0&amp;gt;"/>
         <dataInputObjs>trunc</dataInputObjs>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="47" name="zext_ln1192" lineNumber="1192" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="zext_ln1192_fu_390_p1" coreId="226" contextFuncName="operator_add_18_6_false_AP_TRN_AP_WRAP_0" bitwidth="20" opcode="zext" nodeLabel="3.0" m_display="0" m_topoIndex="44" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="47" name="zext_ln1192" lineNumber="1192" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="zext_ln1192_fu_388_p1" coreId="0" contextFuncName="operator_add_18_6_false_AP_TRN_AP_WRAP_0" bitwidth="20" opcode="zext" nodeLabel="3.0" m_display="0" m_topoIndex="44" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" linenumber="1192" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator+&amp;lt;18, -6, false, AP_TRN, AP_WRAP, 0&amp;gt;"/>
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="48" name="ret_V" lineNumber="1192" originalName="ret.V" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="ret_V_fu_394_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="operator_add_18_6_false_AP_TRN_AP_WRAP_0" bitwidth="20" opcode="add" nodeLabel="3.0" m_display="0" m_delay="2.16" m_topoIndex="45" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="48" name="ret_V" lineNumber="1192" originalName="ret.V" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="ret_V_fu_392_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="operator_add_18_6_false_AP_TRN_AP_WRAP_0" bitwidth="20" opcode="add" nodeLabel="3.0" m_display="0" m_delay="2.16" m_topoIndex="45" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" linenumber="1192" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator+&amp;lt;18, -6, false, AP_TRN, AP_WRAP, 0&amp;gt;"/>
         <dataInputObjs>zext</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="49" name="zext_ln703" lineNumber="703" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="zext_ln703_fu_400_p1" coreId="1460339928" contextFuncName="operator_assign_26_1_false_AP_TRN_AP_WRAP_0" bitwidth="25" opcode="zext" nodeLabel="3.0" m_display="0" m_topoIndex="46" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="49" name="zext_ln703" lineNumber="703" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="zext_ln703_fu_398_p1" coreId="1769239137" contextFuncName="operator_assign_26_1_false_AP_TRN_AP_WRAP_0" bitwidth="25" opcode="zext" nodeLabel="3.0" m_display="0" m_topoIndex="46" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" linenumber="703" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator=&amp;lt;26, 1, false, AP_TRN, AP_WRAP, 0&amp;gt;"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="50" name="exp_x_msb_2_lsb_m_1_V" lineNumber="703" originalName="exp_x_msb_2_lsb_m_1.V" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="exp_x_msb_2_lsb_m_1_V_fu_404_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="operator_assign_26_1_false_AP_TRN_AP_WRAP_0" bitwidth="25" opcode="add" nodeLabel="3.0" m_display="0" m_delay="2.34" m_topoIndex="47" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="50" name="exp_x_msb_2_lsb_m_1_V" lineNumber="703" originalName="exp_x_msb_2_lsb_m_1.V" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="exp_x_msb_2_lsb_m_1_V_fu_402_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="operator_assign_26_1_false_AP_TRN_AP_WRAP_0" bitwidth="25" opcode="add" nodeLabel="3.0" m_display="0" m_delay="2.34" m_topoIndex="47" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" linenumber="703" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator=&amp;lt;26, 1, false, AP_TRN, AP_WRAP, 0&amp;gt;"/>
         <dataInputObjs>load</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="51" name="zext_ln534_3" lineNumber="534" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" fileDirectory=".." rtlName="zext_ln534_3_fu_372_p1" coreId="49" contextFuncName="operator_unsigned_long_long" bitwidth="64" opcode="zext" nodeLabel="2.0" m_display="0" m_topoIndex="39" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h" linenumber="534" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator unsigned long long"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="51" name="zext_ln261" lineNumber="261" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h" fileDirectory=".." rtlName="zext_ln261_fu_370_p1" coreId="49" contextFuncName="exp_16_9_s" bitwidth="32" opcode="zext" nodeLabel="2.0" m_display="0" m_topoIndex="39" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h" linenumber="261" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="exp&amp;lt;16, 9&amp;gt;"/>
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="52" name="exp_x_msb_1_table_V_addr" lineNumber="261" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h" fileDirectory=".." coreId="1460595536" contextFuncName="exp_16_9_s" bitwidth="5" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="40" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="52" name="exp_x_msb_1_table_V_addr" lineNumber="261" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h" fileDirectory=".." coreId="609" contextFuncName="exp_16_9_s" bitwidth="5" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="40" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h" linenumber="261" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="exp&amp;lt;16, 9&amp;gt;"/>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>load</dataOutputObjs>
@@ -378,71 +378,71 @@
         <dataOutputObjs>zext</dataOutputObjs>
         <dataOutputObjs>add</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="54" name="zext_ln1116_1" lineNumber="1116" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="r_V_43_fu_415_p10" coreId="0" contextFuncName="operator_mul_25_0_false_AP_TRN_AP_WRAP_0" bitwidth="50" opcode="zext" nodeLabel="4.0" m_display="0" m_topoIndex="48" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="54" name="zext_ln1116_1" lineNumber="1116" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="r_V_43_fu_413_p10" coreId="1392570784" contextFuncName="operator_mul_25_0_false_AP_TRN_AP_WRAP_0" bitwidth="50" opcode="zext" nodeLabel="4.0" m_display="0" m_topoIndex="48" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" linenumber="1116" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator*&amp;lt;25, 0, false, AP_TRN, AP_WRAP, 0&amp;gt;"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>mul</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="55" name="zext_ln1118_1" lineNumber="1118" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="r_V_43_fu_415_p00" coreId="1460599440" contextFuncName="operator_mul_25_0_false_AP_TRN_AP_WRAP_0" bitwidth="50" opcode="zext" nodeLabel="4.0" m_display="0" m_topoIndex="49" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="55" name="zext_ln1118_1" lineNumber="1118" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="r_V_43_fu_413_p00" coreId="0" contextFuncName="operator_mul_25_0_false_AP_TRN_AP_WRAP_0" bitwidth="50" opcode="zext" nodeLabel="4.0" m_display="0" m_topoIndex="49" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" linenumber="1118" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator*&amp;lt;25, 0, false, AP_TRN, AP_WRAP, 0&amp;gt;"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>mul</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="56" name="r_V_43" lineNumber="1118" originalName="r.V" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="mul_25ns_25ns_50_1_1_U2" opType="mul" coreId="1460600488" contextFuncName="operator_mul_25_0_false_AP_TRN_AP_WRAP_0" bitwidth="50" opcode="mul" nodeLabel="4.0" m_display="0" m_delay="6.65" m_topoIndex="50" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="56" name="r_V_43" lineNumber="1118" originalName="r.V" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="mul_25ns_25ns_50_1_1_U2" opType="mul" coreId="0" contextFuncName="operator_mul_25_0_false_AP_TRN_AP_WRAP_0" bitwidth="50" opcode="mul" nodeLabel="4.0" m_display="0" m_delay="6.65" m_topoIndex="50" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" linenumber="1118" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator*&amp;lt;25, 0, false, AP_TRN, AP_WRAP, 0&amp;gt;"/>
         <dataInputObjs>zext</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>partselect</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="57" name="y_lo_s_V" lineNumber="708" originalName="y_lo_s.V" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="y_lo_s_V_reg_588" coreId="49" contextFuncName="operator_assign_50_11_false_AP_TRN_AP_WRAP_0" bitwidth="25" opcode="partselect" nodeLabel="4.0" m_display="0" m_topoIndex="51" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="57" name="y_lo_s_V" lineNumber="708" originalName="y_lo_s.V" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="y_lo_s_V_reg_586" coreId="1392575320" contextFuncName="operator_assign_50_11_false_AP_TRN_AP_WRAP_0" bitwidth="25" opcode="partselect" nodeLabel="4.0" m_display="0" m_topoIndex="51" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" linenumber="708" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator=&amp;lt;50, 11, false, AP_TRN, AP_WRAP, 0&amp;gt;"/>
         <dataInputObjs>mul</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="58" name="y_l_V" lineNumber="703" originalName="y_l.V" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="y_l_V_fu_444_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="operator_assign_26_12_false_AP_TRN_AP_WRAP_0" bitwidth="25" opcode="add" nodeLabel="5.0" m_display="0" m_delay="2.34" m_topoIndex="54" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="58" name="y_l_V" lineNumber="703" originalName="y_l.V" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="y_l_V_fu_442_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="operator_assign_26_12_false_AP_TRN_AP_WRAP_0" bitwidth="25" opcode="add" nodeLabel="5.0" m_display="0" m_delay="2.34" m_topoIndex="54" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" linenumber="703" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator=&amp;lt;26, 12, false, AP_TRN, AP_WRAP, 0&amp;gt;"/>
         <dataInputObjs>load</dataInputObjs>
         <dataInputObjs>partselect</dataInputObjs>
         <dataOutputObjs>partselect</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="59" name="y_V" lineNumber="708" originalName="y.V" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="y_V_fu_448_p4" coreId="1460604873" contextFuncName="operator_assign_25_11_false_AP_TRN_AP_WRAP_0" bitwidth="22" opcode="partselect" nodeLabel="5.0" m_display="0" m_topoIndex="55" m_clusterGroupNumber="3">
+      <node_objs xsi:type="cdfg:CdfgNode" id="59" name="y_V" lineNumber="708" originalName="y.V" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="y_V_fu_446_p4" coreId="62" contextFuncName="operator_assign_25_11_false_AP_TRN_AP_WRAP_0" bitwidth="22" opcode="partselect" nodeLabel="5.0" m_display="0" m_topoIndex="55" m_clusterGroupNumber="3">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" linenumber="708" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator=&amp;lt;25, 11, false, AP_TRN, AP_WRAP, 0&amp;gt;"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>select</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="60" name="or_ln202" lineNumber="202" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h" fileDirectory=".." rtlName="or_ln202_fu_311_p2" opType="or" coreId="0" contextFuncName="exp_16_9_s" bitwidth="1" opcode="or" m_display="0" m_topoIndex="29" m_clusterGroupNumber="1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="60" name="or_ln202" lineNumber="202" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h" fileDirectory=".." rtlName="or_ln202_fu_309_p2" opType="or" coreId="130" contextFuncName="exp_16_9_s" bitwidth="1" opcode="or" m_display="0" m_topoIndex="29" m_clusterGroupNumber="1">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h" linenumber="202" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="exp&amp;lt;16, 9&amp;gt;"/>
         <dataInputObjs>xor</dataInputObjs>
         <dataInputObjs>xor</dataInputObjs>
         <dataOutputObjs>or</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="61" name="or_ln202_1" lineNumber="202" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h" fileDirectory=".." rtlName="or_ln202_1_fu_317_p2" opType="or" coreId="1460607960" contextFuncName="exp_16_9_s" bitwidth="1" opcode="or" m_display="0" m_delay="0.97" m_topoIndex="30" m_clusterGroupNumber="1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="61" name="or_ln202_1" lineNumber="202" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h" fileDirectory=".." rtlName="or_ln202_1_fu_315_p2" opType="or" coreId="0" contextFuncName="exp_16_9_s" bitwidth="1" opcode="or" m_display="0" m_delay="0.97" m_topoIndex="30" m_clusterGroupNumber="1">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h" linenumber="202" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="exp&amp;lt;16, 9&amp;gt;"/>
         <dataInputObjs>or</dataInputObjs>
         <dataInputObjs>xor</dataInputObjs>
         <dataOutputObjs>or</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="62" name="or_ln202_2" lineNumber="202" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h" fileDirectory=".." rtlName="or_ln202_2_fu_323_p2" opType="or" coreId="0" contextFuncName="exp_16_9_s" bitwidth="1" opcode="or" m_display="0" m_topoIndex="31" m_clusterGroupNumber="2">
+      <node_objs xsi:type="cdfg:CdfgNode" id="62" name="or_ln202_2" lineNumber="202" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h" fileDirectory=".." rtlName="or_ln202_2_fu_321_p2" opType="or" coreId="0" contextFuncName="exp_16_9_s" bitwidth="1" opcode="or" m_display="0" m_topoIndex="31" m_clusterGroupNumber="2">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h" linenumber="202" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="exp&amp;lt;16, 9&amp;gt;"/>
         <dataInputObjs>xor</dataInputObjs>
         <dataInputObjs>and</dataInputObjs>
         <dataOutputObjs>or</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="63" name="or_ln202_3" lineNumber="202" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h" fileDirectory=".." rtlName="or_ln202_3_fu_329_p2" opType="or" coreId="1460610392" contextFuncName="exp_16_9_s" bitwidth="1" opcode="or" m_display="0" m_delay="0.97" m_topoIndex="32" m_clusterGroupNumber="2">
+      <node_objs xsi:type="cdfg:CdfgNode" id="63" name="or_ln202_3" lineNumber="202" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h" fileDirectory=".." rtlName="or_ln202_3_fu_327_p2" opType="or" coreId="0" contextFuncName="exp_16_9_s" bitwidth="1" opcode="or" m_display="0" m_delay="0.97" m_topoIndex="32" m_clusterGroupNumber="2">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h" linenumber="202" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="exp&amp;lt;16, 9&amp;gt;"/>
         <dataInputObjs>or</dataInputObjs>
         <dataInputObjs>xor</dataInputObjs>
         <dataOutputObjs>or</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="64" name="or_ln202_4" lineNumber="202" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h" fileDirectory=".." rtlName="or_ln202_4_fu_458_p2" opType="or" coreId="0" contextFuncName="exp_16_9_s" bitwidth="1" opcode="or" nodeLabel="5.0" m_display="0" m_topoIndex="56" m_clusterGroupNumber="3">
+      <node_objs xsi:type="cdfg:CdfgNode" id="64" name="or_ln202_4" lineNumber="202" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h" fileDirectory=".." rtlName="or_ln202_4_fu_456_p2" opType="or" coreId="0" contextFuncName="exp_16_9_s" bitwidth="1" opcode="or" nodeLabel="5.0" m_display="0" m_topoIndex="56" m_clusterGroupNumber="3">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h" linenumber="202" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="exp&amp;lt;16, 9&amp;gt;"/>
         <dataInputObjs>or</dataInputObjs>
         <dataInputObjs>or</dataInputObjs>
         <dataOutputObjs>select</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="65" name="p_Val2_s" lineNumber="202" originalName="__Val2__" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h" fileDirectory=".." rtlName="p_Val2_s_fu_462_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="exp_16_9_s" bitwidth="22" opcode="select" nodeLabel="5.0" m_display="0" m_delay="0.99" m_topoIndex="57" m_clusterGroupNumber="3">
+      <node_objs xsi:type="cdfg:CdfgNode" id="65" name="p_Val2_s" lineNumber="202" originalName="__Val2__" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h" fileDirectory=".." rtlName="p_Val2_s_fu_460_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="exp_16_9_s" bitwidth="22" opcode="select" nodeLabel="5.0" m_display="0" m_delay="0.99" m_topoIndex="57" m_clusterGroupNumber="3">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h" linenumber="202" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="exp&amp;lt;16, 9&amp;gt;"/>
         <dataInputObjs>or</dataInputObjs>
         <dataInputObjs>select</dataInputObjs>
@@ -451,31 +451,31 @@
         <dataOutputObjs>bitselect</dataOutputObjs>
         <dataOutputObjs>partselect</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="66" name="tmp_58" lineNumber="271" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h" fileDirectory=".." rtlName="tmp_58_fu_470_p4" coreId="0" contextFuncName="exp_16_9_s" bitwidth="2" opcode="partselect" nodeLabel="5.0" m_display="0" m_topoIndex="58" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="66" name="tmp_58" lineNumber="271" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h" fileDirectory=".." rtlName="tmp_58_fu_468_p4" coreId="1953394531" contextFuncName="exp_16_9_s" bitwidth="2" opcode="partselect" nodeLabel="5.0" m_display="0" m_topoIndex="58" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h" linenumber="271" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="exp&amp;lt;16, 9&amp;gt;"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="67" name="overf_1" lineNumber="271" originalName="overf" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h" fileDirectory=".." rtlName="overf_1_fu_480_p2" opType="icmp" coreId="1460614088" contextFuncName="exp_16_9_s" bitwidth="1" opcode="icmp" nodeLabel="5.0" m_display="0" m_delay="0.95" m_topoIndex="59" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="67" name="overf_1" lineNumber="271" originalName="overf" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h" fileDirectory=".." rtlName="overf_1_fu_478_p2" opType="icmp" coreId="1096045407" contextFuncName="exp_16_9_s" bitwidth="1" opcode="icmp" nodeLabel="5.0" m_display="0" m_delay="0.95" m_topoIndex="59" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h" linenumber="271" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="exp&amp;lt;16, 9&amp;gt;"/>
         <dataInputObjs>partselect</dataInputObjs>
         <dataOutputObjs>or</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="68" name="p_Result_s_52" lineNumber="99" originalName="__Result__" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_ref.h" fileDirectory=".." rtlName="p_Result_s_52_fu_486_p3" coreId="0" contextFuncName="operator_bool" bitwidth="1" opcode="bitselect" nodeLabel="5.0" m_display="0" m_topoIndex="60" m_clusterGroupNumber="4">
+      <node_objs xsi:type="cdfg:CdfgNode" id="68" name="p_Result_s_54" lineNumber="99" originalName="__Result__" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_ref.h" fileDirectory=".." rtlName="p_Result_s_54_fu_484_p3" coreId="997485606" contextFuncName="operator_bool" bitwidth="1" opcode="bitselect" nodeLabel="5.0" m_display="0" m_topoIndex="60" m_clusterGroupNumber="4">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_ref.h" linenumber="99" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator bool"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>or</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="69" name="overf_2" lineNumber="271" originalName="overf" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h" fileDirectory=".." rtlName="overf_2_fu_494_p2" opType="or" coreId="1460613696" contextFuncName="exp_16_9_s" bitwidth="1" opcode="or" nodeLabel="5.0" m_display="0" m_topoIndex="61" m_clusterGroupNumber="4">
+      <node_objs xsi:type="cdfg:CdfgNode" id="69" name="overf_2" lineNumber="271" originalName="overf" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h" fileDirectory=".." rtlName="overf_2_fu_492_p2" opType="or" coreId="544108393" contextFuncName="exp_16_9_s" bitwidth="1" opcode="or" nodeLabel="5.0" m_display="0" m_topoIndex="61" m_clusterGroupNumber="4">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h" linenumber="271" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="exp&amp;lt;16, 9&amp;gt;"/>
         <dataInputObjs>bitselect</dataInputObjs>
         <dataInputObjs>icmp</dataInputObjs>
         <dataOutputObjs>select</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="70" name="tmp_s" lineNumber="708" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="tmp_s_fu_500_p4" coreId="0" contextFuncName="operator_assign_22_11_false_AP_TRN_AP_WRAP_0" bitwidth="16" opcode="partselect" nodeLabel="5.0" m_display="0" m_topoIndex="62" m_clusterGroupNumber="4">
+      <node_objs xsi:type="cdfg:CdfgNode" id="70" name="tmp_s" lineNumber="708" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="tmp_s_fu_498_p4" coreId="639659892" contextFuncName="operator_assign_22_11_false_AP_TRN_AP_WRAP_0" bitwidth="16" opcode="partselect" nodeLabel="5.0" m_display="0" m_topoIndex="62" m_clusterGroupNumber="4">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" linenumber="708" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator=&amp;lt;22, 11, false, AP_TRN, AP_WRAP, 0&amp;gt;"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>select</dataOutputObjs>
@@ -488,7 +488,7 @@
         <dataOutputObjs>ret</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="72" name="_ln953" lineNumber="953" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h" fileDirectory=".." coreId="2147483776" contextFuncName="exp_16_9_s" opcode="ret" nodeLabel="5.0" m_display="0" m_topoIndex="64" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="72" name="_ln953" lineNumber="953" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h" fileDirectory=".." coreId="1767386995" contextFuncName="exp_16_9_s" opcode="ret" nodeLabel="5.0" m_display="0" m_topoIndex="64" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h" linenumber="953" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="exp&amp;lt;16, 9&amp;gt;"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>ap_return</dataOutputObjs>
@@ -508,9 +508,6 @@
         <validLinenumbers>728</validLinenumbers>
         <validLinenumbers>1192</validLinenumbers>
         <validLinenumbers>708</validLinenumbers>
-      </fileValidLineNumbers>
-      <fileValidLineNumbers fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h">
-        <validLinenumbers>534</validLinenumbers>
       </fileValidLineNumbers>
       <fileValidLineNumbers fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h">
         <validLinenumbers>414</validLinenumbers>
@@ -533,226 +530,226 @@
   <ScheduleInfo time="3"/>
   <ScheduleInfo time="4"/>
   <ScheduleInfo time="5"/>
-  <regnodes realName="f_x_lsb_V_reg_555">
+  <regnodes realName="or_ln202_1_reg_543">
+    <nodeIds>61</nodeIds>
+  </regnodes>
+  <regnodes realName="f_x_lsb_V_reg_553">
     <nodeIds>36</nodeIds>
   </regnodes>
-  <regnodes realName="or_ln202_1_reg_545">
-    <nodeIds>61</nodeIds>
+  <regnodes realName="or_ln202_3_reg_548">
+    <nodeIds>63</nodeIds>
   </regnodes>
-  <regnodes realName="trunc_ln3_reg_567">
-    <nodeIds>44</nodeIds>
+  <regnodes realName="trunc_ln640_1_reg_527">
+    <nodeIds>32</nodeIds>
   </regnodes>
-  <regnodes realName="exp_x_msb_2_m_1_V_reg_561">
+  <regnodes realName="exp_x_msb_2_m_1_V_reg_559">
     <nodeIds>40</nodeIds>
   </regnodes>
-  <regnodes realName="exp_x_msb_2_m_1_table_V_addr_reg_540">
-    <nodeIds>39</nodeIds>
-  </regnodes>
-  <regnodes realName="exp_x_msb_2_lsb_m_1_V_reg_577">
+  <regnodes realName="exp_x_msb_2_lsb_m_1_V_reg_575">
     <nodeIds>50</nodeIds>
   </regnodes>
-  <regnodes realName="or_ln202_3_reg_550">
-    <nodeIds>63</nodeIds>
-  </regnodes>
-  <regnodes realName="p_Result_s_reg_524">
+  <regnodes realName="p_Result_s_reg_522">
     <nodeIds>29</nodeIds>
   </regnodes>
-  <regnodes realName="y_lo_s_V_reg_588">
-    <nodeIds>57</nodeIds>
-  </regnodes>
-  <regnodes realName="exp_x_msb_1_V_reg_582">
+  <regnodes realName="exp_x_msb_1_V_reg_580">
     <nodeIds>53</nodeIds>
   </regnodes>
-  <regnodes realName="tmp_reg_518">
+  <regnodes realName="y_lo_s_V_reg_586">
+    <nodeIds>57</nodeIds>
+  </regnodes>
+  <regnodes realName="exp_x_msb_2_m_1_table_V_addr_reg_538">
+    <nodeIds>39</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln6_reg_565">
+    <nodeIds>44</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_reg_516">
     <nodeIds>13</nodeIds>
   </regnodes>
-  <regnodes realName="f_x_lsb_table_V_addr_reg_535">
+  <regnodes realName="f_x_lsb_table_V_addr_reg_533">
     <nodeIds>35</nodeIds>
   </regnodes>
-  <regnodes realName="trunc_ln640_1_reg_529">
-    <nodeIds>32</nodeIds>
-  </regnodes>
-  <regnodes realName="exp_x_msb_1_table_V_addr_reg_572">
+  <regnodes realName="exp_x_msb_1_table_V_addr_reg_570">
     <nodeIds>52</nodeIds>
   </regnodes>
-  <expressionNodes realName="exp_x_msb_2_lsb_m_1_V_fu_404">
-    <nodeIds>50</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="r_V_fu_356">
+  <expressionNodes realName="r_V_fu_354">
     <nodeIds>43</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="r_V_43_fu_415">
-    <nodeIds>56</nodeIds>
+  <expressionNodes realName="exp_x_msb_2_lsb_m_1_V_fu_402">
+    <nodeIds>50</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="select_ln640_fu_436">
+  <expressionNodes realName="select_ln640_fu_434">
     <nodeIds>28</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="tmp_fu_173">
-    <nodeIds>13</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="y_V_fu_448">
-    <nodeIds>59</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="or_ln202_fu_311">
-    <nodeIds>60</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="tmp_53_fu_209">
-    <nodeIds>18</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="xor_ln222_2_fu_231">
-    <nodeIds>21</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="tmp_49_fu_195">
-    <nodeIds>16</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="trunc_ln640_fu_161">
+  <expressionNodes realName="trunc_ln640_fu_159">
     <nodeIds>11</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="and_ln202_fu_263">
-    <nodeIds>26</nodeIds>
+  <expressionNodes realName="r_V_43_fu_413">
+    <nodeIds>56</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="y_lo_s_V_fu_421">
-    <nodeIds>57</nodeIds>
+  <expressionNodes realName="tmp_fu_171">
+    <nodeIds>13</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="zext_ln1116_1_fu_409">
-    <nodeIds>54</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="zext_ln1192_fu_390">
-    <nodeIds>47</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="overf_2_fu_494">
-    <nodeIds>69</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="icmp_ln1498_fu_251">
-    <nodeIds>24</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="trunc_ln3_fu_362">
-    <nodeIds>44</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="zext_ln1118_1_fu_412">
-    <nodeIds>55</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="p_Result_s_52_fu_486">
-    <nodeIds>68</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="trunc_ln640_1_fu_289">
-    <nodeIds>32</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="tmp_54_fu_223">
-    <nodeIds>20</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="y_l_V_fu_444">
-    <nodeIds>58</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="p_Result_9_fu_335">
-    <nodeIds>30</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="tmp_60_fu_279">
+  <expressionNodes realName="tmp_60_fu_277">
     <nodeIds>31</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="or_ln202_2_fu_323">
-    <nodeIds>62</nodeIds>
+  <expressionNodes realName="y_V_fu_446">
+    <nodeIds>59</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="zext_ln534_fu_301">
+  <expressionNodes realName="tmp_53_fu_207">
+    <nodeIds>18</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln230_fu_299">
     <nodeIds>34</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="xor_ln222_3_fu_245">
-    <nodeIds>23</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="zext_ln703_1_fu_377">
-    <nodeIds>45</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="zext_ln703_fu_400">
-    <nodeIds>49</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="exp_x_msb_1_table_V_addr_gep_fu_138">
-    <nodeIds>52</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="ret_V_fu_394">
-    <nodeIds>48</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="tmp_55_fu_237">
-    <nodeIds>22</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="tmp_58_fu_470">
-    <nodeIds>66</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="overf_1_fu_480">
-    <nodeIds>67</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="tmp_61_fu_293">
-    <nodeIds>33</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="exp_x_msb_2_m_1_table_V_addr_gep_fu_125">
-    <nodeIds>39</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="rhs_1_fu_380">
-    <nodeIds>46</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="icmp_ln1494_fu_257">
-    <nodeIds>25</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="or_ln202_4_fu_458">
-    <nodeIds>64</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="p_Result_8_fu_165">
-    <nodeIds>12</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="select_ln274_fu_510">
-    <nodeIds>71</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="zext_ln534_2_fu_306">
-    <nodeIds>38</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="tmp_s_fu_500">
-    <nodeIds>70</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="xor_ln222_1_fu_217">
-    <nodeIds>19</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="zext_ln1116_fu_349">
-    <nodeIds>41</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="xor_ln640_fu_431">
-    <nodeIds>27</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="f_x_lsb_table_V_addr_gep_fu_112">
-    <nodeIds>35</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="p_Result_10_fu_341">
-    <nodeIds>37</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="or_ln202_1_fu_317">
+  <expressionNodes realName="or_ln202_1_fu_315">
     <nodeIds>61</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="zext_ln534_3_fu_372">
-    <nodeIds>51</nodeIds>
+  <expressionNodes realName="and_ln202_fu_261">
+    <nodeIds>26</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="p_Val2_s_fu_462">
-    <nodeIds>65</nodeIds>
+  <expressionNodes realName="tmp_49_fu_193">
+    <nodeIds>16</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="xor_ln222_fu_203">
-    <nodeIds>17</nodeIds>
+  <expressionNodes realName="p_Result_10_fu_339">
+    <nodeIds>37</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="or_ln202_3_fu_329">
-    <nodeIds>63</nodeIds>
+  <expressionNodes realName="zext_ln1116_1_fu_407">
+    <nodeIds>54</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="p_Result_7_fu_151">
-    <nodeIds>10</nodeIds>
+  <expressionNodes realName="tmp_58_fu_468">
+    <nodeIds>66</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="p_Result_s_fu_269">
-    <nodeIds>29</nodeIds>
+  <expressionNodes realName="zext_ln703_fu_398">
+    <nodeIds>49</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="zext_ln1118_fu_352">
-    <nodeIds>42</nodeIds>
+  <expressionNodes realName="zext_ln703_1_fu_375">
+    <nodeIds>45</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="overf_fu_189">
-    <nodeIds>15</nodeIds>
+  <expressionNodes realName="or_ln202_fu_309">
+    <nodeIds>60</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="tmp_48_fu_181">
+  <expressionNodes realName="overf_2_fu_492">
+    <nodeIds>69</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln640_1_fu_287">
+    <nodeIds>32</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_54_fu_221">
+    <nodeIds>20</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln1494_fu_255">
+    <nodeIds>25</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="rhs_1_fu_378">
+    <nodeIds>46</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_Result_9_fu_333">
+    <nodeIds>30</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="xor_ln222_2_fu_229">
+    <nodeIds>21</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="y_l_V_fu_442">
+    <nodeIds>58</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_Result_s_54_fu_484">
+    <nodeIds>68</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln1498_fu_249">
+    <nodeIds>24</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln202_2_fu_321">
+    <nodeIds>62</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln1118_1_fu_410">
+    <nodeIds>55</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="xor_ln222_3_fu_243">
+    <nodeIds>23</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="ret_V_fu_392">
+    <nodeIds>48</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_48_fu_179">
     <nodeIds>14</nodeIds>
   </expressionNodes>
-  <ioNodes realName="x_read_read_fu_106">
+  <expressionNodes realName="select_ln274_fu_508">
+    <nodeIds>71</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_61_fu_291">
+    <nodeIds>33</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="exp_x_msb_1_table_V_addr_gep_fu_136">
+    <nodeIds>52</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="exp_x_msb_2_m_1_table_V_addr_gep_fu_123">
+    <nodeIds>39</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln1192_fu_388">
+    <nodeIds>47</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="xor_ln640_fu_429">
+    <nodeIds>27</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln245_fu_304">
+    <nodeIds>38</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_55_fu_235">
+    <nodeIds>22</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="xor_ln222_1_fu_215">
+    <nodeIds>19</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_Result_8_fu_163">
+    <nodeIds>12</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln202_4_fu_456">
+    <nodeIds>64</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="overf_1_fu_478">
+    <nodeIds>67</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln6_fu_360">
+    <nodeIds>44</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="f_x_lsb_table_V_addr_gep_fu_110">
+    <nodeIds>35</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln261_fu_370">
+    <nodeIds>51</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="y_lo_s_V_fu_419">
+    <nodeIds>57</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_Result_7_fu_149">
+    <nodeIds>10</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln1116_fu_347">
+    <nodeIds>41</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_s_fu_498">
+    <nodeIds>70</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_Val2_s_fu_460">
+    <nodeIds>65</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln202_3_fu_327">
+    <nodeIds>63</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_Result_s_fu_267">
+    <nodeIds>29</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln1118_fu_350">
+    <nodeIds>42</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="overf_fu_187">
+    <nodeIds>15</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="xor_ln222_fu_201">
+    <nodeIds>17</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="x_read_read_fu_104">
     <nodeIds>9</nodeIds>
   </ioNodes>
   <memoryPorts dataString="exp_x_msb_1_table_V">

@@ -1,5 +1,5 @@
 #define MAX_SIZE 100
-#define MAX_FILTERS 10
+#define MAX_FILTERS 5
 #define MAX_WINDOW_SIZE 5
 #include <ap_fixed.h>
 

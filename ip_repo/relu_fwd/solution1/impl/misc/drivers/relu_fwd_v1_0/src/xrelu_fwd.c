@@ -73,41 +73,37 @@ void XRelu_fwd_DisableAutoRestart(XRelu_fwd *InstancePtr) {
     XRelu_fwd_WriteReg(InstancePtr->Ctrl_BaseAddress, XRELU_FWD_CTRL_ADDR_AP_CTRL, 0);
 }
 
-void XRelu_fwd_Set_x(XRelu_fwd *InstancePtr, u64 Data) {
+void XRelu_fwd_Set_x(XRelu_fwd *InstancePtr, u32 Data) {
     Xil_AssertVoid(InstancePtr != NULL);
     Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    XRelu_fwd_WriteReg(InstancePtr->Ctrl_BaseAddress, XRELU_FWD_CTRL_ADDR_X_DATA, (u32)(Data));
-    XRelu_fwd_WriteReg(InstancePtr->Ctrl_BaseAddress, XRELU_FWD_CTRL_ADDR_X_DATA + 4, (u32)(Data >> 32));
+    XRelu_fwd_WriteReg(InstancePtr->Ctrl_BaseAddress, XRELU_FWD_CTRL_ADDR_X_DATA, Data);
 }
 
-u64 XRelu_fwd_Get_x(XRelu_fwd *InstancePtr) {
-    u64 Data;
+u32 XRelu_fwd_Get_x(XRelu_fwd *InstancePtr) {
+    u32 Data;
 
     Xil_AssertNonvoid(InstancePtr != NULL);
     Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
     Data = XRelu_fwd_ReadReg(InstancePtr->Ctrl_BaseAddress, XRELU_FWD_CTRL_ADDR_X_DATA);
-    Data += (u64)XRelu_fwd_ReadReg(InstancePtr->Ctrl_BaseAddress, XRELU_FWD_CTRL_ADDR_X_DATA + 4) << 32;
     return Data;
 }
 
-void XRelu_fwd_Set_y(XRelu_fwd *InstancePtr, u64 Data) {
+void XRelu_fwd_Set_y(XRelu_fwd *InstancePtr, u32 Data) {
     Xil_AssertVoid(InstancePtr != NULL);
     Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    XRelu_fwd_WriteReg(InstancePtr->Ctrl_BaseAddress, XRELU_FWD_CTRL_ADDR_Y_DATA, (u32)(Data));
-    XRelu_fwd_WriteReg(InstancePtr->Ctrl_BaseAddress, XRELU_FWD_CTRL_ADDR_Y_DATA + 4, (u32)(Data >> 32));
+    XRelu_fwd_WriteReg(InstancePtr->Ctrl_BaseAddress, XRELU_FWD_CTRL_ADDR_Y_DATA, Data);
 }
 
-u64 XRelu_fwd_Get_y(XRelu_fwd *InstancePtr) {
-    u64 Data;
+u32 XRelu_fwd_Get_y(XRelu_fwd *InstancePtr) {
+    u32 Data;
 
     Xil_AssertNonvoid(InstancePtr != NULL);
     Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
     Data = XRelu_fwd_ReadReg(InstancePtr->Ctrl_BaseAddress, XRELU_FWD_CTRL_ADDR_Y_DATA);
-    Data += (u64)XRelu_fwd_ReadReg(InstancePtr->Ctrl_BaseAddress, XRELU_FWD_CTRL_ADDR_Y_DATA + 4) << 32;
     return Data;
 }
 

@@ -241,7 +241,7 @@ sc_bv<16> __xlx_tmp_lv = ((short*)__xlx_apatb_param_y)[j];
   sprintf(__xlx_sprintf_buffer.data(), "[[transaction]] %d\n", AESL_transaction);
   aesl_fh.write(AUTOTB_TVIN_x, __xlx_sprintf_buffer.data());
   {
-    sc_bv<64> __xlx_tmp_lv = __xlx_offset_byte_param_x;
+    sc_bv<32> __xlx_tmp_lv = __xlx_offset_byte_param_x;
 
     sprintf(__xlx_sprintf_buffer.data(), "%s\n", __xlx_tmp_lv.to_string(SC_HEX).c_str());
     aesl_fh.write(AUTOTB_TVIN_x, __xlx_sprintf_buffer.data()); 
@@ -255,7 +255,7 @@ sc_bv<16> __xlx_tmp_lv = ((short*)__xlx_apatb_param_y)[j];
   sprintf(__xlx_sprintf_buffer.data(), "[[transaction]] %d\n", AESL_transaction);
   aesl_fh.write(AUTOTB_TVIN_y, __xlx_sprintf_buffer.data());
   {
-    sc_bv<64> __xlx_tmp_lv = __xlx_offset_byte_param_y;
+    sc_bv<32> __xlx_tmp_lv = __xlx_offset_byte_param_y;
 
     sprintf(__xlx_sprintf_buffer.data(), "%s\n", __xlx_tmp_lv.to_string(SC_HEX).c_str());
     aesl_fh.write(AUTOTB_TVIN_y, __xlx_sprintf_buffer.data()); 

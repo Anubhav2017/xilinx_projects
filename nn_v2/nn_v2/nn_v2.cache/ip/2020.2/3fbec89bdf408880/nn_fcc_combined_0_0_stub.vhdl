@@ -1,0 +1,105 @@
+-- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+-- --------------------------------------------------------------------------------
+-- Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+-- Date        : Fri May  6 15:43:39 2022
+-- Host        : anubhav-acer running 64-bit Ubuntu 20.04.4 LTS
+-- Command     : write_vhdl -force -mode synth_stub -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
+--               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ nn_fcc_combined_0_0_stub.vhdl
+-- Design      : nn_fcc_combined_0_0
+-- Purpose     : Stub declaration of top-level module interface
+-- Device      : xc7z020clg400-1
+-- --------------------------------------------------------------------------------
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix is
+  Port ( 
+    s_axi_CRTL_BUS_AWADDR : in STD_LOGIC_VECTOR ( 5 downto 0 );
+    s_axi_CRTL_BUS_AWVALID : in STD_LOGIC;
+    s_axi_CRTL_BUS_AWREADY : out STD_LOGIC;
+    s_axi_CRTL_BUS_WDATA : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    s_axi_CRTL_BUS_WSTRB : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s_axi_CRTL_BUS_WVALID : in STD_LOGIC;
+    s_axi_CRTL_BUS_WREADY : out STD_LOGIC;
+    s_axi_CRTL_BUS_BRESP : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    s_axi_CRTL_BUS_BVALID : out STD_LOGIC;
+    s_axi_CRTL_BUS_BREADY : in STD_LOGIC;
+    s_axi_CRTL_BUS_ARADDR : in STD_LOGIC_VECTOR ( 5 downto 0 );
+    s_axi_CRTL_BUS_ARVALID : in STD_LOGIC;
+    s_axi_CRTL_BUS_ARREADY : out STD_LOGIC;
+    s_axi_CRTL_BUS_RDATA : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    s_axi_CRTL_BUS_RRESP : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    s_axi_CRTL_BUS_RVALID : out STD_LOGIC;
+    s_axi_CRTL_BUS_RREADY : in STD_LOGIC;
+    ap_clk : in STD_LOGIC;
+    ap_rst_n : in STD_LOGIC;
+    interrupt : out STD_LOGIC;
+    x_Clk_A : out STD_LOGIC;
+    x_Rst_A : out STD_LOGIC;
+    x_EN_A : out STD_LOGIC;
+    x_WEN_A : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    x_Addr_A : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    x_Din_A : out STD_LOGIC_VECTOR ( 15 downto 0 );
+    x_Dout_A : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    dx_Clk_A : out STD_LOGIC;
+    dx_Rst_A : out STD_LOGIC;
+    dx_EN_A : out STD_LOGIC;
+    dx_WEN_A : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    dx_Addr_A : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    dx_Din_A : out STD_LOGIC_VECTOR ( 15 downto 0 );
+    dx_Dout_A : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    w_Clk_A : out STD_LOGIC;
+    w_Rst_A : out STD_LOGIC;
+    w_EN_A : out STD_LOGIC;
+    w_WEN_A : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    w_Addr_A : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    w_Din_A : out STD_LOGIC_VECTOR ( 15 downto 0 );
+    w_Dout_A : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    dw_Clk_A : out STD_LOGIC;
+    dw_Rst_A : out STD_LOGIC;
+    dw_EN_A : out STD_LOGIC;
+    dw_WEN_A : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    dw_Addr_A : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    dw_Din_A : out STD_LOGIC_VECTOR ( 15 downto 0 );
+    dw_Dout_A : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    b_Clk_A : out STD_LOGIC;
+    b_Rst_A : out STD_LOGIC;
+    b_EN_A : out STD_LOGIC;
+    b_WEN_A : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    b_Addr_A : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    b_Din_A : out STD_LOGIC_VECTOR ( 15 downto 0 );
+    b_Dout_A : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    db_Clk_A : out STD_LOGIC;
+    db_Rst_A : out STD_LOGIC;
+    db_EN_A : out STD_LOGIC;
+    db_WEN_A : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    db_Addr_A : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    db_Din_A : out STD_LOGIC_VECTOR ( 15 downto 0 );
+    db_Dout_A : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    y_Clk_A : out STD_LOGIC;
+    y_Rst_A : out STD_LOGIC;
+    y_EN_A : out STD_LOGIC;
+    y_WEN_A : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    y_Addr_A : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    y_Din_A : out STD_LOGIC_VECTOR ( 15 downto 0 );
+    y_Dout_A : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    dy_Clk_A : out STD_LOGIC;
+    dy_Rst_A : out STD_LOGIC;
+    dy_EN_A : out STD_LOGIC;
+    dy_WEN_A : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    dy_Addr_A : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    dy_Din_A : out STD_LOGIC_VECTOR ( 15 downto 0 );
+    dy_Dout_A : in STD_LOGIC_VECTOR ( 15 downto 0 )
+  );
+
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix;
+
+architecture stub of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix is
+attribute syn_black_box : boolean;
+attribute black_box_pad_pin : string;
+attribute syn_black_box of stub : architecture is true;
+attribute black_box_pad_pin of stub : architecture is "s_axi_CRTL_BUS_AWADDR[5:0],s_axi_CRTL_BUS_AWVALID,s_axi_CRTL_BUS_AWREADY,s_axi_CRTL_BUS_WDATA[31:0],s_axi_CRTL_BUS_WSTRB[3:0],s_axi_CRTL_BUS_WVALID,s_axi_CRTL_BUS_WREADY,s_axi_CRTL_BUS_BRESP[1:0],s_axi_CRTL_BUS_BVALID,s_axi_CRTL_BUS_BREADY,s_axi_CRTL_BUS_ARADDR[5:0],s_axi_CRTL_BUS_ARVALID,s_axi_CRTL_BUS_ARREADY,s_axi_CRTL_BUS_RDATA[31:0],s_axi_CRTL_BUS_RRESP[1:0],s_axi_CRTL_BUS_RVALID,s_axi_CRTL_BUS_RREADY,ap_clk,ap_rst_n,interrupt,x_Clk_A,x_Rst_A,x_EN_A,x_WEN_A[1:0],x_Addr_A[31:0],x_Din_A[15:0],x_Dout_A[15:0],dx_Clk_A,dx_Rst_A,dx_EN_A,dx_WEN_A[1:0],dx_Addr_A[31:0],dx_Din_A[15:0],dx_Dout_A[15:0],w_Clk_A,w_Rst_A,w_EN_A,w_WEN_A[1:0],w_Addr_A[31:0],w_Din_A[15:0],w_Dout_A[15:0],dw_Clk_A,dw_Rst_A,dw_EN_A,dw_WEN_A[1:0],dw_Addr_A[31:0],dw_Din_A[15:0],dw_Dout_A[15:0],b_Clk_A,b_Rst_A,b_EN_A,b_WEN_A[1:0],b_Addr_A[31:0],b_Din_A[15:0],b_Dout_A[15:0],db_Clk_A,db_Rst_A,db_EN_A,db_WEN_A[1:0],db_Addr_A[31:0],db_Din_A[15:0],db_Dout_A[15:0],y_Clk_A,y_Rst_A,y_EN_A,y_WEN_A[1:0],y_Addr_A[31:0],y_Din_A[15:0],y_Dout_A[15:0],dy_Clk_A,dy_Rst_A,dy_EN_A,dy_WEN_A[1:0],dy_Addr_A[31:0],dy_Din_A[15:0],dy_Dout_A[15:0]";
+attribute X_CORE_INFO : string;
+attribute X_CORE_INFO of stub : architecture is "fcc_combined,Vivado 2020.2";
+begin
+end;
