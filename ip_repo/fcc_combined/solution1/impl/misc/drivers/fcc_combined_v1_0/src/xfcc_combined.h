@@ -38,13 +38,11 @@ typedef uint64_t u64;
 #else
 typedef struct {
     u16 DeviceId;
-    u32 Control_BaseAddress;
     u32 Crtl_bus_BaseAddress;
 } XFcc_combined_Config;
 #endif
 
 typedef struct {
-    u64 Control_BaseAddress;
     u64 Crtl_bus_BaseAddress;
     u32 IsReady;
 } XFcc_combined;

@@ -5,7 +5,7 @@ set rawDecl ""
 set globalVariable ""
 set PortList ""
 set PortName "x"
-set BitWidth "16"
+set BitWidth "32"
 set ArrayOpt ""
 set Const "0"
 set Volatile "1"
@@ -17,7 +17,7 @@ set DataType "void"
 set Port [list $PortName $Interface $DataType $Pointer $Dims $Const    $Volatile $ArrayOpt]
 lappend PortList $Port
 set PortName "dx"
-set BitWidth "16"
+set BitWidth "32"
 set ArrayOpt ""
 set Const "0"
 set Volatile "1"
@@ -29,7 +29,7 @@ set DataType "void"
 set Port [list $PortName $Interface $DataType $Pointer $Dims $Const    $Volatile $ArrayOpt]
 lappend PortList $Port
 set PortName "wt"
-set BitWidth "16"
+set BitWidth "32"
 set ArrayOpt ""
 set Const "0"
 set Volatile "1"
@@ -41,7 +41,7 @@ set DataType "void"
 set Port [list $PortName $Interface $DataType $Pointer $Dims $Const    $Volatile $ArrayOpt]
 lappend PortList $Port
 set PortName "dwt"
-set BitWidth "16"
+set BitWidth "32"
 set ArrayOpt ""
 set Const "0"
 set Volatile "1"
@@ -53,7 +53,7 @@ set DataType "void"
 set Port [list $PortName $Interface $DataType $Pointer $Dims $Const    $Volatile $ArrayOpt]
 lappend PortList $Port
 set PortName "y"
-set BitWidth "16"
+set BitWidth "32"
 set ArrayOpt ""
 set Const "0"
 set Volatile "1"
@@ -65,7 +65,7 @@ set DataType "void"
 set Port [list $PortName $Interface $DataType $Pointer $Dims $Const    $Volatile $ArrayOpt]
 lappend PortList $Port
 set PortName "dy"
-set BitWidth "16"
+set BitWidth "32"
 set ArrayOpt ""
 set Const "0"
 set Volatile "1"
@@ -77,7 +77,7 @@ set DataType "void"
 set Port [list $PortName $Interface $DataType $Pointer $Dims $Const    $Volatile $ArrayOpt]
 lappend PortList $Port
 set PortName "b"
-set BitWidth "16"
+set BitWidth "32"
 set ArrayOpt ""
 set Const "0"
 set Volatile "0"
@@ -85,11 +85,11 @@ set Pointer "0"
 set Reference "0"
 set Dims [list 0]
 set Interface "wire"
-set DataType "short"
+set DataType "int"
 set Port [list $PortName $Interface $DataType $Pointer $Dims $Const    $Volatile $ArrayOpt]
 lappend PortList $Port
 set PortName "db"
-set BitWidth "16"
+set BitWidth "32"
 set ArrayOpt ""
 set Const "0"
 set Volatile "0"
@@ -97,7 +97,7 @@ set Pointer "0"
 set Reference "0"
 set Dims [list 0]
 set Interface "wire"
-set DataType "short"
+set DataType "int"
 set Port [list $PortName $Interface $DataType $Pointer $Dims $Const    $Volatile $ArrayOpt]
 lappend PortList $Port
 set PortName "H"

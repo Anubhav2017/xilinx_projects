@@ -6849,7 +6849,7 @@ inline bool operator!=(
 # 4 "fcc_combined/main.cpp" 2
 
 
-typedef ap_fixed<16,9> fixed_t;
+typedef ap_fixed<32,9> fixed_t;
 
 
 __attribute__((sdx_kernel("fcc_combined", 0))) void fcc_combined(fixed_t x[1000], fixed_t dx[1000], fixed_t* w, fixed_t* dw, fixed_t* b, fixed_t* db, fixed_t y[1000], fixed_t dy[1000], int xdim, int ydim, bool fwprop){_ssdm_SpecArrayDimSize(x, 1000);_ssdm_SpecArrayDimSize(dx, 1000);_ssdm_SpecArrayDimSize(y, 1000);_ssdm_SpecArrayDimSize(dy, 1000);
@@ -6865,6 +6865,12 @@ __attribute__((sdx_kernel("fcc_combined", 0))) void fcc_combined(fixed_t x[1000]
 #pragma HLS INTERFACE bram port=dy
 #pragma HLS INTERFACE m_axi port=b depth=200 offset=slave bundle=gmem
 #pragma HLS INTERFACE m_axi port=db depth=200 offset=slave bundle=gmem
+
+#pragma HLS INTERFACE s_axilite port=w bundle=CRTL_BUS
+#pragma HLS INTERFACE s_axilite port=dw bundle=CRTL_BUS
+#pragma HLS INTERFACE s_axilite port=b bundle=CRTL_BUS
+#pragma HLS INTERFACE s_axilite port=db bundle=CRTL_BUS
+
 #pragma HLS INTERFACE s_axilite port=xdim bundle=CRTL_BUS
 #pragma HLS INTERFACE s_axilite port=ydim bundle=CRTL_BUS
 #pragma HLS INTERFACE s_axilite port=fwprop bundle=CRTL_BUS
@@ -6878,14 +6884,14 @@ __attribute__((sdx_kernel("fcc_combined", 0))) void fcc_combined(fixed_t x[1000]
  fixed_t dbbuf[1000];
 
 
- VITIS_LOOP_32_1: for(int i=0;i<ydim;i++){
-   VITIS_LOOP_33_2: for(int j=0;j<xdim;j++){
+ VITIS_LOOP_38_1: for(int i=0;i<ydim;i++){
+   VITIS_LOOP_39_2: for(int j=0;j<xdim;j++){
     wbuf[i][j] = w[i*xdim+j];
    }
 
   }
 
-  VITIS_LOOP_39_3: for(int i=0;i<ydim;i++){
+  VITIS_LOOP_45_3: for(int i=0;i<ydim;i++){
    bbuf[i]=b[i];
   }
 
@@ -6901,15 +6907,15 @@ __attribute__((sdx_kernel("fcc_combined", 0))) void fcc_combined(fixed_t x[1000]
  }
  else{
 
-  VITIS_LOOP_55_4: for(int i=0;i<ydim;i++){
-       VITIS_LOOP_56_5: for(int j=0;j<xdim;j++){
+  VITIS_LOOP_61_4: for(int i=0;i<ydim;i++){
+       VITIS_LOOP_62_5: for(int j=0;j<xdim;j++){
            dx[j] = dy[i] * wbuf[i][j];
            dwbuf[i][j] += dy[i]*x[j];
        }
 
     }
 
-   VITIS_LOOP_63_6: for (int i=0;i<ydim;i++){
+   VITIS_LOOP_69_6: for (int i=0;i<ydim;i++){
        dbbuf[i] += dy[i];
    }
 

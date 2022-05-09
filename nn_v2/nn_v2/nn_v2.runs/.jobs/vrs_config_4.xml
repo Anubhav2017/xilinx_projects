@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="nn_axi_bram_ctrl_0_0_synth_1" LaunchDir="/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/nn_axi_bram_ctrl_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="nn_xbar_0_synth_1" LaunchDir="/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/nn_xbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="nn_bram_conv_dy_0_synth_1" LaunchDir="/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/nn_bram_conv_dy_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="nn_bram_conv_y_0_synth_1" LaunchDir="/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/nn_bram_conv_y_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="nn_bram_conv_dy_0_synth_1"/>
+	</Run>
+	<Run Id="nn_bram_dx_0_synth_1" LaunchDir="/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/nn_bram_dx_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="nn_bram_conv_dy_0_synth_1"/>
+	</Run>
+	<Run Id="nn_bram_fcc_dy_0_synth_1" LaunchDir="/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/nn_bram_fcc_dy_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="nn_bram_conv_dy_0_synth_1"/>
+	</Run>
+	<Run Id="nn_bram_fcc_y_0_synth_1" LaunchDir="/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/nn_bram_fcc_y_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="nn_bram_conv_dy_0_synth_1"/>
+	</Run>
+	<Run Id="nn_bram_relu_dy_0_synth_1" LaunchDir="/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/nn_bram_relu_dy_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="nn_bram_relu_y_0_synth_1" LaunchDir="/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/nn_bram_relu_y_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="nn_bram_relu_dy_0_synth_1"/>
+	</Run>
+	<Run Id="nn_bram_x_0_synth_1" LaunchDir="/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/nn_bram_x_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="nn_bram_conv_dy_0_synth_1"/>
+	</Run>
+	<Run Id="nn_conv_combined_0_0_synth_1" LaunchDir="/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/nn_conv_combined_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="nn_fcc_combined_0_0_synth_1" LaunchDir="/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/nn_fcc_combined_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="nn_processing_system7_0_0_synth_1" LaunchDir="/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/nn_processing_system7_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="nn_xbar_1_synth_1" LaunchDir="/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/nn_xbar_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="nn_relu_combined_0_0_synth_1" LaunchDir="/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/nn_relu_combined_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="nn_rst_ps7_0_100M_0_synth_1" LaunchDir="/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/nn_rst_ps7_0_100M_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="nn_axi_dwidth_converter_0_0_synth_1" LaunchDir="/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/nn_axi_dwidth_converter_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

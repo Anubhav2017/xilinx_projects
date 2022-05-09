@@ -1,4 +1,4 @@
-<project xmlns="com.autoesl.autopilot.project" top="relu_combined" name="relu_combined">
+<project xmlns="com.autoesl.autopilot.project" name="relu_combined" top="relu_combined">
     <includePaths/>
     <libraryPaths/>
     <Simulation>

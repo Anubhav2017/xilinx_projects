@@ -468,3 +468,149 @@ INFO: ==============================================================
 Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=0
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: set_directive_top -name fcc_combined fcc_combined 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 155.900 MB.
+INFO: [HLS 200-10] Analyzing design file 'fcc_combined/main.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 3.45 seconds. CPU system time: 0.2 seconds. Elapsed time: 3.05 seconds; current allocated memory: 157.066 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'fcc_combined(ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, bool)' (fcc_combined/main.cpp:9:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'fcc_combined(ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, bool)' (fcc_combined/main.cpp:9:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'fcc_combined(ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, bool)' (fcc_combined/main.cpp:9:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'fcc_combined(ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, bool)' (fcc_combined/main.cpp:9:0)
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 16 in loop 'VITIS_LOOP_39_2'(fcc_combined/main.cpp:39:21) has been inferred on port 'gmem' (fcc_combined/main.cpp:39:21)
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 16 in loop 'VITIS_LOOP_45_3'(fcc_combined/main.cpp:45:20) has been inferred on port 'gmem' (fcc_combined/main.cpp:45:20)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i16.s_struct.ap_fixeds' into 'fcc_combined(ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, bool)' (fcc_combined/main.cpp:52:11)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i16.s_struct.ap_fixeds' into 'fcc_combined(ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, bool)' (fcc_combined/main.cpp:63:18)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i16.s_struct.ap_fixeds' into 'fcc_combined(ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, bool)' (fcc_combined/main.cpp:55:19)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2.77 seconds. CPU system time: 0.17 seconds. Elapsed time: 2.93 seconds; current allocated memory: 159.595 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 159.596 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 164.247 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 168.728 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_39_2' (fcc_combined/main.cpp:39) in function 'fcc_combined' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_45_3' (fcc_combined/main.cpp:45) in function 'fcc_combined' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'LOOP2' (fcc_combined/main.cpp:54) in function 'fcc_combined' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_62_5' (fcc_combined/main.cpp:62) in function 'fcc_combined' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_69_6' (fcc_combined/main.cpp:69) in function 'fcc_combined' automatically.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.22 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.24 seconds; current allocated memory: 194.871 MB.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_38_1' (fcc_combined/main.cpp:38:27) in function 'fcc_combined' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+WARNING: [HLS 200-960] Cannot flatten loop 'LOOP1' (fcc_combined/main.cpp:50:16) in function 'fcc_combined' the outer loop is not a perfect loop.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_61_4' (fcc_combined/main.cpp:61:28) in function 'fcc_combined'.
+INFO: [HLS 200-472] Inferring partial write operation for 'wbuf.V' (fcc_combined/main.cpp:40:16)
+INFO: [HLS 200-472] Inferring partial write operation for 'bbuf.V' (fcc_combined/main.cpp:46:11)
+INFO: [HLS 200-472]==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=0
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: set_directive_top -name fcc_combined fcc_combined 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 155.900 MB.
+INFO: [HLS 200-10] Analyzing design file 'fcc_combined/main.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 3.5 seconds. CPU system time: 0.2 seconds. Elapsed time: 3.07 seconds; current allocated memory: 157.066 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'fcc_combined(ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, bool)' (fcc_combined/main.cpp:9:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'fcc_combined(ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, bool)' (fcc_combined/main.cpp:9:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'fcc_combined(ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, bool)' (fcc_combined/main.cpp:9:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'fcc_combined(ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, bool)' (fcc_combined/main.cpp:9:0)
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 32 in loop 'VITIS_LOOP_39_2'(fcc_combined/main.cpp:39:21) has been inferred on port 'gmem' (fcc_combined/main.cpp:39:21)
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 32 in loop 'VITIS_LOOP_45_3'(fcc_combined/main.cpp:45:20) has been inferred on port 'gmem' (fcc_combined/main.cpp:45:20)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i32.s_struct.ap_fixeds' into 'fcc_combined(ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, bool)' (fcc_combined/main.cpp:52:11)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i32.s_struct.ap_fixeds' into 'fcc_combined(ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, bool)' (fcc_combined/main.cpp:63:18)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i32.s_struct.ap_fixeds' into 'fcc_combined(ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, bool)' (fcc_combined/main.cpp:55:19)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2.94 seconds. CPU system time: 0.17 seconds. Elapsed time: 3.09 seconds; current allocated memory: 159.594 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 159.595 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 164.253 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 168.732 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_39_2' (fcc_combined/main.cpp:39) in function 'fcc_combined' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_45_3' (fcc_combined/main.cpp:45) in function 'fcc_combined' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'LOOP2' (fcc_combined/main.cpp:54) in function 'fcc_combined' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_62_5' (fcc_combined/main.cpp:62) in function 'fcc_combined' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_69_6' (fcc_combined/main.cpp:69) in function 'fcc_combined' automatically.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.23 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.24 seconds; current allocated memory: 194.877 MB.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_38_1' (fcc_combined/main.cpp:38:27) in function 'fcc_combined' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+WARNING: [HLS 200-960] Cannot flatten loop 'LOOP1' (fcc_combined/main.cpp:50:16) in function 'fcc_combined' the outer loop is not a perfect loop.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_61_4' (fcc_combined/main.cpp:61:28) in function 'fcc_combined'.
+INFO: [HLS 200-472] Inferring partial write operation for 'wbuf.V' (fcc_combined/main.cpp:40:16)
+INFO: [HLS 200-472] Inferring partial write operation for 'bbuf.V' (fcc_combined/main.cpp:46:11)
+INFO: [HLS 200-472]==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=0
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: set_directive_top -name fcc_combined fcc_combined 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 171.901 MB.
+INFO: [HLS 200-10] Analyzing design file 'fcc_combined/main.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 3.93 seconds. CPU system time: 0.27 seconds. Elapsed time: 3.65 seconds; current allocated memory: 173.066 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'fcc_combined(ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, bool)' (fcc_combined/main.cpp:9:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'fcc_combined(ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, bool)' (fcc_combined/main.cpp:9:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'fcc_combined(ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, bool)' (fcc_combined/main.cpp:9:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'fcc_combined(ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, bool)' (fcc_combined/main.cpp:9:0)
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 32 in loop 'VITIS_LOOP_39_2'(fcc_combined/main.cpp:39:21) has been inferred on port 'gmem' (fcc_combined/main.cpp:39:21)
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 32 in loop 'VITIS_LOOP_45_3'(fcc_combined/main.cpp:45:20) has been inferred on port 'gmem' (fcc_combined/main.cpp:45:20)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i32.s_struct.ap_fixeds' into 'fcc_combined(ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, bool)' (fcc_combined/main.cpp:52:11)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i32.s_struct.ap_fixeds' into 'fcc_combined(ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, bool)' (fcc_combined/main.cpp:63:18)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i32.s_struct.ap_fixeds' into 'fcc_combined(ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, bool)' (fcc_combined/main.cpp:55:19)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.16 seconds. CPU system time: 0.22 seconds. Elapsed time: 3.37 seconds; current allocated memory: 175.594 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 175.595 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 180.253 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.11 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.11 seconds; current allocated memory: 184.735 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_39_2' (fcc_combined/main.cpp:39) in function 'fcc_combined' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_45_3' (fcc_combined/main.cpp:45) in function 'fcc_combined' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'LOOP2' (fcc_combined/main.cpp:54) in function 'fcc_combined' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_62_5' (fcc_combined/main.cpp:62) in function 'fcc_combined' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_69_6' (fcc_combined/main.cpp:69) in function 'fcc_combined' automatically.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.36 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.37 seconds; current allocated memory: 210.885 MB.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_38_1' (fcc_combined/main.cpp:38:27) in function 'fcc_combined' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+WARNING: [HLS 200-960] Cannot flatten loop 'LOOP1' (fcc_combined/main.cpp:50:16) in function 'fcc_combined' the outer loop is not a perfect loop.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_61_4' (fcc_combined/main.cpp:61:28) in function 'fcc_combined'.
+INFO: [HLS 200-472] Inferring partial write operation for 'wbuf.V' (fcc_combined/main.cpp:40:16)
+INFO: [HLS 200-472] Inferring partial write operation for 'bbuf.V' (fcc_combined/main.cpp:46:11)
+INFO: ==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================

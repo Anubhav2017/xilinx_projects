@@ -3,7 +3,7 @@
 #include <ap_fixed.h>
 
 #define MAX_SIZE 1000
-typedef ap_fixed<16,9> fixed_t;
+typedef ap_fixed<32,9> fixed_t;
 
 
 void fcc_combined(fixed_t x[MAX_SIZE], fixed_t dx[MAX_SIZE], fixed_t* w, fixed_t* dw, fixed_t* b, fixed_t* db, fixed_t y[MAX_SIZE], fixed_t dy[MAX_SIZE], int xdim, int ydim, bool fwprop){
@@ -16,6 +16,12 @@ void fcc_combined(fixed_t x[MAX_SIZE], fixed_t dx[MAX_SIZE], fixed_t* w, fixed_t
 #pragma HLS INTERFACE bram port=dy
 #pragma HLS INTERFACE m_axi port=b depth=200 offset=slave bundle=gmem
 #pragma HLS INTERFACE m_axi port=db depth=200 offset=slave bundle=gmem
+
+#pragma HLS INTERFACE s_axilite port=w bundle=CRTL_BUS
+#pragma HLS INTERFACE s_axilite port=dw bundle=CRTL_BUS
+#pragma HLS INTERFACE s_axilite port=b bundle=CRTL_BUS
+#pragma HLS INTERFACE s_axilite port=db bundle=CRTL_BUS
+
 #pragma HLS INTERFACE s_axilite port=xdim bundle=CRTL_BUS
 #pragma HLS INTERFACE s_axilite port=ydim bundle=CRTL_BUS
 #pragma HLS INTERFACE s_axilite port=fwprop bundle=CRTL_BUS

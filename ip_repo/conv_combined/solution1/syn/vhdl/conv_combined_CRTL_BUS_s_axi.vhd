@@ -8,7 +8,7 @@ use IEEE.NUMERIC_STD.all;
 
 entity conv_combined_CRTL_BUS_s_axi is
 generic (
-    C_S_AXI_ADDR_WIDTH    : INTEGER := 6;
+    C_S_AXI_ADDR_WIDTH    : INTEGER := 7;
     C_S_AXI_DATA_WIDTH    : INTEGER := 32);
 port (
     ACLK                  :in   STD_LOGIC;
@@ -32,6 +32,10 @@ port (
     RVALID                :out  STD_LOGIC;
     RREADY                :in   STD_LOGIC;
     interrupt             :out  STD_LOGIC;
+    wt                    :out  STD_LOGIC_VECTOR(31 downto 0);
+    dwt                   :out  STD_LOGIC_VECTOR(31 downto 0);
+    b                     :out  STD_LOGIC_VECTOR(31 downto 0);
+    db                    :out  STD_LOGIC_VECTOR(31 downto 0);
     H                     :out  STD_LOGIC_VECTOR(31 downto 0);
     W                     :out  STD_LOGIC_VECTOR(31 downto 0);
     FH                    :out  STD_LOGIC_VECTOR(31 downto 0);
@@ -63,22 +67,34 @@ end entity conv_combined_CRTL_BUS_s_axi;
 --        bit 0  - ap_done (COR/TOW)
 --        bit 1  - ap_ready (COR/TOW)
 --        others - reserved
--- 0x10 : Data signal of H
---        bit 31~0 - H[31:0] (Read/Write)
+-- 0x10 : Data signal of wt
+--        bit 31~0 - wt[31:0] (Read/Write)
 -- 0x14 : reserved
--- 0x18 : Data signal of W
---        bit 31~0 - W[31:0] (Read/Write)
+-- 0x18 : Data signal of dwt
+--        bit 31~0 - dwt[31:0] (Read/Write)
 -- 0x1c : reserved
--- 0x20 : Data signal of FH
---        bit 31~0 - FH[31:0] (Read/Write)
+-- 0x20 : Data signal of b
+--        bit 31~0 - b[31:0] (Read/Write)
 -- 0x24 : reserved
--- 0x28 : Data signal of FW
---        bit 31~0 - FW[31:0] (Read/Write)
+-- 0x28 : Data signal of db
+--        bit 31~0 - db[31:0] (Read/Write)
 -- 0x2c : reserved
--- 0x30 : Data signal of fwprop
+-- 0x30 : Data signal of H
+--        bit 31~0 - H[31:0] (Read/Write)
+-- 0x34 : reserved
+-- 0x38 : Data signal of W
+--        bit 31~0 - W[31:0] (Read/Write)
+-- 0x3c : reserved
+-- 0x40 : Data signal of FH
+--        bit 31~0 - FH[31:0] (Read/Write)
+-- 0x44 : reserved
+-- 0x48 : Data signal of FW
+--        bit 31~0 - FW[31:0] (Read/Write)
+-- 0x4c : reserved
+-- 0x50 : Data signal of fwprop
 --        bit 0  - fwprop[0] (Read/Write)
 --        others - reserved
--- 0x34 : reserved
+-- 0x54 : reserved
 -- (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
 architecture behave of conv_combined_CRTL_BUS_s_axi is
@@ -90,17 +106,25 @@ architecture behave of conv_combined_CRTL_BUS_s_axi is
     constant ADDR_GIE           : INTEGER := 16#04#;
     constant ADDR_IER           : INTEGER := 16#08#;
     constant ADDR_ISR           : INTEGER := 16#0c#;
-    constant ADDR_H_DATA_0      : INTEGER := 16#10#;
-    constant ADDR_H_CTRL        : INTEGER := 16#14#;
-    constant ADDR_W_DATA_0      : INTEGER := 16#18#;
-    constant ADDR_W_CTRL        : INTEGER := 16#1c#;
-    constant ADDR_FH_DATA_0     : INTEGER := 16#20#;
-    constant ADDR_FH_CTRL       : INTEGER := 16#24#;
-    constant ADDR_FW_DATA_0     : INTEGER := 16#28#;
-    constant ADDR_FW_CTRL       : INTEGER := 16#2c#;
-    constant ADDR_FWPROP_DATA_0 : INTEGER := 16#30#;
-    constant ADDR_FWPROP_CTRL   : INTEGER := 16#34#;
-    constant ADDR_BITS         : INTEGER := 6;
+    constant ADDR_WT_DATA_0     : INTEGER := 16#10#;
+    constant ADDR_WT_CTRL       : INTEGER := 16#14#;
+    constant ADDR_DWT_DATA_0    : INTEGER := 16#18#;
+    constant ADDR_DWT_CTRL      : INTEGER := 16#1c#;
+    constant ADDR_B_DATA_0      : INTEGER := 16#20#;
+    constant ADDR_B_CTRL        : INTEGER := 16#24#;
+    constant ADDR_DB_DATA_0     : INTEGER := 16#28#;
+    constant ADDR_DB_CTRL       : INTEGER := 16#2c#;
+    constant ADDR_H_DATA_0      : INTEGER := 16#30#;
+    constant ADDR_H_CTRL        : INTEGER := 16#34#;
+    constant ADDR_W_DATA_0      : INTEGER := 16#38#;
+    constant ADDR_W_CTRL        : INTEGER := 16#3c#;
+    constant ADDR_FH_DATA_0     : INTEGER := 16#40#;
+    constant ADDR_FH_CTRL       : INTEGER := 16#44#;
+    constant ADDR_FW_DATA_0     : INTEGER := 16#48#;
+    constant ADDR_FW_CTRL       : INTEGER := 16#4c#;
+    constant ADDR_FWPROP_DATA_0 : INTEGER := 16#50#;
+    constant ADDR_FWPROP_CTRL   : INTEGER := 16#54#;
+    constant ADDR_BITS         : INTEGER := 7;
 
     signal waddr               : UNSIGNED(ADDR_BITS-1 downto 0);
     signal wmask               : UNSIGNED(C_S_AXI_DATA_WIDTH-1 downto 0);
@@ -122,6 +146,10 @@ architecture behave of conv_combined_CRTL_BUS_s_axi is
     signal int_gie             : STD_LOGIC := '0';
     signal int_ier             : UNSIGNED(1 downto 0) := (others => '0');
     signal int_isr             : UNSIGNED(1 downto 0) := (others => '0');
+    signal int_wt              : UNSIGNED(31 downto 0) := (others => '0');
+    signal int_dwt             : UNSIGNED(31 downto 0) := (others => '0');
+    signal int_b               : UNSIGNED(31 downto 0) := (others => '0');
+    signal int_db              : UNSIGNED(31 downto 0) := (others => '0');
     signal int_H               : UNSIGNED(31 downto 0) := (others => '0');
     signal int_W               : UNSIGNED(31 downto 0) := (others => '0');
     signal int_FH              : UNSIGNED(31 downto 0) := (others => '0');
@@ -254,6 +282,14 @@ begin
                         rdata_data(1 downto 0) <= int_ier;
                     when ADDR_ISR =>
                         rdata_data(1 downto 0) <= int_isr;
+                    when ADDR_WT_DATA_0 =>
+                        rdata_data <= RESIZE(int_wt(31 downto 0), 32);
+                    when ADDR_DWT_DATA_0 =>
+                        rdata_data <= RESIZE(int_dwt(31 downto 0), 32);
+                    when ADDR_B_DATA_0 =>
+                        rdata_data <= RESIZE(int_b(31 downto 0), 32);
+                    when ADDR_DB_DATA_0 =>
+                        rdata_data <= RESIZE(int_db(31 downto 0), 32);
                     when ADDR_H_DATA_0 =>
                         rdata_data <= RESIZE(int_H(31 downto 0), 32);
                     when ADDR_W_DATA_0 =>
@@ -275,6 +311,10 @@ begin
 -- ----------------------- Register logic ----------------
     interrupt            <= int_gie and (int_isr(0) or int_isr(1));
     ap_start             <= int_ap_start;
+    wt                   <= STD_LOGIC_VECTOR(int_wt);
+    dwt                  <= STD_LOGIC_VECTOR(int_dwt);
+    b                    <= STD_LOGIC_VECTOR(int_b);
+    db                   <= STD_LOGIC_VECTOR(int_db);
     H                    <= STD_LOGIC_VECTOR(int_H);
     W                    <= STD_LOGIC_VECTOR(int_W);
     FH                   <= STD_LOGIC_VECTOR(int_FH);
@@ -401,6 +441,50 @@ begin
                     int_isr(1) <= '1';
                 elsif (w_hs = '1' and waddr = ADDR_ISR and WSTRB(0) = '1') then
                     int_isr(1) <= int_isr(1) xor WDATA(1); -- toggle on write
+                end if;
+            end if;
+        end if;
+    end process;
+
+    process (ACLK)
+    begin
+        if (ACLK'event and ACLK = '1') then
+            if (ACLK_EN = '1') then
+                if (w_hs = '1' and waddr = ADDR_WT_DATA_0) then
+                    int_wt(31 downto 0) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_wt(31 downto 0));
+                end if;
+            end if;
+        end if;
+    end process;
+
+    process (ACLK)
+    begin
+        if (ACLK'event and ACLK = '1') then
+            if (ACLK_EN = '1') then
+                if (w_hs = '1' and waddr = ADDR_DWT_DATA_0) then
+                    int_dwt(31 downto 0) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_dwt(31 downto 0));
+                end if;
+            end if;
+        end if;
+    end process;
+
+    process (ACLK)
+    begin
+        if (ACLK'event and ACLK = '1') then
+            if (ACLK_EN = '1') then
+                if (w_hs = '1' and waddr = ADDR_B_DATA_0) then
+                    int_b(31 downto 0) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_b(31 downto 0));
+                end if;
+            end if;
+        end if;
+    end process;
+
+    process (ACLK)
+    begin
+        if (ACLK'event and ACLK = '1') then
+            if (ACLK_EN = '1') then
+                if (w_hs = '1' and waddr = ADDR_DB_DATA_0) then
+                    int_db(31 downto 0) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_db(31 downto 0));
                 end if;
             end if;
         end if;

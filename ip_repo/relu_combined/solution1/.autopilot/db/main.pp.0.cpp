@@ -5568,11 +5568,12 @@ inline bool operator!=(
 }
 # 396 "/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed.h" 2
 # 2 "relu_combined/main.cpp" 2
-typedef ap_fixed<16,9> fixed_t;
+typedef ap_fixed<32,9> fixed_t;
 
-__attribute__((sdx_kernel("relu_combined", 0))) void relu_combined(fixed_t* x, fixed_t* dx, fixed_t* y,fixed_t* dy, int dim, bool fwprop){
+
+__attribute__((sdx_kernel("relu_combined", 0))) void relu_combined(fixed_t x[1000], fixed_t dx[1000], fixed_t y[1000],fixed_t dy[1000], int dim, bool fwprop){_ssdm_SpecArrayDimSize(x, 1000);_ssdm_SpecArrayDimSize(dx, 1000);_ssdm_SpecArrayDimSize(y, 1000);_ssdm_SpecArrayDimSize(dy, 1000);
 #pragma HLS TOP name=relu_combined
-# 4 "relu_combined/main.cpp"
+# 5 "relu_combined/main.cpp"
 
 
 #pragma HLS INTERFACE bram port=x
@@ -5586,7 +5587,7 @@ __attribute__((sdx_kernel("relu_combined", 0))) void relu_combined(fixed_t* x, f
 
  if(fwprop == true){
 
-  VITIS_LOOP_17_1: for(int i=0;i<dim;i++){
+  VITIS_LOOP_18_1: for(int i=0;i<dim;i++){
          if (x[i] > 0){
              y[i] = x[i];
          }
@@ -5597,7 +5598,7 @@ __attribute__((sdx_kernel("relu_combined", 0))) void relu_combined(fixed_t* x, f
  }
  else{
 
-  VITIS_LOOP_28_2: for(int i=0;i<dim;i++){
+  VITIS_LOOP_29_2: for(int i=0;i<dim;i++){
            if (x[i] > 0){
                dx[i] = dy[i];
            }

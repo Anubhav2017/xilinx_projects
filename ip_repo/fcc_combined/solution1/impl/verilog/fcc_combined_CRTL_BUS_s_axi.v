@@ -5,7 +5,7 @@
 `timescale 1ns/1ps
 module fcc_combined_CRTL_BUS_s_axi
 #(parameter
-    C_S_AXI_ADDR_WIDTH = 6,
+    C_S_AXI_ADDR_WIDTH = 7,
     C_S_AXI_DATA_WIDTH = 32
 )(
     input  wire                          ACLK,
@@ -29,6 +29,10 @@ module fcc_combined_CRTL_BUS_s_axi
     output wire                          RVALID,
     input  wire                          RREADY,
     output wire                          interrupt,
+    output wire [31:0]                   w,
+    output wire [31:0]                   dw,
+    output wire [31:0]                   b,
+    output wire [31:0]                   db,
     output wire [31:0]                   xdim,
     output wire [31:0]                   ydim,
     output wire [0:0]                    fwprop,
@@ -56,30 +60,50 @@ module fcc_combined_CRTL_BUS_s_axi
 //        bit 0  - ap_done (COR/TOW)
 //        bit 1  - ap_ready (COR/TOW)
 //        others - reserved
-// 0x10 : Data signal of xdim
-//        bit 31~0 - xdim[31:0] (Read/Write)
+// 0x10 : Data signal of w
+//        bit 31~0 - w[31:0] (Read/Write)
 // 0x14 : reserved
-// 0x18 : Data signal of ydim
-//        bit 31~0 - ydim[31:0] (Read/Write)
+// 0x18 : Data signal of dw
+//        bit 31~0 - dw[31:0] (Read/Write)
 // 0x1c : reserved
-// 0x20 : Data signal of fwprop
+// 0x20 : Data signal of b
+//        bit 31~0 - b[31:0] (Read/Write)
+// 0x24 : reserved
+// 0x28 : Data signal of db
+//        bit 31~0 - db[31:0] (Read/Write)
+// 0x2c : reserved
+// 0x30 : Data signal of xdim
+//        bit 31~0 - xdim[31:0] (Read/Write)
+// 0x34 : reserved
+// 0x38 : Data signal of ydim
+//        bit 31~0 - ydim[31:0] (Read/Write)
+// 0x3c : reserved
+// 0x40 : Data signal of fwprop
 //        bit 0  - fwprop[0] (Read/Write)
 //        others - reserved
-// 0x24 : reserved
+// 0x44 : reserved
 // (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
 //------------------------Parameter----------------------
 localparam
-    ADDR_AP_CTRL       = 6'h00,
-    ADDR_GIE           = 6'h04,
-    ADDR_IER           = 6'h08,
-    ADDR_ISR           = 6'h0c,
-    ADDR_XDIM_DATA_0   = 6'h10,
-    ADDR_XDIM_CTRL     = 6'h14,
-    ADDR_YDIM_DATA_0   = 6'h18,
-    ADDR_YDIM_CTRL     = 6'h1c,
-    ADDR_FWPROP_DATA_0 = 6'h20,
-    ADDR_FWPROP_CTRL   = 6'h24,
+    ADDR_AP_CTRL       = 7'h00,
+    ADDR_GIE           = 7'h04,
+    ADDR_IER           = 7'h08,
+    ADDR_ISR           = 7'h0c,
+    ADDR_W_DATA_0      = 7'h10,
+    ADDR_W_CTRL        = 7'h14,
+    ADDR_DW_DATA_0     = 7'h18,
+    ADDR_DW_CTRL       = 7'h1c,
+    ADDR_B_DATA_0      = 7'h20,
+    ADDR_B_CTRL        = 7'h24,
+    ADDR_DB_DATA_0     = 7'h28,
+    ADDR_DB_CTRL       = 7'h2c,
+    ADDR_XDIM_DATA_0   = 7'h30,
+    ADDR_XDIM_CTRL     = 7'h34,
+    ADDR_YDIM_DATA_0   = 7'h38,
+    ADDR_YDIM_CTRL     = 7'h3c,
+    ADDR_FWPROP_DATA_0 = 7'h40,
+    ADDR_FWPROP_CTRL   = 7'h44,
     WRIDLE             = 2'd0,
     WRDATA             = 2'd1,
     WRRESP             = 2'd2,
@@ -87,7 +111,7 @@ localparam
     RDIDLE             = 2'd0,
     RDDATA             = 2'd1,
     RDRESET            = 2'd2,
-    ADDR_BITS                = 6;
+    ADDR_BITS                = 7;
 
 //------------------------Local signal-------------------
     reg  [1:0]                    wstate = WRRESET;
@@ -110,6 +134,10 @@ localparam
     reg                           int_gie = 1'b0;
     reg  [1:0]                    int_ier = 2'b0;
     reg  [1:0]                    int_isr = 2'b0;
+    reg  [31:0]                   int_w = 'b0;
+    reg  [31:0]                   int_dw = 'b0;
+    reg  [31:0]                   int_b = 'b0;
+    reg  [31:0]                   int_db = 'b0;
     reg  [31:0]                   int_xdim = 'b0;
     reg  [31:0]                   int_ydim = 'b0;
     reg  [0:0]                    int_fwprop = 'b0;
@@ -221,6 +249,18 @@ always @(posedge ACLK) begin
                 ADDR_ISR: begin
                     rdata <= int_isr;
                 end
+                ADDR_W_DATA_0: begin
+                    rdata <= int_w[31:0];
+                end
+                ADDR_DW_DATA_0: begin
+                    rdata <= int_dw[31:0];
+                end
+                ADDR_B_DATA_0: begin
+                    rdata <= int_b[31:0];
+                end
+                ADDR_DB_DATA_0: begin
+                    rdata <= int_db[31:0];
+                end
                 ADDR_XDIM_DATA_0: begin
                     rdata <= int_xdim[31:0];
                 end
@@ -239,6 +279,10 @@ end
 //------------------------Register logic-----------------
 assign interrupt = int_gie & (|int_isr);
 assign ap_start  = int_ap_start;
+assign w         = int_w;
+assign dw        = int_dw;
+assign b         = int_b;
+assign db        = int_db;
 assign xdim      = int_xdim;
 assign ydim      = int_ydim;
 assign fwprop    = int_fwprop;
@@ -335,6 +379,46 @@ always @(posedge ACLK) begin
             int_isr[1] <= 1'b1;
         else if (w_hs && waddr == ADDR_ISR && WSTRB[0])
             int_isr[1] <= int_isr[1] ^ WDATA[1]; // toggle on write
+    end
+end
+
+// int_w[31:0]
+always @(posedge ACLK) begin
+    if (ARESET)
+        int_w[31:0] <= 0;
+    else if (ACLK_EN) begin
+        if (w_hs && waddr == ADDR_W_DATA_0)
+            int_w[31:0] <= (WDATA[31:0] & wmask) | (int_w[31:0] & ~wmask);
+    end
+end
+
+// int_dw[31:0]
+always @(posedge ACLK) begin
+    if (ARESET)
+        int_dw[31:0] <= 0;
+    else if (ACLK_EN) begin
+        if (w_hs && waddr == ADDR_DW_DATA_0)
+            int_dw[31:0] <= (WDATA[31:0] & wmask) | (int_dw[31:0] & ~wmask);
+    end
+end
+
+// int_b[31:0]
+always @(posedge ACLK) begin
+    if (ARESET)
+        int_b[31:0] <= 0;
+    else if (ACLK_EN) begin
+        if (w_hs && waddr == ADDR_B_DATA_0)
+            int_b[31:0] <= (WDATA[31:0] & wmask) | (int_b[31:0] & ~wmask);
+    end
+end
+
+// int_db[31:0]
+always @(posedge ACLK) begin
+    if (ARESET)
+        int_db[31:0] <= 0;
+    else if (ACLK_EN) begin
+        if (w_hs && waddr == ADDR_DB_DATA_0)
+            int_db[31:0] <= (WDATA[31:0] & wmask) | (int_db[31:0] & ~wmask);
     end
 end
 

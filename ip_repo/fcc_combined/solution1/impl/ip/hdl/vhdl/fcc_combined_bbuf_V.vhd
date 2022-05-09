@@ -9,7 +9,7 @@ use ieee.std_logic_unsigned.all;
 
 entity fcc_combined_bbuf_V_ram is 
     generic(
-            DWIDTH     : integer := 16; 
+            DWIDTH     : integer := 32; 
             AWIDTH     : integer := 10; 
             MEM_SIZE    : integer := 1000
     ); 
@@ -66,7 +66,7 @@ use IEEE.std_logic_1164.all;
 
 entity fcc_combined_bbuf_V is
     generic (
-        DataWidth : INTEGER := 16;
+        DataWidth : INTEGER := 32;
         AddressRange : INTEGER := 1000;
         AddressWidth : INTEGER := 10);
     port (

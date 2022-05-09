@@ -54,66 +54,6 @@ if {${::AESL::PGuard_rtl_comp_handler}} {
 	::AP::rtl_comp_handler relu_combined_CTRL_s_axi
 }
 
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2 \
-    name x \
-    type other \
-    dir I \
-    reset_level 0 \
-    sync_rst true \
-    corename dc_x \
-    op interface \
-    ports { x { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 3 \
-    name dx \
-    type other \
-    dir O \
-    reset_level 0 \
-    sync_rst true \
-    corename dc_dx \
-    op interface \
-    ports { dx { O 16 vector } dx_ap_vld { O 1 bit } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 4 \
-    name y \
-    type other \
-    dir O \
-    reset_level 0 \
-    sync_rst true \
-    corename dc_y \
-    op interface \
-    ports { y { O 16 vector } y_ap_vld { O 1 bit } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 5 \
-    name dy \
-    type other \
-    dir I \
-    reset_level 0 \
-    sync_rst true \
-    corename dc_dy \
-    op interface \
-    ports { dy { I 16 vector } } \
-} "
-}
-
 
 # Adapter definition:
 set PortName ap_clk

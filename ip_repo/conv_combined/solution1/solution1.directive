@@ -5,11 +5,6 @@
                 <option name="name" value="conv_combined"/>
             </pragma>
         </directive>
-        <directive functionName="conv_combined" label="" functionLabel="">
-            <pragma name="TOP">
-                <option name="name" value="conv_combined"/>
-            </pragma>
-        </directive>
     </sourceFile>
 </AutoPilot:ProjectResources>
 

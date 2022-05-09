@@ -11,7 +11,6 @@ int XFcc_combined_CfgInitialize(XFcc_combined *InstancePtr, XFcc_combined_Config
     Xil_AssertNonvoid(InstancePtr != NULL);
     Xil_AssertNonvoid(ConfigPtr != NULL);
 
-    InstancePtr->Control_BaseAddress = ConfigPtr->Control_BaseAddress;
     InstancePtr->Crtl_bus_BaseAddress = ConfigPtr->Crtl_bus_BaseAddress;
     InstancePtr->IsReady = XIL_COMPONENT_IS_READY;
 
@@ -78,7 +77,7 @@ void XFcc_combined_Set_w(XFcc_combined *InstancePtr, u32 Data) {
     Xil_AssertVoid(InstancePtr != NULL);
     Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    XFcc_combined_WriteReg(InstancePtr->Control_BaseAddress, XFCC_COMBINED_CONTROL_ADDR_W_DATA, Data);
+    XFcc_combined_WriteReg(InstancePtr->Crtl_bus_BaseAddress, XFCC_COMBINED_CRTL_BUS_ADDR_W_DATA, Data);
 }
 
 u32 XFcc_combined_Get_w(XFcc_combined *InstancePtr) {
@@ -87,7 +86,7 @@ u32 XFcc_combined_Get_w(XFcc_combined *InstancePtr) {
     Xil_AssertNonvoid(InstancePtr != NULL);
     Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    Data = XFcc_combined_ReadReg(InstancePtr->Control_BaseAddress, XFCC_COMBINED_CONTROL_ADDR_W_DATA);
+    Data = XFcc_combined_ReadReg(InstancePtr->Crtl_bus_BaseAddress, XFCC_COMBINED_CRTL_BUS_ADDR_W_DATA);
     return Data;
 }
 
@@ -95,7 +94,7 @@ void XFcc_combined_Set_dw(XFcc_combined *InstancePtr, u32 Data) {
     Xil_AssertVoid(InstancePtr != NULL);
     Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    XFcc_combined_WriteReg(InstancePtr->Control_BaseAddress, XFCC_COMBINED_CONTROL_ADDR_DW_DATA, Data);
+    XFcc_combined_WriteReg(InstancePtr->Crtl_bus_BaseAddress, XFCC_COMBINED_CRTL_BUS_ADDR_DW_DATA, Data);
 }
 
 u32 XFcc_combined_Get_dw(XFcc_combined *InstancePtr) {
@@ -104,7 +103,7 @@ u32 XFcc_combined_Get_dw(XFcc_combined *InstancePtr) {
     Xil_AssertNonvoid(InstancePtr != NULL);
     Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    Data = XFcc_combined_ReadReg(InstancePtr->Control_BaseAddress, XFCC_COMBINED_CONTROL_ADDR_DW_DATA);
+    Data = XFcc_combined_ReadReg(InstancePtr->Crtl_bus_BaseAddress, XFCC_COMBINED_CRTL_BUS_ADDR_DW_DATA);
     return Data;
 }
 
@@ -112,7 +111,7 @@ void XFcc_combined_Set_b(XFcc_combined *InstancePtr, u32 Data) {
     Xil_AssertVoid(InstancePtr != NULL);
     Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    XFcc_combined_WriteReg(InstancePtr->Control_BaseAddress, XFCC_COMBINED_CONTROL_ADDR_B_DATA, Data);
+    XFcc_combined_WriteReg(InstancePtr->Crtl_bus_BaseAddress, XFCC_COMBINED_CRTL_BUS_ADDR_B_DATA, Data);
 }
 
 u32 XFcc_combined_Get_b(XFcc_combined *InstancePtr) {
@@ -121,7 +120,7 @@ u32 XFcc_combined_Get_b(XFcc_combined *InstancePtr) {
     Xil_AssertNonvoid(InstancePtr != NULL);
     Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    Data = XFcc_combined_ReadReg(InstancePtr->Control_BaseAddress, XFCC_COMBINED_CONTROL_ADDR_B_DATA);
+    Data = XFcc_combined_ReadReg(InstancePtr->Crtl_bus_BaseAddress, XFCC_COMBINED_CRTL_BUS_ADDR_B_DATA);
     return Data;
 }
 
@@ -129,7 +128,7 @@ void XFcc_combined_Set_db(XFcc_combined *InstancePtr, u32 Data) {
     Xil_AssertVoid(InstancePtr != NULL);
     Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    XFcc_combined_WriteReg(InstancePtr->Control_BaseAddress, XFCC_COMBINED_CONTROL_ADDR_DB_DATA, Data);
+    XFcc_combined_WriteReg(InstancePtr->Crtl_bus_BaseAddress, XFCC_COMBINED_CRTL_BUS_ADDR_DB_DATA, Data);
 }
 
 u32 XFcc_combined_Get_db(XFcc_combined *InstancePtr) {
@@ -138,7 +137,7 @@ u32 XFcc_combined_Get_db(XFcc_combined *InstancePtr) {
     Xil_AssertNonvoid(InstancePtr != NULL);
     Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    Data = XFcc_combined_ReadReg(InstancePtr->Control_BaseAddress, XFCC_COMBINED_CONTROL_ADDR_DB_DATA);
+    Data = XFcc_combined_ReadReg(InstancePtr->Crtl_bus_BaseAddress, XFCC_COMBINED_CRTL_BUS_ADDR_DB_DATA);
     return Data;
 }
 

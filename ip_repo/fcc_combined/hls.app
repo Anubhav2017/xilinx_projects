@@ -1,4 +1,4 @@
-<project xmlns="com.autoesl.autopilot.project" top="fcc_combined" name="fcc_combined">
+<project xmlns="com.autoesl.autopilot.project" name="fcc_combined" top="fcc_combined">
     <includePaths/>
     <libraryPaths/>
     <Simulation>

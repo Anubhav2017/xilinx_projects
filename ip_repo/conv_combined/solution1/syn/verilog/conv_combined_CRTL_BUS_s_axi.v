@@ -5,7 +5,7 @@
 `timescale 1ns/1ps
 module conv_combined_CRTL_BUS_s_axi
 #(parameter
-    C_S_AXI_ADDR_WIDTH = 6,
+    C_S_AXI_ADDR_WIDTH = 7,
     C_S_AXI_DATA_WIDTH = 32
 )(
     input  wire                          ACLK,
@@ -29,6 +29,10 @@ module conv_combined_CRTL_BUS_s_axi
     output wire                          RVALID,
     input  wire                          RREADY,
     output wire                          interrupt,
+    output wire [31:0]                   wt,
+    output wire [31:0]                   dwt,
+    output wire [31:0]                   b,
+    output wire [31:0]                   db,
     output wire [31:0]                   H,
     output wire [31:0]                   W,
     output wire [31:0]                   FH,
@@ -58,40 +62,60 @@ module conv_combined_CRTL_BUS_s_axi
 //        bit 0  - ap_done (COR/TOW)
 //        bit 1  - ap_ready (COR/TOW)
 //        others - reserved
-// 0x10 : Data signal of H
-//        bit 31~0 - H[31:0] (Read/Write)
+// 0x10 : Data signal of wt
+//        bit 31~0 - wt[31:0] (Read/Write)
 // 0x14 : reserved
-// 0x18 : Data signal of W
-//        bit 31~0 - W[31:0] (Read/Write)
+// 0x18 : Data signal of dwt
+//        bit 31~0 - dwt[31:0] (Read/Write)
 // 0x1c : reserved
-// 0x20 : Data signal of FH
-//        bit 31~0 - FH[31:0] (Read/Write)
+// 0x20 : Data signal of b
+//        bit 31~0 - b[31:0] (Read/Write)
 // 0x24 : reserved
-// 0x28 : Data signal of FW
-//        bit 31~0 - FW[31:0] (Read/Write)
+// 0x28 : Data signal of db
+//        bit 31~0 - db[31:0] (Read/Write)
 // 0x2c : reserved
-// 0x30 : Data signal of fwprop
+// 0x30 : Data signal of H
+//        bit 31~0 - H[31:0] (Read/Write)
+// 0x34 : reserved
+// 0x38 : Data signal of W
+//        bit 31~0 - W[31:0] (Read/Write)
+// 0x3c : reserved
+// 0x40 : Data signal of FH
+//        bit 31~0 - FH[31:0] (Read/Write)
+// 0x44 : reserved
+// 0x48 : Data signal of FW
+//        bit 31~0 - FW[31:0] (Read/Write)
+// 0x4c : reserved
+// 0x50 : Data signal of fwprop
 //        bit 0  - fwprop[0] (Read/Write)
 //        others - reserved
-// 0x34 : reserved
+// 0x54 : reserved
 // (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
 //------------------------Parameter----------------------
 localparam
-    ADDR_AP_CTRL       = 6'h00,
-    ADDR_GIE           = 6'h04,
-    ADDR_IER           = 6'h08,
-    ADDR_ISR           = 6'h0c,
-    ADDR_H_DATA_0      = 6'h10,
-    ADDR_H_CTRL        = 6'h14,
-    ADDR_W_DATA_0      = 6'h18,
-    ADDR_W_CTRL        = 6'h1c,
-    ADDR_FH_DATA_0     = 6'h20,
-    ADDR_FH_CTRL       = 6'h24,
-    ADDR_FW_DATA_0     = 6'h28,
-    ADDR_FW_CTRL       = 6'h2c,
-    ADDR_FWPROP_DATA_0 = 6'h30,
-    ADDR_FWPROP_CTRL   = 6'h34,
+    ADDR_AP_CTRL       = 7'h00,
+    ADDR_GIE           = 7'h04,
+    ADDR_IER           = 7'h08,
+    ADDR_ISR           = 7'h0c,
+    ADDR_WT_DATA_0     = 7'h10,
+    ADDR_WT_CTRL       = 7'h14,
+    ADDR_DWT_DATA_0    = 7'h18,
+    ADDR_DWT_CTRL      = 7'h1c,
+    ADDR_B_DATA_0      = 7'h20,
+    ADDR_B_CTRL        = 7'h24,
+    ADDR_DB_DATA_0     = 7'h28,
+    ADDR_DB_CTRL       = 7'h2c,
+    ADDR_H_DATA_0      = 7'h30,
+    ADDR_H_CTRL        = 7'h34,
+    ADDR_W_DATA_0      = 7'h38,
+    ADDR_W_CTRL        = 7'h3c,
+    ADDR_FH_DATA_0     = 7'h40,
+    ADDR_FH_CTRL       = 7'h44,
+    ADDR_FW_DATA_0     = 7'h48,
+    ADDR_FW_CTRL       = 7'h4c,
+    ADDR_FWPROP_DATA_0 = 7'h50,
+    ADDR_FWPROP_CTRL   = 7'h54,
     WRIDLE             = 2'd0,
     WRDATA             = 2'd1,
     WRRESP             = 2'd2,
@@ -99,7 +123,7 @@ localparam
     RDIDLE             = 2'd0,
     RDDATA             = 2'd1,
     RDRESET            = 2'd2,
-    ADDR_BITS                = 6;
+    ADDR_BITS                = 7;
 
 //------------------------Local signal-------------------
     reg  [1:0]                    wstate = WRRESET;
@@ -122,6 +146,10 @@ localparam
     reg                           int_gie = 1'b0;
     reg  [1:0]                    int_ier = 2'b0;
     reg  [1:0]                    int_isr = 2'b0;
+    reg  [31:0]                   int_wt = 'b0;
+    reg  [31:0]                   int_dwt = 'b0;
+    reg  [31:0]                   int_b = 'b0;
+    reg  [31:0]                   int_db = 'b0;
     reg  [31:0]                   int_H = 'b0;
     reg  [31:0]                   int_W = 'b0;
     reg  [31:0]                   int_FH = 'b0;
@@ -235,6 +263,18 @@ always @(posedge ACLK) begin
                 ADDR_ISR: begin
                     rdata <= int_isr;
                 end
+                ADDR_WT_DATA_0: begin
+                    rdata <= int_wt[31:0];
+                end
+                ADDR_DWT_DATA_0: begin
+                    rdata <= int_dwt[31:0];
+                end
+                ADDR_B_DATA_0: begin
+                    rdata <= int_b[31:0];
+                end
+                ADDR_DB_DATA_0: begin
+                    rdata <= int_db[31:0];
+                end
                 ADDR_H_DATA_0: begin
                     rdata <= int_H[31:0];
                 end
@@ -259,6 +299,10 @@ end
 //------------------------Register logic-----------------
 assign interrupt = int_gie & (|int_isr);
 assign ap_start  = int_ap_start;
+assign wt        = int_wt;
+assign dwt       = int_dwt;
+assign b         = int_b;
+assign db        = int_db;
 assign H         = int_H;
 assign W         = int_W;
 assign FH        = int_FH;
@@ -357,6 +401,46 @@ always @(posedge ACLK) begin
             int_isr[1] <= 1'b1;
         else if (w_hs && waddr == ADDR_ISR && WSTRB[0])
             int_isr[1] <= int_isr[1] ^ WDATA[1]; // toggle on write
+    end
+end
+
+// int_wt[31:0]
+always @(posedge ACLK) begin
+    if (ARESET)
+        int_wt[31:0] <= 0;
+    else if (ACLK_EN) begin
+        if (w_hs && waddr == ADDR_WT_DATA_0)
+            int_wt[31:0] <= (WDATA[31:0] & wmask) | (int_wt[31:0] & ~wmask);
+    end
+end
+
+// int_dwt[31:0]
+always @(posedge ACLK) begin
+    if (ARESET)
+        int_dwt[31:0] <= 0;
+    else if (ACLK_EN) begin
+        if (w_hs && waddr == ADDR_DWT_DATA_0)
+            int_dwt[31:0] <= (WDATA[31:0] & wmask) | (int_dwt[31:0] & ~wmask);
+    end
+end
+
+// int_b[31:0]
+always @(posedge ACLK) begin
+    if (ARESET)
+        int_b[31:0] <= 0;
+    else if (ACLK_EN) begin
+        if (w_hs && waddr == ADDR_B_DATA_0)
+            int_b[31:0] <= (WDATA[31:0] & wmask) | (int_b[31:0] & ~wmask);
+    end
+end
+
+// int_db[31:0]
+always @(posedge ACLK) begin
+    if (ARESET)
+        int_db[31:0] <= 0;
+    else if (ACLK_EN) begin
+        if (w_hs && waddr == ADDR_DB_DATA_0)
+            int_db[31:0] <= (WDATA[31:0] & wmask) | (int_db[31:0] & ~wmask);
     end
 end
 

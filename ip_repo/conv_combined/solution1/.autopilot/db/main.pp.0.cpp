@@ -151,6 +151,9 @@ extern "C" {
 }
 # 2 "<built-in>" 2
 # 1 "conv_combined/main.cpp" 2
+
+
+
 # 1 "/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed.h" 1
 # 55 "/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed.h"
 # 1 "/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_common.h" 1
@@ -5567,42 +5570,66 @@ inline bool operator!=(
 
 }
 # 396 "/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed.h" 2
-# 2 "conv_combined/main.cpp" 2
-typedef ap_fixed<16,9> fixed_t;
+# 5 "conv_combined/main.cpp" 2
+typedef ap_fixed<32,9> fixed_t;
 
-__attribute__((sdx_kernel("conv_combined", 0))) void conv_combined(fixed_t* x, fixed_t* dx,fixed_t* wt,fixed_t* dwt, fixed_t* y, fixed_t* dy,fixed_t b,fixed_t db, int H, int W, int FH, int FW, bool fwprop){
+__attribute__((sdx_kernel("conv_combined", 0))) void conv_combined(fixed_t x[1000], fixed_t dx[1000],fixed_t* wt,fixed_t* dwt, fixed_t y[1000], fixed_t dy[1000],fixed_t b,fixed_t db, int H, int W, int FH, int FW, bool fwprop){_ssdm_SpecArrayDimSize(x, 1000);_ssdm_SpecArrayDimSize(dx, 1000);_ssdm_SpecArrayDimSize(y, 1000);_ssdm_SpecArrayDimSize(dy, 1000);
 #pragma HLS TOP name=conv_combined
-# 4 "conv_combined/main.cpp"
+# 7 "conv_combined/main.cpp"
 
 
-#pragma HLS INTERFACE bram port=x
+#pragma HLS INTERFACE bram storage_type=ram_1p port=x
 #pragma HLS INTERFACE bram port=dx
-#pragma HLS INTERFACE bram port=wt
-#pragma HLS INTERFACE bram port=dwt
+#pragma HLS INTERFACE m_axi port=wt depth=200 offset=slave bundle=gmem
+#pragma HLS INTERFACE m_axi port=dwt depth=200 offset=slave bundle=gmem
 #pragma HLS INTERFACE bram port=y
 #pragma HLS INTERFACE bram port=dy
-#pragma HLS INTERFACE bram port=b
-#pragma HLS INTERFACE bram port=db
+#pragma HLS INTERFACE m_axi port=b depth=200 offset=slave bundle=gmem
+#pragma HLS INTERFACE m_axi port=db depth=200 offset=slave bundle=gmem
 
 #pragma HLS INTERFACE s_axilite port=H bundle=CRTL_BUS
 #pragma HLS INTERFACE s_axilite port=W bundle=CRTL_BUS
 #pragma HLS INTERFACE s_axilite port=FH bundle=CRTL_BUS
 #pragma HLS INTERFACE s_axilite port=FW bundle=CRTL_BUS
 #pragma HLS INTERFACE s_axilite port=fwprop bundle=CRTL_BUS
+#pragma HLS INTERFACE s_axilite port=wt bundle=CRTL_BUS
+#pragma HLS INTERFACE s_axilite port=dwt bundle=CRTL_BUS
+#pragma HLS INTERFACE s_axilite port=b bundle=CRTL_BUS
+#pragma HLS INTERFACE s_axilite port=db bundle=CRTL_BUS
+
+#pragma HLS INTERFACE s_axilite port=fwprop bundle=CRTL_BUS
 #pragma HLS INTERFACE s_axilite port=return bundle=CRTL_BUS
 
+
+ fixed_t wbuf[5][5];
+ fixed_t dwbuf[5][5];
+
+ fixed_t bbuf;
+ fixed_t dbbuf;
 
  int outH=H-FH+1;
  int outW=W-FW+1;
 
+
+ VITIS_LOOP_42_1: for(int k=0;k<FH;k++){
+  VITIS_LOOP_43_2: for(int l=0;l<FW;l++){
+   wbuf[k][l] = wt[k*FW+l];
+  }
+ }
+
+ bbuf=b;
+ dbbuf=b;
+
+
+
  if(fwprop == true){
 
-  VITIS_LOOP_28_1: for(int h=0;h<outH;h++){
-      VITIS_LOOP_29_2: for(int w=0;w<outW;w++){
-          y[h*W+w]=b;
-          VITIS_LOOP_31_3: for(int fh=0;fh<FH;fh++){
-              VITIS_LOOP_32_4: for(int fw=0;fw<FW;fw++){
-                  y[h*outW+w] += x[(h+fh)*W +w+fw]*wt[fh*FW+fw];
+  VITIS_LOOP_55_3: for(int h=0;h<outH;h++){
+      VITIS_LOOP_56_4: for(int w=0;w<outW;w++){
+          y[h*outW+w]=bbuf;
+          VITIS_LOOP_58_5: for(int fh=0;fh<FH;fh++){
+              VITIS_LOOP_59_6: for(int fw=0;fw<FW;fw++){
+                  y[h*outW+w] += x[(h+fh)*W +w+fw]*wbuf[fh][fw];
               }
           }
       }
@@ -5611,18 +5638,35 @@ __attribute__((sdx_kernel("conv_combined", 0))) void conv_combined(fixed_t* x, f
  }
  else{
 
-      VITIS_LOOP_42_5: for(int h=0;h<outH;h++){
-          VITIS_LOOP_43_6: for(int w=0;w<outW;w++){
-              VITIS_LOOP_44_7: for(int fh=0;fh<FH;fh++){
-                  VITIS_LOOP_45_8: for(int fw=0;fw<FW;fw++){
-                      dwt[fh*FW+fw] += dy[h*W+w]*x[(h+fh)*W+w+fw];
-                      dx[(h+fh)*W+w+fw] += dy[h*outW+w]*wt[fh*FW+fw];
+
+  VITIS_LOOP_70_7: for(int k=0;k<FH;k++){
+    VITIS_LOOP_71_8: for(int l=0;l<FW;l++){
+     dwbuf[k][l] = dwt[k*FW+l];
+    }
+   }
+
+      VITIS_LOOP_76_9: for(int h=0;h<outH;h++){
+          VITIS_LOOP_77_10: for(int w=0;w<outW;w++){
+              VITIS_LOOP_78_11: for(int fh=0;fh<FH;fh++){
+                  VITIS_LOOP_79_12: for(int fw=0;fw<FW;fw++){
+                      dwbuf[fh][fw] += dy[h*outW+w]*x[(h+fh)*W+w+fw];
+                      dx[(h+fh)*W+w+fw] += dy[h*outW+w]*wt[fh][fw];
                   }
               }
 
-          db += dy[h*W+w];
+          dbbuf += dy[h*W+w];
       }
     }
+
+
+  VITIS_LOOP_90_13: for(int k=0;k<FH;k++){
+   VITIS_LOOP_91_14: for(int l=0;l<FW;l++){
+    dwt[k*FW+l] = dwbuf[k][l];
+   }
+  }
+
+  db=dbbuf;
+
 
  }
 }

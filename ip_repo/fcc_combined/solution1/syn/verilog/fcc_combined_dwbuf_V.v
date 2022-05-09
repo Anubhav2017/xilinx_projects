@@ -5,7 +5,7 @@
 `timescale 1 ns / 1 ps
 module fcc_combined_dwbuf_V_ram (addr0, ce0, d0, we0, addr1, ce1, q1,  clk);
 
-parameter DWIDTH = 16;
+parameter DWIDTH = 32;
 parameter AWIDTH = 20;
 parameter MEM_SIZE = 1000000;
 
@@ -54,7 +54,7 @@ module fcc_combined_dwbuf_V(
     ce1,
     q1);
 
-parameter DataWidth = 32'd16;
+parameter DataWidth = 32'd32;
 parameter AddressRange = 32'd1000000;
 parameter AddressWidth = 32'd20;
 input reset;

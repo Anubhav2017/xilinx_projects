@@ -73,6 +73,74 @@ void XConv_combined_DisableAutoRestart(XConv_combined *InstancePtr) {
     XConv_combined_WriteReg(InstancePtr->Crtl_bus_BaseAddress, XCONV_COMBINED_CRTL_BUS_ADDR_AP_CTRL, 0);
 }
 
+void XConv_combined_Set_wt(XConv_combined *InstancePtr, u32 Data) {
+    Xil_AssertVoid(InstancePtr != NULL);
+    Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
+
+    XConv_combined_WriteReg(InstancePtr->Crtl_bus_BaseAddress, XCONV_COMBINED_CRTL_BUS_ADDR_WT_DATA, Data);
+}
+
+u32 XConv_combined_Get_wt(XConv_combined *InstancePtr) {
+    u32 Data;
+
+    Xil_AssertNonvoid(InstancePtr != NULL);
+    Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
+
+    Data = XConv_combined_ReadReg(InstancePtr->Crtl_bus_BaseAddress, XCONV_COMBINED_CRTL_BUS_ADDR_WT_DATA);
+    return Data;
+}
+
+void XConv_combined_Set_dwt(XConv_combined *InstancePtr, u32 Data) {
+    Xil_AssertVoid(InstancePtr != NULL);
+    Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
+
+    XConv_combined_WriteReg(InstancePtr->Crtl_bus_BaseAddress, XCONV_COMBINED_CRTL_BUS_ADDR_DWT_DATA, Data);
+}
+
+u32 XConv_combined_Get_dwt(XConv_combined *InstancePtr) {
+    u32 Data;
+
+    Xil_AssertNonvoid(InstancePtr != NULL);
+    Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
+
+    Data = XConv_combined_ReadReg(InstancePtr->Crtl_bus_BaseAddress, XCONV_COMBINED_CRTL_BUS_ADDR_DWT_DATA);
+    return Data;
+}
+
+void XConv_combined_Set_b(XConv_combined *InstancePtr, u32 Data) {
+    Xil_AssertVoid(InstancePtr != NULL);
+    Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
+
+    XConv_combined_WriteReg(InstancePtr->Crtl_bus_BaseAddress, XCONV_COMBINED_CRTL_BUS_ADDR_B_DATA, Data);
+}
+
+u32 XConv_combined_Get_b(XConv_combined *InstancePtr) {
+    u32 Data;
+
+    Xil_AssertNonvoid(InstancePtr != NULL);
+    Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
+
+    Data = XConv_combined_ReadReg(InstancePtr->Crtl_bus_BaseAddress, XCONV_COMBINED_CRTL_BUS_ADDR_B_DATA);
+    return Data;
+}
+
+void XConv_combined_Set_db(XConv_combined *InstancePtr, u32 Data) {
+    Xil_AssertVoid(InstancePtr != NULL);
+    Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
+
+    XConv_combined_WriteReg(InstancePtr->Crtl_bus_BaseAddress, XCONV_COMBINED_CRTL_BUS_ADDR_DB_DATA, Data);
+}
+
+u32 XConv_combined_Get_db(XConv_combined *InstancePtr) {
+    u32 Data;
+
+    Xil_AssertNonvoid(InstancePtr != NULL);
+    Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
+
+    Data = XConv_combined_ReadReg(InstancePtr->Crtl_bus_BaseAddress, XCONV_COMBINED_CRTL_BUS_ADDR_DB_DATA);
+    return Data;
+}
+
 void XConv_combined_Set_H(XConv_combined *InstancePtr, u32 Data) {
     Xil_AssertVoid(InstancePtr != NULL);
     Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);

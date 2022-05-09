@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fcc_combined'" level="0">
-<item name = "Date">Fri May  6 16:43:06 2022
+<item name = "Date">Sun May  8 16:11:43 2022
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)</item>
 <item name = "Project">fcc_combined</item>
@@ -35,13 +35,13 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- VITIS_LOOP_32_1">5, ?, 5 ~ ?, -, -, 1 ~ ?, no</column>
-<column name=" + VITIS_LOOP_33_2">2, ?, 3, 1, 1, 1 ~ ?, yes</column>
-<column name="- VITIS_LOOP_39_3">2, ?, 3, 1, 1, 1 ~ ?, yes</column>
+<column name="- VITIS_LOOP_38_1">5, ?, 5 ~ ?, -, -, 1 ~ ?, no</column>
+<column name=" + VITIS_LOOP_39_2">2, ?, 3, 1, 1, 1 ~ ?, yes</column>
+<column name="- VITIS_LOOP_45_3">2, ?, 3, 1, 1, 1 ~ ?, yes</column>
 <column name="- LOOP1">?, ?, ?, -, -, 1 ~ ?, no</column>
 <column name=" + LOOP2">?, ?, 5, 1, 1, ?, yes</column>
-<column name="- VITIS_LOOP_55_4_VITIS_LOOP_56_5">?, ?, 8, 1, 1, ?, yes</column>
-<column name="- VITIS_LOOP_63_6">2, ?, 3, 1, 1, 1 ~ ?, yes</column>
+<column name="- VITIS_LOOP_61_4_VITIS_LOOP_62_5">?, ?, 8, 1, 1, ?, yes</column>
+<column name="- VITIS_LOOP_69_6">2, ?, 3, 1, 1, 1 ~ ?, yes</column>
 </table>
 </item>
 </section>

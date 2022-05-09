@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-| Date         : Fri May  6 15:35:21 2022
+| Date         : Sun May  8 16:11:14 2022
 | Host         : anubhav-acer running 64-bit Ubuntu 20.04.4 LTS
 | Command      : report_utilization -file nn_processing_system7_0_0_utilization_synth.rpt -pb nn_processing_system7_0_0_utilization_synth.pb
 | Design       : nn_processing_system7_0_0

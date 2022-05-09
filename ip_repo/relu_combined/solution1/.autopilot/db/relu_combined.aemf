@@ -1,392 +1,522 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1651829686566">
-  <ports id="1" name="x" type="PortType" coreId="3968185744" bitwidth="16">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1652006255980">
+  <ports id="1" name="x" type="PortType" coreName="RAM" coreId="0" bitwidth="32" iftype="IfTypeRegister" arraysize="1000">
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+  </ports>
+  <ports id="2" name="dx" type="PortType" coreName="RAM" coreId="49" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="1000">
+    <dataInputObjs>getelementptr</dataInputObjs>
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <ports id="3" name="y" type="PortType" coreName="RAM" coreId="49" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="1000">
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <ports id="4" name="dy" type="PortType" coreName="RAM" coreId="129" bitwidth="32" iftype="IfTypeRegister" arraysize="1000">
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+  </ports>
+  <ports id="5" name="dim" type="PortType" originalName="dim" coreId="129" bitwidth="32">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="2" name="dx" type="PortType" coreId="0" bitwidth="16" direction="DirOut">
-    <dataInputObjs>write</dataInputObjs>
-  </ports>
-  <ports id="3" name="y" type="PortType" coreId="129" bitwidth="16" direction="DirOut">
-    <dataInputObjs>write</dataInputObjs>
-  </ports>
-  <ports id="4" name="dy" type="PortType" coreId="129" bitwidth="16">
+  <ports id="6" name="fwprop" type="PortType" originalName="fwprop" coreId="49" bitwidth="1">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="5" name="dim" type="PortType" originalName="dim" coreId="49" bitwidth="32">
-    <dataOutputObjs>read</dataOutputObjs>
-  </ports>
-  <ports id="6" name="fwprop" type="PortType" originalName="fwprop" coreId="132" bitwidth="1">
-    <dataOutputObjs>read</dataOutputObjs>
-  </ports>
-  <edges id="76" source_obj="//@ports.5" sink_obj="//@blocks.0/@node_objs.0"/>
-  <edges id="79" source_obj="//@ports.4" sink_obj="//@blocks.0/@node_objs.1"/>
-  <edges id="80" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.2"/>
-  <edges id="85" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.3"/>
-  <edges id="86" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.4"/>
-  <edges id="87" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.5"/>
-  <edges id="88" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.5"/>
-  <edges id="89" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.0/@node_objs.5"/>
-  <edges id="90" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.4/@node_objs.0"/>
-  <edges id="91" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.4/@node_objs.0"/>
-  <edges id="92" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.4/@node_objs.0"/>
-  <edges id="93" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.5/@node_objs.0"/>
-  <edges id="94" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.5/@node_objs.1"/>
-  <edges id="97" source_obj="//@blocks.5/@node_objs.1" sink_obj="//@blocks.5/@node_objs.2"/>
-  <edges id="98" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.5/@node_objs.2"/>
-  <edges id="101" source_obj="//@blocks.5/@node_objs.2" sink_obj="//@blocks.5/@node_objs.3"/>
-  <edges id="102" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.0" sink_obj="//@blocks.5/@node_objs.4"/>
-  <edges id="105" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.0"/>
-  <edges id="106" source_obj="//@regions.1/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
-  <edges id="107" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.1" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
-  <edges id="108" source_obj="//@regions.1/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.1"/>
-  <edges id="111" source_obj="//@regions.1/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.2"/>
-  <edges id="112" source_obj="//@blocks.5/@node_objs.0" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.2"/>
-  <edges id="113" source_obj="//@regions.1/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.3"/>
-  <edges id="114" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.1" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.3"/>
-  <edges id="115" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.3"/>
-  <edges id="118" source_obj="//@regions.1/@basic_blocks.1/@node_objs.0" sink_obj="//@ports.2"/>
-  <edges id="119" source_obj="//@blocks.5/@node_objs.3" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.0"/>
-  <edges id="120" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.0" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.1"/>
-  <edges id="121" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.1/@node_objs.0"/>
-  <edges id="122" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.1/@node_objs.0"/>
-  <edges id="123" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1/@node_objs.0"/>
-  <edges id="124" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.2/@node_objs.0"/>
-  <edges id="125" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.2/@node_objs.1"/>
-  <edges id="128" source_obj="//@ports.3" sink_obj="//@blocks.2/@node_objs.2"/>
-  <edges id="129" source_obj="//@blocks.2/@node_objs.1" sink_obj="//@blocks.2/@node_objs.3"/>
-  <edges id="130" source_obj="//@blocks.2/@node_objs.2" sink_obj="//@blocks.2/@node_objs.3"/>
-  <edges id="132" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.2/@node_objs.4"/>
-  <edges id="134" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
-  <edges id="135" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
-  <edges id="136" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
-  <edges id="137" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
-  <edges id="139" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
-  <edges id="140" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
-  <edges id="141" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
-  <edges id="142" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
-  <edges id="143" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
-  <edges id="145" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@ports.1"/>
-  <edges id="146" source_obj="//@blocks.2/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
-  <edges id="147" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
-  <edges id="148" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.3/@node_objs.0"/>
-  <edges id="149" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.6/@node_objs.0"/>
-  <edges id="371" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.4"/>
-  <edges id="372" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
-  <edges id="373" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2"/>
-  <edges id="374" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.7"/>
-  <edges id="375" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@regions.0/@basic_blocks.0"/>
-  <edges id="376" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.3"/>
-  <edges id="377" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
-  <edges id="378" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
-  <edges id="379" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.7"/>
-  <edges id="380" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.5"/>
-  <edges id="381" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.7"/>
-  <edges id="382" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@regions.1/@basic_blocks.0"/>
-  <edges id="383" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.0" sink_obj="//@blocks.6"/>
-  <edges id="384" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.0" sink_obj="//@regions.1/@basic_blocks.1"/>
-  <edges id="385" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.1" sink_obj="//@regions.1/@basic_blocks.0" is_back_edge="1"/>
-  <edges id="386" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.7"/>
-  <blocks id="29" name="block_29" type="BlockType">
-    <controlOutputObjs>block_52</controlOutputObjs>
-    <controlOutputObjs>block_31</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="23" name="fwprop_read" lineNumber="4" originalName="fwprop" fileName="relu_combined/main.cpp" fileDirectory=".." coreName="s_axilite" implIndex="UNSUPPORTED" control="auto" coreId="114" contextFuncName="relu_combined" bitwidth="1" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="1" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="relu_combined/main.cpp" linenumber="4" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="relu_combined"/>
+  <edges id="93" source_obj="//@ports.5" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="96" source_obj="//@ports.4" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="97" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="100" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="101" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="102" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="103" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="104" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="105" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="106" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.5/@node_objs.0"/>
+  <edges id="107" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.0" sink_obj="//@blocks.5/@node_objs.1"/>
+  <edges id="110" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.0"/>
+  <edges id="111" source_obj="//@regions.1/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="112" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.1" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="113" source_obj="//@regions.1/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.1"/>
+  <edges id="116" source_obj="//@regions.1/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.2"/>
+  <edges id="117" source_obj="//@blocks.5/@node_objs.0" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.2"/>
+  <edges id="118" source_obj="//@regions.1/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.3"/>
+  <edges id="119" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.1" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.3"/>
+  <edges id="120" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.3"/>
+  <edges id="121" source_obj="//@regions.1/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.0"/>
+  <edges id="122" source_obj="//@regions.1/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.1"/>
+  <edges id="123" source_obj="//@ports.0" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.2"/>
+  <edges id="125" source_obj="//@regions.1/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.2"/>
+  <edges id="126" source_obj="//@regions.1/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.3"/>
+  <edges id="127" source_obj="//@regions.1/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.4"/>
+  <edges id="128" source_obj="//@regions.1/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.5"/>
+  <edges id="130" source_obj="//@regions.1/@basic_blocks.1/@node_objs.6" sink_obj="//@ports.2"/>
+  <edges id="132" source_obj="//@regions.1/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.6"/>
+  <edges id="133" source_obj="//@regions.1/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.7"/>
+  <edges id="134" source_obj="//@regions.1/@basic_blocks.1/@node_objs.4" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.7"/>
+  <edges id="136" source_obj="//@regions.1/@basic_blocks.1/@node_objs.7" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.8"/>
+  <edges id="137" source_obj="//@regions.1/@basic_blocks.1/@node_objs.8" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.9"/>
+  <edges id="138" source_obj="//@regions.1/@basic_blocks.1/@node_objs.6" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.9"/>
+  <edges id="139" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.0" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.10"/>
+  <edges id="140" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="141" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="142" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="143" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="144" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="146" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="147" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="148" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="149" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="151" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="152" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="153" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="154" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="155" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="156" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="157" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="158" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="160" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="161" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="162" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="164" source_obj="//@regions.0/@basic_blocks.1/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
+  <edges id="165" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
+  <edges id="166" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
+  <edges id="167" source_obj="//@ports.3" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.0"/>
+  <edges id="169" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.0"/>
+  <edges id="170" source_obj="//@regions.0/@basic_blocks.3/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.1"/>
+  <edges id="171" source_obj="//@regions.0/@basic_blocks.3/@node_objs.2" sink_obj="//@ports.1"/>
+  <edges id="173" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.2"/>
+  <edges id="174" source_obj="//@regions.0/@basic_blocks.3/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.3"/>
+  <edges id="175" source_obj="//@regions.0/@basic_blocks.3/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.3"/>
+  <edges id="176" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.4" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.4"/>
+  <edges id="177" source_obj="//@regions.0/@basic_blocks.2/@node_objs.0" sink_obj="//@ports.1"/>
+  <edges id="179" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.0"/>
+  <edges id="181" source_obj="//@regions.0/@basic_blocks.2/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.1"/>
+  <edges id="182" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.4" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.2"/>
+  <edges id="183" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.0"/>
+  <edges id="184" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="185" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.6/@node_objs.0"/>
+  <edges id="409" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.4"/>
+  <edges id="410" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="411" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2"/>
+  <edges id="412" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.7"/>
+  <edges id="413" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="414" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.3"/>
+  <edges id="415" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="416" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.3"/>
+  <edges id="417" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.2"/>
+  <edges id="418" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.4"/>
+  <edges id="419" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.4"/>
+  <edges id="420" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.4" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="421" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.7"/>
+  <edges id="422" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.5"/>
+  <edges id="423" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.7"/>
+  <edges id="424" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@regions.1/@basic_blocks.0"/>
+  <edges id="425" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.0" sink_obj="//@blocks.6"/>
+  <edges id="426" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.0" sink_obj="//@regions.1/@basic_blocks.1"/>
+  <edges id="427" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.1" sink_obj="//@regions.1/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="428" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.7"/>
+  <blocks id="27" name="block_27" type="BlockType">
+    <controlOutputObjs>block_63</controlOutputObjs>
+    <controlOutputObjs>block_29</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="23" name="fwprop_read" lineNumber="5" originalName="fwprop" fileName="relu_combined/main.cpp" fileDirectory=".." coreName="s_axilite" implIndex="UNSUPPORTED" control="auto" coreId="114" contextFuncName="relu_combined" bitwidth="1" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="relu_combined/main.cpp" linenumber="5" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="relu_combined"/>
       <dataInputObjs>fwprop</dataInputObjs>
       <dataOutputObjs>br</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="dim_read" lineNumber="4" originalName="dim" fileName="relu_combined/main.cpp" fileDirectory=".." coreName="s_axilite" implIndex="UNSUPPORTED" control="auto" coreId="114" contextFuncName="relu_combined" bitwidth="32" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="2" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="relu_combined/main.cpp" linenumber="4" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="relu_combined"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="dim_read" lineNumber="5" originalName="dim" fileName="relu_combined/main.cpp" fileDirectory=".." coreName="s_axilite" implIndex="UNSUPPORTED" control="auto" coreId="114" contextFuncName="relu_combined" bitwidth="32" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="relu_combined/main.cpp" linenumber="5" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="relu_combined"/>
       <dataInputObjs>dim</dataInputObjs>
       <dataOutputObjs>icmp</dataOutputObjs>
       <dataOutputObjs>trunc</dataOutputObjs>
       <dataOutputObjs>trunc</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="cmp171" lineNumber="4" fileName="relu_combined/main.cpp" fileDirectory=".." rtlName="cmp171_fu_138_p2" opType="icmp" coreId="132" contextFuncName="relu_combined" bitwidth="1" opcode="icmp" m_display="0" m_delay="2.47" m_topoIndex="3" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="relu_combined/main.cpp" linenumber="4" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="relu_combined"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="cmp170" lineNumber="5" fileName="relu_combined/main.cpp" fileDirectory=".." rtlName="cmp170_fu_176_p2" opType="icmp" coreId="0" contextFuncName="relu_combined" bitwidth="1" opcode="icmp" m_display="0" m_delay="2.47" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="relu_combined/main.cpp" linenumber="5" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="relu_combined"/>
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>br</dataOutputObjs>
       <dataOutputObjs>br</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="x_read" lineNumber="1494" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." coreId="0" contextFuncName="operator_gt_32_32_true_AP_TRN_AP_WRAP_0" bitwidth="16" opcode="read" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" linenumber="1494" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator&amp;gt;&amp;lt;32, 32, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
-      <dataInputObjs>x</dataInputObjs>
-      <dataOutputObjs>trunc</dataOutputObjs>
-      <dataOutputObjs>icmp</dataOutputObjs>
-      <dataOutputObjs>icmp</dataOutputObjs>
-    </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="trunc_ln15" lineNumber="15" fileName="relu_combined/main.cpp" fileDirectory=".." rtlName="trunc_ln15_fu_144_p1" coreId="132" contextFuncName="relu_combined" bitwidth="15" opcode="trunc" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="relu_combined/main.cpp" linenumber="15" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="relu_combined"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="br_ln16" lineNumber="16" fileName="relu_combined/main.cpp" fileDirectory=".." coreId="4294967295" contextFuncName="relu_combined" opcode="br" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="relu_combined/main.cpp" linenumber="16" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="relu_combined"/>
       <dataInputObjs>read</dataInputObjs>
-      <dataOutputObjs>select</dataOutputObjs>
+      <controlInputObjs>block_29</controlInputObjs>
+      <controlInputObjs>block_63</controlInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="br_ln15" lineNumber="15" fileName="relu_combined/main.cpp" fileDirectory=".." coreId="3968141776" contextFuncName="relu_combined" opcode="br" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="relu_combined/main.cpp" linenumber="15" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="relu_combined"/>
-      <dataInputObjs>read</dataInputObjs>
-      <controlInputObjs>block_31</controlInputObjs>
-      <controlInputObjs>block_52</controlInputObjs>
-    </node_objs>
-    <fileValidLineNumbers fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h">
-      <validLinenumbers>1494</validLinenumbers>
-    </fileValidLineNumbers>
     <fileValidLineNumbers fileName="relu_combined/main.cpp">
-      <validLinenumbers>4</validLinenumbers>
-      <validLinenumbers>15</validLinenumbers>
+      <validLinenumbers>5</validLinenumbers>
+      <validLinenumbers>16</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
-  <blocks id="31" name="block_31" type="BlockType">
-    <controlInputObjs>block_29</controlInputObjs>
+  <blocks id="29" name="block_29" type="BlockType">
+    <controlInputObjs>block_27</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
-    <controlOutputObjs>.lr.ph78</controlOutputObjs>
+    <controlOutputObjs>.lr.ph77</controlOutputObjs>
     <controlOutputObjs>._crit_edge</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="br_ln28" lineNumber="28" fileName="relu_combined/main.cpp" fileDirectory=".." coreId="1043276322" contextFuncName="relu_combined" opcode="br" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="relu_combined/main.cpp" linenumber="28" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="relu_combined"/>
-      <dataInputObjs>icmp</dataInputObjs>
-      <controlInputObjs>._crit_edge</controlInputObjs>
-      <controlInputObjs>.lr.ph78</controlInputObjs>
-    </node_objs>
-    <fileValidLineNumbers fileName="relu_combined/main.cpp">
-      <validLinenumbers>28</validLinenumbers>
-    </fileValidLineNumbers>
-  </blocks>
-  <blocks id="37" name=".lr.ph78" type="BlockType">
-    <controlInputObjs>block_31</controlInputObjs>
-    <controlOutputObjs>br</controlOutputObjs>
-    <controlOutputObjs>phi</controlOutputObjs>
-    <controlOutputObjs>_ZgtILi16ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit21</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="trunc_ln1494_1" lineNumber="1494" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="trunc_ln1494_1_fu_148_p1" coreId="0" contextFuncName="operator_gt_32_32_true_AP_TRN_AP_WRAP_0" bitwidth="31" opcode="trunc" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" linenumber="1494" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator&amp;gt;&amp;lt;32, 32, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
-      <dataInputObjs>read</dataInputObjs>
-      <dataOutputObjs>icmp</dataOutputObjs>
-    </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="33" name="icmp_ln1494_1" lineNumber="1494" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="grp_fu_132_p2" opType="icmp" coreId="3968149192" contextFuncName="operator_gt_32_32_true_AP_TRN_AP_WRAP_0" bitwidth="1" opcode="icmp" m_display="0" m_delay="2.42" m_topoIndex="9" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" linenumber="1494" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator&amp;gt;&amp;lt;32, 32, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
-      <dataInputObjs>read</dataInputObjs>
-      <dataOutputObjs>select</dataOutputObjs>
-      <constName>empty</constName>
-    </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="34" name="dy_read" lineNumber="30" fileName="relu_combined/main.cpp" fileDirectory=".." coreId="49" contextFuncName="relu_combined" bitwidth="16" opcode="read" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="relu_combined/main.cpp" linenumber="30" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="relu_combined"/>
-      <dataInputObjs>dy</dataInputObjs>
-      <dataOutputObjs>select</dataOutputObjs>
-    </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="35" name="select_ln29" lineNumber="29" fileName="relu_combined/main.cpp" fileDirectory=".." rtlName="select_ln29_fu_152_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="relu_combined" bitwidth="16" opcode="select" m_display="0" m_delay="0.8" m_topoIndex="11" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="br_ln29" lineNumber="29" fileName="relu_combined/main.cpp" fileDirectory=".." coreId="0" contextFuncName="relu_combined" opcode="br" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="relu_combined/main.cpp" linenumber="29" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="relu_combined"/>
       <dataInputObjs>icmp</dataInputObjs>
-      <dataInputObjs>read</dataInputObjs>
-      <dataOutputObjs>write</dataOutputObjs>
-      <constName>empty</constName>
+      <controlInputObjs>._crit_edge</controlInputObjs>
+      <controlInputObjs>.lr.ph77</controlInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="36" name="br_ln28" lineNumber="28" fileName="relu_combined/main.cpp" fileDirectory=".." coreId="961" contextFuncName="relu_combined" opcode="br" m_display="0" m_delay="1.58" m_topoIndex="12" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="relu_combined/main.cpp" linenumber="28" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="relu_combined"/>
-      <controlInputObjs>_ZgtILi16ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit21</controlInputObjs>
-    </node_objs>
-    <fileValidLineNumbers fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h">
-      <validLinenumbers>1494</validLinenumbers>
-    </fileValidLineNumbers>
     <fileValidLineNumbers fileName="relu_combined/main.cpp">
-      <validLinenumbers>30</validLinenumbers>
       <validLinenumbers>29</validLinenumbers>
-      <validLinenumbers>28</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
-  <blocks id="50" name="._crit_edge.loopexit" type="BlockType">
-    <controlInputObjs>_ZgtILi16ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit21</controlInputObjs>
+  <blocks id="32" name=".lr.ph77" type="BlockType">
+    <controlInputObjs>block_29</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>_ZgtILi32ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit21</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="trunc_ln29" lineNumber="29" fileName="relu_combined/main.cpp" fileDirectory=".." rtlName="trunc_ln29_fu_182_p1" coreId="0" contextFuncName="relu_combined" bitwidth="31" opcode="trunc" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="relu_combined/main.cpp" linenumber="29" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="relu_combined"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="31" name="br_ln29" lineNumber="29" fileName="relu_combined/main.cpp" fileDirectory=".." coreId="1345" contextFuncName="relu_combined" opcode="br" m_display="0" m_delay="1.58" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="relu_combined/main.cpp" linenumber="29" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="relu_combined"/>
+      <controlInputObjs>_ZgtILi32ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit21</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="relu_combined/main.cpp">
+      <validLinenumbers>29</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="61" name="._crit_edge.loopexit" type="BlockType">
+    <controlInputObjs>_ZgtILi32ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit21</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>._crit_edge</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="49" name="br_ln0" coreId="1275068544" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="60" name="br_ln0" coreId="132" opcode="br" nodeLabel="4.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
       <controlInputObjs>._crit_edge</controlInputObjs>
     </node_objs>
   </blocks>
-  <blocks id="52" name="block_52" type="BlockType">
-    <controlInputObjs>block_29</controlInputObjs>
+  <blocks id="63" name="block_63" type="BlockType">
+    <controlInputObjs>block_27</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>.lr.ph</controlOutputObjs>
     <controlOutputObjs>._crit_edge</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="51" name="br_ln17" lineNumber="17" fileName="relu_combined/main.cpp" fileDirectory=".." coreId="0" contextFuncName="relu_combined" opcode="br" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="relu_combined/main.cpp" linenumber="17" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="relu_combined"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="62" name="br_ln18" lineNumber="18" fileName="relu_combined/main.cpp" fileDirectory=".." coreId="76048872" contextFuncName="relu_combined" opcode="br" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="relu_combined/main.cpp" linenumber="18" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="relu_combined"/>
       <dataInputObjs>icmp</dataInputObjs>
       <controlInputObjs>._crit_edge</controlInputObjs>
       <controlInputObjs>.lr.ph</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="relu_combined/main.cpp">
-      <validLinenumbers>17</validLinenumbers>
+      <validLinenumbers>18</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
-  <blocks id="58" name=".lr.ph" type="BlockType">
-    <controlInputObjs>block_52</controlInputObjs>
+  <blocks id="66" name=".lr.ph" type="BlockType">
+    <controlInputObjs>block_63</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>phi</controlOutputObjs>
-    <controlOutputObjs>_ZgtILi16ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="53" name="trunc_ln1494" lineNumber="1494" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="trunc_ln1494_fu_160_p1" coreId="0" contextFuncName="operator_gt_32_32_true_AP_TRN_AP_WRAP_0" bitwidth="31" opcode="trunc" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" linenumber="1494" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator&amp;gt;&amp;lt;32, 32, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+    <controlOutputObjs>_ZgtILi32ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="64" name="trunc_ln18" lineNumber="18" fileName="relu_combined/main.cpp" fileDirectory=".." rtlName="trunc_ln18_fu_186_p1" coreId="76048592" contextFuncName="relu_combined" bitwidth="31" opcode="trunc" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="relu_combined/main.cpp" linenumber="18" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="relu_combined"/>
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>icmp</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="54" name="icmp_ln1494" lineNumber="1494" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="grp_fu_132_p2" opType="icmp" coreId="543450483" contextFuncName="operator_gt_32_32_true_AP_TRN_AP_WRAP_0" bitwidth="1" opcode="icmp" m_display="0" m_delay="2.42" m_topoIndex="15" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" linenumber="1494" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator&amp;gt;&amp;lt;32, 32, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
-      <dataInputObjs>read</dataInputObjs>
-      <dataOutputObjs>select</dataOutputObjs>
-      <constName>empty</constName>
-    </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="55" name="select_ln18" lineNumber="18" fileName="relu_combined/main.cpp" fileDirectory=".." rtlName="select_ln18_fu_164_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="relu_combined" bitwidth="15" opcode="select" m_display="0" m_delay="0.75" m_topoIndex="16" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="65" name="br_ln18" lineNumber="18" fileName="relu_combined/main.cpp" fileDirectory=".." coreId="572669294" contextFuncName="relu_combined" opcode="br" m_display="0" m_delay="1.58" m_topoIndex="10" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="relu_combined/main.cpp" linenumber="18" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="relu_combined"/>
-      <dataInputObjs>icmp</dataInputObjs>
-      <dataInputObjs>trunc</dataInputObjs>
-      <dataOutputObjs>zext</dataOutputObjs>
-      <constName>empty</constName>
+      <controlInputObjs>_ZgtILi32ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit</controlInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="56" name="zext_ln17" lineNumber="17" fileName="relu_combined/main.cpp" fileDirectory=".." rtlName="zext_ln17_fu_172_p1" coreId="1226845485" contextFuncName="relu_combined" bitwidth="16" opcode="zext" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="relu_combined/main.cpp" linenumber="17" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="relu_combined"/>
-      <dataInputObjs>select</dataInputObjs>
-      <dataOutputObjs>write</dataOutputObjs>
-    </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="57" name="br_ln17" lineNumber="17" fileName="relu_combined/main.cpp" fileDirectory=".." coreId="1129521725" contextFuncName="relu_combined" opcode="br" m_display="0" m_delay="1.58" m_topoIndex="18" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="relu_combined/main.cpp" linenumber="17" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="relu_combined"/>
-      <controlInputObjs>_ZgtILi16ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit</controlInputObjs>
-    </node_objs>
-    <fileValidLineNumbers fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h">
-      <validLinenumbers>1494</validLinenumbers>
-    </fileValidLineNumbers>
     <fileValidLineNumbers fileName="relu_combined/main.cpp">
       <validLinenumbers>18</validLinenumbers>
-      <validLinenumbers>17</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
-  <blocks id="71" name="._crit_edge.loopexit6" type="BlockType">
-    <controlInputObjs>_ZgtILi16ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit</controlInputObjs>
+  <blocks id="88" name="._crit_edge.loopexit6" type="BlockType">
+    <controlInputObjs>_ZgtILi32ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>._crit_edge</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="70" name="br_ln0" coreId="0" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="87" name="br_ln0" coreId="0" opcode="br" nodeLabel="4.0" m_display="0" m_topoIndex="31" m_clusterGroupNumber="-1">
       <controlInputObjs>._crit_edge</controlInputObjs>
     </node_objs>
   </blocks>
-  <blocks id="73" name="._crit_edge" type="BlockType">
-    <controlInputObjs>block_31</controlInputObjs>
+  <blocks id="90" name="._crit_edge" type="BlockType">
+    <controlInputObjs>block_29</controlInputObjs>
     <controlInputObjs>._crit_edge.loopexit</controlInputObjs>
-    <controlInputObjs>block_52</controlInputObjs>
+    <controlInputObjs>block_63</controlInputObjs>
     <controlInputObjs>._crit_edge.loopexit6</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>br</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="72" name="_ln38" lineNumber="38" fileName="relu_combined/main.cpp" fileDirectory=".." coreId="1275068544" contextFuncName="relu_combined" opcode="ret" nodeLabel="2.0" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="relu_combined/main.cpp" linenumber="38" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="relu_combined"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="89" name="_ln39" lineNumber="39" fileName="relu_combined/main.cpp" fileDirectory=".." coreId="0" contextFuncName="relu_combined" opcode="ret" nodeLabel="4.0" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="relu_combined/main.cpp" linenumber="39" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="relu_combined"/>
     </node_objs>
     <fileValidLineNumbers fileName="relu_combined/main.cpp">
-      <validLinenumbers>38</validLinenumbers>
+      <validLinenumbers>39</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
-  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="209" pipe_depth="1" RegionName="VITIS_LOOP_28_2">
-    <basic_blocks id="44" name="_ZgtILi16ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit21" type="BlockType">
-      <controlInputObjs>.lr.ph78</controlInputObjs>
-      <controlInputObjs>_ZgtILi16ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit21.split</controlInputObjs>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="280" pipe_depth="3" RegionName="VITIS_LOOP_29_2">
+    <basic_blocks id="39" name="_ZgtILi32ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit21" type="BlockType">
+      <controlInputObjs>.lr.ph77</controlInputObjs>
+      <controlInputObjs>block_59</controlInputObjs>
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>._crit_edge.loopexit</controlOutputObjs>
-      <controlOutputObjs>_ZgtILi16ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit21.split</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="i_1" lineNumber="28" originalName="i" fileName="relu_combined/main.cpp" fileDirectory=".." coreId="3968033552" contextFuncName="relu_combined" bitwidth="31" opcode="phi" nodeLabel="1.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="relu_combined/main.cpp" linenumber="28" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="relu_combined"/>
+      <controlOutputObjs>_ZgtILi32ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit21.split</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="i_1" lineNumber="29" originalName="i" fileName="relu_combined/main.cpp" fileDirectory=".." coreId="0" contextFuncName="relu_combined" bitwidth="31" opcode="phi" nodeLabel="1.0" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="relu_combined/main.cpp" linenumber="29" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="relu_combined"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
-        <controlInputObjs>.lr.ph78</controlInputObjs>
-        <controlInputObjs>_ZgtILi16ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit21.split</controlInputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+        <controlInputObjs>.lr.ph77</controlInputObjs>
+        <controlInputObjs>block_59</controlInputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="add_ln28" lineNumber="28" fileName="relu_combined/main.cpp" fileDirectory=".." rtlName="add_ln28_fu_176_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="relu_combined" bitwidth="31" opcode="add" nodeLabel="1.0" m_display="0" m_delay="2.52" m_topoIndex="20" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="relu_combined/main.cpp" linenumber="28" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="relu_combined"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="add_ln29" lineNumber="29" fileName="relu_combined/main.cpp" fileDirectory=".." rtlName="add_ln29_fu_190_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="relu_combined" bitwidth="31" opcode="add" nodeLabel="1.0" m_display="0" m_delay="2.52" m_topoIndex="12" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="relu_combined/main.cpp" linenumber="29" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="relu_combined"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>phi</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="41" name="icmp_ln28" lineNumber="28" fileName="relu_combined/main.cpp" fileDirectory=".." rtlName="icmp_ln28_fu_182_p2" opType="icmp" coreId="3968195593" contextFuncName="relu_combined" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="2.47" m_topoIndex="21" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="relu_combined/main.cpp" linenumber="28" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="relu_combined"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="icmp_ln29" lineNumber="29" fileName="relu_combined/main.cpp" fileDirectory=".." rtlName="icmp_ln29_fu_196_p2" opType="icmp" coreId="0" contextFuncName="relu_combined" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="2.47" m_topoIndex="13" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="relu_combined/main.cpp" linenumber="29" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="relu_combined"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataInputObjs>trunc</dataInputObjs>
         <dataOutputObjs>br</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="br_ln28" lineNumber="28" fileName="relu_combined/main.cpp" fileDirectory=".." coreId="0" contextFuncName="relu_combined" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="relu_combined/main.cpp" linenumber="28" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="relu_combined"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="br_ln29" lineNumber="29" fileName="relu_combined/main.cpp" fileDirectory=".." coreId="49" contextFuncName="relu_combined" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="relu_combined/main.cpp" linenumber="29" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="relu_combined"/>
         <dataInputObjs>icmp</dataInputObjs>
-        <controlInputObjs>_ZgtILi16ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit21.split</controlInputObjs>
+        <controlInputObjs>_ZgtILi32ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit21.split</controlInputObjs>
         <controlInputObjs>._crit_edge.loopexit</controlInputObjs>
       </node_objs>
       <fileValidLineNumbers fileName="relu_combined/main.cpp">
-        <validLinenumbers>28</validLinenumbers>
+        <validLinenumbers>29</validLinenumbers>
       </fileValidLineNumbers>
     </basic_blocks>
-    <basic_blocks id="48" name="_ZgtILi16ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit21.split" type="BlockType">
-      <controlInputObjs>_ZgtILi16ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit21</controlInputObjs>
-      <controlOutputObjs>phi</controlOutputObjs>
+    <basic_blocks id="47" name="_ZgtILi32ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit21.split" type="BlockType">
+      <controlInputObjs>_ZgtILi32ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit21</controlInputObjs>
       <controlOutputObjs>br</controlOutputObjs>
-      <controlOutputObjs>_ZgtILi16ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit21</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="46" name="dx_write_ln30" lineNumber="30" fileName="relu_combined/main.cpp" fileDirectory=".." coreId="3968198152" contextFuncName="relu_combined" opcode="write" nodeLabel="1.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+      <controlOutputObjs>block_57</controlOutputObjs>
+      <controlOutputObjs>_ZN8ap_fixedILi32ELi9EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ei.exit</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="41" name="trunc_ln1494_2" lineNumber="1494" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="trunc_ln1494_2_fu_201_p1" coreId="0" contextFuncName="operator_gt_32_32_true_AP_TRN_AP_WRAP_0" bitwidth="10" opcode="trunc" nodeLabel="1.0" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" linenumber="1494" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator&amp;gt;&amp;lt;32, 32, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="42" name="zext_ln1494_1" lineNumber="1494" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="zext_ln1494_1_fu_205_p1" coreId="132" contextFuncName="operator_gt_32_32_true_AP_TRN_AP_WRAP_0" bitwidth="32" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" linenumber="1494" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator&amp;gt;&amp;lt;32, 32, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="x_addr_1" lineNumber="1494" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." coreId="76109128" contextFuncName="operator_gt_32_32_true_AP_TRN_AP_WRAP_0" bitwidth="10" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" linenumber="1494" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator&amp;gt;&amp;lt;32, 32, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>x</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="44" name="x_load_1" lineNumber="1494" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" contextFuncName="operator_gt_32_32_true_AP_TRN_AP_WRAP_0" bitwidth="32" opcode="load" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="18" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" linenumber="1494" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator&amp;gt;&amp;lt;32, 32, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="45" name="icmp_ln1494_1" lineNumber="1494" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="grp_fu_170_p2" opType="icmp" coreId="49" contextFuncName="operator_gt_32_32_true_AP_TRN_AP_WRAP_0" bitwidth="1" opcode="icmp" nodeLabel="2.0" m_display="0" m_delay="2.47" m_topoIndex="20" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" linenumber="1494" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator&amp;gt;&amp;lt;32, 32, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="46" name="br_ln30" lineNumber="30" fileName="relu_combined/main.cpp" fileDirectory=".." coreId="0" contextFuncName="relu_combined" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="relu_combined/main.cpp" linenumber="30" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="relu_combined"/>
-        <dataInputObjs>select</dataInputObjs>
-        <dataOutputObjs>dx</dataOutputObjs>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>_ZN8ap_fixedILi32ELi9EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ei.exit</controlInputObjs>
+        <controlInputObjs>block_57</controlInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="47" name="br_ln0" coreId="3393" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
-        <controlInputObjs>_ZgtILi16ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit21</controlInputObjs>
-      </node_objs>
+      <fileValidLineNumbers fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h">
+        <validLinenumbers>1494</validLinenumbers>
+      </fileValidLineNumbers>
       <fileValidLineNumbers fileName="relu_combined/main.cpp">
         <validLinenumbers>30</validLinenumbers>
       </fileValidLineNumbers>
     </basic_blocks>
+    <basic_blocks id="51" name="_ZN8ap_fixedILi32ELi9EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ei.exit" type="BlockType">
+      <controlInputObjs>_ZgtILi32ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit21.split</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>block_59</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="48" name="dx_addr_1" lineNumber="34" fileName="relu_combined/main.cpp" fileDirectory=".." coreId="76143192" contextFuncName="relu_combined" bitwidth="10" opcode="getelementptr" nodeLabel="3.0" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="relu_combined/main.cpp" linenumber="34" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="relu_combined"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>dx</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="49" name="dx_addr_1_write_ln34" lineNumber="34" fileName="relu_combined/main.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" contextFuncName="relu_combined" opcode="store" nodeLabel="3.0" m_display="0" m_delay="3.25" m_topoIndex="25" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="relu_combined/main.cpp" linenumber="34" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="relu_combined"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="50" name="br_ln0" coreId="1677721728" opcode="br" nodeLabel="3.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+        <controlInputObjs>block_59</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="relu_combined/main.cpp">
+        <validLinenumbers>34</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="57" name="block_57" type="BlockType">
+      <controlInputObjs>_ZgtILi32ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit21.split</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>block_59</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="52" name="dy_addr" lineNumber="31" fileName="relu_combined/main.cpp" fileDirectory=".." coreId="49" contextFuncName="relu_combined" bitwidth="10" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="relu_combined/main.cpp" linenumber="31" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="relu_combined"/>
+        <dataInputObjs>dy</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="53" name="dy_load" lineNumber="31" fileName="relu_combined/main.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" contextFuncName="relu_combined" bitwidth="32" opcode="load" nodeLabel="2.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="23" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="relu_combined/main.cpp" linenumber="31" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="relu_combined"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="54" name="dx_addr" lineNumber="31" fileName="relu_combined/main.cpp" fileDirectory=".." coreId="76187912" contextFuncName="relu_combined" bitwidth="10" opcode="getelementptr" nodeLabel="3.0" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="relu_combined/main.cpp" linenumber="31" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="relu_combined"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>dx</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="55" name="dx_addr_write_ln31" lineNumber="31" fileName="relu_combined/main.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" contextFuncName="relu_combined" opcode="store" nodeLabel="3.0" m_display="0" m_delay="3.25" m_topoIndex="28" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="relu_combined/main.cpp" linenumber="31" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="relu_combined"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>getelementptr</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="56" name="br_ln32" lineNumber="32" fileName="relu_combined/main.cpp" fileDirectory=".." coreId="0" contextFuncName="relu_combined" opcode="br" nodeLabel="3.0" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="relu_combined/main.cpp" linenumber="32" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="relu_combined"/>
+        <controlInputObjs>block_59</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="relu_combined/main.cpp">
+        <validLinenumbers>31</validLinenumbers>
+        <validLinenumbers>32</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="59" name="block_59" type="BlockType">
+      <controlInputObjs>_ZN8ap_fixedILi32ELi9EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ei.exit</controlInputObjs>
+      <controlInputObjs>block_57</controlInputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>_ZgtILi32ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit21</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="58" name="br_ln0" coreId="0" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+        <controlInputObjs>_ZgtILi32ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit21</controlInputObjs>
+      </node_objs>
+    </basic_blocks>
   </regions>
-  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="210" pipe_depth="1" RegionName="VITIS_LOOP_17_1">
-    <basic_blocks id="65" name="_ZgtILi16ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit" type="BlockType">
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="281" pipe_depth="3" RegionName="VITIS_LOOP_18_1">
+    <basic_blocks id="73" name="_ZgtILi32ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit" type="BlockType">
       <controlInputObjs>.lr.ph</controlInputObjs>
-      <controlInputObjs>_ZgtILi16ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit.split</controlInputObjs>
+      <controlInputObjs>_ZgtILi32ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit.split</controlInputObjs>
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>._crit_edge.loopexit6</controlOutputObjs>
-      <controlOutputObjs>_ZgtILi16ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit.split</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="59" name="i" lineNumber="17" originalName="i" fileName="relu_combined/main.cpp" fileDirectory=".." coreId="207" contextFuncName="relu_combined" bitwidth="31" opcode="phi" nodeLabel="3.0" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="relu_combined/main.cpp" linenumber="17" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="relu_combined"/>
+      <controlOutputObjs>_ZgtILi32ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit.split</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="67" name="i" lineNumber="18" originalName="i" fileName="relu_combined/main.cpp" fileDirectory=".." coreId="997420912" contextFuncName="relu_combined" bitwidth="31" opcode="phi" nodeLabel="5.0" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="relu_combined/main.cpp" linenumber="18" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="relu_combined"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
         <controlInputObjs>.lr.ph</controlInputObjs>
-        <controlInputObjs>_ZgtILi16ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit.split</controlInputObjs>
+        <controlInputObjs>_ZgtILi32ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit.split</controlInputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="60" name="add_ln17" lineNumber="17" fileName="relu_combined/main.cpp" fileDirectory=".." rtlName="add_ln17_fu_187_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="relu_combined" bitwidth="31" opcode="add" nodeLabel="3.0" m_display="0" m_delay="2.52" m_topoIndex="29" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="relu_combined/main.cpp" linenumber="17" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="relu_combined"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="68" name="add_ln18" lineNumber="18" fileName="relu_combined/main.cpp" fileDirectory=".." rtlName="add_ln18_fu_210_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="relu_combined" bitwidth="31" opcode="add" nodeLabel="5.0" m_display="0" m_delay="2.52" m_topoIndex="34" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="relu_combined/main.cpp" linenumber="18" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="relu_combined"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>phi</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="62" name="icmp_ln17" lineNumber="17" fileName="relu_combined/main.cpp" fileDirectory=".." rtlName="icmp_ln17_fu_193_p2" opType="icmp" coreId="0" contextFuncName="relu_combined" bitwidth="1" opcode="icmp" nodeLabel="3.0" m_display="0" m_delay="2.47" m_topoIndex="30" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="relu_combined/main.cpp" linenumber="17" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="relu_combined"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="70" name="icmp_ln18" lineNumber="18" fileName="relu_combined/main.cpp" fileDirectory=".." rtlName="icmp_ln18_fu_216_p2" opType="icmp" coreId="1702129263" contextFuncName="relu_combined" bitwidth="1" opcode="icmp" nodeLabel="5.0" m_display="0" m_delay="2.47" m_topoIndex="35" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="relu_combined/main.cpp" linenumber="18" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="relu_combined"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataInputObjs>trunc</dataInputObjs>
         <dataOutputObjs>br</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="64" name="br_ln17" lineNumber="17" fileName="relu_combined/main.cpp" fileDirectory=".." coreId="0" contextFuncName="relu_combined" opcode="br" nodeLabel="3.0" m_display="0" m_topoIndex="31" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="relu_combined/main.cpp" linenumber="17" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="relu_combined"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="72" name="br_ln18" lineNumber="18" fileName="relu_combined/main.cpp" fileDirectory=".." coreId="575620686" contextFuncName="relu_combined" opcode="br" nodeLabel="5.0" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="relu_combined/main.cpp" linenumber="18" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="relu_combined"/>
         <dataInputObjs>icmp</dataInputObjs>
-        <controlInputObjs>_ZgtILi16ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit.split</controlInputObjs>
+        <controlInputObjs>_ZgtILi32ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit.split</controlInputObjs>
         <controlInputObjs>._crit_edge.loopexit6</controlInputObjs>
       </node_objs>
       <fileValidLineNumbers fileName="relu_combined/main.cpp">
-        <validLinenumbers>17</validLinenumbers>
+        <validLinenumbers>18</validLinenumbers>
       </fileValidLineNumbers>
     </basic_blocks>
-    <basic_blocks id="69" name="_ZgtILi16ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit.split" type="BlockType">
-      <controlInputObjs>_ZgtILi16ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit</controlInputObjs>
+    <basic_blocks id="86" name="_ZgtILi32ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit.split" type="BlockType">
+      <controlInputObjs>_ZgtILi32ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit</controlInputObjs>
       <controlOutputObjs>phi</controlOutputObjs>
       <controlOutputObjs>br</controlOutputObjs>
-      <controlOutputObjs>_ZgtILi16ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="67" name="y_write_ln19" lineNumber="19" fileName="relu_combined/main.cpp" fileDirectory=".." coreId="0" contextFuncName="relu_combined" opcode="write" nodeLabel="3.0" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="relu_combined/main.cpp" linenumber="19" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="relu_combined"/>
+      <controlOutputObjs>_ZgtILi32ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="75" name="trunc_ln1494" lineNumber="1494" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="trunc_ln1494_fu_221_p1" coreId="0" contextFuncName="operator_gt_32_32_true_AP_TRN_AP_WRAP_0" bitwidth="10" opcode="trunc" nodeLabel="5.0" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" linenumber="1494" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator&amp;gt;&amp;lt;32, 32, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="76" name="zext_ln1494" lineNumber="1494" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="zext_ln1494_fu_225_p1" coreId="0" contextFuncName="operator_gt_32_32_true_AP_TRN_AP_WRAP_0" bitwidth="32" opcode="zext" nodeLabel="5.0" m_display="0" m_topoIndex="38" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" linenumber="1494" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator&amp;gt;&amp;lt;32, 32, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="77" name="x_addr" lineNumber="1494" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." coreId="8" contextFuncName="operator_gt_32_32_true_AP_TRN_AP_WRAP_0" bitwidth="10" opcode="getelementptr" nodeLabel="5.0" m_display="0" m_topoIndex="39" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" linenumber="1494" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator&amp;gt;&amp;lt;32, 32, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>x</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="78" name="x_load" lineNumber="1494" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" contextFuncName="operator_gt_32_32_true_AP_TRN_AP_WRAP_0" bitwidth="32" opcode="load" nodeLabel="5.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="40" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" linenumber="1494" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator&amp;gt;&amp;lt;32, 32, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="79" name="trunc_ln1494_1" lineNumber="1494" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="trunc_ln1494_1_fu_230_p1" coreId="0" contextFuncName="operator_gt_32_32_true_AP_TRN_AP_WRAP_0" bitwidth="31" opcode="trunc" nodeLabel="6.0" m_display="0" m_topoIndex="41" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" linenumber="1494" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator&amp;gt;&amp;lt;32, 32, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="80" name="icmp_ln1494" lineNumber="1494" fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="grp_fu_170_p2" opType="icmp" coreId="49" contextFuncName="operator_gt_32_32_true_AP_TRN_AP_WRAP_0" bitwidth="1" opcode="icmp" nodeLabel="6.0" m_display="0" m_delay="2.47" m_topoIndex="42" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h" linenumber="1494" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="operator&amp;gt;&amp;lt;32, 32, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="81" name="y_addr" lineNumber="20" fileName="relu_combined/main.cpp" fileDirectory=".." coreId="26897" contextFuncName="relu_combined" bitwidth="10" opcode="getelementptr" nodeLabel="7.0" m_display="0" m_topoIndex="44" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="relu_combined/main.cpp" linenumber="20" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="relu_combined"/>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>y</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="68" name="br_ln0" coreId="28271" opcode="br" nodeLabel="3.0" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
-        <controlInputObjs>_ZgtILi16ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit</controlInputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="82" name="select_ln19" lineNumber="19" fileName="relu_combined/main.cpp" fileDirectory=".." rtlName="select_ln19_fu_234_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="relu_combined" bitwidth="31" opcode="select" nodeLabel="6.0" m_display="0" m_delay="0.73" m_topoIndex="43" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="relu_combined/main.cpp" linenumber="19" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="relu_combined"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <constName>empty</constName>
       </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="83" name="zext_ln20" lineNumber="20" fileName="relu_combined/main.cpp" fileDirectory=".." rtlName="y_Din_A" coreId="76120288" contextFuncName="relu_combined" bitwidth="32" opcode="zext" nodeLabel="7.0" m_display="0" m_topoIndex="45" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="relu_combined/main.cpp" linenumber="20" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="relu_combined"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="84" name="y_addr_write_ln20" lineNumber="20" fileName="relu_combined/main.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" contextFuncName="relu_combined" opcode="store" nodeLabel="7.0" m_display="0" m_delay="3.25" m_topoIndex="46" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="relu_combined/main.cpp" linenumber="20" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="relu_combined"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataInputObjs>getelementptr</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="85" name="br_ln0" coreId="76120120" opcode="br" nodeLabel="7.0" m_display="0" m_topoIndex="47" m_clusterGroupNumber="-1">
+        <controlInputObjs>_ZgtILi32ELi9ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h">
+        <validLinenumbers>1494</validLinenumbers>
+      </fileValidLineNumbers>
       <fileValidLineNumbers fileName="relu_combined/main.cpp">
+        <validLinenumbers>20</validLinenumbers>
         <validLinenumbers>19</validLinenumbers>
       </fileValidLineNumbers>
     </basic_blocks>
@@ -395,110 +525,165 @@
   <ScheduleInfo time="1"/>
   <ScheduleInfo time="2"/>
   <ScheduleInfo time="3"/>
-  <regnodes realName="add_ln17_reg_234">
-    <nodeIds>60</nodeIds>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <ScheduleInfo time="7"/>
+  <regnodes realName="add_ln29_reg_264">
+    <nodeIds>34</nodeIds>
   </regnodes>
-  <regnodes realName="i_reg_121">
-    <nodeIds>59</nodeIds>
+  <regnodes realName="x_addr_reg_308">
+    <nodeIds>77</nodeIds>
   </regnodes>
-  <regnodes realName="add_ln28_reg_226">
-    <nodeIds>39</nodeIds>
-  </regnodes>
-  <regnodes realName="fwprop_read_reg_198">
+  <regnodes realName="fwprop_read_reg_246">
     <nodeIds>23</nodeIds>
   </regnodes>
-  <regnodes realName="cmp171_reg_202">
+  <regnodes realName="zext_ln1494_reg_303">
+    <nodeIds>76</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln1494_1_reg_285">
+    <nodeIds>45</nodeIds>
+  </regnodes>
+  <regnodes realName="i_1_reg_148">
+    <nodeIds>33</nodeIds>
+  </regnodes>
+  <regnodes realName="select_ln19_reg_313">
+    <nodeIds>82</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln18_reg_294">
+    <nodeIds>68</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln29_reg_254">
+    <nodeIds>30</nodeIds>
+  </regnodes>
+  <regnodes realName="x_addr_1_reg_280">
+    <nodeIds>43</nodeIds>
+  </regnodes>
+  <regnodes realName="zext_ln1494_1_reg_273">
+    <nodeIds>42</nodeIds>
+  </regnodes>
+  <regnodes realName="i_reg_159">
+    <nodeIds>67</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln29_reg_269">
+    <nodeIds>36</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln18_reg_259">
+    <nodeIds>64</nodeIds>
+  </regnodes>
+  <regnodes realName="cmp170_reg_250">
     <nodeIds>25</nodeIds>
   </regnodes>
-  <regnodes realName="select_ln29_reg_211">
-    <nodeIds>35</nodeIds>
+  <regnodes realName="dy_addr_reg_289">
+    <nodeIds>52</nodeIds>
   </regnodes>
-  <regnodes realName="trunc_ln1494_reg_216">
-    <nodeIds>53</nodeIds>
+  <regnodes realName="icmp_ln18_reg_299">
+    <nodeIds>70</nodeIds>
   </regnodes>
-  <regnodes realName="i_1_reg_110">
-    <nodeIds>38</nodeIds>
-  </regnodes>
-  <regnodes realName="trunc_ln1494_1_reg_206">
-    <nodeIds>32</nodeIds>
-  </regnodes>
-  <regnodes realName="zext_ln17_reg_221">
-    <nodeIds>56</nodeIds>
-  </regnodes>
-  <expressionNodes realName="trunc_ln1494_fu_160">
-    <nodeIds>53</nodeIds>
+  <expressionNodes realName="dy_addr_gep_fu_91">
+    <nodeIds>52</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="add_ln17_fu_187">
-    <nodeIds>60</nodeIds>
+  <expressionNodes realName="x_addr_gep_fu_127">
+    <nodeIds>77</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="trunc_ln1494_1_fu_148">
-    <nodeIds>32</nodeIds>
+  <expressionNodes realName="trunc_ln1494_1_fu_230">
+    <nodeIds>79</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="i_phi_fu_125">
-    <nodeIds>59</nodeIds>
+  <expressionNodes realName="trunc_ln29_fu_182">
+    <nodeIds>30</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="select_ln18_fu_164">
-    <nodeIds>55</nodeIds>
+  <expressionNodes realName="i_phi_fu_163">
+    <nodeIds>67</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="icmp_ln17_fu_193">
-    <nodeIds>62</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="select_ln29_fu_152">
-    <nodeIds>35</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="i_1_phi_fu_114">
-    <nodeIds>38</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="zext_ln17_fu_172">
-    <nodeIds>56</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="icmp_ln28_fu_182">
+  <expressionNodes realName="trunc_ln1494_2_fu_201">
     <nodeIds>41</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="trunc_ln15_fu_144">
-    <nodeIds>27</nodeIds>
+  <expressionNodes realName="icmp_ln18_fu_216">
+    <nodeIds>70</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="cmp171_fu_138">
+  <expressionNodes realName="cmp170_fu_176">
     <nodeIds>25</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="add_ln28_fu_176">
-    <nodeIds>39</nodeIds>
+  <expressionNodes realName="trunc_ln1494_fu_221">
+    <nodeIds>75</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="grp_fu_132">
+  <expressionNodes realName="zext_ln1494_fu_225">
+    <nodeIds>76</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_1_phi_fu_152">
     <nodeIds>33</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln19_fu_234">
+    <nodeIds>82</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="dx_addr_gep_fu_118">
     <nodeIds>54</nodeIds>
   </expressionNodes>
-  <ioNodes realName="x_read_read_fu_84">
-    <nodeIds>26</nodeIds>
-  </ioNodes>
-  <ioNodes realName="dim_read_read_fu_78">
-    <nodeIds>24</nodeIds>
-  </ioNodes>
-  <ioNodes realName="dy_read_read_fu_90">
+  <expressionNodes realName="grp_fu_170">
+    <nodeIds>45</nodeIds>
+    <nodeIds>80</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln1494_1_fu_205">
+    <nodeIds>42</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="dx_addr_1_gep_fu_104">
+    <nodeIds>48</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="x_addr_1_gep_fu_78">
+    <nodeIds>43</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln29_fu_196">
+    <nodeIds>36</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln29_fu_190">
     <nodeIds>34</nodeIds>
-  </ioNodes>
-  <ioNodes realName="write_ln19_write_fu_103">
-    <nodeIds>67</nodeIds>
-  </ioNodes>
-  <ioNodes realName="fwprop_read_read_fu_72">
+  </expressionNodes>
+  <expressionNodes realName="zext_ln20_fu_242">
+    <nodeIds>83</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln18_fu_210">
+    <nodeIds>68</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln18_fu_186">
+    <nodeIds>64</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="y_addr_gep_fu_135">
+    <nodeIds>81</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="fwprop_read_read_fu_66">
     <nodeIds>23</nodeIds>
   </ioNodes>
-  <ioNodes realName="write_ln30_write_fu_96">
-    <nodeIds>46</nodeIds>
+  <ioNodes realName="dim_read_read_fu_72">
+    <nodeIds>24</nodeIds>
   </ioNodes>
+  <memoryPorts dataString="dx">
+    <nodeIds>49</nodeIds>
+    <nodeIds>55</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="dy">
+    <nodeIds>53</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="x">
+    <nodeIds>44</nodeIds>
+    <nodeIds>78</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="y">
+    <nodeIds>84</nodeIds>
+  </memoryPorts>
   <ioPorts name="dim">
     <contents name="read">
       <nodeIds>24</nodeIds>
     </contents>
   </ioPorts>
-  <ioPorts name="dx">
-    <contents name="write">
-      <nodeIds>46</nodeIds>
+  <ioPorts name="dx(p0)">
+    <contents name="store">
+      <nodeIds>49</nodeIds>
+      <nodeIds>55</nodeIds>
     </contents>
   </ioPorts>
-  <ioPorts name="dy">
-    <contents name="read">
-      <nodeIds>34</nodeIds>
+  <ioPorts name="dy(p0)">
+    <contents name="load">
+      <nodeIds>53</nodeIds>
     </contents>
   </ioPorts>
   <ioPorts name="fwprop">
@@ -506,14 +691,15 @@
       <nodeIds>23</nodeIds>
     </contents>
   </ioPorts>
-  <ioPorts name="x">
-    <contents name="read">
-      <nodeIds>26</nodeIds>
+  <ioPorts name="x(p0)">
+    <contents name="load">
+      <nodeIds>44</nodeIds>
+      <nodeIds>78</nodeIds>
     </contents>
   </ioPorts>
-  <ioPorts name="y">
-    <contents name="write">
-      <nodeIds>67</nodeIds>
+  <ioPorts name="y(p0)">
+    <contents name="store">
+      <nodeIds>84</nodeIds>
     </contents>
   </ioPorts>
   <fsm>
@@ -538,67 +724,104 @@
       <operations id="24" stage="1" latency="1"/>
       <operations id="25" stage="1" latency="1"/>
       <operations id="26" stage="1" latency="1"/>
-      <operations id="27" stage="1" latency="1"/>
       <operations id="28" stage="1" latency="1"/>
       <operations id="30" stage="1" latency="1"/>
-      <operations id="32" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="62" stage="1" latency="1"/>
+      <operations id="64" stage="1" latency="1"/>
+      <operations id="65" stage="1" latency="1"/>
+    </states>
+    <states id="2">
       <operations id="33" stage="1" latency="1"/>
       <operations id="34" stage="1" latency="1"/>
       <operations id="35" stage="1" latency="1"/>
       <operations id="36" stage="1" latency="1"/>
-      <operations id="51" stage="1" latency="1"/>
-      <operations id="53" stage="1" latency="1"/>
-      <operations id="54" stage="1" latency="1"/>
-      <operations id="55" stage="1" latency="1"/>
-      <operations id="56" stage="1" latency="1"/>
-      <operations id="57" stage="1" latency="1"/>
-    </states>
-    <states id="2">
+      <operations id="37" stage="1" latency="1"/>
       <operations id="38" stage="1" latency="1"/>
-      <operations id="39" stage="1" latency="1"/>
-      <operations id="40" stage="1" latency="1"/>
       <operations id="41" stage="1" latency="1"/>
       <operations id="42" stage="1" latency="1"/>
       <operations id="43" stage="1" latency="1"/>
-      <operations id="45" stage="1" latency="1"/>
-      <operations id="46" stage="1" latency="1"/>
-      <operations id="47" stage="1" latency="1"/>
+      <operations id="44" stage="2" latency="2"/>
+      <operations id="58" stage="1" latency="1"/>
     </states>
     <states id="3">
-      <operations id="49" stage="1" latency="1"/>
-      <operations id="70" stage="1" latency="1"/>
-      <operations id="72" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="2"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="52" stage="1" latency="1"/>
+      <operations id="53" stage="2" latency="2"/>
     </states>
     <states id="4">
-      <operations id="59" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="53" stage="1" latency="2"/>
+      <operations id="54" stage="1" latency="1"/>
+      <operations id="55" stage="1" latency="1"/>
+      <operations id="56" stage="1" latency="1"/>
+    </states>
+    <states id="5">
       <operations id="60" stage="1" latency="1"/>
-      <operations id="61" stage="1" latency="1"/>
-      <operations id="62" stage="1" latency="1"/>
-      <operations id="63" stage="1" latency="1"/>
-      <operations id="64" stage="1" latency="1"/>
-      <operations id="66" stage="1" latency="1"/>
+      <operations id="87" stage="1" latency="1"/>
+      <operations id="89" stage="1" latency="1"/>
+    </states>
+    <states id="6">
       <operations id="67" stage="1" latency="1"/>
       <operations id="68" stage="1" latency="1"/>
+      <operations id="69" stage="1" latency="1"/>
+      <operations id="70" stage="1" latency="1"/>
+      <operations id="71" stage="1" latency="1"/>
+      <operations id="72" stage="1" latency="1"/>
+      <operations id="75" stage="1" latency="1"/>
+      <operations id="76" stage="1" latency="1"/>
+      <operations id="77" stage="1" latency="1"/>
+      <operations id="78" stage="2" latency="2"/>
     </states>
-    <transitions inState="1" outState="3">
+    <states id="7">
+      <operations id="78" stage="1" latency="2"/>
+      <operations id="79" stage="1" latency="1"/>
+      <operations id="80" stage="1" latency="1"/>
+      <operations id="82" stage="1" latency="1"/>
+    </states>
+    <states id="8">
+      <operations id="74" stage="1" latency="1"/>
+      <operations id="81" stage="1" latency="1"/>
+      <operations id="83" stage="1" latency="1"/>
+      <operations id="84" stage="1" latency="1"/>
+      <operations id="85" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="5">
       <condition id="-1"/>
     </transitions>
     <transitions inState="1" outState="2">
       <condition id="-1"/>
     </transitions>
-    <transitions inState="1" outState="4">
+    <transitions inState="1" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="5">
       <condition id="-1"/>
     </transitions>
     <transitions inState="2" outState="3">
       <condition id="-1"/>
     </transitions>
-    <transitions inState="2" outState="2">
+    <transitions inState="7" outState="8">
       <condition id="-1"/>
     </transitions>
-    <transitions inState="4" outState="3">
+    <transitions inState="8" outState="6">
       <condition id="-1"/>
     </transitions>
-    <transitions inState="4" outState="4">
+    <transitions inState="6" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="7">
       <condition id="-1"/>
     </transitions>
   </fsm>
@@ -613,33 +836,36 @@
       <mDfPipe/>
     </cfgRegions>
     <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>27</basicBlocks>
       <basicBlocks>29</basicBlocks>
-      <basicBlocks>31</basicBlocks>
-      <basicBlocks>37</basicBlocks>
-      <basicBlocks>52</basicBlocks>
-      <basicBlocks>58</basicBlocks>
+      <basicBlocks>32</basicBlocks>
+      <basicBlocks>63</basicBlocks>
+      <basicBlocks>66</basicBlocks>
       <mDfPipe/>
     </cfgRegions>
-    <cfgRegions mId="3" mTag="VITIS_LOOP_28_2" mII="1" mDepth="1" mMinTripCount="1" mMaxTripCount="-1" mMinLatency="1" mMaxLatency="-1" mType="1">
-      <basicBlocks>44</basicBlocks>
-      <basicBlocks>48</basicBlocks>
+    <cfgRegions mId="3" mTag="VITIS_LOOP_29_2" mII="1" mDepth="3" mMinTripCount="1" mMaxTripCount="-1" mMinLatency="2" mMaxLatency="-1" mType="1">
+      <basicBlocks>39</basicBlocks>
+      <basicBlocks>47</basicBlocks>
+      <basicBlocks>51</basicBlocks>
+      <basicBlocks>57</basicBlocks>
+      <basicBlocks>59</basicBlocks>
       <mDfPipe/>
     </cfgRegions>
     <cfgRegions mId="4" mTag="Region 1" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
-      <basicBlocks>50</basicBlocks>
+      <basicBlocks>61</basicBlocks>
       <mDfPipe/>
     </cfgRegions>
-    <cfgRegions mId="5" mTag="VITIS_LOOP_17_1" mII="1" mDepth="1" mMinTripCount="1" mMaxTripCount="-1" mMinLatency="1" mMaxLatency="-1" mType="1">
-      <basicBlocks>65</basicBlocks>
-      <basicBlocks>69</basicBlocks>
+    <cfgRegions mId="5" mTag="VITIS_LOOP_18_1" mII="1" mDepth="3" mMinTripCount="1" mMaxTripCount="-1" mMinLatency="2" mMaxLatency="-1" mType="1">
+      <basicBlocks>73</basicBlocks>
+      <basicBlocks>86</basicBlocks>
       <mDfPipe/>
     </cfgRegions>
     <cfgRegions mId="6" mTag="Region 2" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
-      <basicBlocks>71</basicBlocks>
+      <basicBlocks>88</basicBlocks>
       <mDfPipe/>
     </cfgRegions>
     <cfgRegions mId="7" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
-      <basicBlocks>73</basicBlocks>
+      <basicBlocks>90</basicBlocks>
       <mDfPipe/>
     </cfgRegions>
   </CFGRegionsRoot>

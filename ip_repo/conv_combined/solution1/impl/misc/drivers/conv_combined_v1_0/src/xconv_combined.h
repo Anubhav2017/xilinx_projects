@@ -87,6 +87,14 @@ u32 XConv_combined_IsReady(XConv_combined *InstancePtr);
 void XConv_combined_EnableAutoRestart(XConv_combined *InstancePtr);
 void XConv_combined_DisableAutoRestart(XConv_combined *InstancePtr);
 
+void XConv_combined_Set_wt(XConv_combined *InstancePtr, u32 Data);
+u32 XConv_combined_Get_wt(XConv_combined *InstancePtr);
+void XConv_combined_Set_dwt(XConv_combined *InstancePtr, u32 Data);
+u32 XConv_combined_Get_dwt(XConv_combined *InstancePtr);
+void XConv_combined_Set_b(XConv_combined *InstancePtr, u32 Data);
+u32 XConv_combined_Get_b(XConv_combined *InstancePtr);
+void XConv_combined_Set_db(XConv_combined *InstancePtr, u32 Data);
+u32 XConv_combined_Get_db(XConv_combined *InstancePtr);
 void XConv_combined_Set_H(XConv_combined *InstancePtr, u32 Data);
 u32 XConv_combined_Get_H(XConv_combined *InstancePtr);
 void XConv_combined_Set_W(XConv_combined *InstancePtr, u32 Data);
