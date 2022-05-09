@@ -2,7 +2,7 @@
 #define MAX_WINDOW_SIZE 5
 
 #include <ap_fixed.h>
-typedef ap_fixed<32,9> fixed_t;
+typedef ap_fixed<16,9> fixed_t;
 
 void conv_combined(fixed_t x[MAX_SIZE], fixed_t dx[MAX_SIZE],fixed_t* wt,fixed_t* dwt, fixed_t y[MAX_SIZE], fixed_t dy[MAX_SIZE],fixed_t b,fixed_t db, int H, int W, int FH, int FW, bool fwprop){
 

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'conv_combined'" level="0">
-<item name = "Date">Sun May  8 16:03:48 2022
+<item name = "Date">Tue May 10 01:26:29 2022
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)</item>
 <item name = "Project">conv_combined</item>
@@ -39,7 +39,7 @@
 <column name=" + VITIS_LOOP_43_2">2, ?, 3, 1, 1, 1 ~ ?, yes</column>
 <column name="- VITIS_LOOP_55_3_VITIS_LOOP_56_4">?, ?, ?, -, -, ?, no</column>
 <column name=" + VITIS_LOOP_58_5">?, ?, 2 ~ ?, -, -, ?, no</column>
-<column name="  ++ VITIS_LOOP_59_6">5, ?, 5, 1, 1, 1 ~ ?, yes</column>
+<column name="  ++ VITIS_LOOP_59_6">4, ?, 5, 1, 1, 1 ~ ?, yes</column>
 <column name="- VITIS_LOOP_70_7">?, ?, 4 ~ ?, -, -, ?, no</column>
 <column name=" + VITIS_LOOP_71_8">2, ?, 3, 1, 1, 1 ~ ?, yes</column>
 <column name="- VITIS_LOOP_76_9_VITIS_LOOP_78_11_VITIS_LOOP_79_12">?, ?, 11, 2, 1, ?, yes</column>

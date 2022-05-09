@@ -17,5 +17,5 @@
   <xd:arg xd:name="FW" xd:originalName="FW" xd:direction="in" xd:interfaceRef="s_axi_CRTL_BUS" xd:busTypeRef="axilite" xd:dataWidth="1" xd:offset="0x48" xd:handshakeRef="ap_none"/>
   <xd:arg xd:name="fwprop" xd:originalName="fwprop" xd:direction="in" xd:interfaceRef="s_axi_CRTL_BUS" xd:busTypeRef="axilite" xd:dataWidth="1" xd:offset="0x50" xd:handshakeRef="ap_none"/>
   <xd:latencyEstimates xd:best-case="undef" xd:worst-case="undef" xd:average-case="undef"/>
-  <xd:resourceEstimates xd:LUT="6337" xd:FF="6970" xd:BRAM="2" xd:DSP="9"/>
+  <xd:resourceEstimates xd:LUT="6052" xd:FF="6264" xd:BRAM="2" xd:DSP="11"/>
 </xd:acceleratorMap>

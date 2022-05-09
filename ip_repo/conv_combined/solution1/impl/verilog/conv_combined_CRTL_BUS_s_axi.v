@@ -31,8 +31,8 @@ module conv_combined_CRTL_BUS_s_axi
     output wire                          interrupt,
     output wire [31:0]                   wt,
     output wire [31:0]                   dwt,
-    output wire [31:0]                   b,
-    output wire [31:0]                   db,
+    output wire [15:0]                   b,
+    output wire [15:0]                   db,
     output wire [31:0]                   H,
     output wire [31:0]                   W,
     output wire [31:0]                   FH,
@@ -69,10 +69,12 @@ module conv_combined_CRTL_BUS_s_axi
 //        bit 31~0 - dwt[31:0] (Read/Write)
 // 0x1c : reserved
 // 0x20 : Data signal of b
-//        bit 31~0 - b[31:0] (Read/Write)
+//        bit 15~0 - b[15:0] (Read/Write)
+//        others   - reserved
 // 0x24 : reserved
 // 0x28 : Data signal of db
-//        bit 31~0 - db[31:0] (Read/Write)
+//        bit 15~0 - db[15:0] (Read/Write)
+//        others   - reserved
 // 0x2c : reserved
 // 0x30 : Data signal of H
 //        bit 31~0 - H[31:0] (Read/Write)
@@ -148,8 +150,8 @@ localparam
     reg  [1:0]                    int_isr = 2'b0;
     reg  [31:0]                   int_wt = 'b0;
     reg  [31:0]                   int_dwt = 'b0;
-    reg  [31:0]                   int_b = 'b0;
-    reg  [31:0]                   int_db = 'b0;
+    reg  [15:0]                   int_b = 'b0;
+    reg  [15:0]                   int_db = 'b0;
     reg  [31:0]                   int_H = 'b0;
     reg  [31:0]                   int_W = 'b0;
     reg  [31:0]                   int_FH = 'b0;
@@ -270,10 +272,10 @@ always @(posedge ACLK) begin
                     rdata <= int_dwt[31:0];
                 end
                 ADDR_B_DATA_0: begin
-                    rdata <= int_b[31:0];
+                    rdata <= int_b[15:0];
                 end
                 ADDR_DB_DATA_0: begin
-                    rdata <= int_db[31:0];
+                    rdata <= int_db[15:0];
                 end
                 ADDR_H_DATA_0: begin
                     rdata <= int_H[31:0];
@@ -424,23 +426,23 @@ always @(posedge ACLK) begin
     end
 end
 
-// int_b[31:0]
+// int_b[15:0]
 always @(posedge ACLK) begin
     if (ARESET)
-        int_b[31:0] <= 0;
+        int_b[15:0] <= 0;
     else if (ACLK_EN) begin
         if (w_hs && waddr == ADDR_B_DATA_0)
-            int_b[31:0] <= (WDATA[31:0] & wmask) | (int_b[31:0] & ~wmask);
+            int_b[15:0] <= (WDATA[31:0] & wmask) | (int_b[15:0] & ~wmask);
     end
 end
 
-// int_db[31:0]
+// int_db[15:0]
 always @(posedge ACLK) begin
     if (ARESET)
-        int_db[31:0] <= 0;
+        int_db[15:0] <= 0;
     else if (ACLK_EN) begin
         if (w_hs && waddr == ADDR_DB_DATA_0)
-            int_db[31:0] <= (WDATA[31:0] & wmask) | (int_db[31:0] & ~wmask);
+            int_db[15:0] <= (WDATA[31:0] & wmask) | (int_db[15:0] & ~wmask);
     end
 end
 

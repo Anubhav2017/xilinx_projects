@@ -1,5 +1,5 @@
 #include <ap_fixed.h>
-typedef ap_fixed<32,9> fixed_t;
+typedef ap_fixed<16,9> fixed_t;
 #define MAX_SIZE 1000
 
 void relu_combined(fixed_t x[MAX_SIZE], fixed_t dx[MAX_SIZE], fixed_t y[MAX_SIZE],fixed_t dy[MAX_SIZE], int dim, bool fwprop){

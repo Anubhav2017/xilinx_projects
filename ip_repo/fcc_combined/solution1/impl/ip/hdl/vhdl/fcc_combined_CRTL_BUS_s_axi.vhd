@@ -32,8 +32,8 @@ port (
     RVALID                :out  STD_LOGIC;
     RREADY                :in   STD_LOGIC;
     interrupt             :out  STD_LOGIC;
-    w                     :out  STD_LOGIC_VECTOR(31 downto 0);
-    dw                    :out  STD_LOGIC_VECTOR(31 downto 0);
+    wt                    :out  STD_LOGIC_VECTOR(31 downto 0);
+    dwt                   :out  STD_LOGIC_VECTOR(31 downto 0);
     b                     :out  STD_LOGIC_VECTOR(31 downto 0);
     db                    :out  STD_LOGIC_VECTOR(31 downto 0);
     xdim                  :out  STD_LOGIC_VECTOR(31 downto 0);
@@ -65,11 +65,11 @@ end entity fcc_combined_CRTL_BUS_s_axi;
 --        bit 0  - ap_done (COR/TOW)
 --        bit 1  - ap_ready (COR/TOW)
 --        others - reserved
--- 0x10 : Data signal of w
---        bit 31~0 - w[31:0] (Read/Write)
+-- 0x10 : Data signal of wt
+--        bit 31~0 - wt[31:0] (Read/Write)
 -- 0x14 : reserved
--- 0x18 : Data signal of dw
---        bit 31~0 - dw[31:0] (Read/Write)
+-- 0x18 : Data signal of dwt
+--        bit 31~0 - dwt[31:0] (Read/Write)
 -- 0x1c : reserved
 -- 0x20 : Data signal of b
 --        bit 31~0 - b[31:0] (Read/Write)
@@ -98,10 +98,10 @@ architecture behave of fcc_combined_CRTL_BUS_s_axi is
     constant ADDR_GIE           : INTEGER := 16#04#;
     constant ADDR_IER           : INTEGER := 16#08#;
     constant ADDR_ISR           : INTEGER := 16#0c#;
-    constant ADDR_W_DATA_0      : INTEGER := 16#10#;
-    constant ADDR_W_CTRL        : INTEGER := 16#14#;
-    constant ADDR_DW_DATA_0     : INTEGER := 16#18#;
-    constant ADDR_DW_CTRL       : INTEGER := 16#1c#;
+    constant ADDR_WT_DATA_0     : INTEGER := 16#10#;
+    constant ADDR_WT_CTRL       : INTEGER := 16#14#;
+    constant ADDR_DWT_DATA_0    : INTEGER := 16#18#;
+    constant ADDR_DWT_CTRL      : INTEGER := 16#1c#;
     constant ADDR_B_DATA_0      : INTEGER := 16#20#;
     constant ADDR_B_CTRL        : INTEGER := 16#24#;
     constant ADDR_DB_DATA_0     : INTEGER := 16#28#;
@@ -134,8 +134,8 @@ architecture behave of fcc_combined_CRTL_BUS_s_axi is
     signal int_gie             : STD_LOGIC := '0';
     signal int_ier             : UNSIGNED(1 downto 0) := (others => '0');
     signal int_isr             : UNSIGNED(1 downto 0) := (others => '0');
-    signal int_w               : UNSIGNED(31 downto 0) := (others => '0');
-    signal int_dw              : UNSIGNED(31 downto 0) := (others => '0');
+    signal int_wt              : UNSIGNED(31 downto 0) := (others => '0');
+    signal int_dwt             : UNSIGNED(31 downto 0) := (others => '0');
     signal int_b               : UNSIGNED(31 downto 0) := (others => '0');
     signal int_db              : UNSIGNED(31 downto 0) := (others => '0');
     signal int_xdim            : UNSIGNED(31 downto 0) := (others => '0');
@@ -268,10 +268,10 @@ begin
                         rdata_data(1 downto 0) <= int_ier;
                     when ADDR_ISR =>
                         rdata_data(1 downto 0) <= int_isr;
-                    when ADDR_W_DATA_0 =>
-                        rdata_data <= RESIZE(int_w(31 downto 0), 32);
-                    when ADDR_DW_DATA_0 =>
-                        rdata_data <= RESIZE(int_dw(31 downto 0), 32);
+                    when ADDR_WT_DATA_0 =>
+                        rdata_data <= RESIZE(int_wt(31 downto 0), 32);
+                    when ADDR_DWT_DATA_0 =>
+                        rdata_data <= RESIZE(int_dwt(31 downto 0), 32);
                     when ADDR_B_DATA_0 =>
                         rdata_data <= RESIZE(int_b(31 downto 0), 32);
                     when ADDR_DB_DATA_0 =>
@@ -293,8 +293,8 @@ begin
 -- ----------------------- Register logic ----------------
     interrupt            <= int_gie and (int_isr(0) or int_isr(1));
     ap_start             <= int_ap_start;
-    w                    <= STD_LOGIC_VECTOR(int_w);
-    dw                   <= STD_LOGIC_VECTOR(int_dw);
+    wt                   <= STD_LOGIC_VECTOR(int_wt);
+    dwt                  <= STD_LOGIC_VECTOR(int_dwt);
     b                    <= STD_LOGIC_VECTOR(int_b);
     db                   <= STD_LOGIC_VECTOR(int_db);
     xdim                 <= STD_LOGIC_VECTOR(int_xdim);
@@ -430,8 +430,8 @@ begin
     begin
         if (ACLK'event and ACLK = '1') then
             if (ACLK_EN = '1') then
-                if (w_hs = '1' and waddr = ADDR_W_DATA_0) then
-                    int_w(31 downto 0) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_w(31 downto 0));
+                if (w_hs = '1' and waddr = ADDR_WT_DATA_0) then
+                    int_wt(31 downto 0) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_wt(31 downto 0));
                 end if;
             end if;
         end if;
@@ -441,8 +441,8 @@ begin
     begin
         if (ACLK'event and ACLK = '1') then
             if (ACLK_EN = '1') then
-                if (w_hs = '1' and waddr = ADDR_DW_DATA_0) then
-                    int_dw(31 downto 0) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_dw(31 downto 0));
+                if (w_hs = '1' and waddr = ADDR_DWT_DATA_0) then
+                    int_dwt(31 downto 0) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_dwt(31 downto 0));
                 end if;
             end if;
         end if;

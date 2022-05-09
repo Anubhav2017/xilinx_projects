@@ -79,13 +79,13 @@
 <TripCount>undef</TripCount>
 <Latency>
 <range>
-<min>5</min>
+<min>4</min>
 <max>-1</max>
 </range>
 </Latency>
 <AbsoluteTimeLatency>
 <range>
-<min>50</min>
+<min>40</min>
 <max>-10</max>
 </range>
 </AbsoluteTimeLatency>
@@ -173,9 +173,9 @@
 <AreaEstimates>
 <Resources>
 <BRAM_18K>2</BRAM_18K>
-<DSP>9</DSP>
-<FF>6970</FF>
-<LUT>6337</LUT>
+<DSP>11</DSP>
+<FF>6264</FF>
+<LUT>6052</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>
@@ -1014,7 +1014,7 @@
 <IOProtocol>bram</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>4</Bits>
+<Bits>2</Bits>
 <Attribute>control</Attribute>
 <CType>int</CType>
 </RtlPorts>
@@ -1026,7 +1026,7 @@
 <IOProtocol>bram</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>32</Bits>
+<Bits>16</Bits>
 <Attribute>data</Attribute>
 <CType>int</CType>
 </RtlPorts>
@@ -1038,7 +1038,7 @@
 <IOProtocol>bram</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>32</Bits>
+<Bits>16</Bits>
 <Attribute>data</Attribute>
 <CType>int</CType>
 </RtlPorts>
@@ -1098,7 +1098,7 @@
 <IOProtocol>bram</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>4</Bits>
+<Bits>2</Bits>
 <Attribute>control</Attribute>
 <CType>int</CType>
 </RtlPorts>
@@ -1110,7 +1110,7 @@
 <IOProtocol>bram</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>32</Bits>
+<Bits>16</Bits>
 <Attribute>data</Attribute>
 <CType>int</CType>
 </RtlPorts>
@@ -1122,7 +1122,7 @@
 <IOProtocol>bram</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>32</Bits>
+<Bits>16</Bits>
 <Attribute>data</Attribute>
 <CType>int</CType>
 </RtlPorts>
@@ -1182,7 +1182,7 @@
 <IOProtocol>bram</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>4</Bits>
+<Bits>2</Bits>
 <Attribute>control</Attribute>
 <CType>int</CType>
 </RtlPorts>
@@ -1194,7 +1194,7 @@
 <IOProtocol>bram</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>32</Bits>
+<Bits>16</Bits>
 <Attribute>data</Attribute>
 <CType>int</CType>
 </RtlPorts>
@@ -1206,7 +1206,7 @@
 <IOProtocol>bram</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>32</Bits>
+<Bits>16</Bits>
 <Attribute>data</Attribute>
 <CType>int</CType>
 </RtlPorts>
@@ -1266,7 +1266,7 @@
 <IOProtocol>bram</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>4</Bits>
+<Bits>2</Bits>
 <Attribute>control</Attribute>
 <CType>int</CType>
 </RtlPorts>
@@ -1278,7 +1278,7 @@
 <IOProtocol>bram</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>32</Bits>
+<Bits>16</Bits>
 <Attribute>data</Attribute>
 <CType>int</CType>
 </RtlPorts>
@@ -1290,7 +1290,7 @@
 <IOProtocol>bram</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>32</Bits>
+<Bits>16</Bits>
 <Attribute>data</Attribute>
 <CType>int</CType>
 </RtlPorts>

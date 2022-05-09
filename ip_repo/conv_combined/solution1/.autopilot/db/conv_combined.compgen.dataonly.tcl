@@ -20,7 +20,7 @@ dwt {
 }
 b { 
 	dir I
-	width 32
+	width 16
 	depth 1
 	mode ap_none
 	offset 32
@@ -28,7 +28,7 @@ b {
 }
 db { 
 	dir I
-	width 32
+	width 16
 	depth 1
 	mode ap_none
 	offset 40

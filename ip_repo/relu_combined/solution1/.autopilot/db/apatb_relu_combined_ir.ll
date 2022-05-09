@@ -5,7 +5,7 @@ target triple = "fpga64-xilinx-none"
 
 %struct.ap_fixed = type { %struct.ap_fixed_base }
 %struct.ap_fixed_base = type { %struct.ssdm_int }
-%struct.ssdm_int = type { i32 }
+%struct.ssdm_int = type { i16 }
 
 ; Function Attrs: noinline
 define void @apatb_relu_combined_ir(%struct.ap_fixed* %x, %struct.ap_fixed* %dx, %struct.ap_fixed* %y, %struct.ap_fixed* %dy, i32 %dim, i1 %fwprop) local_unnamed_addr #0 {
@@ -54,7 +54,7 @@ for.loop:                                         ; preds = %for.loop.head, %cop
   %dst.addr = getelementptr [1000 x %struct.ap_fixed], [1000 x %struct.ap_fixed]* %0, i64 0, i64 %for.loop.idx9
   %src.addr = getelementptr [1000 x %struct.ap_fixed], [1000 x %struct.ap_fixed]* %1, i64 0, i64 %for.loop.idx9
   %5 = bitcast %struct.ap_fixed* %src.addr to i8*
-  %6 = call i1 @fpga_fifo_exist_4(i8* %5)
+  %6 = call i1 @fpga_fifo_exist_2(i8* %5)
   br i1 %6, label %7, label %8
 
 ; <label>:7:                                      ; preds = %for.loop
@@ -65,7 +65,7 @@ for.loop:                                         ; preds = %for.loop.head, %cop
   %src.addr.01 = getelementptr [1000 x %struct.ap_fixed], [1000 x %struct.ap_fixed]* %1, i64 0, i64 %for.loop.idx9, i32 0
   %dst.addr.02 = getelementptr [1000 x %struct.ap_fixed], [1000 x %struct.ap_fixed]* %0, i64 0, i64 %for.loop.idx9, i32 0
   %9 = bitcast %struct.ap_fixed_base* %src.addr.01 to i8*
-  %10 = call i1 @fpga_fifo_exist_4(i8* %9)
+  %10 = call i1 @fpga_fifo_exist_2(i8* %9)
   br i1 %10, label %11, label %12
 
 ; <label>:11:                                     ; preds = %8
@@ -76,7 +76,7 @@ for.loop:                                         ; preds = %for.loop.head, %cop
   %src.addr.0.03 = getelementptr [1000 x %struct.ap_fixed], [1000 x %struct.ap_fixed]* %1, i64 0, i64 %for.loop.idx9, i32 0, i32 0
   %dst.addr.0.04 = getelementptr [1000 x %struct.ap_fixed], [1000 x %struct.ap_fixed]* %0, i64 0, i64 %for.loop.idx9, i32 0, i32 0
   %13 = bitcast %struct.ssdm_int* %src.addr.0.03 to i8*
-  %14 = call i1 @fpga_fifo_exist_4(i8* %13)
+  %14 = call i1 @fpga_fifo_exist_2(i8* %13)
   br i1 %14, label %15, label %16
 
 ; <label>:15:                                     ; preds = %12
@@ -85,10 +85,10 @@ for.loop:                                         ; preds = %for.loop.head, %cop
 
 ; <label>:16:                                     ; preds = %12
   %dst.addr.0.0.06.gep7 = getelementptr [1000 x %struct.ap_fixed], [1000 x %struct.ap_fixed]* %0, i64 0, i64 %for.loop.idx9, i32 0, i32 0, i32 0
-  %17 = bitcast i32* %dst.addr.0.0.06.gep7 to i8*
+  %17 = bitcast i16* %dst.addr.0.0.06.gep7 to i8*
   %src.addr.0.0.05.gep8 = getelementptr [1000 x %struct.ap_fixed], [1000 x %struct.ap_fixed]* %1, i64 0, i64 %for.loop.idx9, i32 0, i32 0, i32 0
-  %18 = bitcast i32* %src.addr.0.0.05.gep8 to i8*
-  call void @llvm.memcpy.p0i8.p0i8.i64(i8* align 1 %17, i8* align 1 %18, i64 4, i1 false)
+  %18 = bitcast i16* %src.addr.0.0.05.gep8 to i8*
+  call void @llvm.memcpy.p0i8.p0i8.i64(i8* align 1 %17, i8* align 1 %18, i64 2, i1 false)
   br label %for.loop.head
 
 for.loop.head:                                    ; preds = %16, %15, %11, %7
@@ -100,7 +100,7 @@ ret:                                              ; preds = %for.loop.head, %ent
   ret void
 }
 
-declare i1 @fpga_fifo_exist_4(i8*) local_unnamed_addr
+declare i1 @fpga_fifo_exist_2(i8*) local_unnamed_addr
 
 ; Function Attrs: argmemonly noinline
 define internal fastcc void @streamcpy_hls.p0struct.ap_fixed(%struct.ap_fixed* noalias nocapture, %struct.ap_fixed* noalias nocapture) unnamed_addr #3 {
@@ -110,23 +110,23 @@ entry:
 
 empty:                                            ; preds = %push, %entry
   %3 = bitcast %struct.ap_fixed* %1 to i8*
-  %4 = call i1 @fpga_fifo_not_empty_4(i8* %3)
+  %4 = call i1 @fpga_fifo_not_empty_2(i8* %3)
   br i1 %4, label %push, label %ret
 
 push:                                             ; preds = %empty
   %5 = bitcast %struct.ap_fixed* %2 to i8*
   %6 = bitcast %struct.ap_fixed* %1 to i8*
-  call void @fpga_fifo_pop_4(i8* %5, i8* %6)
+  call void @fpga_fifo_pop_2(i8* %5, i8* %6)
   %7 = load volatile %struct.ap_fixed, %struct.ap_fixed* %2
   %8 = bitcast %struct.ap_fixed* %2 to i8*
   %9 = bitcast %struct.ap_fixed* %0 to i8*
-  call void @fpga_fifo_push_4(i8* %8, i8* %9)
+  call void @fpga_fifo_push_2(i8* %8, i8* %9)
   br label %empty, !llvm.loop !5
 
 ret:                                              ; preds = %empty
   %10 = bitcast %struct.ap_fixed* %1 to i8*
   %11 = bitcast %struct.ap_fixed* %0 to i8*
-  call void @llvm.memcpy.p0i8.p0i8.i64(i8* align 1 %11, i8* align 1 %10, i64 4, i1 false)
+  call void @llvm.memcpy.p0i8.p0i8.i64(i8* align 1 %11, i8* align 1 %10, i64 2, i1 false)
   ret void
 }
 
@@ -141,23 +141,23 @@ entry:
 
 empty:                                            ; preds = %push, %entry
   %3 = bitcast %struct.ap_fixed_base* %1 to i8*
-  %4 = call i1 @fpga_fifo_not_empty_4(i8* %3)
+  %4 = call i1 @fpga_fifo_not_empty_2(i8* %3)
   br i1 %4, label %push, label %ret
 
 push:                                             ; preds = %empty
   %5 = bitcast %struct.ap_fixed_base* %2 to i8*
   %6 = bitcast %struct.ap_fixed_base* %1 to i8*
-  call void @fpga_fifo_pop_4(i8* %5, i8* %6)
+  call void @fpga_fifo_pop_2(i8* %5, i8* %6)
   %7 = load volatile %struct.ap_fixed_base, %struct.ap_fixed_base* %2
   %8 = bitcast %struct.ap_fixed_base* %2 to i8*
   %9 = bitcast %struct.ap_fixed_base* %0 to i8*
-  call void @fpga_fifo_push_4(i8* %8, i8* %9)
+  call void @fpga_fifo_push_2(i8* %8, i8* %9)
   br label %empty, !llvm.loop !7
 
 ret:                                              ; preds = %empty
   %10 = bitcast %struct.ap_fixed_base* %1 to i8*
   %11 = bitcast %struct.ap_fixed_base* %0 to i8*
-  call void @llvm.memcpy.p0i8.p0i8.i64(i8* align 1 %11, i8* align 1 %10, i64 4, i1 false)
+  call void @llvm.memcpy.p0i8.p0i8.i64(i8* align 1 %11, i8* align 1 %10, i64 2, i1 false)
   ret void
 }
 
@@ -169,23 +169,23 @@ entry:
 
 empty:                                            ; preds = %push, %entry
   %3 = bitcast %struct.ssdm_int* %1 to i8*
-  %4 = call i1 @fpga_fifo_not_empty_4(i8* %3)
+  %4 = call i1 @fpga_fifo_not_empty_2(i8* %3)
   br i1 %4, label %push, label %ret
 
 push:                                             ; preds = %empty
   %5 = bitcast %struct.ssdm_int* %2 to i8*
   %6 = bitcast %struct.ssdm_int* %1 to i8*
-  call void @fpga_fifo_pop_4(i8* %5, i8* %6)
+  call void @fpga_fifo_pop_2(i8* %5, i8* %6)
   %7 = load volatile %struct.ssdm_int, %struct.ssdm_int* %2
   %8 = bitcast %struct.ssdm_int* %2 to i8*
   %9 = bitcast %struct.ssdm_int* %0 to i8*
-  call void @fpga_fifo_push_4(i8* %8, i8* %9)
+  call void @fpga_fifo_push_2(i8* %8, i8* %9)
   br label %empty, !llvm.loop !8
 
 ret:                                              ; preds = %empty
   %10 = bitcast %struct.ssdm_int* %1 to i8*
   %11 = bitcast %struct.ssdm_int* %0 to i8*
-  call void @llvm.memcpy.p0i8.p0i8.i64(i8* align 1 %11, i8* align 1 %10, i64 4, i1 false)
+  call void @llvm.memcpy.p0i8.p0i8.i64(i8* align 1 %11, i8* align 1 %10, i64 2, i1 false)
   ret void
 }
 
@@ -219,11 +219,11 @@ entry:
 
 declare void @relu_combined_hw_stub(%struct.ap_fixed*, %struct.ap_fixed*, %struct.ap_fixed*, %struct.ap_fixed*, i32, i1)
 
-declare i1 @fpga_fifo_not_empty_4(i8*)
+declare i1 @fpga_fifo_not_empty_2(i8*)
 
-declare void @fpga_fifo_pop_4(i8*, i8*)
+declare void @fpga_fifo_pop_2(i8*, i8*)
 
-declare void @fpga_fifo_push_4(i8*, i8*)
+declare void @fpga_fifo_push_2(i8*, i8*)
 
 attributes #0 = { noinline "fpga.wrapper.func"="wrapper" }
 attributes #1 = { noinline "fpga.wrapper.func"="copyin" }

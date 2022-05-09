@@ -4,142 +4,142 @@
       <RtlPort>
         <name>dx_Addr_A</name>
         <type>Signed</type>
-        <fractionWidth>23</fractionWidth>
+        <fractionWidth>7</fractionWidth>
       </RtlPort>
       <RtlPort>
         <name>dx_Clk_A</name>
         <type>Signed</type>
-        <fractionWidth>23</fractionWidth>
+        <fractionWidth>7</fractionWidth>
       </RtlPort>
       <RtlPort>
         <name>dx_Din_A</name>
         <type>Signed</type>
-        <fractionWidth>23</fractionWidth>
+        <fractionWidth>7</fractionWidth>
       </RtlPort>
       <RtlPort>
         <name>dx_Dout_A</name>
         <type>Signed</type>
-        <fractionWidth>23</fractionWidth>
+        <fractionWidth>7</fractionWidth>
       </RtlPort>
       <RtlPort>
         <name>dx_EN_A</name>
         <type>Signed</type>
-        <fractionWidth>23</fractionWidth>
+        <fractionWidth>7</fractionWidth>
       </RtlPort>
       <RtlPort>
         <name>dx_Rst_A</name>
         <type>Signed</type>
-        <fractionWidth>23</fractionWidth>
+        <fractionWidth>7</fractionWidth>
       </RtlPort>
       <RtlPort>
         <name>dx_WEN_A</name>
         <type>Signed</type>
-        <fractionWidth>23</fractionWidth>
+        <fractionWidth>7</fractionWidth>
       </RtlPort>
       <RtlPort>
         <name>dy_Addr_A</name>
         <type>Signed</type>
-        <fractionWidth>23</fractionWidth>
+        <fractionWidth>7</fractionWidth>
       </RtlPort>
       <RtlPort>
         <name>dy_Clk_A</name>
         <type>Signed</type>
-        <fractionWidth>23</fractionWidth>
+        <fractionWidth>7</fractionWidth>
       </RtlPort>
       <RtlPort>
         <name>dy_Din_A</name>
         <type>Signed</type>
-        <fractionWidth>23</fractionWidth>
+        <fractionWidth>7</fractionWidth>
       </RtlPort>
       <RtlPort>
         <name>dy_Dout_A</name>
         <type>Signed</type>
-        <fractionWidth>23</fractionWidth>
+        <fractionWidth>7</fractionWidth>
       </RtlPort>
       <RtlPort>
         <name>dy_EN_A</name>
         <type>Signed</type>
-        <fractionWidth>23</fractionWidth>
+        <fractionWidth>7</fractionWidth>
       </RtlPort>
       <RtlPort>
         <name>dy_Rst_A</name>
         <type>Signed</type>
-        <fractionWidth>23</fractionWidth>
+        <fractionWidth>7</fractionWidth>
       </RtlPort>
       <RtlPort>
         <name>dy_WEN_A</name>
         <type>Signed</type>
-        <fractionWidth>23</fractionWidth>
+        <fractionWidth>7</fractionWidth>
       </RtlPort>
       <RtlPort>
         <name>x_Addr_A</name>
         <type>Signed</type>
-        <fractionWidth>23</fractionWidth>
+        <fractionWidth>7</fractionWidth>
       </RtlPort>
       <RtlPort>
         <name>x_Clk_A</name>
         <type>Signed</type>
-        <fractionWidth>23</fractionWidth>
+        <fractionWidth>7</fractionWidth>
       </RtlPort>
       <RtlPort>
         <name>x_Din_A</name>
         <type>Signed</type>
-        <fractionWidth>23</fractionWidth>
+        <fractionWidth>7</fractionWidth>
       </RtlPort>
       <RtlPort>
         <name>x_Dout_A</name>
         <type>Signed</type>
-        <fractionWidth>23</fractionWidth>
+        <fractionWidth>7</fractionWidth>
       </RtlPort>
       <RtlPort>
         <name>x_EN_A</name>
         <type>Signed</type>
-        <fractionWidth>23</fractionWidth>
+        <fractionWidth>7</fractionWidth>
       </RtlPort>
       <RtlPort>
         <name>x_Rst_A</name>
         <type>Signed</type>
-        <fractionWidth>23</fractionWidth>
+        <fractionWidth>7</fractionWidth>
       </RtlPort>
       <RtlPort>
         <name>x_WEN_A</name>
         <type>Signed</type>
-        <fractionWidth>23</fractionWidth>
+        <fractionWidth>7</fractionWidth>
       </RtlPort>
       <RtlPort>
         <name>y_Addr_A</name>
         <type>Signed</type>
-        <fractionWidth>23</fractionWidth>
+        <fractionWidth>7</fractionWidth>
       </RtlPort>
       <RtlPort>
         <name>y_Clk_A</name>
         <type>Signed</type>
-        <fractionWidth>23</fractionWidth>
+        <fractionWidth>7</fractionWidth>
       </RtlPort>
       <RtlPort>
         <name>y_Din_A</name>
         <type>Signed</type>
-        <fractionWidth>23</fractionWidth>
+        <fractionWidth>7</fractionWidth>
       </RtlPort>
       <RtlPort>
         <name>y_Dout_A</name>
         <type>Signed</type>
-        <fractionWidth>23</fractionWidth>
+        <fractionWidth>7</fractionWidth>
       </RtlPort>
       <RtlPort>
         <name>y_EN_A</name>
         <type>Signed</type>
-        <fractionWidth>23</fractionWidth>
+        <fractionWidth>7</fractionWidth>
       </RtlPort>
       <RtlPort>
         <name>y_Rst_A</name>
         <type>Signed</type>
-        <fractionWidth>23</fractionWidth>
+        <fractionWidth>7</fractionWidth>
       </RtlPort>
       <RtlPort>
         <name>y_WEN_A</name>
         <type>Signed</type>
-        <fractionWidth>23</fractionWidth>
+        <fractionWidth>7</fractionWidth>
       </RtlPort>
   </CTypeInfo>
   <DesignConstraint>

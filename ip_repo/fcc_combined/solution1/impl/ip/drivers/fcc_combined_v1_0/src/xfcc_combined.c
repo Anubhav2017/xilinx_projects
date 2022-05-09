@@ -73,37 +73,37 @@ void XFcc_combined_DisableAutoRestart(XFcc_combined *InstancePtr) {
     XFcc_combined_WriteReg(InstancePtr->Crtl_bus_BaseAddress, XFCC_COMBINED_CRTL_BUS_ADDR_AP_CTRL, 0);
 }
 
-void XFcc_combined_Set_w(XFcc_combined *InstancePtr, u32 Data) {
+void XFcc_combined_Set_wt(XFcc_combined *InstancePtr, u32 Data) {
     Xil_AssertVoid(InstancePtr != NULL);
     Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    XFcc_combined_WriteReg(InstancePtr->Crtl_bus_BaseAddress, XFCC_COMBINED_CRTL_BUS_ADDR_W_DATA, Data);
+    XFcc_combined_WriteReg(InstancePtr->Crtl_bus_BaseAddress, XFCC_COMBINED_CRTL_BUS_ADDR_WT_DATA, Data);
 }
 
-u32 XFcc_combined_Get_w(XFcc_combined *InstancePtr) {
+u32 XFcc_combined_Get_wt(XFcc_combined *InstancePtr) {
     u32 Data;
 
     Xil_AssertNonvoid(InstancePtr != NULL);
     Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    Data = XFcc_combined_ReadReg(InstancePtr->Crtl_bus_BaseAddress, XFCC_COMBINED_CRTL_BUS_ADDR_W_DATA);
+    Data = XFcc_combined_ReadReg(InstancePtr->Crtl_bus_BaseAddress, XFCC_COMBINED_CRTL_BUS_ADDR_WT_DATA);
     return Data;
 }
 
-void XFcc_combined_Set_dw(XFcc_combined *InstancePtr, u32 Data) {
+void XFcc_combined_Set_dwt(XFcc_combined *InstancePtr, u32 Data) {
     Xil_AssertVoid(InstancePtr != NULL);
     Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    XFcc_combined_WriteReg(InstancePtr->Crtl_bus_BaseAddress, XFCC_COMBINED_CRTL_BUS_ADDR_DW_DATA, Data);
+    XFcc_combined_WriteReg(InstancePtr->Crtl_bus_BaseAddress, XFCC_COMBINED_CRTL_BUS_ADDR_DWT_DATA, Data);
 }
 
-u32 XFcc_combined_Get_dw(XFcc_combined *InstancePtr) {
+u32 XFcc_combined_Get_dwt(XFcc_combined *InstancePtr) {
     u32 Data;
 
     Xil_AssertNonvoid(InstancePtr != NULL);
     Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    Data = XFcc_combined_ReadReg(InstancePtr->Crtl_bus_BaseAddress, XFCC_COMBINED_CRTL_BUS_ADDR_DW_DATA);
+    Data = XFcc_combined_ReadReg(InstancePtr->Crtl_bus_BaseAddress, XFCC_COMBINED_CRTL_BUS_ADDR_DWT_DATA);
     return Data;
 }
 

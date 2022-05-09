@@ -2,7 +2,7 @@
 
 set axilite_register_dict [dict create]
 set port_CRTL_BUS {
-w { 
+wt { 
 	dir I
 	width 32
 	depth 1
@@ -10,7 +10,7 @@ w {
 	offset 16
 	offset_end 23
 }
-dw { 
+dwt { 
 	dir I
 	width 32
 	depth 1

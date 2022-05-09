@@ -4,7 +4,7 @@
 <CType>
 <TypeName>void</TypeName>
 <TypeWidth>8</TypeWidth>
-<PhysicalWidth>32</PhysicalWidth>
+<PhysicalWidth>16</PhysicalWidth>
 </CType>
 <CFractionWidth>0</CFractionWidth>
 <InvalidType>0</InvalidType>
@@ -14,7 +14,7 @@
 <CType>
 <TypeName>void</TypeName>
 <TypeWidth>8</TypeWidth>
-<PhysicalWidth>32</PhysicalWidth>
+<PhysicalWidth>16</PhysicalWidth>
 </CType>
 <CFractionWidth>0</CFractionWidth>
 <InvalidType>0</InvalidType>
@@ -24,7 +24,7 @@
 <CType>
 <TypeName>void</TypeName>
 <TypeWidth>8</TypeWidth>
-<PhysicalWidth>32</PhysicalWidth>
+<PhysicalWidth>16</PhysicalWidth>
 </CType>
 <CFractionWidth>0</CFractionWidth>
 <InvalidType>0</InvalidType>
@@ -34,7 +34,7 @@
 <CType>
 <TypeName>void</TypeName>
 <TypeWidth>8</TypeWidth>
-<PhysicalWidth>32</PhysicalWidth>
+<PhysicalWidth>16</PhysicalWidth>
 </CType>
 <CFractionWidth>0</CFractionWidth>
 <InvalidType>0</InvalidType>
@@ -44,7 +44,7 @@
 <CType>
 <TypeName>void</TypeName>
 <TypeWidth>8</TypeWidth>
-<PhysicalWidth>32</PhysicalWidth>
+<PhysicalWidth>16</PhysicalWidth>
 </CType>
 <CFractionWidth>0</CFractionWidth>
 <InvalidType>0</InvalidType>
@@ -52,9 +52,9 @@
 <RtlPorts>
 <name>b</name>
 <CType>
-<TypeName>int</TypeName>
-<TypeWidth>32</TypeWidth>
-<PhysicalWidth>32</PhysicalWidth>
+<TypeName>short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
 </CType>
 <CFractionWidth>0</CFractionWidth>
 <InvalidType>0</InvalidType>
@@ -62,9 +62,9 @@
 <RtlPorts>
 <name>db</name>
 <CType>
-<TypeName>int</TypeName>
-<TypeWidth>32</TypeWidth>
-<PhysicalWidth>32</PhysicalWidth>
+<TypeName>short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
 </CType>
 <CFractionWidth>0</CFractionWidth>
 <InvalidType>0</InvalidType>

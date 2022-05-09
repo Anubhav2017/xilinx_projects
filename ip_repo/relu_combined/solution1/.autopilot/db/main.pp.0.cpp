@@ -5568,7 +5568,7 @@ inline bool operator!=(
 }
 # 396 "/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed.h" 2
 # 2 "relu_combined/main.cpp" 2
-typedef ap_fixed<32,9> fixed_t;
+typedef ap_fixed<16,9> fixed_t;
 
 
 __attribute__((sdx_kernel("relu_combined", 0))) void relu_combined(fixed_t x[1000], fixed_t dx[1000], fixed_t y[1000],fixed_t dy[1000], int dim, bool fwprop){_ssdm_SpecArrayDimSize(x, 1000);_ssdm_SpecArrayDimSize(dx, 1000);_ssdm_SpecArrayDimSize(y, 1000);_ssdm_SpecArrayDimSize(dy, 1000);

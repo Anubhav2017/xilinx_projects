@@ -87,10 +87,10 @@ u32 XFcc_combined_IsReady(XFcc_combined *InstancePtr);
 void XFcc_combined_EnableAutoRestart(XFcc_combined *InstancePtr);
 void XFcc_combined_DisableAutoRestart(XFcc_combined *InstancePtr);
 
-void XFcc_combined_Set_w(XFcc_combined *InstancePtr, u32 Data);
-u32 XFcc_combined_Get_w(XFcc_combined *InstancePtr);
-void XFcc_combined_Set_dw(XFcc_combined *InstancePtr, u32 Data);
-u32 XFcc_combined_Get_dw(XFcc_combined *InstancePtr);
+void XFcc_combined_Set_wt(XFcc_combined *InstancePtr, u32 Data);
+u32 XFcc_combined_Get_wt(XFcc_combined *InstancePtr);
+void XFcc_combined_Set_dwt(XFcc_combined *InstancePtr, u32 Data);
+u32 XFcc_combined_Get_dwt(XFcc_combined *InstancePtr);
 void XFcc_combined_Set_b(XFcc_combined *InstancePtr, u32 Data);
 u32 XFcc_combined_Get_b(XFcc_combined *InstancePtr);
 void XFcc_combined_Set_db(XFcc_combined *InstancePtr, u32 Data);

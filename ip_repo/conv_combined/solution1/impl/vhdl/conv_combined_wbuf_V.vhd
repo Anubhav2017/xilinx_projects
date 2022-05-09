@@ -9,7 +9,7 @@ use ieee.std_logic_unsigned.all;
 
 entity conv_combined_wbuf_V_ram is 
     generic(
-            DWIDTH     : integer := 32; 
+            DWIDTH     : integer := 16; 
             AWIDTH     : integer := 5; 
             MEM_SIZE    : integer := 25
     ); 
@@ -66,7 +66,7 @@ use IEEE.std_logic_1164.all;
 
 entity conv_combined_wbuf_V is
     generic (
-        DataWidth : INTEGER := 32;
+        DataWidth : INTEGER := 16;
         AddressRange : INTEGER := 25;
         AddressWidth : INTEGER := 5);
     port (

@@ -34,8 +34,8 @@ port (
     interrupt             :out  STD_LOGIC;
     wt                    :out  STD_LOGIC_VECTOR(31 downto 0);
     dwt                   :out  STD_LOGIC_VECTOR(31 downto 0);
-    b                     :out  STD_LOGIC_VECTOR(31 downto 0);
-    db                    :out  STD_LOGIC_VECTOR(31 downto 0);
+    b                     :out  STD_LOGIC_VECTOR(15 downto 0);
+    db                    :out  STD_LOGIC_VECTOR(15 downto 0);
     H                     :out  STD_LOGIC_VECTOR(31 downto 0);
     W                     :out  STD_LOGIC_VECTOR(31 downto 0);
     FH                    :out  STD_LOGIC_VECTOR(31 downto 0);
@@ -74,10 +74,12 @@ end entity conv_combined_CRTL_BUS_s_axi;
 --        bit 31~0 - dwt[31:0] (Read/Write)
 -- 0x1c : reserved
 -- 0x20 : Data signal of b
---        bit 31~0 - b[31:0] (Read/Write)
+--        bit 15~0 - b[15:0] (Read/Write)
+--        others   - reserved
 -- 0x24 : reserved
 -- 0x28 : Data signal of db
---        bit 31~0 - db[31:0] (Read/Write)
+--        bit 15~0 - db[15:0] (Read/Write)
+--        others   - reserved
 -- 0x2c : reserved
 -- 0x30 : Data signal of H
 --        bit 31~0 - H[31:0] (Read/Write)
@@ -148,8 +150,8 @@ architecture behave of conv_combined_CRTL_BUS_s_axi is
     signal int_isr             : UNSIGNED(1 downto 0) := (others => '0');
     signal int_wt              : UNSIGNED(31 downto 0) := (others => '0');
     signal int_dwt             : UNSIGNED(31 downto 0) := (others => '0');
-    signal int_b               : UNSIGNED(31 downto 0) := (others => '0');
-    signal int_db              : UNSIGNED(31 downto 0) := (others => '0');
+    signal int_b               : UNSIGNED(15 downto 0) := (others => '0');
+    signal int_db              : UNSIGNED(15 downto 0) := (others => '0');
     signal int_H               : UNSIGNED(31 downto 0) := (others => '0');
     signal int_W               : UNSIGNED(31 downto 0) := (others => '0');
     signal int_FH              : UNSIGNED(31 downto 0) := (others => '0');
@@ -287,9 +289,9 @@ begin
                     when ADDR_DWT_DATA_0 =>
                         rdata_data <= RESIZE(int_dwt(31 downto 0), 32);
                     when ADDR_B_DATA_0 =>
-                        rdata_data <= RESIZE(int_b(31 downto 0), 32);
+                        rdata_data <= RESIZE(int_b(15 downto 0), 32);
                     when ADDR_DB_DATA_0 =>
-                        rdata_data <= RESIZE(int_db(31 downto 0), 32);
+                        rdata_data <= RESIZE(int_db(15 downto 0), 32);
                     when ADDR_H_DATA_0 =>
                         rdata_data <= RESIZE(int_H(31 downto 0), 32);
                     when ADDR_W_DATA_0 =>
@@ -473,7 +475,7 @@ begin
         if (ACLK'event and ACLK = '1') then
             if (ACLK_EN = '1') then
                 if (w_hs = '1' and waddr = ADDR_B_DATA_0) then
-                    int_b(31 downto 0) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_b(31 downto 0));
+                    int_b(15 downto 0) <= (UNSIGNED(WDATA(15 downto 0)) and wmask(15 downto 0)) or ((not wmask(15 downto 0)) and int_b(15 downto 0));
                 end if;
             end if;
         end if;
@@ -484,7 +486,7 @@ begin
         if (ACLK'event and ACLK = '1') then
             if (ACLK_EN = '1') then
                 if (w_hs = '1' and waddr = ADDR_DB_DATA_0) then
-                    int_db(31 downto 0) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_db(31 downto 0));
+                    int_db(15 downto 0) <= (UNSIGNED(WDATA(15 downto 0)) and wmask(15 downto 0)) or ((not wmask(15 downto 0)) and int_db(15 downto 0));
                 end if;
             end if;
         end if;

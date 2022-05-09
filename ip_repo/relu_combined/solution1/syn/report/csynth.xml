@@ -68,8 +68,8 @@
     <AreaEstimates>
         <Resources>
             <BRAM_18K>0</BRAM_18K>
-            <FF>289</FF>
-            <LUT>430</LUT>
+            <FF>273</FF>
+            <LUT>409</LUT>
             <DSP>0</DSP>
             <URAM>0</URAM>
         </Resources>
@@ -368,7 +368,7 @@
             <IOProtocol>bram</IOProtocol>
             <IOConfig/>
             <Dir>out</Dir>
-            <Bits>4</Bits>
+            <Bits>2</Bits>
             <Attribute>control</Attribute>
             <CType>int</CType>
         </RtlPorts>
@@ -380,7 +380,7 @@
             <IOProtocol>bram</IOProtocol>
             <IOConfig/>
             <Dir>out</Dir>
-            <Bits>32</Bits>
+            <Bits>16</Bits>
             <Attribute>data</Attribute>
             <CType>int</CType>
         </RtlPorts>
@@ -392,7 +392,7 @@
             <IOProtocol>bram</IOProtocol>
             <IOConfig/>
             <Dir>in</Dir>
-            <Bits>32</Bits>
+            <Bits>16</Bits>
             <Attribute>data</Attribute>
             <CType>int</CType>
         </RtlPorts>
@@ -452,7 +452,7 @@
             <IOProtocol>bram</IOProtocol>
             <IOConfig/>
             <Dir>out</Dir>
-            <Bits>4</Bits>
+            <Bits>2</Bits>
             <Attribute>control</Attribute>
             <CType>int</CType>
         </RtlPorts>
@@ -464,7 +464,7 @@
             <IOProtocol>bram</IOProtocol>
             <IOConfig/>
             <Dir>out</Dir>
-            <Bits>32</Bits>
+            <Bits>16</Bits>
             <Attribute>data</Attribute>
             <CType>int</CType>
         </RtlPorts>
@@ -476,7 +476,7 @@
             <IOProtocol>bram</IOProtocol>
             <IOConfig/>
             <Dir>in</Dir>
-            <Bits>32</Bits>
+            <Bits>16</Bits>
             <Attribute>data</Attribute>
             <CType>int</CType>
         </RtlPorts>
@@ -536,7 +536,7 @@
             <IOProtocol>bram</IOProtocol>
             <IOConfig/>
             <Dir>out</Dir>
-            <Bits>4</Bits>
+            <Bits>2</Bits>
             <Attribute>control</Attribute>
             <CType>int</CType>
         </RtlPorts>
@@ -548,7 +548,7 @@
             <IOProtocol>bram</IOProtocol>
             <IOConfig/>
             <Dir>out</Dir>
-            <Bits>32</Bits>
+            <Bits>16</Bits>
             <Attribute>data</Attribute>
             <CType>int</CType>
         </RtlPorts>
@@ -560,7 +560,7 @@
             <IOProtocol>bram</IOProtocol>
             <IOConfig/>
             <Dir>in</Dir>
-            <Bits>32</Bits>
+            <Bits>16</Bits>
             <Attribute>data</Attribute>
             <CType>int</CType>
         </RtlPorts>
@@ -620,7 +620,7 @@
             <IOProtocol>bram</IOProtocol>
             <IOConfig/>
             <Dir>out</Dir>
-            <Bits>4</Bits>
+            <Bits>2</Bits>
             <Attribute>control</Attribute>
             <CType>int</CType>
         </RtlPorts>
@@ -632,7 +632,7 @@
             <IOProtocol>bram</IOProtocol>
             <IOConfig/>
             <Dir>out</Dir>
-            <Bits>32</Bits>
+            <Bits>16</Bits>
             <Attribute>data</Attribute>
             <CType>int</CType>
         </RtlPorts>
@@ -644,7 +644,7 @@
             <IOProtocol>bram</IOProtocol>
             <IOConfig/>
             <Dir>in</Dir>
-            <Bits>32</Bits>
+            <Bits>16</Bits>
             <Attribute>data</Attribute>
             <CType>int</CType>
         </RtlPorts>
@@ -721,10 +721,10 @@
                     <BRAM_18K>0</BRAM_18K>
                     <AVAIL_BRAM>280</AVAIL_BRAM>
                     <UTIL_BRAM>0</UTIL_BRAM>
-                    <FF>289</FF>
+                    <FF>273</FF>
                     <AVAIL_FF>106400</AVAIL_FF>
                     <UTIL_FF>~0</UTIL_FF>
-                    <LUT>430</LUT>
+                    <LUT>409</LUT>
                     <AVAIL_LUT>53200</AVAIL_LUT>
                     <UTIL_LUT>~0</UTIL_LUT>
                     <DSP>0</DSP>
@@ -1022,7 +1022,7 @@
                     <IOProtocol>bram</IOProtocol>
                     <IOConfig/>
                     <Dir>out</Dir>
-                    <Bits>4</Bits>
+                    <Bits>2</Bits>
                     <Attribute>control</Attribute>
                     <CType>int</CType>
                 </RtlPorts>
@@ -1034,7 +1034,7 @@
                     <IOProtocol>bram</IOProtocol>
                     <IOConfig/>
                     <Dir>out</Dir>
-                    <Bits>32</Bits>
+                    <Bits>16</Bits>
                     <Attribute>data</Attribute>
                     <CType>int</CType>
                 </RtlPorts>
@@ -1046,7 +1046,7 @@
                     <IOProtocol>bram</IOProtocol>
                     <IOConfig/>
                     <Dir>in</Dir>
-                    <Bits>32</Bits>
+                    <Bits>16</Bits>
                     <Attribute>data</Attribute>
                     <CType>int</CType>
                 </RtlPorts>
@@ -1106,7 +1106,7 @@
                     <IOProtocol>bram</IOProtocol>
                     <IOConfig/>
                     <Dir>out</Dir>
-                    <Bits>4</Bits>
+                    <Bits>2</Bits>
                     <Attribute>control</Attribute>
                     <CType>int</CType>
                 </RtlPorts>
@@ -1118,7 +1118,7 @@
                     <IOProtocol>bram</IOProtocol>
                     <IOConfig/>
                     <Dir>out</Dir>
-                    <Bits>32</Bits>
+                    <Bits>16</Bits>
                     <Attribute>data</Attribute>
                     <CType>int</CType>
                 </RtlPorts>
@@ -1130,7 +1130,7 @@
                     <IOProtocol>bram</IOProtocol>
                     <IOConfig/>
                     <Dir>in</Dir>
-                    <Bits>32</Bits>
+                    <Bits>16</Bits>
                     <Attribute>data</Attribute>
                     <CType>int</CType>
                 </RtlPorts>
@@ -1190,7 +1190,7 @@
                     <IOProtocol>bram</IOProtocol>
                     <IOConfig/>
                     <Dir>out</Dir>
-                    <Bits>4</Bits>
+                    <Bits>2</Bits>
                     <Attribute>control</Attribute>
                     <CType>int</CType>
                 </RtlPorts>
@@ -1202,7 +1202,7 @@
                     <IOProtocol>bram</IOProtocol>
                     <IOConfig/>
                     <Dir>out</Dir>
-                    <Bits>32</Bits>
+                    <Bits>16</Bits>
                     <Attribute>data</Attribute>
                     <CType>int</CType>
                 </RtlPorts>
@@ -1214,7 +1214,7 @@
                     <IOProtocol>bram</IOProtocol>
                     <IOConfig/>
                     <Dir>in</Dir>
-                    <Bits>32</Bits>
+                    <Bits>16</Bits>
                     <Attribute>data</Attribute>
                     <CType>int</CType>
                 </RtlPorts>
@@ -1274,7 +1274,7 @@
                     <IOProtocol>bram</IOProtocol>
                     <IOConfig/>
                     <Dir>out</Dir>
-                    <Bits>4</Bits>
+                    <Bits>2</Bits>
                     <Attribute>control</Attribute>
                     <CType>int</CType>
                 </RtlPorts>
@@ -1286,7 +1286,7 @@
                     <IOProtocol>bram</IOProtocol>
                     <IOConfig/>
                     <Dir>out</Dir>
-                    <Bits>32</Bits>
+                    <Bits>16</Bits>
                     <Attribute>data</Attribute>
                     <CType>int</CType>
                 </RtlPorts>
@@ -1298,7 +1298,7 @@
                     <IOProtocol>bram</IOProtocol>
                     <IOConfig/>
                     <Dir>in</Dir>
-                    <Bits>32</Bits>
+                    <Bits>16</Bits>
                     <Attribute>data</Attribute>
                     <CType>int</CType>
                 </RtlPorts>
@@ -1331,22 +1331,22 @@
     </ModuleInformation>
     <FIFOInformation/>
     <Args>
-        <Arg ArgName="x" index="0" direction="in" srcType="ap_fixed&lt;32, 9, AP_TRN, AP_WRAP, 0&gt;*" srcSize="32">
+        <Arg ArgName="x" index="0" direction="in" srcType="ap_fixed&lt;16, 9, AP_TRN, AP_WRAP, 0&gt;*" srcSize="16">
             <hwRefs>
                 <hwRef type="interface" interface="x_PORTA" name="" usage="data" direction="out"/>
             </hwRefs>
         </Arg>
-        <Arg ArgName="dx" index="1" direction="out" srcType="ap_fixed&lt;32, 9, AP_TRN, AP_WRAP, 0&gt;*" srcSize="32">
+        <Arg ArgName="dx" index="1" direction="out" srcType="ap_fixed&lt;16, 9, AP_TRN, AP_WRAP, 0&gt;*" srcSize="16">
             <hwRefs>
                 <hwRef type="interface" interface="dx_PORTA" name="" usage="data" direction="out"/>
             </hwRefs>
         </Arg>
-        <Arg ArgName="y" index="2" direction="out" srcType="ap_fixed&lt;32, 9, AP_TRN, AP_WRAP, 0&gt;*" srcSize="32">
+        <Arg ArgName="y" index="2" direction="out" srcType="ap_fixed&lt;16, 9, AP_TRN, AP_WRAP, 0&gt;*" srcSize="16">
             <hwRefs>
                 <hwRef type="interface" interface="y_PORTA" name="" usage="data" direction="out"/>
             </hwRefs>
         </Arg>
-        <Arg ArgName="dy" index="3" direction="in" srcType="ap_fixed&lt;32, 9, AP_TRN, AP_WRAP, 0&gt;*" srcSize="32">
+        <Arg ArgName="dy" index="3" direction="in" srcType="ap_fixed&lt;16, 9, AP_TRN, AP_WRAP, 0&gt;*" srcSize="16">
             <hwRefs>
                 <hwRef type="interface" interface="dy_PORTA" name="" usage="data" direction="out"/>
             </hwRefs>
@@ -1386,11 +1386,11 @@
                 <port>ap_rst_n</port>
             </ports>
         </Interface>
-        <Interface InterfaceName="dx_PORTA" type="bram" busTypeName="bram" mode="master" dataWidth="32" addrWidth="32" portPrefix="dx_">
+        <Interface InterfaceName="dx_PORTA" type="bram" busTypeName="bram" mode="master" dataWidth="16" addrWidth="32" portPrefix="dx_">
             <busParams>
                 <busParam busParamName="MASTER_TYPE">BRAM_CTRL</busParam>
-                <busParam busParamName="MEM_WIDTH">32</busParam>
-                <busParam busParamName="MEM_SIZE">4</busParam>
+                <busParam busParamName="MEM_WIDTH">16</busParam>
+                <busParam busParamName="MEM_SIZE">2</busParam>
             </busParams>
             <portMaps>
                 <portMap portMapName="dx_Addr_A">ADDR</portMap>
@@ -1414,11 +1414,11 @@
                 <constraint constraint_type="pragma interface" mode="bram" register_option="0" argName="dx"/>
             </constraints>
         </Interface>
-        <Interface InterfaceName="dy_PORTA" type="bram" busTypeName="bram" mode="master" dataWidth="32" addrWidth="32" portPrefix="dy_">
+        <Interface InterfaceName="dy_PORTA" type="bram" busTypeName="bram" mode="master" dataWidth="16" addrWidth="32" portPrefix="dy_">
             <busParams>
                 <busParam busParamName="MASTER_TYPE">BRAM_CTRL</busParam>
-                <busParam busParamName="MEM_WIDTH">32</busParam>
-                <busParam busParamName="MEM_SIZE">4</busParam>
+                <busParam busParamName="MEM_WIDTH">16</busParam>
+                <busParam busParamName="MEM_SIZE">2</busParam>
             </busParams>
             <portMaps>
                 <portMap portMapName="dy_Addr_A">ADDR</portMap>
@@ -1521,11 +1521,11 @@
                 <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="16" argName="dim"/>
             </constraints>
         </Interface>
-        <Interface InterfaceName="x_PORTA" type="bram" busTypeName="bram" mode="master" dataWidth="32" addrWidth="32" portPrefix="x_">
+        <Interface InterfaceName="x_PORTA" type="bram" busTypeName="bram" mode="master" dataWidth="16" addrWidth="32" portPrefix="x_">
             <busParams>
                 <busParam busParamName="MASTER_TYPE">BRAM_CTRL</busParam>
-                <busParam busParamName="MEM_WIDTH">32</busParam>
-                <busParam busParamName="MEM_SIZE">4</busParam>
+                <busParam busParamName="MEM_WIDTH">16</busParam>
+                <busParam busParamName="MEM_SIZE">2</busParam>
             </busParams>
             <portMaps>
                 <portMap portMapName="x_Addr_A">ADDR</portMap>
@@ -1549,11 +1549,11 @@
                 <constraint constraint_type="pragma interface" mode="bram" register_option="0" argName="x"/>
             </constraints>
         </Interface>
-        <Interface InterfaceName="y_PORTA" type="bram" busTypeName="bram" mode="master" dataWidth="32" addrWidth="32" portPrefix="y_">
+        <Interface InterfaceName="y_PORTA" type="bram" busTypeName="bram" mode="master" dataWidth="16" addrWidth="32" portPrefix="y_">
             <busParams>
                 <busParam busParamName="MASTER_TYPE">BRAM_CTRL</busParam>
-                <busParam busParamName="MEM_WIDTH">32</busParam>
-                <busParam busParamName="MEM_SIZE">4</busParam>
+                <busParam busParamName="MEM_WIDTH">16</busParam>
+                <busParam busParamName="MEM_SIZE">2</busParam>
             </busParams>
             <portMaps>
                 <portMap portMapName="y_Addr_A">ADDR</portMap>
@@ -1589,10 +1589,10 @@
             <item name="BRAM">
                 <table>
                     <keys size="3">Interface, Data Width, Address Width</keys>
-                    <column name="dx_PORTA">32, 32</column>
-                    <column name="dy_PORTA">32, 32</column>
-                    <column name="x_PORTA">32, 32</column>
-                    <column name="y_PORTA">32, 32</column>
+                    <column name="dx_PORTA">16, 32</column>
+                    <column name="dy_PORTA">16, 32</column>
+                    <column name="x_PORTA">16, 32</column>
+                    <column name="y_PORTA">16, 32</column>
                 </table>
             </item>
             <item name="TOP LEVEL CONTROL">
@@ -1611,10 +1611,10 @@
             <item name="Top Function Arguments">
                 <table isCollapsed="1">
                     <keys size="3">Argument, Direction, Datatype</keys>
-                    <column name="x">in, ap_fixed&lt;32 9 AP_TRN AP_WRAP 0&gt;*</column>
-                    <column name="dx">out, ap_fixed&lt;32 9 AP_TRN AP_WRAP 0&gt;*</column>
-                    <column name="y">out, ap_fixed&lt;32 9 AP_TRN AP_WRAP 0&gt;*</column>
-                    <column name="dy">in, ap_fixed&lt;32 9 AP_TRN AP_WRAP 0&gt;*</column>
+                    <column name="x">in, ap_fixed&lt;16 9 AP_TRN AP_WRAP 0&gt;*</column>
+                    <column name="dx">out, ap_fixed&lt;16 9 AP_TRN AP_WRAP 0&gt;*</column>
+                    <column name="y">out, ap_fixed&lt;16 9 AP_TRN AP_WRAP 0&gt;*</column>
+                    <column name="dy">in, ap_fixed&lt;16 9 AP_TRN AP_WRAP 0&gt;*</column>
                     <column name="dim">in, int</column>
                     <column name="fwprop">in, bool</column>
                 </table>

@@ -28,10 +28,12 @@
 //        bit 31~0 - dwt[31:0] (Read/Write)
 // 0x1c : reserved
 // 0x20 : Data signal of b
-//        bit 31~0 - b[31:0] (Read/Write)
+//        bit 15~0 - b[15:0] (Read/Write)
+//        others   - reserved
 // 0x24 : reserved
 // 0x28 : Data signal of db
-//        bit 31~0 - db[31:0] (Read/Write)
+//        bit 15~0 - db[15:0] (Read/Write)
+//        others   - reserved
 // 0x2c : reserved
 // 0x30 : Data signal of H
 //        bit 31~0 - H[31:0] (Read/Write)
@@ -60,9 +62,9 @@
 #define XCONV_COMBINED_CRTL_BUS_ADDR_DWT_DATA    0x18
 #define XCONV_COMBINED_CRTL_BUS_BITS_DWT_DATA    32
 #define XCONV_COMBINED_CRTL_BUS_ADDR_B_DATA      0x20
-#define XCONV_COMBINED_CRTL_BUS_BITS_B_DATA      32
+#define XCONV_COMBINED_CRTL_BUS_BITS_B_DATA      16
 #define XCONV_COMBINED_CRTL_BUS_ADDR_DB_DATA     0x28
-#define XCONV_COMBINED_CRTL_BUS_BITS_DB_DATA     32
+#define XCONV_COMBINED_CRTL_BUS_BITS_DB_DATA     16
 #define XCONV_COMBINED_CRTL_BUS_ADDR_H_DATA      0x30
 #define XCONV_COMBINED_CRTL_BUS_BITS_H_DATA      32
 #define XCONV_COMBINED_CRTL_BUS_ADDR_W_DATA      0x38

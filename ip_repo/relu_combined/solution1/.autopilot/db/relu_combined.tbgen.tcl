@@ -12,18 +12,18 @@ set isEnableWaveformDebug 1
 set C_modelName {relu_combined}
 set C_modelType { void 0 }
 set C_modelArgList {
-	{ x int 32 regular {bram 1000 { 1 3 } 1 1 }  }
-	{ dx int 32 regular {bram 1000 { 0 3 } 0 1 }  }
-	{ y int 32 regular {bram 1000 { 0 3 } 0 1 }  }
-	{ dy int 32 regular {bram 1000 { 1 3 } 1 1 }  }
+	{ x int 16 regular {bram 1000 { 1 3 } 1 1 }  }
+	{ dx int 16 regular {bram 1000 { 0 3 } 0 1 }  }
+	{ y int 16 regular {bram 1000 { 0 3 } 0 1 }  }
+	{ dy int 16 regular {bram 1000 { 1 3 } 1 1 }  }
 	{ dim int 32 regular {axi_slave 0}  }
 	{ fwprop uint 1 regular {axi_slave 0}  }
 }
 set C_modelArgMapList {[ 
-	{ "Name" : "x", "interface" : "bram", "bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "x","cData": "int","bit_use": { "low": 0,"up": 0},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}]} , 
- 	{ "Name" : "dx", "interface" : "bram", "bitwidth" : 32, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "dx","cData": "int","bit_use": { "low": 0,"up": 0},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}]} , 
- 	{ "Name" : "y", "interface" : "bram", "bitwidth" : 32, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "y","cData": "int","bit_use": { "low": 0,"up": 0},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}]} , 
- 	{ "Name" : "dy", "interface" : "bram", "bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "dy","cData": "int","bit_use": { "low": 0,"up": 0},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}]} , 
+	{ "Name" : "x", "interface" : "bram", "bitwidth" : 16, "direction" : "READONLY", "bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "x","cData": "short","bit_use": { "low": 0,"up": 0},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}]} , 
+ 	{ "Name" : "dx", "interface" : "bram", "bitwidth" : 16, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "dx","cData": "short","bit_use": { "low": 0,"up": 0},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}]} , 
+ 	{ "Name" : "y", "interface" : "bram", "bitwidth" : 16, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "y","cData": "short","bit_use": { "low": 0,"up": 0},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}]} , 
+ 	{ "Name" : "dy", "interface" : "bram", "bitwidth" : 16, "direction" : "READONLY", "bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "dy","cData": "short","bit_use": { "low": 0,"up": 0},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}]} , 
  	{ "Name" : "dim", "interface" : "axi_slave", "bundle":"CTRL","type":"ap_none","bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "dim","cData": "int","bit_use": { "low": 0,"up": 0},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}], "offset" : {"in":16}, "offset_end" : {"in":23}} , 
  	{ "Name" : "fwprop", "interface" : "axi_slave", "bundle":"CTRL","type":"ap_none","bitwidth" : 1, "direction" : "READONLY", "bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "fwprop","cData": "int1","bit_use": { "low": 0,"up": 0},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}], "offset" : {"in":24}, "offset_end" : {"in":31}} ]}
 # RTL Port declarations: 
@@ -33,30 +33,30 @@ set portList {
 	{ ap_rst_n sc_in sc_logic 1 reset -1 active_low_sync } 
 	{ x_Addr_A sc_out sc_lv 32 signal 0 } 
 	{ x_EN_A sc_out sc_logic 1 signal 0 } 
-	{ x_WEN_A sc_out sc_lv 4 signal 0 } 
-	{ x_Din_A sc_out sc_lv 32 signal 0 } 
-	{ x_Dout_A sc_in sc_lv 32 signal 0 } 
+	{ x_WEN_A sc_out sc_lv 2 signal 0 } 
+	{ x_Din_A sc_out sc_lv 16 signal 0 } 
+	{ x_Dout_A sc_in sc_lv 16 signal 0 } 
 	{ x_Clk_A sc_out sc_logic 1 signal 0 } 
 	{ x_Rst_A sc_out sc_logic 1 signal 0 } 
 	{ dx_Addr_A sc_out sc_lv 32 signal 1 } 
 	{ dx_EN_A sc_out sc_logic 1 signal 1 } 
-	{ dx_WEN_A sc_out sc_lv 4 signal 1 } 
-	{ dx_Din_A sc_out sc_lv 32 signal 1 } 
-	{ dx_Dout_A sc_in sc_lv 32 signal 1 } 
+	{ dx_WEN_A sc_out sc_lv 2 signal 1 } 
+	{ dx_Din_A sc_out sc_lv 16 signal 1 } 
+	{ dx_Dout_A sc_in sc_lv 16 signal 1 } 
 	{ dx_Clk_A sc_out sc_logic 1 signal 1 } 
 	{ dx_Rst_A sc_out sc_logic 1 signal 1 } 
 	{ y_Addr_A sc_out sc_lv 32 signal 2 } 
 	{ y_EN_A sc_out sc_logic 1 signal 2 } 
-	{ y_WEN_A sc_out sc_lv 4 signal 2 } 
-	{ y_Din_A sc_out sc_lv 32 signal 2 } 
-	{ y_Dout_A sc_in sc_lv 32 signal 2 } 
+	{ y_WEN_A sc_out sc_lv 2 signal 2 } 
+	{ y_Din_A sc_out sc_lv 16 signal 2 } 
+	{ y_Dout_A sc_in sc_lv 16 signal 2 } 
 	{ y_Clk_A sc_out sc_logic 1 signal 2 } 
 	{ y_Rst_A sc_out sc_logic 1 signal 2 } 
 	{ dy_Addr_A sc_out sc_lv 32 signal 3 } 
 	{ dy_EN_A sc_out sc_logic 1 signal 3 } 
-	{ dy_WEN_A sc_out sc_lv 4 signal 3 } 
-	{ dy_Din_A sc_out sc_lv 32 signal 3 } 
-	{ dy_Dout_A sc_in sc_lv 32 signal 3 } 
+	{ dy_WEN_A sc_out sc_lv 2 signal 3 } 
+	{ dy_Din_A sc_out sc_lv 16 signal 3 } 
+	{ dy_Dout_A sc_in sc_lv 16 signal 3 } 
 	{ dy_Clk_A sc_out sc_logic 1 signal 3 } 
 	{ dy_Rst_A sc_out sc_logic 1 signal 3 } 
 	{ s_axi_CTRL_AWVALID sc_in sc_logic 1 signal -1 } 
@@ -101,30 +101,30 @@ set NewPortList {[
  	{ "name": "ap_rst_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "reset", "bundle":{"name": "ap_rst_n", "role": "default" }} , 
  	{ "name": "x_Addr_A", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "x", "role": "Addr_A" }} , 
  	{ "name": "x_EN_A", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "x", "role": "EN_A" }} , 
- 	{ "name": "x_WEN_A", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "x", "role": "WEN_A" }} , 
- 	{ "name": "x_Din_A", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "x", "role": "Din_A" }} , 
- 	{ "name": "x_Dout_A", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "x", "role": "Dout_A" }} , 
+ 	{ "name": "x_WEN_A", "direction": "out", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "x", "role": "WEN_A" }} , 
+ 	{ "name": "x_Din_A", "direction": "out", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "x", "role": "Din_A" }} , 
+ 	{ "name": "x_Dout_A", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "x", "role": "Dout_A" }} , 
  	{ "name": "x_Clk_A", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "x", "role": "Clk_A" }} , 
  	{ "name": "x_Rst_A", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "x", "role": "Rst_A" }} , 
  	{ "name": "dx_Addr_A", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "dx", "role": "Addr_A" }} , 
  	{ "name": "dx_EN_A", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "dx", "role": "EN_A" }} , 
- 	{ "name": "dx_WEN_A", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "dx", "role": "WEN_A" }} , 
- 	{ "name": "dx_Din_A", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "dx", "role": "Din_A" }} , 
- 	{ "name": "dx_Dout_A", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "dx", "role": "Dout_A" }} , 
+ 	{ "name": "dx_WEN_A", "direction": "out", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "dx", "role": "WEN_A" }} , 
+ 	{ "name": "dx_Din_A", "direction": "out", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "dx", "role": "Din_A" }} , 
+ 	{ "name": "dx_Dout_A", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "dx", "role": "Dout_A" }} , 
  	{ "name": "dx_Clk_A", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "dx", "role": "Clk_A" }} , 
  	{ "name": "dx_Rst_A", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "dx", "role": "Rst_A" }} , 
  	{ "name": "y_Addr_A", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "y", "role": "Addr_A" }} , 
  	{ "name": "y_EN_A", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "y", "role": "EN_A" }} , 
- 	{ "name": "y_WEN_A", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "y", "role": "WEN_A" }} , 
- 	{ "name": "y_Din_A", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "y", "role": "Din_A" }} , 
- 	{ "name": "y_Dout_A", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "y", "role": "Dout_A" }} , 
+ 	{ "name": "y_WEN_A", "direction": "out", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "y", "role": "WEN_A" }} , 
+ 	{ "name": "y_Din_A", "direction": "out", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "y", "role": "Din_A" }} , 
+ 	{ "name": "y_Dout_A", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "y", "role": "Dout_A" }} , 
  	{ "name": "y_Clk_A", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "y", "role": "Clk_A" }} , 
  	{ "name": "y_Rst_A", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "y", "role": "Rst_A" }} , 
  	{ "name": "dy_Addr_A", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "dy", "role": "Addr_A" }} , 
  	{ "name": "dy_EN_A", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "dy", "role": "EN_A" }} , 
- 	{ "name": "dy_WEN_A", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "dy", "role": "WEN_A" }} , 
- 	{ "name": "dy_Din_A", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "dy", "role": "Din_A" }} , 
- 	{ "name": "dy_Dout_A", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "dy", "role": "Dout_A" }} , 
+ 	{ "name": "dy_WEN_A", "direction": "out", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "dy", "role": "WEN_A" }} , 
+ 	{ "name": "dy_Din_A", "direction": "out", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "dy", "role": "Din_A" }} , 
+ 	{ "name": "dy_Dout_A", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "dy", "role": "Dout_A" }} , 
  	{ "name": "dy_Clk_A", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "dy", "role": "Clk_A" }} , 
  	{ "name": "dy_Rst_A", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "dy", "role": "Rst_A" }}  ]}
 
@@ -174,10 +174,10 @@ set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
-	x { bram {  { x_Addr_A MemPortADDR2 1 32 }  { x_EN_A MemPortCE2 1 1 }  { x_WEN_A MemPortWE2 1 4 }  { x_Din_A MemPortDIN2 1 32 }  { x_Dout_A MemPortDOUT2 0 32 }  { x_Clk_A mem_clk 1 1 }  { x_Rst_A mem_rst 1 1 } } }
-	dx { bram {  { dx_Addr_A MemPortADDR2 1 32 }  { dx_EN_A MemPortCE2 1 1 }  { dx_WEN_A MemPortWE2 1 4 }  { dx_Din_A MemPortDIN2 1 32 }  { dx_Dout_A MemPortDOUT2 0 32 }  { dx_Clk_A mem_clk 1 1 }  { dx_Rst_A mem_rst 1 1 } } }
-	y { bram {  { y_Addr_A MemPortADDR2 1 32 }  { y_EN_A MemPortCE2 1 1 }  { y_WEN_A MemPortWE2 1 4 }  { y_Din_A MemPortDIN2 1 32 }  { y_Dout_A MemPortDOUT2 0 32 }  { y_Clk_A mem_clk 1 1 }  { y_Rst_A mem_rst 1 1 } } }
-	dy { bram {  { dy_Addr_A MemPortADDR2 1 32 }  { dy_EN_A MemPortCE2 1 1 }  { dy_WEN_A MemPortWE2 1 4 }  { dy_Din_A MemPortDIN2 1 32 }  { dy_Dout_A MemPortDOUT2 0 32 }  { dy_Clk_A mem_clk 1 1 }  { dy_Rst_A mem_rst 1 1 } } }
+	x { bram {  { x_Addr_A MemPortADDR2 1 32 }  { x_EN_A MemPortCE2 1 1 }  { x_WEN_A MemPortWE2 1 2 }  { x_Din_A MemPortDIN2 1 16 }  { x_Dout_A MemPortDOUT2 0 16 }  { x_Clk_A mem_clk 1 1 }  { x_Rst_A mem_rst 1 1 } } }
+	dx { bram {  { dx_Addr_A MemPortADDR2 1 32 }  { dx_EN_A MemPortCE2 1 1 }  { dx_WEN_A MemPortWE2 1 2 }  { dx_Din_A MemPortDIN2 1 16 }  { dx_Dout_A MemPortDOUT2 0 16 }  { dx_Clk_A mem_clk 1 1 }  { dx_Rst_A mem_rst 1 1 } } }
+	y { bram {  { y_Addr_A MemPortADDR2 1 32 }  { y_EN_A MemPortCE2 1 1 }  { y_WEN_A MemPortWE2 1 2 }  { y_Din_A MemPortDIN2 1 16 }  { y_Dout_A MemPortDOUT2 0 16 }  { y_Clk_A mem_clk 1 1 }  { y_Rst_A mem_rst 1 1 } } }
+	dy { bram {  { dy_Addr_A MemPortADDR2 1 32 }  { dy_EN_A MemPortCE2 1 1 }  { dy_WEN_A MemPortWE2 1 2 }  { dy_Din_A MemPortDIN2 1 16 }  { dy_Dout_A MemPortDOUT2 0 16 }  { dy_Clk_A mem_clk 1 1 }  { dy_Rst_A mem_rst 1 1 } } }
 }
 
 set busDeadlockParameterList { 
