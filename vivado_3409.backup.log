@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue May 10 14:50:26 2022
+# Process ID: 3409
+# Current directory: /home/anubhav/xilinx_projects
+# Command line: vivado
+# Log file: /home/anubhav/xilinx_projects/vivado.log
+# Journal file: /home/anubhav/xilinx_projects/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.xpr
+WARNING: [BD 41-2576] File '/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.srcs/sources_1/bd/nn/ip/nn_auto_us_0_1/nn_auto_us_0.xci' referenced by design 'nn' could not be found.
+WARNING: [BD 41-2576] File '/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.srcs/sources_1/bd/nn/ip/nn_auto_us_1_1/nn_auto_us_1.xci' referenced by design 'nn' could not be found.
+WARNING: [BD 41-2576] File '/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.srcs/sources_1/bd/nn/ip/nn_auto_pc_0_1/nn_auto_pc_0.xci' referenced by design 'nn' could not be found.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/anubhav/xilinx_projects/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 7299.855 ; gain = 148.426 ; free physical = 26549 ; free virtual = 31540
+update_compile_order -fileset sources_1

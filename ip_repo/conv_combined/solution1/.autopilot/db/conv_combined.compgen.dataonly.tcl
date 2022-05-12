@@ -20,7 +20,7 @@ dwt {
 }
 b { 
 	dir I
-	width 16
+	width 32
 	depth 1
 	mode ap_none
 	offset 32
@@ -28,13 +28,13 @@ b {
 }
 db { 
 	dir I
-	width 16
+	width 32
 	depth 1
 	mode ap_none
 	offset 40
 	offset_end 47
 }
-H { 
+F { 
 	dir I
 	width 32
 	depth 1
@@ -42,7 +42,7 @@ H {
 	offset 48
 	offset_end 55
 }
-W { 
+C { 
 	dir I
 	width 32
 	depth 1
@@ -50,7 +50,7 @@ W {
 	offset 56
 	offset_end 63
 }
-FH { 
+H { 
 	dir I
 	width 32
 	depth 1
@@ -58,7 +58,7 @@ FH {
 	offset 64
 	offset_end 71
 }
-FW { 
+W { 
 	dir I
 	width 32
 	depth 1
@@ -66,13 +66,29 @@ FW {
 	offset 72
 	offset_end 79
 }
+FH { 
+	dir I
+	width 32
+	depth 1
+	mode ap_none
+	offset 80
+	offset_end 87
+}
+FW { 
+	dir I
+	width 32
+	depth 1
+	mode ap_none
+	offset 88
+	offset_end 95
+}
 fwprop { 
 	dir I
 	width 1
 	depth 1
 	mode ap_none
-	offset 80
-	offset_end 87
+	offset 96
+	offset_end 103
 }
 ap_start { }
 ap_done { }

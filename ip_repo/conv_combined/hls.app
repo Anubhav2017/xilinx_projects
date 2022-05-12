@@ -1,4 +1,4 @@
-<project xmlns="com.autoesl.autopilot.project" top="conv_combined" name="conv_combined">
+<project xmlns="com.autoesl.autopilot.project" name="conv_combined" top="conv_combined">
     <includePaths/>
     <libraryPaths/>
     <Simulation>

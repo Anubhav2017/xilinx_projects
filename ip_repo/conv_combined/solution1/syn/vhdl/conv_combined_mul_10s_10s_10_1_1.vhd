@@ -7,14 +7,14 @@ use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
 
-entity conv_combined_mul_10s_10s_10_1_1_Multiplier_4 is
+entity conv_combined_mul_10s_10s_10_1_1_Multiplier_5 is
 port (
     a: in std_logic_vector(10 - 1 downto 0);
     b: in std_logic_vector(10 - 1 downto 0);
     p: out std_logic_vector(10 - 1 downto 0));
 end entity;
 
-architecture behav of conv_combined_mul_10s_10s_10_1_1_Multiplier_4 is
+architecture behav of conv_combined_mul_10s_10s_10_1_1_Multiplier_5 is
     signal a_i : std_logic_vector(10 - 1 downto 0);
     signal b_i : std_logic_vector(10 - 1 downto 0);
 begin
@@ -39,7 +39,7 @@ entity conv_combined_mul_10s_10s_10_1_1 is
 end entity;
 
 architecture arch of conv_combined_mul_10s_10s_10_1_1 is
-    component conv_combined_mul_10s_10s_10_1_1_Multiplier_4 is
+    component conv_combined_mul_10s_10s_10_1_1_Multiplier_5 is
         port (
             a : IN STD_LOGIC_VECTOR;
             b : IN STD_LOGIC_VECTOR;
@@ -49,7 +49,7 @@ architecture arch of conv_combined_mul_10s_10s_10_1_1 is
 
 
 begin
-    conv_combined_mul_10s_10s_10_1_1_Multiplier_4_U :  component conv_combined_mul_10s_10s_10_1_1_Multiplier_4
+    conv_combined_mul_10s_10s_10_1_1_Multiplier_5_U :  component conv_combined_mul_10s_10s_10_1_1_Multiplier_5
     port map (
         a => din0,
         b => din1,

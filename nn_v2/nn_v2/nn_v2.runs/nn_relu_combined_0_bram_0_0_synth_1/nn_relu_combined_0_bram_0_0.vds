@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed May 11 01:38:29 2022
+# Process ID: 145356
+# Current directory: /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/nn_relu_combined_0_bram_0_0_synth_1
+# Command line: vivado -log nn_relu_combined_0_bram_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source nn_relu_combined_0_bram_0_0.tcl
+# Log file: /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/nn_relu_combined_0_bram_0_0_synth_1/nn_relu_combined_0_bram_0_0.vds
+# Journal file: /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/nn_relu_combined_0_bram_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source nn_relu_combined_0_bram_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/anubhav/xilinx_projects/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP nn_relu_combined_0_bram_0_0, cache-ID = e982a604c8e96aa7.
+INFO: [Common 17-206] Exiting Vivado at Wed May 11 01:38:36 2022...

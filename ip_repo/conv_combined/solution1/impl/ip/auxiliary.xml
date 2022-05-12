@@ -3,19 +3,23 @@
   <xd:controlReg xd:name="control" xd:interfaceRef="s_axi_CRTL_BUS" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
   <xd:arg xd:name="*(wt)" xd:originalName="wt" xd:direction="inout" xd:interfaceRef="m_axi_gmem" xd:busTypeRef="aximm" xd:dataPack="true" xd:bitMapping="0:0" xd:dataWidth="1" xd:bufferDirection="in"/>
   <xd:arg xd:name="*(dwt)" xd:originalName="dwt" xd:direction="inout" xd:interfaceRef="m_axi_gmem" xd:busTypeRef="aximm" xd:dataPack="true" xd:bitMapping="0:0" xd:dataWidth="1" xd:bufferDirection="inout"/>
+  <xd:arg xd:name="*(b)" xd:originalName="b" xd:direction="inout" xd:interfaceRef="m_axi_gmem" xd:busTypeRef="aximm" xd:dataPack="true" xd:bitMapping="0:0" xd:dataWidth="1" xd:bufferDirection="in"/>
+  <xd:arg xd:name="*(db)" xd:originalName="db" xd:direction="inout" xd:interfaceRef="m_axi_gmem" xd:busTypeRef="aximm" xd:dataPack="true" xd:bitMapping="0:0" xd:dataWidth="1" xd:bufferDirection="inout"/>
   <xd:arg xd:name="*(x)" xd:originalName="x" xd:direction="in" xd:interfaceRef="x_PORTA" xd:busTypeRef="bram" xd:dataWidth="1"/>
   <xd:arg xd:name="*(dx)" xd:originalName="dx" xd:direction="inout" xd:interfaceRef="dx_PORTA" xd:busTypeRef="bram" xd:dataWidth="1"/>
   <xd:arg xd:name="wt" xd:originalName="wt" xd:direction="in" xd:interfaceRef="s_axi_CRTL_BUS" xd:busTypeRef="axilite" xd:aximmInterfaceRef="m_axi_gmem" xd:dataWidth="32" xd:offset="0x10" xd:handshakeRef="ap_none"/>
   <xd:arg xd:name="dwt" xd:originalName="dwt" xd:direction="in" xd:interfaceRef="s_axi_CRTL_BUS" xd:busTypeRef="axilite" xd:aximmInterfaceRef="m_axi_gmem" xd:dataWidth="32" xd:offset="0x18" xd:handshakeRef="ap_none"/>
   <xd:arg xd:name="*(y)" xd:originalName="y" xd:direction="out" xd:interfaceRef="y_PORTA" xd:busTypeRef="bram" xd:dataWidth="1"/>
   <xd:arg xd:name="*(dy)" xd:originalName="dy" xd:direction="in" xd:interfaceRef="dy_PORTA" xd:busTypeRef="bram" xd:dataWidth="1"/>
-  <xd:arg xd:name="b" xd:originalName="b" xd:direction="in" xd:interfaceRef="s_axi_CRTL_BUS" xd:busTypeRef="axilite" xd:dataWidth="1" xd:offset="0x20" xd:handshakeRef="ap_none"/>
-  <xd:arg xd:name="db" xd:originalName="db" xd:direction="in" xd:interfaceRef="s_axi_CRTL_BUS" xd:busTypeRef="axilite" xd:dataWidth="1" xd:offset="0x28" xd:handshakeRef="ap_none"/>
-  <xd:arg xd:name="H" xd:originalName="H" xd:direction="in" xd:interfaceRef="s_axi_CRTL_BUS" xd:busTypeRef="axilite" xd:dataWidth="1" xd:offset="0x30" xd:handshakeRef="ap_none"/>
-  <xd:arg xd:name="W" xd:originalName="W" xd:direction="in" xd:interfaceRef="s_axi_CRTL_BUS" xd:busTypeRef="axilite" xd:dataWidth="1" xd:offset="0x38" xd:handshakeRef="ap_none"/>
-  <xd:arg xd:name="FH" xd:originalName="FH" xd:direction="in" xd:interfaceRef="s_axi_CRTL_BUS" xd:busTypeRef="axilite" xd:dataWidth="1" xd:offset="0x40" xd:handshakeRef="ap_none"/>
-  <xd:arg xd:name="FW" xd:originalName="FW" xd:direction="in" xd:interfaceRef="s_axi_CRTL_BUS" xd:busTypeRef="axilite" xd:dataWidth="1" xd:offset="0x48" xd:handshakeRef="ap_none"/>
-  <xd:arg xd:name="fwprop" xd:originalName="fwprop" xd:direction="in" xd:interfaceRef="s_axi_CRTL_BUS" xd:busTypeRef="axilite" xd:dataWidth="1" xd:offset="0x50" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="b" xd:originalName="b" xd:direction="in" xd:interfaceRef="s_axi_CRTL_BUS" xd:busTypeRef="axilite" xd:aximmInterfaceRef="m_axi_gmem" xd:dataWidth="32" xd:offset="0x20" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="db" xd:originalName="db" xd:direction="in" xd:interfaceRef="s_axi_CRTL_BUS" xd:busTypeRef="axilite" xd:aximmInterfaceRef="m_axi_gmem" xd:dataWidth="32" xd:offset="0x28" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="F" xd:originalName="F" xd:direction="in" xd:interfaceRef="s_axi_CRTL_BUS" xd:busTypeRef="axilite" xd:dataWidth="1" xd:offset="0x30" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="C" xd:originalName="C" xd:direction="in" xd:interfaceRef="s_axi_CRTL_BUS" xd:busTypeRef="axilite" xd:dataWidth="1" xd:offset="0x38" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="H" xd:originalName="H" xd:direction="in" xd:interfaceRef="s_axi_CRTL_BUS" xd:busTypeRef="axilite" xd:dataWidth="1" xd:offset="0x40" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="W" xd:originalName="W" xd:direction="in" xd:interfaceRef="s_axi_CRTL_BUS" xd:busTypeRef="axilite" xd:dataWidth="1" xd:offset="0x48" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="FH" xd:originalName="FH" xd:direction="in" xd:interfaceRef="s_axi_CRTL_BUS" xd:busTypeRef="axilite" xd:dataWidth="1" xd:offset="0x50" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="FW" xd:originalName="FW" xd:direction="in" xd:interfaceRef="s_axi_CRTL_BUS" xd:busTypeRef="axilite" xd:dataWidth="1" xd:offset="0x58" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="fwprop" xd:originalName="fwprop" xd:direction="in" xd:interfaceRef="s_axi_CRTL_BUS" xd:busTypeRef="axilite" xd:dataWidth="1" xd:offset="0x60" xd:handshakeRef="ap_none"/>
   <xd:latencyEstimates xd:best-case="undef" xd:worst-case="undef" xd:average-case="undef"/>
-  <xd:resourceEstimates xd:LUT="6052" xd:FF="6264" xd:BRAM="2" xd:DSP="11"/>
+  <xd:resourceEstimates xd:LUT="11419" xd:FF="13030" xd:BRAM="4" xd:DSP="18"/>
 </xd:acceleratorMap>

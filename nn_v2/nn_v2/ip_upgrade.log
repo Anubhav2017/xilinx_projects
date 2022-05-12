@@ -1,6 +1,112 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Thu May 12 13:02:40 2022
+| Host         : anubhav-acer running 64-bit Ubuntu 20.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'nn_conv_combined_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of nn_conv_combined_0_1 (xilinx.com:hls:conv_combined:1.0) from (Rev. 2112501778) to (Rev. 2112501782)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'nn_conv_combined_0_1'.
+
+
+-Upgrade has removed interface 'dx_PORTB'
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'nn_conv_combined_0_1'. These changes may impact your design.
+
+
+-Upgrade has removed port 'dx_Addr_B'
+
+-Upgrade has removed port 'dx_Clk_B'
+
+-Upgrade has removed port 'dx_Din_B'
+
+-Upgrade has removed port 'dx_Dout_B'
+
+-Upgrade has removed port 'dx_EN_B'
+
+-Upgrade has removed port 'dx_Rst_B'
+
+-Upgrade has removed port 'dx_WEN_B'
+
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Thu May 12 12:58:56 2022
+| Host         : anubhav-acer running 64-bit Ubuntu 20.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'nn_conv_combined_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of nn_conv_combined_0_1 (xilinx.com:hls:conv_combined:1.0) from (Rev. 2112498207) to (Rev. 2112501778)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'nn_conv_combined_0_1'.
+
+
+-Upgrade has added interface 'dx_PORTB' (xilinx.com:interface:bram:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'nn_conv_combined_0_1'. These changes may impact your design.
+
+
+-Upgrade has added port 'dx_Addr_B'
+
+-Upgrade has added port 'dx_Clk_B'
+
+-Upgrade has added port 'dx_Din_B'
+
+-Upgrade has added port 'dx_Dout_B'
+
+-Upgrade has added port 'dx_EN_B'
+
+-Upgrade has added port 'dx_Rst_B'
+
+-Upgrade has added port 'dx_WEN_B'
+
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
 | Date         : Tue May 10 01:35:49 2022
 | Host         : anubhav-acer running 64-bit Ubuntu 20.04.4 LTS
 | Command      : upgrade_ip

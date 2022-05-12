@@ -4,7 +4,7 @@
 // ==============================================================
 `timescale 1 ns / 1 ps
 
-module conv_combined_mac_muladd_16s_16s_23ns_23_4_1_DSP48_2(
+module conv_combined_mac_muladd_16s_16s_23ns_23_4_1_DSP48_1(
     input clk,
     input rst,
     input ce,
@@ -68,7 +68,7 @@ output[dout_WIDTH - 1:0] dout;
 
 
 
-conv_combined_mac_muladd_16s_16s_23ns_23_4_1_DSP48_2 conv_combined_mac_muladd_16s_16s_23ns_23_4_1_DSP48_2_U(
+conv_combined_mac_muladd_16s_16s_23ns_23_4_1_DSP48_1 conv_combined_mac_muladd_16s_16s_23ns_23_4_1_DSP48_1_U(
     .clk( clk ),
     .rst( reset ),
     .ce( ce ),

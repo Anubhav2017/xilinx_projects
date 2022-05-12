@@ -6,7 +6,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
-entity conv_combined_mac_muladd_10s_10s_10ns_10_4_1_DSP48_1 is
+entity conv_combined_mac_muladd_10s_10s_10ns_10_4_1_DSP48_0 is
 port (
     clk: in  std_logic;
     rst: in  std_logic;
@@ -17,11 +17,11 @@ port (
     dout: out std_logic_vector(10 - 1 downto 0));
 
     attribute use_dsp : string;
-    attribute use_dsp of conv_combined_mac_muladd_10s_10s_10ns_10_4_1_DSP48_1 : entity is "yes";
+    attribute use_dsp of conv_combined_mac_muladd_10s_10s_10ns_10_4_1_DSP48_0 : entity is "yes";
 
 end entity;
 
-architecture behav of conv_combined_mac_muladd_10s_10s_10ns_10_4_1_DSP48_1 is
+architecture behav of conv_combined_mac_muladd_10s_10s_10ns_10_4_1_DSP48_0 is
     signal a       : signed(25-1 downto 0);
     signal b       : signed(18-1 downto 0);
     signal c       : signed(48-1 downto 0);
@@ -75,7 +75,7 @@ entity conv_combined_mac_muladd_10s_10s_10ns_10_4_1 is
 end entity;
 
 architecture arch of conv_combined_mac_muladd_10s_10s_10ns_10_4_1 is
-    component conv_combined_mac_muladd_10s_10s_10ns_10_4_1_DSP48_1 is
+    component conv_combined_mac_muladd_10s_10s_10ns_10_4_1_DSP48_0 is
         port (
             clk : IN STD_LOGIC;
             rst : IN STD_LOGIC;
@@ -89,7 +89,7 @@ architecture arch of conv_combined_mac_muladd_10s_10s_10ns_10_4_1 is
 
 
 begin
-    conv_combined_mac_muladd_10s_10s_10ns_10_4_1_DSP48_1_U :  component conv_combined_mac_muladd_10s_10s_10ns_10_4_1_DSP48_1
+    conv_combined_mac_muladd_10s_10s_10ns_10_4_1_DSP48_0_U :  component conv_combined_mac_muladd_10s_10s_10ns_10_4_1_DSP48_0
     port map (
         clk => clk,
         rst => reset,

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="nn_xbar_0_synth_1" LaunchDir="/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/nn_xbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="nn_relu_combined_0_bram_0_synth_1" LaunchDir="/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/nn_relu_combined_0_bram_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="nn_relu_combined_0_bram_0_0_synth_1" LaunchDir="/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/nn_relu_combined_0_bram_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="nn_relu_combined_0_bram_0_synth_1"/>
+	</Run>
+	<Run Id="nn_fcc_combined_0_bram_0_synth_1" LaunchDir="/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/nn_fcc_combined_0_bram_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="nn_fcc_combined_0_bram_1_0_synth_1" LaunchDir="/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/nn_fcc_combined_0_bram_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="nn_fcc_combined_0_bram_0_synth_1"/>
+	</Run>
+	<Run Id="nn_axi_bram_ctrl_1_1_synth_1" LaunchDir="/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/nn_axi_bram_ctrl_1_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="nn_auto_ds_1_synth_1" LaunchDir="/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/nn_auto_ds_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="nn_xbar_0_synth_1"/>
+		<Parent Id="nn_relu_combined_0_bram_0_synth_1"/>
+		<Parent Id="nn_relu_combined_0_bram_0_0_synth_1"/>
+		<Parent Id="nn_fcc_combined_0_bram_0_synth_1"/>
+		<Parent Id="nn_fcc_combined_0_bram_1_0_synth_1"/>
+		<Parent Id="nn_axi_bram_ctrl_1_1_synth_1"/>
+		<Parent Id="nn_auto_ds_1_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="route_design">
+		<Parent Id="synth_1"/>
+		<Parent Id="nn_xbar_0_synth_1"/>
+		<Parent Id="nn_relu_combined_0_bram_0_synth_1"/>
+		<Parent Id="nn_relu_combined_0_bram_0_0_synth_1"/>
+		<Parent Id="nn_fcc_combined_0_bram_0_synth_1"/>
+		<Parent Id="nn_fcc_combined_0_bram_1_0_synth_1"/>
+		<Parent Id="nn_axi_bram_ctrl_1_1_synth_1"/>
+		<Parent Id="nn_auto_ds_1_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

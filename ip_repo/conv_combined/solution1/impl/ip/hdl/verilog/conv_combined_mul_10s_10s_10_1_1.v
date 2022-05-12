@@ -5,7 +5,7 @@
 
 `timescale 1 ns / 1 ps
 
-module conv_combined_mul_10s_10s_10_1_1_Multiplier_4(a, b, p);
+module conv_combined_mul_10s_10s_10_1_1_Multiplier_5(a, b, p);
 input[10 - 1 : 0] a; 
 input[10 - 1 : 0] b; 
 output[10 - 1 : 0] p;
@@ -29,7 +29,7 @@ output[dout_WIDTH - 1:0] dout;
 
 
 
-conv_combined_mul_10s_10s_10_1_1_Multiplier_4 conv_combined_mul_10s_10s_10_1_1_Multiplier_4_U(
+conv_combined_mul_10s_10s_10_1_1_Multiplier_5 conv_combined_mul_10s_10s_10_1_1_Multiplier_5_U(
     .a( din0 ),
     .b( din1 ),
     .p( dout ));

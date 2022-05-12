@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Tue May 10 01:20:17 2022
-# Process ID: 5885
+# Start of session at: Wed May 11 00:12:30 2022
+# Process ID: 133630
 # Current directory: /home/anubhav/xilinx_projects
 # Command line: vivado
 # Log file: /home/anubhav/xilinx_projects/vivado.log
@@ -13,77 +13,111 @@ start_gui
 open_project /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.xpr
 open_bd_design {/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.srcs/sources_1/bd/nn/nn.bd}
 update_compile_order -fileset sources_1
+startgroup
+set_property -dict [list CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Assume_Synchronous_Clk {true} CONFIG.Write_Depth_A {128} CONFIG.Register_PortA_Output_of_Memory_Primitives {true} CONFIG.Register_PortB_Output_of_Memory_Primitives {true} CONFIG.Use_RSTA_Pin {false} CONFIG.Use_RSTB_Pin {false} CONFIG.use_bram_block {Stand_Alone} CONFIG.EN_SAFETY_CKT {false}] [get_bd_cells relu_y]
+endgroup
+startgroup
+set_property -dict [list CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Assume_Synchronous_Clk {true} CONFIG.Write_Width_A {16} CONFIG.Write_Depth_A {256} CONFIG.Read_Width_A {16} CONFIG.Write_Width_B {32} CONFIG.Read_Width_B {32} CONFIG.Register_PortA_Output_of_Memory_Primitives {true} CONFIG.Register_PortB_Output_of_Memory_Primitives {true} CONFIG.Use_RSTA_Pin {false} CONFIG.Use_RSTB_Pin {false} CONFIG.use_bram_block {Stand_Alone} CONFIG.EN_SAFETY_CKT {false}] [get_bd_cells relu_dy]
+endgroup
+startgroup
+set_property -dict [list CONFIG.Write_Width_A {16} CONFIG.Read_Width_A {16} CONFIG.Write_Width_B {32} CONFIG.Read_Width_B {32}] [get_bd_cells relu_y]
+endgroup
+validate_bd_design
+save_bd_design
+startgroup
+set_property -dict [list CONFIG.Write_Width_A {16} CONFIG.Write_Depth_A {8192} CONFIG.Read_Width_A {16} CONFIG.Write_Width_B {16} CONFIG.Read_Width_B {16}] [get_bd_cells fcc_x]
+endgroup
+startgroup
+set_property -dict [list CONFIG.Write_Width_B {32} CONFIG.Read_Width_B {32}] [get_bd_cells fcc_x]
+endgroup
+save_bd_design
+startgroup
+set_property -dict [list CONFIG.Write_Depth_A {2048} CONFIG.Write_Width_B {32} CONFIG.Read_Width_B {32}] [get_bd_cells fcc_x]
+endgroup
+startgroup
+endgroup
+delete_bd_objs [get_bd_intf_nets axi_bram_ctrl_0_BRAM_PORTA]
+delete_bd_objs [get_bd_intf_nets fcc_combined_0_dx_PORTA]
+connect_bd_intf_net [get_bd_intf_pins axi_bram_ctrl_0/BRAM_PORTA] [get_bd_intf_pins fcc_dx/BRAM_PORTB]
+apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "/fcc_dx" }  [get_bd_intf_pins fcc_combined_0/dx_PORTA]
 regenerate_bd_layout
-validate_bd_design
 startgroup
-set_property -dict [list CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Assume_Synchronous_Clk {true} CONFIG.Register_PortA_Output_of_Memory_Primitives {true} CONFIG.Register_PortB_Output_of_Memory_Primitives {true} CONFIG.Use_RSTA_Pin {false} CONFIG.Use_RSTB_Pin {false} CONFIG.use_bram_block {Stand_Alone} CONFIG.EN_SAFETY_CKT {false}] [get_bd_cells fcc_y]
+set_property -dict [list CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Assume_Synchronous_Clk {true} CONFIG.Write_Width_A {16} CONFIG.Read_Width_A {16} CONFIG.Write_Width_B {32} CONFIG.Read_Width_B {32} CONFIG.Register_PortA_Output_of_Memory_Primitives {true} CONFIG.Register_PortB_Output_of_Memory_Primitives {true} CONFIG.Use_RSTA_Pin {false} CONFIG.Use_RSTB_Pin {false} CONFIG.use_bram_block {Stand_Alone} CONFIG.EN_SAFETY_CKT {false}] [get_bd_cells fcc_dx]
 endgroup
 startgroup
-set_property -dict [list CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Assume_Synchronous_Clk {true} CONFIG.Register_PortA_Output_of_Memory_Primitives {true} CONFIG.Register_PortB_Output_of_Memory_Primitives {true} CONFIG.Use_RSTA_Pin {false} CONFIG.Use_RSTB_Pin {false} CONFIG.use_bram_block {Stand_Alone} CONFIG.EN_SAFETY_CKT {false}] [get_bd_cells fcc_dy]
+set_property -dict [list CONFIG.Assume_Synchronous_Clk {true}] [get_bd_cells fcc_x]
 endgroup
 startgroup
-set_property -dict [list CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Assume_Synchronous_Clk {true} CONFIG.Register_PortA_Output_of_Memory_Primitives {true} CONFIG.Register_PortB_Output_of_Memory_Primitives {true} CONFIG.Use_RSTA_Pin {false} CONFIG.Use_RSTB_Pin {false} CONFIG.use_bram_block {Stand_Alone} CONFIG.EN_SAFETY_CKT {false}] [get_bd_cells conv_y]
 endgroup
 startgroup
-set_property -dict [list CONFIG.Memory_Type {True_Dual_Port_RAM} CONFIG.Enable_32bit_Address {false} CONFIG.Byte_Size {9} CONFIG.Assume_Synchronous_Clk {true} CONFIG.Register_PortA_Output_of_Memory_Primitives {true} CONFIG.Register_PortB_Output_of_Memory_Primitives {true} CONFIG.Use_RSTA_Pin {false} CONFIG.Use_RSTB_Pin {false} CONFIG.Port_A_Write_Rate {50} CONFIG.Port_B_Write_Rate {50} CONFIG.use_bram_block {Stand_Alone} CONFIG.EN_SAFETY_CKT {false}] [get_bd_cells conv_dy]
 endgroup
-validate_bd_design
+set_property range 4K [get_bd_addr_segs {fcc_combined_0/Data_m_axi_gmem/SEG_axi_bram_ctrl_1_Mem0}]
+save_bd_design
+set_property range 4K [get_bd_addr_segs {conv_combined_0/Data_m_axi_gmem/SEG_axi_bram_ctrl_1_Mem0}]
+set_property range 4K [get_bd_addr_segs {axi_cdma_0/Data/SEG_axi_bram_ctrl_1_Mem0}]
+startgroup
+set_property -dict [list CONFIG.Write_Depth_A {1024} CONFIG.Write_Width_B {32} CONFIG.Read_Width_B {32}] [get_bd_cells relu_dy]
+endgroup
+startgroup
+set_property -dict [list CONFIG.Write_Depth_A {1024} CONFIG.Write_Width_B {32} CONFIG.Read_Width_B {32}] [get_bd_cells relu_y]
+endgroup
+startgroup
+endgroup
+save_bd_design
+reset_run nn_relu_combined_0_bram_0_synth_1
+reset_run nn_relu_combined_0_bram_0_0_synth_1
+reset_run nn_fcc_combined_0_bram_0_synth_1
+reset_run nn_fcc_combined_0_bram_1_0_synth_1
+reset_run synth_1
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+file copy -force /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/impl_1/nn_wrapper.bit /home/anubhav/xilinx_projects/nn_v2/nn_v2/nnv2.bit
+set_property offset 0xC0000000 [get_bd_addr_segs {fcc_combined_0/Data_m_axi_gmem/SEG_axi_bram_ctrl_0_Mem0}]
+set_property offset 0xC0000000 [get_bd_addr_segs {conv_combined_0/Data_m_axi_gmem/SEG_axi_bram_ctrl_0_Mem0}]
+set_property offset 0xC2000000 [get_bd_addr_segs {conv_combined_0/Data_m_axi_gmem/SEG_axi_bram_ctrl_1_Mem0}]
 update_ip_catalog -rebuild -scan_changes
 report_ip_status -name ip_status
-upgrade_ip [get_ips  {nn_conv_combined_0_1 nn_fcc_combined_0_0}] -log ip_upgrade.log
-export_ip_user_files -of_objects [get_ips {nn_conv_combined_0_1 nn_fcc_combined_0_0}] -no_script -sync -force -quiet
+upgrade_ip -vlnv xilinx.com:hls:conv_combined:1.0 [get_ips  nn_conv_combined_0_1] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips nn_conv_combined_0_1] -no_script -sync -force -quiet
 generate_target all [get_files  /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.srcs/sources_1/bd/nn/nn.bd]
-report_ip_status -name ip_status 
-startgroup
-create_bd_cell -type ip -vlnv xilinx.com:hls:relu_combined:1.0 relu_combined_0
-endgroup
-report_ip_status -name ip_status 
+catch { config_ip_cache -export [get_ips -all nn_conv_combined_0_1] }
+catch { config_ip_cache -export [get_ips -all nn_auto_us_0] }
+catch { config_ip_cache -export [get_ips -all nn_auto_us_1] }
+catch { config_ip_cache -export [get_ips -all nn_auto_us_2] }
+catch { config_ip_cache -export [get_ips -all nn_auto_pc_0] }
+catch { config_ip_cache -export [get_ips -all nn_auto_ds_0] }
+catch { config_ip_cache -export [get_ips -all nn_auto_ds_1] }
+catch { config_ip_cache -export [get_ips -all nn_auto_pc_1] }
+export_ip_user_files -of_objects [get_files /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.srcs/sources_1/bd/nn/nn.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.srcs/sources_1/bd/nn/nn.bd]
+launch_runs nn_conv_combined_0_1_synth_1 -jobs 10
+wait_on_run nn_conv_combined_0_1_synth_1
+export_simulation -of_objects [get_files /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.srcs/sources_1/bd/nn/nn.bd] -directory /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.ip_user_files/sim_scripts -ip_user_files_dir /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.ip_user_files -ipstatic_source_dir /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.cache/compile_simlib/modelsim} {questa=/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.cache/compile_simlib/questa} {ies=/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.cache/compile_simlib/ies} {xcelium=/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.cache/compile_simlib/xcelium} {vcs=/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.cache/compile_simlib/vcs} {riviera=/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
 update_ip_catalog -rebuild -scan_changes
 report_ip_status -name ip_status
-upgrade_ip -vlnv xilinx.com:hls:fcc_combined:1.0 [get_ips  nn_fcc_combined_0_0] -log ip_upgrade.log
-export_ip_user_files -of_objects [get_ips nn_fcc_combined_0_0] -no_script -sync -force -quiet
+upgrade_ip -vlnv xilinx.com:hls:conv_combined:1.0 [get_ips  nn_conv_combined_0_1] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips nn_conv_combined_0_1] -no_script -sync -force -quiet
 generate_target all [get_files  /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.srcs/sources_1/bd/nn/nn.bd]
-startgroup
-apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "/conv_dy" }  [get_bd_intf_pins relu_combined_0/dx_PORTA]
-apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "New Blk_Mem_Gen" }  [get_bd_intf_pins relu_combined_0/dy_PORTA]
-apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/relu_combined_0/s_axi_CTRL} ddr_seg {Auto} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins relu_combined_0/s_axi_CTRL]
-apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "/conv_y" }  [get_bd_intf_pins relu_combined_0/x_PORTA]
-apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "New Blk_Mem_Gen" }  [get_bd_intf_pins relu_combined_0/y_PORTA]
-endgroup
+catch { config_ip_cache -export [get_ips -all nn_conv_combined_0_1] }
+catch { config_ip_cache -export [get_ips -all nn_auto_us_0] }
+catch { config_ip_cache -export [get_ips -all nn_auto_us_1] }
+catch { config_ip_cache -export [get_ips -all nn_auto_us_2] }
+catch { config_ip_cache -export [get_ips -all nn_auto_pc_0] }
+catch { config_ip_cache -export [get_ips -all nn_auto_ds_0] }
+catch { config_ip_cache -export [get_ips -all nn_auto_ds_1] }
+catch { config_ip_cache -export [get_ips -all nn_auto_pc_1] }
+export_ip_user_files -of_objects [get_files /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.srcs/sources_1/bd/nn/nn.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.srcs/sources_1/bd/nn/nn.bd]
+launch_runs nn_conv_combined_0_1_synth_1 -jobs 10
+wait_on_run nn_conv_combined_0_1_synth_1
+export_simulation -of_objects [get_files /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.srcs/sources_1/bd/nn/nn.bd] -directory /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.ip_user_files/sim_scripts -ip_user_files_dir /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.ip_user_files -ipstatic_source_dir /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.cache/compile_simlib/modelsim} {questa=/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.cache/compile_simlib/questa} {ies=/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.cache/compile_simlib/ies} {xcelium=/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.cache/compile_simlib/xcelium} {vcs=/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.cache/compile_simlib/vcs} {riviera=/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
 report_ip_status -name ip_status 
-regenerate_bd_layout
-validate_bd_design
-startgroup
-set_property -dict [list CONFIG.Write_Width_A {16} CONFIG.Read_Width_A {16} CONFIG.Write_Width_B {16} CONFIG.Read_Width_B {16}] [get_bd_cells fcc_dy]
-endgroup
-startgroup
-set_property -dict [list CONFIG.Write_Width_A {16} CONFIG.Read_Width_A {16} CONFIG.Write_Width_B {16} CONFIG.Read_Width_B {16}] [get_bd_cells fcc_y]
-endgroup
-startgroup
-set_property -dict [list CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Assume_Synchronous_Clk {true} CONFIG.Write_Width_A {16} CONFIG.Read_Width_A {16} CONFIG.Write_Width_B {16} CONFIG.Read_Width_B {16} CONFIG.Register_PortA_Output_of_Memory_Primitives {true} CONFIG.Register_PortB_Output_of_Memory_Primitives {true} CONFIG.Use_RSTA_Pin {false} CONFIG.Use_RSTB_Pin {false} CONFIG.use_bram_block {Stand_Alone} CONFIG.EN_SAFETY_CKT {false}] [get_bd_cells conv_dy]
-endgroup
-startgroup
-set_property -dict [list CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Assume_Synchronous_Clk {true} CONFIG.Write_Width_A {16} CONFIG.Read_Width_A {16} CONFIG.Write_Width_B {16} CONFIG.Read_Width_B {16} CONFIG.Register_PortA_Output_of_Memory_Primitives {true} CONFIG.Register_PortB_Output_of_Memory_Primitives {true} CONFIG.Use_RSTA_Pin {false} CONFIG.Use_RSTB_Pin {false} CONFIG.use_bram_block {Stand_Alone} CONFIG.EN_SAFETY_CKT {false}] [get_bd_cells conv_y]
-endgroup
-startgroup
-set_property -dict [list CONFIG.Memory_Type {True_Dual_Port_RAM} CONFIG.Assume_Synchronous_Clk {true} CONFIG.Enable_B {Use_ENB_Pin} CONFIG.Use_RSTB_Pin {true} CONFIG.Port_B_Clock {100} CONFIG.Port_B_Write_Rate {50} CONFIG.Port_B_Enable_Rate {100}] [get_bd_cells relu_combined_0_bram]
-endgroup
-set_property name relu_dy [get_bd_cells relu_combined_0_bram]
-set_property name relu_y [get_bd_cells relu_combined_0_bram_0]
-report_ip_status -name ip_status 
-validate_bd_design
-delete_bd_objs [get_bd_intf_nets axi_bram_ctrl_0_BRAM_PORTA] [get_bd_intf_nets ps7_0_axi_periph_M02_AXI] [get_bd_intf_nets axi_bram_ctrl_0_BRAM_PORTB] [get_bd_cells axi_bram_ctrl_0]
-startgroup
-set_property -dict [list CONFIG.Memory_Type {Single_Port_RAM} CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Write_Width_A {16} CONFIG.Read_Width_A {16} CONFIG.Write_Width_B {16} CONFIG.Read_Width_B {16} CONFIG.Enable_B {Always_Enabled} CONFIG.Register_PortA_Output_of_Memory_Primitives {true} CONFIG.Register_PortB_Output_of_Memory_Primitives {false} CONFIG.Use_RSTA_Pin {false} CONFIG.Use_RSTB_Pin {false} CONFIG.Port_B_Clock {0} CONFIG.Port_B_Write_Rate {0} CONFIG.Port_B_Enable_Rate {0} CONFIG.use_bram_block {Stand_Alone} CONFIG.EN_SAFETY_CKT {false}] [get_bd_cells fcc_dx]
-endgroup
-startgroup
-set_property -dict [list CONFIG.Memory_Type {Single_Port_RAM} CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Write_Width_A {16} CONFIG.Read_Width_A {16} CONFIG.Write_Width_B {16} CONFIG.Read_Width_B {16} CONFIG.Enable_B {Always_Enabled} CONFIG.Register_PortA_Output_of_Memory_Primitives {true} CONFIG.Register_PortB_Output_of_Memory_Primitives {false} CONFIG.Use_RSTA_Pin {false} CONFIG.Use_RSTB_Pin {false} CONFIG.Port_B_Clock {0} CONFIG.Port_B_Write_Rate {0} CONFIG.Port_B_Enable_Rate {0} CONFIG.use_bram_block {Stand_Alone} CONFIG.EN_SAFETY_CKT {false}] [get_bd_cells fcc_x]
-endgroup
-validate_bd_design
-startgroup
-set_property -dict [list CONFIG.Memory_Type {Single_Port_RAM} CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Assume_Synchronous_Clk {false} CONFIG.Write_Width_A {16} CONFIG.Read_Width_A {16} CONFIG.Write_Width_B {16} CONFIG.Read_Width_B {16} CONFIG.Enable_B {Always_Enabled} CONFIG.Register_PortA_Output_of_Memory_Primitives {true} CONFIG.Use_RSTA_Pin {false} CONFIG.Use_RSTB_Pin {false} CONFIG.Port_B_Clock {0} CONFIG.Port_B_Write_Rate {0} CONFIG.Port_B_Enable_Rate {0} CONFIG.use_bram_block {Stand_Alone} CONFIG.EN_SAFETY_CKT {false}] [get_bd_cells relu_dy]
-endgroup
-startgroup
-set_property -dict [list CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Write_Width_A {16} CONFIG.Read_Width_A {16} CONFIG.Write_Width_B {16} CONFIG.Read_Width_B {16} CONFIG.Register_PortA_Output_of_Memory_Primitives {true} CONFIG.Use_RSTA_Pin {false} CONFIG.use_bram_block {Stand_Alone} CONFIG.EN_SAFETY_CKT {false}] [get_bd_cells relu_y]
-endgroup
-validate_bd_design
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1

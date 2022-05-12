@@ -780,3 +780,253 @@ INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.32 seconds
 Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=0
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: set_directive_top -name conv_combined conv_combined 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 155.854 MB.
+INFO: [HLS 200-10] Analyzing design file 'conv_combined/main.cpp' ... 
+WARNING: [HLS 207-4651] 'fpga_interface_wrapper' and 'fpga_interface_wrapper' attributes are not compatible: conv_combined/main.cpp:31:9
+INFO: [HLS 207-4134] conflicting attribute is here: conv_combined/main.cpp:26:9
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 3.73 seconds. CPU system time: 0.26 seconds. Elapsed time: 3.49 seconds; current allocated memory: 157.426 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'conv_combined(ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, int, int, int, int, bool)' (conv_combined/main.cpp:9:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'conv_combined(ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, int, int, int, int, bool)' (conv_combined/main.cpp:9:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'conv_combined(ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, int, int, int, int, bool)' (conv_combined/main.cpp:9:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'conv_combined(ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, int, int, int, int, bool)' (conv_combined/main.cpp:9:0)
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 16 in loop 'VITIS_LOOP_48_4'(conv_combined/main.cpp:48:35) has been inferred on port 'gmem' (conv_combined/main.cpp:48:35)
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 16 in loop 'VITIS_LOOP_88_15'(conv_combined/main.cpp:88:37) has been inferred on port 'gmem' (conv_combined/main.cpp:88:37)
+INFO: [HLS 214-115] Multiple burst writes of variable length and bit width 16 in loop 'VITIS_LOOP_115_25'(conv_combined/main.cpp:115:40) has been inferred on port 'gmem' (conv_combined/main.cpp:115:40)
+INFO: [HLS 214-115] Multiple burst writes of variable length and bit width 16 in loop 'VITIS_LOOP_123_26'(conv_combined/main.cpp:123:22) has been inferred on port 'gmem' (conv_combined/main.cpp:123:22)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i16.s_struct.ap_fixeds' into 'conv_combined(ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, int, int, int, int, bool)' (conv_combined/main.cpp:70:46)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i16.s_struct.ap_fixeds' into 'conv_combined(ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, int, int, int, int, bool)' (conv_combined/main.cpp:124:17)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i16.s_struct.ap_fixeds' into 'conv_combined(ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, int, int, int, int, bool)' (conv_combined/main.cpp:116:53)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.34 seconds. CPU system time: 0.21 seconds. Elapsed time: 4.86 seconds; current allocated memory: 159.887 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 159.889 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.4 seconds; current allocated memory: 171.697 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.19 seconds. CPU system time: 0 seconds. Elapsed time: 0.19 seconds; current allocated memory: 187.309 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_48_4' (conv_combined/main.cpp:48) in function 'conv_combined' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_58_5' (conv_combined/main.cpp:58) in function 'conv_combined' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_72_11' (conv_combined/main.cpp:72) in function 'conv_combined' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_88_15' (conv_combined/main.cpp:88) in function 'conv_combined' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_100_21' (conv_combined/main.cpp:100) in function 'conv_combined' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_115_25' (conv_combined/main.cpp:115) in function 'conv_combined' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_123_26' (conv_combined/main.cpp:123) in function 'conv_combined' automatically.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.54 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.56 seconds; current allocated memory: 224.648 MB.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_47_3' (conv_combined/main.cpp:47:39) in function 'conv_combined' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_46_2' (conv_combined/main.cpp:46:35) in function 'conv_combined'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_45_1' (conv_combined/main.cpp:45:27) in function 'conv_combined'.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_71_10' (conv_combined/main.cpp:71:49) in function 'conv_combined' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_69_9' (conv_combined/main.cpp:69:44) in function 'conv_combined' the outer loop is not a perfect loop.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_68_8' (conv_combined/main.cpp:68:40) in function 'conv_combined'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_67_7' (conv_combined/main.cpp:67:36) in function 'conv_combined'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_66_6' (conv_combined/main.cpp:66:28) in function 'conv_combined'.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_87_14' (conv_combined/main.cpp:87:41) in function 'conv_combined' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_86_13' (conv_combined/main.cpp:86:37) in function 'conv_combined'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_85_12' (conv_combined/main.cpp:85:29) in function 'conv_combined'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_99_20' (conv_combined/main.cpp:99:49) in function 'conv_combined'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_98_19' (conv_combined/main.cpp:98:45) in function 'conv_combined'.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_97_18' (conv_combined/main.cpp:97:41) in function 'conv_combined' the outer loop is not a perfect loop.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_96_17' (conv_combined/main.cpp:96:37) in function 'conv_combined' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_95_16' (conv_combined/main.cpp:95:29) in function 'conv_combined'.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_114_24' (conv_combined/main.cpp:114:44) in function 'conv_combined' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_113_23' (conv_combined/main.cpp:113:40) in function 'conv_combined'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_112_22' (conv_combined/main.cpp:112:30) in function 'conv_combined'.
+INFO: [HLS 200-472] Inferring partial write operation for 'wbuf.V' (conv_combined/main.cpp:49:39)
+INFO: [HLS 200-472] Inferring partial write operation for 'bbuf.V' (conv_combined/main.cpp:59:18)
+INFO: [HLS 200-472] Inferring partial write operation for 'dbbuf.V' (conv_combined/main.cpp:60:19)
+INFO: [HLS 200-472] Inferring partial write operation for 'y' 
+INFO: [HLS 200-472] Inferring partial write operation for 'y' (conv_combined/main.cpp:70:46)
+INFO: [HLS 200-472] Inferring partial write operation for 'dwbuf.V' (conv_combined/main.cpp:89:41)
+INFO: [HLS 200-472] Inferring partial write operation for 'dwbuf.V' 
+INFO: [HLS 200-472] Inferring partial write operation for 'dbbuf.V' 
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.47 seconds. CPU system time: 0 seconds. Elapsed time: 0.51 seconds; current allocated memory: 231.326 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'conv_combined' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv_combined' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln95) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=empty_71) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln1192_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln1192) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln99) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=p_mid1148) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln68) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_48_4'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_48_4'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_58_5'.
+WARNING: [HLS 200-885] Unable to schedule bus request on port 'gmem' (conv_combined/main.cpp:60) due to limited memory ports. Please consider using a memory core with more ports or partitioning the array.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 2, Depth = 11, loop 'VITIS_LOOP_58_5'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_88_15'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_88_15'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_98_19_VITIS_LOOP_99_20_VITIS_LOOP_100_21'.
+WARNING: [HLS 200-880] The II Violation in module 'conv_combined' (loop 'VITIS_LOOP_98_19_VITIS_LOOP_99_20_VITIS_LOOP_100_21'): Unable to enforce a carried dependence constraint (II = 1, distance = 2, offset = 1) between 'store' operation ('dx_addr_write_ln708') of variable 'trunc_ln708_1' on array 'dx' and 'load' operation ('dx_load') on array 'dx'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 2, Depth = 13, loop 'VITIS_LOOP_98_19_VITIS_LOOP_99_20_VITIS_LOOP_100_21'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_115_25'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_115_25'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_123_26'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_123_26'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_72_11'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_72_11'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.55 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.64 seconds; current allocated memory: 233.759 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.79 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.84 seconds; current allocated memory: 236.942 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv_combined' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv_combined/gmem' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv_combined/x' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv_combined/dx' to 'bram'.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=0
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: set_directive_top -name conv_combined conv_combined 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 155.854 MB.
+INFO: [HLS 200-10] Analyzing design file 'conv_combined/main.cpp' ... 
+WARNING: [HLS 207-4651] 'fpga_interface_wrapper' and 'fpga_interface_wrapper' attributes are not compatible: conv_combined/main.cpp:31:9
+INFO: [HLS 207-4134] conflicting attribute is here: conv_combined/main.cpp:26:9
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 3.76 seconds. CPU system time: 0.23 seconds. Elapsed time: 3.33 seconds; current allocated memory: 157.426 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'conv_combined(ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, int, int, int, int, bool)' (conv_combined/main.cpp:9:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'conv_combined(ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, int, int, int, int, bool)' (conv_combined/main.cpp:9:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'conv_combined(ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, int, int, int, int, bool)' (conv_combined/main.cpp:9:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'conv_combined(ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, int, int, int, int, bool)' (conv_combined/main.cpp:9:0)
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 16 in loop 'VITIS_LOOP_48_4'(conv_combined/main.cpp:48:35) has been inferred on port 'gmem' (conv_combined/main.cpp:48:35)
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 16 in loop 'VITIS_LOOP_88_15'(conv_combined/main.cpp:88:37) has been inferred on port 'gmem' (conv_combined/main.cpp:88:37)
+INFO: [HLS 214-115] Multiple burst writes of variable length and bit width 16 in loop 'VITIS_LOOP_115_25'(conv_combined/main.cpp:115:40) has been inferred on port 'gmem' (conv_combined/main.cpp:115:40)
+INFO: [HLS 214-115] Multiple burst writes of variable length and bit width 16 in loop 'VITIS_LOOP_123_26'(conv_combined/main.cpp:123:22) has been inferred on port 'gmem' (conv_combined/main.cpp:123:22)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i16.s_struct.ap_fixeds' into 'conv_combined(ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, int, int, int, int, bool)' (conv_combined/main.cpp:70:46)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i16.s_struct.ap_fixeds' into 'conv_combined(ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, int, int, int, int, bool)' (conv_combined/main.cpp:124:17)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i16.s_struct.ap_fixeds' into 'conv_combined(ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, int, int, int, int, bool)' (conv_combined/main.cpp:116:53)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.32 seconds. CPU system time: 0.2 seconds. Elapsed time: 3.55 seconds; current allocated memory: 159.887 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 159.889 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 171.697 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.19 seconds. CPU system time: 0 seconds. Elapsed time: 0.19 seconds; current allocated memory: 187.307 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_48_4' (conv_combined/main.cpp:48) in function 'conv_combined' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_58_5' (conv_combined/main.cpp:58) in function 'conv_combined' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_72_11' (conv_combined/main.cpp:72) in function 'conv_combined' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_88_15' (conv_combined/main.cpp:88) in function 'conv_combined' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_100_21' (conv_combined/main.cpp:100) in function 'conv_combined' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_115_25' (conv_combined/main.cpp:115) in function 'conv_combined' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_123_26' (conv_combined/main.cpp:123) in function 'conv_combined' automatically.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.56 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.56 seconds; current allocated memory: 224.652 MB.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_47_3' (conv_combined/main.cpp:47:39) in function 'conv_combined' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_46_2' (conv_combined/main.cpp:46:35) in function 'conv_combined'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_45_1' (conv_combined/main.cpp:45:27) in function 'conv_combined'.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_71_10' (conv_combined/main.cpp:71:49) in function 'conv_combined' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_69_9' (conv_combined/main.cpp:69:44) in function 'conv_combined' the outer loop is not a perfect loop.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_68_8' (conv_combined/main.cpp:68:40) in function 'conv_combined'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_67_7' (conv_combined/main.cpp:67:36) in function 'conv_combined'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_66_6' (conv_combined/main.cpp:66:28) in function 'conv_combined'.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_87_14' (conv_combined/main.cpp:87:41) in function 'conv_combined' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_86_13' (conv_combined/main.cpp:86:37) in function 'conv_combined'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_85_12' (conv_combined/main.cpp:85:29) in function 'conv_combined'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_99_20' (conv_combined/main.cpp:99:49) in function 'conv_combined'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_98_19' (conv_combined/main.cpp:98:45) in function 'conv_combined'.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_97_18' (conv_combined/main.cpp:97:41) in function 'conv_combined' the outer loop is not a perfect loop.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_96_17' (conv_combined/main.cpp:96:37) in function 'conv_combined' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_95_16' (conv_combined/main.cpp:95:29) in function 'conv_combined'.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_114_24' (conv_combined/main.cpp:114:44) in function 'conv_combined' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_113_23' (conv_combined/main.cpp:113:40) in function 'conv_combined'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_112_22' (conv_combined/main.cpp:112:30) in function 'conv_combined'.
+INFO: [HLS 200-472] Inferring partial write operation for 'wbuf.V' (conv_combined/main.cpp:49:39)
+INFO: [HLS 200-472] Inferring partial write operation for 'bbuf.V' (conv_combined/main.cpp:59:18)
+INFO: [HLS 200-472] Inferring partial write operation for 'dbbuf.V' (conv_combined/main.cpp:60:19)
+INFO: [HLS 200-472] Inferring partial write operation for 'y' 
+INFO: [HLS 200-472] Inferring partial write operation for 'y' (conv_combined/main.cpp:70:46)
+INFO: [HLS 200-472] Inferring partial write operation for 'dwbuf.V' (conv_combined/main.cpp:89:41)
+INFO: [HLS 200-472] Inferring partial write operation for 'dwbuf.V' 
+INFO: [HLS 200-472] Inferring partial write operation for 'dbbuf.V' 
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.47 seconds. CPU system time: 0 seconds. Elapsed time: 0.49 seconds; current allocated memory: 231.341 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'conv_combined' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv_combined' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln95) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=empty_71) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln1192_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln1192) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln99) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=p_mid1148) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln68) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_48_4'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_48_4'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_58_5'.
+WARNING: [HLS 200-885] Unable to schedule bus request on port 'gmem' (conv_combined/main.cpp:60) due to limited memory ports. Please consider using a memory core with more ports or partitioning the array.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 2, Depth = 11, loop 'VITIS_LOOP_58_5'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_88_15'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_88_15'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_98_19_VITIS_LOOP_99_20_VITIS_LOOP_100_21'.
+WARNING: [HLS 200-880] The II Violation in module 'conv_combined' (loop 'VITIS_LOOP_98_19_VITIS_LOOP_99_20_VITIS_LOOP_100_21'): Unable to enforce a carried dependence constraint (II = 1, distance = 2, offset = 1) between 'store' operation ('dx_addr_write_ln708') of variable 'trunc_ln708_1' on array 'dx' and 'load' operation ('dx_load') on array 'dx'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 2, Depth = 13, loop 'VITIS_LOOP_98_19_VITIS_LOOP_99_20_VITIS_LOOP_100_21'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_115_25'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_115_25'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_123_26'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_123_26'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_72_11'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_72_11'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.56 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.57 seconds; current allocated memory: 233.781 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.79 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.81 seconds; current allocated memory: 236.978 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv_combined' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv_combined/gmem' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv_combined/x' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv_combined/dx' to 'bram'.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================

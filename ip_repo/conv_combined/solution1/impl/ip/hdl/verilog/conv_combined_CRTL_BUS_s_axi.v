@@ -31,8 +31,10 @@ module conv_combined_CRTL_BUS_s_axi
     output wire                          interrupt,
     output wire [31:0]                   wt,
     output wire [31:0]                   dwt,
-    output wire [15:0]                   b,
-    output wire [15:0]                   db,
+    output wire [31:0]                   b,
+    output wire [31:0]                   db,
+    output wire [31:0]                   F,
+    output wire [31:0]                   C,
     output wire [31:0]                   H,
     output wire [31:0]                   W,
     output wire [31:0]                   FH,
@@ -69,29 +71,33 @@ module conv_combined_CRTL_BUS_s_axi
 //        bit 31~0 - dwt[31:0] (Read/Write)
 // 0x1c : reserved
 // 0x20 : Data signal of b
-//        bit 15~0 - b[15:0] (Read/Write)
-//        others   - reserved
+//        bit 31~0 - b[31:0] (Read/Write)
 // 0x24 : reserved
 // 0x28 : Data signal of db
-//        bit 15~0 - db[15:0] (Read/Write)
-//        others   - reserved
+//        bit 31~0 - db[31:0] (Read/Write)
 // 0x2c : reserved
-// 0x30 : Data signal of H
-//        bit 31~0 - H[31:0] (Read/Write)
+// 0x30 : Data signal of F
+//        bit 31~0 - F[31:0] (Read/Write)
 // 0x34 : reserved
-// 0x38 : Data signal of W
-//        bit 31~0 - W[31:0] (Read/Write)
+// 0x38 : Data signal of C
+//        bit 31~0 - C[31:0] (Read/Write)
 // 0x3c : reserved
-// 0x40 : Data signal of FH
-//        bit 31~0 - FH[31:0] (Read/Write)
+// 0x40 : Data signal of H
+//        bit 31~0 - H[31:0] (Read/Write)
 // 0x44 : reserved
-// 0x48 : Data signal of FW
-//        bit 31~0 - FW[31:0] (Read/Write)
+// 0x48 : Data signal of W
+//        bit 31~0 - W[31:0] (Read/Write)
 // 0x4c : reserved
-// 0x50 : Data signal of fwprop
+// 0x50 : Data signal of FH
+//        bit 31~0 - FH[31:0] (Read/Write)
+// 0x54 : reserved
+// 0x58 : Data signal of FW
+//        bit 31~0 - FW[31:0] (Read/Write)
+// 0x5c : reserved
+// 0x60 : Data signal of fwprop
 //        bit 0  - fwprop[0] (Read/Write)
 //        others - reserved
-// 0x54 : reserved
+// 0x64 : reserved
 // (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
 //------------------------Parameter----------------------
@@ -108,16 +114,20 @@ localparam
     ADDR_B_CTRL        = 7'h24,
     ADDR_DB_DATA_0     = 7'h28,
     ADDR_DB_CTRL       = 7'h2c,
-    ADDR_H_DATA_0      = 7'h30,
-    ADDR_H_CTRL        = 7'h34,
-    ADDR_W_DATA_0      = 7'h38,
-    ADDR_W_CTRL        = 7'h3c,
-    ADDR_FH_DATA_0     = 7'h40,
-    ADDR_FH_CTRL       = 7'h44,
-    ADDR_FW_DATA_0     = 7'h48,
-    ADDR_FW_CTRL       = 7'h4c,
-    ADDR_FWPROP_DATA_0 = 7'h50,
-    ADDR_FWPROP_CTRL   = 7'h54,
+    ADDR_F_DATA_0      = 7'h30,
+    ADDR_F_CTRL        = 7'h34,
+    ADDR_C_DATA_0      = 7'h38,
+    ADDR_C_CTRL        = 7'h3c,
+    ADDR_H_DATA_0      = 7'h40,
+    ADDR_H_CTRL        = 7'h44,
+    ADDR_W_DATA_0      = 7'h48,
+    ADDR_W_CTRL        = 7'h4c,
+    ADDR_FH_DATA_0     = 7'h50,
+    ADDR_FH_CTRL       = 7'h54,
+    ADDR_FW_DATA_0     = 7'h58,
+    ADDR_FW_CTRL       = 7'h5c,
+    ADDR_FWPROP_DATA_0 = 7'h60,
+    ADDR_FWPROP_CTRL   = 7'h64,
     WRIDLE             = 2'd0,
     WRDATA             = 2'd1,
     WRRESP             = 2'd2,
@@ -150,8 +160,10 @@ localparam
     reg  [1:0]                    int_isr = 2'b0;
     reg  [31:0]                   int_wt = 'b0;
     reg  [31:0]                   int_dwt = 'b0;
-    reg  [15:0]                   int_b = 'b0;
-    reg  [15:0]                   int_db = 'b0;
+    reg  [31:0]                   int_b = 'b0;
+    reg  [31:0]                   int_db = 'b0;
+    reg  [31:0]                   int_F = 'b0;
+    reg  [31:0]                   int_C = 'b0;
     reg  [31:0]                   int_H = 'b0;
     reg  [31:0]                   int_W = 'b0;
     reg  [31:0]                   int_FH = 'b0;
@@ -272,10 +284,16 @@ always @(posedge ACLK) begin
                     rdata <= int_dwt[31:0];
                 end
                 ADDR_B_DATA_0: begin
-                    rdata <= int_b[15:0];
+                    rdata <= int_b[31:0];
                 end
                 ADDR_DB_DATA_0: begin
-                    rdata <= int_db[15:0];
+                    rdata <= int_db[31:0];
+                end
+                ADDR_F_DATA_0: begin
+                    rdata <= int_F[31:0];
+                end
+                ADDR_C_DATA_0: begin
+                    rdata <= int_C[31:0];
                 end
                 ADDR_H_DATA_0: begin
                     rdata <= int_H[31:0];
@@ -305,6 +323,8 @@ assign wt        = int_wt;
 assign dwt       = int_dwt;
 assign b         = int_b;
 assign db        = int_db;
+assign F         = int_F;
+assign C         = int_C;
 assign H         = int_H;
 assign W         = int_W;
 assign FH        = int_FH;
@@ -426,23 +446,43 @@ always @(posedge ACLK) begin
     end
 end
 
-// int_b[15:0]
+// int_b[31:0]
 always @(posedge ACLK) begin
     if (ARESET)
-        int_b[15:0] <= 0;
+        int_b[31:0] <= 0;
     else if (ACLK_EN) begin
         if (w_hs && waddr == ADDR_B_DATA_0)
-            int_b[15:0] <= (WDATA[31:0] & wmask) | (int_b[15:0] & ~wmask);
+            int_b[31:0] <= (WDATA[31:0] & wmask) | (int_b[31:0] & ~wmask);
     end
 end
 
-// int_db[15:0]
+// int_db[31:0]
 always @(posedge ACLK) begin
     if (ARESET)
-        int_db[15:0] <= 0;
+        int_db[31:0] <= 0;
     else if (ACLK_EN) begin
         if (w_hs && waddr == ADDR_DB_DATA_0)
-            int_db[15:0] <= (WDATA[31:0] & wmask) | (int_db[15:0] & ~wmask);
+            int_db[31:0] <= (WDATA[31:0] & wmask) | (int_db[31:0] & ~wmask);
+    end
+end
+
+// int_F[31:0]
+always @(posedge ACLK) begin
+    if (ARESET)
+        int_F[31:0] <= 0;
+    else if (ACLK_EN) begin
+        if (w_hs && waddr == ADDR_F_DATA_0)
+            int_F[31:0] <= (WDATA[31:0] & wmask) | (int_F[31:0] & ~wmask);
+    end
+end
+
+// int_C[31:0]
+always @(posedge ACLK) begin
+    if (ARESET)
+        int_C[31:0] <= 0;
+    else if (ACLK_EN) begin
+        if (w_hs && waddr == ADDR_C_DATA_0)
+            int_C[31:0] <= (WDATA[31:0] & wmask) | (int_C[31:0] & ~wmask);
     end
 end
 
