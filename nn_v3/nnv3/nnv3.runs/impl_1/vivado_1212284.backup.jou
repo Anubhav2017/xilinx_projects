@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat May 14 15:50:15 2022
+# Process ID: 1212284
+# Current directory: /home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/impl_1
+# Command line: vivado -log nn_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source nn_wrapper.tcl -notrace
+# Log file: /home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/impl_1/nn_wrapper.vdi
+# Journal file: /home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source nn_wrapper.tcl -notrace

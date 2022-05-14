@@ -175,7 +175,9 @@ proc create_root_design { parentCell } {
   # Create instance: axi_cdma_0, and set properties
   set axi_cdma_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_cdma:4.1 axi_cdma_0 ]
   set_property -dict [ list \
+   CONFIG.C_INCLUDE_DRE {1} \
    CONFIG.C_INCLUDE_SG {0} \
+   CONFIG.C_M_AXI_MAX_BURST_LEN {32} \
  ] $axi_cdma_0
 
   # Create instance: axi_mem_intercon, and set properties

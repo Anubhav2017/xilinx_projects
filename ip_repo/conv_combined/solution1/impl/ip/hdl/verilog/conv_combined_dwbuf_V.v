@@ -6,8 +6,8 @@
 module conv_combined_dwbuf_V_ram (addr0, ce0, d0, we0, addr1, ce1, q1,  clk);
 
 parameter DWIDTH = 16;
-parameter AWIDTH = 10;
-parameter MEM_SIZE = 625;
+parameter AWIDTH = 8;
+parameter MEM_SIZE = 225;
 
 input[AWIDTH-1:0] addr0;
 input ce0;
@@ -55,8 +55,8 @@ module conv_combined_dwbuf_V(
     q1);
 
 parameter DataWidth = 32'd16;
-parameter AddressRange = 32'd625;
-parameter AddressWidth = 32'd10;
+parameter AddressRange = 32'd225;
+parameter AddressWidth = 32'd8;
 input reset;
 input clk;
 input[AddressWidth - 1:0] address0;

@@ -1,0 +1,945 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed May 11 00:12:30 2022
+# Process ID: 133630
+# Current directory: /home/anubhav/xilinx_projects
+# Command line: vivado
+# Log file: /home/anubhav/xilinx_projects/vivado.log
+# Journal file: /home/anubhav/xilinx_projects/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/anubhav/xilinx_projects/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:07 . Memory (MB): peak = 7468.688 ; gain = 155.430 ; free physical = 22179 ; free virtual = 29358
+open_bd_design {/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.srcs/sources_1/bd/nn/nn.bd}
+Reading block design file </home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.srcs/sources_1/bd/nn/nn.bd>...
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_mem_intercon
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - fcc_dx
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - fcc_dy
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - fcc_x
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - fcc_y
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - conv_dy
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - conv_y
+Adding component instance block -- xilinx.com:hls:conv_combined:1.0 - conv_combined_0
+Adding component instance block -- xilinx.com:hls:relu_combined:1.0 - relu_combined_0
+Adding component instance block -- xilinx.com:hls:fcc_combined:1.0 - fcc_combined_0
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - relu_dy
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - relu_y
+Adding component instance block -- xilinx.com:ip:axi_bram_ctrl:4.1 - axi_bram_ctrl_0
+Adding component instance block -- xilinx.com:ip:axi_cdma:4.1 - axi_cdma_0
+Adding component instance block -- xilinx.com:ip:axi_bram_ctrl:4.1 - axi_bram_ctrl_1
+Successfully read diagram <nn> from block design file </home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.srcs/sources_1/bd/nn/nn.bd>
+open_bd_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:05 . Memory (MB): peak = 8707.551 ; gain = 1220.719 ; free physical = 22018 ; free virtual = 29184
+update_compile_order -fileset sources_1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [Coretcl 2-12] '/processing_system7_0' selected.
+INFO: [Coretcl 2-12] '/processing_system7_0' selected.
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+set_property -dict [list CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Assume_Synchronous_Clk {true} CONFIG.Write_Depth_A {128} CONFIG.Register_PortA_Output_of_Memory_Primitives {true} CONFIG.Register_PortB_Output_of_Memory_Primitives {true} CONFIG.Use_RSTA_Pin {false} CONFIG.Use_RSTB_Pin {false} CONFIG.use_bram_block {Stand_Alone} CONFIG.EN_SAFETY_CKT {false}] [get_bd_cells relu_y]
+endgroup
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+set_property -dict [list CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Assume_Synchronous_Clk {true} CONFIG.Write_Width_A {16} CONFIG.Write_Depth_A {256} CONFIG.Read_Width_A {16} CONFIG.Write_Width_B {32} CONFIG.Read_Width_B {32} CONFIG.Register_PortA_Output_of_Memory_Primitives {true} CONFIG.Register_PortB_Output_of_Memory_Primitives {true} CONFIG.Use_RSTA_Pin {false} CONFIG.Use_RSTB_Pin {false} CONFIG.use_bram_block {Stand_Alone} CONFIG.EN_SAFETY_CKT {false}] [get_bd_cells relu_dy]
+endgroup
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+set_property -dict [list CONFIG.Write_Width_A {16} CONFIG.Read_Width_A {16} CONFIG.Write_Width_B {32} CONFIG.Read_Width_B {32}] [get_bd_cells relu_y]
+endgroup
+validate_bd_design
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /fcc_y/BRAM_PORTB(OTHER) and /conv_combined_0/x_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /fcc_dy/BRAM_PORTB(OTHER) and /conv_combined_0/dx_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /conv_y/BRAM_PORTA(OTHER) and /conv_combined_0/y_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /conv_dy/BRAM_PORTA(OTHER) and /conv_combined_0/dy_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /conv_y/BRAM_PORTB(OTHER) and /relu_combined_0/x_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /conv_dy/BRAM_PORTB(OTHER) and /relu_combined_0/dx_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /relu_y/BRAM_PORTA(OTHER) and /relu_combined_0/y_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /relu_dy/BRAM_PORTA(OTHER) and /relu_combined_0/dy_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /fcc_x/BRAM_PORTA(OTHER) and /fcc_combined_0/x_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /fcc_dx/BRAM_PORTB(OTHER) and /fcc_combined_0/dx_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /fcc_y/BRAM_PORTA(OTHER) and /fcc_combined_0/y_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /fcc_dy/BRAM_PORTA(OTHER) and /fcc_combined_0/dy_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /fcc_dx/BRAM_PORTA(OTHER) and /axi_bram_ctrl_0/BRAM_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /fcc_x/BRAM_PORTB(OTHER) and /axi_bram_ctrl_0/BRAM_PORTB(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /relu_dy/BRAM_PORTB(OTHER) and /axi_bram_ctrl_1/BRAM_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /relu_y/BRAM_PORTB(OTHER) and /axi_bram_ctrl_1/BRAM_PORTB(BRAM_CTRL)
+validate_bd_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:14 . Memory (MB): peak = 9355.184 ; gain = 0.000 ; free physical = 21750 ; free virtual = 28881
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+save_bd_design
+Wrote  : </home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.srcs/sources_1/bd/nn/nn.bd> 
+Wrote  : </home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.srcs/sources_1/bd/nn/ui/bd_34476740.ui> 
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+set_property -dict [list CONFIG.Write_Width_A {16} CONFIG.Write_Depth_A {8192} CONFIG.Read_Width_A {16} CONFIG.Write_Width_B {16} CONFIG.Read_Width_B {16}] [get_bd_cells fcc_x]
+endgroup
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+set_property -dict [list CONFIG.Write_Width_B {32} CONFIG.Read_Width_B {32}] [get_bd_cells fcc_x]
+endgroup
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+save_bd_design
+Wrote  : </home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.srcs/sources_1/bd/nn/nn.bd> 
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+set_property -dict [list CONFIG.Write_Depth_A {2048} CONFIG.Write_Width_B {32} CONFIG.Read_Width_B {32}] [get_bd_cells fcc_x]
+endgroup
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+endgroup
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+delete_bd_objs [get_bd_intf_nets axi_bram_ctrl_0_BRAM_PORTA]
+delete_bd_objs [get_bd_intf_nets fcc_combined_0_dx_PORTA]
+connect_bd_intf_net [get_bd_intf_pins axi_bram_ctrl_0/BRAM_PORTA] [get_bd_intf_pins fcc_dx/BRAM_PORTB]
+apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "/fcc_dx" }  [get_bd_intf_pins fcc_combined_0/dx_PORTA]
+regenerate_bd_layout
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+set_property -dict [list CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Assume_Synchronous_Clk {true} CONFIG.Write_Width_A {16} CONFIG.Read_Width_A {16} CONFIG.Write_Width_B {32} CONFIG.Read_Width_B {32} CONFIG.Register_PortA_Output_of_Memory_Primitives {true} CONFIG.Register_PortB_Output_of_Memory_Primitives {true} CONFIG.Use_RSTA_Pin {false} CONFIG.Use_RSTB_Pin {false} CONFIG.use_bram_block {Stand_Alone} CONFIG.EN_SAFETY_CKT {false}] [get_bd_cells fcc_dx]
+endgroup
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+set_property -dict [list CONFIG.Assume_Synchronous_Clk {true}] [get_bd_cells fcc_x]
+endgroup
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+endgroup
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+endgroup
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property range 4K [get_bd_addr_segs {fcc_combined_0/Data_m_axi_gmem/SEG_axi_bram_ctrl_1_Mem0}]
+save_bd_design
+Wrote  : </home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.srcs/sources_1/bd/nn/nn.bd> 
+Wrote  : </home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.srcs/sources_1/bd/nn/ui/bd_34476740.ui> 
+set_property range 4K [get_bd_addr_segs {conv_combined_0/Data_m_axi_gmem/SEG_axi_bram_ctrl_1_Mem0}]
+set_property range 4K [get_bd_addr_segs {axi_cdma_0/Data/SEG_axi_bram_ctrl_1_Mem0}]
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+set_property -dict [list CONFIG.Write_Depth_A {1024} CONFIG.Write_Width_B {32} CONFIG.Read_Width_B {32}] [get_bd_cells relu_dy]
+endgroup
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+set_property -dict [list CONFIG.Write_Depth_A {1024} CONFIG.Write_Width_B {32} CONFIG.Read_Width_B {32}] [get_bd_cells relu_y]
+endgroup
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+endgroup
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+save_bd_design
+Wrote  : </home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.srcs/sources_1/bd/nn/nn.bd> 
+reset_run nn_relu_combined_0_bram_0_synth_1
+reset_run nn_relu_combined_0_bram_0_0_synth_1
+reset_run nn_fcc_combined_0_bram_0_synth_1
+reset_run nn_fcc_combined_0_bram_1_0_synth_1
+reset_run synth_1
+launch_runs impl_1 -jobs 10
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /fcc_y/BRAM_PORTB(OTHER) and /conv_combined_0/x_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /fcc_dy/BRAM_PORTB(OTHER) and /conv_combined_0/dx_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /conv_y/BRAM_PORTA(OTHER) and /conv_combined_0/y_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /conv_dy/BRAM_PORTA(OTHER) and /conv_combined_0/dy_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /conv_y/BRAM_PORTB(OTHER) and /relu_combined_0/x_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /conv_dy/BRAM_PORTB(OTHER) and /relu_combined_0/dx_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /relu_y/BRAM_PORTA(OTHER) and /relu_combined_0/y_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /relu_dy/BRAM_PORTA(OTHER) and /relu_combined_0/dy_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /fcc_x/BRAM_PORTA(OTHER) and /fcc_combined_0/x_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /fcc_dx/BRAM_PORTA(OTHER) and /fcc_combined_0/dx_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /fcc_y/BRAM_PORTA(OTHER) and /fcc_combined_0/y_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /fcc_dy/BRAM_PORTA(OTHER) and /fcc_combined_0/dy_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /fcc_dx/BRAM_PORTB(OTHER) and /axi_bram_ctrl_0/BRAM_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /fcc_x/BRAM_PORTB(OTHER) and /axi_bram_ctrl_0/BRAM_PORTB(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /relu_dy/BRAM_PORTB(OTHER) and /axi_bram_ctrl_1/BRAM_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /relu_y/BRAM_PORTB(OTHER) and /axi_bram_ctrl_1/BRAM_PORTB(BRAM_CTRL)
+Wrote  : </home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.srcs/sources_1/bd/nn/nn.bd> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/s00_couplers/auto_us/s_axi_arlock'(1) to pin: '/axi_mem_intercon/s00_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/s00_couplers/auto_us/s_axi_awlock'(1) to pin: '/axi_mem_intercon/s00_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/s01_couplers/auto_us/s_axi_arlock'(1) to pin: '/axi_mem_intercon/s01_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/s01_couplers/auto_us/s_axi_awlock'(1) to pin: '/axi_mem_intercon/s01_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_y/addrb'(9) to pin: '/axi_bram_ctrl_1/bram_addr_b'(12) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_y/web'(1) to pin: '/axi_bram_ctrl_1/bram_we_b'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_x/addrb'(10) to pin: '/axi_bram_ctrl_0/bram_addr_b'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_x/web'(1) to pin: '/axi_bram_ctrl_0/bram_we_b'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dy/addra'(11) to pin: '/fcc_combined_0/dy_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dy/wea'(1) to pin: '/fcc_combined_0/dy_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dy/addrb'(11) to pin: '/conv_combined_0/dx_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dy/web'(1) to pin: '/conv_combined_0/dx_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_x/addra'(11) to pin: '/fcc_combined_0/x_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_x/wea'(1) to pin: '/fcc_combined_0/x_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_y/addrb'(11) to pin: '/conv_combined_0/x_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_y/web'(1) to pin: '/conv_combined_0/x_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/axi_mem_intercon/M00_AXI_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to pin: '/axi_mem_intercon/M00_AXI_wid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/axi_mem_intercon/M00_AXI_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_y/addra'(11) to pin: '/fcc_combined_0/y_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_y/wea'(1) to pin: '/fcc_combined_0/y_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_dy/addra'(13) to pin: '/conv_combined_0/dy_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_dy/wea'(1) to pin: '/conv_combined_0/dy_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_y/addra'(13) to pin: '/conv_combined_0/y_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_y/wea'(1) to pin: '/conv_combined_0/y_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_dy/addrb'(13) to pin: '/relu_combined_0/dx_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_dy/web'(1) to pin: '/relu_combined_0/dx_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_y/addrb'(13) to pin: '/relu_combined_0/x_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_y/web'(1) to pin: '/relu_combined_0/x_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_y/wea'(1) to pin: '/relu_combined_0/y_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_y/addra'(10) to pin: '/relu_combined_0/y_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_dy/wea'(1) to pin: '/relu_combined_0/dy_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_dy/addra'(10) to pin: '/relu_combined_0/dy_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_dy/addrb'(9) to pin: '/axi_bram_ctrl_1/bram_addr_a'(12) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_dy/web'(1) to pin: '/axi_bram_ctrl_1/bram_we_a'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dx/web'(1) to pin: '/axi_bram_ctrl_0/bram_we_a'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dx/addrb'(10) to pin: '/axi_bram_ctrl_0/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dx/addra'(11) to pin: '/fcc_combined_0/dx_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dx/wea'(1) to pin: '/fcc_combined_0/dx_WEN_A'(2) - Only lower order bits will be connected.
+VHDL Output written to : /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/synth/nn.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/s00_couplers/auto_us/s_axi_arlock'(1) to pin: '/axi_mem_intercon/s00_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/s00_couplers/auto_us/s_axi_awlock'(1) to pin: '/axi_mem_intercon/s00_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/s01_couplers/auto_us/s_axi_arlock'(1) to pin: '/axi_mem_intercon/s01_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/s01_couplers/auto_us/s_axi_awlock'(1) to pin: '/axi_mem_intercon/s01_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_y/addrb'(9) to pin: '/axi_bram_ctrl_1/bram_addr_b'(12) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_y/web'(1) to pin: '/axi_bram_ctrl_1/bram_we_b'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_x/addrb'(10) to pin: '/axi_bram_ctrl_0/bram_addr_b'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_x/web'(1) to pin: '/axi_bram_ctrl_0/bram_we_b'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dy/addra'(11) to pin: '/fcc_combined_0/dy_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dy/wea'(1) to pin: '/fcc_combined_0/dy_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dy/addrb'(11) to pin: '/conv_combined_0/dx_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dy/web'(1) to pin: '/conv_combined_0/dx_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_x/addra'(11) to pin: '/fcc_combined_0/x_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_x/wea'(1) to pin: '/fcc_combined_0/x_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_y/addrb'(11) to pin: '/conv_combined_0/x_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_y/web'(1) to pin: '/conv_combined_0/x_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/axi_mem_intercon/M00_AXI_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to pin: '/axi_mem_intercon/M00_AXI_wid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/axi_mem_intercon/M00_AXI_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_y/addra'(11) to pin: '/fcc_combined_0/y_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_y/wea'(1) to pin: '/fcc_combined_0/y_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_dy/addra'(13) to pin: '/conv_combined_0/dy_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_dy/wea'(1) to pin: '/conv_combined_0/dy_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_y/addra'(13) to pin: '/conv_combined_0/y_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_y/wea'(1) to pin: '/conv_combined_0/y_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_dy/addrb'(13) to pin: '/relu_combined_0/dx_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_dy/web'(1) to pin: '/relu_combined_0/dx_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_y/addrb'(13) to pin: '/relu_combined_0/x_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_y/web'(1) to pin: '/relu_combined_0/x_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_y/wea'(1) to pin: '/relu_combined_0/y_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_y/addra'(10) to pin: '/relu_combined_0/y_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_dy/wea'(1) to pin: '/relu_combined_0/dy_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_dy/addra'(10) to pin: '/relu_combined_0/dy_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_dy/addrb'(9) to pin: '/axi_bram_ctrl_1/bram_addr_a'(12) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_dy/web'(1) to pin: '/axi_bram_ctrl_1/bram_we_a'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dx/web'(1) to pin: '/axi_bram_ctrl_0/bram_we_a'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dx/addrb'(10) to pin: '/axi_bram_ctrl_0/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dx/addra'(11) to pin: '/fcc_combined_0/dx_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dx/wea'(1) to pin: '/fcc_combined_0/dx_WEN_A'(2) - Only lower order bits will be connected.
+VHDL Output written to : /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/sim/nn.v
+VHDL Output written to : /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/hdl/nn_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fcc_dx .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fcc_x .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block relu_dy .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block relu_y .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_1 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ip/nn_auto_us_0_1/nn_auto_us_0_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s00_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ip/nn_auto_us_1_1/nn_auto_us_1_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s01_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ip/nn_auto_us_2/nn_auto_us_2_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s02_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ip/nn_auto_pc_0_1/nn_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ip/nn_auto_ds_0/nn_auto_ds_0_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m01_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ip/nn_auto_ds_1/nn_auto_ds_1_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m02_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ip/nn_auto_pc_1_1/nn_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/hw_handoff/nn.hwh
+Generated Block Design Tcl file /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/hw_handoff/nn_bd.tcl
+Generated Hardware Definition File /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/synth/nn.hwdef
+INFO: [IP_Flow 19-7066] Running IP cache check for IP nn_auto_ds_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP nn_auto_ds_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP nn_auto_pc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP nn_auto_pc_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP nn_auto_us_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP nn_auto_us_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP nn_auto_us_2
+INFO: [IP_Flow 19-7066] Running IP cache check for IP nn_axi_bram_ctrl_1_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP nn_fcc_combined_0_bram_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP nn_fcc_combined_0_bram_1_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP nn_relu_combined_0_bram_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP nn_relu_combined_0_bram_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP nn_xbar_0
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP nn_auto_ds_0, cache-ID = 74357c86e5bfaede; cache size = 55.288 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP nn_auto_pc_0, cache-ID = 1819076c0c5cdde7; cache size = 55.288 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP nn_auto_pc_1, cache-ID = 63fe06e46bd5fc87; cache size = 55.288 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP nn_auto_us_0, cache-ID = d0f923f3e1090939; cache size = 55.288 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP nn_auto_us_1, cache-ID = d0f923f3e1090939; cache size = 55.288 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP nn_auto_us_2, cache-ID = d0f923f3e1090939; cache size = 55.288 MB.
+[Wed May 11 01:37:33 2022] Launched nn_xbar_0_synth_1, nn_relu_combined_0_bram_0_synth_1, nn_relu_combined_0_bram_0_0_synth_1, nn_fcc_combined_0_bram_0_synth_1, nn_fcc_combined_0_bram_1_0_synth_1, nn_axi_bram_ctrl_1_1_synth_1, nn_auto_ds_1_synth_1, synth_1...
+Run output will be captured here:
+nn_xbar_0_synth_1: /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/nn_xbar_0_synth_1/runme.log
+nn_relu_combined_0_bram_0_synth_1: /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/nn_relu_combined_0_bram_0_synth_1/runme.log
+nn_relu_combined_0_bram_0_0_synth_1: /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/nn_relu_combined_0_bram_0_0_synth_1/runme.log
+nn_fcc_combined_0_bram_0_synth_1: /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/nn_fcc_combined_0_bram_0_synth_1/runme.log
+nn_fcc_combined_0_bram_1_0_synth_1: /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/nn_fcc_combined_0_bram_1_0_synth_1/runme.log
+nn_axi_bram_ctrl_1_1_synth_1: /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/nn_axi_bram_ctrl_1_1_synth_1/runme.log
+nn_auto_ds_1_synth_1: /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/nn_auto_ds_1_synth_1/runme.log
+synth_1: /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/synth_1/runme.log
+[Wed May 11 01:37:33 2022] Launched impl_1...
+Run output will be captured here: /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:26 ; elapsed = 00:00:22 . Memory (MB): peak = 9530.152 ; gain = 112.000 ; free physical = 21373 ; free virtual = 28550
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Wed May 11 01:42:12 2022] Launched impl_1...
+Run output will be captured here: /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/impl_1/runme.log
+file copy -force /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/impl_1/nn_wrapper.bit /home/anubhav/xilinx_projects/nn_v2/nn_v2/nnv2.bit
+set_property offset 0xC0000000 [get_bd_addr_segs {fcc_combined_0/Data_m_axi_gmem/SEG_axi_bram_ctrl_0_Mem0}]
+set_property offset 0xC0000000 [get_bd_addr_segs {conv_combined_0/Data_m_axi_gmem/SEG_axi_bram_ctrl_0_Mem0}]
+set_property offset 0xC2000000 [get_bd_addr_segs {conv_combined_0/Data_m_axi_gmem/SEG_axi_bram_ctrl_1_Mem0}]
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/impl/ip/component.xml. It will be created.
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/anubhav/xilinx_projects/ip_repo'.
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:hls:conv_combined:1.0 [get_ips  nn_conv_combined_0_1] -log ip_upgrade.log
+Upgrading '/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.srcs/sources_1/bd/nn/nn.bd'
+INFO: [IP_Flow 19-3422] Upgraded nn_conv_combined_0_1 (Conv_combined 1.0) from revision 2112498207 to revision 2112501778
+WARNING: [IP_Flow 19-4697] Upgrade has added interface 'dx_PORTB' (xilinx.com:interface:bram:1.0)
+WARNING: [IP_Flow 19-3670] Detected external interface differences while upgrading 'nn_conv_combined_0_1'.
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'dx_Addr_B'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'dx_Clk_B'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'dx_Din_B'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'dx_Dout_B'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'dx_EN_B'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'dx_Rst_B'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'dx_WEN_B'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'nn_conv_combined_0_1'. These changes may impact your design.
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'nn_conv_combined_0_1' has identified issues that may require user intervention. Please review the upgrade log '/home/anubhav/xilinx_projects/nn_v2/nn_v2/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+Wrote  : </home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.srcs/sources_1/bd/nn/nn.bd> 
+Wrote  : </home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.srcs/sources_1/bd/nn/ui/bd_34476740.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to '/home/anubhav/xilinx_projects/nn_v2/nn_v2/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips nn_conv_combined_0_1] -no_script -sync -force -quiet
+generate_target all [get_files  /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.srcs/sources_1/bd/nn/nn.bd]
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /conv_y/BRAM_PORTB(OTHER) and /relu_combined_0/x_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /conv_dy/BRAM_PORTB(OTHER) and /relu_combined_0/dx_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /relu_y/BRAM_PORTA(OTHER) and /relu_combined_0/y_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /relu_dy/BRAM_PORTA(OTHER) and /relu_combined_0/dy_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /fcc_x/BRAM_PORTA(OTHER) and /fcc_combined_0/x_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /fcc_dx/BRAM_PORTA(OTHER) and /fcc_combined_0/dx_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /fcc_y/BRAM_PORTA(OTHER) and /fcc_combined_0/y_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /fcc_dy/BRAM_PORTA(OTHER) and /fcc_combined_0/dy_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /fcc_dx/BRAM_PORTB(OTHER) and /axi_bram_ctrl_0/BRAM_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /fcc_x/BRAM_PORTB(OTHER) and /axi_bram_ctrl_0/BRAM_PORTB(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /relu_dy/BRAM_PORTB(OTHER) and /axi_bram_ctrl_1/BRAM_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /relu_y/BRAM_PORTB(OTHER) and /axi_bram_ctrl_1/BRAM_PORTB(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /fcc_y/BRAM_PORTB(OTHER) and /conv_combined_0/x_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /fcc_dy/BRAM_PORTB(OTHER) and /conv_combined_0/dx_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /conv_y/BRAM_PORTA(OTHER) and /conv_combined_0/y_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /conv_dy/BRAM_PORTA(OTHER) and /conv_combined_0/dy_PORTA(BRAM_CTRL)
+Wrote  : </home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.srcs/sources_1/bd/nn/nn.bd> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/s00_couplers/auto_us/s_axi_arlock'(1) to pin: '/axi_mem_intercon/s00_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/s00_couplers/auto_us/s_axi_awlock'(1) to pin: '/axi_mem_intercon/s00_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/s01_couplers/auto_us/s_axi_arlock'(1) to pin: '/axi_mem_intercon/s01_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/s01_couplers/auto_us/s_axi_awlock'(1) to pin: '/axi_mem_intercon/s01_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_y/addrb'(9) to pin: '/axi_bram_ctrl_1/bram_addr_b'(12) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_y/web'(1) to pin: '/axi_bram_ctrl_1/bram_we_b'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_x/addrb'(10) to pin: '/axi_bram_ctrl_0/bram_addr_b'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_x/web'(1) to pin: '/axi_bram_ctrl_0/bram_we_b'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dy/addra'(11) to pin: '/fcc_combined_0/dy_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dy/wea'(1) to pin: '/fcc_combined_0/dy_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dy/addrb'(11) to pin: '/conv_combined_0/dx_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dy/web'(1) to pin: '/conv_combined_0/dx_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_x/addra'(11) to pin: '/fcc_combined_0/x_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_x/wea'(1) to pin: '/fcc_combined_0/x_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_y/addrb'(11) to pin: '/conv_combined_0/x_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_y/web'(1) to pin: '/conv_combined_0/x_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/axi_mem_intercon/M00_AXI_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to pin: '/axi_mem_intercon/M00_AXI_wid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/axi_mem_intercon/M00_AXI_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_y/addra'(11) to pin: '/fcc_combined_0/y_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_y/wea'(1) to pin: '/fcc_combined_0/y_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_dy/addra'(13) to pin: '/conv_combined_0/dy_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_dy/wea'(1) to pin: '/conv_combined_0/dy_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_y/addra'(13) to pin: '/conv_combined_0/y_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_y/wea'(1) to pin: '/conv_combined_0/y_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_dy/addrb'(13) to pin: '/relu_combined_0/dx_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_dy/web'(1) to pin: '/relu_combined_0/dx_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_y/addrb'(13) to pin: '/relu_combined_0/x_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_y/web'(1) to pin: '/relu_combined_0/x_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_y/wea'(1) to pin: '/relu_combined_0/y_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_y/addra'(10) to pin: '/relu_combined_0/y_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_dy/wea'(1) to pin: '/relu_combined_0/dy_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_dy/addra'(10) to pin: '/relu_combined_0/dy_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_dy/addrb'(9) to pin: '/axi_bram_ctrl_1/bram_addr_a'(12) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_dy/web'(1) to pin: '/axi_bram_ctrl_1/bram_we_a'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dx/web'(1) to pin: '/axi_bram_ctrl_0/bram_we_a'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dx/addrb'(10) to pin: '/axi_bram_ctrl_0/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dx/addra'(11) to pin: '/fcc_combined_0/dx_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dx/wea'(1) to pin: '/fcc_combined_0/dx_WEN_A'(2) - Only lower order bits will be connected.
+VHDL Output written to : /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/synth/nn.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/s00_couplers/auto_us/s_axi_arlock'(1) to pin: '/axi_mem_intercon/s00_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/s00_couplers/auto_us/s_axi_awlock'(1) to pin: '/axi_mem_intercon/s00_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/s01_couplers/auto_us/s_axi_arlock'(1) to pin: '/axi_mem_intercon/s01_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/s01_couplers/auto_us/s_axi_awlock'(1) to pin: '/axi_mem_intercon/s01_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_y/addrb'(9) to pin: '/axi_bram_ctrl_1/bram_addr_b'(12) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_y/web'(1) to pin: '/axi_bram_ctrl_1/bram_we_b'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_x/addrb'(10) to pin: '/axi_bram_ctrl_0/bram_addr_b'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_x/web'(1) to pin: '/axi_bram_ctrl_0/bram_we_b'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dy/addra'(11) to pin: '/fcc_combined_0/dy_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dy/wea'(1) to pin: '/fcc_combined_0/dy_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dy/addrb'(11) to pin: '/conv_combined_0/dx_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dy/web'(1) to pin: '/conv_combined_0/dx_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_x/addra'(11) to pin: '/fcc_combined_0/x_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_x/wea'(1) to pin: '/fcc_combined_0/x_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_y/addrb'(11) to pin: '/conv_combined_0/x_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_y/web'(1) to pin: '/conv_combined_0/x_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/axi_mem_intercon/M00_AXI_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to pin: '/axi_mem_intercon/M00_AXI_wid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/axi_mem_intercon/M00_AXI_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_y/addra'(11) to pin: '/fcc_combined_0/y_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_y/wea'(1) to pin: '/fcc_combined_0/y_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_dy/addra'(13) to pin: '/conv_combined_0/dy_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_dy/wea'(1) to pin: '/conv_combined_0/dy_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_y/addra'(13) to pin: '/conv_combined_0/y_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_y/wea'(1) to pin: '/conv_combined_0/y_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_dy/addrb'(13) to pin: '/relu_combined_0/dx_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_dy/web'(1) to pin: '/relu_combined_0/dx_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_y/addrb'(13) to pin: '/relu_combined_0/x_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_y/web'(1) to pin: '/relu_combined_0/x_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_y/wea'(1) to pin: '/relu_combined_0/y_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_y/addra'(10) to pin: '/relu_combined_0/y_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_dy/wea'(1) to pin: '/relu_combined_0/dy_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_dy/addra'(10) to pin: '/relu_combined_0/dy_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_dy/addrb'(9) to pin: '/axi_bram_ctrl_1/bram_addr_a'(12) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_dy/web'(1) to pin: '/axi_bram_ctrl_1/bram_we_a'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dx/web'(1) to pin: '/axi_bram_ctrl_0/bram_we_a'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dx/addrb'(10) to pin: '/axi_bram_ctrl_0/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dx/addra'(11) to pin: '/fcc_combined_0/dx_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dx/wea'(1) to pin: '/fcc_combined_0/dx_WEN_A'(2) - Only lower order bits will be connected.
+VHDL Output written to : /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/sim/nn.v
+VHDL Output written to : /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/hdl/nn_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block conv_combined_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ip/nn_auto_us_0_1/nn_auto_us_0_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s00_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ip/nn_auto_us_1_1/nn_auto_us_1_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s01_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ip/nn_auto_us_2/nn_auto_us_2_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s02_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ip/nn_auto_pc_0_1/nn_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ip/nn_auto_ds_0/nn_auto_ds_0_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m01_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ip/nn_auto_ds_1/nn_auto_ds_1_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m02_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ip/nn_auto_pc_1_1/nn_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/hw_handoff/nn.hwh
+Generated Block Design Tcl file /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/hw_handoff/nn_bd.tcl
+Generated Hardware Definition File /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/synth/nn.hwdef
+generate_target: Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 9666.758 ; gain = 0.000 ; free physical = 15848 ; free virtual = 24835
+catch { config_ip_cache -export [get_ips -all nn_conv_combined_0_1] }
+catch { config_ip_cache -export [get_ips -all nn_auto_us_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP nn_auto_us_0, cache-ID = d0f923f3e1090939; cache size = 61.073 MB.
+catch { config_ip_cache -export [get_ips -all nn_auto_us_1] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP nn_auto_us_1, cache-ID = d0f923f3e1090939; cache size = 61.073 MB.
+catch { config_ip_cache -export [get_ips -all nn_auto_us_2] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP nn_auto_us_2, cache-ID = d0f923f3e1090939; cache size = 61.073 MB.
+catch { config_ip_cache -export [get_ips -all nn_auto_pc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP nn_auto_pc_0, cache-ID = 1819076c0c5cdde7; cache size = 61.073 MB.
+catch { config_ip_cache -export [get_ips -all nn_auto_ds_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP nn_auto_ds_0, cache-ID = 74357c86e5bfaede; cache size = 61.073 MB.
+catch { config_ip_cache -export [get_ips -all nn_auto_ds_1] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP nn_auto_ds_1, cache-ID = 3b92185816dcb6ff; cache size = 61.073 MB.
+catch { config_ip_cache -export [get_ips -all nn_auto_pc_1] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP nn_auto_pc_1, cache-ID = 63fe06e46bd5fc87; cache size = 61.073 MB.
+export_ip_user_files -of_objects [get_files /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.srcs/sources_1/bd/nn/nn.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.srcs/sources_1/bd/nn/nn.bd]
+launch_runs nn_conv_combined_0_1_synth_1 -jobs 10
+[Thu May 12 12:59:26 2022] Launched nn_conv_combined_0_1_synth_1...
+Run output will be captured here: /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/nn_conv_combined_0_1_synth_1/runme.log
+export_simulation -of_objects [get_files /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.srcs/sources_1/bd/nn/nn.bd] -directory /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.ip_user_files/sim_scripts -ip_user_files_dir /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.ip_user_files -ipstatic_source_dir /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.cache/compile_simlib/modelsim} {questa=/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.cache/compile_simlib/questa} {ies=/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.cache/compile_simlib/ies} {xcelium=/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.cache/compile_simlib/xcelium} {vcs=/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.cache/compile_simlib/vcs} {riviera=/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/impl/ip/component.xml. It will be created.
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/anubhav/xilinx_projects/ip_repo'.
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:hls:conv_combined:1.0 [get_ips  nn_conv_combined_0_1] -log ip_upgrade.log
+Upgrading '/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.srcs/sources_1/bd/nn/nn.bd'
+INFO: [IP_Flow 19-3422] Upgraded nn_conv_combined_0_1 (Conv_combined 1.0) from revision 2112501778 to revision 2112501782
+WARNING: [IP_Flow 19-4699] Upgrade has removed interface 'dx_PORTB'
+WARNING: [IP_Flow 19-3670] Detected external interface differences while upgrading 'nn_conv_combined_0_1'.
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'dx_Addr_B'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'dx_Clk_B'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'dx_Din_B'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'dx_Dout_B'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'dx_EN_B'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'dx_Rst_B'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'dx_WEN_B'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'nn_conv_combined_0_1'. These changes may impact your design.
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'nn_conv_combined_0_1' has identified issues that may require user intervention. Please review the upgrade log '/home/anubhav/xilinx_projects/nn_v2/nn_v2/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+Wrote  : </home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.srcs/sources_1/bd/nn/nn.bd> 
+Wrote  : </home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.srcs/sources_1/bd/nn/ui/bd_34476740.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to '/home/anubhav/xilinx_projects/nn_v2/nn_v2/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips nn_conv_combined_0_1] -no_script -sync -force -quiet
+generate_target all [get_files  /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.srcs/sources_1/bd/nn/nn.bd]
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /conv_y/BRAM_PORTB(OTHER) and /relu_combined_0/x_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /conv_dy/BRAM_PORTB(OTHER) and /relu_combined_0/dx_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /relu_y/BRAM_PORTA(OTHER) and /relu_combined_0/y_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /relu_dy/BRAM_PORTA(OTHER) and /relu_combined_0/dy_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /fcc_x/BRAM_PORTA(OTHER) and /fcc_combined_0/x_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /fcc_dx/BRAM_PORTA(OTHER) and /fcc_combined_0/dx_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /fcc_y/BRAM_PORTA(OTHER) and /fcc_combined_0/y_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /fcc_dy/BRAM_PORTA(OTHER) and /fcc_combined_0/dy_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /fcc_dx/BRAM_PORTB(OTHER) and /axi_bram_ctrl_0/BRAM_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /fcc_x/BRAM_PORTB(OTHER) and /axi_bram_ctrl_0/BRAM_PORTB(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /relu_dy/BRAM_PORTB(OTHER) and /axi_bram_ctrl_1/BRAM_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /relu_y/BRAM_PORTB(OTHER) and /axi_bram_ctrl_1/BRAM_PORTB(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /fcc_y/BRAM_PORTB(OTHER) and /conv_combined_0/x_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /fcc_dy/BRAM_PORTB(OTHER) and /conv_combined_0/dx_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /conv_y/BRAM_PORTA(OTHER) and /conv_combined_0/y_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /conv_dy/BRAM_PORTA(OTHER) and /conv_combined_0/dy_PORTA(BRAM_CTRL)
+Wrote  : </home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.srcs/sources_1/bd/nn/nn.bd> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/s00_couplers/auto_us/s_axi_arlock'(1) to pin: '/axi_mem_intercon/s00_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/s00_couplers/auto_us/s_axi_awlock'(1) to pin: '/axi_mem_intercon/s00_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/s01_couplers/auto_us/s_axi_arlock'(1) to pin: '/axi_mem_intercon/s01_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/s01_couplers/auto_us/s_axi_awlock'(1) to pin: '/axi_mem_intercon/s01_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_y/addrb'(9) to pin: '/axi_bram_ctrl_1/bram_addr_b'(12) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_y/web'(1) to pin: '/axi_bram_ctrl_1/bram_we_b'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_x/addrb'(10) to pin: '/axi_bram_ctrl_0/bram_addr_b'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_x/web'(1) to pin: '/axi_bram_ctrl_0/bram_we_b'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dy/addra'(11) to pin: '/fcc_combined_0/dy_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dy/wea'(1) to pin: '/fcc_combined_0/dy_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dy/addrb'(11) to pin: '/conv_combined_0/dx_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dy/web'(1) to pin: '/conv_combined_0/dx_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_x/addra'(11) to pin: '/fcc_combined_0/x_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_x/wea'(1) to pin: '/fcc_combined_0/x_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_y/addrb'(11) to pin: '/conv_combined_0/x_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_y/web'(1) to pin: '/conv_combined_0/x_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/axi_mem_intercon/M00_AXI_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to pin: '/axi_mem_intercon/M00_AXI_wid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/axi_mem_intercon/M00_AXI_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_y/addra'(11) to pin: '/fcc_combined_0/y_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_y/wea'(1) to pin: '/fcc_combined_0/y_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_dy/addra'(13) to pin: '/conv_combined_0/dy_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_dy/wea'(1) to pin: '/conv_combined_0/dy_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_y/addra'(13) to pin: '/conv_combined_0/y_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_y/wea'(1) to pin: '/conv_combined_0/y_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_dy/addrb'(13) to pin: '/relu_combined_0/dx_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_dy/web'(1) to pin: '/relu_combined_0/dx_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_y/addrb'(13) to pin: '/relu_combined_0/x_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_y/web'(1) to pin: '/relu_combined_0/x_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_y/wea'(1) to pin: '/relu_combined_0/y_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_y/addra'(10) to pin: '/relu_combined_0/y_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_dy/wea'(1) to pin: '/relu_combined_0/dy_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_dy/addra'(10) to pin: '/relu_combined_0/dy_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_dy/addrb'(9) to pin: '/axi_bram_ctrl_1/bram_addr_a'(12) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_dy/web'(1) to pin: '/axi_bram_ctrl_1/bram_we_a'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dx/web'(1) to pin: '/axi_bram_ctrl_0/bram_we_a'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dx/addrb'(10) to pin: '/axi_bram_ctrl_0/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dx/addra'(11) to pin: '/fcc_combined_0/dx_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dx/wea'(1) to pin: '/fcc_combined_0/dx_WEN_A'(2) - Only lower order bits will be connected.
+VHDL Output written to : /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/synth/nn.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/s00_couplers/auto_us/s_axi_arlock'(1) to pin: '/axi_mem_intercon/s00_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/s00_couplers/auto_us/s_axi_awlock'(1) to pin: '/axi_mem_intercon/s00_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/s01_couplers/auto_us/s_axi_arlock'(1) to pin: '/axi_mem_intercon/s01_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/s01_couplers/auto_us/s_axi_awlock'(1) to pin: '/axi_mem_intercon/s01_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_y/addrb'(9) to pin: '/axi_bram_ctrl_1/bram_addr_b'(12) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_y/web'(1) to pin: '/axi_bram_ctrl_1/bram_we_b'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_x/addrb'(10) to pin: '/axi_bram_ctrl_0/bram_addr_b'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_x/web'(1) to pin: '/axi_bram_ctrl_0/bram_we_b'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dy/addra'(11) to pin: '/fcc_combined_0/dy_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dy/wea'(1) to pin: '/fcc_combined_0/dy_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dy/addrb'(11) to pin: '/conv_combined_0/dx_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dy/web'(1) to pin: '/conv_combined_0/dx_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_x/addra'(11) to pin: '/fcc_combined_0/x_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_x/wea'(1) to pin: '/fcc_combined_0/x_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_y/addrb'(11) to pin: '/conv_combined_0/x_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_y/web'(1) to pin: '/conv_combined_0/x_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/axi_mem_intercon/M00_AXI_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to pin: '/axi_mem_intercon/M00_AXI_wid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/axi_mem_intercon/M00_AXI_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_y/addra'(11) to pin: '/fcc_combined_0/y_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_y/wea'(1) to pin: '/fcc_combined_0/y_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_dy/addra'(13) to pin: '/conv_combined_0/dy_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_dy/wea'(1) to pin: '/conv_combined_0/dy_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_y/addra'(13) to pin: '/conv_combined_0/y_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_y/wea'(1) to pin: '/conv_combined_0/y_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_dy/addrb'(13) to pin: '/relu_combined_0/dx_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_dy/web'(1) to pin: '/relu_combined_0/dx_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_y/addrb'(13) to pin: '/relu_combined_0/x_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_y/web'(1) to pin: '/relu_combined_0/x_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_y/wea'(1) to pin: '/relu_combined_0/y_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_y/addra'(10) to pin: '/relu_combined_0/y_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_dy/wea'(1) to pin: '/relu_combined_0/dy_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_dy/addra'(10) to pin: '/relu_combined_0/dy_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_dy/addrb'(9) to pin: '/axi_bram_ctrl_1/bram_addr_a'(12) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_dy/web'(1) to pin: '/axi_bram_ctrl_1/bram_we_a'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dx/web'(1) to pin: '/axi_bram_ctrl_0/bram_we_a'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dx/addrb'(10) to pin: '/axi_bram_ctrl_0/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dx/addra'(11) to pin: '/fcc_combined_0/dx_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dx/wea'(1) to pin: '/fcc_combined_0/dx_WEN_A'(2) - Only lower order bits will be connected.
+VHDL Output written to : /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/sim/nn.v
+VHDL Output written to : /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/hdl/nn_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block conv_combined_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ip/nn_auto_us_0_1/nn_auto_us_0_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s00_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ip/nn_auto_us_1_1/nn_auto_us_1_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s01_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ip/nn_auto_us_2/nn_auto_us_2_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s02_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ip/nn_auto_pc_0_1/nn_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ip/nn_auto_ds_0/nn_auto_ds_0_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m01_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ip/nn_auto_ds_1/nn_auto_ds_1_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m02_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ip/nn_auto_pc_1_1/nn_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/hw_handoff/nn.hwh
+Generated Block Design Tcl file /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/hw_handoff/nn_bd.tcl
+Generated Hardware Definition File /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/synth/nn.hwdef
+generate_target: Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 9783.754 ; gain = 0.000 ; free physical = 15368 ; free virtual = 24372
+catch { config_ip_cache -export [get_ips -all nn_conv_combined_0_1] }
+catch { config_ip_cache -export [get_ips -all nn_auto_us_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP nn_auto_us_0, cache-ID = d0f923f3e1090939; cache size = 74.773 MB.
+catch { config_ip_cache -export [get_ips -all nn_auto_us_1] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP nn_auto_us_1, cache-ID = d0f923f3e1090939; cache size = 74.773 MB.
+catch { config_ip_cache -export [get_ips -all nn_auto_us_2] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP nn_auto_us_2, cache-ID = d0f923f3e1090939; cache size = 74.773 MB.
+catch { config_ip_cache -export [get_ips -all nn_auto_pc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP nn_auto_pc_0, cache-ID = 1819076c0c5cdde7; cache size = 74.773 MB.
+catch { config_ip_cache -export [get_ips -all nn_auto_ds_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP nn_auto_ds_0, cache-ID = 74357c86e5bfaede; cache size = 74.773 MB.
+catch { config_ip_cache -export [get_ips -all nn_auto_ds_1] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP nn_auto_ds_1, cache-ID = 3b92185816dcb6ff; cache size = 74.773 MB.
+catch { config_ip_cache -export [get_ips -all nn_auto_pc_1] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP nn_auto_pc_1, cache-ID = 63fe06e46bd5fc87; cache size = 74.773 MB.
+export_ip_user_files -of_objects [get_files /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.srcs/sources_1/bd/nn/nn.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.srcs/sources_1/bd/nn/nn.bd]
+launch_runs nn_conv_combined_0_1_synth_1 -jobs 10
+[Thu May 12 13:03:08 2022] Launched nn_conv_combined_0_1_synth_1...
+Run output will be captured here: /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/nn_conv_combined_0_1_synth_1/runme.log
+export_simulation -of_objects [get_files /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.srcs/sources_1/bd/nn/nn.bd] -directory /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.ip_user_files/sim_scripts -ip_user_files_dir /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.ip_user_files -ipstatic_source_dir /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.cache/compile_simlib/modelsim} {questa=/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.cache/compile_simlib/questa} {ies=/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.cache/compile_simlib/ies} {xcelium=/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.cache/compile_simlib/xcelium} {vcs=/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.cache/compile_simlib/vcs} {riviera=/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+[Thu May 12 13:03:47 2022] Launched nn_conv_combined_0_1_synth_1...
+Run output will be captured here: /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/nn_conv_combined_0_1_synth_1/runme.log
+[Thu May 12 13:03:47 2022] Launched synth_1...
+Run output will be captured here: /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Thu May 12 13:05:58 2022] Launched impl_1...
+Run output will be captured here: /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Thu May 12 13:09:40 2022] Launched impl_1...
+Run output will be captured here: /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/impl_1/runme.log
+file copy -force /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/impl_1/nn_wrapper.bit /home/anubhav/xilinx_projects/nn_v2/nn_v2/nnv2.bit
+file copy -force /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/impl_1/nn_wrapper.bit /home/anubhav/xilinx_projects/nn_v2/nn_v2/nnv2.bit
+file copy -force /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/impl_1/nn_wrapper.bit /home/anubhav/xilinx_projects/nn_v2/nn_v2/nnv2.bit
+startgroup
+set_property -dict [list CONFIG.C_M_AXI_MAX_BURST_LEN {32} CONFIG.C_INCLUDE_DRE {1}] [get_bd_cells axi_cdma_0]
+endgroup
+validate_bd_design
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /conv_y/BRAM_PORTB(OTHER) and /relu_combined_0/x_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /conv_dy/BRAM_PORTB(OTHER) and /relu_combined_0/dx_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /relu_y/BRAM_PORTA(OTHER) and /relu_combined_0/y_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /relu_dy/BRAM_PORTA(OTHER) and /relu_combined_0/dy_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /fcc_x/BRAM_PORTA(OTHER) and /fcc_combined_0/x_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /fcc_dx/BRAM_PORTA(OTHER) and /fcc_combined_0/dx_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /fcc_y/BRAM_PORTA(OTHER) and /fcc_combined_0/y_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /fcc_dy/BRAM_PORTA(OTHER) and /fcc_combined_0/dy_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /fcc_dx/BRAM_PORTB(OTHER) and /axi_bram_ctrl_0/BRAM_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /fcc_x/BRAM_PORTB(OTHER) and /axi_bram_ctrl_0/BRAM_PORTB(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /relu_dy/BRAM_PORTB(OTHER) and /axi_bram_ctrl_1/BRAM_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /relu_y/BRAM_PORTB(OTHER) and /axi_bram_ctrl_1/BRAM_PORTB(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /fcc_y/BRAM_PORTB(OTHER) and /conv_combined_0/x_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /fcc_dy/BRAM_PORTB(OTHER) and /conv_combined_0/dx_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /conv_y/BRAM_PORTA(OTHER) and /conv_combined_0/y_PORTA(BRAM_CTRL)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /conv_dy/BRAM_PORTA(OTHER) and /conv_combined_0/dy_PORTA(BRAM_CTRL)
+validate_bd_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:19 . Memory (MB): peak = 10123.082 ; gain = 0.000 ; free physical = 13855 ; free virtual = 23474
+reset_run nn_axi_cdma_0_0_synth_1
+reset_run synth_1
+save_bd_design
+Wrote  : </home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.srcs/sources_1/bd/nn/nn.bd> 
+Wrote  : </home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.srcs/sources_1/bd/nn/ui/bd_34476740.ui> 
+launch_runs impl_1 -jobs 10
+INFO: [BD 41-1662] The design 'nn.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/s00_couplers/auto_us/s_axi_arlock'(1) to pin: '/axi_mem_intercon/s00_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/s00_couplers/auto_us/s_axi_awlock'(1) to pin: '/axi_mem_intercon/s00_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/s01_couplers/auto_us/s_axi_arlock'(1) to pin: '/axi_mem_intercon/s01_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/s01_couplers/auto_us/s_axi_awlock'(1) to pin: '/axi_mem_intercon/s01_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_y/addrb'(9) to pin: '/axi_bram_ctrl_1/bram_addr_b'(12) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_y/web'(1) to pin: '/axi_bram_ctrl_1/bram_we_b'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_x/addrb'(10) to pin: '/axi_bram_ctrl_0/bram_addr_b'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_x/web'(1) to pin: '/axi_bram_ctrl_0/bram_we_b'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dy/addra'(11) to pin: '/fcc_combined_0/dy_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dy/wea'(1) to pin: '/fcc_combined_0/dy_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dy/addrb'(11) to pin: '/conv_combined_0/dx_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dy/web'(1) to pin: '/conv_combined_0/dx_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_x/addra'(11) to pin: '/fcc_combined_0/x_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_x/wea'(1) to pin: '/fcc_combined_0/x_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_y/addrb'(11) to pin: '/conv_combined_0/x_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_y/web'(1) to pin: '/conv_combined_0/x_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/axi_mem_intercon/M00_AXI_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to pin: '/axi_mem_intercon/M00_AXI_wid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/axi_mem_intercon/M00_AXI_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_y/addra'(11) to pin: '/fcc_combined_0/y_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_y/wea'(1) to pin: '/fcc_combined_0/y_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_dy/addra'(13) to pin: '/conv_combined_0/dy_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_dy/wea'(1) to pin: '/conv_combined_0/dy_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_y/addra'(13) to pin: '/conv_combined_0/y_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_y/wea'(1) to pin: '/conv_combined_0/y_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_dy/addrb'(13) to pin: '/relu_combined_0/dx_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_dy/web'(1) to pin: '/relu_combined_0/dx_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_y/addrb'(13) to pin: '/relu_combined_0/x_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_y/web'(1) to pin: '/relu_combined_0/x_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_y/wea'(1) to pin: '/relu_combined_0/y_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_y/addra'(10) to pin: '/relu_combined_0/y_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_dy/wea'(1) to pin: '/relu_combined_0/dy_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_dy/addra'(10) to pin: '/relu_combined_0/dy_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_dy/addrb'(9) to pin: '/axi_bram_ctrl_1/bram_addr_a'(12) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_dy/web'(1) to pin: '/axi_bram_ctrl_1/bram_we_a'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dx/web'(1) to pin: '/axi_bram_ctrl_0/bram_we_a'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dx/addrb'(10) to pin: '/axi_bram_ctrl_0/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dx/addra'(11) to pin: '/fcc_combined_0/dx_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dx/wea'(1) to pin: '/fcc_combined_0/dx_WEN_A'(2) - Only lower order bits will be connected.
+VHDL Output written to : /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/synth/nn.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/s00_couplers/auto_us/s_axi_arlock'(1) to pin: '/axi_mem_intercon/s00_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/s00_couplers/auto_us/s_axi_awlock'(1) to pin: '/axi_mem_intercon/s00_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/s01_couplers/auto_us/s_axi_arlock'(1) to pin: '/axi_mem_intercon/s01_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/s01_couplers/auto_us/s_axi_awlock'(1) to pin: '/axi_mem_intercon/s01_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_y/addrb'(9) to pin: '/axi_bram_ctrl_1/bram_addr_b'(12) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_y/web'(1) to pin: '/axi_bram_ctrl_1/bram_we_b'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_x/addrb'(10) to pin: '/axi_bram_ctrl_0/bram_addr_b'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_x/web'(1) to pin: '/axi_bram_ctrl_0/bram_we_b'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dy/addra'(11) to pin: '/fcc_combined_0/dy_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dy/wea'(1) to pin: '/fcc_combined_0/dy_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dy/addrb'(11) to pin: '/conv_combined_0/dx_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dy/web'(1) to pin: '/conv_combined_0/dx_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_x/addra'(11) to pin: '/fcc_combined_0/x_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_x/wea'(1) to pin: '/fcc_combined_0/x_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_y/addrb'(11) to pin: '/conv_combined_0/x_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_y/web'(1) to pin: '/conv_combined_0/x_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/axi_mem_intercon/M00_AXI_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to pin: '/axi_mem_intercon/M00_AXI_wid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/axi_mem_intercon/M00_AXI_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_y/addra'(11) to pin: '/fcc_combined_0/y_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_y/wea'(1) to pin: '/fcc_combined_0/y_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_dy/addra'(13) to pin: '/conv_combined_0/dy_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_dy/wea'(1) to pin: '/conv_combined_0/dy_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_y/addra'(13) to pin: '/conv_combined_0/y_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_y/wea'(1) to pin: '/conv_combined_0/y_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_dy/addrb'(13) to pin: '/relu_combined_0/dx_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_dy/web'(1) to pin: '/relu_combined_0/dx_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_y/addrb'(13) to pin: '/relu_combined_0/x_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_y/web'(1) to pin: '/relu_combined_0/x_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_y/wea'(1) to pin: '/relu_combined_0/y_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_y/addra'(10) to pin: '/relu_combined_0/y_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_dy/wea'(1) to pin: '/relu_combined_0/dy_WEN_A'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_dy/addra'(10) to pin: '/relu_combined_0/dy_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_dy/addrb'(9) to pin: '/axi_bram_ctrl_1/bram_addr_a'(12) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/relu_dy/web'(1) to pin: '/axi_bram_ctrl_1/bram_we_a'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dx/web'(1) to pin: '/axi_bram_ctrl_0/bram_we_a'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dx/addrb'(10) to pin: '/axi_bram_ctrl_0/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dx/addra'(11) to pin: '/fcc_combined_0/dx_Addr_A'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/fcc_dx/wea'(1) to pin: '/fcc_combined_0/dx_WEN_A'(2) - Only lower order bits will be connected.
+VHDL Output written to : /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/sim/nn.v
+VHDL Output written to : /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/hdl/nn_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_cdma_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ip/nn_auto_us_0_1/nn_auto_us_0_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s00_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ip/nn_auto_us_1_1/nn_auto_us_1_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s01_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ip/nn_auto_us_2/nn_auto_us_2_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s02_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ip/nn_auto_pc_0_1/nn_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ip/nn_auto_ds_0/nn_auto_ds_0_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m01_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ip/nn_auto_ds_1/nn_auto_ds_1_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m02_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ip/nn_auto_pc_1_1/nn_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/hw_handoff/nn.hwh
+Generated Block Design Tcl file /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/hw_handoff/nn_bd.tcl
+Generated Hardware Definition File /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/synth/nn.hwdef
+INFO: [IP_Flow 19-7066] Running IP cache check for IP nn_auto_ds_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP nn_auto_ds_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP nn_auto_pc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP nn_auto_pc_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP nn_auto_us_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP nn_auto_us_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP nn_auto_us_2
+INFO: [IP_Flow 19-7066] Running IP cache check for IP nn_axi_cdma_0_0
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP nn_auto_ds_0, cache-ID = 74357c86e5bfaede; cache size = 88.450 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP nn_auto_ds_1, cache-ID = 3b92185816dcb6ff; cache size = 88.450 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP nn_auto_pc_0, cache-ID = 1819076c0c5cdde7; cache size = 88.450 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP nn_auto_pc_1, cache-ID = 63fe06e46bd5fc87; cache size = 88.450 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP nn_auto_us_0, cache-ID = d0f923f3e1090939; cache size = 88.450 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP nn_auto_us_1, cache-ID = d0f923f3e1090939; cache size = 88.450 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP nn_auto_us_2, cache-ID = d0f923f3e1090939; cache size = 88.450 MB.
+[Thu May 12 17:47:17 2022] Launched nn_axi_cdma_0_0_synth_1, synth_1...
+Run output will be captured here:
+nn_axi_cdma_0_0_synth_1: /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/nn_axi_cdma_0_0_synth_1/runme.log
+synth_1: /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/synth_1/runme.log
+[Thu May 12 17:47:17 2022] Launched impl_1...
+Run output will be captured here: /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 10267.090 ; gain = 144.008 ; free physical = 13912 ; free virtual = 23457
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:00.31 ; elapsed = 00:00:00.30 . Memory (MB): peak = 10267.090 ; gain = 0.000 ; free physical = 14380 ; free virtual = 23616
+INFO: [Netlist 29-17] Analyzing 1909 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 10744.215 ; gain = 26.070 ; free physical = 13741 ; free virtual = 22967
+Restored from archive | CPU: 1.490000 secs | Memory: 40.295815 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 10744.215 ; gain = 26.070 ; free physical = 13741 ; free virtual = 22967
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 10744.215 ; gain = 0.000 ; free physical = 13745 ; free virtual = 22971
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 73 instances were transformed.
+  RAM16X1S => RAM32X1S (RAMS32): 32 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 26 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 1 instance 
+  SRLC32E => SRL16E: 14 instances
+
+open_run: Time (s): cpu = 00:00:27 ; elapsed = 00:00:18 . Memory (MB): peak = 10987.125 ; gain = 720.035 ; free physical = 13562 ; free virtual = 22801
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/impl/ip/component.xml. It will be created.
+open_bd_design {/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.srcs/sources_1/bd/nn/nn.bd}
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/anubhav/xilinx_projects/ip_repo'.

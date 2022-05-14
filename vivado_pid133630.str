@@ -2214,3 +2214,500 @@ selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address
 // Elapsed time: 10 seconds
 collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 29); // u
 expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 29); // u
+// HMemoryUtils.trashcanNow. Engine heap size: 3,044 MB. GUI used memory: 278 MB. Current time: 5/12/22, 1:33:12 PM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,087 MB. GUI used memory: 268 MB. Current time: 5/12/22, 2:03:12 PM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,087 MB. GUI used memory: 268 MB. Current time: 5/12/22, 2:33:12 PM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,087 MB. GUI used memory: 268 MB. Current time: 5/12/22, 3:03:12 PM IST
+// Elapsed time: 7763 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ac
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ah
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // ah
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // ah
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // ah
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // ah
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // ah
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_BITSTREAM_FILES, "Export Bitstream File..."); // ak
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ac
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_BITSTREAM_FILES
+setFileChooser("/home/anubhav/xilinx_projects/nn_v2/nn_v2/nnv2.bit");
+// 'a' command handler elapsed time: 3 seconds
+selectButton("OptionPane.button", "OK"); // JButton
+// Tcl Message: file copy -force /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/impl_1/nn_wrapper.bit /home/anubhav/xilinx_projects/nn_v2/nn_v2/nnv2.bit 
+selectButton("OptionPane.button", "OK"); // JButton
+// Elapsed time: 30 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ac
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ah
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // ah
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // ah
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // ah
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // ah
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // ah
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_BITSTREAM_FILES, "Export Bitstream File..."); // ak
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ac
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_BITSTREAM_FILES
+// Elapsed time: 12 seconds
+setFileChooser("/home/anubhav/xilinx_projects/nn_v2/nn_v2/nnv2.bit");
+// 'a' command handler elapsed time: 12 seconds
+selectButton("OptionPane.button", "OK"); // JButton
+// Tcl Message: file copy -force /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/impl_1/nn_wrapper.bit /home/anubhav/xilinx_projects/nn_v2/nn_v2/nnv2.bit 
+selectButton("OptionPane.button", "OK"); // JButton
+// Elapsed time: 27 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ac
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ah
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // ah
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // ah
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // ah
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // ah
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // ah
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_BITSTREAM_FILES, "Export Bitstream File..."); // ak
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ac
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_BITSTREAM_FILES
+setFileChooser("/home/anubhav/xilinx_projects/nn_v2/nn_v2/nnv2");
+// 'a' command handler elapsed time: 5 seconds
+// Tcl Message: file copy -force /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/impl_1/nn_wrapper.bit /home/anubhav/xilinx_projects/nn_v2/nn_v2/nnv2.bit 
+selectButton("OptionPane.button", "OK"); // JButton
+// HMemoryUtils.trashcanNow. Engine heap size: 3,087 MB. GUI used memory: 269 MB. Current time: 5/12/22, 3:33:12 PM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,087 MB. GUI used memory: 269 MB. Current time: 5/12/22, 4:03:12 PM IST
+// Elapsed time: 3207 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+// HMemoryUtils.trashcanNow. Engine heap size: 3,045 MB. GUI used memory: 269 MB. Current time: 5/12/22, 4:33:12 PM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,087 MB. GUI used memory: 269 MB. Current time: 5/12/22, 5:03:12 PM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,045 MB. GUI used memory: 270 MB. Current time: 5/12/22, 5:33:12 PM IST
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// r (cr): Re-customize IP: addNotify
+// Elapsed time: 5455 seconds
+selectCheckBox((HResource) null, "Allow Unaligned Transfers", true); // g: TRUE
+selectComboBox("Write/Read Burst Size (C_M_AXI_MAX_BURST_LEN)", "32", 4); // E
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Re-customize IP"); // r
+// Tcl Command: 'set_property -dict [list CONFIG.C_M_AXI_MAX_BURST_LEN {32} CONFIG.C_INCLUDE_DRE {1}] [get_bd_cells axi_cdma_0]'
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.C_M_AXI_MAX_BURST_LEN {32} CONFIG.C_INCLUDE_DRE {1}] [get_bd_cells axi_cdma_0] 
+// Tcl Message: endgroup 
+// [Engine Memory]: 3,356 MB (+240568kb) [41:33:46]
+selectButton(PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, "System_validate_bd_design_rsb"); // E
+// Run Command: PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN
+// Tcl Command: 'validate_bd_design'
+// HMemoryUtils.trashcanNow. Engine heap size: 3,159 MB. GUI used memory: 298 MB. Current time: 5/12/22, 5:46:27 PM IST
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// bz (cr):  Validate Design : addNotify
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: validate_bd_design 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PARAM_PROP
+// Tcl Message: validate_bd_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:19 . Memory (MB): peak = 10123.082 ; gain = 0.000 ; free physical = 13855 ; free virtual = 23474 
+// dR (cr): Critical Messages: addNotify
+// Elapsed time: 18 seconds
+dismissDialog("Validate Design"); // bz
+// HMemoryUtils.trashcanNow. Engine heap size: 3,359 MB. GUI used memory: 274 MB. Current time: 5/12/22, 5:46:47 PM IST
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Critical Messages"); // dR
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 28, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// A (cr): Out-of-Context module run and Synthesis run are Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// bz (cr):  Resetting Runs : addNotify
+dismissDialog("Out-of-Context module run and Synthesis run are Out-of-date"); // A
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run nn_axi_cdma_0_0_synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// am (cr): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// bz (cr):  Save Constraints : addNotify
+dismissDialog("Save Project"); // am
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: save_bd_design 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: Wrote  : </home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.srcs/sources_1/bd/nn/nn.bd>  Wrote  : </home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.srcs/sources_1/bd/nn/ui/bd_34476740.ui>  
+// f (cr): Launch Runs: addNotify
+dismissDialog("Save Constraints"); // bz
+dismissDialog("Launch Runs"); // f
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 28, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f (cr): Launch Runs: addNotify
+selectButton("OptionPane.button", "OK"); // JButton
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: launch_runs impl_1 -jobs 10 
+// Tcl Message: VHDL Output written to : /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/synth/nn.v 
+// Tcl Message: VHDL Output written to : /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/sim/nn.v VHDL Output written to : /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/hdl/nn_wrapper.v 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_cdma_0 . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s00_couplers/auto_us . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s01_couplers/auto_us . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s02_couplers/auto_us . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m00_couplers/auto_pc . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m01_couplers/auto_ds . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m02_couplers/auto_ds . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc . 
+// Tcl Message: Exporting to file /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/hw_handoff/nn.hwh Generated Block Design Tcl file /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/hw_handoff/nn_bd.tcl Generated Hardware Definition File /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/synth/nn.hwdef 
+// Tcl Message: INFO: [IP_Flow 19-7066] Running IP cache check for IP nn_auto_ds_0 INFO: [IP_Flow 19-7066] Running IP cache check for IP nn_auto_ds_1 INFO: [IP_Flow 19-7066] Running IP cache check for IP nn_auto_pc_0 INFO: [IP_Flow 19-7066] Running IP cache check for IP nn_auto_pc_1 INFO: [IP_Flow 19-7066] Running IP cache check for IP nn_auto_us_0 INFO: [IP_Flow 19-7066] Running IP cache check for IP nn_auto_us_1 INFO: [IP_Flow 19-7066] Running IP cache check for IP nn_auto_us_2 INFO: [IP_Flow 19-7066] Running IP cache check for IP nn_axi_cdma_0_0 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// HMemoryUtils.trashcanNow. Engine heap size: 3,388 MB. GUI used memory: 275 MB. Current time: 5/12/22, 5:47:17 PM IST
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu May 12 17:47:17 2022] Launched nn_axi_cdma_0_0_synth_1, synth_1... Run output will be captured here: nn_axi_cdma_0_0_synth_1: /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/nn_axi_cdma_0_0_synth_1/runme.log synth_1: /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/synth_1/runme.log [Thu May 12 17:47:17 2022] Launched impl_1... Run output will be captured here: /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 10267.090 ; gain = 144.008 ; free physical = 13912 ; free virtual = 23457 
+// 'c' command handler elapsed time: 12 seconds
+dismissDialog("Starting Design Runs"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cr): Implementation Completed: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 3,299 MB. GUI used memory: 276 MB. Current time: 5/12/22, 6:17:17 PM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,299 MB. GUI used memory: 275 MB. Current time: 5/12/22, 6:47:18 PM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,299 MB. GUI used memory: 275 MB. Current time: 5/12/22, 7:17:18 PM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,299 MB. GUI used memory: 276 MB. Current time: 5/12/22, 7:47:18 PM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,299 MB. GUI used memory: 275 MB. Current time: 5/12/22, 8:17:18 PM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,299 MB. GUI used memory: 275 MB. Current time: 5/12/22, 8:47:18 PM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,299 MB. GUI used memory: 275 MB. Current time: 5/12/22, 9:17:18 PM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,299 MB. GUI used memory: 275 MB. Current time: 5/12/22, 9:47:18 PM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,299 MB. GUI used memory: 275 MB. Current time: 5/12/22, 10:17:18 PM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,299 MB. GUI used memory: 275 MB. Current time: 5/12/22, 10:47:18 PM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,299 MB. GUI used memory: 275 MB. Current time: 5/12/22, 11:17:18 PM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,299 MB. GUI used memory: 275 MB. Current time: 5/12/22, 11:47:18 PM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,299 MB. GUI used memory: 275 MB. Current time: 5/13/22, 12:17:18 AM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,299 MB. GUI used memory: 275 MB. Current time: 5/13/22, 12:47:18 AM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,299 MB. GUI used memory: 275 MB. Current time: 5/13/22, 1:17:19 AM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,299 MB. GUI used memory: 275 MB. Current time: 5/13/22, 1:47:19 AM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,299 MB. GUI used memory: 275 MB. Current time: 5/13/22, 2:17:19 AM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,299 MB. GUI used memory: 275 MB. Current time: 5/13/22, 2:47:19 AM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,299 MB. GUI used memory: 275 MB. Current time: 5/13/22, 3:17:19 AM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,299 MB. GUI used memory: 275 MB. Current time: 5/13/22, 3:47:19 AM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,299 MB. GUI used memory: 275 MB. Current time: 5/13/22, 4:17:19 AM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,299 MB. GUI used memory: 275 MB. Current time: 5/13/22, 4:47:19 AM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,299 MB. GUI used memory: 275 MB. Current time: 5/13/22, 5:17:19 AM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,299 MB. GUI used memory: 275 MB. Current time: 5/13/22, 5:47:19 AM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,299 MB. GUI used memory: 275 MB. Current time: 5/13/22, 6:17:19 AM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,299 MB. GUI used memory: 275 MB. Current time: 5/13/22, 6:47:19 AM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,299 MB. GUI used memory: 275 MB. Current time: 5/13/22, 7:17:20 AM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,299 MB. GUI used memory: 275 MB. Current time: 5/13/22, 7:47:20 AM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,299 MB. GUI used memory: 275 MB. Current time: 5/13/22, 8:17:20 AM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,299 MB. GUI used memory: 275 MB. Current time: 5/13/22, 8:47:20 AM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,299 MB. GUI used memory: 275 MB. Current time: 5/13/22, 9:17:20 AM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,299 MB. GUI used memory: 275 MB. Current time: 5/13/22, 9:47:20 AM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,301 MB. GUI used memory: 275 MB. Current time: 5/13/22, 10:17:20 AM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,301 MB. GUI used memory: 275 MB. Current time: 5/13/22, 10:47:20 AM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,301 MB. GUI used memory: 275 MB. Current time: 5/13/22, 11:17:20 AM IST
+// Elapsed time: 63660 seconds
+dismissDialog("Implementation Completed"); // ag
+// Elapsed time: 631 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 18, true); // u - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bz (cr):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 3,609 MB. GUI used memory: 279 MB. Current time: 5/13/22, 11:38:55 AM IST
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 4,269 MB. GUI used memory: 273 MB. Current time: 5/13/22, 11:39:05 AM IST
+// [Engine Memory]: 4,269 MB (+781490kb) [59:26:28]
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgdAndInitRouteStorage elapsed time: 1.8s
+// Device: addNotify
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  2391 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Device 21-403] Loading part xc7z020clg400-1 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00.31 ; elapsed = 00:00:00.30 . Memory (MB): peak = 10267.090 ; gain = 0.000 ; free physical = 14380 ; free virtual = 23616 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 1909 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2020.2 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 10744.215 ; gain = 26.070 ; free physical = 13741 ; free virtual = 22967 
+// Tcl Message: Restored from archive | CPU: 1.490000 secs | Memory: 40.295815 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 10744.215 ; gain = 26.070 ; free physical = 13741 ; free virtual = 22967 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 10744.215 ; gain = 0.000 ; free physical = 13745 ; free virtual = 22971 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 73 instances were transformed.   RAM16X1S => RAM32X1S (RAMS32): 32 instances   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 26 instances   RAM32X1D => RAM32X1D (RAMD32(x2)): 1 instance    SRLC32E => SRL16E: 14 instances  
+// Tcl Message: open_run: Time (s): cpu = 00:00:27 ; elapsed = 00:00:18 . Memory (MB): peak = 10987.125 ; gain = 720.035 ; free physical = 13562 ; free virtual = 22801 
+// TclEventType: DRC_ADDED
+// Device view-level: 0.0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// [Engine Memory]: 4,511 MB (+29768kb) [59:26:33]
+// WARNING: HEventQueue.dispatchEvent() is taking  3917 ms.
+// TclEventType: TIMING_SUMMARY_UPDATED
+// [GUI Memory]: 408 MB (+718kb) [59:26:39]
+// 'dV' command handler elapsed time: 25 seconds
+// WARNING: HEventQueue.dispatchEvent() is taking  1394 ms.
+// U (cr): Critical Messages: addNotify
+// Elapsed time: 25 seconds
+dismissDialog("Open Implemented Design"); // bz
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Critical Messages"); // U
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Intra-Clock Paths]", 5, true); // a - Node
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Intra-Clock Paths]", 5, true, false, false, false, false, true); // a - Double Click - Node
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Intra-Clock Paths, clk_fpga_0]", 6, true); // a - Node
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Intra-Clock Paths, clk_fpga_0, Setup -0.002 ns]", 7, false, false, false, false, false, true); // a - Double Click
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Intra-Clock Paths, clk_fpga_0, Setup -0.002 ns]", 7, false); // a
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Intra-Clock Paths, clk_fpga_0, Setup -0.002 ns]", 7, false, false, false, false, false, true); // a - Double Click
+// PAPropertyPanels.initPanels (Path 1) elapsed time: 0.4s
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 1 ; -0.0023829828 ; 14 ; 49 ; nn_i/axi_mem_intercon/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_data_inst/first_word_reg/C ; nn_i/conv_combined_0/inst/gmem_m_axi_U/bus_write/fifo_resp/mem_reg[14][0]_srl15/CE ; 9.263273 ; 2.4599998 ; 6.8032722 ; 10.0 ; clk_fpga_0 ; clk_fpga_0 ;  ; 0.15411034", 0, "Path 1", 0); // h
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 1 ; -0.0023829828 ; 14 ; 49 ; nn_i/axi_mem_intercon/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_data_inst/first_word_reg/C ; nn_i/conv_combined_0/inst/gmem_m_axi_U/bus_write/fifo_resp/mem_reg[14][0]_srl15/CE ; 9.263273 ; 2.4599998 ; 6.8032722 ; 10.0 ; clk_fpga_0 ; clk_fpga_0 ;  ; 0.15411034", 0, "Path 1", 0, false, false, false, false, true); // h - Double Click
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 1 ; -0.0023829828 ; 14 ; 49 ; nn_i/axi_mem_intercon/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_data_inst/first_word_reg/C ; nn_i/conv_combined_0/inst/gmem_m_axi_U/bus_write/fifo_resp/mem_reg[14][0]_srl15/CE ; 9.263273 ; 2.4599998 ; 6.8032722 ; 10.0 ; clk_fpga_0 ; clk_fpga_0 ;  ; 0.15411034", 0, "Path 1", 0, false, false, false, true, false); // h - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_MARK, "Mark"); // ah
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ah
+selectMenu(PAResourceTtoZ.TimingItemFlatTablePanel_FLOORPLANNING, "Floorplanning"); // ah
+selectMenu(PAResourceTtoZ.TimingItemFlatTablePanel_FLOORPLANNING, "Floorplanning"); // ah
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ah
+selectMenu(PAResourceQtoS.SelectMenu_MARK, "Mark"); // ah
+selectMenu(PAResourceQtoS.SelectMenu_MARK, "Mark"); // ah
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ah
+selectMenu(PAResourceQtoS.SelectMenu_MARK, "Mark"); // ah
+selectMenu(PAResourceOtoP.PathMenu_SET_FALSE_PATH, "Set False Path"); // ah
+selectMenu(PAResourceOtoP.PathMenu_SET_MULTICYCLE_PATH, "Set Multicycle Path"); // ah
+selectMenu(PAResourceOtoP.PathMenu_SET_FALSE_PATH, "Set False Path"); // ah
+selectMenu(PAResourceOtoP.PathMenu_SET_MULTICYCLE_PATH, "Set Multicycle Path"); // ah
+selectMenu(PAResourceOtoP.PathMenu_SET_MAXIMUM_DELAY, "Set Maximum Delay"); // ah
+selectMenu(PAResourceOtoP.PathMenu_SET_MULTICYCLE_PATH, "Set Multicycle Path"); // ah
+selectMenu(PAResourceOtoP.PathMenu_SET_FALSE_PATH, "Set False Path"); // ah
+selectMenuItem(PAResourceCommand.PACommandNames_SCHEMATIC, "Schematic"); // ak
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 2 ; -0.0023829828 ; 14 ; 49 ; nn_i/axi_mem_intercon/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_data_inst/first_word_reg/C ; nn_i/conv_combined_0/inst/gmem_m_axi_U/bus_write/fifo_resp/mem_reg[14][1]_srl15/CE ; 9.263273 ; 2.4599998 ; 6.8032722 ; 10.0 ; clk_fpga_0 ; clk_fpga_0 ;  ; 0.15411034", 1, "Path 2", 0); // h
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 2 ; -0.0023829828 ; 14 ; 49 ; nn_i/axi_mem_intercon/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_data_inst/first_word_reg/C ; nn_i/conv_combined_0/inst/gmem_m_axi_U/bus_write/fifo_resp/mem_reg[14][1]_srl15/CE ; 9.263273 ; 2.4599998 ; 6.8032722 ; 10.0 ; clk_fpga_0 ; clk_fpga_0 ;  ; 0.15411034", 1, "Path 2", 0, false, false, false, false, true); // h - Double Click
+// Elapsed time: 16 seconds
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 1 ; -0.0023829828 ; 14 ; 49 ; nn_i/axi_mem_intercon/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_data_inst/first_word_reg/C ; nn_i/conv_combined_0/inst/gmem_m_axi_U/bus_write/fifo_resp/mem_reg[14][0]_srl15/CE ; 9.263273 ; 2.4599998 ; 6.8032722 ; 10.0 ; clk_fpga_0 ; clk_fpga_0 ;  ; 0.15411034", 0, "Path 1", 0); // h
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 1 ; -0.0023829828 ; 14 ; 49 ; nn_i/axi_mem_intercon/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_data_inst/first_word_reg/C ; nn_i/conv_combined_0/inst/gmem_m_axi_U/bus_write/fifo_resp/mem_reg[14][0]_srl15/CE ; 9.263273 ; 2.4599998 ; 6.8032722 ; 10.0 ; clk_fpga_0 ; clk_fpga_0 ;  ; 0.15411034", 0, "Path 1", 0, false, false, false, false, true); // h - Double Click
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "Source ; nn_i/axi_mem_intercon/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_data_inst/first_word_reg/C   (rising edge-triggered cell FDSE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})", 2, "nn_i/axi_mem_intercon/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_data_inst/first_word_reg/C   (rising edge-triggered cell FDSE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})", 1); // C
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "Source ; nn_i/axi_mem_intercon/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_data_inst/first_word_reg/C   (rising edge-triggered cell FDSE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})", 2, "nn_i/axi_mem_intercon/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_data_inst/first_word_reg/C   (rising edge-triggered cell FDSE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})", 1, false, false, false, false, true); // C - Double Click
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "Source ; nn_i/axi_mem_intercon/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_data_inst/first_word_reg/C   (rising edge-triggered cell FDSE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})", 2, "nn_i/axi_mem_intercon/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_data_inst/first_word_reg/C   (rising edge-triggered cell FDSE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})", 1); // C
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "Source ; nn_i/axi_mem_intercon/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_data_inst/first_word_reg/C   (rising edge-triggered cell FDSE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})", 2, "nn_i/axi_mem_intercon/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_data_inst/first_word_reg/C   (rising edge-triggered cell FDSE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})", 1, false, false, false, false, true); // C - Double Click
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "Source ; nn_i/axi_mem_intercon/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_data_inst/first_word_reg/C   (rising edge-triggered cell FDSE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})", 2, "nn_i/axi_mem_intercon/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_data_inst/first_word_reg/C   (rising edge-triggered cell FDSE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})", 1); // C
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "Source ; nn_i/axi_mem_intercon/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_data_inst/first_word_reg/C   (rising edge-triggered cell FDSE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})", 2, "nn_i/axi_mem_intercon/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_data_inst/first_word_reg/C   (rising edge-triggered cell FDSE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})", 1, false, false, false, true, false); // C - Popup Trigger
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "Source ; nn_i/axi_mem_intercon/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_data_inst/first_word_reg/C   (rising edge-triggered cell FDSE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})", 2, "nn_i/axi_mem_intercon/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_data_inst/first_word_reg/C   (rising edge-triggered cell FDSE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})", 1, false, false, false, true, false); // C - Popup Trigger
+selectMenu(RDIResource.HTable_SET_ELIDING_FOR_TABLE_CELLS, "Elide Setting"); // F
+selectMenu(PAResourceOtoP.PathReportTableView_FLOORPLANNING, "Floorplanning"); // ah
+selectMenu(PAResourceOtoP.PathReportTableView_SELECT, "Select"); // ah
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ah
+selectMenu(PAResourceQtoS.SelectMenu_MARK, "Mark"); // ah
+selectMenu(PAResourceQtoS.SelectMenu_MARK, "Mark"); // ah
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ah
+selectMenu(PAResourceOtoP.PathReportTableView_SELECT, "Select"); // ah
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "Source ; nn_i/axi_mem_intercon/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_data_inst/first_word_reg/C   (rising edge-triggered cell FDSE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})", 2, "nn_i/axi_mem_intercon/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_data_inst/first_word_reg/C   (rising edge-triggered cell FDSE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})", 1); // C
+// Elapsed time: 623 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // m
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aK
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bz (cr):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+// WARNING: HEventQueue.dispatchEvent() is taking  1296 ms.
+// Tcl Message: open_bd_design {/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.srcs/sources_1/bd/nn/nn.bd} 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Open Block Design"); // bz

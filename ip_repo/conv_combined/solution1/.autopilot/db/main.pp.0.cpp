@@ -5604,11 +5604,11 @@ __attribute__((sdx_kernel("conv_combined", 0))) void conv_combined(fixed_t x[100
 #pragma HLS INTERFACE s_axilite port=return bundle=CRTL_BUS
 
 
- fixed_t wbuf[5][5][5][5];
- fixed_t dwbuf[5][5][5][5];
+ fixed_t wbuf[3][3][5][5];
+ fixed_t dwbuf[3][3][5][5];
 
- fixed_t bbuf[5];
- fixed_t dbbuf[5];
+ fixed_t bbuf[3];
+ fixed_t dbbuf[3];
 
  int outH=H-FH+1;
  int outW=W-FW+1;
@@ -5629,19 +5629,21 @@ __attribute__((sdx_kernel("conv_combined", 0))) void conv_combined(fixed_t x[100
 
  VITIS_LOOP_58_5: for(int i=0;i<F;i++){
          bbuf[i] = b[i];
-         dbbuf[i] = db[i];
      }
+ VITIS_LOOP_61_6: for(int i=0;i<F;i++){
+          dbbuf[i] = db[i];
+      }
 
 
  if(fwprop == true){
 
-  VITIS_LOOP_66_6: for(int f=0;f<F;f++){
-          VITIS_LOOP_67_7: for(int c=0;c<C;c++){
-              VITIS_LOOP_68_8: for(int h=0;h<outH;h++){
-                  VITIS_LOOP_69_9: for(int w=0;w<outW;w++){
+  VITIS_LOOP_68_7: for(int f=0;f<F;f++){
+          VITIS_LOOP_69_8: for(int c=0;c<C;c++){
+              VITIS_LOOP_70_9: for(int h=0;h<outH;h++){
+                  VITIS_LOOP_71_10: for(int w=0;w<outW;w++){
                       y[f*outH*outW+h*outW+w]=bbuf[f];
-                      VITIS_LOOP_71_10: for(int fh=0;fh<FH;fh++){
-                          VITIS_LOOP_72_11: for(int fw=0;fw<FW;fw++){
+                      VITIS_LOOP_73_11: for(int fh=0;fh<FH;fh++){
+                          VITIS_LOOP_74_12: for(int fw=0;fw<FW;fw++){
                               y[f*outH*outW+h*outW+w] += x[c*H*W+(h+fh)*W+w+fw]*wbuf[f*C*FH*FW+c*FH*FW+fh*FW+fw];
                           }
                       }
@@ -5654,22 +5656,22 @@ __attribute__((sdx_kernel("conv_combined", 0))) void conv_combined(fixed_t x[100
  else{
 
 
-  VITIS_LOOP_85_12: for(int i=0;i<F;i++){
-          VITIS_LOOP_86_13: for(int j=0;j<C;j++){
-              VITIS_LOOP_87_14: for(int k=0;k<FH;k++){
-                  VITIS_LOOP_88_15: for(int l=0;l<FW;l++){
+  VITIS_LOOP_87_13: for(int i=0;i<F;i++){
+          VITIS_LOOP_88_14: for(int j=0;j<C;j++){
+              VITIS_LOOP_89_15: for(int k=0;k<FH;k++){
+                  VITIS_LOOP_90_16: for(int l=0;l<FW;l++){
                       dwbuf[i][j][k][l] = dwt[i*C*FH*FW+j*FH*FW+k*FW+l];
                   }
               }
           }
       }
 
-  VITIS_LOOP_95_16: for(int f=0;f<F;f++){
-          VITIS_LOOP_96_17: for(int h=0;h<outH;h++){
-              VITIS_LOOP_97_18: for(int w=0;w<outW;w++){
-                  VITIS_LOOP_98_19: for(int c=0;c<C;c++){
-                      VITIS_LOOP_99_20: for(int fh=0;fh<FH;fh++){
-                          VITIS_LOOP_100_21: for(int fw=0;fw<FW;fw++){
+  VITIS_LOOP_97_17: for(int f=0;f<F;f++){
+          VITIS_LOOP_98_18: for(int h=0;h<outH;h++){
+              VITIS_LOOP_99_19: for(int w=0;w<outW;w++){
+                  VITIS_LOOP_100_20: for(int c=0;c<C;c++){
+                      VITIS_LOOP_101_21: for(int fh=0;fh<FH;fh++){
+                          VITIS_LOOP_102_22: for(int fw=0;fw<FW;fw++){
                               dwbuf[f][c][fh][fw] += dy[f*outH*outW+h*outW+w]*x[c*H*W+(h+fh)*W+w+fw];
                               dx[c*H*W+(h+fh)*W+w+fw] += dy[f*outH*outW+h*outW+w]*wbuf[f][c][h+fh][w+fw];
                           }
@@ -5681,10 +5683,10 @@ __attribute__((sdx_kernel("conv_combined", 0))) void conv_combined(fixed_t x[100
       }
 
 
-  VITIS_LOOP_112_22: for(int i=0;i<F;i++){
-            VITIS_LOOP_113_23: for(int j=0;j<C;j++){
-                VITIS_LOOP_114_24: for(int k=0;k<FH;k++){
-                    VITIS_LOOP_115_25: for(int l=0;l<FW;l++){
+  VITIS_LOOP_114_23: for(int i=0;i<F;i++){
+            VITIS_LOOP_115_24: for(int j=0;j<C;j++){
+                VITIS_LOOP_116_25: for(int k=0;k<FH;k++){
+                    VITIS_LOOP_117_26: for(int l=0;l<FW;l++){
                        dwt[i*C*FH*FW+j*FH*FW+k*FW+l]=dwbuf[i][j][k][l];
                     }
                 }
@@ -5692,7 +5694,7 @@ __attribute__((sdx_kernel("conv_combined", 0))) void conv_combined(fixed_t x[100
         }
 
 
-  VITIS_LOOP_123_26: for(int i=0;i<F;i++){
+  VITIS_LOOP_125_27: for(int i=0;i<F;i++){
           db[i] = dbbuf[i];
       }
 

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="InputLayer" xd:componentRef="InputLayer" xd:initiationInterval="x" xd:clockPeriod="10.000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="s_axi_CTRL" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
+  <xd:arg xd:name="*(x)" xd:originalName="x" xd:direction="inout" xd:interfaceRef="m_axi_gmem" xd:busTypeRef="aximm" xd:dataPack="true" xd:bitMapping="0:0" xd:dataWidth="1" xd:bufferDirection="inout"/>
+  <xd:arg xd:name="*(dx)" xd:originalName="dx" xd:direction="inout" xd:interfaceRef="m_axi_gmem" xd:busTypeRef="aximm" xd:dataPack="true" xd:bitMapping="0:0" xd:dataWidth="1" xd:bufferDirection="inout"/>
+  <xd:arg xd:name="x" xd:originalName="x" xd:direction="in" xd:interfaceRef="s_axi_CTRL" xd:busTypeRef="axilite" xd:aximmInterfaceRef="m_axi_gmem" xd:dataWidth="32" xd:offset="0x10" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="dx" xd:originalName="dx" xd:direction="in" xd:interfaceRef="s_axi_CTRL" xd:busTypeRef="axilite" xd:aximmInterfaceRef="m_axi_gmem" xd:dataWidth="32" xd:offset="0x18" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="*(bram_x)" xd:originalName="bram_x" xd:direction="inout" xd:interfaceRef="bram_x_PORTA" xd:busTypeRef="bram" xd:dataWidth="1"/>
+  <xd:arg xd:name="*(bram_dx)" xd:originalName="bram_dx" xd:direction="inout" xd:interfaceRef="bram_dx_PORTA" xd:busTypeRef="bram" xd:dataWidth="1"/>
+  <xd:arg xd:name="dim" xd:originalName="dim" xd:direction="in" xd:interfaceRef="s_axi_CTRL" xd:busTypeRef="axilite" xd:dataWidth="1" xd:offset="0x20" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="ddrtobram" xd:originalName="ddrtobram" xd:direction="in" xd:interfaceRef="s_axi_CTRL" xd:busTypeRef="axilite" xd:dataWidth="1" xd:offset="0x28" xd:handshakeRef="ap_none"/>
+  <xd:latencyEstimates xd:best-case="undef" xd:worst-case="undef" xd:average-case="undef"/>
+  <xd:resourceEstimates xd:LUT="2729" xd:FF="1783" xd:BRAM="2" xd:DSP="0"/>
+</xd:acceleratorMap>

@@ -1,0 +1,52 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Sat May 14 15:18:29 2022
+| Host         : anubhav-acer running 64-bit Ubuntu 20.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_InputLayer_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_InputLayer_0_0 (xilinx.com:hls:InputLayer:1.0) from (Rev. 2112503411) to (Rev. 2112504791)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'design_1_InputLayer_0_0'.
+
+
+-Upgrade has added interface 'bram_dx_PORTB' (xilinx.com:interface:bram:1.0)
+
+-Upgrade has added interface 'ddrtobram' (xilinx.com:signal:data:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_InputLayer_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'bram_dx_Addr_B'
+
+-Upgrade has added port 'bram_dx_Clk_B'
+
+-Upgrade has added port 'bram_dx_Din_B'
+
+-Upgrade has added port 'bram_dx_Dout_B'
+
+-Upgrade has added port 'bram_dx_EN_B'
+
+-Upgrade has added port 'bram_dx_Rst_B'
+
+-Upgrade has added port 'bram_dx_WEN_B'
+
+-Upgrade has added port 'ddrtobram'
+
+

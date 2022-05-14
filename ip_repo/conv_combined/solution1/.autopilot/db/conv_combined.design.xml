@@ -50,20 +50,35 @@
 <VITIS_LOOP_58_5>
 <Name>VITIS_LOOP_58_5</Name>
 <TripCount>undef</TripCount>
-<Latency>10 ~ ?</Latency>
-<AbsoluteTimeLatency>0.100 us ~ ?</AbsoluteTimeLatency>
-<PipelineII>2</PipelineII>
-<PipelineDepth>11</PipelineDepth>
+<Latency>2 ~ ?</Latency>
+<AbsoluteTimeLatency>20.000 ns ~ ?</AbsoluteTimeLatency>
+<PipelineII>1</PipelineII>
+<PipelineDepth>2</PipelineDepth>
 </VITIS_LOOP_58_5>
-<VITIS_LOOP_66_6_VITIS_LOOP_68_8_VITIS_LOOP_69_9>
-<Name>VITIS_LOOP_66_6_VITIS_LOOP_68_8_VITIS_LOOP_69_9</Name>
+<VITIS_LOOP_61_6>
+<Name>VITIS_LOOP_61_6</Name>
+<TripCount>undef</TripCount>
+<Latency>2 ~ ?</Latency>
+<AbsoluteTimeLatency>20.000 ns ~ ?</AbsoluteTimeLatency>
+<PipelineII>1</PipelineII>
+<PipelineDepth>2</PipelineDepth>
+</VITIS_LOOP_61_6>
+<VITIS_LOOP_68_7>
+<Name>VITIS_LOOP_68_7</Name>
 <TripCount>undef</TripCount>
 <Latency>undef</Latency>
 <AbsoluteTimeLatency>undef</AbsoluteTimeLatency>
 <IterationLatency>undef</IterationLatency>
 <PipelineDepth>undef</PipelineDepth>
-<VITIS_LOOP_71_10>
-<Name>VITIS_LOOP_71_10</Name>
+<VITIS_LOOP_69_8_VITIS_LOOP_70_9_VITIS_LOOP_71_10>
+<Name>VITIS_LOOP_69_8_VITIS_LOOP_70_9_VITIS_LOOP_71_10</Name>
+<TripCount>undef</TripCount>
+<Latency>undef</Latency>
+<AbsoluteTimeLatency>undef</AbsoluteTimeLatency>
+<IterationLatency>undef</IterationLatency>
+<PipelineDepth>undef</PipelineDepth>
+<VITIS_LOOP_73_11>
+<Name>VITIS_LOOP_73_11</Name>
 <TripCount>undef</TripCount>
 <Latency>undef</Latency>
 <AbsoluteTimeLatency>undef</AbsoluteTimeLatency>
@@ -74,18 +89,19 @@
 </range>
 </IterationLatency>
 <PipelineDepth>3 ~ ?</PipelineDepth>
-<VITIS_LOOP_72_11>
-<Name>VITIS_LOOP_72_11</Name>
+<VITIS_LOOP_74_12>
+<Name>VITIS_LOOP_74_12</Name>
 <TripCount>undef</TripCount>
 <Latency>2 ~ ?</Latency>
 <AbsoluteTimeLatency>20.000 ns ~ ?</AbsoluteTimeLatency>
 <PipelineII>1</PipelineII>
 <PipelineDepth>2</PipelineDepth>
-</VITIS_LOOP_72_11>
-</VITIS_LOOP_71_10>
-</VITIS_LOOP_66_6_VITIS_LOOP_68_8_VITIS_LOOP_69_9>
-<VITIS_LOOP_85_12_VITIS_LOOP_86_13_VITIS_LOOP_87_14>
-<Name>VITIS_LOOP_85_12_VITIS_LOOP_86_13_VITIS_LOOP_87_14</Name>
+</VITIS_LOOP_74_12>
+</VITIS_LOOP_73_11>
+</VITIS_LOOP_69_8_VITIS_LOOP_70_9_VITIS_LOOP_71_10>
+</VITIS_LOOP_68_7>
+<VITIS_LOOP_87_13_VITIS_LOOP_88_14_VITIS_LOOP_89_15>
+<Name>VITIS_LOOP_87_13_VITIS_LOOP_88_14_VITIS_LOOP_89_15</Name>
 <TripCount>undef</TripCount>
 <Latency>undef</Latency>
 <AbsoluteTimeLatency>undef</AbsoluteTimeLatency>
@@ -96,41 +112,41 @@
 </range>
 </IterationLatency>
 <PipelineDepth>8 ~ ?</PipelineDepth>
-<VITIS_LOOP_88_15>
-<Name>VITIS_LOOP_88_15</Name>
+<VITIS_LOOP_90_16>
+<Name>VITIS_LOOP_90_16</Name>
 <TripCount>undef</TripCount>
 <Latency>2 ~ ?</Latency>
 <AbsoluteTimeLatency>20.000 ns ~ ?</AbsoluteTimeLatency>
 <PipelineII>1</PipelineII>
 <PipelineDepth>3</PipelineDepth>
-</VITIS_LOOP_88_15>
-</VITIS_LOOP_85_12_VITIS_LOOP_86_13_VITIS_LOOP_87_14>
-<VITIS_LOOP_95_16_VITIS_LOOP_96_17>
-<Name>VITIS_LOOP_95_16_VITIS_LOOP_96_17</Name>
+</VITIS_LOOP_90_16>
+</VITIS_LOOP_87_13_VITIS_LOOP_88_14_VITIS_LOOP_89_15>
+<VITIS_LOOP_97_17_VITIS_LOOP_98_18>
+<Name>VITIS_LOOP_97_17_VITIS_LOOP_98_18</Name>
 <TripCount>undef</TripCount>
 <Latency>undef</Latency>
 <AbsoluteTimeLatency>undef</AbsoluteTimeLatency>
 <IterationLatency>undef</IterationLatency>
 <PipelineDepth>undef</PipelineDepth>
-<VITIS_LOOP_97_18>
-<Name>VITIS_LOOP_97_18</Name>
+<VITIS_LOOP_99_19>
+<Name>VITIS_LOOP_99_19</Name>
 <TripCount>undef</TripCount>
 <Latency>undef</Latency>
 <AbsoluteTimeLatency>undef</AbsoluteTimeLatency>
 <IterationLatency>undef</IterationLatency>
 <PipelineDepth>undef</PipelineDepth>
-<VITIS_LOOP_98_19_VITIS_LOOP_99_20_VITIS_LOOP_100_21>
-<Name>VITIS_LOOP_98_19_VITIS_LOOP_99_20_VITIS_LOOP_100_21</Name>
+<VITIS_LOOP_100_20_VITIS_LOOP_101_21_VITIS_LOOP_102_22>
+<Name>VITIS_LOOP_100_20_VITIS_LOOP_101_21_VITIS_LOOP_102_22</Name>
 <TripCount>undef</TripCount>
 <Latency>undef</Latency>
 <AbsoluteTimeLatency>undef</AbsoluteTimeLatency>
 <PipelineII>2</PipelineII>
 <PipelineDepth>13</PipelineDepth>
-</VITIS_LOOP_98_19_VITIS_LOOP_99_20_VITIS_LOOP_100_21>
-</VITIS_LOOP_97_18>
-</VITIS_LOOP_95_16_VITIS_LOOP_96_17>
-<VITIS_LOOP_112_22_VITIS_LOOP_113_23_VITIS_LOOP_114_24>
-<Name>VITIS_LOOP_112_22_VITIS_LOOP_113_23_VITIS_LOOP_114_24</Name>
+</VITIS_LOOP_100_20_VITIS_LOOP_101_21_VITIS_LOOP_102_22>
+</VITIS_LOOP_99_19>
+</VITIS_LOOP_97_17_VITIS_LOOP_98_18>
+<VITIS_LOOP_114_23_VITIS_LOOP_115_24_VITIS_LOOP_116_25>
+<Name>VITIS_LOOP_114_23_VITIS_LOOP_115_24_VITIS_LOOP_116_25</Name>
 <TripCount>undef</TripCount>
 <Latency>undef</Latency>
 <AbsoluteTimeLatency>undef</AbsoluteTimeLatency>
@@ -141,23 +157,23 @@
 </range>
 </IterationLatency>
 <PipelineDepth>8 ~ ?</PipelineDepth>
-<VITIS_LOOP_115_25>
-<Name>VITIS_LOOP_115_25</Name>
+<VITIS_LOOP_117_26>
+<Name>VITIS_LOOP_117_26</Name>
 <TripCount>undef</TripCount>
 <Latency>2 ~ ?</Latency>
 <AbsoluteTimeLatency>20.000 ns ~ ?</AbsoluteTimeLatency>
 <PipelineII>1</PipelineII>
 <PipelineDepth>3</PipelineDepth>
-</VITIS_LOOP_115_25>
-</VITIS_LOOP_112_22_VITIS_LOOP_113_23_VITIS_LOOP_114_24>
-<VITIS_LOOP_123_26>
-<Name>VITIS_LOOP_123_26</Name>
+</VITIS_LOOP_117_26>
+</VITIS_LOOP_114_23_VITIS_LOOP_115_24_VITIS_LOOP_116_25>
+<VITIS_LOOP_125_27>
+<Name>VITIS_LOOP_125_27</Name>
 <TripCount>undef</TripCount>
-<Latency>2 ~ ?</Latency>
-<AbsoluteTimeLatency>20.000 ns ~ ?</AbsoluteTimeLatency>
+<Latency>1 ~ ?</Latency>
+<AbsoluteTimeLatency>10.000 ns ~ ?</AbsoluteTimeLatency>
 <PipelineII>1</PipelineII>
-<PipelineDepth>3</PipelineDepth>
-</VITIS_LOOP_123_26>
+<PipelineDepth>2</PipelineDepth>
+</VITIS_LOOP_125_27>
 </SummaryOfLoopLatency>
 </PerformanceEstimates>
 <AreaEstimates>
@@ -165,15 +181,15 @@
 <BRAM_18K>4</BRAM_18K>
 <AVAIL_BRAM>280</AVAIL_BRAM>
 <UTIL_BRAM>1</UTIL_BRAM>
-<DSP>18</DSP>
+<DSP>15</DSP>
 <AVAIL_DSP>220</AVAIL_DSP>
-<UTIL_DSP>8</UTIL_DSP>
-<FF>13030</FF>
+<UTIL_DSP>6</UTIL_DSP>
+<FF>12271</FF>
 <AVAIL_FF>106400</AVAIL_FF>
-<UTIL_FF>12</UTIL_FF>
-<LUT>11419</LUT>
+<UTIL_FF>11</UTIL_FF>
+<LUT>10730</LUT>
 <AVAIL_LUT>53200</AVAIL_LUT>
-<UTIL_LUT>21</UTIL_LUT>
+<UTIL_LUT>20</UTIL_LUT>
 <URAM>0</URAM>
 <AVAIL_URAM>0</AVAIL_URAM>
 <UTIL_URAM>0</UTIL_URAM>

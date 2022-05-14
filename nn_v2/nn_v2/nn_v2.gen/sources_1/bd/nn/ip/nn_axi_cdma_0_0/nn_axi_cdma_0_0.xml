@@ -443,7 +443,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>MAX_BURST_LENGTH</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXI.MAX_BURST_LENGTH">16</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXI.MAX_BURST_LENGTH">32</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -2425,7 +2425,7 @@ Note: A value of zero (0) is not allowed and causes a DMA internal error to be s
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:5ce593cd</spirit:value>
+            <spirit:value>9:8924be22</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -2439,11 +2439,11 @@ Note: A value of zero (0) is not allowed and causes a DMA internal error to be s
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue May 10 09:43:53 UTC 2022</spirit:value>
+            <spirit:value>Thu May 12 12:17:11 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:5ce593cd</spirit:value>
+            <spirit:value>9:8924be22</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -2459,11 +2459,11 @@ Note: A value of zero (0) is not allowed and causes a DMA internal error to be s
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue May 10 09:43:53 UTC 2022</spirit:value>
+            <spirit:value>Thu May 12 12:17:11 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:5ce593cd</spirit:value>
+            <spirit:value>9:8924be22</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -2504,7 +2504,7 @@ Note: A value of zero (0) is not allowed and causes a DMA internal error to be s
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:eb9334cd</spirit:value>
+            <spirit:value>9:92813bf1</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -2520,11 +2520,11 @@ Note: A value of zero (0) is not allowed and causes a DMA internal error to be s
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue May 10 09:43:53 UTC 2022</spirit:value>
+            <spirit:value>Thu May 12 12:17:11 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:eb9334cd</spirit:value>
+            <spirit:value>9:92813bf1</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -2538,11 +2538,11 @@ Note: A value of zero (0) is not allowed and causes a DMA internal error to be s
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue May 10 09:45:22 UTC 2022</spirit:value>
+            <spirit:value>Thu May 12 12:18:15 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:5ce593cd</spirit:value>
+            <spirit:value>9:8924be22</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -4057,11 +4057,11 @@ Note: A value of zero (0) is not allowed and causes a DMA internal error to be s
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_M_AXI_MAX_BURST_LEN</spirit:name>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M_AXI_MAX_BURST_LEN" spirit:minimum="2" spirit:maximum="256" spirit:rangeType="long">16</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M_AXI_MAX_BURST_LEN" spirit:minimum="2" spirit:maximum="256" spirit:rangeType="long">32</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_INCLUDE_DRE</spirit:name>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_INCLUDE_DRE" spirit:choiceRef="choice_list_8af5a703">0</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_INCLUDE_DRE" spirit:choiceRef="choice_list_8af5a703">1</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_USE_DATAMOVER_LITE</spirit:name>
@@ -4103,15 +4103,6 @@ Note: A value of zero (0) is not allowed and causes a DMA internal error to be s
   </spirit:model>
   <spirit:choices>
     <spirit:choice>
-      <spirit:name>choice_list_40181835</spirit:name>
-      <spirit:enumeration>32</spirit:enumeration>
-      <spirit:enumeration>64</spirit:enumeration>
-      <spirit:enumeration>128</spirit:enumeration>
-      <spirit:enumeration>256</spirit:enumeration>
-      <spirit:enumeration>512</spirit:enumeration>
-      <spirit:enumeration>1024</spirit:enumeration>
-    </spirit:choice>
-    <spirit:choice>
       <spirit:name>choice_list_884121e1</spirit:name>
       <spirit:enumeration>2</spirit:enumeration>
       <spirit:enumeration>4</spirit:enumeration>
@@ -4126,6 +4117,14 @@ Note: A value of zero (0) is not allowed and causes a DMA internal error to be s
       <spirit:name>choice_list_8af5a703</spirit:name>
       <spirit:enumeration>0</spirit:enumeration>
       <spirit:enumeration>1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_list_d6556846</spirit:name>
+      <spirit:enumeration>32</spirit:enumeration>
+      <spirit:enumeration>64</spirit:enumeration>
+      <spirit:enumeration>128</spirit:enumeration>
+      <spirit:enumeration>256</spirit:enumeration>
+      <spirit:enumeration>512</spirit:enumeration>
     </spirit:choice>
     <spirit:choice>
       <spirit:name>choice_pairs_ce1226b1</spirit:name>
@@ -4494,7 +4493,7 @@ Note: A value of zero (0) is not allowed and causes a DMA internal error to be s
       <spirit:name>C_M_AXI_DATA_WIDTH</spirit:name>
       <spirit:displayName>Data Width</spirit:displayName>
       <spirit:description>Select the width of the data bus.</spirit:description>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_M_AXI_DATA_WIDTH" spirit:choiceRef="choice_list_40181835" spirit:order="500">32</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_M_AXI_DATA_WIDTH" spirit:choiceRef="choice_list_d6556846" spirit:order="500">32</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -4507,7 +4506,7 @@ Note: A value of zero (0) is not allowed and causes a DMA internal error to be s
       <spirit:name>C_M_AXI_MAX_BURST_LEN</spirit:name>
       <spirit:displayName>Maximum Burst Length</spirit:displayName>
       <spirit:description>Select the Max Burst Length for read and write operation.</spirit:description>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_M_AXI_MAX_BURST_LEN" spirit:choiceRef="choice_list_884121e1" spirit:order="600">16</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_M_AXI_MAX_BURST_LEN" spirit:choiceRef="choice_list_884121e1" spirit:order="600">32</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -4533,7 +4532,7 @@ Note: A value of zero (0) is not allowed and causes a DMA internal error to be s
       <spirit:name>C_INCLUDE_DRE</spirit:name>
       <spirit:displayName>Enable Data Realignment</spirit:displayName>
       <spirit:description>Checking this will enable the user to address the memory with unaligned address. This would infer more logic.</spirit:description>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_INCLUDE_DRE" spirit:choiceRef="choice_pairs_ce1226b1" spirit:order="400">0</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_INCLUDE_DRE" spirit:choiceRef="choice_pairs_ce1226b1" spirit:order="400">1</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -4745,7 +4744,9 @@ Note: A value of zero (0) is not allowed and causes a DMA internal error to be s
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI_LITE_ACLK.FREQ_TOLERANCE_HZ" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI_LITE_ACLK.PHASE" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_AXI_LITE_IS_ASYNC" xilinx:valueSource="propagated" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_INCLUDE_DRE" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_INCLUDE_SG" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_M_AXI_MAX_BURST_LEN" xilinx:valueSource="user"/>
       </xilinx:configElementInfos>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>

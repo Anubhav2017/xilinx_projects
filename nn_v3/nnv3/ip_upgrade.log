@@ -1,0 +1,326 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Sat May 14 16:03:04 2022
+| Host         : anubhav-acer running 64-bit Ubuntu 20.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'nn_OutputLayer_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of nn_OutputLayer_0_0 (xilinx.com:hls:OutputLayer:1.0) from (Rev. 2112504811) to (Rev. 2112504840)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'nn_OutputLayer_0_0'.
+
+
+-Upgrade has removed interface 'ddrtobram'
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'nn_OutputLayer_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'ddrtobram'
+
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Sat May 14 16:03:04 2022
+| Host         : anubhav-acer running 64-bit Ubuntu 20.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'nn_InputLayer_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of nn_InputLayer_0_0 (xilinx.com:hls:InputLayer:1.0) from (Rev. 2112504827) to (Rev. 2112504842)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'nn_InputLayer_0_0'.
+
+
+-Upgrade has removed interface 'ddrtobram'
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'nn_InputLayer_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'ddrtobram'
+
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Sat May 14 15:48:20 2022
+| Host         : anubhav-acer running 64-bit Ubuntu 20.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'nn_InputLayer_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of nn_InputLayer_0_0 (xilinx.com:hls:InputLayer:1.0) from (Rev. 2112504807) to (Rev. 2112504827)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Sat May 14 15:32:00 2022
+| Host         : anubhav-acer running 64-bit Ubuntu 20.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'nn_OutputLayer_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of nn_OutputLayer_0_0 (xilinx.com:hls:OutputLayer:1.0) from (Rev. 2112504802) to (Rev. 2112504811)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'nn_OutputLayer_0_0'.
+
+
+-Upgrade has removed interface 'bram_dy_PORTB'
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'nn_OutputLayer_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'bram_dy_Addr_B'
+
+-Upgrade has removed port 'bram_dy_Clk_B'
+
+-Upgrade has removed port 'bram_dy_Din_B'
+
+-Upgrade has removed port 'bram_dy_Dout_B'
+
+-Upgrade has removed port 'bram_dy_EN_B'
+
+-Upgrade has removed port 'bram_dy_Rst_B'
+
+-Upgrade has removed port 'bram_dy_WEN_B'
+
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Sat May 14 15:28:47 2022
+| Host         : anubhav-acer running 64-bit Ubuntu 20.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'nn_InputLayer_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of nn_InputLayer_0_0 (xilinx.com:hls:InputLayer:1.0) from (Rev. 2112504803) to (Rev. 2112504807)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'nn_InputLayer_0_0'.
+
+
+-Upgrade has removed interface 'bram_dx_PORTB'
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'nn_InputLayer_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'bram_dx_Addr_B'
+
+-Upgrade has removed port 'bram_dx_Clk_B'
+
+-Upgrade has removed port 'bram_dx_Din_B'
+
+-Upgrade has removed port 'bram_dx_Dout_B'
+
+-Upgrade has removed port 'bram_dx_EN_B'
+
+-Upgrade has removed port 'bram_dx_Rst_B'
+
+-Upgrade has removed port 'bram_dx_WEN_B'
+
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Sat May 14 15:25:01 2022
+| Host         : anubhav-acer running 64-bit Ubuntu 20.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'nn_OutputLayer_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of nn_OutputLayer_0_0 (xilinx.com:hls:OutputLayer:1.0) from (Rev. 2112503423) to (Rev. 2112504802)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'nn_OutputLayer_0_0'.
+
+
+-Upgrade has added interface 'bram_dy_PORTB' (xilinx.com:interface:bram:1.0)
+
+-Upgrade has added interface 'ddrtobram' (xilinx.com:signal:data:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'nn_OutputLayer_0_0'. These changes may impact your design.
+
+
+-Upgraded port 'm_axi_gmem_ARADDR' width 32 differs from original width 64
+
+-Upgraded port 'm_axi_gmem_AWADDR' width 32 differs from original width 64
+
+-Upgrade has added port 'bram_dy_Addr_B'
+
+-Upgrade has added port 'bram_dy_Clk_B'
+
+-Upgrade has added port 'bram_dy_Din_B'
+
+-Upgrade has added port 'bram_dy_Dout_B'
+
+-Upgrade has added port 'bram_dy_EN_B'
+
+-Upgrade has added port 'bram_dy_Rst_B'
+
+-Upgrade has added port 'bram_dy_WEN_B'
+
+-Upgrade has added port 'ddrtobram'
+
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Sat May 14 15:25:01 2022
+| Host         : anubhav-acer running 64-bit Ubuntu 20.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'nn_InputLayer_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of nn_InputLayer_0_0 (xilinx.com:hls:InputLayer:1.0) from (Rev. 2112503411) to (Rev. 2112504803)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'nn_InputLayer_0_0'.
+
+
+-Upgrade has added interface 'bram_dx_PORTB' (xilinx.com:interface:bram:1.0)
+
+-Upgrade has added interface 'ddrtobram' (xilinx.com:signal:data:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'nn_InputLayer_0_0'. These changes may impact your design.
+
+
+-Upgraded port 'm_axi_gmem_ARADDR' width 32 differs from original width 64
+
+-Upgraded port 'm_axi_gmem_AWADDR' width 32 differs from original width 64
+
+-Upgrade has added port 'bram_dx_Addr_B'
+
+-Upgrade has added port 'bram_dx_Clk_B'
+
+-Upgrade has added port 'bram_dx_Din_B'
+
+-Upgrade has added port 'bram_dx_Dout_B'
+
+-Upgrade has added port 'bram_dx_EN_B'
+
+-Upgrade has added port 'bram_dx_Rst_B'
+
+-Upgrade has added port 'bram_dx_WEN_B'
+
+-Upgrade has added port 'ddrtobram'
+
+

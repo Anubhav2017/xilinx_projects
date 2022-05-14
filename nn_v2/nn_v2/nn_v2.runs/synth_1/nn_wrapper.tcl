@@ -70,7 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 3
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z020clg400-1
 
@@ -104,7 +103,6 @@ set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_p
 set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ip/nn_fcc_combined_0_bram_2_0/nn_fcc_combined_0_bram_2_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ip/nn_conv_combined_0_bram_0/nn_conv_combined_0_bram_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ip/nn_conv_combined_0_bram_0_0/nn_conv_combined_0_bram_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ip/nn_conv_combined_0_1/constraints/conv_combined_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ip/nn_relu_combined_0_0_1/constraints/relu_combined_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ip/nn_fcc_combined_0_0_1/constraints/fcc_combined_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ip/nn_relu_combined_0_bram_0/nn_relu_combined_0_bram_0_ooc.xdc]
@@ -113,6 +111,7 @@ set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_p
 set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ip/nn_axi_cdma_0_0/nn_axi_cdma_0_0.xdc]
 set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ip/nn_axi_cdma_0_0/nn_axi_cdma_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ip/nn_axi_bram_ctrl_1_1/nn_axi_bram_ctrl_1_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ip/nn_conv_combined_0_1/constraints/conv_combined_ooc.xdc]
 set_property used_in_synthesis false [get_files -all /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ip/nn_auto_us_0_1/nn_auto_us_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ip/nn_auto_us_0_1/nn_auto_us_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ip/nn_auto_us_0_1/nn_auto_us_0_ooc.xdc]

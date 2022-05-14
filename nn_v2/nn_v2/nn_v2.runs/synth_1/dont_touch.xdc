@@ -40,9 +40,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==nn_conv_com
 # IP: bd/nn/ip/nn_conv_combined_0_bram_0_0/nn_conv_combined_0_bram_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==nn_conv_combined_0_bram_0_0 || ORIG_REF_NAME==nn_conv_combined_0_bram_0_0} -quiet] -quiet
 
-# IP: bd/nn/ip/nn_conv_combined_0_1/nn_conv_combined_0_1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==nn_conv_combined_0_1 || ORIG_REF_NAME==nn_conv_combined_0_1} -quiet] -quiet
-
 # IP: bd/nn/ip/nn_relu_combined_0_0_1/nn_relu_combined_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==nn_relu_combined_0_0 || ORIG_REF_NAME==nn_relu_combined_0_0} -quiet] -quiet
 
@@ -63,6 +60,9 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==nn_axi_cdma
 
 # IP: bd/nn/ip/nn_axi_bram_ctrl_1_1/nn_axi_bram_ctrl_1_1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==nn_axi_bram_ctrl_1_1 || ORIG_REF_NAME==nn_axi_bram_ctrl_1_1} -quiet] -quiet
+
+# IP: bd/nn/ip/nn_conv_combined_0_1/nn_conv_combined_0_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==nn_conv_combined_0_1 || ORIG_REF_NAME==nn_conv_combined_0_1} -quiet] -quiet
 
 # IP: bd/nn/ip/nn_auto_us_0_1/nn_auto_us_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==nn_auto_us_0 || ORIG_REF_NAME==nn_auto_us_0} -quiet] -quiet

@@ -1,6 +1,6 @@
 #define MAX_SIZE 1000
 #define MAX_WINDOW_SIZE 5
-#define MAX_FILTERS 5
+#define MAX_FILTERS 3
 #define MAX_WINDOW_SIZE 5
 
 #include <ap_fixed.h>
@@ -57,8 +57,10 @@ void conv_combined(fixed_t x[MAX_SIZE], fixed_t dx[MAX_SIZE],fixed_t* wt,fixed_t
 
 	for(int i=0;i<F;i++){
 	        bbuf[i] = b[i];
-	        dbbuf[i] = db[i];
 	    }
+	for(int i=0;i<F;i++){
+		        dbbuf[i] = db[i];
+		    }
 
 
 	if(fwprop == true){

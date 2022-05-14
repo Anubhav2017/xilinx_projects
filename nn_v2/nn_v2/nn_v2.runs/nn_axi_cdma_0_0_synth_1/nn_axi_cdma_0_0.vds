@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Tue May 10 15:14:02 2022
-# Process ID: 7076
+# Start of session at: Thu May 12 17:47:19 2022
+# Process ID: 573621
 # Current directory: /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/nn_axi_cdma_0_0_synth_1
 # Command line: vivado -log nn_axi_cdma_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source nn_axi_cdma_0_0.tcl
 # Log file: /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/nn_axi_cdma_0_0_synth_1/nn_axi_cdma_0_0.vds
@@ -20,9 +20,9 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 7269
+INFO: [Synth 8-7075] Helper process launched with PID 573685
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:20 . Memory (MB): peak = 2357.973 ; gain = 0.000 ; free physical = 17069 ; free virtual = 22163
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 2357.973 ; gain = 0.000 ; free physical = 13016 ; free virtual = 22536
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'nn_axi_cdma_0_0' [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ip/nn_axi_cdma_0_0/synth/nn_axi_cdma_0_0.vhd:114]
 	Parameter C_S_AXI_LITE_ADDR_WIDTH bound to: 6 - type: integer 
@@ -30,8 +30,8 @@ INFO: [Synth 8-638] synthesizing module 'nn_axi_cdma_0_0' [/home/anubhav/xilinx_
 	Parameter C_AXI_LITE_IS_ASYNC bound to: 0 - type: integer 
 	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
-	Parameter C_M_AXI_MAX_BURST_LEN bound to: 16 - type: integer 
-	Parameter C_INCLUDE_DRE bound to: 0 - type: integer 
+	Parameter C_M_AXI_MAX_BURST_LEN bound to: 32 - type: integer 
+	Parameter C_INCLUDE_DRE bound to: 1 - type: integer 
 	Parameter C_USE_DATAMOVER_LITE bound to: 0 - type: integer 
 	Parameter C_READ_ADDR_PIPE_DEPTH bound to: 4 - type: integer 
 	Parameter C_WRITE_ADDR_PIPE_DEPTH bound to: 4 - type: integer 
@@ -48,8 +48,8 @@ INFO: [Synth 8-638] synthesizing module 'axi_cdma' [/home/anubhav/xilinx_project
 	Parameter C_AXI_LITE_IS_ASYNC bound to: 0 - type: integer 
 	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
-	Parameter C_M_AXI_MAX_BURST_LEN bound to: 16 - type: integer 
-	Parameter C_INCLUDE_DRE bound to: 0 - type: integer 
+	Parameter C_M_AXI_MAX_BURST_LEN bound to: 32 - type: integer 
+	Parameter C_INCLUDE_DRE bound to: 1 - type: integer 
 	Parameter C_USE_DATAMOVER_LITE bound to: 0 - type: integer 
 	Parameter C_READ_ADDR_PIPE_DEPTH bound to: 4 - type: integer 
 	Parameter C_WRITE_ADDR_PIPE_DEPTH bound to: 4 - type: integer 
@@ -66,13 +66,13 @@ INFO: [Synth 8-638] synthesizing module 'axi_cdma_simple_wrap' [/home/anubhav/xi
 	Parameter C_AXI_LITE_IS_ASYNC bound to: 0 - type: integer 
 	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
-	Parameter C_M_AXI_MAX_BURST_LEN bound to: 16 - type: integer 
-	Parameter C_INCLUDE_DRE bound to: 0 - type: integer 
+	Parameter C_M_AXI_MAX_BURST_LEN bound to: 32 - type: integer 
+	Parameter C_INCLUDE_DRE bound to: 1 - type: integer 
 	Parameter C_USE_DATAMOVER_LITE bound to: 0 - type: integer 
 	Parameter C_READ_ADDR_PIPE_DEPTH bound to: 4 - type: integer 
 	Parameter C_WRITE_ADDR_PIPE_DEPTH bound to: 4 - type: integer 
 	Parameter C_INCLUDE_SF bound to: 0 - type: integer 
-	Parameter C_SF_FIFO_DEPTH bound to: 128 - type: integer 
+	Parameter C_SF_FIFO_DEPTH bound to: 256 - type: integer 
 	Parameter C_SOFT_RST_TIME_CLKS bound to: 8 - type: integer 
 	Parameter C_FAMILY bound to: zynq - type: string 
 INFO: [Synth 8-638] synthesizing module 'axi_cdma_reset' [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/ecc1/hdl/axi_cdma_v4_1_vh_rfs.vhd:984]
@@ -133,8 +133,8 @@ INFO: [Synth 8-638] synthesizing module 'axi_datamover' [/home/anubhav/xilinx_pr
 	Parameter C_INCLUDE_MM2S_STSFIFO bound to: 1 - type: integer 
 	Parameter C_MM2S_STSCMD_FIFO_DEPTH bound to: 1 - type: integer 
 	Parameter C_MM2S_STSCMD_IS_ASYNC bound to: 0 - type: integer 
-	Parameter C_INCLUDE_MM2S_DRE bound to: 0 - type: integer 
-	Parameter C_MM2S_BURST_SIZE bound to: 16 - type: integer 
+	Parameter C_INCLUDE_MM2S_DRE bound to: 1 - type: integer 
+	Parameter C_MM2S_BURST_SIZE bound to: 32 - type: integer 
 	Parameter C_MM2S_BTT_USED bound to: 26 - type: integer 
 	Parameter C_MM2S_ADDR_PIPE_DEPTH bound to: 4 - type: integer 
 	Parameter C_MM2S_INCLUDE_SF bound to: 0 - type: integer 
@@ -148,7 +148,7 @@ INFO: [Synth 8-638] synthesizing module 'axi_datamover' [/home/anubhav/xilinx_pr
 	Parameter C_S2MM_STSCMD_FIFO_DEPTH bound to: 1 - type: integer 
 	Parameter C_S2MM_STSCMD_IS_ASYNC bound to: 0 - type: integer 
 	Parameter C_INCLUDE_S2MM_DRE bound to: 0 - type: integer 
-	Parameter C_S2MM_BURST_SIZE bound to: 16 - type: integer 
+	Parameter C_S2MM_BURST_SIZE bound to: 32 - type: integer 
 	Parameter C_S2MM_BTT_USED bound to: 26 - type: integer 
 	Parameter C_S2MM_SUPPORT_INDET_BTT bound to: 0 - type: integer 
 	Parameter C_S2MM_ADDR_PIPE_DEPTH bound to: 4 - type: integer 
@@ -173,8 +173,8 @@ INFO: [Synth 8-638] synthesizing module 'axi_datamover_mm2s_full_wrap' [/home/an
 	Parameter C_INCLUDE_MM2S_STSFIFO bound to: 1 - type: integer 
 	Parameter C_MM2S_STSCMD_FIFO_DEPTH bound to: 1 - type: integer 
 	Parameter C_MM2S_STSCMD_IS_ASYNC bound to: 0 - type: integer 
-	Parameter C_INCLUDE_MM2S_DRE bound to: 0 - type: integer 
-	Parameter C_MM2S_BURST_SIZE bound to: 16 - type: integer 
+	Parameter C_INCLUDE_MM2S_DRE bound to: 1 - type: integer 
+	Parameter C_MM2S_BURST_SIZE bound to: 32 - type: integer 
 	Parameter C_MM2S_BTT_USED bound to: 26 - type: integer 
 	Parameter C_MM2S_ADDR_PIPE_DEPTH bound to: 4 - type: integer 
 	Parameter C_TAG_WIDTH bound to: 4 - type: integer 
@@ -217,11 +217,11 @@ INFO: [Synth 8-638] synthesizing module 'axi_datamover_rd_status_cntl' [/home/an
 INFO: [Synth 8-256] done synthesizing module 'axi_datamover_rd_status_cntl' (10#1) [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:13746]
 INFO: [Synth 8-638] synthesizing module 'axi_datamover_pcc' [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:7416]
 	Parameter C_IS_MM2S bound to: 1 - type: integer 
-	Parameter C_DRE_ALIGN_WIDTH bound to: 1 - type: integer 
+	Parameter C_DRE_ALIGN_WIDTH bound to: 2 - type: integer 
 	Parameter C_SEL_ADDR_WIDTH bound to: 2 - type: integer 
 	Parameter C_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter C_STREAM_DWIDTH bound to: 32 - type: integer 
-	Parameter C_MAX_BURST_LEN bound to: 16 - type: integer 
+	Parameter C_MAX_BURST_LEN bound to: 32 - type: integer 
 	Parameter C_CMD_WIDTH bound to: 71 - type: integer 
 	Parameter C_TAG_WIDTH bound to: 4 - type: integer 
 	Parameter C_BTT_USED bound to: 26 - type: integer 
@@ -278,8 +278,8 @@ INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f' (16#1) [/home/anubhav/
 INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized1' (16#1) [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
 INFO: [Synth 8-256] done synthesizing module 'axi_datamover_addr_cntl' (17#1) [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:10000]
 INFO: [Synth 8-638] synthesizing module 'axi_datamover_rddata_cntl' [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:12185]
-	Parameter C_INCLUDE_DRE bound to: 0 - type: integer 
-	Parameter C_ALIGN_WIDTH bound to: 1 - type: integer 
+	Parameter C_INCLUDE_DRE bound to: 1 - type: integer 
+	Parameter C_ALIGN_WIDTH bound to: 2 - type: integer 
 	Parameter C_SEL_ADDR_WIDTH bound to: 2 - type: integer 
 	Parameter C_DATA_CNTL_FIFO_DEPTH bound to: 4 - type: integer 
 	Parameter C_MMAP_DWIDTH bound to: 32 - type: integer 
@@ -293,29 +293,45 @@ INFO: [Synth 8-638] synthesizing module 'axi_datamover_rdmux' [/home/anubhav/xil
 	Parameter C_STREAM_DWIDTH bound to: 32 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'axi_datamover_rdmux' (18#1) [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:10681]
 INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized2' [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
-	Parameter C_DWIDTH bound to: 29 - type: integer 
+	Parameter C_DWIDTH bound to: 31 - type: integer 
 	Parameter C_DEPTH bound to: 4 - type: integer 
 	Parameter C_IS_ASYNC bound to: 0 - type: integer 
 	Parameter C_PRIM_TYPE bound to: 2 - type: integer 
 	Parameter C_FAMILY bound to: zynq - type: string 
 INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized0' [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
-	Parameter C_DWIDTH bound to: 29 - type: integer 
+	Parameter C_DWIDTH bound to: 31 - type: integer 
 	Parameter C_DEPTH bound to: 4 - type: integer 
 	Parameter C_FAMILY bound to: zynq - type: string 
 INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized0' [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
-	Parameter C_DWIDTH bound to: 29 - type: integer 
+	Parameter C_DWIDTH bound to: 31 - type: integer 
 	Parameter C_DEPTH bound to: 4 - type: integer 
 	Parameter C_FAMILY bound to: zynq - type: string 
 INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized0' [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
 	Parameter C_DEPTH bound to: 4 - type: integer 
-	Parameter C_DWIDTH bound to: 29 - type: integer 
+	Parameter C_DWIDTH bound to: 31 - type: integer 
 	Parameter C_FAMILY bound to: zynq - type: string 
 INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized0' (18#1) [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
 INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized0' (18#1) [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
 INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized0' (18#1) [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
 INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized2' (18#1) [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
 INFO: [Synth 8-256] done synthesizing module 'axi_datamover_rddata_cntl' (19#1) [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:12185]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_mm2s_full_wrap' (20#1) [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:53572]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_mm2s_dre' [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:30463]
+	Parameter C_DWIDTH bound to: 32 - type: integer 
+	Parameter C_ALIGN_WIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:35699]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_dre_mux2_1_x_n' [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:29950]
+	Parameter C_WIDTH bound to: 10 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:29966]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_dre_mux2_1_x_n' (20#1) [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:29950]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_dre_mux4_1_x_n' [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:30097]
+	Parameter C_WIDTH bound to: 10 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:30113]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_dre_mux4_1_x_n' (21#1) [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:30097]
+INFO: [Synth 8-226] default block is never used [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:35928]
+INFO: [Synth 8-226] default block is never used [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:35975]
+INFO: [Synth 8-226] default block is never used [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:36022]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_mm2s_dre' (22#1) [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:30463]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_mm2s_full_wrap' (23#1) [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:53572]
 INFO: [Synth 8-638] synthesizing module 'axi_datamover_s2mm_full_wrap' [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:49997]
 	Parameter C_INCLUDE_S2MM bound to: 1 - type: integer 
 	Parameter C_S2MM_AWID bound to: 1 - type: integer 
@@ -327,7 +343,7 @@ INFO: [Synth 8-638] synthesizing module 'axi_datamover_s2mm_full_wrap' [/home/an
 	Parameter C_S2MM_STSCMD_FIFO_DEPTH bound to: 1 - type: integer 
 	Parameter C_S2MM_STSCMD_IS_ASYNC bound to: 0 - type: integer 
 	Parameter C_INCLUDE_S2MM_DRE bound to: 0 - type: integer 
-	Parameter C_S2MM_BURST_SIZE bound to: 16 - type: integer 
+	Parameter C_S2MM_BURST_SIZE bound to: 32 - type: integer 
 	Parameter C_S2MM_BTT_USED bound to: 26 - type: integer 
 	Parameter C_S2MM_SUPPORT_INDET_BTT bound to: 0 - type: integer 
 	Parameter C_S2MM_ADDR_PIPE_DEPTH bound to: 4 - type: integer 
@@ -363,15 +379,15 @@ INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized1' [/home/
 INFO: [Synth 8-638] synthesizing module 'cntr_incr_decr_addn_f__parameterized0' [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
 	Parameter C_SIZE bound to: 4 - type: integer 
 	Parameter C_FAMILY bound to: zynq - type: string 
-INFO: [Synth 8-256] done synthesizing module 'cntr_incr_decr_addn_f__parameterized0' (20#1) [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-256] done synthesizing module 'cntr_incr_decr_addn_f__parameterized0' (23#1) [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
 INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized1' [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
 	Parameter C_DEPTH bound to: 6 - type: integer 
 	Parameter C_DWIDTH bound to: 2 - type: integer 
 	Parameter C_FAMILY bound to: zynq - type: string 
-INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized1' (20#1) [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
-INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized1' (20#1) [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
-INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized1' (20#1) [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized3' (20#1) [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized1' (23#1) [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized1' (23#1) [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized1' (23#1) [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized3' (23#1) [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
 INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized4' [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
 	Parameter C_DWIDTH bound to: 7 - type: integer 
 	Parameter C_DEPTH bound to: 6 - type: integer 
@@ -390,18 +406,18 @@ INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized2' [/home/anub
 	Parameter C_DEPTH bound to: 6 - type: integer 
 	Parameter C_DWIDTH bound to: 7 - type: integer 
 	Parameter C_FAMILY bound to: zynq - type: string 
-INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized2' (20#1) [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
-INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized2' (20#1) [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
-INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized2' (20#1) [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized4' (20#1) [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_wr_status_cntl' (21#1) [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:17704]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized2' (23#1) [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized2' (23#1) [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized2' (23#1) [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized4' (23#1) [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_wr_status_cntl' (24#1) [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:17704]
 INFO: [Synth 8-638] synthesizing module 'axi_datamover_pcc__parameterized0' [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:7416]
 	Parameter C_IS_MM2S bound to: 0 - type: integer 
 	Parameter C_DRE_ALIGN_WIDTH bound to: 1 - type: integer 
 	Parameter C_SEL_ADDR_WIDTH bound to: 2 - type: integer 
 	Parameter C_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter C_STREAM_DWIDTH bound to: 32 - type: integer 
-	Parameter C_MAX_BURST_LEN bound to: 16 - type: integer 
+	Parameter C_MAX_BURST_LEN bound to: 32 - type: integer 
 	Parameter C_CMD_WIDTH bound to: 71 - type: integer 
 	Parameter C_TAG_WIDTH bound to: 4 - type: integer 
 	Parameter C_BTT_USED bound to: 26 - type: integer 
@@ -410,7 +426,7 @@ INFO: [Synth 8-638] synthesizing module 'axi_datamover_pcc__parameterized0' [/ho
 	Parameter C_STRT_SF_OFFSET_WIDTH bound to: 1 - type: integer 
 	Parameter C_MCDMA bound to: 1 - type: integer 
 INFO: [Synth 8-226] default block is never used [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:9490]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_pcc__parameterized0' (21#1) [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:7416]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_pcc__parameterized0' (24#1) [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:7416]
 INFO: [Synth 8-638] synthesizing module 'axi_datamover_addr_cntl__parameterized0' [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:10000]
 	Parameter C_ADDR_FIFO_DEPTH bound to: 4 - type: integer 
 	Parameter C_ADDR_WIDTH bound to: 32 - type: integer 
@@ -418,7 +434,7 @@ INFO: [Synth 8-638] synthesizing module 'axi_datamover_addr_cntl__parameterized0
 	Parameter C_ADDR_ID_WIDTH bound to: 4 - type: integer 
 	Parameter C_TAG_WIDTH bound to: 4 - type: integer 
 	Parameter C_FAMILY bound to: zynq - type: string 
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_addr_cntl__parameterized0' (21#1) [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:10000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_addr_cntl__parameterized0' (24#1) [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:10000]
 INFO: [Synth 8-638] synthesizing module 'axi_datamover_wrdata_cntl' [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:15674]
 	Parameter C_REALIGNER_INCLUDED bound to: 0 - type: integer 
 	Parameter C_ENABLE_INDET_BTT bound to: 0 - type: integer 
@@ -447,11 +463,11 @@ INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized3' [/home/anub
 	Parameter C_DEPTH bound to: 4 - type: integer 
 	Parameter C_DWIDTH bound to: 27 - type: integer 
 	Parameter C_FAMILY bound to: zynq - type: string 
-INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized3' (21#1) [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
-INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized3' (21#1) [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
-INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized3' (21#1) [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized5' (21#1) [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_wrdata_cntl' (22#1) [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:15674]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized3' (24#1) [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized3' (24#1) [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized3' (24#1) [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized5' (24#1) [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_wrdata_cntl' (25#1) [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:15674]
 INFO: [Synth 8-638] synthesizing module 'axi_datamover_skid2mm_buf' [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:18998]
 	Parameter C_MDATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_SDATA_WIDTH bound to: 32 - type: integer 
@@ -460,26 +476,26 @@ INFO: [Synth 8-638] synthesizing module 'axi_datamover_wr_demux' [/home/anubhav/
 	Parameter C_SEL_ADDR_WIDTH bound to: 2 - type: integer 
 	Parameter C_MMAP_DWIDTH bound to: 32 - type: integer 
 	Parameter C_STREAM_DWIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_wr_demux' (23#1) [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:14117]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_skid2mm_buf' (24#1) [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:18998]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_s2mm_full_wrap' (25#1) [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:49997]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover' (26#1) [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:55436]
-INFO: [Synth 8-256] done synthesizing module 'axi_cdma_simple_wrap' (27#1) [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/ecc1/hdl/axi_cdma_v4_1_vh_rfs.vhd:8729]
-INFO: [Synth 8-256] done synthesizing module 'axi_cdma' (28#1) [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/ecc1/hdl/axi_cdma_v4_1_vh_rfs.vhd:15327]
-INFO: [Synth 8-256] done synthesizing module 'nn_axi_cdma_0_0' (29#1) [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ip/nn_axi_cdma_0_0/synth/nn_axi_cdma_0_0.vhd:114]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_wr_demux' (26#1) [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:14117]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_skid2mm_buf' (27#1) [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:18998]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_s2mm_full_wrap' (28#1) [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:49997]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover' (29#1) [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:55436]
+INFO: [Synth 8-256] done synthesizing module 'axi_cdma_simple_wrap' (30#1) [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/ecc1/hdl/axi_cdma_v4_1_vh_rfs.vhd:8729]
+INFO: [Synth 8-256] done synthesizing module 'axi_cdma' (31#1) [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ipshared/ecc1/hdl/axi_cdma_v4_1_vh_rfs.vhd:15327]
+INFO: [Synth 8-256] done synthesizing module 'nn_axi_cdma_0_0' (32#1) [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.gen/sources_1/bd/nn/ip/nn_axi_cdma_0_0/synth/nn_axi_cdma_0_0.vhd:114]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:37 . Memory (MB): peak = 2382.902 ; gain = 24.930 ; free physical = 17043 ; free virtual = 22169
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:20 . Memory (MB): peak = 2384.902 ; gain = 26.930 ; free physical = 13002 ; free virtual = 22555
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:38 . Memory (MB): peak = 2394.777 ; gain = 36.805 ; free physical = 17003 ; free virtual = 22128
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:21 . Memory (MB): peak = 2396.777 ; gain = 38.805 ; free physical = 13004 ; free virtual = 22555
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:38 . Memory (MB): peak = 2394.777 ; gain = 36.805 ; free physical = 17003 ; free virtual = 22129
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:21 . Memory (MB): peak = 2396.777 ; gain = 38.805 ; free physical = 13004 ; free virtual = 22555
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2394.777 ; gain = 0.000 ; free physical = 17108 ; free virtual = 22234
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2396.777 ; gain = 0.000 ; free physical = 12998 ; free virtual = 22550
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -492,27 +508,27 @@ Parsing XDC File [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/nn_axi_cd
 Finished Parsing XDC File [/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/nn_axi_cdma_0_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2526.621 ; gain = 0.000 ; free physical = 17940 ; free virtual = 23076
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2527.621 ; gain = 0.000 ; free physical = 12909 ; free virtual = 22457
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.10 . Memory (MB): peak = 2526.621 ; gain = 0.000 ; free physical = 17925 ; free virtual = 23061
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2527.621 ; gain = 0.000 ; free physical = 12907 ; free virtual = 22456
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:46 . Memory (MB): peak = 2526.621 ; gain = 168.648 ; free physical = 18274 ; free virtual = 23433
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:25 . Memory (MB): peak = 2527.621 ; gain = 169.648 ; free physical = 12993 ; free virtual = 22530
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:46 . Memory (MB): peak = 2526.621 ; gain = 168.648 ; free physical = 18274 ; free virtual = 23432
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:25 . Memory (MB): peak = 2527.621 ; gain = 169.648 ; free physical = 12993 ; free virtual = 22530
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  /home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/nn_axi_cdma_0_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:46 . Memory (MB): peak = 2526.621 ; gain = 168.648 ; free physical = 18269 ; free virtual = 23428
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:25 . Memory (MB): peak = 2527.621 ; gain = 169.648 ; free physical = 12993 ; free virtual = 22530
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'sig_sm_state_reg' in module 'axi_cdma_simple_cntlr'
 INFO: [Synth 8-802] inferred FSM for state register 'sig_pcc_sm_state_reg' in module 'axi_datamover_pcc'
@@ -557,7 +573,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'sig_pcc_sm_state_reg' usin
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'sig_pcc_sm_state_reg' using encoding 'one-hot' in module 'axi_datamover_pcc__parameterized0'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:47 . Memory (MB): peak = 2526.621 ; gain = 168.648 ; free physical = 18281 ; free virtual = 23445
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:27 . Memory (MB): peak = 2527.621 ; gain = 169.648 ; free physical = 12982 ; free virtual = 22520
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -565,9 +581,8 @@ Start RTL Component Statistics
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input   16 Bit       Adders := 4     
-	   2 Input    8 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 4     
 	   2 Input    7 Bit       Adders := 2     
-	   2 Input    6 Bit       Adders := 2     
 	   3 Input    4 Bit       Adders := 2     
 	   2 Input    4 Bit       Adders := 2     
 	   3 Input    3 Bit       Adders := 6     
@@ -578,26 +593,33 @@ Detailed RTL Component Info :
 	               32 Bit    Registers := 11    
 	               26 Bit    Registers := 2     
 	               16 Bit    Registers := 12    
+	               10 Bit    Registers := 11    
 	                8 Bit    Registers := 9     
 	                6 Bit    Registers := 5     
 	                4 Bit    Registers := 30    
 	                3 Bit    Registers := 10    
-	                2 Bit    Registers := 8     
-	                1 Bit    Registers := 266   
+	                2 Bit    Registers := 11    
+	                1 Bit    Registers := 273   
 +---Muxes : 
 	   2 Input   32 Bit        Muxes := 8     
 	   2 Input   16 Bit        Muxes := 9     
+	   2 Input   10 Bit        Muxes := 5     
+	   4 Input   10 Bit        Muxes := 3     
 	   2 Input    9 Bit        Muxes := 2     
 	   8 Input    8 Bit        Muxes := 3     
 	   2 Input    8 Bit        Muxes := 14    
 	   2 Input    7 Bit        Muxes := 1     
 	   2 Input    4 Bit        Muxes := 20    
 	   4 Input    4 Bit        Muxes := 8     
+	   5 Input    4 Bit        Muxes := 1     
 	   2 Input    3 Bit        Muxes := 4     
 	   3 Input    3 Bit        Muxes := 2     
-	   2 Input    2 Bit        Muxes := 8     
-	   2 Input    1 Bit        Muxes := 115   
+	   2 Input    2 Bit        Muxes := 9     
+	  16 Input    2 Bit        Muxes := 1     
+	   6 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 128   
 	   8 Input    1 Bit        Muxes := 10    
+	   4 Input    1 Bit        Muxes := 3     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -614,25 +636,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:51 . Memory (MB): peak = 2526.621 ; gain = 168.648 ; free physical = 19764 ; free virtual = 24937
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:30 . Memory (MB): peak = 2527.621 ; gain = 169.648 ; free physical = 12963 ; free virtual = 22508
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:55 . Memory (MB): peak = 2526.621 ; gain = 168.648 ; free physical = 20691 ; free virtual = 25857
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:34 . Memory (MB): peak = 2527.621 ; gain = 169.648 ; free physical = 12839 ; free virtual = 22385
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:01:00 . Memory (MB): peak = 2526.621 ; gain = 168.648 ; free physical = 22888 ; free virtual = 28027
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:40 . Memory (MB): peak = 2527.621 ; gain = 169.648 ; free physical = 12752 ; free virtual = 22298
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:39 ; elapsed = 00:01:01 . Memory (MB): peak = 2526.621 ; gain = 168.648 ; free physical = 23011 ; free virtual = 28163
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:40 . Memory (MB): peak = 2527.621 ; gain = 169.648 ; free physical = 12751 ; free virtual = 22297
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -650,37 +672,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:41 ; elapsed = 00:01:03 . Memory (MB): peak = 2526.621 ; gain = 168.648 ; free physical = 23842 ; free virtual = 28987
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:42 . Memory (MB): peak = 2527.621 ; gain = 169.648 ; free physical = 12752 ; free virtual = 22298
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:41 ; elapsed = 00:01:03 . Memory (MB): peak = 2526.621 ; gain = 168.648 ; free physical = 23842 ; free virtual = 28987
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:42 . Memory (MB): peak = 2527.621 ; gain = 169.648 ; free physical = 12752 ; free virtual = 22298
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:01:03 . Memory (MB): peak = 2526.621 ; gain = 168.648 ; free physical = 23840 ; free virtual = 28985
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:43 . Memory (MB): peak = 2527.621 ; gain = 169.648 ; free physical = 12752 ; free virtual = 22298
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:01:03 . Memory (MB): peak = 2526.621 ; gain = 168.648 ; free physical = 23840 ; free virtual = 28985
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:43 . Memory (MB): peak = 2527.621 ; gain = 169.648 ; free physical = 12752 ; free virtual = 22298
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:41 ; elapsed = 00:01:03 . Memory (MB): peak = 2526.621 ; gain = 168.648 ; free physical = 23840 ; free virtual = 28985
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:43 . Memory (MB): peak = 2527.621 ; gain = 169.648 ; free physical = 12752 ; free virtual = 22298
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:41 ; elapsed = 00:01:03 . Memory (MB): peak = 2526.621 ; gain = 168.648 ; free physical = 23840 ; free virtual = 28985
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:43 . Memory (MB): peak = 2527.621 ; gain = 169.648 ; free physical = 12752 ; free virtual = 22298
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -691,7 +713,7 @@ Dynamic Shift Register Report:
 |Module Name | RTL Name                 | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
 +------------+--------------------------+--------+------------+--------+---------+--------+--------+--------+
 |dsrl        | INFERRED_GEN.data_reg[3] | 59     | 59         | 59     | 0       | 0      | 0      | 0      | 
-|dsrl__1     | INFERRED_GEN.data_reg[3] | 29     | 29         | 29     | 0       | 0      | 0      | 0      | 
+|dsrl__1     | INFERRED_GEN.data_reg[3] | 31     | 31         | 31     | 0       | 0      | 0      | 0      | 
 |dsrl__2     | INFERRED_GEN.data_reg[5] | 2      | 2          | 2      | 0       | 0      | 0      | 0      | 
 |dsrl__3     | INFERRED_GEN.data_reg[5] | 7      | 7          | 7      | 0       | 0      | 0      | 0      | 
 |dsrl__4     | INFERRED_GEN.data_reg[3] | 27     | 27         | 27     | 0       | 0      | 0      | 0      | 
@@ -717,39 +739,39 @@ Report Cell Usage:
 +------+-------+------+
 |1     |CARRY4 |    32|
 |2     |LUT1   |    10|
-|3     |LUT2   |   101|
-|4     |LUT3   |   169|
-|5     |LUT4   |   137|
-|6     |LUT5   |   124|
-|7     |LUT6   |   271|
-|8     |SRL16E |   115|
-|9     |FDRE   |   980|
-|10    |FDSE   |    36|
+|3     |LUT2   |   105|
+|4     |LUT3   |   254|
+|5     |LUT4   |   171|
+|6     |LUT5   |   162|
+|7     |LUT6   |   246|
+|8     |SRL16E |   124|
+|9     |FDRE   |  1110|
+|10    |FDSE   |    37|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:01:03 . Memory (MB): peak = 2526.621 ; gain = 168.648 ; free physical = 23840 ; free virtual = 28985
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:43 . Memory (MB): peak = 2527.621 ; gain = 169.648 ; free physical = 12752 ; free virtual = 22298
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:38 ; elapsed = 00:01:01 . Memory (MB): peak = 2526.621 ; gain = 36.805 ; free physical = 23894 ; free virtual = 29039
-Synthesis Optimization Complete : Time (s): cpu = 00:00:41 ; elapsed = 00:01:03 . Memory (MB): peak = 2526.621 ; gain = 168.648 ; free physical = 23894 ; free virtual = 29039
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:41 . Memory (MB): peak = 2527.621 ; gain = 38.805 ; free physical = 12806 ; free virtual = 22353
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:43 . Memory (MB): peak = 2527.621 ; gain = 169.648 ; free physical = 12806 ; free virtual = 22353
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2526.621 ; gain = 0.000 ; free physical = 23980 ; free virtual = 29125
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2527.621 ; gain = 0.000 ; free physical = 12890 ; free virtual = 22436
 INFO: [Netlist 29-17] Analyzing 32 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2526.621 ; gain = 0.000 ; free physical = 23913 ; free virtual = 29058
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2535.629 ; gain = 0.000 ; free physical = 12836 ; free virtual = 22382
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-133 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+145 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:50 ; elapsed = 00:01:08 . Memory (MB): peak = 2526.621 ; gain = 168.719 ; free physical = 24118 ; free virtual = 29264
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:47 . Memory (MB): peak = 2535.629 ; gain = 177.727 ; free physical = 13042 ; free virtual = 22588
 INFO: [Common 17-1381] The checkpoint '/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/nn_axi_cdma_0_0_synth_1/nn_axi_cdma_0_0.dcp' has been generated.
 WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP nn_axi_cdma_0_0, cache-ID = d19ec767ea9d9d6a
-INFO: [Coretcl 2-1174] Renamed 62 cell refs.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP nn_axi_cdma_0_0, cache-ID = 19089e861bc43dab
+INFO: [Coretcl 2-1174] Renamed 63 cell refs.
 INFO: [Common 17-1381] The checkpoint '/home/anubhav/xilinx_projects/nn_v2/nn_v2/nn_v2.runs/nn_axi_cdma_0_0_synth_1/nn_axi_cdma_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file nn_axi_cdma_0_0_utilization_synth.rpt -pb nn_axi_cdma_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue May 10 15:15:22 2022...
+INFO: [Common 17-206] Exiting Vivado at Thu May 12 17:48:15 2022...

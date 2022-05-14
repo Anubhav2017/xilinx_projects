@@ -1,16 +1,16 @@
 INFO: Applying HLS Y2K22 patch v1.2 for IP revision
 INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2020.2/bin/unwrapped/lnx64.o/vitis_hls'
-INFO: [HLS 200-10] For user 'anubhav' on host 'anubhav-acer' (Linux_x86_64 version 5.13.0-40-generic) on Thu May 12 13:02:12 IST 2022
+INFO: [HLS 200-10] For user 'anubhav' on host 'anubhav-acer' (Linux_x86_64 version 5.13.0-40-generic) on Sat May 14 16:02:20 IST 2022
 INFO: [HLS 200-10] On os Ubuntu 20.04.4 LTS
 INFO: [HLS 200-10] In directory '/home/anubhav/xilinx_projects/ip_repo'
-Sourcing Tcl script '/home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/export.tcl'
-INFO: [HLS 200-1510] Running: open_project conv_combined 
-INFO: [HLS 200-10] Opening project '/home/anubhav/xilinx_projects/ip_repo/conv_combined'.
-INFO: [HLS 200-1510] Running: set_top conv_combined 
-INFO: [HLS 200-1510] Running: add_files conv_combined/main.cpp 
-INFO: [HLS 200-10] Adding design file 'conv_combined/main.cpp' to the project
+Sourcing Tcl script '/home/anubhav/xilinx_projects/ip_repo/input_layer/solution1/export.tcl'
+INFO: [HLS 200-1510] Running: open_project input_layer 
+INFO: [HLS 200-10] Opening project '/home/anubhav/xilinx_projects/ip_repo/input_layer'.
+INFO: [HLS 200-1510] Running: set_top InputLayer 
+INFO: [HLS 200-1510] Running: add_files input_layer/main.cpp 
+INFO: [HLS 200-10] Adding design file 'input_layer/main.cpp' to the project
 INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
-INFO: [HLS 200-10] Opening solution '/home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1'.
+INFO: [HLS 200-10] Opening solution '/home/anubhav/xilinx_projects/ip_repo/input_layer/solution1'.
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
 INFO: [HLS 200-1505] Using flow_target 'vivado'
@@ -22,7 +22,7 @@ INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1
 INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
 INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 
 INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
-INFO: [HLS 200-1510] Running: set_directive_top -name conv_combined conv_combined 
+INFO: [HLS 200-1510] Running: set_directive_top -name InputLayer InputLayer 
 INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog 
 INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
 
@@ -35,6 +35,6 @@ source run_ippack.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
-INFO: [Common 17-206] Exiting Vivado at Thu May 12 13:02:23 2022...
-INFO: [HLS 200-802] Generated output file conv_combined/solution1/impl/export.zip
-INFO: [HLS 200-111] Finished Command export_design CPU user time: 12.15 seconds. CPU system time: 0.75 seconds. Elapsed time: 13.54 seconds; current allocated memory: 166.001 MB.
+INFO: [Common 17-206] Exiting Vivado at Sat May 14 16:02:31 2022...
+INFO: [HLS 200-802] Generated output file input_layer/solution1/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 11.31 seconds. CPU system time: 0.77 seconds. Elapsed time: 12.71 seconds; current allocated memory: 165.399 MB.

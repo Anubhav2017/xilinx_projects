@@ -73,22 +73,6 @@
   "../../../bd/nn/ip/nn_fcc_combined_0_bram_2_0/sim/nn_fcc_combined_0_bram_2_0.v" \
   "../../../bd/nn/ip/nn_conv_combined_0_bram_0/sim/nn_conv_combined_0_bram_0.v" \
   "../../../bd/nn/ip/nn_conv_combined_0_bram_0_0/sim/nn_conv_combined_0_bram_0_0.v" \
-  "../../../../nn_v2.gen/sources_1/bd/nn/ipshared/3ee7/hdl/verilog/conv_combined_bbuf_V.v" \
-  "../../../../nn_v2.gen/sources_1/bd/nn/ipshared/3ee7/hdl/verilog/conv_combined_CRTL_BUS_s_axi.v" \
-  "../../../../nn_v2.gen/sources_1/bd/nn/ipshared/3ee7/hdl/verilog/conv_combined_dwbuf_V.v" \
-  "../../../../nn_v2.gen/sources_1/bd/nn/ipshared/3ee7/hdl/verilog/conv_combined_gmem_m_axi.v" \
-  "../../../../nn_v2.gen/sources_1/bd/nn/ipshared/3ee7/hdl/verilog/conv_combined_mac_muladd_10s_10s_10ns_10_4_1.v" \
-  "../../../../nn_v2.gen/sources_1/bd/nn/ipshared/3ee7/hdl/verilog/conv_combined_mac_muladd_16s_16s_23ns_23_4_1.v" \
-  "../../../../nn_v2.gen/sources_1/bd/nn/ipshared/3ee7/hdl/verilog/conv_combined_mul_10s_10s_10_1_1.v" \
-  "../../../../nn_v2.gen/sources_1/bd/nn/ipshared/3ee7/hdl/verilog/conv_combined_mul_31ns_32ns_63_2_1.v" \
-  "../../../../nn_v2.gen/sources_1/bd/nn/ipshared/3ee7/hdl/verilog/conv_combined_mul_31ns_64ns_95_5_1.v" \
-  "../../../../nn_v2.gen/sources_1/bd/nn/ipshared/3ee7/hdl/verilog/conv_combined_mul_31ns_96ns_127_5_1.v" \
-  "../../../../nn_v2.gen/sources_1/bd/nn/ipshared/3ee7/hdl/verilog/conv_combined_mul_31s_31s_31_2_1.v" \
-  "../../../../nn_v2.gen/sources_1/bd/nn/ipshared/3ee7/hdl/verilog/conv_combined_mul_32ns_32ns_64_2_1.v" \
-  "../../../../nn_v2.gen/sources_1/bd/nn/ipshared/3ee7/hdl/verilog/conv_combined_mul_32ns_64ns_96_5_1.v" \
-  "../../../../nn_v2.gen/sources_1/bd/nn/ipshared/3ee7/hdl/verilog/conv_combined_wbuf_V.v" \
-  "../../../../nn_v2.gen/sources_1/bd/nn/ipshared/3ee7/hdl/verilog/conv_combined.v" \
-  "../../../bd/nn/ip/nn_conv_combined_0_1/sim/nn_conv_combined_0_1.v" \
   "../../../../nn_v2.gen/sources_1/bd/nn/ipshared/a1d0/hdl/verilog/relu_combined_CTRL_s_axi.v" \
   "../../../../nn_v2.gen/sources_1/bd/nn/ipshared/a1d0/hdl/verilog/relu_combined.v" \
   "../../../bd/nn/ip/nn_relu_combined_0_0_1/sim/nn_relu_combined_0_0.v" \
@@ -138,6 +122,23 @@
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/nn/ip/nn_axi_cdma_0_0/sim/nn_axi_cdma_0_0.vhd" \
   "../../../bd/nn/ip/nn_axi_bram_ctrl_1_1/sim/nn_axi_bram_ctrl_1_1.vhd" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../../nn_v2.gen/sources_1/bd/nn/ipshared/27ad/hdl/verilog/conv_combined_CRTL_BUS_s_axi.v" \
+  "../../../../nn_v2.gen/sources_1/bd/nn/ipshared/27ad/hdl/verilog/conv_combined_dwbuf_V.v" \
+  "../../../../nn_v2.gen/sources_1/bd/nn/ipshared/27ad/hdl/verilog/conv_combined_gmem_m_axi.v" \
+  "../../../../nn_v2.gen/sources_1/bd/nn/ipshared/27ad/hdl/verilog/conv_combined_mac_muladd_10s_10s_10ns_10_4_1.v" \
+  "../../../../nn_v2.gen/sources_1/bd/nn/ipshared/27ad/hdl/verilog/conv_combined_mac_muladd_16s_16s_23ns_23_4_1.v" \
+  "../../../../nn_v2.gen/sources_1/bd/nn/ipshared/27ad/hdl/verilog/conv_combined_mul_10s_10s_10_1_1.v" \
+  "../../../../nn_v2.gen/sources_1/bd/nn/ipshared/27ad/hdl/verilog/conv_combined_mul_31ns_32ns_63_2_1.v" \
+  "../../../../nn_v2.gen/sources_1/bd/nn/ipshared/27ad/hdl/verilog/conv_combined_mul_31ns_64ns_95_5_1.v" \
+  "../../../../nn_v2.gen/sources_1/bd/nn/ipshared/27ad/hdl/verilog/conv_combined_mul_31s_31s_31_2_1.v" \
+  "../../../../nn_v2.gen/sources_1/bd/nn/ipshared/27ad/hdl/verilog/conv_combined_mul_32ns_32ns_64_2_1.v" \
+  "../../../../nn_v2.gen/sources_1/bd/nn/ipshared/27ad/hdl/verilog/conv_combined_mul_32ns_64ns_96_5_1.v" \
+  "../../../../nn_v2.gen/sources_1/bd/nn/ipshared/27ad/hdl/verilog/conv_combined_mux_32_16_1_1.v" \
+  "../../../../nn_v2.gen/sources_1/bd/nn/ipshared/27ad/hdl/verilog/conv_combined_wbuf_V.v" \
+  "../../../../nn_v2.gen/sources_1/bd/nn/ipshared/27ad/hdl/verilog/conv_combined.v" \
+  "../../../bd/nn/ip/nn_conv_combined_0_1/sim/nn_conv_combined_0_1.v" \
 -endlib
 -makelib xcelium_lib/axi_protocol_converter_v2_1_22 \
   "../../../../nn_v2.gen/sources_1/bd/nn/ipshared/5cee/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \

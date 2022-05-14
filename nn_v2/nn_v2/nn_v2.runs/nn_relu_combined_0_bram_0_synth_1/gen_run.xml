@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="nn_relu_combined_0_bram_0_synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1652213251">
-  <File Type="VDS-TIMING-PB" Name="nn_relu_combined_0_bram_0_timing_summary_synth.pb"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="nn_relu_combined_0_bram_0_timing_summary_synth.rpt"/>
-  <File Type="RDS-DCP" Name="nn_relu_combined_0_bram_0.dcp"/>
-  <File Type="RDS-UTIL-PB" Name="nn_relu_combined_0_bram_0_utilization_synth.pb"/>
-  <File Type="RDS-UTIL" Name="nn_relu_combined_0_bram_0_utilization_synth.rpt"/>
-  <File Type="RDS-PROPCONSTRS" Name="nn_relu_combined_0_bram_0_drc_synth.rpt"/>
-  <File Type="RDS-RDS" Name="nn_relu_combined_0_bram_0.vds"/>
   <File Type="REPORTS-TCL" Name="nn_relu_combined_0_bram_0_reports.tcl"/>
   <File Type="PA-TCL" Name="nn_relu_combined_0_bram_0.tcl"/>
+  <File Type="RDS-DCP" Name="nn_relu_combined_0_bram_0.dcp"/>
+  <File Type="RDS-RDS" Name="nn_relu_combined_0_bram_0.vds"/>
+  <File Type="RDS-UTIL" Name="nn_relu_combined_0_bram_0_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="nn_relu_combined_0_bram_0_utilization_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/nn_relu_combined_0_bram_0">
     <File Path="$PSRCDIR/sources_1/bd/nn/ip/nn_relu_combined_0_bram_0/nn_relu_combined_0_bram_0.xci">
       <FileInfo>

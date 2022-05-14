@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-| Date         : Thu May 12 13:09:05 2022
+| Date         : Fri May 13 11:58:29 2022
 | Host         : anubhav-acer running 64-bit Ubuntu 20.04.4 LTS
 | Command      : report_methodology -file nn_wrapper_methodology_drc_routed.rpt -pb nn_wrapper_methodology_drc_routed.pb -rpx nn_wrapper_methodology_drc_routed.rpx
 | Design       : nn_wrapper
