@@ -3757,8 +3757,8 @@
       </xilinx:taxonomies>
       <xilinx:displayName>Conv_combined</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>2112503150</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2022-05-13T06:20:40Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>2112506958</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2022-05-15T21:49:06Z</xilinx:coreCreationDateTime>
       <xilinx:sdxKernelAttributes>
         <xilinx:sdx_kernel>true</xilinx:sdx_kernel>
         <xilinx:sdx_kernel_type>hls</xilinx:sdx_kernel_type>

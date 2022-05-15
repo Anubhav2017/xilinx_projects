@@ -20,21 +20,26 @@ void InputLayer(fixed_t* x,fixed_t* dx, fixed_t bram_x[MAX_SIZE], fixed_t bram_d
 
 
 	if(ddrtobram){
-//		for(int i=0;i<dim;i++){
-//        	bram_x[i]=x[i];
-//        	bram_dx[i]=dx[i];
-//    	}
-		memcpy(bram_x,x,dim);
-		memcpy(bram_dx,dx,dim);
+		for(int i=0;i<dim;i++){
+        	bram_x[i]=x[i];
+    	}
+		for(int i=0;i<dim;i++){
+		    bram_dx[i]=dx[i];
+		}
+//		memcpy(bram_x,x,dim);
+//		memcpy(bram_dx,dx,dim);
 
 	}
 	else{
-		memcpy(x,bram_x,dim);
-		memcpy(dx,bram_dx,dim);
-//		for(int i=0;i<dim;i++){
-//		        	x[i]=bram_x[i];
-//		        	bram_dx[i]=dx[i];
-//		    	}
+//		memcpy(x,bram_x,dim);
+//		memcpy(dx,bram_dx,dim);
+		for(int i=0;i<dim;i++){
+		        	x[i]=bram_x[i];
+		}
+
+		for(int i=0;i<dim;i++){
+		   dx[i]=bram_dx[i];
+		}
 	}
 
 

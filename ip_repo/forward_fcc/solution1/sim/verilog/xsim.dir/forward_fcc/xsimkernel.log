@@ -1,7 +1,0 @@
-Running: xsim.dir/forward_fcc/xsimk -simmode gui -wdb forward_fcc.wdb -simrunnum 0 -socket 49005
-Design successfully loaded
-Design Loading Memory Usage: 27636 KB (Peak: 27644 KB)
-Design Loading CPU Usage: 0 ms
-Simulation completed
-Simulation Memory Usage: 114440 KB (Peak: 166904 KB)
-Simulation CPU Usage: 0 ms

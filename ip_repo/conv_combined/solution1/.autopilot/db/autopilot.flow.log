@@ -1,4 +1,4 @@
-INFO-FLOW: Workspace /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1 opened at Fri May 13 11:49:59 IST 2022
+INFO-FLOW: Workspace /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1 opened at Mon May 16 03:18:23 IST 2022
 Execute     ap_set_clock -name default -period 10 -default=false 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 Execute     import_lib /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynq/zynq 
@@ -61,7 +61,7 @@ INFO-FLOW: DBG:set_part: RDI_DATADIR=/tools/Xilinx/Vivado/2020.2/data:/tools/Xil
 Execute       ap_part_info -name xc7z020-clg400-1 -data single -quiet 
 DBG:HLSDevice: Trying to load device library: /tools/Xilinx/Vitis_HLS/2020.2/lib/lnx64.o/librdi_hlsvwrap.so
 DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /tools/Xilinx/Vivado/2020.2/data/parts/arch.xml
-Command       ap_part_info done; 0.77 sec.
+Command       ap_part_info done; 0.78 sec.
 Execute       ap_part_info -name xc7z020-clg400-1 -data info 
 Execute       add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
 Execute         get_default_platform 
@@ -94,11 +94,10 @@ Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx
 Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
 Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
 Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
-Command       add_library done; 0.11 sec.
 INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
 Execute       ap_part_info -name xc7z020-clg400-1 -data info 
 Execute       config_compile -quiet -complex-mul-dsp=0 
-Command     set_part done; 0.89 sec.
+Command     set_part done; 0.9 sec.
 Execute     ap_part_info -data single -name xc7z020-clg400-1 
 Execute     ap_part_info -name xc7z020-clg400-1 -data resources 
 Execute     config_chip_info -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP 220} {BRAM 280} {URAM 0} 
@@ -115,19 +114,13 @@ Execute     get_config_rtl -register_reset_num
 Execute     send_msg_by_id INFO @200-1464@%s config_interface -m_axi_addr64=0 
 INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=0
 Execute     config_interface -m_axi_addr64=0 
-Execute     send_msg_by_id INFO @200-1464@%s config_export -format=ip_catalog 
-INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
-Execute     config_export -format=ip_catalog 
-Execute     send_msg_by_id INFO @200-1464@%s config_export -rtl=verilog 
-INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
-Execute     config_export -rtl=verilog 
-Command   open_solution done; 1.13 sec.
-Execute   set_part xc7z020-clg400-1 
-INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+Command   open_solution done; 1.14 sec.
+Execute   set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
 INFO-FLOW: DBG:set_part: XILINX_VIVADO=/tools/Xilinx/Vivado/2020.2
 INFO-FLOW: DBG:set_part: RDI_DATADIR=/tools/Xilinx/Vivado/2020.2/data:/tools/Xilinx/Vitis_HLS/2020.2/data
-Execute     ap_part_info -name xc7z020-clg400-1 -data single -quiet 
-Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     ap_part_info -name xc7z020clg400-1 -data single -quiet 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
 Execute     add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
 Execute       get_default_platform 
 Execute       open_platform DefaultPlatform 
@@ -165,12 +158,7 @@ Execute   create_clock -period 10 -name default
 INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
 Execute   config_interface -m_axi_addr64=0 
 INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 
-Execute   config_export -format ip_catalog -rtl verilog 
-INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
 Execute   source ./conv_combined/solution1/directives.tcl 
-Execute     set_directive_top -name conv_combined conv_combined 
-INFO: [HLS 200-1510] Running: set_directive_top -name conv_combined conv_combined 
-INFO-FLOW: Setting directive 'TOP' name=conv_combined 
 Execute   csynth_design 
 INFO: [HLS 200-1510] Running: csynth_design 
 Execute     get_config_compile -effort 
@@ -183,7 +171,7 @@ Execute     get_config_compile -skip_syncheck
 Execute     get_config_compile -skip_transform 
 Execute     get_config_compile -keep_printf 
 Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
-INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 155.853 MB.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 155.767 MB.
 INFO: [HLS 200-10] Analyzing design file 'conv_combined/main.cpp' ... 
 INFO-FLOW: Compiling one TU...
 Execute       get_config_compile -pragma_strict_mode 
@@ -196,25 +184,22 @@ INFO-FLOW: Done: GCC PP 39 time: 0.1 seconds per iteration
 Execute       set_directive_top conv_combined -name=conv_combined 
 INFO-FLOW: Setting directive 'TOP' name=conv_combined 
 INFO-FLOW: Setting directive 'TOP' name=conv_combined 
-INFO-FLOW: Setting directive 'TOP' name=conv_combined 
-INFO-FLOW: Setting directive 'TOP' name=conv_combined 
 Execute       source /tools/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
 Execute       source /tools/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
 Execute         source /tools/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/try/try.tcl 
 INFO-FLOW: Setting directive 'TOP' name=conv_combined 
-INFO-FLOW: Setting directive 'TOP' name=conv_combined 
 Execute       list_core -type functional_unit 
 Execute       clang_tidy xilinx-systemc-detector /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/main.pp.0.cpp std=gnu++14 -target fpga  -directive=/home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/.systemc_flag 
 INFO-FLOW: exec /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=/home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/.systemc_flag -fix-errors /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/main.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
-Command       clang_tidy done; 0.41 sec.
+Command       clang_tidy done; 0.42 sec.
 INFO-FLOW: Running: clang-tidy CDT preprocess 39
 Execute       clang_tidy xilinx-directive2pragma /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/main.pp.0.cpp std=gnu++14 -target fpga  -directive=/home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/all.directive.json 
 INFO-FLOW: exec /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=/home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/all.directive.json -fix-errors /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/main.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
-Command       clang_tidy done; 0.55 sec.
+Command       clang_tidy done; 0.56 sec.
 Execute       clang_tidy xilinx-constantarray-param,xilinx-remove-assert /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/main.pp.0.cpp std=gnu++14 -target fpga  
 INFO-FLOW: exec /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-constantarray-param,xilinx-remove-assert -fix-errors /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/main.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
 Command       clang_tidy done; 0.6 sec.
-INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 1.1 seconds per iteration
+INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 1.2 seconds per iteration
 INFO-FLOW: Calling xilinx-label-all-loops ... 
 Execute       clang_tidy -errorcheck xilinx-label-all-loops,xilinx-top-parameters,xilinx-array-stream-check,xilinx-warn-mayneed-no-ctor-attribute /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/main.pp.0.cpp std=gnu++14 -target fpga  
 Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=/home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/clang-tidy.main.pp.0.cpp.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-top-parameters,xilinx-array-stream-check,xilinx-warn-mayneed-no-ctor-attribute -fix-errors /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/main.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/clang-tidy.main.pp.0.cpp.out.log 2> /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/clang-tidy.main.pp.0.cpp.err.log 
@@ -231,7 +216,7 @@ Execute       ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/to
 Command       ap_eval done; 0.41 sec.
 WARNING: [HLS 207-4651] 'fpga_interface_wrapper' and 'fpga_interface_wrapper' attributes are not compatible: conv_combined/main.cpp:31:9
 INFO: [HLS 207-4134] conflicting attribute is here: conv_combined/main.cpp:26:9
-INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 3.64 seconds. CPU system time: 0.23 seconds. Elapsed time: 3.24 seconds; current allocated memory: 157.442 MB.
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 3.66 seconds. CPU system time: 0.25 seconds. Elapsed time: 3.27 seconds; current allocated memory: 157.338 MB.
 INFO-FLOW: Linking Debug ...
 INFO-FLOW: Linking dut bc code.
 Execute       run_link_or_opt -out /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/a.g.ld.0.bc -args  "/home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/main.g.bc"  
@@ -243,14 +228,14 @@ INFO-FLOW:
 INFO-FLOW: Linking math bc lib
 Execute       run_link_or_opt -out /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/a.g.ld.2.m1.bc -args /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed /tools/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libhlsm_39.bc /tools/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libhlsmc++_39.bc 
 Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/llvm-link /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed /tools/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libhlsm_39.bc /tools/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libhlsmc++_39.bc -o /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/a.g.ld.2.m1.bc > /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/llvm-link.a.g.ld.2.m1.bc.out.log 2> /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/llvm-link.a.g.ld.2.m1.bc.err.log 
-Command         ap_eval done; 1.85 sec.
+Command         ap_eval done; 1.99 sec.
 INFO-FLOW: 
-Command       run_link_or_opt done; 1.86 sec.
+Command       run_link_or_opt done; 1.99 sec.
 Execute       run_link_or_opt -opt -out /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/a.g.ld.3.fpc.bc -args /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=conv_combined -reflow-float-conversion 
 Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/opt.a.g.ld.3.fpc.bc.diag.yml /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=conv_combined -reflow-float-conversion -o /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/a.g.ld.3.fpc.bc > /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/opt.a.g.ld.3.fpc.bc.out.log 2> /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/opt.a.g.ld.3.fpc.bc.err.log 
-Command         ap_eval done; 0.65 sec.
+Command         ap_eval done; 0.68 sec.
 INFO-FLOW: 
-Command       run_link_or_opt done; 0.65 sec.
+Command       run_link_or_opt done; 0.68 sec.
 Execute       run_link_or_opt -out /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/a.g.ld.4.m2.bc -args /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/a.g.ld.3.fpc.bc -only-needed /tools/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libfloatconversion_39.bc 
 Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/llvm-link /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/a.g.ld.3.fpc.bc -only-needed /tools/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libfloatconversion_39.bc -o /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/a.g.ld.4.m2.bc > /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/llvm-link.a.g.ld.4.m2.bc.out.log 2> /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/llvm-link.a.g.ld.4.m2.bc.err.log 
 INFO-FLOW: 
@@ -295,7 +280,7 @@ INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
 Execute       is_m_axi_addr64 
 INFO-FLOW: Doing LTO.
 Execute       ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/clang.a.g.ld.0.bc.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fhls -mllvm -hls-top-function-name=conv_combined -mllvm -hls-db-dir -mllvm /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db -emit-llvm -c -target fpga64-xilinx-none -mllvm -xcl-xmlinfo=/home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/kernel.internal.xml -mllvm -top-io-mapping-info=/home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/top-io-fe.xml -mllvm -hls-bitcode-version=3.1 -mllvm -reflow-enable-slave-interface-default-setting=true -mllvm -gen-kernel-xml=false -mllvm -default-maxi-offset=off -mllvm -maxi-latency=0 -mllvm -hls-maxi-data-size-in-bits=8 -mllvm -hls-maxi-max-data-size-in-bits=1024 -mllvm -hls-max-widen-size-in-bits=0 -mllvm -xcl-kernel-max-mem-ports=0 -mllvm -maxi-read-trans=16 -mllvm -maxi-write-trans=16 -mllvm -maxi-read-burst-len=16 -mllvm -maxi-write-burst-len=16 -mllvm -reflow-enable-saxi-64bits=0 -mllvm -assume-maxi-align=0 -mllvm -no-unaligned-maxi-accesses -mllvm -reflow-pipeline-style-llvm-setting=0 -mllvm -disable-inlined-alloca-merging=true -mllvm -reflow-enable-maxi-addr-32bits -x ir /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/a.g.ld.5.gdce.bc -o /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/a.g.lto.bc > /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/clang.a.g.ld.0.bc.out.log 2> /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/clang.a.g.ld.0.bc.err.log 
-Command       ap_eval done; 0.26 sec.
+Command       ap_eval done; 0.27 sec.
 WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'conv_combined(ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, int, int, int, int, bool)' (conv_combined/main.cpp:9:0)
 WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'conv_combined(ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, int, int, int, int, bool)' (conv_combined/main.cpp:9:0)
 WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'conv_combined(ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, int, int, int, int, bool)' (conv_combined/main.cpp:9:0)
@@ -310,21 +295,21 @@ INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i16.s_struct.ap_fixe
 INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i16.s_struct.ap_fixeds' into 'conv_combined(ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, int, int, int, int, bool)' (conv_combined/main.cpp:126:17)
 INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i16.s_struct.ap_fixeds' into 'conv_combined(ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, int, int, int, int, bool)' (conv_combined/main.cpp:118:53)
 INFO-FLOW: DBG:CMD: copy_raw_kernel_xml ap_link_39: kernel.xml not generated: /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/kernel.internal.xml
-INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.07 seconds. CPU system time: 0.19 seconds. Elapsed time: 3.26 seconds; current allocated memory: 159.940 MB.
-INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 159.942 MB.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.22 seconds. CPU system time: 0.21 seconds. Elapsed time: 3.43 seconds; current allocated memory: 159.738 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 159.740 MB.
 Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
 Execute         cleanup_all_models 
 INFO: [HLS 200-10] Starting code transformations ...
 INFO-FLOW: Running Standard Transforms...
 Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top conv_combined -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/a.g.0.bc -o /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
-INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 171.856 MB.
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.09 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.1 seconds; current allocated memory: 171.652 MB.
 INFO: [HLS 200-10] Checking synthesizability ...
 INFO-FLOW: Checking Synthesizability 1/2..
 Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -array-seg-normalize -instcombine -dce -data-pack -instcombine -dce -inst-simplify -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/a.g.1.bc -o /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/a.g.2.prechk.bc -f 
-Command         transform done; 0.14 sec.
+Command         transform done; 0.13 sec.
 INFO-FLOW: Checking Synthesizability 2/2..
 Execute         transform -syn-check /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/a.g.2.prechk.bc -o /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
-INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.19 seconds. CPU system time: 0 seconds. Elapsed time: 0.19 seconds; current allocated memory: 187.379 MB.
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.18 seconds. CPU system time: 0 seconds. Elapsed time: 0.19 seconds; current allocated memory: 187.179 MB.
 INFO-FLOW: Compiler optimizing ...
 INFO-FLOW: Share syncheck's 1.bc for syn flow: copy /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/a.g.1.bc to /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/a.o.1.bc
 INFO-FLOW: Presyn 1...
@@ -341,12 +326,12 @@ INFO: [XFORM 203-102] Automatically partitioning small array 'bbuf.V' (conv_comb
 INFO: [XFORM 203-102] Automatically partitioning small array 'dbbuf.V' (conv_combined/main.cpp:39) completely based on array size.
 INFO: [XFORM 203-101] Partitioning array 'bbuf.V' (conv_combined/main.cpp:38) in dimension 1 completely.
 INFO: [XFORM 203-101] Partitioning array 'dbbuf.V' (conv_combined/main.cpp:39) in dimension 1 completely.
-Command         transform done; 0.38 sec.
+Command         transform done; 0.39 sec.
 INFO-FLOW: Presyn 2...
 Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin2 -bitwidthmin2 -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -barrier -norm-name /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/a.o.1.tmp.bc -o /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
 INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (conv_combined/main.cpp:98:49) in function 'conv_combined'... converting 5 basic blocks.
 Command         transform done; 0.2 sec.
-INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.57 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.58 seconds; current allocated memory: 224.958 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.57 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.59 seconds; current allocated memory: 224.757 MB.
 Execute         get_config_compile -enable_loop_extract 
 Execute         get_config_compile -disable_auto_rewind 
 Execute         get_config_compile -enable_auto_rewind 
@@ -377,10 +362,10 @@ INFO: [HLS 200-472] Inferring partial write operation for 'y' (conv_combined/mai
 INFO: [HLS 200-472] Inferring partial write operation for 'dwbuf.V' (conv_combined/main.cpp:91:41)
 INFO: [HLS 200-472] Inferring partial write operation for 'dwbuf.V' 
 Command         transform done; 0.48 sec.
-INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.47 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.48 seconds; current allocated memory: 231.826 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.48 seconds. CPU system time: 0 seconds. Elapsed time: 0.48 seconds; current allocated memory: 231.619 MB.
 INFO-FLOW: Finish building internal data model.
-Command       opt_and_import_c done; 1.35 sec.
-Command     elaborate done; 7.85 sec.
+Command       opt_and_import_c done; 1.36 sec.
+Command     elaborate done; 8.06 sec.
 Execute     autosyn -from_csynth_design=1 
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO-FLOW: Synthesizing C/C++ design ...
@@ -430,12 +415,12 @@ INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2,
 INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_74_12'.
 INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_74_12'
 INFO: [SCHED 204-11] Finished scheduling.
-Command       schedule done; 0.58 sec.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.57 seconds. CPU system time: 0 seconds. Elapsed time: 0.59 seconds; current allocated memory: 234.363 MB.
+Command       schedule done; 0.59 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.58 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.6 seconds; current allocated memory: 234.158 MB.
 Execute       syn_report -verbosereport -o /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/conv_combined.verbose.sched.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
-Command       syn_report done; 0.39 sec.
+Command       syn_report done; 0.4 sec.
 Execute       db_write -o /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/conv_combined.sched.adb -f 
 INFO-FLOW: Finish scheduling conv_combined.
 Execute       set_default_model conv_combined 
@@ -445,8 +430,8 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-Command       bind done; 0.34 sec.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.76 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.76 seconds; current allocated memory: 237.716 MB.
+Command       bind done; 0.36 sec.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.78 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.78 seconds; current allocated memory: 237.540 MB.
 Execute       syn_report -verbosereport -o /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/conv_combined.verbose.bind.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
@@ -498,12 +483,12 @@ INFO: [RTGEN 206-100] Generating core module 'mul_32ns_64ns_96_5_1': 2 instance(
 INFO: [RTGEN 206-100] Generating core module 'mux_32_16_1_1': 3 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'conv_combined'.
 Command       create_rtl_model done; 0.17 sec.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.81 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.84 seconds; current allocated memory: 243.647 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.83 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.84 seconds; current allocated memory: 243.410 MB.
 Execute       source /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/conv_combined.rtl_wrap.cfg.tcl 
 Execute       gen_rtl conv_combined -istop -style xilinx -f -lang vhdl -o /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/syn/vhdl/conv_combined 
 Command       gen_rtl done; 0.37 sec.
 Execute       gen_rtl conv_combined -istop -style xilinx -f -lang vlog -o /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/syn/verilog/conv_combined 
-Command       gen_rtl done; 0.18 sec.
+Command       gen_rtl done; 0.19 sec.
 Execute       syn_report -csynth -model conv_combined -o /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/syn/report/conv_combined_csynth.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
@@ -517,11 +502,11 @@ Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
 Command       syn_report done; 0.83 sec.
 Execute       db_write -model conv_combined -f -o /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/conv_combined.adb 
-Command       db_write done; 0.22 sec.
+Command       db_write done; 0.23 sec.
 Execute       gen_tb_info conv_combined -p /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db -o /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/conv_combined 
 Execute       export_constraint_db -f -tool general -o /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/conv_combined.constraint.tcl 
 Execute       syn_report -designview -model conv_combined -o /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/conv_combined.design.xml 
-Command       syn_report done; 0.36 sec.
+Command       syn_report done; 0.37 sec.
 Execute       syn_report -csynthDesign -model conv_combined -o /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/syn/report/csynth.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
@@ -795,7 +780,7 @@ Execute       sc_get_clocks conv_combined
 Execute       source /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/global.setting.tcl 
 Execute       get_config_debug -directory 
 INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
-INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 3.48 seconds. CPU system time: 0.06 seconds. Elapsed time: 3.54 seconds; current allocated memory: 264.510 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 3.52 seconds. CPU system time: 0.07 seconds. Elapsed time: 3.59 seconds; current allocated memory: 264.308 MB.
 INFO: [VHDL 208-304] Generating VHDL RTL for conv_combined.
 INFO: [VLOG 209-307] Generating Verilog RTL for conv_combined.
 INFO-FLOW: DBG:CMD:       update_csynth_xml_report append design.xml content design_xml=/home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/.autopilot/db/conv_combined.design.xml
@@ -806,12 +791,12 @@ INFO-FLOW: DBG:CMD:       update_csynth_xml_report done
 Execute       syn_report -model conv_combined -printsummary 
 INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
 INFO: [HLS 200-789] **** Estimated Fmax: 136.99 MHz
-Command     autosyn done; 5.94 sec.
-Command   csynth_design done; 13.79 sec.
-INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 13.84 seconds. CPU system time: 0.54 seconds. Elapsed time: 13.79 seconds; current allocated memory: 265.314 MB.
-Command ap_source done; 15.02 sec.
+Command     autosyn done; 5.98 sec.
+Command   csynth_design done; 14.04 sec.
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 14.08 seconds. CPU system time: 0.59 seconds. Elapsed time: 14.04 seconds; current allocated memory: 265.066 MB.
+Command ap_source done; 15.29 sec.
 Execute cleanup_all 
-INFO-FLOW: Workspace /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1 opened at Fri May 13 11:50:28 IST 2022
+INFO-FLOW: Workspace /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1 opened at Mon May 16 03:18:56 IST 2022
 Execute     ap_set_clock -name default -period 10 -default=false 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 Execute     import_lib /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynq/zynq 
@@ -850,14 +835,14 @@ Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/
 Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
 Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
 Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
-Execute     set_part xc7z020-clg400-1 
+Execute     set_part xc7z020clg400-1 
 INFO-FLOW: DBG:set_part: XILINX_VIVADO=/tools/Xilinx/Vivado/2020.2
 INFO-FLOW: DBG:set_part: RDI_DATADIR=/tools/Xilinx/Vivado/2020.2/data:/tools/Xilinx/Vitis_HLS/2020.2/data
-Execute       ap_part_info -name xc7z020-clg400-1 -data single -quiet 
+Execute       ap_part_info -name xc7z020clg400-1 -data single -quiet 
 DBG:HLSDevice: Trying to load device library: /tools/Xilinx/Vitis_HLS/2020.2/lib/lnx64.o/librdi_hlsvwrap.so
 DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /tools/Xilinx/Vivado/2020.2/data/parts/arch.xml
 Command       ap_part_info done; 0.76 sec.
-Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       ap_part_info -name xc7z020clg400-1 -data info 
 Execute       add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
 Execute         get_default_platform 
 Execute         open_platform DefaultPlatform 
@@ -889,15 +874,14 @@ Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx
 Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
 Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
 Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
-Command       add_library done; 0.11 sec.
 INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
 Execute       ap_part_info -name xc7z020-clg400-1 -data info 
 Execute       config_compile -quiet -complex-mul-dsp=0 
-Command     set_part done; 0.88 sec.
-Execute     ap_part_info -data single -name xc7z020-clg400-1 
-Execute     ap_part_info -name xc7z020-clg400-1 -data resources 
+Command     set_part done; 0.87 sec.
+Execute     ap_part_info -data single -name xc7z020clg400-1 
+Execute     ap_part_info -name xc7z020clg400-1 -data resources 
 Execute     config_chip_info -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP 220} {BRAM 280} {URAM 0} 
-Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
 Execute     config_chip_info -speed slow 
 Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
 INFO: [HLS 200-1505] Using flow_target 'vivado'
@@ -910,19 +894,13 @@ Execute     get_config_rtl -register_reset_num
 Execute     send_msg_by_id INFO @200-1464@%s config_interface -m_axi_addr64=0 
 INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=0
 Execute     config_interface -m_axi_addr64=0 
-Execute     send_msg_by_id INFO @200-1464@%s config_export -format=ip_catalog 
-INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
-Execute     config_export -format=ip_catalog 
-Execute     send_msg_by_id INFO @200-1464@%s config_export -rtl=verilog 
-INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
-Execute     config_export -rtl=verilog 
-Command   open_solution done; 1.05 sec.
-Execute   set_part xc7z020-clg400-1 
-INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+Command   open_solution done; 1.04 sec.
+Execute   set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
 INFO-FLOW: DBG:set_part: XILINX_VIVADO=/tools/Xilinx/Vivado/2020.2
 INFO-FLOW: DBG:set_part: RDI_DATADIR=/tools/Xilinx/Vivado/2020.2/data:/tools/Xilinx/Vitis_HLS/2020.2/data
-Execute     ap_part_info -name xc7z020-clg400-1 -data single -quiet 
-Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     ap_part_info -name xc7z020clg400-1 -data single -quiet 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
 Execute     add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
 Execute       get_default_platform 
 Execute       open_platform DefaultPlatform 
@@ -958,14 +936,11 @@ Execute     ap_part_info -name xc7z020-clg400-1 -data info
 Execute     config_compile -quiet -complex-mul-dsp=0 
 Execute   create_clock -period 10 -name default 
 INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 Execute   config_interface -m_axi_addr64=0 
 INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 
-Execute   config_export -format ip_catalog -rtl verilog 
-INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
 Execute   source ./conv_combined/solution1/directives.tcl 
-Execute     set_directive_top -name conv_combined conv_combined 
-INFO: [HLS 200-1510] Running: set_directive_top -name conv_combined conv_combined 
-INFO-FLOW: Setting directive 'TOP' name=conv_combined 
 Execute   export_design -rtl verilog -format ip_catalog 
 INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog 
 Execute     get_config_export -clock_margin 
@@ -1193,7 +1168,7 @@ INFO-FLOW: DBG:CMD:     exec /home/anubhav/xilinx_projects/ip_repo/conv_combined
 Execute     get_config_export -output 
 Execute     send_msg_by_id INFO @200-802@%s conv_combined/solution1/impl/export.zip 
 INFO: [HLS 200-802] Generated output file conv_combined/solution1/impl/export.zip
-Command   export_design done; 14.29 sec.
-INFO: [HLS 200-111] Finished Command export_design CPU user time: 11.8 seconds. CPU system time: 0.77 seconds. Elapsed time: 14.29 seconds; current allocated memory: 166.004 MB.
-Command ap_source done; 15.44 sec.
+Command   export_design done; 12.91 sec.
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 11.43 seconds. CPU system time: 0.85 seconds. Elapsed time: 12.91 seconds; current allocated memory: 165.782 MB.
+Command ap_source done; 14.05 sec.
 Execute cleanup_all 

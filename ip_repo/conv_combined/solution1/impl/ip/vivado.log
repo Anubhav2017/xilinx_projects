@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Fri May 13 11:50:31 2022
-# Process ID: 770762
+# Start of session at: Mon May 16 03:18:58 2022
+# Process ID: 1819268
 # Current directory: /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/impl/ip
 # Command line: vivado -notrace -mode batch -source run_ippack.tcl
 # Log file: /home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/impl/ip/vivado.log
@@ -13,4 +13,4 @@ source run_ippack.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
-INFO: [Common 17-206] Exiting Vivado at Fri May 13 11:50:40 2022...
+INFO: [Common 17-206] Exiting Vivado at Mon May 16 03:19:06 2022...

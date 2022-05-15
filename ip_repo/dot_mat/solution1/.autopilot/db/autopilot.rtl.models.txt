@@ -1,5 +1,0 @@
-dot_matrix_mul_32s_32s_32_2_1
-dot_matrix_c_t
-dot_matrix_control_s_axi
-dot_matrix_gmem_m_axi
-dot_matrix

@@ -1,7 +1,0 @@
-Running: xsim.dir/dot_matrix/xsimk -simmode gui -wdb dot_matrix.wdb -simrunnum 0 -socket 57767
-Design successfully loaded
-Design Loading Memory Usage: 37944 KB (Peak: 37952 KB)
-Design Loading CPU Usage: 10 ms
-Simulation completed
-Simulation Memory Usage: 124748 KB (Peak: 177212 KB)
-Simulation CPU Usage: 20 ms

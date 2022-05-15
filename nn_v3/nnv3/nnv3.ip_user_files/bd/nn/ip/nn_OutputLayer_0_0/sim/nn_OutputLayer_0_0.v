@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:hls:OutputLayer:1.0
-// IP Revision: 2112504840
+// IP Revision: 2112506903
 
 `timescale 1ns/1ps
 

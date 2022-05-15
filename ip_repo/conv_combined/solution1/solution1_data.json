@@ -249,15 +249,8 @@
   },
   "HlsSolution": {
     "FlowTarget": "vivado",
-    "ConfigTcl": [
-      "config_interface -m_axi_addr64=0",
-      "config_export -format=ip_catalog",
-      "config_export -rtl=verilog"
-    ],
-    "DirectiveTcl": [
-      "set_directive_top conv_combined -name conv_combined",
-      "set_directive_top conv_combined -name conv_combined"
-    ],
+    "ConfigTcl": ["config_interface -m_axi_addr64=0"],
+    "DirectiveTcl": ["set_directive_top conv_combined -name conv_combined"],
     "ProfileOption": "0",
     "ProfileType": "none",
     "KernelName": "conv_combined"
@@ -1558,7 +1551,7 @@
   "GenerateBdFiles": "0",
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2022-05-13 11:50:14 IST",
+    "Time": "2022-05-16 03:18:38 IST",
     "ToolName": "vivado_hls",
     "ToolVersion": "2020.2"
   }

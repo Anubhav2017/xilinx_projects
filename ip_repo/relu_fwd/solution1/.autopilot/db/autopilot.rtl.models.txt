@@ -1,4 +1,0 @@
-relu_fwd_ybuf_V
-relu_fwd_CTRL_s_axi
-relu_fwd_gmem_m_axi
-relu_fwd

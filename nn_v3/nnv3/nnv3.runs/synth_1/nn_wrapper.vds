@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Sat May 14 16:04:29 2022
-# Process ID: 1274577
+# Start of session at: Mon May 16 03:33:33 2022
+# Process ID: 1825280
 # Current directory: /home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1
 # Command line: vivado -log nn_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source nn_wrapper.tcl
 # Log file: /home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/nn_wrapper.vds
@@ -20,93 +20,93 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 1274597
+INFO: [Synth 8-7075] Helper process launched with PID 1825353
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2359.973 ; gain = 0.000 ; free physical = 10800 ; free virtual = 21597
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2357.973 ; gain = 0.000 ; free physical = 9913 ; free virtual = 20754
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'nn_wrapper' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/hdl/nn_wrapper.v:12]
 INFO: [Synth 8-6157] synthesizing module 'nn' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:1078]
-INFO: [Synth 8-6157] synthesizing module 'nn_InputLayer_0_0' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1274577-anubhav-acer/realtime/nn_InputLayer_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'nn_InputLayer_0_0' (1#1) [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1274577-anubhav-acer/realtime/nn_InputLayer_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'nn_InputLayer_0_0' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1825280-anubhav-acer/realtime/nn_InputLayer_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'nn_InputLayer_0_0' (1#1) [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1825280-anubhav-acer/realtime/nn_InputLayer_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'interrupt' of module 'nn_InputLayer_0_0' is unconnected for instance 'InputLayer_0' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:1544]
 WARNING: [Synth 8-7071] port 'bram_x_Rst_A' of module 'nn_InputLayer_0_0' is unconnected for instance 'InputLayer_0' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:1544]
 WARNING: [Synth 8-7071] port 'bram_dx_Rst_A' of module 'nn_InputLayer_0_0' is unconnected for instance 'InputLayer_0' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:1544]
 WARNING: [Synth 8-7023] instance 'InputLayer_0' of module 'nn_InputLayer_0_0' has 69 connections declared, but only 66 given [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:1544]
-INFO: [Synth 8-6157] synthesizing module 'nn_OutputLayer_0_0' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1274577-anubhav-acer/realtime/nn_OutputLayer_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'nn_OutputLayer_0_0' (2#1) [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1274577-anubhav-acer/realtime/nn_OutputLayer_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'nn_OutputLayer_0_0' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1825280-anubhav-acer/realtime/nn_OutputLayer_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'nn_OutputLayer_0_0' (2#1) [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1825280-anubhav-acer/realtime/nn_OutputLayer_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'interrupt' of module 'nn_OutputLayer_0_0' is unconnected for instance 'OutputLayer_0' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:1611]
 WARNING: [Synth 8-7071] port 'bram_y_Rst_A' of module 'nn_OutputLayer_0_0' is unconnected for instance 'OutputLayer_0' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:1611]
 WARNING: [Synth 8-7071] port 'bram_dy_Rst_A' of module 'nn_OutputLayer_0_0' is unconnected for instance 'OutputLayer_0' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:1611]
 WARNING: [Synth 8-7023] instance 'OutputLayer_0' of module 'nn_OutputLayer_0_0' has 69 connections declared, but only 66 given [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:1611]
 INFO: [Synth 8-6157] synthesizing module 'nn_axi_mem_intercon_0' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:2427]
 INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_12SC5VU' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:12]
-INFO: [Synth 8-6157] synthesizing module 'nn_auto_pc_0' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1274577-anubhav-acer/realtime/nn_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'nn_auto_pc_0' (3#1) [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1274577-anubhav-acer/realtime/nn_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'nn_auto_pc_0' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1825280-anubhav-acer/realtime/nn_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'nn_auto_pc_0' (3#1) [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1825280-anubhav-acer/realtime/nn_auto_pc_0_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_12SC5VU' (4#1) [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:12]
 INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_ASGRVQ' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:5028]
-INFO: [Synth 8-6157] synthesizing module 'nn_auto_us_0' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1274577-anubhav-acer/realtime/nn_auto_us_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'nn_auto_us_0' (5#1) [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1274577-anubhav-acer/realtime/nn_auto_us_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'nn_auto_us_0' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1825280-anubhav-acer/realtime/nn_auto_us_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'nn_auto_us_0' (5#1) [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1825280-anubhav-acer/realtime/nn_auto_us_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'nn_auto_us_0' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:5315]
 WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'nn_auto_us_0' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:5315]
 WARNING: [Synth 8-7023] instance 'auto_us' of module 'nn_auto_us_0' has 72 connections declared, but only 70 given [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:5315]
 INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_ASGRVQ' (6#1) [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:5028]
 INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_1GIMLOP' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:5388]
-INFO: [Synth 8-6157] synthesizing module 'nn_auto_us_1' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1274577-anubhav-acer/realtime/nn_auto_us_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'nn_auto_us_1' (7#1) [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1274577-anubhav-acer/realtime/nn_auto_us_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'nn_auto_us_1' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1825280-anubhav-acer/realtime/nn_auto_us_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'nn_auto_us_1' (7#1) [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1825280-anubhav-acer/realtime/nn_auto_us_1_stub.v:6]
 WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'nn_auto_us_1' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:5675]
 WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'nn_auto_us_1' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:5675]
 WARNING: [Synth 8-7023] instance 'auto_us' of module 'nn_auto_us_1' has 72 connections declared, but only 70 given [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:5675]
 INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_1GIMLOP' (8#1) [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:5388]
 INFO: [Synth 8-6157] synthesizing module 's02_couplers_imp_1KA5Z95' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:5748]
-INFO: [Synth 8-6157] synthesizing module 'nn_auto_us_2' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1274577-anubhav-acer/realtime/nn_auto_us_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'nn_auto_us_2' (9#1) [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1274577-anubhav-acer/realtime/nn_auto_us_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'nn_auto_us_2' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1825280-anubhav-acer/realtime/nn_auto_us_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'nn_auto_us_2' (9#1) [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1825280-anubhav-acer/realtime/nn_auto_us_2_stub.v:6]
 WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'nn_auto_us_2' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:6035]
 WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'nn_auto_us_2' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:6035]
 WARNING: [Synth 8-7023] instance 'auto_us' of module 'nn_auto_us_2' has 72 connections declared, but only 70 given [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:6035]
 INFO: [Synth 8-6155] done synthesizing module 's02_couplers_imp_1KA5Z95' (10#1) [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:5748]
 INFO: [Synth 8-6157] synthesizing module 's03_couplers_imp_MLYWUU' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:6108]
-INFO: [Synth 8-6157] synthesizing module 'nn_auto_us_3' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1274577-anubhav-acer/realtime/nn_auto_us_3_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'nn_auto_us_3' (11#1) [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1274577-anubhav-acer/realtime/nn_auto_us_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'nn_auto_us_3' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1825280-anubhav-acer/realtime/nn_auto_us_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'nn_auto_us_3' (11#1) [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1825280-anubhav-acer/realtime/nn_auto_us_3_stub.v:6]
 WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'nn_auto_us_3' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:6395]
 WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'nn_auto_us_3' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:6395]
 WARNING: [Synth 8-7023] instance 'auto_us' of module 'nn_auto_us_3' has 72 connections declared, but only 70 given [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:6395]
 INFO: [Synth 8-6155] done synthesizing module 's03_couplers_imp_MLYWUU' (12#1) [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:6108]
-INFO: [Synth 8-6157] synthesizing module 'nn_xbar_0' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1274577-anubhav-acer/realtime/nn_xbar_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'nn_xbar_0' (13#1) [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1274577-anubhav-acer/realtime/nn_xbar_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'nn_xbar_0' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1825280-anubhav-acer/realtime/nn_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'nn_xbar_0' (13#1) [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1825280-anubhav-acer/realtime/nn_xbar_0_stub.v:6]
 WARNING: [Synth 8-7071] port 's_axi_bid' of module 'nn_xbar_0' is unconnected for instance 'xbar' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:3715]
 WARNING: [Synth 8-7071] port 's_axi_rid' of module 'nn_xbar_0' is unconnected for instance 'xbar' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:3715]
 WARNING: [Synth 8-7023] instance 'xbar' of module 'nn_xbar_0' has 78 connections declared, but only 76 given [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:3715]
 INFO: [Synth 8-6155] done synthesizing module 'nn_axi_mem_intercon_0' (14#1) [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:2427]
-INFO: [Synth 8-6157] synthesizing module 'nn_conv_combined_0_0' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1274577-anubhav-acer/realtime/nn_conv_combined_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'nn_conv_combined_0_0' (15#1) [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1274577-anubhav-acer/realtime/nn_conv_combined_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'nn_conv_combined_0_0' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1825280-anubhav-acer/realtime/nn_conv_combined_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'nn_conv_combined_0_0' (15#1) [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1825280-anubhav-acer/realtime/nn_conv_combined_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'interrupt' of module 'nn_conv_combined_0_0' is unconnected for instance 'conv_combined_0' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:1869]
 WARNING: [Synth 8-7071] port 'x_Rst_A' of module 'nn_conv_combined_0_0' is unconnected for instance 'conv_combined_0' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:1869]
 WARNING: [Synth 8-7071] port 'dx_Rst_A' of module 'nn_conv_combined_0_0' is unconnected for instance 'conv_combined_0' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:1869]
 WARNING: [Synth 8-7071] port 'y_Rst_A' of module 'nn_conv_combined_0_0' is unconnected for instance 'conv_combined_0' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:1869]
 WARNING: [Synth 8-7071] port 'dy_Rst_A' of module 'nn_conv_combined_0_0' is unconnected for instance 'conv_combined_0' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:1869]
 WARNING: [Synth 8-7023] instance 'conv_combined_0' of module 'nn_conv_combined_0_0' has 83 connections declared, but only 78 given [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:1869]
-INFO: [Synth 8-6157] synthesizing module 'nn_conv_dy_0' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1274577-anubhav-acer/realtime/nn_conv_dy_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'nn_conv_dy_0' (16#1) [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1274577-anubhav-acer/realtime/nn_conv_dy_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'nn_conv_y_0' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1274577-anubhav-acer/realtime/nn_conv_y_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'nn_conv_y_0' (17#1) [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1274577-anubhav-acer/realtime/nn_conv_y_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'nn_fcc_combined_0_0' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1274577-anubhav-acer/realtime/nn_fcc_combined_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'nn_fcc_combined_0_0' (18#1) [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1274577-anubhav-acer/realtime/nn_fcc_combined_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'nn_conv_dy_0' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1825280-anubhav-acer/realtime/nn_conv_dy_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'nn_conv_dy_0' (16#1) [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1825280-anubhav-acer/realtime/nn_conv_dy_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'nn_conv_y_0' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1825280-anubhav-acer/realtime/nn_conv_y_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'nn_conv_y_0' (17#1) [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1825280-anubhav-acer/realtime/nn_conv_y_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'nn_fcc_combined_0_0' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1825280-anubhav-acer/realtime/nn_fcc_combined_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'nn_fcc_combined_0_0' (18#1) [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1825280-anubhav-acer/realtime/nn_fcc_combined_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'interrupt' of module 'nn_fcc_combined_0_0' is unconnected for instance 'fcc_combined_0' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:1974]
 WARNING: [Synth 8-7071] port 'x_Rst_A' of module 'nn_fcc_combined_0_0' is unconnected for instance 'fcc_combined_0' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:1974]
 WARNING: [Synth 8-7071] port 'dx_Rst_A' of module 'nn_fcc_combined_0_0' is unconnected for instance 'fcc_combined_0' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:1974]
 WARNING: [Synth 8-7071] port 'y_Rst_A' of module 'nn_fcc_combined_0_0' is unconnected for instance 'fcc_combined_0' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:1974]
 WARNING: [Synth 8-7071] port 'dy_Rst_A' of module 'nn_fcc_combined_0_0' is unconnected for instance 'fcc_combined_0' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:1974]
 WARNING: [Synth 8-7023] instance 'fcc_combined_0' of module 'nn_fcc_combined_0_0' has 83 connections declared, but only 78 given [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:1974]
-INFO: [Synth 8-6157] synthesizing module 'nn_fcc_dx_0' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1274577-anubhav-acer/realtime/nn_fcc_dx_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'nn_fcc_dx_0' (19#1) [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1274577-anubhav-acer/realtime/nn_fcc_dx_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'nn_fcc_dy_0' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1274577-anubhav-acer/realtime/nn_fcc_dy_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'nn_fcc_dy_0' (20#1) [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1274577-anubhav-acer/realtime/nn_fcc_dy_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'nn_fcc_x_0' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1274577-anubhav-acer/realtime/nn_fcc_x_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'nn_fcc_x_0' (21#1) [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1274577-anubhav-acer/realtime/nn_fcc_x_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'nn_fcc_y_0' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1274577-anubhav-acer/realtime/nn_fcc_y_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'nn_fcc_y_0' (22#1) [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1274577-anubhav-acer/realtime/nn_fcc_y_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'nn_processing_system7_0_0' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1274577-anubhav-acer/realtime/nn_processing_system7_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'nn_processing_system7_0_0' (23#1) [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1274577-anubhav-acer/realtime/nn_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'nn_fcc_dx_0' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1825280-anubhav-acer/realtime/nn_fcc_dx_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'nn_fcc_dx_0' (19#1) [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1825280-anubhav-acer/realtime/nn_fcc_dx_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'nn_fcc_dy_0' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1825280-anubhav-acer/realtime/nn_fcc_dy_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'nn_fcc_dy_0' (20#1) [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1825280-anubhav-acer/realtime/nn_fcc_dy_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'nn_fcc_x_0' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1825280-anubhav-acer/realtime/nn_fcc_x_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'nn_fcc_x_0' (21#1) [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1825280-anubhav-acer/realtime/nn_fcc_x_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'nn_fcc_y_0' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1825280-anubhav-acer/realtime/nn_fcc_y_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'nn_fcc_y_0' (22#1) [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1825280-anubhav-acer/realtime/nn_fcc_y_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'nn_processing_system7_0_0' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1825280-anubhav-acer/realtime/nn_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'nn_processing_system7_0_0' (23#1) [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1825280-anubhav-acer/realtime/nn_processing_system7_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'USB0_PORT_INDCTL' of module 'nn_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:2105]
 WARNING: [Synth 8-7071] port 'USB0_VBUS_PWRSELECT' of module 'nn_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:2105]
 WARNING: [Synth 8-7071] port 'S_AXI_HP0_RCOUNT' of module 'nn_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:2105]
@@ -126,29 +126,29 @@ INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_OBFBMS' (27#1) [
 INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_9RZ9KB' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:945]
 INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_9RZ9KB' (28#1) [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:945]
 INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_13566RC' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:4723]
-INFO: [Synth 8-6157] synthesizing module 'nn_auto_pc_1' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1274577-anubhav-acer/realtime/nn_auto_pc_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'nn_auto_pc_1' (29#1) [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1274577-anubhav-acer/realtime/nn_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'nn_auto_pc_1' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1825280-anubhav-acer/realtime/nn_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'nn_auto_pc_1' (29#1) [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1825280-anubhav-acer/realtime/nn_auto_pc_1_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_13566RC' (30#1) [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:4723]
-INFO: [Synth 8-6157] synthesizing module 'nn_xbar_1' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1274577-anubhav-acer/realtime/nn_xbar_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'nn_xbar_1' (31#1) [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1274577-anubhav-acer/realtime/nn_xbar_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'nn_xbar_1' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1825280-anubhav-acer/realtime/nn_xbar_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'nn_xbar_1' (31#1) [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1825280-anubhav-acer/realtime/nn_xbar_1_stub.v:6]
 WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'nn_xbar_1' is unconnected for instance 'xbar' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:4682]
 WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'nn_xbar_1' is unconnected for instance 'xbar' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:4682]
 WARNING: [Synth 8-7023] instance 'xbar' of module 'nn_xbar_1' has 40 connections declared, but only 38 given [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:4682]
 INFO: [Synth 8-6155] done synthesizing module 'nn_ps7_0_axi_periph_0' (32#1) [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:3794]
-INFO: [Synth 8-6157] synthesizing module 'nn_relu_combined_0_0' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1274577-anubhav-acer/realtime/nn_relu_combined_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'nn_relu_combined_0_0' (33#1) [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1274577-anubhav-acer/realtime/nn_relu_combined_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'nn_relu_combined_0_0' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1825280-anubhav-acer/realtime/nn_relu_combined_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'nn_relu_combined_0_0' (33#1) [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1825280-anubhav-acer/realtime/nn_relu_combined_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'interrupt' of module 'nn_relu_combined_0_0' is unconnected for instance 'relu_combined_0' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:2348]
 WARNING: [Synth 8-7071] port 'x_Rst_A' of module 'nn_relu_combined_0_0' is unconnected for instance 'relu_combined_0' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:2348]
 WARNING: [Synth 8-7071] port 'dx_Rst_A' of module 'nn_relu_combined_0_0' is unconnected for instance 'relu_combined_0' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:2348]
 WARNING: [Synth 8-7071] port 'y_Rst_A' of module 'nn_relu_combined_0_0' is unconnected for instance 'relu_combined_0' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:2348]
 WARNING: [Synth 8-7071] port 'dy_Rst_A' of module 'nn_relu_combined_0_0' is unconnected for instance 'relu_combined_0' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:2348]
 WARNING: [Synth 8-7023] instance 'relu_combined_0' of module 'nn_relu_combined_0_0' has 48 connections declared, but only 43 given [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:2348]
-INFO: [Synth 8-6157] synthesizing module 'nn_relu_dy_0' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1274577-anubhav-acer/realtime/nn_relu_dy_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'nn_relu_dy_0' (34#1) [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1274577-anubhav-acer/realtime/nn_relu_dy_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'nn_relu_y_0' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1274577-anubhav-acer/realtime/nn_relu_y_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'nn_relu_y_0' (35#1) [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1274577-anubhav-acer/realtime/nn_relu_y_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'nn_rst_ps7_0_100M_0' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1274577-anubhav-acer/realtime/nn_rst_ps7_0_100M_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'nn_rst_ps7_0_100M_0' (36#1) [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1274577-anubhav-acer/realtime/nn_rst_ps7_0_100M_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'nn_relu_dy_0' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1825280-anubhav-acer/realtime/nn_relu_dy_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'nn_relu_dy_0' (34#1) [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1825280-anubhav-acer/realtime/nn_relu_dy_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'nn_relu_y_0' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1825280-anubhav-acer/realtime/nn_relu_y_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'nn_relu_y_0' (35#1) [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1825280-anubhav-acer/realtime/nn_relu_y_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'nn_rst_ps7_0_100M_0' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1825280-anubhav-acer/realtime/nn_rst_ps7_0_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'nn_rst_ps7_0_100M_0' (36#1) [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/.Xil/Vivado-1825280-anubhav-acer/realtime/nn_rst_ps7_0_100M_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'mb_reset' of module 'nn_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:2418]
 WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'nn_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:2418]
 WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'nn_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:2418]
@@ -157,18 +157,18 @@ WARNING: [Synth 8-7023] instance 'rst_ps7_0_100M' of module 'nn_rst_ps7_0_100M_0
 INFO: [Synth 8-6155] done synthesizing module 'nn' (37#1) [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/synth/nn.v:1078]
 INFO: [Synth 8-6155] done synthesizing module 'nn_wrapper' (38#1) [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/hdl/nn_wrapper.v:12]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2359.973 ; gain = 0.000 ; free physical = 11522 ; free virtual = 22320
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2357.973 ; gain = 0.000 ; free physical = 10670 ; free virtual = 21513
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2359.973 ; gain = 0.000 ; free physical = 11582 ; free virtual = 22380
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2357.973 ; gain = 0.000 ; free physical = 10727 ; free virtual = 21570
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2359.973 ; gain = 0.000 ; free physical = 11582 ; free virtual = 22380
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2357.973 ; gain = 0.000 ; free physical = 10727 ; free virtual = 21570
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2359.973 ; gain = 0.000 ; free physical = 11575 ; free virtual = 22372
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2357.973 ; gain = 0.000 ; free physical = 10670 ; free virtual = 21514
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -185,8 +185,6 @@ Parsing XDC File [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd
 Finished Parsing XDC File [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/ip/nn_auto_us_3/nn_auto_us_3/nn_auto_us_2_in_context.xdc] for cell 'nn_i/axi_mem_intercon/s03_couplers/auto_us'
 Parsing XDC File [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/ip/nn_auto_pc_0/nn_auto_pc_0/nn_auto_pc_0_in_context.xdc] for cell 'nn_i/axi_mem_intercon/m00_couplers/auto_pc'
 Finished Parsing XDC File [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/ip/nn_auto_pc_0/nn_auto_pc_0/nn_auto_pc_0_in_context.xdc] for cell 'nn_i/axi_mem_intercon/m00_couplers/auto_pc'
-Parsing XDC File [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/ip/nn_conv_combined_0_0/nn_conv_combined_0_0/nn_conv_combined_0_0_in_context.xdc] for cell 'nn_i/conv_combined_0'
-Finished Parsing XDC File [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/ip/nn_conv_combined_0_0/nn_conv_combined_0_0/nn_conv_combined_0_0_in_context.xdc] for cell 'nn_i/conv_combined_0'
 Parsing XDC File [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/ip/nn_conv_dy_0/nn_conv_dy_0/nn_relu_y_0_in_context.xdc] for cell 'nn_i/conv_dy'
 Finished Parsing XDC File [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/ip/nn_conv_dy_0/nn_conv_dy_0/nn_relu_y_0_in_context.xdc] for cell 'nn_i/conv_dy'
 Parsing XDC File [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/ip/nn_conv_y_0/nn_conv_y_0/nn_relu_y_0_in_context.xdc] for cell 'nn_i/conv_y'
@@ -219,15 +217,17 @@ Parsing XDC File [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd
 Finished Parsing XDC File [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/ip/nn_InputLayer_0_0/nn_InputLayer_0_0/nn_InputLayer_0_0_in_context.xdc] for cell 'nn_i/InputLayer_0'
 Parsing XDC File [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/ip/nn_OutputLayer_0_0/nn_OutputLayer_0_0/nn_OutputLayer_0_0_in_context.xdc] for cell 'nn_i/OutputLayer_0'
 Finished Parsing XDC File [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/ip/nn_OutputLayer_0_0/nn_OutputLayer_0_0/nn_OutputLayer_0_0_in_context.xdc] for cell 'nn_i/OutputLayer_0'
+Parsing XDC File [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/ip/nn_conv_combined_0_0/nn_conv_combined_0_0/nn_conv_combined_0_0_in_context.xdc] for cell 'nn_i/conv_combined_0'
+Finished Parsing XDC File [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/ip/nn_conv_combined_0_0/nn_conv_combined_0_0/nn_conv_combined_0_0_in_context.xdc] for cell 'nn_i/conv_combined_0'
 Parsing XDC File [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/dont_touch.xdc]
 Finished Parsing XDC File [/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2423.934 ; gain = 0.000 ; free physical = 11483 ; free virtual = 22280
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2421.934 ; gain = 0.000 ; free physical = 10589 ; free virtual = 21433
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2423.934 ; gain = 0.000 ; free physical = 11483 ; free virtual = 22280
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2421.934 ; gain = 0.000 ; free physical = 10589 ; free virtual = 21433
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'nn_i/conv_dy' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'nn_i/conv_y' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'nn_i/fcc_dx' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
@@ -237,14 +237,14 @@ WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context s
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'nn_i/relu_dy' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'nn_i/relu_y' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2423.934 ; gain = 63.961 ; free physical = 11563 ; free virtual = 22361
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2421.934 ; gain = 63.961 ; free physical = 10704 ; free virtual = 21553
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2423.934 ; gain = 63.961 ; free physical = 11563 ; free virtual = 22361
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2421.934 ; gain = 63.961 ; free physical = 10704 ; free virtual = 21553
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -517,7 +517,6 @@ Applied set_property KEEP_HIERARCHY = SOFT for nn_i/axi_mem_intercon/s02_coupler
 Applied set_property KEEP_HIERARCHY = SOFT for nn_i/axi_mem_intercon/s03_couplers/auto_us. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for nn_i/axi_mem_intercon/m00_couplers/auto_pc. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for nn_i/axi_mem_intercon. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for nn_i/conv_combined_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for nn_i/conv_dy. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for nn_i/conv_y. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for nn_i/fcc_combined_0. (constraint file  auto generated constraint).
@@ -535,11 +534,12 @@ Applied set_property KEEP_HIERARCHY = SOFT for nn_i/relu_y. (constraint file  au
 Applied set_property KEEP_HIERARCHY = SOFT for nn_i/rst_ps7_0_100M. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for nn_i/InputLayer_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for nn_i/OutputLayer_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for nn_i/conv_combined_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2423.934 ; gain = 63.961 ; free physical = 11563 ; free virtual = 22361
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2421.934 ; gain = 63.961 ; free physical = 10689 ; free virtual = 21538
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2423.934 ; gain = 63.961 ; free physical = 11564 ; free virtual = 22362
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2421.934 ; gain = 63.961 ; free physical = 10685 ; free virtual = 21536
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -561,25 +561,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2423.934 ; gain = 63.961 ; free physical = 11548 ; free virtual = 22351
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2421.934 ; gain = 63.961 ; free physical = 10652 ; free virtual = 21507
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2423.934 ; gain = 63.961 ; free physical = 11427 ; free virtual = 22230
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2421.934 ; gain = 63.961 ; free physical = 10432 ; free virtual = 21287
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2423.934 ; gain = 63.961 ; free physical = 11427 ; free virtual = 22230
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2421.934 ; gain = 63.961 ; free physical = 10431 ; free virtual = 21286
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2423.934 ; gain = 63.961 ; free physical = 11425 ; free virtual = 22228
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2421.934 ; gain = 63.961 ; free physical = 10429 ; free virtual = 21284
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -597,37 +597,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2423.934 ; gain = 63.961 ; free physical = 11425 ; free virtual = 22228
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2421.934 ; gain = 63.961 ; free physical = 10638 ; free virtual = 21493
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2423.934 ; gain = 63.961 ; free physical = 11425 ; free virtual = 22228
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2421.934 ; gain = 63.961 ; free physical = 10638 ; free virtual = 21493
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2423.934 ; gain = 63.961 ; free physical = 11425 ; free virtual = 22228
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2421.934 ; gain = 63.961 ; free physical = 10643 ; free virtual = 21497
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2423.934 ; gain = 63.961 ; free physical = 11425 ; free virtual = 22228
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2421.934 ; gain = 63.961 ; free physical = 10648 ; free virtual = 21497
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2423.934 ; gain = 63.961 ; free physical = 11425 ; free virtual = 22228
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2421.934 ; gain = 63.961 ; free physical = 10648 ; free virtual = 21497
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2423.934 ; gain = 63.961 ; free physical = 11425 ; free virtual = 22228
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2421.934 ; gain = 63.961 ; free physical = 10648 ; free virtual = 21497
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -686,23 +686,23 @@ Report Cell Usage:
 |22    |nn_xbar                 |     2|
 +------+------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2423.934 ; gain = 63.961 ; free physical = 11425 ; free virtual = 22228
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2421.934 ; gain = 63.961 ; free physical = 10648 ; free virtual = 21497
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2423.934 ; gain = 0.000 ; free physical = 11482 ; free virtual = 22285
-Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2423.934 ; gain = 63.961 ; free physical = 11482 ; free virtual = 22285
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2421.934 ; gain = 0.000 ; free physical = 10706 ; free virtual = 21555
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2421.934 ; gain = 63.961 ; free physical = 10706 ; free virtual = 21555
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2423.934 ; gain = 0.000 ; free physical = 11568 ; free virtual = 22371
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2421.934 ; gain = 0.000 ; free physical = 10791 ; free virtual = 21642
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2423.934 ; gain = 0.000 ; free physical = 11505 ; free virtual = 22308
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2421.934 ; gain = 0.000 ; free physical = 10732 ; free virtual = 21581
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 91 Infos, 64 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:20 . Memory (MB): peak = 2423.934 ; gain = 64.031 ; free physical = 11641 ; free virtual = 22444
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:20 . Memory (MB): peak = 2421.934 ; gain = 64.031 ; free physical = 10867 ; free virtual = 21717
 INFO: [Common 17-1381] The checkpoint '/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1/nn_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file nn_wrapper_utilization_synth.rpt -pb nn_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat May 14 16:04:57 2022...
+INFO: [Common 17-206] Exiting Vivado at Mon May 16 03:34:03 2022...

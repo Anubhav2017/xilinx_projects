@@ -20,12 +20,26 @@ void OutputLayer(fixed_t* y,fixed_t* dy, fixed_t bram_y[MAX_SIZE], fixed_t bram_
 
 
 	if(ddrtobram){
-		memcpy(y,bram_y,ydim);
-		memcpy(dy,bram_dy,ydim);
-	}
-	else{
-		memcpy(bram_y,y,ydim);
-		memcpy(bram_dy,dy,ydim);
-	}
+			for(int i=0;i<dim;i++){
+	        	bram_y[i]=y[i];
+	    	}
+			for(int i=0;i<dim;i++){
+			    bram_dy[i]=dy[i];
+			}
+	//		memcpy(bram_x,x,dim);
+	//		memcpy(bram_dx,dx,dim);
+
+		}
+		else{
+	//		memcpy(x,bram_x,dim);
+	//		memcpy(dx,bram_dx,dim);
+			for(int i=0;i<dim;i++){
+				y[i]=bram_y[i];
+			}
+
+			for(int i=0;i<dim;i++){
+			   dy[i]=bram_dy[i];
+			}
+		}
 
 }

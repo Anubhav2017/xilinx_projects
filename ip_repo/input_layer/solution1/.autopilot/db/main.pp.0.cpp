@@ -6015,21 +6015,26 @@ __attribute__((sdx_kernel("InputLayer", 0))) void InputLayer(fixed_t* x,fixed_t*
 
 
  if(ddrtobram){
+  VITIS_LOOP_23_1: for(int i=0;i<dim;i++){
+         bram_x[i]=x[i];
+     }
+  VITIS_LOOP_26_2: for(int i=0;i<dim;i++){
+      bram_dx[i]=dx[i];
+  }
 
 
-
-
-  memcpy(bram_x,x,dim);
-  memcpy(bram_dx,dx,dim);
 
  }
  else{
-  memcpy(x,bram_x,dim);
-  memcpy(dx,bram_dx,dim);
 
 
+  VITIS_LOOP_36_3: for(int i=0;i<dim;i++){
+           x[i]=bram_x[i];
+  }
 
-
+  VITIS_LOOP_40_4: for(int i=0;i<dim;i++){
+     dx[i]=bram_dx[i];
+  }
  }
 
 

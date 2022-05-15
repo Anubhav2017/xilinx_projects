@@ -6015,12 +6015,26 @@ __attribute__((sdx_kernel("OutputLayer", 0))) void OutputLayer(fixed_t* y,fixed_
 
 
  if(ddrtobram){
-  memcpy(y,bram_y,dim);
-  memcpy(dy,bram_dy,dim);
- }
- else{
-  memcpy(bram_y,y,dim);
-  memcpy(bram_dy,dy,dim);
- }
+   VITIS_LOOP_23_1: for(int i=0;i<dim;i++){
+          bram_y[i]=y[i];
+      }
+   VITIS_LOOP_26_2: for(int i=0;i<dim;i++){
+       bram_dy[i]=dy[i];
+   }
+
+
+
+  }
+  else{
+
+
+   VITIS_LOOP_36_3: for(int i=0;i<dim;i++){
+    y[i]=bram_y[i];
+   }
+
+   VITIS_LOOP_40_4: for(int i=0;i<dim;i++){
+      dy[i]=bram_dy[i];
+   }
+  }
 
 }

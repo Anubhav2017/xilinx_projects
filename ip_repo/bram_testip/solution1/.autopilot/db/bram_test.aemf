@@ -1,0 +1,753 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1652645650099">
+  <ports id="1" name="gmem" type="PortType" coreId="0" bitwidth="32" direction="DirInOut" iftype="IfTypeFifo">
+    <dataInputObjs>getelementptr</dataInputObjs>
+    <dataInputObjs>getelementptr</dataInputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+  </ports>
+  <ports id="2" name="x1" type="PortType" originalName="x1" coreId="65" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="3" name="x2" type="PortType" originalName="x2" coreId="49" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="4" name="dim" type="PortType" originalName="dim" coreId="49" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <edges id="71" source_obj="//@ports.3" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="73" source_obj="//@ports.2" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="75" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="78" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="79" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="82" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="83" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="84" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="87" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="92" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="93" source_obj="//@ports.0" sink_obj="//@blocks.1/@node_objs.2"/>
+  <edges id="94" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.1/@node_objs.2"/>
+  <edges id="97" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="98" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="99" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.1/@node_objs.4"/>
+  <edges id="100" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="101" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="104" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="105" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="108" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="109" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="110" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="111" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="112" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="115" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="116" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="117" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="118" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="120" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="121" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="122" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="123" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
+  <edges id="124" source_obj="//@regions.1/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="125" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.1" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="127" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.0"/>
+  <edges id="128" source_obj="//@regions.1/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.1"/>
+  <edges id="130" source_obj="//@regions.1/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.2"/>
+  <edges id="131" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.2"/>
+  <edges id="132" source_obj="//@regions.1/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.3"/>
+  <edges id="133" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.1" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.3"/>
+  <edges id="134" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.3"/>
+  <edges id="135" source_obj="//@regions.1/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.0"/>
+  <edges id="136" source_obj="//@regions.1/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.1"/>
+  <edges id="137" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.2"/>
+  <edges id="139" source_obj="//@regions.1/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.2"/>
+  <edges id="140" source_obj="//@regions.1/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.3"/>
+  <edges id="143" source_obj="//@blocks.2/@node_objs.2" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.4"/>
+  <edges id="144" source_obj="//@regions.1/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.4"/>
+  <edges id="147" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.0" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.5"/>
+  <edges id="150" source_obj="//@blocks.2/@node_objs.2" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="151" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="153" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="156" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="157" source_obj="//@ports.0" sink_obj="//@blocks.2/@node_objs.2"/>
+  <edges id="158" source_obj="//@blocks.2/@node_objs.1" sink_obj="//@blocks.2/@node_objs.2"/>
+  <edges id="161" source_obj="//@blocks.2/@node_objs.2" sink_obj="//@blocks.2/@node_objs.3"/>
+  <edges id="162" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.2/@node_objs.3"/>
+  <edges id="163" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.0" sink_obj="//@blocks.2/@node_objs.4"/>
+  <edges id="361" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.4"/>
+  <edges id="362" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="363" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="364" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.2"/>
+  <edges id="365" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="366" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="367" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@regions.1/@basic_blocks.0"/>
+  <edges id="368" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.0" sink_obj="//@blocks.3"/>
+  <edges id="369" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.0" sink_obj="//@regions.1/@basic_blocks.1"/>
+  <edges id="370" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.1" sink_obj="//@regions.1/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="371" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.4"/>
+  <edges id="372" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="373" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.3" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.4"/>
+  <edges id="374" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.3" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.4"/>
+  <edges id="-93" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@ports.0"/>
+  <edges id="-157" source_obj="//@blocks.2/@node_objs.2" sink_obj="//@ports.0"/>
+  <blocks id="23" name="block_23" type="BlockType">
+    <controlOutputObjs>loop-memcpy-residual-header</controlOutputObjs>
+    <controlOutputObjs>loop-memcpy-expansion8.preheader</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="16" name="dim_read" originalName="dim" coreName="s_axilite" implIndex="UNSUPPORTED" control="auto" coreId="114" bitwidth="32" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <dataInputObjs>dim</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>readreq</dataOutputObjs>
+      <dataOutputObjs>writereq</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="x2_read" originalName="x2" coreName="s_axilite" implIndex="UNSUPPORTED" control="auto" coreId="114" bitwidth="32" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <dataInputObjs>x2</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="18" name="x1_read" originalName="x1" coreName="s_axilite" implIndex="UNSUPPORTED" control="auto" coreId="114" bitwidth="32" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <dataInputObjs>x1</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="bram_x14" rtlName="bram_x14_U" coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="sext_ln19" lineNumber="19" fileName="bram_testip/main.cpp" fileDirectory=".." rtlName="sext_ln19_fu_177_p1" coreId="529" contextFuncName="bram_test" bitwidth="62" opcode="sext" nodeLabel="1.0" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="bram_testip/main.cpp" linenumber="19" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="bram_test"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="icmp_ln19" lineNumber="19" fileName="bram_testip/main.cpp" fileDirectory=".." rtlName="icmp_ln19_fu_171_p2" opType="icmp" coreId="45" contextFuncName="bram_test" bitwidth="1" opcode="icmp" m_display="0" m_delay="2.47" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="bram_testip/main.cpp" linenumber="19" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="bram_test"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="br_ln19" lineNumber="19" fileName="bram_testip/main.cpp" fileDirectory=".." coreId="106" contextFuncName="bram_test" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="bram_testip/main.cpp" linenumber="19" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="bram_test"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>loop-memcpy-expansion8.preheader</controlInputObjs>
+      <controlInputObjs>loop-memcpy-residual-header</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="bram_testip/main.cpp">
+      <validLinenumbers>19</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="29" name="loop-memcpy-expansion8.preheader" type="BlockType">
+    <controlInputObjs>block_23</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>loop-memcpy-expansion8</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="p_cast" rtlName="p_cast_fu_180_p4" coreId="0" bitwidth="30" opcode="partselect" nodeLabel="1.0" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="p_cast_cast" rtlName="p_cast_cast_fu_189_p1" coreId="677706808" bitwidth="32" opcode="sext" nodeLabel="1.0" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="gmem_addr" coreId="1265" bitwidth="32" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <dataInputObjs>gmem</dataInputObjs>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataOutputObjs>readreq</dataOutputObjs>
+      <dataOutputObjs>read</dataOutputObjs>
+      <dataOutputObjs>gmem</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="empty" coreName="m_axi" implIndex="m_axi" control="auto" opType="readreq" coreId="113" bitwidth="1" opcode="readreq" nodeLabel="1.0" nodeLatency="6" m_display="0" m_delay="7.3" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="br_ln0" coreId="677696656" opcode="br" nodeLabel="7.0" m_display="0" m_delay="1.58" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <controlInputObjs>loop-memcpy-expansion8</controlInputObjs>
+    </node_objs>
+  </blocks>
+  <blocks id="49" name="loop-memcpy-expansion.preheader" type="BlockType">
+    <controlInputObjs>loop-memcpy-expansion8</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>loop-memcpy-expansion</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="44" name="p_cast1" rtlName="p_cast1_fu_219_p4" coreId="1935961711" bitwidth="30" opcode="partselect" nodeLabel="11.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="45" name="p_cast1_cast" rtlName="p_cast1_cast_fu_228_p1" coreId="677703976" bitwidth="32" opcode="sext" nodeLabel="11.0" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="46" name="gmem_addr_1" coreId="132" bitwidth="32" opcode="getelementptr" nodeLabel="11.0" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
+      <dataInputObjs>gmem</dataInputObjs>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+      <dataOutputObjs>writeresp</dataOutputObjs>
+      <dataOutputObjs>writereq</dataOutputObjs>
+      <dataOutputObjs>gmem</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="47" name="empty_22" coreName="m_axi" implIndex="m_axi" control="auto" opType="writereq" coreId="113" bitwidth="1" opcode="writereq" nodeLabel="11.0" m_display="0" m_delay="7.3" m_topoIndex="26" m_clusterGroupNumber="-1">
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="48" name="br_ln0" coreId="677721800" opcode="br" nodeLabel="11.0" m_display="0" m_delay="1.58" m_topoIndex="27" m_clusterGroupNumber="-1">
+      <controlInputObjs>loop-memcpy-expansion</controlInputObjs>
+    </node_objs>
+  </blocks>
+  <blocks id="66" name="loop-memcpy-residual-header.loopexit" type="BlockType">
+    <controlInputObjs>loop-memcpy-expansion</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>loop-memcpy-residual-header</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="64" name="empty_21" lineNumber="40" fileName="bram_testip/main.cpp" fileDirectory=".." coreName="m_axi" implIndex="m_axi" control="auto" opType="writereq" coreId="113" contextFuncName="bram_test" bitwidth="1" opcode="writeresp" nodeLabel="15.0" nodeLatency="4" m_display="0" m_delay="7.3" m_topoIndex="38" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="bram_testip/main.cpp" linenumber="40" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="bram_test"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="65" name="br_ln40" lineNumber="40" fileName="bram_testip/main.cpp" fileDirectory=".." coreId="2020173413" contextFuncName="bram_test" opcode="br" nodeLabel="19.0" m_display="0" m_topoIndex="39" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="bram_testip/main.cpp" linenumber="40" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="bram_test"/>
+      <controlInputObjs>loop-memcpy-residual-header</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="bram_testip/main.cpp">
+      <validLinenumbers>40</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="68" name="loop-memcpy-residual-header" type="BlockType">
+    <controlInputObjs>block_23</controlInputObjs>
+    <controlInputObjs>loop-memcpy-residual-header.loopexit</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="67" name="_ln40" lineNumber="40" fileName="bram_testip/main.cpp" fileDirectory=".." coreId="536879616" contextFuncName="bram_test" opcode="ret" nodeLabel="19.0" m_display="0" m_topoIndex="40" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="bram_testip/main.cpp" linenumber="40" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="bram_test"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="bram_testip/main.cpp">
+      <validLinenumbers>40</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="263" pipe_depth="3" RegionName="Loop 1">
+    <basic_blocks id="36" name="loop-memcpy-expansion8" type="BlockType">
+      <controlInputObjs>loop-memcpy-expansion8.preheader</controlInputObjs>
+      <controlInputObjs>loop-memcpy-expansion8.split</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>loop-memcpy-expansion.preheader</controlOutputObjs>
+      <controlOutputObjs>loop-memcpy-expansion8.split</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="loop_index9" coreId="0" bitwidth="62" opcode="phi" nodeLabel="8.0" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+        <controlInputObjs>loop-memcpy-expansion8.split</controlInputObjs>
+        <controlInputObjs>loop-memcpy-expansion8.preheader</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="empty_15" rtlName="empty_15_fu_200_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" bitwidth="62" opcode="add" nodeLabel="8.0" m_display="0" m_delay="3.46" m_topoIndex="14" m_clusterGroupNumber="-1">
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="exitcond133" lineNumber="19" fileName="bram_testip/main.cpp" fileDirectory=".." rtlName="exitcond133_fu_206_p2" opType="icmp" coreId="132" contextFuncName="bram_test" bitwidth="1" opcode="icmp" nodeLabel="8.0" m_display="0" m_delay="2.79" m_topoIndex="15" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="bram_testip/main.cpp" linenumber="19" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="bram_test"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="35" name="br_ln19" lineNumber="19" fileName="bram_testip/main.cpp" fileDirectory=".." coreId="132" contextFuncName="bram_test" opcode="br" nodeLabel="8.0" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="bram_testip/main.cpp" linenumber="19" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="bram_test"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>loop-memcpy-expansion8.split</controlInputObjs>
+        <controlInputObjs>loop-memcpy-expansion.preheader</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="bram_testip/main.cpp">
+        <validLinenumbers>19</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="43" name="loop-memcpy-expansion8.split" type="BlockType">
+      <controlInputObjs>loop-memcpy-expansion8</controlInputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>loop-memcpy-expansion8</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="gmem_addr_read" coreName="m_axi" implIndex="UNSUPPORTED" control="auto" coreId="113" bitwidth="32" opcode="read" nodeLabel="9.0" m_display="0" m_delay="7.3" m_topoIndex="18" m_clusterGroupNumber="-1">
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="empty_17" rtlName="empty_17_fu_211_p1" coreId="62" bitwidth="10" opcode="trunc" nodeLabel="8.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="loop_index9_cast_cast" rtlName="loop_index9_cast_cast_fu_215_p1" coreId="1217" bitwidth="32" opcode="zext" nodeLabel="10.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="40" name="bram_x14_addr" coreId="0" bitwidth="10" opcode="getelementptr" nodeLabel="10.0" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="41" name="bram_x14_addr_write_ln0" coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" opcode="store" nodeLabel="10.0" m_display="0" m_delay="3.25" m_topoIndex="21" m_clusterGroupNumber="-1">
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>getelementptr</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="42" name="br_ln0" coreId="677702608" opcode="br" nodeLabel="10.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+        <controlInputObjs>loop-memcpy-expansion8</controlInputObjs>
+      </node_objs>
+    </basic_blocks>
+  </regions>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="264" pipe_depth="3" RegionName="Loop 2">
+    <basic_blocks id="56" name="loop-memcpy-expansion" type="BlockType">
+      <controlInputObjs>loop-memcpy-expansion.preheader</controlInputObjs>
+      <controlInputObjs>loop-memcpy-expansion.split</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>loop-memcpy-residual-header.loopexit</controlOutputObjs>
+      <controlOutputObjs>loop-memcpy-expansion.split</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="50" name="loop_index" coreId="1431446077" bitwidth="62" opcode="phi" nodeLabel="12.0" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+        <controlInputObjs>loop-memcpy-expansion.split</controlInputObjs>
+        <controlInputObjs>loop-memcpy-expansion.preheader</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="51" name="empty_18" rtlName="empty_18_fu_239_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" bitwidth="62" opcode="add" nodeLabel="12.0" m_display="0" m_delay="3.46" m_topoIndex="29" m_clusterGroupNumber="-1">
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="53" name="exitcond2" lineNumber="19" fileName="bram_testip/main.cpp" fileDirectory=".." rtlName="exitcond2_fu_245_p2" opType="icmp" coreId="1852795252" contextFuncName="bram_test" bitwidth="1" opcode="icmp" nodeLabel="12.0" m_display="0" m_delay="2.79" m_topoIndex="30" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="bram_testip/main.cpp" linenumber="19" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="bram_test"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="55" name="br_ln19" lineNumber="19" fileName="bram_testip/main.cpp" fileDirectory=".." coreId="1043276322" contextFuncName="bram_test" opcode="br" nodeLabel="12.0" m_display="0" m_topoIndex="31" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="bram_testip/main.cpp" linenumber="19" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="bram_test"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>loop-memcpy-expansion.split</controlInputObjs>
+        <controlInputObjs>loop-memcpy-residual-header.loopexit</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="bram_testip/main.cpp">
+        <validLinenumbers>19</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="63" name="loop-memcpy-expansion.split" type="BlockType">
+      <controlInputObjs>loop-memcpy-expansion</controlInputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>loop-memcpy-expansion</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="57" name="empty_20" rtlName="empty_20_fu_250_p1" coreId="1835365491" bitwidth="10" opcode="trunc" nodeLabel="12.0" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="58" name="loop_index_cast_cast" rtlName="loop_index_cast_cast_fu_254_p1" coreId="1768843628" bitwidth="32" opcode="zext" nodeLabel="12.0" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="59" name="bram_x14_addr_1" coreId="875376688" bitwidth="10" opcode="getelementptr" nodeLabel="12.0" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1">
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="60" name="bram_x14_load" coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" bitwidth="32" opcode="load" nodeLabel="12.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="35" m_clusterGroupNumber="-1">
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="61" name="gmem_addr_1_write_ln0" coreName="m_axi" implIndex="UNSUPPORTED" control="auto" coreId="113" opcode="write" nodeLabel="14.0" m_display="0" m_delay="7.3" m_topoIndex="36" m_clusterGroupNumber="-1">
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="62" name="br_ln0" coreId="1701273971" opcode="br" nodeLabel="14.0" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
+        <controlInputObjs>loop-memcpy-expansion</controlInputObjs>
+      </node_objs>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <ScheduleInfo time="7"/>
+  <ScheduleInfo time="8"/>
+  <ScheduleInfo time="9"/>
+  <ScheduleInfo time="10"/>
+  <ScheduleInfo time="11"/>
+  <ScheduleInfo time="12"/>
+  <ScheduleInfo time="13"/>
+  <ScheduleInfo time="14"/>
+  <ScheduleInfo time="15"/>
+  <ScheduleInfo time="16"/>
+  <ScheduleInfo time="17"/>
+  <ScheduleInfo time="18"/>
+  <ScheduleInfo time="19"/>
+  <regnodes realName="gmem_addr_reg_286">
+    <nodeIds>26</nodeIds>
+  </regnodes>
+  <regnodes realName="empty_15_reg_292">
+    <nodeIds>31</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln19_reg_276">
+    <nodeIds>21</nodeIds>
+  </regnodes>
+  <regnodes realName="loop_index_reg_160">
+    <nodeIds>50</nodeIds>
+  </regnodes>
+  <regnodes realName="bram_x14_load_reg_331">
+    <nodeIds>60</nodeIds>
+  </regnodes>
+  <regnodes realName="sext_ln19_reg_280">
+    <nodeIds>20</nodeIds>
+  </regnodes>
+  <regnodes realName="x1_read_reg_271">
+    <nodeIds>18</nodeIds>
+  </regnodes>
+  <regnodes realName="dim_read_reg_259">
+    <nodeIds>16</nodeIds>
+  </regnodes>
+  <regnodes realName="empty_18_reg_317">
+    <nodeIds>51</nodeIds>
+  </regnodes>
+  <regnodes realName="gmem_addr_1_reg_311">
+    <nodeIds>46</nodeIds>
+  </regnodes>
+  <regnodes realName="gmem_addr_read_reg_306">
+    <nodeIds>37</nodeIds>
+  </regnodes>
+  <regnodes realName="exitcond133_reg_297">
+    <nodeIds>33</nodeIds>
+  </regnodes>
+  <regnodes realName="exitcond2_reg_322">
+    <nodeIds>53</nodeIds>
+  </regnodes>
+  <regnodes realName="loop_index9_reg_149">
+    <nodeIds>30</nodeIds>
+  </regnodes>
+  <regnodes realName="x2_read_reg_266">
+    <nodeIds>17</nodeIds>
+  </regnodes>
+  <regnodes realName="empty_17_reg_301">
+    <nodeIds>38</nodeIds>
+  </regnodes>
+  <regnodes realName="bram_x14_addr_1_reg_326">
+    <nodeIds>59</nodeIds>
+  </regnodes>
+  <expressionNodes realName="exitcond133_fu_206">
+    <nodeIds>33</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="loop_index9_phi_fu_153">
+    <nodeIds>30</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="exitcond2_fu_245">
+    <nodeIds>53</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bram_x14_alloca_fu_82">
+    <nodeIds>19</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="loop_index_cast_cast_fu_254">
+    <nodeIds>58</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_cast_cast_fu_189">
+    <nodeIds>25</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="loop_index9_cast_cast_fu_215">
+    <nodeIds>39</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="empty_18_fu_239">
+    <nodeIds>51</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_cast_fu_180">
+    <nodeIds>24</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="empty_20_fu_250">
+    <nodeIds>57</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_cast1_fu_219">
+    <nodeIds>44</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bram_x14_addr_1_gep_fu_142">
+    <nodeIds>59</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln19_fu_171">
+    <nodeIds>21</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="empty_15_fu_200">
+    <nodeIds>31</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="empty_17_fu_211">
+    <nodeIds>38</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="gmem_addr_1_fu_232">
+    <nodeIds>46</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_cast1_cast_fu_228">
+    <nodeIds>45</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="loop_index_phi_fu_164">
+    <nodeIds>50</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bram_x14_addr_gep_fu_130">
+    <nodeIds>40</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="gmem_addr_fu_193">
+    <nodeIds>26</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln19_fu_177">
+    <nodeIds>20</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="x2_read_read_fu_92">
+    <nodeIds>17</nodeIds>
+  </ioNodes>
+  <ioNodes realName="x1_read_read_fu_98">
+    <nodeIds>18</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_readreq_fu_104">
+    <nodeIds>27</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_writeresp_fu_115">
+    <nodeIds>47</nodeIds>
+    <nodeIds>64</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln0_write_fu_121">
+    <nodeIds>61</nodeIds>
+  </ioNodes>
+  <ioNodes realName="dim_read_read_fu_86">
+    <nodeIds>16</nodeIds>
+  </ioNodes>
+  <ioNodes realName="gmem_addr_read_read_fu_110">
+    <nodeIds>37</nodeIds>
+  </ioNodes>
+  <memoryPorts dataString="bram_x14">
+    <nodeIds>41</nodeIds>
+    <nodeIds>60</nodeIds>
+  </memoryPorts>
+  <ioPorts name="dim">
+    <contents name="read">
+      <nodeIds>16</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="gmem"/>
+  <ioPorts name="x1">
+    <contents name="read">
+      <nodeIds>18</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="x2">
+    <contents name="read">
+      <nodeIds>17</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="7" latency="7"/>
+    </states>
+    <states id="3">
+      <operations id="27" stage="6" latency="7"/>
+    </states>
+    <states id="4">
+      <operations id="27" stage="5" latency="7"/>
+    </states>
+    <states id="5">
+      <operations id="27" stage="4" latency="7"/>
+    </states>
+    <states id="6">
+      <operations id="27" stage="3" latency="7"/>
+    </states>
+    <states id="7">
+      <operations id="27" stage="2" latency="7"/>
+    </states>
+    <states id="8">
+      <operations id="27" stage="1" latency="7"/>
+      <operations id="28" stage="1" latency="1"/>
+    </states>
+    <states id="9">
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+    </states>
+    <states id="10">
+      <operations id="37" stage="1" latency="1"/>
+    </states>
+    <states id="11">
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+    </states>
+    <states id="12">
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
+    </states>
+    <states id="13">
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="51" stage="1" latency="1"/>
+      <operations id="52" stage="1" latency="1"/>
+      <operations id="53" stage="1" latency="1"/>
+      <operations id="54" stage="1" latency="1"/>
+      <operations id="55" stage="1" latency="1"/>
+      <operations id="57" stage="1" latency="1"/>
+      <operations id="58" stage="1" latency="1"/>
+      <operations id="59" stage="1" latency="1"/>
+      <operations id="60" stage="2" latency="2"/>
+    </states>
+    <states id="14">
+      <operations id="60" stage="1" latency="2"/>
+    </states>
+    <states id="15">
+      <operations id="61" stage="1" latency="1"/>
+      <operations id="62" stage="1" latency="1"/>
+    </states>
+    <states id="16">
+      <operations id="64" stage="5" latency="5"/>
+    </states>
+    <states id="17">
+      <operations id="64" stage="4" latency="5"/>
+    </states>
+    <states id="18">
+      <operations id="64" stage="3" latency="5"/>
+    </states>
+    <states id="19">
+      <operations id="64" stage="2" latency="5"/>
+    </states>
+    <states id="20">
+      <operations id="64" stage="1" latency="5"/>
+      <operations id="65" stage="1" latency="1"/>
+      <operations id="67" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="20">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="7" outState="8">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="8" outState="9">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="12" outState="13">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="16" outState="17">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="17" outState="18">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="18" outState="19">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="19" outState="20">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="10" outState="11">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="11" outState="9">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="9" outState="12">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="9" outState="10">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="14" outState="15">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="15" outState="13">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="13" outState="16">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="13" outState="14">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="bram_test" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="2" mMaxLatency="-1">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <subRegions>5</subRegions>
+      <subRegions>6</subRegions>
+      <subRegions>7</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="1" mMaxLatency="7">
+      <basicBlocks>23</basicBlocks>
+      <basicBlocks>29</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="Loop_1" mII="1" mDepth="3" mMinTripCount="1" mMaxTripCount="-1" mMinLatency="2" mMaxLatency="-1" mType="1">
+      <basicBlocks>36</basicBlocks>
+      <basicBlocks>43</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Region 1" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>49</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="5" mTag="Loop_2" mII="1" mDepth="3" mMinTripCount="1" mMaxTripCount="-1" mMinLatency="2" mMaxLatency="-1" mType="1">
+      <basicBlocks>56</basicBlocks>
+      <basicBlocks>63</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="6" mTag="Region 2" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="4" mMaxLatency="4">
+      <basicBlocks>66</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="7" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>68</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

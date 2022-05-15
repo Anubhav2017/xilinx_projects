@@ -1,1 +1,0 @@
-set ::AESL_AUTOSIM::gTopFileName /home/anubhav/workspace/ip_repo/dot_mat/solution1/./sim/autowrap/testbench/dot_matrix.cpp_pre.cpp.tb.cpp

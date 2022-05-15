@@ -1,0 +1,47 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.530208",
+   "Default View_TopLeft":"-34,0",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 6 -x 1930 -y 360 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 6 -x 1930 -y 380 -defaultsOSRD
+preplace inst InputLayer_0 -pg 1 -lvl 3 -x 900 -y 270 -defaultsOSRD
+preplace inst OutputLayer_0 -pg 1 -lvl 3 -x 900 -y 430 -defaultsOSRD
+preplace inst axi_mem_intercon -pg 1 -lvl 4 -x 1290 -y 750 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 5 -x 1670 -y 410 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -x 550 -y 270 -defaultsOSRD
+preplace inst relu_combined_0 -pg 1 -lvl 3 -x 900 -y 100 -defaultsOSRD
+preplace inst relu_dx -pg 1 -lvl 4 -x 1290 -y 70 -defaultsOSRD
+preplace inst relu_dy -pg 1 -lvl 4 -x 1290 -y 430 -defaultsOSRD
+preplace inst relu_x -pg 1 -lvl 4 -x 1290 -y 190 -defaultsOSRD
+preplace inst relu_y -pg 1 -lvl 4 -x 1290 -y 310 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -x 200 -y 440 -defaultsOSRD
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 6 20 340 380 470 710 520 1120 520 1450 520 1890
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 6 20 540 NJ 540 NJ 540 NJ 540 NJ 540 1900
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 3 390 480 720 550 1080
+preplace netloc InputLayer_0_bram_dx_PORTA 1 3 1 1110 60n
+preplace netloc InputLayer_0_bram_x_PORTA 1 3 1 1120 180n
+preplace netloc InputLayer_0_m_axi_gmem 1 3 1 1100 240n
+preplace netloc OutputLayer_0_bram_dy_PORTA 1 3 1 N 440
+preplace netloc OutputLayer_0_bram_y_PORTA 1 3 1 1110 320n
+preplace netloc OutputLayer_0_m_axi_gmem 1 3 1 1090 400n
+preplace netloc axi_mem_intercon_M00_AXI 1 4 1 1440 400n
+preplace netloc processing_system7_0_DDR 1 5 1 NJ 360
+preplace netloc processing_system7_0_FIXED_IO 1 5 1 NJ 380
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 5 400 530 NJ 530 NJ 530 NJ 530 1910
+preplace netloc ps7_0_axi_periph_M01_AXI 1 2 1 N 250
+preplace netloc ps7_0_axi_periph_M03_AXI 1 2 1 700 80n
+preplace netloc ps7_0_axi_periph_M04_AXI 1 2 1 700 310n
+preplace netloc relu_combined_0_dx_PORTA 1 3 1 N 80
+preplace netloc relu_combined_0_dy_PORTA 1 3 1 1130 120n
+preplace netloc relu_combined_0_x_PORTA 1 3 1 1100 60n
+preplace netloc relu_combined_0_y_PORTA 1 3 1 1140 100n
+levelinfo -pg 1 0 200 550 900 1290 1670 1930
+pagesize -pg 1 -db -bbox -sgen 0 0 2050 960
+"
+}
+{
+   "da_bram_cntlr_cnt":"2"
+}

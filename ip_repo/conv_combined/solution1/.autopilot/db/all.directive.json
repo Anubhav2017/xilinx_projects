@@ -1,7 +1,6 @@
 {"sourceFile": [{
       "name": "",
-      "directive": [
-        {
+      "directive": [{
           "functionName": "conv_combined",
           "label": "",
           "functionLabel": "",
@@ -12,18 +11,5 @@
                 "value": "conv_combined"
               }]
           }
-        },
-        {
-          "functionName": "conv_combined",
-          "label": "",
-          "functionLabel": "",
-          "pragma": {
-            "name": "TOP",
-            "option": [{
-                "name": "name",
-                "value": "conv_combined"
-              }]
-          }
-        }
-      ]
+        }]
     }]}

@@ -1,9 +1,0 @@
-forward_fcc_mul_31s_31s_31_2_1
-forward_fcc_mul_7ns_8ns_14_1_1
-forward_fcc_mul_32s_32s_32_2_1
-forward_fcc_mac_muladd_16s_16s_23ns_23_4_1
-forward_fcc_ybuf_V
-forward_fcc_wbuf_V
-forward_fcc_CTRL_s_axi
-forward_fcc_gmem_m_axi
-forward_fcc
