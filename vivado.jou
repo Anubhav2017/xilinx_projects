@@ -157,3 +157,61 @@ export_ip_user_files -of_objects  [get_files /home/anubhav/xilinx_projects/conv_
 remove_files  /home/anubhav/xilinx_projects/conv_test/conv_test.srcs/sources_1/bd/nn/nn.bd
 open_bd_design {/home/anubhav/xilinx_projects/conv_test/conv_test.srcs/sources_1/bd/design_1/design_1.bd}
 file copy -force /home/anubhav/xilinx_projects/conv_test/conv_test.runs/impl_1/design_1_wrapper.bit /home/anubhav/xilinx_projects/conv_test/conv_test.bit
+close_project
+open_project /home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.xpr
+open_bd_design {/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.srcs/sources_1/bd/design_1/design_1.bd}
+update_compile_order -fileset sources_1
+startgroup
+set_property -dict [list CONFIG.Write_Width_A {16} CONFIG.Read_Width_A {16} CONFIG.Write_Width_B {16} CONFIG.Read_Width_B {16}] [get_bd_cells fcc_dx]
+endgroup
+startgroup
+set_property -dict [list CONFIG.Write_Width_A {16} CONFIG.Read_Width_A {16} CONFIG.Write_Width_B {16} CONFIG.Read_Width_B {16}] [get_bd_cells fcc_x]
+endgroup
+startgroup
+set_property -dict [list CONFIG.Write_Width_A {16} CONFIG.Read_Width_A {16} CONFIG.Write_Width_B {16} CONFIG.Read_Width_B {16}] [get_bd_cells fcc_dy]
+endgroup
+startgroup
+set_property -dict [list CONFIG.Write_Width_A {16} CONFIG.Read_Width_A {16} CONFIG.Write_Width_B {16} CONFIG.Read_Width_B {16}] [get_bd_cells fcc_y]
+endgroup
+reset_run design_1_fcc_dx_0_synth_1
+reset_run design_1_fcc_dy_0_synth_1
+reset_run design_1_fcc_x_0_synth_1
+reset_run design_1_fcc_y_0_synth_1
+reset_run synth_1
+save_bd_design
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+file copy -force /home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/impl_1/design_1_wrapper.bit /home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.bit
+close_project
+open_project /home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.xpr
+update_compile_order -fileset sources_1
+close_project
+open_project /home/anubhav/xilinx_projects/conv_test/conv_test.xpr
+open_bd_design {/home/anubhav/xilinx_projects/conv_test/conv_test.srcs/sources_1/bd/design_1/design_1.bd}
+update_compile_order -fileset sources_1
+startgroup
+set_property -dict [list CONFIG.Write_Width_A {16} CONFIG.Read_Width_A {16} CONFIG.Write_Width_B {16} CONFIG.Read_Width_B {16}] [get_bd_cells conv_dx]
+endgroup
+startgroup
+set_property -dict [list CONFIG.Write_Width_A {16} CONFIG.Read_Width_A {16} CONFIG.Write_Width_B {16} CONFIG.Read_Width_B {16}] [get_bd_cells conv_x]
+endgroup
+startgroup
+set_property -dict [list CONFIG.Write_Width_A {16} CONFIG.Read_Width_A {16} CONFIG.Write_Width_B {16} CONFIG.Read_Width_B {16}] [get_bd_cells conv_dy]
+endgroup
+startgroup
+set_property -dict [list CONFIG.Write_Width_A {16} CONFIG.Read_Width_A {16} CONFIG.Write_Width_B {16} CONFIG.Read_Width_B {16}] [get_bd_cells conv_y]
+endgroup
+save_bd_design
+reset_run design_1_conv_dy_0_synth_1
+reset_run design_1_conv_y_0_synth_1
+reset_run design_1_fcc_y_0_synth_1
+reset_run design_1_fcc_dy_0_synth_1
+reset_run synth_1
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+file copy -force /home/anubhav/xilinx_projects/conv_test/conv_test.runs/impl_1/design_1_wrapper.bit /home/anubhav/xilinx_projects/conv_test/conv_test.bit
+file copy -force /home/anubhav/xilinx_projects/conv_test/conv_test.runs/impl_1/design_1_wrapper.bit /home/anubhav/xilinx_projects/conv_test/conv_test.bit

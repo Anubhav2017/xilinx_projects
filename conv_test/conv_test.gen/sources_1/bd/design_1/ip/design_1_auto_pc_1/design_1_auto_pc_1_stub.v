@@ -3,8 +3,8 @@
 // Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
 // Date        : Mon May 16 03:46:09 2022
 // Host        : anubhav-acer running 64-bit Ubuntu 20.04.4 LTS
-// Command     : write_verilog -force -mode synth_stub
-//               /home/anubhav/xilinx_projects/conv_test/conv_test.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top design_1_auto_pc_1 -prefix
+//               design_1_auto_pc_1_ design_1_auto_pc_1_stub.v
 // Design      : design_1_auto_pc_1
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg400-1

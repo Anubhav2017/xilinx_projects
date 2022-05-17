@@ -191,15 +191,15 @@ proc create_root_design { parentCell } {
    CONFIG.Port_B_Clock {100} \
    CONFIG.Port_B_Enable_Rate {100} \
    CONFIG.Port_B_Write_Rate {50} \
-   CONFIG.Read_Width_A {32} \
-   CONFIG.Read_Width_B {32} \
+   CONFIG.Read_Width_A {16} \
+   CONFIG.Read_Width_B {16} \
    CONFIG.Register_PortA_Output_of_Memory_Primitives {true} \
    CONFIG.Register_PortB_Output_of_Memory_Primitives {true} \
    CONFIG.Use_Byte_Write_Enable {false} \
    CONFIG.Use_RSTA_Pin {false} \
    CONFIG.Use_RSTB_Pin {false} \
-   CONFIG.Write_Width_A {32} \
-   CONFIG.Write_Width_B {32} \
+   CONFIG.Write_Width_A {16} \
+   CONFIG.Write_Width_B {16} \
    CONFIG.use_bram_block {Stand_Alone} \
  ] $fcc_dx
 
@@ -215,15 +215,15 @@ proc create_root_design { parentCell } {
    CONFIG.Port_B_Clock {100} \
    CONFIG.Port_B_Enable_Rate {100} \
    CONFIG.Port_B_Write_Rate {50} \
-   CONFIG.Read_Width_A {32} \
-   CONFIG.Read_Width_B {32} \
+   CONFIG.Read_Width_A {16} \
+   CONFIG.Read_Width_B {16} \
    CONFIG.Register_PortA_Output_of_Memory_Primitives {true} \
    CONFIG.Register_PortB_Output_of_Memory_Primitives {true} \
    CONFIG.Use_Byte_Write_Enable {false} \
    CONFIG.Use_RSTA_Pin {false} \
    CONFIG.Use_RSTB_Pin {false} \
-   CONFIG.Write_Width_A {32} \
-   CONFIG.Write_Width_B {32} \
+   CONFIG.Write_Width_A {16} \
+   CONFIG.Write_Width_B {16} \
    CONFIG.use_bram_block {Stand_Alone} \
  ] $fcc_dy
 
@@ -239,15 +239,15 @@ proc create_root_design { parentCell } {
    CONFIG.Port_B_Clock {100} \
    CONFIG.Port_B_Enable_Rate {100} \
    CONFIG.Port_B_Write_Rate {50} \
-   CONFIG.Read_Width_A {32} \
-   CONFIG.Read_Width_B {32} \
+   CONFIG.Read_Width_A {16} \
+   CONFIG.Read_Width_B {16} \
    CONFIG.Register_PortA_Output_of_Memory_Primitives {true} \
    CONFIG.Register_PortB_Output_of_Memory_Primitives {true} \
    CONFIG.Use_Byte_Write_Enable {false} \
    CONFIG.Use_RSTA_Pin {false} \
    CONFIG.Use_RSTB_Pin {false} \
-   CONFIG.Write_Width_A {32} \
-   CONFIG.Write_Width_B {32} \
+   CONFIG.Write_Width_A {16} \
+   CONFIG.Write_Width_B {16} \
    CONFIG.use_bram_block {Stand_Alone} \
  ] $fcc_x
 
@@ -263,15 +263,15 @@ proc create_root_design { parentCell } {
    CONFIG.Port_B_Clock {100} \
    CONFIG.Port_B_Enable_Rate {100} \
    CONFIG.Port_B_Write_Rate {50} \
-   CONFIG.Read_Width_A {32} \
-   CONFIG.Read_Width_B {32} \
+   CONFIG.Read_Width_A {16} \
+   CONFIG.Read_Width_B {16} \
    CONFIG.Register_PortA_Output_of_Memory_Primitives {true} \
    CONFIG.Register_PortB_Output_of_Memory_Primitives {true} \
    CONFIG.Use_Byte_Write_Enable {false} \
    CONFIG.Use_RSTA_Pin {false} \
    CONFIG.Use_RSTB_Pin {false} \
-   CONFIG.Write_Width_A {32} \
-   CONFIG.Write_Width_B {32} \
+   CONFIG.Write_Width_A {16} \
+   CONFIG.Write_Width_B {16} \
    CONFIG.use_bram_block {Stand_Alone} \
  ] $fcc_y
 

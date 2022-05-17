@@ -1,7 +1,7 @@
 {
    "ActiveEmotionalView":"Default View",
    "Default View_ScaleFactor":"0.537428",
-   "Default View_TopLeft":"0,-188",
+   "Default View_TopLeft":"0,0",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
 #  -string -flagsOSRD
@@ -21,6 +21,10 @@ preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -x 210 -y 1030 -defaultsOSRD
 preplace netloc processing_system7_0_FCLK_CLK0 1 0 6 20 750 400 430 730 340 1180 780 1490 110 1950
 preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 6 30 930 NJ 930 NJ 930 NJ 930 NJ 930 1930
 preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 3 390 420 710 330 1190
+preplace netloc ps7_0_axi_periph_M01_AXI 1 2 1 720 410n
+preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 N 590
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 5 410 920 NJ 920 NJ 920 NJ 920 1940
+preplace netloc ps7_0_axi_periph_M04_AXI 1 2 1 720 670n
 preplace netloc InputLayer_0_m_axi_gmem 1 3 1 1110 60n
 preplace netloc OutputLayer_0_m_axi_gmem 1 3 1 1140 120n
 preplace netloc axi_mem_intercon_M00_AXI 1 4 1 N 210
@@ -31,13 +35,9 @@ preplace netloc conv_combined_0_x_PORTA 1 3 1 N 580
 preplace netloc conv_combined_0_y_PORTA 1 3 1 1120 620n
 preplace netloc processing_system7_0_DDR 1 5 1 NJ 170
 preplace netloc processing_system7_0_FIXED_IO 1 5 1 NJ 190
-preplace netloc processing_system7_0_M_AXI_GP0 1 1 5 410 920 NJ 920 NJ 920 NJ 920 1940
-preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 N 590
-preplace netloc ps7_0_axi_periph_M01_AXI 1 2 1 720 410n
-preplace netloc ps7_0_axi_periph_M04_AXI 1 2 1 720 670n
-preplace netloc InputLayer_0_bram_dx_PORTA 1 3 1 1160 440n
 preplace netloc InputLayer_0_bram_x_PORTA 1 3 1 1170 420n
 preplace netloc OutputLayer_0_bram_dy_PORTA 1 3 1 1190 720n
+preplace netloc InputLayer_0_bram_dx_PORTA 1 3 1 1160 440n
 preplace netloc OutputLayer_0_bram_y_PORTA 1 3 1 1110 800n
 levelinfo -pg 1 0 210 560 920 1340 1710 1970
 pagesize -pg 1 -db -bbox -sgen 0 0 2090 1130
