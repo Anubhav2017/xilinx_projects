@@ -7,14 +7,14 @@ use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
 
-entity loss_derivative_mul_5s_23ns_28_1_1_Multiplier_3 is
+entity loss_derivative_mul_5s_23ns_28_1_1_Multiplier_2 is
 port (
     a: in std_logic_vector(5 - 1 downto 0);
     b: in std_logic_vector(23 - 1 downto 0);
     p: out std_logic_vector(28 - 1 downto 0));
 end entity;
 
-architecture behav of loss_derivative_mul_5s_23ns_28_1_1_Multiplier_3 is
+architecture behav of loss_derivative_mul_5s_23ns_28_1_1_Multiplier_2 is
     signal a_i : std_logic_vector(5 - 1 downto 0);
     signal b_i : std_logic_vector(23 - 1 downto 0);
 begin
@@ -39,7 +39,7 @@ entity loss_derivative_mul_5s_23ns_28_1_1 is
 end entity;
 
 architecture arch of loss_derivative_mul_5s_23ns_28_1_1 is
-    component loss_derivative_mul_5s_23ns_28_1_1_Multiplier_3 is
+    component loss_derivative_mul_5s_23ns_28_1_1_Multiplier_2 is
         port (
             a : IN STD_LOGIC_VECTOR;
             b : IN STD_LOGIC_VECTOR;
@@ -49,7 +49,7 @@ architecture arch of loss_derivative_mul_5s_23ns_28_1_1 is
 
 
 begin
-    loss_derivative_mul_5s_23ns_28_1_1_Multiplier_3_U :  component loss_derivative_mul_5s_23ns_28_1_1_Multiplier_3
+    loss_derivative_mul_5s_23ns_28_1_1_Multiplier_2_U :  component loss_derivative_mul_5s_23ns_28_1_1_Multiplier_2
     port map (
         a => din0,
         b => din1,

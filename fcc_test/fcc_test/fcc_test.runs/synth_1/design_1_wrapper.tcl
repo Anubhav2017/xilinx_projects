@@ -93,7 +93,6 @@ OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib /home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
 add_files /home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.srcs/sources_1/bd/design_1/design_1.bd
 set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_InputLayer_0_0/constraints/InputLayer_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_OutputLayer_0_0/constraints/OutputLayer_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_fcc_combined_0_0/constraints/fcc_combined_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_fcc_dx_0/design_1_fcc_dx_0_ooc.xdc]
@@ -105,6 +104,7 @@ set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_p
 set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_board.xdc]
 set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xdc]
 set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_InputLayer_1_0/constraints/InputLayer_ooc.xdc]
 set_property used_in_synthesis false [get_files -all /home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_ooc.xdc]

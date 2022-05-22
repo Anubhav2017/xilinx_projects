@@ -18,7 +18,7 @@
     "x": {
       "index": "0",
       "direction": "inout",
-      "srcType": "ap_fixed<16, 9, AP_TRN, AP_WRAP, 0>*",
+      "srcType": "ap_fixed<16, 3, AP_TRN, AP_WRAP, 0>*",
       "srcSize": "16",
       "hwRefs": [
         {
@@ -30,7 +30,7 @@
         },
         {
           "type": "register",
-          "interface": "s_axi_CTRL",
+          "interface": "s_axi_control",
           "name": "x",
           "usage": "address",
           "direction": "in"
@@ -40,7 +40,7 @@
     "dx": {
       "index": "1",
       "direction": "inout",
-      "srcType": "ap_fixed<16, 9, AP_TRN, AP_WRAP, 0>*",
+      "srcType": "ap_fixed<16, 3, AP_TRN, AP_WRAP, 0>*",
       "srcSize": "16",
       "hwRefs": [
         {
@@ -52,7 +52,7 @@
         },
         {
           "type": "register",
-          "interface": "s_axi_CTRL",
+          "interface": "s_axi_control",
           "name": "dx",
           "usage": "address",
           "direction": "in"
@@ -62,7 +62,7 @@
     "bram_x": {
       "index": "2",
       "direction": "inout",
-      "srcType": "ap_fixed<16, 9, AP_TRN, AP_WRAP, 0>*",
+      "srcType": "ap_fixed<16, 3, AP_TRN, AP_WRAP, 0>*",
       "srcSize": "16",
       "hwRefs": [{
           "type": "interface",
@@ -75,7 +75,7 @@
     "bram_dx": {
       "index": "3",
       "direction": "inout",
-      "srcType": "ap_fixed<16, 9, AP_TRN, AP_WRAP, 0>*",
+      "srcType": "ap_fixed<16, 3, AP_TRN, AP_WRAP, 0>*",
       "srcSize": "16",
       "hwRefs": [{
           "type": "interface",
@@ -92,7 +92,7 @@
       "srcSize": "32",
       "hwRefs": [{
           "type": "register",
-          "interface": "s_axi_CTRL",
+          "interface": "s_axi_control",
           "name": "dim",
           "usage": "data",
           "direction": "in"
@@ -105,7 +105,7 @@
       "srcSize": "1",
       "hwRefs": [{
           "type": "register",
-          "interface": "s_axi_CTRL",
+          "interface": "s_axi_control",
           "name": "ddrtobram",
           "usage": "data",
           "direction": "in"
@@ -151,12 +151,12 @@
   "Files": {
     "CSource": ["..\/main.cpp"],
     "Vhdl": [
-      "impl\/vhdl\/InputLayer_CTRL_s_axi.vhd",
+      "impl\/vhdl\/InputLayer_control_s_axi.vhd",
       "impl\/vhdl\/InputLayer_gmem_m_axi.vhd",
       "impl\/vhdl\/InputLayer.vhd"
     ],
     "Verilog": [
-      "impl\/verilog\/InputLayer_CTRL_s_axi.v",
+      "impl\/verilog\/InputLayer_control_s_axi.v",
       "impl\/verilog\/InputLayer_gmem_m_axi.v",
       "impl\/verilog\/InputLayer.v"
     ],
@@ -186,7 +186,7 @@
       "busTypeName": "clock",
       "mode": "slave",
       "busParams": {
-        "ASSOCIATED_BUSIF": "s_axi_CTRL:m_axi_gmem",
+        "ASSOCIATED_BUSIF": "s_axi_control:m_axi_gmem",
         "ASSOCIATED_RESET": "ap_rst_n"
       },
       "portMap": {"ap_clk": "CLK"},
@@ -234,6 +234,7 @@
           "constraint_type": "pragma interface",
           "mode": "bram",
           "register_option": "0",
+          "bram_latency": "2",
           "bram_storage": "207",
           "argName": "bram_dx"
         }]
@@ -272,6 +273,7 @@
           "constraint_type": "pragma interface",
           "mode": "bram",
           "register_option": "0",
+          "bram_latency": "2",
           "bram_storage": "207",
           "argName": "bram_x"
         }]
@@ -293,7 +295,7 @@
       "addrWidth": "32",
       "portPrefix": "m_axi_gmem_",
       "paramPrefix": "C_M_AXI_GMEM_",
-      "offsetSlaveName": "s_axi_CTRL",
+      "offsetSlaveName": "s_axi_control",
       "preferredUsageValue": "MEMORY",
       "busParams": {
         "NUM_READ_OUTSTANDING": "16",
@@ -375,33 +377,33 @@
         }
       ]
     },
-    "s_axi_CTRL": {
+    "s_axi_control": {
       "type": "axi4lite",
       "busTypeName": "aximm",
       "mode": "slave",
       "dataWidth": "32",
       "addrWidth": "6",
-      "portPrefix": "s_axi_CTRL_",
-      "paramPrefix": "C_S_AXI_CTRL_",
+      "portPrefix": "s_axi_control_",
+      "paramPrefix": "C_S_AXI_CONTROL_",
       "offsetMasterName": "m_axi_gmem",
       "ports": [
-        "s_axi_CTRL_ARADDR",
-        "s_axi_CTRL_ARREADY",
-        "s_axi_CTRL_ARVALID",
-        "s_axi_CTRL_AWADDR",
-        "s_axi_CTRL_AWREADY",
-        "s_axi_CTRL_AWVALID",
-        "s_axi_CTRL_BREADY",
-        "s_axi_CTRL_BRESP",
-        "s_axi_CTRL_BVALID",
-        "s_axi_CTRL_RDATA",
-        "s_axi_CTRL_RREADY",
-        "s_axi_CTRL_RRESP",
-        "s_axi_CTRL_RVALID",
-        "s_axi_CTRL_WDATA",
-        "s_axi_CTRL_WREADY",
-        "s_axi_CTRL_WSTRB",
-        "s_axi_CTRL_WVALID"
+        "s_axi_control_ARADDR",
+        "s_axi_control_ARREADY",
+        "s_axi_control_ARVALID",
+        "s_axi_control_AWADDR",
+        "s_axi_control_AWREADY",
+        "s_axi_control_AWVALID",
+        "s_axi_control_BREADY",
+        "s_axi_control_BRESP",
+        "s_axi_control_BVALID",
+        "s_axi_control_RDATA",
+        "s_axi_control_RREADY",
+        "s_axi_control_RRESP",
+        "s_axi_control_RVALID",
+        "s_axi_control_WDATA",
+        "s_axi_control_WREADY",
+        "s_axi_control_WSTRB",
+        "s_axi_control_WVALID"
       ],
       "registers": [
         {
@@ -649,71 +651,71 @@
     }
   },
   "RtlPorts": {
-    "s_axi_CTRL_AWVALID": {
+    "s_axi_control_AWVALID": {
       "dir": "in",
       "width": "1"
     },
-    "s_axi_CTRL_AWREADY": {
+    "s_axi_control_AWREADY": {
       "dir": "out",
       "width": "1"
     },
-    "s_axi_CTRL_AWADDR": {
+    "s_axi_control_AWADDR": {
       "dir": "in",
       "width": "6"
     },
-    "s_axi_CTRL_WVALID": {
+    "s_axi_control_WVALID": {
       "dir": "in",
       "width": "1"
     },
-    "s_axi_CTRL_WREADY": {
+    "s_axi_control_WREADY": {
       "dir": "out",
       "width": "1"
     },
-    "s_axi_CTRL_WDATA": {
+    "s_axi_control_WDATA": {
       "dir": "in",
       "width": "32"
     },
-    "s_axi_CTRL_WSTRB": {
+    "s_axi_control_WSTRB": {
       "dir": "in",
       "width": "4"
     },
-    "s_axi_CTRL_ARVALID": {
+    "s_axi_control_ARVALID": {
       "dir": "in",
       "width": "1"
     },
-    "s_axi_CTRL_ARREADY": {
+    "s_axi_control_ARREADY": {
       "dir": "out",
       "width": "1"
     },
-    "s_axi_CTRL_ARADDR": {
+    "s_axi_control_ARADDR": {
       "dir": "in",
       "width": "6"
     },
-    "s_axi_CTRL_RVALID": {
+    "s_axi_control_RVALID": {
       "dir": "out",
       "width": "1"
     },
-    "s_axi_CTRL_RREADY": {
+    "s_axi_control_RREADY": {
       "dir": "in",
       "width": "1"
     },
-    "s_axi_CTRL_RDATA": {
+    "s_axi_control_RDATA": {
       "dir": "out",
       "width": "32"
     },
-    "s_axi_CTRL_RRESP": {
+    "s_axi_control_RRESP": {
       "dir": "out",
       "width": "2"
     },
-    "s_axi_CTRL_BVALID": {
+    "s_axi_control_BVALID": {
       "dir": "out",
       "width": "1"
     },
-    "s_axi_CTRL_BREADY": {
+    "s_axi_control_BREADY": {
       "dir": "in",
       "width": "1"
     },
-    "s_axi_CTRL_BRESP": {
+    "s_axi_control_BRESP": {
       "dir": "out",
       "width": "2"
     },
@@ -1023,32 +1025,32 @@
           {
             "Name": "VITIS_LOOP_36_3",
             "TripCount": "",
-            "LatencyMin": "2",
+            "LatencyMin": "3",
             "LatencyMax": "?",
-            "Latency": "2 ~ ?",
+            "Latency": "3 ~ ?",
             "PipelineII": "1",
-            "PipelineDepth": "3"
+            "PipelineDepth": "4"
           },
           {
             "Name": "VITIS_LOOP_40_4",
             "TripCount": "",
-            "LatencyMin": "2",
+            "LatencyMin": "3",
             "LatencyMax": "?",
-            "Latency": "2 ~ ?",
+            "Latency": "3 ~ ?",
             "PipelineII": "1",
-            "PipelineDepth": "3"
+            "PipelineDepth": "4"
           }
         ],
         "Area": {
           "BRAM_18K": "2",
           "AVAIL_BRAM": "280",
           "UTIL_BRAM": "~0",
-          "FF": "1131",
+          "FF": "1259",
           "AVAIL_FF": "106400",
           "UTIL_FF": "1",
-          "LUT": "1564",
+          "LUT": "1628",
           "AVAIL_LUT": "53200",
-          "UTIL_LUT": "2",
+          "UTIL_LUT": "3",
           "DSP": "0",
           "AVAIL_DSP": "220",
           "UTIL_DSP": "0",
@@ -1061,7 +1063,7 @@
   "GenerateBdFiles": "0",
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2022-05-16 00:04:08 IST",
+    "Time": "2022-05-23 01:24:44 IST",
     "ToolName": "vivado_hls",
     "ToolVersion": "2020.2"
   }

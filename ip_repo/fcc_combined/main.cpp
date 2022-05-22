@@ -4,17 +4,17 @@
 
 #define MAX_SIZE 1000
 #define BUFFER_SIZE 50
-typedef ap_fixed<16,9> fixed_t;
+typedef ap_fixed<16,3> fixed_t;
 
 
 void fcc_combined(fixed_t x[MAX_SIZE], fixed_t dx[MAX_SIZE], fixed_t* wt, fixed_t* dwt, fixed_t* b, fixed_t* db, fixed_t y[MAX_SIZE], fixed_t dy[MAX_SIZE], int xdim, int ydim, bool fwprop){
 
-#pragma HLS INTERFACE bram port=x
-#pragma HLS INTERFACE bram port=dx
+#pragma HLS INTERFACE bram storage_type=ram_1p latency=2 port=x
+#pragma HLS INTERFACE bram storage_type=ram_1p latency=2 port=dx
 #pragma HLS INTERFACE m_axi port=wt offset=slave bundle=gmem
 #pragma HLS INTERFACE m_axi port=dwt offset=slave bundle=gmem
-#pragma HLS INTERFACE bram port=y
-#pragma HLS INTERFACE bram storage_type=ram_1p port=dy
+#pragma HLS INTERFACE bram storage_type=ram_1p latency=2 port=y
+#pragma HLS INTERFACE bram storage_type=ram_1p latency=2 port=dy
 #pragma HLS INTERFACE m_axi port=b offset=slave bundle=gmem
 #pragma HLS INTERFACE m_axi port=db offset=slave bundle=gmem
 

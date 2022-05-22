@@ -19,9 +19,9 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 1823583
+INFO: [Synth 8-7075] Helper process launched with PID 3192422
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:20 . Memory (MB): peak = 2357.973 ; gain = 0.000 ; free physical = 3016 ; free virtual = 13870
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 2357.941 ; gain = 0.000 ; free physical = 7072 ; free virtual = 18622
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_1' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_xbar_1/synth/design_1_xbar_1.v:59]
 INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_axi_crossbar' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
@@ -33,8 +33,8 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_axi_crossbar' [/h
 	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_AXI_PROTOCOL bound to: 2 - type: integer 
 	Parameter C_NUM_ADDR_RANGES bound to: 1 - type: integer 
-	Parameter C_M_AXI_BASE_ADDR bound to: 320'b00000000000000000000000000000000010000000000010000000000000000001111111111111111111111111111111111111111111111111111111111111111000000000000000000000000000000000100000000000010000000000000000000000000000000000000000000000000010000000000000100000000000000001111111111111111111111111111111111111111111111111111111111111111 
-	Parameter C_M_AXI_ADDR_WIDTH bound to: 160'b0000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000000000 
+	Parameter C_M_AXI_BASE_ADDR bound to: 320'b11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111000000000000000000000000000000000100000000000010000000000000000000000000000000000000000000000000010000000000000100000000000000000000000000000000000000000000000001000000000000000000000000000000 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 160'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000 
 	Parameter C_S_AXI_BASE_ID bound to: 0 - type: integer 
 	Parameter C_S_AXI_THREAD_ID_WIDTH bound to: 0 - type: integer 
 	Parameter C_AXI_SUPPORTS_USER_SIGNALS bound to: 0 - type: integer 
@@ -82,8 +82,8 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_crossbar_sasd' [/
 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_AXI_PROTOCOL bound to: 2 - type: integer 
-	Parameter C_M_AXI_BASE_ADDR bound to: 320'b00000000000000000000000000000000010000000000010000000000000000001111111111111111111111111111111111111111111111111111111111111111000000000000000000000000000000000100000000000010000000000000000000000000000000000000000000000000010000000000000100000000000000001111111111111111111111111111111111111111111111111111111111111111 
-	Parameter C_M_AXI_HIGH_ADDR bound to: 320'b00000000000000000000000000000000010000000000010011111111111111110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000010111111111111111100000000000000000000000000000000010000000000000111111111111111110000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_M_AXI_BASE_ADDR bound to: 320'b11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111000000000000000000000000000000000100000000000010000000000000000000000000000000000000000000000000010000000000000100000000000000000000000000000000000000000000000001000000000000000000000000000000 
+	Parameter C_M_AXI_HIGH_ADDR bound to: 320'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000010111111111111111100000000000000000000000000000000010000000000000111111111111111110000000000000000000000000000000001000000000000001111111111111111 
 	Parameter C_S_AXI_BASE_ID bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
 	Parameter C_S_AXI_HIGH_ID bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
 	Parameter C_AXI_SUPPORTS_USER_SIGNALS bound to: 0 - type: integer 
@@ -135,14 +135,14 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_addr_decoder' [/h
 	Parameter C_TARGET_ENC bound to: 1 - type: integer 
 	Parameter C_TARGET_HOT bound to: 1 - type: integer 
 	Parameter C_REGION_ENC bound to: 1 - type: integer 
-	Parameter C_BASE_ADDR bound to: 320'b00000000000000000000000000000000010000000000010000000000000000001111111111111111111111111111111111111111111111111111111111111111000000000000000000000000000000000100000000000010000000000000000000000000000000000000000000000000010000000000000100000000000000001111111111111111111111111111111111111111111111111111111111111111 
-	Parameter C_HIGH_ADDR bound to: 320'b00000000000000000000000000000000010000000000010011111111111111110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000010111111111111111100000000000000000000000000000000010000000000000111111111111111110000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_BASE_ADDR bound to: 320'b11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111000000000000000000000000000000000100000000000010000000000000000000000000000000000000000000000000010000000000000100000000000000000000000000000000000000000000000001000000000000000000000000000000 
+	Parameter C_HIGH_ADDR bound to: 320'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000010111111111111111100000000000000000000000000000000010000000000000111111111111111110000000000000000000000000000000001000000000000001111111111111111 
 	Parameter C_TARGET_QUAL bound to: 6'b011111 
 	Parameter C_RESOLUTION bound to: 2 - type: integer 
 	Parameter C_COMPARATOR_THRESHOLD bound to: 6 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
 	Parameter C_FAMILY bound to: rtl - type: string 
-	Parameter C_VALUE bound to: 30'b010000000000000100000000000000 
+	Parameter C_VALUE bound to: 30'b010000000000000000000000000000 
 	Parameter C_DATA_WIDTH bound to: 30 - type: integer 
 	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
 	Parameter C_NUM_LUT bound to: 5 - type: integer 
@@ -153,7 +153,7 @@ INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_carry_a
 INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' (2#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
 INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
 	Parameter C_FAMILY bound to: rtl - type: string 
-	Parameter C_VALUE bound to: 30'b010000000000001000000000000000 
+	Parameter C_VALUE bound to: 30'b010000000000000100000000000000 
 	Parameter C_DATA_WIDTH bound to: 30 - type: integer 
 	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
 	Parameter C_NUM_LUT bound to: 5 - type: integer 
@@ -161,7 +161,7 @@ INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_s
 INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' (2#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
 INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized1' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
 	Parameter C_FAMILY bound to: rtl - type: string 
-	Parameter C_VALUE bound to: 30'b010000000000010000000000000000 
+	Parameter C_VALUE bound to: 30'b010000000000001000000000000000 
 	Parameter C_DATA_WIDTH bound to: 30 - type: integer 
 	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
 	Parameter C_NUM_LUT bound to: 5 - type: integer 
@@ -232,18 +232,18 @@ INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_23_crossbar_sas
 INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_23_axi_crossbar' (10#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_1' (11#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_xbar_1/synth/design_1_xbar_1.v:59]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:30 . Memory (MB): peak = 2357.973 ; gain = 0.000 ; free physical = 3436 ; free virtual = 14301
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:22 . Memory (MB): peak = 2357.941 ; gain = 0.000 ; free physical = 6565 ; free virtual = 18124
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:30 . Memory (MB): peak = 2372.746 ; gain = 14.773 ; free physical = 3221 ; free virtual = 14086
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:22 . Memory (MB): peak = 2369.746 ; gain = 11.805 ; free physical = 6725 ; free virtual = 18286
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:30 . Memory (MB): peak = 2372.746 ; gain = 14.773 ; free physical = 3221 ; free virtual = 14085
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:22 . Memory (MB): peak = 2369.746 ; gain = 11.805 ; free physical = 6725 ; free virtual = 18286
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2372.746 ; gain = 0.000 ; free physical = 3205 ; free virtual = 14069
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2369.746 ; gain = 0.000 ; free physical = 6728 ; free virtual = 18288
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -254,30 +254,30 @@ Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/
 Finished Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/design_1_xbar_1_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2504.590 ; gain = 0.000 ; free physical = 2975 ; free virtual = 13840
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2500.590 ; gain = 0.000 ; free physical = 6770 ; free virtual = 18330
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2504.590 ; gain = 0.000 ; free physical = 2968 ; free virtual = 13833
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2500.590 ; gain = 0.000 ; free physical = 6831 ; free virtual = 18394
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:37 . Memory (MB): peak = 2504.590 ; gain = 146.617 ; free physical = 3295 ; free virtual = 14167
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:27 . Memory (MB): peak = 2500.590 ; gain = 142.648 ; free physical = 6846 ; free virtual = 18406
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:37 . Memory (MB): peak = 2504.590 ; gain = 146.617 ; free physical = 3294 ; free virtual = 14166
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:27 . Memory (MB): peak = 2500.590 ; gain = 142.648 ; free physical = 6841 ; free virtual = 18402
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/design_1_xbar_1_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:37 . Memory (MB): peak = 2504.590 ; gain = 146.617 ; free physical = 3290 ; free virtual = 14162
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:27 . Memory (MB): peak = 2500.590 ; gain = 142.648 ; free physical = 6840 ; free virtual = 18401
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:37 . Memory (MB): peak = 2504.590 ; gain = 146.617 ; free physical = 3157 ; free virtual = 14030
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:27 . Memory (MB): peak = 2500.590 ; gain = 142.648 ; free physical = 6942 ; free virtual = 18503
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -313,25 +313,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:38 . Memory (MB): peak = 2504.590 ; gain = 146.617 ; free physical = 2750 ; free virtual = 13628
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:28 . Memory (MB): peak = 2500.590 ; gain = 142.648 ; free physical = 7067 ; free virtual = 18636
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:44 . Memory (MB): peak = 2504.590 ; gain = 146.617 ; free physical = 4059 ; free virtual = 14934
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:32 . Memory (MB): peak = 2500.590 ; gain = 142.648 ; free physical = 6722 ; free virtual = 18299
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:44 . Memory (MB): peak = 2504.590 ; gain = 146.617 ; free physical = 4305 ; free virtual = 15183
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:33 . Memory (MB): peak = 2500.590 ; gain = 142.648 ; free physical = 6760 ; free virtual = 18338
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:45 . Memory (MB): peak = 2504.590 ; gain = 146.617 ; free physical = 4222 ; free virtual = 15100
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:33 . Memory (MB): peak = 2500.590 ; gain = 142.648 ; free physical = 6932 ; free virtual = 18509
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -349,37 +349,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:48 . Memory (MB): peak = 2504.590 ; gain = 146.617 ; free physical = 3819 ; free virtual = 14708
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:35 . Memory (MB): peak = 2500.590 ; gain = 142.648 ; free physical = 7439 ; free virtual = 19016
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:48 . Memory (MB): peak = 2504.590 ; gain = 146.617 ; free physical = 3817 ; free virtual = 14706
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:35 . Memory (MB): peak = 2500.590 ; gain = 142.648 ; free physical = 7439 ; free virtual = 19016
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:48 . Memory (MB): peak = 2504.590 ; gain = 146.617 ; free physical = 3832 ; free virtual = 14721
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:35 . Memory (MB): peak = 2500.590 ; gain = 142.648 ; free physical = 7438 ; free virtual = 19016
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:48 . Memory (MB): peak = 2504.590 ; gain = 146.617 ; free physical = 3833 ; free virtual = 14722
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:35 . Memory (MB): peak = 2500.590 ; gain = 142.648 ; free physical = 7438 ; free virtual = 19016
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:48 . Memory (MB): peak = 2504.590 ; gain = 146.617 ; free physical = 3846 ; free virtual = 14737
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:35 . Memory (MB): peak = 2500.590 ; gain = 142.648 ; free physical = 7438 ; free virtual = 19015
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:48 . Memory (MB): peak = 2504.590 ; gain = 146.617 ; free physical = 3843 ; free virtual = 14736
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:35 . Memory (MB): peak = 2500.590 ; gain = 142.648 ; free physical = 7438 ; free virtual = 19015
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -396,35 +396,35 @@ Report Cell Usage:
 |      |Cell |Count |
 +------+-----+------+
 |1     |LUT1 |     1|
-|2     |LUT2 |    12|
-|3     |LUT3 |    13|
-|4     |LUT4 |    58|
-|5     |LUT5 |    32|
-|6     |LUT6 |   126|
-|7     |FDRE |   133|
+|2     |LUT2 |    10|
+|3     |LUT3 |    11|
+|4     |LUT4 |    52|
+|5     |LUT5 |    33|
+|6     |LUT6 |   127|
+|7     |FDRE |   132|
 +------+-----+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:48 . Memory (MB): peak = 2504.590 ; gain = 146.617 ; free physical = 3839 ; free virtual = 14734
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:35 . Memory (MB): peak = 2500.590 ; gain = 142.648 ; free physical = 7438 ; free virtual = 19015
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:46 . Memory (MB): peak = 2504.590 ; gain = 14.773 ; free physical = 3867 ; free virtual = 14762
-Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:48 . Memory (MB): peak = 2504.590 ; gain = 146.617 ; free physical = 3867 ; free virtual = 14762
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:34 . Memory (MB): peak = 2500.590 ; gain = 11.805 ; free physical = 7491 ; free virtual = 19069
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:35 . Memory (MB): peak = 2500.590 ; gain = 142.648 ; free physical = 7491 ; free virtual = 19069
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2504.590 ; gain = 0.000 ; free physical = 3937 ; free virtual = 14827
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2500.590 ; gain = 0.000 ; free physical = 7574 ; free virtual = 19151
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2504.590 ; gain = 0.000 ; free physical = 3876 ; free virtual = 14787
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2500.590 ; gain = 0.000 ; free physical = 7465 ; free virtual = 19043
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 49 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:52 . Memory (MB): peak = 2504.590 ; gain = 146.688 ; free physical = 4014 ; free virtual = 14922
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:39 . Memory (MB): peak = 2500.590 ; gain = 142.719 ; free physical = 7597 ; free virtual = 19174
 INFO: [Common 17-1381] The checkpoint '/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/design_1_xbar_1_synth_1/design_1_xbar_1.dcp' has been generated.
 WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_xbar_1, cache-ID = da119ebda4609b74
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_xbar_1, cache-ID = b0aa578be7b226c3
 INFO: [Coretcl 2-1174] Renamed 7 cell refs.
 INFO: [Common 17-1381] The checkpoint '/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/design_1_xbar_1_synth_1/design_1_xbar_1.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_xbar_1_utilization_synth.rpt -pb design_1_xbar_1_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon May 16 03:32:48 2022...
+INFO: [Common 17-206] Exiting Vivado at Thu May 19 16:25:09 2022...

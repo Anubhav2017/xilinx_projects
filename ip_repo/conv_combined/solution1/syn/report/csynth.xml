@@ -115,18 +115,18 @@
                             <TripCount>undef</TripCount>
                             <Latency>
                                 <range>
-                                    <min>2</min>
+                                    <min>3</min>
                                     <max>-1</max>
                                 </range>
                             </Latency>
                             <AbsoluteTimeLatency>
                                 <range>
-                                    <min>20</min>
+                                    <min>30</min>
                                     <max>-10</max>
                                 </range>
                             </AbsoluteTimeLatency>
                             <PipelineII>1</PipelineII>
-                            <PipelineDepth>2</PipelineDepth>
+                            <PipelineDepth>3</PipelineDepth>
                         </VITIS_LOOP_74_12>
                     </VITIS_LOOP_73_11>
                 </VITIS_LOOP_69_8_VITIS_LOOP_70_9_VITIS_LOOP_71_10>
@@ -229,8 +229,8 @@
         <Resources>
             <BRAM_18K>4</BRAM_18K>
             <DSP>15</DSP>
-            <FF>12271</FF>
-            <LUT>10730</LUT>
+            <FF>12264</FF>
+            <LUT>10737</LUT>
             <URAM>0</URAM>
         </Resources>
         <AvailableResources>
@@ -1464,10 +1464,10 @@
                                 <VITIS_LOOP_74_12>
                                     <Name>VITIS_LOOP_74_12</Name>
                                     <TripCount>undef</TripCount>
-                                    <Latency>2 ~ ?</Latency>
-                                    <AbsoluteTimeLatency>20.000 ns ~ ?</AbsoluteTimeLatency>
+                                    <Latency>3 ~ ?</Latency>
+                                    <AbsoluteTimeLatency>30.000 ns ~ ?</AbsoluteTimeLatency>
                                     <PipelineII>1</PipelineII>
-                                    <PipelineDepth>2</PipelineDepth>
+                                    <PipelineDepth>3</PipelineDepth>
                                 </VITIS_LOOP_74_12>
                             </VITIS_LOOP_73_11>
                         </VITIS_LOOP_69_8_VITIS_LOOP_70_9_VITIS_LOOP_71_10>
@@ -1556,10 +1556,10 @@
                     <DSP>15</DSP>
                     <AVAIL_DSP>220</AVAIL_DSP>
                     <UTIL_DSP>6</UTIL_DSP>
-                    <FF>12271</FF>
+                    <FF>12264</FF>
                     <AVAIL_FF>106400</AVAIL_FF>
                     <UTIL_FF>11</UTIL_FF>
-                    <LUT>10730</LUT>
+                    <LUT>10737</LUT>
                     <AVAIL_LUT>53200</AVAIL_LUT>
                     <UTIL_LUT>20</UTIL_LUT>
                     <URAM>0</URAM>
@@ -2703,45 +2703,45 @@
     </ModuleInformation>
     <FIFOInformation/>
     <Args>
-        <Arg ArgName="x" index="0" direction="in" srcType="ap_fixed&lt;16, 9, AP_TRN, AP_WRAP, 0&gt;*" srcSize="16">
+        <Arg ArgName="x" index="0" direction="in" srcType="ap_fixed&lt;16, 3, AP_TRN, AP_WRAP, 0&gt;*" srcSize="16">
             <hwRefs>
                 <hwRef type="interface" interface="x_PORTA" name="" usage="data" direction="out"/>
             </hwRefs>
         </Arg>
-        <Arg ArgName="dx" index="1" direction="inout" srcType="ap_fixed&lt;16, 9, AP_TRN, AP_WRAP, 0&gt;*" srcSize="16">
+        <Arg ArgName="dx" index="1" direction="inout" srcType="ap_fixed&lt;16, 3, AP_TRN, AP_WRAP, 0&gt;*" srcSize="16">
             <hwRefs>
                 <hwRef type="interface" interface="dx_PORTA" name="" usage="data" direction="out"/>
             </hwRefs>
         </Arg>
-        <Arg ArgName="wt" index="2" direction="inout" srcType="ap_fixed&lt;16, 9, AP_TRN, AP_WRAP, 0&gt;*" srcSize="16">
+        <Arg ArgName="wt" index="2" direction="inout" srcType="ap_fixed&lt;16, 3, AP_TRN, AP_WRAP, 0&gt;*" srcSize="16">
             <hwRefs>
                 <hwRef type="interface" interface="m_axi_gmem" name="" usage="data" direction="out"/>
                 <hwRef type="register" interface="s_axi_CRTL_BUS" name="wt" usage="address" direction="in"/>
             </hwRefs>
         </Arg>
-        <Arg ArgName="dwt" index="3" direction="inout" srcType="ap_fixed&lt;16, 9, AP_TRN, AP_WRAP, 0&gt;*" srcSize="16">
+        <Arg ArgName="dwt" index="3" direction="inout" srcType="ap_fixed&lt;16, 3, AP_TRN, AP_WRAP, 0&gt;*" srcSize="16">
             <hwRefs>
                 <hwRef type="interface" interface="m_axi_gmem" name="" usage="data" direction="out"/>
                 <hwRef type="register" interface="s_axi_CRTL_BUS" name="dwt" usage="address" direction="in"/>
             </hwRefs>
         </Arg>
-        <Arg ArgName="y" index="4" direction="inout" srcType="ap_fixed&lt;16, 9, AP_TRN, AP_WRAP, 0&gt;*" srcSize="16">
+        <Arg ArgName="y" index="4" direction="inout" srcType="ap_fixed&lt;16, 3, AP_TRN, AP_WRAP, 0&gt;*" srcSize="16">
             <hwRefs>
                 <hwRef type="interface" interface="y_PORTA" name="" usage="data" direction="out"/>
             </hwRefs>
         </Arg>
-        <Arg ArgName="dy" index="5" direction="in" srcType="ap_fixed&lt;16, 9, AP_TRN, AP_WRAP, 0&gt;*" srcSize="16">
+        <Arg ArgName="dy" index="5" direction="in" srcType="ap_fixed&lt;16, 3, AP_TRN, AP_WRAP, 0&gt;*" srcSize="16">
             <hwRefs>
                 <hwRef type="interface" interface="dy_PORTA" name="" usage="data" direction="out"/>
             </hwRefs>
         </Arg>
-        <Arg ArgName="b" index="6" direction="inout" srcType="ap_fixed&lt;16, 9, AP_TRN, AP_WRAP, 0&gt;*" srcSize="16">
+        <Arg ArgName="b" index="6" direction="inout" srcType="ap_fixed&lt;16, 3, AP_TRN, AP_WRAP, 0&gt;*" srcSize="16">
             <hwRefs>
                 <hwRef type="interface" interface="m_axi_gmem" name="" usage="data" direction="out"/>
                 <hwRef type="register" interface="s_axi_CRTL_BUS" name="b" usage="address" direction="in"/>
             </hwRefs>
         </Arg>
-        <Arg ArgName="db" index="7" direction="inout" srcType="ap_fixed&lt;16, 9, AP_TRN, AP_WRAP, 0&gt;*" srcSize="16">
+        <Arg ArgName="db" index="7" direction="inout" srcType="ap_fixed&lt;16, 3, AP_TRN, AP_WRAP, 0&gt;*" srcSize="16">
             <hwRefs>
                 <hwRef type="interface" interface="m_axi_gmem" name="" usage="data" direction="out"/>
                 <hwRef type="register" interface="s_axi_CRTL_BUS" name="db" usage="address" direction="in"/>
@@ -2832,12 +2832,12 @@
                 <port>dx_WEN_A</port>
             </ports>
             <constraints>
-                <constraint constraint_type="pragma interface" mode="bram" register_option="0" bram_storage="207" argName="dx"/>
+                <constraint constraint_type="pragma interface" mode="bram" register_option="0" bram_latency="2" bram_storage="207" argName="dx"/>
             </constraints>
         </Interface>
         <Interface InterfaceName="dy_PORTA" type="bram" busTypeName="bram" mode="master" dataWidth="16" addrWidth="32" portPrefix="dy_">
             <busParams>
-                <busParam busParamName="MASTER_TYPE">BRAM_CTRL</busParam>
+                <busParam busParamName="MASTER_TYPE">OTHER</busParam>
                 <busParam busParamName="MEM_WIDTH">16</busParam>
                 <busParam busParamName="MEM_SIZE">2</busParam>
             </busParams>
@@ -2860,7 +2860,7 @@
                 <port>dy_WEN_A</port>
             </ports>
             <constraints>
-                <constraint constraint_type="pragma interface" mode="bram" register_option="0" bram_storage="207" argName="dy"/>
+                <constraint constraint_type="pragma interface" mode="bram" register_option="0" bram_latency="2" bram_storage="207" argName="dy"/>
             </constraints>
         </Interface>
         <Interface InterfaceName="interrupt" type="interrupt" busTypeName="interrupt" mode="master" dataWidth="1">
@@ -3053,7 +3053,7 @@
         </Interface>
         <Interface InterfaceName="x_PORTA" type="bram" busTypeName="bram" mode="master" dataWidth="16" addrWidth="32" portPrefix="x_">
             <busParams>
-                <busParam busParamName="MASTER_TYPE">BRAM_CTRL</busParam>
+                <busParam busParamName="MASTER_TYPE">OTHER</busParam>
                 <busParam busParamName="MEM_WIDTH">16</busParam>
                 <busParam busParamName="MEM_SIZE">2</busParam>
             </busParams>
@@ -3076,7 +3076,7 @@
                 <port>x_WEN_A</port>
             </ports>
             <constraints>
-                <constraint constraint_type="pragma interface" mode="bram" register_option="0" bram_storage="207" argName="x"/>
+                <constraint constraint_type="pragma interface" mode="bram" register_option="0" bram_latency="2" bram_storage="207" argName="x"/>
             </constraints>
         </Interface>
         <Interface InterfaceName="y_PORTA" type="bram" busTypeName="bram" mode="master" dataWidth="16" addrWidth="32" portPrefix="y_">
@@ -3104,7 +3104,7 @@
                 <port>y_WEN_A</port>
             </ports>
             <constraints>
-                <constraint constraint_type="pragma interface" mode="bram" register_option="0" bram_storage="207" argName="y"/>
+                <constraint constraint_type="pragma interface" mode="bram" register_option="0" bram_latency="2" bram_storage="207" argName="y"/>
             </constraints>
         </Interface>
     </Interfaces>
@@ -3147,14 +3147,14 @@
             <item name="Top Function Arguments">
                 <table isCollapsed="1">
                     <keys size="3">Argument, Direction, Datatype</keys>
-                    <column name="x">in, ap_fixed&lt;16 9 AP_TRN AP_WRAP 0&gt;*</column>
-                    <column name="dx">inout, ap_fixed&lt;16 9 AP_TRN AP_WRAP 0&gt;*</column>
-                    <column name="wt">inout, ap_fixed&lt;16 9 AP_TRN AP_WRAP 0&gt;*</column>
-                    <column name="dwt">inout, ap_fixed&lt;16 9 AP_TRN AP_WRAP 0&gt;*</column>
-                    <column name="y">inout, ap_fixed&lt;16 9 AP_TRN AP_WRAP 0&gt;*</column>
-                    <column name="dy">in, ap_fixed&lt;16 9 AP_TRN AP_WRAP 0&gt;*</column>
-                    <column name="b">inout, ap_fixed&lt;16 9 AP_TRN AP_WRAP 0&gt;*</column>
-                    <column name="db">inout, ap_fixed&lt;16 9 AP_TRN AP_WRAP 0&gt;*</column>
+                    <column name="x">in, ap_fixed&lt;16 3 AP_TRN AP_WRAP 0&gt;*</column>
+                    <column name="dx">inout, ap_fixed&lt;16 3 AP_TRN AP_WRAP 0&gt;*</column>
+                    <column name="wt">inout, ap_fixed&lt;16 3 AP_TRN AP_WRAP 0&gt;*</column>
+                    <column name="dwt">inout, ap_fixed&lt;16 3 AP_TRN AP_WRAP 0&gt;*</column>
+                    <column name="y">inout, ap_fixed&lt;16 3 AP_TRN AP_WRAP 0&gt;*</column>
+                    <column name="dy">in, ap_fixed&lt;16 3 AP_TRN AP_WRAP 0&gt;*</column>
+                    <column name="b">inout, ap_fixed&lt;16 3 AP_TRN AP_WRAP 0&gt;*</column>
+                    <column name="db">inout, ap_fixed&lt;16 3 AP_TRN AP_WRAP 0&gt;*</column>
                     <column name="F">in, int</column>
                     <column name="C">in, int</column>
                     <column name="H">in, int</column>

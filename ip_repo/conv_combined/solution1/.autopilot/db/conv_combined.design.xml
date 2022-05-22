@@ -92,10 +92,10 @@
 <VITIS_LOOP_74_12>
 <Name>VITIS_LOOP_74_12</Name>
 <TripCount>undef</TripCount>
-<Latency>2 ~ ?</Latency>
-<AbsoluteTimeLatency>20.000 ns ~ ?</AbsoluteTimeLatency>
+<Latency>3 ~ ?</Latency>
+<AbsoluteTimeLatency>30.000 ns ~ ?</AbsoluteTimeLatency>
 <PipelineII>1</PipelineII>
-<PipelineDepth>2</PipelineDepth>
+<PipelineDepth>3</PipelineDepth>
 </VITIS_LOOP_74_12>
 </VITIS_LOOP_73_11>
 </VITIS_LOOP_69_8_VITIS_LOOP_70_9_VITIS_LOOP_71_10>
@@ -184,10 +184,10 @@
 <DSP>15</DSP>
 <AVAIL_DSP>220</AVAIL_DSP>
 <UTIL_DSP>6</UTIL_DSP>
-<FF>12271</FF>
+<FF>12264</FF>
 <AVAIL_FF>106400</AVAIL_FF>
 <UTIL_FF>11</UTIL_FF>
-<LUT>10730</LUT>
+<LUT>10737</LUT>
 <AVAIL_LUT>53200</AVAIL_LUT>
 <UTIL_LUT>20</UTIL_LUT>
 <URAM>0</URAM>

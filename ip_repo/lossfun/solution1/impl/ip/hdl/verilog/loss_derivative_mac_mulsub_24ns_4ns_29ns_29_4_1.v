@@ -4,7 +4,7 @@
 // ==============================================================
 `timescale 1 ns / 1 ps
 
-(* use_dsp = "yes" *) module loss_derivative_mac_mulsub_24ns_4ns_29ns_29_4_1_DSP48_0(
+(* use_dsp = "yes" *) module loss_derivative_mac_mulsub_24ns_4ns_29ns_29_4_1_DSP48_1(
     input clk,
     input rst,
     input ce,
@@ -68,7 +68,7 @@ output[dout_WIDTH - 1:0] dout;
 
 
 
-loss_derivative_mac_mulsub_24ns_4ns_29ns_29_4_1_DSP48_0 loss_derivative_mac_mulsub_24ns_4ns_29ns_29_4_1_DSP48_0_U(
+loss_derivative_mac_mulsub_24ns_4ns_29ns_29_4_1_DSP48_1 loss_derivative_mac_mulsub_24ns_4ns_29ns_29_4_1_DSP48_1_U(
     .clk( clk ),
     .rst( reset ),
     .ce( ce ),

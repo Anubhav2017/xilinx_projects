@@ -6850,7 +6850,7 @@ inline bool operator!=(
 
 
 
-typedef ap_fixed<16,9> fixed_t;
+typedef ap_fixed<16,3> fixed_t;
 
 
 __attribute__((sdx_kernel("fcc_combined", 0))) void fcc_combined(fixed_t x[1000], fixed_t dx[1000], fixed_t* wt, fixed_t* dwt, fixed_t* b, fixed_t* db, fixed_t y[1000], fixed_t dy[1000], int xdim, int ydim, bool fwprop){_ssdm_SpecArrayDimSize(x, 1000);_ssdm_SpecArrayDimSize(dx, 1000);_ssdm_SpecArrayDimSize(y, 1000);_ssdm_SpecArrayDimSize(dy, 1000);
@@ -6858,12 +6858,12 @@ __attribute__((sdx_kernel("fcc_combined", 0))) void fcc_combined(fixed_t x[1000]
 # 10 "fcc_combined/main.cpp"
 
 
-#pragma HLS INTERFACE bram port=x
-#pragma HLS INTERFACE bram port=dx
+#pragma HLS INTERFACE bram storage_type=ram_1p latency=2 port=x
+#pragma HLS INTERFACE bram storage_type=ram_1p latency=2 port=dx
 #pragma HLS INTERFACE m_axi port=wt offset=slave bundle=gmem
 #pragma HLS INTERFACE m_axi port=dwt offset=slave bundle=gmem
-#pragma HLS INTERFACE bram port=y
-#pragma HLS INTERFACE bram storage_type=ram_1p port=dy
+#pragma HLS INTERFACE bram storage_type=ram_1p latency=2 port=y
+#pragma HLS INTERFACE bram storage_type=ram_1p latency=2 port=dy
 #pragma HLS INTERFACE m_axi port=b offset=slave bundle=gmem
 #pragma HLS INTERFACE m_axi port=db offset=slave bundle=gmem
 

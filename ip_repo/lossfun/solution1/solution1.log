@@ -968,3 +968,1122 @@ INFO: [RTMG 210-282] Generating pipelined core: 'loss_derivative_mul_29s_6ns_29_
 Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=0
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: set_directive_top -name loss_derivative loss_derivative 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 155.889 MB.
+INFO: [HLS 200-10] Analyzing design file 'lossfun/main.cpp' ... 
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:117:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:118:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:119:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:120:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:121:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:151:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:152:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:153:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:154:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:155:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:156:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:157:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:158:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:159:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:160:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:210:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:211:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:212:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:239:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:240:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:241:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:242:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:243:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:244:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:280:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:281:9
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 28.92 seconds. CPU system time: 0.99 seconds. Elapsed time: 29.32 seconds; current allocated memory: 158.315 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_729_1' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_log_apfixed.h:729:31) in function 'log_apfixed_reduce::log<16, 3>' completely with a factor of 16 (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_log_apfixed.h:729:31)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_541_16' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:541:36) in function 'exp_reduce::exp<16, 3>' completely with a factor of 25 (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:541:36)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_537_15' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:537:36) in function 'exp_reduce::exp<16, 3>' completely with a factor of 21 (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:537:36)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_531_14' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:531:32) in function 'exp_reduce::exp<16, 3>' completely with a factor of 21 (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:531:32)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_302_13' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:302:36) in function 'exp_reduce::exp<16, 3>' completely with a factor of 46 (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:302:36)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_294_12' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:294:28) in function 'exp_reduce::exp<16, 3>' completely with a factor of 19 (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:294:28)
+INFO: [HLS 214-178] Inlining function 'void log_apfixed_reduce::range_reduce<ap_fixed<29, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, 4, 4, 24, 15>(ap_ufixed<24, -(4), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<29, 7, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<15, -(((4) + (4)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_ufixed<15, -7, (ap_q_mode)5, (ap_o_mode)3, 0> log_apfixed_reduce::log_traits<2>::range_reduction<24>(ap_ufixed<24, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<29, 7, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_log_apfixed.h:249:0)
+INFO: [HLS 214-178] Inlining function 'ap_ufixed<15, -7, (ap_q_mode)5, (ap_o_mode)3, 0> log_apfixed_reduce::log_traits<2>::range_reduction<24>(ap_ufixed<24, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<29, 7, (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> log_apfixed_reduce::log<16, 3>(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_log_apfixed.h:500:0)
+INFO: [HLS 214-178] Inlining function 'ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> hls::exp<16, 3>(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'loss_derivative(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, int)' (lossfun/main.cpp:12:0)
+INFO: [HLS 214-178] Inlining function 'ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> hls::log<16, 3>(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'loss_derivative(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, int)' (lossfun/main.cpp:12:0)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i16.s_struct.ap_fixeds' into 'loss_derivative(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, int)' (lossfun/main.cpp:53:19)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i16.s_struct.ap_fixeds' into 'loss_derivative(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, int)' (lossfun/main.cpp:60:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i16.s_struct.ap_fixeds' into 'loss_derivative(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, int)' (lossfun/main.cpp:56:19)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 20.46 seconds. CPU system time: 0.3 seconds. Elapsed time: 20.79 seconds; current allocated memory: 160.735 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 160.739 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.2 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.23 seconds; current allocated memory: 196.957 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.38 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.39 seconds; current allocated memory: 243.061 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_29_1' (lossfun/main.cpp:28) in function 'loss_derivative' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_35_2' (lossfun/main.cpp:35) in function 'loss_derivative' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_41_3' (lossfun/main.cpp:39) in function 'loss_derivative' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_45_4' (lossfun/main.cpp:45) in function 'loss_derivative' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_51_5' (lossfun/main.cpp:51) in function 'loss_derivative' automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_log_apfixed.h:748:17) in function 'log_apfixed_reduce::log<16, 3>'... converting 17 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'log_apfixed_reduce::log<16, 3>' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_log_apfixed.h:186:6)...3 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'exp_reduce::exp<16, 3>' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:39:1)...19 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.62 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.63 seconds; current allocated memory: 313.240 MB.
+INFO: [HLS 200-472] Inferring partial write operation for 'log_probs.V' (lossfun/main.cpp:36:22)
+INFO: [HLS 200-472] Inferring partial write operation for 'probs.V' (lossfun/main.cpp:46:18)
+INFO: [HLS 200-472] Inferring partial write operation for 'dx' (lossfun/main.cpp:53:19)
+INFO: [HLS 200-472] Inferring partial write operation for 'dx' (lossfun/main.cpp:56:19)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.47 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.48 seconds; current allocated memory: 346.623 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'loss_derivative' ...
+WARNING: [SYN 201-103] Legalizing function name 'exp<16, 3>' to 'exp_16_3_s'.
+WARNING: [SYN 201-103] Legalizing function name 'log<16, 3>' to 'log_16_3_s'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'exp_16_3_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'exp<16, 3>'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 14, function 'exp<16, 3>'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 347.043 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 347.388 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'log_16_3_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP48 latency (root=r_V_22) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln708) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining function 'log<16, 3>'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 11, function 'log<16, 3>'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.14 seconds. CPU system time: 0 seconds. Elapsed time: 0.14 seconds; current allocated memory: 348.172 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.12 seconds. CPU system time: 0 seconds. Elapsed time: 0.13 seconds; current allocated memory: 349.253 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'loss_derivative' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_29_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_29_1'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_35_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_35_2'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_41_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 17, loop 'VITIS_LOOP_41_3'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_45_4'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 50, loop 'VITIS_LOOP_45_4'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_51_5'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 25, loop 'VITIS_LOOP_51_5'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.34 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.34 seconds; current allocated memory: 349.848 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.49 seconds. CPU system time: 0 seconds. Elapsed time: 0.49 seconds; current allocated memory: 350.789 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'exp_16_3_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'mul_50ns_47ns_97_5_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_50ns_50ns_100_5_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'exp_16_3_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.29 seconds. CPU system time: 0 seconds. Elapsed time: 0.28 seconds; current allocated memory: 351.638 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'log_16_3_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'log_16_3_s_log_apfixed_reduce_log0_lut_table_ap_fixed_29_7_ap_q_mode_5_ap_o_mode_3_0_0_5_64_array_V' to 'log_16_3_s_log_apfixed_reduce_log0_lut_table_ap_fixed_29_7_ap_q_mode_5_ap_o_mbkb' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'log_16_3_s_log_apfixed_reduce_log_lut_table_ap_fixed_29_7_ap_q_mode_5_ap_o_mode_3_0_4_4_16_array_V' to 'log_16_3_s_log_apfixed_reduce_log_lut_table_ap_fixed_29_7_ap_q_mode_5_ap_o_mocud' due to the length limit 80
+INFO: [RTGEN 206-100] Generating core module 'mac_mulsub_24ns_4ns_29ns_29_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_5s_23ns_28_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_9ns_9ns_18_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_23ns_6ns_24_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'log_16_3_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.18 seconds. CPU system time: 0 seconds. Elapsed time: 0.19 seconds; current allocated memory: 354.694 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'loss_derivative' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'loss_derivative/x' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'loss_derivative/dx' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'loss_derivative/y' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'loss_derivative/x_size' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'loss_derivative/N' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'loss_derivative' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return' to AXI-Lite port CTRL.
+INFO: [RTGEN 206-100] Bundling port 'y', 'x_size' and 'N' to AXI-Lite port control.
+WARNING: [RTGEN 206-101] Setting dangling out port 'loss_derivative/x_WEN_A' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'loss_derivative/x_Din_A' to 0.
+INFO: [RTGEN 206-100] Generating core module 'sdiv_17s_32ns_16_21_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sdiv_18s_32ns_16_22_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sdiv_29ns_16s_16_33_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'loss_derivative'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.53 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.57 seconds; current allocated memory: 360.719 MB.
+INFO: [RTMG 210-282] Generating pipelined core: 'loss_derivative_mul_50ns_47ns_97_5_1_Multiplier_0'
+INFO: [RTMG 210-282] Generating pipelined core: 'loss_derivative_mul_50ns_50ns_100_5_1_Multiplier_1'
+INFO: [RTMG 210-279] Implementing memory 'loss_derivative_exp_16_3_s_f_x_msb_3_table_V_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'loss_derivative_exp_16_3_s_f_x_msb_2_table_V_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'loss_derivative_exp_16_3_s_exp_x_msb_1_table_V_rom' using auto ROMs.
+INFO: [RTMG 210-282] Generating pipelined core: 'loss_derivative_mul_5s_23ns_28_1_1_Multiplier_2'
+INFO: [RTMG 210-282] Generating pipelined core: 'loss_derivative_mul_9ns_9ns_18_1_1_Multiplier_3'
+INFO: [RTMG 210-279] Implementing memory 'loss_derivative_log_16_3_s_log_apfixed_reduce_log_inverse_lut_table_array_V_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'loss_derivative_log_16_3_s_log_apfixed_reduce_log0_lut_table_ap_fixed_29_7_ap_q_mode_5_ap_o_mbkb_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'loss_derivative_log_16_3_s_log_apfixed_reduce_log_lut_table_ap_fixed_29_7_ap_q_mode_5_ap_o_mocud_rom' using auto ROMs.
+INFO: [RTMG 210-282] Generating pipelined core: 'loss_derivative_sdiv_29ns_16s_16_33_1_div'
+INFO: [RTMG 210-282] Generating pipelined core: 'loss_derivative_sdiv_17s_32ns_16_21_1_div'
+INFO: [RTMG 210-282] Generating pipelined core: 'loss_derivative_sdiv_18s_32ns_16_22_1_div'
+INFO: [RTMG 210-278] Implementing memory 'loss_derivative_log_probs_V_ram (RAM)' using auto RAMs.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1.58 seconds. CPU system time: 0.04 seconds. Elapsed time: 1.62 seconds; current allocated memory: 370.549 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for loss_derivative.
+INFO: [VLOG 209-307] Generating Verilog RTL for loss_derivative.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 136.99 MHz
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=0
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: set_directive_top -name loss_derivative loss_derivative 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 155.953 MB.
+INFO: [HLS 200-10] Analyzing design file 'lossfun/main.cpp' ... 
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:117:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:118:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:119:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:120:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:121:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:151:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:152:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:153:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:154:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:155:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:156:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:157:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:158:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:159:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:160:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:210:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:211:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:212:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:239:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:240:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:241:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:242:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:243:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:244:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:280:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:281:9
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 28.98 seconds. CPU system time: 0.83 seconds. Elapsed time: 29.18 seconds; current allocated memory: 158.409 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_729_1' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_log_apfixed.h:729:31) in function 'log_apfixed_reduce::log<16, 3>' completely with a factor of 16 (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_log_apfixed.h:729:31)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_541_16' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:541:36) in function 'exp_reduce::exp<16, 3>' completely with a factor of 25 (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:541:36)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_537_15' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:537:36) in function 'exp_reduce::exp<16, 3>' completely with a factor of 21 (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:537:36)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_531_14' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:531:32) in function 'exp_reduce::exp<16, 3>' completely with a factor of 21 (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:531:32)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_302_13' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:302:36) in function 'exp_reduce::exp<16, 3>' completely with a factor of 46 (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:302:36)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_294_12' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:294:28) in function 'exp_reduce::exp<16, 3>' completely with a factor of 19 (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:294:28)
+INFO: [HLS 214-178] Inlining function 'void log_apfixed_reduce::range_reduce<ap_fixed<29, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, 4, 4, 24, 15>(ap_ufixed<24, -(4), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<29, 7, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<15, -(((4) + (4)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_ufixed<15, -7, (ap_q_mode)5, (ap_o_mode)3, 0> log_apfixed_reduce::log_traits<2>::range_reduction<24>(ap_ufixed<24, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<29, 7, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_log_apfixed.h:249:0)
+INFO: [HLS 214-178] Inlining function 'ap_ufixed<15, -7, (ap_q_mode)5, (ap_o_mode)3, 0> log_apfixed_reduce::log_traits<2>::range_reduction<24>(ap_ufixed<24, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<29, 7, (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> log_apfixed_reduce::log<16, 3>(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_log_apfixed.h:500:0)
+INFO: [HLS 214-178] Inlining function 'ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> hls::exp<16, 3>(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'loss_derivative(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, int, bool, bool)' (lossfun/main.cpp:12:0)
+INFO: [HLS 214-178] Inlining function 'ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> hls::log<16, 3>(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'loss_derivative(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, int, bool, bool)' (lossfun/main.cpp:12:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'loss_derivative(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, int, bool, bool)' (lossfun/main.cpp:12:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'loss_derivative(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, int, bool, bool)' (lossfun/main.cpp:12:0)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i16.s_struct.ap_fixeds' into 'loss_derivative(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, int, bool, bool)' (lossfun/main.cpp:75:19)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i16.s_struct.ap_fixeds' into 'loss_derivative(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, int, bool, bool)' (lossfun/main.cpp:82:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i16.s_struct.ap_fixeds' into 'loss_derivative(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, int, bool, bool)' (lossfun/main.cpp:78:19)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 20.51 seconds. CPU system time: 0.27 seconds. Elapsed time: 20.82 seconds; current allocated memory: 160.864 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 160.867 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.22 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.32 seconds; current allocated memory: 197.131 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.39 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.43 seconds; current allocated memory: 243.280 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_29_1' (lossfun/main.cpp:29) in function 'loss_derivative' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_35_2' (lossfun/main.cpp:35) in function 'loss_derivative' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_51_3' (lossfun/main.cpp:50) in function 'loss_derivative' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_57_4' (lossfun/main.cpp:57) in function 'loss_derivative' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_63_5' (lossfun/main.cpp:61) in function 'loss_derivative' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_67_6' (lossfun/main.cpp:67) in function 'loss_derivative' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_73_7' (lossfun/main.cpp:73) in function 'loss_derivative' automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_log_apfixed.h:748:17) in function 'log_apfixed_reduce::log<16, 3>'... converting 17 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'log_apfixed_reduce::log<16, 3>' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_log_apfixed.h:186:6)...3 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'exp_reduce::exp<16, 3>' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:39:1)...19 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.71 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.73 seconds; current allocated memory: 313.580 MB.
+INFO: [HLS 200-472] Inferring partial write operation for 'x' (lossfun/main.cpp:30:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'dx' (lossfun/main.cpp:31:10)
+INFO: [HLS 200-472] Inferring partial write operation for 'log_probs.V' (lossfun/main.cpp:58:22)
+INFO: [HLS 200-472] Inferring partial write operation for 'probs.V' (lossfun/main.cpp:68:18)
+INFO: [HLS 200-472] Inferring partial write operation for 'dx' (lossfun/main.cpp:75:19)
+INFO: [HLS 200-472] Inferring partial write operation for 'dx' (lossfun/main.cpp:78:19)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.55 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.56 seconds; current allocated memory: 347.412 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'loss_derivative' ...
+WARNING: [SYN 201-103] Legalizing function name 'exp<16, 3>' to 'exp_16_3_s'.
+WARNING: [SYN 201-103] Legalizing function name 'log<16, 3>' to 'log_16_3_s'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'exp_16_3_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'exp<16, 3>'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 14, function 'exp<16, 3>'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 347.845 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 348.191 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'log_16_3_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP48 latency (root=r_V_22) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln708) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining function 'log<16, 3>'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 11, function 'log<16, 3>'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.15 seconds. CPU system time: 0 seconds. Elapsed time: 0.16 seconds; current allocated memory: 348.958 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.13 seconds. CPU system time: 0 seconds. Elapsed time: 0.12 seconds; current allocated memory: 350.039 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'loss_derivative' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_35_2'.
+WARNING: [HLS 200-885] Unable to schedule bus request on port 'gmem' (lossfun/main.cpp:37) due to limited memory ports. Please consider using a memory core with more ports or partitioning the array.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 2, Depth = 10, loop 'VITIS_LOOP_35_2'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_29_1'.
+WARNING: [HLS 200-885] Unable to schedule bus request on port 'gmem' (lossfun/main.cpp:31) due to limited memory ports. Please consider using a memory core with more ports or partitioning the array.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 2, Depth = 11, loop 'VITIS_LOOP_29_1'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_51_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_51_3'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_57_4'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_57_4'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_63_5'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 17, loop 'VITIS_LOOP_63_5'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_67_6'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 50, loop 'VITIS_LOOP_67_6'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_73_7'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 25, loop 'VITIS_LOOP_73_7'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.4 seconds. CPU system time: 0 seconds. Elapsed time: 0.41 seconds; current allocated memory: 350.920 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.57 seconds. CPU system time: 0 seconds. Elapsed time: 0.56 seconds; current allocated memory: 352.268 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'exp_16_3_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'mul_50ns_47ns_97_5_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_50ns_50ns_100_5_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'exp_16_3_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.32 seconds. CPU system time: 0 seconds. Elapsed time: 0.32 seconds; current allocated memory: 353.103 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'log_16_3_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'log_16_3_s_log_apfixed_reduce_log0_lut_table_ap_fixed_29_7_ap_q_mode_5_ap_o_mode_3_0_0_5_64_array_V' to 'log_16_3_s_log_apfixed_reduce_log0_lut_table_ap_fixed_29_7_ap_q_mode_5_ap_o_mbkb' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'log_16_3_s_log_apfixed_reduce_log_lut_table_ap_fixed_29_7_ap_q_mode_5_ap_o_mode_3_0_4_4_16_array_V' to 'log_16_3_s_log_apfixed_reduce_log_lut_table_ap_fixed_29_7_ap_q_mode_5_ap_o_mocud' due to the length limit 80
+INFO: [RTGEN 206-100] Generating core module 'mac_mulsub_24ns_4ns_29ns_29_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_5s_23ns_28_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_9ns_9ns_18_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_23ns_6ns_24_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'log_16_3_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.19 seconds. CPU system time: 0 seconds. Elapsed time: 0.19 seconds; current allocated memory: 356.174 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'loss_derivative' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'loss_derivative/gmem' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'loss_derivative/x' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'loss_derivative/dx' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'loss_derivative/x_ddr' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'loss_derivative/dx_ddr' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'loss_derivative/y' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'loss_derivative/x_size' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'loss_derivative/N' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'loss_derivative/writetoddr' to 's_axilite & ap_none'.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=0
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: set_directive_top -name loss_derivative loss_derivative 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 155.953 MB.
+INFO: [HLS 200-10] Analyzing design file 'lossfun/main.cpp' ... 
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:117:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:118:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:119:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:120:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:121:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:151:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:152:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:153:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:154:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:155:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:156:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:157:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:158:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:159:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:160:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:210:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:211:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:212:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:239:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:240:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:241:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:242:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:243:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:244:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:280:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:281:9
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 29.04 seconds. CPU system time: 0.88 seconds. Elapsed time: 29.28 seconds; current allocated memory: 158.409 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_729_1' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_log_apfixed.h:729:31) in function 'log_apfixed_reduce::log<16, 3>' completely with a factor of 16 (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_log_apfixed.h:729:31)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_541_16' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:541:36) in function 'exp_reduce::exp<16, 3>' completely with a factor of 25 (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:541:36)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_537_15' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:537:36) in function 'exp_reduce::exp<16, 3>' completely with a factor of 21 (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:537:36)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_531_14' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:531:32) in function 'exp_reduce::exp<16, 3>' completely with a factor of 21 (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:531:32)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_302_13' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:302:36) in function 'exp_reduce::exp<16, 3>' completely with a factor of 46 (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:302:36)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_294_12' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:294:28) in function 'exp_reduce::exp<16, 3>' completely with a factor of 19 (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:294:28)
+INFO: [HLS 214-178] Inlining function 'void log_apfixed_reduce::range_reduce<ap_fixed<29, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, 4, 4, 24, 15>(ap_ufixed<24, -(4), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<29, 7, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<15, -(((4) + (4)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_ufixed<15, -7, (ap_q_mode)5, (ap_o_mode)3, 0> log_apfixed_reduce::log_traits<2>::range_reduction<24>(ap_ufixed<24, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<29, 7, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_log_apfixed.h:249:0)
+INFO: [HLS 214-178] Inlining function 'ap_ufixed<15, -7, (ap_q_mode)5, (ap_o_mode)3, 0> log_apfixed_reduce::log_traits<2>::range_reduction<24>(ap_ufixed<24, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<29, 7, (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> log_apfixed_reduce::log<16, 3>(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_log_apfixed.h:500:0)
+INFO: [HLS 214-178] Inlining function 'ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> hls::exp<16, 3>(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'loss_derivative(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, int, bool, bool)' (lossfun/main.cpp:12:0)
+INFO: [HLS 214-178] Inlining function 'ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> hls::log<16, 3>(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'loss_derivative(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, int, bool, bool)' (lossfun/main.cpp:12:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'loss_derivative(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, int, bool, bool)' (lossfun/main.cpp:12:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'loss_derivative(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, int, bool, bool)' (lossfun/main.cpp:12:0)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i16.s_struct.ap_fixeds' into 'loss_derivative(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, int, bool, bool)' (lossfun/main.cpp:74:19)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i16.s_struct.ap_fixeds' into 'loss_derivative(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, int, bool, bool)' (lossfun/main.cpp:83:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i16.s_struct.ap_fixeds' into 'loss_derivative(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, int, bool, bool)' (lossfun/main.cpp:77:19)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 20.51 seconds. CPU system time: 0.31 seconds. Elapsed time: 20.83 seconds; current allocated memory: 160.863 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 160.867 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.22 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.24 seconds; current allocated memory: 197.131 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.39 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.42 seconds; current allocated memory: 243.286 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_32_1' (lossfun/main.cpp:32) in function 'loss_derivative' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_38_2' (lossfun/main.cpp:38) in function 'loss_derivative' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_50_3' (lossfun/main.cpp:49) in function 'loss_derivative' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_56_4' (lossfun/main.cpp:56) in function 'loss_derivative' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_62_5' (lossfun/main.cpp:60) in function 'loss_derivative' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_66_6' (lossfun/main.cpp:66) in function 'loss_derivative' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_72_7' (lossfun/main.cpp:72) in function 'loss_derivative' automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_log_apfixed.h:748:17) in function 'log_apfixed_reduce::log<16, 3>'... converting 17 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'log_apfixed_reduce::log<16, 3>' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_log_apfixed.h:186:6)...3 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'exp_reduce::exp<16, 3>' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:39:1)...19 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.7 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.72 seconds; current allocated memory: 313.614 MB.
+INFO: [HLS 200-472] Inferring partial write operation for 'x' (lossfun/main.cpp:33:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'dx' (lossfun/main.cpp:34:10)
+INFO: [HLS 200-472] Inferring partial write operation for 'log_probs.V' (lossfun/main.cpp:57:22)
+INFO: [HLS 200-472] Inferring partial write operation for 'probs.V' (lossfun/main.cpp:67:18)
+INFO: [HLS 200-472] Inferring partial write operation for 'dx' (lossfun/main.cpp:74:19)
+INFO: [HLS 200-472] Inferring partial write operation for 'dx' (lossfun/main.cpp:77:19)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.56 seconds. CPU system time: 0 seconds. Elapsed time: 0.56 seconds; current allocated memory: 347.484 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'loss_derivative' ...
+WARNING: [SYN 201-103] Legalizing function name 'exp<16, 3>' to 'exp_16_3_s'.
+WARNING: [SYN 201-103] Legalizing function name 'log<16, 3>' to 'log_16_3_s'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'exp_16_3_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'exp<16, 3>'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 14, function 'exp<16, 3>'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 347.921 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 348.265 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'log_16_3_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP48 latency (root=r_V_22) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln708) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining function 'log<16, 3>'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 11, function 'log<16, 3>'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.15 seconds. CPU system time: 0 seconds. Elapsed time: 0.15 seconds; current allocated memory: 349.032 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.12 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.12 seconds; current allocated memory: 350.097 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'loss_derivative' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_50_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_50_3'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_56_4'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_56_4'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_62_5'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 17, loop 'VITIS_LOOP_62_5'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_66_6'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 50, loop 'VITIS_LOOP_66_6'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_72_7'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 25, loop 'VITIS_LOOP_72_7'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_38_2'.
+WARNING: [HLS 200-885] Unable to schedule bus request on port 'gmem' (lossfun/main.cpp:40) due to limited memory ports. Please consider using a memory core with more ports or partitioning the array.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 2, Depth = 10, loop 'VITIS_LOOP_38_2'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_32_1'.
+WARNING: [HLS 200-885] Unable to schedule bus request on port 'gmem' (lossfun/main.cpp:34) due to limited memory ports. Please consider using a memory core with more ports or partitioning the array.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 2, Depth = 11, loop 'VITIS_LOOP_32_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.39 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.41 seconds; current allocated memory: 351.004 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.58 seconds. CPU system time: 0 seconds. Elapsed time: 0.57 seconds; current allocated memory: 352.360 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'exp_16_3_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'mul_50ns_47ns_97_5_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_50ns_50ns_100_5_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'exp_16_3_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.32 seconds. CPU system time: 0 seconds. Elapsed time: 0.33 seconds; current allocated memory: 353.227 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'log_16_3_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'log_16_3_s_log_apfixed_reduce_log0_lut_table_ap_fixed_29_7_ap_q_mode_5_ap_o_mode_3_0_0_5_64_array_V' to 'log_16_3_s_log_apfixed_reduce_log0_lut_table_ap_fixed_29_7_ap_q_mode_5_ap_o_mbkb' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'log_16_3_s_log_apfixed_reduce_log_lut_table_ap_fixed_29_7_ap_q_mode_5_ap_o_mode_3_0_4_4_16_array_V' to 'log_16_3_s_log_apfixed_reduce_log_lut_table_ap_fixed_29_7_ap_q_mode_5_ap_o_mocud' due to the length limit 80
+INFO: [RTGEN 206-100] Generating core module 'mac_mulsub_24ns_4ns_29ns_29_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_5s_23ns_28_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_9ns_9ns_18_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_23ns_6ns_24_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'log_16_3_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.19 seconds. CPU system time: 0 seconds. Elapsed time: 0.18 seconds; current allocated memory: 356.284 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'loss_derivative' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'loss_derivative/gmem' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'loss_derivative/x' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'loss_derivative/dx' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'loss_derivative/x_ddr' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'loss_derivative/dx_ddr' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'loss_derivative/y' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'loss_derivative/x_size' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'loss_derivative/N' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'loss_derivative/writetoddr' to 's_axilite & ap_none'.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=0
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: set_directive_top -name loss_derivative loss_derivative 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 155.953 MB.
+INFO: [HLS 200-10] Analyzing design file 'lossfun/main.cpp' ... 
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:117:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:118:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:119:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:120:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:121:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:151:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:152:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:153:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:154:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:155:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:156:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:157:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:158:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:159:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:160:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:210:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:211:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:212:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:239:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:240:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:241:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:242:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:243:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:244:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:280:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:281:9
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 28.91 seconds. CPU system time: 0.91 seconds. Elapsed time: 29.17 seconds; current allocated memory: 158.442 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_729_1' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_log_apfixed.h:729:31) in function 'log_apfixed_reduce::log<16, 3>' completely with a factor of 16 (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_log_apfixed.h:729:31)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_541_16' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:541:36) in function 'exp_reduce::exp<16, 3>' completely with a factor of 25 (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:541:36)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_537_15' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:537:36) in function 'exp_reduce::exp<16, 3>' completely with a factor of 21 (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:537:36)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_531_14' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:531:32) in function 'exp_reduce::exp<16, 3>' completely with a factor of 21 (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:531:32)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_302_13' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:302:36) in function 'exp_reduce::exp<16, 3>' completely with a factor of 46 (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:302:36)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_294_12' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:294:28) in function 'exp_reduce::exp<16, 3>' completely with a factor of 19 (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:294:28)
+INFO: [HLS 214-178] Inlining function 'void log_apfixed_reduce::range_reduce<ap_fixed<29, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, 4, 4, 24, 15>(ap_ufixed<24, -(4), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<29, 7, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<15, -(((4) + (4)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_ufixed<15, -7, (ap_q_mode)5, (ap_o_mode)3, 0> log_apfixed_reduce::log_traits<2>::range_reduction<24>(ap_ufixed<24, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<29, 7, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_log_apfixed.h:249:0)
+INFO: [HLS 214-178] Inlining function 'ap_ufixed<15, -7, (ap_q_mode)5, (ap_o_mode)3, 0> log_apfixed_reduce::log_traits<2>::range_reduction<24>(ap_ufixed<24, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<29, 7, (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> log_apfixed_reduce::log<16, 3>(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_log_apfixed.h:500:0)
+INFO: [HLS 214-178] Inlining function 'ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> hls::exp<16, 3>(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'loss_derivative(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, int, bool, bool)' (lossfun/main.cpp:12:0)
+INFO: [HLS 214-178] Inlining function 'ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> hls::log<16, 3>(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'loss_derivative(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, int, bool, bool)' (lossfun/main.cpp:12:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'loss_derivative(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, int, bool, bool)' (lossfun/main.cpp:12:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'loss_derivative(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, int, bool, bool)' (lossfun/main.cpp:12:0)
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 16 in loop 'VITIS_LOOP_32_1'(lossfun/main.cpp:32:21) has been inferred on port 'gmem' (lossfun/main.cpp:32:21)
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 16 in loop 'VITIS_LOOP_35_2'(lossfun/main.cpp:35:21) has been inferred on port 'gmem' (lossfun/main.cpp:35:21)
+INFO: [HLS 214-115] Multiple burst writes of variable length and bit width 16 in loop 'VITIS_LOOP_40_3'(lossfun/main.cpp:40:21) has been inferred on port 'gmem' (lossfun/main.cpp:40:21)
+INFO: [HLS 214-115] Multiple burst writes of variable length and bit width 16 in loop 'VITIS_LOOP_43_4'(lossfun/main.cpp:43:21) has been inferred on port 'gmem' (lossfun/main.cpp:43:21)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i16.s_struct.ap_fixeds' into 'loss_derivative(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, int, bool, bool)' (lossfun/main.cpp:78:19)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i16.s_struct.ap_fixeds' into 'loss_derivative(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, int, bool, bool)' (lossfun/main.cpp:87:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i16.s_struct.ap_fixeds' into 'loss_derivative(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, int, bool, bool)' (lossfun/main.cpp:81:19)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 20.39 seconds. CPU system time: 0.3 seconds. Elapsed time: 20.7 seconds; current allocated memory: 160.949 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 160.953 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.22 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.24 seconds; current allocated memory: 197.237 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.4 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.42 seconds; current allocated memory: 243.408 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_32_1' (lossfun/main.cpp:32) in function 'loss_derivative' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_35_2' (lossfun/main.cpp:35) in function 'loss_derivative' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_40_3' (lossfun/main.cpp:40) in function 'loss_derivative' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_43_4' (lossfun/main.cpp:43) in function 'loss_derivative' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_54_5' (lossfun/main.cpp:53) in function 'loss_derivative' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_60_6' (lossfun/main.cpp:60) in function 'loss_derivative' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_66_7' (lossfun/main.cpp:64) in function 'loss_derivative' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_70_8' (lossfun/main.cpp:70) in function 'loss_derivative' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_76_9' (lossfun/main.cpp:76) in function 'loss_derivative' automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_log_apfixed.h:748:17) in function 'log_apfixed_reduce::log<16, 3>'... converting 17 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'log_apfixed_reduce::log<16, 3>' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_log_apfixed.h:186:6)...3 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'exp_reduce::exp<16, 3>' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:39:1)...19 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.76 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.79 seconds; current allocated memory: 313.782 MB.
+INFO: [HLS 200-472] Inferring partial write operation for 'x' (lossfun/main.cpp:33:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'dx' (lossfun/main.cpp:36:10)
+INFO: [HLS 200-472] Inferring partial write operation for 'log_probs.V' (lossfun/main.cpp:61:22)
+INFO: [HLS 200-472] Inferring partial write operation for 'probs.V' (lossfun/main.cpp:71:18)
+INFO: [HLS 200-472] Inferring partial write operation for 'dx' (lossfun/main.cpp:78:19)
+INFO: [HLS 200-472] Inferring partial write operation for 'dx' (lossfun/main.cpp:81:19)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.57 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.59 seconds; current allocated memory: 347.782 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'loss_derivative' ...
+WARNING: [SYN 201-103] Legalizing function name 'exp<16, 3>' to 'exp_16_3_s'.
+WARNING: [SYN 201-103] Legalizing function name 'log<16, 3>' to 'log_16_3_s'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'exp_16_3_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'exp<16, 3>'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 14, function 'exp<16, 3>'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 348.215 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 348.561 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'log_16_3_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP48 latency (root=r_V_22) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln708) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining function 'log<16, 3>'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 11, function 'log<16, 3>'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.14 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.15 seconds; current allocated memory: 349.312 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.12 seconds. CPU system time: 0 seconds. Elapsed time: 0.12 seconds; current allocated memory: 350.392 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'loss_derivative' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_54_5'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_54_5'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_60_6'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_60_6'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_66_7'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 17, loop 'VITIS_LOOP_66_7'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_70_8'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 50, loop 'VITIS_LOOP_70_8'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_76_9'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 25, loop 'VITIS_LOOP_76_9'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_40_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'VITIS_LOOP_40_3'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_43_4'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'VITIS_LOOP_43_4'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_32_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_32_1'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_35_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_35_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.42 seconds. CPU system time: 0 seconds. Elapsed time: 0.42 seconds; current allocated memory: 351.345 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.63 seconds. CPU system time: 0 seconds. Elapsed time: 0.63 seconds; current allocated memory: 352.756 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'exp_16_3_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'mul_50ns_47ns_97_5_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_50ns_50ns_100_5_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'exp_16_3_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.33 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.33 seconds; current allocated memory: 353.605 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'log_16_3_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'log_16_3_s_log_apfixed_reduce_log0_lut_table_ap_fixed_29_7_ap_q_mode_5_ap_o_mode_3_0_0_5_64_array_V' to 'log_16_3_s_log_apfixed_reduce_log0_lut_table_ap_fixed_29_7_ap_q_mode_5_ap_o_mbkb' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'log_16_3_s_log_apfixed_reduce_log_lut_table_ap_fixed_29_7_ap_q_mode_5_ap_o_mode_3_0_4_4_16_array_V' to 'log_16_3_s_log_apfixed_reduce_log_lut_table_ap_fixed_29_7_ap_q_mode_5_ap_o_mocud' due to the length limit 80
+INFO: [RTGEN 206-100] Generating core module 'mac_mulsub_24ns_4ns_29ns_29_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_5s_23ns_28_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_9ns_9ns_18_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_23ns_6ns_24_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'log_16_3_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.18 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.19 seconds; current allocated memory: 356.646 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'loss_derivative' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500]==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=0
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: set_directive_top -name loss_derivative loss_derivative 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 155.868 MB.
+INFO: [HLS 200-10] Analyzing design file 'lossfun/main.cpp' ... 
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:117:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:118:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:119:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:120:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:121:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:151:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:152:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:153:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:154:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:155:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:156:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:157:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:158:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:159:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:160:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:210:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:211:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:212:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:239:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:240:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:241:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:242:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:243:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:244:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:280:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:281:9
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 28.64 seconds. CPU system time: 0.79 seconds. Elapsed time: 28.79 seconds; current allocated memory: 158.344 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_729_1' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_log_apfixed.h:729:31) in function 'log_apfixed_reduce::log<16, 3>' completely with a factor of 16 (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_log_apfixed.h:729:31)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_541_16' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:541:36) in function 'exp_reduce::exp<16, 3>' completely with a factor of 25 (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:541:36)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_537_15' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:537:36) in function 'exp_reduce::exp<16, 3>' completely with a factor of 21 (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:537:36)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_531_14' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:531:32) in function 'exp_reduce::exp<16, 3>' completely with a factor of 21 (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:531:32)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_302_13' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:302:36) in function 'exp_reduce::exp<16, 3>' completely with a factor of 46 (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:302:36)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_294_12' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:294:28) in function 'exp_reduce::exp<16, 3>' completely with a factor of 19 (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:294:28)
+INFO: [HLS 214-178] Inlining function 'void log_apfixed_reduce::range_reduce<ap_fixed<29, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, 4, 4, 24, 15>(ap_ufixed<24, -(4), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<29, 7, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<15, -(((4) + (4)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_ufixed<15, -7, (ap_q_mode)5, (ap_o_mode)3, 0> log_apfixed_reduce::log_traits<2>::range_reduction<24>(ap_ufixed<24, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<29, 7, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_log_apfixed.h:249:0)
+INFO: [HLS 214-178] Inlining function 'ap_ufixed<15, -7, (ap_q_mode)5, (ap_o_mode)3, 0> log_apfixed_reduce::log_traits<2>::range_reduction<24>(ap_ufixed<24, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<29, 7, (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> log_apfixed_reduce::log<16, 3>(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_log_apfixed.h:500:0)
+INFO: [HLS 214-178] Inlining function 'ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> hls::exp<16, 3>(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'loss_derivative(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, bool, bool)' (lossfun/main.cpp:12:0)
+INFO: [HLS 214-178] Inlining function 'ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> hls::log<16, 3>(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'loss_derivative(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, bool, bool)' (lossfun/main.cpp:12:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'loss_derivative(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, bool, bool)' (lossfun/main.cpp:12:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'loss_derivative(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, bool, bool)' (lossfun/main.cpp:12:0)
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 16 in loop 'VITIS_LOOP_31_1'(lossfun/main.cpp:31:21) has been inferred on port 'gmem' (lossfun/main.cpp:31:21)
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 16 in loop 'VITIS_LOOP_34_2'(lossfun/main.cpp:34:21) has been inferred on port 'gmem' (lossfun/main.cpp:34:21)
+INFO: [HLS 214-115] Multiple burst writes of variable length and bit width 16 in loop 'VITIS_LOOP_39_3'(lossfun/main.cpp:39:21) has been inferred on port 'gmem' (lossfun/main.cpp:39:21)
+INFO: [HLS 214-115] Multiple burst writes of variable length and bit width 16 in loop 'VITIS_LOOP_42_4'(lossfun/main.cpp:42:21) has been inferred on port 'gmem' (lossfun/main.cpp:42:21)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i16.s_struct.ap_fixeds' into 'loss_derivative(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, bool, bool)' (lossfun/main.cpp:77:19)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i16.s_struct.ap_fixeds' into 'loss_derivative(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, bool, bool)' (lossfun/main.cpp:86:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i16.s_struct.ap_fixeds' into 'loss_derivative(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, bool, bool)' (lossfun/main.cpp:80:19)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 20.33 seconds. CPU system time: 0.24 seconds. Elapsed time: 20.55 seconds; current allocated memory: 160.889 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 160.893 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.21 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.23 seconds; current allocated memory: 197.002 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.38 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.4 seconds; current allocated memory: 242.746 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_31_1' (lossfun/main.cpp:31) in function 'loss_derivative' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_34_2' (lossfun/main.cpp:34) in function 'loss_derivative' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_39_3' (lossfun/main.cpp:39) in function 'loss_derivative' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_42_4' (lossfun/main.cpp:42) in function 'loss_derivative' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_53_5' (lossfun/main.cpp:52) in function 'loss_derivative' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_59_6' (lossfun/main.cpp:59) in function 'loss_derivative' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_65_7' (lossfun/main.cpp:63) in function 'loss_derivative' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_69_8' (lossfun/main.cpp:69) in function 'loss_derivative' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_75_9' (lossfun/main.cpp:75) in function 'loss_derivative' automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_log_apfixed.h:748:17) in function 'log_apfixed_reduce::log<16, 3>'... converting 17 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'log_apfixed_reduce::log<16, 3>' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_log_apfixed.h:186:6)...3 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'exp_reduce::exp<16, 3>' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:39:1)...19 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.74 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.75 seconds; current allocated memory: 312.623 MB.
+INFO: [HLS 200-472] Inferring partial write operation for 'x' (lossfun/main.cpp:32:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'dx' (lossfun/main.cpp:35:10)
+INFO: [HLS 200-472] Inferring partial write operation for 'log_probs.V' (lossfun/main.cpp:60:22)
+INFO: [HLS 200-472] Inferring partial write operation for 'probs.V' (lossfun/main.cpp:70:18)
+INFO: [HLS 200-472] Inferring partial write operation for 'dx' (lossfun/main.cpp:77:19)
+INFO: [HLS 200-472] Inferring partial write operation for 'dx' (lossfun/main.cpp:80:19)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.56 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.57 seconds; current allocated memory: 346.404 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'loss_derivative' ...
+WARNING: [SYN 201-103] Legalizing function name 'exp<16, 3>' to 'exp_16_3_s'.
+WARNING: [SYN 201-103] Legalizing function name 'log<16, 3>' to 'log_16_3_s'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'exp_16_3_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'exp<16, 3>'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 14, function 'exp<16, 3>'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 346.836 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 347.181 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'log_16_3_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP48 latency (root=r_V_22) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln708) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining function 'log<16, 3>'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 11, function 'log<16, 3>'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.13 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.15 seconds; current allocated memory: 347.963 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.12 seconds. CPU system time: 0 seconds. Elapsed time: 0.12 seconds; current allocated memory: 349.026 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'loss_derivative' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_53_5'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_53_5'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_59_6'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_59_6'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_65_7'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 17, loop 'VITIS_LOOP_65_7'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_69_8'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 50, loop 'VITIS_LOOP_69_8'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_75_9'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_75_9'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_39_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'VITIS_LOOP_39_3'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_42_4'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'VITIS_LOOP_42_4'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_31_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_31_1'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_34_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_34_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.4 seconds. CPU system time: 0 seconds. Elapsed time: 0.39 seconds; current allocated memory: 349.884 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.54 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.55 seconds; current allocated memory: 351.116 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'exp_16_3_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'mul_50ns_47ns_97_5_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_50ns_50ns_100_5_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'exp_16_3_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.3 seconds. CPU system time: 0 seconds. Elapsed time: 0.31 seconds; current allocated memory: 351.963 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'log_16_3_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'log_16_3_s_log_apfixed_reduce_log0_lut_table_ap_fixed_29_7_ap_q_mode_5_ap_o_mode_3_0_0_5_64_array_V' to 'log_16_3_s_log_apfixed_reduce_log0_lut_table_ap_fixed_29_7_ap_q_mode_5_ap_o_mbkb' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'log_16_3_s_log_apfixed_reduce_log_lut_table_ap_fixed_29_7_ap_q_mode_5_ap_o_mode_3_0_4_4_16_array_V' to 'log_16_3_s_log_apfixed_reduce_log_lut_table_ap_fixed_29_7_ap_q_mode_5_ap_o_mocud' due to the length limit 80
+INFO: [RTGEN 206-100] Generating core module 'mac_mulsub_24ns_4ns_29ns_29_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_5s_23ns_28_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_9ns_9ns_18_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_23ns_6ns_24_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'log_16_3_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.19 seconds. CPU system time: 0 seconds. Elapsed time: 0.18 seconds; current allocated memory: 355.019 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'loss_derivative' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'loss_derivative/gmem' to 'm_axi'.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=0
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: set_directive_top -name loss_derivative loss_derivative 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.01 seconds; current allocated memory: 155.868 MB.
+INFO: [HLS 200-10] Analyzing design file 'lossfun/main.cpp' ... 
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:117:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:118:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:119:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:120:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:121:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:151:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:152:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:153:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:154:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:155:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:156:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:157:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:158:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:159:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:160:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:210:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:211:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:212:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:239:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:240:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:241:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:242:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:243:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:244:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:280:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:281:9
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 30.58 seconds. CPU system time: 0.96 seconds. Elapsed time: 30.92 seconds; current allocated memory: 158.343 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_729_1' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_log_apfixed.h:729:31) in function 'log_apfixed_reduce::log<16, 3>' completely with a factor of 16 (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_log_apfixed.h:729:31)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_541_16' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:541:36) in function 'exp_reduce::exp<16, 3>' completely with a factor of 25 (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:541:36)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_537_15' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:537:36) in function 'exp_reduce::exp<16, 3>' completely with a factor of 21 (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:537:36)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_531_14' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:531:32) in function 'exp_reduce::exp<16, 3>' completely with a factor of 21 (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:531:32)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_302_13' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:302:36) in function 'exp_reduce::exp<16, 3>' completely with a factor of 46 (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:302:36)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_294_12' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:294:28) in function 'exp_reduce::exp<16, 3>' completely with a factor of 19 (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:294:28)
+INFO: [HLS 214-178] Inlining function 'void log_apfixed_reduce::range_reduce<ap_fixed<29, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, 4, 4, 24, 15>(ap_ufixed<24, -(4), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<29, 7, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<15, -(((4) + (4)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_ufixed<15, -7, (ap_q_mode)5, (ap_o_mode)3, 0> log_apfixed_reduce::log_traits<2>::range_reduction<24>(ap_ufixed<24, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<29, 7, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_log_apfixed.h:249:0)
+INFO: [HLS 214-178] Inlining function 'ap_ufixed<15, -7, (ap_q_mode)5, (ap_o_mode)3, 0> log_apfixed_reduce::log_traits<2>::range_reduction<24>(ap_ufixed<24, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<29, 7, (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> log_apfixed_reduce::log<16, 3>(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>)' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_log_apfixed.h:500:0)
+INFO: [HLS 214-178] Inlining function 'ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> hls::exp<16, 3>(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'loss_derivative(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, bool, bool)' (lossfun/main.cpp:12:0)
+INFO: [HLS 214-178] Inlining function 'ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> hls::log<16, 3>(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'loss_derivative(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, bool, bool)' (lossfun/main.cpp:12:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'loss_derivative(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, bool, bool)' (lossfun/main.cpp:12:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'loss_derivative(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, bool, bool)' (lossfun/main.cpp:12:0)
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 16 in loop 'VITIS_LOOP_31_1'(lossfun/main.cpp:31:21) has been inferred on port 'gmem' (lossfun/main.cpp:31:21)
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 16 in loop 'VITIS_LOOP_34_2'(lossfun/main.cpp:34:21) has been inferred on port 'gmem' (lossfun/main.cpp:34:21)
+INFO: [HLS 214-115] Multiple burst writes of variable length and bit width 16 in loop 'VITIS_LOOP_39_3'(lossfun/main.cpp:39:21) has been inferred on port 'gmem' (lossfun/main.cpp:39:21)
+INFO: [HLS 214-115] Multiple burst writes of variable length and bit width 16 in loop 'VITIS_LOOP_42_4'(lossfun/main.cpp:42:21) has been inferred on port 'gmem' (lossfun/main.cpp:42:21)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i16.s_struct.ap_fixeds' into 'loss_derivative(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, bool, bool)' (lossfun/main.cpp:77:19)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i16.s_struct.ap_fixeds' into 'loss_derivative(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, bool, bool)' (lossfun/main.cpp:86:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i16.s_struct.ap_fixeds' into 'loss_derivative(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int, bool, bool)' (lossfun/main.cpp:80:19)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 21.59 seconds. CPU system time: 0.31 seconds. Elapsed time: 21.93 seconds; current allocated memory: 160.892 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 160.896 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.22 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.24 seconds; current allocated memory: 197.001 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.42 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.48 seconds; current allocated memory: 242.748 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_31_1' (lossfun/main.cpp:31) in function 'loss_derivative' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_34_2' (lossfun/main.cpp:34) in function 'loss_derivative' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_39_3' (lossfun/main.cpp:39) in function 'loss_derivative' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_42_4' (lossfun/main.cpp:42) in function 'loss_derivative' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_53_5' (lossfun/main.cpp:52) in function 'loss_derivative' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_59_6' (lossfun/main.cpp:59) in function 'loss_derivative' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_65_7' (lossfun/main.cpp:63) in function 'loss_derivative' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_69_8' (lossfun/main.cpp:69) in function 'loss_derivative' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_75_9' (lossfun/main.cpp:75) in function 'loss_derivative' automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_log_apfixed.h:748:17) in function 'log_apfixed_reduce::log<16, 3>'... converting 17 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'log_apfixed_reduce::log<16, 3>' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_log_apfixed.h:186:6)...3 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'exp_reduce::exp<16, 3>' (/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_exp_apfixed.h:39:1)...19 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.75 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.79 seconds; current allocated memory: 312.621 MB.
+INFO: [HLS 200-472] Inferring partial write operation for 'x' (lossfun/main.cpp:32:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'dx' (lossfun/main.cpp:35:10)
+INFO: [HLS 200-472] Inferring partial write operation for 'log_probs.V' (lossfun/main.cpp:60:22)
+INFO: [HLS 200-472] Inferring partial write operation for 'probs.V' (lossfun/main.cpp:70:18)
+INFO: [HLS 200-472] Inferring partial write operation for 'dx' (lossfun/main.cpp:77:19)
+INFO: [HLS 200-472] Inferring partial write operation for 'dx' (lossfun/main.cpp:80:19)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.61 seconds. CPU system time: 0 seconds. Elapsed time: 0.61 seconds; current allocated memory: 346.404 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'loss_derivative' ...
+WARNING: [SYN 201-103] Legalizing function name 'exp<16, 3>' to 'exp_16_3_s'.
+WARNING: [SYN 201-103] Legalizing function name 'log<16, 3>' to 'log_16_3_s'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'exp_16_3_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'exp<16, 3>'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 14, function 'exp<16, 3>'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 346.838 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 347.183 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'log_16_3_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP48 latency (root=r_V_22) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln708) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining function 'log<16, 3>'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 11, function 'log<16, 3>'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.18 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.19 seconds; current allocated memory: 347.966 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.12 seconds. CPU system time: 0 seconds. Elapsed time: 0.13 seconds; current allocated memory: 349.029 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'loss_derivative' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_53_5'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_53_5'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_59_6'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_59_6'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_65_7'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 17, loop 'VITIS_LOOP_65_7'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_69_8'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 50, loop 'VITIS_LOOP_69_8'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_75_9'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_75_9'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_39_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'VITIS_LOOP_39_3'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_42_4'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'VITIS_LOOP_42_4'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_31_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_31_1'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_34_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_34_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.39 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.4 seconds; current allocated memory: 349.886 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.56 seconds. CPU system time: 0 seconds. Elapsed time: 0.56 seconds; current allocated memory: 351.119 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'exp_16_3_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'mul_50ns_47ns_97_5_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_50ns_50ns_100_5_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'exp_16_3_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.31 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.31 seconds; current allocated memory: 351.966 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'log_16_3_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'log_16_3_s_log_apfixed_reduce_log0_lut_table_ap_fixed_29_7_ap_q_mode_5_ap_o_mode_3_0_0_5_64_array_V' to 'log_16_3_s_log_apfixed_reduce_log0_lut_table_ap_fixed_29_7_ap_q_mode_5_ap_o_mbkb' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'log_16_3_s_log_apfixed_reduce_log_lut_table_ap_fixed_29_7_ap_q_mode_5_ap_o_mode_3_0_4_4_16_array_V' to 'log_16_3_s_log_apfixed_reduce_log_lut_table_ap_fixed_29_7_ap_q_mode_5_ap_o_mocud' due to the length limit 80
+INFO: [RTGEN 206-100] Generating core module 'mac_mulsub_24ns_4ns_29ns_29_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_5s_23ns_28_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_9ns_9ns_18_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_23ns_6ns_24_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'log_16_3_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.19 seconds. CPU system time: 0 seconds. Elapsed time: 0.19 seconds; current allocated memory: 355.021 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'loss_derivative' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500]==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================

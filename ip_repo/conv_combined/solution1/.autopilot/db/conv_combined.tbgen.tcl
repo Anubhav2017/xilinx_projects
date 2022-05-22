@@ -13,12 +13,12 @@ set C_modelName {conv_combined}
 set C_modelType { void 0 }
 set C_modelArgList {
 	{ gmem int 16 regular {axi_master 2}  }
-	{ x int 16 regular {bram 1000 { 1 } 1 1 }  }
-	{ dx int 16 regular {bram 1000 { 2 } 1 1 }  }
+	{ x int 16 regular {bram 1000 { 1 } 2 1 }  }
+	{ dx int 16 regular {bram 1000 { 2 } 2 1 }  }
 	{ wt int 32 regular {axi_slave 0}  }
 	{ dwt int 32 regular {axi_slave 0}  }
 	{ y int 16 regular {bram 1000 { 0 } 0 1 }  }
-	{ dy int 16 regular {bram 1000 { 1 } 1 1 }  }
+	{ dy int 16 regular {bram 1000 { 1 } 2 1 }  }
 	{ b int 32 regular {axi_slave 0}  }
 	{ db int 32 regular {axi_slave 0}  }
 	{ F int 32 regular {axi_slave 0}  }
@@ -313,8 +313,8 @@ set RtlHierarchyInfo {[
 	{"ID" : "36", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mac_muladd_10s_10s_10ns_10_4_1_U32", "Parent" : "0"},
 	{"ID" : "37", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mac_muladd_10s_10s_10ns_10_4_1_U33", "Parent" : "0"},
 	{"ID" : "38", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mac_muladd_10s_10s_10ns_10_4_1_U34", "Parent" : "0"},
-	{"ID" : "39", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mac_muladd_16s_16s_23ns_23_4_1_U35", "Parent" : "0"},
-	{"ID" : "40", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mac_muladd_16s_16s_23ns_23_4_1_U36", "Parent" : "0"},
+	{"ID" : "39", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mac_muladd_16s_16s_29ns_29_4_1_U35", "Parent" : "0"},
+	{"ID" : "40", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mac_muladd_16s_16s_29ns_29_4_1_U36", "Parent" : "0"},
 	{"ID" : "41", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mac_muladd_10s_10s_10ns_10_4_1_U37", "Parent" : "0"}]}
 
 
@@ -383,4 +383,6 @@ set busWriteResLatencyList {
 
 # RTL array port load latency information:
 set memoryLoadLatencyList { 
+	{ x 2 }
+	{ dy 2 }
 }

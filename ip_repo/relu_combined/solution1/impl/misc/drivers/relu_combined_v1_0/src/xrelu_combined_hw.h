@@ -2,7 +2,7 @@
 // Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // ==============================================================
-// CTRL
+// control
 // 0x00 : Control signals
 //        bit 0  - ap_start (Read/Write/COH)
 //        bit 1  - ap_done (Read/COR)
@@ -30,12 +30,12 @@
 // 0x1c : reserved
 // (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
-#define XRELU_COMBINED_CTRL_ADDR_AP_CTRL     0x00
-#define XRELU_COMBINED_CTRL_ADDR_GIE         0x04
-#define XRELU_COMBINED_CTRL_ADDR_IER         0x08
-#define XRELU_COMBINED_CTRL_ADDR_ISR         0x0c
-#define XRELU_COMBINED_CTRL_ADDR_DIM_DATA    0x10
-#define XRELU_COMBINED_CTRL_BITS_DIM_DATA    32
-#define XRELU_COMBINED_CTRL_ADDR_FWPROP_DATA 0x18
-#define XRELU_COMBINED_CTRL_BITS_FWPROP_DATA 1
+#define XRELU_COMBINED_CONTROL_ADDR_AP_CTRL     0x00
+#define XRELU_COMBINED_CONTROL_ADDR_GIE         0x04
+#define XRELU_COMBINED_CONTROL_ADDR_IER         0x08
+#define XRELU_COMBINED_CONTROL_ADDR_ISR         0x0c
+#define XRELU_COMBINED_CONTROL_ADDR_DIM_DATA    0x10
+#define XRELU_COMBINED_CONTROL_BITS_DIM_DATA    32
+#define XRELU_COMBINED_CONTROL_ADDR_FWPROP_DATA 0x18
+#define XRELU_COMBINED_CONTROL_BITS_FWPROP_DATA 1
 

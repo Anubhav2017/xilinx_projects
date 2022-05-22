@@ -19,12 +19,12 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 1823845
+INFO: [Synth 8-7075] Helper process launched with PID 3192313
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 2349.066 ; gain = 0.000 ; free physical = 2006 ; free virtual = 12849
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2373.969 ; gain = 0.000 ; free physical = 4584 ; free virtual = 16124
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'design_1_fcc_combined_0_0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_fcc_combined_0_0/synth/design_1_fcc_combined_0_0.v:59]
-INFO: [Synth 8-6157] synthesizing module 'fcc_combined' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined.v:12]
+INFO: [Synth 8-6157] synthesizing module 'fcc_combined' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined.v:12]
 	Parameter ap_ST_fsm_state1 bound to: 66'b000000000000000000000000000000000000000000000000000000000000000001 
 	Parameter ap_ST_fsm_state2 bound to: 66'b000000000000000000000000000000000000000000000000000000000000000010 
 	Parameter ap_ST_fsm_state3 bound to: 66'b000000000000000000000000000000000000000000000000000000000000000100 
@@ -90,7 +90,7 @@ INFO: [Synth 8-6157] synthesizing module 'fcc_combined' [/home/anubhav/xilinx_pr
 	Parameter ap_ST_fsm_state79 bound to: 66'b000100000000000000000000000000000000000000000000000000000000000000 
 	Parameter ap_ST_fsm_state80 bound to: 66'b001000000000000000000000000000000000000000000000000000000000000000 
 	Parameter ap_ST_fsm_pp6_stage0 bound to: 66'b010000000000000000000000000000000000000000000000000000000000000000 
-	Parameter ap_ST_fsm_state86 bound to: 66'b100000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state87 bound to: 66'b100000000000000000000000000000000000000000000000000000000000000000 
 	Parameter C_S_AXI_CRTL_BUS_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_CRTL_BUS_ADDR_WIDTH bound to: 7 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
@@ -110,7 +110,7 @@ INFO: [Synth 8-6157] synthesizing module 'fcc_combined' [/home/anubhav/xilinx_pr
 	Parameter C_S_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
 	Parameter C_M_AXI_GMEM_WSTRB_WIDTH bound to: 4 - type: integer 
 	Parameter C_M_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'fcc_combined_CRTL_BUS_s_axi' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_CRTL_BUS_s_axi.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fcc_combined_CRTL_BUS_s_axi' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_CRTL_BUS_s_axi.v:6]
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 7 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter ADDR_AP_CTRL bound to: 7'b0000000 
@@ -139,9 +139,9 @@ INFO: [Synth 8-6157] synthesizing module 'fcc_combined_CRTL_BUS_s_axi' [/home/an
 	Parameter RDDATA bound to: 2'b01 
 	Parameter RDRESET bound to: 2'b10 
 	Parameter ADDR_BITS bound to: 7 - type: integer 
-INFO: [Synth 8-155] case statement is not full and has no default [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_CRTL_BUS_s_axi.v:235]
-INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_CRTL_BUS_s_axi' (1#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_CRTL_BUS_s_axi.v:6]
-INFO: [Synth 8-6157] synthesizing module 'fcc_combined_gmem_m_axi' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_gmem_m_axi.v:8]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_CRTL_BUS_s_axi.v:235]
+INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_CRTL_BUS_s_axi' (1#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_CRTL_BUS_s_axi.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fcc_combined_gmem_m_axi' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_gmem_m_axi.v:8]
 	Parameter CONSERVATIVE bound to: 0 - type: integer 
 	Parameter NUM_READ_OUTSTANDING bound to: 16 - type: integer 
 	Parameter NUM_WRITE_OUTSTANDING bound to: 16 - type: integer 
@@ -162,7 +162,7 @@ INFO: [Synth 8-6157] synthesizing module 'fcc_combined_gmem_m_axi' [/home/anubha
 	Parameter USER_DW bound to: 16 - type: integer 
 	Parameter USER_AW bound to: 32 - type: integer 
 	Parameter USER_MAXREQS bound to: 5 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'fcc_combined_gmem_m_axi_write' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_gmem_m_axi.v:1729]
+INFO: [Synth 8-6157] synthesizing module 'fcc_combined_gmem_m_axi_write' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_gmem_m_axi.v:1729]
 	Parameter NUM_WRITE_OUTSTANDING bound to: 16 - type: integer 
 	Parameter MAX_WRITE_BURST_LENGTH bound to: 16 - type: integer 
 	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
@@ -187,44 +187,44 @@ INFO: [Synth 8-6157] synthesizing module 'fcc_combined_gmem_m_axi_write' [/home/
 	Parameter NUM_WRITE_WIDTH bound to: 4 - type: integer 
 	Parameter TARGET_ADDR bound to: 0 - type: integer 
 	Parameter BOUNDARY_BEATS bound to: 10'b1111111111 
-INFO: [Synth 8-6157] synthesizing module 'fcc_combined_gmem_m_axi_fifo' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_gmem_m_axi.v:418]
+INFO: [Synth 8-6157] synthesizing module 'fcc_combined_gmem_m_axi_fifo' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_gmem_m_axi.v:418]
 	Parameter DATA_BITS bound to: 10 - type: integer 
 	Parameter DEPTH bound to: 5 - type: integer 
 	Parameter DEPTH_BITS bound to: 3 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_gmem_m_axi_fifo' (2#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_gmem_m_axi.v:418]
-INFO: [Synth 8-6157] synthesizing module 'fcc_combined_gmem_m_axi_decoder' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_gmem_m_axi.v:694]
+INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_gmem_m_axi_fifo' (2#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_gmem_m_axi.v:418]
+INFO: [Synth 8-6157] synthesizing module 'fcc_combined_gmem_m_axi_decoder' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_gmem_m_axi.v:694]
 	Parameter DIN_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_gmem_m_axi_decoder' (3#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_gmem_m_axi.v:694]
-INFO: [Synth 8-6157] synthesizing module 'fcc_combined_gmem_m_axi_reg_slice' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_gmem_m_axi.v:314]
+INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_gmem_m_axi_decoder' (3#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_gmem_m_axi.v:694]
+INFO: [Synth 8-6157] synthesizing module 'fcc_combined_gmem_m_axi_reg_slice' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_gmem_m_axi.v:314]
 	Parameter N bound to: 64 - type: integer 
 	Parameter ZERO bound to: 2'b10 
 	Parameter ONE bound to: 2'b11 
 	Parameter TWO bound to: 2'b01 
-INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_gmem_m_axi_reg_slice' (4#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_gmem_m_axi.v:314]
-INFO: [Synth 8-6157] synthesizing module 'fcc_combined_gmem_m_axi_fifo__parameterized0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_gmem_m_axi.v:418]
+INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_gmem_m_axi_reg_slice' (4#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_gmem_m_axi.v:314]
+INFO: [Synth 8-6157] synthesizing module 'fcc_combined_gmem_m_axi_fifo__parameterized0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_gmem_m_axi.v:418]
 	Parameter DATA_BITS bound to: 64 - type: integer 
 	Parameter DEPTH bound to: 5 - type: integer 
 	Parameter DEPTH_BITS bound to: 3 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_gmem_m_axi_fifo__parameterized0' (4#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_gmem_m_axi.v:418]
-INFO: [Synth 8-6157] synthesizing module 'fcc_combined_gmem_m_axi_buffer' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_gmem_m_axi.v:529]
+INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_gmem_m_axi_fifo__parameterized0' (4#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_gmem_m_axi.v:418]
+INFO: [Synth 8-6157] synthesizing module 'fcc_combined_gmem_m_axi_buffer' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_gmem_m_axi.v:529]
 	Parameter MEM_STYLE bound to: block - type: string 
 	Parameter DATA_WIDTH bound to: 18 - type: integer 
 	Parameter ADDR_WIDTH bound to: 8 - type: integer 
 	Parameter DEPTH bound to: 256 - type: integer 
-WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_gmem_m_axi.v:582]
-INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_gmem_m_axi_buffer' (5#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_gmem_m_axi.v:529]
-INFO: [Synth 8-6157] synthesizing module 'fcc_combined_gmem_m_axi_fifo__parameterized1' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_gmem_m_axi.v:418]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_gmem_m_axi.v:582]
+INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_gmem_m_axi_buffer' (5#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_gmem_m_axi.v:529]
+INFO: [Synth 8-6157] synthesizing module 'fcc_combined_gmem_m_axi_fifo__parameterized1' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_gmem_m_axi.v:418]
 	Parameter DATA_BITS bound to: 2 - type: integer 
 	Parameter DEPTH bound to: 15 - type: integer 
 	Parameter DEPTH_BITS bound to: 4 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_gmem_m_axi_fifo__parameterized1' (5#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_gmem_m_axi.v:418]
-INFO: [Synth 8-6157] synthesizing module 'fcc_combined_gmem_m_axi_fifo__parameterized2' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_gmem_m_axi.v:418]
+INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_gmem_m_axi_fifo__parameterized1' (5#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_gmem_m_axi.v:418]
+INFO: [Synth 8-6157] synthesizing module 'fcc_combined_gmem_m_axi_fifo__parameterized2' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_gmem_m_axi.v:418]
 	Parameter DATA_BITS bound to: 2 - type: integer 
 	Parameter DEPTH bound to: 5 - type: integer 
 	Parameter DEPTH_BITS bound to: 3 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_gmem_m_axi_fifo__parameterized2' (5#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_gmem_m_axi.v:418]
-INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_gmem_m_axi_write' (6#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_gmem_m_axi.v:1729]
-INFO: [Synth 8-6157] synthesizing module 'fcc_combined_gmem_m_axi_read' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_gmem_m_axi.v:932]
+INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_gmem_m_axi_fifo__parameterized2' (5#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_gmem_m_axi.v:418]
+INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_gmem_m_axi_write' (6#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_gmem_m_axi.v:1729]
+INFO: [Synth 8-6157] synthesizing module 'fcc_combined_gmem_m_axi_read' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_gmem_m_axi.v:932]
 	Parameter NUM_READ_OUTSTANDING bound to: 16 - type: integer 
 	Parameter MAX_READ_BURST_LENGTH bound to: 16 - type: integer 
 	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
@@ -248,21 +248,21 @@ INFO: [Synth 8-6157] synthesizing module 'fcc_combined_gmem_m_axi_read' [/home/a
 	Parameter NUM_READ_WIDTH bound to: 4 - type: integer 
 	Parameter TARGET_ADDR bound to: 0 - type: integer 
 	Parameter BOUNDARY_BEATS bound to: 10'b1111111111 
-INFO: [Synth 8-6157] synthesizing module 'fcc_combined_gmem_m_axi_buffer__parameterized0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_gmem_m_axi.v:529]
+INFO: [Synth 8-6157] synthesizing module 'fcc_combined_gmem_m_axi_buffer__parameterized0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_gmem_m_axi.v:529]
 	Parameter MEM_STYLE bound to: block - type: string 
 	Parameter DATA_WIDTH bound to: 35 - type: integer 
 	Parameter ADDR_WIDTH bound to: 8 - type: integer 
 	Parameter DEPTH bound to: 256 - type: integer 
-WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_gmem_m_axi.v:582]
-INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_gmem_m_axi_buffer__parameterized0' (6#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_gmem_m_axi.v:529]
-INFO: [Synth 8-6157] synthesizing module 'fcc_combined_gmem_m_axi_reg_slice__parameterized0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_gmem_m_axi.v:314]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_gmem_m_axi.v:582]
+INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_gmem_m_axi_buffer__parameterized0' (6#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_gmem_m_axi.v:529]
+INFO: [Synth 8-6157] synthesizing module 'fcc_combined_gmem_m_axi_reg_slice__parameterized0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_gmem_m_axi.v:314]
 	Parameter N bound to: 18 - type: integer 
 	Parameter ZERO bound to: 2'b10 
 	Parameter ONE bound to: 2'b11 
 	Parameter TWO bound to: 2'b01 
-INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_gmem_m_axi_reg_slice__parameterized0' (6#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_gmem_m_axi.v:314]
-INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_gmem_m_axi_read' (7#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_gmem_m_axi.v:932]
-INFO: [Synth 8-6157] synthesizing module 'fcc_combined_gmem_m_axi_throttle' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_gmem_m_axi.v:710]
+INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_gmem_m_axi_reg_slice__parameterized0' (6#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_gmem_m_axi.v:314]
+INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_gmem_m_axi_read' (7#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_gmem_m_axi.v:932]
+INFO: [Synth 8-6157] synthesizing module 'fcc_combined_gmem_m_axi_throttle' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_gmem_m_axi.v:710]
 	Parameter USED_FIX bound to: 0 - type: integer 
 	Parameter FIX_VALUE bound to: 4 - type: integer 
 	Parameter ADDR_WIDTH bound to: 32 - type: integer 
@@ -271,136 +271,136 @@ INFO: [Synth 8-6157] synthesizing module 'fcc_combined_gmem_m_axi_throttle' [/ho
 	Parameter USER_MAXREQS bound to: 16 - type: integer 
 	Parameter CONSERVATIVE bound to: 0 - type: integer 
 	Parameter AVERAGE_MODE bound to: 0 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_gmem_m_axi_throttle' (8#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_gmem_m_axi.v:710]
-INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_gmem_m_axi' (9#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_gmem_m_axi.v:8]
-INFO: [Synth 8-6157] synthesizing module 'fcc_combined_wbuf_V' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_wbuf_V.v:37]
+INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_gmem_m_axi_throttle' (8#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_gmem_m_axi.v:710]
+INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_gmem_m_axi' (9#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_gmem_m_axi.v:8]
+INFO: [Synth 8-6157] synthesizing module 'fcc_combined_wbuf_V' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_wbuf_V.v:37]
 	Parameter DataWidth bound to: 16 - type: integer 
 	Parameter AddressRange bound to: 50000 - type: integer 
 	Parameter AddressWidth bound to: 16 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'fcc_combined_wbuf_V_ram' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_wbuf_V.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fcc_combined_wbuf_V_ram' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_wbuf_V.v:6]
 	Parameter DWIDTH bound to: 16 - type: integer 
 	Parameter AWIDTH bound to: 16 - type: integer 
 	Parameter MEM_SIZE bound to: 50000 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_wbuf_V_ram' (10#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_wbuf_V.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_wbuf_V' (11#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_wbuf_V.v:37]
-INFO: [Synth 8-6157] synthesizing module 'fcc_combined_bbuf_V' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_bbuf_V.v:37]
+INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_wbuf_V_ram' (10#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_wbuf_V.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_wbuf_V' (11#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_wbuf_V.v:37]
+INFO: [Synth 8-6157] synthesizing module 'fcc_combined_bbuf_V' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_bbuf_V.v:37]
 	Parameter DataWidth bound to: 16 - type: integer 
 	Parameter AddressRange bound to: 1000 - type: integer 
 	Parameter AddressWidth bound to: 10 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'fcc_combined_bbuf_V_ram' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_bbuf_V.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fcc_combined_bbuf_V_ram' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_bbuf_V.v:6]
 	Parameter DWIDTH bound to: 16 - type: integer 
 	Parameter AWIDTH bound to: 10 - type: integer 
 	Parameter MEM_SIZE bound to: 1000 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_bbuf_V_ram' (12#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_bbuf_V.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_bbuf_V' (13#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_bbuf_V.v:37]
-INFO: [Synth 8-6157] synthesizing module 'fcc_combined_dbbuf_V' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_dbbuf_V.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_bbuf_V_ram' (12#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_bbuf_V.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_bbuf_V' (13#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_bbuf_V.v:37]
+INFO: [Synth 8-6157] synthesizing module 'fcc_combined_dbbuf_V' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_dbbuf_V.v:46]
 	Parameter DataWidth bound to: 16 - type: integer 
 	Parameter AddressRange bound to: 1000 - type: integer 
 	Parameter AddressWidth bound to: 10 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'fcc_combined_dbbuf_V_ram' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_dbbuf_V.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fcc_combined_dbbuf_V_ram' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_dbbuf_V.v:6]
 	Parameter DWIDTH bound to: 16 - type: integer 
 	Parameter AWIDTH bound to: 10 - type: integer 
 	Parameter MEM_SIZE bound to: 1000 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_dbbuf_V_ram' (14#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_dbbuf_V.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_dbbuf_V' (15#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_dbbuf_V.v:46]
-INFO: [Synth 8-6157] synthesizing module 'fcc_combined_mul_32s_34ns_65_2_1' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_mul_32s_34ns_65_2_1.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_dbbuf_V_ram' (14#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_dbbuf_V.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_dbbuf_V' (15#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_dbbuf_V.v:46]
+INFO: [Synth 8-6157] synthesizing module 'fcc_combined_mul_32s_34ns_65_2_1' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_mul_32s_34ns_65_2_1.v:25]
 	Parameter ID bound to: 1 - type: integer 
 	Parameter NUM_STAGE bound to: 2 - type: integer 
 	Parameter din0_WIDTH bound to: 32 - type: integer 
 	Parameter din1_WIDTH bound to: 34 - type: integer 
 	Parameter dout_WIDTH bound to: 65 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'fcc_combined_mul_32s_34ns_65_2_1_Multiplier_0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_mul_32s_34ns_65_2_1.v:8]
-INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_mul_32s_34ns_65_2_1_Multiplier_0' (16#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_mul_32s_34ns_65_2_1.v:8]
-INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_mul_32s_34ns_65_2_1' (17#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_mul_32s_34ns_65_2_1.v:25]
-INFO: [Synth 8-6157] synthesizing module 'fcc_combined_mul_31s_7ns_31_2_1' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_mul_31s_7ns_31_2_1.v:25]
+INFO: [Synth 8-6157] synthesizing module 'fcc_combined_mul_32s_34ns_65_2_1_Multiplier_0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_mul_32s_34ns_65_2_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_mul_32s_34ns_65_2_1_Multiplier_0' (16#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_mul_32s_34ns_65_2_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_mul_32s_34ns_65_2_1' (17#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_mul_32s_34ns_65_2_1.v:25]
+INFO: [Synth 8-6157] synthesizing module 'fcc_combined_mul_31s_7ns_31_2_1' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_mul_31s_7ns_31_2_1.v:25]
 	Parameter ID bound to: 1 - type: integer 
 	Parameter NUM_STAGE bound to: 2 - type: integer 
 	Parameter din0_WIDTH bound to: 31 - type: integer 
 	Parameter din1_WIDTH bound to: 7 - type: integer 
 	Parameter dout_WIDTH bound to: 31 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'fcc_combined_mul_31s_7ns_31_2_1_Multiplier_1' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_mul_31s_7ns_31_2_1.v:8]
-INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_mul_31s_7ns_31_2_1_Multiplier_1' (18#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_mul_31s_7ns_31_2_1.v:8]
-INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_mul_31s_7ns_31_2_1' (19#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_mul_31s_7ns_31_2_1.v:25]
-INFO: [Synth 8-6157] synthesizing module 'fcc_combined_mul_31s_31s_31_2_1' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_mul_31s_31s_31_2_1.v:25]
+INFO: [Synth 8-6157] synthesizing module 'fcc_combined_mul_31s_7ns_31_2_1_Multiplier_1' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_mul_31s_7ns_31_2_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_mul_31s_7ns_31_2_1_Multiplier_1' (18#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_mul_31s_7ns_31_2_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_mul_31s_7ns_31_2_1' (19#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_mul_31s_7ns_31_2_1.v:25]
+INFO: [Synth 8-6157] synthesizing module 'fcc_combined_mul_31s_31s_31_2_1' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_mul_31s_31s_31_2_1.v:25]
 	Parameter ID bound to: 1 - type: integer 
 	Parameter NUM_STAGE bound to: 2 - type: integer 
 	Parameter din0_WIDTH bound to: 31 - type: integer 
 	Parameter din1_WIDTH bound to: 31 - type: integer 
 	Parameter dout_WIDTH bound to: 31 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'fcc_combined_mul_31s_31s_31_2_1_Multiplier_2' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_mul_31s_31s_31_2_1.v:8]
-INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_mul_31s_31s_31_2_1_Multiplier_2' (20#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_mul_31s_31s_31_2_1.v:8]
-INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_mul_31s_31s_31_2_1' (21#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_mul_31s_31s_31_2_1.v:25]
-INFO: [Synth 8-6157] synthesizing module 'fcc_combined_mul_32ns_7ns_38_2_1' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_mul_32ns_7ns_38_2_1.v:25]
+INFO: [Synth 8-6157] synthesizing module 'fcc_combined_mul_31s_31s_31_2_1_Multiplier_2' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_mul_31s_31s_31_2_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_mul_31s_31s_31_2_1_Multiplier_2' (20#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_mul_31s_31s_31_2_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_mul_31s_31s_31_2_1' (21#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_mul_31s_31s_31_2_1.v:25]
+INFO: [Synth 8-6157] synthesizing module 'fcc_combined_mul_32ns_7ns_38_2_1' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_mul_32ns_7ns_38_2_1.v:25]
 	Parameter ID bound to: 1 - type: integer 
 	Parameter NUM_STAGE bound to: 2 - type: integer 
 	Parameter din0_WIDTH bound to: 32 - type: integer 
 	Parameter din1_WIDTH bound to: 7 - type: integer 
 	Parameter dout_WIDTH bound to: 38 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'fcc_combined_mul_32ns_7ns_38_2_1_Multiplier_3' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_mul_32ns_7ns_38_2_1.v:8]
-INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_mul_32ns_7ns_38_2_1_Multiplier_3' (22#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_mul_32ns_7ns_38_2_1.v:8]
-INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_mul_32ns_7ns_38_2_1' (23#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_mul_32ns_7ns_38_2_1.v:25]
-INFO: [Synth 8-6157] synthesizing module 'fcc_combined_mul_31ns_32ns_63_2_1' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_mul_31ns_32ns_63_2_1.v:25]
+INFO: [Synth 8-6157] synthesizing module 'fcc_combined_mul_32ns_7ns_38_2_1_Multiplier_3' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_mul_32ns_7ns_38_2_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_mul_32ns_7ns_38_2_1_Multiplier_3' (22#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_mul_32ns_7ns_38_2_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_mul_32ns_7ns_38_2_1' (23#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_mul_32ns_7ns_38_2_1.v:25]
+INFO: [Synth 8-6157] synthesizing module 'fcc_combined_mul_31ns_32ns_63_2_1' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_mul_31ns_32ns_63_2_1.v:25]
 	Parameter ID bound to: 1 - type: integer 
 	Parameter NUM_STAGE bound to: 2 - type: integer 
 	Parameter din0_WIDTH bound to: 31 - type: integer 
 	Parameter din1_WIDTH bound to: 32 - type: integer 
 	Parameter dout_WIDTH bound to: 63 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'fcc_combined_mul_31ns_32ns_63_2_1_Multiplier_4' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_mul_31ns_32ns_63_2_1.v:8]
-INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_mul_31ns_32ns_63_2_1_Multiplier_4' (24#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_mul_31ns_32ns_63_2_1.v:8]
-INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_mul_31ns_32ns_63_2_1' (25#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_mul_31ns_32ns_63_2_1.v:25]
-INFO: [Synth 8-6157] synthesizing module 'fcc_combined_mul_mul_6ns_11ns_16_4_1' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_mul_mul_6ns_11ns_16_4_1.v:32]
+INFO: [Synth 8-6157] synthesizing module 'fcc_combined_mul_31ns_32ns_63_2_1_Multiplier_4' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_mul_31ns_32ns_63_2_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_mul_31ns_32ns_63_2_1_Multiplier_4' (24#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_mul_31ns_32ns_63_2_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_mul_31ns_32ns_63_2_1' (25#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_mul_31ns_32ns_63_2_1.v:25]
+INFO: [Synth 8-6157] synthesizing module 'fcc_combined_mul_mul_6ns_11ns_16_4_1' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_mul_mul_6ns_11ns_16_4_1.v:32]
 	Parameter ID bound to: 1 - type: integer 
 	Parameter NUM_STAGE bound to: 4 - type: integer 
 	Parameter din0_WIDTH bound to: 6 - type: integer 
 	Parameter din1_WIDTH bound to: 11 - type: integer 
 	Parameter dout_WIDTH bound to: 16 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'fcc_combined_mul_mul_6ns_11ns_16_4_1_DSP48_0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_mul_mul_6ns_11ns_16_4_1.v:4]
-INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_mul_mul_6ns_11ns_16_4_1_DSP48_0' (26#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_mul_mul_6ns_11ns_16_4_1.v:4]
-INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_mul_mul_6ns_11ns_16_4_1' (27#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_mul_mul_6ns_11ns_16_4_1.v:32]
-INFO: [Synth 8-6157] synthesizing module 'fcc_combined_mac_muladd_10ns_11ns_16ns_16_4_1' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_mac_muladd_10ns_11ns_16ns_16_4_1.v:46]
+INFO: [Synth 8-6157] synthesizing module 'fcc_combined_mul_mul_6ns_11ns_16_4_1_DSP48_0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_mul_mul_6ns_11ns_16_4_1.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_mul_mul_6ns_11ns_16_4_1_DSP48_0' (26#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_mul_mul_6ns_11ns_16_4_1.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_mul_mul_6ns_11ns_16_4_1' (27#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_mul_mul_6ns_11ns_16_4_1.v:32]
+INFO: [Synth 8-6157] synthesizing module 'fcc_combined_mac_muladd_10ns_11ns_16ns_16_4_1' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_mac_muladd_10ns_11ns_16ns_16_4_1.v:46]
 	Parameter ID bound to: 1 - type: integer 
 	Parameter NUM_STAGE bound to: 4 - type: integer 
 	Parameter din0_WIDTH bound to: 10 - type: integer 
 	Parameter din1_WIDTH bound to: 11 - type: integer 
 	Parameter din2_WIDTH bound to: 16 - type: integer 
 	Parameter dout_WIDTH bound to: 16 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'fcc_combined_mac_muladd_10ns_11ns_16ns_16_4_1_DSP48_1' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_mac_muladd_10ns_11ns_16ns_16_4_1.v:7]
-INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_mac_muladd_10ns_11ns_16ns_16_4_1_DSP48_1' (28#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_mac_muladd_10ns_11ns_16ns_16_4_1.v:7]
-INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_mac_muladd_10ns_11ns_16ns_16_4_1' (29#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_mac_muladd_10ns_11ns_16ns_16_4_1.v:46]
-INFO: [Synth 8-6157] synthesizing module 'fcc_combined_mac_muladd_16s_16s_23ns_23_4_1' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_mac_muladd_16s_16s_23ns_23_4_1.v:46]
+INFO: [Synth 8-6157] synthesizing module 'fcc_combined_mac_muladd_10ns_11ns_16ns_16_4_1_DSP48_1' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_mac_muladd_10ns_11ns_16ns_16_4_1.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_mac_muladd_10ns_11ns_16ns_16_4_1_DSP48_1' (28#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_mac_muladd_10ns_11ns_16ns_16_4_1.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_mac_muladd_10ns_11ns_16ns_16_4_1' (29#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_mac_muladd_10ns_11ns_16ns_16_4_1.v:46]
+INFO: [Synth 8-6157] synthesizing module 'fcc_combined_mac_muladd_16s_16s_29ns_29_4_1' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_mac_muladd_16s_16s_29ns_29_4_1.v:46]
 	Parameter ID bound to: 1 - type: integer 
 	Parameter NUM_STAGE bound to: 4 - type: integer 
 	Parameter din0_WIDTH bound to: 16 - type: integer 
 	Parameter din1_WIDTH bound to: 16 - type: integer 
-	Parameter din2_WIDTH bound to: 23 - type: integer 
-	Parameter dout_WIDTH bound to: 23 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'fcc_combined_mac_muladd_16s_16s_23ns_23_4_1_DSP48_2' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_mac_muladd_16s_16s_23ns_23_4_1.v:7]
-INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_mac_muladd_16s_16s_23ns_23_4_1_DSP48_2' (30#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_mac_muladd_16s_16s_23ns_23_4_1.v:7]
-INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_mac_muladd_16s_16s_23ns_23_4_1' (31#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_mac_muladd_16s_16s_23ns_23_4_1.v:46]
-INFO: [Synth 8-6157] synthesizing module 'fcc_combined_mul_mul_16s_16s_23_4_1' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_mul_mul_16s_16s_23_4_1.v:32]
+	Parameter din2_WIDTH bound to: 29 - type: integer 
+	Parameter dout_WIDTH bound to: 29 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'fcc_combined_mac_muladd_16s_16s_29ns_29_4_1_DSP48_2' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_mac_muladd_16s_16s_29ns_29_4_1.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_mac_muladd_16s_16s_29ns_29_4_1_DSP48_2' (30#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_mac_muladd_16s_16s_29ns_29_4_1.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_mac_muladd_16s_16s_29ns_29_4_1' (31#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_mac_muladd_16s_16s_29ns_29_4_1.v:46]
+INFO: [Synth 8-6157] synthesizing module 'fcc_combined_mul_mul_16s_16s_29_4_1' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_mul_mul_16s_16s_29_4_1.v:32]
 	Parameter ID bound to: 1 - type: integer 
 	Parameter NUM_STAGE bound to: 4 - type: integer 
 	Parameter din0_WIDTH bound to: 16 - type: integer 
 	Parameter din1_WIDTH bound to: 16 - type: integer 
-	Parameter dout_WIDTH bound to: 23 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'fcc_combined_mul_mul_16s_16s_23_4_1_DSP48_3' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_mul_mul_16s_16s_23_4_1.v:4]
-INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_mul_mul_16s_16s_23_4_1_DSP48_3' (32#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_mul_mul_16s_16s_23_4_1.v:4]
-INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_mul_mul_16s_16s_23_4_1' (33#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined_mul_mul_16s_16s_23_4_1.v:32]
-INFO: [Synth 8-6155] done synthesizing module 'fcc_combined' (34#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/d302/hdl/verilog/fcc_combined.v:12]
+	Parameter dout_WIDTH bound to: 29 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'fcc_combined_mul_mul_16s_16s_29_4_1_DSP48_3' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_mul_mul_16s_16s_29_4_1.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_mul_mul_16s_16s_29_4_1_DSP48_3' (32#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_mul_mul_16s_16s_29_4_1.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'fcc_combined_mul_mul_16s_16s_29_4_1' (33#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined_mul_mul_16s_16s_29_4_1.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'fcc_combined' (34#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/339d/hdl/verilog/fcc_combined.v:12]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_fcc_combined_0_0' (35#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_fcc_combined_0_0/synth/design_1_fcc_combined_0_0.v:59]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 2349.066 ; gain = 0.000 ; free physical = 3223 ; free virtual = 14072
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2373.969 ; gain = 0.000 ; free physical = 7201 ; free virtual = 18743
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 2349.066 ; gain = 0.000 ; free physical = 3233 ; free virtual = 14083
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2373.969 ; gain = 0.000 ; free physical = 7172 ; free virtual = 18714
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 2349.066 ; gain = 0.000 ; free physical = 3233 ; free virtual = 14083
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2373.969 ; gain = 0.000 ; free physical = 7172 ; free virtual = 18714
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.09 . Memory (MB): peak = 2349.066 ; gain = 0.000 ; free physical = 3201 ; free virtual = 14050
+Netlist sorting complete. Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.07 . Memory (MB): peak = 2373.969 ; gain = 0.000 ; free physical = 7136 ; free virtual = 18678
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -411,27 +411,27 @@ Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/
 Finished Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/design_1_fcc_combined_0_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2464.777 ; gain = 0.000 ; free physical = 3000 ; free virtual = 13854
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2462.742 ; gain = 0.000 ; free physical = 7024 ; free virtual = 18566
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.10 . Memory (MB): peak = 2471.715 ; gain = 6.938 ; free physical = 3060 ; free virtual = 13914
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.17 ; elapsed = 00:00:00.07 . Memory (MB): peak = 2470.680 ; gain = 7.938 ; free physical = 7023 ; free virtual = 18565
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 2471.715 ; gain = 122.648 ; free physical = 2731 ; free virtual = 13586
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2470.680 ; gain = 96.711 ; free physical = 7074 ; free virtual = 18622
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 2471.715 ; gain = 122.648 ; free physical = 2731 ; free virtual = 13585
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2470.680 ; gain = 96.711 ; free physical = 7074 ; free virtual = 18622
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/design_1_fcc_combined_0_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 2471.715 ; gain = 122.648 ; free physical = 2729 ; free virtual = 13584
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2470.680 ; gain = 96.711 ; free physical = 7076 ; free virtual = 18625
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'fcc_combined_CRTL_BUS_s_axi'
 INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'fcc_combined_CRTL_BUS_s_axi'
@@ -475,7 +475,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'fcc_combined_gmem_m_axi_reg_slice__parameterized0'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 2471.715 ; gain = 122.648 ; free physical = 2632 ; free virtual = 13492
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2470.680 ; gain = 96.711 ; free physical = 6922 ; free virtual = 18472
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -506,12 +506,12 @@ Detailed RTL Component Info :
 	               63 Bit    Registers := 3     
 	               38 Bit    Registers := 4     
 	               35 Bit    Registers := 3     
-	               32 Bit    Registers := 35    
+	               32 Bit    Registers := 36    
 	               31 Bit    Registers := 26    
 	               27 Bit    Registers := 4     
 	               20 Bit    Registers := 2     
 	               18 Bit    Registers := 8     
-	               16 Bit    Registers := 29    
+	               16 Bit    Registers := 31    
 	               10 Bit    Registers := 14    
 	                9 Bit    Registers := 1     
 	                8 Bit    Registers := 8     
@@ -520,7 +520,7 @@ Detailed RTL Component Info :
 	                4 Bit    Registers := 2     
 	                3 Bit    Registers := 5     
 	                2 Bit    Registers := 14    
-	                1 Bit    Registers := 111   
+	                1 Bit    Registers := 113   
 +---Multipliers : 
 	              32x35  Multipliers := 1     
 	              31x32  Multipliers := 1     
@@ -594,13 +594,12 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-DSP Report: Generating DSP mul_mul_16s_16s_23_4_1_U12/fcc_combined_mul_mul_16s_16s_23_4_1_DSP48_3_U/p_reg_reg, operation Mode is: (A2*B'')'.
-DSP Report: register reg_632_reg is absorbed into DSP mul_mul_16s_16s_23_4_1_U12/fcc_combined_mul_mul_16s_16s_23_4_1_DSP48_3_U/p_reg_reg.
-DSP Report: register mac_muladd_16s_16s_23ns_23_4_1_U11/fcc_combined_mac_muladd_16s_16s_23ns_23_4_1_DSP48_2_U/b_reg_reg is absorbed into DSP mul_mul_16s_16s_23_4_1_U12/fcc_combined_mul_mul_16s_16s_23_4_1_DSP48_3_U/p_reg_reg.
-DSP Report: register mul_mul_16s_16s_23_4_1_U12/fcc_combined_mul_mul_16s_16s_23_4_1_DSP48_3_U/a_reg_reg is absorbed into DSP mul_mul_16s_16s_23_4_1_U12/fcc_combined_mul_mul_16s_16s_23_4_1_DSP48_3_U/p_reg_reg.
-DSP Report: register mul_mul_16s_16s_23_4_1_U12/fcc_combined_mul_mul_16s_16s_23_4_1_DSP48_3_U/p_reg_reg is absorbed into DSP mul_mul_16s_16s_23_4_1_U12/fcc_combined_mul_mul_16s_16s_23_4_1_DSP48_3_U/p_reg_reg.
-DSP Report: register mul_mul_16s_16s_23_4_1_U12/fcc_combined_mul_mul_16s_16s_23_4_1_DSP48_3_U/p_reg_tmp_reg is absorbed into DSP mul_mul_16s_16s_23_4_1_U12/fcc_combined_mul_mul_16s_16s_23_4_1_DSP48_3_U/p_reg_reg.
-DSP Report: operator mul_mul_16s_16s_23_4_1_U12/fcc_combined_mul_mul_16s_16s_23_4_1_DSP48_3_U/p_reg_tmp0 is absorbed into DSP mul_mul_16s_16s_23_4_1_U12/fcc_combined_mul_mul_16s_16s_23_4_1_DSP48_3_U/p_reg_reg.
+DSP Report: Generating DSP mul_mul_16s_16s_29_4_1_U12/fcc_combined_mul_mul_16s_16s_29_4_1_DSP48_3_U/p_reg_reg, operation Mode is: (A2*B2)'.
+DSP Report: register mul_mul_16s_16s_29_4_1_U12/fcc_combined_mul_mul_16s_16s_29_4_1_DSP48_3_U/b_reg_reg is absorbed into DSP mul_mul_16s_16s_29_4_1_U12/fcc_combined_mul_mul_16s_16s_29_4_1_DSP48_3_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_29_4_1_U12/fcc_combined_mul_mul_16s_16s_29_4_1_DSP48_3_U/a_reg_reg is absorbed into DSP mul_mul_16s_16s_29_4_1_U12/fcc_combined_mul_mul_16s_16s_29_4_1_DSP48_3_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_29_4_1_U12/fcc_combined_mul_mul_16s_16s_29_4_1_DSP48_3_U/p_reg_reg is absorbed into DSP mul_mul_16s_16s_29_4_1_U12/fcc_combined_mul_mul_16s_16s_29_4_1_DSP48_3_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_29_4_1_U12/fcc_combined_mul_mul_16s_16s_29_4_1_DSP48_3_U/p_reg_tmp_reg is absorbed into DSP mul_mul_16s_16s_29_4_1_U12/fcc_combined_mul_mul_16s_16s_29_4_1_DSP48_3_U/p_reg_reg.
+DSP Report: operator mul_mul_16s_16s_29_4_1_U12/fcc_combined_mul_mul_16s_16s_29_4_1_DSP48_3_U/p_reg_tmp0 is absorbed into DSP mul_mul_16s_16s_29_4_1_U12/fcc_combined_mul_mul_16s_16s_29_4_1_DSP48_3_U/p_reg_reg.
 DSP Report: Generating DSP mul_32s_34ns_65_2_1_U1/fcc_combined_mul_32s_34ns_65_2_1_Multiplier_0_U/tmp_product, operation Mode is: A*(B:0x147b).
 DSP Report: operator mul_32s_34ns_65_2_1_U1/fcc_combined_mul_32s_34ns_65_2_1_Multiplier_0_U/tmp_product is absorbed into DSP mul_32s_34ns_65_2_1_U1/fcc_combined_mul_32s_34ns_65_2_1_Multiplier_0_U/tmp_product.
 DSP Report: operator mul_32s_34ns_65_2_1_U1/fcc_combined_mul_32s_34ns_65_2_1_Multiplier_0_U/tmp_product is absorbed into DSP mul_32s_34ns_65_2_1_U1/fcc_combined_mul_32s_34ns_65_2_1_Multiplier_0_U/tmp_product.
@@ -618,14 +617,14 @@ DSP Report: register mul_32s_34ns_65_2_1_U1/fcc_combined_mul_32s_34ns_65_2_1_Mul
 DSP Report: operator mul_32s_34ns_65_2_1_U1/fcc_combined_mul_32s_34ns_65_2_1_Multiplier_0_U/tmp_product is absorbed into DSP mul_32s_34ns_65_2_1_U1/fcc_combined_mul_32s_34ns_65_2_1_Multiplier_0_U/p_reg.
 DSP Report: operator mul_32s_34ns_65_2_1_U1/fcc_combined_mul_32s_34ns_65_2_1_Multiplier_0_U/tmp_product is absorbed into DSP mul_32s_34ns_65_2_1_U1/fcc_combined_mul_32s_34ns_65_2_1_Multiplier_0_U/p_reg.
 DSP Report: Generating DSP mul_31ns_32ns_63_2_1_U6/fcc_combined_mul_31ns_32ns_63_2_1_Multiplier_4_U/tmp_product, operation Mode is: A''*B2.
-DSP Report: register trunc_ln83_reg_1635_reg is absorbed into DSP mul_31ns_32ns_63_2_1_U6/fcc_combined_mul_31ns_32ns_63_2_1_Multiplier_4_U/tmp_product.
+DSP Report: register trunc_ln83_reg_1631_reg is absorbed into DSP mul_31ns_32ns_63_2_1_U6/fcc_combined_mul_31ns_32ns_63_2_1_Multiplier_4_U/tmp_product.
 DSP Report: register mul_31ns_32ns_63_2_1_U6/fcc_combined_mul_31ns_32ns_63_2_1_Multiplier_4_U/tmp_product is absorbed into DSP mul_31ns_32ns_63_2_1_U6/fcc_combined_mul_31ns_32ns_63_2_1_Multiplier_4_U/tmp_product.
 DSP Report: register mul_31ns_32ns_63_2_1_U6/fcc_combined_mul_31ns_32ns_63_2_1_Multiplier_4_U/tmp_product is absorbed into DSP mul_31ns_32ns_63_2_1_U6/fcc_combined_mul_31ns_32ns_63_2_1_Multiplier_4_U/tmp_product.
 DSP Report: operator mul_31ns_32ns_63_2_1_U6/fcc_combined_mul_31ns_32ns_63_2_1_Multiplier_4_U/tmp_product is absorbed into DSP mul_31ns_32ns_63_2_1_U6/fcc_combined_mul_31ns_32ns_63_2_1_Multiplier_4_U/tmp_product.
 DSP Report: operator mul_31ns_32ns_63_2_1_U6/fcc_combined_mul_31ns_32ns_63_2_1_Multiplier_4_U/tmp_product is absorbed into DSP mul_31ns_32ns_63_2_1_U6/fcc_combined_mul_31ns_32ns_63_2_1_Multiplier_4_U/tmp_product.
 DSP Report: Generating DSP mul_31ns_32ns_63_2_1_U6/fcc_combined_mul_31ns_32ns_63_2_1_Multiplier_4_U/p_reg, operation Mode is: (PCIN>>17)+A2*B2.
-DSP Report: register trunc_ln83_reg_1635_reg is absorbed into DSP mul_31ns_32ns_63_2_1_U6/fcc_combined_mul_31ns_32ns_63_2_1_Multiplier_4_U/p_reg.
-DSP Report: register zext_ln89_reg_1578_reg is absorbed into DSP mul_31ns_32ns_63_2_1_U6/fcc_combined_mul_31ns_32ns_63_2_1_Multiplier_4_U/p_reg.
+DSP Report: register trunc_ln83_reg_1631_reg is absorbed into DSP mul_31ns_32ns_63_2_1_U6/fcc_combined_mul_31ns_32ns_63_2_1_Multiplier_4_U/p_reg.
+DSP Report: register zext_ln89_reg_1574_reg is absorbed into DSP mul_31ns_32ns_63_2_1_U6/fcc_combined_mul_31ns_32ns_63_2_1_Multiplier_4_U/p_reg.
 DSP Report: register mul_31ns_32ns_63_2_1_U6/fcc_combined_mul_31ns_32ns_63_2_1_Multiplier_4_U/p_reg is absorbed into DSP mul_31ns_32ns_63_2_1_U6/fcc_combined_mul_31ns_32ns_63_2_1_Multiplier_4_U/p_reg.
 DSP Report: operator mul_31ns_32ns_63_2_1_U6/fcc_combined_mul_31ns_32ns_63_2_1_Multiplier_4_U/tmp_product is absorbed into DSP mul_31ns_32ns_63_2_1_U6/fcc_combined_mul_31ns_32ns_63_2_1_Multiplier_4_U/p_reg.
 DSP Report: operator mul_31ns_32ns_63_2_1_U6/fcc_combined_mul_31ns_32ns_63_2_1_Multiplier_4_U/tmp_product is absorbed into DSP mul_31ns_32ns_63_2_1_U6/fcc_combined_mul_31ns_32ns_63_2_1_Multiplier_4_U/p_reg.
@@ -636,28 +635,28 @@ DSP Report: register mul_31ns_32ns_63_2_1_U6/fcc_combined_mul_31ns_32ns_63_2_1_M
 DSP Report: operator mul_31ns_32ns_63_2_1_U6/fcc_combined_mul_31ns_32ns_63_2_1_Multiplier_4_U/tmp_product is absorbed into DSP mul_31ns_32ns_63_2_1_U6/fcc_combined_mul_31ns_32ns_63_2_1_Multiplier_4_U/tmp_product.
 DSP Report: operator mul_31ns_32ns_63_2_1_U6/fcc_combined_mul_31ns_32ns_63_2_1_Multiplier_4_U/tmp_product is absorbed into DSP mul_31ns_32ns_63_2_1_U6/fcc_combined_mul_31ns_32ns_63_2_1_Multiplier_4_U/tmp_product.
 DSP Report: Generating DSP mul_31ns_32ns_63_2_1_U6/fcc_combined_mul_31ns_32ns_63_2_1_Multiplier_4_U/p_reg, operation Mode is: (PCIN>>17)+A2*B2.
-DSP Report: register zext_ln89_reg_1578_reg is absorbed into DSP mul_31ns_32ns_63_2_1_U6/fcc_combined_mul_31ns_32ns_63_2_1_Multiplier_4_U/p_reg.
+DSP Report: register zext_ln89_reg_1574_reg is absorbed into DSP mul_31ns_32ns_63_2_1_U6/fcc_combined_mul_31ns_32ns_63_2_1_Multiplier_4_U/p_reg.
 DSP Report: register mul_31ns_32ns_63_2_1_U6/fcc_combined_mul_31ns_32ns_63_2_1_Multiplier_4_U/p_reg is absorbed into DSP mul_31ns_32ns_63_2_1_U6/fcc_combined_mul_31ns_32ns_63_2_1_Multiplier_4_U/p_reg.
 DSP Report: register mul_31ns_32ns_63_2_1_U6/fcc_combined_mul_31ns_32ns_63_2_1_Multiplier_4_U/p_reg is absorbed into DSP mul_31ns_32ns_63_2_1_U6/fcc_combined_mul_31ns_32ns_63_2_1_Multiplier_4_U/p_reg.
 DSP Report: operator mul_31ns_32ns_63_2_1_U6/fcc_combined_mul_31ns_32ns_63_2_1_Multiplier_4_U/tmp_product is absorbed into DSP mul_31ns_32ns_63_2_1_U6/fcc_combined_mul_31ns_32ns_63_2_1_Multiplier_4_U/p_reg.
 DSP Report: operator mul_31ns_32ns_63_2_1_U6/fcc_combined_mul_31ns_32ns_63_2_1_Multiplier_4_U/tmp_product is absorbed into DSP mul_31ns_32ns_63_2_1_U6/fcc_combined_mul_31ns_32ns_63_2_1_Multiplier_4_U/p_reg.
-DSP Report: Generating DSP mac_muladd_16s_16s_23ns_23_4_1_U16/fcc_combined_mac_muladd_16s_16s_23ns_23_4_1_DSP48_2_U/p_reg_reg, operation Mode is: (C+(A2*B2)')'.
-DSP Report: register mac_muladd_16s_16s_23ns_23_4_1_U16/fcc_combined_mac_muladd_16s_16s_23ns_23_4_1_DSP48_2_U/b_reg_reg is absorbed into DSP mac_muladd_16s_16s_23ns_23_4_1_U16/fcc_combined_mac_muladd_16s_16s_23ns_23_4_1_DSP48_2_U/p_reg_reg.
-DSP Report: register mac_muladd_16s_16s_23ns_23_4_1_U11/fcc_combined_mac_muladd_16s_16s_23ns_23_4_1_DSP48_2_U/a_reg_reg is absorbed into DSP mac_muladd_16s_16s_23ns_23_4_1_U16/fcc_combined_mac_muladd_16s_16s_23ns_23_4_1_DSP48_2_U/p_reg_reg.
-DSP Report: register mac_muladd_16s_16s_23ns_23_4_1_U16/fcc_combined_mac_muladd_16s_16s_23ns_23_4_1_DSP48_2_U/p_reg_reg is absorbed into DSP mac_muladd_16s_16s_23ns_23_4_1_U16/fcc_combined_mac_muladd_16s_16s_23ns_23_4_1_DSP48_2_U/p_reg_reg.
-DSP Report: register mac_muladd_16s_16s_23ns_23_4_1_U16/fcc_combined_mac_muladd_16s_16s_23ns_23_4_1_DSP48_2_U/m_reg_reg is absorbed into DSP mac_muladd_16s_16s_23ns_23_4_1_U16/fcc_combined_mac_muladd_16s_16s_23ns_23_4_1_DSP48_2_U/p_reg_reg.
-DSP Report: operator mac_muladd_16s_16s_23ns_23_4_1_U16/fcc_combined_mac_muladd_16s_16s_23ns_23_4_1_DSP48_2_U/p is absorbed into DSP mac_muladd_16s_16s_23ns_23_4_1_U16/fcc_combined_mac_muladd_16s_16s_23ns_23_4_1_DSP48_2_U/p_reg_reg.
-DSP Report: operator mac_muladd_16s_16s_23ns_23_4_1_U16/fcc_combined_mac_muladd_16s_16s_23ns_23_4_1_DSP48_2_U/m is absorbed into DSP mac_muladd_16s_16s_23ns_23_4_1_U16/fcc_combined_mac_muladd_16s_16s_23ns_23_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: Generating DSP mac_muladd_16s_16s_29ns_29_4_1_U16/fcc_combined_mac_muladd_16s_16s_29ns_29_4_1_DSP48_2_U/p_reg_reg, operation Mode is: (C+(A2*B2)')'.
+DSP Report: register mac_muladd_16s_16s_29ns_29_4_1_U16/fcc_combined_mac_muladd_16s_16s_29ns_29_4_1_DSP48_2_U/b_reg_reg is absorbed into DSP mac_muladd_16s_16s_29ns_29_4_1_U16/fcc_combined_mac_muladd_16s_16s_29ns_29_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: register mac_muladd_16s_16s_29ns_29_4_1_U16/fcc_combined_mac_muladd_16s_16s_29ns_29_4_1_DSP48_2_U/a_reg_reg is absorbed into DSP mac_muladd_16s_16s_29ns_29_4_1_U16/fcc_combined_mac_muladd_16s_16s_29ns_29_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: register mac_muladd_16s_16s_29ns_29_4_1_U16/fcc_combined_mac_muladd_16s_16s_29ns_29_4_1_DSP48_2_U/p_reg_reg is absorbed into DSP mac_muladd_16s_16s_29ns_29_4_1_U16/fcc_combined_mac_muladd_16s_16s_29ns_29_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: register mac_muladd_16s_16s_29ns_29_4_1_U16/fcc_combined_mac_muladd_16s_16s_29ns_29_4_1_DSP48_2_U/m_reg_reg is absorbed into DSP mac_muladd_16s_16s_29ns_29_4_1_U16/fcc_combined_mac_muladd_16s_16s_29ns_29_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: operator mac_muladd_16s_16s_29ns_29_4_1_U16/fcc_combined_mac_muladd_16s_16s_29ns_29_4_1_DSP48_2_U/p is absorbed into DSP mac_muladd_16s_16s_29ns_29_4_1_U16/fcc_combined_mac_muladd_16s_16s_29ns_29_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: operator mac_muladd_16s_16s_29ns_29_4_1_U16/fcc_combined_mac_muladd_16s_16s_29ns_29_4_1_DSP48_2_U/m is absorbed into DSP mac_muladd_16s_16s_29ns_29_4_1_U16/fcc_combined_mac_muladd_16s_16s_29ns_29_4_1_DSP48_2_U/p_reg_reg.
 DSP Report: Generating DSP mul_31s_31s_31_2_1_U3/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product, operation Mode is: A2*B''.
 DSP Report: register mul_31s_7ns_31_2_1_U2/fcc_combined_mul_31s_7ns_31_2_1_Multiplier_1_U/p_reg is absorbed into DSP mul_31s_31s_31_2_1_U3/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product.
-DSP Report: register mul_ln50_reg_1573_reg is absorbed into DSP mul_31s_31s_31_2_1_U3/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product.
+DSP Report: register mul_ln50_reg_1569_reg is absorbed into DSP mul_31s_31s_31_2_1_U3/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product.
 DSP Report: register mul_31s_31s_31_2_1_U3/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product is absorbed into DSP mul_31s_31s_31_2_1_U3/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product.
 DSP Report: operator mul_31s_31s_31_2_1_U3/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product is absorbed into DSP mul_31s_31s_31_2_1_U3/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product.
 DSP Report: operator mul_31s_31s_31_2_1_U3/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product is absorbed into DSP mul_31s_31s_31_2_1_U3/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product.
 DSP Report: Generating DSP mul_31s_31s_31_2_1_U3/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg, operation Mode is: (PCIN>>17)+A''*B2.
-DSP Report: register k_reg_462_reg is absorbed into DSP mul_31s_31s_31_2_1_U3/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg.
+DSP Report: register k_reg_464_reg is absorbed into DSP mul_31s_31s_31_2_1_U3/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg.
 DSP Report: register mul_31s_7ns_31_2_1_U2/fcc_combined_mul_31s_7ns_31_2_1_Multiplier_1_U/p_reg is absorbed into DSP mul_31s_31s_31_2_1_U3/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg.
-DSP Report: register mul_ln50_reg_1573_reg is absorbed into DSP mul_31s_31s_31_2_1_U3/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg.
+DSP Report: register mul_ln50_reg_1569_reg is absorbed into DSP mul_31s_31s_31_2_1_U3/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg.
 DSP Report: register mul_31s_31s_31_2_1_U3/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg is absorbed into DSP mul_31s_31s_31_2_1_U3/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg.
 DSP Report: operator mul_31s_31s_31_2_1_U3/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product is absorbed into DSP mul_31s_31s_31_2_1_U3/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg.
 DSP Report: operator mul_31s_31s_31_2_1_U3/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product is absorbed into DSP mul_31s_31s_31_2_1_U3/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg.
@@ -668,21 +667,21 @@ DSP Report: register mul_31s_31s_31_2_1_U3/fcc_combined_mul_31s_31s_31_2_1_Multi
 DSP Report: operator mul_31s_31s_31_2_1_U3/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product is absorbed into DSP mul_31s_31s_31_2_1_U3/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product.
 DSP Report: operator mul_31s_31s_31_2_1_U3/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product is absorbed into DSP mul_31s_31s_31_2_1_U3/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product.
 DSP Report: Generating DSP mul_31s_31s_31_2_1_U3/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg, operation Mode is: (PCIN>>17)+A''*B2.
-DSP Report: register k_reg_462_reg is absorbed into DSP mul_31s_31s_31_2_1_U3/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg.
+DSP Report: register k_reg_464_reg is absorbed into DSP mul_31s_31s_31_2_1_U3/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg.
 DSP Report: register mul_31s_31s_31_2_1_U3/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg is absorbed into DSP mul_31s_31s_31_2_1_U3/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg.
 DSP Report: register mul_31s_31s_31_2_1_U3/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg is absorbed into DSP mul_31s_31s_31_2_1_U3/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg.
 DSP Report: register mul_31s_31s_31_2_1_U3/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg is absorbed into DSP mul_31s_31s_31_2_1_U3/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg.
 DSP Report: operator mul_31s_31s_31_2_1_U3/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product is absorbed into DSP mul_31s_31s_31_2_1_U3/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg.
 DSP Report: operator mul_31s_31s_31_2_1_U3/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product is absorbed into DSP mul_31s_31s_31_2_1_U3/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg.
 DSP Report: Generating DSP mul_31s_31s_31_2_1_U7/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product, operation Mode is: A''*B2.
-DSP Report: register i_6_reg_555_reg is absorbed into DSP mul_31s_31s_31_2_1_U7/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product.
+DSP Report: register i_6_reg_556_reg is absorbed into DSP mul_31s_31s_31_2_1_U7/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product.
 DSP Report: register mul_31s_31s_31_2_1_U7/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product is absorbed into DSP mul_31s_31s_31_2_1_U7/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product.
 DSP Report: register mul_31s_31s_31_2_1_U7/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product is absorbed into DSP mul_31s_31s_31_2_1_U7/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product.
 DSP Report: operator mul_31s_31s_31_2_1_U7/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product is absorbed into DSP mul_31s_31s_31_2_1_U7/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product.
 DSP Report: operator mul_31s_31s_31_2_1_U7/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product is absorbed into DSP mul_31s_31s_31_2_1_U7/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product.
 DSP Report: Generating DSP mul_31s_31s_31_2_1_U7/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg, operation Mode is: (PCIN>>17)+A2*B2.
-DSP Report: register trunc_ln46_reg_1551_reg is absorbed into DSP mul_31s_31s_31_2_1_U7/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg.
-DSP Report: register i_6_reg_555_reg is absorbed into DSP mul_31s_31s_31_2_1_U7/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg.
+DSP Report: register trunc_ln46_reg_1547_reg is absorbed into DSP mul_31s_31s_31_2_1_U7/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg.
+DSP Report: register i_6_reg_556_reg is absorbed into DSP mul_31s_31s_31_2_1_U7/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg.
 DSP Report: register mul_31s_31s_31_2_1_U7/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg is absorbed into DSP mul_31s_31s_31_2_1_U7/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg.
 DSP Report: operator mul_31s_31s_31_2_1_U7/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product is absorbed into DSP mul_31s_31s_31_2_1_U7/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg.
 DSP Report: operator mul_31s_31s_31_2_1_U7/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product is absorbed into DSP mul_31s_31s_31_2_1_U7/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg.
@@ -693,20 +692,20 @@ DSP Report: register mul_31s_31s_31_2_1_U7/fcc_combined_mul_31s_31s_31_2_1_Multi
 DSP Report: operator mul_31s_31s_31_2_1_U7/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product is absorbed into DSP mul_31s_31s_31_2_1_U7/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product.
 DSP Report: operator mul_31s_31s_31_2_1_U7/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product is absorbed into DSP mul_31s_31s_31_2_1_U7/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product.
 DSP Report: Generating DSP mul_31s_31s_31_2_1_U7/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg, operation Mode is: (PCIN>>17)+A2*B2.
-DSP Report: register trunc_ln46_reg_1551_reg is absorbed into DSP mul_31s_31s_31_2_1_U7/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg.
+DSP Report: register trunc_ln46_reg_1547_reg is absorbed into DSP mul_31s_31s_31_2_1_U7/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg.
 DSP Report: register mul_31s_31s_31_2_1_U7/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg is absorbed into DSP mul_31s_31s_31_2_1_U7/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg.
 DSP Report: register mul_31s_31s_31_2_1_U7/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg is absorbed into DSP mul_31s_31s_31_2_1_U7/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg.
 DSP Report: operator mul_31s_31s_31_2_1_U7/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product is absorbed into DSP mul_31s_31s_31_2_1_U7/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg.
 DSP Report: operator mul_31s_31s_31_2_1_U7/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product is absorbed into DSP mul_31s_31s_31_2_1_U7/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg.
 DSP Report: Generating DSP mul_31s_31s_31_2_1_U5/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product, operation Mode is: A''*B2.
-DSP Report: register i_2_reg_486_reg is absorbed into DSP mul_31s_31s_31_2_1_U5/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product.
+DSP Report: register i_2_reg_488_reg is absorbed into DSP mul_31s_31s_31_2_1_U5/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product.
 DSP Report: register mul_31s_31s_31_2_1_U5/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product is absorbed into DSP mul_31s_31s_31_2_1_U5/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product.
 DSP Report: register mul_31s_31s_31_2_1_U5/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product is absorbed into DSP mul_31s_31s_31_2_1_U5/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product.
 DSP Report: operator mul_31s_31s_31_2_1_U5/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product is absorbed into DSP mul_31s_31s_31_2_1_U5/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product.
 DSP Report: operator mul_31s_31s_31_2_1_U5/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product is absorbed into DSP mul_31s_31s_31_2_1_U5/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product.
 DSP Report: Generating DSP mul_31s_31s_31_2_1_U5/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg, operation Mode is: (PCIN>>17)+A2*B2.
-DSP Report: register trunc_ln46_reg_1551_reg is absorbed into DSP mul_31s_31s_31_2_1_U5/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg.
-DSP Report: register i_2_reg_486_reg is absorbed into DSP mul_31s_31s_31_2_1_U5/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg.
+DSP Report: register trunc_ln46_reg_1547_reg is absorbed into DSP mul_31s_31s_31_2_1_U5/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg.
+DSP Report: register i_2_reg_488_reg is absorbed into DSP mul_31s_31s_31_2_1_U5/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg.
 DSP Report: register mul_31s_31s_31_2_1_U5/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg is absorbed into DSP mul_31s_31s_31_2_1_U5/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg.
 DSP Report: operator mul_31s_31s_31_2_1_U5/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product is absorbed into DSP mul_31s_31s_31_2_1_U5/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg.
 DSP Report: operator mul_31s_31s_31_2_1_U5/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product is absorbed into DSP mul_31s_31s_31_2_1_U5/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg.
@@ -717,20 +716,20 @@ DSP Report: register mul_31s_31s_31_2_1_U5/fcc_combined_mul_31s_31s_31_2_1_Multi
 DSP Report: operator mul_31s_31s_31_2_1_U5/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product is absorbed into DSP mul_31s_31s_31_2_1_U5/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product.
 DSP Report: operator mul_31s_31s_31_2_1_U5/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product is absorbed into DSP mul_31s_31s_31_2_1_U5/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product.
 DSP Report: Generating DSP mul_31s_31s_31_2_1_U5/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg, operation Mode is: (PCIN>>17)+A2*B2.
-DSP Report: register trunc_ln46_reg_1551_reg is absorbed into DSP mul_31s_31s_31_2_1_U5/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg.
+DSP Report: register trunc_ln46_reg_1547_reg is absorbed into DSP mul_31s_31s_31_2_1_U5/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg.
 DSP Report: register mul_31s_31s_31_2_1_U5/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg is absorbed into DSP mul_31s_31s_31_2_1_U5/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg.
 DSP Report: register mul_31s_31s_31_2_1_U5/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg is absorbed into DSP mul_31s_31s_31_2_1_U5/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg.
 DSP Report: operator mul_31s_31s_31_2_1_U5/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product is absorbed into DSP mul_31s_31s_31_2_1_U5/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg.
 DSP Report: operator mul_31s_31s_31_2_1_U5/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product is absorbed into DSP mul_31s_31s_31_2_1_U5/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg.
 DSP Report: Generating DSP mul_31s_31s_31_2_1_U8/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product, operation Mode is: A''*B2.
-DSP Report: register i_1_reg_578_reg is absorbed into DSP mul_31s_31s_31_2_1_U8/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product.
+DSP Report: register i_1_reg_579_reg is absorbed into DSP mul_31s_31s_31_2_1_U8/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product.
 DSP Report: register mul_31s_31s_31_2_1_U8/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product is absorbed into DSP mul_31s_31s_31_2_1_U8/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product.
 DSP Report: register mul_31s_31s_31_2_1_U8/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product is absorbed into DSP mul_31s_31s_31_2_1_U8/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product.
 DSP Report: operator mul_31s_31s_31_2_1_U8/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product is absorbed into DSP mul_31s_31s_31_2_1_U8/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product.
 DSP Report: operator mul_31s_31s_31_2_1_U8/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product is absorbed into DSP mul_31s_31s_31_2_1_U8/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product.
 DSP Report: Generating DSP mul_31s_31s_31_2_1_U8/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg, operation Mode is: (PCIN>>17)+A2*B2.
-DSP Report: register trunc_ln46_reg_1551_reg is absorbed into DSP mul_31s_31s_31_2_1_U8/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg.
-DSP Report: register i_1_reg_578_reg is absorbed into DSP mul_31s_31s_31_2_1_U8/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg.
+DSP Report: register trunc_ln46_reg_1547_reg is absorbed into DSP mul_31s_31s_31_2_1_U8/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg.
+DSP Report: register i_1_reg_579_reg is absorbed into DSP mul_31s_31s_31_2_1_U8/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg.
 DSP Report: register mul_31s_31s_31_2_1_U8/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg is absorbed into DSP mul_31s_31s_31_2_1_U8/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg.
 DSP Report: operator mul_31s_31s_31_2_1_U8/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product is absorbed into DSP mul_31s_31s_31_2_1_U8/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg.
 DSP Report: operator mul_31s_31s_31_2_1_U8/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product is absorbed into DSP mul_31s_31s_31_2_1_U8/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg.
@@ -741,13 +740,13 @@ DSP Report: register mul_31s_31s_31_2_1_U8/fcc_combined_mul_31s_31s_31_2_1_Multi
 DSP Report: operator mul_31s_31s_31_2_1_U8/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product is absorbed into DSP mul_31s_31s_31_2_1_U8/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product.
 DSP Report: operator mul_31s_31s_31_2_1_U8/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product is absorbed into DSP mul_31s_31s_31_2_1_U8/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product.
 DSP Report: Generating DSP mul_31s_31s_31_2_1_U8/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg, operation Mode is: (PCIN>>17)+A2*B2.
-DSP Report: register trunc_ln46_reg_1551_reg is absorbed into DSP mul_31s_31s_31_2_1_U8/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg.
+DSP Report: register trunc_ln46_reg_1547_reg is absorbed into DSP mul_31s_31s_31_2_1_U8/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg.
 DSP Report: register mul_31s_31s_31_2_1_U8/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg is absorbed into DSP mul_31s_31s_31_2_1_U8/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg.
 DSP Report: register mul_31s_31s_31_2_1_U8/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg is absorbed into DSP mul_31s_31s_31_2_1_U8/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg.
 DSP Report: operator mul_31s_31s_31_2_1_U8/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product is absorbed into DSP mul_31s_31s_31_2_1_U8/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg.
 DSP Report: operator mul_31s_31s_31_2_1_U8/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product is absorbed into DSP mul_31s_31s_31_2_1_U8/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/p_reg.
 DSP Report: Generating DSP mul_mul_6ns_11ns_16_4_1_U9/fcc_combined_mul_mul_6ns_11ns_16_4_1_DSP48_0_U/p_reg_reg, operation Mode is: ((A:0x3e8)'*B'')'.
-DSP Report: register trunc_ln85_reg_1671_reg is absorbed into DSP mul_mul_6ns_11ns_16_4_1_U9/fcc_combined_mul_mul_6ns_11ns_16_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register trunc_ln85_reg_1667_reg is absorbed into DSP mul_mul_6ns_11ns_16_4_1_U9/fcc_combined_mul_mul_6ns_11ns_16_4_1_DSP48_0_U/p_reg_reg.
 DSP Report: register mul_mul_6ns_11ns_16_4_1_U9/fcc_combined_mul_mul_6ns_11ns_16_4_1_DSP48_0_U/a_reg_reg is absorbed into DSP mul_mul_6ns_11ns_16_4_1_U9/fcc_combined_mul_mul_6ns_11ns_16_4_1_DSP48_0_U/p_reg_reg.
 DSP Report: register mul_mul_6ns_11ns_16_4_1_U9/fcc_combined_mul_mul_6ns_11ns_16_4_1_DSP48_0_U/b_reg_reg is absorbed into DSP mul_mul_6ns_11ns_16_4_1_U9/fcc_combined_mul_mul_6ns_11ns_16_4_1_DSP48_0_U/p_reg_reg.
 DSP Report: register mul_mul_6ns_11ns_16_4_1_U9/fcc_combined_mul_mul_6ns_11ns_16_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mul_mul_6ns_11ns_16_4_1_U9/fcc_combined_mul_mul_6ns_11ns_16_4_1_DSP48_0_U/p_reg_reg.
@@ -756,7 +755,7 @@ DSP Report: operator mul_mul_6ns_11ns_16_4_1_U9/fcc_combined_mul_mul_6ns_11ns_16
 DSP Report: Generating DSP mac_muladd_10ns_11ns_16ns_16_4_1_U10/fcc_combined_mac_muladd_10ns_11ns_16ns_16_4_1_DSP48_1_U/p_reg_reg, operation Mode is: (C'+(A2*(B:0x3e8)')')'.
 DSP Report: register mac_muladd_10ns_11ns_16ns_16_4_1_U10/fcc_combined_mac_muladd_10ns_11ns_16ns_16_4_1_DSP48_1_U/b_reg_reg is absorbed into DSP mac_muladd_10ns_11ns_16ns_16_4_1_U10/fcc_combined_mac_muladd_10ns_11ns_16ns_16_4_1_DSP48_1_U/p_reg_reg.
 DSP Report: register mac_muladd_10ns_11ns_16ns_16_4_1_U10/fcc_combined_mac_muladd_10ns_11ns_16ns_16_4_1_DSP48_1_U/p_reg_reg is absorbed into DSP mac_muladd_10ns_11ns_16ns_16_4_1_U10/fcc_combined_mac_muladd_10ns_11ns_16ns_16_4_1_DSP48_1_U/p_reg_reg.
-DSP Report: register trunc_ln1118_reg_1751_reg is absorbed into DSP mac_muladd_10ns_11ns_16ns_16_4_1_U10/fcc_combined_mac_muladd_10ns_11ns_16ns_16_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: register trunc_ln1118_reg_1741_reg is absorbed into DSP mac_muladd_10ns_11ns_16ns_16_4_1_U10/fcc_combined_mac_muladd_10ns_11ns_16ns_16_4_1_DSP48_1_U/p_reg_reg.
 DSP Report: register mac_muladd_10ns_11ns_16ns_16_4_1_U10/fcc_combined_mac_muladd_10ns_11ns_16ns_16_4_1_DSP48_1_U/p_reg_reg is absorbed into DSP mac_muladd_10ns_11ns_16ns_16_4_1_U10/fcc_combined_mac_muladd_10ns_11ns_16ns_16_4_1_DSP48_1_U/p_reg_reg.
 DSP Report: register mac_muladd_10ns_11ns_16ns_16_4_1_U10/fcc_combined_mac_muladd_10ns_11ns_16ns_16_4_1_DSP48_1_U/m_reg_reg is absorbed into DSP mac_muladd_10ns_11ns_16ns_16_4_1_U10/fcc_combined_mac_muladd_10ns_11ns_16ns_16_4_1_DSP48_1_U/p_reg_reg.
 DSP Report: operator mac_muladd_10ns_11ns_16ns_16_4_1_U10/fcc_combined_mac_muladd_10ns_11ns_16ns_16_4_1_DSP48_1_U/p is absorbed into DSP mac_muladd_10ns_11ns_16ns_16_4_1_U10/fcc_combined_mac_muladd_10ns_11ns_16ns_16_4_1_DSP48_1_U/p_reg_reg.
@@ -767,17 +766,17 @@ DSP Report: register mul_mul_6ns_11ns_16_4_1_U13/fcc_combined_mul_mul_6ns_11ns_1
 DSP Report: register mul_mul_6ns_11ns_16_4_1_U13/fcc_combined_mul_mul_6ns_11ns_16_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mul_mul_6ns_11ns_16_4_1_U13/fcc_combined_mul_mul_6ns_11ns_16_4_1_DSP48_0_U/p_reg_reg.
 DSP Report: register mul_mul_6ns_11ns_16_4_1_U13/fcc_combined_mul_mul_6ns_11ns_16_4_1_DSP48_0_U/p_reg_tmp_reg is absorbed into DSP mul_mul_6ns_11ns_16_4_1_U13/fcc_combined_mul_mul_6ns_11ns_16_4_1_DSP48_0_U/p_reg_reg.
 DSP Report: operator mul_mul_6ns_11ns_16_4_1_U13/fcc_combined_mul_mul_6ns_11ns_16_4_1_DSP48_0_U/p_reg_tmp0 is absorbed into DSP mul_mul_6ns_11ns_16_4_1_U13/fcc_combined_mul_mul_6ns_11ns_16_4_1_DSP48_0_U/p_reg_reg.
-DSP Report: Generating DSP mac_muladd_16s_16s_23ns_23_4_1_U11/fcc_combined_mac_muladd_16s_16s_23ns_23_4_1_DSP48_2_U/p_reg_reg, operation Mode is: (C'+(A2*B'')')'.
-DSP Report: register mac_muladd_16s_16s_23ns_23_4_1_U11/fcc_combined_mac_muladd_16s_16s_23ns_23_4_1_DSP48_2_U/a_reg_reg is absorbed into DSP mac_muladd_16s_16s_23ns_23_4_1_U11/fcc_combined_mac_muladd_16s_16s_23ns_23_4_1_DSP48_2_U/p_reg_reg.
-DSP Report: register mac_muladd_16s_16s_23ns_23_4_1_U11/fcc_combined_mac_muladd_16s_16s_23ns_23_4_1_DSP48_2_U/p_reg_reg is absorbed into DSP mac_muladd_16s_16s_23ns_23_4_1_U11/fcc_combined_mac_muladd_16s_16s_23ns_23_4_1_DSP48_2_U/p_reg_reg.
-DSP Report: register mac_muladd_16s_16s_23ns_23_4_1_U11/fcc_combined_mac_muladd_16s_16s_23ns_23_4_1_DSP48_2_U/p_reg_reg is absorbed into DSP mac_muladd_16s_16s_23ns_23_4_1_U11/fcc_combined_mac_muladd_16s_16s_23ns_23_4_1_DSP48_2_U/p_reg_reg.
-DSP Report: register mac_muladd_16s_16s_23ns_23_4_1_U11/fcc_combined_mac_muladd_16s_16s_23ns_23_4_1_DSP48_2_U/p_reg_reg is absorbed into DSP mac_muladd_16s_16s_23ns_23_4_1_U11/fcc_combined_mac_muladd_16s_16s_23ns_23_4_1_DSP48_2_U/p_reg_reg.
-DSP Report: register mac_muladd_16s_16s_23ns_23_4_1_U11/fcc_combined_mac_muladd_16s_16s_23ns_23_4_1_DSP48_2_U/p_reg_reg is absorbed into DSP mac_muladd_16s_16s_23ns_23_4_1_U11/fcc_combined_mac_muladd_16s_16s_23ns_23_4_1_DSP48_2_U/p_reg_reg.
-DSP Report: register mac_muladd_16s_16s_23ns_23_4_1_U11/fcc_combined_mac_muladd_16s_16s_23ns_23_4_1_DSP48_2_U/m_reg_reg is absorbed into DSP mac_muladd_16s_16s_23ns_23_4_1_U11/fcc_combined_mac_muladd_16s_16s_23ns_23_4_1_DSP48_2_U/p_reg_reg.
-DSP Report: operator mac_muladd_16s_16s_23ns_23_4_1_U11/fcc_combined_mac_muladd_16s_16s_23ns_23_4_1_DSP48_2_U/p is absorbed into DSP mac_muladd_16s_16s_23ns_23_4_1_U11/fcc_combined_mac_muladd_16s_16s_23ns_23_4_1_DSP48_2_U/p_reg_reg.
-DSP Report: operator mac_muladd_16s_16s_23ns_23_4_1_U11/fcc_combined_mac_muladd_16s_16s_23ns_23_4_1_DSP48_2_U/m is absorbed into DSP mac_muladd_16s_16s_23ns_23_4_1_U11/fcc_combined_mac_muladd_16s_16s_23ns_23_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: Generating DSP mac_muladd_16s_16s_29ns_29_4_1_U11/fcc_combined_mac_muladd_16s_16s_29ns_29_4_1_DSP48_2_U/p_reg_reg, operation Mode is: (C'+(A''*B2)')'.
+DSP Report: register mac_muladd_16s_16s_29ns_29_4_1_U11/fcc_combined_mac_muladd_16s_16s_29ns_29_4_1_DSP48_2_U/b_reg_reg is absorbed into DSP mac_muladd_16s_16s_29ns_29_4_1_U11/fcc_combined_mac_muladd_16s_16s_29ns_29_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: register mac_muladd_16s_16s_29ns_29_4_1_U11/fcc_combined_mac_muladd_16s_16s_29ns_29_4_1_DSP48_2_U/p_reg_reg is absorbed into DSP mac_muladd_16s_16s_29ns_29_4_1_U11/fcc_combined_mac_muladd_16s_16s_29ns_29_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: register mac_muladd_16s_16s_29ns_29_4_1_U11/fcc_combined_mac_muladd_16s_16s_29ns_29_4_1_DSP48_2_U/p_reg_reg is absorbed into DSP mac_muladd_16s_16s_29ns_29_4_1_U11/fcc_combined_mac_muladd_16s_16s_29ns_29_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: register mac_muladd_16s_16s_29ns_29_4_1_U11/fcc_combined_mac_muladd_16s_16s_29ns_29_4_1_DSP48_2_U/p_reg_reg is absorbed into DSP mac_muladd_16s_16s_29ns_29_4_1_U11/fcc_combined_mac_muladd_16s_16s_29ns_29_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: register mac_muladd_16s_16s_29ns_29_4_1_U11/fcc_combined_mac_muladd_16s_16s_29ns_29_4_1_DSP48_2_U/p_reg_reg is absorbed into DSP mac_muladd_16s_16s_29ns_29_4_1_U11/fcc_combined_mac_muladd_16s_16s_29ns_29_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: register mac_muladd_16s_16s_29ns_29_4_1_U11/fcc_combined_mac_muladd_16s_16s_29ns_29_4_1_DSP48_2_U/m_reg_reg is absorbed into DSP mac_muladd_16s_16s_29ns_29_4_1_U11/fcc_combined_mac_muladd_16s_16s_29ns_29_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: operator mac_muladd_16s_16s_29ns_29_4_1_U11/fcc_combined_mac_muladd_16s_16s_29ns_29_4_1_DSP48_2_U/p is absorbed into DSP mac_muladd_16s_16s_29ns_29_4_1_U11/fcc_combined_mac_muladd_16s_16s_29ns_29_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: operator mac_muladd_16s_16s_29ns_29_4_1_U11/fcc_combined_mac_muladd_16s_16s_29ns_29_4_1_DSP48_2_U/m is absorbed into DSP mac_muladd_16s_16s_29ns_29_4_1_U11/fcc_combined_mac_muladd_16s_16s_29ns_29_4_1_DSP48_2_U/p_reg_reg.
 DSP Report: Generating DSP mul_mul_6ns_11ns_16_4_1_U14/fcc_combined_mul_mul_6ns_11ns_16_4_1_DSP48_0_U/p_reg_reg, operation Mode is: ((A:0x3e8)'*B'')'.
-DSP Report: register trunc_ln64_reg_1904_reg is absorbed into DSP mul_mul_6ns_11ns_16_4_1_U14/fcc_combined_mul_mul_6ns_11ns_16_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register trunc_ln64_reg_1908_reg is absorbed into DSP mul_mul_6ns_11ns_16_4_1_U14/fcc_combined_mul_mul_6ns_11ns_16_4_1_DSP48_0_U/p_reg_reg.
 DSP Report: register mul_mul_6ns_11ns_16_4_1_U14/fcc_combined_mul_mul_6ns_11ns_16_4_1_DSP48_0_U/a_reg_reg is absorbed into DSP mul_mul_6ns_11ns_16_4_1_U14/fcc_combined_mul_mul_6ns_11ns_16_4_1_DSP48_0_U/p_reg_reg.
 DSP Report: register mul_mul_6ns_11ns_16_4_1_U9/fcc_combined_mul_mul_6ns_11ns_16_4_1_DSP48_0_U/b_reg_reg is absorbed into DSP mul_mul_6ns_11ns_16_4_1_U14/fcc_combined_mul_mul_6ns_11ns_16_4_1_DSP48_0_U/p_reg_reg.
 DSP Report: register mul_mul_6ns_11ns_16_4_1_U14/fcc_combined_mul_mul_6ns_11ns_16_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mul_mul_6ns_11ns_16_4_1_U14/fcc_combined_mul_mul_6ns_11ns_16_4_1_DSP48_0_U/p_reg_reg.
@@ -790,7 +789,7 @@ DSP Report: register mul_mul_6ns_11ns_16_4_1_U15/fcc_combined_mul_mul_6ns_11ns_1
 DSP Report: register mul_mul_6ns_11ns_16_4_1_U15/fcc_combined_mul_mul_6ns_11ns_16_4_1_DSP48_0_U/p_reg_tmp_reg is absorbed into DSP mul_mul_6ns_11ns_16_4_1_U15/fcc_combined_mul_mul_6ns_11ns_16_4_1_DSP48_0_U/p_reg_reg.
 DSP Report: operator mul_mul_6ns_11ns_16_4_1_U15/fcc_combined_mul_mul_6ns_11ns_16_4_1_DSP48_0_U/p_reg_tmp0 is absorbed into DSP mul_mul_6ns_11ns_16_4_1_U15/fcc_combined_mul_mul_6ns_11ns_16_4_1_DSP48_0_U/p_reg_reg.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:40 . Memory (MB): peak = 2471.715 ; gain = 122.648 ; free physical = 4082 ; free virtual = 14957
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 2470.680 ; gain = 96.711 ; free physical = 6818 ; free virtual = 18378
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -813,7 +812,7 @@ DSP: Preliminary Mapping	Report (see note below)
 +------------------------------------------------------+------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 |Module Name                                           | DSP Mapping            | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
 +------------------------------------------------------+------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|fcc_combined                                          | (A2*B'')'              | 16     | 16     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fcc_combined_mul_mul_16s_16s_29_4_1_DSP48_3           | (A2*B2)'               | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 1    | 1    | 
 |fcc_combined                                          | A*(B:0x147b)           | 15     | 14     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 |fcc_combined                                          | (PCIN>>17)+A*B         | 17     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
 |fcc_combined                                          | A2*(B:0x147b)          | 18     | 14     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
@@ -822,7 +821,7 @@ DSP: Preliminary Mapping	Report (see note below)
 |fcc_combined                                          | (PCIN>>17)+A2*B2       | 16     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
 |fcc_combined                                          | A2*B''                 | 18     | 18     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 0    | 0    | 
 |fcc_combined                                          | (PCIN>>17)+A2*B2       | 18     | 16     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
-|fcc_combined_mac_muladd_16s_16s_23ns_23_4_1_DSP48_2   | (C+(A2*B2)')'          | 17     | 17     | 23     | -      | 23     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|fcc_combined_mac_muladd_16s_16s_29ns_29_4_1_DSP48_2   | (C+(A2*B2)')'          | 17     | 17     | 29     | -      | 29     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
 |fcc_combined                                          | A2*B''                 | 18     | 14     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 0    | 0    | 
 |fcc_combined                                          | (PCIN>>17)+A''*B2      | 14     | 14     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 0    | 1    | 
 |fcc_combined                                          | A''*B2                 | 18     | 18     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 0    | 0    | 
@@ -842,7 +841,7 @@ DSP: Preliminary Mapping	Report (see note below)
 |fcc_combined                                          | ((A:0x3e8)'*B'')'      | 6      | 11     | -      | -      | 16     | 2    | 1    | -    | -    | -     | 1    | 1    | 
 |fcc_combined_mac_muladd_10ns_11ns_16ns_16_4_1_DSP48_1 | (C'+(A2*(B:0x3e8)')')' | 16     | 16     | 16     | -      | 16     | 1    | 1    | 1    | -    | -     | 1    | 1    | 
 |fcc_combined_mul_mul_6ns_11ns_16_4_1_DSP48_0          | ((A:0x3e8)'*B2)'       | 6      | 11     | -      | -      | 16     | 1    | 1    | -    | -    | -     | 1    | 1    | 
-|fcc_combined_mac_muladd_16s_16s_23ns_23_4_1_DSP48_2   | (C'+(A2*B'')')'        | 17     | 17     | 23     | -      | 23     | 1    | 2    | 1    | -    | -     | 1    | 1    | 
+|fcc_combined_mac_muladd_16s_16s_29ns_29_4_1_DSP48_2   | (C'+(A''*B2)')'        | 17     | 17     | 29     | -      | 29     | 2    | 1    | 1    | -    | -     | 1    | 1    | 
 |fcc_combined                                          | ((A:0x3e8)'*B'')'      | 6      | 11     | -      | -      | 16     | 2    | 1    | -    | -    | -     | 1    | 1    | 
 |fcc_combined_mul_mul_6ns_11ns_16_4_1_DSP48_0          | ((A:0x3e8)'*B2)'       | 6      | 11     | -      | -      | 16     | 1    | 1    | -    | -    | -     | 1    | 1    | 
 +------------------------------------------------------+------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
@@ -855,13 +854,13 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:43 ; elapsed = 00:00:49 . Memory (MB): peak = 2471.715 ; gain = 122.648 ; free physical = 3383 ; free virtual = 14302
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 2470.680 ; gain = 96.711 ; free physical = 6884 ; free virtual = 18461
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:51 . Memory (MB): peak = 2475.699 ; gain = 126.633 ; free physical = 3860 ; free virtual = 14786
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 2479.664 ; gain = 105.695 ; free physical = 6789 ; free virtual = 18366
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -920,7 +919,7 @@ INFO: [Synth 8-7052] The timing for the instance inst/dwbuf_V_U/fcc_combined_wbu
 INFO: [Synth 8-7052] The timing for the instance inst/dwbuf_V_U/fcc_combined_wbuf_V_ram_U/ram_reg_1_14 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7052] The timing for the instance inst/dwbuf_V_U/fcc_combined_wbuf_V_ram_U/ram_reg_1_15 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:47 ; elapsed = 00:00:54 . Memory (MB): peak = 2503.746 ; gain = 154.680 ; free physical = 3573 ; free virtual = 14495
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 2507.711 ; gain = 133.742 ; free physical = 7455 ; free virtual = 19033
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -938,41 +937,50 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:52 ; elapsed = 00:00:58 . Memory (MB): peak = 2514.652 ; gain = 165.586 ; free physical = 3001 ; free virtual = 13905
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 2517.617 ; gain = 143.648 ; free physical = 7806 ; free virtual = 19381
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:52 ; elapsed = 00:00:58 . Memory (MB): peak = 2514.652 ; gain = 165.586 ; free physical = 2992 ; free virtual = 13896
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 2517.617 ; gain = 143.648 ; free physical = 7807 ; free virtual = 19382
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:52 ; elapsed = 00:00:59 . Memory (MB): peak = 2514.652 ; gain = 165.586 ; free physical = 2934 ; free virtual = 13837
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 2517.617 ; gain = 143.648 ; free physical = 7812 ; free virtual = 19378
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:52 ; elapsed = 00:00:59 . Memory (MB): peak = 2514.652 ; gain = 165.586 ; free physical = 2931 ; free virtual = 13834
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 2517.617 ; gain = 143.648 ; free physical = 7812 ; free virtual = 19378
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:52 ; elapsed = 00:00:59 . Memory (MB): peak = 2514.652 ; gain = 165.586 ; free physical = 3646 ; free virtual = 14549
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 2517.617 ; gain = 143.648 ; free physical = 7812 ; free virtual = 19378
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:52 ; elapsed = 00:00:59 . Memory (MB): peak = 2514.652 ; gain = 165.586 ; free physical = 3600 ; free virtual = 14498
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 2517.617 ; gain = 143.648 ; free physical = 7812 ; free virtual = 19378
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++-------------+--------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name  | RTL Name                                   | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++-------------+--------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|fcc_combined | zext_ln1118_reg_1746_pp2_iter3_reg_reg[15] | 3      | 16    | NO           | NO                 | YES               | 16     | 0       | 
+|fcc_combined | icmp_ln73_reg_1985_pp6_iter4_reg_reg[0]    | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++-------------+--------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
 
 Dynamic Shift Register Report:
 +------------+-------------+--------+------------+--------+---------+--------+--------+--------+
@@ -1003,43 +1011,43 @@ Report Cell Usage:
 +------+---------+------+
 |1     |CARRY4   |   433|
 |2     |DSP48E1  |    28|
-|14    |LUT1     |   155|
-|15    |LUT2     |   823|
-|16    |LUT3     |   708|
-|17    |LUT4     |   514|
-|18    |LUT5     |   144|
-|19    |LUT6     |   583|
-|20    |MUXF7    |    28|
-|21    |RAMB18E1 |     3|
-|24    |RAMB36E1 |    64|
-|26    |SRL16E   |   140|
-|27    |FDRE     |  3710|
-|28    |FDSE     |     5|
+|15    |LUT1     |   156|
+|16    |LUT2     |   777|
+|17    |LUT3     |   738|
+|18    |LUT4     |   492|
+|19    |LUT5     |   143|
+|20    |LUT6     |   602|
+|21    |MUXF7    |    28|
+|22    |RAMB18E1 |     3|
+|25    |RAMB36E1 |    64|
+|27    |SRL16E   |   157|
+|28    |FDRE     |  3710|
+|29    |FDSE     |     5|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:52 ; elapsed = 00:00:59 . Memory (MB): peak = 2514.652 ; gain = 165.586 ; free physical = 3591 ; free virtual = 14489
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 2517.617 ; gain = 143.648 ; free physical = 7812 ; free virtual = 19378
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:50 ; elapsed = 00:00:56 . Memory (MB): peak = 2514.652 ; gain = 42.938 ; free physical = 3626 ; free virtual = 14524
-Synthesis Optimization Complete : Time (s): cpu = 00:00:53 ; elapsed = 00:00:59 . Memory (MB): peak = 2514.660 ; gain = 165.586 ; free physical = 3626 ; free virtual = 14524
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 2517.617 ; gain = 46.938 ; free physical = 7877 ; free virtual = 19443
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 2517.625 ; gain = 143.648 ; free physical = 7877 ; free virtual = 19443
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.09 . Memory (MB): peak = 2514.660 ; gain = 0.000 ; free physical = 6347 ; free virtual = 17298
+Netlist sorting complete. Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.09 . Memory (MB): peak = 2517.625 ; gain = 0.000 ; free physical = 7944 ; free virtual = 19518
 INFO: [Netlist 29-17] Analyzing 556 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2546.668 ; gain = 0.000 ; free physical = 6337 ; free virtual = 17289
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2549.633 ; gain = 0.000 ; free physical = 7884 ; free virtual = 19459
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 143 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:04 ; elapsed = 00:01:06 . Memory (MB): peak = 2546.668 ; gain = 197.672 ; free physical = 6519 ; free virtual = 17452
+synth_design: Time (s): cpu = 00:00:46 ; elapsed = 00:00:43 . Memory (MB): peak = 2549.633 ; gain = 175.734 ; free physical = 8094 ; free virtual = 19669
 INFO: [Common 17-1381] The checkpoint '/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/design_1_fcc_combined_0_0_synth_1/design_1_fcc_combined_0_0.dcp' has been generated.
 WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_fcc_combined_0_0, cache-ID = 70aec76f1a13f5d9
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_fcc_combined_0_0, cache-ID = 20605d946f2cfb93
 INFO: [Coretcl 2-1174] Renamed 56 cell refs.
 INFO: [Common 17-1381] The checkpoint '/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/design_1_fcc_combined_0_0_synth_1/design_1_fcc_combined_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_fcc_combined_0_0_utilization_synth.rpt -pb design_1_fcc_combined_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon May 16 03:33:06 2022...
+INFO: [Common 17-206] Exiting Vivado at Thu May 19 16:25:16 2022...

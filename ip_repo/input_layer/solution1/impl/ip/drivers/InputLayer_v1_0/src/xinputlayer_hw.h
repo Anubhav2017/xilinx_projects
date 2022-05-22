@@ -2,7 +2,7 @@
 // Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // ==============================================================
-// CTRL
+// control
 // 0x00 : Control signals
 //        bit 0  - ap_start (Read/Write/COH)
 //        bit 1  - ap_done (Read/COR)
@@ -36,16 +36,16 @@
 // 0x2c : reserved
 // (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
-#define XINPUTLAYER_CTRL_ADDR_AP_CTRL        0x00
-#define XINPUTLAYER_CTRL_ADDR_GIE            0x04
-#define XINPUTLAYER_CTRL_ADDR_IER            0x08
-#define XINPUTLAYER_CTRL_ADDR_ISR            0x0c
-#define XINPUTLAYER_CTRL_ADDR_X_DATA         0x10
-#define XINPUTLAYER_CTRL_BITS_X_DATA         32
-#define XINPUTLAYER_CTRL_ADDR_DX_DATA        0x18
-#define XINPUTLAYER_CTRL_BITS_DX_DATA        32
-#define XINPUTLAYER_CTRL_ADDR_DIM_DATA       0x20
-#define XINPUTLAYER_CTRL_BITS_DIM_DATA       32
-#define XINPUTLAYER_CTRL_ADDR_DDRTOBRAM_DATA 0x28
-#define XINPUTLAYER_CTRL_BITS_DDRTOBRAM_DATA 1
+#define XINPUTLAYER_CONTROL_ADDR_AP_CTRL        0x00
+#define XINPUTLAYER_CONTROL_ADDR_GIE            0x04
+#define XINPUTLAYER_CONTROL_ADDR_IER            0x08
+#define XINPUTLAYER_CONTROL_ADDR_ISR            0x0c
+#define XINPUTLAYER_CONTROL_ADDR_X_DATA         0x10
+#define XINPUTLAYER_CONTROL_BITS_X_DATA         32
+#define XINPUTLAYER_CONTROL_ADDR_DX_DATA        0x18
+#define XINPUTLAYER_CONTROL_BITS_DX_DATA        32
+#define XINPUTLAYER_CONTROL_ADDR_DIM_DATA       0x20
+#define XINPUTLAYER_CONTROL_BITS_DIM_DATA       32
+#define XINPUTLAYER_CONTROL_ADDR_DDRTOBRAM_DATA 0x28
+#define XINPUTLAYER_CONTROL_BITS_DDRTOBRAM_DATA 1
 

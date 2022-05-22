@@ -1,17 +1,17 @@
 # This script segment is generated automatically by AutoPilot
 
 set id 21
-set name loss_derivative_sdiv_23ns_16s_16_27_1
+set name loss_derivative_sdiv_29ns_16s_16_33_1
 set corename simcore_sdiv
 set op sdiv
-set stage_num 27
+set stage_num 33
 set max_latency -1
 set registered_input 1
 set clk_width 1
 set clk_signed 0
 set reset_width 1
 set reset_signed 0
-set in0_width 23
+set in0_width 29
 set in0_signed 0
 set in1_width 16
 set in1_signed 1
@@ -85,178 +85,8 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_div, check your pla
 }
 
 
-set id 22
-set name loss_derivative_sdiv_17s_32ns_16_21_1
-set corename simcore_sdiv
-set op sdiv
-set stage_num 21
-set max_latency -1
-set registered_input 1
-set clk_width 1
-set clk_signed 0
-set reset_width 1
-set reset_signed 0
-set in0_width 17
-set in0_signed 1
-set in1_width 32
-set in1_signed 0
-set ce_width 1
-set ce_signed 0
-set out_width 16
-if {${::AESL::PGuard_simmodel_gen}} {
-if {[info proc ap_gen_simcore_sdiv] == "ap_gen_simcore_sdiv"} {
-eval "ap_gen_simcore_sdiv { \
-    id ${id} \
-    name ${name} \
-    corename ${corename} \
-    op ${op} \
-    reset_level 1 \
-    sync_rst true \
-    stage_num ${stage_num} \
-    max_latency ${max_latency} \
-    registered_input ${registered_input} \
-    clk_width ${clk_width} \
-    clk_signed ${clk_signed} \
-    reset_width ${reset_width} \
-    reset_signed ${reset_signed} \
-    in0_width ${in0_width} \
-    in0_signed ${in0_signed} \
-    in1_width ${in1_width} \
-    in1_signed ${in1_signed} \
-    ce_width ${ce_width} \
-    ce_signed ${ce_signed} \
-    out_width ${out_width} \
-}"
-} else {
-puts "@W \[IMPL-100\] Cannot find ap_gen_simcore_sdiv, check your AutoPilot builtin lib"
-}
-}
-
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler ${name}
-}
-
-
-set op sdiv
-set corename Divider
-if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
-if {[info proc ::AESL_LIB_VIRTEX::xil_gen_div] == "::AESL_LIB_VIRTEX::xil_gen_div"} {
-eval "::AESL_LIB_VIRTEX::xil_gen_div { \
-    id ${id} \
-    name ${name} \
-    corename ${corename} \
-    op ${op} \
-    reset_level 1 \
-    sync_rst true \
-    stage_num ${stage_num} \
-    max_latency ${max_latency} \
-    registered_input ${registered_input} \
-    clk_width ${clk_width} \
-    clk_signed ${clk_signed} \
-    reset_width ${reset_width} \
-    reset_signed ${reset_signed} \
-    in0_width ${in0_width} \
-    in0_signed ${in0_signed} \
-    in1_width ${in1_width} \
-    in1_signed ${in1_signed} \
-    ce_width ${ce_width} \
-    ce_signed ${ce_signed} \
-    out_width ${out_width} \
-}"
-} else {
-puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_div, check your platform lib"
-}
-}
-
-
-set id 23
-set name loss_derivative_sdiv_18s_32ns_16_22_1
-set corename simcore_sdiv
-set op sdiv
-set stage_num 22
-set max_latency -1
-set registered_input 1
-set clk_width 1
-set clk_signed 0
-set reset_width 1
-set reset_signed 0
-set in0_width 18
-set in0_signed 1
-set in1_width 32
-set in1_signed 0
-set ce_width 1
-set ce_signed 0
-set out_width 16
-if {${::AESL::PGuard_simmodel_gen}} {
-if {[info proc ap_gen_simcore_sdiv] == "ap_gen_simcore_sdiv"} {
-eval "ap_gen_simcore_sdiv { \
-    id ${id} \
-    name ${name} \
-    corename ${corename} \
-    op ${op} \
-    reset_level 1 \
-    sync_rst true \
-    stage_num ${stage_num} \
-    max_latency ${max_latency} \
-    registered_input ${registered_input} \
-    clk_width ${clk_width} \
-    clk_signed ${clk_signed} \
-    reset_width ${reset_width} \
-    reset_signed ${reset_signed} \
-    in0_width ${in0_width} \
-    in0_signed ${in0_signed} \
-    in1_width ${in1_width} \
-    in1_signed ${in1_signed} \
-    ce_width ${ce_width} \
-    ce_signed ${ce_signed} \
-    out_width ${out_width} \
-}"
-} else {
-puts "@W \[IMPL-100\] Cannot find ap_gen_simcore_sdiv, check your AutoPilot builtin lib"
-}
-}
-
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler ${name}
-}
-
-
-set op sdiv
-set corename Divider
-if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
-if {[info proc ::AESL_LIB_VIRTEX::xil_gen_div] == "::AESL_LIB_VIRTEX::xil_gen_div"} {
-eval "::AESL_LIB_VIRTEX::xil_gen_div { \
-    id ${id} \
-    name ${name} \
-    corename ${corename} \
-    op ${op} \
-    reset_level 1 \
-    sync_rst true \
-    stage_num ${stage_num} \
-    max_latency ${max_latency} \
-    registered_input ${registered_input} \
-    clk_width ${clk_width} \
-    clk_signed ${clk_signed} \
-    reset_width ${reset_width} \
-    reset_signed ${reset_signed} \
-    in0_width ${in0_width} \
-    in0_signed ${in0_signed} \
-    in1_width ${in1_width} \
-    in1_signed ${in1_signed} \
-    ce_width ${ce_width} \
-    ce_signed ${ce_signed} \
-    out_width ${out_width} \
-}"
-} else {
-puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_div, check your platform lib"
-}
-}
-
-
 # Memory (RAM/ROM)  definition:
-set ID 28
+set ID 23
 set hasByteEnable 0
 set MemName loss_derivative_log_probs_V
 set CoreName ap_simcore_mem
@@ -348,7 +178,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 }
 
 set axilite_register_dict [dict create]
-set port_CTRL {
+set port_control {
 ap_start { }
 ap_done { }
 ap_ready { }
@@ -361,7 +191,7 @@ ap_return {
 	offset 16
 	offset_end 0
 }
-x { 
+x_ddr { 
 	dir I
 	width 32
 	depth 1
@@ -369,7 +199,7 @@ x {
 	offset 24
 	offset_end 31
 }
-dx { 
+dx_ddr { 
 	dir I
 	width 32
 	depth 1
@@ -385,7 +215,7 @@ y {
 	offset 40
 	offset_end 47
 }
-x_size { 
+dim { 
 	dir I
 	width 32
 	depth 1
@@ -393,44 +223,52 @@ x_size {
 	offset 48
 	offset_end 55
 }
-N { 
+writetoddr { 
 	dir I
-	width 32
+	width 1
 	depth 1
 	mode ap_none
 	offset 56
 	offset_end 63
 }
+ddrtobram { 
+	dir I
+	width 1
+	depth 1
+	mode ap_none
+	offset 64
+	offset_end 71
 }
-dict set axilite_register_dict CTRL $port_CTRL
+}
+dict set axilite_register_dict control $port_control
 
 
 # Native S_AXILite:
 if {${::AESL::PGuard_simmodel_gen}} {
 	if {[info proc ::AESL_LIB_XILADAPTER::s_axilite_gen] == "::AESL_LIB_XILADAPTER::s_axilite_gen"} {
 		eval "::AESL_LIB_XILADAPTER::s_axilite_gen { \
-			id 29 \
-			corename loss_derivative_CTRL_axilite \
-			name loss_derivative_CTRL_s_axi \
-			ports {$port_CTRL} \
+			id 24 \
+			corename loss_derivative_control_axilite \
+			name loss_derivative_control_s_axi \
+			ports {$port_control} \
 			op interface \
 			is_flushable 0 \ 
 			is_datawidth64 0 \ 
 		} "
 	} else {
-		puts "@W \[IMPL-110\] Cannot find AXI Lite interface model in the library. Ignored generation of AXI Lite  interface for 'CTRL'"
+		puts "@W \[IMPL-110\] Cannot find AXI Lite interface model in the library. Ignored generation of AXI Lite  interface for 'control'"
 	}
 }
 
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler loss_derivative_CTRL_s_axi
+	::AP::rtl_comp_handler loss_derivative_control_s_axi
 }
 
 # Native M_AXI:
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::m_axi_gen] == "::AESL_LIB_XILADAPTER::m_axi_gen"} {
 eval "::AESL_LIB_XILADAPTER::m_axi_gen { \
-    id 30 \
+    id 25 \
     corename {m_axi} \
     op interface \
     max_latency -1 \ 

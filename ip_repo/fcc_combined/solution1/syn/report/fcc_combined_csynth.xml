@@ -102,7 +102,7 @@
 <Latency>undef</Latency>
 <AbsoluteTimeLatency>undef</AbsoluteTimeLatency>
 <PipelineII>1</PipelineII>
-<PipelineDepth>5</PipelineDepth>
+<PipelineDepth>6</PipelineDepth>
 </LOOP2>
 </LOOP1>
 <VITIS_LOOP_83_5>
@@ -213,7 +213,7 @@
 <Resources>
 <BRAM_18K>132</BRAM_18K>
 <DSP>8</DSP>
-<FF>4519</FF>
+<FF>4568</FF>
 <LUT>4089</LUT>
 <URAM>0</URAM>
 </Resources>

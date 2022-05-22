@@ -1,0 +1,136 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Thu May 19 16:22:08 2022
+| Host         : anubhav-acer running 64-bit Ubuntu 20.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_fcc_combined_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_fcc_combined_0_0 (xilinx.com:hls:fcc_combined:1.0) from (Rev. 2112498214) to (Rev. 2112512045)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Thu May 19 16:22:08 2022
+| Host         : anubhav-acer running 64-bit Ubuntu 20.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_InputLayer_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_InputLayer_0_0 (xilinx.com:hls:InputLayer:1.0) from (Rev. 2112506770) to (Rev. 2112512043)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'design_1_InputLayer_0_0'.
+
+
+-Upgrade has removed interface 's_axi_CTRL'
+
+-Upgrade has added interface 's_axi_control' (xilinx.com:interface:aximm:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_InputLayer_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 's_axi_CTRL_ARADDR'
+
+-Upgrade has removed port 's_axi_CTRL_ARREADY'
+
+-Upgrade has removed port 's_axi_CTRL_ARVALID'
+
+-Upgrade has removed port 's_axi_CTRL_AWADDR'
+
+-Upgrade has removed port 's_axi_CTRL_AWREADY'
+
+-Upgrade has removed port 's_axi_CTRL_AWVALID'
+
+-Upgrade has removed port 's_axi_CTRL_BREADY'
+
+-Upgrade has removed port 's_axi_CTRL_BRESP'
+
+-Upgrade has removed port 's_axi_CTRL_BVALID'
+
+-Upgrade has removed port 's_axi_CTRL_RDATA'
+
+-Upgrade has removed port 's_axi_CTRL_RREADY'
+
+-Upgrade has removed port 's_axi_CTRL_RRESP'
+
+-Upgrade has removed port 's_axi_CTRL_RVALID'
+
+-Upgrade has removed port 's_axi_CTRL_WDATA'
+
+-Upgrade has removed port 's_axi_CTRL_WREADY'
+
+-Upgrade has removed port 's_axi_CTRL_WSTRB'
+
+-Upgrade has removed port 's_axi_CTRL_WVALID'
+
+-Upgrade has added port 's_axi_control_ARADDR'
+
+-Upgrade has added port 's_axi_control_ARREADY'
+
+-Upgrade has added port 's_axi_control_ARVALID'
+
+-Upgrade has added port 's_axi_control_AWADDR'
+
+-Upgrade has added port 's_axi_control_AWREADY'
+
+-Upgrade has added port 's_axi_control_AWVALID'
+
+-Upgrade has added port 's_axi_control_BREADY'
+
+-Upgrade has added port 's_axi_control_BRESP'
+
+-Upgrade has added port 's_axi_control_BVALID'
+
+-Upgrade has added port 's_axi_control_RDATA'
+
+-Upgrade has added port 's_axi_control_RREADY'
+
+-Upgrade has added port 's_axi_control_RRESP'
+
+-Upgrade has added port 's_axi_control_RVALID'
+
+-Upgrade has added port 's_axi_control_WDATA'
+
+-Upgrade has added port 's_axi_control_WREADY'
+
+-Upgrade has added port 's_axi_control_WSTRB'
+
+-Upgrade has added port 's_axi_control_WVALID'
+
+
+4. Addressing Information
+-------------------------
+
+Detected addressing differences while upgrading 'design_1_InputLayer_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed address block 's_axi_CTRL/Reg'
+
+-Upgrade has added address block 's_axi_control/Reg'
+
+

@@ -8,7 +8,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 }
 
 set axilite_register_dict [dict create]
-set port_CTRL {
+set port_control {
 x { 
 	dir I
 	width 32
@@ -46,7 +46,7 @@ ap_done { }
 ap_ready { }
 ap_idle { }
 }
-dict set axilite_register_dict CTRL $port_CTRL
+dict set axilite_register_dict control $port_control
 
 
 # Native S_AXILite:
@@ -54,20 +54,20 @@ if {${::AESL::PGuard_simmodel_gen}} {
 	if {[info proc ::AESL_LIB_XILADAPTER::s_axilite_gen] == "::AESL_LIB_XILADAPTER::s_axilite_gen"} {
 		eval "::AESL_LIB_XILADAPTER::s_axilite_gen { \
 			id 1 \
-			corename InputLayer_CTRL_axilite \
-			name InputLayer_CTRL_s_axi \
-			ports {$port_CTRL} \
+			corename InputLayer_control_axilite \
+			name InputLayer_control_s_axi \
+			ports {$port_control} \
 			op interface \
 			is_flushable 0 \ 
 			is_datawidth64 0 \ 
 		} "
 	} else {
-		puts "@W \[IMPL-110\] Cannot find AXI Lite interface model in the library. Ignored generation of AXI Lite  interface for 'CTRL'"
+		puts "@W \[IMPL-110\] Cannot find AXI Lite interface model in the library. Ignored generation of AXI Lite  interface for 'control'"
 	}
 }
 
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler InputLayer_CTRL_s_axi
+	::AP::rtl_comp_handler InputLayer_control_s_axi
 }
 
 # Native M_AXI:

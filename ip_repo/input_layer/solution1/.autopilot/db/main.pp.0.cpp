@@ -5992,10 +5992,10 @@ extern "C++" const char *basename (const char *__filename)
 # 499 "/usr/include/string.h" 3 4
 }
 # 3 "input_layer/main.cpp" 2
-typedef ap_fixed<16,9> fixed_t;
+typedef ap_fixed<16,3> fixed_t;
 
 
-__attribute__((sdx_kernel("InputLayer", 0))) void InputLayer(fixed_t* x,fixed_t* dx, fixed_t bram_x[1000], fixed_t bram_dx[1000], int dim, bool ddrtobram){_ssdm_SpecArrayDimSize(bram_x, 1000);_ssdm_SpecArrayDimSize(bram_dx, 1000);
+__attribute__((sdx_kernel("InputLayer", 0))) void InputLayer(fixed_t* x,fixed_t* dx, fixed_t bram_x[1024], fixed_t bram_dx[1024], int dim, bool ddrtobram){_ssdm_SpecArrayDimSize(bram_x, 1024);_ssdm_SpecArrayDimSize(bram_dx, 1024);
 #pragma HLS TOP name=InputLayer
 # 6 "input_layer/main.cpp"
 
@@ -6003,15 +6003,15 @@ __attribute__((sdx_kernel("InputLayer", 0))) void InputLayer(fixed_t* x,fixed_t*
 #pragma HLS INTERFACE m_axi port=x offset=slave bundle=gmem
 #pragma HLS INTERFACE m_axi port=dx offset=slave bundle=gmem
 
-#pragma HLS INTERFACE bram storage_type=ram_1p port=bram_x
-#pragma HLS INTERFACE bram storage_type=ram_1p port=bram_dx
+#pragma HLS INTERFACE bram storage_type=ram_1p latency=2 port=bram_x
+#pragma HLS INTERFACE bram storage_type=ram_1p latency=2 port=bram_dx
 
-#pragma HLS INTERFACE s_axilite port=x bundle=CTRL
-#pragma HLS INTERFACE s_axilite port=dx bundle=CTRL
 
-#pragma HLS INTERFACE s_axilite port=return bundle=CTRL
-#pragma HLS INTERFACE s_axilite port=dim bundle=CTRL
-#pragma HLS INTERFACE s_axilite port=ddrtobram bundle=CTRL
+
+
+#pragma HLS INTERFACE s_axilite port=return
+#pragma HLS INTERFACE s_axilite port=dim
+#pragma HLS INTERFACE s_axilite port=ddrtobram
 
 
  if(ddrtobram){

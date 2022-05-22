@@ -1,2 +1,2 @@
-relu_combined_CTRL_s_axi
+relu_combined_control_s_axi
 relu_combined

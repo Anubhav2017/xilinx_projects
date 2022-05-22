@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'relu_combined'
 ================================================================
-* Date:           Tue May 10 01:28:42 2022
+* Date:           Thu May 19 16:02:38 2022
 
 * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
 * Project:        relu_combined
@@ -20,7 +20,7 @@
     +--------+----------+----------+------------+
     |  Clock |  Target  | Estimated| Uncertainty|
     +--------+----------+----------+------------+
-    |ap_clk  |  10.00 ns|  6.508 ns|     2.70 ns|
+    |ap_clk  |  10.00 ns|  4.936 ns|     2.70 ns|
     +--------+----------+----------+------------+
 
 + Latency: 
@@ -41,8 +41,8 @@
         |                   |  Latency (cycles) | Iteration|  Initiation Interval  |  Trip |          |
         |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count | Pipelined|
         +-------------------+---------+---------+----------+-----------+-----------+-------+----------+
-        |- VITIS_LOOP_18_1  |        2|        ?|         3|          1|          1|  1 ~ ?|       yes|
-        |- VITIS_LOOP_29_2  |        2|        ?|         3|          1|          1|  1 ~ ?|       yes|
+        |- VITIS_LOOP_18_1  |        3|        ?|         4|          1|          1|  1 ~ ?|       yes|
+        |- VITIS_LOOP_29_2  |        6|        ?|         7|          1|          1|  1 ~ ?|       yes|
         +-------------------+---------+---------+----------+-----------+-----------+-------+----------+
 
 
@@ -60,24 +60,24 @@
 |Instance         |        0|    -|      81|    106|    -|
 |Memory           |        -|    -|       -|      -|    -|
 |Multiplexer      |        -|    -|       -|    139|    -|
-|Register         |        -|    -|     192|      -|    -|
+|Register         |        -|    -|     432|    128|    -|
 +-----------------+---------+-----+--------+-------+-----+
-|Total            |        0|    0|     273|    409|    0|
+|Total            |        0|    0|     513|    537|    0|
 +-----------------+---------+-----+--------+-------+-----+
 |Available        |      280|  220|  106400|  53200|    0|
 +-----------------+---------+-----+--------+-------+-----+
-|Utilization (%)  |        0|    0|      ~0|     ~0|    0|
+|Utilization (%)  |        0|    0|      ~0|      1|    0|
 +-----------------+---------+-----+--------+-------+-----+
 
 + Detail: 
     * Instance: 
-    +--------------+------------+---------+----+----+-----+-----+
-    |   Instance   |   Module   | BRAM_18K| DSP| FF | LUT | URAM|
-    +--------------+------------+---------+----+----+-----+-----+
-    |CTRL_s_axi_U  |CTRL_s_axi  |        0|   0|  81|  106|    0|
-    +--------------+------------+---------+----+----+-----+-----+
-    |Total         |            |        0|   0|  81|  106|    0|
-    +--------------+------------+---------+----+----+-----+-----+
+    +-----------------+---------------+---------+----+----+-----+-----+
+    |     Instance    |     Module    | BRAM_18K| DSP| FF | LUT | URAM|
+    +-----------------+---------------+---------+----+----+-----+-----+
+    |control_s_axi_U  |control_s_axi  |        0|   0|  81|  106|    0|
+    +-----------------+---------------+---------+----+----+-----+-----+
+    |Total            |               |        0|   0|  81|  106|    0|
+    +-----------------+---------------+---------+----+----+-----+-----+
 
     * DSP: 
     N/A
@@ -92,13 +92,13 @@
     +-------------------------+----------+----+---+----+------------+------------+
     |      Variable Name      | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
     +-------------------------+----------+----+---+----+------------+------------+
-    |add_ln18_fu_214_p2       |         +|   0|  0|  38|          31|           1|
-    |add_ln29_fu_194_p2       |         +|   0|  0|  38|          31|           1|
-    |cmp171_fu_180_p2         |      icmp|   0|  0|  18|          32|           1|
-    |grp_fu_174_p2            |      icmp|   0|  0|  13|          16|           1|
-    |icmp_ln18_fu_220_p2      |      icmp|   0|  0|  17|          31|          31|
-    |icmp_ln29_fu_200_p2      |      icmp|   0|  0|  17|          31|          31|
-    |select_ln19_fu_238_p3    |    select|   0|  0|  15|           1|          15|
+    |add_ln18_fu_224_p2       |         +|   0|  0|  38|          31|           1|
+    |add_ln29_fu_204_p2       |         +|   0|  0|  38|          31|           1|
+    |cmp171_fu_190_p2         |      icmp|   0|  0|  18|          32|           1|
+    |grp_fu_184_p2            |      icmp|   0|  0|  13|          16|           1|
+    |icmp_ln18_fu_230_p2      |      icmp|   0|  0|  17|          31|          31|
+    |icmp_ln29_fu_210_p2      |      icmp|   0|  0|  17|          31|          31|
+    |select_ln19_fu_248_p3    |    select|   0|  0|  15|           1|          15|
     |ap_enable_pp0            |       xor|   0|  0|   2|           1|           2|
     |ap_enable_pp1            |       xor|   0|  0|   2|           1|           2|
     |ap_enable_reg_pp0_iter1  |       xor|   0|  0|   2|           2|           1|
@@ -113,14 +113,14 @@
     +-------------------------+----+-----------+-----+-----------+
     |ap_NS_fsm                |  25|          5|    1|          5|
     |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
-    |ap_enable_reg_pp0_iter2  |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter6  |   9|          2|    1|          2|
     |ap_enable_reg_pp1_iter1  |   9|          2|    1|          2|
-    |ap_enable_reg_pp1_iter2  |   9|          2|    1|          2|
+    |ap_enable_reg_pp1_iter3  |   9|          2|    1|          2|
     |dx_Addr_A_orig           |  14|          3|   32|         96|
     |dx_Din_A                 |  14|          3|   16|         48|
     |dx_WEN_A                 |   9|          2|    2|          4|
-    |i_1_reg_152              |   9|          2|   31|         62|
-    |i_reg_163                |   9|          2|   31|         62|
+    |i_1_reg_162              |   9|          2|   31|         62|
+    |i_reg_173                |   9|          2|   31|         62|
     |x_Addr_A_orig            |  14|          3|   32|         96|
     |y_WEN_A                  |   9|          2|    2|          4|
     +-------------------------+----+-----------+-----+-----------+
@@ -128,31 +128,37 @@
     +-------------------------+----+-----------+-----+-----------+
 
     * Register: 
-    +-------------------------------------+----+----+-----+-----------+
-    |                 Name                | FF | LUT| Bits| Const Bits|
-    +-------------------------------------+----+----+-----+-----------+
-    |ap_CS_fsm                            |   4|   0|    4|          0|
-    |ap_enable_reg_pp0_iter0              |   1|   0|    1|          0|
-    |ap_enable_reg_pp0_iter1              |   1|   0|    1|          0|
-    |ap_enable_reg_pp0_iter2              |   1|   0|    1|          0|
-    |ap_enable_reg_pp1_iter0              |   1|   0|    1|          0|
-    |ap_enable_reg_pp1_iter1              |   1|   0|    1|          0|
-    |ap_enable_reg_pp1_iter2              |   1|   0|    1|          0|
-    |i_1_reg_152                          |  31|   0|   31|          0|
-    |i_reg_163                            |  31|   0|   31|          0|
-    |icmp_ln1494_1_reg_289                |   1|   0|    1|          0|
-    |icmp_ln18_reg_303                    |   1|   0|    1|          0|
-    |icmp_ln18_reg_303_pp1_iter1_reg      |   1|   0|    1|          0|
-    |select_ln19_reg_317                  |  15|   0|   15|          0|
-    |trunc_ln18_reg_263                   |  31|   0|   31|          0|
-    |trunc_ln29_reg_258                   |  31|   0|   31|          0|
-    |zext_ln1494_1_reg_277                |  10|   0|   32|         22|
-    |zext_ln1494_1_reg_277_pp0_iter1_reg  |  10|   0|   32|         22|
-    |zext_ln1494_reg_307                  |  10|   0|   32|         22|
-    |zext_ln1494_reg_307_pp1_iter1_reg    |  10|   0|   32|         22|
-    +-------------------------------------+----+----+-----+-----------+
-    |Total                                | 192|   0|  280|         88|
-    +-------------------------------------+----+----+-----+-----------+
+    +-------------------------+----+----+-----+-----------+
+    |           Name          | FF | LUT| Bits| Const Bits|
+    +-------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                |   4|   0|    4|          0|
+    |ap_enable_reg_pp0_iter0  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter3  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter4  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter5  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter6  |   1|   0|    1|          0|
+    |ap_enable_reg_pp1_iter0  |   1|   0|    1|          0|
+    |ap_enable_reg_pp1_iter1  |   1|   0|    1|          0|
+    |ap_enable_reg_pp1_iter2  |   1|   0|    1|          0|
+    |ap_enable_reg_pp1_iter3  |   1|   0|    1|          0|
+    |i_1_reg_162              |  31|   0|   31|          0|
+    |i_reg_173                |  31|   0|   31|          0|
+    |icmp_ln1494_1_reg_299    |   1|   0|    1|          0|
+    |icmp_ln18_reg_318        |   1|   0|    1|          0|
+    |select_ln19_reg_332      |  15|   0|   15|          0|
+    |trunc_ln18_reg_273       |  31|   0|   31|          0|
+    |trunc_ln29_reg_268       |  31|   0|   31|          0|
+    |zext_ln1494_1_reg_287    |  10|   0|   32|         22|
+    |zext_ln1494_reg_322      |  10|   0|   32|         22|
+    |icmp_ln1494_1_reg_299    |  64|  32|    1|          0|
+    |icmp_ln18_reg_318        |  64|  32|    1|          0|
+    |zext_ln1494_1_reg_287    |  64|  32|   32|         22|
+    |zext_ln1494_reg_322      |  64|  32|   32|         22|
+    +-------------------------+----+----+-----+-----------+
+    |Total                    | 432| 128|  286|         88|
+    +-------------------------+----+----+-----+-----------+
 
 
 
@@ -160,56 +166,56 @@
 == Interface
 ================================================================
 * Summary: 
-+--------------------+-----+-----+------------+---------------+--------------+
-|      RTL Ports     | Dir | Bits|  Protocol  | Source Object |    C Type    |
-+--------------------+-----+-----+------------+---------------+--------------+
-|s_axi_CTRL_AWVALID  |   in|    1|       s_axi|           CTRL|        scalar|
-|s_axi_CTRL_AWREADY  |  out|    1|       s_axi|           CTRL|        scalar|
-|s_axi_CTRL_AWADDR   |   in|    5|       s_axi|           CTRL|        scalar|
-|s_axi_CTRL_WVALID   |   in|    1|       s_axi|           CTRL|        scalar|
-|s_axi_CTRL_WREADY   |  out|    1|       s_axi|           CTRL|        scalar|
-|s_axi_CTRL_WDATA    |   in|   32|       s_axi|           CTRL|        scalar|
-|s_axi_CTRL_WSTRB    |   in|    4|       s_axi|           CTRL|        scalar|
-|s_axi_CTRL_ARVALID  |   in|    1|       s_axi|           CTRL|        scalar|
-|s_axi_CTRL_ARREADY  |  out|    1|       s_axi|           CTRL|        scalar|
-|s_axi_CTRL_ARADDR   |   in|    5|       s_axi|           CTRL|        scalar|
-|s_axi_CTRL_RVALID   |  out|    1|       s_axi|           CTRL|        scalar|
-|s_axi_CTRL_RREADY   |   in|    1|       s_axi|           CTRL|        scalar|
-|s_axi_CTRL_RDATA    |  out|   32|       s_axi|           CTRL|        scalar|
-|s_axi_CTRL_RRESP    |  out|    2|       s_axi|           CTRL|        scalar|
-|s_axi_CTRL_BVALID   |  out|    1|       s_axi|           CTRL|        scalar|
-|s_axi_CTRL_BREADY   |   in|    1|       s_axi|           CTRL|        scalar|
-|s_axi_CTRL_BRESP    |  out|    2|       s_axi|           CTRL|        scalar|
-|ap_clk              |   in|    1|  ap_ctrl_hs|  relu_combined|  return value|
-|ap_rst_n            |   in|    1|  ap_ctrl_hs|  relu_combined|  return value|
-|interrupt           |  out|    1|  ap_ctrl_hs|  relu_combined|  return value|
-|x_Addr_A            |  out|   32|        bram|              x|         array|
-|x_EN_A              |  out|    1|        bram|              x|         array|
-|x_WEN_A             |  out|    2|        bram|              x|         array|
-|x_Din_A             |  out|   16|        bram|              x|         array|
-|x_Dout_A            |   in|   16|        bram|              x|         array|
-|x_Clk_A             |  out|    1|        bram|              x|         array|
-|x_Rst_A             |  out|    1|        bram|              x|         array|
-|dx_Addr_A           |  out|   32|        bram|             dx|         array|
-|dx_EN_A             |  out|    1|        bram|             dx|         array|
-|dx_WEN_A            |  out|    2|        bram|             dx|         array|
-|dx_Din_A            |  out|   16|        bram|             dx|         array|
-|dx_Dout_A           |   in|   16|        bram|             dx|         array|
-|dx_Clk_A            |  out|    1|        bram|             dx|         array|
-|dx_Rst_A            |  out|    1|        bram|             dx|         array|
-|y_Addr_A            |  out|   32|        bram|              y|         array|
-|y_EN_A              |  out|    1|        bram|              y|         array|
-|y_WEN_A             |  out|    2|        bram|              y|         array|
-|y_Din_A             |  out|   16|        bram|              y|         array|
-|y_Dout_A            |   in|   16|        bram|              y|         array|
-|y_Clk_A             |  out|    1|        bram|              y|         array|
-|y_Rst_A             |  out|    1|        bram|              y|         array|
-|dy_Addr_A           |  out|   32|        bram|             dy|         array|
-|dy_EN_A             |  out|    1|        bram|             dy|         array|
-|dy_WEN_A            |  out|    2|        bram|             dy|         array|
-|dy_Din_A            |  out|   16|        bram|             dy|         array|
-|dy_Dout_A           |   in|   16|        bram|             dy|         array|
-|dy_Clk_A            |  out|    1|        bram|             dy|         array|
-|dy_Rst_A            |  out|    1|        bram|             dy|         array|
-+--------------------+-----+-----+------------+---------------+--------------+
++-----------------------+-----+-----+------------+---------------+--------------+
+|       RTL Ports       | Dir | Bits|  Protocol  | Source Object |    C Type    |
++-----------------------+-----+-----+------------+---------------+--------------+
+|s_axi_control_AWVALID  |   in|    1|       s_axi|        control|        scalar|
+|s_axi_control_AWREADY  |  out|    1|       s_axi|        control|        scalar|
+|s_axi_control_AWADDR   |   in|    5|       s_axi|        control|        scalar|
+|s_axi_control_WVALID   |   in|    1|       s_axi|        control|        scalar|
+|s_axi_control_WREADY   |  out|    1|       s_axi|        control|        scalar|
+|s_axi_control_WDATA    |   in|   32|       s_axi|        control|        scalar|
+|s_axi_control_WSTRB    |   in|    4|       s_axi|        control|        scalar|
+|s_axi_control_ARVALID  |   in|    1|       s_axi|        control|        scalar|
+|s_axi_control_ARREADY  |  out|    1|       s_axi|        control|        scalar|
+|s_axi_control_ARADDR   |   in|    5|       s_axi|        control|        scalar|
+|s_axi_control_RVALID   |  out|    1|       s_axi|        control|        scalar|
+|s_axi_control_RREADY   |   in|    1|       s_axi|        control|        scalar|
+|s_axi_control_RDATA    |  out|   32|       s_axi|        control|        scalar|
+|s_axi_control_RRESP    |  out|    2|       s_axi|        control|        scalar|
+|s_axi_control_BVALID   |  out|    1|       s_axi|        control|        scalar|
+|s_axi_control_BREADY   |   in|    1|       s_axi|        control|        scalar|
+|s_axi_control_BRESP    |  out|    2|       s_axi|        control|        scalar|
+|ap_clk                 |   in|    1|  ap_ctrl_hs|  relu_combined|  return value|
+|ap_rst_n               |   in|    1|  ap_ctrl_hs|  relu_combined|  return value|
+|interrupt              |  out|    1|  ap_ctrl_hs|  relu_combined|  return value|
+|x_Addr_A               |  out|   32|        bram|              x|         array|
+|x_EN_A                 |  out|    1|        bram|              x|         array|
+|x_WEN_A                |  out|    2|        bram|              x|         array|
+|x_Din_A                |  out|   16|        bram|              x|         array|
+|x_Dout_A               |   in|   16|        bram|              x|         array|
+|x_Clk_A                |  out|    1|        bram|              x|         array|
+|x_Rst_A                |  out|    1|        bram|              x|         array|
+|dx_Addr_A              |  out|   32|        bram|             dx|         array|
+|dx_EN_A                |  out|    1|        bram|             dx|         array|
+|dx_WEN_A               |  out|    2|        bram|             dx|         array|
+|dx_Din_A               |  out|   16|        bram|             dx|         array|
+|dx_Dout_A              |   in|   16|        bram|             dx|         array|
+|dx_Clk_A               |  out|    1|        bram|             dx|         array|
+|dx_Rst_A               |  out|    1|        bram|             dx|         array|
+|y_Addr_A               |  out|   32|        bram|              y|         array|
+|y_EN_A                 |  out|    1|        bram|              y|         array|
+|y_WEN_A                |  out|    2|        bram|              y|         array|
+|y_Din_A                |  out|   16|        bram|              y|         array|
+|y_Dout_A               |   in|   16|        bram|              y|         array|
+|y_Clk_A                |  out|    1|        bram|              y|         array|
+|y_Rst_A                |  out|    1|        bram|              y|         array|
+|dy_Addr_A              |  out|   32|        bram|             dy|         array|
+|dy_EN_A                |  out|    1|        bram|             dy|         array|
+|dy_WEN_A               |  out|    2|        bram|             dy|         array|
+|dy_Din_A               |  out|   16|        bram|             dy|         array|
+|dy_Dout_A              |   in|   16|        bram|             dy|         array|
+|dy_Clk_A               |  out|    1|        bram|             dy|         array|
+|dy_Rst_A               |  out|    1|        bram|             dy|         array|
++-----------------------+-----+-----+------------+---------------+--------------+
 

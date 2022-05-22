@@ -4,72 +4,72 @@
       <RtlPort>
         <name>bram_dx_Addr_A</name>
         <type>Signed</type>
-        <fractionWidth>7</fractionWidth>
+        <fractionWidth>13</fractionWidth>
       </RtlPort>
       <RtlPort>
         <name>bram_dx_Clk_A</name>
         <type>Signed</type>
-        <fractionWidth>7</fractionWidth>
+        <fractionWidth>13</fractionWidth>
       </RtlPort>
       <RtlPort>
         <name>bram_dx_Din_A</name>
         <type>Signed</type>
-        <fractionWidth>7</fractionWidth>
+        <fractionWidth>13</fractionWidth>
       </RtlPort>
       <RtlPort>
         <name>bram_dx_Dout_A</name>
         <type>Signed</type>
-        <fractionWidth>7</fractionWidth>
+        <fractionWidth>13</fractionWidth>
       </RtlPort>
       <RtlPort>
         <name>bram_dx_EN_A</name>
         <type>Signed</type>
-        <fractionWidth>7</fractionWidth>
+        <fractionWidth>13</fractionWidth>
       </RtlPort>
       <RtlPort>
         <name>bram_dx_Rst_A</name>
         <type>Signed</type>
-        <fractionWidth>7</fractionWidth>
+        <fractionWidth>13</fractionWidth>
       </RtlPort>
       <RtlPort>
         <name>bram_dx_WEN_A</name>
         <type>Signed</type>
-        <fractionWidth>7</fractionWidth>
+        <fractionWidth>13</fractionWidth>
       </RtlPort>
       <RtlPort>
         <name>bram_x_Addr_A</name>
         <type>Signed</type>
-        <fractionWidth>7</fractionWidth>
+        <fractionWidth>13</fractionWidth>
       </RtlPort>
       <RtlPort>
         <name>bram_x_Clk_A</name>
         <type>Signed</type>
-        <fractionWidth>7</fractionWidth>
+        <fractionWidth>13</fractionWidth>
       </RtlPort>
       <RtlPort>
         <name>bram_x_Din_A</name>
         <type>Signed</type>
-        <fractionWidth>7</fractionWidth>
+        <fractionWidth>13</fractionWidth>
       </RtlPort>
       <RtlPort>
         <name>bram_x_Dout_A</name>
         <type>Signed</type>
-        <fractionWidth>7</fractionWidth>
+        <fractionWidth>13</fractionWidth>
       </RtlPort>
       <RtlPort>
         <name>bram_x_EN_A</name>
         <type>Signed</type>
-        <fractionWidth>7</fractionWidth>
+        <fractionWidth>13</fractionWidth>
       </RtlPort>
       <RtlPort>
         <name>bram_x_Rst_A</name>
         <type>Signed</type>
-        <fractionWidth>7</fractionWidth>
+        <fractionWidth>13</fractionWidth>
       </RtlPort>
       <RtlPort>
         <name>bram_x_WEN_A</name>
         <type>Signed</type>
-        <fractionWidth>7</fractionWidth>
+        <fractionWidth>13</fractionWidth>
       </RtlPort>
   </CTypeInfo>
   <DesignConstraint>

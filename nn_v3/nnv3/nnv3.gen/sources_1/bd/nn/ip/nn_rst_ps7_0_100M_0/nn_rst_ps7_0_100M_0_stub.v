@@ -3,8 +3,8 @@
 // Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
 // Date        : Sat May 14 12:50:09 2022
 // Host        : anubhav-acer running 64-bit Ubuntu 20.04.4 LTS
-// Command     : write_verilog -force -mode synth_stub
-//               /home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/ip/nn_rst_ps7_0_100M_0/nn_rst_ps7_0_100M_0_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top nn_rst_ps7_0_100M_0 -prefix
+//               nn_rst_ps7_0_100M_0_ nn_rst_ps7_0_100M_0_stub.v
 // Design      : nn_rst_ps7_0_100M_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg400-1

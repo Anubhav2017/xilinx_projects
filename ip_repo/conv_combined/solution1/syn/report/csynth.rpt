@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'conv_combined'
 ================================================================
 + General Information: 
-    * Date:           Mon May 16 03:18:37 2022
+    * Date:           Thu May 19 16:01:16 2022
     * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
     * Project:        conv_combined
     * Solution:       solution1 (Vivado IP Flow Target)
@@ -19,7 +19,7 @@
     |                           Modules                          |  Issue |       | Latency | Latency| Iteration|         | Trip |          |        |         |             |             |     |
     |                           & Loops                          |  Type  | Slack | (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined|  BRAM  |   DSP   |      FF     |     LUT     | URAM|
     +------------------------------------------------------------+--------+-------+---------+--------+----------+---------+------+----------+--------+---------+-------------+-------------+-----+
-    |+ conv_combined                                             |  Timing|   0.00|        -|       -|         -|        -|     -|        no|  4 (1%)|  15 (6%)|  12271 (11%)|  10730 (20%)|    -|
+    |+ conv_combined                                             |  Timing|   0.00|        -|       -|         -|        -|     -|        no|  4 (1%)|  15 (6%)|  12264 (11%)|  10737 (20%)|    -|
     | o VITIS_LOOP_45_1_VITIS_LOOP_46_2_VITIS_LOOP_47_3          |       -|  -7.30|        -|       -|         -|        -|     -|        no|       -|        -|            -|            -|    -|
     |  o VITIS_LOOP_48_4                                         |       -|  -7.30|        -|       -|         3|        1|     -|       yes|       -|        -|            -|            -|    -|
     | o VITIS_LOOP_58_5                                          |       -|  -7.30|        -|       -|         2|        1|     -|       yes|       -|        -|            -|            -|    -|
@@ -27,7 +27,7 @@
     | o VITIS_LOOP_68_7                                          |       -|  -7.30|        -|       -|         -|        -|     -|        no|       -|        -|            -|            -|    -|
     |  o VITIS_LOOP_69_8_VITIS_LOOP_70_9_VITIS_LOOP_71_10        |       -|  -7.30|        -|       -|         -|        -|     -|        no|       -|        -|            -|            -|    -|
     |   o VITIS_LOOP_73_11                                       |       -|  -7.30|        -|       -|         -|        -|     -|        no|       -|        -|            -|            -|    -|
-    |    o VITIS_LOOP_74_12                                      |       -|  -7.30|        -|       -|         2|        1|     -|       yes|       -|        -|            -|            -|    -|
+    |    o VITIS_LOOP_74_12                                      |       -|  -7.30|        -|       -|         3|        1|     -|       yes|       -|        -|            -|            -|    -|
     | o VITIS_LOOP_87_13_VITIS_LOOP_88_14_VITIS_LOOP_89_15       |       -|  -7.30|        -|       -|         -|        -|     -|        no|       -|        -|            -|            -|    -|
     |  o VITIS_LOOP_90_16                                        |       -|  -7.30|        -|       -|         3|        1|     -|       yes|       -|        -|            -|            -|    -|
     | o VITIS_LOOP_97_17_VITIS_LOOP_98_18                        |       -|  -7.30|        -|       -|         -|        -|     -|        no|       -|        -|            -|            -|    -|

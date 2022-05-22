@@ -38,12 +38,12 @@ typedef uint64_t u64;
 #else
 typedef struct {
     u16 DeviceId;
-    u32 Ctrl_BaseAddress;
+    u32 Control_BaseAddress;
 } XRelu_combined_Config;
 #endif
 
 typedef struct {
-    u64 Ctrl_BaseAddress;
+    u64 Control_BaseAddress;
     u32 IsReady;
 } XRelu_combined;
 

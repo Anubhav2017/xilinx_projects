@@ -1,7 +1,7 @@
 # This script segment is generated automatically by AutoPilot
 
 set axilite_register_dict [dict create]
-set port_CTRL {
+set port_control {
 ap_start { }
 ap_done { }
 ap_ready { }
@@ -14,7 +14,7 @@ ap_return {
 	offset 16
 	offset_end 0
 }
-x { 
+x_ddr { 
 	dir I
 	width 32
 	depth 1
@@ -22,7 +22,7 @@ x {
 	offset 24
 	offset_end 31
 }
-dx { 
+dx_ddr { 
 	dir I
 	width 32
 	depth 1
@@ -38,7 +38,7 @@ y {
 	offset 40
 	offset_end 47
 }
-x_size { 
+dim { 
 	dir I
 	width 32
 	depth 1
@@ -46,15 +46,23 @@ x_size {
 	offset 48
 	offset_end 55
 }
-N { 
+writetoddr { 
 	dir I
-	width 32
+	width 1
 	depth 1
 	mode ap_none
 	offset 56
 	offset_end 63
 }
+ddrtobram { 
+	dir I
+	width 1
+	depth 1
+	mode ap_none
+	offset 64
+	offset_end 71
 }
-dict set axilite_register_dict CTRL $port_CTRL
+}
+dict set axilite_register_dict control $port_control
 
 

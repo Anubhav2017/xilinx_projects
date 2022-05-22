@@ -1,3 +1,0 @@
-OutputLayer_CTRL_s_axi
-OutputLayer_gmem_m_axi
-OutputLayer

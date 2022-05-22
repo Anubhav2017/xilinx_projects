@@ -17,7 +17,7 @@ Design is defaulting to srcset: sources_1
 Design is defaulting to constrset: constrs_1
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Project 1-454] Reading design checkpoint '/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_InputLayer_0_0/design_1_InputLayer_0_0.dcp' for cell 'design_1_i/InputLayer_0'
-INFO: [Project 1-454] Reading design checkpoint '/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_OutputLayer_0_0/design_1_OutputLayer_0_0.dcp' for cell 'design_1_i/OutputLayer_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_InputLayer_1_0/design_1_InputLayer_1_0.dcp' for cell 'design_1_i/InputLayer_1'
 INFO: [Project 1-454] Reading design checkpoint '/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_fcc_combined_0_0/design_1_fcc_combined_0_0.dcp' for cell 'design_1_i/fcc_combined_0'
 INFO: [Project 1-454] Reading design checkpoint '/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_fcc_dx_0/design_1_fcc_dx_0.dcp' for cell 'design_1_i/fcc_dx'
 INFO: [Project 1-454] Reading design checkpoint '/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_fcc_dy_0/design_1_fcc_dy_0.dcp' for cell 'design_1_i/fcc_dy'
@@ -28,12 +28,12 @@ INFO: [Project 1-454] Reading design checkpoint '/home/anubhav/xilinx_projects/f
 INFO: [Project 1-454] Reading design checkpoint '/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0.dcp' for cell 'design_1_i/axi_mem_intercon/xbar'
 INFO: [Project 1-454] Reading design checkpoint '/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.dcp' for cell 'design_1_i/axi_mem_intercon/m00_couplers/auto_pc'
 INFO: [Project 1-454] Reading design checkpoint '/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0.dcp' for cell 'design_1_i/axi_mem_intercon/s00_couplers/auto_us'
-INFO: [Project 1-454] Reading design checkpoint '/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_auto_us_1/design_1_auto_us_1.dcp' for cell 'design_1_i/axi_mem_intercon/s02_couplers/auto_us'
-INFO: [Project 1-454] Reading design checkpoint '/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_auto_us_2/design_1_auto_us_2.dcp' for cell 'design_1_i/axi_mem_intercon/s03_couplers/auto_us'
+INFO: [Project 1-454] Reading design checkpoint '/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_auto_us_1/design_1_auto_us_1.dcp' for cell 'design_1_i/axi_mem_intercon/s01_couplers/auto_us'
+INFO: [Project 1-454] Reading design checkpoint '/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_auto_us_2/design_1_auto_us_2.dcp' for cell 'design_1_i/axi_mem_intercon/s02_couplers/auto_us'
 INFO: [Project 1-454] Reading design checkpoint '/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_xbar_1/design_1_xbar_1.dcp' for cell 'design_1_i/ps7_0_axi_periph/xbar'
 INFO: [Project 1-454] Reading design checkpoint '/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1.dcp' for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
-Netlist sorting complete. Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.19 . Memory (MB): peak = 2358.973 ; gain = 0.000 ; free physical = 13418 ; free virtual = 23635
-INFO: [Netlist 29-17] Analyzing 865 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.18 . Memory (MB): peak = 2357.969 ; gain = 0.000 ; free physical = 11171 ; free virtual = 22729
+INFO: [Netlist 29-17] Analyzing 853 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2020.2
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -45,13 +45,13 @@ Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/s
 Finished Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
 Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_clocks.xdc] for cell 'design_1_i/axi_mem_intercon/s00_couplers/auto_us/inst'
 Finished Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_clocks.xdc] for cell 'design_1_i/axi_mem_intercon/s00_couplers/auto_us/inst'
-Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_auto_us_1/design_1_auto_us_1_clocks.xdc] for cell 'design_1_i/axi_mem_intercon/s02_couplers/auto_us/inst'
-Finished Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_auto_us_1/design_1_auto_us_1_clocks.xdc] for cell 'design_1_i/axi_mem_intercon/s02_couplers/auto_us/inst'
-Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_auto_us_2/design_1_auto_us_2_clocks.xdc] for cell 'design_1_i/axi_mem_intercon/s03_couplers/auto_us/inst'
-Finished Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_auto_us_2/design_1_auto_us_2_clocks.xdc] for cell 'design_1_i/axi_mem_intercon/s03_couplers/auto_us/inst'
+Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_auto_us_1/design_1_auto_us_1_clocks.xdc] for cell 'design_1_i/axi_mem_intercon/s01_couplers/auto_us/inst'
+Finished Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_auto_us_1/design_1_auto_us_1_clocks.xdc] for cell 'design_1_i/axi_mem_intercon/s01_couplers/auto_us/inst'
+Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_auto_us_2/design_1_auto_us_2_clocks.xdc] for cell 'design_1_i/axi_mem_intercon/s02_couplers/auto_us/inst'
+Finished Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_auto_us_2/design_1_auto_us_2_clocks.xdc] for cell 'design_1_i/axi_mem_intercon/s02_couplers/auto_us/inst'
 INFO: [Project 1-1715] 1 XPM XDC files have been applied to the design.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2631.035 ; gain = 0.000 ; free physical = 13286 ; free virtual = 23505
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2630.031 ; gain = 0.000 ; free physical = 11053 ; free virtual = 22611
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 3 instances were transformed.
   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 2 instances
@@ -59,7 +59,7 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 
 27 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 link_design completed successfully
-link_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2631.035 ; gain = 272.133 ; free physical = 13286 ; free virtual = 23505
+link_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2630.031 ; gain = 272.133 ; free physical = 11053 ; free virtual = 22611
 Command: opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
@@ -70,57 +70,57 @@ INFO: [DRC 23-27] Running DRC with 8 threads
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.69 . Memory (MB): peak = 2631.035 ; gain = 0.000 ; free physical = 13276 ; free virtual = 23496
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.67 . Memory (MB): peak = 2630.031 ; gain = 0.000 ; free physical = 11045 ; free virtual = 22603
 
 Starting Cache Timing Information Task
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Ending Cache Timing Information Task | Checksum: 10ffc012f
+Ending Cache Timing Information Task | Checksum: 1214a8629
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2772.930 ; gain = 141.895 ; free physical = 12892 ; free virtual = 23112
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2792.926 ; gain = 162.895 ; free physical = 10643 ; free virtual = 22201
 
 Starting Logic Optimization Task
 
 Phase 1 Retarget
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 1 Retarget | Checksum: 91f8b6f2
+Phase 1 Retarget | Checksum: e3c543ae
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.61 . Memory (MB): peak = 2945.836 ; gain = 0.000 ; free physical = 12744 ; free virtual = 22964
-INFO: [Opt 31-389] Phase Retarget created 309 cells and removed 359 cells
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.62 . Memory (MB): peak = 2965.832 ; gain = 0.000 ; free physical = 10497 ; free virtual = 22055
+INFO: [Opt 31-389] Phase Retarget created 257 cells and removed 301 cells
 INFO: [Opt 31-1021] In phase Retarget, 24 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 2 Constant propagation
 INFO: [Opt 31-138] Pushed 10 inverter(s) to 25 load pin(s).
-Phase 2 Constant propagation | Checksum: 7f2e1bf8
+Phase 2 Constant propagation | Checksum: 6c017f7a
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2945.836 ; gain = 0.000 ; free physical = 12743 ; free virtual = 22963
-INFO: [Opt 31-389] Phase Constant propagation created 767 cells and removed 2060 cells
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2965.832 ; gain = 0.000 ; free physical = 10497 ; free virtual = 22055
+INFO: [Opt 31-389] Phase Constant propagation created 795 cells and removed 2100 cells
 INFO: [Opt 31-1021] In phase Constant propagation, 24 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 3 Sweep
-Phase 3 Sweep | Checksum: 7dc659b2
+Phase 3 Sweep | Checksum: af05f806
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2945.836 ; gain = 0.000 ; free physical = 12743 ; free virtual = 22963
-INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 507 cells
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2965.832 ; gain = 0.000 ; free physical = 10497 ; free virtual = 22055
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 471 cells
 INFO: [Opt 31-1021] In phase Sweep, 96 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 4 BUFG optimization
-Phase 4 BUFG optimization | Checksum: 7dc659b2
+Phase 4 BUFG optimization | Checksum: af05f806
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2945.836 ; gain = 0.000 ; free physical = 12742 ; free virtual = 22962
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2965.832 ; gain = 0.000 ; free physical = 10497 ; free virtual = 22055
 INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
 
 Phase 5 Shift Register Optimization
 INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
-Phase 5 Shift Register Optimization | Checksum: 7dc659b2
+Phase 5 Shift Register Optimization | Checksum: af05f806
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2945.836 ; gain = 0.000 ; free physical = 12742 ; free virtual = 22962
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2965.832 ; gain = 0.000 ; free physical = 10497 ; free virtual = 22055
 INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
 
 Phase 6 Post Processing Netlist
-Phase 6 Post Processing Netlist | Checksum: 7dc659b2
+Phase 6 Post Processing Netlist | Checksum: af05f806
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2945.836 ; gain = 0.000 ; free physical = 12742 ; free virtual = 22962
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2965.832 ; gain = 0.000 ; free physical = 10497 ; free virtual = 22055
 INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
 INFO: [Opt 31-1021] In phase Post Processing Netlist, 33 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 Opt_design Change Summary
@@ -130,9 +130,9 @@ Opt_design Change Summary
 -------------------------------------------------------------------------------------------------------------------------
 |  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
 -------------------------------------------------------------------------------------------------------------------------
-|  Retarget                     |             309  |             359  |                                             24  |
-|  Constant propagation         |             767  |            2060  |                                             24  |
-|  Sweep                        |               0  |             507  |                                             96  |
+|  Retarget                     |             257  |             301  |                                             24  |
+|  Constant propagation         |             795  |            2100  |                                             24  |
+|  Sweep                        |               0  |             471  |                                             96  |
 |  BUFG optimization            |               0  |               0  |                                              0  |
 |  Shift Register Optimization  |               0  |               0  |                                              0  |
 |  Post Processing Netlist      |               0  |               0  |                                             33  |
@@ -142,10 +142,10 @@ Opt_design Change Summary
 
 Starting Connectivity Check Task
 
-Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2945.836 ; gain = 0.000 ; free physical = 12742 ; free virtual = 22962
-Ending Logic Optimization Task | Checksum: 17d663730
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2965.832 ; gain = 0.000 ; free physical = 10497 ; free virtual = 22055
+Ending Logic Optimization Task | Checksum: 144de3e75
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2945.836 ; gain = 0.000 ; free physical = 12742 ; free virtual = 22962
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2965.832 ; gain = 0.000 ; free physical = 10497 ; free virtual = 22055
 
 Starting Power Optimization Task
 INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
@@ -158,44 +158,44 @@ INFO: [Pwropt 34-10] Applying ODC optimizations ...
 
 
 Starting PowerOpt Patch Enables Task
-INFO: [Pwropt 34-162] WRITE_MODE attribute of 6 BRAM(s) out of a total of 87 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 2 BRAM(s) out of a total of 75 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
 INFO: [Pwropt 34-201] Structural ODC has moved 5 WE to EN ports
-Number of BRAM Ports augmented: 26 newly gated: 8 Total Ports: 174
-Number of Flops added for Enable Generation: 4
+Number of BRAM Ports augmented: 34 newly gated: 8 Total Ports: 150
+Number of Flops added for Enable Generation: 8
 
-Ending PowerOpt Patch Enables Task | Checksum: 14da1e85e
+Ending PowerOpt Patch Enables Task | Checksum: ed4b64a7
 
-Time (s): cpu = 00:00:00.24 ; elapsed = 00:00:00.24 . Memory (MB): peak = 3399.797 ; gain = 0.000 ; free physical = 12660 ; free virtual = 22881
-Ending Power Optimization Task | Checksum: 14da1e85e
+Time (s): cpu = 00:00:00.21 ; elapsed = 00:00:00.22 . Memory (MB): peak = 3331.176 ; gain = 0.000 ; free physical = 10428 ; free virtual = 21986
+Ending Power Optimization Task | Checksum: ed4b64a7
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 3399.797 ; gain = 453.961 ; free physical = 12678 ; free virtual = 22898
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 3331.176 ; gain = 365.344 ; free physical = 10447 ; free virtual = 22005
 
 Starting Final Cleanup Task
 
 Starting Logic Optimization Task
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Ending Logic Optimization Task | Checksum: 13ce546a2
+Ending Logic Optimization Task | Checksum: 147e46188
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 3399.797 ; gain = 0.000 ; free physical = 12688 ; free virtual = 22908
-Ending Final Cleanup Task | Checksum: 13ce546a2
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.95 . Memory (MB): peak = 3331.176 ; gain = 0.000 ; free physical = 10461 ; free virtual = 22019
+Ending Final Cleanup Task | Checksum: 147e46188
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3399.797 ; gain = 0.000 ; free physical = 12688 ; free virtual = 22908
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3331.176 ; gain = 0.000 ; free physical = 10460 ; free virtual = 22018
 
 Starting Netlist Obfuscation Task
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3399.797 ; gain = 0.000 ; free physical = 12688 ; free virtual = 22908
-Ending Netlist Obfuscation Task | Checksum: 13ce546a2
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3331.176 ; gain = 0.000 ; free physical = 10460 ; free virtual = 22018
+Ending Netlist Obfuscation Task | Checksum: 147e46188
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3399.797 ; gain = 0.000 ; free physical = 12688 ; free virtual = 22908
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3331.176 ; gain = 0.000 ; free physical = 10460 ; free virtual = 22018
 INFO: [Common 17-83] Releasing license: Implementation
 54 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
-opt_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:17 . Memory (MB): peak = 3399.797 ; gain = 768.762 ; free physical = 12688 ; free virtual = 22908
+opt_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 3331.176 ; gain = 701.145 ; free physical = 10460 ; free virtual = 22018
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3399.797 ; gain = 0.000 ; free physical = 12682 ; free virtual = 22905
+Write XDEF Complete: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3331.176 ; gain = 0.000 ; free physical = 10472 ; free virtual = 22032
 INFO: [Common 17-1381] The checkpoint '/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/impl_1/design_1_wrapper_opt.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
 Command: report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
@@ -221,14 +221,14 @@ WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/Inp
 WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/InputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin design_1_i/InputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRBWRADDR[7] (net: design_1_i/InputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/rnext[3]) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/InputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin design_1_i/InputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRBWRADDR[8] (net: design_1_i/InputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/rnext[4]) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/InputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin design_1_i/InputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRBWRADDR[9] (net: design_1_i/InputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/rnext[5]) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/OutputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin design_1_i/OutputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRBWRADDR[10] (net: design_1_i/OutputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/rnext[6]) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/OutputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin design_1_i/OutputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRBWRADDR[11] (net: design_1_i/OutputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/rnext[7]) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/OutputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin design_1_i/OutputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRBWRADDR[4] (net: design_1_i/OutputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/rnext[0]) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/OutputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin design_1_i/OutputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRBWRADDR[5] (net: design_1_i/OutputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/rnext[1]) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/OutputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin design_1_i/OutputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRBWRADDR[6] (net: design_1_i/OutputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/rnext[2]) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/OutputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin design_1_i/OutputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRBWRADDR[7] (net: design_1_i/OutputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/rnext[3]) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/OutputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin design_1_i/OutputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRBWRADDR[8] (net: design_1_i/OutputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/rnext[4]) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/OutputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin design_1_i/OutputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRBWRADDR[9] (net: design_1_i/OutputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/rnext[5]) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/InputLayer_1/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin design_1_i/InputLayer_1/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRBWRADDR[10] (net: design_1_i/InputLayer_1/inst/gmem_m_axi_U/bus_write/buff_wdata/rnext[6]) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/InputLayer_1/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin design_1_i/InputLayer_1/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRBWRADDR[11] (net: design_1_i/InputLayer_1/inst/gmem_m_axi_U/bus_write/buff_wdata/rnext[7]) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/InputLayer_1/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin design_1_i/InputLayer_1/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRBWRADDR[4] (net: design_1_i/InputLayer_1/inst/gmem_m_axi_U/bus_write/buff_wdata/rnext[0]) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/InputLayer_1/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin design_1_i/InputLayer_1/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRBWRADDR[5] (net: design_1_i/InputLayer_1/inst/gmem_m_axi_U/bus_write/buff_wdata/rnext[1]) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/InputLayer_1/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin design_1_i/InputLayer_1/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRBWRADDR[6] (net: design_1_i/InputLayer_1/inst/gmem_m_axi_U/bus_write/buff_wdata/rnext[2]) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/InputLayer_1/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin design_1_i/InputLayer_1/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRBWRADDR[7] (net: design_1_i/InputLayer_1/inst/gmem_m_axi_U/bus_write/buff_wdata/rnext[3]) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/InputLayer_1/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin design_1_i/InputLayer_1/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRBWRADDR[8] (net: design_1_i/InputLayer_1/inst/gmem_m_axi_U/bus_write/buff_wdata/rnext[4]) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/InputLayer_1/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin design_1_i/InputLayer_1/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRBWRADDR[9] (net: design_1_i/InputLayer_1/inst/gmem_m_axi_U/bus_write/buff_wdata/rnext[5]) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/fcc_combined_0/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin design_1_i/fcc_combined_0/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRBWRADDR[10] (net: design_1_i/fcc_combined_0/inst/gmem_m_axi_U/bus_write/buff_wdata/rnext[6]) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/fcc_combined_0/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin design_1_i/fcc_combined_0/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRBWRADDR[11] (net: design_1_i/fcc_combined_0/inst/gmem_m_axi_U/bus_write/buff_wdata/rnext[7]) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/fcc_combined_0/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin design_1_i/fcc_combined_0/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRBWRADDR[8] (net: design_1_i/fcc_combined_0/inst/gmem_m_axi_U/bus_write/buff_wdata/rnext[4]) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
@@ -242,48 +242,48 @@ INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 
 Phase 1 Placer Initialization
 
 Phase 1.1 Placer Initialization Netlist Sorting
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3399.797 ; gain = 0.000 ; free physical = 12601 ; free virtual = 22827
-Phase 1.1 Placer Initialization Netlist Sorting | Checksum: e727fcef
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3331.176 ; gain = 0.000 ; free physical = 10380 ; free virtual = 21943
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 740b42b7
 
-Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3399.797 ; gain = 0.000 ; free physical = 12601 ; free virtual = 22827
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3399.797 ; gain = 0.000 ; free physical = 12601 ; free virtual = 22827
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3331.176 ; gain = 0.000 ; free physical = 10380 ; free virtual = 21943
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3331.176 ; gain = 0.000 ; free physical = 10380 ; free virtual = 21943
 
 Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
-Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1da84c2c
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 15ef0e99
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.68 . Memory (MB): peak = 3399.797 ; gain = 0.000 ; free physical = 12629 ; free virtual = 22856
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.70 . Memory (MB): peak = 3331.176 ; gain = 0.000 ; free physical = 10413 ; free virtual = 21977
 
 Phase 1.3 Build Placer Netlist Model
-Phase 1.3 Build Placer Netlist Model | Checksum: b28aeed8
+Phase 1.3 Build Placer Netlist Model | Checksum: 11c27e590
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 3399.797 ; gain = 0.000 ; free physical = 12624 ; free virtual = 22850
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 3331.176 ; gain = 0.000 ; free physical = 10410 ; free virtual = 21973
 
 Phase 1.4 Constrain Clocks/Macros
-Phase 1.4 Constrain Clocks/Macros | Checksum: b28aeed8
+Phase 1.4 Constrain Clocks/Macros | Checksum: 11c27e590
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 3399.797 ; gain = 0.000 ; free physical = 12624 ; free virtual = 22850
-Phase 1 Placer Initialization | Checksum: b28aeed8
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 3331.176 ; gain = 0.000 ; free physical = 10410 ; free virtual = 21973
+Phase 1 Placer Initialization | Checksum: 11c27e590
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 3399.797 ; gain = 0.000 ; free physical = 12623 ; free virtual = 22849
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 3331.176 ; gain = 0.000 ; free physical = 10409 ; free virtual = 21972
 
 Phase 2 Global Placement
 
 Phase 2.1 Floorplanning
-Phase 2.1 Floorplanning | Checksum: fac13500
+Phase 2.1 Floorplanning | Checksum: 11569855c
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 3399.797 ; gain = 0.000 ; free physical = 12598 ; free virtual = 22824
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 3331.176 ; gain = 0.000 ; free physical = 10385 ; free virtual = 21949
 
 Phase 2.2 Update Timing before SLR Path Opt
-Phase 2.2 Update Timing before SLR Path Opt | Checksum: e2bd1dbc
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 109245351
 
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:03 . Memory (MB): peak = 3399.797 ; gain = 0.000 ; free physical = 12599 ; free virtual = 22825
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:03 . Memory (MB): peak = 3331.176 ; gain = 0.000 ; free physical = 10384 ; free virtual = 21948
 
 Phase 2.3 Global Placement Core
 
 Phase 2.3.1 Physical Synthesis In Placer
-INFO: [Physopt 32-1035] Found 15 LUTNM shape to break, 940 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1035] Found 15 LUTNM shape to break, 942 LUT instances to create LUTNM shape
 INFO: [Physopt 32-1044] Break lutnm for timing: one critical 10, two critical 5, total 15, new lutff created 1
-INFO: [Physopt 32-775] End 1 Pass. Optimized 344 nets or cells. Created 15 new cells, deleted 329 existing cells and moved 0 existing cell
+INFO: [Physopt 32-775] End 1 Pass. Optimized 337 nets or cells. Created 15 new cells, deleted 322 existing cells and moved 0 existing cell
 INFO: [Physopt 32-65] No nets found for high-fanout optimization.
 INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
 INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
@@ -299,7 +299,7 @@ INFO: [Physopt 32-846] No candidate cells for URAM register optimization found i
 INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
 INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
 INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3399.797 ; gain = 0.000 ; free physical = 12582 ; free virtual = 22804
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3331.176 ; gain = 0.000 ; free physical = 10354 ; free virtual = 21917
 
 Summary of Physical Synthesis Optimizations
 ============================================
@@ -308,7 +308,7 @@ Summary of Physical Synthesis Optimizations
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 |  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-|  LUT Combining                                    |           15  |            329  |                   344  |           0  |           1  |  00:00:00  |
+|  LUT Combining                                    |           15  |            322  |                   337  |           0  |           1  |  00:00:00  |
 |  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
 |  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
 |  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
@@ -316,69 +316,69 @@ Summary of Physical Synthesis Optimizations
 |  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
 |  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
 |  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
-|  Total                                            |           15  |            329  |                   344  |           0  |           8  |  00:00:01  |
+|  Total                                            |           15  |            322  |                   337  |           0  |           8  |  00:00:01  |
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-Phase 2.3.1 Physical Synthesis In Placer | Checksum: 17f7e5dc7
+Phase 2.3.1 Physical Synthesis In Placer | Checksum: e4ced2cb
 
-Time (s): cpu = 00:00:35 ; elapsed = 00:00:11 . Memory (MB): peak = 3399.797 ; gain = 0.000 ; free physical = 12583 ; free virtual = 22805
-Phase 2.3 Global Placement Core | Checksum: 1df127468
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:11 . Memory (MB): peak = 3331.176 ; gain = 0.000 ; free physical = 10354 ; free virtual = 21917
+Phase 2.3 Global Placement Core | Checksum: 12f7c8239
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:11 . Memory (MB): peak = 3399.797 ; gain = 0.000 ; free physical = 12579 ; free virtual = 22801
-Phase 2 Global Placement | Checksum: 1df127468
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:11 . Memory (MB): peak = 3331.176 ; gain = 0.000 ; free physical = 10352 ; free virtual = 21915
+Phase 2 Global Placement | Checksum: 12f7c8239
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:11 . Memory (MB): peak = 3399.797 ; gain = 0.000 ; free physical = 12586 ; free virtual = 22808
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:11 . Memory (MB): peak = 3331.176 ; gain = 0.000 ; free physical = 10358 ; free virtual = 21922
 
 Phase 3 Detail Placement
 
 Phase 3.1 Commit Multi Column Macros
-Phase 3.1 Commit Multi Column Macros | Checksum: 1f73ea789
+Phase 3.1 Commit Multi Column Macros | Checksum: 15ce1dd8f
 
-Time (s): cpu = 00:00:38 ; elapsed = 00:00:12 . Memory (MB): peak = 3399.797 ; gain = 0.000 ; free physical = 12585 ; free virtual = 22808
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:12 . Memory (MB): peak = 3331.176 ; gain = 0.000 ; free physical = 10358 ; free virtual = 21921
 
 Phase 3.2 Commit Most Macros & LUTRAMs
-Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1da80e228
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 149bf6f8b
 
-Time (s): cpu = 00:00:41 ; elapsed = 00:00:13 . Memory (MB): peak = 3399.797 ; gain = 0.000 ; free physical = 12585 ; free virtual = 22807
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:13 . Memory (MB): peak = 3331.176 ; gain = 0.000 ; free physical = 10356 ; free virtual = 21919
 
 Phase 3.3 Area Swap Optimization
-Phase 3.3 Area Swap Optimization | Checksum: 1df902b64
+Phase 3.3 Area Swap Optimization | Checksum: 88e89b89
 
-Time (s): cpu = 00:00:42 ; elapsed = 00:00:13 . Memory (MB): peak = 3399.797 ; gain = 0.000 ; free physical = 12583 ; free virtual = 22807
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:13 . Memory (MB): peak = 3331.176 ; gain = 0.000 ; free physical = 10356 ; free virtual = 21919
 
 Phase 3.4 Pipeline Register Optimization
-Phase 3.4 Pipeline Register Optimization | Checksum: 190367e78
+Phase 3.4 Pipeline Register Optimization | Checksum: ae8c05d4
 
-Time (s): cpu = 00:00:42 ; elapsed = 00:00:13 . Memory (MB): peak = 3399.797 ; gain = 0.000 ; free physical = 12583 ; free virtual = 22807
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:13 . Memory (MB): peak = 3331.176 ; gain = 0.000 ; free physical = 10356 ; free virtual = 21919
 
 Phase 3.5 Fast Optimization
-Phase 3.5 Fast Optimization | Checksum: 15d8a530c
+Phase 3.5 Fast Optimization | Checksum: 133c830c4
 
-Time (s): cpu = 00:00:45 ; elapsed = 00:00:13 . Memory (MB): peak = 3399.797 ; gain = 0.000 ; free physical = 12567 ; free virtual = 22793
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:13 . Memory (MB): peak = 3331.176 ; gain = 0.000 ; free physical = 10351 ; free virtual = 21914
 
 Phase 3.6 Small Shape Detail Placement
-Phase 3.6 Small Shape Detail Placement | Checksum: 16c5433a7
+Phase 3.6 Small Shape Detail Placement | Checksum: f125f1d2
 
-Time (s): cpu = 00:00:48 ; elapsed = 00:00:16 . Memory (MB): peak = 3399.797 ; gain = 0.000 ; free physical = 12555 ; free virtual = 22795
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:16 . Memory (MB): peak = 3331.176 ; gain = 0.000 ; free physical = 10344 ; free virtual = 21908
 
 Phase 3.7 Re-assign LUT pins
-Phase 3.7 Re-assign LUT pins | Checksum: 186740724
+Phase 3.7 Re-assign LUT pins | Checksum: 94cef1e8
 
-Time (s): cpu = 00:00:48 ; elapsed = 00:00:16 . Memory (MB): peak = 3399.797 ; gain = 0.000 ; free physical = 12555 ; free virtual = 22795
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:16 . Memory (MB): peak = 3331.176 ; gain = 0.000 ; free physical = 10345 ; free virtual = 21908
 
 Phase 3.8 Pipeline Register Optimization
-Phase 3.8 Pipeline Register Optimization | Checksum: 1c54f0a20
+Phase 3.8 Pipeline Register Optimization | Checksum: 194b76a40
 
-Time (s): cpu = 00:00:48 ; elapsed = 00:00:17 . Memory (MB): peak = 3399.797 ; gain = 0.000 ; free physical = 12556 ; free virtual = 22795
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:17 . Memory (MB): peak = 3331.176 ; gain = 0.000 ; free physical = 10345 ; free virtual = 21908
 
 Phase 3.9 Fast Optimization
-Phase 3.9 Fast Optimization | Checksum: 166807103
+Phase 3.9 Fast Optimization | Checksum: 1221fc123
 
-Time (s): cpu = 00:00:53 ; elapsed = 00:00:18 . Memory (MB): peak = 3399.797 ; gain = 0.000 ; free physical = 12552 ; free virtual = 22788
-Phase 3 Detail Placement | Checksum: 166807103
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:18 . Memory (MB): peak = 3331.176 ; gain = 0.000 ; free physical = 10336 ; free virtual = 21900
+Phase 3 Detail Placement | Checksum: 1221fc123
 
-Time (s): cpu = 00:00:53 ; elapsed = 00:00:18 . Memory (MB): peak = 3399.797 ; gain = 0.000 ; free physical = 12552 ; free virtual = 22788
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:18 . Memory (MB): peak = 3331.176 ; gain = 0.000 ; free physical = 10336 ; free virtual = 21900
 
 Phase 4 Post Placement Optimization and Clean-Up
 
@@ -386,7 +386,7 @@ Phase 4.1 Post Commit Optimization
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 
 Phase 4.1.1 Post Placement Optimization
-Post Placement Optimization Initialization | Checksum: 19d94f428
+Post Placement Optimization Initialization | Checksum: 1e7b20fd4
 
 Phase 4.1.1.1 BUFG Insertion
 
@@ -394,29 +394,29 @@ Starting Physical Synthesis Task
 
 Phase 1 Physical Synthesis Initialization
 INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.120 | TNS=-0.833 |
-Phase 1 Physical Synthesis Initialization | Checksum: 183ff22fb
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.271 | TNS=-5.966 |
+Phase 1 Physical Synthesis Initialization | Checksum: 1f3dd4e01
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.25 . Memory (MB): peak = 3399.797 ; gain = 0.000 ; free physical = 12577 ; free virtual = 22805
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.25 . Memory (MB): peak = 3331.176 ; gain = 0.000 ; free physical = 10334 ; free virtual = 21898
 INFO: [Place 46-33] Processed net design_1_i/fcc_combined_0/inst/gmem_m_axi_U/bus_read/buff_rdata/SR[0], BUFG insertion was skipped due to placement/routing conflicts.
 INFO: [Place 46-56] BUFG insertion identified 1 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 1, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
-Ending Physical Synthesis Task | Checksum: 192e14bfa
+Ending Physical Synthesis Task | Checksum: 1c1aeec78
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.33 . Memory (MB): peak = 3399.797 ; gain = 0.000 ; free physical = 12577 ; free virtual = 22805
-Phase 4.1.1.1 BUFG Insertion | Checksum: 19d94f428
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.34 . Memory (MB): peak = 3331.176 ; gain = 0.000 ; free physical = 10334 ; free virtual = 21898
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1e7b20fd4
 
-Time (s): cpu = 00:01:00 ; elapsed = 00:00:20 . Memory (MB): peak = 3399.797 ; gain = 0.000 ; free physical = 12577 ; free virtual = 22805
-INFO: [Place 30-746] Post Placement Timing Summary WNS=0.576. For the most accurate timing information please run report_timing.
+Time (s): cpu = 00:01:00 ; elapsed = 00:00:20 . Memory (MB): peak = 3331.176 ; gain = 0.000 ; free physical = 10334 ; free virtual = 21898
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.586. For the most accurate timing information please run report_timing.
 
-Time (s): cpu = 00:01:01 ; elapsed = 00:00:20 . Memory (MB): peak = 3399.797 ; gain = 0.000 ; free physical = 12578 ; free virtual = 22806
-Phase 4.1 Post Commit Optimization | Checksum: 150ea1cf8
+Time (s): cpu = 00:01:02 ; elapsed = 00:00:21 . Memory (MB): peak = 3331.176 ; gain = 0.000 ; free physical = 10336 ; free virtual = 21899
+Phase 4.1 Post Commit Optimization | Checksum: 16a83c6cf
 
-Time (s): cpu = 00:01:01 ; elapsed = 00:00:20 . Memory (MB): peak = 3399.797 ; gain = 0.000 ; free physical = 12578 ; free virtual = 22806
+Time (s): cpu = 00:01:02 ; elapsed = 00:00:21 . Memory (MB): peak = 3331.176 ; gain = 0.000 ; free physical = 10336 ; free virtual = 21899
 
 Phase 4.2 Post Placement Cleanup
-Phase 4.2 Post Placement Cleanup | Checksum: 150ea1cf8
+Phase 4.2 Post Placement Cleanup | Checksum: 16a83c6cf
 
-Time (s): cpu = 00:01:01 ; elapsed = 00:00:21 . Memory (MB): peak = 3399.797 ; gain = 0.000 ; free physical = 12579 ; free virtual = 22806
+Time (s): cpu = 00:01:02 ; elapsed = 00:00:21 . Memory (MB): peak = 3331.176 ; gain = 0.000 ; free physical = 10336 ; free virtual = 21900
 
 Phase 4.3 Placer Reporting
 
@@ -428,46 +428,46 @@ INFO: [Place 30-612] Post-Placement Estimated Congestion
 |___________|___________________|___________________|
 |      North|                1x1|                2x2|
 |___________|___________________|___________________|
-|      South|                1x1|                1x1|
+|      South|                1x1|                2x2|
 |___________|___________________|___________________|
 |       East|                1x1|                1x1|
 |___________|___________________|___________________|
-|       West|                1x1|                2x2|
+|       West|                1x1|                1x1|
 |___________|___________________|___________________|
 
-Phase 4.3.1 Print Estimated Congestion | Checksum: 150ea1cf8
+Phase 4.3.1 Print Estimated Congestion | Checksum: 16a83c6cf
 
-Time (s): cpu = 00:01:01 ; elapsed = 00:00:21 . Memory (MB): peak = 3399.797 ; gain = 0.000 ; free physical = 12579 ; free virtual = 22806
-Phase 4.3 Placer Reporting | Checksum: 150ea1cf8
+Time (s): cpu = 00:01:02 ; elapsed = 00:00:21 . Memory (MB): peak = 3331.176 ; gain = 0.000 ; free physical = 10336 ; free virtual = 21900
+Phase 4.3 Placer Reporting | Checksum: 16a83c6cf
 
-Time (s): cpu = 00:01:01 ; elapsed = 00:00:21 . Memory (MB): peak = 3399.797 ; gain = 0.000 ; free physical = 12579 ; free virtual = 22806
+Time (s): cpu = 00:01:02 ; elapsed = 00:00:21 . Memory (MB): peak = 3331.176 ; gain = 0.000 ; free physical = 10336 ; free virtual = 21900
 
 Phase 4.4 Final Placement Cleanup
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3399.797 ; gain = 0.000 ; free physical = 12579 ; free virtual = 22806
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3331.176 ; gain = 0.000 ; free physical = 10336 ; free virtual = 21900
 
-Time (s): cpu = 00:01:01 ; elapsed = 00:00:21 . Memory (MB): peak = 3399.797 ; gain = 0.000 ; free physical = 12579 ; free virtual = 22806
-Phase 4 Post Placement Optimization and Clean-Up | Checksum: 144e593c9
+Time (s): cpu = 00:01:02 ; elapsed = 00:00:21 . Memory (MB): peak = 3331.176 ; gain = 0.000 ; free physical = 10336 ; free virtual = 21900
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 2394ec1c1
 
-Time (s): cpu = 00:01:01 ; elapsed = 00:00:21 . Memory (MB): peak = 3399.797 ; gain = 0.000 ; free physical = 12579 ; free virtual = 22806
-Ending Placer Task | Checksum: 1075e401e
+Time (s): cpu = 00:01:02 ; elapsed = 00:00:21 . Memory (MB): peak = 3331.176 ; gain = 0.000 ; free physical = 10336 ; free virtual = 21900
+Ending Placer Task | Checksum: 17a7a7e10
 
-Time (s): cpu = 00:01:01 ; elapsed = 00:00:21 . Memory (MB): peak = 3399.797 ; gain = 0.000 ; free physical = 12576 ; free virtual = 22804
+Time (s): cpu = 00:01:02 ; elapsed = 00:00:21 . Memory (MB): peak = 3331.176 ; gain = 0.000 ; free physical = 10336 ; free virtual = 21900
 INFO: [Common 17-83] Releasing license: Implementation
 95 Infos, 21 Warnings, 0 Critical Warnings and 0 Errors encountered.
 place_design completed successfully
-place_design: Time (s): cpu = 00:01:03 ; elapsed = 00:00:21 . Memory (MB): peak = 3399.797 ; gain = 0.000 ; free physical = 12606 ; free virtual = 22834
+place_design: Time (s): cpu = 00:01:04 ; elapsed = 00:00:22 . Memory (MB): peak = 3331.176 ; gain = 0.000 ; free physical = 10368 ; free virtual = 21932
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.61 . Memory (MB): peak = 3399.797 ; gain = 0.000 ; free physical = 12569 ; free virtual = 22822
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.60 . Memory (MB): peak = 3331.176 ; gain = 0.000 ; free physical = 10328 ; free virtual = 21917
 INFO: [Common 17-1381] The checkpoint '/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/impl_1/design_1_wrapper_placed.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_io -file design_1_wrapper_io_placed.rpt
-report_io: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.13 . Memory (MB): peak = 3399.797 ; gain = 0.000 ; free physical = 12591 ; free virtual = 22826
+report_io: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.12 . Memory (MB): peak = 3331.176 ; gain = 0.000 ; free physical = 10350 ; free virtual = 21921
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_placed.rpt -pb design_1_wrapper_utilization_placed.pb
 INFO: [runtcl-4] Executing : report_control_sets -verbose -file design_1_wrapper_control_sets_placed.rpt
-report_control_sets: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.12 . Memory (MB): peak = 3399.797 ; gain = 0.000 ; free physical = 12600 ; free virtual = 22835
+report_control_sets: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.11 . Memory (MB): peak = 3331.176 ; gain = 0.000 ; free physical = 10358 ; free virtual = 21929
 Command: phys_opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
@@ -481,7 +481,7 @@ Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.62 . Memory (MB): peak = 3399.797 ; gain = 0.000 ; free physical = 12539 ; free virtual = 22800
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.60 . Memory (MB): peak = 3331.176 ; gain = 0.000 ; free physical = 10287 ; free virtual = 21884
 INFO: [Common 17-1381] The checkpoint '/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/impl_1/design_1_wrapper_physopt.dcp' has been generated.
 Command: route_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
@@ -494,41 +494,41 @@ INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more in
 
 Starting Routing Task
 INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
-Checksum: PlaceDB: 4591e1e6 ConstDB: 0 ShapeSum: c1cc5e38 RouteDB: 0
+Checksum: PlaceDB: 8587961b ConstDB: 0 ShapeSum: f4f2e7f5 RouteDB: 0
 
 Phase 1 Build RT Design
-Phase 1 Build RT Design | Checksum: 180ee5708
+Phase 1 Build RT Design | Checksum: 277bbbc4
 
-Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 3399.797 ; gain = 0.000 ; free physical = 12436 ; free virtual = 22675
-Post Restoration Checksum: NetGraph: a99f699c NumContArr: d74eed6c Constraints: 0 Timing: 0
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 3331.176 ; gain = 0.000 ; free physical = 10144 ; free virtual = 21753
+Post Restoration Checksum: NetGraph: 1e3fc9f5 NumContArr: 93bf1cf Constraints: 0 Timing: 0
 
 Phase 2 Router Initialization
 
 Phase 2.1 Create Timer
-Phase 2.1 Create Timer | Checksum: 180ee5708
+Phase 2.1 Create Timer | Checksum: 277bbbc4
 
-Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 3399.797 ; gain = 0.000 ; free physical = 12439 ; free virtual = 22679
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 3331.176 ; gain = 0.000 ; free physical = 10146 ; free virtual = 21755
 
 Phase 2.2 Fix Topology Constraints
-Phase 2.2 Fix Topology Constraints | Checksum: 180ee5708
+Phase 2.2 Fix Topology Constraints | Checksum: 277bbbc4
 
-Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 3399.797 ; gain = 0.000 ; free physical = 12405 ; free virtual = 22644
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 3331.176 ; gain = 0.000 ; free physical = 10111 ; free virtual = 21721
 
 Phase 2.3 Pre Route Cleanup
-Phase 2.3 Pre Route Cleanup | Checksum: 180ee5708
+Phase 2.3 Pre Route Cleanup | Checksum: 277bbbc4
 
-Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 3399.797 ; gain = 0.000 ; free physical = 12405 ; free virtual = 22644
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 3331.176 ; gain = 0.000 ; free physical = 10111 ; free virtual = 21720
  Number of Nodes with overlaps = 0
 
 Phase 2.4 Update Timing
-Phase 2.4 Update Timing | Checksum: 1b04c2eed
+Phase 2.4 Update Timing | Checksum: aa5de219
 
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:13 . Memory (MB): peak = 3399.797 ; gain = 0.000 ; free physical = 12389 ; free virtual = 22628
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.932  | TNS=0.000  | WHS=-0.287 | THS=-172.304|
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:13 . Memory (MB): peak = 3331.176 ; gain = 0.000 ; free physical = 10098 ; free virtual = 21708
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.898  | TNS=0.000  | WHS=-0.355 | THS=-167.294|
 
-Phase 2 Router Initialization | Checksum: 1bffb4aa1
+Phase 2 Router Initialization | Checksum: b062b269
 
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:14 . Memory (MB): peak = 3399.797 ; gain = 0.000 ; free physical = 12386 ; free virtual = 22626
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:14 . Memory (MB): peak = 3331.176 ; gain = 0.000 ; free physical = 10090 ; free virtual = 21700
 
 Router Utilization Summary
   Global Vertical Routing Utilization    = 0 %
@@ -536,9 +536,9 @@ Router Utilization Summary
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
-  Number of Failed Nets               = 15829
+  Number of Failed Nets               = 15677
     (Failed Nets is the sum of unrouted and partially routed nets)
-  Number of Unrouted Nets             = 15829
+  Number of Unrouted Nets             = 15677
   Number of Partially Routed Nets     = 0
   Number of Node Overlaps             = 0
 
@@ -546,85 +546,89 @@ Router Utilization Summary
 Phase 3 Initial Routing
 
 Phase 3.1 Global Routing
-Phase 3.1 Global Routing | Checksum: 1bffb4aa1
+Phase 3.1 Global Routing | Checksum: b062b269
 
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:14 . Memory (MB): peak = 3399.797 ; gain = 0.000 ; free physical = 12385 ; free virtual = 22624
-Phase 3 Initial Routing | Checksum: 108e593e2
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:14 . Memory (MB): peak = 3331.176 ; gain = 0.000 ; free physical = 10084 ; free virtual = 21694
+Phase 3 Initial Routing | Checksum: 188c20375
 
-Time (s): cpu = 00:00:49 ; elapsed = 00:00:20 . Memory (MB): peak = 3459.785 ; gain = 59.988 ; free physical = 12374 ; free virtual = 22613
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:18 . Memory (MB): peak = 3534.297 ; gain = 203.121 ; free physical = 10087 ; free virtual = 21693
 
 Phase 4 Rip-up And Reroute
 
 Phase 4.1 Global Iteration 0
- Number of Nodes with overlaps = 1157
- Number of Nodes with overlaps = 96
- Number of Nodes with overlaps = 21
- Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 1105
+ Number of Nodes with overlaps = 97
+ Number of Nodes with overlaps = 22
+ Number of Nodes with overlaps = 12
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 1
  Number of Nodes with overlaps = 2
  Number of Nodes with overlaps = 1
  Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.548  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.537  | TNS=0.000  | WHS=N/A    | THS=N/A    |
 
-Phase 4.1 Global Iteration 0 | Checksum: 1aff90810
+Phase 4.1 Global Iteration 0 | Checksum: 26d7066a9
 
-Time (s): cpu = 00:01:05 ; elapsed = 00:00:28 . Memory (MB): peak = 3459.785 ; gain = 59.988 ; free physical = 12365 ; free virtual = 22606
+Time (s): cpu = 00:01:06 ; elapsed = 00:00:29 . Memory (MB): peak = 3534.297 ; gain = 203.121 ; free physical = 10057 ; free virtual = 21692
 
 Phase 4.2 Global Iteration 1
- Number of Nodes with overlaps = 7
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 3
  Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.548  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.537  | TNS=0.000  | WHS=N/A    | THS=N/A    |
 
-Phase 4.2 Global Iteration 1 | Checksum: 1525b3998
+Phase 4.2 Global Iteration 1 | Checksum: 12e98f018
 
-Time (s): cpu = 00:01:06 ; elapsed = 00:00:29 . Memory (MB): peak = 3459.785 ; gain = 59.988 ; free physical = 12368 ; free virtual = 22610
-Phase 4 Rip-up And Reroute | Checksum: 1525b3998
+Time (s): cpu = 00:01:08 ; elapsed = 00:00:30 . Memory (MB): peak = 3534.297 ; gain = 203.121 ; free physical = 10057 ; free virtual = 21692
+Phase 4 Rip-up And Reroute | Checksum: 12e98f018
 
-Time (s): cpu = 00:01:06 ; elapsed = 00:00:29 . Memory (MB): peak = 3459.785 ; gain = 59.988 ; free physical = 12368 ; free virtual = 22610
+Time (s): cpu = 00:01:08 ; elapsed = 00:00:30 . Memory (MB): peak = 3534.297 ; gain = 203.121 ; free physical = 10057 ; free virtual = 21692
 
 Phase 5 Delay and Skew Optimization
 
 Phase 5.1 Delay CleanUp
 
 Phase 5.1.1 Update Timing
-Phase 5.1.1 Update Timing | Checksum: b3264c76
+Phase 5.1.1 Update Timing | Checksum: 14546984c
 
-Time (s): cpu = 00:01:07 ; elapsed = 00:00:29 . Memory (MB): peak = 3459.785 ; gain = 59.988 ; free physical = 12368 ; free virtual = 22610
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.599  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:01:09 ; elapsed = 00:00:31 . Memory (MB): peak = 3534.297 ; gain = 203.121 ; free physical = 10057 ; free virtual = 21693
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.537  | TNS=0.000  | WHS=N/A    | THS=N/A    |
 
-Phase 5.1 Delay CleanUp | Checksum: b3264c76
+Phase 5.1 Delay CleanUp | Checksum: 14546984c
 
-Time (s): cpu = 00:01:07 ; elapsed = 00:00:29 . Memory (MB): peak = 3459.785 ; gain = 59.988 ; free physical = 12368 ; free virtual = 22610
+Time (s): cpu = 00:01:09 ; elapsed = 00:00:31 . Memory (MB): peak = 3534.297 ; gain = 203.121 ; free physical = 10057 ; free virtual = 21693
 
 Phase 5.2 Clock Skew Optimization
-Phase 5.2 Clock Skew Optimization | Checksum: b3264c76
+Phase 5.2 Clock Skew Optimization | Checksum: 14546984c
 
-Time (s): cpu = 00:01:07 ; elapsed = 00:00:29 . Memory (MB): peak = 3459.785 ; gain = 59.988 ; free physical = 12368 ; free virtual = 22610
-Phase 5 Delay and Skew Optimization | Checksum: b3264c76
+Time (s): cpu = 00:01:09 ; elapsed = 00:00:31 . Memory (MB): peak = 3534.297 ; gain = 203.121 ; free physical = 10057 ; free virtual = 21693
+Phase 5 Delay and Skew Optimization | Checksum: 14546984c
 
-Time (s): cpu = 00:01:07 ; elapsed = 00:00:29 . Memory (MB): peak = 3459.785 ; gain = 59.988 ; free physical = 12368 ; free virtual = 22610
+Time (s): cpu = 00:01:09 ; elapsed = 00:00:31 . Memory (MB): peak = 3534.297 ; gain = 203.121 ; free physical = 10057 ; free virtual = 21693
 
 Phase 6 Post Hold Fix
 
 Phase 6.1 Hold Fix Iter
 
 Phase 6.1.1 Update Timing
-Phase 6.1.1 Update Timing | Checksum: 191c7b6de
+Phase 6.1.1 Update Timing | Checksum: 11ae7c5b5
 
-Time (s): cpu = 00:01:09 ; elapsed = 00:00:30 . Memory (MB): peak = 3459.785 ; gain = 59.988 ; free physical = 12368 ; free virtual = 22610
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.599  | TNS=0.000  | WHS=0.017  | THS=0.000  |
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:32 . Memory (MB): peak = 3534.297 ; gain = 203.121 ; free physical = 10062 ; free virtual = 21690
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.537  | TNS=0.000  | WHS=0.019  | THS=0.000  |
 
-Phase 6.1 Hold Fix Iter | Checksum: 109c484e6
+Phase 6.1 Hold Fix Iter | Checksum: 147beeb81
 
-Time (s): cpu = 00:01:09 ; elapsed = 00:00:30 . Memory (MB): peak = 3459.785 ; gain = 59.988 ; free physical = 12368 ; free virtual = 22610
-Phase 6 Post Hold Fix | Checksum: 109c484e6
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:32 . Memory (MB): peak = 3534.297 ; gain = 203.121 ; free physical = 10062 ; free virtual = 21690
+Phase 6 Post Hold Fix | Checksum: 147beeb81
 
-Time (s): cpu = 00:01:09 ; elapsed = 00:00:30 . Memory (MB): peak = 3459.785 ; gain = 59.988 ; free physical = 12368 ; free virtual = 22610
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:32 . Memory (MB): peak = 3534.297 ; gain = 203.121 ; free physical = 10062 ; free virtual = 21690
 
 Phase 7 Route finalize
 
 Router Utilization Summary
-  Global Vertical Routing Utilization    = 4.35016 %
-  Global Horizontal Routing Utilization  = 6.73538 %
+  Global Vertical Routing Utilization    = 4.14839 %
+  Global Horizontal Routing Utilization  = 6.09567 %
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
@@ -634,44 +638,44 @@ Router Utilization Summary
   Number of Partially Routed Nets     = 0
   Number of Node Overlaps             = 0
 
-Phase 7 Route finalize | Checksum: 1a139668b
+Phase 7 Route finalize | Checksum: 11b58f11f
 
-Time (s): cpu = 00:01:09 ; elapsed = 00:00:30 . Memory (MB): peak = 3459.785 ; gain = 59.988 ; free physical = 12368 ; free virtual = 22610
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:32 . Memory (MB): peak = 3534.297 ; gain = 203.121 ; free physical = 10062 ; free virtual = 21690
 
 Phase 8 Verifying routed nets
 
  Verification completed successfully
-Phase 8 Verifying routed nets | Checksum: 1a139668b
+Phase 8 Verifying routed nets | Checksum: 11b58f11f
 
-Time (s): cpu = 00:01:09 ; elapsed = 00:00:30 . Memory (MB): peak = 3459.785 ; gain = 59.988 ; free physical = 12367 ; free virtual = 22608
+Time (s): cpu = 00:01:12 ; elapsed = 00:00:32 . Memory (MB): peak = 3534.297 ; gain = 203.121 ; free physical = 10062 ; free virtual = 21689
 
 Phase 9 Depositing Routes
-Phase 9 Depositing Routes | Checksum: 266d675ef
+Phase 9 Depositing Routes | Checksum: 1b35ba905
 
-Time (s): cpu = 00:01:10 ; elapsed = 00:00:31 . Memory (MB): peak = 3491.801 ; gain = 92.004 ; free physical = 12371 ; free virtual = 22612
+Time (s): cpu = 00:01:13 ; elapsed = 00:00:33 . Memory (MB): peak = 3566.312 ; gain = 235.137 ; free physical = 10061 ; free virtual = 21688
 
 Phase 10 Post Router Timing
-INFO: [Route 35-57] Estimated Timing Summary | WNS=0.599  | TNS=0.000  | WHS=0.017  | THS=0.000  |
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.537  | TNS=0.000  | WHS=0.019  | THS=0.000  |
 
 INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
-Phase 10 Post Router Timing | Checksum: 266d675ef
+Phase 10 Post Router Timing | Checksum: 1b35ba905
 
-Time (s): cpu = 00:01:10 ; elapsed = 00:00:31 . Memory (MB): peak = 3491.801 ; gain = 92.004 ; free physical = 12371 ; free virtual = 22612
+Time (s): cpu = 00:01:13 ; elapsed = 00:00:33 . Memory (MB): peak = 3566.312 ; gain = 235.137 ; free physical = 10061 ; free virtual = 21688
 INFO: [Route 35-16] Router Completed Successfully
 
-Time (s): cpu = 00:01:10 ; elapsed = 00:00:31 . Memory (MB): peak = 3491.801 ; gain = 92.004 ; free physical = 12419 ; free virtual = 22661
+Time (s): cpu = 00:01:13 ; elapsed = 00:00:33 . Memory (MB): peak = 3566.312 ; gain = 235.137 ; free physical = 10108 ; free virtual = 21735
 
 Routing Is Done.
 INFO: [Common 17-83] Releasing license: Implementation
 120 Infos, 21 Warnings, 0 Critical Warnings and 0 Errors encountered.
 route_design completed successfully
-route_design: Time (s): cpu = 00:01:17 ; elapsed = 00:00:33 . Memory (MB): peak = 3491.801 ; gain = 92.004 ; free physical = 12419 ; free virtual = 22661
+route_design: Time (s): cpu = 00:01:20 ; elapsed = 00:00:35 . Memory (MB): peak = 3566.312 ; gain = 235.137 ; free physical = 10108 ; free virtual = 21735
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.70 . Memory (MB): peak = 3491.801 ; gain = 0.000 ; free physical = 12384 ; free virtual = 22645
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.77 . Memory (MB): peak = 3566.312 ; gain = 0.000 ; free physical = 10060 ; free virtual = 21719
 INFO: [Common 17-1381] The checkpoint '/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/impl_1/design_1_wrapper_routed.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_drc -file design_1_wrapper_drc_routed.rpt -pb design_1_wrapper_drc_routed.pb -rpx design_1_wrapper_drc_routed.rpx
 Command: report_drc -file design_1_wrapper_drc_routed.rpt -pb design_1_wrapper_drc_routed.pb -rpx design_1_wrapper_drc_routed.rpx
@@ -703,7 +707,7 @@ INFO: [runtcl-4] Executing : report_clock_utilization -file design_1_wrapper_clo
 INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file design_1_wrapper_bus_skew_routed.rpt -pb design_1_wrapper_bus_skew_routed.pb -rpx design_1_wrapper_bus_skew_routed.rpx
 INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
 INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
-INFO: [Common 17-206] Exiting Vivado at Mon May 16 14:31:55 2022...
+INFO: [Common 17-206] Exiting Vivado at Thu May 19 16:27:53 2022...
 
 *** Running vivado
     with args -log design_1_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
@@ -719,10 +723,10 @@ Command: open_checkpoint design_1_wrapper_routed.dcp
 
 Starting open_checkpoint Task
 
-Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.08 . Memory (MB): peak = 2367.762 ; gain = 5.938 ; free physical = 13804 ; free virtual = 24081
+Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.07 . Memory (MB): peak = 2367.758 ; gain = 5.938 ; free physical = 11519 ; free virtual = 23151
 INFO: [Device 21-403] Loading part xc7z020clg400-1
-Netlist sorting complete. Time (s): cpu = 00:00:00.17 ; elapsed = 00:00:00.17 . Memory (MB): peak = 2367.879 ; gain = 0.000 ; free physical = 13420 ; free virtual = 23698
-INFO: [Netlist 29-17] Analyzing 851 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00.17 ; elapsed = 00:00:00.16 . Memory (MB): peak = 2367.875 ; gain = 0.000 ; free physical = 11139 ; free virtual = 22770
+INFO: [Netlist 29-17] Analyzing 839 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2020.2
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -733,10 +737,10 @@ INFO: [Project 1-853] Binary constraint restore complete.
 Reading XDEF placement.
 Reading placer database...
 Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:00.83 ; elapsed = 00:00:00.86 . Memory (MB): peak = 2655.793 ; gain = 7.938 ; free physical = 12837 ; free virtual = 23110
-Restored from archive | CPU: 0.860000 secs | Memory: 22.215324 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:00.84 ; elapsed = 00:00:00.87 . Memory (MB): peak = 2655.793 ; gain = 7.938 ; free physical = 12837 ; free virtual = 23110
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2655.793 ; gain = 0.000 ; free physical = 12838 ; free virtual = 23112
+Read XDEF File: Time (s): cpu = 00:00:00.84 ; elapsed = 00:00:00.87 . Memory (MB): peak = 2670.758 ; gain = 5.938 ; free physical = 10549 ; free virtual = 22171
+Restored from archive | CPU: 0.870000 secs | Memory: 22.039917 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.85 ; elapsed = 00:00:00.87 . Memory (MB): peak = 2670.758 ; gain = 5.938 ; free physical = 10549 ; free virtual = 22171
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2670.758 ; gain = 0.000 ; free physical = 10550 ; free virtual = 22172
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 10 instances were transformed.
   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 2 instances
@@ -744,7 +748,7 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   SRLC32E => SRL16E: 7 instances
 
 INFO: [Project 1-604] Checkpoint was created with Vivado v2020.2 (64-bit) build 3064766
-open_checkpoint: Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2659.793 ; gain = 301.938 ; free physical = 12838 ; free virtual = 23112
+open_checkpoint: Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2674.758 ; gain = 316.906 ; free physical = 10550 ; free virtual = 22172
 Command: write_bitstream -force design_1_wrapper.bit
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
@@ -754,7 +758,7 @@ INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
 INFO: [DRC 23-27] Running DRC with 8 threads
 WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1840 rule limit reached: 20 violations have been found.
-WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/fcc_combined_0/inst/mac_muladd_16s_16s_23ns_23_4_1_U16/fcc_combined_mac_muladd_16s_16s_23ns_23_4_1_DSP48_2_U/p_reg_reg input design_1_i/fcc_combined_0/inst/mac_muladd_16s_16s_23ns_23_4_1_U16/fcc_combined_mac_muladd_16s_16s_23ns_23_4_1_DSP48_2_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/fcc_combined_0/inst/mac_muladd_16s_16s_29ns_29_4_1_U16/fcc_combined_mac_muladd_16s_16s_29ns_29_4_1_DSP48_2_U/p_reg_reg input design_1_i/fcc_combined_0/inst/mac_muladd_16s_16s_29ns_29_4_1_U16/fcc_combined_mac_muladd_16s_16s_29ns_29_4_1_DSP48_2_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
 WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/fcc_combined_0/inst/mul_31ns_32ns_63_2_1_U6/fcc_combined_mul_31ns_32ns_63_2_1_Multiplier_4_U/tmp_product output design_1_i/fcc_combined_0/inst/mul_31ns_32ns_63_2_1_U6/fcc_combined_mul_31ns_32ns_63_2_1_Multiplier_4_U/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/fcc_combined_0/inst/mul_31ns_32ns_63_2_1_U6/fcc_combined_mul_31ns_32ns_63_2_1_Multiplier_4_U/tmp_product__0 output design_1_i/fcc_combined_0/inst/mul_31ns_32ns_63_2_1_U6/fcc_combined_mul_31ns_32ns_63_2_1_Multiplier_4_U/tmp_product__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/fcc_combined_0/inst/mul_31s_31s_31_2_1_U3/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product__0 output design_1_i/fcc_combined_0/inst/mul_31s_31s_31_2_1_U3/fcc_combined_mul_31s_31s_31_2_1_Multiplier_2_U/tmp_product__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
@@ -791,19 +795,19 @@ WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/Inp
 WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/InputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin design_1_i/InputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRBWRADDR[7] (net: design_1_i/InputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/rnext[3]) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/InputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin design_1_i/InputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRBWRADDR[8] (net: design_1_i/InputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/rnext[4]) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/InputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin design_1_i/InputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRBWRADDR[9] (net: design_1_i/InputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/rnext[5]) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/OutputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin design_1_i/OutputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRBWRADDR[10] (net: design_1_i/OutputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/rnext[6]) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/OutputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin design_1_i/OutputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRBWRADDR[11] (net: design_1_i/OutputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/rnext[7]) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/OutputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin design_1_i/OutputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRBWRADDR[4] (net: design_1_i/OutputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/rnext[0]) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/OutputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin design_1_i/OutputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRBWRADDR[5] (net: design_1_i/OutputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/rnext[1]) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/OutputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin design_1_i/OutputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRBWRADDR[6] (net: design_1_i/OutputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/rnext[2]) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/OutputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin design_1_i/OutputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRBWRADDR[7] (net: design_1_i/OutputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/rnext[3]) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/OutputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin design_1_i/OutputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRBWRADDR[8] (net: design_1_i/OutputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/rnext[4]) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/OutputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin design_1_i/OutputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRBWRADDR[9] (net: design_1_i/OutputLayer_0/inst/gmem_m_axi_U/bus_write/buff_wdata/rnext[5]) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/InputLayer_1/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin design_1_i/InputLayer_1/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRBWRADDR[10] (net: design_1_i/InputLayer_1/inst/gmem_m_axi_U/bus_write/buff_wdata/rnext[6]) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/InputLayer_1/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin design_1_i/InputLayer_1/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRBWRADDR[11] (net: design_1_i/InputLayer_1/inst/gmem_m_axi_U/bus_write/buff_wdata/rnext[7]) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/InputLayer_1/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin design_1_i/InputLayer_1/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRBWRADDR[4] (net: design_1_i/InputLayer_1/inst/gmem_m_axi_U/bus_write/buff_wdata/rnext[0]) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/InputLayer_1/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin design_1_i/InputLayer_1/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRBWRADDR[5] (net: design_1_i/InputLayer_1/inst/gmem_m_axi_U/bus_write/buff_wdata/rnext[1]) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/InputLayer_1/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin design_1_i/InputLayer_1/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRBWRADDR[6] (net: design_1_i/InputLayer_1/inst/gmem_m_axi_U/bus_write/buff_wdata/rnext[2]) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/InputLayer_1/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin design_1_i/InputLayer_1/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRBWRADDR[7] (net: design_1_i/InputLayer_1/inst/gmem_m_axi_U/bus_write/buff_wdata/rnext[3]) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/InputLayer_1/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin design_1_i/InputLayer_1/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRBWRADDR[8] (net: design_1_i/InputLayer_1/inst/gmem_m_axi_U/bus_write/buff_wdata/rnext[4]) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/InputLayer_1/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin design_1_i/InputLayer_1/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRBWRADDR[9] (net: design_1_i/InputLayer_1/inst/gmem_m_axi_U/bus_write/buff_wdata/rnext[5]) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/fcc_combined_0/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin design_1_i/fcc_combined_0/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRBWRADDR[10] (net: design_1_i/fcc_combined_0/inst/gmem_m_axi_U/bus_write/buff_wdata/rnext[6]) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/fcc_combined_0/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin design_1_i/fcc_combined_0/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRBWRADDR[11] (net: design_1_i/fcc_combined_0/inst/gmem_m_axi_U/bus_write/buff_wdata/rnext[7]) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/fcc_combined_0/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin design_1_i/fcc_combined_0/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRBWRADDR[8] (net: design_1_i/fcc_combined_0/inst/gmem_m_axi_U/bus_write/buff_wdata/rnext[4]) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/fcc_combined_0/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin design_1_i/fcc_combined_0/inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRBWRADDR[9] (net: design_1_i/fcc_combined_0/inst/gmem_m_axi_U/bus_write/buff_wdata/rnext[5]) which is driven by a register (design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC RTSTAT-10] No routable loads: 33 net(s) have no routable loads. The problem bus(es) and/or net(s) are design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i, design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i, design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i, design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg[2:0], design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg[2:0], design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg[2:0]... and (the first 15 of 21 listed).
+WARNING: [DRC RTSTAT-10] No routable loads: 33 net(s) have no routable loads. The problem bus(es) and/or net(s) are design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i, design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i, design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i, design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg[2:0], design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg[2:0], design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg[2:0]... and (the first 15 of 21 listed).
 INFO: [Vivado 12-3199] DRC finished with 0 Errors, 51 Warnings
 INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
 INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
@@ -816,9 +820,9 @@ Creating bitstream...
 Writing bitstream ./design_1_wrapper.bit...
 INFO: [Vivado 12-1842] Bitgen Completed Successfully.
 INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
-INFO: [Common 17-186] '/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Mon May 16 14:33:39 2022. For additional details about this file, please refer to the WebTalk help file at /tools/Xilinx/Vivado/2020.2/doc/webtalk_introduction.html.
+INFO: [Common 17-186] '/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Thu May 19 16:28:39 2022. For additional details about this file, please refer to the WebTalk help file at /tools/Xilinx/Vivado/2020.2/doc/webtalk_introduction.html.
 INFO: [Common 17-83] Releasing license: Implementation
 23 Infos, 51 Warnings, 0 Critical Warnings and 0 Errors encountered.
 write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:00:29 ; elapsed = 00:00:19 . Memory (MB): peak = 3230.562 ; gain = 570.770 ; free physical = 12417 ; free virtual = 22894
-INFO: [Common 17-206] Exiting Vivado at Mon May 16 14:33:39 2022...
+write_bitstream: Time (s): cpu = 00:00:26 ; elapsed = 00:00:18 . Memory (MB): peak = 3244.363 ; gain = 569.605 ; free physical = 10443 ; free virtual = 22061
+INFO: [Common 17-206] Exiting Vivado at Thu May 19 16:28:39 2022...

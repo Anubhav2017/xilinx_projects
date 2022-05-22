@@ -27,14 +27,23 @@ using namespace sc_dt;
 #define AUTOTB_TVIN_dx "../tv/cdatafile/c.loss_derivative.autotvin_dx.dat"
 #define AUTOTB_TVOUT_dx "../tv/cdatafile/c.loss_derivative.autotvout_dx.dat"
 // wrapc file define:
+#define AUTOTB_TVIN_x_ddr "../tv/cdatafile/c.loss_derivative.autotvin_x_ddr.dat"
+#define AUTOTB_TVOUT_x_ddr "../tv/cdatafile/c.loss_derivative.autotvout_x_ddr.dat"
+// wrapc file define:
+#define AUTOTB_TVIN_dx_ddr "../tv/cdatafile/c.loss_derivative.autotvin_dx_ddr.dat"
+#define AUTOTB_TVOUT_dx_ddr "../tv/cdatafile/c.loss_derivative.autotvout_dx_ddr.dat"
+// wrapc file define:
 #define AUTOTB_TVIN_y "../tv/cdatafile/c.loss_derivative.autotvin_y.dat"
 #define AUTOTB_TVOUT_y "../tv/cdatafile/c.loss_derivative.autotvout_y.dat"
 // wrapc file define:
-#define AUTOTB_TVIN_x_size "../tv/cdatafile/c.loss_derivative.autotvin_x_size.dat"
-#define AUTOTB_TVOUT_x_size "../tv/cdatafile/c.loss_derivative.autotvout_x_size.dat"
+#define AUTOTB_TVIN_dim "../tv/cdatafile/c.loss_derivative.autotvin_dim.dat"
+#define AUTOTB_TVOUT_dim "../tv/cdatafile/c.loss_derivative.autotvout_dim.dat"
 // wrapc file define:
-#define AUTOTB_TVIN_N "../tv/cdatafile/c.loss_derivative.autotvin_N.dat"
-#define AUTOTB_TVOUT_N "../tv/cdatafile/c.loss_derivative.autotvout_N.dat"
+#define AUTOTB_TVIN_writetoddr "../tv/cdatafile/c.loss_derivative.autotvin_writetoddr.dat"
+#define AUTOTB_TVOUT_writetoddr "../tv/cdatafile/c.loss_derivative.autotvout_writetoddr.dat"
+// wrapc file define:
+#define AUTOTB_TVIN_ddrtobram "../tv/cdatafile/c.loss_derivative.autotvin_ddrtobram.dat"
+#define AUTOTB_TVOUT_ddrtobram "../tv/cdatafile/c.loss_derivative.autotvout_ddrtobram.dat"
 // wrapc file define:
 #define AUTOTB_TVOUT_return "../tv/cdatafile/c.loss_derivative.autotvout_ap_return.dat"
 
@@ -47,11 +56,17 @@ using namespace sc_dt;
 // tvout file define:
 #define AUTOTB_TVOUT_PC_dx "../tv/rtldatafile/rtl.loss_derivative.autotvout_dx.dat"
 // tvout file define:
+#define AUTOTB_TVOUT_PC_x_ddr "../tv/rtldatafile/rtl.loss_derivative.autotvout_x_ddr.dat"
+// tvout file define:
+#define AUTOTB_TVOUT_PC_dx_ddr "../tv/rtldatafile/rtl.loss_derivative.autotvout_dx_ddr.dat"
+// tvout file define:
 #define AUTOTB_TVOUT_PC_y "../tv/rtldatafile/rtl.loss_derivative.autotvout_y.dat"
 // tvout file define:
-#define AUTOTB_TVOUT_PC_x_size "../tv/rtldatafile/rtl.loss_derivative.autotvout_x_size.dat"
+#define AUTOTB_TVOUT_PC_dim "../tv/rtldatafile/rtl.loss_derivative.autotvout_dim.dat"
 // tvout file define:
-#define AUTOTB_TVOUT_PC_N "../tv/rtldatafile/rtl.loss_derivative.autotvout_N.dat"
+#define AUTOTB_TVOUT_PC_writetoddr "../tv/rtldatafile/rtl.loss_derivative.autotvout_writetoddr.dat"
+// tvout file define:
+#define AUTOTB_TVOUT_PC_ddrtobram "../tv/rtldatafile/rtl.loss_derivative.autotvout_ddrtobram.dat"
 #define AUTOTB_TVOUT_PC_return "../tv/rtldatafile/rtl.loss_derivative.autotvout_ap_return.dat"
 
 class INTER_TCL_FILE {
@@ -61,9 +76,12 @@ INTER_TCL_FILE(const char* name) {
   gmem_depth = 0;
   x_depth = 0;
   dx_depth = 0;
+  x_ddr_depth = 0;
+  dx_ddr_depth = 0;
   y_depth = 0;
-  x_size_depth = 0;
-  N_depth = 0;
+  dim_depth = 0;
+  writetoddr_depth = 0;
+  ddrtobram_depth = 0;
   return_depth = 0;
   trans_num =0;
 }
@@ -85,9 +103,12 @@ string get_depth_list () {
   total_list << "{gmem " << gmem_depth << "}\n";
   total_list << "{x " << x_depth << "}\n";
   total_list << "{dx " << dx_depth << "}\n";
+  total_list << "{x_ddr " << x_ddr_depth << "}\n";
+  total_list << "{dx_ddr " << dx_ddr_depth << "}\n";
   total_list << "{y " << y_depth << "}\n";
-  total_list << "{x_size " << x_size_depth << "}\n";
-  total_list << "{N " << N_depth << "}\n";
+  total_list << "{dim " << dim_depth << "}\n";
+  total_list << "{writetoddr " << writetoddr_depth << "}\n";
+  total_list << "{ddrtobram " << ddrtobram_depth << "}\n";
   total_list << "{ap_return " << return_depth << "}\n";
   return total_list.str();
 }
@@ -101,9 +122,12 @@ void set_string(std::string list, std::string* class_list) {
     int gmem_depth;
     int x_depth;
     int dx_depth;
+    int x_ddr_depth;
+    int dx_ddr_depth;
     int y_depth;
-    int x_size_depth;
-    int N_depth;
+    int dim_depth;
+    int writetoddr_depth;
+    int ddrtobram_depth;
     int return_depth;
     int trans_num;
   private:
@@ -147,9 +171,9 @@ static void RTLOutputCheckAndReplacement(std::string &AESL_token, std::string Po
   }
 }
 struct __cosim_s2__ { char data[2]; };
-extern "C" void loss_derivative_hw_stub_wrapper(__cosim_s2__*, volatile void *, volatile void *, int, int, int);
+extern "C" void loss_derivative_hw_stub_wrapper(__cosim_s2__*, volatile void *, volatile void *, volatile void *, volatile void *, int, int, char, char);
 
-extern "C" void  apatb_loss_derivative_hw(__cosim_s2__* ap_return, volatile void * __xlx_apatb_param_x, volatile void * __xlx_apatb_param_dx, int __xlx_apatb_param_y, int __xlx_apatb_param_x_size, int __xlx_apatb_param_N) {
+extern "C" void  apatb_loss_derivative_hw(__cosim_s2__* ap_return, volatile void * __xlx_apatb_param_x, volatile void * __xlx_apatb_param_dx, volatile void * __xlx_apatb_param_x_ddr, volatile void * __xlx_apatb_param_dx_ddr, int __xlx_apatb_param_y, int __xlx_apatb_param_dim, char __xlx_apatb_param_writetoddr, char __xlx_apatb_param_ddrtobram) {
   refine_signal_handler();
   fstream wrapc_switch_file_token;
   wrapc_switch_file_token.open(".hls_cosim_wrapc_switch.log");
@@ -222,7 +246,7 @@ extern "C" void  apatb_loss_derivative_hw(__cosim_s2__* ap_return, volatile void
           exit(1);
         }
         if (atoi(AESL_num.c_str()) == AESL_transaction_pc) {
-          std::vector<sc_bv<16> > gmem_pc_buffer(400);
+          std::vector<sc_bv<16> > gmem_pc_buffer(2);
           int i = 0;
 
           rtl_tv_out_file >> AESL_token; //data
@@ -242,11 +266,101 @@ extern "C" void  apatb_loss_derivative_hw(__cosim_s2__* ap_return, volatile void
           }
           if (i > 0) {{
             int i = 0;
-            for (int j = 0, e = 200; j < e; j += 1, ++i) {
-            ((short*)__xlx_apatb_param_x)[j] = gmem_pc_buffer[i].to_int64();
+            for (int j = 0, e = 1; j < e; j += 1, ++i) {
+            ((short*)__xlx_apatb_param_x_ddr)[j] = gmem_pc_buffer[i].to_int64();
           }
-            for (int j = 0, e = 200; j < e; j += 1, ++i) {
-            ((short*)__xlx_apatb_param_dx)[j] = gmem_pc_buffer[i].to_int64();
+            for (int j = 0, e = 1; j < e; j += 1, ++i) {
+            ((short*)__xlx_apatb_param_dx_ddr)[j] = gmem_pc_buffer[i].to_int64();
+          }}}
+        } // end transaction
+      } // end file is good
+    } // end post check logic bolck
+  {
+      static ifstream rtl_tv_out_file;
+      if (!rtl_tv_out_file.is_open()) {
+        rtl_tv_out_file.open(AUTOTB_TVOUT_PC_x);
+        if (rtl_tv_out_file.good()) {
+          rtl_tv_out_file >> AESL_token;
+          if (AESL_token != "[[[runtime]]]")
+            exit(1);
+        }
+      }
+  
+      if (rtl_tv_out_file.good()) {
+        rtl_tv_out_file >> AESL_token; 
+        rtl_tv_out_file >> AESL_num;  // transaction number
+        if (AESL_token != "[[transaction]]") {
+          cerr << "Unexpected token: " << AESL_token << endl;
+          exit(1);
+        }
+        if (atoi(AESL_num.c_str()) == AESL_transaction_pc) {
+          std::vector<sc_bv<16> > x_pc_buffer(100);
+          int i = 0;
+
+          rtl_tv_out_file >> AESL_token; //data
+          while (AESL_token != "[[/transaction]]"){
+
+            RTLOutputCheckAndReplacement(AESL_token, "x");
+  
+            // push token into output port buffer
+            if (AESL_token != "") {
+              x_pc_buffer[i] = AESL_token.c_str();;
+              i++;
+            }
+  
+            rtl_tv_out_file >> AESL_token; //data or [[/transaction]]
+            if (AESL_token == "[[[/runtime]]]" || rtl_tv_out_file.eof())
+              exit(1);
+          }
+          if (i > 0) {{
+            int i = 0;
+            for (int j = 0, e = 100; j < e; j += 1, ++i) {
+            ((short*)__xlx_apatb_param_x)[j] = x_pc_buffer[i].to_int64();
+          }}}
+        } // end transaction
+      } // end file is good
+    } // end post check logic bolck
+  {
+      static ifstream rtl_tv_out_file;
+      if (!rtl_tv_out_file.is_open()) {
+        rtl_tv_out_file.open(AUTOTB_TVOUT_PC_dx);
+        if (rtl_tv_out_file.good()) {
+          rtl_tv_out_file >> AESL_token;
+          if (AESL_token != "[[[runtime]]]")
+            exit(1);
+        }
+      }
+  
+      if (rtl_tv_out_file.good()) {
+        rtl_tv_out_file >> AESL_token; 
+        rtl_tv_out_file >> AESL_num;  // transaction number
+        if (AESL_token != "[[transaction]]") {
+          cerr << "Unexpected token: " << AESL_token << endl;
+          exit(1);
+        }
+        if (atoi(AESL_num.c_str()) == AESL_transaction_pc) {
+          std::vector<sc_bv<16> > dx_pc_buffer(100);
+          int i = 0;
+
+          rtl_tv_out_file >> AESL_token; //data
+          while (AESL_token != "[[/transaction]]"){
+
+            RTLOutputCheckAndReplacement(AESL_token, "dx");
+  
+            // push token into output port buffer
+            if (AESL_token != "") {
+              dx_pc_buffer[i] = AESL_token.c_str();;
+              i++;
+            }
+  
+            rtl_tv_out_file >> AESL_token; //data or [[/transaction]]
+            if (AESL_token == "[[[/runtime]]]" || rtl_tv_out_file.eof())
+              exit(1);
+          }
+          if (i > 0) {{
+            int i = 0;
+            for (int j = 0, e = 100; j < e; j += 1, ++i) {
+            ((short*)__xlx_apatb_param_dx)[j] = dx_pc_buffer[i].to_int64();
           }}}
         } // end transaction
       } // end file is good
@@ -269,72 +383,119 @@ aesl_fh.touch(AUTOTB_TVOUT_x);
 //dx
 aesl_fh.touch(AUTOTB_TVIN_dx);
 aesl_fh.touch(AUTOTB_TVOUT_dx);
+//x_ddr
+aesl_fh.touch(AUTOTB_TVIN_x_ddr);
+aesl_fh.touch(AUTOTB_TVOUT_x_ddr);
+//dx_ddr
+aesl_fh.touch(AUTOTB_TVIN_dx_ddr);
+aesl_fh.touch(AUTOTB_TVOUT_dx_ddr);
 //y
 aesl_fh.touch(AUTOTB_TVIN_y);
 aesl_fh.touch(AUTOTB_TVOUT_y);
-//x_size
-aesl_fh.touch(AUTOTB_TVIN_x_size);
-aesl_fh.touch(AUTOTB_TVOUT_x_size);
-//N
-aesl_fh.touch(AUTOTB_TVIN_N);
-aesl_fh.touch(AUTOTB_TVOUT_N);
+//dim
+aesl_fh.touch(AUTOTB_TVIN_dim);
+aesl_fh.touch(AUTOTB_TVOUT_dim);
+//writetoddr
+aesl_fh.touch(AUTOTB_TVIN_writetoddr);
+aesl_fh.touch(AUTOTB_TVOUT_writetoddr);
+//ddrtobram
+aesl_fh.touch(AUTOTB_TVIN_ddrtobram);
+aesl_fh.touch(AUTOTB_TVOUT_ddrtobram);
 CodeState = DUMP_INPUTS;
-unsigned __xlx_offset_byte_param_x = 0;
-unsigned __xlx_offset_byte_param_dx = 0;
+unsigned __xlx_offset_byte_param_x_ddr = 0;
+unsigned __xlx_offset_byte_param_dx_ddr = 0;
 // print gmem Transactions
 {
   sprintf(__xlx_sprintf_buffer.data(), "[[transaction]] %d\n", AESL_transaction);
   aesl_fh.write(AUTOTB_TVIN_gmem, __xlx_sprintf_buffer.data());
-  {  __xlx_offset_byte_param_x = 0*2;
-  if (__xlx_apatb_param_x) {
-    for (int j = 0  - 0, e = 200 - 0; j != e; ++j) {
-sc_bv<16> __xlx_tmp_lv = ((short*)__xlx_apatb_param_x)[j];
+  {  __xlx_offset_byte_param_x_ddr = 0*2;
+  if (__xlx_apatb_param_x_ddr) {
+    for (int j = 0  - 0, e = 1 - 0; j != e; ++j) {
+sc_bv<16> __xlx_tmp_lv = ((short*)__xlx_apatb_param_x_ddr)[j];
 
     sprintf(__xlx_sprintf_buffer.data(), "%s\n", __xlx_tmp_lv.to_string(SC_HEX).c_str());
     aesl_fh.write(AUTOTB_TVIN_gmem, __xlx_sprintf_buffer.data()); 
       }
   }
-  __xlx_offset_byte_param_dx = 200*2;
-  if (__xlx_apatb_param_dx) {
-    for (int j = 0  - 0, e = 200 - 0; j != e; ++j) {
-sc_bv<16> __xlx_tmp_lv = ((short*)__xlx_apatb_param_dx)[j];
+  __xlx_offset_byte_param_dx_ddr = 1*2;
+  if (__xlx_apatb_param_dx_ddr) {
+    for (int j = 0  - 0, e = 1 - 0; j != e; ++j) {
+sc_bv<16> __xlx_tmp_lv = ((short*)__xlx_apatb_param_dx_ddr)[j];
 
     sprintf(__xlx_sprintf_buffer.data(), "%s\n", __xlx_tmp_lv.to_string(SC_HEX).c_str());
     aesl_fh.write(AUTOTB_TVIN_gmem, __xlx_sprintf_buffer.data()); 
       }
   }
 }
-  tcl_file.set_num(400, &tcl_file.gmem_depth);
+  tcl_file.set_num(2, &tcl_file.gmem_depth);
   sprintf(__xlx_sprintf_buffer.data(), "[[/transaction]] \n");
   aesl_fh.write(AUTOTB_TVIN_gmem, __xlx_sprintf_buffer.data());
 }
+unsigned __xlx_offset_byte_param_x = 0;
 // print x Transactions
 {
   sprintf(__xlx_sprintf_buffer.data(), "[[transaction]] %d\n", AESL_transaction);
   aesl_fh.write(AUTOTB_TVIN_x, __xlx_sprintf_buffer.data());
-  {
-    sc_bv<32> __xlx_tmp_lv = __xlx_offset_byte_param_x;
+  {  __xlx_offset_byte_param_x = 0*2;
+  if (__xlx_apatb_param_x) {
+    for (int j = 0  - 0, e = 100 - 0; j != e; ++j) {
+sc_bv<16> __xlx_tmp_lv = ((short*)__xlx_apatb_param_x)[j];
 
     sprintf(__xlx_sprintf_buffer.data(), "%s\n", __xlx_tmp_lv.to_string(SC_HEX).c_str());
     aesl_fh.write(AUTOTB_TVIN_x, __xlx_sprintf_buffer.data()); 
+      }
   }
-  tcl_file.set_num(1, &tcl_file.x_depth);
+}
+  tcl_file.set_num(100, &tcl_file.x_depth);
   sprintf(__xlx_sprintf_buffer.data(), "[[/transaction]] \n");
   aesl_fh.write(AUTOTB_TVIN_x, __xlx_sprintf_buffer.data());
 }
+unsigned __xlx_offset_byte_param_dx = 0;
 // print dx Transactions
 {
   sprintf(__xlx_sprintf_buffer.data(), "[[transaction]] %d\n", AESL_transaction);
   aesl_fh.write(AUTOTB_TVIN_dx, __xlx_sprintf_buffer.data());
-  {
-    sc_bv<32> __xlx_tmp_lv = __xlx_offset_byte_param_dx;
+  {  __xlx_offset_byte_param_dx = 0*2;
+  if (__xlx_apatb_param_dx) {
+    for (int j = 0  - 0, e = 100 - 0; j != e; ++j) {
+sc_bv<16> __xlx_tmp_lv = ((short*)__xlx_apatb_param_dx)[j];
 
     sprintf(__xlx_sprintf_buffer.data(), "%s\n", __xlx_tmp_lv.to_string(SC_HEX).c_str());
     aesl_fh.write(AUTOTB_TVIN_dx, __xlx_sprintf_buffer.data()); 
+      }
   }
-  tcl_file.set_num(1, &tcl_file.dx_depth);
+}
+  tcl_file.set_num(100, &tcl_file.dx_depth);
   sprintf(__xlx_sprintf_buffer.data(), "[[/transaction]] \n");
   aesl_fh.write(AUTOTB_TVIN_dx, __xlx_sprintf_buffer.data());
+}
+// print x_ddr Transactions
+{
+  sprintf(__xlx_sprintf_buffer.data(), "[[transaction]] %d\n", AESL_transaction);
+  aesl_fh.write(AUTOTB_TVIN_x_ddr, __xlx_sprintf_buffer.data());
+  {
+    sc_bv<32> __xlx_tmp_lv = __xlx_offset_byte_param_x_ddr;
+
+    sprintf(__xlx_sprintf_buffer.data(), "%s\n", __xlx_tmp_lv.to_string(SC_HEX).c_str());
+    aesl_fh.write(AUTOTB_TVIN_x_ddr, __xlx_sprintf_buffer.data()); 
+  }
+  tcl_file.set_num(1, &tcl_file.x_ddr_depth);
+  sprintf(__xlx_sprintf_buffer.data(), "[[/transaction]] \n");
+  aesl_fh.write(AUTOTB_TVIN_x_ddr, __xlx_sprintf_buffer.data());
+}
+// print dx_ddr Transactions
+{
+  sprintf(__xlx_sprintf_buffer.data(), "[[transaction]] %d\n", AESL_transaction);
+  aesl_fh.write(AUTOTB_TVIN_dx_ddr, __xlx_sprintf_buffer.data());
+  {
+    sc_bv<32> __xlx_tmp_lv = __xlx_offset_byte_param_dx_ddr;
+
+    sprintf(__xlx_sprintf_buffer.data(), "%s\n", __xlx_tmp_lv.to_string(SC_HEX).c_str());
+    aesl_fh.write(AUTOTB_TVIN_dx_ddr, __xlx_sprintf_buffer.data()); 
+  }
+  tcl_file.set_num(1, &tcl_file.dx_ddr_depth);
+  sprintf(__xlx_sprintf_buffer.data(), "[[/transaction]] \n");
+  aesl_fh.write(AUTOTB_TVIN_dx_ddr, __xlx_sprintf_buffer.data());
 }
 // print y Transactions
 {
@@ -350,63 +511,113 @@ sc_bv<16> __xlx_tmp_lv = ((short*)__xlx_apatb_param_dx)[j];
   sprintf(__xlx_sprintf_buffer.data(), "[[/transaction]] \n");
   aesl_fh.write(AUTOTB_TVIN_y, __xlx_sprintf_buffer.data());
 }
-// print x_size Transactions
+// print dim Transactions
 {
   sprintf(__xlx_sprintf_buffer.data(), "[[transaction]] %d\n", AESL_transaction);
-  aesl_fh.write(AUTOTB_TVIN_x_size, __xlx_sprintf_buffer.data());
+  aesl_fh.write(AUTOTB_TVIN_dim, __xlx_sprintf_buffer.data());
   {
-    sc_bv<32> __xlx_tmp_lv = *((int*)&__xlx_apatb_param_x_size);
+    sc_bv<32> __xlx_tmp_lv = *((int*)&__xlx_apatb_param_dim);
 
     sprintf(__xlx_sprintf_buffer.data(), "%s\n", __xlx_tmp_lv.to_string(SC_HEX).c_str());
-    aesl_fh.write(AUTOTB_TVIN_x_size, __xlx_sprintf_buffer.data()); 
+    aesl_fh.write(AUTOTB_TVIN_dim, __xlx_sprintf_buffer.data()); 
   }
-  tcl_file.set_num(1, &tcl_file.x_size_depth);
+  tcl_file.set_num(1, &tcl_file.dim_depth);
   sprintf(__xlx_sprintf_buffer.data(), "[[/transaction]] \n");
-  aesl_fh.write(AUTOTB_TVIN_x_size, __xlx_sprintf_buffer.data());
+  aesl_fh.write(AUTOTB_TVIN_dim, __xlx_sprintf_buffer.data());
 }
-// print N Transactions
+// print writetoddr Transactions
 {
   sprintf(__xlx_sprintf_buffer.data(), "[[transaction]] %d\n", AESL_transaction);
-  aesl_fh.write(AUTOTB_TVIN_N, __xlx_sprintf_buffer.data());
+  aesl_fh.write(AUTOTB_TVIN_writetoddr, __xlx_sprintf_buffer.data());
   {
-    sc_bv<32> __xlx_tmp_lv = *((int*)&__xlx_apatb_param_N);
+    sc_bv<1> __xlx_tmp_lv = *((char*)&__xlx_apatb_param_writetoddr);
 
     sprintf(__xlx_sprintf_buffer.data(), "%s\n", __xlx_tmp_lv.to_string(SC_HEX).c_str());
-    aesl_fh.write(AUTOTB_TVIN_N, __xlx_sprintf_buffer.data()); 
+    aesl_fh.write(AUTOTB_TVIN_writetoddr, __xlx_sprintf_buffer.data()); 
   }
-  tcl_file.set_num(1, &tcl_file.N_depth);
+  tcl_file.set_num(1, &tcl_file.writetoddr_depth);
   sprintf(__xlx_sprintf_buffer.data(), "[[/transaction]] \n");
-  aesl_fh.write(AUTOTB_TVIN_N, __xlx_sprintf_buffer.data());
+  aesl_fh.write(AUTOTB_TVIN_writetoddr, __xlx_sprintf_buffer.data());
+}
+// print ddrtobram Transactions
+{
+  sprintf(__xlx_sprintf_buffer.data(), "[[transaction]] %d\n", AESL_transaction);
+  aesl_fh.write(AUTOTB_TVIN_ddrtobram, __xlx_sprintf_buffer.data());
+  {
+    sc_bv<1> __xlx_tmp_lv = *((char*)&__xlx_apatb_param_ddrtobram);
+
+    sprintf(__xlx_sprintf_buffer.data(), "%s\n", __xlx_tmp_lv.to_string(SC_HEX).c_str());
+    aesl_fh.write(AUTOTB_TVIN_ddrtobram, __xlx_sprintf_buffer.data()); 
+  }
+  tcl_file.set_num(1, &tcl_file.ddrtobram_depth);
+  sprintf(__xlx_sprintf_buffer.data(), "[[/transaction]] \n");
+  aesl_fh.write(AUTOTB_TVIN_ddrtobram, __xlx_sprintf_buffer.data());
 }
 CodeState = CALL_C_DUT;
-loss_derivative_hw_stub_wrapper(ap_return, __xlx_apatb_param_x, __xlx_apatb_param_dx, __xlx_apatb_param_y, __xlx_apatb_param_x_size, __xlx_apatb_param_N);
+loss_derivative_hw_stub_wrapper(ap_return, __xlx_apatb_param_x, __xlx_apatb_param_dx, __xlx_apatb_param_x_ddr, __xlx_apatb_param_dx_ddr, __xlx_apatb_param_y, __xlx_apatb_param_dim, __xlx_apatb_param_writetoddr, __xlx_apatb_param_ddrtobram);
 CodeState = DUMP_OUTPUTS;
 // print gmem Transactions
 {
   sprintf(__xlx_sprintf_buffer.data(), "[[transaction]] %d\n", AESL_transaction);
   aesl_fh.write(AUTOTB_TVOUT_gmem, __xlx_sprintf_buffer.data());
-  {  __xlx_offset_byte_param_x = 0*2;
-  if (__xlx_apatb_param_x) {
-    for (int j = 0  - 0, e = 200 - 0; j != e; ++j) {
-sc_bv<16> __xlx_tmp_lv = ((short*)__xlx_apatb_param_x)[j];
+  {  __xlx_offset_byte_param_x_ddr = 0*2;
+  if (__xlx_apatb_param_x_ddr) {
+    for (int j = 0  - 0, e = 1 - 0; j != e; ++j) {
+sc_bv<16> __xlx_tmp_lv = ((short*)__xlx_apatb_param_x_ddr)[j];
 
     sprintf(__xlx_sprintf_buffer.data(), "%s\n", __xlx_tmp_lv.to_string(SC_HEX).c_str());
     aesl_fh.write(AUTOTB_TVOUT_gmem, __xlx_sprintf_buffer.data()); 
       }
   }
-  __xlx_offset_byte_param_dx = 200*2;
-  if (__xlx_apatb_param_dx) {
-    for (int j = 0  - 0, e = 200 - 0; j != e; ++j) {
-sc_bv<16> __xlx_tmp_lv = ((short*)__xlx_apatb_param_dx)[j];
+  __xlx_offset_byte_param_dx_ddr = 1*2;
+  if (__xlx_apatb_param_dx_ddr) {
+    for (int j = 0  - 0, e = 1 - 0; j != e; ++j) {
+sc_bv<16> __xlx_tmp_lv = ((short*)__xlx_apatb_param_dx_ddr)[j];
 
     sprintf(__xlx_sprintf_buffer.data(), "%s\n", __xlx_tmp_lv.to_string(SC_HEX).c_str());
     aesl_fh.write(AUTOTB_TVOUT_gmem, __xlx_sprintf_buffer.data()); 
       }
   }
 }
-  tcl_file.set_num(400, &tcl_file.gmem_depth);
+  tcl_file.set_num(2, &tcl_file.gmem_depth);
   sprintf(__xlx_sprintf_buffer.data(), "[[/transaction]] \n");
   aesl_fh.write(AUTOTB_TVOUT_gmem, __xlx_sprintf_buffer.data());
+}
+// print x Transactions
+{
+  sprintf(__xlx_sprintf_buffer.data(), "[[transaction]] %d\n", AESL_transaction);
+  aesl_fh.write(AUTOTB_TVOUT_x, __xlx_sprintf_buffer.data());
+  {  __xlx_offset_byte_param_x = 0*2;
+  if (__xlx_apatb_param_x) {
+    for (int j = 0  - 0, e = 100 - 0; j != e; ++j) {
+sc_bv<16> __xlx_tmp_lv = ((short*)__xlx_apatb_param_x)[j];
+
+    sprintf(__xlx_sprintf_buffer.data(), "%s\n", __xlx_tmp_lv.to_string(SC_HEX).c_str());
+    aesl_fh.write(AUTOTB_TVOUT_x, __xlx_sprintf_buffer.data()); 
+      }
+  }
+}
+  tcl_file.set_num(100, &tcl_file.x_depth);
+  sprintf(__xlx_sprintf_buffer.data(), "[[/transaction]] \n");
+  aesl_fh.write(AUTOTB_TVOUT_x, __xlx_sprintf_buffer.data());
+}
+// print dx Transactions
+{
+  sprintf(__xlx_sprintf_buffer.data(), "[[transaction]] %d\n", AESL_transaction);
+  aesl_fh.write(AUTOTB_TVOUT_dx, __xlx_sprintf_buffer.data());
+  {  __xlx_offset_byte_param_dx = 0*2;
+  if (__xlx_apatb_param_dx) {
+    for (int j = 0  - 0, e = 100 - 0; j != e; ++j) {
+sc_bv<16> __xlx_tmp_lv = ((short*)__xlx_apatb_param_dx)[j];
+
+    sprintf(__xlx_sprintf_buffer.data(), "%s\n", __xlx_tmp_lv.to_string(SC_HEX).c_str());
+    aesl_fh.write(AUTOTB_TVOUT_dx, __xlx_sprintf_buffer.data()); 
+      }
+  }
+}
+  tcl_file.set_num(100, &tcl_file.dx_depth);
+  sprintf(__xlx_sprintf_buffer.data(), "[[/transaction]] \n");
+  aesl_fh.write(AUTOTB_TVOUT_dx, __xlx_sprintf_buffer.data());
 }
 // print return Transactions
 {

@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Mon May 16 14:29:28 2022
-# Process ID: 2115422
+# Start of session at: Thu May 19 16:25:26 2022
+# Process ID: 3193000
 # Current directory: /home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1
 # Command line: vivado -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
 # Log file: /home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/design_1_wrapper.vds
@@ -20,87 +20,89 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 2115457
+INFO: [Synth 8-7075] Helper process launched with PID 3193056
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2357.969 ; gain = 0.000 ; free physical = 12384 ; free virtual = 22616
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2357.969 ; gain = 0.000 ; free physical = 10097 ; free virtual = 21674
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
 INFO: [Synth 8-6157] synthesizing module 'design_1' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:13]
-INFO: [Synth 8-6157] synthesizing module 'design_1_InputLayer_0_0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-2115422-anubhav-acer/realtime/design_1_InputLayer_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_InputLayer_0_0' (1#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-2115422-anubhav-acer/realtime/design_1_InputLayer_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_InputLayer_0_0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-3193000-anubhav-acer/realtime/design_1_InputLayer_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_InputLayer_0_0' (1#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-3193000-anubhav-acer/realtime/design_1_InputLayer_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'interrupt' of module 'design_1_InputLayer_0_0' is unconnected for instance 'InputLayer_0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:362]
 WARNING: [Synth 8-7071] port 'bram_x_Rst_A' of module 'design_1_InputLayer_0_0' is unconnected for instance 'InputLayer_0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:362]
 WARNING: [Synth 8-7071] port 'bram_dx_Rst_A' of module 'design_1_InputLayer_0_0' is unconnected for instance 'InputLayer_0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:362]
 WARNING: [Synth 8-7023] instance 'InputLayer_0' of module 'design_1_InputLayer_0_0' has 69 connections declared, but only 66 given [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:362]
-INFO: [Synth 8-6157] synthesizing module 'design_1_OutputLayer_0_0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-2115422-anubhav-acer/realtime/design_1_OutputLayer_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_OutputLayer_0_0' (2#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-2115422-anubhav-acer/realtime/design_1_OutputLayer_0_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'interrupt' of module 'design_1_OutputLayer_0_0' is unconnected for instance 'OutputLayer_0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:429]
-WARNING: [Synth 8-7071] port 'bram_y_Rst_A' of module 'design_1_OutputLayer_0_0' is unconnected for instance 'OutputLayer_0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:429]
-WARNING: [Synth 8-7071] port 'bram_dy_Rst_A' of module 'design_1_OutputLayer_0_0' is unconnected for instance 'OutputLayer_0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:429]
-WARNING: [Synth 8-7023] instance 'OutputLayer_0' of module 'design_1_OutputLayer_0_0' has 69 connections declared, but only 66 given [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:429]
+INFO: [Synth 8-6157] synthesizing module 'design_1_InputLayer_1_0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-3193000-anubhav-acer/realtime/design_1_InputLayer_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_InputLayer_1_0' (2#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-3193000-anubhav-acer/realtime/design_1_InputLayer_1_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'interrupt' of module 'design_1_InputLayer_1_0' is unconnected for instance 'InputLayer_1' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:429]
+WARNING: [Synth 8-7071] port 'bram_x_Rst_A' of module 'design_1_InputLayer_1_0' is unconnected for instance 'InputLayer_1' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:429]
+WARNING: [Synth 8-7071] port 'bram_dx_Rst_A' of module 'design_1_InputLayer_1_0' is unconnected for instance 'InputLayer_1' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:429]
+WARNING: [Synth 8-7023] instance 'InputLayer_1' of module 'design_1_InputLayer_1_0' has 69 connections declared, but only 66 given [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:429]
 INFO: [Synth 8-6157] synthesizing module 'design_1_axi_mem_intercon_0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:1043]
-INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1R706YB' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:3539]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-2115422-anubhav-acer/realtime/design_1_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (3#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-2115422-anubhav-acer/realtime/design_1_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1R706YB' (4#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:3539]
-INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_7HNO1D' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:4486]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-2115422-anubhav-acer/realtime/design_1_auto_us_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_0' (5#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-2115422-anubhav-acer/realtime/design_1_auto_us_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'design_1_auto_us_0' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:4773]
-WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'design_1_auto_us_0' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:4773]
-WARNING: [Synth 8-7023] instance 'auto_us' of module 'design_1_auto_us_0' has 72 connections declared, but only 70 given [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:4773]
-INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_7HNO1D' (6#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:4486]
-INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_1W60HW0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:5151]
-INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_1W60HW0' (7#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:5151]
-INFO: [Synth 8-6157] synthesizing module 's02_couplers_imp_8NCF02' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:5423]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_1' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-2115422-anubhav-acer/realtime/design_1_auto_us_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_1' (8#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-2115422-anubhav-acer/realtime/design_1_auto_us_1_stub.v:6]
-WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'design_1_auto_us_1' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:5710]
-WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'design_1_auto_us_1' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:5710]
-WARNING: [Synth 8-7023] instance 'auto_us' of module 'design_1_auto_us_1' has 72 connections declared, but only 70 given [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:5710]
-INFO: [Synth 8-6155] done synthesizing module 's02_couplers_imp_8NCF02' (9#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:5423]
-INFO: [Synth 8-6157] synthesizing module 's03_couplers_imp_1UQ1PUB' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:5783]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_2' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-2115422-anubhav-acer/realtime/design_1_auto_us_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_2' (10#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-2115422-anubhav-acer/realtime/design_1_auto_us_2_stub.v:6]
-WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'design_1_auto_us_2' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:6070]
-WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'design_1_auto_us_2' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:6070]
-WARNING: [Synth 8-7023] instance 'auto_us' of module 'design_1_auto_us_2' has 72 connections declared, but only 70 given [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:6070]
-INFO: [Synth 8-6155] done synthesizing module 's03_couplers_imp_1UQ1PUB' (11#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:5783]
-INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-2115422-anubhav-acer/realtime/design_1_xbar_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (12#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-2115422-anubhav-acer/realtime/design_1_xbar_0_stub.v:6]
-WARNING: [Synth 8-689] width (4) of port connection 's_axi_bid' does not match port width (8) of module 'design_1_xbar_0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:2415]
-WARNING: [Synth 8-689] width (4) of port connection 's_axi_rid' does not match port width (8) of module 'design_1_xbar_0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:2420]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1R706YB' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:3503]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-3193000-anubhav-acer/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (3#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-3193000-anubhav-acer/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1R706YB' (4#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:3503]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_7HNO1D' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:4464]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-3193000-anubhav-acer/realtime/design_1_auto_us_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_0' (5#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-3193000-anubhav-acer/realtime/design_1_auto_us_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'design_1_auto_us_0' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:4751]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'design_1_auto_us_0' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:4751]
+WARNING: [Synth 8-7023] instance 'auto_us' of module 'design_1_auto_us_0' has 72 connections declared, but only 70 given [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:4751]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_7HNO1D' (6#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:4464]
+INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_1W60HW0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:5129]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_1' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-3193000-anubhav-acer/realtime/design_1_auto_us_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_1' (7#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-3193000-anubhav-acer/realtime/design_1_auto_us_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'design_1_auto_us_1' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:5416]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'design_1_auto_us_1' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:5416]
+WARNING: [Synth 8-7023] instance 'auto_us' of module 'design_1_auto_us_1' has 72 connections declared, but only 70 given [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:5416]
+INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_1W60HW0' (8#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:5129]
+INFO: [Synth 8-6157] synthesizing module 's02_couplers_imp_8NCF02' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:5489]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_2' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-3193000-anubhav-acer/realtime/design_1_auto_us_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_2' (9#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-3193000-anubhav-acer/realtime/design_1_auto_us_2_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'design_1_auto_us_2' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:5776]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'design_1_auto_us_2' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:5776]
+WARNING: [Synth 8-7023] instance 'auto_us' of module 'design_1_auto_us_2' has 72 connections declared, but only 70 given [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:5776]
+INFO: [Synth 8-6155] done synthesizing module 's02_couplers_imp_8NCF02' (10#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:5489]
+INFO: [Synth 8-6157] synthesizing module 's03_couplers_imp_1UQ1PUB' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:5849]
+INFO: [Synth 8-6155] done synthesizing module 's03_couplers_imp_1UQ1PUB' (11#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:5849]
+WARNING: [Synth 8-7071] port 'M_AXI_arregion' of module 's03_couplers_imp_1UQ1PUB' is unconnected for instance 's03_couplers' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:2258]
+WARNING: [Synth 8-7071] port 'M_AXI_awregion' of module 's03_couplers_imp_1UQ1PUB' is unconnected for instance 's03_couplers' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:2258]
+WARNING: [Synth 8-7023] instance 's03_couplers' of module 's03_couplers_imp_1UQ1PUB' has 74 connections declared, but only 72 given [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:2258]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-3193000-anubhav-acer/realtime/design_1_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (12#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-3193000-anubhav-acer/realtime/design_1_xbar_0_stub.v:6]
+WARNING: [Synth 8-7071] port 's_axi_bid' of module 'design_1_xbar_0' is unconnected for instance 'xbar' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:2331]
+WARNING: [Synth 8-7071] port 's_axi_rid' of module 'design_1_xbar_0' is unconnected for instance 'xbar' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:2331]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'design_1_xbar_0' has 78 connections declared, but only 76 given [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:2331]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_mem_intercon_0' (13#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:1043]
-WARNING: [Synth 8-7071] port 'S01_AXI_arready' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:496]
-WARNING: [Synth 8-7071] port 'S01_AXI_awready' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:496]
-WARNING: [Synth 8-7071] port 'S01_AXI_bid' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:496]
-WARNING: [Synth 8-7071] port 'S01_AXI_bresp' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:496]
-WARNING: [Synth 8-7071] port 'S01_AXI_bvalid' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:496]
-WARNING: [Synth 8-7071] port 'S01_AXI_rdata' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:496]
-WARNING: [Synth 8-7071] port 'S01_AXI_rid' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:496]
-WARNING: [Synth 8-7071] port 'S01_AXI_rlast' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:496]
-WARNING: [Synth 8-7071] port 'S01_AXI_rresp' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:496]
-WARNING: [Synth 8-7071] port 'S01_AXI_rvalid' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:496]
-WARNING: [Synth 8-7071] port 'S01_AXI_wready' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:496]
-WARNING: [Synth 8-7023] instance 'axi_mem_intercon' of module 'design_1_axi_mem_intercon_0' has 192 connections declared, but only 181 given [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:496]
-INFO: [Synth 8-6157] synthesizing module 'design_1_fcc_combined_0_0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-2115422-anubhav-acer/realtime/design_1_fcc_combined_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_fcc_combined_0_0' (14#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-2115422-anubhav-acer/realtime/design_1_fcc_combined_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'S03_AXI_arready' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:496]
+WARNING: [Synth 8-7071] port 'S03_AXI_awready' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:496]
+WARNING: [Synth 8-7071] port 'S03_AXI_bresp' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:496]
+WARNING: [Synth 8-7071] port 'S03_AXI_bvalid' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:496]
+WARNING: [Synth 8-7071] port 'S03_AXI_rdata' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:496]
+WARNING: [Synth 8-7071] port 'S03_AXI_rlast' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:496]
+WARNING: [Synth 8-7071] port 'S03_AXI_rresp' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:496]
+WARNING: [Synth 8-7071] port 'S03_AXI_rvalid' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:496]
+WARNING: [Synth 8-7071] port 'S03_AXI_wready' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:496]
+WARNING: [Synth 8-7023] instance 'axi_mem_intercon' of module 'design_1_axi_mem_intercon_0' has 190 connections declared, but only 181 given [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:496]
+INFO: [Synth 8-6157] synthesizing module 'design_1_fcc_combined_0_0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-3193000-anubhav-acer/realtime/design_1_fcc_combined_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_fcc_combined_0_0' (14#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-3193000-anubhav-acer/realtime/design_1_fcc_combined_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'interrupt' of module 'design_1_fcc_combined_0_0' is unconnected for instance 'fcc_combined_0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:678]
 WARNING: [Synth 8-7071] port 'x_Rst_A' of module 'design_1_fcc_combined_0_0' is unconnected for instance 'fcc_combined_0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:678]
 WARNING: [Synth 8-7071] port 'dx_Rst_A' of module 'design_1_fcc_combined_0_0' is unconnected for instance 'fcc_combined_0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:678]
 WARNING: [Synth 8-7071] port 'y_Rst_A' of module 'design_1_fcc_combined_0_0' is unconnected for instance 'fcc_combined_0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:678]
 WARNING: [Synth 8-7071] port 'dy_Rst_A' of module 'design_1_fcc_combined_0_0' is unconnected for instance 'fcc_combined_0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:678]
 WARNING: [Synth 8-7023] instance 'fcc_combined_0' of module 'design_1_fcc_combined_0_0' has 83 connections declared, but only 78 given [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:678]
-INFO: [Synth 8-6157] synthesizing module 'design_1_fcc_dx_0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-2115422-anubhav-acer/realtime/design_1_fcc_dx_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_fcc_dx_0' (15#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-2115422-anubhav-acer/realtime/design_1_fcc_dx_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_fcc_dy_0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-2115422-anubhav-acer/realtime/design_1_fcc_dy_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_fcc_dy_0' (16#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-2115422-anubhav-acer/realtime/design_1_fcc_dy_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_fcc_x_0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-2115422-anubhav-acer/realtime/design_1_fcc_x_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_fcc_x_0' (17#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-2115422-anubhav-acer/realtime/design_1_fcc_x_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_fcc_y_0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-2115422-anubhav-acer/realtime/design_1_fcc_y_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_fcc_y_0' (18#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-2115422-anubhav-acer/realtime/design_1_fcc_y_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_1' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-2115422-anubhav-acer/realtime/design_1_processing_system7_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_1' (19#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-2115422-anubhav-acer/realtime/design_1_processing_system7_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_fcc_dx_0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-3193000-anubhav-acer/realtime/design_1_fcc_dx_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_fcc_dx_0' (15#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-3193000-anubhav-acer/realtime/design_1_fcc_dx_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_fcc_dy_0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-3193000-anubhav-acer/realtime/design_1_fcc_dy_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_fcc_dy_0' (16#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-3193000-anubhav-acer/realtime/design_1_fcc_dy_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_fcc_x_0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-3193000-anubhav-acer/realtime/design_1_fcc_x_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_fcc_x_0' (17#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-3193000-anubhav-acer/realtime/design_1_fcc_x_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_fcc_y_0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-3193000-anubhav-acer/realtime/design_1_fcc_y_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_fcc_y_0' (18#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-3193000-anubhav-acer/realtime/design_1_fcc_y_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_1' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-3193000-anubhav-acer/realtime/design_1_processing_system7_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_1' (19#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-3193000-anubhav-acer/realtime/design_1_processing_system7_0_1_stub.v:6]
 WARNING: [Synth 8-7071] port 'USB0_PORT_INDCTL' of module 'design_1_processing_system7_0_1' is unconnected for instance 'processing_system7_0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:809]
 WARNING: [Synth 8-7071] port 'USB0_VBUS_PWRSELECT' of module 'design_1_processing_system7_0_1' is unconnected for instance 'processing_system7_0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:809]
 WARNING: [Synth 8-7071] port 'S_AXI_HP0_RCOUNT' of module 'design_1_processing_system7_0_1' is unconnected for instance 'processing_system7_0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:809]
@@ -108,37 +110,24 @@ WARNING: [Synth 8-7071] port 'S_AXI_HP0_WCOUNT' of module 'design_1_processing_s
 WARNING: [Synth 8-7071] port 'S_AXI_HP0_RACOUNT' of module 'design_1_processing_system7_0_1' is unconnected for instance 'processing_system7_0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:809]
 WARNING: [Synth 8-7071] port 'S_AXI_HP0_WACOUNT' of module 'design_1_processing_system7_0_1' is unconnected for instance 'processing_system7_0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:809]
 WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'design_1_processing_system7_0_1' has 110 connections declared, but only 104 given [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:809]
-INFO: [Synth 8-6157] synthesizing module 'design_1_ps7_0_axi_periph_0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:2432]
-INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_15SPJYW' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:3393]
-INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_15SPJYW' (20#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:3393]
-INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_XU9C55' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:3944]
-INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_XU9C55' (21#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:3944]
-INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_14WQB4R' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:4076]
-INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_14WQB4R' (22#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:4076]
-INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_YFYJ3U' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:4208]
-INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_YFYJ3U' (23#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:4208]
-INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_17KQ732' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:4354]
-INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_17KQ732' (24#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:4354]
-INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_UYSKKA' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:4846]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_1' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-2115422-anubhav-acer/realtime/design_1_auto_pc_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_1' (25#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-2115422-anubhav-acer/realtime/design_1_auto_pc_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_UYSKKA' (26#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:4846]
-INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_1' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-2115422-anubhav-acer/realtime/design_1_xbar_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_1' (27#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-2115422-anubhav-acer/realtime/design_1_xbar_1_stub.v:6]
-WARNING: [Synth 8-689] width (12) of port connection 'm_axi_arprot' does not match port width (15) of module 'design_1_xbar_1' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:3354]
-WARNING: [Synth 8-689] width (12) of port connection 'm_axi_awprot' does not match port width (15) of module 'design_1_xbar_1' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:3358]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_ps7_0_axi_periph_0' (28#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:2432]
-WARNING: [Synth 8-7071] port 'M00_AXI_araddr' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:914]
-WARNING: [Synth 8-7071] port 'M00_AXI_arprot' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:914]
-WARNING: [Synth 8-7071] port 'M00_AXI_arvalid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:914]
-WARNING: [Synth 8-7071] port 'M00_AXI_awaddr' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:914]
-WARNING: [Synth 8-7071] port 'M00_AXI_awprot' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:914]
-WARNING: [Synth 8-7071] port 'M00_AXI_awvalid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:914]
-WARNING: [Synth 8-7071] port 'M00_AXI_bready' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:914]
-WARNING: [Synth 8-7071] port 'M00_AXI_rready' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:914]
-WARNING: [Synth 8-7071] port 'M00_AXI_wdata' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:914]
-WARNING: [Synth 8-7071] port 'M00_AXI_wstrb' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:914]
-WARNING: [Synth 8-7071] port 'M00_AXI_wvalid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:914]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ps7_0_axi_periph_0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:2410]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_15SPJYW' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:3371]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_15SPJYW' (20#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:3371]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_XU9C55' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:3908]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_XU9C55' (21#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:3908]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_14WQB4R' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:4040]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_14WQB4R' (22#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:4040]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_YFYJ3U' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:4172]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_YFYJ3U' (23#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:4172]
+INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_17KQ732' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:4318]
+INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_17KQ732' (24#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:4318]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_UYSKKA' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:4824]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_1' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-3193000-anubhav-acer/realtime/design_1_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_1' (25#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-3193000-anubhav-acer/realtime/design_1_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_UYSKKA' (26#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:4824]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_1' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-3193000-anubhav-acer/realtime/design_1_xbar_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_1' (27#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-3193000-anubhav-acer/realtime/design_1_xbar_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ps7_0_axi_periph_0' (28#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:2410]
 WARNING: [Synth 8-7071] port 'M03_AXI_araddr' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:914]
 WARNING: [Synth 8-7071] port 'M03_AXI_arprot' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:914]
 WARNING: [Synth 8-7071] port 'M03_AXI_arvalid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:914]
@@ -150,9 +139,20 @@ WARNING: [Synth 8-7071] port 'M03_AXI_rready' of module 'design_1_ps7_0_axi_peri
 WARNING: [Synth 8-7071] port 'M03_AXI_wdata' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:914]
 WARNING: [Synth 8-7071] port 'M03_AXI_wstrb' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:914]
 WARNING: [Synth 8-7071] port 'M03_AXI_wvalid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:914]
+WARNING: [Synth 8-7071] port 'M04_AXI_araddr' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:914]
+WARNING: [Synth 8-7071] port 'M04_AXI_arprot' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:914]
+WARNING: [Synth 8-7071] port 'M04_AXI_arvalid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:914]
+WARNING: [Synth 8-7071] port 'M04_AXI_awaddr' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:914]
+WARNING: [Synth 8-7071] port 'M04_AXI_awprot' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:914]
+WARNING: [Synth 8-7071] port 'M04_AXI_awvalid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:914]
+WARNING: [Synth 8-7071] port 'M04_AXI_bready' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:914]
+WARNING: [Synth 8-7071] port 'M04_AXI_rready' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:914]
+WARNING: [Synth 8-7071] port 'M04_AXI_wdata' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:914]
+WARNING: [Synth 8-7071] port 'M04_AXI_wstrb' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:914]
+WARNING: [Synth 8-7071] port 'M04_AXI_wvalid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:914]
 WARNING: [Synth 8-7023] instance 'ps7_0_axi_periph' of module 'design_1_ps7_0_axi_periph_0' has 141 connections declared, but only 119 given [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:914]
-INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps7_0_100M_0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-2115422-anubhav-acer/realtime/design_1_rst_ps7_0_100M_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps7_0_100M_0' (29#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-2115422-anubhav-acer/realtime/design_1_rst_ps7_0_100M_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps7_0_100M_0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-3193000-anubhav-acer/realtime/design_1_rst_ps7_0_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps7_0_100M_0' (29#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/.Xil/Vivado-3193000-anubhav-acer/realtime/design_1_rst_ps7_0_100M_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_1_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:1034]
 WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:1034]
 WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:1034]
@@ -161,46 +161,40 @@ WARNING: [Synth 8-7023] instance 'rst_ps7_0_100M' of module 'design_1_rst_ps7_0_
 INFO: [Synth 8-6155] done synthesizing module 'design_1' (30#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/synth/design_1.v:13]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (31#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2357.969 ; gain = 0.000 ; free physical = 13108 ; free virtual = 23341
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2357.969 ; gain = 0.000 ; free physical = 10829 ; free virtual = 22399
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2357.969 ; gain = 0.000 ; free physical = 13168 ; free virtual = 23401
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2357.969 ; gain = 0.000 ; free physical = 10890 ; free virtual = 22460
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2357.969 ; gain = 0.000 ; free physical = 13168 ; free virtual = 23401
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2357.969 ; gain = 0.000 ; free physical = 10890 ; free virtual = 22460
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2357.969 ; gain = 0.000 ; free physical = 13162 ; free virtual = 23395
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2357.969 ; gain = 0.000 ; free physical = 10883 ; free virtual = 22453
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_InputLayer_0_0/design_1_InputLayer_0_0/design_1_InputLayer_0_0_in_context.xdc] for cell 'design_1_i/InputLayer_0'
-Finished Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_InputLayer_0_0/design_1_InputLayer_0_0/design_1_InputLayer_0_0_in_context.xdc] for cell 'design_1_i/InputLayer_0'
-Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_OutputLayer_0_0/design_1_OutputLayer_0_0/design_1_OutputLayer_0_0_in_context.xdc] for cell 'design_1_i/OutputLayer_0'
-Finished Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_OutputLayer_0_0/design_1_OutputLayer_0_0/design_1_OutputLayer_0_0_in_context.xdc] for cell 'design_1_i/OutputLayer_0'
 Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/xbar'
 Finished Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/xbar'
 Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0/design_1_auto_us_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/s00_couplers/auto_us'
 Finished Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0/design_1_auto_us_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/s00_couplers/auto_us'
-Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_auto_us_1/design_1_auto_us_1/design_1_auto_us_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/s02_couplers/auto_us'
-Finished Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_auto_us_1/design_1_auto_us_1/design_1_auto_us_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/s02_couplers/auto_us'
-Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_auto_us_2/design_1_auto_us_2/design_1_auto_us_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/s03_couplers/auto_us'
-Finished Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_auto_us_2/design_1_auto_us_2/design_1_auto_us_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/s03_couplers/auto_us'
+Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_auto_us_1/design_1_auto_us_1/design_1_auto_us_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/s01_couplers/auto_us'
+Finished Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_auto_us_1/design_1_auto_us_1/design_1_auto_us_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/s01_couplers/auto_us'
+Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_auto_us_2/design_1_auto_us_2/design_1_auto_us_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/s02_couplers/auto_us'
+Finished Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_auto_us_2/design_1_auto_us_2/design_1_auto_us_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/s02_couplers/auto_us'
 Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/m00_couplers/auto_pc'
 Finished Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/m00_couplers/auto_pc'
-Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_fcc_combined_0_0/design_1_fcc_combined_0_0/design_1_fcc_combined_0_0_in_context.xdc] for cell 'design_1_i/fcc_combined_0'
-Finished Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_fcc_combined_0_0/design_1_fcc_combined_0_0/design_1_fcc_combined_0_0_in_context.xdc] for cell 'design_1_i/fcc_combined_0'
 Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_fcc_dx_0/design_1_fcc_dx_0/design_1_fcc_dx_0_in_context.xdc] for cell 'design_1_i/fcc_dx'
 Finished Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_fcc_dx_0/design_1_fcc_dx_0/design_1_fcc_dx_0_in_context.xdc] for cell 'design_1_i/fcc_dx'
-Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_fcc_dy_0/design_1_fcc_dy_0/design_1_fcc_dy_0_in_context.xdc] for cell 'design_1_i/fcc_dy'
-Finished Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_fcc_dy_0/design_1_fcc_dy_0/design_1_fcc_dy_0_in_context.xdc] for cell 'design_1_i/fcc_dy'
+Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_fcc_dy_0/design_1_fcc_dy_0/design_1_fcc_dx_0_in_context.xdc] for cell 'design_1_i/fcc_dy'
+Finished Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_fcc_dy_0/design_1_fcc_dy_0/design_1_fcc_dx_0_in_context.xdc] for cell 'design_1_i/fcc_dy'
 Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_fcc_x_0/design_1_fcc_x_0/design_1_fcc_dx_0_in_context.xdc] for cell 'design_1_i/fcc_x'
 Finished Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_fcc_x_0/design_1_fcc_x_0/design_1_fcc_dx_0_in_context.xdc] for cell 'design_1_i/fcc_x'
-Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_fcc_y_0/design_1_fcc_y_0/design_1_fcc_dy_0_in_context.xdc] for cell 'design_1_i/fcc_y'
-Finished Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_fcc_y_0/design_1_fcc_y_0/design_1_fcc_dy_0_in_context.xdc] for cell 'design_1_i/fcc_y'
+Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_fcc_y_0/design_1_fcc_y_0/design_1_fcc_dx_0_in_context.xdc] for cell 'design_1_i/fcc_y'
+Finished Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_fcc_y_0/design_1_fcc_y_0/design_1_fcc_dx_0_in_context.xdc] for cell 'design_1_i/fcc_y'
 Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_1/design_1_processing_system7_0_1/design_1_processing_system7_0_1_in_context.xdc] for cell 'design_1_i/processing_system7_0'
 Finished Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_1/design_1_processing_system7_0_1/design_1_processing_system7_0_1_in_context.xdc] for cell 'design_1_i/processing_system7_0'
 Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_xbar_1/design_1_xbar_1/design_1_xbar_1_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/xbar'
@@ -209,28 +203,34 @@ Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/s
 Finished Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1/design_1_auto_pc_1_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
 Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_in_context.xdc] for cell 'design_1_i/rst_ps7_0_100M'
 Finished Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_in_context.xdc] for cell 'design_1_i/rst_ps7_0_100M'
+Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_InputLayer_1_0/design_1_InputLayer_1_0/design_1_InputLayer_1_0_in_context.xdc] for cell 'design_1_i/InputLayer_1'
+Finished Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_InputLayer_1_0/design_1_InputLayer_1_0/design_1_InputLayer_1_0_in_context.xdc] for cell 'design_1_i/InputLayer_1'
+Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_InputLayer_0_0/design_1_InputLayer_0_0/design_1_InputLayer_1_0_in_context.xdc] for cell 'design_1_i/InputLayer_0'
+Finished Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_InputLayer_0_0/design_1_InputLayer_0_0/design_1_InputLayer_1_0_in_context.xdc] for cell 'design_1_i/InputLayer_0'
+Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_fcc_combined_0_0/design_1_fcc_combined_0_0/design_1_fcc_combined_0_0_in_context.xdc] for cell 'design_1_i/fcc_combined_0'
+Finished Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_fcc_combined_0_0/design_1_fcc_combined_0_0/design_1_fcc_combined_0_0_in_context.xdc] for cell 'design_1_i/fcc_combined_0'
 Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/dont_touch.xdc]
 Finished Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2421.930 ; gain = 0.000 ; free physical = 13073 ; free virtual = 23303
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2421.930 ; gain = 0.000 ; free physical = 10793 ; free virtual = 22363
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2421.930 ; gain = 0.000 ; free physical = 13073 ; free virtual = 23303
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2421.930 ; gain = 0.000 ; free physical = 10793 ; free virtual = 22363
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/fcc_dx' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/fcc_dy' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/fcc_x' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/fcc_y' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 13158 ; free virtual = 23376
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 10868 ; free virtual = 22438
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 13158 ; free virtual = 23376
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 10868 ; free virtual = 22438
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -496,15 +496,12 @@ Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_porb. (constraint 
 Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_srstb. (constraint file  /home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_1/design_1_processing_system7_0_1/design_1_processing_system7_0_1_in_context.xdc, line 260).
 Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_srstb. (constraint file  /home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_1/design_1_processing_system7_0_1/design_1_processing_system7_0_1_in_context.xdc, line 261).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/InputLayer_0. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/OutputLayer_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_mem_intercon/xbar. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_mem_intercon/s00_couplers/auto_us. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_mem_intercon/s01_couplers/auto_us. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_mem_intercon/s02_couplers/auto_us. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_mem_intercon/s03_couplers/auto_us. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_mem_intercon/m00_couplers/auto_pc. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_mem_intercon. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/fcc_combined_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/fcc_dx. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/fcc_dy. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/fcc_x. (constraint file  auto generated constraint).
@@ -514,11 +511,14 @@ Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps7_0_axi_periph/xbar.
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps7_0_axi_periph. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/rst_ps7_0_100M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/InputLayer_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/InputLayer_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/fcc_combined_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 13158 ; free virtual = 23376
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 10868 ; free virtual = 22438
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 13159 ; free virtual = 23378
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 10868 ; free virtual = 22440
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -540,25 +540,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 13144 ; free virtual = 23366
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 10853 ; free virtual = 22428
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 13011 ; free virtual = 23247
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 10745 ; free virtual = 22314
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 13011 ; free virtual = 23247
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 10745 ; free virtual = 22314
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 13008 ; free virtual = 23244
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 10743 ; free virtual = 22312
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -576,37 +576,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 13005 ; free virtual = 23239
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 10743 ; free virtual = 22312
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 13005 ; free virtual = 23239
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 10743 ; free virtual = 22312
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 13005 ; free virtual = 23239
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 10743 ; free virtual = 22312
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 13005 ; free virtual = 23239
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 10743 ; free virtual = 22312
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 13005 ; free virtual = 23239
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 10743 ; free virtual = 22312
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 13005 ; free virtual = 23239
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 10743 ; free virtual = 22312
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -624,7 +624,7 @@ Report BlackBoxes:
 |6     |design_1_xbar_1                 |         1|
 |7     |design_1_auto_pc_1              |         1|
 |8     |design_1_InputLayer_0_0         |         1|
-|9     |design_1_OutputLayer_0_0        |         1|
+|9     |design_1_InputLayer_1_0         |         1|
 |10    |design_1_fcc_combined_0_0       |         1|
 |11    |design_1_fcc_dx_0               |         1|
 |12    |design_1_fcc_dy_0               |         1|
@@ -639,7 +639,7 @@ Report Cell Usage:
 |      |Cell                          |Count |
 +------+------------------------------+------+
 |1     |design_1_InputLayer_0         |     1|
-|2     |design_1_OutputLayer_0        |     1|
+|2     |design_1_InputLayer_1         |     1|
 |3     |design_1_auto_pc              |     2|
 |5     |design_1_auto_us              |     3|
 |8     |design_1_fcc_combined_0       |     1|
@@ -652,23 +652,23 @@ Report Cell Usage:
 |15    |design_1_xbar                 |     2|
 +------+------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 13005 ; free virtual = 23239
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 10743 ; free virtual = 22312
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2421.930 ; gain = 0.000 ; free physical = 13062 ; free virtual = 23297
-Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 13062 ; free virtual = 23297
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2421.930 ; gain = 0.000 ; free physical = 10800 ; free virtual = 22369
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 10800 ; free virtual = 22369
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2421.930 ; gain = 0.000 ; free physical = 13148 ; free virtual = 23382
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2421.930 ; gain = 0.000 ; free physical = 10885 ; free virtual = 22454
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2421.930 ; gain = 0.000 ; free physical = 13078 ; free virtual = 23314
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2421.930 ; gain = 0.000 ; free physical = 10824 ; free virtual = 22393
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 77 Infos, 78 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:20 . Memory (MB): peak = 2421.930 ; gain = 64.031 ; free physical = 13214 ; free virtual = 23450
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:20 . Memory (MB): peak = 2421.930 ; gain = 64.031 ; free physical = 10960 ; free virtual = 22529
 INFO: [Common 17-1381] The checkpoint '/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon May 16 14:29:57 2022...
+INFO: [Common 17-206] Exiting Vivado at Thu May 19 16:25:54 2022...

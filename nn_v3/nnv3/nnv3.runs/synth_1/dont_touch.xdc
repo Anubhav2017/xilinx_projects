@@ -10,17 +10,11 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==nn_xbar_0 |
 # IP: bd/nn/ip/nn_axi_mem_intercon_0/nn_axi_mem_intercon_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==nn_axi_mem_intercon_0 || ORIG_REF_NAME==nn_axi_mem_intercon_0} -quiet] -quiet
 
-# IP: bd/nn/ip/nn_conv_combined_0_0/nn_conv_combined_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==nn_conv_combined_0_0 || ORIG_REF_NAME==nn_conv_combined_0_0} -quiet] -quiet
-
 # IP: bd/nn/ip/nn_conv_dy_0/nn_conv_dy_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==nn_conv_dy_0 || ORIG_REF_NAME==nn_conv_dy_0} -quiet] -quiet
 
 # IP: bd/nn/ip/nn_conv_y_0/nn_conv_y_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==nn_conv_y_0 || ORIG_REF_NAME==nn_conv_y_0} -quiet] -quiet
-
-# IP: bd/nn/ip/nn_fcc_combined_0_0/nn_fcc_combined_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==nn_fcc_combined_0_0 || ORIG_REF_NAME==nn_fcc_combined_0_0} -quiet] -quiet
 
 # IP: bd/nn/ip/nn_fcc_dx_0/nn_fcc_dx_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==nn_fcc_dx_0 || ORIG_REF_NAME==nn_fcc_dx_0} -quiet] -quiet
@@ -43,9 +37,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==nn_xbar_1 |
 # IP: bd/nn/ip/nn_ps7_0_axi_periph_0/nn_ps7_0_axi_periph_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==nn_ps7_0_axi_periph_0 || ORIG_REF_NAME==nn_ps7_0_axi_periph_0} -quiet] -quiet
 
-# IP: bd/nn/ip/nn_relu_combined_0_0/nn_relu_combined_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==nn_relu_combined_0_0 || ORIG_REF_NAME==nn_relu_combined_0_0} -quiet] -quiet
-
 # IP: bd/nn/ip/nn_relu_dy_0/nn_relu_dy_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==nn_relu_dy_0 || ORIG_REF_NAME==nn_relu_dy_0} -quiet] -quiet
 
@@ -55,11 +46,23 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==nn_relu_y_0
 # IP: bd/nn/ip/nn_rst_ps7_0_100M_0/nn_rst_ps7_0_100M_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==nn_rst_ps7_0_100M_0 || ORIG_REF_NAME==nn_rst_ps7_0_100M_0} -quiet] -quiet
 
-# IP: bd/nn/ip/nn_OutputLayer_0_0/nn_OutputLayer_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==nn_OutputLayer_0_0 || ORIG_REF_NAME==nn_OutputLayer_0_0} -quiet] -quiet
+# IP: bd/nn/ip/nn_conv_combined_0_1/nn_conv_combined_0_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==nn_conv_combined_0_1 || ORIG_REF_NAME==nn_conv_combined_0_1} -quiet] -quiet
 
-# IP: bd/nn/ip/nn_InputLayer_0_0/nn_InputLayer_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==nn_InputLayer_0_0 || ORIG_REF_NAME==nn_InputLayer_0_0} -quiet] -quiet
+# IP: bd/nn/ip/nn_fcc_combined_0_1/nn_fcc_combined_0_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==nn_fcc_combined_0_1 || ORIG_REF_NAME==nn_fcc_combined_0_1} -quiet] -quiet
+
+# IP: bd/nn/ip/nn_relu_combined_0_0/nn_relu_combined_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==nn_relu_combined_0_0 || ORIG_REF_NAME==nn_relu_combined_0_0} -quiet] -quiet
+
+# IP: bd/nn/ip/nn_update_weights_0_0/nn_update_weights_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==nn_update_weights_0_0 || ORIG_REF_NAME==nn_update_weights_0_0} -quiet] -quiet
+
+# IP: bd/nn/ip/nn_InputLayer_0_1/nn_InputLayer_0_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==nn_InputLayer_0_1 || ORIG_REF_NAME==nn_InputLayer_0_1} -quiet] -quiet
+
+# IP: bd/nn/ip/nn_loss_derivative_0_3/nn_loss_derivative_0_3.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==nn_loss_derivative_0_3 || ORIG_REF_NAME==nn_loss_derivative_0_3} -quiet] -quiet
 
 # IP: bd/nn/ip/nn_auto_us_0/nn_auto_us_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==nn_auto_us_0 || ORIG_REF_NAME==nn_auto_us_0} -quiet] -quiet
@@ -72,6 +75,9 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==nn_auto_us_
 
 # IP: bd/nn/ip/nn_auto_us_3/nn_auto_us_3.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==nn_auto_us_3 || ORIG_REF_NAME==nn_auto_us_3} -quiet] -quiet
+
+# IP: bd/nn/ip/nn_auto_us_4/nn_auto_us_4.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==nn_auto_us_4 || ORIG_REF_NAME==nn_auto_us_4} -quiet] -quiet
 
 # IP: bd/nn/ip/nn_auto_pc_0/nn_auto_pc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==nn_auto_pc_0 || ORIG_REF_NAME==nn_auto_pc_0} -quiet] -quiet

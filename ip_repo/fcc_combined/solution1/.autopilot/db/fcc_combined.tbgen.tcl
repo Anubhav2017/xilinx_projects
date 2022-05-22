@@ -13,14 +13,14 @@ set C_modelName {fcc_combined}
 set C_modelType { void 0 }
 set C_modelArgList {
 	{ gmem int 16 regular {axi_master 2}  }
-	{ x int 16 regular {bram 1000 { 1 3 } 1 1 }  }
-	{ dx int 16 regular {bram 1000 { 0 3 } 0 1 }  }
+	{ x int 16 regular {bram 1000 { 1 } 2 1 }  }
+	{ dx int 16 regular {bram 1000 { 0 } 0 1 }  }
 	{ wt int 32 regular {axi_slave 0}  }
 	{ dwt int 32 regular {axi_slave 0}  }
 	{ b int 32 regular {axi_slave 0}  }
 	{ db int 32 unused {axi_slave 0}  }
-	{ y int 16 regular {bram 1000 { 0 3 } 0 1 }  }
-	{ dy int 16 regular {bram 1000 { 1 } 1 1 }  }
+	{ y int 16 regular {bram 1000 { 0 } 0 1 }  }
+	{ dy int 16 regular {bram 1000 { 1 } 2 1 }  }
 	{ xdim int 32 regular {axi_slave 0}  }
 	{ ydim int 32 regular {axi_slave 0}  }
 	{ fwprop uint 1 regular {axi_slave 0}  }
@@ -279,12 +279,12 @@ set RtlHierarchyInfo {[
 	{"ID" : "14", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_31s_31s_31_2_1_U8", "Parent" : "0"},
 	{"ID" : "15", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_mul_6ns_11ns_16_4_1_U9", "Parent" : "0"},
 	{"ID" : "16", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mac_muladd_10ns_11ns_16ns_16_4_1_U10", "Parent" : "0"},
-	{"ID" : "17", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mac_muladd_16s_16s_23ns_23_4_1_U11", "Parent" : "0"},
-	{"ID" : "18", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_mul_16s_16s_23_4_1_U12", "Parent" : "0"},
+	{"ID" : "17", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mac_muladd_16s_16s_29ns_29_4_1_U11", "Parent" : "0"},
+	{"ID" : "18", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_mul_16s_16s_29_4_1_U12", "Parent" : "0"},
 	{"ID" : "19", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_mul_6ns_11ns_16_4_1_U13", "Parent" : "0"},
 	{"ID" : "20", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_mul_6ns_11ns_16_4_1_U14", "Parent" : "0"},
 	{"ID" : "21", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_mul_6ns_11ns_16_4_1_U15", "Parent" : "0"},
-	{"ID" : "22", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mac_muladd_16s_16s_23ns_23_4_1_U16", "Parent" : "0"}]}
+	{"ID" : "22", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mac_muladd_16s_16s_29ns_29_4_1_U16", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
@@ -297,7 +297,7 @@ set ArgLastReadFirstWriteLatency {
 		b {Type I LastRead 0 FirstWrite -1}
 		db {Type I LastRead -1 FirstWrite -1}
 		y {Type O LastRead -1 FirstWrite 22}
-		dy {Type I LastRead 23 FirstWrite -1}
+		dy {Type I LastRead 24 FirstWrite -1}
 		xdim {Type I LastRead 0 FirstWrite -1}
 		ydim {Type I LastRead 0 FirstWrite -1}
 		fwprop {Type I LastRead 0 FirstWrite -1}}}
@@ -347,4 +347,6 @@ set busWriteResLatencyList {
 
 # RTL array port load latency information:
 set memoryLoadLatencyList { 
+	{ x 2 }
+	{ dy 2 }
 }

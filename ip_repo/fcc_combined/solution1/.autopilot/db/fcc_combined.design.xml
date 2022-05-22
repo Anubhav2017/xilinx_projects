@@ -75,7 +75,7 @@
 <Latency>undef</Latency>
 <AbsoluteTimeLatency>undef</AbsoluteTimeLatency>
 <PipelineII>1</PipelineII>
-<PipelineDepth>5</PipelineDepth>
+<PipelineDepth>6</PipelineDepth>
 </LOOP2>
 </LOOP1>
 <VITIS_LOOP_83_5>
@@ -147,7 +147,7 @@
 <DSP>8</DSP>
 <AVAIL_DSP>220</AVAIL_DSP>
 <UTIL_DSP>3</UTIL_DSP>
-<FF>4519</FF>
+<FF>4568</FF>
 <AVAIL_FF>106400</AVAIL_FF>
 <UTIL_FF>4</UTIL_FF>
 <LUT>4089</LUT>

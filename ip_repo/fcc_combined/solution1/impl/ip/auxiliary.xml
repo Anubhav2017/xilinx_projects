@@ -17,5 +17,5 @@
   <xd:arg xd:name="ydim" xd:originalName="ydim" xd:direction="in" xd:interfaceRef="s_axi_CRTL_BUS" xd:busTypeRef="axilite" xd:dataWidth="1" xd:offset="0x38" xd:handshakeRef="ap_none"/>
   <xd:arg xd:name="fwprop" xd:originalName="fwprop" xd:direction="in" xd:interfaceRef="s_axi_CRTL_BUS" xd:busTypeRef="axilite" xd:dataWidth="1" xd:offset="0x40" xd:handshakeRef="ap_none"/>
   <xd:latencyEstimates xd:best-case="undef" xd:worst-case="undef" xd:average-case="undef"/>
-  <xd:resourceEstimates xd:LUT="4089" xd:FF="4519" xd:BRAM="132" xd:DSP="8"/>
+  <xd:resourceEstimates xd:LUT="4089" xd:FF="4568" xd:BRAM="132" xd:DSP="8"/>
 </xd:acceleratorMap>

@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-| Date         : Sat May 14 15:26:19 2022
+| Date         : Sat May 21 14:54:08 2022
 | Host         : anubhav-acer running 64-bit Ubuntu 20.04.4 LTS
 | Command      : report_utilization -file nn_xbar_0_utilization_synth.rpt -pb nn_xbar_0_utilization_synth.pb
 | Design       : nn_xbar_0
@@ -30,15 +30,15 @@ Table of Contents
 +----------------------------+------+-------+-----------+-------+
 |          Site Type         | Used | Fixed | Available | Util% |
 +----------------------------+------+-------+-----------+-------+
-| Slice LUTs*                |  760 |     0 |     53200 |  1.43 |
-|   LUT as Logic             |  752 |     0 |     53200 |  1.41 |
-|   LUT as Memory            |    8 |     0 |     17400 |  0.05 |
+| Slice LUTs*                | 1100 |     0 |     53200 |  2.07 |
+|   LUT as Logic             | 1089 |     0 |     53200 |  2.05 |
+|   LUT as Memory            |   11 |     0 |     17400 |  0.06 |
 |     LUT as Distributed RAM |    0 |     0 |           |       |
-|     LUT as Shift Register  |    8 |     0 |           |       |
-| Slice Registers            |  467 |     0 |    106400 |  0.44 |
-|   Register as Flip Flop    |  467 |     0 |    106400 |  0.44 |
+|     LUT as Shift Register  |   11 |     0 |           |       |
+| Slice Registers            |  512 |     0 |    106400 |  0.48 |
+|   Register as Flip Flop    |  512 |     0 |    106400 |  0.48 |
 |   Register as Latch        |    0 |     0 |    106400 |  0.00 |
-| F7 Muxes                   |    0 |     0 |     26600 |  0.00 |
+| F7 Muxes                   |    1 |     0 |     26600 | <0.01 |
 | F8 Muxes                   |    0 |     0 |     13300 |  0.00 |
 +----------------------------+------+-------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
@@ -58,8 +58,8 @@ Table of Contents
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
-| 29    |          Yes |         Set |            - |
-| 438   |          Yes |       Reset |            - |
+| 33    |          Yes |         Set |            - |
+| 479   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -148,15 +148,16 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     |  438 |        Flop & Latch |
-| LUT6     |  376 |                 LUT |
-| LUT3     |  284 |                 LUT |
-| LUT2     |  169 |                 LUT |
-| LUT4     |   76 |                 LUT |
-| LUT5     |   75 |                 LUT |
-| FDSE     |   29 |        Flop & Latch |
-| SRLC32E  |    8 |  Distributed Memory |
+| LUT6     |  610 |                 LUT |
+| FDRE     |  479 |        Flop & Latch |
+| LUT3     |  318 |                 LUT |
+| LUT2     |  204 |                 LUT |
+| LUT5     |  127 |                 LUT |
+| LUT4     |  114 |                 LUT |
+| FDSE     |   33 |        Flop & Latch |
+| SRLC32E  |   11 |  Distributed Memory |
 | LUT1     |    5 |                 LUT |
+| MUXF7    |    1 |               MuxFx |
 +----------+------+---------------------+
 
 

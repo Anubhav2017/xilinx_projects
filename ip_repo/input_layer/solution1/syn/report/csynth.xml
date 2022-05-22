@@ -67,43 +67,43 @@
                 <TripCount>undef</TripCount>
                 <Latency>
                     <range>
-                        <min>2</min>
+                        <min>3</min>
                         <max>-1</max>
                     </range>
                 </Latency>
                 <AbsoluteTimeLatency>
                     <range>
-                        <min>20</min>
+                        <min>30</min>
                         <max>-10</max>
                     </range>
                 </AbsoluteTimeLatency>
                 <PipelineII>1</PipelineII>
-                <PipelineDepth>3</PipelineDepth>
+                <PipelineDepth>4</PipelineDepth>
             </VITIS_LOOP_36_3>
             <VITIS_LOOP_40_4>
                 <TripCount>undef</TripCount>
                 <Latency>
                     <range>
-                        <min>2</min>
+                        <min>3</min>
                         <max>-1</max>
                     </range>
                 </Latency>
                 <AbsoluteTimeLatency>
                     <range>
-                        <min>20</min>
+                        <min>30</min>
                         <max>-10</max>
                     </range>
                 </AbsoluteTimeLatency>
                 <PipelineII>1</PipelineII>
-                <PipelineDepth>3</PipelineDepth>
+                <PipelineDepth>4</PipelineDepth>
             </VITIS_LOOP_40_4>
         </SummaryOfLoopLatency>
     </PerformanceEstimates>
     <AreaEstimates>
         <Resources>
             <BRAM_18K>2</BRAM_18K>
-            <FF>1131</FF>
-            <LUT>1564</LUT>
+            <FF>1259</FF>
+            <LUT>1628</LUT>
             <DSP>0</DSP>
             <URAM>0</URAM>
         </Resources>
@@ -117,8 +117,8 @@
     </AreaEstimates>
     <InterfaceSummary>
         <RtlPorts>
-            <name>s_axi_CTRL_AWVALID</name>
-            <Object>CTRL</Object>
+            <name>s_axi_control_AWVALID</name>
+            <Object>control</Object>
             <Type>scalar</Type>
             <Scope/>
             <IOProtocol>s_axi</IOProtocol>
@@ -130,8 +130,8 @@
             <HasCtrl>1</HasCtrl>
         </RtlPorts>
         <RtlPorts>
-            <name>s_axi_CTRL_AWREADY</name>
-            <Object>CTRL</Object>
+            <name>s_axi_control_AWREADY</name>
+            <Object>control</Object>
             <Type>scalar</Type>
             <Scope/>
             <IOProtocol>s_axi</IOProtocol>
@@ -143,8 +143,8 @@
             <HasCtrl>1</HasCtrl>
         </RtlPorts>
         <RtlPorts>
-            <name>s_axi_CTRL_AWADDR</name>
-            <Object>CTRL</Object>
+            <name>s_axi_control_AWADDR</name>
+            <Object>control</Object>
             <Type>scalar</Type>
             <Scope/>
             <IOProtocol>s_axi</IOProtocol>
@@ -156,8 +156,8 @@
             <HasCtrl>1</HasCtrl>
         </RtlPorts>
         <RtlPorts>
-            <name>s_axi_CTRL_WVALID</name>
-            <Object>CTRL</Object>
+            <name>s_axi_control_WVALID</name>
+            <Object>control</Object>
             <Type>scalar</Type>
             <Scope/>
             <IOProtocol>s_axi</IOProtocol>
@@ -169,8 +169,8 @@
             <HasCtrl>1</HasCtrl>
         </RtlPorts>
         <RtlPorts>
-            <name>s_axi_CTRL_WREADY</name>
-            <Object>CTRL</Object>
+            <name>s_axi_control_WREADY</name>
+            <Object>control</Object>
             <Type>scalar</Type>
             <Scope/>
             <IOProtocol>s_axi</IOProtocol>
@@ -182,8 +182,8 @@
             <HasCtrl>1</HasCtrl>
         </RtlPorts>
         <RtlPorts>
-            <name>s_axi_CTRL_WDATA</name>
-            <Object>CTRL</Object>
+            <name>s_axi_control_WDATA</name>
+            <Object>control</Object>
             <Type>scalar</Type>
             <Scope/>
             <IOProtocol>s_axi</IOProtocol>
@@ -195,8 +195,8 @@
             <HasCtrl>1</HasCtrl>
         </RtlPorts>
         <RtlPorts>
-            <name>s_axi_CTRL_WSTRB</name>
-            <Object>CTRL</Object>
+            <name>s_axi_control_WSTRB</name>
+            <Object>control</Object>
             <Type>scalar</Type>
             <Scope/>
             <IOProtocol>s_axi</IOProtocol>
@@ -208,8 +208,8 @@
             <HasCtrl>1</HasCtrl>
         </RtlPorts>
         <RtlPorts>
-            <name>s_axi_CTRL_ARVALID</name>
-            <Object>CTRL</Object>
+            <name>s_axi_control_ARVALID</name>
+            <Object>control</Object>
             <Type>scalar</Type>
             <Scope/>
             <IOProtocol>s_axi</IOProtocol>
@@ -221,8 +221,8 @@
             <HasCtrl>1</HasCtrl>
         </RtlPorts>
         <RtlPorts>
-            <name>s_axi_CTRL_ARREADY</name>
-            <Object>CTRL</Object>
+            <name>s_axi_control_ARREADY</name>
+            <Object>control</Object>
             <Type>scalar</Type>
             <Scope/>
             <IOProtocol>s_axi</IOProtocol>
@@ -234,8 +234,8 @@
             <HasCtrl>1</HasCtrl>
         </RtlPorts>
         <RtlPorts>
-            <name>s_axi_CTRL_ARADDR</name>
-            <Object>CTRL</Object>
+            <name>s_axi_control_ARADDR</name>
+            <Object>control</Object>
             <Type>scalar</Type>
             <Scope/>
             <IOProtocol>s_axi</IOProtocol>
@@ -247,8 +247,8 @@
             <HasCtrl>1</HasCtrl>
         </RtlPorts>
         <RtlPorts>
-            <name>s_axi_CTRL_RVALID</name>
-            <Object>CTRL</Object>
+            <name>s_axi_control_RVALID</name>
+            <Object>control</Object>
             <Type>scalar</Type>
             <Scope/>
             <IOProtocol>s_axi</IOProtocol>
@@ -260,8 +260,8 @@
             <HasCtrl>1</HasCtrl>
         </RtlPorts>
         <RtlPorts>
-            <name>s_axi_CTRL_RREADY</name>
-            <Object>CTRL</Object>
+            <name>s_axi_control_RREADY</name>
+            <Object>control</Object>
             <Type>scalar</Type>
             <Scope/>
             <IOProtocol>s_axi</IOProtocol>
@@ -273,8 +273,8 @@
             <HasCtrl>1</HasCtrl>
         </RtlPorts>
         <RtlPorts>
-            <name>s_axi_CTRL_RDATA</name>
-            <Object>CTRL</Object>
+            <name>s_axi_control_RDATA</name>
+            <Object>control</Object>
             <Type>scalar</Type>
             <Scope/>
             <IOProtocol>s_axi</IOProtocol>
@@ -286,8 +286,8 @@
             <HasCtrl>1</HasCtrl>
         </RtlPorts>
         <RtlPorts>
-            <name>s_axi_CTRL_RRESP</name>
-            <Object>CTRL</Object>
+            <name>s_axi_control_RRESP</name>
+            <Object>control</Object>
             <Type>scalar</Type>
             <Scope/>
             <IOProtocol>s_axi</IOProtocol>
@@ -299,8 +299,8 @@
             <HasCtrl>1</HasCtrl>
         </RtlPorts>
         <RtlPorts>
-            <name>s_axi_CTRL_BVALID</name>
-            <Object>CTRL</Object>
+            <name>s_axi_control_BVALID</name>
+            <Object>control</Object>
             <Type>scalar</Type>
             <Scope/>
             <IOProtocol>s_axi</IOProtocol>
@@ -312,8 +312,8 @@
             <HasCtrl>1</HasCtrl>
         </RtlPorts>
         <RtlPorts>
-            <name>s_axi_CTRL_BREADY</name>
-            <Object>CTRL</Object>
+            <name>s_axi_control_BREADY</name>
+            <Object>control</Object>
             <Type>scalar</Type>
             <Scope/>
             <IOProtocol>s_axi</IOProtocol>
@@ -325,8 +325,8 @@
             <HasCtrl>1</HasCtrl>
         </RtlPorts>
         <RtlPorts>
-            <name>s_axi_CTRL_BRESP</name>
-            <Object>CTRL</Object>
+            <name>s_axi_control_BRESP</name>
+            <Object>control</Object>
             <Type>scalar</Type>
             <Scope/>
             <IOProtocol>s_axi</IOProtocol>
@@ -1123,18 +1123,18 @@
                     <VITIS_LOOP_36_3>
                         <Name>VITIS_LOOP_36_3</Name>
                         <TripCount>undef</TripCount>
-                        <Latency>2 ~ ?</Latency>
-                        <AbsoluteTimeLatency>20.000 ns ~ ?</AbsoluteTimeLatency>
+                        <Latency>3 ~ ?</Latency>
+                        <AbsoluteTimeLatency>30.000 ns ~ ?</AbsoluteTimeLatency>
                         <PipelineII>1</PipelineII>
-                        <PipelineDepth>3</PipelineDepth>
+                        <PipelineDepth>4</PipelineDepth>
                     </VITIS_LOOP_36_3>
                     <VITIS_LOOP_40_4>
                         <Name>VITIS_LOOP_40_4</Name>
                         <TripCount>undef</TripCount>
-                        <Latency>2 ~ ?</Latency>
-                        <AbsoluteTimeLatency>20.000 ns ~ ?</AbsoluteTimeLatency>
+                        <Latency>3 ~ ?</Latency>
+                        <AbsoluteTimeLatency>30.000 ns ~ ?</AbsoluteTimeLatency>
                         <PipelineII>1</PipelineII>
-                        <PipelineDepth>3</PipelineDepth>
+                        <PipelineDepth>4</PipelineDepth>
                     </VITIS_LOOP_40_4>
                 </SummaryOfLoopLatency>
             </PerformanceEstimates>
@@ -1143,12 +1143,12 @@
                     <BRAM_18K>2</BRAM_18K>
                     <AVAIL_BRAM>280</AVAIL_BRAM>
                     <UTIL_BRAM>~0</UTIL_BRAM>
-                    <FF>1131</FF>
+                    <FF>1259</FF>
                     <AVAIL_FF>106400</AVAIL_FF>
                     <UTIL_FF>1</UTIL_FF>
-                    <LUT>1564</LUT>
+                    <LUT>1628</LUT>
                     <AVAIL_LUT>53200</AVAIL_LUT>
-                    <UTIL_LUT>2</UTIL_LUT>
+                    <UTIL_LUT>3</UTIL_LUT>
                     <DSP>0</DSP>
                     <AVAIL_DSP>220</AVAIL_DSP>
                     <UTIL_DSP>0</UTIL_DSP>
@@ -1159,8 +1159,8 @@
             </AreaEstimates>
             <InterfaceSummary>
                 <RtlPorts>
-                    <name>s_axi_CTRL_AWVALID</name>
-                    <Object>CTRL</Object>
+                    <name>s_axi_control_AWVALID</name>
+                    <Object>control</Object>
                     <Type>scalar</Type>
                     <Scope/>
                     <IOProtocol>s_axi</IOProtocol>
@@ -1172,8 +1172,8 @@
                     <HasCtrl>1</HasCtrl>
                 </RtlPorts>
                 <RtlPorts>
-                    <name>s_axi_CTRL_AWREADY</name>
-                    <Object>CTRL</Object>
+                    <name>s_axi_control_AWREADY</name>
+                    <Object>control</Object>
                     <Type>scalar</Type>
                     <Scope/>
                     <IOProtocol>s_axi</IOProtocol>
@@ -1185,8 +1185,8 @@
                     <HasCtrl>1</HasCtrl>
                 </RtlPorts>
                 <RtlPorts>
-                    <name>s_axi_CTRL_AWADDR</name>
-                    <Object>CTRL</Object>
+                    <name>s_axi_control_AWADDR</name>
+                    <Object>control</Object>
                     <Type>scalar</Type>
                     <Scope/>
                     <IOProtocol>s_axi</IOProtocol>
@@ -1198,8 +1198,8 @@
                     <HasCtrl>1</HasCtrl>
                 </RtlPorts>
                 <RtlPorts>
-                    <name>s_axi_CTRL_WVALID</name>
-                    <Object>CTRL</Object>
+                    <name>s_axi_control_WVALID</name>
+                    <Object>control</Object>
                     <Type>scalar</Type>
                     <Scope/>
                     <IOProtocol>s_axi</IOProtocol>
@@ -1211,8 +1211,8 @@
                     <HasCtrl>1</HasCtrl>
                 </RtlPorts>
                 <RtlPorts>
-                    <name>s_axi_CTRL_WREADY</name>
-                    <Object>CTRL</Object>
+                    <name>s_axi_control_WREADY</name>
+                    <Object>control</Object>
                     <Type>scalar</Type>
                     <Scope/>
                     <IOProtocol>s_axi</IOProtocol>
@@ -1224,8 +1224,8 @@
                     <HasCtrl>1</HasCtrl>
                 </RtlPorts>
                 <RtlPorts>
-                    <name>s_axi_CTRL_WDATA</name>
-                    <Object>CTRL</Object>
+                    <name>s_axi_control_WDATA</name>
+                    <Object>control</Object>
                     <Type>scalar</Type>
                     <Scope/>
                     <IOProtocol>s_axi</IOProtocol>
@@ -1237,8 +1237,8 @@
                     <HasCtrl>1</HasCtrl>
                 </RtlPorts>
                 <RtlPorts>
-                    <name>s_axi_CTRL_WSTRB</name>
-                    <Object>CTRL</Object>
+                    <name>s_axi_control_WSTRB</name>
+                    <Object>control</Object>
                     <Type>scalar</Type>
                     <Scope/>
                     <IOProtocol>s_axi</IOProtocol>
@@ -1250,8 +1250,8 @@
                     <HasCtrl>1</HasCtrl>
                 </RtlPorts>
                 <RtlPorts>
-                    <name>s_axi_CTRL_ARVALID</name>
-                    <Object>CTRL</Object>
+                    <name>s_axi_control_ARVALID</name>
+                    <Object>control</Object>
                     <Type>scalar</Type>
                     <Scope/>
                     <IOProtocol>s_axi</IOProtocol>
@@ -1263,8 +1263,8 @@
                     <HasCtrl>1</HasCtrl>
                 </RtlPorts>
                 <RtlPorts>
-                    <name>s_axi_CTRL_ARREADY</name>
-                    <Object>CTRL</Object>
+                    <name>s_axi_control_ARREADY</name>
+                    <Object>control</Object>
                     <Type>scalar</Type>
                     <Scope/>
                     <IOProtocol>s_axi</IOProtocol>
@@ -1276,8 +1276,8 @@
                     <HasCtrl>1</HasCtrl>
                 </RtlPorts>
                 <RtlPorts>
-                    <name>s_axi_CTRL_ARADDR</name>
-                    <Object>CTRL</Object>
+                    <name>s_axi_control_ARADDR</name>
+                    <Object>control</Object>
                     <Type>scalar</Type>
                     <Scope/>
                     <IOProtocol>s_axi</IOProtocol>
@@ -1289,8 +1289,8 @@
                     <HasCtrl>1</HasCtrl>
                 </RtlPorts>
                 <RtlPorts>
-                    <name>s_axi_CTRL_RVALID</name>
-                    <Object>CTRL</Object>
+                    <name>s_axi_control_RVALID</name>
+                    <Object>control</Object>
                     <Type>scalar</Type>
                     <Scope/>
                     <IOProtocol>s_axi</IOProtocol>
@@ -1302,8 +1302,8 @@
                     <HasCtrl>1</HasCtrl>
                 </RtlPorts>
                 <RtlPorts>
-                    <name>s_axi_CTRL_RREADY</name>
-                    <Object>CTRL</Object>
+                    <name>s_axi_control_RREADY</name>
+                    <Object>control</Object>
                     <Type>scalar</Type>
                     <Scope/>
                     <IOProtocol>s_axi</IOProtocol>
@@ -1315,8 +1315,8 @@
                     <HasCtrl>1</HasCtrl>
                 </RtlPorts>
                 <RtlPorts>
-                    <name>s_axi_CTRL_RDATA</name>
-                    <Object>CTRL</Object>
+                    <name>s_axi_control_RDATA</name>
+                    <Object>control</Object>
                     <Type>scalar</Type>
                     <Scope/>
                     <IOProtocol>s_axi</IOProtocol>
@@ -1328,8 +1328,8 @@
                     <HasCtrl>1</HasCtrl>
                 </RtlPorts>
                 <RtlPorts>
-                    <name>s_axi_CTRL_RRESP</name>
-                    <Object>CTRL</Object>
+                    <name>s_axi_control_RRESP</name>
+                    <Object>control</Object>
                     <Type>scalar</Type>
                     <Scope/>
                     <IOProtocol>s_axi</IOProtocol>
@@ -1341,8 +1341,8 @@
                     <HasCtrl>1</HasCtrl>
                 </RtlPorts>
                 <RtlPorts>
-                    <name>s_axi_CTRL_BVALID</name>
-                    <Object>CTRL</Object>
+                    <name>s_axi_control_BVALID</name>
+                    <Object>control</Object>
                     <Type>scalar</Type>
                     <Scope/>
                     <IOProtocol>s_axi</IOProtocol>
@@ -1354,8 +1354,8 @@
                     <HasCtrl>1</HasCtrl>
                 </RtlPorts>
                 <RtlPorts>
-                    <name>s_axi_CTRL_BREADY</name>
-                    <Object>CTRL</Object>
+                    <name>s_axi_control_BREADY</name>
+                    <Object>control</Object>
                     <Type>scalar</Type>
                     <Scope/>
                     <IOProtocol>s_axi</IOProtocol>
@@ -1367,8 +1367,8 @@
                     <HasCtrl>1</HasCtrl>
                 </RtlPorts>
                 <RtlPorts>
-                    <name>s_axi_CTRL_BRESP</name>
-                    <Object>CTRL</Object>
+                    <name>s_axi_control_BRESP</name>
+                    <Object>control</Object>
                     <Type>scalar</Type>
                     <Scope/>
                     <IOProtocol>s_axi</IOProtocol>
@@ -2125,43 +2125,43 @@
     </ModuleInformation>
     <FIFOInformation/>
     <Args>
-        <Arg ArgName="x" index="0" direction="inout" srcType="ap_fixed&lt;16, 9, AP_TRN, AP_WRAP, 0&gt;*" srcSize="16">
+        <Arg ArgName="x" index="0" direction="inout" srcType="ap_fixed&lt;16, 3, AP_TRN, AP_WRAP, 0&gt;*" srcSize="16">
             <hwRefs>
                 <hwRef type="interface" interface="m_axi_gmem" name="" usage="data" direction="out"/>
-                <hwRef type="register" interface="s_axi_CTRL" name="x" usage="address" direction="in"/>
+                <hwRef type="register" interface="s_axi_control" name="x" usage="address" direction="in"/>
             </hwRefs>
         </Arg>
-        <Arg ArgName="dx" index="1" direction="inout" srcType="ap_fixed&lt;16, 9, AP_TRN, AP_WRAP, 0&gt;*" srcSize="16">
+        <Arg ArgName="dx" index="1" direction="inout" srcType="ap_fixed&lt;16, 3, AP_TRN, AP_WRAP, 0&gt;*" srcSize="16">
             <hwRefs>
                 <hwRef type="interface" interface="m_axi_gmem" name="" usage="data" direction="out"/>
-                <hwRef type="register" interface="s_axi_CTRL" name="dx" usage="address" direction="in"/>
+                <hwRef type="register" interface="s_axi_control" name="dx" usage="address" direction="in"/>
             </hwRefs>
         </Arg>
-        <Arg ArgName="bram_x" index="2" direction="inout" srcType="ap_fixed&lt;16, 9, AP_TRN, AP_WRAP, 0&gt;*" srcSize="16">
+        <Arg ArgName="bram_x" index="2" direction="inout" srcType="ap_fixed&lt;16, 3, AP_TRN, AP_WRAP, 0&gt;*" srcSize="16">
             <hwRefs>
                 <hwRef type="interface" interface="bram_x_PORTA" name="" usage="data" direction="out"/>
             </hwRefs>
         </Arg>
-        <Arg ArgName="bram_dx" index="3" direction="inout" srcType="ap_fixed&lt;16, 9, AP_TRN, AP_WRAP, 0&gt;*" srcSize="16">
+        <Arg ArgName="bram_dx" index="3" direction="inout" srcType="ap_fixed&lt;16, 3, AP_TRN, AP_WRAP, 0&gt;*" srcSize="16">
             <hwRefs>
                 <hwRef type="interface" interface="bram_dx_PORTA" name="" usage="data" direction="out"/>
             </hwRefs>
         </Arg>
         <Arg ArgName="dim" index="4" direction="in" srcType="int" srcSize="32">
             <hwRefs>
-                <hwRef type="register" interface="s_axi_CTRL" name="dim" usage="data" direction="in"/>
+                <hwRef type="register" interface="s_axi_control" name="dim" usage="data" direction="in"/>
             </hwRefs>
         </Arg>
         <Arg ArgName="ddrtobram" index="5" direction="in" srcType="bool" srcSize="1">
             <hwRefs>
-                <hwRef type="register" interface="s_axi_CTRL" name="ddrtobram" usage="data" direction="in"/>
+                <hwRef type="register" interface="s_axi_control" name="ddrtobram" usage="data" direction="in"/>
             </hwRefs>
         </Arg>
     </Args>
     <Interfaces>
         <Interface InterfaceName="ap_clk" type="clock" busTypeName="clock" mode="slave">
             <busParams>
-                <busParam busParamName="ASSOCIATED_BUSIF">s_axi_CTRL:m_axi_gmem</busParam>
+                <busParam busParamName="ASSOCIATED_BUSIF">s_axi_control:m_axi_gmem</busParam>
                 <busParam busParamName="ASSOCIATED_RESET">ap_rst_n</busParam>
             </busParams>
             <portMaps>
@@ -2207,7 +2207,7 @@
                 <port>bram_dx_WEN_A</port>
             </ports>
             <constraints>
-                <constraint constraint_type="pragma interface" mode="bram" register_option="0" bram_storage="207" argName="bram_dx"/>
+                <constraint constraint_type="pragma interface" mode="bram" register_option="0" bram_latency="2" bram_storage="207" argName="bram_dx"/>
             </constraints>
         </Interface>
         <Interface InterfaceName="bram_x_PORTA" type="bram" busTypeName="bram" mode="master" dataWidth="16" addrWidth="32" portPrefix="bram_x_">
@@ -2235,7 +2235,7 @@
                 <port>bram_x_WEN_A</port>
             </ports>
             <constraints>
-                <constraint constraint_type="pragma interface" mode="bram" register_option="0" bram_storage="207" argName="bram_x"/>
+                <constraint constraint_type="pragma interface" mode="bram" register_option="0" bram_latency="2" bram_storage="207" argName="bram_x"/>
             </constraints>
         </Interface>
         <Interface InterfaceName="interrupt" type="interrupt" busTypeName="interrupt" mode="master" dataWidth="1">
@@ -2249,7 +2249,7 @@
                 <port>interrupt</port>
             </ports>
         </Interface>
-        <Interface InterfaceName="m_axi_gmem" type="axi4full" busTypeName="aximm" mode="master" dataWidth="32" addrWidth="32" portPrefix="m_axi_gmem_" paramPrefix="C_M_AXI_GMEM_" offsetSlaveName="s_axi_CTRL" preferredUsageValue="MEMORY">
+        <Interface InterfaceName="m_axi_gmem" type="axi4full" busTypeName="aximm" mode="master" dataWidth="32" addrWidth="32" portPrefix="m_axi_gmem_" paramPrefix="C_M_AXI_GMEM_" offsetSlaveName="s_axi_control" preferredUsageValue="MEMORY">
             <busParams>
                 <busParam busParamName="NUM_READ_OUTSTANDING">16</busParam>
                 <busParam busParamName="NUM_WRITE_OUTSTANDING">16</busParam>
@@ -2313,25 +2313,25 @@
                 <constraint constraint_type="bitwidth" orig_bitwidth="16" final_bitwidth="16" argName="x"/>
             </constraints>
         </Interface>
-        <Interface InterfaceName="s_axi_CTRL" type="axi4lite" busTypeName="aximm" mode="slave" dataWidth="32" addrWidth="6" portPrefix="s_axi_CTRL_" paramPrefix="C_S_AXI_CTRL_" offsetMasterName="m_axi_gmem">
+        <Interface InterfaceName="s_axi_control" type="axi4lite" busTypeName="aximm" mode="slave" dataWidth="32" addrWidth="6" portPrefix="s_axi_control_" paramPrefix="C_S_AXI_CONTROL_" offsetMasterName="m_axi_gmem">
             <ports>
-                <port>s_axi_CTRL_ARADDR</port>
-                <port>s_axi_CTRL_ARREADY</port>
-                <port>s_axi_CTRL_ARVALID</port>
-                <port>s_axi_CTRL_AWADDR</port>
-                <port>s_axi_CTRL_AWREADY</port>
-                <port>s_axi_CTRL_AWVALID</port>
-                <port>s_axi_CTRL_BREADY</port>
-                <port>s_axi_CTRL_BRESP</port>
-                <port>s_axi_CTRL_BVALID</port>
-                <port>s_axi_CTRL_RDATA</port>
-                <port>s_axi_CTRL_RREADY</port>
-                <port>s_axi_CTRL_RRESP</port>
-                <port>s_axi_CTRL_RVALID</port>
-                <port>s_axi_CTRL_WDATA</port>
-                <port>s_axi_CTRL_WREADY</port>
-                <port>s_axi_CTRL_WSTRB</port>
-                <port>s_axi_CTRL_WVALID</port>
+                <port>s_axi_control_ARADDR</port>
+                <port>s_axi_control_ARREADY</port>
+                <port>s_axi_control_ARVALID</port>
+                <port>s_axi_control_AWADDR</port>
+                <port>s_axi_control_AWREADY</port>
+                <port>s_axi_control_AWVALID</port>
+                <port>s_axi_control_BREADY</port>
+                <port>s_axi_control_BRESP</port>
+                <port>s_axi_control_BVALID</port>
+                <port>s_axi_control_RDATA</port>
+                <port>s_axi_control_RREADY</port>
+                <port>s_axi_control_RRESP</port>
+                <port>s_axi_control_RVALID</port>
+                <port>s_axi_control_WDATA</port>
+                <port>s_axi_control_WREADY</port>
+                <port>s_axi_control_WSTRB</port>
+                <port>s_axi_control_WVALID</port>
             </ports>
             <registers>
                 <register offset="0x00" name="CTRL" access="RW" resetValue="0x0" description="Control signals" range="32">
@@ -2397,13 +2397,13 @@
             <item name="M_AXI">
                 <table>
                     <keys size="12">Interface, Data Width (SW-&gt;HW), Address Width, Latency, Offset, Offset Interfaces, Register, Max Widen Bitwidth, Max Read Burst Length, Max Write Burst Length, Num Read Outstanding, Num Write Outstanding</keys>
-                    <column name="m_axi_gmem">16 -&gt; 16, 32, 0, slave, s_axi_CTRL, 0, 0, 16, 16, 16, 16</column>
+                    <column name="m_axi_gmem">16 -&gt; 16, 32, 0, slave, s_axi_control, 0, 0, 16, 16, 16, 16</column>
                 </table>
             </item>
             <item name="S_AXILITE">
                 <table>
                     <keys size="6">Interface, Data Width, Address Width, Offset, Register, Data Interface</keys>
-                    <column name="s_axi_CTRL">32, 6, 16, 0, m_axi_gmem</column>
+                    <column name="s_axi_control">32, 6, 16, 0, m_axi_gmem</column>
                 </table>
             </item>
             <item name="BRAM">
@@ -2429,10 +2429,10 @@
             <item name="Top Function Arguments">
                 <table isCollapsed="1">
                     <keys size="3">Argument, Direction, Datatype</keys>
-                    <column name="x">inout, ap_fixed&lt;16 9 AP_TRN AP_WRAP 0&gt;*</column>
-                    <column name="dx">inout, ap_fixed&lt;16 9 AP_TRN AP_WRAP 0&gt;*</column>
-                    <column name="bram_x">inout, ap_fixed&lt;16 9 AP_TRN AP_WRAP 0&gt;*</column>
-                    <column name="bram_dx">inout, ap_fixed&lt;16 9 AP_TRN AP_WRAP 0&gt;*</column>
+                    <column name="x">inout, ap_fixed&lt;16 3 AP_TRN AP_WRAP 0&gt;*</column>
+                    <column name="dx">inout, ap_fixed&lt;16 3 AP_TRN AP_WRAP 0&gt;*</column>
+                    <column name="bram_x">inout, ap_fixed&lt;16 3 AP_TRN AP_WRAP 0&gt;*</column>
+                    <column name="bram_dx">inout, ap_fixed&lt;16 3 AP_TRN AP_WRAP 0&gt;*</column>
                     <column name="dim">in, int</column>
                     <column name="ddrtobram">in, bool</column>
                 </table>
@@ -2441,13 +2441,13 @@
                 <table isCollapsed="1">
                     <keys size="5">Argument, HW Name, HW Type, HW Usage, HW Info</keys>
                     <column name="x">m_axi_gmem, interface, , </column>
-                    <column name="x">s_axi_CTRL x, register, offset, offset=0x10 range=32</column>
+                    <column name="x">s_axi_control x, register, offset, offset=0x10 range=32</column>
                     <column name="dx">m_axi_gmem, interface, , </column>
-                    <column name="dx">s_axi_CTRL dx, register, offset, offset=0x18 range=32</column>
+                    <column name="dx">s_axi_control dx, register, offset, offset=0x18 range=32</column>
                     <column name="bram_x">bram_x_PORTA, interface, , </column>
                     <column name="bram_dx">bram_dx_PORTA, interface, , </column>
-                    <column name="dim">s_axi_CTRL dim, register, , offset=0x20 range=32</column>
-                    <column name="ddrtobram">s_axi_CTRL ddrtobram, register, , offset=0x28 range=32</column>
+                    <column name="dim">s_axi_control dim, register, , offset=0x20 range=32</column>
+                    <column name="ddrtobram">s_axi_control ddrtobram, register, , offset=0x28 range=32</column>
                 </table>
             </item>
         </section>

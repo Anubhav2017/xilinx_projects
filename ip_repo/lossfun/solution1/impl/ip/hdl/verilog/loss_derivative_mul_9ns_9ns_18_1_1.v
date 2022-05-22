@@ -5,7 +5,7 @@
 
 `timescale 1 ns / 1 ps
 
-module loss_derivative_mul_9ns_9ns_18_1_1_Multiplier_4(a, b, p);
+module loss_derivative_mul_9ns_9ns_18_1_1_Multiplier_3(a, b, p);
 input[9 - 1 : 0] a; 
 input[9 - 1 : 0] b; 
 output[18 - 1 : 0] p;
@@ -29,7 +29,7 @@ output[dout_WIDTH - 1:0] dout;
 
 
 
-loss_derivative_mul_9ns_9ns_18_1_1_Multiplier_4 loss_derivative_mul_9ns_9ns_18_1_1_Multiplier_4_U(
+loss_derivative_mul_9ns_9ns_18_1_1_Multiplier_3 loss_derivative_mul_9ns_9ns_18_1_1_Multiplier_3_U(
     .a( din0 ),
     .b( din1 ),
     .p( dout ));

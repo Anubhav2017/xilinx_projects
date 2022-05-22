@@ -1,4 +1,4 @@
-obj/main.o: ../../../main.cpp ../../../lossfun.h \
+obj/main.o: ../../../main.cpp \
  /tools/Xilinx/Vitis_HLS/2020.2/include/ap_fixed.h \
  /tools/Xilinx/Vitis_HLS/2020.2/include/ap_common.h \
  /tools/Xilinx/Vitis_HLS/2020.2/include/ap_decl.h \

@@ -5573,19 +5573,19 @@ inline bool operator!=(
 }
 # 396 "/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed.h" 2
 # 7 "conv_combined/main.cpp" 2
-typedef ap_fixed<16,9> fixed_t;
+typedef ap_fixed<16,3> fixed_t;
 
 __attribute__((sdx_kernel("conv_combined", 0))) void conv_combined(fixed_t x[1000], fixed_t dx[1000],fixed_t* wt,fixed_t* dwt, fixed_t y[1000], fixed_t dy[1000],fixed_t* b,fixed_t* db,int F, int C, int H, int W, int FH, int FW, bool fwprop){_ssdm_SpecArrayDimSize(x, 1000);_ssdm_SpecArrayDimSize(dx, 1000);_ssdm_SpecArrayDimSize(y, 1000);_ssdm_SpecArrayDimSize(dy, 1000);
 #pragma HLS TOP name=conv_combined
 # 9 "conv_combined/main.cpp"
 
 
-#pragma HLS INTERFACE bram storage_type=ram_1p port=x
-#pragma HLS INTERFACE bram storage_type=ram_1p port=dx
+#pragma HLS INTERFACE bram storage_type=ram_1p latency=2 port=x
+#pragma HLS INTERFACE bram storage_type=ram_1p latency=2 port=dx
 #pragma HLS INTERFACE m_axi port=wt depth=200 offset=slave bundle=gmem
 #pragma HLS INTERFACE m_axi port=dwt depth=200 offset=slave bundle=gmem
-#pragma HLS INTERFACE bram storage_type=ram_1p port=y
-#pragma HLS INTERFACE bram storage_type=ram_1p port=dy
+#pragma HLS INTERFACE bram storage_type=ram_1p latency=2 port=y
+#pragma HLS INTERFACE bram storage_type=ram_1p latency=2 port=dy
 #pragma HLS INTERFACE m_axi port=b depth=200 offset=slave bundle=gmem
 #pragma HLS INTERFACE m_axi port=db depth=200 offset=slave bundle=gmem
 

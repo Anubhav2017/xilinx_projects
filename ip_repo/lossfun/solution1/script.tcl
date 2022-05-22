@@ -5,7 +5,6 @@
 ############################################################
 open_project lossfun
 set_top loss_derivative
-add_files lossfun/lossfun.h
 add_files lossfun/main.cpp
 add_files -tb lossfun/tb.cpp -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"
 open_solution "solution1" -flow_target vivado

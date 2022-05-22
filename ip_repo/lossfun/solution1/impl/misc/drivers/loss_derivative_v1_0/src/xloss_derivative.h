@@ -38,12 +38,12 @@ typedef uint64_t u64;
 #else
 typedef struct {
     u16 DeviceId;
-    u32 Ctrl_BaseAddress;
+    u32 Control_BaseAddress;
 } XLoss_derivative_Config;
 #endif
 
 typedef struct {
-    u64 Ctrl_BaseAddress;
+    u64 Control_BaseAddress;
     u32 IsReady;
 } XLoss_derivative;
 
@@ -88,16 +88,18 @@ void XLoss_derivative_EnableAutoRestart(XLoss_derivative *InstancePtr);
 void XLoss_derivative_DisableAutoRestart(XLoss_derivative *InstancePtr);
 u32 XLoss_derivative_Get_return(XLoss_derivative *InstancePtr);
 
-void XLoss_derivative_Set_x(XLoss_derivative *InstancePtr, u32 Data);
-u32 XLoss_derivative_Get_x(XLoss_derivative *InstancePtr);
-void XLoss_derivative_Set_dx(XLoss_derivative *InstancePtr, u32 Data);
-u32 XLoss_derivative_Get_dx(XLoss_derivative *InstancePtr);
+void XLoss_derivative_Set_x_ddr(XLoss_derivative *InstancePtr, u32 Data);
+u32 XLoss_derivative_Get_x_ddr(XLoss_derivative *InstancePtr);
+void XLoss_derivative_Set_dx_ddr(XLoss_derivative *InstancePtr, u32 Data);
+u32 XLoss_derivative_Get_dx_ddr(XLoss_derivative *InstancePtr);
 void XLoss_derivative_Set_y(XLoss_derivative *InstancePtr, u32 Data);
 u32 XLoss_derivative_Get_y(XLoss_derivative *InstancePtr);
-void XLoss_derivative_Set_x_size(XLoss_derivative *InstancePtr, u32 Data);
-u32 XLoss_derivative_Get_x_size(XLoss_derivative *InstancePtr);
-void XLoss_derivative_Set_N(XLoss_derivative *InstancePtr, u32 Data);
-u32 XLoss_derivative_Get_N(XLoss_derivative *InstancePtr);
+void XLoss_derivative_Set_dim(XLoss_derivative *InstancePtr, u32 Data);
+u32 XLoss_derivative_Get_dim(XLoss_derivative *InstancePtr);
+void XLoss_derivative_Set_writetoddr(XLoss_derivative *InstancePtr, u32 Data);
+u32 XLoss_derivative_Get_writetoddr(XLoss_derivative *InstancePtr);
+void XLoss_derivative_Set_ddrtobram(XLoss_derivative *InstancePtr, u32 Data);
+u32 XLoss_derivative_Get_ddrtobram(XLoss_derivative *InstancePtr);
 
 void XLoss_derivative_InterruptGlobalEnable(XLoss_derivative *InstancePtr);
 void XLoss_derivative_InterruptGlobalDisable(XLoss_derivative *InstancePtr);

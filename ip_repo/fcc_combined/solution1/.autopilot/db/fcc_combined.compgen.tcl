@@ -620,7 +620,7 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_dsp48, check your p
 
 
 set id 11
-set name fcc_combined_mac_muladd_16s_16s_23ns_23_4_1
+set name fcc_combined_mac_muladd_16s_16s_29ns_29_4_1
 set corename simcore_mac
 set op mac
 set stage_num 4
@@ -634,13 +634,13 @@ set in0_width 16
 set in0_signed 1
 set in1_width 16
 set in1_signed 1
-set in2_width 23
+set in2_width 29
 set in2_signed 0
 set ce_width 1
 set ce_signed 0
-set out_width 23
+set out_width 29
 set exp i0*i1+i2
-set arg_lists {i0 {16 1 +} i1 {16 1 +} m {23 1 +} i2 {23 0 +} p {23 1 +} c_reg {1} rnd {0} acc {0} }
+set arg_lists {i0 {16 1 +} i1 {16 1 +} m {29 1 +} i2 {29 0 +} p {29 1 +} c_reg {1} rnd {0} acc {0} }
 set TrueReset 0
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ap_gen_simcore_mac] == "ap_gen_simcore_mac"} {
@@ -720,7 +720,7 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_dsp48, check your p
 
 
 set id 12
-set name fcc_combined_mul_mul_16s_16s_23_4_1
+set name fcc_combined_mul_mul_16s_16s_29_4_1
 set corename simcore_mul
 set op mul
 set stage_num 4
@@ -736,9 +736,9 @@ set in1_width 16
 set in1_signed 1
 set ce_width 1
 set ce_signed 0
-set out_width 23
+set out_width 29
 set exp i0*i1
-set arg_lists {i0 {16 1 +} i1 {16 1 +} p {23 1 +} acc {0} }
+set arg_lists {i0 {16 1 +} i1 {16 1 +} p {29 1 +} acc {0} }
 set TrueReset 0
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ap_gen_simcore_mul] == "ap_gen_simcore_mul"} {

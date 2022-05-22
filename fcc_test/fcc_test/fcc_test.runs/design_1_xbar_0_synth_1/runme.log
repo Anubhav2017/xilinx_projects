@@ -19,9 +19,9 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 1823883
+INFO: [Synth 8-7075] Helper process launched with PID 3192385
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:21 . Memory (MB): peak = 2357.969 ; gain = 0.000 ; free physical = 2751 ; free virtual = 13619
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 2357.973 ; gain = 0.000 ; free physical = 7074 ; free virtual = 18623
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_xbar_0/synth/design_1_xbar_0.v:59]
 INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_axi_crossbar' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
@@ -47,8 +47,8 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_axi_crossbar' [/h
 	Parameter C_M_AXI_READ_CONNECTIVITY bound to: 15 - type: integer 
 	Parameter C_R_REGISTER bound to: 0 - type: integer 
 	Parameter C_S_AXI_SINGLE_THREAD bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
-	Parameter C_S_AXI_WRITE_ACCEPTANCE bound to: 128'b00000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000001000000000000000000000000000001000 
-	Parameter C_S_AXI_READ_ACCEPTANCE bound to: 128'b00000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000001000000000000000000000000000001000 
+	Parameter C_S_AXI_WRITE_ACCEPTANCE bound to: 128'b00000000000000000000000000000010000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000 
+	Parameter C_S_AXI_READ_ACCEPTANCE bound to: 128'b00000000000000000000000000000010000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000 
 	Parameter C_M_AXI_WRITE_ISSUING bound to: 8 - type: integer 
 	Parameter C_M_AXI_READ_ISSUING bound to: 8 - type: integer 
 	Parameter C_S_AXI_ARB_PRIORITY bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
@@ -100,8 +100,8 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_crossbar' [/home/
 	Parameter C_M_AXI_WRITE_CONNECTIVITY bound to: 15 - type: integer 
 	Parameter C_M_AXI_READ_CONNECTIVITY bound to: 15 - type: integer 
 	Parameter C_S_AXI_SINGLE_THREAD bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
-	Parameter C_S_AXI_WRITE_ACCEPTANCE bound to: 128'b00000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000001000000000000000000000000000001000 
-	Parameter C_S_AXI_READ_ACCEPTANCE bound to: 128'b00000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000001000000000000000000000000000001000 
+	Parameter C_S_AXI_WRITE_ACCEPTANCE bound to: 128'b00000000000000000000000000000010000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000 
+	Parameter C_S_AXI_READ_ACCEPTANCE bound to: 128'b00000000000000000000000000000010000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000 
 	Parameter C_M_AXI_WRITE_ISSUING bound to: 8 - type: integer 
 	Parameter C_M_AXI_READ_ISSUING bound to: 8 - type: integer 
 	Parameter C_S_AXI_ARB_PRIORITY bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
@@ -111,8 +111,8 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_crossbar' [/home/
 	Parameter C_ADDR_DECODE bound to: 1 - type: integer 
 	Parameter C_W_ISSUE_WIDTH bound to: 64'b0000000000000000000000000000000000000000000000000000000000000011 
 	Parameter C_R_ISSUE_WIDTH bound to: 64'b0000000000000000000000000000000000000000000000000000000000000011 
-	Parameter C_W_ACCEPT_WIDTH bound to: 128'b00000000000000000000000000000011000000000000000000000000000000110000000000000000000000000000000100000000000000000000000000000011 
-	Parameter C_R_ACCEPT_WIDTH bound to: 128'b00000000000000000000000000000011000000000000000000000000000000110000000000000000000000000000000100000000000000000000000000000011 
+	Parameter C_W_ACCEPT_WIDTH bound to: 128'b00000000000000000000000000000001000000000000000000000000000000110000000000000000000000000000001100000000000000000000000000000011 
+	Parameter C_R_ACCEPT_WIDTH bound to: 128'b00000000000000000000000000000001000000000000000000000000000000110000000000000000000000000000001100000000000000000000000000000011 
 	Parameter C_DEBUG bound to: 1 - type: integer 
 	Parameter P_AXI4 bound to: 0 - type: integer 
 	Parameter P_AXI3 bound to: 1 - type: integer 
@@ -325,8 +325,8 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_si_transactor__pa
 	Parameter C_NUM_ADDR_RANGES bound to: 1 - type: integer 
 	Parameter C_NUM_M bound to: 1 - type: integer 
 	Parameter C_NUM_M_LOG bound to: 0 - type: integer 
-	Parameter C_ACCEPTANCE bound to: 2 - type: integer 
-	Parameter C_ACCEPTANCE_LOG bound to: 1 - type: integer 
+	Parameter C_ACCEPTANCE bound to: 8 - type: integer 
+	Parameter C_ACCEPTANCE_LOG bound to: 3 - type: integer 
 	Parameter C_ID_WIDTH bound to: 2 - type: integer 
 	Parameter C_THREAD_ID_WIDTH bound to: 0 - type: integer 
 	Parameter C_ADDR_WIDTH bound to: 32 - type: integer 
@@ -356,27 +356,6 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_si_transactor__pa
 	Parameter P_NUM_ID_VAL bound to: 1 - type: integer 
 	Parameter P_NUM_THREADS bound to: 1 - type: integer 
 	Parameter P_M_SECURE_MASK bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_21_axic_srl_fifo__parameterized0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/54c0/hdl/axi_data_fifo_v2_1_vl_rfs.v:698]
-	Parameter C_FAMILY bound to: zynq - type: string 
-	Parameter C_FIFO_WIDTH bound to: 8 - type: integer 
-	Parameter C_MAX_CTRL_FANOUT bound to: 33 - type: integer 
-	Parameter C_FIFO_DEPTH_LOG bound to: 2 - type: integer 
-	Parameter C_USE_FULL bound to: 0 - type: integer 
-	Parameter P_FIFO_DEPTH_LOG bound to: 2 - type: integer 
-	Parameter P_EMPTY bound to: 2'b11 
-	Parameter P_ALMOSTEMPTY bound to: 2'b00 
-	Parameter P_ALMOSTFULL_TEMP bound to: 3'b110 
-	Parameter P_ALMOSTFULL bound to: 2'b10 
-	Parameter P_NUM_REPS bound to: 1 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_21_ndeep_srl__parameterized1' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/54c0/hdl/axi_data_fifo_v2_1_vl_rfs.v:1135]
-	Parameter C_FAMILY bound to: zynq - type: string 
-	Parameter C_A_WIDTH bound to: 2 - type: integer 
-	Parameter P_SRLASIZE bound to: 5 - type: integer 
-	Parameter P_SRLDEPTH bound to: 32 - type: integer 
-	Parameter P_NUMSRLS bound to: 1 - type: integer 
-	Parameter P_SHIFT_DEPTH bound to: 4 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_21_ndeep_srl__parameterized1' (11#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/54c0/hdl/axi_data_fifo_v2_1_vl_rfs.v:1135]
-INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_21_axic_srl_fifo__parameterized0' (11#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/54c0/hdl/axi_data_fifo_v2_1_vl_rfs.v:698]
 INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_23_si_transactor__parameterized1' (11#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:3800]
 INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_si_transactor__parameterized2' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:3800]
 	Parameter C_FAMILY bound to: zynq - type: string 
@@ -385,8 +364,8 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_si_transactor__pa
 	Parameter C_NUM_ADDR_RANGES bound to: 1 - type: integer 
 	Parameter C_NUM_M bound to: 1 - type: integer 
 	Parameter C_NUM_M_LOG bound to: 0 - type: integer 
-	Parameter C_ACCEPTANCE bound to: 2 - type: integer 
-	Parameter C_ACCEPTANCE_LOG bound to: 1 - type: integer 
+	Parameter C_ACCEPTANCE bound to: 8 - type: integer 
+	Parameter C_ACCEPTANCE_LOG bound to: 3 - type: integer 
 	Parameter C_ID_WIDTH bound to: 2 - type: integer 
 	Parameter C_THREAD_ID_WIDTH bound to: 0 - type: integer 
 	Parameter C_ADDR_WIDTH bound to: 32 - type: integer 
@@ -417,31 +396,6 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_si_transactor__pa
 	Parameter P_NUM_THREADS bound to: 1 - type: integer 
 	Parameter P_M_SECURE_MASK bound to: 1'b0 
 INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_23_si_transactor__parameterized2' (11#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:3800]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_wdata_router__parameterized0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:4736]
-	Parameter C_FAMILY bound to: zynq - type: string 
-	Parameter C_WMESG_WIDTH bound to: 74 - type: integer 
-	Parameter C_NUM_MASTER_SLOTS bound to: 2 - type: integer 
-	Parameter C_SELECT_WIDTH bound to: 1 - type: integer 
-	Parameter C_FIFO_DEPTH_LOG bound to: 1 - type: integer 
-	Parameter P_FIFO_DEPTH_LOG bound to: 1 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_21_axic_reg_srl_fifo__parameterized0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/54c0/hdl/axi_data_fifo_v2_1_vl_rfs.v:889]
-	Parameter C_FAMILY bound to: zynq - type: string 
-	Parameter C_FIFO_WIDTH bound to: 1 - type: integer 
-	Parameter C_MAX_CTRL_FANOUT bound to: 33 - type: integer 
-	Parameter C_FIFO_DEPTH_LOG bound to: 1 - type: integer 
-	Parameter C_USE_FULL bound to: 1 - type: integer 
-	Parameter P_FIFO_DEPTH_LOG bound to: 2 - type: integer 
-	Parameter P_EMPTY bound to: 2'b11 
-	Parameter P_ALMOSTEMPTY bound to: 2'b00 
-	Parameter P_ALMOSTFULL_TEMP bound to: 3'b110 
-	Parameter P_ALMOSTFULL bound to: 2'b10 
-	Parameter P_NUM_REPS bound to: 1 - type: integer 
-	Parameter ZERO bound to: 2'b10 
-	Parameter ONE bound to: 2'b11 
-	Parameter TWO bound to: 2'b01 
-INFO: [Synth 8-155] case statement is not full and has no default [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/54c0/hdl/axi_data_fifo_v2_1_vl_rfs.v:986]
-INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_21_axic_reg_srl_fifo__parameterized0' (11#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/54c0/hdl/axi_data_fifo_v2_1_vl_rfs.v:889]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_23_wdata_router__parameterized0' (11#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:4736]
 INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_si_transactor__parameterized3' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:3800]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_SI bound to: 2 - type: integer 
@@ -527,8 +481,8 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_si_transactor__pa
 	Parameter C_NUM_ADDR_RANGES bound to: 1 - type: integer 
 	Parameter C_NUM_M bound to: 1 - type: integer 
 	Parameter C_NUM_M_LOG bound to: 0 - type: integer 
-	Parameter C_ACCEPTANCE bound to: 8 - type: integer 
-	Parameter C_ACCEPTANCE_LOG bound to: 3 - type: integer 
+	Parameter C_ACCEPTANCE bound to: 2 - type: integer 
+	Parameter C_ACCEPTANCE_LOG bound to: 1 - type: integer 
 	Parameter C_ID_WIDTH bound to: 2 - type: integer 
 	Parameter C_THREAD_ID_WIDTH bound to: 0 - type: integer 
 	Parameter C_ADDR_WIDTH bound to: 32 - type: integer 
@@ -558,6 +512,27 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_si_transactor__pa
 	Parameter P_NUM_ID_VAL bound to: 1 - type: integer 
 	Parameter P_NUM_THREADS bound to: 1 - type: integer 
 	Parameter P_M_SECURE_MASK bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_21_axic_srl_fifo__parameterized0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/54c0/hdl/axi_data_fifo_v2_1_vl_rfs.v:698]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_FIFO_WIDTH bound to: 8 - type: integer 
+	Parameter C_MAX_CTRL_FANOUT bound to: 33 - type: integer 
+	Parameter C_FIFO_DEPTH_LOG bound to: 2 - type: integer 
+	Parameter C_USE_FULL bound to: 0 - type: integer 
+	Parameter P_FIFO_DEPTH_LOG bound to: 2 - type: integer 
+	Parameter P_EMPTY bound to: 2'b11 
+	Parameter P_ALMOSTEMPTY bound to: 2'b00 
+	Parameter P_ALMOSTFULL_TEMP bound to: 3'b110 
+	Parameter P_ALMOSTFULL bound to: 2'b10 
+	Parameter P_NUM_REPS bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_21_ndeep_srl__parameterized1' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/54c0/hdl/axi_data_fifo_v2_1_vl_rfs.v:1135]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_A_WIDTH bound to: 2 - type: integer 
+	Parameter P_SRLASIZE bound to: 5 - type: integer 
+	Parameter P_SRLDEPTH bound to: 32 - type: integer 
+	Parameter P_NUMSRLS bound to: 1 - type: integer 
+	Parameter P_SHIFT_DEPTH bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_21_ndeep_srl__parameterized1' (11#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/54c0/hdl/axi_data_fifo_v2_1_vl_rfs.v:1135]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_21_axic_srl_fifo__parameterized0' (11#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/54c0/hdl/axi_data_fifo_v2_1_vl_rfs.v:698]
 INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_23_si_transactor__parameterized5' (11#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:3800]
 INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_si_transactor__parameterized6' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:3800]
 	Parameter C_FAMILY bound to: zynq - type: string 
@@ -566,8 +541,8 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_si_transactor__pa
 	Parameter C_NUM_ADDR_RANGES bound to: 1 - type: integer 
 	Parameter C_NUM_M bound to: 1 - type: integer 
 	Parameter C_NUM_M_LOG bound to: 0 - type: integer 
-	Parameter C_ACCEPTANCE bound to: 8 - type: integer 
-	Parameter C_ACCEPTANCE_LOG bound to: 3 - type: integer 
+	Parameter C_ACCEPTANCE bound to: 2 - type: integer 
+	Parameter C_ACCEPTANCE_LOG bound to: 1 - type: integer 
 	Parameter C_ID_WIDTH bound to: 2 - type: integer 
 	Parameter C_THREAD_ID_WIDTH bound to: 0 - type: integer 
 	Parameter C_ADDR_WIDTH bound to: 32 - type: integer 
@@ -598,6 +573,31 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_si_transactor__pa
 	Parameter P_NUM_THREADS bound to: 1 - type: integer 
 	Parameter P_M_SECURE_MASK bound to: 1'b0 
 INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_23_si_transactor__parameterized6' (11#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:3800]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_wdata_router__parameterized0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:4736]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_WMESG_WIDTH bound to: 74 - type: integer 
+	Parameter C_NUM_MASTER_SLOTS bound to: 2 - type: integer 
+	Parameter C_SELECT_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIFO_DEPTH_LOG bound to: 1 - type: integer 
+	Parameter P_FIFO_DEPTH_LOG bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_21_axic_reg_srl_fifo__parameterized0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/54c0/hdl/axi_data_fifo_v2_1_vl_rfs.v:889]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_FIFO_WIDTH bound to: 1 - type: integer 
+	Parameter C_MAX_CTRL_FANOUT bound to: 33 - type: integer 
+	Parameter C_FIFO_DEPTH_LOG bound to: 1 - type: integer 
+	Parameter C_USE_FULL bound to: 1 - type: integer 
+	Parameter P_FIFO_DEPTH_LOG bound to: 2 - type: integer 
+	Parameter P_EMPTY bound to: 2'b11 
+	Parameter P_ALMOSTEMPTY bound to: 2'b00 
+	Parameter P_ALMOSTFULL_TEMP bound to: 3'b110 
+	Parameter P_ALMOSTFULL bound to: 2'b10 
+	Parameter P_NUM_REPS bound to: 1 - type: integer 
+	Parameter ZERO bound to: 2'b10 
+	Parameter ONE bound to: 2'b11 
+	Parameter TWO bound to: 2'b01 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/54c0/hdl/axi_data_fifo_v2_1_vl_rfs.v:986]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_21_axic_reg_srl_fifo__parameterized0' (11#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/54c0/hdl/axi_data_fifo_v2_1_vl_rfs.v:889]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_23_wdata_router__parameterized0' (11#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:4736]
 INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_addr_decoder__parameterized0' [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_NUM_TARGETS bound to: 4 - type: integer 
@@ -1060,18 +1060,18 @@ INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_23_crossbar' (1
 INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_23_axi_crossbar' (20#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (21#1) [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.gen/sources_1/bd/design_1/ip/design_1_xbar_0/synth/design_1_xbar_0.v:59]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:35 . Memory (MB): peak = 2364.898 ; gain = 6.930 ; free physical = 3530 ; free virtual = 14397
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:22 . Memory (MB): peak = 2364.902 ; gain = 6.930 ; free physical = 6734 ; free virtual = 18294
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:36 . Memory (MB): peak = 2376.773 ; gain = 18.805 ; free physical = 4429 ; free virtual = 15304
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:23 . Memory (MB): peak = 2379.746 ; gain = 21.773 ; free physical = 6736 ; free virtual = 18296
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:36 . Memory (MB): peak = 2376.773 ; gain = 18.805 ; free physical = 4429 ; free virtual = 15304
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:23 . Memory (MB): peak = 2379.746 ; gain = 21.773 ; free physical = 6736 ; free virtual = 18296
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.09 . Memory (MB): peak = 2382.711 ; gain = 0.000 ; free physical = 4396 ; free virtual = 15265
+Netlist sorting complete. Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2385.684 ; gain = 0.000 ; free physical = 6705 ; free virtual = 18265
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -1082,27 +1082,27 @@ Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/
 Finished Parsing XDC File [/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/design_1_xbar_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2515.555 ; gain = 0.000 ; free physical = 4109 ; free virtual = 14984
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2516.527 ; gain = 0.000 ; free physical = 6813 ; free virtual = 18373
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.09 . Memory (MB): peak = 2515.555 ; gain = 0.000 ; free physical = 4151 ; free virtual = 15026
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2516.527 ; gain = 0.000 ; free physical = 6805 ; free virtual = 18366
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:45 . Memory (MB): peak = 2515.555 ; gain = 157.586 ; free physical = 3942 ; free virtual = 14841
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:28 . Memory (MB): peak = 2516.527 ; gain = 158.555 ; free physical = 6942 ; free virtual = 18507
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:45 . Memory (MB): peak = 2515.555 ; gain = 157.586 ; free physical = 3941 ; free virtual = 14841
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:28 . Memory (MB): peak = 2516.527 ; gain = 158.555 ; free physical = 6944 ; free virtual = 18509
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/design_1_xbar_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:45 . Memory (MB): peak = 2515.555 ; gain = 157.586 ; free physical = 3922 ; free virtual = 14821
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:28 . Memory (MB): peak = 2516.527 ; gain = 158.555 ; free physical = 6939 ; free virtual = 18504
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_data_fifo_v2_1_21_axic_reg_srl_fifo'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_data_fifo_v2_1_21_axic_reg_srl_fifo__parameterized0'
@@ -1154,7 +1154,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'gen_axi.write_cs_reg' using encoding 'one-hot' in module 'axi_crossbar_v2_1_23_decerr_slave'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:46 . Memory (MB): peak = 2515.555 ; gain = 157.586 ; free physical = 2116 ; free virtual = 13029
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:29 . Memory (MB): peak = 2516.527 ; gain = 158.555 ; free physical = 6998 ; free virtual = 18576
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -1203,25 +1203,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:51 . Memory (MB): peak = 2515.555 ; gain = 157.586 ; free physical = 3690 ; free virtual = 14618
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:32 . Memory (MB): peak = 2516.527 ; gain = 158.555 ; free physical = 6799 ; free virtual = 18377
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:58 . Memory (MB): peak = 2515.555 ; gain = 157.586 ; free physical = 4173 ; free virtual = 15070
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:36 . Memory (MB): peak = 2516.527 ; gain = 158.555 ; free physical = 7625 ; free virtual = 19204
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:59 . Memory (MB): peak = 2515.555 ; gain = 157.586 ; free physical = 6255 ; free virtual = 17208
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:37 . Memory (MB): peak = 2516.527 ; gain = 158.555 ; free physical = 7802 ; free virtual = 19380
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:39 ; elapsed = 00:01:01 . Memory (MB): peak = 2515.555 ; gain = 157.586 ; free physical = 6631 ; free virtual = 17577
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:38 . Memory (MB): peak = 2516.527 ; gain = 158.555 ; free physical = 7812 ; free virtual = 19378
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -1239,37 +1239,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:42 ; elapsed = 00:01:04 . Memory (MB): peak = 2515.555 ; gain = 157.586 ; free physical = 6762 ; free virtual = 17693
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:40 . Memory (MB): peak = 2516.527 ; gain = 158.555 ; free physical = 7603 ; free virtual = 19187
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:42 ; elapsed = 00:01:04 . Memory (MB): peak = 2515.555 ; gain = 157.586 ; free physical = 6762 ; free virtual = 17693
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:40 . Memory (MB): peak = 2516.527 ; gain = 158.555 ; free physical = 7599 ; free virtual = 19184
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:42 ; elapsed = 00:01:04 . Memory (MB): peak = 2515.555 ; gain = 157.586 ; free physical = 6773 ; free virtual = 17703
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:40 . Memory (MB): peak = 2516.527 ; gain = 158.555 ; free physical = 7433 ; free virtual = 19017
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:42 ; elapsed = 00:01:04 . Memory (MB): peak = 2515.555 ; gain = 157.586 ; free physical = 6773 ; free virtual = 17703
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:40 . Memory (MB): peak = 2516.527 ; gain = 158.555 ; free physical = 7422 ; free virtual = 19007
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:42 ; elapsed = 00:01:04 . Memory (MB): peak = 2515.555 ; gain = 157.586 ; free physical = 6783 ; free virtual = 17704
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:40 . Memory (MB): peak = 2516.527 ; gain = 158.555 ; free physical = 7370 ; free virtual = 18955
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:42 ; elapsed = 00:01:04 . Memory (MB): peak = 2515.555 ; gain = 157.586 ; free physical = 6780 ; free virtual = 17700
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:40 . Memory (MB): peak = 2516.527 ; gain = 158.555 ; free physical = 7361 ; free virtual = 18945
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1296,27 +1296,27 @@ Report Cell Usage:
 |9     |FDSE    |    28|
 +------+--------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:42 ; elapsed = 00:01:04 . Memory (MB): peak = 2515.555 ; gain = 157.586 ; free physical = 6780 ; free virtual = 17700
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:40 . Memory (MB): peak = 2516.527 ; gain = 158.555 ; free physical = 7358 ; free virtual = 18942
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:39 ; elapsed = 00:01:00 . Memory (MB): peak = 2515.555 ; gain = 18.805 ; free physical = 6837 ; free virtual = 17759
-Synthesis Optimization Complete : Time (s): cpu = 00:00:42 ; elapsed = 00:01:04 . Memory (MB): peak = 2515.555 ; gain = 157.586 ; free physical = 6835 ; free virtual = 17757
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:38 . Memory (MB): peak = 2516.527 ; gain = 21.773 ; free physical = 7323 ; free virtual = 18908
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:40 . Memory (MB): peak = 2516.527 ; gain = 158.555 ; free physical = 7322 ; free virtual = 18907
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2515.555 ; gain = 0.000 ; free physical = 6917 ; free virtual = 17835
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2516.527 ; gain = 0.000 ; free physical = 7629 ; free virtual = 19214
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2515.555 ; gain = 0.000 ; free physical = 7339 ; free virtual = 18252
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2516.527 ; gain = 0.000 ; free physical = 8900 ; free virtual = 20476
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 122 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:53 ; elapsed = 00:01:10 . Memory (MB): peak = 2515.555 ; gain = 157.656 ; free physical = 8711 ; free virtual = 19624
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:44 . Memory (MB): peak = 2516.527 ; gain = 158.625 ; free physical = 9765 ; free virtual = 21342
 INFO: [Common 17-1381] The checkpoint '/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/design_1_xbar_0_synth_1/design_1_xbar_0.dcp' has been generated.
 WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_xbar_0, cache-ID = 35ecc1004e529b98
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_xbar_0, cache-ID = 023c822bb5288b97
 INFO: [Coretcl 2-1174] Renamed 46 cell refs.
 INFO: [Common 17-1381] The checkpoint '/home/anubhav/xilinx_projects/fcc_test/fcc_test/fcc_test.runs/design_1_xbar_0_synth_1/design_1_xbar_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_xbar_0_utilization_synth.rpt -pb design_1_xbar_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon May 16 03:33:09 2022...
+INFO: [Common 17-206] Exiting Vivado at Thu May 19 16:25:15 2022...

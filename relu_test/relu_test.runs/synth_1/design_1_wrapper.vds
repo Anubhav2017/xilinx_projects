@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Mon May 16 04:00:59 2022
-# Process ID: 2003364
+# Start of session at: Thu May 19 15:30:09 2022
+# Process ID: 3014660
 # Current directory: /home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1
 # Command line: vivado -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
 # Log file: /home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/design_1_wrapper.vds
@@ -20,63 +20,50 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 2003395
+INFO: [Synth 8-7075] Helper process launched with PID 3014679
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2358.973 ; gain = 0.000 ; free physical = 12931 ; free virtual = 22690
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2357.969 ; gain = 0.000 ; free physical = 11995 ; free virtual = 23593
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
 INFO: [Synth 8-6157] synthesizing module 'design_1' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:13]
-INFO: [Synth 8-6157] synthesizing module 'design_1_InputLayer_0_0' [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-2003364-anubhav-acer/realtime/design_1_InputLayer_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_InputLayer_0_0' (1#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-2003364-anubhav-acer/realtime/design_1_InputLayer_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_InputLayer_0_0' [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-3014660-anubhav-acer/realtime/design_1_InputLayer_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_InputLayer_0_0' (1#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-3014660-anubhav-acer/realtime/design_1_InputLayer_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'interrupt' of module 'design_1_InputLayer_0_0' is unconnected for instance 'InputLayer_0' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:327]
 WARNING: [Synth 8-7071] port 'bram_x_Rst_A' of module 'design_1_InputLayer_0_0' is unconnected for instance 'InputLayer_0' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:327]
 WARNING: [Synth 8-7071] port 'bram_dx_Rst_A' of module 'design_1_InputLayer_0_0' is unconnected for instance 'InputLayer_0' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:327]
 WARNING: [Synth 8-7023] instance 'InputLayer_0' of module 'design_1_InputLayer_0_0' has 69 connections declared, but only 66 given [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:327]
-INFO: [Synth 8-6157] synthesizing module 'design_1_OutputLayer_0_0' [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-2003364-anubhav-acer/realtime/design_1_OutputLayer_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_OutputLayer_0_0' (2#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-2003364-anubhav-acer/realtime/design_1_OutputLayer_0_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'interrupt' of module 'design_1_OutputLayer_0_0' is unconnected for instance 'OutputLayer_0' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:394]
-WARNING: [Synth 8-7071] port 'bram_y_Rst_A' of module 'design_1_OutputLayer_0_0' is unconnected for instance 'OutputLayer_0' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:394]
-WARNING: [Synth 8-7071] port 'bram_dy_Rst_A' of module 'design_1_OutputLayer_0_0' is unconnected for instance 'OutputLayer_0' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:394]
-WARNING: [Synth 8-7023] instance 'OutputLayer_0' of module 'design_1_OutputLayer_0_0' has 69 connections declared, but only 66 given [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:394]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_mem_intercon_0' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:966]
-INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1R706YB' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:4022]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-2003364-anubhav-acer/realtime/design_1_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (3#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-2003364-anubhav-acer/realtime/design_1_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1R706YB' (4#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:4022]
-INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_7HNO1D' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:5585]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_0' [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-2003364-anubhav-acer/realtime/design_1_auto_us_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_0' (5#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-2003364-anubhav-acer/realtime/design_1_auto_us_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'design_1_auto_us_0' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:5872]
-WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'design_1_auto_us_0' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:5872]
-WARNING: [Synth 8-7023] instance 'auto_us' of module 'design_1_auto_us_0' has 72 connections declared, but only 70 given [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:5872]
-INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_7HNO1D' (6#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:5585]
-INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_1W60HW0' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:6340]
-INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_1W60HW0' (7#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:6340]
-INFO: [Synth 8-6157] synthesizing module 's02_couplers_imp_8NCF02' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:6612]
-INFO: [Synth 8-6155] done synthesizing module 's02_couplers_imp_8NCF02' (8#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:6612]
-INFO: [Synth 8-6157] synthesizing module 's03_couplers_imp_1UQ1PUB' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:6884]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_1' [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-2003364-anubhav-acer/realtime/design_1_auto_us_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_1' (9#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-2003364-anubhav-acer/realtime/design_1_auto_us_1_stub.v:6]
-WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'design_1_auto_us_1' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:7171]
-WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'design_1_auto_us_1' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:7171]
-WARNING: [Synth 8-7023] instance 'auto_us' of module 'design_1_auto_us_1' has 72 connections declared, but only 70 given [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:7171]
-INFO: [Synth 8-6155] done synthesizing module 's03_couplers_imp_1UQ1PUB' (10#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:6884]
-INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-2003364-anubhav-acer/realtime/design_1_xbar_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (11#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-2003364-anubhav-acer/realtime/design_1_xbar_0_stub.v:6]
-WARNING: [Synth 8-689] width (6) of port connection 's_axi_bid' does not match port width (8) of module 'design_1_xbar_0' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:2356]
-WARNING: [Synth 8-689] width (6) of port connection 's_axi_rid' does not match port width (8) of module 'design_1_xbar_0' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:2361]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_mem_intercon_0' (12#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:966]
-WARNING: [Synth 8-7071] port 'S01_AXI_arready' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:461]
-WARNING: [Synth 8-7071] port 'S01_AXI_awready' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:461]
-WARNING: [Synth 8-7071] port 'S01_AXI_bid' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:461]
-WARNING: [Synth 8-7071] port 'S01_AXI_bresp' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:461]
-WARNING: [Synth 8-7071] port 'S01_AXI_bvalid' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:461]
-WARNING: [Synth 8-7071] port 'S01_AXI_rdata' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:461]
-WARNING: [Synth 8-7071] port 'S01_AXI_rid' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:461]
-WARNING: [Synth 8-7071] port 'S01_AXI_rlast' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:461]
-WARNING: [Synth 8-7071] port 'S01_AXI_rresp' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:461]
-WARNING: [Synth 8-7071] port 'S01_AXI_rvalid' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:461]
-WARNING: [Synth 8-7071] port 'S01_AXI_wready' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:461]
+INFO: [Synth 8-6157] synthesizing module 'design_1_InputLayer_1_0' [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-3014660-anubhav-acer/realtime/design_1_InputLayer_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_InputLayer_1_0' (2#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-3014660-anubhav-acer/realtime/design_1_InputLayer_1_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'interrupt' of module 'design_1_InputLayer_1_0' is unconnected for instance 'InputLayer_1' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:394]
+WARNING: [Synth 8-7071] port 'bram_x_Rst_A' of module 'design_1_InputLayer_1_0' is unconnected for instance 'InputLayer_1' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:394]
+WARNING: [Synth 8-7071] port 'bram_dx_Rst_A' of module 'design_1_InputLayer_1_0' is unconnected for instance 'InputLayer_1' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:394]
+WARNING: [Synth 8-7023] instance 'InputLayer_1' of module 'design_1_InputLayer_1_0' has 69 connections declared, but only 66 given [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:394]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_mem_intercon_0' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:970]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1R706YB' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:4122]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-3014660-anubhav-acer/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (3#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-3014660-anubhav-acer/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1R706YB' (4#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:4122]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_7HNO1D' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:5699]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_0' [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-3014660-anubhav-acer/realtime/design_1_auto_us_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_0' (5#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-3014660-anubhav-acer/realtime/design_1_auto_us_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'design_1_auto_us_0' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:5986]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'design_1_auto_us_0' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:5986]
+WARNING: [Synth 8-7023] instance 'auto_us' of module 'design_1_auto_us_0' has 72 connections declared, but only 70 given [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:5986]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_7HNO1D' (6#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:5699]
+INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_1W60HW0' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:6454]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_1' [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-3014660-anubhav-acer/realtime/design_1_auto_us_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_1' (7#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-3014660-anubhav-acer/realtime/design_1_auto_us_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'design_1_auto_us_1' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:6741]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'design_1_auto_us_1' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:6741]
+WARNING: [Synth 8-7023] instance 'auto_us' of module 'design_1_auto_us_1' has 72 connections declared, but only 70 given [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:6741]
+INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_1W60HW0' (8#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:6454]
+INFO: [Synth 8-6157] synthesizing module 's02_couplers_imp_8NCF02' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:6814]
+INFO: [Synth 8-6155] done synthesizing module 's02_couplers_imp_8NCF02' (9#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:6814]
+INFO: [Synth 8-6157] synthesizing module 's03_couplers_imp_1UQ1PUB' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:7086]
+INFO: [Synth 8-6155] done synthesizing module 's03_couplers_imp_1UQ1PUB' (10#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:7086]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-3014660-anubhav-acer/realtime/design_1_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (11#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-3014660-anubhav-acer/realtime/design_1_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_mem_intercon_0' (12#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:970]
 WARNING: [Synth 8-7071] port 'S02_AXI_arready' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:461]
 WARNING: [Synth 8-7071] port 'S02_AXI_awready' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:461]
 WARNING: [Synth 8-7071] port 'S02_AXI_bid' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:461]
@@ -88,9 +75,20 @@ WARNING: [Synth 8-7071] port 'S02_AXI_rlast' of module 'design_1_axi_mem_interco
 WARNING: [Synth 8-7071] port 'S02_AXI_rresp' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:461]
 WARNING: [Synth 8-7071] port 'S02_AXI_rvalid' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:461]
 WARNING: [Synth 8-7071] port 'S02_AXI_wready' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:461]
+WARNING: [Synth 8-7071] port 'S03_AXI_arready' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:461]
+WARNING: [Synth 8-7071] port 'S03_AXI_awready' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:461]
+WARNING: [Synth 8-7071] port 'S03_AXI_bid' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:461]
+WARNING: [Synth 8-7071] port 'S03_AXI_bresp' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:461]
+WARNING: [Synth 8-7071] port 'S03_AXI_bvalid' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:461]
+WARNING: [Synth 8-7071] port 'S03_AXI_rdata' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:461]
+WARNING: [Synth 8-7071] port 'S03_AXI_rid' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:461]
+WARNING: [Synth 8-7071] port 'S03_AXI_rlast' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:461]
+WARNING: [Synth 8-7071] port 'S03_AXI_rresp' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:461]
+WARNING: [Synth 8-7071] port 'S03_AXI_rvalid' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:461]
+WARNING: [Synth 8-7071] port 'S03_AXI_wready' of module 'design_1_axi_mem_intercon_0' is unconnected for instance 'axi_mem_intercon' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:461]
 WARNING: [Synth 8-7023] instance 'axi_mem_intercon' of module 'design_1_axi_mem_intercon_0' has 194 connections declared, but only 172 given [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:461]
-INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_0' [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-2003364-anubhav-acer/realtime/design_1_processing_system7_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_0' (13#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-2003364-anubhav-acer/realtime/design_1_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_0' [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-3014660-anubhav-acer/realtime/design_1_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_0' (13#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-3014660-anubhav-acer/realtime/design_1_processing_system7_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'USB0_PORT_INDCTL' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:634]
 WARNING: [Synth 8-7071] port 'USB0_VBUS_PWRSELECT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:634]
 WARNING: [Synth 8-7071] port 'S_AXI_HP0_RCOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:634]
@@ -98,141 +96,137 @@ WARNING: [Synth 8-7071] port 'S_AXI_HP0_WCOUNT' of module 'design_1_processing_s
 WARNING: [Synth 8-7071] port 'S_AXI_HP0_RACOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:634]
 WARNING: [Synth 8-7071] port 'S_AXI_HP0_WACOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:634]
 WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'design_1_processing_system7_0_0' has 110 connections declared, but only 104 given [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:634]
-INFO: [Synth 8-6157] synthesizing module 'design_1_ps7_0_axi_periph_0' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:2373]
-INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_15SPJYW' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:3764]
-INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_15SPJYW' (14#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:3764]
-INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_XU9C55' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:4427]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_1' [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-2003364-anubhav-acer/realtime/design_1_auto_pc_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_1' (15#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-2003364-anubhav-acer/realtime/design_1_auto_pc_1_stub.v:6]
-WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_auto_pc_1' is unconnected for instance 'auto_pc' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:4666]
-WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_auto_pc_1' is unconnected for instance 'auto_pc' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:4666]
-WARNING: [Synth 8-7023] instance 'auto_pc' of module 'design_1_auto_pc_1' has 60 connections declared, but only 58 given [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:4666]
-INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_XU9C55' (16#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:4427]
-INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_14WQB4R' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:4727]
-INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_14WQB4R' (17#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:4727]
-INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_YFYJ3U' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:4985]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_2' [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-2003364-anubhav-acer/realtime/design_1_auto_pc_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_2' (18#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-2003364-anubhav-acer/realtime/design_1_auto_pc_2_stub.v:6]
-WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_auto_pc_2' is unconnected for instance 'auto_pc' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:5224]
-WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_auto_pc_2' is unconnected for instance 'auto_pc' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:5224]
-WARNING: [Synth 8-7023] instance 'auto_pc' of module 'design_1_auto_pc_2' has 60 connections declared, but only 58 given [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:5224]
-INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_YFYJ3U' (19#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:4985]
-INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_17KQ732' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:5285]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_3' [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-2003364-anubhav-acer/realtime/design_1_auto_pc_3_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_3' (20#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-2003364-anubhav-acer/realtime/design_1_auto_pc_3_stub.v:6]
-WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_auto_pc_3' is unconnected for instance 'auto_pc' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:5524]
-WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_auto_pc_3' is unconnected for instance 'auto_pc' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:5524]
-WARNING: [Synth 8-7023] instance 'auto_pc' of module 'design_1_auto_pc_3' has 60 connections declared, but only 58 given [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:5524]
-INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_17KQ732' (21#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:5285]
-INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_UYSKKA' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:5945]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_4' [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-2003364-anubhav-acer/realtime/design_1_auto_pc_4_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_4' (22#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-2003364-anubhav-acer/realtime/design_1_auto_pc_4_stub.v:6]
-WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'design_1_auto_pc_4' is unconnected for instance 'auto_pc' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:6260]
-WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'design_1_auto_pc_4' is unconnected for instance 'auto_pc' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:6260]
-WARNING: [Synth 8-7023] instance 'auto_pc' of module 'design_1_auto_pc_4' has 79 connections declared, but only 77 given [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:6260]
-INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_UYSKKA' (23#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:5945]
-INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_1' [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-2003364-anubhav-acer/realtime/design_1_xbar_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_1' (24#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-2003364-anubhav-acer/realtime/design_1_xbar_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_ps7_0_axi_periph_0' (25#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:2373]
-WARNING: [Synth 8-7071] port 'M00_AXI_araddr' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
-WARNING: [Synth 8-7071] port 'M00_AXI_arburst' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
-WARNING: [Synth 8-7071] port 'M00_AXI_arcache' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
-WARNING: [Synth 8-7071] port 'M00_AXI_arlen' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
-WARNING: [Synth 8-7071] port 'M00_AXI_arlock' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
-WARNING: [Synth 8-7071] port 'M00_AXI_arprot' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
-WARNING: [Synth 8-7071] port 'M00_AXI_arqos' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
-WARNING: [Synth 8-7071] port 'M00_AXI_arregion' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
-WARNING: [Synth 8-7071] port 'M00_AXI_arsize' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
-WARNING: [Synth 8-7071] port 'M00_AXI_arvalid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
-WARNING: [Synth 8-7071] port 'M00_AXI_awaddr' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
-WARNING: [Synth 8-7071] port 'M00_AXI_awburst' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
-WARNING: [Synth 8-7071] port 'M00_AXI_awcache' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
-WARNING: [Synth 8-7071] port 'M00_AXI_awlen' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
-WARNING: [Synth 8-7071] port 'M00_AXI_awlock' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
-WARNING: [Synth 8-7071] port 'M00_AXI_awprot' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
-WARNING: [Synth 8-7071] port 'M00_AXI_awqos' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
-WARNING: [Synth 8-7071] port 'M00_AXI_awregion' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
-WARNING: [Synth 8-7071] port 'M00_AXI_awsize' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
-WARNING: [Synth 8-7071] port 'M00_AXI_awvalid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
-WARNING: [Synth 8-7071] port 'M00_AXI_bready' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
-WARNING: [Synth 8-7071] port 'M00_AXI_rready' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
-WARNING: [Synth 8-7071] port 'M00_AXI_wdata' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
-WARNING: [Synth 8-7071] port 'M00_AXI_wlast' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
-WARNING: [Synth 8-7071] port 'M00_AXI_wstrb' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
-WARNING: [Synth 8-7071] port 'M00_AXI_wvalid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
-WARNING: [Synth 8-7071] port 'M02_AXI_araddr' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
-WARNING: [Synth 8-7071] port 'M02_AXI_arburst' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
-WARNING: [Synth 8-7071] port 'M02_AXI_arcache' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
-WARNING: [Synth 8-7071] port 'M02_AXI_arlen' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
-WARNING: [Synth 8-7071] port 'M02_AXI_arlock' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
-WARNING: [Synth 8-7071] port 'M02_AXI_arprot' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
-WARNING: [Synth 8-7071] port 'M02_AXI_arqos' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
-WARNING: [Synth 8-7071] port 'M02_AXI_arregion' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
-WARNING: [Synth 8-7071] port 'M02_AXI_arsize' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
-WARNING: [Synth 8-7071] port 'M02_AXI_arvalid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
-WARNING: [Synth 8-7071] port 'M02_AXI_awaddr' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
-WARNING: [Synth 8-7071] port 'M02_AXI_awburst' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
-WARNING: [Synth 8-7071] port 'M02_AXI_awcache' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
-WARNING: [Synth 8-7071] port 'M02_AXI_awlen' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
-WARNING: [Synth 8-7071] port 'M02_AXI_awlock' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
-WARNING: [Synth 8-7071] port 'M02_AXI_awprot' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
-WARNING: [Synth 8-7071] port 'M02_AXI_awqos' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
-WARNING: [Synth 8-7071] port 'M02_AXI_awregion' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
-WARNING: [Synth 8-7071] port 'M02_AXI_awsize' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
-WARNING: [Synth 8-7071] port 'M02_AXI_awvalid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
-WARNING: [Synth 8-7071] port 'M02_AXI_bready' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
-WARNING: [Synth 8-7071] port 'M02_AXI_rready' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
-WARNING: [Synth 8-7071] port 'M02_AXI_wdata' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
-WARNING: [Synth 8-7071] port 'M02_AXI_wlast' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
-WARNING: [Synth 8-7071] port 'M02_AXI_wstrb' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
-WARNING: [Synth 8-7071] port 'M02_AXI_wvalid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
-WARNING: [Synth 8-7023] instance 'ps7_0_axi_periph' of module 'design_1_ps7_0_axi_periph_0' has 173 connections declared, but only 121 given [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
-INFO: [Synth 8-6157] synthesizing module 'design_1_relu_combined_0_0' [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-2003364-anubhav-acer/realtime/design_1_relu_combined_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_relu_combined_0_0' (26#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-2003364-anubhav-acer/realtime/design_1_relu_combined_0_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'interrupt' of module 'design_1_relu_combined_0_0' is unconnected for instance 'relu_combined_0' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:861]
-WARNING: [Synth 8-7071] port 'x_Rst_A' of module 'design_1_relu_combined_0_0' is unconnected for instance 'relu_combined_0' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:861]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ps7_0_axi_periph_0' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:2377]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_15SPJYW' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:3822]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_1' [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-3014660-anubhav-acer/realtime/design_1_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_1' (14#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-3014660-anubhav-acer/realtime/design_1_auto_pc_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_auto_pc_1' is unconnected for instance 'auto_pc' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:4061]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_auto_pc_1' is unconnected for instance 'auto_pc' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:4061]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'design_1_auto_pc_1' has 60 connections declared, but only 58 given [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:4061]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_15SPJYW' (15#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:3822]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_XU9C55' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:4527]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_2' [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-3014660-anubhav-acer/realtime/design_1_auto_pc_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_2' (16#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-3014660-anubhav-acer/realtime/design_1_auto_pc_2_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_auto_pc_2' is unconnected for instance 'auto_pc' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:4766]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_auto_pc_2' is unconnected for instance 'auto_pc' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:4766]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'design_1_auto_pc_2' has 60 connections declared, but only 58 given [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:4766]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_XU9C55' (17#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:4527]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_14WQB4R' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:4827]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_3' [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-3014660-anubhav-acer/realtime/design_1_auto_pc_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_3' (18#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-3014660-anubhav-acer/realtime/design_1_auto_pc_3_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_auto_pc_3' is unconnected for instance 'auto_pc' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:5066]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_auto_pc_3' is unconnected for instance 'auto_pc' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:5066]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'design_1_auto_pc_3' has 60 connections declared, but only 58 given [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:5066]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_14WQB4R' (19#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:4827]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_YFYJ3U' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:5127]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_YFYJ3U' (20#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:5127]
+INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_17KQ732' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:5413]
+INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_17KQ732' (21#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:5413]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_UYSKKA' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:6059]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_4' [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-3014660-anubhav-acer/realtime/design_1_auto_pc_4_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_4' (22#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-3014660-anubhav-acer/realtime/design_1_auto_pc_4_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'design_1_auto_pc_4' is unconnected for instance 'auto_pc' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:6374]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'design_1_auto_pc_4' is unconnected for instance 'auto_pc' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:6374]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'design_1_auto_pc_4' has 79 connections declared, but only 77 given [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:6374]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_UYSKKA' (23#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:6059]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_1' [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-3014660-anubhav-acer/realtime/design_1_xbar_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_1' (24#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-3014660-anubhav-acer/realtime/design_1_xbar_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ps7_0_axi_periph_0' (25#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:2377]
+WARNING: [Synth 8-7071] port 'M03_AXI_araddr' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
+WARNING: [Synth 8-7071] port 'M03_AXI_arburst' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
+WARNING: [Synth 8-7071] port 'M03_AXI_arcache' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
+WARNING: [Synth 8-7071] port 'M03_AXI_arid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
+WARNING: [Synth 8-7071] port 'M03_AXI_arlen' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
+WARNING: [Synth 8-7071] port 'M03_AXI_arlock' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
+WARNING: [Synth 8-7071] port 'M03_AXI_arprot' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
+WARNING: [Synth 8-7071] port 'M03_AXI_arqos' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
+WARNING: [Synth 8-7071] port 'M03_AXI_arregion' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
+WARNING: [Synth 8-7071] port 'M03_AXI_arsize' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
+WARNING: [Synth 8-7071] port 'M03_AXI_arvalid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
+WARNING: [Synth 8-7071] port 'M03_AXI_awaddr' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
+WARNING: [Synth 8-7071] port 'M03_AXI_awburst' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
+WARNING: [Synth 8-7071] port 'M03_AXI_awcache' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
+WARNING: [Synth 8-7071] port 'M03_AXI_awid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
+WARNING: [Synth 8-7071] port 'M03_AXI_awlen' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
+WARNING: [Synth 8-7071] port 'M03_AXI_awlock' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
+WARNING: [Synth 8-7071] port 'M03_AXI_awprot' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
+WARNING: [Synth 8-7071] port 'M03_AXI_awqos' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
+WARNING: [Synth 8-7071] port 'M03_AXI_awregion' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
+WARNING: [Synth 8-7071] port 'M03_AXI_awsize' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
+WARNING: [Synth 8-7071] port 'M03_AXI_awvalid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
+WARNING: [Synth 8-7071] port 'M03_AXI_bready' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
+WARNING: [Synth 8-7071] port 'M03_AXI_rready' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
+WARNING: [Synth 8-7071] port 'M03_AXI_wdata' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
+WARNING: [Synth 8-7071] port 'M03_AXI_wlast' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
+WARNING: [Synth 8-7071] port 'M03_AXI_wstrb' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
+WARNING: [Synth 8-7071] port 'M03_AXI_wvalid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
+WARNING: [Synth 8-7071] port 'M04_AXI_araddr' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
+WARNING: [Synth 8-7071] port 'M04_AXI_arburst' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
+WARNING: [Synth 8-7071] port 'M04_AXI_arcache' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
+WARNING: [Synth 8-7071] port 'M04_AXI_arid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
+WARNING: [Synth 8-7071] port 'M04_AXI_arlen' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
+WARNING: [Synth 8-7071] port 'M04_AXI_arlock' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
+WARNING: [Synth 8-7071] port 'M04_AXI_arprot' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
+WARNING: [Synth 8-7071] port 'M04_AXI_arqos' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
+WARNING: [Synth 8-7071] port 'M04_AXI_arregion' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
+WARNING: [Synth 8-7071] port 'M04_AXI_arsize' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
+WARNING: [Synth 8-7071] port 'M04_AXI_arvalid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
+WARNING: [Synth 8-7071] port 'M04_AXI_awaddr' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
+WARNING: [Synth 8-7071] port 'M04_AXI_awburst' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
+WARNING: [Synth 8-7071] port 'M04_AXI_awcache' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
+WARNING: [Synth 8-7071] port 'M04_AXI_awid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
+WARNING: [Synth 8-7071] port 'M04_AXI_awlen' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
+WARNING: [Synth 8-7071] port 'M04_AXI_awlock' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
+WARNING: [Synth 8-7071] port 'M04_AXI_awprot' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
+WARNING: [Synth 8-7071] port 'M04_AXI_awqos' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
+WARNING: [Synth 8-7071] port 'M04_AXI_awregion' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
+WARNING: [Synth 8-7071] port 'M04_AXI_awsize' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
+WARNING: [Synth 8-7071] port 'M04_AXI_awvalid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
+WARNING: [Synth 8-7071] port 'M04_AXI_bready' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
+WARNING: [Synth 8-7071] port 'M04_AXI_rready' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
+WARNING: [Synth 8-7071] port 'M04_AXI_wdata' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
+WARNING: [Synth 8-7071] port 'M04_AXI_wlast' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
 INFO: [Common 17-14] Message 'Synth 8-7071' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-WARNING: [Synth 8-7023] instance 'relu_combined_0' of module 'design_1_relu_combined_0_0' has 48 connections declared, but only 43 given [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:861]
-INFO: [Synth 8-6157] synthesizing module 'design_1_relu_dx_0' [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-2003364-anubhav-acer/realtime/design_1_relu_dx_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_relu_dx_0' (27#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-2003364-anubhav-acer/realtime/design_1_relu_dx_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_relu_dy_0' [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-2003364-anubhav-acer/realtime/design_1_relu_dy_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_relu_dy_0' (28#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-2003364-anubhav-acer/realtime/design_1_relu_dy_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_relu_x_0' [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-2003364-anubhav-acer/realtime/design_1_relu_x_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_relu_x_0' (29#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-2003364-anubhav-acer/realtime/design_1_relu_x_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_relu_y_0' [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-2003364-anubhav-acer/realtime/design_1_relu_y_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_relu_y_0' (30#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-2003364-anubhav-acer/realtime/design_1_relu_y_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps7_0_100M_0' [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-2003364-anubhav-acer/realtime/design_1_rst_ps7_0_100M_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps7_0_100M_0' (31#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-2003364-anubhav-acer/realtime/design_1_rst_ps7_0_100M_0_stub.v:6]
-WARNING: [Synth 8-7023] instance 'rst_ps7_0_100M' of module 'design_1_rst_ps7_0_100M_0' has 10 connections declared, but only 6 given [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:957]
+WARNING: [Synth 8-7023] instance 'ps7_0_axi_periph' of module 'design_1_ps7_0_axi_periph_0' has 181 connections declared, but only 125 given [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:739]
+INFO: [Synth 8-6157] synthesizing module 'design_1_relu_combined_0_1' [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-3014660-anubhav-acer/realtime/design_1_relu_combined_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_relu_combined_0_1' (26#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-3014660-anubhav-acer/realtime/design_1_relu_combined_0_1_stub.v:6]
+WARNING: [Synth 8-7023] instance 'relu_combined_0' of module 'design_1_relu_combined_0_1' has 48 connections declared, but only 43 given [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:865]
+INFO: [Synth 8-6157] synthesizing module 'design_1_relu_dx_0' [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-3014660-anubhav-acer/realtime/design_1_relu_dx_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_relu_dx_0' (27#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-3014660-anubhav-acer/realtime/design_1_relu_dx_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_relu_dy_0' [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-3014660-anubhav-acer/realtime/design_1_relu_dy_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_relu_dy_0' (28#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-3014660-anubhav-acer/realtime/design_1_relu_dy_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_relu_x_0' [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-3014660-anubhav-acer/realtime/design_1_relu_x_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_relu_x_0' (29#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-3014660-anubhav-acer/realtime/design_1_relu_x_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_relu_y_0' [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-3014660-anubhav-acer/realtime/design_1_relu_y_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_relu_y_0' (30#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-3014660-anubhav-acer/realtime/design_1_relu_y_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps7_0_100M_0' [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-3014660-anubhav-acer/realtime/design_1_rst_ps7_0_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps7_0_100M_0' (31#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/.Xil/Vivado-3014660-anubhav-acer/realtime/design_1_rst_ps7_0_100M_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'rst_ps7_0_100M' of module 'design_1_rst_ps7_0_100M_0' has 10 connections declared, but only 6 given [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:961]
 INFO: [Synth 8-6155] done synthesizing module 'design_1' (32#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/synth/design_1.v:13]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (33#1) [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2358.973 ; gain = 0.000 ; free physical = 13654 ; free virtual = 23414
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2357.969 ; gain = 0.000 ; free physical = 12716 ; free virtual = 24316
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2358.973 ; gain = 0.000 ; free physical = 13714 ; free virtual = 23475
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2357.969 ; gain = 0.000 ; free physical = 12777 ; free virtual = 24377
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2358.973 ; gain = 0.000 ; free physical = 13714 ; free virtual = 23475
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2357.969 ; gain = 0.000 ; free physical = 12777 ; free virtual = 24377
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2358.973 ; gain = 0.000 ; free physical = 13708 ; free virtual = 23468
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2357.969 ; gain = 0.000 ; free physical = 12770 ; free virtual = 24370
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/ip/design_1_InputLayer_0_0/design_1_InputLayer_0_0/design_1_InputLayer_0_0_in_context.xdc] for cell 'design_1_i/InputLayer_0'
-Finished Parsing XDC File [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/ip/design_1_InputLayer_0_0/design_1_InputLayer_0_0/design_1_InputLayer_0_0_in_context.xdc] for cell 'design_1_i/InputLayer_0'
-Parsing XDC File [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/ip/design_1_OutputLayer_0_0/design_1_OutputLayer_0_0/design_1_OutputLayer_0_0_in_context.xdc] for cell 'design_1_i/OutputLayer_0'
-Finished Parsing XDC File [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/ip/design_1_OutputLayer_0_0/design_1_OutputLayer_0_0/design_1_OutputLayer_0_0_in_context.xdc] for cell 'design_1_i/OutputLayer_0'
 Parsing XDC File [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/xbar'
 Finished Parsing XDC File [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/xbar'
 Parsing XDC File [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0/design_1_auto_us_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/s00_couplers/auto_us'
 Finished Parsing XDC File [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0/design_1_auto_us_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/s00_couplers/auto_us'
-Parsing XDC File [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/ip/design_1_auto_us_1/design_1_auto_us_1/design_1_auto_us_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/s03_couplers/auto_us'
-Finished Parsing XDC File [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/ip/design_1_auto_us_1/design_1_auto_us_1/design_1_auto_us_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/s03_couplers/auto_us'
+Parsing XDC File [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/ip/design_1_auto_us_1/design_1_auto_us_1/design_1_auto_us_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/s01_couplers/auto_us'
+Finished Parsing XDC File [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/ip/design_1_auto_us_1/design_1_auto_us_1/design_1_auto_us_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/s01_couplers/auto_us'
 Parsing XDC File [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/m00_couplers/auto_pc'
 Finished Parsing XDC File [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/m00_couplers/auto_pc'
 Parsing XDC File [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc] for cell 'design_1_i/processing_system7_0'
@@ -241,14 +235,12 @@ Parsing XDC File [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_
 Finished Parsing XDC File [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/ip/design_1_xbar_1/design_1_xbar_1/design_1_xbar_1_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/xbar'
 Parsing XDC File [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/ip/design_1_auto_pc_4/design_1_auto_pc_4/design_1_auto_pc_4_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
 Finished Parsing XDC File [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/ip/design_1_auto_pc_4/design_1_auto_pc_4/design_1_auto_pc_4_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
-Parsing XDC File [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1/design_1_auto_pc_2_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/m01_couplers/auto_pc'
-Finished Parsing XDC File [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1/design_1_auto_pc_2_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/m01_couplers/auto_pc'
-Parsing XDC File [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2/design_1_auto_pc_2_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/m03_couplers/auto_pc'
-Finished Parsing XDC File [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2/design_1_auto_pc_2_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/m03_couplers/auto_pc'
-Parsing XDC File [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/ip/design_1_auto_pc_3/design_1_auto_pc_3/design_1_auto_pc_2_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/m04_couplers/auto_pc'
-Finished Parsing XDC File [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/ip/design_1_auto_pc_3/design_1_auto_pc_3/design_1_auto_pc_2_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/m04_couplers/auto_pc'
-Parsing XDC File [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/ip/design_1_relu_combined_0_0/design_1_relu_combined_0_0/design_1_relu_combined_0_0_in_context.xdc] for cell 'design_1_i/relu_combined_0'
-Finished Parsing XDC File [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/ip/design_1_relu_combined_0_0/design_1_relu_combined_0_0/design_1_relu_combined_0_0_in_context.xdc] for cell 'design_1_i/relu_combined_0'
+Parsing XDC File [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1/design_1_auto_pc_2_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/m00_couplers/auto_pc'
+Finished Parsing XDC File [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1/design_1_auto_pc_2_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/m00_couplers/auto_pc'
+Parsing XDC File [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2/design_1_auto_pc_2_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/m01_couplers/auto_pc'
+Finished Parsing XDC File [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2/design_1_auto_pc_2_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/m01_couplers/auto_pc'
+Parsing XDC File [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/ip/design_1_auto_pc_3/design_1_auto_pc_3/design_1_auto_pc_2_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/m02_couplers/auto_pc'
+Finished Parsing XDC File [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/ip/design_1_auto_pc_3/design_1_auto_pc_3/design_1_auto_pc_2_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/m02_couplers/auto_pc'
 Parsing XDC File [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/ip/design_1_relu_dx_0/design_1_relu_dx_0/design_1_relu_x_0_in_context.xdc] for cell 'design_1_i/relu_dx'
 Finished Parsing XDC File [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/ip/design_1_relu_dx_0/design_1_relu_dx_0/design_1_relu_x_0_in_context.xdc] for cell 'design_1_i/relu_dx'
 Parsing XDC File [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/ip/design_1_relu_dy_0/design_1_relu_dy_0/design_1_relu_x_0_in_context.xdc] for cell 'design_1_i/relu_dy'
@@ -259,28 +251,34 @@ Parsing XDC File [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_
 Finished Parsing XDC File [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/ip/design_1_relu_y_0/design_1_relu_y_0/design_1_relu_x_0_in_context.xdc] for cell 'design_1_i/relu_y'
 Parsing XDC File [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_in_context.xdc] for cell 'design_1_i/rst_ps7_0_100M'
 Finished Parsing XDC File [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_in_context.xdc] for cell 'design_1_i/rst_ps7_0_100M'
+Parsing XDC File [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/ip/design_1_relu_combined_0_1/design_1_relu_combined_0_1/design_1_relu_combined_0_1_in_context.xdc] for cell 'design_1_i/relu_combined_0'
+Finished Parsing XDC File [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/ip/design_1_relu_combined_0_1/design_1_relu_combined_0_1/design_1_relu_combined_0_1_in_context.xdc] for cell 'design_1_i/relu_combined_0'
+Parsing XDC File [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/ip/design_1_InputLayer_0_0/design_1_InputLayer_0_0/design_1_InputLayer_0_0_in_context.xdc] for cell 'design_1_i/InputLayer_0'
+Finished Parsing XDC File [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/ip/design_1_InputLayer_0_0/design_1_InputLayer_0_0/design_1_InputLayer_0_0_in_context.xdc] for cell 'design_1_i/InputLayer_0'
+Parsing XDC File [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/ip/design_1_InputLayer_1_0/design_1_InputLayer_1_0/design_1_InputLayer_0_0_in_context.xdc] for cell 'design_1_i/InputLayer_1'
+Finished Parsing XDC File [/home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/ip/design_1_InputLayer_1_0/design_1_InputLayer_1_0/design_1_InputLayer_0_0_in_context.xdc] for cell 'design_1_i/InputLayer_1'
 Parsing XDC File [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/dont_touch.xdc]
 Finished Parsing XDC File [/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2422.934 ; gain = 0.000 ; free physical = 13616 ; free virtual = 23376
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2421.930 ; gain = 0.000 ; free physical = 12679 ; free virtual = 24279
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2422.934 ; gain = 0.000 ; free physical = 13616 ; free virtual = 23376
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2421.930 ; gain = 0.000 ; free physical = 12679 ; free virtual = 24279
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/relu_dx' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/relu_dy' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/relu_x' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/relu_y' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2422.934 ; gain = 63.961 ; free physical = 13689 ; free virtual = 23450
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 12755 ; free virtual = 24355
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2422.934 ; gain = 63.961 ; free physical = 13689 ; free virtual = 23450
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 12755 ; free virtual = 24355
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -546,31 +544,31 @@ Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_porb. (constraint 
 Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_srstb. (constraint file  /home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 260).
 Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_srstb. (constraint file  /home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 261).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/InputLayer_0. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/OutputLayer_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_mem_intercon/xbar. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_mem_intercon/s00_couplers/auto_us. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_mem_intercon/s03_couplers/auto_us. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_mem_intercon/s01_couplers/auto_us. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_mem_intercon/m00_couplers/auto_pc. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_mem_intercon. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/processing_system7_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps7_0_axi_periph/xbar. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps7_0_axi_periph/m00_couplers/auto_pc. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps7_0_axi_periph/m01_couplers/auto_pc. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps7_0_axi_periph/m03_couplers/auto_pc. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps7_0_axi_periph/m04_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps7_0_axi_periph/m02_couplers/auto_pc. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps7_0_axi_periph. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/relu_combined_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/relu_dx. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/relu_dy. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/relu_x. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/relu_y. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/rst_ps7_0_100M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/relu_combined_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/InputLayer_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/InputLayer_1. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2422.934 ; gain = 63.961 ; free physical = 13692 ; free virtual = 23453
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 12755 ; free virtual = 24355
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2422.934 ; gain = 63.961 ; free physical = 13692 ; free virtual = 23454
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 12755 ; free virtual = 24356
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -592,25 +590,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2422.934 ; gain = 63.961 ; free physical = 13676 ; free virtual = 23442
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 12740 ; free virtual = 24345
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2422.934 ; gain = 63.961 ; free physical = 13551 ; free virtual = 23317
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 12565 ; free virtual = 24177
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2422.934 ; gain = 63.961 ; free physical = 13551 ; free virtual = 23317
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 12570 ; free virtual = 24182
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2422.934 ; gain = 63.961 ; free physical = 13551 ; free virtual = 23317
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 12569 ; free virtual = 24181
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -628,37 +626,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2422.934 ; gain = 63.961 ; free physical = 13550 ; free virtual = 23317
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 12574 ; free virtual = 24186
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2422.934 ; gain = 63.961 ; free physical = 13550 ; free virtual = 23317
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 12574 ; free virtual = 24186
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2422.934 ; gain = 63.961 ; free physical = 13550 ; free virtual = 23317
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 12574 ; free virtual = 24186
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2422.934 ; gain = 63.961 ; free physical = 13550 ; free virtual = 23317
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 12574 ; free virtual = 24186
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2422.934 ; gain = 63.961 ; free physical = 13550 ; free virtual = 23317
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 12574 ; free virtual = 24186
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2422.934 ; gain = 63.961 ; free physical = 13550 ; free virtual = 23317
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 12574 ; free virtual = 24186
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -678,9 +676,9 @@ Report BlackBoxes:
 |8     |design_1_auto_pc_3              |         1|
 |9     |design_1_auto_pc_4              |         1|
 |10    |design_1_InputLayer_0_0         |         1|
-|11    |design_1_OutputLayer_0_0        |         1|
+|11    |design_1_InputLayer_1_0         |         1|
 |12    |design_1_processing_system7_0_0 |         1|
-|13    |design_1_relu_combined_0_0      |         1|
+|13    |design_1_relu_combined_0_1      |         1|
 |14    |design_1_relu_dx_0              |         1|
 |15    |design_1_relu_dy_0              |         1|
 |16    |design_1_relu_x_0               |         1|
@@ -693,7 +691,7 @@ Report Cell Usage:
 |      |Cell                          |Count |
 +------+------------------------------+------+
 |1     |design_1_InputLayer_0         |     1|
-|2     |design_1_OutputLayer_0        |     1|
+|2     |design_1_InputLayer_1         |     1|
 |3     |design_1_auto_pc              |     5|
 |8     |design_1_auto_us              |     2|
 |10    |design_1_processing_system7_0 |     1|
@@ -706,23 +704,23 @@ Report Cell Usage:
 |17    |design_1_xbar                 |     2|
 +------+------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2422.934 ; gain = 63.961 ; free physical = 13550 ; free virtual = 23317
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 12574 ; free virtual = 24186
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2422.934 ; gain = 0.000 ; free physical = 13605 ; free virtual = 23371
-Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2422.934 ; gain = 63.961 ; free physical = 13605 ; free virtual = 23371
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2421.930 ; gain = 0.000 ; free physical = 12631 ; free virtual = 24244
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 12631 ; free virtual = 24244
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2422.934 ; gain = 0.000 ; free physical = 13689 ; free virtual = 23456
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2421.930 ; gain = 0.000 ; free physical = 12717 ; free virtual = 24329
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2422.934 ; gain = 0.000 ; free physical = 13628 ; free virtual = 23394
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2421.930 ; gain = 0.000 ; free physical = 12654 ; free virtual = 24266
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-82 Infos, 119 Warnings, 0 Critical Warnings and 0 Errors encountered.
+82 Infos, 117 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:20 . Memory (MB): peak = 2422.934 ; gain = 64.031 ; free physical = 13765 ; free virtual = 23531
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:20 . Memory (MB): peak = 2421.930 ; gain = 64.031 ; free physical = 12791 ; free virtual = 24403
 INFO: [Common 17-1381] The checkpoint '/home/anubhav/xilinx_projects/relu_test/relu_test.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon May 16 04:01:28 2022...
+INFO: [Common 17-206] Exiting Vivado at Thu May 19 15:30:37 2022...

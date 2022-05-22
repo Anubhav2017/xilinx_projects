@@ -18,7 +18,7 @@
     "x": {
       "index": "0",
       "direction": "in",
-      "srcType": "ap_fixed<16, 9, AP_TRN, AP_WRAP, 0>*",
+      "srcType": "ap_fixed<16, 3, AP_TRN, AP_WRAP, 0>*",
       "srcSize": "16",
       "hwRefs": [{
           "type": "interface",
@@ -31,7 +31,7 @@
     "dx": {
       "index": "1",
       "direction": "out",
-      "srcType": "ap_fixed<16, 9, AP_TRN, AP_WRAP, 0>*",
+      "srcType": "ap_fixed<16, 3, AP_TRN, AP_WRAP, 0>*",
       "srcSize": "16",
       "hwRefs": [{
           "type": "interface",
@@ -44,7 +44,7 @@
     "wt": {
       "index": "2",
       "direction": "inout",
-      "srcType": "ap_fixed<16, 9, AP_TRN, AP_WRAP, 0>*",
+      "srcType": "ap_fixed<16, 3, AP_TRN, AP_WRAP, 0>*",
       "srcSize": "16",
       "hwRefs": [
         {
@@ -66,7 +66,7 @@
     "dwt": {
       "index": "3",
       "direction": "inout",
-      "srcType": "ap_fixed<16, 9, AP_TRN, AP_WRAP, 0>*",
+      "srcType": "ap_fixed<16, 3, AP_TRN, AP_WRAP, 0>*",
       "srcSize": "16",
       "hwRefs": [
         {
@@ -88,7 +88,7 @@
     "b": {
       "index": "4",
       "direction": "inout",
-      "srcType": "ap_fixed<16, 9, AP_TRN, AP_WRAP, 0>*",
+      "srcType": "ap_fixed<16, 3, AP_TRN, AP_WRAP, 0>*",
       "srcSize": "16",
       "hwRefs": [
         {
@@ -110,7 +110,7 @@
     "db": {
       "index": "5",
       "direction": "inout",
-      "srcType": "ap_fixed<16, 9, AP_TRN, AP_WRAP, 0>*",
+      "srcType": "ap_fixed<16, 3, AP_TRN, AP_WRAP, 0>*",
       "srcSize": "16",
       "hwRefs": [
         {
@@ -132,7 +132,7 @@
     "y": {
       "index": "6",
       "direction": "inout",
-      "srcType": "ap_fixed<16, 9, AP_TRN, AP_WRAP, 0>*",
+      "srcType": "ap_fixed<16, 3, AP_TRN, AP_WRAP, 0>*",
       "srcSize": "16",
       "hwRefs": [{
           "type": "interface",
@@ -145,7 +145,7 @@
     "dy": {
       "index": "7",
       "direction": "in",
-      "srcType": "ap_fixed<16, 9, AP_TRN, AP_WRAP, 0>*",
+      "srcType": "ap_fixed<16, 3, AP_TRN, AP_WRAP, 0>*",
       "srcSize": "16",
       "hwRefs": [{
           "type": "interface",
@@ -239,14 +239,14 @@
       "impl\/vhdl\/fcc_combined_dbbuf_V.vhd",
       "impl\/vhdl\/fcc_combined_gmem_m_axi.vhd",
       "impl\/vhdl\/fcc_combined_mac_muladd_10ns_11ns_16ns_16_4_1.vhd",
-      "impl\/vhdl\/fcc_combined_mac_muladd_16s_16s_23ns_23_4_1.vhd",
+      "impl\/vhdl\/fcc_combined_mac_muladd_16s_16s_29ns_29_4_1.vhd",
       "impl\/vhdl\/fcc_combined_mul_31ns_32ns_63_2_1.vhd",
       "impl\/vhdl\/fcc_combined_mul_31s_7ns_31_2_1.vhd",
       "impl\/vhdl\/fcc_combined_mul_31s_31s_31_2_1.vhd",
       "impl\/vhdl\/fcc_combined_mul_32ns_7ns_38_2_1.vhd",
       "impl\/vhdl\/fcc_combined_mul_32s_34ns_65_2_1.vhd",
       "impl\/vhdl\/fcc_combined_mul_mul_6ns_11ns_16_4_1.vhd",
-      "impl\/vhdl\/fcc_combined_mul_mul_16s_16s_23_4_1.vhd",
+      "impl\/vhdl\/fcc_combined_mul_mul_16s_16s_29_4_1.vhd",
       "impl\/vhdl\/fcc_combined_wbuf_V.vhd",
       "impl\/vhdl\/fcc_combined.vhd"
     ],
@@ -256,14 +256,14 @@
       "impl\/verilog\/fcc_combined_dbbuf_V.v",
       "impl\/verilog\/fcc_combined_gmem_m_axi.v",
       "impl\/verilog\/fcc_combined_mac_muladd_10ns_11ns_16ns_16_4_1.v",
-      "impl\/verilog\/fcc_combined_mac_muladd_16s_16s_23ns_23_4_1.v",
+      "impl\/verilog\/fcc_combined_mac_muladd_16s_16s_29ns_29_4_1.v",
       "impl\/verilog\/fcc_combined_mul_31ns_32ns_63_2_1.v",
       "impl\/verilog\/fcc_combined_mul_31s_7ns_31_2_1.v",
       "impl\/verilog\/fcc_combined_mul_31s_31s_31_2_1.v",
       "impl\/verilog\/fcc_combined_mul_32ns_7ns_38_2_1.v",
       "impl\/verilog\/fcc_combined_mul_32s_34ns_65_2_1.v",
       "impl\/verilog\/fcc_combined_mul_mul_6ns_11ns_16_4_1.v",
-      "impl\/verilog\/fcc_combined_mul_mul_16s_16s_23_4_1.v",
+      "impl\/verilog\/fcc_combined_mul_mul_16s_16s_29_4_1.v",
       "impl\/verilog\/fcc_combined_wbuf_V.v",
       "impl\/verilog\/fcc_combined.v"
     ],
@@ -341,6 +341,8 @@
           "constraint_type": "pragma interface",
           "mode": "bram",
           "register_option": "0",
+          "bram_latency": "2",
+          "bram_storage": "207",
           "argName": "dx"
         }]
     },
@@ -352,7 +354,7 @@
       "addrWidth": "32",
       "portPrefix": "dy_",
       "busParams": {
-        "MASTER_TYPE": "BRAM_CTRL",
+        "MASTER_TYPE": "OTHER",
         "MEM_WIDTH": "16",
         "MEM_SIZE": "2"
       },
@@ -378,6 +380,7 @@
           "constraint_type": "pragma interface",
           "mode": "bram",
           "register_option": "0",
+          "bram_latency": "2",
           "bram_storage": "207",
           "argName": "dy"
         }]
@@ -809,7 +812,7 @@
       "addrWidth": "32",
       "portPrefix": "x_",
       "busParams": {
-        "MASTER_TYPE": "BRAM_CTRL",
+        "MASTER_TYPE": "OTHER",
         "MEM_WIDTH": "16",
         "MEM_SIZE": "2"
       },
@@ -835,6 +838,8 @@
           "constraint_type": "pragma interface",
           "mode": "bram",
           "register_option": "0",
+          "bram_latency": "2",
+          "bram_storage": "207",
           "argName": "x"
         }]
     },
@@ -872,6 +877,8 @@
           "constraint_type": "pragma interface",
           "mode": "bram",
           "register_option": "0",
+          "bram_latency": "2",
+          "bram_storage": "207",
           "argName": "y"
         }]
     }
@@ -1331,7 +1338,7 @@
                     "TripCount": "",
                     "Latency": "",
                     "PipelineII": "1",
-                    "PipelineDepth": "5"
+                    "PipelineDepth": "6"
                   }]
               },
               {
@@ -1400,7 +1407,7 @@
           "DSP": "8",
           "AVAIL_DSP": "220",
           "UTIL_DSP": "3",
-          "FF": "4519",
+          "FF": "4568",
           "AVAIL_FF": "106400",
           "UTIL_FF": "4",
           "LUT": "4089",
@@ -1415,7 +1422,7 @@
   "GenerateBdFiles": "0",
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2022-05-10 01:33:40 IST",
+    "Time": "2022-05-19 16:04:56 IST",
     "ToolName": "vivado_hls",
     "ToolVersion": "2020.2"
   }

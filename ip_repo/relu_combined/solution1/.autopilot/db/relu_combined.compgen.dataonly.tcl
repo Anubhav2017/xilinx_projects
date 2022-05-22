@@ -1,7 +1,7 @@
 # This script segment is generated automatically by AutoPilot
 
 set axilite_register_dict [dict create]
-set port_CTRL {
+set port_control {
 dim { 
 	dir I
 	width 32
@@ -23,6 +23,6 @@ ap_done { }
 ap_ready { }
 ap_idle { }
 }
-dict set axilite_register_dict CTRL $port_CTRL
+dict set axilite_register_dict control $port_control
 
 

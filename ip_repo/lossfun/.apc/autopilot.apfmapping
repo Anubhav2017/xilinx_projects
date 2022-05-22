@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
-    <originFiles name="lossfun.h" path="/home/anubhav/xilinx_projects/ip_repo/lossfun/lossfun.h"/>
     <originFiles name="main.cpp" path="/home/anubhav/xilinx_projects/ip_repo/lossfun/main.cpp"/>
   </source>
   <testbench>

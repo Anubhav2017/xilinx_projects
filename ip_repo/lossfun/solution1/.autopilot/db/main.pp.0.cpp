@@ -151,7 +151,6 @@ extern "C" {
 }
 # 2 "<built-in>" 2
 # 1 "lossfun/main.cpp" 2
-# 1 "lossfun/lossfun.h" 1
 # 1 "/usr/include/stdio.h" 1 3 4
 # 27 "/usr/include/stdio.h" 3 4
 # 1 "/usr/include/bits/libc-header-start.h" 1 3 4
@@ -1028,7 +1027,7 @@ extern int __uflow (FILE *);
 extern int __overflow (FILE *, int);
 # 873 "/usr/include/stdio.h" 3 4
 }
-# 2 "lossfun/lossfun.h" 2
+# 2 "lossfun/main.cpp" 2
 # 1 "/usr/include/string.h" 1 3 4
 # 26 "/usr/include/string.h" 3 4
 # 1 "/usr/include/bits/libc-header-start.h" 1 3 4
@@ -1430,7 +1429,7 @@ extern "C++" const char *basename (const char *__filename)
      throw () __asm ("basename") __attribute__ ((__nonnull__ (1)));
 # 499 "/usr/include/string.h" 3 4
 }
-# 3 "lossfun/lossfun.h" 2
+# 3 "lossfun/main.cpp" 2
 # 1 "/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed.h" 1
 # 55 "/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed.h"
 # 1 "/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_common.h" 1
@@ -6847,7 +6846,7 @@ inline bool operator!=(
 
 }
 # 396 "/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed.h" 2
-# 4 "lossfun/lossfun.h" 2
+# 4 "lossfun/main.cpp" 2
 # 1 "/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_math.h" 1
 # 40 "/tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_math.h"
 # 1 "/tools/Xilinx/Vitis_HLS/2020.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../include/c++/6.2.0/cmath" 1 3
@@ -28562,77 +28561,90 @@ namespace hls {
     uint32_t logb(uint32_t);
 
 };
-# 5 "lossfun/lossfun.h" 2
+# 5 "lossfun/main.cpp" 2
 
 
 
 
 
-typedef ap_fixed<16,9> fixed;
+typedef ap_fixed<16,3> fixed_t;
 
-__attribute__((sdx_kernel("loss_derivative", 0))) fixed loss_derivative(fixed* x, fixed* dx, int y,int x_size, int N);
-# 2 "lossfun/main.cpp" 2
-
-__attribute__((sdx_kernel("loss_derivative", 0))) fixed loss_derivative(fixed* x, fixed* dx, int y,int x_size, int N){
+__attribute__((sdx_kernel("loss_derivative", 0))) fixed_t loss_derivative(fixed_t x[100], fixed_t dx[100], fixed_t* x_ddr, fixed_t* dx_ddr, int y,int dim, bool writetoddr, bool ddrtobram){_ssdm_SpecArrayDimSize(x, 100);_ssdm_SpecArrayDimSize(dx, 100);
 #pragma HLS TOP name=loss_derivative
-# 3 "lossfun/main.cpp"
+# 12 "lossfun/main.cpp"
 
 
-#pragma HLS INTERFACE s_axilite port=return bundle=CTRL
-#pragma HLS INTERFACE m_axi port=x depth=200 offset=slave bundle=gmem
-#pragma HLS INTERFACE m_axi port=dx depth=200 offset=slave bundle=gmem
+#pragma HLS INTERFACE s_axilite port=return
+#pragma HLS INTERFACE bram storage_type=ram_1p latency=2 port=x
+#pragma HLS INTERFACE bram storage_type=ram_1p latency=2 port=dx
+#pragma HLS INTERFACE m_axi port=x_ddr offset=slave bundle=gmem
+#pragma HLS INTERFACE m_axi port=dx_ddr offset=slave bundle=gmem
 
-#pragma HLS INTERFACE s_axilite port=x bundle=CTRL
-#pragma HLS INTERFACE s_axilite port=dx bundle=CTRL
-#pragma HLS INTERFACE s_axilite port=y bundle=CTRL
-#pragma HLS INTERFACE s_axilite port=x_size bundle=CTRL
-#pragma HLS INTERFACE s_axilite port=N bundle=CTRL
+#pragma HLS INTERFACE s_axilite port=y
+#pragma HLS INTERFACE s_axilite port=dim
+#pragma HLS INTERFACE s_axilite port=writetoddr
+#pragma HLS INTERFACE s_axilite port=ddrtobram
 
- fixed log_probs[100];
- fixed probs[100];
- fixed xbuff[100];
- fixed dxbuff[100];
+ fixed_t log_probs[100];
+ fixed_t probs[100];
+ fixed_t loss =0;
 
-    memcpy(xbuff, (const fixed*)x, x_size*sizeof(fixed));
+ if(writetoddr){
+  if(ddrtobram){
+   VITIS_LOOP_31_1: for(int i=0;i<dim;i++){
+    x[i]=x_ddr[i];
+   }
+   VITIS_LOOP_34_2: for(int i=0;i<dim;i++){
+    dx[i]=dx_ddr[i];
+   }
+  }
+  else{
+   VITIS_LOOP_39_3: for(int i=0;i<dim;i++){
+    x_ddr[i]=x[i];
+   }
+   VITIS_LOOP_42_4: for(int i=0;i<dim;i++){
+    dx_ddr[i]=dx[i];
+   }
 
-    fixed loss =0;
+  }
 
+ }
 
-    fixed max = x[0];
-    VITIS_LOOP_26_1: for(int i=1;i<x_size;i++){
-        if(xbuff[i] > max){
-            max = xbuff[i];
+ else{
+
+    fixed_t max = x[0];
+    VITIS_LOOP_53_5: for(int i=1;i<dim;i++){
+        if(x[i] > max){
+            max = x[i];
         }
     }
 
-    VITIS_LOOP_32_2: for(int i=0;i<x_size;i++){
-        log_probs[i] = xbuff[i] - max;
+    VITIS_LOOP_59_6: for(int i=0;i<dim;i++){
+        log_probs[i] = x[i] - max;
     }
 
-    fixed sum = 0;
+    fixed_t sum = 0;
 
-    VITIS_LOOP_38_3: for(int i=0;i<x_size;i++){
+    VITIS_LOOP_65_7: for(int i=0;i<dim;i++){
         sum += hls::exp(log_probs[i]);
     }
 
-    VITIS_LOOP_42_4: for(int i=0;i<x_size;i++){
+    VITIS_LOOP_69_8: for(int i=0;i<dim;i++){
         probs[i] = hls::exp(log_probs[i])/sum;
     }
 
     loss = loss - hls::log(probs[y]);
 
-    VITIS_LOOP_48_5: for(int i=0;i<x_size;i++){
+    VITIS_LOOP_75_9: for(int i=0;i<dim;i++){
         if(i == y){
-            dxbuff[i] = (probs[i] - 1)/N;
+            dx[i] = (probs[i] - 1);
         }
         else{
-            dxbuff[i] = probs[i]/N;
+            dx[i] = probs[i];
         }
     }
 
-    memcpy((fixed*)dx, dxbuff, x_size*sizeof(fixed));
-
-
+ }
 
     return loss;
 }

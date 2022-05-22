@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="nn_relu_y_0_synth_1" LaunchDir="/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/nn_relu_y_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="nn_conv_dy_0_synth_1" LaunchDir="/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/nn_conv_dy_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="nn_relu_y_0_synth_1"/>
+	</Run>
+	<Run Id="nn_relu_dy_0_synth_1" LaunchDir="/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/nn_relu_dy_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="nn_relu_y_0_synth_1"/>
+	</Run>
+	<Run Id="nn_fcc_x_0_synth_1" LaunchDir="/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/nn_fcc_x_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="nn_relu_y_0_synth_1"/>
+	</Run>
+	<Run Id="nn_conv_y_0_synth_1" LaunchDir="/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/nn_conv_y_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="nn_relu_y_0_synth_1"/>
+	</Run>
+	<Run Id="nn_fcc_dy_0_synth_1" LaunchDir="/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/nn_fcc_dy_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="nn_relu_y_0_synth_1"/>
+	</Run>
+	<Run Id="nn_fcc_dx_0_synth_1" LaunchDir="/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/nn_fcc_dx_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="nn_relu_y_0_synth_1"/>
+	</Run>
+	<Run Id="nn_fcc_y_0_synth_1" LaunchDir="/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/nn_fcc_y_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="nn_relu_y_0_synth_1"/>
+	</Run>
+	<Run Id="nn_InputLayer_1_0_synth_1" LaunchDir="/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/nn_InputLayer_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="nn_InputLayer_0_0_synth_1" LaunchDir="/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/nn_InputLayer_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="nn_InputLayer_1_0_synth_1"/>
+	</Run>
+	<Run Id="nn_relu_combined_0_0_synth_1" LaunchDir="/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/nn_relu_combined_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="nn_fcc_combined_0_1_synth_1" LaunchDir="/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/nn_fcc_combined_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="nn_conv_combined_0_1_synth_1" LaunchDir="/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/nn_conv_combined_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="nn_relu_y_0_synth_1"/>
+		<Parent Id="nn_conv_dy_0_synth_1"/>
+		<Parent Id="nn_relu_dy_0_synth_1"/>
+		<Parent Id="nn_fcc_x_0_synth_1"/>
+		<Parent Id="nn_conv_y_0_synth_1"/>
+		<Parent Id="nn_fcc_dy_0_synth_1"/>
+		<Parent Id="nn_fcc_dx_0_synth_1"/>
+		<Parent Id="nn_fcc_y_0_synth_1"/>
+		<Parent Id="nn_InputLayer_1_0_synth_1"/>
+		<Parent Id="nn_InputLayer_0_0_synth_1"/>
+		<Parent Id="nn_relu_combined_0_0_synth_1"/>
+		<Parent Id="nn_fcc_combined_0_1_synth_1"/>
+		<Parent Id="nn_conv_combined_0_1_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="/home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="route_design">
+		<Parent Id="synth_1"/>
+		<Parent Id="nn_relu_y_0_synth_1"/>
+		<Parent Id="nn_conv_dy_0_synth_1"/>
+		<Parent Id="nn_relu_dy_0_synth_1"/>
+		<Parent Id="nn_fcc_x_0_synth_1"/>
+		<Parent Id="nn_conv_y_0_synth_1"/>
+		<Parent Id="nn_fcc_dy_0_synth_1"/>
+		<Parent Id="nn_fcc_dx_0_synth_1"/>
+		<Parent Id="nn_fcc_y_0_synth_1"/>
+		<Parent Id="nn_InputLayer_1_0_synth_1"/>
+		<Parent Id="nn_InputLayer_0_0_synth_1"/>
+		<Parent Id="nn_relu_combined_0_0_synth_1"/>
+		<Parent Id="nn_fcc_combined_0_1_synth_1"/>
+		<Parent Id="nn_conv_combined_0_1_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

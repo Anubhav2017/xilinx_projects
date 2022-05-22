@@ -1,62 +1,87 @@
-#include "lossfun.h"
+#include<stdio.h>
+#include<string.h>
+#include <ap_fixed.h>
+#include "hls_math.h"
 
-fixed loss_derivative(fixed* x, fixed* dx, int y,int x_size, int N){
+#define MAX_SIZE 100
+#define MAX_FILTERS 10
+#define MAX_WINDOW_SIZE 5
 
-#pragma HLS INTERFACE s_axilite port=return bundle=CTRL
-#pragma HLS INTERFACE m_axi port=x depth=200 offset=slave bundle=gmem
-#pragma HLS INTERFACE m_axi port=dx depth=200 offset=slave bundle=gmem
+typedef ap_fixed<16,3> fixed_t;
 
-#pragma HLS INTERFACE s_axilite port=x bundle=CTRL
-#pragma HLS INTERFACE s_axilite port=dx bundle=CTRL
-#pragma HLS INTERFACE s_axilite port=y bundle=CTRL
-#pragma HLS INTERFACE s_axilite port=x_size bundle=CTRL
-#pragma HLS INTERFACE s_axilite port=N bundle=CTRL
+fixed_t loss_derivative(fixed_t x[MAX_SIZE], fixed_t dx[MAX_SIZE], fixed_t* x_ddr, fixed_t* dx_ddr, int y,int dim, bool writetoddr, bool ddrtobram){
 
-	fixed log_probs[MAX_SIZE];
-	fixed probs[MAX_SIZE];
-	fixed xbuff[MAX_SIZE];
-	fixed dxbuff[MAX_SIZE];
+#pragma HLS INTERFACE s_axilite port=return
+#pragma HLS INTERFACE bram storage_type=ram_1p latency=2 port=x
+#pragma HLS INTERFACE bram storage_type=ram_1p latency=2 port=dx
+#pragma HLS INTERFACE m_axi port=x_ddr offset=slave bundle=gmem
+#pragma HLS INTERFACE m_axi port=dx_ddr offset=slave bundle=gmem
 
-    memcpy(xbuff, (const fixed*)x, x_size*sizeof(fixed));
+#pragma HLS INTERFACE s_axilite port=y
+#pragma HLS INTERFACE s_axilite port=dim
+#pragma HLS INTERFACE s_axilite port=writetoddr
+#pragma HLS INTERFACE s_axilite port=ddrtobram
 
-    fixed loss =0;
+	fixed_t log_probs[MAX_SIZE];
+	fixed_t probs[MAX_SIZE];
+	fixed_t loss =0;
 
+	if(writetoddr){
+		if(ddrtobram){
+			for(int i=0;i<dim;i++){
+				x[i]=x_ddr[i];
+			}
+			for(int i=0;i<dim;i++){
+				dx[i]=dx_ddr[i];
+			}
+		}
+		else{
+			for(int i=0;i<dim;i++){
+				x_ddr[i]=x[i];
+			}
+			for(int i=0;i<dim;i++){
+				dx_ddr[i]=dx[i];
+			}
 
-    fixed max = x[0];
-    for(int i=1;i<x_size;i++){
-        if(xbuff[i] > max){
-            max = xbuff[i];
+		}
+
+	}
+
+	else{
+
+    fixed_t max = x[0];
+    for(int i=1;i<dim;i++){
+        if(x[i] > max){
+            max = x[i];
         }
     }
 
-    for(int i=0;i<x_size;i++){
-        log_probs[i] = xbuff[i] - max;
+    for(int i=0;i<dim;i++){
+        log_probs[i] = x[i] - max;
     }
 
-    fixed sum = 0;
+    fixed_t sum = 0;
 
-    for(int i=0;i<x_size;i++){
+    for(int i=0;i<dim;i++){
         sum += hls::exp(log_probs[i]);
     }
 
-    for(int i=0;i<x_size;i++){
+    for(int i=0;i<dim;i++){
         probs[i] = hls::exp(log_probs[i])/sum;
     }
 
     loss = loss - hls::log(probs[y]);
 
-    for(int i=0;i<x_size;i++){
+    for(int i=0;i<dim;i++){
         if(i == y){
-            dxbuff[i] = (probs[i] - 1)/N;
+            dx[i] = (probs[i] - 1);
         }
         else{
-            dxbuff[i] = probs[i]/N;
+            dx[i] = probs[i];
         }
     }
 
-    memcpy((fixed*)dx, dxbuff,  x_size*sizeof(fixed));
-
-
+	}
 
     return loss;
 }

@@ -4,16 +4,16 @@
 #define MAX_WINDOW_SIZE 5
 
 #include <ap_fixed.h>
-typedef ap_fixed<16,9> fixed_t;
+typedef ap_fixed<16,3> fixed_t;
 
-void conv_combined(fixed_t x[MAX_SIZE], fixed_t dx[MAX_SIZE],fixed_t* wt,fixed_t* dwt, fixed_t y[MAX_SIZE], fixed_t dy[MAX_SIZE],fixed_t* b,fixed_t* db,int F, int C, int H, int W, int FH, int FW, bool fwprop){
+void conv_combined(fixed_t x[MAX_SIZE], fixed_t dx[MAX_SIZE],fixed_t* wt,fixed_t* dwt, fixed_t y[MAX_SIZE], fixed_t dy[MAX_SIZE],fixed_t* b,fixed_t* db,int F, int C, int H, int W, int FH, int FW, bool fwprop, bool fetch_weights){
 
-#pragma HLS INTERFACE bram storage_type=ram_1p port=x
-#pragma HLS INTERFACE bram storage_type=ram_1p port=dx
+#pragma HLS INTERFACE bram storage_type=ram_1p latency=2 port=x
+#pragma HLS INTERFACE bram storage_type=ram_1p latency=2 port=dx
 #pragma HLS INTERFACE m_axi port=wt depth=200 offset=slave bundle=gmem
 #pragma HLS INTERFACE m_axi port=dwt depth=200 offset=slave bundle=gmem
-#pragma HLS INTERFACE bram storage_type=ram_1p port=y
-#pragma HLS INTERFACE bram storage_type=ram_1p port=dy
+#pragma HLS INTERFACE bram storage_type=ram_1p latency=2 port=y
+#pragma HLS INTERFACE bram storage_type=ram_1p latency=2 port=dy
 #pragma HLS INTERFACE m_axi port=b depth=200 offset=slave bundle=gmem
 #pragma HLS INTERFACE m_axi port=db depth=200 offset=slave bundle=gmem
 
@@ -23,12 +23,12 @@ void conv_combined(fixed_t x[MAX_SIZE], fixed_t dx[MAX_SIZE],fixed_t* wt,fixed_t
 #pragma HLS INTERFACE s_axilite port=W bundle=CRTL_BUS
 #pragma HLS INTERFACE s_axilite port=FH bundle=CRTL_BUS
 #pragma HLS INTERFACE s_axilite port=FW bundle=CRTL_BUS
-#pragma HLS INTERFACE s_axilite port=fwprop bundle=CRTL_BUS
 #pragma HLS INTERFACE s_axilite port=wt bundle=CRTL_BUS
 #pragma HLS INTERFACE s_axilite port=dwt bundle=CRTL_BUS
 #pragma HLS INTERFACE s_axilite port=b bundle=CRTL_BUS
 #pragma HLS INTERFACE s_axilite port=db bundle=CRTL_BUS
 #pragma HLS INTERFACE s_axilite port=fwprop bundle=CRTL_BUS
+#pragma HLS INTERFACE s_axilite port=fetch_weights bundle=CRTL_BUS
 #pragma HLS INTERFACE s_axilite port=return bundle=CRTL_BUS
 
 
@@ -40,6 +40,8 @@ void conv_combined(fixed_t x[MAX_SIZE], fixed_t dx[MAX_SIZE],fixed_t* wt,fixed_t
 
 	int outH=H-FH+1;
 	int outW=W-FW+1;
+
+	if(fetch_weights == true){
 
 
 	for(int i=0;i<F;i++){
@@ -58,10 +60,8 @@ void conv_combined(fixed_t x[MAX_SIZE], fixed_t dx[MAX_SIZE],fixed_t* wt,fixed_t
 	for(int i=0;i<F;i++){
 	        bbuf[i] = b[i];
 	    }
-	for(int i=0;i<F;i++){
-		        dbbuf[i] = db[i];
-		    }
 
+	}
 
 	if(fwprop == true){
 
@@ -82,6 +82,10 @@ void conv_combined(fixed_t x[MAX_SIZE], fixed_t dx[MAX_SIZE],fixed_t* wt,fixed_t
 
 	}
 	else{
+
+		for(int i=0;i<F;i++){
+		   dbbuf[i] = db[i];
+		}
 
 
 		for(int i=0;i<F;i++){

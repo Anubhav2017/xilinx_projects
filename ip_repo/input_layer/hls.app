@@ -1,14 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="com.autoesl.autopilot.project" name="input_layer" top="InputLayer">
-  <files>
-    <file name="input_layer/main.cpp" sc="0" tb="false" cflags="" blackbox="false" csimflags=""/>
-  </files>
-  <solutions>
-    <solution name="solution1" status="active"/>
-  </solutions>
-  <includePaths/>
-  <libraryPaths/>
-  <Simulation>
-    <SimFlow name="csim" csimMode="0" lastCsimMode="0"/>
-  </Simulation>
+    <includePaths/>
+    <libraryPaths/>
+    <Simulation>
+        <SimFlow name="csim" csimMode="0" lastCsimMode="0"/>
+    </Simulation>
+    <files xmlns="">
+        <file name="input_layer/main.cpp" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
+    </files>
+    <solutions xmlns="">
+        <solution name="solution1" status="active"/>
+    </solutions>
 </project>
+

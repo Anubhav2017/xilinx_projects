@@ -99,7 +99,7 @@
                         <Latency>undef</Latency>
                         <AbsoluteTimeLatency>undef</AbsoluteTimeLatency>
                         <PipelineII>1</PipelineII>
-                        <PipelineDepth>5</PipelineDepth>
+                        <PipelineDepth>6</PipelineDepth>
                     </LOOP2>
                 </LOOP1>
                 <VITIS_LOOP_83_5>
@@ -209,7 +209,7 @@
         <Resources>
             <BRAM_18K>132</BRAM_18K>
             <DSP>8</DSP>
-            <FF>4519</FF>
+            <FF>4568</FF>
             <LUT>4089</LUT>
             <URAM>0</URAM>
         </Resources>
@@ -1427,7 +1427,7 @@
                                 <Latency>undef</Latency>
                                 <AbsoluteTimeLatency>undef</AbsoluteTimeLatency>
                                 <PipelineII>1</PipelineII>
-                                <PipelineDepth>5</PipelineDepth>
+                                <PipelineDepth>6</PipelineDepth>
                             </LOOP2>
                         </LOOP1>
                         <VITIS_LOOP_83_5>
@@ -1499,7 +1499,7 @@
                     <DSP>8</DSP>
                     <AVAIL_DSP>220</AVAIL_DSP>
                     <UTIL_DSP>3</UTIL_DSP>
-                    <FF>4519</FF>
+                    <FF>4568</FF>
                     <AVAIL_FF>106400</AVAIL_FF>
                     <UTIL_FF>4</UTIL_FF>
                     <LUT>4089</LUT>
@@ -2646,46 +2646,46 @@
     </ModuleInformation>
     <FIFOInformation/>
     <Args>
-        <Arg ArgName="x" index="0" direction="in" srcType="ap_fixed&lt;16, 9, AP_TRN, AP_WRAP, 0&gt;*" srcSize="16">
+        <Arg ArgName="x" index="0" direction="in" srcType="ap_fixed&lt;16, 3, AP_TRN, AP_WRAP, 0&gt;*" srcSize="16">
             <hwRefs>
                 <hwRef type="interface" interface="x_PORTA" name="" usage="data" direction="out"/>
             </hwRefs>
         </Arg>
-        <Arg ArgName="dx" index="1" direction="out" srcType="ap_fixed&lt;16, 9, AP_TRN, AP_WRAP, 0&gt;*" srcSize="16">
+        <Arg ArgName="dx" index="1" direction="out" srcType="ap_fixed&lt;16, 3, AP_TRN, AP_WRAP, 0&gt;*" srcSize="16">
             <hwRefs>
                 <hwRef type="interface" interface="dx_PORTA" name="" usage="data" direction="out"/>
             </hwRefs>
         </Arg>
-        <Arg ArgName="wt" index="2" direction="inout" srcType="ap_fixed&lt;16, 9, AP_TRN, AP_WRAP, 0&gt;*" srcSize="16">
+        <Arg ArgName="wt" index="2" direction="inout" srcType="ap_fixed&lt;16, 3, AP_TRN, AP_WRAP, 0&gt;*" srcSize="16">
             <hwRefs>
                 <hwRef type="interface" interface="m_axi_gmem" name="" usage="data" direction="out"/>
                 <hwRef type="register" interface="s_axi_CRTL_BUS" name="wt" usage="address" direction="in"/>
             </hwRefs>
         </Arg>
-        <Arg ArgName="dwt" index="3" direction="inout" srcType="ap_fixed&lt;16, 9, AP_TRN, AP_WRAP, 0&gt;*" srcSize="16">
+        <Arg ArgName="dwt" index="3" direction="inout" srcType="ap_fixed&lt;16, 3, AP_TRN, AP_WRAP, 0&gt;*" srcSize="16">
             <hwRefs>
                 <hwRef type="interface" interface="m_axi_gmem" name="" usage="data" direction="out"/>
                 <hwRef type="register" interface="s_axi_CRTL_BUS" name="dwt" usage="address" direction="in"/>
             </hwRefs>
         </Arg>
-        <Arg ArgName="b" index="4" direction="inout" srcType="ap_fixed&lt;16, 9, AP_TRN, AP_WRAP, 0&gt;*" srcSize="16">
+        <Arg ArgName="b" index="4" direction="inout" srcType="ap_fixed&lt;16, 3, AP_TRN, AP_WRAP, 0&gt;*" srcSize="16">
             <hwRefs>
                 <hwRef type="interface" interface="m_axi_gmem" name="" usage="data" direction="out"/>
                 <hwRef type="register" interface="s_axi_CRTL_BUS" name="b" usage="address" direction="in"/>
             </hwRefs>
         </Arg>
-        <Arg ArgName="db" index="5" direction="inout" srcType="ap_fixed&lt;16, 9, AP_TRN, AP_WRAP, 0&gt;*" srcSize="16">
+        <Arg ArgName="db" index="5" direction="inout" srcType="ap_fixed&lt;16, 3, AP_TRN, AP_WRAP, 0&gt;*" srcSize="16">
             <hwRefs>
                 <hwRef type="interface" interface="m_axi_gmem" name="" usage="data" direction="out"/>
                 <hwRef type="register" interface="s_axi_CRTL_BUS" name="db" usage="address" direction="in"/>
             </hwRefs>
         </Arg>
-        <Arg ArgName="y" index="6" direction="inout" srcType="ap_fixed&lt;16, 9, AP_TRN, AP_WRAP, 0&gt;*" srcSize="16">
+        <Arg ArgName="y" index="6" direction="inout" srcType="ap_fixed&lt;16, 3, AP_TRN, AP_WRAP, 0&gt;*" srcSize="16">
             <hwRefs>
                 <hwRef type="interface" interface="y_PORTA" name="" usage="data" direction="out"/>
             </hwRefs>
         </Arg>
-        <Arg ArgName="dy" index="7" direction="in" srcType="ap_fixed&lt;16, 9, AP_TRN, AP_WRAP, 0&gt;*" srcSize="16">
+        <Arg ArgName="dy" index="7" direction="in" srcType="ap_fixed&lt;16, 3, AP_TRN, AP_WRAP, 0&gt;*" srcSize="16">
             <hwRefs>
                 <hwRef type="interface" interface="dy_PORTA" name="" usage="data" direction="out"/>
             </hwRefs>
@@ -2755,12 +2755,12 @@
                 <port>dx_WEN_A</port>
             </ports>
             <constraints>
-                <constraint constraint_type="pragma interface" mode="bram" register_option="0" argName="dx"/>
+                <constraint constraint_type="pragma interface" mode="bram" register_option="0" bram_latency="2" bram_storage="207" argName="dx"/>
             </constraints>
         </Interface>
         <Interface InterfaceName="dy_PORTA" type="bram" busTypeName="bram" mode="master" dataWidth="16" addrWidth="32" portPrefix="dy_">
             <busParams>
-                <busParam busParamName="MASTER_TYPE">BRAM_CTRL</busParam>
+                <busParam busParamName="MASTER_TYPE">OTHER</busParam>
                 <busParam busParamName="MEM_WIDTH">16</busParam>
                 <busParam busParamName="MEM_SIZE">2</busParam>
             </busParams>
@@ -2783,7 +2783,7 @@
                 <port>dy_WEN_A</port>
             </ports>
             <constraints>
-                <constraint constraint_type="pragma interface" mode="bram" register_option="0" bram_storage="207" argName="dy"/>
+                <constraint constraint_type="pragma interface" mode="bram" register_option="0" bram_latency="2" bram_storage="207" argName="dy"/>
             </constraints>
         </Interface>
         <Interface InterfaceName="interrupt" type="interrupt" busTypeName="interrupt" mode="master" dataWidth="1">
@@ -2956,7 +2956,7 @@
         </Interface>
         <Interface InterfaceName="x_PORTA" type="bram" busTypeName="bram" mode="master" dataWidth="16" addrWidth="32" portPrefix="x_">
             <busParams>
-                <busParam busParamName="MASTER_TYPE">BRAM_CTRL</busParam>
+                <busParam busParamName="MASTER_TYPE">OTHER</busParam>
                 <busParam busParamName="MEM_WIDTH">16</busParam>
                 <busParam busParamName="MEM_SIZE">2</busParam>
             </busParams>
@@ -2979,7 +2979,7 @@
                 <port>x_WEN_A</port>
             </ports>
             <constraints>
-                <constraint constraint_type="pragma interface" mode="bram" register_option="0" argName="x"/>
+                <constraint constraint_type="pragma interface" mode="bram" register_option="0" bram_latency="2" bram_storage="207" argName="x"/>
             </constraints>
         </Interface>
         <Interface InterfaceName="y_PORTA" type="bram" busTypeName="bram" mode="master" dataWidth="16" addrWidth="32" portPrefix="y_">
@@ -3007,7 +3007,7 @@
                 <port>y_WEN_A</port>
             </ports>
             <constraints>
-                <constraint constraint_type="pragma interface" mode="bram" register_option="0" argName="y"/>
+                <constraint constraint_type="pragma interface" mode="bram" register_option="0" bram_latency="2" bram_storage="207" argName="y"/>
             </constraints>
         </Interface>
     </Interfaces>
@@ -3050,14 +3050,14 @@
             <item name="Top Function Arguments">
                 <table isCollapsed="1">
                     <keys size="3">Argument, Direction, Datatype</keys>
-                    <column name="x">in, ap_fixed&lt;16 9 AP_TRN AP_WRAP 0&gt;*</column>
-                    <column name="dx">out, ap_fixed&lt;16 9 AP_TRN AP_WRAP 0&gt;*</column>
-                    <column name="wt">inout, ap_fixed&lt;16 9 AP_TRN AP_WRAP 0&gt;*</column>
-                    <column name="dwt">inout, ap_fixed&lt;16 9 AP_TRN AP_WRAP 0&gt;*</column>
-                    <column name="b">inout, ap_fixed&lt;16 9 AP_TRN AP_WRAP 0&gt;*</column>
-                    <column name="db">inout, ap_fixed&lt;16 9 AP_TRN AP_WRAP 0&gt;*</column>
-                    <column name="y">inout, ap_fixed&lt;16 9 AP_TRN AP_WRAP 0&gt;*</column>
-                    <column name="dy">in, ap_fixed&lt;16 9 AP_TRN AP_WRAP 0&gt;*</column>
+                    <column name="x">in, ap_fixed&lt;16 3 AP_TRN AP_WRAP 0&gt;*</column>
+                    <column name="dx">out, ap_fixed&lt;16 3 AP_TRN AP_WRAP 0&gt;*</column>
+                    <column name="wt">inout, ap_fixed&lt;16 3 AP_TRN AP_WRAP 0&gt;*</column>
+                    <column name="dwt">inout, ap_fixed&lt;16 3 AP_TRN AP_WRAP 0&gt;*</column>
+                    <column name="b">inout, ap_fixed&lt;16 3 AP_TRN AP_WRAP 0&gt;*</column>
+                    <column name="db">inout, ap_fixed&lt;16 3 AP_TRN AP_WRAP 0&gt;*</column>
+                    <column name="y">inout, ap_fixed&lt;16 3 AP_TRN AP_WRAP 0&gt;*</column>
+                    <column name="dy">in, ap_fixed&lt;16 3 AP_TRN AP_WRAP 0&gt;*</column>
                     <column name="xdim">in, int</column>
                     <column name="ydim">in, int</column>
                     <column name="fwprop">in, bool</column>

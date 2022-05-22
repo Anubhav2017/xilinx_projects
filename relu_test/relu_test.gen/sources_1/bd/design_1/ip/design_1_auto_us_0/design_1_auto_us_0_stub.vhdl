@@ -1,10 +1,10 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
--- Date        : Mon May 16 04:00:31 2022
+-- Date        : Mon May 16 04:00:30 2022
 -- Host        : anubhav-acer running 64-bit Ubuntu 20.04.4 LTS
--- Command     : write_vhdl -force -mode synth_stub
---               /home/anubhav/xilinx_projects/relu_test/relu_test.gen/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top design_1_auto_us_0 -prefix
+--               design_1_auto_us_0_ design_1_auto_us_0_stub.vhdl
 -- Design      : design_1_auto_us_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg400-1

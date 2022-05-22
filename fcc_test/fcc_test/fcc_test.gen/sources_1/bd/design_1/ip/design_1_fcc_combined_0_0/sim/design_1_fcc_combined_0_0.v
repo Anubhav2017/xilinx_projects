@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:hls:fcc_combined:1.0
-// IP Revision: 2112498214
+// IP Revision: 2112512045
 
 `timescale 1ns/1ps
 
@@ -269,7 +269,7 @@ output wire [1 : 0] x_WEN_A;
 output wire [31 : 0] x_Addr_A;
 (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 x_PORTA DIN" *)
 output wire [15 : 0] x_Din_A;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME x_PORTA, MEM_WIDTH 16, MEM_SIZE 2, MASTER_TYPE BRAM_CTRL, MEM_ECC NONE, READ_LATENCY 1" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME x_PORTA, MEM_WIDTH 16, MEM_SIZE 2, MASTER_TYPE OTHER, MEM_ECC NONE, READ_LATENCY 1" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 x_PORTA DOUT" *)
 input wire [15 : 0] x_Dout_A;
 (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 dx_PORTA CLK" *)
@@ -314,7 +314,7 @@ output wire [1 : 0] dy_WEN_A;
 output wire [31 : 0] dy_Addr_A;
 (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 dy_PORTA DIN" *)
 output wire [15 : 0] dy_Din_A;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME dy_PORTA, MEM_WIDTH 16, MEM_SIZE 2, MASTER_TYPE BRAM_CTRL, MEM_ECC NONE, READ_LATENCY 1" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME dy_PORTA, MEM_WIDTH 16, MEM_SIZE 2, MASTER_TYPE OTHER, MEM_ECC NONE, READ_LATENCY 1" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 dy_PORTA DOUT" *)
 input wire [15 : 0] dy_Dout_A;
 
