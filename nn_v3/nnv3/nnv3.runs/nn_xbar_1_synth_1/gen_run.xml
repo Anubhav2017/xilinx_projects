@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="nn_xbar_1_synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1653124991">
+<GenRun Id="nn_xbar_1_synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1653421522">
   <File Type="VDS-TIMING-PB" Name="nn_xbar_1_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="nn_xbar_1_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="nn_xbar_1.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="nn_xbar_1_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="nn_xbar_1_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="nn_xbar_1_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="nn_xbar_1.vds"/>
   <File Type="REPORTS-TCL" Name="nn_xbar_1_reports.tcl"/>
   <File Type="PA-TCL" Name="nn_xbar_1.tcl"/>
-  <File Type="RDS-RDS" Name="nn_xbar_1.vds"/>
-  <File Type="RDS-PROPCONSTRS" Name="nn_xbar_1_drc_synth.rpt"/>
-  <File Type="RDS-UTIL" Name="nn_xbar_1_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="nn_xbar_1_utilization_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/nn_xbar_1">
     <File Path="$PSRCDIR/sources_1/bd/nn/ip/nn_xbar_1/nn_xbar_1.xci">
       <FileInfo>
@@ -44,9 +44,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

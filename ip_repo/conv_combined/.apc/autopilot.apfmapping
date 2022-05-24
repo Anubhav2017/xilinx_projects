@@ -3,5 +3,7 @@
   <source>
     <originFiles name="main.cpp" path="/home/anubhav/xilinx_projects/ip_repo/conv_combined/main.cpp"/>
   </source>
-  <testbench/>
+  <testbench>
+    <originFiles name="tb.cpp" path="/home/anubhav/xilinx_projects/ip_repo/conv_combined/tb.cpp"/>
+  </testbench>
 </autopilotfilemapping:AutoPilotFileMapping>

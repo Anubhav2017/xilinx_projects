@@ -1,7 +1,7 @@
 # This script segment is generated automatically by AutoPilot
 
 set axilite_register_dict [dict create]
-set port_CRTL_BUS {
+set port_control {
 wt { 
 	dir I
 	width 32
@@ -34,7 +34,7 @@ db {
 	offset 40
 	offset_end 47
 }
-xdim { 
+debug_x { 
 	dir I
 	width 32
 	depth 1
@@ -42,7 +42,7 @@ xdim {
 	offset 48
 	offset_end 55
 }
-ydim { 
+debug_dx { 
 	dir I
 	width 32
 	depth 1
@@ -50,7 +50,7 @@ ydim {
 	offset 56
 	offset_end 63
 }
-fwprop { 
+debugip { 
 	dir I
 	width 1
 	depth 1
@@ -58,11 +58,35 @@ fwprop {
 	offset 64
 	offset_end 71
 }
+xdim { 
+	dir I
+	width 32
+	depth 1
+	mode ap_none
+	offset 72
+	offset_end 79
+}
+ydim { 
+	dir I
+	width 32
+	depth 1
+	mode ap_none
+	offset 80
+	offset_end 87
+}
+fwprop { 
+	dir I
+	width 1
+	depth 1
+	mode ap_none
+	offset 88
+	offset_end 95
+}
 ap_start { }
 ap_done { }
 ap_ready { }
 ap_idle { }
 }
-dict set axilite_register_dict CRTL_BUS $port_CRTL_BUS
+dict set axilite_register_dict control $port_control
 
 

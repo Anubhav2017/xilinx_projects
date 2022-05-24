@@ -1,7 +1,7 @@
 //Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-//Date        : Mon May 23 02:03:56 2022
+//Date        : Wed May 25 04:17:24 2022
 //Host        : anubhav-acer running 64-bit Ubuntu 20.04.4 LTS
 //Command     : generate_target nn_wrapper.bd
 //Design      : nn_wrapper

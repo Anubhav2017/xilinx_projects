@@ -1,10 +1,10 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
--- Date        : Mon May 23 02:05:08 2022
+-- Date        : Mon May 23 02:05:06 2022
 -- Host        : anubhav-acer running 64-bit Ubuntu 20.04.4 LTS
--- Command     : write_vhdl -force -mode synth_stub
---               /home/anubhav/xilinx_projects/nn_v3/nnv3/nnv3.gen/sources_1/bd/nn/ip/nn_loss_derivative_0_3/nn_loss_derivative_0_3_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top nn_loss_derivative_0_3 -prefix
+--               nn_loss_derivative_0_3_ nn_loss_derivative_0_3_stub.vhdl
 -- Design      : nn_loss_derivative_0_3
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg400-1

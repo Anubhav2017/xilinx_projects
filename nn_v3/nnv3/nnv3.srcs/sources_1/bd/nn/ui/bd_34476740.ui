@@ -1,69 +1,74 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"0.659459",
-   "Default View_TopLeft":"-317,0",
+   "Default View_ScaleFactor":"0.396622",
+   "Default View_TopLeft":"-802,113",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
 #  -string -flagsOSRD
-preplace port DDR -pg 1 -lvl 6 -x 2030 -y 820 -defaultsOSRD
-preplace port FIXED_IO -pg 1 -lvl 6 -x 2030 -y 840 -defaultsOSRD
-preplace inst axi_mem_intercon -pg 1 -lvl 4 -x 1390 -y 1240 -defaultsOSRD
-preplace inst conv_dy -pg 1 -lvl 4 -x 1390 -y 310 -defaultsOSRD
-preplace inst conv_y -pg 1 -lvl 4 -x 1390 -y 430 -defaultsOSRD
-preplace inst fcc_dx -pg 1 -lvl 4 -x 1390 -y 670 -defaultsOSRD
-preplace inst fcc_dy -pg 1 -lvl 4 -x 1390 -y 190 -defaultsOSRD
-preplace inst fcc_x -pg 1 -lvl 4 -x 1390 -y 550 -defaultsOSRD
-preplace inst fcc_y -pg 1 -lvl 4 -x 1390 -y 70 -defaultsOSRD
-preplace inst processing_system7_0 -pg 1 -lvl 5 -x 1770 -y 870 -defaultsOSRD
+preplace port DDR -pg 1 -lvl 6 -x 2110 -y 820 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 6 -x 2110 -y 840 -defaultsOSRD
+preplace inst axi_mem_intercon -pg 1 -lvl 4 -x 1460 -y 1290 -defaultsOSRD
+preplace inst conv_dy -pg 1 -lvl 4 -x 1460 -y 310 -defaultsOSRD
+preplace inst conv_y -pg 1 -lvl 4 -x 1460 -y 430 -defaultsOSRD
+preplace inst fcc_dx -pg 1 -lvl 4 -x 1460 -y 670 -defaultsOSRD
+preplace inst fcc_dy -pg 1 -lvl 4 -x 1460 -y 190 -defaultsOSRD
+preplace inst fcc_x -pg 1 -lvl 4 -x 1460 -y 550 -defaultsOSRD
+preplace inst fcc_y -pg 1 -lvl 4 -x 1460 -y 70 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 5 -x 1850 -y 870 -defaultsOSRD
 preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -x 550 -y 760 -defaultsOSRD
-preplace inst relu_dy -pg 1 -lvl 4 -x 1390 -y 910 -defaultsOSRD
-preplace inst relu_y -pg 1 -lvl 4 -x 1390 -y 790 -defaultsOSRD
+preplace inst relu_dy -pg 1 -lvl 4 -x 1460 -y 910 -defaultsOSRD
+preplace inst relu_y -pg 1 -lvl 4 -x 1460 -y 790 -defaultsOSRD
 preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -x 200 -y 950 -defaultsOSRD
-preplace inst conv_combined_0 -pg 1 -lvl 3 -x 930 -y 190 -defaultsOSRD
-preplace inst fcc_combined_0 -pg 1 -lvl 3 -x 930 -y 390 -defaultsOSRD
-preplace inst relu_combined_0 -pg 1 -lvl 3 -x 930 -y 580 -defaultsOSRD
-preplace inst update_weights_0 -pg 1 -lvl 3 -x 930 -y 1060 -defaultsOSRD
-preplace inst InputLayer_0 -pg 1 -lvl 3 -x 930 -y 750 -defaultsOSRD
-preplace inst loss_derivative_0 -pg 1 -lvl 3 -x 930 -y 910 -defaultsOSRD
-preplace netloc processing_system7_0_FCLK_CLK0 1 0 6 20 850 380 530 730 1160 1240 1000 1540 760 2010
-preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 6 20 1150 NJ 1150 NJ 1150 1230J 990 NJ 990 1990
-preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 3 390 540 740 1180 1180
-preplace netloc conv_combined_0_x_PORTA 1 3 1 1120 60n
-preplace netloc fcc_combined_0_m_axi_gmem 1 3 1 1170 340n
-preplace netloc fcc_combined_0_dx_PORTA 1 3 1 1200 380n
-preplace netloc ps7_0_axi_periph_M02_AXI 1 2 1 710 370n
-preplace netloc conv_combined_0_y_PORTA 1 3 1 1120 200n
-preplace netloc fcc_combined_0_dy_PORTA 1 3 1 1140 200n
-preplace netloc conv_combined_0_dx_PORTA 1 3 1 N 180
-preplace netloc relu_combined_0_dy_PORTA 1 3 1 1160 600n
-preplace netloc relu_combined_0_dx_PORTA 1 3 1 1150 320n
-preplace netloc axi_mem_intercon_M00_AXI 1 4 1 1550 860n
-preplace netloc relu_combined_0_y_PORTA 1 3 1 1180 580n
+preplace inst update_weights_0 -pg 1 -lvl 3 -x 960 -y 1170 -defaultsOSRD
+preplace inst InputLayer_0 -pg 1 -lvl 3 -x 960 -y 860 -defaultsOSRD
+preplace inst loss_derivative_0 -pg 1 -lvl 3 -x 960 -y 1020 -defaultsOSRD
+preplace inst fcc_combined_0 -pg 1 -lvl 3 -x 960 -y 410 -defaultsOSRD
+preplace inst relu_combined_0 -pg 1 -lvl 3 -x 960 -y 650 -defaultsOSRD
+preplace inst conv_combined_0 -pg 1 -lvl 3 -x 960 -y 190 -defaultsOSRD
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 6 20 850 380 490 730 1250 1250 1620 1620 980 2080
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 6 20 1630 NJ 1630 NJ 1630 NJ 1630 NJ 1630 2070
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 3 390 500 740 1260 1160
+preplace netloc loss_derivative_0_x_PORTA 1 3 1 1260 800n
+preplace netloc ps7_0_axi_periph_M01_AXI 1 2 1 760 710n
+preplace netloc ps7_0_axi_periph_M05_AXI 1 2 1 710 790n
+preplace netloc fcc_combined_0_x_PORTA 1 3 1 1250 390n
+preplace netloc conv_combined_0_x_PORTA 1 3 1 1150 60n
+preplace netloc fcc_combined_0_m_axi_gmem 1 3 1 1210 350n
+preplace netloc fcc_combined_0_dx_PORTA 1 3 1 1240 410n
+preplace netloc ps7_0_axi_periph_M02_AXI 1 2 1 N 730
+preplace netloc conv_combined_0_y_PORTA 1 3 1 1290 210n
+preplace netloc fcc_combined_0_dy_PORTA 1 3 1 1170 200n
+preplace netloc conv_combined_0_dx_PORTA 1 3 1 1170 180n
+preplace netloc relu_combined_0_dy_PORTA 1 3 1 1190 680n
+preplace netloc relu_combined_0_dx_PORTA 1 3 1 1190 320n
+preplace netloc axi_mem_intercon_M00_AXI 1 4 1 1610 860n
+preplace netloc relu_combined_0_y_PORTA 1 3 1 1200 660n
 preplace netloc processing_system7_0_FIXED_IO 1 5 1 NJ 840
-preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 700 170n
-preplace netloc fcc_combined_0_x_PORTA 1 3 1 1240 360n
-preplace netloc fcc_combined_0_y_PORTA 1 3 1 1130 80n
-preplace netloc conv_combined_0_dy_PORTA 1 3 1 1240 220n
+preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 N 690
+preplace netloc fcc_combined_0_y_PORTA 1 3 1 1160 80n
+preplace netloc conv_combined_0_dy_PORTA 1 3 1 1280 230n
 preplace netloc processing_system7_0_DDR 1 5 1 NJ 820
-preplace netloc ps7_0_axi_periph_M03_AXI 1 2 1 720 560n
-preplace netloc processing_system7_0_M_AXI_GP0 1 1 5 400 1140 NJ 1140 1120J 980 NJ 980 2000
-preplace netloc conv_combined_0_m_axi_gmem 1 3 1 1220 140n
-preplace netloc relu_combined_0_x_PORTA 1 3 1 1160 440n
-preplace netloc update_weights_0_m_axi_gmem 1 3 1 1130 1050n
-preplace netloc ps7_0_axi_periph_M05_AXI 1 2 1 700 810n
-preplace netloc InputLayer_0_bram_dx_PORTA 1 3 1 1210 660n
-preplace netloc InputLayer_0_bram_x_PORTA 1 3 1 1190 540n
-preplace netloc InputLayer_0_m_axi_gmem 1 3 1 1150 720n
-preplace netloc ps7_0_axi_periph_M01_AXI 1 2 1 N 730
-preplace netloc loss_derivative_0_dx_PORTA 1 3 1 N 920
-preplace netloc loss_derivative_0_m_axi_gmem 1 3 1 1140 880n
-preplace netloc ps7_0_axi_periph_M04_AXI 1 2 1 720 790n
-preplace netloc loss_derivative_0_x_PORTA 1 3 1 1120 800n
-levelinfo -pg 1 0 200 550 930 1390 1770 2030
-pagesize -pg 1 -db -bbox -sgen 0 0 2150 1480
+preplace netloc ps7_0_axi_periph_M03_AXI 1 2 1 710 630n
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 5 400 1640 NJ 1640 NJ 1640 NJ 1640 2090
+preplace netloc conv_combined_0_m_axi_gmem 1 3 1 1270 130n
+preplace netloc relu_combined_0_x_PORTA 1 3 1 1200 440n
+preplace netloc update_weights_0_m_axi_gmem 1 3 1 1150 1100n
+preplace netloc InputLayer_0_bram_dx_PORTA 1 3 1 1250 660n
+preplace netloc InputLayer_0_m_axi_gmem 1 3 1 1170 830n
+preplace netloc loss_derivative_0_dx_PORTA 1 3 1 1290 920n
+preplace netloc loss_derivative_0_m_axi_gmem 1 3 1 1150 990n
+preplace netloc InputLayer_0_bram_x_PORTA 1 3 1 1220 540n
+preplace netloc ps7_0_axi_periph_M04_AXI 1 2 1 720 770n
+preplace netloc ps7_0_axi_periph_M06_AXI 1 2 1 700 170n
+preplace netloc ps7_0_axi_periph_M07_AXI 1 2 1 750 390n
+preplace netloc conv_combined_0_m_axi_gmem2 1 3 1 1230 150n
+preplace netloc fcc_combined_0_m_axi_gmem2 1 3 1 1180 370n
+preplace netloc relu_combined_0_m_axi_gmem 1 3 1 1160 600n
+levelinfo -pg 1 0 200 550 960 1460 1850 2110
+pagesize -pg 1 -db -bbox -sgen 0 0 2230 1650
 "
 }
 {
-   "da_axi4_cnt":"20",
+   "da_axi4_cnt":"25",
    "da_bram_cntlr_cnt":"19"
 }

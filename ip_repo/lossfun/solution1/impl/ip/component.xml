@@ -3460,8 +3460,8 @@
       </xilinx:taxonomies>
       <xilinx:displayName>Loss_derivative</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>2112516957</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2022-05-22T20:27:24Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>2112519678</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2022-05-24T17:48:49Z</xilinx:coreCreationDateTime>
       <xilinx:sdxKernelAttributes>
         <xilinx:sdx_kernel>true</xilinx:sdx_kernel>
         <xilinx:sdx_kernel_type>hls</xilinx:sdx_kernel_type>

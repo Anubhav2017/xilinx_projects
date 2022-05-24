@@ -6,7 +6,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
-entity fcc_combined_mul_32ns_7ns_38_2_1_Multiplier_3 is
+entity fcc_combined_mul_32ns_7ns_38_2_1_Multiplier_4 is
 port (
     clk: in std_logic;
     ce: in std_logic;
@@ -15,7 +15,7 @@ port (
     p: out std_logic_vector(38 - 1 downto 0));
 end entity;
 
-architecture behav of fcc_combined_mul_32ns_7ns_38_2_1_Multiplier_3 is
+architecture behav of fcc_combined_mul_32ns_7ns_38_2_1_Multiplier_4 is
     signal tmp_product : std_logic_vector(38 - 1 downto 0);
     signal a_i : std_logic_vector(32 - 1 downto 0);
     signal b_i : std_logic_vector(7 - 1 downto 0);
@@ -57,7 +57,7 @@ entity fcc_combined_mul_32ns_7ns_38_2_1 is
 end entity;
 
 architecture arch of fcc_combined_mul_32ns_7ns_38_2_1 is
-    component fcc_combined_mul_32ns_7ns_38_2_1_Multiplier_3 is
+    component fcc_combined_mul_32ns_7ns_38_2_1_Multiplier_4 is
         port (
             clk : IN STD_LOGIC;
             ce : IN STD_LOGIC;
@@ -69,7 +69,7 @@ architecture arch of fcc_combined_mul_32ns_7ns_38_2_1 is
 
 
 begin
-    fcc_combined_mul_32ns_7ns_38_2_1_Multiplier_3_U :  component fcc_combined_mul_32ns_7ns_38_2_1_Multiplier_3
+    fcc_combined_mul_32ns_7ns_38_2_1_Multiplier_4_U :  component fcc_combined_mul_32ns_7ns_38_2_1_Multiplier_4
     port map (
         clk => clk,
         ce => ce,

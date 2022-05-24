@@ -5571,7 +5571,7 @@ inline bool operator!=(
 typedef ap_fixed<16,3> fixed_t;
 
 
-__attribute__((sdx_kernel("relu_combined", 0))) void relu_combined(fixed_t x[1024], fixed_t dx[1024], fixed_t y[1024],fixed_t dy[1024], int dim, bool fwprop){_ssdm_SpecArrayDimSize(x, 1024);_ssdm_SpecArrayDimSize(dx, 1024);_ssdm_SpecArrayDimSize(y, 1024);_ssdm_SpecArrayDimSize(dy, 1024);
+__attribute__((sdx_kernel("relu_combined", 0))) void relu_combined(fixed_t x[1024], fixed_t dx[1024], fixed_t y[1024],fixed_t dy[1024], fixed_t* debug_x, fixed_t* debug_dx, int dim, bool fwprop, bool debugip){_ssdm_SpecArrayDimSize(x, 1024);_ssdm_SpecArrayDimSize(dx, 1024);_ssdm_SpecArrayDimSize(y, 1024);_ssdm_SpecArrayDimSize(dy, 1024);
 #pragma HLS TOP name=relu_combined
 # 5 "relu_combined/main.cpp"
 
@@ -5580,14 +5580,19 @@ __attribute__((sdx_kernel("relu_combined", 0))) void relu_combined(fixed_t x[102
 #pragma HLS INTERFACE bram storage_type=ram_1p latency=2 port=dx
 #pragma HLS INTERFACE bram storage_type=ram_1p latency=2 port=y
 #pragma HLS INTERFACE bram storage_type=ram_1p latency=2 port=dy
+
+#pragma HLS INTERFACE m_axi port=debug_x depth=200 offset=slave bundle=gmem
+#pragma HLS INTERFACE m_axi port=debug_dx depth=200 offset=slave bundle=gmem
+
 #pragma HLS INTERFACE s_axilite port=dim
+#pragma HLS INTERFACE s_axilite port=debugip
 #pragma HLS INTERFACE s_axilite port=fwprop
 #pragma HLS INTERFACE s_axilite port=return
 
 
  if(fwprop == true){
 
-  VITIS_LOOP_18_1: for(int i=0;i<dim;i++){
+  VITIS_LOOP_23_1: for(int i=0;i<dim;i++){
          if (x[i] > 0){
              y[i] = x[i];
          }
@@ -5598,7 +5603,7 @@ __attribute__((sdx_kernel("relu_combined", 0))) void relu_combined(fixed_t x[102
  }
  else{
 
-  VITIS_LOOP_29_2: for(int i=0;i<dim;i++){
+  VITIS_LOOP_34_2: for(int i=0;i<dim;i++){
            if (x[i] > 0){
                dx[i] = dy[i];
            }
@@ -5608,4 +5613,13 @@ __attribute__((sdx_kernel("relu_combined", 0))) void relu_combined(fixed_t x[102
        }
 
  }
+
+ if(debugip == true){
+  VITIS_LOOP_46_3: for(int i=0;i<dim;i++){
+   debug_x[i]=x[i];
+   debug_dx[i]=dx[i];
+
+  }
+ }
+
 }

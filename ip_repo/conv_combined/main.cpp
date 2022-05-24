@@ -6,30 +6,32 @@
 #include <ap_fixed.h>
 typedef ap_fixed<16,3> fixed_t;
 
-void conv_combined(fixed_t x[MAX_SIZE], fixed_t dx[MAX_SIZE],fixed_t* wt,fixed_t* dwt, fixed_t y[MAX_SIZE], fixed_t dy[MAX_SIZE],fixed_t* b,fixed_t* db,int F, int C, int H, int W, int FH, int FW, bool fwprop, bool fetch_weights){
+void conv_combined(fixed_t x[MAX_SIZE], fixed_t dx[MAX_SIZE],fixed_t* wt,fixed_t* dwt, fixed_t y[MAX_SIZE], fixed_t dy[MAX_SIZE],fixed_t* b,fixed_t* db, fixed_t* debug_x, fixed_t* debug_dx, int F, int C, int H, int W, int FH, int FW, bool fwprop, bool debugip){
 
 #pragma HLS INTERFACE bram storage_type=ram_1p latency=2 port=x
 #pragma HLS INTERFACE bram storage_type=ram_1p latency=2 port=dx
 #pragma HLS INTERFACE m_axi port=wt depth=200 offset=slave bundle=gmem
+#pragma HLS INTERFACE m_axi port=debug_x depth=200 offset=slave bundle=gmem2
+#pragma HLS INTERFACE m_axi port=debug_dx depth=200 offset=slave bundle=gmem2
+
 #pragma HLS INTERFACE m_axi port=dwt depth=200 offset=slave bundle=gmem
 #pragma HLS INTERFACE bram storage_type=ram_1p latency=2 port=y
 #pragma HLS INTERFACE bram storage_type=ram_1p latency=2 port=dy
 #pragma HLS INTERFACE m_axi port=b depth=200 offset=slave bundle=gmem
 #pragma HLS INTERFACE m_axi port=db depth=200 offset=slave bundle=gmem
 
-#pragma HLS INTERFACE s_axilite port=F bundle=CRTL_BUS
-#pragma HLS INTERFACE s_axilite port=C bundle=CRTL_BUS
-#pragma HLS INTERFACE s_axilite port=H bundle=CRTL_BUS
-#pragma HLS INTERFACE s_axilite port=W bundle=CRTL_BUS
-#pragma HLS INTERFACE s_axilite port=FH bundle=CRTL_BUS
-#pragma HLS INTERFACE s_axilite port=FW bundle=CRTL_BUS
-#pragma HLS INTERFACE s_axilite port=wt bundle=CRTL_BUS
-#pragma HLS INTERFACE s_axilite port=dwt bundle=CRTL_BUS
-#pragma HLS INTERFACE s_axilite port=b bundle=CRTL_BUS
-#pragma HLS INTERFACE s_axilite port=db bundle=CRTL_BUS
-#pragma HLS INTERFACE s_axilite port=fwprop bundle=CRTL_BUS
-#pragma HLS INTERFACE s_axilite port=fetch_weights bundle=CRTL_BUS
-#pragma HLS INTERFACE s_axilite port=return bundle=CRTL_BUS
+#pragma HLS INTERFACE s_axilite port=F
+#pragma HLS INTERFACE s_axilite port=C
+#pragma HLS INTERFACE s_axilite port=H
+#pragma HLS INTERFACE s_axilite port=W
+#pragma HLS INTERFACE s_axilite port=FH
+#pragma HLS INTERFACE s_axilite port=FW
+
+#pragma HLS INTERFACE s_axilite port=b
+#pragma HLS INTERFACE s_axilite port=db
+#pragma HLS INTERFACE s_axilite port=fwprop
+#pragma HLS INTERFACE s_axilite port=debugip
+#pragma HLS INTERFACE s_axilite port=return
 
 
 	fixed_t wbuf[MAX_FILTERS][MAX_FILTERS][MAX_WINDOW_SIZE][MAX_WINDOW_SIZE];
@@ -41,7 +43,7 @@ void conv_combined(fixed_t x[MAX_SIZE], fixed_t dx[MAX_SIZE],fixed_t* wt,fixed_t
 	int outH=H-FH+1;
 	int outW=W-FW+1;
 
-	if(fetch_weights == true){
+
 
 
 	for(int i=0;i<F;i++){
@@ -61,7 +63,7 @@ void conv_combined(fixed_t x[MAX_SIZE], fixed_t dx[MAX_SIZE],fixed_t* wt,fixed_t
 	        bbuf[i] = b[i];
 	    }
 
-	}
+
 
 	if(fwprop == true){
 
@@ -105,7 +107,7 @@ void conv_combined(fixed_t x[MAX_SIZE], fixed_t dx[MAX_SIZE],fixed_t* wt,fixed_t
 		                    for(int fh=0;fh<FH;fh++){
 		                        for(int fw=0;fw<FW;fw++){
 		                            dwbuf[f][c][fh][fw] += dy[f*outH*outW+h*outW+w]*x[c*H*W+(h+fh)*W+w+fw];
-		                            dx[c*H*W+(h+fh)*W+w+fw] += dy[f*outH*outW+h*outW+w]*wbuf[f][c][h+fh][w+fw];
+		                            dx[c*H*W+(h+fh)*W+w+fw] += dy[f*outH*outW+h*outW+w]*wbuf[f][c][fh][fw];
 		                        }
 		                    }
 		                }
@@ -130,6 +132,16 @@ void conv_combined(fixed_t x[MAX_SIZE], fixed_t dx[MAX_SIZE],fixed_t* wt,fixed_t
 		        db[i] = dbbuf[i];
 		    }
 
+
+	}
+
+	if(debugip == true){
+
+		for(int i=0;i<C*H*W;i++){
+			debug_x[i]=x[i];
+			debug_dx[i]=dx[i];
+
+		}
 
 	}
 }

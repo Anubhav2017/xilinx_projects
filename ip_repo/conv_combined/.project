@@ -47,6 +47,11 @@
 			<location>/home/anubhav/xilinx_projects/ip_repo/conv_combined/main.cpp</location>
 		</link>
 		<link>
+			<name>testbench/tb.cpp</name>
+			<type>1</type>
+			<location>/home/anubhav/xilinx_projects/ip_repo/conv_combined/tb.cpp</location>
+		</link>
+		<link>
 			<name>solution1/constraints/.xml.directive</name>
 			<type>1</type>
 			<location>/home/anubhav/xilinx_projects/ip_repo/conv_combined/solution1/solution1.directive</location>

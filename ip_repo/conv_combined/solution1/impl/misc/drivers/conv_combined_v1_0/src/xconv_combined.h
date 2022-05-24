@@ -38,12 +38,12 @@ typedef uint64_t u64;
 #else
 typedef struct {
     u16 DeviceId;
-    u32 Crtl_bus_BaseAddress;
+    u32 Control_BaseAddress;
 } XConv_combined_Config;
 #endif
 
 typedef struct {
-    u64 Crtl_bus_BaseAddress;
+    u64 Control_BaseAddress;
     u32 IsReady;
 } XConv_combined;
 
@@ -95,6 +95,10 @@ void XConv_combined_Set_b(XConv_combined *InstancePtr, u32 Data);
 u32 XConv_combined_Get_b(XConv_combined *InstancePtr);
 void XConv_combined_Set_db(XConv_combined *InstancePtr, u32 Data);
 u32 XConv_combined_Get_db(XConv_combined *InstancePtr);
+void XConv_combined_Set_debug_x(XConv_combined *InstancePtr, u32 Data);
+u32 XConv_combined_Get_debug_x(XConv_combined *InstancePtr);
+void XConv_combined_Set_debug_dx(XConv_combined *InstancePtr, u32 Data);
+u32 XConv_combined_Get_debug_dx(XConv_combined *InstancePtr);
 void XConv_combined_Set_F(XConv_combined *InstancePtr, u32 Data);
 u32 XConv_combined_Get_F(XConv_combined *InstancePtr);
 void XConv_combined_Set_C(XConv_combined *InstancePtr, u32 Data);
@@ -109,6 +113,8 @@ void XConv_combined_Set_FW(XConv_combined *InstancePtr, u32 Data);
 u32 XConv_combined_Get_FW(XConv_combined *InstancePtr);
 void XConv_combined_Set_fwprop(XConv_combined *InstancePtr, u32 Data);
 u32 XConv_combined_Get_fwprop(XConv_combined *InstancePtr);
+void XConv_combined_Set_debugip(XConv_combined *InstancePtr, u32 Data);
+u32 XConv_combined_Get_debugip(XConv_combined *InstancePtr);
 
 void XConv_combined_InterruptGlobalEnable(XConv_combined *InstancePtr);
 void XConv_combined_InterruptGlobalDisable(XConv_combined *InstancePtr);

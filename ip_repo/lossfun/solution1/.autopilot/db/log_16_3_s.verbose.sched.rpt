@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'log_16_3_s'
 ================================================================
-* Date:           Mon May 23 01:56:08 2022
+* Date:           Tue May 24 23:17:17 2022
 
 * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
 * Project:        lossfun
@@ -377,6 +377,7 @@ The critical path consists of the following:
  <State 6>: 2.46ns
 The critical path consists of the following:
 	'mul' operation of DSP[195] ('mul_ln708') [195]  (0 ns)
+	'select' operation ('select_ln1333') [205]  (0 ns)
 	'add' operation ('ret.V') [208]  (2.46 ns)
 
  <State 7>: 4.58ns

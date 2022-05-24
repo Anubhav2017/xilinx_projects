@@ -1,2 +1,3 @@
 relu_combined_control_s_axi
+relu_combined_gmem_m_axi
 relu_combined

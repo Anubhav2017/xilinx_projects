@@ -79,6 +79,15 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==nn_auto_us_
 # IP: bd/nn/ip/nn_auto_us_4/nn_auto_us_4.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==nn_auto_us_4 || ORIG_REF_NAME==nn_auto_us_4} -quiet] -quiet
 
+# IP: bd/nn/ip/nn_auto_us_5/nn_auto_us_5.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==nn_auto_us_5 || ORIG_REF_NAME==nn_auto_us_5} -quiet] -quiet
+
+# IP: bd/nn/ip/nn_auto_us_6/nn_auto_us_6.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==nn_auto_us_6 || ORIG_REF_NAME==nn_auto_us_6} -quiet] -quiet
+
+# IP: bd/nn/ip/nn_auto_us_7/nn_auto_us_7.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==nn_auto_us_7 || ORIG_REF_NAME==nn_auto_us_7} -quiet] -quiet
+
 # IP: bd/nn/ip/nn_auto_pc_0/nn_auto_pc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==nn_auto_pc_0 || ORIG_REF_NAME==nn_auto_pc_0} -quiet] -quiet
 

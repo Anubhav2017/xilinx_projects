@@ -87,10 +87,16 @@ u32 XRelu_combined_IsReady(XRelu_combined *InstancePtr);
 void XRelu_combined_EnableAutoRestart(XRelu_combined *InstancePtr);
 void XRelu_combined_DisableAutoRestart(XRelu_combined *InstancePtr);
 
+void XRelu_combined_Set_debug_x(XRelu_combined *InstancePtr, u32 Data);
+u32 XRelu_combined_Get_debug_x(XRelu_combined *InstancePtr);
+void XRelu_combined_Set_debug_dx(XRelu_combined *InstancePtr, u32 Data);
+u32 XRelu_combined_Get_debug_dx(XRelu_combined *InstancePtr);
 void XRelu_combined_Set_dim(XRelu_combined *InstancePtr, u32 Data);
 u32 XRelu_combined_Get_dim(XRelu_combined *InstancePtr);
 void XRelu_combined_Set_fwprop(XRelu_combined *InstancePtr, u32 Data);
 u32 XRelu_combined_Get_fwprop(XRelu_combined *InstancePtr);
+void XRelu_combined_Set_debugip(XRelu_combined *InstancePtr, u32 Data);
+u32 XRelu_combined_Get_debugip(XRelu_combined *InstancePtr);
 
 void XRelu_combined_InterruptGlobalEnable(XRelu_combined *InstancePtr);
 void XRelu_combined_InterruptGlobalDisable(XRelu_combined *InstancePtr);

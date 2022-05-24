@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:hls:loss_derivative:1.0
-// IP Revision: 2112516957
+// IP Revision: 2112519678
 
 (* X_CORE_INFO = "loss_derivative,Vivado 2020.2" *)
 (* CHECK_LICENSE_TYPE = "nn_loss_derivative_0_3,loss_derivative,{}" *)
-(* CORE_GENERATION_INFO = "nn_loss_derivative_0_3,loss_derivative,{x_ipProduct=Vivado 2020.2,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=loss_derivative,x_ipVersion=1.0,x_ipCoreRevision=2112516957,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_S_AXI_CONTROL_ADDR_WIDTH=7,C_S_AXI_CONTROL_DATA_WIDTH=32,C_M_AXI_GMEM_ID_WIDTH=1,C_M_AXI_GMEM_ADDR_WIDTH=32,C_M_AXI_GMEM_DATA_WIDTH=32,C_M_AXI_GMEM_AWUSER_WIDTH=1,C_M_AXI_GMEM_ARUSER_WIDTH=1,C_M_AXI_GMEM_WUSER_WIDTH=1,C_M_AXI_GMEM_RUSER_WIDTH=1,C_M_AXI_GMEM_BUSER_WIDTH=1,C_M_AXI_GM\
+(* CORE_GENERATION_INFO = "nn_loss_derivative_0_3,loss_derivative,{x_ipProduct=Vivado 2020.2,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=loss_derivative,x_ipVersion=1.0,x_ipCoreRevision=2112519678,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_S_AXI_CONTROL_ADDR_WIDTH=7,C_S_AXI_CONTROL_DATA_WIDTH=32,C_M_AXI_GMEM_ID_WIDTH=1,C_M_AXI_GMEM_ADDR_WIDTH=32,C_M_AXI_GMEM_DATA_WIDTH=32,C_M_AXI_GMEM_AWUSER_WIDTH=1,C_M_AXI_GMEM_ARUSER_WIDTH=1,C_M_AXI_GMEM_WUSER_WIDTH=1,C_M_AXI_GMEM_RUSER_WIDTH=1,C_M_AXI_GMEM_BUSER_WIDTH=1,C_M_AXI_GM\
 EM_USER_VALUE=0x00000000,C_M_AXI_GMEM_PROT_VALUE=000,C_M_AXI_GMEM_CACHE_VALUE=0011}" *)
 (* IP_DEFINITION_SOURCE = "HLS" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)

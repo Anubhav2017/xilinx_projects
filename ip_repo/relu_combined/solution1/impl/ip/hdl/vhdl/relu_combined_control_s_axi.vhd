@@ -8,7 +8,7 @@ use IEEE.NUMERIC_STD.all;
 
 entity relu_combined_control_s_axi is
 generic (
-    C_S_AXI_ADDR_WIDTH    : INTEGER := 5;
+    C_S_AXI_ADDR_WIDTH    : INTEGER := 6;
     C_S_AXI_DATA_WIDTH    : INTEGER := 32);
 port (
     ACLK                  :in   STD_LOGIC;
@@ -32,8 +32,11 @@ port (
     RVALID                :out  STD_LOGIC;
     RREADY                :in   STD_LOGIC;
     interrupt             :out  STD_LOGIC;
+    debug_x               :out  STD_LOGIC_VECTOR(31 downto 0);
+    debug_dx              :out  STD_LOGIC_VECTOR(31 downto 0);
     dim                   :out  STD_LOGIC_VECTOR(31 downto 0);
     fwprop                :out  STD_LOGIC_VECTOR(0 downto 0);
+    debugip               :out  STD_LOGIC_VECTOR(0 downto 0);
     ap_start              :out  STD_LOGIC;
     ap_done               :in   STD_LOGIC;
     ap_ready              :in   STD_LOGIC;
@@ -60,13 +63,23 @@ end entity relu_combined_control_s_axi;
 --        bit 0  - ap_done (COR/TOW)
 --        bit 1  - ap_ready (COR/TOW)
 --        others - reserved
--- 0x10 : Data signal of dim
---        bit 31~0 - dim[31:0] (Read/Write)
+-- 0x10 : Data signal of debug_x
+--        bit 31~0 - debug_x[31:0] (Read/Write)
 -- 0x14 : reserved
--- 0x18 : Data signal of fwprop
+-- 0x18 : Data signal of debug_dx
+--        bit 31~0 - debug_dx[31:0] (Read/Write)
+-- 0x1c : reserved
+-- 0x20 : Data signal of dim
+--        bit 31~0 - dim[31:0] (Read/Write)
+-- 0x24 : reserved
+-- 0x28 : Data signal of fwprop
 --        bit 0  - fwprop[0] (Read/Write)
 --        others - reserved
--- 0x1c : reserved
+-- 0x2c : reserved
+-- 0x30 : Data signal of debugip
+--        bit 0  - debugip[0] (Read/Write)
+--        others - reserved
+-- 0x34 : reserved
 -- (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
 architecture behave of relu_combined_control_s_axi is
@@ -74,15 +87,21 @@ architecture behave of relu_combined_control_s_axi is
     signal wstate  : states := wrreset;
     signal rstate  : states := rdreset;
     signal wnext, rnext: states;
-    constant ADDR_AP_CTRL       : INTEGER := 16#00#;
-    constant ADDR_GIE           : INTEGER := 16#04#;
-    constant ADDR_IER           : INTEGER := 16#08#;
-    constant ADDR_ISR           : INTEGER := 16#0c#;
-    constant ADDR_DIM_DATA_0    : INTEGER := 16#10#;
-    constant ADDR_DIM_CTRL      : INTEGER := 16#14#;
-    constant ADDR_FWPROP_DATA_0 : INTEGER := 16#18#;
-    constant ADDR_FWPROP_CTRL   : INTEGER := 16#1c#;
-    constant ADDR_BITS         : INTEGER := 5;
+    constant ADDR_AP_CTRL         : INTEGER := 16#00#;
+    constant ADDR_GIE             : INTEGER := 16#04#;
+    constant ADDR_IER             : INTEGER := 16#08#;
+    constant ADDR_ISR             : INTEGER := 16#0c#;
+    constant ADDR_DEBUG_X_DATA_0  : INTEGER := 16#10#;
+    constant ADDR_DEBUG_X_CTRL    : INTEGER := 16#14#;
+    constant ADDR_DEBUG_DX_DATA_0 : INTEGER := 16#18#;
+    constant ADDR_DEBUG_DX_CTRL   : INTEGER := 16#1c#;
+    constant ADDR_DIM_DATA_0      : INTEGER := 16#20#;
+    constant ADDR_DIM_CTRL        : INTEGER := 16#24#;
+    constant ADDR_FWPROP_DATA_0   : INTEGER := 16#28#;
+    constant ADDR_FWPROP_CTRL     : INTEGER := 16#2c#;
+    constant ADDR_DEBUGIP_DATA_0  : INTEGER := 16#30#;
+    constant ADDR_DEBUGIP_CTRL    : INTEGER := 16#34#;
+    constant ADDR_BITS         : INTEGER := 6;
 
     signal waddr               : UNSIGNED(ADDR_BITS-1 downto 0);
     signal wmask               : UNSIGNED(C_S_AXI_DATA_WIDTH-1 downto 0);
@@ -104,8 +123,11 @@ architecture behave of relu_combined_control_s_axi is
     signal int_gie             : STD_LOGIC := '0';
     signal int_ier             : UNSIGNED(1 downto 0) := (others => '0');
     signal int_isr             : UNSIGNED(1 downto 0) := (others => '0');
+    signal int_debug_x         : UNSIGNED(31 downto 0) := (others => '0');
+    signal int_debug_dx        : UNSIGNED(31 downto 0) := (others => '0');
     signal int_dim             : UNSIGNED(31 downto 0) := (others => '0');
     signal int_fwprop          : UNSIGNED(0 downto 0) := (others => '0');
+    signal int_debugip         : UNSIGNED(0 downto 0) := (others => '0');
 
 
 begin
@@ -233,10 +255,16 @@ begin
                         rdata_data(1 downto 0) <= int_ier;
                     when ADDR_ISR =>
                         rdata_data(1 downto 0) <= int_isr;
+                    when ADDR_DEBUG_X_DATA_0 =>
+                        rdata_data <= RESIZE(int_debug_x(31 downto 0), 32);
+                    when ADDR_DEBUG_DX_DATA_0 =>
+                        rdata_data <= RESIZE(int_debug_dx(31 downto 0), 32);
                     when ADDR_DIM_DATA_0 =>
                         rdata_data <= RESIZE(int_dim(31 downto 0), 32);
                     when ADDR_FWPROP_DATA_0 =>
                         rdata_data <= RESIZE(int_fwprop(0 downto 0), 32);
+                    when ADDR_DEBUGIP_DATA_0 =>
+                        rdata_data <= RESIZE(int_debugip(0 downto 0), 32);
                     when others =>
                         NULL;
                     end case;
@@ -248,8 +276,11 @@ begin
 -- ----------------------- Register logic ----------------
     interrupt            <= int_gie and (int_isr(0) or int_isr(1));
     ap_start             <= int_ap_start;
+    debug_x              <= STD_LOGIC_VECTOR(int_debug_x);
+    debug_dx             <= STD_LOGIC_VECTOR(int_debug_dx);
     dim                  <= STD_LOGIC_VECTOR(int_dim);
     fwprop               <= STD_LOGIC_VECTOR(int_fwprop);
+    debugip              <= STD_LOGIC_VECTOR(int_debugip);
 
     process (ACLK)
     begin
@@ -380,6 +411,28 @@ begin
     begin
         if (ACLK'event and ACLK = '1') then
             if (ACLK_EN = '1') then
+                if (w_hs = '1' and waddr = ADDR_DEBUG_X_DATA_0) then
+                    int_debug_x(31 downto 0) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_debug_x(31 downto 0));
+                end if;
+            end if;
+        end if;
+    end process;
+
+    process (ACLK)
+    begin
+        if (ACLK'event and ACLK = '1') then
+            if (ACLK_EN = '1') then
+                if (w_hs = '1' and waddr = ADDR_DEBUG_DX_DATA_0) then
+                    int_debug_dx(31 downto 0) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_debug_dx(31 downto 0));
+                end if;
+            end if;
+        end if;
+    end process;
+
+    process (ACLK)
+    begin
+        if (ACLK'event and ACLK = '1') then
+            if (ACLK_EN = '1') then
                 if (w_hs = '1' and waddr = ADDR_DIM_DATA_0) then
                     int_dim(31 downto 0) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_dim(31 downto 0));
                 end if;
@@ -393,6 +446,17 @@ begin
             if (ACLK_EN = '1') then
                 if (w_hs = '1' and waddr = ADDR_FWPROP_DATA_0) then
                     int_fwprop(0 downto 0) <= (UNSIGNED(WDATA(0 downto 0)) and wmask(0 downto 0)) or ((not wmask(0 downto 0)) and int_fwprop(0 downto 0));
+                end if;
+            end if;
+        end if;
+    end process;
+
+    process (ACLK)
+    begin
+        if (ACLK'event and ACLK = '1') then
+            if (ACLK_EN = '1') then
+                if (w_hs = '1' and waddr = ADDR_DEBUGIP_DATA_0) then
+                    int_debugip(0 downto 0) <= (UNSIGNED(WDATA(0 downto 0)) and wmask(0 downto 0)) or ((not wmask(0 downto 0)) and int_debugip(0 downto 0));
                 end if;
             end if;
         end if;

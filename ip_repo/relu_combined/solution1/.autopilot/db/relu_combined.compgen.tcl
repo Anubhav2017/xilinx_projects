@@ -9,7 +9,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 
 set axilite_register_dict [dict create]
 set port_control {
-dim { 
+debug_x { 
 	dir I
 	width 32
 	depth 1
@@ -17,13 +17,37 @@ dim {
 	offset 16
 	offset_end 23
 }
+debug_dx { 
+	dir I
+	width 32
+	depth 1
+	mode ap_none
+	offset 24
+	offset_end 31
+}
+dim { 
+	dir I
+	width 32
+	depth 1
+	mode ap_none
+	offset 32
+	offset_end 39
+}
 fwprop { 
 	dir I
 	width 1
 	depth 1
 	mode ap_none
-	offset 24
-	offset_end 31
+	offset 40
+	offset_end 47
+}
+debugip { 
+	dir I
+	width 1
+	depth 1
+	mode ap_none
+	offset 48
+	offset_end 55
 }
 ap_start { }
 ap_done { }
@@ -52,6 +76,27 @@ if {${::AESL::PGuard_simmodel_gen}} {
 
 if {${::AESL::PGuard_rtl_comp_handler}} {
 	::AP::rtl_comp_handler relu_combined_control_s_axi
+}
+
+# Native M_AXI:
+if {${::AESL::PGuard_simmodel_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::m_axi_gen] == "::AESL_LIB_XILADAPTER::m_axi_gen"} {
+eval "::AESL_LIB_XILADAPTER::m_axi_gen { \
+    id 2 \
+    corename {m_axi} \
+    op interface \
+    max_latency -1 \ 
+    delay_budget 7.3 \ 
+    is_flushable 0 \ 
+    name {relu_combined_gmem_m_axi} \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find AXI interface model in the library. Ignored generation of AXI interface for 'gmem'"
+}
+}
+
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler relu_combined_gmem_m_axi
 }
 
 

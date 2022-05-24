@@ -6,16 +6,16 @@ proc generate {drv_handle} {
     xdefine_include_file $drv_handle "xparameters.h" "XFcc_combined" \
         "NUM_INSTANCES" \
         "DEVICE_ID" \
-        "C_S_AXI_CRTL_BUS_BASEADDR" \
-        "C_S_AXI_CRTL_BUS_HIGHADDR"
+        "C_S_AXI_CONTROL_BASEADDR" \
+        "C_S_AXI_CONTROL_HIGHADDR"
 
     xdefine_config_file $drv_handle "xfcc_combined_g.c" "XFcc_combined" \
         "DEVICE_ID" \
-        "C_S_AXI_CRTL_BUS_BASEADDR"
+        "C_S_AXI_CONTROL_BASEADDR"
 
     xdefine_canonical_xpars $drv_handle "xparameters.h" "XFcc_combined" \
         "DEVICE_ID" \
-        "C_S_AXI_CRTL_BUS_BASEADDR" \
-        "C_S_AXI_CRTL_BUS_HIGHADDR"
+        "C_S_AXI_CONTROL_BASEADDR" \
+        "C_S_AXI_CONTROL_HIGHADDR"
 }
 

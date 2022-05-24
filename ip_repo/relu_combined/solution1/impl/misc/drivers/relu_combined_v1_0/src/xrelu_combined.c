@@ -73,6 +73,40 @@ void XRelu_combined_DisableAutoRestart(XRelu_combined *InstancePtr) {
     XRelu_combined_WriteReg(InstancePtr->Control_BaseAddress, XRELU_COMBINED_CONTROL_ADDR_AP_CTRL, 0);
 }
 
+void XRelu_combined_Set_debug_x(XRelu_combined *InstancePtr, u32 Data) {
+    Xil_AssertVoid(InstancePtr != NULL);
+    Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
+
+    XRelu_combined_WriteReg(InstancePtr->Control_BaseAddress, XRELU_COMBINED_CONTROL_ADDR_DEBUG_X_DATA, Data);
+}
+
+u32 XRelu_combined_Get_debug_x(XRelu_combined *InstancePtr) {
+    u32 Data;
+
+    Xil_AssertNonvoid(InstancePtr != NULL);
+    Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
+
+    Data = XRelu_combined_ReadReg(InstancePtr->Control_BaseAddress, XRELU_COMBINED_CONTROL_ADDR_DEBUG_X_DATA);
+    return Data;
+}
+
+void XRelu_combined_Set_debug_dx(XRelu_combined *InstancePtr, u32 Data) {
+    Xil_AssertVoid(InstancePtr != NULL);
+    Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
+
+    XRelu_combined_WriteReg(InstancePtr->Control_BaseAddress, XRELU_COMBINED_CONTROL_ADDR_DEBUG_DX_DATA, Data);
+}
+
+u32 XRelu_combined_Get_debug_dx(XRelu_combined *InstancePtr) {
+    u32 Data;
+
+    Xil_AssertNonvoid(InstancePtr != NULL);
+    Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
+
+    Data = XRelu_combined_ReadReg(InstancePtr->Control_BaseAddress, XRELU_COMBINED_CONTROL_ADDR_DEBUG_DX_DATA);
+    return Data;
+}
+
 void XRelu_combined_Set_dim(XRelu_combined *InstancePtr, u32 Data) {
     Xil_AssertVoid(InstancePtr != NULL);
     Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
@@ -104,6 +138,23 @@ u32 XRelu_combined_Get_fwprop(XRelu_combined *InstancePtr) {
     Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
     Data = XRelu_combined_ReadReg(InstancePtr->Control_BaseAddress, XRELU_COMBINED_CONTROL_ADDR_FWPROP_DATA);
+    return Data;
+}
+
+void XRelu_combined_Set_debugip(XRelu_combined *InstancePtr, u32 Data) {
+    Xil_AssertVoid(InstancePtr != NULL);
+    Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
+
+    XRelu_combined_WriteReg(InstancePtr->Control_BaseAddress, XRELU_COMBINED_CONTROL_ADDR_DEBUGIP_DATA, Data);
+}
+
+u32 XRelu_combined_Get_debugip(XRelu_combined *InstancePtr) {
+    u32 Data;
+
+    Xil_AssertNonvoid(InstancePtr != NULL);
+    Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
+
+    Data = XRelu_combined_ReadReg(InstancePtr->Control_BaseAddress, XRELU_COMBINED_CONTROL_ADDR_DEBUGIP_DATA);
     return Data;
 }
 

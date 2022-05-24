@@ -48,11 +48,12 @@
 
 
 // IP VLNV: xilinx.com:hls:relu_combined:1.0
-// IP Revision: 2112512042
+// IP Revision: 2112519895
 
 (* X_CORE_INFO = "relu_combined,Vivado 2020.2" *)
 (* CHECK_LICENSE_TYPE = "nn_relu_combined_0_0,relu_combined,{}" *)
-(* CORE_GENERATION_INFO = "nn_relu_combined_0_0,relu_combined,{x_ipProduct=Vivado 2020.2,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=relu_combined,x_ipVersion=1.0,x_ipCoreRevision=2112512042,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_S_AXI_CONTROL_ADDR_WIDTH=5,C_S_AXI_CONTROL_DATA_WIDTH=32}" *)
+(* CORE_GENERATION_INFO = "nn_relu_combined_0_0,relu_combined,{x_ipProduct=Vivado 2020.2,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=relu_combined,x_ipVersion=1.0,x_ipCoreRevision=2112519895,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_S_AXI_CONTROL_ADDR_WIDTH=6,C_S_AXI_CONTROL_DATA_WIDTH=32,C_M_AXI_GMEM_ID_WIDTH=1,C_M_AXI_GMEM_ADDR_WIDTH=32,C_M_AXI_GMEM_DATA_WIDTH=32,C_M_AXI_GMEM_AWUSER_WIDTH=1,C_M_AXI_GMEM_ARUSER_WIDTH=1,C_M_AXI_GMEM_WUSER_WIDTH=1,C_M_AXI_GMEM_RUSER_WIDTH=1,C_M_AXI_GMEM_BUSER_WIDTH=1,C_M_AXI_GMEM_USE\
+R_VALUE=0x00000000,C_M_AXI_GMEM_PROT_VALUE=000,C_M_AXI_GMEM_CACHE_VALUE=0011}" *)
 (* IP_DEFINITION_SOURCE = "HLS" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module nn_relu_combined_0_0 (
@@ -76,6 +77,41 @@ module nn_relu_combined_0_0 (
   ap_clk,
   ap_rst_n,
   interrupt,
+  m_axi_gmem_AWADDR,
+  m_axi_gmem_AWLEN,
+  m_axi_gmem_AWSIZE,
+  m_axi_gmem_AWBURST,
+  m_axi_gmem_AWLOCK,
+  m_axi_gmem_AWREGION,
+  m_axi_gmem_AWCACHE,
+  m_axi_gmem_AWPROT,
+  m_axi_gmem_AWQOS,
+  m_axi_gmem_AWVALID,
+  m_axi_gmem_AWREADY,
+  m_axi_gmem_WDATA,
+  m_axi_gmem_WSTRB,
+  m_axi_gmem_WLAST,
+  m_axi_gmem_WVALID,
+  m_axi_gmem_WREADY,
+  m_axi_gmem_BRESP,
+  m_axi_gmem_BVALID,
+  m_axi_gmem_BREADY,
+  m_axi_gmem_ARADDR,
+  m_axi_gmem_ARLEN,
+  m_axi_gmem_ARSIZE,
+  m_axi_gmem_ARBURST,
+  m_axi_gmem_ARLOCK,
+  m_axi_gmem_ARREGION,
+  m_axi_gmem_ARCACHE,
+  m_axi_gmem_ARPROT,
+  m_axi_gmem_ARQOS,
+  m_axi_gmem_ARVALID,
+  m_axi_gmem_ARREADY,
+  m_axi_gmem_RDATA,
+  m_axi_gmem_RRESP,
+  m_axi_gmem_RLAST,
+  m_axi_gmem_RVALID,
+  m_axi_gmem_RREADY,
   x_Clk_A,
   x_Rst_A,
   x_EN_A,
@@ -107,7 +143,7 @@ module nn_relu_combined_0_0 (
 );
 
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_control AWADDR" *)
-input wire [4 : 0] s_axi_control_AWADDR;
+input wire [5 : 0] s_axi_control_AWADDR;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_control AWVALID" *)
 input wire s_axi_control_AWVALID;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_control AWREADY" *)
@@ -127,7 +163,7 @@ output wire s_axi_control_BVALID;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_control BREADY" *)
 input wire s_axi_control_BREADY;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_control ARADDR" *)
-input wire [4 : 0] s_axi_control_ARADDR;
+input wire [5 : 0] s_axi_control_ARADDR;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_control ARVALID" *)
 input wire s_axi_control_ARVALID;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_control ARREADY" *)
@@ -138,11 +174,11 @@ output wire [31 : 0] s_axi_control_RDATA;
 output wire [1 : 0] s_axi_control_RRESP;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_control RVALID" *)
 output wire s_axi_control_RVALID;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME s_axi_control, ADDR_WIDTH 5, DATA_WIDTH 32, PROTOCOL AXI4LITE, READ_WRITE_MODE READ_WRITE, FREQ_HZ 100000000, ID_WIDTH 0, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, MAX_BURST_LENGTH 1, PHASE 0.000, CLK_DOMAIN nn_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREA\
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME s_axi_control, ADDR_WIDTH 6, DATA_WIDTH 32, PROTOCOL AXI4LITE, READ_WRITE_MODE READ_WRITE, FREQ_HZ 100000000, ID_WIDTH 0, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, MAX_BURST_LENGTH 1, PHASE 0.000, CLK_DOMAIN nn_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREA\
 DS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_control RREADY" *)
 input wire s_axi_control_RREADY;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ap_clk, ASSOCIATED_BUSIF s_axi_control, ASSOCIATED_RESET ap_rst_n, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, CLK_DOMAIN nn_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ap_clk, ASSOCIATED_BUSIF s_axi_control:m_axi_gmem, ASSOCIATED_RESET ap_rst_n, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, CLK_DOMAIN nn_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 ap_clk CLK" *)
 input wire ap_clk;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ap_rst_n, POLARITY ACTIVE_LOW, INSERT_VIP 0" *)
@@ -151,6 +187,78 @@ input wire ap_rst_n;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME interrupt, SENSITIVITY LEVEL_HIGH, PortWidth 1" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:interrupt:1.0 interrupt INTERRUPT" *)
 output wire interrupt;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem AWADDR" *)
+output wire [31 : 0] m_axi_gmem_AWADDR;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem AWLEN" *)
+output wire [7 : 0] m_axi_gmem_AWLEN;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem AWSIZE" *)
+output wire [2 : 0] m_axi_gmem_AWSIZE;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem AWBURST" *)
+output wire [1 : 0] m_axi_gmem_AWBURST;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem AWLOCK" *)
+output wire [1 : 0] m_axi_gmem_AWLOCK;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem AWREGION" *)
+output wire [3 : 0] m_axi_gmem_AWREGION;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem AWCACHE" *)
+output wire [3 : 0] m_axi_gmem_AWCACHE;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem AWPROT" *)
+output wire [2 : 0] m_axi_gmem_AWPROT;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem AWQOS" *)
+output wire [3 : 0] m_axi_gmem_AWQOS;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem AWVALID" *)
+output wire m_axi_gmem_AWVALID;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem AWREADY" *)
+input wire m_axi_gmem_AWREADY;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem WDATA" *)
+output wire [31 : 0] m_axi_gmem_WDATA;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem WSTRB" *)
+output wire [3 : 0] m_axi_gmem_WSTRB;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem WLAST" *)
+output wire m_axi_gmem_WLAST;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem WVALID" *)
+output wire m_axi_gmem_WVALID;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem WREADY" *)
+input wire m_axi_gmem_WREADY;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem BRESP" *)
+input wire [1 : 0] m_axi_gmem_BRESP;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem BVALID" *)
+input wire m_axi_gmem_BVALID;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem BREADY" *)
+output wire m_axi_gmem_BREADY;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem ARADDR" *)
+output wire [31 : 0] m_axi_gmem_ARADDR;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem ARLEN" *)
+output wire [7 : 0] m_axi_gmem_ARLEN;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem ARSIZE" *)
+output wire [2 : 0] m_axi_gmem_ARSIZE;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem ARBURST" *)
+output wire [1 : 0] m_axi_gmem_ARBURST;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem ARLOCK" *)
+output wire [1 : 0] m_axi_gmem_ARLOCK;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem ARREGION" *)
+output wire [3 : 0] m_axi_gmem_ARREGION;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem ARCACHE" *)
+output wire [3 : 0] m_axi_gmem_ARCACHE;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem ARPROT" *)
+output wire [2 : 0] m_axi_gmem_ARPROT;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem ARQOS" *)
+output wire [3 : 0] m_axi_gmem_ARQOS;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem ARVALID" *)
+output wire m_axi_gmem_ARVALID;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem ARREADY" *)
+input wire m_axi_gmem_ARREADY;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem RDATA" *)
+input wire [31 : 0] m_axi_gmem_RDATA;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem RRESP" *)
+input wire [1 : 0] m_axi_gmem_RRESP;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem RLAST" *)
+input wire m_axi_gmem_RLAST;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem RVALID" *)
+input wire m_axi_gmem_RVALID;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME m_axi_gmem, ADDR_WIDTH 32, MAX_BURST_LENGTH 256, NUM_READ_OUTSTANDING 16, NUM_WRITE_OUTSTANDING 16, MAX_READ_BURST_LENGTH 16, MAX_WRITE_BURST_LENGTH 16, PROTOCOL AXI4, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, SUPPORTS_NARROW_BURST 0, DATA_WIDTH 32, FREQ_HZ 100000000, ID_WIDTH 0, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 1, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, PHASE 0.000, CLK_DOMAIN \
+nn_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *)
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_axi_gmem RREADY" *)
+output wire m_axi_gmem_RREADY;
 (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 x_PORTA CLK" *)
 output wire x_Clk_A;
 (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 x_PORTA RST" *)
@@ -178,7 +286,7 @@ output wire [1 : 0] dx_WEN_A;
 output wire [31 : 0] dx_Addr_A;
 (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 dx_PORTA DIN" *)
 output wire [15 : 0] dx_Din_A;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME dx_PORTA, MEM_WIDTH 16, MEM_SIZE 2, MASTER_TYPE BRAM_CTRL, MEM_ECC NONE, READ_LATENCY 1" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME dx_PORTA, MEM_WIDTH 16, MEM_SIZE 2, MASTER_TYPE OTHER, MEM_ECC NONE, READ_LATENCY 1" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 dx_PORTA DOUT" *)
 input wire [15 : 0] dx_Dout_A;
 (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 y_PORTA CLK" *)
@@ -216,8 +324,19 @@ input wire [15 : 0] dy_Dout_A;
 (* SDX_KERNEL_TYPE = "hls" *)
 (* SDX_KERNEL_SYNTH_INST = "inst" *)
   relu_combined #(
-    .C_S_AXI_CONTROL_ADDR_WIDTH(5),
-    .C_S_AXI_CONTROL_DATA_WIDTH(32)
+    .C_S_AXI_CONTROL_ADDR_WIDTH(6),
+    .C_S_AXI_CONTROL_DATA_WIDTH(32),
+    .C_M_AXI_GMEM_ID_WIDTH(1),
+    .C_M_AXI_GMEM_ADDR_WIDTH(32),
+    .C_M_AXI_GMEM_DATA_WIDTH(32),
+    .C_M_AXI_GMEM_AWUSER_WIDTH(1),
+    .C_M_AXI_GMEM_ARUSER_WIDTH(1),
+    .C_M_AXI_GMEM_WUSER_WIDTH(1),
+    .C_M_AXI_GMEM_RUSER_WIDTH(1),
+    .C_M_AXI_GMEM_BUSER_WIDTH(1),
+    .C_M_AXI_GMEM_USER_VALUE(32'H00000000),
+    .C_M_AXI_GMEM_PROT_VALUE(3'B000),
+    .C_M_AXI_GMEM_CACHE_VALUE(4'B0011)
   ) inst (
     .s_axi_control_AWADDR(s_axi_control_AWADDR),
     .s_axi_control_AWVALID(s_axi_control_AWVALID),
@@ -239,6 +358,51 @@ input wire [15 : 0] dy_Dout_A;
     .ap_clk(ap_clk),
     .ap_rst_n(ap_rst_n),
     .interrupt(interrupt),
+    .m_axi_gmem_AWID(),
+    .m_axi_gmem_AWADDR(m_axi_gmem_AWADDR),
+    .m_axi_gmem_AWLEN(m_axi_gmem_AWLEN),
+    .m_axi_gmem_AWSIZE(m_axi_gmem_AWSIZE),
+    .m_axi_gmem_AWBURST(m_axi_gmem_AWBURST),
+    .m_axi_gmem_AWLOCK(m_axi_gmem_AWLOCK),
+    .m_axi_gmem_AWREGION(m_axi_gmem_AWREGION),
+    .m_axi_gmem_AWCACHE(m_axi_gmem_AWCACHE),
+    .m_axi_gmem_AWPROT(m_axi_gmem_AWPROT),
+    .m_axi_gmem_AWQOS(m_axi_gmem_AWQOS),
+    .m_axi_gmem_AWUSER(),
+    .m_axi_gmem_AWVALID(m_axi_gmem_AWVALID),
+    .m_axi_gmem_AWREADY(m_axi_gmem_AWREADY),
+    .m_axi_gmem_WID(),
+    .m_axi_gmem_WDATA(m_axi_gmem_WDATA),
+    .m_axi_gmem_WSTRB(m_axi_gmem_WSTRB),
+    .m_axi_gmem_WLAST(m_axi_gmem_WLAST),
+    .m_axi_gmem_WUSER(),
+    .m_axi_gmem_WVALID(m_axi_gmem_WVALID),
+    .m_axi_gmem_WREADY(m_axi_gmem_WREADY),
+    .m_axi_gmem_BID(1'B0),
+    .m_axi_gmem_BRESP(m_axi_gmem_BRESP),
+    .m_axi_gmem_BUSER(1'B0),
+    .m_axi_gmem_BVALID(m_axi_gmem_BVALID),
+    .m_axi_gmem_BREADY(m_axi_gmem_BREADY),
+    .m_axi_gmem_ARID(),
+    .m_axi_gmem_ARADDR(m_axi_gmem_ARADDR),
+    .m_axi_gmem_ARLEN(m_axi_gmem_ARLEN),
+    .m_axi_gmem_ARSIZE(m_axi_gmem_ARSIZE),
+    .m_axi_gmem_ARBURST(m_axi_gmem_ARBURST),
+    .m_axi_gmem_ARLOCK(m_axi_gmem_ARLOCK),
+    .m_axi_gmem_ARREGION(m_axi_gmem_ARREGION),
+    .m_axi_gmem_ARCACHE(m_axi_gmem_ARCACHE),
+    .m_axi_gmem_ARPROT(m_axi_gmem_ARPROT),
+    .m_axi_gmem_ARQOS(m_axi_gmem_ARQOS),
+    .m_axi_gmem_ARUSER(),
+    .m_axi_gmem_ARVALID(m_axi_gmem_ARVALID),
+    .m_axi_gmem_ARREADY(m_axi_gmem_ARREADY),
+    .m_axi_gmem_RID(1'B0),
+    .m_axi_gmem_RDATA(m_axi_gmem_RDATA),
+    .m_axi_gmem_RRESP(m_axi_gmem_RRESP),
+    .m_axi_gmem_RLAST(m_axi_gmem_RLAST),
+    .m_axi_gmem_RUSER(1'B0),
+    .m_axi_gmem_RVALID(m_axi_gmem_RVALID),
+    .m_axi_gmem_RREADY(m_axi_gmem_RREADY),
     .x_Clk_A(x_Clk_A),
     .x_Rst_A(x_Rst_A),
     .x_EN_A(x_EN_A),

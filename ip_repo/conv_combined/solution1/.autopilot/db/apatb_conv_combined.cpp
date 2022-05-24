@@ -21,6 +21,9 @@ using namespace sc_dt;
 #define AUTOTB_TVIN_gmem "../tv/cdatafile/c.conv_combined.autotvin_gmem.dat"
 #define AUTOTB_TVOUT_gmem "../tv/cdatafile/c.conv_combined.autotvout_gmem.dat"
 // wrapc file define:
+#define AUTOTB_TVIN_gmem2 "../tv/cdatafile/c.conv_combined.autotvin_gmem2.dat"
+#define AUTOTB_TVOUT_gmem2 "../tv/cdatafile/c.conv_combined.autotvout_gmem2.dat"
+// wrapc file define:
 #define AUTOTB_TVIN_x "../tv/cdatafile/c.conv_combined.autotvin_x.dat"
 #define AUTOTB_TVOUT_x "../tv/cdatafile/c.conv_combined.autotvout_x.dat"
 // wrapc file define:
@@ -45,6 +48,12 @@ using namespace sc_dt;
 #define AUTOTB_TVIN_db "../tv/cdatafile/c.conv_combined.autotvin_db.dat"
 #define AUTOTB_TVOUT_db "../tv/cdatafile/c.conv_combined.autotvout_db.dat"
 // wrapc file define:
+#define AUTOTB_TVIN_debug_x "../tv/cdatafile/c.conv_combined.autotvin_debug_x.dat"
+#define AUTOTB_TVOUT_debug_x "../tv/cdatafile/c.conv_combined.autotvout_debug_x.dat"
+// wrapc file define:
+#define AUTOTB_TVIN_debug_dx "../tv/cdatafile/c.conv_combined.autotvin_debug_dx.dat"
+#define AUTOTB_TVOUT_debug_dx "../tv/cdatafile/c.conv_combined.autotvout_debug_dx.dat"
+// wrapc file define:
 #define AUTOTB_TVIN_F "../tv/cdatafile/c.conv_combined.autotvin_F.dat"
 #define AUTOTB_TVOUT_F "../tv/cdatafile/c.conv_combined.autotvout_F.dat"
 // wrapc file define:
@@ -65,11 +74,16 @@ using namespace sc_dt;
 // wrapc file define:
 #define AUTOTB_TVIN_fwprop "../tv/cdatafile/c.conv_combined.autotvin_fwprop.dat"
 #define AUTOTB_TVOUT_fwprop "../tv/cdatafile/c.conv_combined.autotvout_fwprop.dat"
+// wrapc file define:
+#define AUTOTB_TVIN_debugip "../tv/cdatafile/c.conv_combined.autotvin_debugip.dat"
+#define AUTOTB_TVOUT_debugip "../tv/cdatafile/c.conv_combined.autotvout_debugip.dat"
 
 #define INTER_TCL "../tv/cdatafile/ref.tcl"
 
 // tvout file define:
 #define AUTOTB_TVOUT_PC_gmem "../tv/rtldatafile/rtl.conv_combined.autotvout_gmem.dat"
+// tvout file define:
+#define AUTOTB_TVOUT_PC_gmem2 "../tv/rtldatafile/rtl.conv_combined.autotvout_gmem2.dat"
 // tvout file define:
 #define AUTOTB_TVOUT_PC_x "../tv/rtldatafile/rtl.conv_combined.autotvout_x.dat"
 // tvout file define:
@@ -87,6 +101,10 @@ using namespace sc_dt;
 // tvout file define:
 #define AUTOTB_TVOUT_PC_db "../tv/rtldatafile/rtl.conv_combined.autotvout_db.dat"
 // tvout file define:
+#define AUTOTB_TVOUT_PC_debug_x "../tv/rtldatafile/rtl.conv_combined.autotvout_debug_x.dat"
+// tvout file define:
+#define AUTOTB_TVOUT_PC_debug_dx "../tv/rtldatafile/rtl.conv_combined.autotvout_debug_dx.dat"
+// tvout file define:
 #define AUTOTB_TVOUT_PC_F "../tv/rtldatafile/rtl.conv_combined.autotvout_F.dat"
 // tvout file define:
 #define AUTOTB_TVOUT_PC_C "../tv/rtldatafile/rtl.conv_combined.autotvout_C.dat"
@@ -100,12 +118,15 @@ using namespace sc_dt;
 #define AUTOTB_TVOUT_PC_FW "../tv/rtldatafile/rtl.conv_combined.autotvout_FW.dat"
 // tvout file define:
 #define AUTOTB_TVOUT_PC_fwprop "../tv/rtldatafile/rtl.conv_combined.autotvout_fwprop.dat"
+// tvout file define:
+#define AUTOTB_TVOUT_PC_debugip "../tv/rtldatafile/rtl.conv_combined.autotvout_debugip.dat"
 
 class INTER_TCL_FILE {
   public:
 INTER_TCL_FILE(const char* name) {
   mName = name; 
   gmem_depth = 0;
+  gmem2_depth = 0;
   x_depth = 0;
   dx_depth = 0;
   wt_depth = 0;
@@ -114,6 +135,8 @@ INTER_TCL_FILE(const char* name) {
   dy_depth = 0;
   b_depth = 0;
   db_depth = 0;
+  debug_x_depth = 0;
+  debug_dx_depth = 0;
   F_depth = 0;
   C_depth = 0;
   H_depth = 0;
@@ -121,6 +144,7 @@ INTER_TCL_FILE(const char* name) {
   FH_depth = 0;
   FW_depth = 0;
   fwprop_depth = 0;
+  debugip_depth = 0;
   trans_num =0;
 }
 ~INTER_TCL_FILE() {
@@ -139,6 +163,7 @@ INTER_TCL_FILE(const char* name) {
 string get_depth_list () {
   stringstream total_list;
   total_list << "{gmem " << gmem_depth << "}\n";
+  total_list << "{gmem2 " << gmem2_depth << "}\n";
   total_list << "{x " << x_depth << "}\n";
   total_list << "{dx " << dx_depth << "}\n";
   total_list << "{wt " << wt_depth << "}\n";
@@ -147,6 +172,8 @@ string get_depth_list () {
   total_list << "{dy " << dy_depth << "}\n";
   total_list << "{b " << b_depth << "}\n";
   total_list << "{db " << db_depth << "}\n";
+  total_list << "{debug_x " << debug_x_depth << "}\n";
+  total_list << "{debug_dx " << debug_dx_depth << "}\n";
   total_list << "{F " << F_depth << "}\n";
   total_list << "{C " << C_depth << "}\n";
   total_list << "{H " << H_depth << "}\n";
@@ -154,6 +181,7 @@ string get_depth_list () {
   total_list << "{FH " << FH_depth << "}\n";
   total_list << "{FW " << FW_depth << "}\n";
   total_list << "{fwprop " << fwprop_depth << "}\n";
+  total_list << "{debugip " << debugip_depth << "}\n";
   return total_list.str();
 }
 void set_num (int num , int* class_num) {
@@ -164,6 +192,7 @@ void set_string(std::string list, std::string* class_list) {
 }
   public:
     int gmem_depth;
+    int gmem2_depth;
     int x_depth;
     int dx_depth;
     int wt_depth;
@@ -172,6 +201,8 @@ void set_string(std::string list, std::string* class_list) {
     int dy_depth;
     int b_depth;
     int db_depth;
+    int debug_x_depth;
+    int debug_dx_depth;
     int F_depth;
     int C_depth;
     int H_depth;
@@ -179,6 +210,7 @@ void set_string(std::string list, std::string* class_list) {
     int FH_depth;
     int FW_depth;
     int fwprop_depth;
+    int debugip_depth;
     int trans_num;
   private:
     ofstream mFile;
@@ -220,9 +252,9 @@ static void RTLOutputCheckAndReplacement(std::string &AESL_token, std::string Po
       no_x = true;
   }
 }
-extern "C" void conv_combined_hw_stub_wrapper(volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, int, int, int, int, int, int, char);
+extern "C" void conv_combined_hw_stub_wrapper(volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, int, int, int, int, int, int, char, char);
 
-extern "C" void apatb_conv_combined_hw(volatile void * __xlx_apatb_param_x, volatile void * __xlx_apatb_param_dx, volatile void * __xlx_apatb_param_wt, volatile void * __xlx_apatb_param_dwt, volatile void * __xlx_apatb_param_y, volatile void * __xlx_apatb_param_dy, volatile void * __xlx_apatb_param_b, volatile void * __xlx_apatb_param_db, int __xlx_apatb_param_F, int __xlx_apatb_param_C, int __xlx_apatb_param_H, int __xlx_apatb_param_W, int __xlx_apatb_param_FH, int __xlx_apatb_param_FW, char __xlx_apatb_param_fwprop) {
+extern "C" void apatb_conv_combined_hw(volatile void * __xlx_apatb_param_x, volatile void * __xlx_apatb_param_dx, volatile void * __xlx_apatb_param_wt, volatile void * __xlx_apatb_param_dwt, volatile void * __xlx_apatb_param_y, volatile void * __xlx_apatb_param_dy, volatile void * __xlx_apatb_param_b, volatile void * __xlx_apatb_param_db, volatile void * __xlx_apatb_param_debug_x, volatile void * __xlx_apatb_param_debug_dx, int __xlx_apatb_param_F, int __xlx_apatb_param_C, int __xlx_apatb_param_H, int __xlx_apatb_param_W, int __xlx_apatb_param_FH, int __xlx_apatb_param_FW, char __xlx_apatb_param_fwprop, char __xlx_apatb_param_debugip) {
   refine_signal_handler();
   fstream wrapc_switch_file_token;
   wrapc_switch_file_token.open(".hls_cosim_wrapc_switch.log");
@@ -283,6 +315,54 @@ extern "C" void apatb_conv_combined_hw(volatile void * __xlx_apatb_param_x, vola
           }
             for (int j = 0, e = 200; j < e; j += 1, ++i) {
             ((short*)__xlx_apatb_param_db)[j] = gmem_pc_buffer[i].to_int64();
+          }}}
+        } // end transaction
+      } // end file is good
+    } // end post check logic bolck
+  {
+      static ifstream rtl_tv_out_file;
+      if (!rtl_tv_out_file.is_open()) {
+        rtl_tv_out_file.open(AUTOTB_TVOUT_PC_gmem2);
+        if (rtl_tv_out_file.good()) {
+          rtl_tv_out_file >> AESL_token;
+          if (AESL_token != "[[[runtime]]]")
+            exit(1);
+        }
+      }
+  
+      if (rtl_tv_out_file.good()) {
+        rtl_tv_out_file >> AESL_token; 
+        rtl_tv_out_file >> AESL_num;  // transaction number
+        if (AESL_token != "[[transaction]]") {
+          cerr << "Unexpected token: " << AESL_token << endl;
+          exit(1);
+        }
+        if (atoi(AESL_num.c_str()) == AESL_transaction_pc) {
+          std::vector<sc_bv<16> > gmem2_pc_buffer(400);
+          int i = 0;
+
+          rtl_tv_out_file >> AESL_token; //data
+          while (AESL_token != "[[/transaction]]"){
+
+            RTLOutputCheckAndReplacement(AESL_token, "gmem2");
+  
+            // push token into output port buffer
+            if (AESL_token != "") {
+              gmem2_pc_buffer[i] = AESL_token.c_str();;
+              i++;
+            }
+  
+            rtl_tv_out_file >> AESL_token; //data or [[/transaction]]
+            if (AESL_token == "[[[/runtime]]]" || rtl_tv_out_file.eof())
+              exit(1);
+          }
+          if (i > 0) {{
+            int i = 0;
+            for (int j = 0, e = 200; j < e; j += 1, ++i) {
+            ((short*)__xlx_apatb_param_debug_x)[j] = gmem2_pc_buffer[i].to_int64();
+          }
+            for (int j = 0, e = 200; j < e; j += 1, ++i) {
+            ((short*)__xlx_apatb_param_debug_dx)[j] = gmem2_pc_buffer[i].to_int64();
           }}}
         } // end transaction
       } // end file is good
@@ -389,6 +469,9 @@ CodeState = ENTER_WRAPC;
 //gmem
 aesl_fh.touch(AUTOTB_TVIN_gmem);
 aesl_fh.touch(AUTOTB_TVOUT_gmem);
+//gmem2
+aesl_fh.touch(AUTOTB_TVIN_gmem2);
+aesl_fh.touch(AUTOTB_TVOUT_gmem2);
 //x
 aesl_fh.touch(AUTOTB_TVIN_x);
 aesl_fh.touch(AUTOTB_TVOUT_x);
@@ -413,6 +496,12 @@ aesl_fh.touch(AUTOTB_TVOUT_b);
 //db
 aesl_fh.touch(AUTOTB_TVIN_db);
 aesl_fh.touch(AUTOTB_TVOUT_db);
+//debug_x
+aesl_fh.touch(AUTOTB_TVIN_debug_x);
+aesl_fh.touch(AUTOTB_TVOUT_debug_x);
+//debug_dx
+aesl_fh.touch(AUTOTB_TVIN_debug_dx);
+aesl_fh.touch(AUTOTB_TVOUT_debug_dx);
 //F
 aesl_fh.touch(AUTOTB_TVIN_F);
 aesl_fh.touch(AUTOTB_TVOUT_F);
@@ -434,6 +523,9 @@ aesl_fh.touch(AUTOTB_TVOUT_FW);
 //fwprop
 aesl_fh.touch(AUTOTB_TVIN_fwprop);
 aesl_fh.touch(AUTOTB_TVOUT_fwprop);
+//debugip
+aesl_fh.touch(AUTOTB_TVIN_debugip);
+aesl_fh.touch(AUTOTB_TVOUT_debugip);
 CodeState = DUMP_INPUTS;
 unsigned __xlx_offset_byte_param_wt = 0;
 unsigned __xlx_offset_byte_param_dwt = 0;
@@ -483,6 +575,35 @@ sc_bv<16> __xlx_tmp_lv = ((short*)__xlx_apatb_param_db)[j];
   tcl_file.set_num(800, &tcl_file.gmem_depth);
   sprintf(__xlx_sprintf_buffer.data(), "[[/transaction]] \n");
   aesl_fh.write(AUTOTB_TVIN_gmem, __xlx_sprintf_buffer.data());
+}
+unsigned __xlx_offset_byte_param_debug_x = 0;
+unsigned __xlx_offset_byte_param_debug_dx = 0;
+// print gmem2 Transactions
+{
+  sprintf(__xlx_sprintf_buffer.data(), "[[transaction]] %d\n", AESL_transaction);
+  aesl_fh.write(AUTOTB_TVIN_gmem2, __xlx_sprintf_buffer.data());
+  {  __xlx_offset_byte_param_debug_x = 0*2;
+  if (__xlx_apatb_param_debug_x) {
+    for (int j = 0  - 0, e = 200 - 0; j != e; ++j) {
+sc_bv<16> __xlx_tmp_lv = ((short*)__xlx_apatb_param_debug_x)[j];
+
+    sprintf(__xlx_sprintf_buffer.data(), "%s\n", __xlx_tmp_lv.to_string(SC_HEX).c_str());
+    aesl_fh.write(AUTOTB_TVIN_gmem2, __xlx_sprintf_buffer.data()); 
+      }
+  }
+  __xlx_offset_byte_param_debug_dx = 200*2;
+  if (__xlx_apatb_param_debug_dx) {
+    for (int j = 0  - 0, e = 200 - 0; j != e; ++j) {
+sc_bv<16> __xlx_tmp_lv = ((short*)__xlx_apatb_param_debug_dx)[j];
+
+    sprintf(__xlx_sprintf_buffer.data(), "%s\n", __xlx_tmp_lv.to_string(SC_HEX).c_str());
+    aesl_fh.write(AUTOTB_TVIN_gmem2, __xlx_sprintf_buffer.data()); 
+      }
+  }
+}
+  tcl_file.set_num(400, &tcl_file.gmem2_depth);
+  sprintf(__xlx_sprintf_buffer.data(), "[[/transaction]] \n");
+  aesl_fh.write(AUTOTB_TVIN_gmem2, __xlx_sprintf_buffer.data());
 }
 unsigned __xlx_offset_byte_param_x = 0;
 // print x Transactions
@@ -616,6 +737,34 @@ sc_bv<16> __xlx_tmp_lv = ((short*)__xlx_apatb_param_dy)[j];
   sprintf(__xlx_sprintf_buffer.data(), "[[/transaction]] \n");
   aesl_fh.write(AUTOTB_TVIN_db, __xlx_sprintf_buffer.data());
 }
+// print debug_x Transactions
+{
+  sprintf(__xlx_sprintf_buffer.data(), "[[transaction]] %d\n", AESL_transaction);
+  aesl_fh.write(AUTOTB_TVIN_debug_x, __xlx_sprintf_buffer.data());
+  {
+    sc_bv<32> __xlx_tmp_lv = __xlx_offset_byte_param_debug_x;
+
+    sprintf(__xlx_sprintf_buffer.data(), "%s\n", __xlx_tmp_lv.to_string(SC_HEX).c_str());
+    aesl_fh.write(AUTOTB_TVIN_debug_x, __xlx_sprintf_buffer.data()); 
+  }
+  tcl_file.set_num(1, &tcl_file.debug_x_depth);
+  sprintf(__xlx_sprintf_buffer.data(), "[[/transaction]] \n");
+  aesl_fh.write(AUTOTB_TVIN_debug_x, __xlx_sprintf_buffer.data());
+}
+// print debug_dx Transactions
+{
+  sprintf(__xlx_sprintf_buffer.data(), "[[transaction]] %d\n", AESL_transaction);
+  aesl_fh.write(AUTOTB_TVIN_debug_dx, __xlx_sprintf_buffer.data());
+  {
+    sc_bv<32> __xlx_tmp_lv = __xlx_offset_byte_param_debug_dx;
+
+    sprintf(__xlx_sprintf_buffer.data(), "%s\n", __xlx_tmp_lv.to_string(SC_HEX).c_str());
+    aesl_fh.write(AUTOTB_TVIN_debug_dx, __xlx_sprintf_buffer.data()); 
+  }
+  tcl_file.set_num(1, &tcl_file.debug_dx_depth);
+  sprintf(__xlx_sprintf_buffer.data(), "[[/transaction]] \n");
+  aesl_fh.write(AUTOTB_TVIN_debug_dx, __xlx_sprintf_buffer.data());
+}
 // print F Transactions
 {
   sprintf(__xlx_sprintf_buffer.data(), "[[transaction]] %d\n", AESL_transaction);
@@ -714,8 +863,22 @@ sc_bv<16> __xlx_tmp_lv = ((short*)__xlx_apatb_param_dy)[j];
   sprintf(__xlx_sprintf_buffer.data(), "[[/transaction]] \n");
   aesl_fh.write(AUTOTB_TVIN_fwprop, __xlx_sprintf_buffer.data());
 }
+// print debugip Transactions
+{
+  sprintf(__xlx_sprintf_buffer.data(), "[[transaction]] %d\n", AESL_transaction);
+  aesl_fh.write(AUTOTB_TVIN_debugip, __xlx_sprintf_buffer.data());
+  {
+    sc_bv<1> __xlx_tmp_lv = *((char*)&__xlx_apatb_param_debugip);
+
+    sprintf(__xlx_sprintf_buffer.data(), "%s\n", __xlx_tmp_lv.to_string(SC_HEX).c_str());
+    aesl_fh.write(AUTOTB_TVIN_debugip, __xlx_sprintf_buffer.data()); 
+  }
+  tcl_file.set_num(1, &tcl_file.debugip_depth);
+  sprintf(__xlx_sprintf_buffer.data(), "[[/transaction]] \n");
+  aesl_fh.write(AUTOTB_TVIN_debugip, __xlx_sprintf_buffer.data());
+}
 CodeState = CALL_C_DUT;
-conv_combined_hw_stub_wrapper(__xlx_apatb_param_x, __xlx_apatb_param_dx, __xlx_apatb_param_wt, __xlx_apatb_param_dwt, __xlx_apatb_param_y, __xlx_apatb_param_dy, __xlx_apatb_param_b, __xlx_apatb_param_db, __xlx_apatb_param_F, __xlx_apatb_param_C, __xlx_apatb_param_H, __xlx_apatb_param_W, __xlx_apatb_param_FH, __xlx_apatb_param_FW, __xlx_apatb_param_fwprop);
+conv_combined_hw_stub_wrapper(__xlx_apatb_param_x, __xlx_apatb_param_dx, __xlx_apatb_param_wt, __xlx_apatb_param_dwt, __xlx_apatb_param_y, __xlx_apatb_param_dy, __xlx_apatb_param_b, __xlx_apatb_param_db, __xlx_apatb_param_debug_x, __xlx_apatb_param_debug_dx, __xlx_apatb_param_F, __xlx_apatb_param_C, __xlx_apatb_param_H, __xlx_apatb_param_W, __xlx_apatb_param_FH, __xlx_apatb_param_FW, __xlx_apatb_param_fwprop, __xlx_apatb_param_debugip);
 CodeState = DUMP_OUTPUTS;
 // print gmem Transactions
 {
@@ -761,6 +924,33 @@ sc_bv<16> __xlx_tmp_lv = ((short*)__xlx_apatb_param_db)[j];
   tcl_file.set_num(800, &tcl_file.gmem_depth);
   sprintf(__xlx_sprintf_buffer.data(), "[[/transaction]] \n");
   aesl_fh.write(AUTOTB_TVOUT_gmem, __xlx_sprintf_buffer.data());
+}
+// print gmem2 Transactions
+{
+  sprintf(__xlx_sprintf_buffer.data(), "[[transaction]] %d\n", AESL_transaction);
+  aesl_fh.write(AUTOTB_TVOUT_gmem2, __xlx_sprintf_buffer.data());
+  {  __xlx_offset_byte_param_debug_x = 0*2;
+  if (__xlx_apatb_param_debug_x) {
+    for (int j = 0  - 0, e = 200 - 0; j != e; ++j) {
+sc_bv<16> __xlx_tmp_lv = ((short*)__xlx_apatb_param_debug_x)[j];
+
+    sprintf(__xlx_sprintf_buffer.data(), "%s\n", __xlx_tmp_lv.to_string(SC_HEX).c_str());
+    aesl_fh.write(AUTOTB_TVOUT_gmem2, __xlx_sprintf_buffer.data()); 
+      }
+  }
+  __xlx_offset_byte_param_debug_dx = 200*2;
+  if (__xlx_apatb_param_debug_dx) {
+    for (int j = 0  - 0, e = 200 - 0; j != e; ++j) {
+sc_bv<16> __xlx_tmp_lv = ((short*)__xlx_apatb_param_debug_dx)[j];
+
+    sprintf(__xlx_sprintf_buffer.data(), "%s\n", __xlx_tmp_lv.to_string(SC_HEX).c_str());
+    aesl_fh.write(AUTOTB_TVOUT_gmem2, __xlx_sprintf_buffer.data()); 
+      }
+  }
+}
+  tcl_file.set_num(400, &tcl_file.gmem2_depth);
+  sprintf(__xlx_sprintf_buffer.data(), "[[/transaction]] \n");
+  aesl_fh.write(AUTOTB_TVOUT_gmem2, __xlx_sprintf_buffer.data());
 }
 // print dx Transactions
 {

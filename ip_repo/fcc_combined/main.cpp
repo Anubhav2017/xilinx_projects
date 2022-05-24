@@ -7,7 +7,7 @@
 typedef ap_fixed<16,3> fixed_t;
 
 
-void fcc_combined(fixed_t x[MAX_SIZE], fixed_t dx[MAX_SIZE], fixed_t* wt, fixed_t* dwt, fixed_t* b, fixed_t* db, fixed_t y[MAX_SIZE], fixed_t dy[MAX_SIZE], int xdim, int ydim, bool fwprop){
+void fcc_combined(fixed_t x[MAX_SIZE], fixed_t dx[MAX_SIZE], fixed_t* wt, fixed_t* dwt, fixed_t* b, fixed_t* db, fixed_t y[MAX_SIZE], fixed_t dy[MAX_SIZE], fixed_t* debug_x, fixed_t* debug_dx, bool debugip, int xdim, int ydim, bool fwprop){
 
 #pragma HLS INTERFACE bram storage_type=ram_1p latency=2 port=x
 #pragma HLS INTERFACE bram storage_type=ram_1p latency=2 port=dx
@@ -17,16 +17,19 @@ void fcc_combined(fixed_t x[MAX_SIZE], fixed_t dx[MAX_SIZE], fixed_t* wt, fixed_
 #pragma HLS INTERFACE bram storage_type=ram_1p latency=2 port=dy
 #pragma HLS INTERFACE m_axi port=b offset=slave bundle=gmem
 #pragma HLS INTERFACE m_axi port=db offset=slave bundle=gmem
+#pragma HLS INTERFACE m_axi port=debug_x offset=slave bundle=gmem2
+#pragma HLS INTERFACE m_axi port=debug_dx offset=slave bundle=gmem2
 
-#pragma HLS INTERFACE s_axilite port=wt bundle=CRTL_BUS
-#pragma HLS INTERFACE s_axilite port=dwt bundle=CRTL_BUS
-#pragma HLS INTERFACE s_axilite port=b bundle=CRTL_BUS
-#pragma HLS INTERFACE s_axilite port=db bundle=CRTL_BUS
+#pragma HLS INTERFACE s_axilite port=wt
+#pragma HLS INTERFACE s_axilite port=dwt
+#pragma HLS INTERFACE s_axilite port=b
+#pragma HLS INTERFACE s_axilite port=db
 
-#pragma HLS INTERFACE s_axilite port=xdim bundle=CRTL_BUS
-#pragma HLS INTERFACE s_axilite port=ydim bundle=CRTL_BUS
-#pragma HLS INTERFACE s_axilite port=fwprop bundle=CRTL_BUS
-#pragma HLS INTERFACE s_axilite port=return bundle=CRTL_BUS
+#pragma HLS INTERFACE s_axilite port=xdim
+#pragma HLS INTERFACE s_axilite port=ydim
+#pragma HLS INTERFACE s_axilite port=fwprop
+#pragma HLS INTERFACE s_axilite port=debugip
+#pragma HLS INTERFACE s_axilite port=return
 
 
 	fixed_t wbuf[BUFFER_SIZE][MAX_SIZE];
@@ -107,10 +110,15 @@ void fcc_combined(fixed_t x[MAX_SIZE], fixed_t dx[MAX_SIZE], fixed_t* wt, fixed_
 
 	}
 
+	if(debugip == true){
 
+		for(int i=0;i<xdim*ydim;i++){
+			debug_x[i]=x[i];
+			debug_dx[i]=dx[i];
 
+		}
 
-
+	}
 
 	return;
 }

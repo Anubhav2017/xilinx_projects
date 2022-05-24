@@ -38,12 +38,12 @@ typedef uint64_t u64;
 #else
 typedef struct {
     u16 DeviceId;
-    u32 Crtl_bus_BaseAddress;
+    u32 Control_BaseAddress;
 } XFcc_combined_Config;
 #endif
 
 typedef struct {
-    u64 Crtl_bus_BaseAddress;
+    u64 Control_BaseAddress;
     u32 IsReady;
 } XFcc_combined;
 
@@ -95,6 +95,12 @@ void XFcc_combined_Set_b(XFcc_combined *InstancePtr, u32 Data);
 u32 XFcc_combined_Get_b(XFcc_combined *InstancePtr);
 void XFcc_combined_Set_db(XFcc_combined *InstancePtr, u32 Data);
 u32 XFcc_combined_Get_db(XFcc_combined *InstancePtr);
+void XFcc_combined_Set_debug_x(XFcc_combined *InstancePtr, u32 Data);
+u32 XFcc_combined_Get_debug_x(XFcc_combined *InstancePtr);
+void XFcc_combined_Set_debug_dx(XFcc_combined *InstancePtr, u32 Data);
+u32 XFcc_combined_Get_debug_dx(XFcc_combined *InstancePtr);
+void XFcc_combined_Set_debugip(XFcc_combined *InstancePtr, u32 Data);
+u32 XFcc_combined_Get_debugip(XFcc_combined *InstancePtr);
 void XFcc_combined_Set_xdim(XFcc_combined *InstancePtr, u32 Data);
 u32 XFcc_combined_Get_xdim(XFcc_combined *InstancePtr);
 void XFcc_combined_Set_ydim(XFcc_combined *InstancePtr, u32 Data);

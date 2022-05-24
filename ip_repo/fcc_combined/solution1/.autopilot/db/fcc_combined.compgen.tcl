@@ -256,6 +256,91 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_multicycle_mul, che
 
 
 set id 4
+set name fcc_combined_mul_32s_32s_32_2_1
+set corename simcore_mul
+set op mul
+set stage_num 2
+set max_latency -1
+set registered_input 1
+set clk_width 1
+set clk_signed 0
+set reset_width 1
+set reset_signed 0
+set in0_width 32
+set in0_signed 1
+set in1_width 32
+set in1_signed 1
+set ce_width 1
+set ce_signed 0
+set out_width 32
+if {${::AESL::PGuard_simmodel_gen}} {
+if {[info proc ap_gen_simcore_mul] == "ap_gen_simcore_mul"} {
+eval "ap_gen_simcore_mul { \
+    id ${id} \
+    name ${name} \
+    corename ${corename} \
+    op ${op} \
+    reset_level 1 \
+    sync_rst true \
+    stage_num ${stage_num} \
+    max_latency ${max_latency} \
+    registered_input ${registered_input} \
+    clk_width ${clk_width} \
+    clk_signed ${clk_signed} \
+    reset_width ${reset_width} \
+    reset_signed ${reset_signed} \
+    in0_width ${in0_width} \
+    in0_signed ${in0_signed} \
+    in1_width ${in1_width} \
+    in1_signed ${in1_signed} \
+    ce_width ${ce_width} \
+    ce_signed ${ce_signed} \
+    out_width ${out_width} \
+}"
+} else {
+puts "@W \[IMPL-100\] Cannot find ap_gen_simcore_mul, check your AutoPilot builtin lib"
+}
+}
+
+
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler ${name}
+}
+
+
+set op mul
+set corename Multiplier
+if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
+if {[info proc ::AESL_LIB_VIRTEX::xil_gen_multicycle_mul] == "::AESL_LIB_VIRTEX::xil_gen_multicycle_mul"} {
+eval "::AESL_LIB_VIRTEX::xil_gen_multicycle_mul { \
+    id ${id} \
+    name ${name} \
+    corename ${corename} \
+    op ${op} \
+    reset_level 1 \
+    sync_rst true \
+    stage_num ${stage_num} \
+    max_latency ${max_latency} \
+    registered_input ${registered_input} \
+    clk_width ${clk_width} \
+    clk_signed ${clk_signed} \
+    reset_width ${reset_width} \
+    reset_signed ${reset_signed} \
+    in0_width ${in0_width} \
+    in0_signed ${in0_signed} \
+    in1_width ${in1_width} \
+    in1_signed ${in1_signed} \
+    ce_width ${ce_width} \
+    ce_signed ${ce_signed} \
+    out_width ${out_width} \
+}"
+} else {
+puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_multicycle_mul, check your platform lib"
+}
+}
+
+
+set id 5
 set name fcc_combined_mul_32ns_7ns_38_2_1
 set corename simcore_mul
 set op mul
@@ -340,7 +425,7 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_multicycle_mul, che
 }
 
 
-set id 6
+set id 7
 set name fcc_combined_mul_31ns_32ns_63_2_1
 set corename simcore_mul
 set op mul
@@ -425,7 +510,7 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_multicycle_mul, che
 }
 
 
-set id 9
+set id 10
 set name fcc_combined_mul_mul_6ns_11ns_16_4_1
 set corename simcore_mul
 set op mul
@@ -519,7 +604,7 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_dsp48, check your p
 }
 
 
-set id 10
+set id 11
 set name fcc_combined_mac_muladd_10ns_11ns_16ns_16_4_1
 set corename simcore_mac
 set op mac
@@ -619,7 +704,7 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_dsp48, check your p
 }
 
 
-set id 11
+set id 12
 set name fcc_combined_mac_muladd_16s_16s_29ns_29_4_1
 set corename simcore_mac
 set op mac
@@ -719,7 +804,7 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_dsp48, check your p
 }
 
 
-set id 12
+set id 13
 set name fcc_combined_mul_mul_16s_16s_29_4_1
 set corename simcore_mul
 set op mul
@@ -814,7 +899,7 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_dsp48, check your p
 
 
 # Memory (RAM/ROM)  definition:
-set ID 26
+set ID 28
 set hasByteEnable 0
 set MemName fcc_combined_wbuf_V
 set CoreName ap_simcore_mem
@@ -899,7 +984,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 27
+set ID 29
 set hasByteEnable 0
 set MemName fcc_combined_bbuf_V
 set CoreName ap_simcore_mem
@@ -984,7 +1069,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 28
+set ID 30
 set hasByteEnable 0
 set MemName fcc_combined_dbbuf_V
 set CoreName ap_simcore_mem
@@ -1076,7 +1161,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 }
 
 set axilite_register_dict [dict create]
-set port_CRTL_BUS {
+set port_control {
 wt { 
 	dir I
 	width 32
@@ -1109,7 +1194,7 @@ db {
 	offset 40
 	offset_end 47
 }
-xdim { 
+debug_x { 
 	dir I
 	width 32
 	depth 1
@@ -1117,7 +1202,7 @@ xdim {
 	offset 48
 	offset_end 55
 }
-ydim { 
+debug_dx { 
 	dir I
 	width 32
 	depth 1
@@ -1125,7 +1210,7 @@ ydim {
 	offset 56
 	offset_end 63
 }
-fwprop { 
+debugip { 
 	dir I
 	width 1
 	depth 1
@@ -1133,40 +1218,64 @@ fwprop {
 	offset 64
 	offset_end 71
 }
+xdim { 
+	dir I
+	width 32
+	depth 1
+	mode ap_none
+	offset 72
+	offset_end 79
+}
+ydim { 
+	dir I
+	width 32
+	depth 1
+	mode ap_none
+	offset 80
+	offset_end 87
+}
+fwprop { 
+	dir I
+	width 1
+	depth 1
+	mode ap_none
+	offset 88
+	offset_end 95
+}
 ap_start { }
 ap_done { }
 ap_ready { }
 ap_idle { }
 }
-dict set axilite_register_dict CRTL_BUS $port_CRTL_BUS
+dict set axilite_register_dict control $port_control
 
 
 # Native S_AXILite:
 if {${::AESL::PGuard_simmodel_gen}} {
 	if {[info proc ::AESL_LIB_XILADAPTER::s_axilite_gen] == "::AESL_LIB_XILADAPTER::s_axilite_gen"} {
 		eval "::AESL_LIB_XILADAPTER::s_axilite_gen { \
-			id 29 \
-			corename fcc_combined_CRTL_BUS_axilite \
-			name fcc_combined_CRTL_BUS_s_axi \
-			ports {$port_CRTL_BUS} \
+			id 31 \
+			corename fcc_combined_control_axilite \
+			name fcc_combined_control_s_axi \
+			ports {$port_control} \
 			op interface \
 			is_flushable 0 \ 
 			is_datawidth64 0 \ 
 		} "
 	} else {
-		puts "@W \[IMPL-110\] Cannot find AXI Lite interface model in the library. Ignored generation of AXI Lite  interface for 'CRTL_BUS'"
+		puts "@W \[IMPL-110\] Cannot find AXI Lite interface model in the library. Ignored generation of AXI Lite  interface for 'control'"
 	}
 }
 
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler fcc_combined_CRTL_BUS_s_axi
+	::AP::rtl_comp_handler fcc_combined_control_s_axi
 }
 
 # Native M_AXI:
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::m_axi_gen] == "::AESL_LIB_XILADAPTER::m_axi_gen"} {
 eval "::AESL_LIB_XILADAPTER::m_axi_gen { \
-    id 30 \
+    id 32 \
     corename {m_axi} \
     op interface \
     max_latency -1 \ 
@@ -1181,6 +1290,27 @@ puts "@W \[IMPL-110\] Cannot find AXI interface model in the library. Ignored ge
 
 if {${::AESL::PGuard_rtl_comp_handler}} {
 	::AP::rtl_comp_handler fcc_combined_gmem_m_axi
+}
+
+# Native M_AXI:
+if {${::AESL::PGuard_simmodel_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::m_axi_gen] == "::AESL_LIB_XILADAPTER::m_axi_gen"} {
+eval "::AESL_LIB_XILADAPTER::m_axi_gen { \
+    id 33 \
+    corename {m_axi} \
+    op interface \
+    max_latency -1 \ 
+    delay_budget 7.3 \ 
+    is_flushable 0 \ 
+    name {fcc_combined_gmem2_m_axi} \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find AXI interface model in the library. Ignored generation of AXI interface for 'gmem2'"
+}
+}
+
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler fcc_combined_gmem2_m_axi
 }
 
 

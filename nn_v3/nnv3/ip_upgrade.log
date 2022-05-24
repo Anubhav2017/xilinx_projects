@@ -1,6 +1,902 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Wed May 25 04:16:51 2022
+| Host         : anubhav-acer running 64-bit Ubuntu 20.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'nn_conv_combined_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of nn_conv_combined_0_1 (xilinx.com:hls:conv_combined:1.0) from (Rev. 2112519827) to (Rev. 2112519976)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Wed May 25 02:56:20 2022
+| Host         : anubhav-acer running 64-bit Ubuntu 20.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'nn_relu_combined_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of nn_relu_combined_0_0 (xilinx.com:hls:relu_combined:1.0) from (Rev. 2112519885) to (Rev. 2112519895)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'nn_relu_combined_0_0'.
+
+
+-Upgrade has removed interface 'debug_dx'
+
+-Upgrade has removed interface 'debug_x'
+
+-Upgrade has added interface 'm_axi_gmem' (xilinx.com:interface:aximm:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'nn_relu_combined_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'debug_dx'
+
+-Upgrade has removed port 'debug_dx_ap_vld'
+
+-Upgrade has removed port 'debug_x'
+
+-Upgrade has removed port 'debug_x_ap_vld'
+
+-Upgrade has added port 'm_axi_gmem_ARADDR'
+
+-Upgrade has added port 'm_axi_gmem_ARBURST'
+
+-Upgrade has added port 'm_axi_gmem_ARCACHE'
+
+-Upgrade has added port 'm_axi_gmem_ARLEN'
+
+-Upgrade has added port 'm_axi_gmem_ARLOCK'
+
+-Upgrade has added port 'm_axi_gmem_ARPROT'
+
+-Upgrade has added port 'm_axi_gmem_ARQOS'
+
+-Upgrade has added port 'm_axi_gmem_ARREADY'
+
+-Upgrade has added port 'm_axi_gmem_ARREGION'
+
+-Upgrade has added port 'm_axi_gmem_ARSIZE'
+
+-Upgrade has added port 'm_axi_gmem_ARVALID'
+
+-Upgrade has added port 'm_axi_gmem_AWADDR'
+
+-Upgrade has added port 'm_axi_gmem_AWBURST'
+
+-Upgrade has added port 'm_axi_gmem_AWCACHE'
+
+-Upgrade has added port 'm_axi_gmem_AWLEN'
+
+-Upgrade has added port 'm_axi_gmem_AWLOCK'
+
+-Upgrade has added port 'm_axi_gmem_AWPROT'
+
+-Upgrade has added port 'm_axi_gmem_AWQOS'
+
+-Upgrade has added port 'm_axi_gmem_AWREADY'
+
+-Upgrade has added port 'm_axi_gmem_AWREGION'
+
+-Upgrade has added port 'm_axi_gmem_AWSIZE'
+
+-Upgrade has added port 'm_axi_gmem_AWVALID'
+
+-Upgrade has added port 'm_axi_gmem_BREADY'
+
+-Upgrade has added port 'm_axi_gmem_BRESP'
+
+-Upgrade has added port 'm_axi_gmem_BVALID'
+
+-Upgrade has added port 'm_axi_gmem_RDATA'
+
+-Upgrade has added port 'm_axi_gmem_RLAST'
+
+-Upgrade has added port 'm_axi_gmem_RREADY'
+
+-Upgrade has added port 'm_axi_gmem_RRESP'
+
+-Upgrade has added port 'm_axi_gmem_RVALID'
+
+-Upgrade has added port 'm_axi_gmem_WDATA'
+
+-Upgrade has added port 'm_axi_gmem_WLAST'
+
+-Upgrade has added port 'm_axi_gmem_WREADY'
+
+-Upgrade has added port 'm_axi_gmem_WSTRB'
+
+-Upgrade has added port 'm_axi_gmem_WVALID'
+
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Wed May 25 02:53:52 2022
+| Host         : anubhav-acer running 64-bit Ubuntu 20.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'nn_relu_combined_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of nn_relu_combined_0_0 (xilinx.com:hls:relu_combined:1.0) from (Rev. 2112519810) to (Rev. 2112519885)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Wed May 25 01:49:32 2022
+| Host         : anubhav-acer running 64-bit Ubuntu 20.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'nn_fcc_combined_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of nn_fcc_combined_0_1 (xilinx.com:hls:fcc_combined:1.0) from (Rev. 2112519813) to (Rev. 2112519828)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'nn_fcc_combined_0_1'.
+
+
+-Upgrade has added interface 'm_axi_gmem2' (xilinx.com:interface:aximm:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'nn_fcc_combined_0_1'. These changes may impact your design.
+
+
+-Upgrade has added port 'm_axi_gmem2_ARADDR'
+
+-Upgrade has added port 'm_axi_gmem2_ARBURST'
+
+-Upgrade has added port 'm_axi_gmem2_ARCACHE'
+
+-Upgrade has added port 'm_axi_gmem2_ARLEN'
+
+-Upgrade has added port 'm_axi_gmem2_ARLOCK'
+
+-Upgrade has added port 'm_axi_gmem2_ARPROT'
+
+-Upgrade has added port 'm_axi_gmem2_ARQOS'
+
+-Upgrade has added port 'm_axi_gmem2_ARREADY'
+
+-Upgrade has added port 'm_axi_gmem2_ARREGION'
+
+-Upgrade has added port 'm_axi_gmem2_ARSIZE'
+
+-Upgrade has added port 'm_axi_gmem2_ARVALID'
+
+-Upgrade has added port 'm_axi_gmem2_AWADDR'
+
+-Upgrade has added port 'm_axi_gmem2_AWBURST'
+
+-Upgrade has added port 'm_axi_gmem2_AWCACHE'
+
+-Upgrade has added port 'm_axi_gmem2_AWLEN'
+
+-Upgrade has added port 'm_axi_gmem2_AWLOCK'
+
+-Upgrade has added port 'm_axi_gmem2_AWPROT'
+
+-Upgrade has added port 'm_axi_gmem2_AWQOS'
+
+-Upgrade has added port 'm_axi_gmem2_AWREADY'
+
+-Upgrade has added port 'm_axi_gmem2_AWREGION'
+
+-Upgrade has added port 'm_axi_gmem2_AWSIZE'
+
+-Upgrade has added port 'm_axi_gmem2_AWVALID'
+
+-Upgrade has added port 'm_axi_gmem2_BREADY'
+
+-Upgrade has added port 'm_axi_gmem2_BRESP'
+
+-Upgrade has added port 'm_axi_gmem2_BVALID'
+
+-Upgrade has added port 'm_axi_gmem2_RDATA'
+
+-Upgrade has added port 'm_axi_gmem2_RLAST'
+
+-Upgrade has added port 'm_axi_gmem2_RREADY'
+
+-Upgrade has added port 'm_axi_gmem2_RRESP'
+
+-Upgrade has added port 'm_axi_gmem2_RVALID'
+
+-Upgrade has added port 'm_axi_gmem2_WDATA'
+
+-Upgrade has added port 'm_axi_gmem2_WLAST'
+
+-Upgrade has added port 'm_axi_gmem2_WREADY'
+
+-Upgrade has added port 'm_axi_gmem2_WSTRB'
+
+-Upgrade has added port 'm_axi_gmem2_WVALID'
+
+
+4. Addressing Information
+-------------------------
+
+Detected addressing differences while upgrading 'nn_fcc_combined_0_1'. These changes may impact your design.
+
+
+-Upgrade has added address space 'Data_m_axi_gmem2'
+
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Wed May 25 01:49:32 2022
+| Host         : anubhav-acer running 64-bit Ubuntu 20.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'nn_conv_combined_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of nn_conv_combined_0_1 (xilinx.com:hls:conv_combined:1.0) from (Rev. 2112519809) to (Rev. 2112519827)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'nn_conv_combined_0_1'.
+
+
+-Upgrade has added interface 'm_axi_gmem2' (xilinx.com:interface:aximm:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'nn_conv_combined_0_1'. These changes may impact your design.
+
+
+-Upgrade has added port 'm_axi_gmem2_ARADDR'
+
+-Upgrade has added port 'm_axi_gmem2_ARBURST'
+
+-Upgrade has added port 'm_axi_gmem2_ARCACHE'
+
+-Upgrade has added port 'm_axi_gmem2_ARLEN'
+
+-Upgrade has added port 'm_axi_gmem2_ARLOCK'
+
+-Upgrade has added port 'm_axi_gmem2_ARPROT'
+
+-Upgrade has added port 'm_axi_gmem2_ARQOS'
+
+-Upgrade has added port 'm_axi_gmem2_ARREADY'
+
+-Upgrade has added port 'm_axi_gmem2_ARREGION'
+
+-Upgrade has added port 'm_axi_gmem2_ARSIZE'
+
+-Upgrade has added port 'm_axi_gmem2_ARVALID'
+
+-Upgrade has added port 'm_axi_gmem2_AWADDR'
+
+-Upgrade has added port 'm_axi_gmem2_AWBURST'
+
+-Upgrade has added port 'm_axi_gmem2_AWCACHE'
+
+-Upgrade has added port 'm_axi_gmem2_AWLEN'
+
+-Upgrade has added port 'm_axi_gmem2_AWLOCK'
+
+-Upgrade has added port 'm_axi_gmem2_AWPROT'
+
+-Upgrade has added port 'm_axi_gmem2_AWQOS'
+
+-Upgrade has added port 'm_axi_gmem2_AWREADY'
+
+-Upgrade has added port 'm_axi_gmem2_AWREGION'
+
+-Upgrade has added port 'm_axi_gmem2_AWSIZE'
+
+-Upgrade has added port 'm_axi_gmem2_AWVALID'
+
+-Upgrade has added port 'm_axi_gmem2_BREADY'
+
+-Upgrade has added port 'm_axi_gmem2_BRESP'
+
+-Upgrade has added port 'm_axi_gmem2_BVALID'
+
+-Upgrade has added port 'm_axi_gmem2_RDATA'
+
+-Upgrade has added port 'm_axi_gmem2_RLAST'
+
+-Upgrade has added port 'm_axi_gmem2_RREADY'
+
+-Upgrade has added port 'm_axi_gmem2_RRESP'
+
+-Upgrade has added port 'm_axi_gmem2_RVALID'
+
+-Upgrade has added port 'm_axi_gmem2_WDATA'
+
+-Upgrade has added port 'm_axi_gmem2_WLAST'
+
+-Upgrade has added port 'm_axi_gmem2_WREADY'
+
+-Upgrade has added port 'm_axi_gmem2_WSTRB'
+
+-Upgrade has added port 'm_axi_gmem2_WVALID'
+
+
+4. Addressing Information
+-------------------------
+
+Detected addressing differences while upgrading 'nn_conv_combined_0_1'. These changes may impact your design.
+
+
+-Upgrade has added address space 'Data_m_axi_gmem2'
+
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Wed May 25 01:34:23 2022
+| Host         : anubhav-acer running 64-bit Ubuntu 20.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'nn_relu_combined_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of nn_relu_combined_0_0 (xilinx.com:hls:relu_combined:1.0) from (Rev. 2112519773) to (Rev. 2112519810)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'nn_relu_combined_0_0'.
+
+
+-Upgrade has removed interface 'debug'
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'nn_relu_combined_0_0'. These changes may impact your design.
+
+
+-Upgraded port 's_axi_control_ARADDR' width 6 differs from original width 5
+
+-Upgraded port 's_axi_control_AWADDR' width 6 differs from original width 5
+
+-Upgrade has removed port 'debug'
+
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Wed May 25 01:34:23 2022
+| Host         : anubhav-acer running 64-bit Ubuntu 20.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'nn_fcc_combined_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of nn_fcc_combined_0_1 (xilinx.com:hls:fcc_combined:1.0) from (Rev. 2112519789) to (Rev. 2112519813)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Wed May 25 01:34:23 2022
+| Host         : anubhav-acer running 64-bit Ubuntu 20.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'nn_conv_combined_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of nn_conv_combined_0_1 (xilinx.com:hls:conv_combined:1.0) from (Rev. 2112519791) to (Rev. 2112519809)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Wed May 25 01:14:57 2022
+| Host         : anubhav-acer running 64-bit Ubuntu 20.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'nn_fcc_combined_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of nn_fcc_combined_0_1 (xilinx.com:hls:fcc_combined:1.0) from (Rev. 2112519770) to (Rev. 2112519789)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'nn_fcc_combined_0_1'.
+
+
+-Upgrade has removed interface 's_axi_CRTL_BUS'
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'nn_fcc_combined_0_1'. These changes may impact your design.
+
+
+-Upgraded port 's_axi_control_ARADDR' width 7 differs from original width 5
+
+-Upgraded port 's_axi_control_AWADDR' width 7 differs from original width 5
+
+-Upgrade has removed port 's_axi_CRTL_BUS_ARADDR'
+
+-Upgrade has removed port 's_axi_CRTL_BUS_ARREADY'
+
+-Upgrade has removed port 's_axi_CRTL_BUS_ARVALID'
+
+-Upgrade has removed port 's_axi_CRTL_BUS_AWADDR'
+
+-Upgrade has removed port 's_axi_CRTL_BUS_AWREADY'
+
+-Upgrade has removed port 's_axi_CRTL_BUS_AWVALID'
+
+-Upgrade has removed port 's_axi_CRTL_BUS_BREADY'
+
+-Upgrade has removed port 's_axi_CRTL_BUS_BRESP'
+
+-Upgrade has removed port 's_axi_CRTL_BUS_BVALID'
+
+-Upgrade has removed port 's_axi_CRTL_BUS_RDATA'
+
+-Upgrade has removed port 's_axi_CRTL_BUS_RREADY'
+
+-Upgrade has removed port 's_axi_CRTL_BUS_RRESP'
+
+-Upgrade has removed port 's_axi_CRTL_BUS_RVALID'
+
+-Upgrade has removed port 's_axi_CRTL_BUS_WDATA'
+
+-Upgrade has removed port 's_axi_CRTL_BUS_WREADY'
+
+-Upgrade has removed port 's_axi_CRTL_BUS_WSTRB'
+
+-Upgrade has removed port 's_axi_CRTL_BUS_WVALID'
+
+
+4. Addressing Information
+-------------------------
+
+Detected addressing differences while upgrading 'nn_fcc_combined_0_1'. These changes may impact your design.
+
+
+-Upgrade has removed address block 's_axi_CRTL_BUS/Reg'
+
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Wed May 25 01:14:57 2022
+| Host         : anubhav-acer running 64-bit Ubuntu 20.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'nn_conv_combined_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of nn_conv_combined_0_1 (xilinx.com:hls:conv_combined:1.0) from (Rev. 2112519760) to (Rev. 2112519791)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'nn_conv_combined_0_1'.
+
+
+-Upgrade has removed interface 's_axi_CRTL_BUS'
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'nn_conv_combined_0_1'. These changes may impact your design.
+
+
+-Upgraded port 's_axi_control_ARADDR' width 7 differs from original width 5
+
+-Upgraded port 's_axi_control_AWADDR' width 7 differs from original width 5
+
+-Upgrade has removed port 's_axi_CRTL_BUS_ARADDR'
+
+-Upgrade has removed port 's_axi_CRTL_BUS_ARREADY'
+
+-Upgrade has removed port 's_axi_CRTL_BUS_ARVALID'
+
+-Upgrade has removed port 's_axi_CRTL_BUS_AWADDR'
+
+-Upgrade has removed port 's_axi_CRTL_BUS_AWREADY'
+
+-Upgrade has removed port 's_axi_CRTL_BUS_AWVALID'
+
+-Upgrade has removed port 's_axi_CRTL_BUS_BREADY'
+
+-Upgrade has removed port 's_axi_CRTL_BUS_BRESP'
+
+-Upgrade has removed port 's_axi_CRTL_BUS_BVALID'
+
+-Upgrade has removed port 's_axi_CRTL_BUS_RDATA'
+
+-Upgrade has removed port 's_axi_CRTL_BUS_RREADY'
+
+-Upgrade has removed port 's_axi_CRTL_BUS_RRESP'
+
+-Upgrade has removed port 's_axi_CRTL_BUS_RVALID'
+
+-Upgrade has removed port 's_axi_CRTL_BUS_WDATA'
+
+-Upgrade has removed port 's_axi_CRTL_BUS_WREADY'
+
+-Upgrade has removed port 's_axi_CRTL_BUS_WSTRB'
+
+-Upgrade has removed port 's_axi_CRTL_BUS_WVALID'
+
+
+4. Addressing Information
+-------------------------
+
+Detected addressing differences while upgrading 'nn_conv_combined_0_1'. These changes may impact your design.
+
+
+-Upgrade has removed address block 's_axi_CRTL_BUS/Reg'
+
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Wed May 25 00:53:35 2022
+| Host         : anubhav-acer running 64-bit Ubuntu 20.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'nn_relu_combined_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of nn_relu_combined_0_0 (xilinx.com:hls:relu_combined:1.0) from (Rev. 2112512042) to (Rev. 2112519773)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'nn_relu_combined_0_0'.
+
+
+-Upgrade has added interface 'debug' (xilinx.com:signal:data:1.0)
+
+-Upgrade has added interface 'debug_dx' (xilinx.com:signal:data:1.0)
+
+-Upgrade has added interface 'debug_x' (xilinx.com:signal:data:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'nn_relu_combined_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'debug'
+
+-Upgrade has added port 'debug_dx'
+
+-Upgrade has added port 'debug_dx_ap_vld'
+
+-Upgrade has added port 'debug_x'
+
+-Upgrade has added port 'debug_x_ap_vld'
+
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Wed May 25 00:53:35 2022
+| Host         : anubhav-acer running 64-bit Ubuntu 20.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'nn_fcc_combined_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of nn_fcc_combined_0_1 (xilinx.com:hls:fcc_combined:1.0) from (Rev. 2112512045) to (Rev. 2112519770)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'nn_fcc_combined_0_1'.
+
+
+-Upgrade has added interface 's_axi_control' (xilinx.com:interface:aximm:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'nn_fcc_combined_0_1'. These changes may impact your design.
+
+
+-Upgrade has added port 's_axi_control_ARADDR'
+
+-Upgrade has added port 's_axi_control_ARREADY'
+
+-Upgrade has added port 's_axi_control_ARVALID'
+
+-Upgrade has added port 's_axi_control_AWADDR'
+
+-Upgrade has added port 's_axi_control_AWREADY'
+
+-Upgrade has added port 's_axi_control_AWVALID'
+
+-Upgrade has added port 's_axi_control_BREADY'
+
+-Upgrade has added port 's_axi_control_BRESP'
+
+-Upgrade has added port 's_axi_control_BVALID'
+
+-Upgrade has added port 's_axi_control_RDATA'
+
+-Upgrade has added port 's_axi_control_RREADY'
+
+-Upgrade has added port 's_axi_control_RRESP'
+
+-Upgrade has added port 's_axi_control_RVALID'
+
+-Upgrade has added port 's_axi_control_WDATA'
+
+-Upgrade has added port 's_axi_control_WREADY'
+
+-Upgrade has added port 's_axi_control_WSTRB'
+
+-Upgrade has added port 's_axi_control_WVALID'
+
+
+4. Addressing Information
+-------------------------
+
+Detected addressing differences while upgrading 'nn_fcc_combined_0_1'. These changes may impact your design.
+
+
+-Upgrade has added address block 's_axi_control/Reg'
+
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Wed May 25 00:53:35 2022
+| Host         : anubhav-acer running 64-bit Ubuntu 20.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'nn_conv_combined_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of nn_conv_combined_0_1 (xilinx.com:hls:conv_combined:1.0) from (Rev. 2112512041) to (Rev. 2112519760)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'nn_conv_combined_0_1'.
+
+
+-Upgrade has added interface 's_axi_control' (xilinx.com:interface:aximm:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'nn_conv_combined_0_1'. These changes may impact your design.
+
+
+-Upgrade has added port 's_axi_control_ARADDR'
+
+-Upgrade has added port 's_axi_control_ARREADY'
+
+-Upgrade has added port 's_axi_control_ARVALID'
+
+-Upgrade has added port 's_axi_control_AWADDR'
+
+-Upgrade has added port 's_axi_control_AWREADY'
+
+-Upgrade has added port 's_axi_control_AWVALID'
+
+-Upgrade has added port 's_axi_control_BREADY'
+
+-Upgrade has added port 's_axi_control_BRESP'
+
+-Upgrade has added port 's_axi_control_BVALID'
+
+-Upgrade has added port 's_axi_control_RDATA'
+
+-Upgrade has added port 's_axi_control_RREADY'
+
+-Upgrade has added port 's_axi_control_RRESP'
+
+-Upgrade has added port 's_axi_control_RVALID'
+
+-Upgrade has added port 's_axi_control_WDATA'
+
+-Upgrade has added port 's_axi_control_WREADY'
+
+-Upgrade has added port 's_axi_control_WSTRB'
+
+-Upgrade has added port 's_axi_control_WVALID'
+
+
+4. Addressing Information
+-------------------------
+
+Detected addressing differences while upgrading 'nn_conv_combined_0_1'. These changes may impact your design.
+
+
+-Upgrade has added address block 's_axi_control/Reg'
+
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Tue May 24 23:23:15 2022
+| Host         : anubhav-acer running 64-bit Ubuntu 20.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'nn_loss_derivative_0_3'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of nn_loss_derivative_0_3 (xilinx.com:hls:loss_derivative:1.0) from (Rev. 2112516957) to (Rev. 2112519678)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
 | Date         : Mon May 23 01:53:15 2022
 | Host         : anubhav-acer running 64-bit Ubuntu 20.04.4 LTS
 | Command      : upgrade_ip

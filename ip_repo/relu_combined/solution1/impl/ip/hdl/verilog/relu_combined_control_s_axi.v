@@ -5,7 +5,7 @@
 `timescale 1ns/1ps
 module relu_combined_control_s_axi
 #(parameter
-    C_S_AXI_ADDR_WIDTH = 5,
+    C_S_AXI_ADDR_WIDTH = 6,
     C_S_AXI_DATA_WIDTH = 32
 )(
     input  wire                          ACLK,
@@ -29,8 +29,11 @@ module relu_combined_control_s_axi
     output wire                          RVALID,
     input  wire                          RREADY,
     output wire                          interrupt,
+    output wire [31:0]                   debug_x,
+    output wire [31:0]                   debug_dx,
     output wire [31:0]                   dim,
     output wire [0:0]                    fwprop,
+    output wire [0:0]                    debugip,
     output wire                          ap_start,
     input  wire                          ap_done,
     input  wire                          ap_ready,
@@ -55,33 +58,49 @@ module relu_combined_control_s_axi
 //        bit 0  - ap_done (COR/TOW)
 //        bit 1  - ap_ready (COR/TOW)
 //        others - reserved
-// 0x10 : Data signal of dim
-//        bit 31~0 - dim[31:0] (Read/Write)
+// 0x10 : Data signal of debug_x
+//        bit 31~0 - debug_x[31:0] (Read/Write)
 // 0x14 : reserved
-// 0x18 : Data signal of fwprop
+// 0x18 : Data signal of debug_dx
+//        bit 31~0 - debug_dx[31:0] (Read/Write)
+// 0x1c : reserved
+// 0x20 : Data signal of dim
+//        bit 31~0 - dim[31:0] (Read/Write)
+// 0x24 : reserved
+// 0x28 : Data signal of fwprop
 //        bit 0  - fwprop[0] (Read/Write)
 //        others - reserved
-// 0x1c : reserved
+// 0x2c : reserved
+// 0x30 : Data signal of debugip
+//        bit 0  - debugip[0] (Read/Write)
+//        others - reserved
+// 0x34 : reserved
 // (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
 //------------------------Parameter----------------------
 localparam
-    ADDR_AP_CTRL       = 5'h00,
-    ADDR_GIE           = 5'h04,
-    ADDR_IER           = 5'h08,
-    ADDR_ISR           = 5'h0c,
-    ADDR_DIM_DATA_0    = 5'h10,
-    ADDR_DIM_CTRL      = 5'h14,
-    ADDR_FWPROP_DATA_0 = 5'h18,
-    ADDR_FWPROP_CTRL   = 5'h1c,
-    WRIDLE             = 2'd0,
-    WRDATA             = 2'd1,
-    WRRESP             = 2'd2,
-    WRRESET            = 2'd3,
-    RDIDLE             = 2'd0,
-    RDDATA             = 2'd1,
-    RDRESET            = 2'd2,
-    ADDR_BITS                = 5;
+    ADDR_AP_CTRL         = 6'h00,
+    ADDR_GIE             = 6'h04,
+    ADDR_IER             = 6'h08,
+    ADDR_ISR             = 6'h0c,
+    ADDR_DEBUG_X_DATA_0  = 6'h10,
+    ADDR_DEBUG_X_CTRL    = 6'h14,
+    ADDR_DEBUG_DX_DATA_0 = 6'h18,
+    ADDR_DEBUG_DX_CTRL   = 6'h1c,
+    ADDR_DIM_DATA_0      = 6'h20,
+    ADDR_DIM_CTRL        = 6'h24,
+    ADDR_FWPROP_DATA_0   = 6'h28,
+    ADDR_FWPROP_CTRL     = 6'h2c,
+    ADDR_DEBUGIP_DATA_0  = 6'h30,
+    ADDR_DEBUGIP_CTRL    = 6'h34,
+    WRIDLE               = 2'd0,
+    WRDATA               = 2'd1,
+    WRRESP               = 2'd2,
+    WRRESET              = 2'd3,
+    RDIDLE               = 2'd0,
+    RDDATA               = 2'd1,
+    RDRESET              = 2'd2,
+    ADDR_BITS                = 6;
 
 //------------------------Local signal-------------------
     reg  [1:0]                    wstate = WRRESET;
@@ -104,8 +123,11 @@ localparam
     reg                           int_gie = 1'b0;
     reg  [1:0]                    int_ier = 2'b0;
     reg  [1:0]                    int_isr = 2'b0;
+    reg  [31:0]                   int_debug_x = 'b0;
+    reg  [31:0]                   int_debug_dx = 'b0;
     reg  [31:0]                   int_dim = 'b0;
     reg  [0:0]                    int_fwprop = 'b0;
+    reg  [0:0]                    int_debugip = 'b0;
 
 //------------------------Instantiation------------------
 
@@ -214,11 +236,20 @@ always @(posedge ACLK) begin
                 ADDR_ISR: begin
                     rdata <= int_isr;
                 end
+                ADDR_DEBUG_X_DATA_0: begin
+                    rdata <= int_debug_x[31:0];
+                end
+                ADDR_DEBUG_DX_DATA_0: begin
+                    rdata <= int_debug_dx[31:0];
+                end
                 ADDR_DIM_DATA_0: begin
                     rdata <= int_dim[31:0];
                 end
                 ADDR_FWPROP_DATA_0: begin
                     rdata <= int_fwprop[0:0];
+                end
+                ADDR_DEBUGIP_DATA_0: begin
+                    rdata <= int_debugip[0:0];
                 end
             endcase
         end
@@ -229,8 +260,11 @@ end
 //------------------------Register logic-----------------
 assign interrupt = int_gie & (|int_isr);
 assign ap_start  = int_ap_start;
+assign debug_x   = int_debug_x;
+assign debug_dx  = int_debug_dx;
 assign dim       = int_dim;
 assign fwprop    = int_fwprop;
+assign debugip   = int_debugip;
 // int_ap_start
 always @(posedge ACLK) begin
     if (ARESET)
@@ -327,6 +361,26 @@ always @(posedge ACLK) begin
     end
 end
 
+// int_debug_x[31:0]
+always @(posedge ACLK) begin
+    if (ARESET)
+        int_debug_x[31:0] <= 0;
+    else if (ACLK_EN) begin
+        if (w_hs && waddr == ADDR_DEBUG_X_DATA_0)
+            int_debug_x[31:0] <= (WDATA[31:0] & wmask) | (int_debug_x[31:0] & ~wmask);
+    end
+end
+
+// int_debug_dx[31:0]
+always @(posedge ACLK) begin
+    if (ARESET)
+        int_debug_dx[31:0] <= 0;
+    else if (ACLK_EN) begin
+        if (w_hs && waddr == ADDR_DEBUG_DX_DATA_0)
+            int_debug_dx[31:0] <= (WDATA[31:0] & wmask) | (int_debug_dx[31:0] & ~wmask);
+    end
+end
+
 // int_dim[31:0]
 always @(posedge ACLK) begin
     if (ARESET)
@@ -344,6 +398,16 @@ always @(posedge ACLK) begin
     else if (ACLK_EN) begin
         if (w_hs && waddr == ADDR_FWPROP_DATA_0)
             int_fwprop[0:0] <= (WDATA[31:0] & wmask) | (int_fwprop[0:0] & ~wmask);
+    end
+end
+
+// int_debugip[0:0]
+always @(posedge ACLK) begin
+    if (ARESET)
+        int_debugip[0:0] <= 0;
+    else if (ACLK_EN) begin
+        if (w_hs && waddr == ADDR_DEBUGIP_DATA_0)
+            int_debugip[0:0] <= (WDATA[31:0] & wmask) | (int_debugip[0:0] & ~wmask);
     end
 end
 

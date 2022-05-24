@@ -8,7 +8,7 @@ target triple = "fpga64-xilinx-none"
 %struct.ssdm_int = type { i16 }
 
 ; Function Attrs: noinline
-define void @apatb_fcc_combined_ir(%struct.ap_fixed* %x, %struct.ap_fixed* %dx, %struct.ap_fixed* %wt, %struct.ap_fixed* %dwt, %struct.ap_fixed* %b, %struct.ap_fixed* %db, %struct.ap_fixed* %y, %struct.ap_fixed* %dy, i32 %xdim, i32 %ydim, i1 %fwprop) local_unnamed_addr #0 {
+define void @apatb_fcc_combined_ir(%struct.ap_fixed* %x, %struct.ap_fixed* %dx, %struct.ap_fixed* %wt, %struct.ap_fixed* %dwt, %struct.ap_fixed* %b, %struct.ap_fixed* %db, %struct.ap_fixed* %y, %struct.ap_fixed* %dy, %struct.ap_fixed* %debug_x, %struct.ap_fixed* %debug_dx, i1 %debugip, i32 %xdim, i32 %ydim, i1 %fwprop) local_unnamed_addr #0 {
 entry:
   %x_copy = alloca [1000 x %struct.ap_fixed], align 512
   %dx_copy = alloca [1000 x %struct.ap_fixed], align 512
@@ -18,22 +18,24 @@ entry:
   %db_copy4 = alloca %struct.ap_fixed, align 512
   %y_copy = alloca [1000 x %struct.ap_fixed], align 512
   %dy_copy = alloca [1000 x %struct.ap_fixed], align 512
+  %debug_x_copy5 = alloca %struct.ap_fixed, align 512
+  %debug_dx_copy6 = alloca %struct.ap_fixed, align 512
   %0 = bitcast %struct.ap_fixed* %x to [1000 x %struct.ap_fixed]*
   %1 = bitcast %struct.ap_fixed* %dx to [1000 x %struct.ap_fixed]*
   %2 = bitcast %struct.ap_fixed* %y to [1000 x %struct.ap_fixed]*
   %3 = bitcast %struct.ap_fixed* %dy to [1000 x %struct.ap_fixed]*
-  call fastcc void @copy_in([1000 x %struct.ap_fixed]* %0, [1000 x %struct.ap_fixed]* nonnull align 512 %x_copy, [1000 x %struct.ap_fixed]* %1, [1000 x %struct.ap_fixed]* nonnull align 512 %dx_copy, %struct.ap_fixed* %wt, %struct.ap_fixed* nonnull align 512 %wt_copy1, %struct.ap_fixed* %dwt, %struct.ap_fixed* nonnull align 512 %dwt_copy2, %struct.ap_fixed* %b, %struct.ap_fixed* nonnull align 512 %b_copy3, %struct.ap_fixed* %db, %struct.ap_fixed* nonnull align 512 %db_copy4, [1000 x %struct.ap_fixed]* %2, [1000 x %struct.ap_fixed]* nonnull align 512 %y_copy, [1000 x %struct.ap_fixed]* %3, [1000 x %struct.ap_fixed]* nonnull align 512 %dy_copy)
+  call fastcc void @copy_in([1000 x %struct.ap_fixed]* %0, [1000 x %struct.ap_fixed]* nonnull align 512 %x_copy, [1000 x %struct.ap_fixed]* %1, [1000 x %struct.ap_fixed]* nonnull align 512 %dx_copy, %struct.ap_fixed* %wt, %struct.ap_fixed* nonnull align 512 %wt_copy1, %struct.ap_fixed* %dwt, %struct.ap_fixed* nonnull align 512 %dwt_copy2, %struct.ap_fixed* %b, %struct.ap_fixed* nonnull align 512 %b_copy3, %struct.ap_fixed* %db, %struct.ap_fixed* nonnull align 512 %db_copy4, [1000 x %struct.ap_fixed]* %2, [1000 x %struct.ap_fixed]* nonnull align 512 %y_copy, [1000 x %struct.ap_fixed]* %3, [1000 x %struct.ap_fixed]* nonnull align 512 %dy_copy, %struct.ap_fixed* %debug_x, %struct.ap_fixed* nonnull align 512 %debug_x_copy5, %struct.ap_fixed* %debug_dx, %struct.ap_fixed* nonnull align 512 %debug_dx_copy6)
   %4 = getelementptr inbounds [1000 x %struct.ap_fixed], [1000 x %struct.ap_fixed]* %x_copy, i32 0, i32 0
   %5 = getelementptr inbounds [1000 x %struct.ap_fixed], [1000 x %struct.ap_fixed]* %dx_copy, i32 0, i32 0
   %6 = getelementptr inbounds [1000 x %struct.ap_fixed], [1000 x %struct.ap_fixed]* %y_copy, i32 0, i32 0
   %7 = getelementptr inbounds [1000 x %struct.ap_fixed], [1000 x %struct.ap_fixed]* %dy_copy, i32 0, i32 0
-  call void @apatb_fcc_combined_hw(%struct.ap_fixed* %4, %struct.ap_fixed* %5, %struct.ap_fixed* %wt_copy1, %struct.ap_fixed* %dwt_copy2, %struct.ap_fixed* %b_copy3, %struct.ap_fixed* %db_copy4, %struct.ap_fixed* %6, %struct.ap_fixed* %7, i32 %xdim, i32 %ydim, i1 %fwprop)
-  call fastcc void @copy_out([1000 x %struct.ap_fixed]* %0, [1000 x %struct.ap_fixed]* nonnull align 512 %x_copy, [1000 x %struct.ap_fixed]* %1, [1000 x %struct.ap_fixed]* nonnull align 512 %dx_copy, %struct.ap_fixed* %wt, %struct.ap_fixed* nonnull align 512 %wt_copy1, %struct.ap_fixed* %dwt, %struct.ap_fixed* nonnull align 512 %dwt_copy2, %struct.ap_fixed* %b, %struct.ap_fixed* nonnull align 512 %b_copy3, %struct.ap_fixed* %db, %struct.ap_fixed* nonnull align 512 %db_copy4, [1000 x %struct.ap_fixed]* %2, [1000 x %struct.ap_fixed]* nonnull align 512 %y_copy, [1000 x %struct.ap_fixed]* %3, [1000 x %struct.ap_fixed]* nonnull align 512 %dy_copy)
+  call void @apatb_fcc_combined_hw(%struct.ap_fixed* %4, %struct.ap_fixed* %5, %struct.ap_fixed* %wt_copy1, %struct.ap_fixed* %dwt_copy2, %struct.ap_fixed* %b_copy3, %struct.ap_fixed* %db_copy4, %struct.ap_fixed* %6, %struct.ap_fixed* %7, %struct.ap_fixed* %debug_x_copy5, %struct.ap_fixed* %debug_dx_copy6, i1 %debugip, i32 %xdim, i32 %ydim, i1 %fwprop)
+  call fastcc void @copy_out([1000 x %struct.ap_fixed]* %0, [1000 x %struct.ap_fixed]* nonnull align 512 %x_copy, [1000 x %struct.ap_fixed]* %1, [1000 x %struct.ap_fixed]* nonnull align 512 %dx_copy, %struct.ap_fixed* %wt, %struct.ap_fixed* nonnull align 512 %wt_copy1, %struct.ap_fixed* %dwt, %struct.ap_fixed* nonnull align 512 %dwt_copy2, %struct.ap_fixed* %b, %struct.ap_fixed* nonnull align 512 %b_copy3, %struct.ap_fixed* %db, %struct.ap_fixed* nonnull align 512 %db_copy4, [1000 x %struct.ap_fixed]* %2, [1000 x %struct.ap_fixed]* nonnull align 512 %y_copy, [1000 x %struct.ap_fixed]* %3, [1000 x %struct.ap_fixed]* nonnull align 512 %dy_copy, %struct.ap_fixed* %debug_x, %struct.ap_fixed* nonnull align 512 %debug_x_copy5, %struct.ap_fixed* %debug_dx, %struct.ap_fixed* nonnull align 512 %debug_dx_copy6)
   ret void
 }
 
 ; Function Attrs: noinline
-define internal fastcc void @copy_in([1000 x %struct.ap_fixed]*, [1000 x %struct.ap_fixed]* noalias align 512, [1000 x %struct.ap_fixed]*, [1000 x %struct.ap_fixed]* noalias align 512, %struct.ap_fixed*, %struct.ap_fixed* noalias align 512, %struct.ap_fixed*, %struct.ap_fixed* noalias align 512, %struct.ap_fixed*, %struct.ap_fixed* noalias align 512, %struct.ap_fixed*, %struct.ap_fixed* noalias align 512, [1000 x %struct.ap_fixed]*, [1000 x %struct.ap_fixed]* noalias align 512, [1000 x %struct.ap_fixed]*, [1000 x %struct.ap_fixed]* noalias align 512) unnamed_addr #1 {
+define internal fastcc void @copy_in([1000 x %struct.ap_fixed]*, [1000 x %struct.ap_fixed]* noalias align 512, [1000 x %struct.ap_fixed]*, [1000 x %struct.ap_fixed]* noalias align 512, %struct.ap_fixed*, %struct.ap_fixed* noalias align 512, %struct.ap_fixed*, %struct.ap_fixed* noalias align 512, %struct.ap_fixed*, %struct.ap_fixed* noalias align 512, %struct.ap_fixed*, %struct.ap_fixed* noalias align 512, [1000 x %struct.ap_fixed]*, [1000 x %struct.ap_fixed]* noalias align 512, [1000 x %struct.ap_fixed]*, [1000 x %struct.ap_fixed]* noalias align 512, %struct.ap_fixed*, %struct.ap_fixed* noalias align 512, %struct.ap_fixed*, %struct.ap_fixed* noalias align 512) unnamed_addr #1 {
 entry:
   call fastcc void @onebyonecpy_hls.p0a1000struct.ap_fixed([1000 x %struct.ap_fixed]* align 512 %1, [1000 x %struct.ap_fixed]* %0)
   call fastcc void @onebyonecpy_hls.p0a1000struct.ap_fixed([1000 x %struct.ap_fixed]* align 512 %3, [1000 x %struct.ap_fixed]* %2)
@@ -43,6 +45,8 @@ entry:
   call fastcc void @onebyonecpy_hls.p0struct.ap_fixed(%struct.ap_fixed* align 512 %11, %struct.ap_fixed* %10)
   call fastcc void @onebyonecpy_hls.p0a1000struct.ap_fixed([1000 x %struct.ap_fixed]* align 512 %13, [1000 x %struct.ap_fixed]* %12)
   call fastcc void @onebyonecpy_hls.p0a1000struct.ap_fixed([1000 x %struct.ap_fixed]* align 512 %15, [1000 x %struct.ap_fixed]* %14)
+  call fastcc void @onebyonecpy_hls.p0struct.ap_fixed(%struct.ap_fixed* align 512 %17, %struct.ap_fixed* %16)
+  call fastcc void @onebyonecpy_hls.p0struct.ap_fixed(%struct.ap_fixed* align 512 %19, %struct.ap_fixed* %18)
   ret void
 }
 
@@ -244,7 +248,7 @@ ret:                                              ; preds = %14, %13, %10, %7, %
 }
 
 ; Function Attrs: noinline
-define internal fastcc void @copy_out([1000 x %struct.ap_fixed]*, [1000 x %struct.ap_fixed]* noalias align 512, [1000 x %struct.ap_fixed]*, [1000 x %struct.ap_fixed]* noalias align 512, %struct.ap_fixed*, %struct.ap_fixed* noalias align 512, %struct.ap_fixed*, %struct.ap_fixed* noalias align 512, %struct.ap_fixed*, %struct.ap_fixed* noalias align 512, %struct.ap_fixed*, %struct.ap_fixed* noalias align 512, [1000 x %struct.ap_fixed]*, [1000 x %struct.ap_fixed]* noalias align 512, [1000 x %struct.ap_fixed]*, [1000 x %struct.ap_fixed]* noalias align 512) unnamed_addr #5 {
+define internal fastcc void @copy_out([1000 x %struct.ap_fixed]*, [1000 x %struct.ap_fixed]* noalias align 512, [1000 x %struct.ap_fixed]*, [1000 x %struct.ap_fixed]* noalias align 512, %struct.ap_fixed*, %struct.ap_fixed* noalias align 512, %struct.ap_fixed*, %struct.ap_fixed* noalias align 512, %struct.ap_fixed*, %struct.ap_fixed* noalias align 512, %struct.ap_fixed*, %struct.ap_fixed* noalias align 512, [1000 x %struct.ap_fixed]*, [1000 x %struct.ap_fixed]* noalias align 512, [1000 x %struct.ap_fixed]*, [1000 x %struct.ap_fixed]* noalias align 512, %struct.ap_fixed*, %struct.ap_fixed* noalias align 512, %struct.ap_fixed*, %struct.ap_fixed* noalias align 512) unnamed_addr #5 {
 entry:
   call fastcc void @onebyonecpy_hls.p0a1000struct.ap_fixed([1000 x %struct.ap_fixed]* %0, [1000 x %struct.ap_fixed]* align 512 %1)
   call fastcc void @onebyonecpy_hls.p0a1000struct.ap_fixed([1000 x %struct.ap_fixed]* %2, [1000 x %struct.ap_fixed]* align 512 %3)
@@ -254,28 +258,30 @@ entry:
   call fastcc void @onebyonecpy_hls.p0struct.ap_fixed(%struct.ap_fixed* %10, %struct.ap_fixed* align 512 %11)
   call fastcc void @onebyonecpy_hls.p0a1000struct.ap_fixed([1000 x %struct.ap_fixed]* %12, [1000 x %struct.ap_fixed]* align 512 %13)
   call fastcc void @onebyonecpy_hls.p0a1000struct.ap_fixed([1000 x %struct.ap_fixed]* %14, [1000 x %struct.ap_fixed]* align 512 %15)
+  call fastcc void @onebyonecpy_hls.p0struct.ap_fixed(%struct.ap_fixed* %16, %struct.ap_fixed* align 512 %17)
+  call fastcc void @onebyonecpy_hls.p0struct.ap_fixed(%struct.ap_fixed* %18, %struct.ap_fixed* align 512 %19)
   ret void
 }
 
-declare void @apatb_fcc_combined_hw(%struct.ap_fixed*, %struct.ap_fixed*, %struct.ap_fixed*, %struct.ap_fixed*, %struct.ap_fixed*, %struct.ap_fixed*, %struct.ap_fixed*, %struct.ap_fixed*, i32, i32, i1)
+declare void @apatb_fcc_combined_hw(%struct.ap_fixed*, %struct.ap_fixed*, %struct.ap_fixed*, %struct.ap_fixed*, %struct.ap_fixed*, %struct.ap_fixed*, %struct.ap_fixed*, %struct.ap_fixed*, %struct.ap_fixed*, %struct.ap_fixed*, i1, i32, i32, i1)
 
-define void @fcc_combined_hw_stub_wrapper(%struct.ap_fixed*, %struct.ap_fixed*, %struct.ap_fixed*, %struct.ap_fixed*, %struct.ap_fixed*, %struct.ap_fixed*, %struct.ap_fixed*, %struct.ap_fixed*, i32, i32, i1) #6 {
+define void @fcc_combined_hw_stub_wrapper(%struct.ap_fixed*, %struct.ap_fixed*, %struct.ap_fixed*, %struct.ap_fixed*, %struct.ap_fixed*, %struct.ap_fixed*, %struct.ap_fixed*, %struct.ap_fixed*, %struct.ap_fixed*, %struct.ap_fixed*, i1, i32, i32, i1) #6 {
 entry:
-  %11 = bitcast %struct.ap_fixed* %0 to [1000 x %struct.ap_fixed]*
-  %12 = bitcast %struct.ap_fixed* %1 to [1000 x %struct.ap_fixed]*
-  %13 = bitcast %struct.ap_fixed* %6 to [1000 x %struct.ap_fixed]*
-  %14 = bitcast %struct.ap_fixed* %7 to [1000 x %struct.ap_fixed]*
-  call void @copy_out([1000 x %struct.ap_fixed]* null, [1000 x %struct.ap_fixed]* %11, [1000 x %struct.ap_fixed]* null, [1000 x %struct.ap_fixed]* %12, %struct.ap_fixed* null, %struct.ap_fixed* %2, %struct.ap_fixed* null, %struct.ap_fixed* %3, %struct.ap_fixed* null, %struct.ap_fixed* %4, %struct.ap_fixed* null, %struct.ap_fixed* %5, [1000 x %struct.ap_fixed]* null, [1000 x %struct.ap_fixed]* %13, [1000 x %struct.ap_fixed]* null, [1000 x %struct.ap_fixed]* %14)
-  %15 = bitcast [1000 x %struct.ap_fixed]* %11 to %struct.ap_fixed*
-  %16 = bitcast [1000 x %struct.ap_fixed]* %12 to %struct.ap_fixed*
-  %17 = bitcast [1000 x %struct.ap_fixed]* %13 to %struct.ap_fixed*
+  %14 = bitcast %struct.ap_fixed* %0 to [1000 x %struct.ap_fixed]*
+  %15 = bitcast %struct.ap_fixed* %1 to [1000 x %struct.ap_fixed]*
+  %16 = bitcast %struct.ap_fixed* %6 to [1000 x %struct.ap_fixed]*
+  %17 = bitcast %struct.ap_fixed* %7 to [1000 x %struct.ap_fixed]*
+  call void @copy_out([1000 x %struct.ap_fixed]* null, [1000 x %struct.ap_fixed]* %14, [1000 x %struct.ap_fixed]* null, [1000 x %struct.ap_fixed]* %15, %struct.ap_fixed* null, %struct.ap_fixed* %2, %struct.ap_fixed* null, %struct.ap_fixed* %3, %struct.ap_fixed* null, %struct.ap_fixed* %4, %struct.ap_fixed* null, %struct.ap_fixed* %5, [1000 x %struct.ap_fixed]* null, [1000 x %struct.ap_fixed]* %16, [1000 x %struct.ap_fixed]* null, [1000 x %struct.ap_fixed]* %17, %struct.ap_fixed* null, %struct.ap_fixed* %8, %struct.ap_fixed* null, %struct.ap_fixed* %9)
   %18 = bitcast [1000 x %struct.ap_fixed]* %14 to %struct.ap_fixed*
-  call void @fcc_combined_hw_stub(%struct.ap_fixed* %15, %struct.ap_fixed* %16, %struct.ap_fixed* %2, %struct.ap_fixed* %3, %struct.ap_fixed* %4, %struct.ap_fixed* %5, %struct.ap_fixed* %17, %struct.ap_fixed* %18, i32 %8, i32 %9, i1 %10)
-  call void @copy_in([1000 x %struct.ap_fixed]* null, [1000 x %struct.ap_fixed]* %11, [1000 x %struct.ap_fixed]* null, [1000 x %struct.ap_fixed]* %12, %struct.ap_fixed* null, %struct.ap_fixed* %2, %struct.ap_fixed* null, %struct.ap_fixed* %3, %struct.ap_fixed* null, %struct.ap_fixed* %4, %struct.ap_fixed* null, %struct.ap_fixed* %5, [1000 x %struct.ap_fixed]* null, [1000 x %struct.ap_fixed]* %13, [1000 x %struct.ap_fixed]* null, [1000 x %struct.ap_fixed]* %14)
+  %19 = bitcast [1000 x %struct.ap_fixed]* %15 to %struct.ap_fixed*
+  %20 = bitcast [1000 x %struct.ap_fixed]* %16 to %struct.ap_fixed*
+  %21 = bitcast [1000 x %struct.ap_fixed]* %17 to %struct.ap_fixed*
+  call void @fcc_combined_hw_stub(%struct.ap_fixed* %18, %struct.ap_fixed* %19, %struct.ap_fixed* %2, %struct.ap_fixed* %3, %struct.ap_fixed* %4, %struct.ap_fixed* %5, %struct.ap_fixed* %20, %struct.ap_fixed* %21, %struct.ap_fixed* %8, %struct.ap_fixed* %9, i1 %10, i32 %11, i32 %12, i1 %13)
+  call void @copy_in([1000 x %struct.ap_fixed]* null, [1000 x %struct.ap_fixed]* %14, [1000 x %struct.ap_fixed]* null, [1000 x %struct.ap_fixed]* %15, %struct.ap_fixed* null, %struct.ap_fixed* %2, %struct.ap_fixed* null, %struct.ap_fixed* %3, %struct.ap_fixed* null, %struct.ap_fixed* %4, %struct.ap_fixed* null, %struct.ap_fixed* %5, [1000 x %struct.ap_fixed]* null, [1000 x %struct.ap_fixed]* %16, [1000 x %struct.ap_fixed]* null, [1000 x %struct.ap_fixed]* %17, %struct.ap_fixed* null, %struct.ap_fixed* %8, %struct.ap_fixed* null, %struct.ap_fixed* %9)
   ret void
 }
 
-declare void @fcc_combined_hw_stub(%struct.ap_fixed*, %struct.ap_fixed*, %struct.ap_fixed*, %struct.ap_fixed*, %struct.ap_fixed*, %struct.ap_fixed*, %struct.ap_fixed*, %struct.ap_fixed*, i32, i32, i1)
+declare void @fcc_combined_hw_stub(%struct.ap_fixed*, %struct.ap_fixed*, %struct.ap_fixed*, %struct.ap_fixed*, %struct.ap_fixed*, %struct.ap_fixed*, %struct.ap_fixed*, %struct.ap_fixed*, %struct.ap_fixed*, %struct.ap_fixed*, i1, i32, i32, i1)
 
 declare i1 @fpga_fifo_not_empty_2(i8*)
 
