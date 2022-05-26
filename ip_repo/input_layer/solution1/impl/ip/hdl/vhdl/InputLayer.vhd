@@ -110,7 +110,7 @@ end;
 architecture behav of InputLayer is 
     attribute CORE_GENERATION_INFO : STRING;
     attribute CORE_GENERATION_INFO of behav : architecture is
-    "InputLayer_InputLayer,hls_ip_2020_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020-clg400-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=7.300000,HLS_SYN_LAT=-1,HLS_SYN_TPT=none,HLS_SYN_MEM=2,HLS_SYN_DSP=0,HLS_SYN_FF=1259,HLS_SYN_LUT=1628,HLS_VERSION=2020_2}";
+    "InputLayer_InputLayer,hls_ip_2020_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020-clg400-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=7.300000,HLS_SYN_LAT=-1,HLS_SYN_TPT=none,HLS_SYN_MEM=2,HLS_SYN_DSP=0,HLS_SYN_FF=1271,HLS_SYN_LUT=1628,HLS_VERSION=2020_2}";
     constant ap_const_logic_1 : STD_LOGIC := '1';
     constant ap_const_logic_0 : STD_LOGIC := '0';
     constant ap_ST_fsm_state1 : STD_LOGIC_VECTOR (30 downto 0) := "0000000000000000000000000000001";
@@ -290,9 +290,9 @@ architecture behav of InputLayer is
     signal ap_block_pp2_stage0_11001 : BOOLEAN;
     signal icmp_ln23_fu_383_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal icmp_ln23_reg_527_pp2_iter1_reg : STD_LOGIC_VECTOR (0 downto 0);
-    signal trunc_ln24_fu_388_p1 : STD_LOGIC_VECTOR (9 downto 0);
-    signal trunc_ln24_reg_531 : STD_LOGIC_VECTOR (9 downto 0);
-    signal trunc_ln24_reg_531_pp2_iter1_reg : STD_LOGIC_VECTOR (9 downto 0);
+    signal trunc_ln24_fu_388_p1 : STD_LOGIC_VECTOR (12 downto 0);
+    signal trunc_ln24_reg_531 : STD_LOGIC_VECTOR (12 downto 0);
+    signal trunc_ln24_reg_531_pp2_iter1_reg : STD_LOGIC_VECTOR (12 downto 0);
     signal gmem_addr_read_reg_536 : STD_LOGIC_VECTOR (15 downto 0);
     signal add_ln26_fu_407_p2 : STD_LOGIC_VECTOR (30 downto 0);
     signal ap_enable_reg_pp3_iter0 : STD_LOGIC := '0';
@@ -302,9 +302,9 @@ architecture behav of InputLayer is
     signal ap_block_pp3_stage0_11001 : BOOLEAN;
     signal icmp_ln26_fu_413_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal icmp_ln26_reg_552_pp3_iter1_reg : STD_LOGIC_VECTOR (0 downto 0);
-    signal trunc_ln27_fu_418_p1 : STD_LOGIC_VECTOR (9 downto 0);
-    signal trunc_ln27_reg_556 : STD_LOGIC_VECTOR (9 downto 0);
-    signal trunc_ln27_reg_556_pp3_iter1_reg : STD_LOGIC_VECTOR (9 downto 0);
+    signal trunc_ln27_fu_418_p1 : STD_LOGIC_VECTOR (12 downto 0);
+    signal trunc_ln27_reg_556 : STD_LOGIC_VECTOR (12 downto 0);
+    signal trunc_ln27_reg_556_pp3_iter1_reg : STD_LOGIC_VECTOR (12 downto 0);
     signal gmem_addr_2_read_reg_561 : STD_LOGIC_VECTOR (15 downto 0);
     signal ap_block_pp0_stage0_subdone : BOOLEAN;
     signal ap_condition_pp0_exit_iter0_state3 : STD_LOGIC;
@@ -333,9 +333,9 @@ architecture behav of InputLayer is
     signal bram_x_Addr_A_orig : STD_LOGIC_VECTOR (31 downto 0);
     signal bram_dx_Addr_A_orig : STD_LOGIC_VECTOR (31 downto 0);
     signal grp_fu_274_p4 : STD_LOGIC_VECTOR (30 downto 0);
-    signal trunc_ln37_fu_323_p1 : STD_LOGIC_VECTOR (9 downto 0);
+    signal trunc_ln37_fu_323_p1 : STD_LOGIC_VECTOR (12 downto 0);
     signal grp_fu_283_p4 : STD_LOGIC_VECTOR (30 downto 0);
-    signal trunc_ln41_fu_354_p1 : STD_LOGIC_VECTOR (9 downto 0);
+    signal trunc_ln41_fu_354_p1 : STD_LOGIC_VECTOR (12 downto 0);
     signal ap_CS_fsm_state41 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state41 : signal is "none";
     signal ap_NS_fsm : STD_LOGIC_VECTOR (30 downto 0);
@@ -1650,11 +1650,11 @@ begin
         sext_ln40_fu_332_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(grp_fu_283_p4),32));
 
     trunc_ln23_fu_374_p1 <= dim_read_reg_430(31 - 1 downto 0);
-    trunc_ln24_fu_388_p1 <= i_reg_252(10 - 1 downto 0);
-    trunc_ln27_fu_418_p1 <= i_2_reg_263(10 - 1 downto 0);
+    trunc_ln24_fu_388_p1 <= i_reg_252(13 - 1 downto 0);
+    trunc_ln27_fu_418_p1 <= i_2_reg_263(13 - 1 downto 0);
     trunc_ln36_fu_298_p1 <= dim_read_reg_430(31 - 1 downto 0);
-    trunc_ln37_fu_323_p1 <= i_1_reg_230(10 - 1 downto 0);
-    trunc_ln41_fu_354_p1 <= i_3_reg_241(10 - 1 downto 0);
+    trunc_ln37_fu_323_p1 <= i_1_reg_230(13 - 1 downto 0);
+    trunc_ln41_fu_354_p1 <= i_3_reg_241(13 - 1 downto 0);
     zext_ln24_fu_392_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(trunc_ln24_reg_531_pp2_iter1_reg),32));
     zext_ln27_fu_422_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(trunc_ln27_reg_556_pp3_iter1_reg),32));
     zext_ln37_fu_327_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(trunc_ln37_fu_323_p1),32));

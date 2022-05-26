@@ -15,8 +15,8 @@ set C_modelArgList {
 	{ gmem int 16 regular {axi_master 2}  }
 	{ x int 32 regular {axi_slave 0}  }
 	{ dx int 32 regular {axi_slave 0}  }
-	{ bram_x int 16 regular {bram 1024 { 2 } 2 1 }  }
-	{ bram_dx int 16 regular {bram 1024 { 2 } 2 1 }  }
+	{ bram_x int 16 regular {bram 5500 { 2 } 2 1 }  }
+	{ bram_dx int 16 regular {bram 5500 { 2 } 2 1 }  }
 	{ dim int 32 regular {axi_slave 0}  }
 	{ ddrtobram uint 1 regular {axi_slave 0}  }
 }

@@ -6,7 +6,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
-entity fcc_combined_mac_muladd_16s_16s_29ns_29_4_1_DSP48_2 is
+entity fcc_combined_mac_muladd_16s_16s_29ns_29_4_1_DSP48_1 is
 port (
     clk: in  std_logic;
     rst: in  std_logic;
@@ -18,7 +18,7 @@ port (
 
 end entity;
 
-architecture behav of fcc_combined_mac_muladd_16s_16s_29ns_29_4_1_DSP48_2 is
+architecture behav of fcc_combined_mac_muladd_16s_16s_29ns_29_4_1_DSP48_1 is
     signal a       : signed(25-1 downto 0);
     signal b       : signed(18-1 downto 0);
     signal c       : signed(48-1 downto 0);
@@ -72,7 +72,7 @@ entity fcc_combined_mac_muladd_16s_16s_29ns_29_4_1 is
 end entity;
 
 architecture arch of fcc_combined_mac_muladd_16s_16s_29ns_29_4_1 is
-    component fcc_combined_mac_muladd_16s_16s_29ns_29_4_1_DSP48_2 is
+    component fcc_combined_mac_muladd_16s_16s_29ns_29_4_1_DSP48_1 is
         port (
             clk : IN STD_LOGIC;
             rst : IN STD_LOGIC;
@@ -86,7 +86,7 @@ architecture arch of fcc_combined_mac_muladd_16s_16s_29ns_29_4_1 is
 
 
 begin
-    fcc_combined_mac_muladd_16s_16s_29ns_29_4_1_DSP48_2_U :  component fcc_combined_mac_muladd_16s_16s_29ns_29_4_1_DSP48_2
+    fcc_combined_mac_muladd_16s_16s_29ns_29_4_1_DSP48_1_U :  component fcc_combined_mac_muladd_16s_16s_29ns_29_4_1_DSP48_1
     port map (
         clk => clk,
         rst => reset,

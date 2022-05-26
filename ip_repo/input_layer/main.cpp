@@ -1,7 +1,7 @@
 #include <ap_fixed.h>
 #include <string.h>
 typedef ap_fixed<16,3> fixed_t;
-#define MAX_SIZE 1024
+#define MAX_SIZE 5500
 
 void InputLayer(fixed_t* x,fixed_t* dx, fixed_t bram_x[MAX_SIZE], fixed_t bram_dx[MAX_SIZE], int dim, bool ddrtobram){
 

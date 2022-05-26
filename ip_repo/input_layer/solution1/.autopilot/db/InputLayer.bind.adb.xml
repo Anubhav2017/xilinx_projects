@@ -915,7 +915,7 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="52" bw="10" op_0_bw="31">
+<Node id="52" bw="13" op_0_bw="31">
 <![CDATA[
 .split10:1 %trunc_ln37 = trunc i31 %i_1
 
@@ -931,9 +931,9 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="53" bw="32" op_0_bw="10">
+<Node id="53" bw="32" op_0_bw="13">
 <![CDATA[
-.split10:2 %zext_ln37 = zext i10 %trunc_ln37
+.split10:2 %zext_ln37 = zext i13 %trunc_ln37
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln37"/></StgValue>
@@ -947,7 +947,7 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="54" bw="10" op_0_bw="16" op_1_bw="32" op_2_bw="32">
+<Node id="54" bw="13" op_0_bw="16" op_1_bw="32" op_2_bw="32">
 <![CDATA[
 .split10:3 %bram_x_addr_1 = getelementptr i16 %bram_x, i32 0, i32 %zext_ln37
 
@@ -963,9 +963,9 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="55" bw="16" op_0_bw="10">
+<Node id="55" bw="16" op_0_bw="13">
 <![CDATA[
-.split10:4 %bram_x_load = load i10 %bram_x_addr_1
+.split10:4 %bram_x_load = load i13 %bram_x_addr_1
 
 ]]></Node>
 <StgValue><ssdm name="bram_x_load"/></StgValue>
@@ -982,9 +982,9 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="55" bw="16" op_0_bw="10">
+<Node id="55" bw="16" op_0_bw="13">
 <![CDATA[
-.split10:4 %bram_x_load = load i10 %bram_x_addr_1
+.split10:4 %bram_x_load = load i13 %bram_x_addr_1
 
 ]]></Node>
 <StgValue><ssdm name="bram_x_load"/></StgValue>
@@ -1001,9 +1001,9 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="55" bw="16" op_0_bw="10">
+<Node id="55" bw="16" op_0_bw="13">
 <![CDATA[
-.split10:4 %bram_x_load = load i10 %bram_x_addr_1
+.split10:4 %bram_x_load = load i13 %bram_x_addr_1
 
 ]]></Node>
 <StgValue><ssdm name="bram_x_load"/></StgValue>
@@ -1326,7 +1326,7 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="74" bw="10" op_0_bw="31">
+<Node id="74" bw="13" op_0_bw="31">
 <![CDATA[
 .split8:1 %trunc_ln41 = trunc i31 %i_3
 
@@ -1342,9 +1342,9 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="75" bw="32" op_0_bw="10">
+<Node id="75" bw="32" op_0_bw="13">
 <![CDATA[
-.split8:2 %zext_ln41 = zext i10 %trunc_ln41
+.split8:2 %zext_ln41 = zext i13 %trunc_ln41
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln41"/></StgValue>
@@ -1358,7 +1358,7 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="76" bw="10" op_0_bw="16" op_1_bw="32" op_2_bw="32">
+<Node id="76" bw="13" op_0_bw="16" op_1_bw="32" op_2_bw="32">
 <![CDATA[
 .split8:3 %bram_dx_addr_1 = getelementptr i16 %bram_dx, i32 0, i32 %zext_ln41
 
@@ -1374,9 +1374,9 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="77" bw="16" op_0_bw="10">
+<Node id="77" bw="16" op_0_bw="13">
 <![CDATA[
-.split8:4 %bram_dx_load = load i10 %bram_dx_addr_1
+.split8:4 %bram_dx_load = load i13 %bram_dx_addr_1
 
 ]]></Node>
 <StgValue><ssdm name="bram_dx_load"/></StgValue>
@@ -1393,9 +1393,9 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="77" bw="16" op_0_bw="10">
+<Node id="77" bw="16" op_0_bw="13">
 <![CDATA[
-.split8:4 %bram_dx_load = load i10 %bram_dx_addr_1
+.split8:4 %bram_dx_load = load i13 %bram_dx_addr_1
 
 ]]></Node>
 <StgValue><ssdm name="bram_dx_load"/></StgValue>
@@ -1412,9 +1412,9 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="77" bw="16" op_0_bw="10">
+<Node id="77" bw="16" op_0_bw="13">
 <![CDATA[
-.split8:4 %bram_dx_load = load i10 %bram_dx_addr_1
+.split8:4 %bram_dx_load = load i13 %bram_dx_addr_1
 
 ]]></Node>
 <StgValue><ssdm name="bram_dx_load"/></StgValue>
@@ -1878,7 +1878,7 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="102" bw="10" op_0_bw="31">
+<Node id="102" bw="13" op_0_bw="31">
 <![CDATA[
 .split6:2 %trunc_ln24 = trunc i31 %i
 
@@ -1932,9 +1932,9 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="103" bw="32" op_0_bw="10">
+<Node id="103" bw="32" op_0_bw="13">
 <![CDATA[
-.split6:3 %zext_ln24 = zext i10 %trunc_ln24
+.split6:3 %zext_ln24 = zext i13 %trunc_ln24
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln24"/></StgValue>
@@ -1948,7 +1948,7 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="104" bw="10" op_0_bw="16" op_1_bw="32" op_2_bw="32">
+<Node id="104" bw="13" op_0_bw="16" op_1_bw="32" op_2_bw="32">
 <![CDATA[
 .split6:4 %bram_x_addr = getelementptr i16 %bram_x, i32 0, i32 %zext_ln24
 
@@ -1964,9 +1964,9 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="105" bw="0" op_0_bw="16" op_1_bw="10">
+<Node id="105" bw="0" op_0_bw="16" op_1_bw="13">
 <![CDATA[
-.split6:5 %store_ln24 = store i16 %gmem_addr_read, i10 %bram_x_addr
+.split6:5 %store_ln24 = store i16 %gmem_addr_read, i13 %bram_x_addr
 
 ]]></Node>
 <StgValue><ssdm name="store_ln24"/></StgValue>
@@ -2275,7 +2275,7 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="123" bw="10" op_0_bw="31">
+<Node id="123" bw="13" op_0_bw="31">
 <![CDATA[
 .split:2 %trunc_ln27 = trunc i31 %i_2
 
@@ -2329,9 +2329,9 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="124" bw="32" op_0_bw="10">
+<Node id="124" bw="32" op_0_bw="13">
 <![CDATA[
-.split:3 %zext_ln27 = zext i10 %trunc_ln27
+.split:3 %zext_ln27 = zext i13 %trunc_ln27
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln27"/></StgValue>
@@ -2345,7 +2345,7 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="125" bw="10" op_0_bw="16" op_1_bw="32" op_2_bw="32">
+<Node id="125" bw="13" op_0_bw="16" op_1_bw="32" op_2_bw="32">
 <![CDATA[
 .split:4 %bram_dx_addr = getelementptr i16 %bram_dx, i32 0, i32 %zext_ln27
 
@@ -2361,9 +2361,9 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="126" bw="0" op_0_bw="16" op_1_bw="10">
+<Node id="126" bw="0" op_0_bw="16" op_1_bw="13">
 <![CDATA[
-.split:5 %store_ln27 = store i16 %gmem_addr_2_read, i10 %bram_dx_addr
+.split:5 %store_ln27 = store i16 %gmem_addr_2_read, i13 %bram_dx_addr
 
 ]]></Node>
 <StgValue><ssdm name="store_ln27"/></StgValue>

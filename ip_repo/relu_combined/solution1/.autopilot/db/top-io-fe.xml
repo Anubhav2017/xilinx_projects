@@ -1,23 +1,23 @@
 <root versionMajor = "1" versionMinor = "5">
   <kernel src_name="relu_combined" language="c" hwCtrl="ap_ctrl_hs" mem_layout="fpga64-xilinx-none">
     <args>
-      <arg id="0" access_type="r" src_name="x" src_type="ap_fixed&lt;16, 3, AP_TRN, AP_WRAP, 0&gt;*" src_isptr="1" src_bitwidth="16" src_size_or_depth="1024">
-        <hw hw_usage="data" hw_interface="BRAM" hw_name="x" hw_bitwidth="16" hw_size_or_depth="1024">
+      <arg id="0" access_type="r" src_name="x" src_type="ap_fixed&lt;16, 3, AP_TRN, AP_WRAP, 0&gt;*" src_isptr="1" src_bitwidth="16" src_size_or_depth="5500">
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="x" hw_bitwidth="16" hw_size_or_depth="5500">
           <constraint constraint_type="pragma interface" mode="bram" register_option="0" bram_latency="2" bram_storage="207"/>
         </hw>
       </arg>
-      <arg id="1" access_type="rw" src_name="dx" src_type="ap_fixed&lt;16, 3, AP_TRN, AP_WRAP, 0&gt;*" src_isptr="1" src_bitwidth="16" src_size_or_depth="1024">
-        <hw hw_usage="data" hw_interface="BRAM" hw_name="dx" hw_bitwidth="16" hw_size_or_depth="1024">
+      <arg id="1" access_type="rw" src_name="dx" src_type="ap_fixed&lt;16, 3, AP_TRN, AP_WRAP, 0&gt;*" src_isptr="1" src_bitwidth="16" src_size_or_depth="5500">
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="dx" hw_bitwidth="16" hw_size_or_depth="5500">
           <constraint constraint_type="pragma interface" mode="bram" register_option="0" bram_latency="2" bram_storage="207"/>
         </hw>
       </arg>
-      <arg id="2" access_type="w" src_name="y" src_type="ap_fixed&lt;16, 3, AP_TRN, AP_WRAP, 0&gt;*" src_isptr="1" src_bitwidth="16" src_size_or_depth="1024">
-        <hw hw_usage="data" hw_interface="BRAM" hw_name="y" hw_bitwidth="16" hw_size_or_depth="1024">
+      <arg id="2" access_type="w" src_name="y" src_type="ap_fixed&lt;16, 3, AP_TRN, AP_WRAP, 0&gt;*" src_isptr="1" src_bitwidth="16" src_size_or_depth="5500">
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="y" hw_bitwidth="16" hw_size_or_depth="5500">
           <constraint constraint_type="pragma interface" mode="bram" register_option="0" bram_latency="2" bram_storage="207"/>
         </hw>
       </arg>
-      <arg id="3" access_type="r" src_name="dy" src_type="ap_fixed&lt;16, 3, AP_TRN, AP_WRAP, 0&gt;*" src_isptr="1" src_bitwidth="16" src_size_or_depth="1024">
-        <hw hw_usage="data" hw_interface="BRAM" hw_name="dy" hw_bitwidth="16" hw_size_or_depth="1024">
+      <arg id="3" access_type="r" src_name="dy" src_type="ap_fixed&lt;16, 3, AP_TRN, AP_WRAP, 0&gt;*" src_isptr="1" src_bitwidth="16" src_size_or_depth="5500">
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="dy" hw_bitwidth="16" hw_size_or_depth="5500">
           <constraint constraint_type="pragma interface" mode="bram" register_option="0" bram_latency="2" bram_storage="207"/>
         </hw>
       </arg>

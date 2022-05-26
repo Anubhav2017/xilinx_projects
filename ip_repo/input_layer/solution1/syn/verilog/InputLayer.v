@@ -7,7 +7,7 @@
 
 `timescale 1 ns / 1 ps 
 
-(* CORE_GENERATION_INFO="InputLayer_InputLayer,hls_ip_2020_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020-clg400-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=7.300000,HLS_SYN_LAT=-1,HLS_SYN_TPT=none,HLS_SYN_MEM=2,HLS_SYN_DSP=0,HLS_SYN_FF=1259,HLS_SYN_LUT=1628,HLS_VERSION=2020_2}" *)
+(* CORE_GENERATION_INFO="InputLayer_InputLayer,hls_ip_2020_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020-clg400-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=7.300000,HLS_SYN_LAT=-1,HLS_SYN_TPT=none,HLS_SYN_MEM=2,HLS_SYN_DSP=0,HLS_SYN_FF=1271,HLS_SYN_LUT=1628,HLS_VERSION=2020_2}" *)
 
 module InputLayer (
         ap_clk,
@@ -334,9 +334,9 @@ wire    ap_block_state30_pp2_stage0_iter2;
 reg    ap_block_pp2_stage0_11001;
 wire   [0:0] icmp_ln23_fu_383_p2;
 reg   [0:0] icmp_ln23_reg_527_pp2_iter1_reg;
-wire   [9:0] trunc_ln24_fu_388_p1;
-reg   [9:0] trunc_ln24_reg_531;
-reg   [9:0] trunc_ln24_reg_531_pp2_iter1_reg;
+wire   [12:0] trunc_ln24_fu_388_p1;
+reg   [12:0] trunc_ln24_reg_531;
+reg   [12:0] trunc_ln24_reg_531_pp2_iter1_reg;
 reg   [15:0] gmem_addr_read_reg_536;
 wire   [30:0] add_ln26_fu_407_p2;
 reg    ap_enable_reg_pp3_iter0;
@@ -346,9 +346,9 @@ wire    ap_block_state40_pp3_stage0_iter2;
 reg    ap_block_pp3_stage0_11001;
 wire   [0:0] icmp_ln26_fu_413_p2;
 reg   [0:0] icmp_ln26_reg_552_pp3_iter1_reg;
-wire   [9:0] trunc_ln27_fu_418_p1;
-reg   [9:0] trunc_ln27_reg_556;
-reg   [9:0] trunc_ln27_reg_556_pp3_iter1_reg;
+wire   [12:0] trunc_ln27_fu_418_p1;
+reg   [12:0] trunc_ln27_reg_556;
+reg   [12:0] trunc_ln27_reg_556_pp3_iter1_reg;
 reg   [15:0] gmem_addr_2_read_reg_561;
 reg    ap_block_pp0_stage0_subdone;
 reg    ap_condition_pp0_exit_iter0_state3;
@@ -376,9 +376,9 @@ wire    ap_block_pp1_stage0_01001;
 reg   [31:0] bram_x_Addr_A_orig;
 reg   [31:0] bram_dx_Addr_A_orig;
 wire   [30:0] grp_fu_274_p4;
-wire   [9:0] trunc_ln37_fu_323_p1;
+wire   [12:0] trunc_ln37_fu_323_p1;
 wire   [30:0] grp_fu_283_p4;
-wire   [9:0] trunc_ln41_fu_354_p1;
+wire   [12:0] trunc_ln41_fu_354_p1;
 wire    ap_CS_fsm_state41;
 reg   [30:0] ap_NS_fsm;
 reg    ap_idle_pp0;
@@ -1450,15 +1450,15 @@ assign sext_ln40_fu_332_p1 = $signed(grp_fu_283_p4);
 
 assign trunc_ln23_fu_374_p1 = dim_read_reg_430[30:0];
 
-assign trunc_ln24_fu_388_p1 = i_reg_252[9:0];
+assign trunc_ln24_fu_388_p1 = i_reg_252[12:0];
 
-assign trunc_ln27_fu_418_p1 = i_2_reg_263[9:0];
+assign trunc_ln27_fu_418_p1 = i_2_reg_263[12:0];
 
 assign trunc_ln36_fu_298_p1 = dim_read_reg_430[30:0];
 
-assign trunc_ln37_fu_323_p1 = i_1_reg_230[9:0];
+assign trunc_ln37_fu_323_p1 = i_1_reg_230[12:0];
 
-assign trunc_ln41_fu_354_p1 = i_3_reg_241[9:0];
+assign trunc_ln41_fu_354_p1 = i_3_reg_241[12:0];
 
 assign zext_ln24_fu_392_p1 = trunc_ln24_reg_531_pp2_iter1_reg;
 

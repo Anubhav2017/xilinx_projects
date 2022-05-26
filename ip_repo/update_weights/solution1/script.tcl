@@ -7,7 +7,7 @@ open_project update_weights
 set_top update_weights
 add_files update_weights/main.cpp
 open_solution "solution1" -flow_target vivado
-set_part {xc7z020clg400-1}
+set_part {xc7z020-clg400-1}
 create_clock -period 10 -name default
 config_interface -m_axi_addr64=0
 config_export -format ip_catalog -rtl verilog

@@ -5571,7 +5571,7 @@ inline bool operator!=(
 typedef ap_fixed<16,3> fixed_t;
 
 
-__attribute__((sdx_kernel("relu_combined", 0))) void relu_combined(fixed_t x[1024], fixed_t dx[1024], fixed_t y[1024],fixed_t dy[1024], fixed_t* debug_x, fixed_t* debug_dx, int dim, bool fwprop, bool debugip){_ssdm_SpecArrayDimSize(x, 1024);_ssdm_SpecArrayDimSize(dx, 1024);_ssdm_SpecArrayDimSize(y, 1024);_ssdm_SpecArrayDimSize(dy, 1024);
+__attribute__((sdx_kernel("relu_combined", 0))) void relu_combined(fixed_t x[5500], fixed_t dx[5500], fixed_t y[5500],fixed_t dy[5500], fixed_t* debug_x, fixed_t* debug_dx, int dim, bool fwprop, bool debugip){_ssdm_SpecArrayDimSize(x, 5500);_ssdm_SpecArrayDimSize(dx, 5500);_ssdm_SpecArrayDimSize(y, 5500);_ssdm_SpecArrayDimSize(dy, 5500);
 #pragma HLS TOP name=relu_combined
 # 5 "relu_combined/main.cpp"
 

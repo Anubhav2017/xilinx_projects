@@ -938,7 +938,7 @@ _ZgtILi16ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1
 </and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="10" op_0_bw="31">
+<Node id="61" bw="13" op_0_bw="31">
 <![CDATA[
 _ZgtILi16ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit21.split:1 %trunc_ln1494_2 = trunc i31 %i_1
 
@@ -954,9 +954,9 @@ _ZgtILi16ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1
 </and_exp></or_exp>
 </condition>
 
-<Node id="62" bw="32" op_0_bw="10">
+<Node id="62" bw="32" op_0_bw="13">
 <![CDATA[
-_ZgtILi16ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit21.split:2 %zext_ln1494_1 = zext i10 %trunc_ln1494_2
+_ZgtILi16ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit21.split:2 %zext_ln1494_1 = zext i13 %trunc_ln1494_2
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln1494_1"/></StgValue>
@@ -970,7 +970,7 @@ _ZgtILi16ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1
 </and_exp></or_exp>
 </condition>
 
-<Node id="63" bw="10" op_0_bw="16" op_1_bw="32" op_2_bw="32">
+<Node id="63" bw="13" op_0_bw="16" op_1_bw="32" op_2_bw="32">
 <![CDATA[
 _ZgtILi16ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit21.split:3 %x_addr_1 = getelementptr i16 %x, i32 0, i32 %zext_ln1494_1
 
@@ -986,9 +986,9 @@ _ZgtILi16ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1
 </and_exp></or_exp>
 </condition>
 
-<Node id="64" bw="16" op_0_bw="10">
+<Node id="64" bw="16" op_0_bw="13">
 <![CDATA[
-_ZgtILi16ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit21.split:4 %x_load_1 = load i10 %x_addr_1
+_ZgtILi16ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit21.split:4 %x_load_1 = load i13 %x_addr_1
 
 ]]></Node>
 <StgValue><ssdm name="x_load_1"/></StgValue>
@@ -1020,9 +1020,9 @@ _ZgtILi16ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="64" bw="16" op_0_bw="10">
+<Node id="64" bw="16" op_0_bw="13">
 <![CDATA[
-_ZgtILi16ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit21.split:4 %x_load_1 = load i10 %x_addr_1
+_ZgtILi16ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit21.split:4 %x_load_1 = load i13 %x_addr_1
 
 ]]></Node>
 <StgValue><ssdm name="x_load_1"/></StgValue>
@@ -1053,9 +1053,9 @@ _ZgtILi16ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="64" bw="16" op_0_bw="10">
+<Node id="64" bw="16" op_0_bw="13">
 <![CDATA[
-_ZgtILi16ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit21.split:4 %x_load_1 = load i10 %x_addr_1
+_ZgtILi16ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit21.split:4 %x_load_1 = load i13 %x_addr_1
 
 ]]></Node>
 <StgValue><ssdm name="x_load_1"/></StgValue>
@@ -1099,7 +1099,7 @@ _ZgtILi16ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1
 </and_exp></or_exp>
 </condition>
 
-<Node id="72" bw="10" op_0_bw="16" op_1_bw="32" op_2_bw="32">
+<Node id="72" bw="13" op_0_bw="16" op_1_bw="32" op_2_bw="32">
 <![CDATA[
 :0 %dy_addr = getelementptr i16 %dy, i32 0, i32 %zext_ln1494_1
 
@@ -1115,9 +1115,9 @@ _ZgtILi16ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1
 </and_exp></or_exp>
 </condition>
 
-<Node id="73" bw="16" op_0_bw="10">
+<Node id="73" bw="16" op_0_bw="13">
 <![CDATA[
-:1 %dy_load = load i10 %dy_addr
+:1 %dy_load = load i13 %dy_addr
 
 ]]></Node>
 <StgValue><ssdm name="dy_load"/></StgValue>
@@ -1134,7 +1134,7 @@ _ZgtILi16ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1
 </and_exp></or_exp>
 </condition>
 
-<Node id="68" bw="10" op_0_bw="16" op_1_bw="32" op_2_bw="32">
+<Node id="68" bw="13" op_0_bw="16" op_1_bw="32" op_2_bw="32">
 <![CDATA[
 _ZN8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ei.exit:0 %dx_addr_1 = getelementptr i16 %dx, i32 0, i32 %zext_ln1494_1
 
@@ -1150,9 +1150,9 @@ _ZN8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ei.exit:0 %dx_addr_1 = ge
 </and_exp></or_exp>
 </condition>
 
-<Node id="69" bw="0" op_0_bw="16" op_1_bw="10">
+<Node id="69" bw="0" op_0_bw="16" op_1_bw="13">
 <![CDATA[
-_ZN8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ei.exit:1 %store_ln39 = store i16 0, i10 %dx_addr_1
+_ZN8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ei.exit:1 %store_ln39 = store i16 0, i13 %dx_addr_1
 
 ]]></Node>
 <StgValue><ssdm name="store_ln39"/></StgValue>
@@ -1166,9 +1166,9 @@ _ZN8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ei.exit:1 %store_ln39 = s
 </and_exp></or_exp>
 </condition>
 
-<Node id="73" bw="16" op_0_bw="10">
+<Node id="73" bw="16" op_0_bw="13">
 <![CDATA[
-:1 %dy_load = load i10 %dy_addr
+:1 %dy_load = load i13 %dy_addr
 
 ]]></Node>
 <StgValue><ssdm name="dy_load"/></StgValue>
@@ -1182,7 +1182,7 @@ _ZN8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ei.exit:1 %store_ln39 = s
 </and_exp></or_exp>
 </condition>
 
-<Node id="74" bw="10" op_0_bw="16" op_1_bw="32" op_2_bw="32">
+<Node id="74" bw="13" op_0_bw="16" op_1_bw="32" op_2_bw="32">
 <![CDATA[
 :2 %dx_addr = getelementptr i16 %dx, i32 0, i32 %zext_ln1494_1
 
@@ -1198,9 +1198,9 @@ _ZN8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ei.exit:1 %store_ln39 = s
 </and_exp></or_exp>
 </condition>
 
-<Node id="75" bw="0" op_0_bw="16" op_1_bw="10">
+<Node id="75" bw="0" op_0_bw="16" op_1_bw="13">
 <![CDATA[
-:3 %store_ln36 = store i16 %dy_load, i10 %dx_addr
+:3 %store_ln36 = store i16 %dy_load, i13 %dx_addr
 
 ]]></Node>
 <StgValue><ssdm name="store_ln36"/></StgValue>
@@ -1233,9 +1233,9 @@ _ZN8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ei.exit:1 %store_ln39 = s
 </and_exp></or_exp>
 </condition>
 
-<Node id="69" bw="0" op_0_bw="16" op_1_bw="10">
+<Node id="69" bw="0" op_0_bw="16" op_1_bw="13">
 <![CDATA[
-_ZN8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ei.exit:1 %store_ln39 = store i16 0, i10 %dx_addr_1
+_ZN8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ei.exit:1 %store_ln39 = store i16 0, i13 %dx_addr_1
 
 ]]></Node>
 <StgValue><ssdm name="store_ln39"/></StgValue>
@@ -1252,9 +1252,9 @@ _ZN8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ei.exit:1 %store_ln39 = s
 </and_exp></or_exp>
 </condition>
 
-<Node id="69" bw="0" op_0_bw="16" op_1_bw="10">
+<Node id="69" bw="0" op_0_bw="16" op_1_bw="13">
 <![CDATA[
-_ZN8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ei.exit:1 %store_ln39 = store i16 0, i10 %dx_addr_1
+_ZN8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ei.exit:1 %store_ln39 = store i16 0, i13 %dx_addr_1
 
 ]]></Node>
 <StgValue><ssdm name="store_ln39"/></StgValue>
@@ -1287,9 +1287,9 @@ _ZN8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ei.exit:2 %br_ln0 = br vo
 </and_exp></or_exp>
 </condition>
 
-<Node id="73" bw="16" op_0_bw="10">
+<Node id="73" bw="16" op_0_bw="13">
 <![CDATA[
-:1 %dy_load = load i10 %dy_addr
+:1 %dy_load = load i13 %dy_addr
 
 ]]></Node>
 <StgValue><ssdm name="dy_load"/></StgValue>
@@ -1542,7 +1542,7 @@ _ZgtILi16ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1
 </and_exp></or_exp>
 </condition>
 
-<Node id="95" bw="10" op_0_bw="31">
+<Node id="95" bw="13" op_0_bw="31">
 <![CDATA[
 _ZgtILi16ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit.split:1 %trunc_ln1494 = trunc i31 %i
 
@@ -1558,9 +1558,9 @@ _ZgtILi16ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1
 </and_exp></or_exp>
 </condition>
 
-<Node id="96" bw="32" op_0_bw="10">
+<Node id="96" bw="32" op_0_bw="13">
 <![CDATA[
-_ZgtILi16ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit.split:2 %zext_ln1494 = zext i10 %trunc_ln1494
+_ZgtILi16ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit.split:2 %zext_ln1494 = zext i13 %trunc_ln1494
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln1494"/></StgValue>
@@ -1574,7 +1574,7 @@ _ZgtILi16ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1
 </and_exp></or_exp>
 </condition>
 
-<Node id="97" bw="10" op_0_bw="16" op_1_bw="32" op_2_bw="32">
+<Node id="97" bw="13" op_0_bw="16" op_1_bw="32" op_2_bw="32">
 <![CDATA[
 _ZgtILi16ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit.split:3 %x_addr = getelementptr i16 %x, i32 0, i32 %zext_ln1494
 
@@ -1590,9 +1590,9 @@ _ZgtILi16ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1
 </and_exp></or_exp>
 </condition>
 
-<Node id="98" bw="16" op_0_bw="10">
+<Node id="98" bw="16" op_0_bw="13">
 <![CDATA[
-_ZgtILi16ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit.split:4 %x_load = load i10 %x_addr
+_ZgtILi16ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit.split:4 %x_load = load i13 %x_addr
 
 ]]></Node>
 <StgValue><ssdm name="x_load"/></StgValue>
@@ -1609,9 +1609,9 @@ _ZgtILi16ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1
 </and_exp></or_exp>
 </condition>
 
-<Node id="98" bw="16" op_0_bw="10">
+<Node id="98" bw="16" op_0_bw="13">
 <![CDATA[
-_ZgtILi16ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit.split:4 %x_load = load i10 %x_addr
+_ZgtILi16ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit.split:4 %x_load = load i13 %x_addr
 
 ]]></Node>
 <StgValue><ssdm name="x_load"/></StgValue>
@@ -1628,9 +1628,9 @@ _ZgtILi16ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1
 </and_exp></or_exp>
 </condition>
 
-<Node id="98" bw="16" op_0_bw="10">
+<Node id="98" bw="16" op_0_bw="13">
 <![CDATA[
-_ZgtILi16ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit.split:4 %x_load = load i10 %x_addr
+_ZgtILi16ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit.split:4 %x_load = load i13 %x_addr
 
 ]]></Node>
 <StgValue><ssdm name="x_load"/></StgValue>
@@ -1711,7 +1711,7 @@ _ZgtILi16ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1
 </and_exp></or_exp>
 </condition>
 
-<Node id="101" bw="10" op_0_bw="16" op_1_bw="32" op_2_bw="32">
+<Node id="101" bw="13" op_0_bw="16" op_1_bw="32" op_2_bw="32">
 <![CDATA[
 _ZgtILi16ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit.split:7 %y_addr = getelementptr i16 %y, i32 0, i32 %zext_ln1494
 
@@ -1743,9 +1743,9 @@ _ZgtILi16ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1
 </and_exp></or_exp>
 </condition>
 
-<Node id="104" bw="0" op_0_bw="16" op_1_bw="10">
+<Node id="104" bw="0" op_0_bw="16" op_1_bw="13">
 <![CDATA[
-_ZgtILi16ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit.split:10 %store_ln25 = store i16 %zext_ln25, i10 %y_addr
+_ZgtILi16ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit.split:10 %store_ln25 = store i16 %zext_ln25, i13 %y_addr
 
 ]]></Node>
 <StgValue><ssdm name="store_ln25"/></StgValue>
@@ -1884,7 +1884,7 @@ _ZgtILi16ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1
 </and_exp></or_exp>
 </condition>
 
-<Node id="127" bw="10" op_0_bw="16" op_1_bw="32" op_2_bw="32">
+<Node id="127" bw="13" op_0_bw="16" op_1_bw="32" op_2_bw="32">
 <![CDATA[
 .split:2 %x_addr_2 = getelementptr i16 %x, i32 0, i32 %zext_ln47
 
@@ -1900,9 +1900,9 @@ _ZgtILi16ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1
 </and_exp></or_exp>
 </condition>
 
-<Node id="128" bw="16" op_0_bw="10">
+<Node id="128" bw="16" op_0_bw="13">
 <![CDATA[
-.split:3 %x_load_2 = load i10 %x_addr_2
+.split:3 %x_load_2 = load i13 %x_addr_2
 
 ]]></Node>
 <StgValue><ssdm name="x_load_2"/></StgValue>
@@ -1948,7 +1948,7 @@ _ZgtILi16ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1
 </and_exp></or_exp>
 </condition>
 
-<Node id="134" bw="10" op_0_bw="16" op_1_bw="32" op_2_bw="32">
+<Node id="134" bw="13" op_0_bw="16" op_1_bw="32" op_2_bw="32">
 <![CDATA[
 .split:9 %dx_addr_2 = getelementptr i16 %dx, i32 0, i32 %zext_ln47
 
@@ -1964,9 +1964,9 @@ _ZgtILi16ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1
 </and_exp></or_exp>
 </condition>
 
-<Node id="135" bw="16" op_0_bw="10">
+<Node id="135" bw="16" op_0_bw="13">
 <![CDATA[
-.split:10 %dx_load = load i10 %dx_addr_2
+.split:10 %dx_load = load i13 %dx_addr_2
 
 ]]></Node>
 <StgValue><ssdm name="dx_load"/></StgValue>
@@ -2015,9 +2015,9 @@ _ZgtILi16ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1
 </and_exp></or_exp>
 </condition>
 
-<Node id="128" bw="16" op_0_bw="10">
+<Node id="128" bw="16" op_0_bw="13">
 <![CDATA[
-.split:3 %x_load_2 = load i10 %x_addr_2
+.split:3 %x_load_2 = load i13 %x_addr_2
 
 ]]></Node>
 <StgValue><ssdm name="x_load_2"/></StgValue>
@@ -2031,9 +2031,9 @@ _ZgtILi16ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1
 </and_exp></or_exp>
 </condition>
 
-<Node id="135" bw="16" op_0_bw="10">
+<Node id="135" bw="16" op_0_bw="13">
 <![CDATA[
-.split:10 %dx_load = load i10 %dx_addr_2
+.split:10 %dx_load = load i13 %dx_addr_2
 
 ]]></Node>
 <StgValue><ssdm name="dx_load"/></StgValue>
@@ -2050,9 +2050,9 @@ _ZgtILi16ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1
 </and_exp></or_exp>
 </condition>
 
-<Node id="128" bw="16" op_0_bw="10">
+<Node id="128" bw="16" op_0_bw="13">
 <![CDATA[
-.split:3 %x_load_2 = load i10 %x_addr_2
+.split:3 %x_load_2 = load i13 %x_addr_2
 
 ]]></Node>
 <StgValue><ssdm name="x_load_2"/></StgValue>
@@ -2082,9 +2082,9 @@ _ZgtILi16ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1
 </and_exp></or_exp>
 </condition>
 
-<Node id="135" bw="16" op_0_bw="10">
+<Node id="135" bw="16" op_0_bw="13">
 <![CDATA[
-.split:10 %dx_load = load i10 %dx_addr_2
+.split:10 %dx_load = load i13 %dx_addr_2
 
 ]]></Node>
 <StgValue><ssdm name="dx_load"/></StgValue>

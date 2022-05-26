@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'InputLayer'
 ================================================================
-* Date:           Mon May 23 01:24:43 2022
+* Date:           Wed May 25 16:46:35 2022
 
 * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
 * Project:        input_layer
@@ -178,15 +178,15 @@ ST_3 : Operation 79 [1/1] (2.47ns)   --->   "%icmp_ln36 = icmp_eq  i31 %i_1, i31
 ST_3 : Operation 80 [1/1] (0.00ns)   --->   "%empty_26 = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 1, i64 18446744073709551615, i64 0"   --->   Operation 80 'speclooptripcount' 'empty_26' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 81 [1/1] (0.00ns)   --->   "%br_ln36 = br i1 %icmp_ln36, void %.split10, void %.lr.ph11" [input_layer/main.cpp:36]   --->   Operation 81 'br' 'br_ln36' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 82 [1/1] (0.00ns)   --->   "%trunc_ln37 = trunc i31 %i_1" [input_layer/main.cpp:37]   --->   Operation 82 'trunc' 'trunc_ln37' <Predicate = (!icmp_ln36)> <Delay = 0.00>
-ST_3 : Operation 83 [1/1] (0.00ns)   --->   "%zext_ln37 = zext i10 %trunc_ln37" [input_layer/main.cpp:37]   --->   Operation 83 'zext' 'zext_ln37' <Predicate = (!icmp_ln36)> <Delay = 0.00>
+ST_3 : Operation 83 [1/1] (0.00ns)   --->   "%zext_ln37 = zext i13 %trunc_ln37" [input_layer/main.cpp:37]   --->   Operation 83 'zext' 'zext_ln37' <Predicate = (!icmp_ln36)> <Delay = 0.00>
 ST_3 : Operation 84 [1/1] (0.00ns)   --->   "%bram_x_addr_1 = getelementptr i16 %bram_x, i32 0, i32 %zext_ln37" [input_layer/main.cpp:37]   --->   Operation 84 'getelementptr' 'bram_x_addr_1' <Predicate = (!icmp_ln36)> <Delay = 0.00>
-ST_3 : Operation 85 [3/3] (1.68ns)   --->   "%bram_x_load = load i10 %bram_x_addr_1" [input_layer/main.cpp:37]   --->   Operation 85 'load' 'bram_x_load' <Predicate = (!icmp_ln36)> <Delay = 1.68> <CoreInst = "RAM_1P">   --->   Core 86 'RAM_1P' <Latency = 2> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 16> <Depth = 1024> <RAM>
+ST_3 : Operation 85 [3/3] (1.68ns)   --->   "%bram_x_load = load i13 %bram_x_addr_1" [input_layer/main.cpp:37]   --->   Operation 85 'load' 'bram_x_load' <Predicate = (!icmp_ln36)> <Delay = 1.68> <CoreInst = "RAM_1P">   --->   Core 86 'RAM_1P' <Latency = 2> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 16> <Depth = 5500> <RAM>
 
 State 4 <SV = 3> <Delay = 1.68>
-ST_4 : Operation 86 [2/3] (1.68ns)   --->   "%bram_x_load = load i10 %bram_x_addr_1" [input_layer/main.cpp:37]   --->   Operation 86 'load' 'bram_x_load' <Predicate = (!icmp_ln36)> <Delay = 1.68> <CoreInst = "RAM_1P">   --->   Core 86 'RAM_1P' <Latency = 2> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 16> <Depth = 1024> <RAM>
+ST_4 : Operation 86 [2/3] (1.68ns)   --->   "%bram_x_load = load i13 %bram_x_addr_1" [input_layer/main.cpp:37]   --->   Operation 86 'load' 'bram_x_load' <Predicate = (!icmp_ln36)> <Delay = 1.68> <CoreInst = "RAM_1P">   --->   Core 86 'RAM_1P' <Latency = 2> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 16> <Depth = 5500> <RAM>
 
 State 5 <SV = 4> <Delay = 1.68>
-ST_5 : Operation 87 [1/3] (1.68ns)   --->   "%bram_x_load = load i10 %bram_x_addr_1" [input_layer/main.cpp:37]   --->   Operation 87 'load' 'bram_x_load' <Predicate = (!icmp_ln36)> <Delay = 1.68> <CoreInst = "RAM_1P">   --->   Core 86 'RAM_1P' <Latency = 2> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 16> <Depth = 1024> <RAM>
+ST_5 : Operation 87 [1/3] (1.68ns)   --->   "%bram_x_load = load i13 %bram_x_addr_1" [input_layer/main.cpp:37]   --->   Operation 87 'load' 'bram_x_load' <Predicate = (!icmp_ln36)> <Delay = 1.68> <CoreInst = "RAM_1P">   --->   Core 86 'RAM_1P' <Latency = 2> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 16> <Depth = 5500> <RAM>
 
 State 6 <SV = 5> <Delay = 7.30>
 ST_6 : Operation 88 [1/1] (0.00ns)   --->   "%specloopname_ln36 = specloopname void @_ssdm_op_SpecLoopName, void @empty_12" [input_layer/main.cpp:36]   --->   Operation 88 'specloopname' 'specloopname_ln36' <Predicate = (!icmp_ln36)> <Delay = 0.00>
@@ -221,15 +221,15 @@ ST_12 : Operation 104 [1/1] (2.47ns)   --->   "%icmp_ln40 = icmp_eq  i31 %i_3, i
 ST_12 : Operation 105 [1/1] (0.00ns)   --->   "%empty_29 = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 1, i64 18446744073709551615, i64 0"   --->   Operation 105 'speclooptripcount' 'empty_29' <Predicate = true> <Delay = 0.00>
 ST_12 : Operation 106 [1/1] (0.00ns)   --->   "%br_ln40 = br i1 %icmp_ln40, void %.split8, void %._crit_edge.loopexit38" [input_layer/main.cpp:40]   --->   Operation 106 'br' 'br_ln40' <Predicate = true> <Delay = 0.00>
 ST_12 : Operation 107 [1/1] (0.00ns)   --->   "%trunc_ln41 = trunc i31 %i_3" [input_layer/main.cpp:41]   --->   Operation 107 'trunc' 'trunc_ln41' <Predicate = (!icmp_ln40)> <Delay = 0.00>
-ST_12 : Operation 108 [1/1] (0.00ns)   --->   "%zext_ln41 = zext i10 %trunc_ln41" [input_layer/main.cpp:41]   --->   Operation 108 'zext' 'zext_ln41' <Predicate = (!icmp_ln40)> <Delay = 0.00>
+ST_12 : Operation 108 [1/1] (0.00ns)   --->   "%zext_ln41 = zext i13 %trunc_ln41" [input_layer/main.cpp:41]   --->   Operation 108 'zext' 'zext_ln41' <Predicate = (!icmp_ln40)> <Delay = 0.00>
 ST_12 : Operation 109 [1/1] (0.00ns)   --->   "%bram_dx_addr_1 = getelementptr i16 %bram_dx, i32 0, i32 %zext_ln41" [input_layer/main.cpp:41]   --->   Operation 109 'getelementptr' 'bram_dx_addr_1' <Predicate = (!icmp_ln40)> <Delay = 0.00>
-ST_12 : Operation 110 [3/3] (1.68ns)   --->   "%bram_dx_load = load i10 %bram_dx_addr_1" [input_layer/main.cpp:41]   --->   Operation 110 'load' 'bram_dx_load' <Predicate = (!icmp_ln40)> <Delay = 1.68> <CoreInst = "RAM_1P">   --->   Core 86 'RAM_1P' <Latency = 2> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 16> <Depth = 1024> <RAM>
+ST_12 : Operation 110 [3/3] (1.68ns)   --->   "%bram_dx_load = load i13 %bram_dx_addr_1" [input_layer/main.cpp:41]   --->   Operation 110 'load' 'bram_dx_load' <Predicate = (!icmp_ln40)> <Delay = 1.68> <CoreInst = "RAM_1P">   --->   Core 86 'RAM_1P' <Latency = 2> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 16> <Depth = 5500> <RAM>
 
 State 13 <SV = 9> <Delay = 1.68>
-ST_13 : Operation 111 [2/3] (1.68ns)   --->   "%bram_dx_load = load i10 %bram_dx_addr_1" [input_layer/main.cpp:41]   --->   Operation 111 'load' 'bram_dx_load' <Predicate = (!icmp_ln40)> <Delay = 1.68> <CoreInst = "RAM_1P">   --->   Core 86 'RAM_1P' <Latency = 2> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 16> <Depth = 1024> <RAM>
+ST_13 : Operation 111 [2/3] (1.68ns)   --->   "%bram_dx_load = load i13 %bram_dx_addr_1" [input_layer/main.cpp:41]   --->   Operation 111 'load' 'bram_dx_load' <Predicate = (!icmp_ln40)> <Delay = 1.68> <CoreInst = "RAM_1P">   --->   Core 86 'RAM_1P' <Latency = 2> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 16> <Depth = 5500> <RAM>
 
 State 14 <SV = 10> <Delay = 1.68>
-ST_14 : Operation 112 [1/3] (1.68ns)   --->   "%bram_dx_load = load i10 %bram_dx_addr_1" [input_layer/main.cpp:41]   --->   Operation 112 'load' 'bram_dx_load' <Predicate = (!icmp_ln40)> <Delay = 1.68> <CoreInst = "RAM_1P">   --->   Core 86 'RAM_1P' <Latency = 2> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 16> <Depth = 1024> <RAM>
+ST_14 : Operation 112 [1/3] (1.68ns)   --->   "%bram_dx_load = load i13 %bram_dx_addr_1" [input_layer/main.cpp:41]   --->   Operation 112 'load' 'bram_dx_load' <Predicate = (!icmp_ln40)> <Delay = 1.68> <CoreInst = "RAM_1P">   --->   Core 86 'RAM_1P' <Latency = 2> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 16> <Depth = 5500> <RAM>
 
 State 15 <SV = 11> <Delay = 7.30>
 ST_15 : Operation 113 [1/1] (0.00ns)   --->   "%specloopname_ln40 = specloopname void @_ssdm_op_SpecLoopName, void @empty_11" [input_layer/main.cpp:40]   --->   Operation 113 'specloopname' 'specloopname_ln40' <Predicate = (!icmp_ln40)> <Delay = 0.00>
@@ -292,9 +292,9 @@ ST_29 : Operation 141 [1/1] (7.30ns)   --->   "%gmem_addr_read = read i16 @_ssdm
 
 State 30 <SV = 10> <Delay = 3.25>
 ST_30 : Operation 142 [1/1] (0.00ns)   --->   "%specloopname_ln23 = specloopname void @_ssdm_op_SpecLoopName, void @empty_14" [input_layer/main.cpp:23]   --->   Operation 142 'specloopname' 'specloopname_ln23' <Predicate = (!icmp_ln23)> <Delay = 0.00>
-ST_30 : Operation 143 [1/1] (0.00ns)   --->   "%zext_ln24 = zext i10 %trunc_ln24" [input_layer/main.cpp:24]   --->   Operation 143 'zext' 'zext_ln24' <Predicate = (!icmp_ln23)> <Delay = 0.00>
+ST_30 : Operation 143 [1/1] (0.00ns)   --->   "%zext_ln24 = zext i13 %trunc_ln24" [input_layer/main.cpp:24]   --->   Operation 143 'zext' 'zext_ln24' <Predicate = (!icmp_ln23)> <Delay = 0.00>
 ST_30 : Operation 144 [1/1] (0.00ns)   --->   "%bram_x_addr = getelementptr i16 %bram_x, i32 0, i32 %zext_ln24" [input_layer/main.cpp:24]   --->   Operation 144 'getelementptr' 'bram_x_addr' <Predicate = (!icmp_ln23)> <Delay = 0.00>
-ST_30 : Operation 145 [1/1] (3.25ns)   --->   "%store_ln24 = store i16 %gmem_addr_read, i10 %bram_x_addr" [input_layer/main.cpp:24]   --->   Operation 145 'store' 'store_ln24' <Predicate = (!icmp_ln23)> <Delay = 3.25> <CoreInst = "RAM_1P">   --->   Core 86 'RAM_1P' <Latency = 2> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 16> <Depth = 1024> <RAM>
+ST_30 : Operation 145 [1/1] (3.25ns)   --->   "%store_ln24 = store i16 %gmem_addr_read, i13 %bram_x_addr" [input_layer/main.cpp:24]   --->   Operation 145 'store' 'store_ln24' <Predicate = (!icmp_ln23)> <Delay = 3.25> <CoreInst = "RAM_1P">   --->   Core 86 'RAM_1P' <Latency = 2> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 16> <Depth = 5500> <RAM>
 ST_30 : Operation 146 [1/1] (0.00ns)   --->   "%br_ln0 = br void"   --->   Operation 146 'br' 'br_ln0' <Predicate = (!icmp_ln23)> <Delay = 0.00>
 
 State 31 <SV = 9> <Delay = 7.30>
@@ -336,9 +336,9 @@ ST_39 : Operation 165 [1/1] (7.30ns)   --->   "%gmem_addr_2_read = read i16 @_ss
 
 State 40 <SV = 18> <Delay = 3.25>
 ST_40 : Operation 166 [1/1] (0.00ns)   --->   "%specloopname_ln26 = specloopname void @_ssdm_op_SpecLoopName, void @empty_10" [input_layer/main.cpp:26]   --->   Operation 166 'specloopname' 'specloopname_ln26' <Predicate = (!icmp_ln26)> <Delay = 0.00>
-ST_40 : Operation 167 [1/1] (0.00ns)   --->   "%zext_ln27 = zext i10 %trunc_ln27" [input_layer/main.cpp:27]   --->   Operation 167 'zext' 'zext_ln27' <Predicate = (!icmp_ln26)> <Delay = 0.00>
+ST_40 : Operation 167 [1/1] (0.00ns)   --->   "%zext_ln27 = zext i13 %trunc_ln27" [input_layer/main.cpp:27]   --->   Operation 167 'zext' 'zext_ln27' <Predicate = (!icmp_ln26)> <Delay = 0.00>
 ST_40 : Operation 168 [1/1] (0.00ns)   --->   "%bram_dx_addr = getelementptr i16 %bram_dx, i32 0, i32 %zext_ln27" [input_layer/main.cpp:27]   --->   Operation 168 'getelementptr' 'bram_dx_addr' <Predicate = (!icmp_ln26)> <Delay = 0.00>
-ST_40 : Operation 169 [1/1] (3.25ns)   --->   "%store_ln27 = store i16 %gmem_addr_2_read, i10 %bram_dx_addr" [input_layer/main.cpp:27]   --->   Operation 169 'store' 'store_ln27' <Predicate = (!icmp_ln26)> <Delay = 3.25> <CoreInst = "RAM_1P">   --->   Core 86 'RAM_1P' <Latency = 2> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 16> <Depth = 1024> <RAM>
+ST_40 : Operation 169 [1/1] (3.25ns)   --->   "%store_ln27 = store i16 %gmem_addr_2_read, i13 %bram_dx_addr" [input_layer/main.cpp:27]   --->   Operation 169 'store' 'store_ln27' <Predicate = (!icmp_ln26)> <Delay = 3.25> <CoreInst = "RAM_1P">   --->   Core 86 'RAM_1P' <Latency = 2> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 16> <Depth = 5500> <RAM>
 ST_40 : Operation 170 [1/1] (0.00ns)   --->   "%br_ln0 = br void"   --->   Operation 170 'br' 'br_ln0' <Predicate = (!icmp_ln26)> <Delay = 0.00>
 
 State 41 <SV = 17> <Delay = 0.00>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1653249283804">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1653477396267">
   <ports id="1" name="gmem" type="PortType" coreId="52" bitwidth="16" direction="DirInOut" iftype="IfTypeFifo">
     <dataInputObjs>getelementptr</dataInputObjs>
     <dataInputObjs>getelementptr</dataInputObjs>
@@ -13,25 +13,25 @@
   <ports id="2" name="x" type="PortType" originalName="x" coreId="49" bitwidth="32">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="3" name="dx" type="PortType" originalName="dx" coreId="49" bitwidth="32">
+  <ports id="3" name="dx" type="PortType" originalName="dx" coreId="0" bitwidth="32">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="4" name="bram_x" type="PortType" coreName="RAM_1P" coreId="3573412790" bitwidth="16" direction="DirInOut" iftype="IfTypeRegister" arraysize="1024">
+  <ports id="4" name="bram_x" type="PortType" coreName="RAM_1P" coreId="0" bitwidth="16" direction="DirInOut" iftype="IfTypeRegister" arraysize="5500">
     <dataInputObjs>getelementptr</dataInputObjs>
     <dataInputObjs>getelementptr</dataInputObjs>
     <dataOutputObjs>getelementptr</dataOutputObjs>
     <dataOutputObjs>getelementptr</dataOutputObjs>
   </ports>
-  <ports id="5" name="bram_dx" type="PortType" coreName="RAM_1P" coreId="0" bitwidth="16" direction="DirInOut" iftype="IfTypeRegister" arraysize="1024">
+  <ports id="5" name="bram_dx" type="PortType" coreName="RAM_1P" coreId="113" bitwidth="16" direction="DirInOut" iftype="IfTypeRegister" arraysize="5500">
     <dataInputObjs>getelementptr</dataInputObjs>
     <dataInputObjs>getelementptr</dataInputObjs>
     <dataOutputObjs>getelementptr</dataOutputObjs>
     <dataOutputObjs>getelementptr</dataOutputObjs>
   </ports>
-  <ports id="6" name="dim" type="PortType" originalName="dim" coreId="173" bitwidth="32">
+  <ports id="6" name="dim" type="PortType" originalName="dim" coreId="145" bitwidth="32">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="7" name="ddrtobram" type="PortType" originalName="ddrtobram" coreId="113" bitwidth="1">
+  <ports id="7" name="ddrtobram" type="PortType" originalName="ddrtobram" coreId="161" bitwidth="1">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
   <edges id="135" source_obj="//@ports.6" sink_obj="//@blocks.0/@node_objs.0"/>
@@ -229,7 +229,7 @@
       <dataOutputObjs>br</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="33" name="br_ln22" lineNumber="22" fileName="input_layer/main.cpp" fileDirectory=".." coreId="49" contextFuncName="InputLayer" opcode="br" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="33" name="br_ln22" lineNumber="22" fileName="input_layer/main.cpp" fileDirectory=".." coreId="132" contextFuncName="InputLayer" opcode="br" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="input_layer/main.cpp" linenumber="22" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="InputLayer"/>
       <dataInputObjs>read</dataInputObjs>
       <controlInputObjs>block_36</controlInputObjs>
@@ -245,7 +245,7 @@
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>.lr.ph16</controlOutputObjs>
     <controlOutputObjs>._crit_edge</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="35" name="br_ln36" lineNumber="36" fileName="input_layer/main.cpp" fileDirectory=".." coreId="49" contextFuncName="InputLayer" opcode="br" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="35" name="br_ln36" lineNumber="36" fileName="input_layer/main.cpp" fileDirectory=".." coreId="529" contextFuncName="InputLayer" opcode="br" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="input_layer/main.cpp" linenumber="36" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="InputLayer"/>
       <dataInputObjs>icmp</dataInputObjs>
       <controlInputObjs>._crit_edge</controlInputObjs>
@@ -272,12 +272,12 @@
       <dataOutputObjs>sext</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="39" name="sext_ln36" lineNumber="36" fileName="input_layer/main.cpp" fileDirectory=".." rtlName="sext_ln36_fu_301_p1" coreId="0" contextFuncName="InputLayer" bitwidth="32" opcode="sext" nodeLabel="1.0" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="39" name="sext_ln36" lineNumber="36" fileName="input_layer/main.cpp" fileDirectory=".." rtlName="sext_ln36_fu_301_p1" coreId="2881768848" contextFuncName="InputLayer" bitwidth="32" opcode="sext" nodeLabel="1.0" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="input_layer/main.cpp" linenumber="36" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="InputLayer"/>
       <dataInputObjs>partselect</dataInputObjs>
       <dataOutputObjs>getelementptr</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="40" name="gmem_addr_1" lineNumber="36" fileName="input_layer/main.cpp" fileDirectory=".." coreId="17153" contextFuncName="InputLayer" bitwidth="16" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="40" name="gmem_addr_1" lineNumber="36" fileName="input_layer/main.cpp" fileDirectory=".." coreId="2881733744" contextFuncName="InputLayer" bitwidth="16" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="input_layer/main.cpp" linenumber="36" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="InputLayer"/>
       <dataInputObjs>gmem</dataInputObjs>
       <dataInputObjs>sext</dataInputObjs>
@@ -291,7 +291,7 @@
       <dataInputObjs>getelementptr</dataInputObjs>
       <dataInputObjs>read</dataInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="42" name="br_ln36" lineNumber="36" fileName="input_layer/main.cpp" fileDirectory=".." coreId="132" contextFuncName="InputLayer" opcode="br" nodeLabel="1.0" m_display="0" m_delay="1.58" m_topoIndex="14" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="42" name="br_ln36" lineNumber="36" fileName="input_layer/main.cpp" fileDirectory=".." coreId="1663050274" contextFuncName="InputLayer" opcode="br" nodeLabel="1.0" m_display="0" m_delay="1.58" m_topoIndex="14" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="input_layer/main.cpp" linenumber="36" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="InputLayer"/>
       <controlInputObjs>block_50</controlInputObjs>
     </node_objs>
@@ -308,18 +308,18 @@
       <inlineStackInfo fileName="input_layer/main.cpp" linenumber="40" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="InputLayer"/>
       <dataInputObjs>getelementptr</dataInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="60" name="trunc_ln4" lineNumber="40" fileName="input_layer/main.cpp" fileDirectory=".." rtlName="grp_fu_283_p4" coreId="0" contextFuncName="InputLayer" bitwidth="31" opcode="partselect" nodeLabel="10.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="60" name="trunc_ln4" lineNumber="40" fileName="input_layer/main.cpp" fileDirectory=".." rtlName="grp_fu_283_p4" coreId="2881746368" contextFuncName="InputLayer" bitwidth="31" opcode="partselect" nodeLabel="10.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="input_layer/main.cpp" linenumber="40" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="InputLayer"/>
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>sext</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="61" name="sext_ln40" lineNumber="40" fileName="input_layer/main.cpp" fileDirectory=".." rtlName="sext_ln40_fu_332_p1" coreId="1680297968" contextFuncName="InputLayer" bitwidth="32" opcode="sext" nodeLabel="10.0" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="61" name="sext_ln40" lineNumber="40" fileName="input_layer/main.cpp" fileDirectory=".." rtlName="sext_ln40_fu_332_p1" coreId="2881747417" contextFuncName="InputLayer" bitwidth="32" opcode="sext" nodeLabel="10.0" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="input_layer/main.cpp" linenumber="40" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="InputLayer"/>
       <dataInputObjs>partselect</dataInputObjs>
       <dataOutputObjs>getelementptr</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="62" name="gmem_addr_3" lineNumber="40" fileName="input_layer/main.cpp" fileDirectory=".." coreId="25" contextFuncName="InputLayer" bitwidth="16" opcode="getelementptr" nodeLabel="10.0" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="62" name="gmem_addr_3" lineNumber="40" fileName="input_layer/main.cpp" fileDirectory=".." coreId="2881748352" contextFuncName="InputLayer" bitwidth="16" opcode="getelementptr" nodeLabel="10.0" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="input_layer/main.cpp" linenumber="40" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="InputLayer"/>
       <dataInputObjs>gmem</dataInputObjs>
       <dataInputObjs>sext</dataInputObjs>
@@ -333,7 +333,7 @@
       <dataInputObjs>getelementptr</dataInputObjs>
       <dataInputObjs>read</dataInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="64" name="br_ln40" lineNumber="40" fileName="input_layer/main.cpp" fileDirectory=".." coreId="132" contextFuncName="InputLayer" opcode="br" nodeLabel="10.0" m_display="0" m_delay="1.58" m_topoIndex="30" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="64" name="br_ln40" lineNumber="40" fileName="input_layer/main.cpp" fileDirectory=".." coreId="6" contextFuncName="InputLayer" opcode="br" nodeLabel="10.0" m_display="0" m_delay="1.58" m_topoIndex="30" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="input_layer/main.cpp" linenumber="40" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="InputLayer"/>
       <controlInputObjs>block_72</controlInputObjs>
     </node_objs>
@@ -349,7 +349,7 @@
       <inlineStackInfo fileName="input_layer/main.cpp" linenumber="46" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="InputLayer"/>
       <dataInputObjs>getelementptr</dataInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="82" name="br_ln46" lineNumber="46" fileName="input_layer/main.cpp" fileDirectory=".." coreId="7409" contextFuncName="InputLayer" opcode="br" nodeLabel="19.0" m_display="0" m_topoIndex="42" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="82" name="br_ln46" lineNumber="46" fileName="input_layer/main.cpp" fileDirectory=".." coreId="2881710304" contextFuncName="InputLayer" opcode="br" nodeLabel="19.0" m_display="0" m_topoIndex="42" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="input_layer/main.cpp" linenumber="46" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="InputLayer"/>
       <controlInputObjs>._crit_edge</controlInputObjs>
     </node_objs>
@@ -362,7 +362,7 @@
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>.lr.ph6</controlOutputObjs>
     <controlOutputObjs>._crit_edge</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="84" name="br_ln23" lineNumber="23" fileName="input_layer/main.cpp" fileDirectory=".." coreId="1713384560" contextFuncName="InputLayer" opcode="br" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="84" name="br_ln23" lineNumber="23" fileName="input_layer/main.cpp" fileDirectory=".." coreId="2881789776" contextFuncName="InputLayer" opcode="br" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="input_layer/main.cpp" linenumber="23" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="InputLayer"/>
       <dataInputObjs>icmp</dataInputObjs>
       <controlInputObjs>._crit_edge</controlInputObjs>
@@ -377,24 +377,24 @@
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>block_99</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="86" name="trunc_ln23" lineNumber="23" fileName="input_layer/main.cpp" fileDirectory=".." rtlName="trunc_ln23_fu_374_p1" coreId="1914708539" contextFuncName="InputLayer" bitwidth="31" opcode="trunc" nodeLabel="26.0" m_display="0" m_topoIndex="47" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="86" name="trunc_ln23" lineNumber="23" fileName="input_layer/main.cpp" fileDirectory=".." rtlName="trunc_ln23_fu_374_p1" coreId="4294967295" contextFuncName="InputLayer" bitwidth="31" opcode="trunc" nodeLabel="26.0" m_display="0" m_topoIndex="47" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="input_layer/main.cpp" linenumber="23" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="InputLayer"/>
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>icmp</dataOutputObjs>
       <dataOutputObjs>icmp</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="87" name="trunc_ln" lineNumber="23" fileName="input_layer/main.cpp" fileDirectory=".." rtlName="grp_fu_274_p4" coreId="1204009824" contextFuncName="InputLayer" bitwidth="31" opcode="partselect" nodeLabel="20.0" m_display="0" m_topoIndex="43" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="87" name="trunc_ln" lineNumber="23" fileName="input_layer/main.cpp" fileDirectory=".." rtlName="grp_fu_274_p4" coreId="2881798896" contextFuncName="InputLayer" bitwidth="31" opcode="partselect" nodeLabel="20.0" m_display="0" m_topoIndex="43" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="input_layer/main.cpp" linenumber="23" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="InputLayer"/>
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>sext</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="88" name="sext_ln23" lineNumber="23" fileName="input_layer/main.cpp" fileDirectory=".." rtlName="sext_ln23_fu_363_p1" coreId="132" contextFuncName="InputLayer" bitwidth="32" opcode="sext" nodeLabel="20.0" m_display="0" m_topoIndex="44" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="88" name="sext_ln23" lineNumber="23" fileName="input_layer/main.cpp" fileDirectory=".." rtlName="sext_ln23_fu_363_p1" coreId="0" contextFuncName="InputLayer" bitwidth="32" opcode="sext" nodeLabel="20.0" m_display="0" m_topoIndex="44" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="input_layer/main.cpp" linenumber="23" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="InputLayer"/>
       <dataInputObjs>partselect</dataInputObjs>
       <dataOutputObjs>getelementptr</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="89" name="gmem_addr" lineNumber="23" fileName="input_layer/main.cpp" fileDirectory=".." coreId="49" contextFuncName="InputLayer" bitwidth="16" opcode="getelementptr" nodeLabel="20.0" m_display="0" m_topoIndex="45" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="89" name="gmem_addr" lineNumber="23" fileName="input_layer/main.cpp" fileDirectory=".." coreId="0" contextFuncName="InputLayer" bitwidth="16" opcode="getelementptr" nodeLabel="20.0" m_display="0" m_topoIndex="45" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="input_layer/main.cpp" linenumber="23" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="InputLayer"/>
       <dataInputObjs>gmem</dataInputObjs>
       <dataInputObjs>sext</dataInputObjs>
@@ -407,7 +407,7 @@
       <dataInputObjs>getelementptr</dataInputObjs>
       <dataInputObjs>read</dataInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="91" name="br_ln23" lineNumber="23" fileName="input_layer/main.cpp" fileDirectory=".." coreId="1203465072" contextFuncName="InputLayer" opcode="br" nodeLabel="26.0" m_display="0" m_delay="1.58" m_topoIndex="48" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="91" name="br_ln23" lineNumber="23" fileName="input_layer/main.cpp" fileDirectory=".." coreId="0" contextFuncName="InputLayer" opcode="br" nodeLabel="26.0" m_display="0" m_delay="1.58" m_topoIndex="48" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="input_layer/main.cpp" linenumber="23" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="InputLayer"/>
       <controlInputObjs>block_99</controlInputObjs>
     </node_objs>
@@ -420,7 +420,7 @@
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>block_120</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="108" name="trunc_ln2" lineNumber="26" fileName="input_layer/main.cpp" fileDirectory=".." rtlName="grp_fu_283_p4" coreId="0" contextFuncName="InputLayer" bitwidth="31" opcode="partselect" nodeLabel="30.0" m_display="0" m_topoIndex="59" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="108" name="trunc_ln2" lineNumber="26" fileName="input_layer/main.cpp" fileDirectory=".." rtlName="grp_fu_283_p4" coreId="3290902696" contextFuncName="InputLayer" bitwidth="31" opcode="partselect" nodeLabel="30.0" m_display="0" m_topoIndex="59" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="input_layer/main.cpp" linenumber="26" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="InputLayer"/>
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>sext</dataOutputObjs>
@@ -431,7 +431,7 @@
       <dataInputObjs>partselect</dataInputObjs>
       <dataOutputObjs>getelementptr</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="110" name="gmem_addr_2" lineNumber="26" fileName="input_layer/main.cpp" fileDirectory=".." coreId="0" contextFuncName="InputLayer" bitwidth="16" opcode="getelementptr" nodeLabel="30.0" m_display="0" m_topoIndex="61" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="110" name="gmem_addr_2" lineNumber="26" fileName="input_layer/main.cpp" fileDirectory=".." coreId="3290903936" contextFuncName="InputLayer" bitwidth="16" opcode="getelementptr" nodeLabel="30.0" m_display="0" m_topoIndex="61" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="input_layer/main.cpp" linenumber="26" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="InputLayer"/>
       <dataInputObjs>gmem</dataInputObjs>
       <dataInputObjs>sext</dataInputObjs>
@@ -444,7 +444,7 @@
       <dataInputObjs>getelementptr</dataInputObjs>
       <dataInputObjs>read</dataInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="112" name="br_ln26" lineNumber="26" fileName="input_layer/main.cpp" fileDirectory=".." coreId="0" contextFuncName="InputLayer" opcode="br" nodeLabel="36.0" m_display="0" m_delay="1.58" m_topoIndex="63" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="112" name="br_ln26" lineNumber="26" fileName="input_layer/main.cpp" fileDirectory=".." coreId="3892314240" contextFuncName="InputLayer" opcode="br" nodeLabel="36.0" m_display="0" m_delay="1.58" m_topoIndex="63" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="input_layer/main.cpp" linenumber="26" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="InputLayer"/>
       <controlInputObjs>block_120</controlInputObjs>
     </node_objs>
@@ -456,7 +456,7 @@
     <controlInputObjs>block_120</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>._crit_edge</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="129" name="br_ln0" coreId="0" opcode="br" nodeLabel="40.0" m_display="0" m_topoIndex="74" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="129" name="br_ln0" coreId="3290915824" opcode="br" nodeLabel="40.0" m_display="0" m_topoIndex="74" m_clusterGroupNumber="-1">
       <controlInputObjs>._crit_edge</controlInputObjs>
     </node_objs>
   </blocks>
@@ -469,7 +469,7 @@
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>br</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="131" name="_ln46" lineNumber="46" fileName="input_layer/main.cpp" fileDirectory=".." coreId="2281701504" contextFuncName="InputLayer" opcode="ret" nodeLabel="40.0" m_display="0" m_topoIndex="75" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="131" name="_ln46" lineNumber="46" fileName="input_layer/main.cpp" fileDirectory=".." coreId="3290919584" contextFuncName="InputLayer" opcode="ret" nodeLabel="40.0" m_display="0" m_topoIndex="75" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="input_layer/main.cpp" linenumber="46" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="InputLayer"/>
     </node_objs>
     <fileValidLineNumbers fileName="input_layer/main.cpp">
@@ -484,7 +484,7 @@
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>.lr.ph11</controlOutputObjs>
       <controlOutputObjs>.split10</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="44" name="i_1" lineNumber="36" originalName="i" fileName="input_layer/main.cpp" fileDirectory=".." coreId="1204051104" contextFuncName="InputLayer" bitwidth="31" opcode="phi" nodeLabel="2.0" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="44" name="i_1" lineNumber="36" originalName="i" fileName="input_layer/main.cpp" fileDirectory=".." coreId="2881736608" contextFuncName="InputLayer" bitwidth="31" opcode="phi" nodeLabel="2.0" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="input_layer/main.cpp" linenumber="36" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="InputLayer"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
@@ -500,13 +500,13 @@
         <dataOutputObjs>phi</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="47" name="icmp_ln36" lineNumber="36" fileName="input_layer/main.cpp" fileDirectory=".." rtlName="icmp_ln36_fu_318_p2" opType="icmp" coreId="1680291048" contextFuncName="InputLayer" bitwidth="1" opcode="icmp" nodeLabel="2.0" m_display="0" m_delay="2.47" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="47" name="icmp_ln36" lineNumber="36" fileName="input_layer/main.cpp" fileDirectory=".." rtlName="icmp_ln36_fu_318_p2" opType="icmp" coreId="1819242338" contextFuncName="InputLayer" bitwidth="1" opcode="icmp" nodeLabel="2.0" m_display="0" m_delay="2.47" m_topoIndex="17" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="input_layer/main.cpp" linenumber="36" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="InputLayer"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataInputObjs>trunc</dataInputObjs>
         <dataOutputObjs>br</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="49" name="br_ln36" lineNumber="36" fileName="input_layer/main.cpp" fileDirectory=".." coreId="1680292792" contextFuncName="InputLayer" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="49" name="br_ln36" lineNumber="36" fileName="input_layer/main.cpp" fileDirectory=".." coreId="2881739520" contextFuncName="InputLayer" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="input_layer/main.cpp" linenumber="36" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="InputLayer"/>
         <dataInputObjs>icmp</dataInputObjs>
         <controlInputObjs>.split10</controlInputObjs>
@@ -521,7 +521,7 @@
       <controlOutputObjs>phi</controlOutputObjs>
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>block_50</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="52" name="trunc_ln37" lineNumber="37" fileName="input_layer/main.cpp" fileDirectory=".." rtlName="trunc_ln37_fu_323_p1" coreId="1" contextFuncName="InputLayer" bitwidth="10" opcode="trunc" nodeLabel="2.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="52" name="trunc_ln37" lineNumber="37" fileName="input_layer/main.cpp" fileDirectory=".." rtlName="trunc_ln37_fu_323_p1" coreId="0" contextFuncName="InputLayer" bitwidth="13" opcode="trunc" nodeLabel="2.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="input_layer/main.cpp" linenumber="37" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="InputLayer"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
@@ -531,7 +531,7 @@
         <dataInputObjs>trunc</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="54" name="bram_x_addr_1" lineNumber="37" fileName="input_layer/main.cpp" fileDirectory=".." coreId="1680297664" contextFuncName="InputLayer" bitwidth="10" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="54" name="bram_x_addr_1" lineNumber="37" fileName="input_layer/main.cpp" fileDirectory=".." coreId="0" contextFuncName="InputLayer" bitwidth="13" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="input_layer/main.cpp" linenumber="37" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="InputLayer"/>
         <dataInputObjs>bram_x</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
@@ -550,7 +550,7 @@
         <dataInputObjs>load</dataInputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="57" name="br_ln0" coreId="1680299496" opcode="br" nodeLabel="5.0" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="57" name="br_ln0" coreId="1" opcode="br" nodeLabel="5.0" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
         <controlInputObjs>block_50</controlInputObjs>
       </node_objs>
       <fileValidLineNumbers fileName="input_layer/main.cpp">
@@ -566,7 +566,7 @@
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>._crit_edge.loopexit38</controlOutputObjs>
       <controlOutputObjs>.split8</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="66" name="i_3" lineNumber="40" originalName="i" fileName="input_layer/main.cpp" fileDirectory=".." coreId="2281701504" contextFuncName="InputLayer" bitwidth="31" opcode="phi" nodeLabel="11.0" m_display="0" m_topoIndex="31" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="66" name="i_3" lineNumber="40" originalName="i" fileName="input_layer/main.cpp" fileDirectory=".." coreId="1885415023" contextFuncName="InputLayer" bitwidth="31" opcode="phi" nodeLabel="11.0" m_display="0" m_topoIndex="31" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="input_layer/main.cpp" linenumber="40" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="InputLayer"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
@@ -582,13 +582,13 @@
         <dataOutputObjs>phi</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="69" name="icmp_ln40" lineNumber="40" fileName="input_layer/main.cpp" fileDirectory=".." rtlName="icmp_ln40_fu_349_p2" opType="icmp" coreId="1203998392" contextFuncName="InputLayer" bitwidth="1" opcode="icmp" nodeLabel="11.0" m_display="0" m_delay="2.47" m_topoIndex="33" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="69" name="icmp_ln40" lineNumber="40" fileName="input_layer/main.cpp" fileDirectory=".." rtlName="icmp_ln40_fu_349_p2" opType="icmp" coreId="1699560457" contextFuncName="InputLayer" bitwidth="1" opcode="icmp" nodeLabel="11.0" m_display="0" m_delay="2.47" m_topoIndex="33" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="input_layer/main.cpp" linenumber="40" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="InputLayer"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataInputObjs>trunc</dataInputObjs>
         <dataOutputObjs>br</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="71" name="br_ln40" lineNumber="40" fileName="input_layer/main.cpp" fileDirectory=".." coreId="2281701504" contextFuncName="InputLayer" opcode="br" nodeLabel="11.0" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="71" name="br_ln40" lineNumber="40" fileName="input_layer/main.cpp" fileDirectory=".." coreId="1818304628" contextFuncName="InputLayer" opcode="br" nodeLabel="11.0" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="input_layer/main.cpp" linenumber="40" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="InputLayer"/>
         <dataInputObjs>icmp</dataInputObjs>
         <controlInputObjs>.split8</controlInputObjs>
@@ -603,17 +603,17 @@
       <controlOutputObjs>phi</controlOutputObjs>
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>block_72</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="74" name="trunc_ln41" lineNumber="41" fileName="input_layer/main.cpp" fileDirectory=".." rtlName="trunc_ln41_fu_354_p1" coreId="1852385312" contextFuncName="InputLayer" bitwidth="10" opcode="trunc" nodeLabel="11.0" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="74" name="trunc_ln41" lineNumber="41" fileName="input_layer/main.cpp" fileDirectory=".." rtlName="trunc_ln41_fu_354_p1" coreId="1936028192" contextFuncName="InputLayer" bitwidth="13" opcode="trunc" nodeLabel="11.0" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="input_layer/main.cpp" linenumber="41" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="InputLayer"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="75" name="zext_ln41" lineNumber="41" fileName="input_layer/main.cpp" fileDirectory=".." rtlName="zext_ln41_fu_358_p1" coreId="132" contextFuncName="InputLayer" bitwidth="32" opcode="zext" nodeLabel="11.0" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="75" name="zext_ln41" lineNumber="41" fileName="input_layer/main.cpp" fileDirectory=".." rtlName="zext_ln41_fu_358_p1" coreId="1869182051" contextFuncName="InputLayer" bitwidth="32" opcode="zext" nodeLabel="11.0" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="input_layer/main.cpp" linenumber="41" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="InputLayer"/>
         <dataInputObjs>trunc</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="76" name="bram_dx_addr_1" lineNumber="41" fileName="input_layer/main.cpp" fileDirectory=".." coreId="1204002416" contextFuncName="InputLayer" bitwidth="10" opcode="getelementptr" nodeLabel="11.0" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="76" name="bram_dx_addr_1" lineNumber="41" fileName="input_layer/main.cpp" fileDirectory=".." coreId="808464928" contextFuncName="InputLayer" bitwidth="13" opcode="getelementptr" nodeLabel="11.0" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="input_layer/main.cpp" linenumber="41" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="InputLayer"/>
         <dataInputObjs>bram_dx</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
@@ -632,7 +632,7 @@
         <dataInputObjs>load</dataInputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="79" name="br_ln0" coreId="1204004720" opcode="br" nodeLabel="14.0" m_display="0" m_topoIndex="40" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="79" name="br_ln0" coreId="4294967295" opcode="br" nodeLabel="14.0" m_display="0" m_topoIndex="40" m_clusterGroupNumber="-1">
         <controlInputObjs>block_72</controlInputObjs>
       </node_objs>
       <fileValidLineNumbers fileName="input_layer/main.cpp">
@@ -648,7 +648,7 @@
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>.lr.ph</controlOutputObjs>
       <controlOutputObjs>.split6</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="93" name="i" lineNumber="23" originalName="i" fileName="input_layer/main.cpp" fileDirectory=".." coreId="1868849526" contextFuncName="InputLayer" bitwidth="31" opcode="phi" nodeLabel="27.0" m_display="0" m_topoIndex="49" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="93" name="i" lineNumber="23" originalName="i" fileName="input_layer/main.cpp" fileDirectory=".." coreId="3618356" contextFuncName="InputLayer" bitwidth="31" opcode="phi" nodeLabel="27.0" m_display="0" m_topoIndex="49" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="input_layer/main.cpp" linenumber="23" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="InputLayer"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
@@ -664,13 +664,13 @@
         <dataOutputObjs>phi</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="96" name="icmp_ln23" lineNumber="23" fileName="input_layer/main.cpp" fileDirectory=".." rtlName="icmp_ln23_fu_383_p2" opType="icmp" coreId="1764244339" contextFuncName="InputLayer" bitwidth="1" opcode="icmp" nodeLabel="27.0" m_display="0" m_delay="2.47" m_topoIndex="51" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="96" name="icmp_ln23" lineNumber="23" fileName="input_layer/main.cpp" fileDirectory=".." rtlName="icmp_ln23_fu_383_p2" opType="icmp" coreId="2881717616" contextFuncName="InputLayer" bitwidth="1" opcode="icmp" nodeLabel="27.0" m_display="0" m_delay="2.47" m_topoIndex="51" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="input_layer/main.cpp" linenumber="23" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="InputLayer"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataInputObjs>trunc</dataInputObjs>
         <dataOutputObjs>br</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="98" name="br_ln23" lineNumber="23" fileName="input_layer/main.cpp" fileDirectory=".." coreId="1819243365" contextFuncName="InputLayer" opcode="br" nodeLabel="27.0" m_display="0" m_topoIndex="52" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="98" name="br_ln23" lineNumber="23" fileName="input_layer/main.cpp" fileDirectory=".." coreId="132" contextFuncName="InputLayer" opcode="br" nodeLabel="27.0" m_display="0" m_topoIndex="52" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="input_layer/main.cpp" linenumber="23" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="InputLayer"/>
         <dataInputObjs>icmp</dataInputObjs>
         <controlInputObjs>.split6</controlInputObjs>
@@ -690,17 +690,17 @@
         <dataInputObjs>getelementptr</dataInputObjs>
         <dataOutputObjs>store</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="102" name="trunc_ln24" lineNumber="24" fileName="input_layer/main.cpp" fileDirectory=".." rtlName="trunc_ln24_fu_388_p1" coreId="1634492276" contextFuncName="InputLayer" bitwidth="10" opcode="trunc" nodeLabel="27.0" m_display="0" m_topoIndex="53" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="102" name="trunc_ln24" lineNumber="24" fileName="input_layer/main.cpp" fileDirectory=".." rtlName="trunc_ln24_fu_388_p1" coreId="49" contextFuncName="InputLayer" bitwidth="13" opcode="trunc" nodeLabel="27.0" m_display="0" m_topoIndex="53" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="input_layer/main.cpp" linenumber="24" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="InputLayer"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="103" name="zext_ln24" lineNumber="24" fileName="input_layer/main.cpp" fileDirectory=".." rtlName="zext_ln24_fu_392_p1" coreId="1031301478" contextFuncName="InputLayer" bitwidth="32" opcode="zext" nodeLabel="29.0" m_display="0" m_topoIndex="55" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="103" name="zext_ln24" lineNumber="24" fileName="input_layer/main.cpp" fileDirectory=".." rtlName="zext_ln24_fu_392_p1" coreId="132" contextFuncName="InputLayer" bitwidth="32" opcode="zext" nodeLabel="29.0" m_display="0" m_topoIndex="55" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="input_layer/main.cpp" linenumber="24" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="InputLayer"/>
         <dataInputObjs>trunc</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="104" name="bram_x_addr" lineNumber="24" fileName="input_layer/main.cpp" fileDirectory=".." coreId="1701278305" contextFuncName="InputLayer" bitwidth="10" opcode="getelementptr" nodeLabel="29.0" m_display="0" m_topoIndex="56" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="104" name="bram_x_addr" lineNumber="24" fileName="input_layer/main.cpp" fileDirectory=".." coreId="132" contextFuncName="InputLayer" bitwidth="13" opcode="getelementptr" nodeLabel="29.0" m_display="0" m_topoIndex="56" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="input_layer/main.cpp" linenumber="24" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="InputLayer"/>
         <dataInputObjs>bram_x</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
@@ -713,7 +713,7 @@
         <dataInputObjs>read</dataInputObjs>
         <dataInputObjs>getelementptr</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="106" name="br_ln0" coreId="0" opcode="br" nodeLabel="29.0" m_display="0" m_topoIndex="58" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="106" name="br_ln0" coreId="3290900744" opcode="br" nodeLabel="29.0" m_display="0" m_topoIndex="58" m_clusterGroupNumber="-1">
         <controlInputObjs>block_99</controlInputObjs>
       </node_objs>
       <fileValidLineNumbers fileName="input_layer/main.cpp">
@@ -729,7 +729,7 @@
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>._crit_edge.loopexit</controlOutputObjs>
       <controlOutputObjs>.split</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="114" name="i_2" lineNumber="26" originalName="i" fileName="input_layer/main.cpp" fileDirectory=".." coreId="0" contextFuncName="InputLayer" bitwidth="31" opcode="phi" nodeLabel="37.0" m_display="0" m_topoIndex="64" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="114" name="i_2" lineNumber="26" originalName="i" fileName="input_layer/main.cpp" fileDirectory=".." coreId="49" contextFuncName="InputLayer" bitwidth="31" opcode="phi" nodeLabel="37.0" m_display="0" m_topoIndex="64" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="input_layer/main.cpp" linenumber="26" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="InputLayer"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
@@ -745,13 +745,13 @@
         <dataOutputObjs>phi</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="117" name="icmp_ln26" lineNumber="26" fileName="input_layer/main.cpp" fileDirectory=".." rtlName="icmp_ln26_fu_413_p2" opType="icmp" coreId="132" contextFuncName="InputLayer" bitwidth="1" opcode="icmp" nodeLabel="37.0" m_display="0" m_delay="2.47" m_topoIndex="66" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="117" name="icmp_ln26" lineNumber="26" fileName="input_layer/main.cpp" fileDirectory=".." rtlName="icmp_ln26_fu_413_p2" opType="icmp" coreId="3290909049" contextFuncName="InputLayer" bitwidth="1" opcode="icmp" nodeLabel="37.0" m_display="0" m_delay="2.47" m_topoIndex="66" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="input_layer/main.cpp" linenumber="26" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="InputLayer"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataInputObjs>trunc</dataInputObjs>
         <dataOutputObjs>br</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="119" name="br_ln26" lineNumber="26" fileName="input_layer/main.cpp" fileDirectory=".." coreId="0" contextFuncName="InputLayer" opcode="br" nodeLabel="37.0" m_display="0" m_topoIndex="67" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="119" name="br_ln26" lineNumber="26" fileName="input_layer/main.cpp" fileDirectory=".." coreId="3892314240" contextFuncName="InputLayer" opcode="br" nodeLabel="37.0" m_display="0" m_topoIndex="67" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="input_layer/main.cpp" linenumber="26" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="InputLayer"/>
         <dataInputObjs>icmp</dataInputObjs>
         <controlInputObjs>.split</controlInputObjs>
@@ -771,17 +771,17 @@
         <dataInputObjs>getelementptr</dataInputObjs>
         <dataOutputObjs>store</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="123" name="trunc_ln27" lineNumber="27" fileName="input_layer/main.cpp" fileDirectory=".." rtlName="trunc_ln27_fu_418_p1" coreId="1935961711" contextFuncName="InputLayer" bitwidth="10" opcode="trunc" nodeLabel="37.0" m_display="0" m_topoIndex="68" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="123" name="trunc_ln27" lineNumber="27" fileName="input_layer/main.cpp" fileDirectory=".." rtlName="trunc_ln27_fu_418_p1" coreId="0" contextFuncName="InputLayer" bitwidth="13" opcode="trunc" nodeLabel="37.0" m_display="0" m_topoIndex="68" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="input_layer/main.cpp" linenumber="27" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="InputLayer"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="124" name="zext_ln27" lineNumber="27" fileName="input_layer/main.cpp" fileDirectory=".." rtlName="zext_ln27_fu_422_p1" coreId="1204040808" contextFuncName="InputLayer" bitwidth="32" opcode="zext" nodeLabel="39.0" m_display="0" m_topoIndex="70" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="124" name="zext_ln27" lineNumber="27" fileName="input_layer/main.cpp" fileDirectory=".." rtlName="zext_ln27_fu_422_p1" coreId="1" contextFuncName="InputLayer" bitwidth="32" opcode="zext" nodeLabel="39.0" m_display="0" m_topoIndex="70" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="input_layer/main.cpp" linenumber="27" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="InputLayer"/>
         <dataInputObjs>trunc</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="125" name="bram_dx_addr" lineNumber="27" fileName="input_layer/main.cpp" fileDirectory=".." coreId="1204039896" contextFuncName="InputLayer" bitwidth="10" opcode="getelementptr" nodeLabel="39.0" m_display="0" m_topoIndex="71" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="125" name="bram_dx_addr" lineNumber="27" fileName="input_layer/main.cpp" fileDirectory=".." coreId="132" contextFuncName="InputLayer" bitwidth="13" opcode="getelementptr" nodeLabel="39.0" m_display="0" m_topoIndex="71" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="input_layer/main.cpp" linenumber="27" fileDirectory="/home/anubhav/xilinx_projects/ip_repo" functionName="InputLayer"/>
         <dataInputObjs>bram_dx</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
@@ -794,7 +794,7 @@
         <dataInputObjs>read</dataInputObjs>
         <dataInputObjs>getelementptr</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="127" name="br_ln0" coreId="0" opcode="br" nodeLabel="39.0" m_display="0" m_topoIndex="73" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="127" name="br_ln0" coreId="49" opcode="br" nodeLabel="39.0" m_display="0" m_topoIndex="73" m_clusterGroupNumber="-1">
         <controlInputObjs>block_120</controlInputObjs>
       </node_objs>
       <fileValidLineNumbers fileName="input_layer/main.cpp">

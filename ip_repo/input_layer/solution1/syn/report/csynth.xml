@@ -102,7 +102,7 @@
     <AreaEstimates>
         <Resources>
             <BRAM_18K>2</BRAM_18K>
-            <FF>1259</FF>
+            <FF>1271</FF>
             <LUT>1628</LUT>
             <DSP>0</DSP>
             <URAM>0</URAM>
@@ -1143,7 +1143,7 @@
                     <BRAM_18K>2</BRAM_18K>
                     <AVAIL_BRAM>280</AVAIL_BRAM>
                     <UTIL_BRAM>~0</UTIL_BRAM>
-                    <FF>1259</FF>
+                    <FF>1271</FF>
                     <AVAIL_FF>106400</AVAIL_FF>
                     <UTIL_FF>1</UTIL_FF>
                     <LUT>1628</LUT>

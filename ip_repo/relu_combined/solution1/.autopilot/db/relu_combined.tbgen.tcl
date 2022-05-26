@@ -13,10 +13,10 @@ set C_modelName {relu_combined}
 set C_modelType { void 0 }
 set C_modelArgList {
 	{ gmem int 16 regular {axi_master 1}  }
-	{ x int 16 regular {bram 1024 { 1 } 2 1 }  }
-	{ dx int 16 regular {bram 1024 { 2 } 2 1 }  }
-	{ y int 16 regular {bram 1024 { 0 } 0 1 }  }
-	{ dy int 16 regular {bram 1024 { 1 } 2 1 }  }
+	{ x int 16 regular {bram 5500 { 1 } 2 1 }  }
+	{ dx int 16 regular {bram 5500 { 2 } 2 1 }  }
+	{ y int 16 regular {bram 5500 { 0 } 0 1 }  }
+	{ dy int 16 regular {bram 5500 { 1 } 2 1 }  }
 	{ debug_x int 32 regular {axi_slave 0}  }
 	{ debug_dx int 32 regular {axi_slave 0}  }
 	{ dim int 32 regular {axi_slave 0}  }

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fcc_combined'" level="0">
-<item name = "Date">Wed May 25 01:48:22 2022
+<item name = "Date">Wed May 25 17:26:05 2022
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)</item>
 <item name = "Project">fcc_combined</item>
@@ -43,7 +43,7 @@
 <column name="  ++ LOOP2">?, ?, 6, 1, 1, ?, yes</column>
 <column name=" + VITIS_LOOP_86_5">4, ?, 4 ~ ?, -, -, 1 ~ ?, no</column>
 <column name="  ++ VITIS_LOOP_87_6">2, ?, 3, 1, 1, 1 ~ ?, yes</column>
-<column name=" + VITIS_LOOP_92_7_VITIS_LOOP_93_8">?, ?, 8, 2, 1, ?, yes</column>
+<column name=" + VITIS_LOOP_92_7_VITIS_LOOP_93_8">?, ?, 7, 2, 1, ?, yes</column>
 <column name=" + VITIS_LOOP_99_9">2, ?, 3, 1, 1, 1 ~ ?, yes</column>
 <column name=" + VITIS_LOOP_103_10">4, ?, 4 ~ ?, -, -, 1 ~ ?, no</column>
 <column name="  ++ VITIS_LOOP_104_11">2, ?, 3, 1, 1, 1 ~ ?, yes</column>

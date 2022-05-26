@@ -3,7 +3,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
-entity fcc_combined_mul_mul_16s_16s_29_4_1_DSP48_3 is
+entity fcc_combined_mul_mul_16s_16s_29_4_1_DSP48_0 is
 port (
     clk: in std_logic;
     rst: in std_logic;
@@ -14,7 +14,7 @@ port (
 
 end entity;
 
-architecture behav of fcc_combined_mul_mul_16s_16s_29_4_1_DSP48_3 is
+architecture behav of fcc_combined_mul_mul_16s_16s_29_4_1_DSP48_0 is
     signal a_cvt: signed(16 - 1 downto 0);
     signal b_cvt: signed(16 - 1 downto 0);
     signal p_cvt: signed(29 - 1 downto 0);
@@ -65,7 +65,7 @@ entity fcc_combined_mul_mul_16s_16s_29_4_1 is
 end entity;
 
 architecture arch of fcc_combined_mul_mul_16s_16s_29_4_1 is
-    component fcc_combined_mul_mul_16s_16s_29_4_1_DSP48_3 is
+    component fcc_combined_mul_mul_16s_16s_29_4_1_DSP48_0 is
         port (
             clk : IN STD_LOGIC;
             rst : IN STD_LOGIC;
@@ -78,7 +78,7 @@ architecture arch of fcc_combined_mul_mul_16s_16s_29_4_1 is
 
 
 begin
-    fcc_combined_mul_mul_16s_16s_29_4_1_DSP48_3_U :  component fcc_combined_mul_mul_16s_16s_29_4_1_DSP48_3
+    fcc_combined_mul_mul_16s_16s_29_4_1_DSP48_0_U :  component fcc_combined_mul_mul_16s_16s_29_4_1_DSP48_0
     port map (
         clk => clk,
         rst => reset,

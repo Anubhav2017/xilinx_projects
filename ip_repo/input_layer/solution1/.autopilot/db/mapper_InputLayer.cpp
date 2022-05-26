@@ -54,10 +54,10 @@ extern "C" void apatb_InputLayer_hw(volatile void * __xlx_apatb_param_x, volatil
   }
   // Collect __xlx_bram_x__tmp_vec
   vector<sc_bv<16> >__xlx_bram_x__tmp_vec;
-  for (int j = 0, e = 1024; j != e; ++j) {
+  for (int j = 0, e = 5500; j != e; ++j) {
     __xlx_bram_x__tmp_vec.push_back(((short*)__xlx_apatb_param_bram_x)[j]);
   }
-  int __xlx_size_param_bram_x = 1024;
+  int __xlx_size_param_bram_x = 5500;
   int __xlx_offset_param_bram_x = 0;
   int __xlx_offset_byte_param_bram_x = 0*2;
   short* __xlx_bram_x__input_buffer= new short[__xlx_bram_x__tmp_vec.size()];
@@ -66,10 +66,10 @@ extern "C" void apatb_InputLayer_hw(volatile void * __xlx_apatb_param_x, volatil
   }
   // Collect __xlx_bram_dx__tmp_vec
   vector<sc_bv<16> >__xlx_bram_dx__tmp_vec;
-  for (int j = 0, e = 1024; j != e; ++j) {
+  for (int j = 0, e = 5500; j != e; ++j) {
     __xlx_bram_dx__tmp_vec.push_back(((short*)__xlx_apatb_param_bram_dx)[j]);
   }
-  int __xlx_size_param_bram_dx = 1024;
+  int __xlx_size_param_bram_dx = 5500;
   int __xlx_offset_param_bram_dx = 0;
   int __xlx_offset_byte_param_bram_dx = 0*2;
   short* __xlx_bram_dx__input_buffer= new short[__xlx_bram_dx__tmp_vec.size()];

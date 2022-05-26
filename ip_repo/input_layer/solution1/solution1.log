@@ -1086,3 +1086,87 @@ INFO: [HLS 200-1603]============================================================
 Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=0
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: set_directive_top -name InputLayer InputLayer 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 155.915 MB.
+INFO: [HLS 200-10] Analyzing design file 'input_layer/main.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 3.03 seconds. CPU system time: 0.26 seconds. Elapsed time: 2.65 seconds; current allocated memory: 157.020 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'InputLayer(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, bool)' (input_layer/main.cpp:6:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'InputLayer(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, bool)' (input_layer/main.cpp:6:0)
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 16 in loop 'VITIS_LOOP_23_1'(input_layer/main.cpp:23:20) has been inferred on port 'gmem' (input_layer/main.cpp:23:20)
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 16 in loop 'VITIS_LOOP_26_2'(input_layer/main.cpp:26:20) has been inferred on port 'gmem' (input_layer/main.cpp:26:20)
+INFO: [HLS 214-115] Multiple burst writes of variable length and bit width 16 in loop 'VITIS_LOOP_36_3'(input_layer/main.cpp:36:20) has been inferred on port 'gmem' (input_layer/main.cpp:36:20)
+INFO: [HLS 214-115] Multiple burst writes of variable length and bit width 16 in loop 'VITIS_LOOP_40_4'(input_layer/main.cpp:40:20) has been inferred on port 'gmem' (input_layer/main.cpp:40:20)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2.61 seconds. CPU system time: 0.19 seconds. Elapsed time: 2.8 seconds; current allocated memory: 158.947 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 158.949 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 163.739 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 168.916 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_23_1' (input_layer/main.cpp:23) in function 'InputLayer' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_26_2' (input_layer/main.cpp:26) in function 'InputLayer' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_36_3' (input_layer/main.cpp:36) in function 'InputLayer' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_40_4' (input_layer/main.cpp:40) in function 'InputLayer' automatically.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.17 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.18 seconds; current allocated memory: 195.513 MB.
+INFO: [HLS 200-472] Inferring partial write operation for 'bram_x' (input_layer/main.cpp:24:19)
+INFO: [HLS 200-472] Inferring partial write operation for 'bram_dx' (input_layer/main.cpp:27:17)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.11 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 191.192 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'InputLayer' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'InputLayer' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_36_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'VITIS_LOOP_36_3'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_40_4'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'VITIS_LOOP_40_4'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_23_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_23_1'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_26_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_26_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 191.751 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.15 seconds. CPU system time: 0 seconds. Elapsed time: 0.14 seconds; current allocated memory: 192.316 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'InputLayer' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'InputLayer/gmem' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'InputLayer/x' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'InputLayer/dx' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'InputLayer/bram_x' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'InputLayer/bram_dx' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'InputLayer/dim' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'InputLayer/ddrtobram' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'InputLayer' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'x', 'dx', 'dim', 'ddrtobram' and 'return' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'InputLayer'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 193.747 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.94 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.96 seconds; current allocated memory: 203.691 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for InputLayer.
+INFO: [VLOG 209-307] Generating Verilog RTL for InputLayer.
+INFO: [HLS 200-1603]==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================

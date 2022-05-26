@@ -1,7 +1,7 @@
 
 `timescale 1 ns / 1 ps
 
-  module fcc_combined_mul_mul_16s_16s_29_4_1_DSP48_3(clk, rst, ce, a, b, p);
+  module fcc_combined_mul_mul_16s_16s_29_4_1_DSP48_0(clk, rst, ce, a, b, p);
 input clk;
 input rst;
 input ce;
@@ -51,7 +51,7 @@ output[dout_WIDTH - 1:0] dout;
 
 
 
-fcc_combined_mul_mul_16s_16s_29_4_1_DSP48_3 fcc_combined_mul_mul_16s_16s_29_4_1_DSP48_3_U(
+fcc_combined_mul_mul_16s_16s_29_4_1_DSP48_0 fcc_combined_mul_mul_16s_16s_29_4_1_DSP48_0_U(
     .clk( clk ),
     .rst( reset ),
     .ce( ce ),

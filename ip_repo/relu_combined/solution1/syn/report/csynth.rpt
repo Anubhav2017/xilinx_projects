@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'relu_combined'
 ================================================================
 + General Information: 
-    * Date:           Wed May 25 02:55:27 2022
+    * Date:           Wed May 25 16:39:38 2022
     * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
     * Project:        relu_combined
     * Solution:       solution1 (Vivado IP Flow Target)
@@ -19,7 +19,7 @@
     |       Modules      |  Issue |       | Latency | Latency| Iteration|         | Trip |          |         |    |           |           |     |
     |       & Loops      |  Type  | Slack | (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined|  BRAM   | DSP|     FF    |    LUT    | URAM|
     +--------------------+--------+-------+---------+--------+----------+---------+------+----------+---------+----+-----------+-----------+-----+
-    |+ relu_combined     |  Timing|   0.00|        -|       -|         -|        -|     -|        no|  2 (~0%)|   -|  1620 (1%)|  1680 (3%)|    -|
+    |+ relu_combined     |  Timing|   0.00|        -|       -|         -|        -|     -|        no|  2 (~0%)|   -|  1626 (1%)|  1680 (3%)|    -|
     | o VITIS_LOOP_23_1  |       -|  -7.30|        -|       -|         4|        1|     -|       yes|        -|   -|          -|          -|    -|
     | o VITIS_LOOP_34_2  |       -|  -7.30|        -|       -|         7|        1|     -|       yes|        -|   -|          -|          -|    -|
     | o VITIS_LOOP_46_3  |      II|  -7.30|        -|       -|        10|        2|     -|       yes|        -|   -|          -|          -|    -|

@@ -7,7 +7,7 @@
 
 `timescale 1 ns / 1 ps 
 
-(* CORE_GENERATION_INFO="relu_combined_relu_combined,hls_ip_2020_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020-clg400-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=7.300000,HLS_SYN_LAT=-1,HLS_SYN_TPT=none,HLS_SYN_MEM=2,HLS_SYN_DSP=0,HLS_SYN_FF=1620,HLS_SYN_LUT=1680,HLS_VERSION=2020_2}" *)
+(* CORE_GENERATION_INFO="relu_combined_relu_combined,hls_ip_2020_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020-clg400-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=7.300000,HLS_SYN_LAT=-1,HLS_SYN_TPT=none,HLS_SYN_MEM=2,HLS_SYN_DSP=0,HLS_SYN_FF=1626,HLS_SYN_LUT=1680,HLS_VERSION=2020_2}" *)
 
 module relu_combined (
         ap_clk,
@@ -390,10 +390,10 @@ reg    ap_block_pp2_stage1_01001;
 reg    ap_block_pp2_stage0_01001;
 reg   [31:0] x_Addr_A_orig;
 reg   [31:0] dx_Addr_A_orig;
-wire   [9:0] trunc_ln1494_2_fu_332_p1;
+wire   [12:0] trunc_ln1494_2_fu_332_p1;
 wire   [30:0] trunc_ln3_fu_344_p4;
 wire   [30:0] trunc_ln46_1_fu_357_p4;
-wire   [9:0] trunc_ln1494_fu_381_p1;
+wire   [12:0] trunc_ln1494_fu_381_p1;
 wire   [14:0] trunc_ln1494_1_fu_390_p1;
 wire    ap_CS_fsm_state24;
 reg   [6:0] ap_NS_fsm;
@@ -843,8 +843,8 @@ end
 always @ (posedge ap_clk) begin
     if ((1'b0 == ap_block_pp0_stage0_11001)) begin
         icmp_ln1494_1_reg_503_pp0_iter3_reg <= icmp_ln1494_1_reg_503;
-        zext_ln1494_1_reg_491_pp0_iter2_reg[9 : 0] <= zext_ln1494_1_reg_491_pp0_iter1_reg[9 : 0];
-        zext_ln1494_1_reg_491_pp0_iter3_reg[9 : 0] <= zext_ln1494_1_reg_491_pp0_iter2_reg[9 : 0];
+        zext_ln1494_1_reg_491_pp0_iter2_reg[12 : 0] <= zext_ln1494_1_reg_491_pp0_iter1_reg[12 : 0];
+        zext_ln1494_1_reg_491_pp0_iter3_reg[12 : 0] <= zext_ln1494_1_reg_491_pp0_iter2_reg[12 : 0];
     end
 end
 
@@ -852,14 +852,14 @@ always @ (posedge ap_clk) begin
     if (((1'b1 == ap_CS_fsm_pp1_stage0) & (1'b0 == ap_block_pp1_stage0_11001))) begin
         icmp_ln23_reg_537 <= icmp_ln23_fu_376_p2;
         icmp_ln23_reg_537_pp1_iter1_reg <= icmp_ln23_reg_537;
-        zext_ln1494_reg_541_pp1_iter1_reg[9 : 0] <= zext_ln1494_reg_541[9 : 0];
+        zext_ln1494_reg_541_pp1_iter1_reg[12 : 0] <= zext_ln1494_reg_541[12 : 0];
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b0 == ap_block_pp1_stage0_11001)) begin
         icmp_ln23_reg_537_pp1_iter2_reg <= icmp_ln23_reg_537_pp1_iter1_reg;
-        zext_ln1494_reg_541_pp1_iter2_reg[9 : 0] <= zext_ln1494_reg_541_pp1_iter1_reg[9 : 0];
+        zext_ln1494_reg_541_pp1_iter2_reg[12 : 0] <= zext_ln1494_reg_541_pp1_iter1_reg[12 : 0];
     end
 end
 
@@ -891,19 +891,19 @@ end
 
 always @ (posedge ap_clk) begin
     if (((icmp_ln34_fu_327_p2 == 1'd0) & (1'b1 == ap_CS_fsm_pp0_stage0) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        zext_ln1494_1_reg_491[9 : 0] <= zext_ln1494_1_fu_336_p1[9 : 0];
+        zext_ln1494_1_reg_491[12 : 0] <= zext_ln1494_1_fu_336_p1[12 : 0];
     end
 end
 
 always @ (posedge ap_clk) begin
     if (((1'b1 == ap_CS_fsm_pp0_stage0) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        zext_ln1494_1_reg_491_pp0_iter1_reg[9 : 0] <= zext_ln1494_1_reg_491[9 : 0];
+        zext_ln1494_1_reg_491_pp0_iter1_reg[12 : 0] <= zext_ln1494_1_reg_491[12 : 0];
     end
 end
 
 always @ (posedge ap_clk) begin
     if (((icmp_ln23_fu_376_p2 == 1'd0) & (1'b1 == ap_CS_fsm_pp1_stage0) & (1'b0 == ap_block_pp1_stage0_11001))) begin
-        zext_ln1494_reg_541[9 : 0] <= zext_ln1494_fu_385_p1[9 : 0];
+        zext_ln1494_reg_541[12 : 0] <= zext_ln1494_fu_385_p1[12 : 0];
     end
 end
 
@@ -1400,9 +1400,9 @@ assign sext_ln46_fu_353_p1 = $signed(trunc_ln3_fu_344_p4);
 
 assign trunc_ln1494_1_fu_390_p1 = x_Dout_A[14:0];
 
-assign trunc_ln1494_2_fu_332_p1 = i_1_reg_268[9:0];
+assign trunc_ln1494_2_fu_332_p1 = i_1_reg_268[12:0];
 
-assign trunc_ln1494_fu_381_p1 = i_reg_279[9:0];
+assign trunc_ln1494_fu_381_p1 = i_reg_279[12:0];
 
 assign trunc_ln23_fu_317_p1 = dim[30:0];
 
@@ -1439,13 +1439,13 @@ assign zext_ln1494_fu_385_p1 = trunc_ln1494_fu_381_p1;
 assign zext_ln47_fu_417_p1 = ap_phi_mux_i_2_phi_fu_294_p4;
 
 always @ (posedge ap_clk) begin
-    zext_ln1494_1_reg_491[31:10] <= 22'b0000000000000000000000;
-    zext_ln1494_1_reg_491_pp0_iter1_reg[31:10] <= 22'b0000000000000000000000;
-    zext_ln1494_1_reg_491_pp0_iter2_reg[31:10] <= 22'b0000000000000000000000;
-    zext_ln1494_1_reg_491_pp0_iter3_reg[31:10] <= 22'b0000000000000000000000;
-    zext_ln1494_reg_541[31:10] <= 22'b0000000000000000000000;
-    zext_ln1494_reg_541_pp1_iter1_reg[31:10] <= 22'b0000000000000000000000;
-    zext_ln1494_reg_541_pp1_iter2_reg[31:10] <= 22'b0000000000000000000000;
+    zext_ln1494_1_reg_491[31:13] <= 19'b0000000000000000000;
+    zext_ln1494_1_reg_491_pp0_iter1_reg[31:13] <= 19'b0000000000000000000;
+    zext_ln1494_1_reg_491_pp0_iter2_reg[31:13] <= 19'b0000000000000000000;
+    zext_ln1494_1_reg_491_pp0_iter3_reg[31:13] <= 19'b0000000000000000000;
+    zext_ln1494_reg_541[31:13] <= 19'b0000000000000000000;
+    zext_ln1494_reg_541_pp1_iter1_reg[31:13] <= 19'b0000000000000000000;
+    zext_ln1494_reg_541_pp1_iter2_reg[31:13] <= 19'b0000000000000000000;
 end
 
 endmodule //relu_combined

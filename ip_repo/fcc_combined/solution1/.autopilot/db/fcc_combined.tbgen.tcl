@@ -14,14 +14,14 @@ set C_modelType { void 0 }
 set C_modelArgList {
 	{ gmem int 16 regular {axi_master 2}  }
 	{ gmem2 int 16 regular {axi_master 1}  }
-	{ x int 16 regular {bram 1000 { 1 } 2 1 }  }
-	{ dx int 16 regular {bram 1000 { 2 } 2 1 }  }
+	{ x int 16 regular {bram 1024 { 1 } 2 1 }  }
+	{ dx int 16 regular {bram 1024 { 2 } 2 1 }  }
 	{ wt int 32 regular {axi_slave 0}  }
 	{ dwt int 32 regular {axi_slave 0}  }
 	{ b int 32 regular {axi_slave 0}  }
 	{ db int 32 unused {axi_slave 0}  }
-	{ y int 16 regular {bram 1000 { 0 } 0 1 }  }
-	{ dy int 16 regular {bram 1000 { 1 } 2 1 }  }
+	{ y int 16 regular {bram 1024 { 0 } 0 1 }  }
+	{ dy int 16 regular {bram 1024 { 1 } 2 1 }  }
 	{ debug_x int 32 regular {axi_slave 0}  }
 	{ debug_dx int 32 regular {axi_slave 0}  }
 	{ debugip uint 1 regular {axi_slave 0}  }
@@ -329,7 +329,7 @@ set NewPortList {[
  	{ "name": "dy_Rst_A", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "dy", "role": "Rst_A" }}  ]}
 
 set RtlHierarchyInfo {[
-	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24"],
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19"],
 		"CDFG" : "fcc_combined",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -385,28 +385,23 @@ set RtlHierarchyInfo {[
 	{"ID" : "14", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_31ns_32ns_63_2_1_U7", "Parent" : "0"},
 	{"ID" : "15", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_31s_31s_31_2_1_U8", "Parent" : "0"},
 	{"ID" : "16", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_31s_31s_31_2_1_U9", "Parent" : "0"},
-	{"ID" : "17", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_mul_6ns_11ns_16_4_1_U10", "Parent" : "0"},
-	{"ID" : "18", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mac_muladd_10ns_11ns_16ns_16_4_1_U11", "Parent" : "0"},
-	{"ID" : "19", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mac_muladd_16s_16s_29ns_29_4_1_U12", "Parent" : "0"},
-	{"ID" : "20", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_mul_16s_16s_29_4_1_U13", "Parent" : "0"},
-	{"ID" : "21", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_mul_6ns_11ns_16_4_1_U14", "Parent" : "0"},
-	{"ID" : "22", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_mul_6ns_11ns_16_4_1_U15", "Parent" : "0"},
-	{"ID" : "23", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_mul_6ns_11ns_16_4_1_U16", "Parent" : "0"},
-	{"ID" : "24", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mac_muladd_16s_16s_29ns_29_4_1_U17", "Parent" : "0"}]}
+	{"ID" : "17", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_mul_16s_16s_29_4_1_U10", "Parent" : "0"},
+	{"ID" : "18", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mac_muladd_16s_16s_29ns_29_4_1_U11", "Parent" : "0"},
+	{"ID" : "19", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mac_muladd_16s_16s_29ns_29_4_1_U12", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
 	fcc_combined {
-		gmem {Type IO LastRead 31 FirstWrite 32}
+		gmem {Type IO LastRead 30 FirstWrite 30}
 		gmem2 {Type O LastRead 22 FirstWrite 20}
-		x {Type I LastRead 23 FirstWrite -1}
-		dx {Type IO LastRead 17 FirstWrite 27}
+		x {Type I LastRead 22 FirstWrite -1}
+		dx {Type IO LastRead 17 FirstWrite 25}
 		wt {Type I LastRead 0 FirstWrite -1}
 		dwt {Type I LastRead 0 FirstWrite -1}
 		b {Type I LastRead 0 FirstWrite -1}
 		db {Type I LastRead -1 FirstWrite -1}
-		y {Type O LastRead -1 FirstWrite 22}
-		dy {Type I LastRead 24 FirstWrite -1}
+		y {Type O LastRead -1 FirstWrite 20}
+		dy {Type I LastRead 22 FirstWrite -1}
 		debug_x {Type I LastRead 0 FirstWrite -1}
 		debug_dx {Type I LastRead 0 FirstWrite -1}
 		debugip {Type I LastRead 0 FirstWrite -1}

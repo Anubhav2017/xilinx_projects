@@ -6853,7 +6853,7 @@ inline bool operator!=(
 typedef ap_fixed<16,3> fixed_t;
 
 
-__attribute__((sdx_kernel("fcc_combined", 0))) void fcc_combined(fixed_t x[1000], fixed_t dx[1000], fixed_t* wt, fixed_t* dwt, fixed_t* b, fixed_t* db, fixed_t y[1000], fixed_t dy[1000], fixed_t* debug_x, fixed_t* debug_dx, bool debugip, int xdim, int ydim, bool fwprop){_ssdm_SpecArrayDimSize(x, 1000);_ssdm_SpecArrayDimSize(dx, 1000);_ssdm_SpecArrayDimSize(y, 1000);_ssdm_SpecArrayDimSize(dy, 1000);
+__attribute__((sdx_kernel("fcc_combined", 0))) void fcc_combined(fixed_t x[1024], fixed_t dx[1024], fixed_t* wt, fixed_t* dwt, fixed_t* b, fixed_t* db, fixed_t y[1024], fixed_t dy[1024], fixed_t* debug_x, fixed_t* debug_dx, bool debugip, int xdim, int ydim, bool fwprop){_ssdm_SpecArrayDimSize(x, 1024);_ssdm_SpecArrayDimSize(dx, 1024);_ssdm_SpecArrayDimSize(y, 1024);_ssdm_SpecArrayDimSize(dy, 1024);
 #pragma HLS TOP name=fcc_combined
 # 10 "fcc_combined/main.cpp"
 
@@ -6881,11 +6881,11 @@ __attribute__((sdx_kernel("fcc_combined", 0))) void fcc_combined(fixed_t x[1000]
 #pragma HLS INTERFACE s_axilite port=return
 
 
- fixed_t wbuf[50][1000];
- fixed_t bbuf[1000];
+ fixed_t wbuf[50][1024];
+ fixed_t bbuf[1024];
 
- fixed_t dwbuf[50][1000];
- fixed_t dbbuf[1000];
+ fixed_t dwbuf[50][1024];
+ fixed_t dbbuf[1024];
 
  int num_iters = (ydim/50) + 1;
 

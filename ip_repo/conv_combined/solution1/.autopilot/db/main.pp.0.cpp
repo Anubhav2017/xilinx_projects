@@ -5575,7 +5575,7 @@ inline bool operator!=(
 # 7 "conv_combined/main.cpp" 2
 typedef ap_fixed<16,3> fixed_t;
 
-__attribute__((sdx_kernel("conv_combined", 0))) void conv_combined(fixed_t x[1000], fixed_t dx[1000],fixed_t* wt,fixed_t* dwt, fixed_t y[1000], fixed_t dy[1000],fixed_t* b,fixed_t* db, fixed_t* debug_x, fixed_t* debug_dx, int F, int C, int H, int W, int FH, int FW, bool fwprop, bool debugip){_ssdm_SpecArrayDimSize(x, 1000);_ssdm_SpecArrayDimSize(dx, 1000);_ssdm_SpecArrayDimSize(y, 1000);_ssdm_SpecArrayDimSize(dy, 1000);
+__attribute__((sdx_kernel("conv_combined", 0))) void conv_combined(fixed_t x[5500], fixed_t dx[5500],fixed_t* wt,fixed_t* dwt, fixed_t y[5500], fixed_t dy[5500],fixed_t* b,fixed_t* db, fixed_t* debug_x, fixed_t* debug_dx, int F, int C, int H, int W, int FH, int FW, bool fwprop, bool debugip){_ssdm_SpecArrayDimSize(x, 5500);_ssdm_SpecArrayDimSize(dx, 5500);_ssdm_SpecArrayDimSize(y, 5500);_ssdm_SpecArrayDimSize(dy, 5500);
 #pragma HLS TOP name=conv_combined
 # 9 "conv_combined/main.cpp"
 
@@ -5606,11 +5606,11 @@ __attribute__((sdx_kernel("conv_combined", 0))) void conv_combined(fixed_t x[100
 #pragma HLS INTERFACE s_axilite port=return
 
 
- fixed_t wbuf[3][3][5][5];
- fixed_t dwbuf[3][3][5][5];
+ fixed_t wbuf[5][5][5][5];
+ fixed_t dwbuf[5][5][5][5];
 
- fixed_t bbuf[3];
- fixed_t dbbuf[3];
+ fixed_t bbuf[5];
+ fixed_t dbbuf[5];
 
  int outH=H-FH+1;
  int outW=W-FW+1;

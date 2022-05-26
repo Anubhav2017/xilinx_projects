@@ -6,7 +6,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
-entity conv_combined_mul_32s_32s_32_2_1_Multiplier_6 is
+entity conv_combined_mul_32s_32s_32_2_1_Multiplier_5 is
 port (
     clk: in std_logic;
     ce: in std_logic;
@@ -15,7 +15,7 @@ port (
     p: out std_logic_vector(32 - 1 downto 0));
 end entity;
 
-architecture behav of conv_combined_mul_32s_32s_32_2_1_Multiplier_6 is
+architecture behav of conv_combined_mul_32s_32s_32_2_1_Multiplier_5 is
     signal tmp_product : std_logic_vector(32 - 1 downto 0);
     signal a_i : std_logic_vector(32 - 1 downto 0);
     signal b_i : std_logic_vector(32 - 1 downto 0);
@@ -57,7 +57,7 @@ entity conv_combined_mul_32s_32s_32_2_1 is
 end entity;
 
 architecture arch of conv_combined_mul_32s_32s_32_2_1 is
-    component conv_combined_mul_32s_32s_32_2_1_Multiplier_6 is
+    component conv_combined_mul_32s_32s_32_2_1_Multiplier_5 is
         port (
             clk : IN STD_LOGIC;
             ce : IN STD_LOGIC;
@@ -69,7 +69,7 @@ architecture arch of conv_combined_mul_32s_32s_32_2_1 is
 
 
 begin
-    conv_combined_mul_32s_32s_32_2_1_Multiplier_6_U :  component conv_combined_mul_32s_32s_32_2_1_Multiplier_6
+    conv_combined_mul_32s_32s_32_2_1_Multiplier_5_U :  component conv_combined_mul_32s_32s_32_2_1_Multiplier_5
     port map (
         clk => clk,
         ce => ce,

@@ -84,10 +84,10 @@ extern "C" void apatb_conv_combined_hw(volatile void * __xlx_apatb_param_x, vola
   }
   // Collect __xlx_x__tmp_vec
   vector<sc_bv<16> >__xlx_x__tmp_vec;
-  for (int j = 0, e = 1000; j != e; ++j) {
+  for (int j = 0, e = 5500; j != e; ++j) {
     __xlx_x__tmp_vec.push_back(((short*)__xlx_apatb_param_x)[j]);
   }
-  int __xlx_size_param_x = 1000;
+  int __xlx_size_param_x = 5500;
   int __xlx_offset_param_x = 0;
   int __xlx_offset_byte_param_x = 0*2;
   short* __xlx_x__input_buffer= new short[__xlx_x__tmp_vec.size()];
@@ -96,10 +96,10 @@ extern "C" void apatb_conv_combined_hw(volatile void * __xlx_apatb_param_x, vola
   }
   // Collect __xlx_dx__tmp_vec
   vector<sc_bv<16> >__xlx_dx__tmp_vec;
-  for (int j = 0, e = 1000; j != e; ++j) {
+  for (int j = 0, e = 5500; j != e; ++j) {
     __xlx_dx__tmp_vec.push_back(((short*)__xlx_apatb_param_dx)[j]);
   }
-  int __xlx_size_param_dx = 1000;
+  int __xlx_size_param_dx = 5500;
   int __xlx_offset_param_dx = 0;
   int __xlx_offset_byte_param_dx = 0*2;
   short* __xlx_dx__input_buffer= new short[__xlx_dx__tmp_vec.size()];
@@ -108,10 +108,10 @@ extern "C" void apatb_conv_combined_hw(volatile void * __xlx_apatb_param_x, vola
   }
   // Collect __xlx_y__tmp_vec
   vector<sc_bv<16> >__xlx_y__tmp_vec;
-  for (int j = 0, e = 1000; j != e; ++j) {
+  for (int j = 0, e = 5500; j != e; ++j) {
     __xlx_y__tmp_vec.push_back(((short*)__xlx_apatb_param_y)[j]);
   }
-  int __xlx_size_param_y = 1000;
+  int __xlx_size_param_y = 5500;
   int __xlx_offset_param_y = 0;
   int __xlx_offset_byte_param_y = 0*2;
   short* __xlx_y__input_buffer= new short[__xlx_y__tmp_vec.size()];
@@ -120,10 +120,10 @@ extern "C" void apatb_conv_combined_hw(volatile void * __xlx_apatb_param_x, vola
   }
   // Collect __xlx_dy__tmp_vec
   vector<sc_bv<16> >__xlx_dy__tmp_vec;
-  for (int j = 0, e = 1000; j != e; ++j) {
+  for (int j = 0, e = 5500; j != e; ++j) {
     __xlx_dy__tmp_vec.push_back(((short*)__xlx_apatb_param_dy)[j]);
   }
-  int __xlx_size_param_dy = 1000;
+  int __xlx_size_param_dy = 5500;
   int __xlx_offset_param_dy = 0;
   int __xlx_offset_byte_param_dy = 0*2;
   short* __xlx_dy__input_buffer= new short[__xlx_dy__tmp_vec.size()];

@@ -2,7 +2,7 @@
 #include<string.h>
 #include <ap_fixed.h>
 
-#define MAX_SIZE 1000
+#define MAX_SIZE 1024
 #define BUFFER_SIZE 50
 typedef ap_fixed<16,3> fixed_t;
 

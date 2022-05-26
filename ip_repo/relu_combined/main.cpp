@@ -1,6 +1,6 @@
 #include <ap_fixed.h>
 typedef ap_fixed<16,3> fixed_t;
-#define MAX_SIZE 1024
+#define MAX_SIZE 5500
 
 void relu_combined(fixed_t x[MAX_SIZE], fixed_t dx[MAX_SIZE], fixed_t y[MAX_SIZE],fixed_t dy[MAX_SIZE], fixed_t* debug_x, fixed_t* debug_dx, int dim, bool fwprop, bool debugip){
 

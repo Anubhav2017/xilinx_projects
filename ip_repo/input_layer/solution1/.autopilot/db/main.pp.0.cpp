@@ -5995,7 +5995,7 @@ extern "C++" const char *basename (const char *__filename)
 typedef ap_fixed<16,3> fixed_t;
 
 
-__attribute__((sdx_kernel("InputLayer", 0))) void InputLayer(fixed_t* x,fixed_t* dx, fixed_t bram_x[1024], fixed_t bram_dx[1024], int dim, bool ddrtobram){_ssdm_SpecArrayDimSize(bram_x, 1024);_ssdm_SpecArrayDimSize(bram_dx, 1024);
+__attribute__((sdx_kernel("InputLayer", 0))) void InputLayer(fixed_t* x,fixed_t* dx, fixed_t bram_x[5500], fixed_t bram_dx[5500], int dim, bool ddrtobram){_ssdm_SpecArrayDimSize(bram_x, 5500);_ssdm_SpecArrayDimSize(bram_dx, 5500);
 #pragma HLS TOP name=InputLayer
 # 6 "input_layer/main.cpp"
 

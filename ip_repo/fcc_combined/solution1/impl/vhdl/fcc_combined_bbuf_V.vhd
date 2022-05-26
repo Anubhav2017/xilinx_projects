@@ -11,7 +11,7 @@ entity fcc_combined_bbuf_V_ram is
     generic(
             DWIDTH     : integer := 16; 
             AWIDTH     : integer := 10; 
-            MEM_SIZE    : integer := 1000
+            MEM_SIZE    : integer := 1024
     ); 
     port (
           addr0     : in std_logic_vector(AWIDTH-1 downto 0); 
@@ -67,7 +67,7 @@ use IEEE.std_logic_1164.all;
 entity fcc_combined_bbuf_V is
     generic (
         DataWidth : INTEGER := 16;
-        AddressRange : INTEGER := 1000;
+        AddressRange : INTEGER := 1024;
         AddressWidth : INTEGER := 10);
     port (
         reset : IN STD_LOGIC;
