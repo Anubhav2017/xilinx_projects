@@ -6853,7 +6853,7 @@ inline bool operator!=(
 typedef ap_fixed<16,3> fixed_t;
 
 
-__attribute__((sdx_kernel("fcc_combined", 0))) void fcc_combined(fixed_t x[1024], fixed_t dx[1024], fixed_t* wt, fixed_t* dwt, fixed_t* b, fixed_t* db, fixed_t y[1024], fixed_t dy[1024], fixed_t* debug_x, fixed_t* debug_dx, bool debugip, int xdim, int ydim, bool fwprop){_ssdm_SpecArrayDimSize(x, 1024);_ssdm_SpecArrayDimSize(dx, 1024);_ssdm_SpecArrayDimSize(y, 1024);_ssdm_SpecArrayDimSize(dy, 1024);
+__attribute__((sdx_kernel("fcc_combined", 0))) void fcc_combined(fixed_t x[1000], fixed_t dx[1000], fixed_t* wt, fixed_t* dwt, fixed_t* b, fixed_t* db, fixed_t y[1000], fixed_t dy[1000], fixed_t* debug_x, fixed_t* debug_dx, bool debugip, int xdim, int ydim, bool fwprop){_ssdm_SpecArrayDimSize(x, 1000);_ssdm_SpecArrayDimSize(dx, 1000);_ssdm_SpecArrayDimSize(y, 1000);_ssdm_SpecArrayDimSize(dy, 1000);
 #pragma HLS TOP name=fcc_combined
 # 10 "fcc_combined/main.cpp"
 
@@ -6881,13 +6881,13 @@ __attribute__((sdx_kernel("fcc_combined", 0))) void fcc_combined(fixed_t x[1024]
 #pragma HLS INTERFACE s_axilite port=return
 
 
- fixed_t wbuf[50][1024];
- fixed_t bbuf[1024];
+ fixed_t wbuf[32][1000];
+ fixed_t bbuf[1000];
 
- fixed_t dwbuf[50][1024];
- fixed_t dbbuf[1024];
+ fixed_t dwbuf[32][1000];
+ fixed_t dbbuf[1000];
 
- int num_iters = (ydim/50) + 1;
+ int num_iters = (ydim/32) + 1;
 
  VITIS_LOOP_43_1: for(int i=0;i<ydim;i++){
   bbuf[i]=b[i];
@@ -6899,11 +6899,11 @@ __attribute__((sdx_kernel("fcc_combined", 0))) void fcc_combined(fixed_t x[1024]
 
   int ub=0;
 
-  if( ydim< (k+1)*50 ){
-   ub=ydim-k*50;
+  if( ydim< (k+1)*32 ){
+   ub=ydim-k*32;
   }
   else{
-   ub=50;
+   ub=32;
   }
 
 
@@ -6911,19 +6911,23 @@ __attribute__((sdx_kernel("fcc_combined", 0))) void fcc_combined(fixed_t x[1024]
 
   if (fwprop == true){
 
-   VITIS_LOOP_65_3: for(int i=0;i<ub;i++){
-    VITIS_LOOP_66_4: for(int j=0;j<xdim;j++){
-     wbuf[i][j] = wt[(i+k*50)*xdim+j];
+   VITIS_LOOP_65_3: for(int i=0;i<xdim;i++){
+    dx[i]=0;
+   }
+
+   VITIS_LOOP_69_4: for(int i=0;i<ub;i++){
+    VITIS_LOOP_70_5: for(int j=0;j<xdim;j++){
+     wbuf[i][j] = wt[(i+k*32)*xdim+j];
     }
    }
 
 
    LOOP1:for(int i=0; i< ub;i++){
 
-        y[(i+k*50)]=bbuf[(i+k*50)];
+        y[(i+k*32)]=bbuf[(i+k*32)];
 
            LOOP2:for (int j=0; j<xdim;j++){
-               y[(i+k*50)] = wbuf[i][j]*x[j] + y[(i+k*50)];
+               y[(i+k*32)] = wbuf[i][j]*x[j] + y[(i+k*32)];
            }
        }
 
@@ -6932,26 +6936,26 @@ __attribute__((sdx_kernel("fcc_combined", 0))) void fcc_combined(fixed_t x[1024]
 
    else{
 
-    VITIS_LOOP_86_5: for(int i=0;i<ub;i++){
-     VITIS_LOOP_87_6: for(int j=0;j<xdim;j++){
-      dwbuf[i][j] = dwt[(i+k*50)*xdim+j];
+    VITIS_LOOP_90_6: for(int i=0;i<ub;i++){
+     VITIS_LOOP_91_7: for(int j=0;j<xdim;j++){
+      dwbuf[i][j] = dwt[(i+k*32)*xdim+j];
      }
     }
 
-    VITIS_LOOP_92_7: for(int i=0;i<ub;i++){
-         VITIS_LOOP_93_8: for(int j=0;j<xdim;j++){
-             dx[j] = dy[i] * wbuf[i][j];
-             dwbuf[i][j] += dy[(i+k*50)]*x[j];
+    VITIS_LOOP_96_8: for(int i=0;i<ub;i++){
+         VITIS_LOOP_97_9: for(int j=0;j<xdim;j++){
+             dx[j] += dy[i] * wbuf[i][j];
+             dwbuf[i][j] += dy[(i+k*32)]*x[j];
          }
     }
 
-    VITIS_LOOP_99_9: for (int i=0;i<ydim;i++){
+    VITIS_LOOP_103_10: for (int i=0;i<ydim;i++){
         dbbuf[i] += dy[i];
     }
 
-    VITIS_LOOP_103_10: for(int i=0;i<ub;i++){
-     VITIS_LOOP_104_11: for(int j=0;j<xdim;j++){
-      dwt[(i+k*50)*xdim+j]=dwbuf[i][j] ;
+    VITIS_LOOP_107_11: for(int i=0;i<ub;i++){
+     VITIS_LOOP_108_12: for(int j=0;j<xdim;j++){
+      dwt[(i+k*32)*xdim+j]=dwbuf[i][j] ;
      }
     }
 
@@ -6961,7 +6965,7 @@ __attribute__((sdx_kernel("fcc_combined", 0))) void fcc_combined(fixed_t x[1024]
 
  if(debugip == true){
 
-  VITIS_LOOP_115_12: for(int i=0;i<xdim*ydim;i++){
+  VITIS_LOOP_119_13: for(int i=0;i<xdim*ydim;i++){
    debug_x[i]=x[i];
    debug_dx[i]=dx[i];
 

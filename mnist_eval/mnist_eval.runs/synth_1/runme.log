@@ -19,119 +19,119 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 1290749
+INFO: [Synth 8-7075] Helper process launched with PID 49231
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2357.973 ; gain = 0.000 ; free physical = 13290 ; free virtual = 23285
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2357.969 ; gain = 0.000 ; free physical = 16128 ; free virtual = 24865
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
 INFO: [Synth 8-6157] synthesizing module 'design_1' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:13]
-INFO: [Synth 8-6157] synthesizing module 'design_1_InputLayer_0_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-1290719-anubhav-acer/realtime/design_1_InputLayer_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_InputLayer_0_0' (1#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-1290719-anubhav-acer/realtime/design_1_InputLayer_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_InputLayer_0_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-49201-anubhav-acer/realtime/design_1_InputLayer_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_InputLayer_0_0' (1#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-49201-anubhav-acer/realtime/design_1_InputLayer_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'interrupt' of module 'design_1_InputLayer_0_0' is unconnected for instance 'InputLayer_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:636]
 WARNING: [Synth 8-7071] port 'bram_x_Rst_A' of module 'design_1_InputLayer_0_0' is unconnected for instance 'InputLayer_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:636]
 WARNING: [Synth 8-7071] port 'bram_dx_Rst_A' of module 'design_1_InputLayer_0_0' is unconnected for instance 'InputLayer_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:636]
 WARNING: [Synth 8-7023] instance 'InputLayer_0' of module 'design_1_InputLayer_0_0' has 69 connections declared, but only 66 given [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:636]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_mem_intercon_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1902]
-INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1R706YB' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:5928]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_1' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-1290719-anubhav-acer/realtime/design_1_auto_pc_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_1' (2#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-1290719-anubhav-acer/realtime/design_1_auto_pc_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1R706YB' (3#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:5928]
-INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_7HNO1D' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:6993]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-1290719-anubhav-acer/realtime/design_1_auto_us_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_0' (4#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-1290719-anubhav-acer/realtime/design_1_auto_us_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'design_1_auto_us_0' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:7280]
-WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'design_1_auto_us_0' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:7280]
-WARNING: [Synth 8-7023] instance 'auto_us' of module 'design_1_auto_us_0' has 72 connections declared, but only 70 given [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:7280]
-INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_7HNO1D' (5#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:6993]
-INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_1W60HW0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:7658]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_1' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-1290719-anubhav-acer/realtime/design_1_auto_us_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_1' (6#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-1290719-anubhav-acer/realtime/design_1_auto_us_1_stub.v:6]
-WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'design_1_auto_us_1' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:7945]
-WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'design_1_auto_us_1' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:7945]
-WARNING: [Synth 8-7023] instance 'auto_us' of module 'design_1_auto_us_1' has 72 connections declared, but only 70 given [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:7945]
-INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_1W60HW0' (7#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:7658]
-INFO: [Synth 8-6157] synthesizing module 's02_couplers_imp_8NCF02' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:8290]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_2' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-1290719-anubhav-acer/realtime/design_1_auto_us_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_2' (8#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-1290719-anubhav-acer/realtime/design_1_auto_us_2_stub.v:6]
-WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'design_1_auto_us_2' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:8577]
-WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'design_1_auto_us_2' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:8577]
-WARNING: [Synth 8-7023] instance 'auto_us' of module 'design_1_auto_us_2' has 72 connections declared, but only 70 given [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:8577]
-INFO: [Synth 8-6155] done synthesizing module 's02_couplers_imp_8NCF02' (9#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:8290]
-INFO: [Synth 8-6157] synthesizing module 's03_couplers_imp_1UQ1PUB' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:8922]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_3' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-1290719-anubhav-acer/realtime/design_1_auto_us_3_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_3' (10#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-1290719-anubhav-acer/realtime/design_1_auto_us_3_stub.v:6]
-WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'design_1_auto_us_3' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:9209]
-WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'design_1_auto_us_3' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:9209]
-WARNING: [Synth 8-7023] instance 'auto_us' of module 'design_1_auto_us_3' has 72 connections declared, but only 70 given [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:9209]
-INFO: [Synth 8-6155] done synthesizing module 's03_couplers_imp_1UQ1PUB' (11#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:8922]
-INFO: [Synth 8-6157] synthesizing module 's04_couplers_imp_4T8GAF' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:9282]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_4' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-1290719-anubhav-acer/realtime/design_1_auto_us_4_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_4' (12#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-1290719-anubhav-acer/realtime/design_1_auto_us_4_stub.v:6]
-WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'design_1_auto_us_4' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:9569]
-WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'design_1_auto_us_4' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:9569]
-WARNING: [Synth 8-7023] instance 'auto_us' of module 'design_1_auto_us_4' has 72 connections declared, but only 70 given [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:9569]
-INFO: [Synth 8-6155] done synthesizing module 's04_couplers_imp_4T8GAF' (13#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:9282]
-INFO: [Synth 8-6157] synthesizing module 's05_couplers_imp_1YHCGIE' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:9642]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_5' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-1290719-anubhav-acer/realtime/design_1_auto_us_5_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_5' (14#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-1290719-anubhav-acer/realtime/design_1_auto_us_5_stub.v:6]
-WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'design_1_auto_us_5' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:9929]
-WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'design_1_auto_us_5' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:9929]
-WARNING: [Synth 8-7023] instance 'auto_us' of module 'design_1_auto_us_5' has 72 connections declared, but only 70 given [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:9929]
-INFO: [Synth 8-6155] done synthesizing module 's05_couplers_imp_1YHCGIE' (15#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:9642]
-INFO: [Synth 8-6157] synthesizing module 's06_couplers_imp_5OWWZ8' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:10002]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_6' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-1290719-anubhav-acer/realtime/design_1_auto_us_6_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_6' (16#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-1290719-anubhav-acer/realtime/design_1_auto_us_6_stub.v:6]
-WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'design_1_auto_us_6' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:10289]
-WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'design_1_auto_us_6' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:10289]
-WARNING: [Synth 8-7023] instance 'auto_us' of module 'design_1_auto_us_6' has 72 connections declared, but only 70 given [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:10289]
-INFO: [Synth 8-6155] done synthesizing module 's06_couplers_imp_5OWWZ8' (17#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:10002]
-INFO: [Synth 8-6157] synthesizing module 's07_couplers_imp_1XVBQ51' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:10362]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_7' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-1290719-anubhav-acer/realtime/design_1_auto_us_7_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_7' (18#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-1290719-anubhav-acer/realtime/design_1_auto_us_7_stub.v:6]
-WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'design_1_auto_us_7' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:10649]
-WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'design_1_auto_us_7' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:10649]
-WARNING: [Synth 8-7023] instance 'auto_us' of module 'design_1_auto_us_7' has 72 connections declared, but only 70 given [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:10649]
-INFO: [Synth 8-6155] done synthesizing module 's07_couplers_imp_1XVBQ51' (19#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:10362]
-INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_1' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-1290719-anubhav-acer/realtime/design_1_xbar_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_1' (20#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-1290719-anubhav-acer/realtime/design_1_xbar_1_stub.v:6]
-WARNING: [Synth 8-7071] port 's_axi_bid' of module 'design_1_xbar_1' is unconnected for instance 'xbar' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:4190]
-WARNING: [Synth 8-7071] port 's_axi_rid' of module 'design_1_xbar_1' is unconnected for instance 'xbar' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:4190]
-WARNING: [Synth 8-7023] instance 'xbar' of module 'design_1_xbar_1' has 78 connections declared, but only 76 given [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:4190]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_mem_intercon_0' (21#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1902]
-INFO: [Synth 8-6157] synthesizing module 'design_1_conv_combined_0_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-1290719-anubhav-acer/realtime/design_1_conv_combined_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_conv_combined_0_0' (22#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-1290719-anubhav-acer/realtime/design_1_conv_combined_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_mem_intercon_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1872]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1R706YB' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:5712]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_1' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-49201-anubhav-acer/realtime/design_1_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_1' (2#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-49201-anubhav-acer/realtime/design_1_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1R706YB' (3#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:5712]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_7HNO1D' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:6777]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-49201-anubhav-acer/realtime/design_1_auto_us_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_0' (4#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-49201-anubhav-acer/realtime/design_1_auto_us_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'design_1_auto_us_0' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:7064]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'design_1_auto_us_0' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:7064]
+WARNING: [Synth 8-7023] instance 'auto_us' of module 'design_1_auto_us_0' has 72 connections declared, but only 70 given [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:7064]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_7HNO1D' (5#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:6777]
+INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_1W60HW0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:7442]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_1' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-49201-anubhav-acer/realtime/design_1_auto_us_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_1' (6#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-49201-anubhav-acer/realtime/design_1_auto_us_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'design_1_auto_us_1' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:7729]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'design_1_auto_us_1' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:7729]
+WARNING: [Synth 8-7023] instance 'auto_us' of module 'design_1_auto_us_1' has 72 connections declared, but only 70 given [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:7729]
+INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_1W60HW0' (7#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:7442]
+INFO: [Synth 8-6157] synthesizing module 's02_couplers_imp_8NCF02' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:7948]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_2' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-49201-anubhav-acer/realtime/design_1_auto_us_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_2' (8#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-49201-anubhav-acer/realtime/design_1_auto_us_2_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'design_1_auto_us_2' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:8235]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'design_1_auto_us_2' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:8235]
+WARNING: [Synth 8-7023] instance 'auto_us' of module 'design_1_auto_us_2' has 72 connections declared, but only 70 given [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:8235]
+INFO: [Synth 8-6155] done synthesizing module 's02_couplers_imp_8NCF02' (9#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:7948]
+INFO: [Synth 8-6157] synthesizing module 's03_couplers_imp_1UQ1PUB' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:8454]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_3' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-49201-anubhav-acer/realtime/design_1_auto_us_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_3' (10#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-49201-anubhav-acer/realtime/design_1_auto_us_3_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'design_1_auto_us_3' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:8741]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'design_1_auto_us_3' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:8741]
+WARNING: [Synth 8-7023] instance 'auto_us' of module 'design_1_auto_us_3' has 72 connections declared, but only 70 given [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:8741]
+INFO: [Synth 8-6155] done synthesizing module 's03_couplers_imp_1UQ1PUB' (11#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:8454]
+INFO: [Synth 8-6157] synthesizing module 's04_couplers_imp_4T8GAF' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:8814]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_4' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-49201-anubhav-acer/realtime/design_1_auto_us_4_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_4' (12#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-49201-anubhav-acer/realtime/design_1_auto_us_4_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'design_1_auto_us_4' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:9101]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'design_1_auto_us_4' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:9101]
+WARNING: [Synth 8-7023] instance 'auto_us' of module 'design_1_auto_us_4' has 72 connections declared, but only 70 given [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:9101]
+INFO: [Synth 8-6155] done synthesizing module 's04_couplers_imp_4T8GAF' (13#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:8814]
+INFO: [Synth 8-6157] synthesizing module 's05_couplers_imp_1YHCGIE' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:9174]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_5' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-49201-anubhav-acer/realtime/design_1_auto_us_5_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_5' (14#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-49201-anubhav-acer/realtime/design_1_auto_us_5_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'design_1_auto_us_5' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:9461]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'design_1_auto_us_5' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:9461]
+WARNING: [Synth 8-7023] instance 'auto_us' of module 'design_1_auto_us_5' has 72 connections declared, but only 70 given [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:9461]
+INFO: [Synth 8-6155] done synthesizing module 's05_couplers_imp_1YHCGIE' (15#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:9174]
+INFO: [Synth 8-6157] synthesizing module 's06_couplers_imp_5OWWZ8' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:9534]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_6' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-49201-anubhav-acer/realtime/design_1_auto_us_6_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_6' (16#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-49201-anubhav-acer/realtime/design_1_auto_us_6_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'design_1_auto_us_6' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:9821]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'design_1_auto_us_6' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:9821]
+WARNING: [Synth 8-7023] instance 'auto_us' of module 'design_1_auto_us_6' has 72 connections declared, but only 70 given [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:9821]
+INFO: [Synth 8-6155] done synthesizing module 's06_couplers_imp_5OWWZ8' (17#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:9534]
+INFO: [Synth 8-6157] synthesizing module 's07_couplers_imp_1XVBQ51' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:9894]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_7' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-49201-anubhav-acer/realtime/design_1_auto_us_7_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_7' (18#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-49201-anubhav-acer/realtime/design_1_auto_us_7_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'design_1_auto_us_7' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:10181]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'design_1_auto_us_7' is unconnected for instance 'auto_us' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:10181]
+WARNING: [Synth 8-7023] instance 'auto_us' of module 'design_1_auto_us_7' has 72 connections declared, but only 70 given [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:10181]
+INFO: [Synth 8-6155] done synthesizing module 's07_couplers_imp_1XVBQ51' (19#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:9894]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_1' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-49201-anubhav-acer/realtime/design_1_xbar_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_1' (20#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-49201-anubhav-acer/realtime/design_1_xbar_1_stub.v:6]
+WARNING: [Synth 8-7071] port 's_axi_bid' of module 'design_1_xbar_1' is unconnected for instance 'xbar' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:4160]
+WARNING: [Synth 8-7071] port 's_axi_rid' of module 'design_1_xbar_1' is unconnected for instance 'xbar' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:4160]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'design_1_xbar_1' has 78 connections declared, but only 76 given [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:4160]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_mem_intercon_0' (21#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1872]
+INFO: [Synth 8-6157] synthesizing module 'design_1_conv_combined_0_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-49201-anubhav-acer/realtime/design_1_conv_combined_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_conv_combined_0_0' (22#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-49201-anubhav-acer/realtime/design_1_conv_combined_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'interrupt' of module 'design_1_conv_combined_0_0' is unconnected for instance 'conv_combined_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1042]
 WARNING: [Synth 8-7071] port 'x_Rst_A' of module 'design_1_conv_combined_0_0' is unconnected for instance 'conv_combined_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1042]
 WARNING: [Synth 8-7071] port 'dx_Rst_A' of module 'design_1_conv_combined_0_0' is unconnected for instance 'conv_combined_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1042]
 WARNING: [Synth 8-7071] port 'y_Rst_A' of module 'design_1_conv_combined_0_0' is unconnected for instance 'conv_combined_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1042]
 WARNING: [Synth 8-7071] port 'dy_Rst_A' of module 'design_1_conv_combined_0_0' is unconnected for instance 'conv_combined_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1042]
 WARNING: [Synth 8-7023] instance 'conv_combined_0' of module 'design_1_conv_combined_0_0' has 118 connections declared, but only 113 given [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1042]
-INFO: [Synth 8-6157] synthesizing module 'design_1_conv_combined_0_bram_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-1290719-anubhav-acer/realtime/design_1_conv_combined_0_bram_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_conv_combined_0_bram_0' (23#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-1290719-anubhav-acer/realtime/design_1_conv_combined_0_bram_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_conv_combined_0_bram_0_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-1290719-anubhav-acer/realtime/design_1_conv_combined_0_bram_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_conv_combined_0_bram_0_0' (24#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-1290719-anubhav-acer/realtime/design_1_conv_combined_0_bram_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_InputLayer_0_bram_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-1290719-anubhav-acer/realtime/design_1_InputLayer_0_bram_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_InputLayer_0_bram_0' (25#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-1290719-anubhav-acer/realtime/design_1_InputLayer_0_bram_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_fcc_combined_0_1' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-1290719-anubhav-acer/realtime/design_1_fcc_combined_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_fcc_combined_0_1' (26#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-1290719-anubhav-acer/realtime/design_1_fcc_combined_0_1_stub.v:6]
-WARNING: [Synth 8-7071] port 'interrupt' of module 'design_1_fcc_combined_0_1' is unconnected for instance 'fcc_combined_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1195]
-WARNING: [Synth 8-7071] port 'x_Rst_A' of module 'design_1_fcc_combined_0_1' is unconnected for instance 'fcc_combined_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1195]
-WARNING: [Synth 8-7071] port 'dx_Rst_A' of module 'design_1_fcc_combined_0_1' is unconnected for instance 'fcc_combined_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1195]
-WARNING: [Synth 8-7071] port 'y_Rst_A' of module 'design_1_fcc_combined_0_1' is unconnected for instance 'fcc_combined_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1195]
-WARNING: [Synth 8-7071] port 'dy_Rst_A' of module 'design_1_fcc_combined_0_1' is unconnected for instance 'fcc_combined_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1195]
-WARNING: [Synth 8-7023] instance 'fcc_combined_0' of module 'design_1_fcc_combined_0_1' has 118 connections declared, but only 113 given [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1195]
-INFO: [Synth 8-6157] synthesizing module 'design_1_fcc_combined_0_bram_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-1290719-anubhav-acer/realtime/design_1_fcc_combined_0_bram_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_fcc_combined_0_bram_0' (27#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-1290719-anubhav-acer/realtime/design_1_fcc_combined_0_bram_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_fcc_combined_0_bram_0_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-1290719-anubhav-acer/realtime/design_1_fcc_combined_0_bram_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_fcc_combined_0_bram_0_0' (28#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-1290719-anubhav-acer/realtime/design_1_fcc_combined_0_bram_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_loss_derivative_0_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-1290719-anubhav-acer/realtime/design_1_loss_derivative_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_loss_derivative_0_0' (29#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-1290719-anubhav-acer/realtime/design_1_loss_derivative_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_conv_combined_0_bram_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-49201-anubhav-acer/realtime/design_1_conv_combined_0_bram_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_conv_combined_0_bram_0' (23#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-49201-anubhav-acer/realtime/design_1_conv_combined_0_bram_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_conv_combined_0_bram_0_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-49201-anubhav-acer/realtime/design_1_conv_combined_0_bram_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_conv_combined_0_bram_0_0' (24#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-49201-anubhav-acer/realtime/design_1_conv_combined_0_bram_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_InputLayer_0_bram_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-49201-anubhav-acer/realtime/design_1_InputLayer_0_bram_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_InputLayer_0_bram_0' (25#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-49201-anubhav-acer/realtime/design_1_InputLayer_0_bram_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_fcc_combined_0_2' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-49201-anubhav-acer/realtime/design_1_fcc_combined_0_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_fcc_combined_0_2' (26#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-49201-anubhav-acer/realtime/design_1_fcc_combined_0_2_stub.v:6]
+WARNING: [Synth 8-7071] port 'interrupt' of module 'design_1_fcc_combined_0_2' is unconnected for instance 'fcc_combined_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1195]
+WARNING: [Synth 8-7071] port 'x_Rst_A' of module 'design_1_fcc_combined_0_2' is unconnected for instance 'fcc_combined_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1195]
+WARNING: [Synth 8-7071] port 'dx_Rst_A' of module 'design_1_fcc_combined_0_2' is unconnected for instance 'fcc_combined_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1195]
+WARNING: [Synth 8-7071] port 'y_Rst_A' of module 'design_1_fcc_combined_0_2' is unconnected for instance 'fcc_combined_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1195]
+WARNING: [Synth 8-7071] port 'dy_Rst_A' of module 'design_1_fcc_combined_0_2' is unconnected for instance 'fcc_combined_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1195]
+WARNING: [Synth 8-7023] instance 'fcc_combined_0' of module 'design_1_fcc_combined_0_2' has 118 connections declared, but only 113 given [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1195]
+INFO: [Synth 8-6157] synthesizing module 'design_1_fcc_combined_0_bram_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-49201-anubhav-acer/realtime/design_1_fcc_combined_0_bram_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_fcc_combined_0_bram_0' (27#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-49201-anubhav-acer/realtime/design_1_fcc_combined_0_bram_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_fcc_combined_0_bram_0_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-49201-anubhav-acer/realtime/design_1_fcc_combined_0_bram_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_fcc_combined_0_bram_0_0' (28#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-49201-anubhav-acer/realtime/design_1_fcc_combined_0_bram_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_loss_derivative_0_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-49201-anubhav-acer/realtime/design_1_loss_derivative_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_loss_derivative_0_0' (29#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-49201-anubhav-acer/realtime/design_1_loss_derivative_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'interrupt' of module 'design_1_loss_derivative_0_0' is unconnected for instance 'loss_derivative_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1335]
 WARNING: [Synth 8-7071] port 'x_Rst_A' of module 'design_1_loss_derivative_0_0' is unconnected for instance 'loss_derivative_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1335]
 WARNING: [Synth 8-7071] port 'dx_Rst_A' of module 'design_1_loss_derivative_0_0' is unconnected for instance 'loss_derivative_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1335]
 WARNING: [Synth 8-7023] instance 'loss_derivative_0' of module 'design_1_loss_derivative_0_0' has 69 connections declared, but only 66 given [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1335]
-INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-1290719-anubhav-acer/realtime/design_1_processing_system7_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_0' (30#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-1290719-anubhav-acer/realtime/design_1_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-49201-anubhav-acer/realtime/design_1_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_0' (30#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-49201-anubhav-acer/realtime/design_1_processing_system7_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'USB0_PORT_INDCTL' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1402]
 WARNING: [Synth 8-7071] port 'USB0_VBUS_PWRSELECT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1402]
 WARNING: [Synth 8-7071] port 'S_AXI_HP0_RCOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1402]
@@ -139,125 +139,90 @@ WARNING: [Synth 8-7071] port 'S_AXI_HP0_WCOUNT' of module 'design_1_processing_s
 WARNING: [Synth 8-7071] port 'S_AXI_HP0_RACOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1402]
 WARNING: [Synth 8-7071] port 'S_AXI_HP0_WACOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1402]
 WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'design_1_processing_system7_0_0' has 110 connections declared, but only 104 given [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1402]
-INFO: [Synth 8-6157] synthesizing module 'design_1_ps7_0_axi_periph_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:4269]
-INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_15SPJYW' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:5796]
-INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_15SPJYW' (31#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:5796]
-INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_XU9C55' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:6333]
-INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_XU9C55' (32#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:6333]
-INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_14WQB4R' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:6465]
-INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_14WQB4R' (33#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:6465]
-INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_YFYJ3U' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:6597]
-INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_YFYJ3U' (34#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:6597]
-INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_17KQ732' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:6729]
-INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_17KQ732' (35#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:6729]
-INFO: [Synth 8-6157] synthesizing module 'm05_couplers_imp_VQEDA7' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:6861]
-INFO: [Synth 8-6155] done synthesizing module 'm05_couplers_imp_VQEDA7' (36#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:6861]
-INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_UYSKKA' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:7353]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-1290719-anubhav-acer/realtime/design_1_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (37#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-1290719-anubhav-acer/realtime/design_1_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_UYSKKA' (38#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:7353]
-INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_ZQDCSB' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:8018]
-INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_ZQDCSB' (39#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:8018]
-WARNING: [Synth 8-7071] port 'M_AXI_arburst' of module 's01_couplers_imp_ZQDCSB' is unconnected for instance 's01_couplers' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:5627]
-WARNING: [Synth 8-7071] port 'M_AXI_arcache' of module 's01_couplers_imp_ZQDCSB' is unconnected for instance 's01_couplers' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:5627]
-WARNING: [Synth 8-7071] port 'M_AXI_arid' of module 's01_couplers_imp_ZQDCSB' is unconnected for instance 's01_couplers' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:5627]
-WARNING: [Synth 8-7071] port 'M_AXI_arlen' of module 's01_couplers_imp_ZQDCSB' is unconnected for instance 's01_couplers' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:5627]
-WARNING: [Synth 8-7071] port 'M_AXI_arlock' of module 's01_couplers_imp_ZQDCSB' is unconnected for instance 's01_couplers' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:5627]
-WARNING: [Synth 8-7071] port 'M_AXI_arqos' of module 's01_couplers_imp_ZQDCSB' is unconnected for instance 's01_couplers' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:5627]
-WARNING: [Synth 8-7071] port 'M_AXI_arsize' of module 's01_couplers_imp_ZQDCSB' is unconnected for instance 's01_couplers' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:5627]
-WARNING: [Synth 8-7071] port 'M_AXI_awburst' of module 's01_couplers_imp_ZQDCSB' is unconnected for instance 's01_couplers' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:5627]
-WARNING: [Synth 8-7071] port 'M_AXI_awcache' of module 's01_couplers_imp_ZQDCSB' is unconnected for instance 's01_couplers' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:5627]
-WARNING: [Synth 8-7071] port 'M_AXI_awid' of module 's01_couplers_imp_ZQDCSB' is unconnected for instance 's01_couplers' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:5627]
-WARNING: [Synth 8-7071] port 'M_AXI_awlen' of module 's01_couplers_imp_ZQDCSB' is unconnected for instance 's01_couplers' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:5627]
-WARNING: [Synth 8-7071] port 'M_AXI_awlock' of module 's01_couplers_imp_ZQDCSB' is unconnected for instance 's01_couplers' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:5627]
-WARNING: [Synth 8-7071] port 'M_AXI_awqos' of module 's01_couplers_imp_ZQDCSB' is unconnected for instance 's01_couplers' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:5627]
-WARNING: [Synth 8-7071] port 'M_AXI_awsize' of module 's01_couplers_imp_ZQDCSB' is unconnected for instance 's01_couplers' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:5627]
-WARNING: [Synth 8-7071] port 'M_AXI_wlast' of module 's01_couplers_imp_ZQDCSB' is unconnected for instance 's01_couplers' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:5627]
-WARNING: [Synth 8-7023] instance 's01_couplers' of module 's01_couplers_imp_ZQDCSB' has 78 connections declared, but only 63 given [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:5627]
-INFO: [Synth 8-6157] synthesizing module 's02_couplers_imp_THVDEH' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:8650]
-INFO: [Synth 8-6155] done synthesizing module 's02_couplers_imp_THVDEH' (40#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:8650]
-WARNING: [Synth 8-7071] port 'M_AXI_arburst' of module 's02_couplers_imp_THVDEH' is unconnected for instance 's02_couplers' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:5691]
-WARNING: [Synth 8-7071] port 'M_AXI_arcache' of module 's02_couplers_imp_THVDEH' is unconnected for instance 's02_couplers' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:5691]
-WARNING: [Synth 8-7071] port 'M_AXI_arid' of module 's02_couplers_imp_THVDEH' is unconnected for instance 's02_couplers' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:5691]
-WARNING: [Synth 8-7071] port 'M_AXI_arlen' of module 's02_couplers_imp_THVDEH' is unconnected for instance 's02_couplers' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:5691]
-WARNING: [Synth 8-7071] port 'M_AXI_arlock' of module 's02_couplers_imp_THVDEH' is unconnected for instance 's02_couplers' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:5691]
-WARNING: [Synth 8-7071] port 'M_AXI_arqos' of module 's02_couplers_imp_THVDEH' is unconnected for instance 's02_couplers' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:5691]
-WARNING: [Synth 8-7071] port 'M_AXI_arsize' of module 's02_couplers_imp_THVDEH' is unconnected for instance 's02_couplers' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:5691]
-WARNING: [Synth 8-7071] port 'M_AXI_awburst' of module 's02_couplers_imp_THVDEH' is unconnected for instance 's02_couplers' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:5691]
-WARNING: [Synth 8-7071] port 'M_AXI_awcache' of module 's02_couplers_imp_THVDEH' is unconnected for instance 's02_couplers' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:5691]
-WARNING: [Synth 8-7071] port 'M_AXI_awid' of module 's02_couplers_imp_THVDEH' is unconnected for instance 's02_couplers' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:5691]
-WARNING: [Synth 8-7071] port 'M_AXI_awlen' of module 's02_couplers_imp_THVDEH' is unconnected for instance 's02_couplers' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:5691]
-WARNING: [Synth 8-7071] port 'M_AXI_awlock' of module 's02_couplers_imp_THVDEH' is unconnected for instance 's02_couplers' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:5691]
-WARNING: [Synth 8-7071] port 'M_AXI_awqos' of module 's02_couplers_imp_THVDEH' is unconnected for instance 's02_couplers' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:5691]
-WARNING: [Synth 8-7071] port 'M_AXI_awsize' of module 's02_couplers_imp_THVDEH' is unconnected for instance 's02_couplers' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:5691]
-WARNING: [Synth 8-7071] port 'M_AXI_wlast' of module 's02_couplers_imp_THVDEH' is unconnected for instance 's02_couplers' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:5691]
-WARNING: [Synth 8-7023] instance 's02_couplers' of module 's02_couplers_imp_THVDEH' has 78 connections declared, but only 63 given [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:5691]
-INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-1290719-anubhav-acer/realtime/design_1_xbar_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (41#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-1290719-anubhav-acer/realtime/design_1_xbar_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_xbar_0' is unconnected for instance 'xbar' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:5755]
-WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_xbar_0' is unconnected for instance 'xbar' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:5755]
-WARNING: [Synth 8-7023] instance 'xbar' of module 'design_1_xbar_0' has 40 connections declared, but only 38 given [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:5755]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_ps7_0_axi_periph_0' (42#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:4269]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ps7_0_axi_periph_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:4239]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_15SPJYW' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:5580]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_15SPJYW' (31#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:5580]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_XU9C55' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:6117]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_XU9C55' (32#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:6117]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_14WQB4R' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:6249]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_14WQB4R' (33#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:6249]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_YFYJ3U' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:6381]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_YFYJ3U' (34#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:6381]
+INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_17KQ732' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:6513]
+INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_17KQ732' (35#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:6513]
+INFO: [Synth 8-6157] synthesizing module 'm05_couplers_imp_VQEDA7' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:6645]
+INFO: [Synth 8-6155] done synthesizing module 'm05_couplers_imp_VQEDA7' (36#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:6645]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_UYSKKA' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:7137]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-49201-anubhav-acer/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (37#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-49201-anubhav-acer/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_UYSKKA' (38#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:7137]
+INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_ZQDCSB' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:7802]
+INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_ZQDCSB' (39#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:7802]
+INFO: [Synth 8-6157] synthesizing module 's02_couplers_imp_THVDEH' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:8308]
+INFO: [Synth 8-6155] done synthesizing module 's02_couplers_imp_THVDEH' (40#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:8308]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-49201-anubhav-acer/realtime/design_1_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (41#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-49201-anubhav-acer/realtime/design_1_xbar_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_xbar_0' is unconnected for instance 'xbar' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:5539]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_xbar_0' is unconnected for instance 'xbar' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:5539]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'design_1_xbar_0' has 40 connections declared, but only 38 given [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:5539]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ps7_0_axi_periph_0' (42#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:4239]
 WARNING: [Synth 8-7071] port 'S01_AXI_arready' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1507]
 WARNING: [Synth 8-7071] port 'S01_AXI_awready' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1507]
-WARNING: [Synth 8-7071] port 'S01_AXI_bid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1507]
 WARNING: [Synth 8-7071] port 'S01_AXI_bresp' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1507]
 WARNING: [Synth 8-7071] port 'S01_AXI_bvalid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1507]
 WARNING: [Synth 8-7071] port 'S01_AXI_rdata' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1507]
-WARNING: [Synth 8-7071] port 'S01_AXI_rid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1507]
-WARNING: [Synth 8-7071] port 'S01_AXI_rlast' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1507]
 WARNING: [Synth 8-7071] port 'S01_AXI_rresp' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1507]
 WARNING: [Synth 8-7071] port 'S01_AXI_rvalid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1507]
 WARNING: [Synth 8-7071] port 'S01_AXI_wready' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1507]
 WARNING: [Synth 8-7071] port 'S02_AXI_arready' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1507]
 WARNING: [Synth 8-7071] port 'S02_AXI_awready' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1507]
-WARNING: [Synth 8-7071] port 'S02_AXI_bid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1507]
 WARNING: [Synth 8-7071] port 'S02_AXI_bresp' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1507]
 WARNING: [Synth 8-7071] port 'S02_AXI_bvalid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1507]
 WARNING: [Synth 8-7071] port 'S02_AXI_rdata' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1507]
-WARNING: [Synth 8-7071] port 'S02_AXI_rid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1507]
-WARNING: [Synth 8-7071] port 'S02_AXI_rlast' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1507]
 WARNING: [Synth 8-7071] port 'S02_AXI_rresp' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1507]
 WARNING: [Synth 8-7071] port 'S02_AXI_rvalid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1507]
 WARNING: [Synth 8-7071] port 'S02_AXI_wready' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1507]
-WARNING: [Synth 8-7023] instance 'ps7_0_axi_periph' of module 'design_1_ps7_0_axi_periph_0' has 234 connections declared, but only 212 given [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1507]
-INFO: [Synth 8-6157] synthesizing module 'design_1_relu_combined_0_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-1290719-anubhav-acer/realtime/design_1_relu_combined_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_relu_combined_0_0' (43#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-1290719-anubhav-acer/realtime/design_1_relu_combined_0_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'interrupt' of module 'design_1_relu_combined_0_0' is unconnected for instance 'relu_combined_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1720]
-WARNING: [Synth 8-7071] port 'x_Rst_A' of module 'design_1_relu_combined_0_0' is unconnected for instance 'relu_combined_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1720]
-WARNING: [Synth 8-7071] port 'dx_Rst_A' of module 'design_1_relu_combined_0_0' is unconnected for instance 'relu_combined_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1720]
-WARNING: [Synth 8-7071] port 'y_Rst_A' of module 'design_1_relu_combined_0_0' is unconnected for instance 'relu_combined_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1720]
-WARNING: [Synth 8-7071] port 'dy_Rst_A' of module 'design_1_relu_combined_0_0' is unconnected for instance 'relu_combined_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1720]
-WARNING: [Synth 8-7023] instance 'relu_combined_0' of module 'design_1_relu_combined_0_0' has 83 connections declared, but only 78 given [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1720]
-INFO: [Synth 8-6157] synthesizing module 'design_1_relu_combined_0_bram_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-1290719-anubhav-acer/realtime/design_1_relu_combined_0_bram_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_relu_combined_0_bram_0' (44#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-1290719-anubhav-acer/realtime/design_1_relu_combined_0_bram_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_relu_combined_0_bram_0_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-1290719-anubhav-acer/realtime/design_1_relu_combined_0_bram_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_relu_combined_0_bram_0_0' (45#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-1290719-anubhav-acer/realtime/design_1_relu_combined_0_bram_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps7_0_100M_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-1290719-anubhav-acer/realtime/design_1_rst_ps7_0_100M_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps7_0_100M_0' (46#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-1290719-anubhav-acer/realtime/design_1_rst_ps7_0_100M_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_1_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1825]
-INFO: [Common 17-14] Message 'Synth 8-7071' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-WARNING: [Synth 8-7023] instance 'rst_ps7_0_100M' of module 'design_1_rst_ps7_0_100M_0' has 10 connections declared, but only 6 given [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1825]
-INFO: [Synth 8-6157] synthesizing module 'design_1_update_weights_0_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-1290719-anubhav-acer/realtime/design_1_update_weights_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_update_weights_0_0' (47#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-1290719-anubhav-acer/realtime/design_1_update_weights_0_0_stub.v:6]
-WARNING: [Synth 8-7023] instance 'update_weights_0' of module 'design_1_update_weights_0_0' has 55 connections declared, but only 54 given [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1832]
-INFO: [Synth 8-6157] synthesizing module 'design_1_InputLayer_0_bram_0_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-1290719-anubhav-acer/realtime/design_1_InputLayer_0_bram_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_InputLayer_0_bram_0_0' (48#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-1290719-anubhav-acer/realtime/design_1_InputLayer_0_bram_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'ps7_0_axi_periph' of module 'design_1_ps7_0_axi_periph_0' has 198 connections declared, but only 182 given [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1507]
+INFO: [Synth 8-6157] synthesizing module 'design_1_relu_combined_0_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-49201-anubhav-acer/realtime/design_1_relu_combined_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_relu_combined_0_0' (43#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-49201-anubhav-acer/realtime/design_1_relu_combined_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'interrupt' of module 'design_1_relu_combined_0_0' is unconnected for instance 'relu_combined_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1690]
+WARNING: [Synth 8-7071] port 'x_Rst_A' of module 'design_1_relu_combined_0_0' is unconnected for instance 'relu_combined_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1690]
+WARNING: [Synth 8-7071] port 'dx_Rst_A' of module 'design_1_relu_combined_0_0' is unconnected for instance 'relu_combined_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1690]
+WARNING: [Synth 8-7071] port 'y_Rst_A' of module 'design_1_relu_combined_0_0' is unconnected for instance 'relu_combined_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1690]
+WARNING: [Synth 8-7071] port 'dy_Rst_A' of module 'design_1_relu_combined_0_0' is unconnected for instance 'relu_combined_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1690]
+WARNING: [Synth 8-7023] instance 'relu_combined_0' of module 'design_1_relu_combined_0_0' has 83 connections declared, but only 78 given [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1690]
+INFO: [Synth 8-6157] synthesizing module 'design_1_relu_combined_0_bram_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-49201-anubhav-acer/realtime/design_1_relu_combined_0_bram_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_relu_combined_0_bram_0' (44#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-49201-anubhav-acer/realtime/design_1_relu_combined_0_bram_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_relu_combined_0_bram_0_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-49201-anubhav-acer/realtime/design_1_relu_combined_0_bram_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_relu_combined_0_bram_0_0' (45#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-49201-anubhav-acer/realtime/design_1_relu_combined_0_bram_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps7_0_100M_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-49201-anubhav-acer/realtime/design_1_rst_ps7_0_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps7_0_100M_0' (46#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-49201-anubhav-acer/realtime/design_1_rst_ps7_0_100M_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_1_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1795]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1795]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1795]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1795]
+WARNING: [Synth 8-7023] instance 'rst_ps7_0_100M' of module 'design_1_rst_ps7_0_100M_0' has 10 connections declared, but only 6 given [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1795]
+INFO: [Synth 8-6157] synthesizing module 'design_1_update_weights_0_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-49201-anubhav-acer/realtime/design_1_update_weights_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_update_weights_0_0' (47#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-49201-anubhav-acer/realtime/design_1_update_weights_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'interrupt' of module 'design_1_update_weights_0_0' is unconnected for instance 'update_weights_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1802]
+WARNING: [Synth 8-7023] instance 'update_weights_0' of module 'design_1_update_weights_0_0' has 55 connections declared, but only 54 given [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:1802]
+INFO: [Synth 8-6157] synthesizing module 'design_1_InputLayer_0_bram_0_0' [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-49201-anubhav-acer/realtime/design_1_InputLayer_0_bram_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_InputLayer_0_bram_0_0' (48#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/.Xil/Vivado-49201-anubhav-acer/realtime/design_1_InputLayer_0_bram_0_0_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'design_1' (49#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/synth/design_1.v:13]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (50#1) [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2357.973 ; gain = 0.000 ; free physical = 14011 ; free virtual = 24007
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2357.969 ; gain = 0.000 ; free physical = 16849 ; free virtual = 25587
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2357.973 ; gain = 0.000 ; free physical = 14071 ; free virtual = 24066
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2357.969 ; gain = 0.000 ; free physical = 16910 ; free virtual = 25647
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2357.973 ; gain = 0.000 ; free physical = 14071 ; free virtual = 24066
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2357.969 ; gain = 0.000 ; free physical = 16910 ; free virtual = 25647
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2357.973 ; gain = 0.000 ; free physical = 14063 ; free virtual = 24058
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2357.969 ; gain = 0.000 ; free physical = 16901 ; free virtual = 25639
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -276,8 +241,6 @@ Parsing XDC File [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/source
 Finished Parsing XDC File [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
 Parsing XDC File [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_in_context.xdc] for cell 'design_1_i/rst_ps7_0_100M'
 Finished Parsing XDC File [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_in_context.xdc] for cell 'design_1_i/rst_ps7_0_100M'
-Parsing XDC File [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/ip/design_1_conv_combined_0_0/design_1_conv_combined_0_0/design_1_conv_combined_0_0_in_context.xdc] for cell 'design_1_i/conv_combined_0'
-Finished Parsing XDC File [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/ip/design_1_conv_combined_0_0/design_1_conv_combined_0_0/design_1_conv_combined_0_0_in_context.xdc] for cell 'design_1_i/conv_combined_0'
 Parsing XDC File [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/ip/design_1_conv_combined_0_bram_0/design_1_conv_combined_0_bram_0/design_1_relu_combined_0_bram_0_0_in_context.xdc] for cell 'design_1_i/conv_dy'
 Finished Parsing XDC File [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/ip/design_1_conv_combined_0_bram_0/design_1_conv_combined_0_bram_0/design_1_relu_combined_0_bram_0_0_in_context.xdc] for cell 'design_1_i/conv_dy'
 Parsing XDC File [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/ip/design_1_conv_combined_0_bram_0_0/design_1_conv_combined_0_bram_0_0/design_1_relu_combined_0_bram_0_0_in_context.xdc] for cell 'design_1_i/conv_y'
@@ -314,19 +277,21 @@ Parsing XDC File [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/source
 Finished Parsing XDC File [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/ip/design_1_fcc_combined_0_bram_0_0/design_1_fcc_combined_0_bram_0_0/design_1_fcc_combined_0_bram_0_in_context.xdc] for cell 'design_1_i/fcc_y'
 Parsing XDC File [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/ip/design_1_loss_derivative_0_0/design_1_loss_derivative_0_0/design_1_loss_derivative_0_0_in_context.xdc] for cell 'design_1_i/loss_derivative_0'
 Finished Parsing XDC File [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/ip/design_1_loss_derivative_0_0/design_1_loss_derivative_0_0/design_1_loss_derivative_0_0_in_context.xdc] for cell 'design_1_i/loss_derivative_0'
-Parsing XDC File [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/ip/design_1_fcc_combined_0_1/design_1_fcc_combined_0_1/design_1_fcc_combined_0_1_in_context.xdc] for cell 'design_1_i/fcc_combined_0'
-Finished Parsing XDC File [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/ip/design_1_fcc_combined_0_1/design_1_fcc_combined_0_1/design_1_fcc_combined_0_1_in_context.xdc] for cell 'design_1_i/fcc_combined_0'
 Parsing XDC File [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/ip/design_1_update_weights_0_0/design_1_update_weights_0_0/design_1_update_weights_0_0_in_context.xdc] for cell 'design_1_i/update_weights_0'
 Finished Parsing XDC File [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/ip/design_1_update_weights_0_0/design_1_update_weights_0_0/design_1_update_weights_0_0_in_context.xdc] for cell 'design_1_i/update_weights_0'
+Parsing XDC File [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/ip/design_1_conv_combined_0_0/design_1_conv_combined_0_0/design_1_conv_combined_0_0_in_context.xdc] for cell 'design_1_i/conv_combined_0'
+Finished Parsing XDC File [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/ip/design_1_conv_combined_0_0/design_1_conv_combined_0_0/design_1_conv_combined_0_0_in_context.xdc] for cell 'design_1_i/conv_combined_0'
+Parsing XDC File [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/ip/design_1_fcc_combined_0_2/design_1_fcc_combined_0_2/design_1_fcc_combined_0_2_in_context.xdc] for cell 'design_1_i/fcc_combined_0'
+Finished Parsing XDC File [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/ip/design_1_fcc_combined_0_2/design_1_fcc_combined_0_2/design_1_fcc_combined_0_2_in_context.xdc] for cell 'design_1_i/fcc_combined_0'
 Parsing XDC File [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/dont_touch.xdc]
 Finished Parsing XDC File [/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2421.934 ; gain = 0.000 ; free physical = 13967 ; free virtual = 23963
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2421.930 ; gain = 0.000 ; free physical = 16807 ; free virtual = 25544
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2421.934 ; gain = 0.000 ; free physical = 13967 ; free virtual = 23963
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2421.930 ; gain = 0.000 ; free physical = 16807 ; free virtual = 25544
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/conv_dy' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/conv_y' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/dx' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
@@ -336,14 +301,14 @@ WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context s
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/relu_y' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/x' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2421.934 ; gain = 63.961 ; free physical = 14044 ; free virtual = 24039
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 16885 ; free virtual = 25623
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2421.934 ; gain = 63.961 ; free physical = 14044 ; free virtual = 24039
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 16885 ; free virtual = 25623
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -617,7 +582,6 @@ Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps7_0_axi_periph/xbar.
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps7_0_axi_periph. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/rst_ps7_0_100M. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/conv_combined_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/conv_dy. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/conv_y. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_mem_intercon/xbar. (constraint file  auto generated constraint).
@@ -637,13 +601,14 @@ Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/relu_y. (constraint fi
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/fcc_dy. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/fcc_y. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/loss_derivative_0. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/fcc_combined_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/update_weights_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/conv_combined_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/fcc_combined_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2421.934 ; gain = 63.961 ; free physical = 14043 ; free virtual = 24039
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 16886 ; free virtual = 25623
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2421.934 ; gain = 63.961 ; free physical = 14046 ; free virtual = 24043
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 16888 ; free virtual = 25627
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -665,25 +630,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2421.934 ; gain = 63.961 ; free physical = 14028 ; free virtual = 24030
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 16871 ; free virtual = 25615
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2421.934 ; gain = 63.961 ; free physical = 13905 ; free virtual = 23906
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 16744 ; free virtual = 25488
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2421.934 ; gain = 63.961 ; free physical = 13905 ; free virtual = 23906
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 16744 ; free virtual = 25488
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2421.934 ; gain = 63.961 ; free physical = 13905 ; free virtual = 23906
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 16744 ; free virtual = 25488
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -701,37 +666,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 2421.934 ; gain = 63.961 ; free physical = 13904 ; free virtual = 23905
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 16745 ; free virtual = 25489
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 2421.934 ; gain = 63.961 ; free physical = 13904 ; free virtual = 23905
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 16745 ; free virtual = 25489
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 2421.934 ; gain = 63.961 ; free physical = 13904 ; free virtual = 23905
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 16745 ; free virtual = 25489
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 2421.934 ; gain = 63.961 ; free physical = 13904 ; free virtual = 23905
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 16745 ; free virtual = 25489
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 2421.934 ; gain = 63.961 ; free physical = 13904 ; free virtual = 23905
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 16745 ; free virtual = 25489
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 2421.934 ; gain = 63.961 ; free physical = 13904 ; free virtual = 23905
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 16745 ; free virtual = 25489
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -758,7 +723,7 @@ Report BlackBoxes:
 |15    |design_1_conv_combined_0_bram_0   |         1|
 |16    |design_1_conv_combined_0_bram_0_0 |         1|
 |17    |design_1_InputLayer_0_bram_0      |         1|
-|18    |design_1_fcc_combined_0_1         |         1|
+|18    |design_1_fcc_combined_0_2         |         1|
 |19    |design_1_fcc_combined_0_bram_0    |         1|
 |20    |design_1_fcc_combined_0_bram_0_0  |         1|
 |21    |design_1_loss_derivative_0_0      |         1|
@@ -796,23 +761,23 @@ Report Cell Usage:
 |27    |design_1_xbar                   |     2|
 +------+--------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 2421.934 ; gain = 63.961 ; free physical = 13904 ; free virtual = 23905
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 16745 ; free virtual = 25489
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2421.934 ; gain = 0.000 ; free physical = 13960 ; free virtual = 23962
-Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 2421.934 ; gain = 63.961 ; free physical = 13960 ; free virtual = 23962
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2421.930 ; gain = 0.000 ; free physical = 16799 ; free virtual = 25543
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2421.930 ; gain = 63.961 ; free physical = 16799 ; free virtual = 25543
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2421.934 ; gain = 0.000 ; free physical = 14044 ; free virtual = 24046
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2421.930 ; gain = 0.000 ; free physical = 16886 ; free virtual = 25629
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2421.934 ; gain = 0.000 ; free physical = 13979 ; free virtual = 23981
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2421.930 ; gain = 0.000 ; free physical = 16821 ; free virtual = 25564
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-116 Infos, 129 Warnings, 0 Critical Warnings and 0 Errors encountered.
+115 Infos, 95 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:22 . Memory (MB): peak = 2421.934 ; gain = 64.031 ; free physical = 14115 ; free virtual = 24117
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 2421.930 ; gain = 64.031 ; free physical = 16958 ; free virtual = 25701
 INFO: [Common 17-1381] The checkpoint '/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed May 25 22:14:52 2022...
+INFO: [Common 17-206] Exiting Vivado at Sat May 28 19:23:24 2022...

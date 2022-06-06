@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="main.cpp" path="/home/anubhav/xilinx_projects/ip_repo_promethean/conv_combined/main.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="tb.cpp" path="/home/anubhav/xilinx_projects/ip_repo_promethean/conv_combined/tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

@@ -7,9 +7,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1 ||
 # IP: bd/design_1/ip/design_1_InputLayer_0_0/design_1_InputLayer_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_InputLayer_0_0 || ORIG_REF_NAME==design_1_InputLayer_0_0} -quiet] -quiet
 
-# IP: bd/design_1/ip/design_1_OutputLayer_0_0/design_1_OutputLayer_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_OutputLayer_0_0 || ORIG_REF_NAME==design_1_OutputLayer_0_0} -quiet] -quiet
-
 # IP: bd/design_1/ip/design_1_xbar_0/design_1_xbar_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_xbar_0 || ORIG_REF_NAME==design_1_xbar_0} -quiet] -quiet
 
@@ -43,6 +40,9 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_ps
 # IP: bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_rst_ps7_0_100M_0 || ORIG_REF_NAME==design_1_rst_ps7_0_100M_0} -quiet] -quiet
 
+# IP: bd/design_1/ip/design_1_InputLayer_1_0/design_1_InputLayer_1_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_InputLayer_1_0 || ORIG_REF_NAME==design_1_InputLayer_1_0} -quiet] -quiet
+
 # IP: bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_auto_us_0 || ORIG_REF_NAME==design_1_auto_us_0} -quiet] -quiet
 
@@ -51,6 +51,9 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_au
 
 # IP: bd/design_1/ip/design_1_auto_us_2/design_1_auto_us_2.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_auto_us_2 || ORIG_REF_NAME==design_1_auto_us_2} -quiet] -quiet
+
+# IP: bd/design_1/ip/design_1_auto_us_3/design_1_auto_us_3.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_auto_us_3 || ORIG_REF_NAME==design_1_auto_us_3} -quiet] -quiet
 
 # IP: bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_auto_pc_0 || ORIG_REF_NAME==design_1_auto_pc_0} -quiet] -quiet

@@ -6,8 +6,8 @@
 module fcc_combined_wbuf_V_ram (addr0, ce0, d0, we0, q0,  clk);
 
 parameter DWIDTH = 16;
-parameter AWIDTH = 16;
-parameter MEM_SIZE = 51200;
+parameter AWIDTH = 15;
+parameter MEM_SIZE = 32000;
 
 input[AWIDTH-1:0] addr0;
 input ce0;
@@ -44,8 +44,8 @@ module fcc_combined_wbuf_V(
     q0);
 
 parameter DataWidth = 32'd16;
-parameter AddressRange = 32'd51200;
-parameter AddressWidth = 32'd16;
+parameter AddressRange = 32'd32000;
+parameter AddressWidth = 32'd15;
 input reset;
 input clk;
 input[AddressWidth - 1:0] address0;

@@ -1252,12 +1252,6 @@ proc create_root_design { parentCell } {
   assign_bd_address -offset 0x00000000 -range 0x20000000 -target_address_space [get_bd_addr_spaces relu_combined_0/Data_m_axi_gmem] [get_bd_addr_segs processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM] -force
   assign_bd_address -offset 0x00000000 -range 0x20000000 -target_address_space [get_bd_addr_spaces update_weights_0/Data_m_axi_gmem] [get_bd_addr_segs processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM] -force
 
-  # Exclude Address Segments
-  exclude_bd_addr_seg -offset 0x40000000 -range 0x00010000 -target_address_space [get_bd_addr_spaces conv_combined_0/Data_m_axi_gmem] [get_bd_addr_segs InputLayer_0/s_axi_control/Reg]
-  exclude_bd_addr_seg -offset 0x40010000 -range 0x00010000 -target_address_space [get_bd_addr_spaces conv_combined_0/Data_m_axi_gmem] [get_bd_addr_segs conv_combined_0/s_axi_control/Reg]
-  exclude_bd_addr_seg -offset 0x40000000 -range 0x00010000 -target_address_space [get_bd_addr_spaces conv_combined_0/Data_m_axi_gmem2] [get_bd_addr_segs InputLayer_0/s_axi_control/Reg]
-  exclude_bd_addr_seg -offset 0x40010000 -range 0x00010000 -target_address_space [get_bd_addr_spaces conv_combined_0/Data_m_axi_gmem2] [get_bd_addr_segs conv_combined_0/s_axi_control/Reg]
-
 
   # Restore current instance
   current_bd_instance $oldCurInst

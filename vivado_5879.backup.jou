@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri May 27 10:25:23 2022
+# Process ID: 5879
+# Current directory: /home/anubhav/xilinx_projects
+# Command line: vivado
+# Log file: /home/anubhav/xilinx_projects/vivado.log
+# Journal file: /home/anubhav/xilinx_projects/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/anubhav/xilinx_projects/mnist_eval/mnist_eval.xpr
+open_bd_design {/home/anubhav/xilinx_projects/mnist_eval/mnist_eval.srcs/sources_1/bd/design_1/design_1.bd}
+update_compile_order -fileset sources_1

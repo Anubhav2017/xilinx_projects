@@ -1,0 +1,16 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Sat May 28 19:11:19 2022
+| Host         : anubhav-acer running 64-bit Ubuntu 20.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_conv_combined_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_conv_combined_0_0 (xilinx.com:hls:conv_combined:1.0) from (Rev. 2112520717) to (Rev. 2112525189)
+

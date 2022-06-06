@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1652695690">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1653753512">
   <File Type="VDS-TIMING-PB" Name="design_1_wrapper_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="design_1_wrapper_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="design_1_wrapper.dcp"/>
@@ -47,15 +47,15 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
     <Step Id="synth_design"/>
   </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_InputLayer_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_InputLayer_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_rst_ps7_0_100M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_xbar_1"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_xbar_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_processing_system7_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_InputLayer_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_xbar_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_OutputLayer_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_conv_combined_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_fcc_y_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_fcc_dy_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_conv_y_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_conv_dy_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_fcc_y_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_conv_combined_0_0"/>
 </GenRun>

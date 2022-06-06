@@ -1,16 +1,18 @@
 INFO: Applying HLS Y2K22 patch v1.2 for IP revision
 INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2020.2/bin/unwrapped/lnx64.o/vitis_hls'
-INFO: [HLS 200-10] For user 'anubhav' on host 'anubhav-acer' (Linux_x86_64 version 5.13.0-44-generic) on Wed May 25 17:26:20 IST 2022
+INFO: [HLS 200-10] For user 'anubhav' on host 'anubhav-acer' (Linux_x86_64 version 5.13.0-44-generic) on Sun May 29 16:32:45 IST 2022
 INFO: [HLS 200-10] On os Ubuntu 20.04.4 LTS
 INFO: [HLS 200-10] In directory '/home/anubhav/xilinx_projects/ip_repo'
-Sourcing Tcl script '/home/anubhav/xilinx_projects/ip_repo/fcc_combined/solution1/export.tcl'
-INFO: [HLS 200-1510] Running: open_project fcc_combined 
-INFO: [HLS 200-10] Opening project '/home/anubhav/xilinx_projects/ip_repo/fcc_combined'.
-INFO: [HLS 200-1510] Running: set_top fcc_combined 
-INFO: [HLS 200-1510] Running: add_files fcc_combined/main.cpp 
-INFO: [HLS 200-10] Adding design file 'fcc_combined/main.cpp' to the project
+Sourcing Tcl script '/home/anubhav/xilinx_projects/ip_repo/lossfun/solution1/csynth.tcl'
+INFO: [HLS 200-1510] Running: open_project lossfun 
+INFO: [HLS 200-10] Opening project '/home/anubhav/xilinx_projects/ip_repo/lossfun'.
+INFO: [HLS 200-1510] Running: set_top loss_derivative 
+INFO: [HLS 200-1510] Running: add_files lossfun/main.cpp 
+INFO: [HLS 200-10] Adding design file 'lossfun/main.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb lossfun/tb.cpp -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'lossfun/tb.cpp' to the project
 INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
-INFO: [HLS 200-10] Opening solution '/home/anubhav/xilinx_projects/ip_repo/fcc_combined/solution1'.
+INFO: [HLS 200-10] Opening solution '/home/anubhav/xilinx_projects/ip_repo/lossfun/solution1'.
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
 INFO: [HLS 200-1505] Using flow_target 'vivado'
@@ -22,19 +24,76 @@ INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1
 INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
 INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 
 INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
-INFO: [HLS 200-1510] Running: set_directive_top -name fcc_combined fcc_combined 
-INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog 
-INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
-
-****** Vivado v2020.2 (64-bit)
-  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
-  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
-
-source run_ippack.tcl -notrace
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
-INFO: [Common 17-206] Exiting Vivado at Wed May 25 17:26:31 2022...
-INFO: [HLS 200-802] Generated output file fcc_combined/solution1/impl/export.zip
-INFO: [HLS 200-111] Finished Command export_design CPU user time: 11.43 seconds. CPU system time: 0.81 seconds. Elapsed time: 12.88 seconds; current allocated memory: 166.702 MB.
+INFO: [HLS 200-1510] Running: set_directive_top -name loss_derivative loss_derivative 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 155.869 MB.
+INFO: [HLS 200-10] Analyzing design file 'lossfun/main.cpp' ... 
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:117:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:118:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:119:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:120:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:121:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:151:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:152:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:153:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:154:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:155:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:156:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:157:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:158:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:159:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:160:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:210:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:211:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:212:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:239:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:240:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:241:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:242:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:243:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:244:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:280:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:281:9
+ERROR: [HLS 207-3335] no matching constructor for initialization of 'fixed_t' (aka 'ap_fixed<16, 3>'): lossfun/main.cpp:12:9
+INFO: [HLS 207-4369] candidate constructor template not viable: requires single argument 'op', but 940 arguments were provided: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed.h:73:41
+INFO: [HLS 207-4369] candidate constructor template not viable: requires single argument 'op', but 940 arguments were provided: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed.h:79:41
+INFO: [HLS 207-4369] candidate constructor template not viable: requires single argument 'op', but 940 arguments were provided: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed.h:113:41
+INFO: [HLS 207-4369] candidate constructor template not viable: requires single argument 'op', but 940 arguments were provided: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed.h:116:41
+INFO: [HLS 207-4369] candidate constructor template not viable: requires single argument 'op', but 940 arguments were provided: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed.h:148:41
+INFO: [HLS 207-4369] candidate constructor template not viable: requires single argument 'op', but 940 arguments were provided: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed.h:152:41
+INFO: [HLS 207-4369] candidate constructor template not viable: requires single argument 'op', but 940 arguments were provided: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed.h:156:41
+INFO: [HLS 207-4369] candidate constructor template not viable: requires single argument 'op', but 940 arguments were provided: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed.h:162:41
+INFO: [HLS 207-4369] candidate constructor template not viable: requires single argument 'op', but 940 arguments were provided: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed.h:169:41
+INFO: [HLS 207-4368] candidate constructor not viable: requires 2 arguments, but 940 were provided: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed.h:121:41
+INFO: [HLS 207-4368] candidate constructor not viable: requires 2 arguments, but 940 were provided: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed.h:196:41
+INFO: [HLS 207-4369] candidate constructor not viable: requires single argument 'v', but 940 arguments were provided: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed.h:177:41
+INFO: [HLS 207-4369] candidate constructor not viable: requires single argument 'v', but 940 arguments were provided: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed.h:178:41
+INFO: [HLS 207-4369] candidate constructor not viable: requires single argument 'v', but 940 arguments were provided: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed.h:179:41
+INFO: [HLS 207-4369] candidate constructor not viable: requires single argument 'v', but 940 arguments were provided: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed.h:180:41
+INFO: [HLS 207-4369] candidate constructor not viable: requires single argument 'v', but 940 arguments were provided: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed.h:181:41
+INFO: [HLS 207-4369] candidate constructor not viable: requires single argument 'v', but 940 arguments were provided: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed.h:182:41
+INFO: [HLS 207-4369] candidate constructor not viable: requires single argument 'v', but 940 arguments were provided: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed.h:183:41
+INFO: [HLS 207-4369] candidate constructor not viable: requires single argument 'v', but 940 arguments were provided: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed.h:184:41
+INFO: [HLS 207-4369] candidate constructor not viable: requires single argument 'v', but 940 arguments were provided: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed.h:185:41
+INFO: [HLS 207-4369] candidate constructor not viable: requires single argument 'v', but 940 arguments were provided: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed.h:186:41
+INFO: [HLS 207-4369] candidate constructor not viable: requires single argument 'v', but 940 arguments were provided: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed.h:187:41
+INFO: [HLS 207-4369] candidate constructor not viable: requires single argument 'v', but 940 arguments were provided: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed.h:188:41
+INFO: [HLS 207-4369] candidate constructor not viable: requires single argument 'v', but 940 arguments were provided: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed.h:189:41
+INFO: [HLS 207-4369] candidate constructor not viable: requires single argument 'v', but 940 arguments were provided: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed.h:190:41
+INFO: [HLS 207-4369] candidate constructor not viable: requires single argument 'v', but 940 arguments were provided: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed.h:191:41
+INFO: [HLS 207-4369] candidate constructor not viable: requires single argument 's', but 940 arguments were provided: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed.h:194:41
+INFO: [HLS 207-4368] candidate constructor (the implicit copy constructor) not viable: requires 1 argument, but 940 were provided: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed.h:64:8
+INFO: [HLS 207-4368] candidate constructor not viable: requires 0 arguments, but 940 were provided: /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed.h:68:41
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 28.61 seconds. CPU system time: 0.92 seconds. Elapsed time: 28.87 seconds; current allocated memory: 158.566 MB.
+Compilation of the preprocessed source 'main' failed
+    while executing
+"source /home/anubhav/xilinx_projects/ip_repo/lossfun/solution1/csynth.tcl"
+    invoked from within
+"hls::main /home/anubhav/xilinx_projects/ip_repo/lossfun/solution1/csynth.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 hls::main {*}$newargs"
+    (procedure "hls_proc" line 16)
+    invoked from within
+"hls_proc [info nameofexecutable] $argv"
+INFO: [HLS 200-112] Total CPU user time: 30.37 seconds. Total CPU system time: 1.19 seconds. Total elapsed time: 30.26 seconds; peak allocated memory: 158.237 MB.

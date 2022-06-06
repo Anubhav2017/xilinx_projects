@@ -67,6 +67,10 @@ void conv_combined(fixed_t x[MAX_SIZE], fixed_t dx[MAX_SIZE],fixed_t* wt,fixed_t
 
 	if(fwprop == true){
 
+		for(int i=0;i<C*H*W;i++){
+			dx[i]=0;
+		}
+
 		for(int f=0;f<F;f++){
 		        for(int c=0;c<C;c++){
 		            for(int h=0;h<outH;h++){

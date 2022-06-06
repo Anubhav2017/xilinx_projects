@@ -388,32 +388,32 @@ set RtlHierarchyInfo {[
 	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.dwbuf_V_U", "Parent" : "0"},
 	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.bbuf_V_U", "Parent" : "0"},
 	{"ID" : "7", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.dbbuf_V_U", "Parent" : "0"},
-	{"ID" : "8", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_32ns_32ns_64_2_1_U1", "Parent" : "0"},
-	{"ID" : "9", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_31ns_64ns_95_5_1_U2", "Parent" : "0"},
-	{"ID" : "10", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_31s_31s_31_2_1_U3", "Parent" : "0"},
-	{"ID" : "11", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_31s_31s_31_2_1_U4", "Parent" : "0"},
+	{"ID" : "8", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_32s_32s_32_2_1_U1", "Parent" : "0"},
+	{"ID" : "9", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_32s_32s_32_2_1_U2", "Parent" : "0"},
+	{"ID" : "10", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_32ns_32ns_64_2_1_U3", "Parent" : "0"},
+	{"ID" : "11", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_31ns_64ns_95_5_1_U4", "Parent" : "0"},
 	{"ID" : "12", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_31s_31s_31_2_1_U5", "Parent" : "0"},
 	{"ID" : "13", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_31s_31s_31_2_1_U6", "Parent" : "0"},
-	{"ID" : "14", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_32ns_32ns_64_2_1_U7", "Parent" : "0"},
-	{"ID" : "15", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_31ns_64ns_95_5_1_U8", "Parent" : "0"},
-	{"ID" : "16", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_31s_31s_31_2_1_U9", "Parent" : "0"},
-	{"ID" : "17", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_31s_31s_31_2_1_U10", "Parent" : "0"},
+	{"ID" : "14", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_31s_31s_31_2_1_U7", "Parent" : "0"},
+	{"ID" : "15", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_31s_31s_31_2_1_U8", "Parent" : "0"},
+	{"ID" : "16", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_32ns_32ns_64_2_1_U9", "Parent" : "0"},
+	{"ID" : "17", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_31ns_64ns_95_5_1_U10", "Parent" : "0"},
 	{"ID" : "18", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_31s_31s_31_2_1_U11", "Parent" : "0"},
-	{"ID" : "19", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_32ns_32ns_64_2_1_U12", "Parent" : "0"},
+	{"ID" : "19", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_31s_31s_31_2_1_U12", "Parent" : "0"},
 	{"ID" : "20", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_31s_31s_31_2_1_U13", "Parent" : "0"},
-	{"ID" : "21", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_31s_31s_31_2_1_U14", "Parent" : "0"},
+	{"ID" : "21", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_32ns_32ns_64_2_1_U14", "Parent" : "0"},
 	{"ID" : "22", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_31s_31s_31_2_1_U15", "Parent" : "0"},
-	{"ID" : "23", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_32ns_64ns_96_5_1_U16", "Parent" : "0"},
-	{"ID" : "24", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_31ns_32ns_63_2_1_U17", "Parent" : "0"},
-	{"ID" : "25", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_31s_31s_31_2_1_U18", "Parent" : "0"},
-	{"ID" : "26", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_31s_31s_31_2_1_U19", "Parent" : "0"},
+	{"ID" : "23", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_31s_31s_31_2_1_U16", "Parent" : "0"},
+	{"ID" : "24", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_31s_31s_31_2_1_U17", "Parent" : "0"},
+	{"ID" : "25", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_32ns_64ns_96_5_1_U18", "Parent" : "0"},
+	{"ID" : "26", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_31ns_32ns_63_2_1_U19", "Parent" : "0"},
 	{"ID" : "27", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_31s_31s_31_2_1_U20", "Parent" : "0"},
 	{"ID" : "28", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_31s_31s_31_2_1_U21", "Parent" : "0"},
-	{"ID" : "29", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_32s_32s_32_2_1_U22", "Parent" : "0"},
-	{"ID" : "30", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_32ns_32ns_64_2_1_U23", "Parent" : "0"},
-	{"ID" : "31", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_32ns_64ns_96_5_1_U24", "Parent" : "0"},
-	{"ID" : "32", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_31ns_96ns_127_5_1_U25", "Parent" : "0"},
-	{"ID" : "33", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_32s_32s_32_2_1_U26", "Parent" : "0"},
+	{"ID" : "29", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_31s_31s_31_2_1_U22", "Parent" : "0"},
+	{"ID" : "30", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_31s_31s_31_2_1_U23", "Parent" : "0"},
+	{"ID" : "31", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_32ns_32ns_64_2_1_U24", "Parent" : "0"},
+	{"ID" : "32", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_32ns_64ns_96_5_1_U25", "Parent" : "0"},
+	{"ID" : "33", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_31ns_96ns_127_5_1_U26", "Parent" : "0"},
 	{"ID" : "34", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mac_muladd_13s_13s_13ns_13_4_1_U27", "Parent" : "0"},
 	{"ID" : "35", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_mul_13s_13s_13_4_1_U28", "Parent" : "0"},
 	{"ID" : "36", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_mul_13s_13s_13_4_1_U29", "Parent" : "0"},
@@ -434,10 +434,10 @@ set ArgLastReadFirstWriteLatency {
 		gmem {Type IO LastRead 51 FirstWrite 46}
 		gmem2 {Type O LastRead 59 FirstWrite 57}
 		x {Type I LastRead 59 FirstWrite -1}
-		dx {Type IO LastRead 59 FirstWrite 62}
+		dx {Type IO LastRead 59 FirstWrite 22}
 		wt {Type I LastRead 0 FirstWrite -1}
 		dwt {Type I LastRead 0 FirstWrite -1}
-		y {Type O LastRead -1 FirstWrite 40}
+		y {Type O LastRead -1 FirstWrite 45}
 		dy {Type I LastRead 49 FirstWrite -1}
 		b {Type I LastRead 0 FirstWrite -1}
 		db {Type I LastRead 0 FirstWrite -1}
@@ -469,6 +469,7 @@ set PipelineEnableSignalInfo {[
 	{"Pipeline" : "6", "EnableSignal" : "ap_enable_pp6"}
 	{"Pipeline" : "7", "EnableSignal" : "ap_enable_pp7"}
 	{"Pipeline" : "8", "EnableSignal" : "ap_enable_pp8"}
+	{"Pipeline" : "9", "EnableSignal" : "ap_enable_pp9"}
 ]}
 
 set Spec2ImplPortList { 

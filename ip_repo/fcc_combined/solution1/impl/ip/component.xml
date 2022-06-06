@@ -1942,7 +1942,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>50c86398</spirit:value>
+            <spirit:value>48170d73</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1958,7 +1958,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>3e7384c6</spirit:value>
+            <spirit:value>ebfa5c18</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1974,7 +1974,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>99d33418</spirit:value>
+            <spirit:value>9f70f7ee</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1990,7 +1990,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>2852be35</spirit:value>
+            <spirit:value>9a68933c</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -4600,15 +4600,15 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
+        <spirit:name>hdl/verilog/fcc_combined_mac_muladd_10ns_11ns_15ns_15_4_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
         <spirit:name>hdl/verilog/fcc_combined_mac_muladd_16s_16s_29ns_29_4_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/fcc_combined_mul_31ns_32ns_63_2_1.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/fcc_combined_mul_31s_7ns_31_2_1.v</spirit:name>
+        <spirit:name>hdl/verilog/fcc_combined_mul_26s_26s_26_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -4616,19 +4616,19 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/fcc_combined_mul_32ns_7ns_38_2_1.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
         <spirit:name>hdl/verilog/fcc_combined_mul_32s_32s_32_2_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/fcc_combined_mul_32s_34ns_65_2_1.v</spirit:name>
+        <spirit:name>hdl/verilog/fcc_combined_mul_64ns_32ns_96_5_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/fcc_combined_mul_mul_16s_16s_29_4_1.v</spirit:name>
+        <spirit:name>hdl/verilog/fcc_combined_mul_mul_5ns_11ns_15_4_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/fcc_combined_mul_mul_10ns_11ns_15_4_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -4668,17 +4668,17 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
+        <spirit:name>hdl/verilog/fcc_combined_mac_muladd_10ns_11ns_15ns_15_4_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
         <spirit:name>hdl/verilog/fcc_combined_mac_muladd_16s_16s_29ns_29_4_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/fcc_combined_mul_31ns_32ns_63_2_1.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/fcc_combined_mul_31s_7ns_31_2_1.v</spirit:name>
+        <spirit:name>hdl/verilog/fcc_combined_mul_26s_26s_26_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -4688,22 +4688,22 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/fcc_combined_mul_32ns_7ns_38_2_1.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
         <spirit:name>hdl/verilog/fcc_combined_mul_32s_32s_32_2_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/fcc_combined_mul_32s_34ns_65_2_1.v</spirit:name>
+        <spirit:name>hdl/verilog/fcc_combined_mul_64ns_32ns_96_5_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/fcc_combined_mul_mul_16s_16s_29_4_1.v</spirit:name>
+        <spirit:name>hdl/verilog/fcc_combined_mul_mul_5ns_11ns_15_4_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/fcc_combined_mul_mul_10ns_11ns_15_4_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -4746,15 +4746,15 @@
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
+        <spirit:name>hdl/vhdl/fcc_combined_mac_muladd_10ns_11ns_15ns_15_4_1.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
         <spirit:name>hdl/vhdl/fcc_combined_mac_muladd_16s_16s_29ns_29_4_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/fcc_combined_mul_31ns_32ns_63_2_1.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/vhdl/fcc_combined_mul_31s_7ns_31_2_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/fcc_combined_mul_26s_26s_26_1_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -4762,19 +4762,19 @@
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/fcc_combined_mul_32ns_7ns_38_2_1.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
         <spirit:name>hdl/vhdl/fcc_combined_mul_32s_32s_32_2_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/fcc_combined_mul_32s_34ns_65_2_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/fcc_combined_mul_64ns_32ns_96_5_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/fcc_combined_mul_mul_16s_16s_29_4_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/fcc_combined_mul_mul_5ns_11ns_15_4_1.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/fcc_combined_mul_mul_10ns_11ns_15_4_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -4784,7 +4784,7 @@
       <spirit:file>
         <spirit:name>hdl/vhdl/fcc_combined.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_bfe0ef28</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_503af525</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -4815,17 +4815,17 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
+        <spirit:name>hdl/vhdl/fcc_combined_mac_muladd_10ns_11ns_15ns_15_4_1.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
         <spirit:name>hdl/vhdl/fcc_combined_mac_muladd_16s_16s_29ns_29_4_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/fcc_combined_mul_31ns_32ns_63_2_1.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/vhdl/fcc_combined_mul_31s_7ns_31_2_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/fcc_combined_mul_26s_26s_26_1_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -4835,22 +4835,22 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/fcc_combined_mul_32ns_7ns_38_2_1.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
         <spirit:name>hdl/vhdl/fcc_combined_mul_32s_32s_32_2_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/fcc_combined_mul_32s_34ns_65_2_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/fcc_combined_mul_64ns_32ns_96_5_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/fcc_combined_mul_mul_16s_16s_29_4_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/fcc_combined_mul_mul_5ns_11ns_15_4_1.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/fcc_combined_mul_mul_10ns_11ns_15_4_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -5187,8 +5187,8 @@
       </xilinx:taxonomies>
       <xilinx:displayName>Fcc_combined</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>2112520766</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2022-05-25T11:56:31Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>2112525369</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2022-05-28T16:39:55Z</xilinx:coreCreationDateTime>
       <xilinx:sdxKernelAttributes>
         <xilinx:sdx_kernel>true</xilinx:sdx_kernel>
         <xilinx:sdx_kernel_type>hls</xilinx:sdx_kernel_type>
@@ -5199,7 +5199,7 @@
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="a3fa9a54"/>
       <xilinx:checksum xilinx:scope="addressSpaces" xilinx:value="358fa8c5"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="9e31ef23"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="a6cc2bca"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="d7585831"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="ac187376"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="a43db79e"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="b7d5651a"/>

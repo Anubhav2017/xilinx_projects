@@ -1,0 +1,523 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 155.689 MB.
+INFO: [HLS 200-10] Analyzing design file 'bram_switch/main.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2.88 seconds. CPU system time: 0.28 seconds. Elapsed time: 5.26 seconds; current allocated memory: 156.854 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2.75 seconds. CPU system time: 0.31 seconds. Elapsed time: 4.35 seconds; current allocated memory: 157.736 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 157.738 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.38 seconds; current allocated memory: 162.233 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-77] The top function 'bram_switch' (bram_switch/main.cpp:6) has no outputs. Possible cause(s) are: (1) Output parameters are passed by value; (2) intended outputs (parameters or global variables) are never written; (3) there are infinite loops.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 167.608 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 193.746 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 188.337 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'bram_switch' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'bram_switch' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.13 seconds; current allocated memory: 188.589 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 188.747 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'bram_switch' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bram_switch/x' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bram_switch/debugport' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bram_switch/gradport' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bram_switch/dummyport' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bram_switch/debug' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'bram_switch' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'debug' to AXI-Lite port control.
+WARNING: [RTGEN 206-101] Port 'bram_switch/x_Addr_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/x_Addr_A' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/x_EN_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/x_EN_A' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/x_WEN_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/x_WEN_A' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/x_Din_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/x_Din_A' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/x_Dout_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'bram_switch/x_Clk_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'bram_switch/x_Addr_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/x_Addr_B' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/x_EN_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/x_EN_B' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/x_WEN_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/x_WEN_B' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/x_Din_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/x_Din_B' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/x_Dout_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'bram_switch/x_Clk_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'bram_switch/debugport_Addr_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/debugport_Addr_A' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/debugport_EN_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/debugport_EN_A' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/debugport_WEN_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/debugport_WEN_A' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/debugport_Din_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/debugport_Din_A' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/debugport_Dout_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'bram_switch/debugport_Clk_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'bram_switch/debugport_Addr_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/debugport_Addr_B' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/debugport_EN_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/debugport_EN_B' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/debugport_WEN_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/debugport_WEN_B' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/debugport_Din_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/debugport_Din_B' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/debugport_Dout_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'bram_switch/debugport_Clk_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'bram_switch/gradport_Addr_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/gradport_Addr_A' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/gradport_EN_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/gradport_EN_A' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/gradport_WEN_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/gradport_WEN_A' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/gradport_Din_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/gradport_Din_A' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/gradport_Dout_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'bram_switch/gradport_Clk_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'bram_switch/gradport_Addr_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/gradport_Addr_B' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/gradport_EN_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/gradport_EN_B' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/gradport_WEN_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/gradport_WEN_B' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/gradport_Din_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/gradport_Din_B' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/gradport_Dout_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'bram_switch/gradport_Clk_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'bram_switch/dummyport_Addr_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/dummyport_Addr_A' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/dummyport_EN_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/dummyport_EN_A' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/dummyport_WEN_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/dummyport_WEN_A' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/dummyport_Din_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/dummyport_Din_A' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/dummyport_Dout_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'bram_switch/dummyport_Clk_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'bram_switch/dummyport_Addr_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/dummyport_Addr_B' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/dummyport_EN_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/dummyport_EN_B' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/dummyport_WEN_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/dummyport_WEN_B' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/dummyport_Din_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: set_directive_top -name bram_switch bram_switch 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 155.812 MB.
+INFO: [HLS 200-10] Analyzing design file 'bram_switch/main.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 3.09 seconds. CPU system time: 0.23 seconds. Elapsed time: 2.67 seconds; current allocated memory: 156.961 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2.5 seconds. CPU system time: 0.19 seconds. Elapsed time: 2.68 seconds; current allocated memory: 157.976 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 157.978 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.02 seconds; current allocated memory: 162.469 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-77] The top function 'bram_switch' (bram_switch/main.cpp:6) has no outputs. Possible cause(s) are: (1) Output parameters are passed by value; (2) intended outputs (parameters or global variables) are never written; (3) there are infinite loops.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 167.842 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.08 seconds; current allocated memory: 193.990 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 188.577 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'bram_switch' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'bram_switch' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 188.796 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 188.915 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'bram_switch' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bram_switch/x' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bram_switch/debugport' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bram_switch/gradport' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bram_switch/dummyport' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bram_switch/debug' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'bram_switch' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'debug' to AXI-Lite port control.
+WARNING: [RTGEN 206-101] Port 'bram_switch/x_Addr_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/x_Addr_A' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/x_EN_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/x_EN_A' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/x_WEN_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/x_WEN_A' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/x_Din_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/x_Din_A' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/x_Dout_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'bram_switch/x_Clk_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'bram_switch/x_Addr_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/x_Addr_B' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/x_EN_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/x_EN_B' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/x_WEN_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/x_WEN_B' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/x_Din_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/x_Din_B' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/x_Dout_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'bram_switch/x_Clk_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'bram_switch/debugport_Addr_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/debugport_Addr_A' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/debugport_EN_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/debugport_EN_A' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/debugport_WEN_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/debugport_WEN_A' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/debugport_Din_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/debugport_Din_A' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/debugport_Dout_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'bram_switch/debugport_Clk_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'bram_switch/debugport_Addr_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/debugport_Addr_B' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/debugport_EN_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/debugport_EN_B' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/debugport_WEN_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/debugport_WEN_B' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/debugport_Din_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/debugport_Din_B' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/debugport_Dout_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'bram_switch/debugport_Clk_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'bram_switch/gradport_Addr_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/gradport_Addr_A' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/gradport_EN_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/gradport_EN_A' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/gradport_WEN_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/gradport_WEN_A' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/gradport_Din_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/gradport_Din_A' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/gradport_Dout_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'bram_switch/gradport_Clk_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'bram_switch/gradport_Addr_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/gradport_Addr_B' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/gradport_EN_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/gradport_EN_B' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/gradport_WEN_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/gradport_WEN_B' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/gradport_Din_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/gradport_Din_B' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/gradport_Dout_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'bram_switch/gradport_Clk_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'bram_switch/dummyport_Addr_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/dummyport_Addr_A' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/dummyport_EN_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/dummyport_EN_A' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/dummyport_WEN_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/dummyport_WEN_A' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/dummyport_Din_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/dummyport_Din_A' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/dummyport_Dout_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'bram_switch/dummyport_Clk_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'bram_switch/dummyport_Addr_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/dummyport_Addr_B' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/dummyport_EN_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/dummyport_EN_B' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/dummyport_WEN_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: set_directive_top -name bram_switch bram_switch 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 155.812 MB.
+INFO: [HLS 200-10] Analyzing design file 'bram_switch/main.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 3.11 seconds. CPU system time: 0.19 seconds. Elapsed time: 2.67 seconds; current allocated memory: 156.961 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2.5 seconds. CPU system time: 0.17 seconds. Elapsed time: 2.66 seconds; current allocated memory: 157.976 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 157.977 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 162.471 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-77] The top function 'bram_switch' (bram_switch/main.cpp:6) has no outputs. Possible cause(s) are: (1) Output parameters are passed by value; (2) intended outputs (parameters or global variables) are never written; (3) there are infinite loops.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 167.843 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 194.003 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 188.612 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'bram_switch' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'bram_switch' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 188.846 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 188.976 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'bram_switch' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bram_switch/x' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bram_switch/debugport' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bram_switch/gradport' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bram_switch/dummyport' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bram_switch/debug' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'bram_switch' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'debug' to AXI-Lite port control.
+WARNING: [RTGEN 206-101] Port 'bram_switch/x_Addr_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/x_Addr_A' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/x_EN_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/x_EN_A' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/x_WEN_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/x_WEN_A' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/x_Din_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/x_Din_A' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/x_Dout_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'bram_switch/x_Clk_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'bram_switch/x_Addr_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/x_Addr_B' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/x_EN_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/x_EN_B' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/x_WEN_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/x_WEN_B' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/x_Din_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/x_Din_B' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/x_Dout_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'bram_switch/x_Clk_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'bram_switch/debugport_Addr_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/debugport_Addr_A' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/debugport_EN_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/debugport_EN_A' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/debugport_WEN_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/debugport_WEN_A' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/debugport_Din_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/debugport_Din_A' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/debugport_Dout_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'bram_switch/debugport_Clk_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'bram_switch/debugport_Addr_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/debugport_Addr_B' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/debugport_EN_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/debugport_EN_B' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/debugport_WEN_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/debugport_WEN_B' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/debugport_Din_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/debugport_Din_B' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/debugport_Dout_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'bram_switch/debugport_Clk_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'bram_switch/gradport_Addr_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/gradport_Addr_A' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/gradport_EN_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/gradport_EN_A' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/gradport_WEN_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/gradport_WEN_A' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/gradport_Din_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/gradport_Din_A' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/gradport_Dout_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'bram_switch/gradport_Clk_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'bram_switch/gradport_Addr_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/gradport_Addr_B' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/gradport_EN_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/gradport_EN_B' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/gradport_WEN_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/gradport_WEN_B' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/gradport_Din_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/gradport_Din_B' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/gradport_Dout_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'bram_switch/gradport_Clk_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'bram_switch/dummyport_Addr_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/dummyport_Addr_A' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/dummyport_EN_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/dummyport_EN_A' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/dummyport_WEN_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/dummyport_WEN_A' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/dummyport_Din_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/dummyport_Din_A' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/dummyport_Dout_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'bram_switch/dummyport_Clk_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'bram_switch/dummyport_Addr_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/dummyport_Addr_B' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/dummyport_EN_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'bram_switch/dummyport_EN_B' to 0.
+WARNING: [RTGEN 206-101] Port 'bram_switch/dummyport_WEN_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.

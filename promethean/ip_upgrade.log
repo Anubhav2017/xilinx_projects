@@ -1,0 +1,2378 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Sun Jun  5 15:34:01 2022
+| Host         : anubhav-acer running 64-bit Ubuntu 20.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_relu_combined_3_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_relu_combined_3_0 (xilinx.com:hls:relu_combined:1.0) from (Rev. 2112535102) to (Rev. 2112536493)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'design_1_relu_combined_3_0'.
+
+
+-Upgrade has removed interface 'm_axi_gmem'
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_relu_combined_3_0'. These changes may impact your design.
+
+
+-Upgraded port 's_axi_control_ARADDR' width 5 differs from original width 6
+
+-Upgraded port 's_axi_control_AWADDR' width 5 differs from original width 6
+
+-Upgrade has removed port 'm_axi_gmem_ARADDR'
+
+-Upgrade has removed port 'm_axi_gmem_ARBURST'
+
+-Upgrade has removed port 'm_axi_gmem_ARCACHE'
+
+-Upgrade has removed port 'm_axi_gmem_ARLEN'
+
+-Upgrade has removed port 'm_axi_gmem_ARLOCK'
+
+-Upgrade has removed port 'm_axi_gmem_ARPROT'
+
+-Upgrade has removed port 'm_axi_gmem_ARQOS'
+
+-Upgrade has removed port 'm_axi_gmem_ARREADY'
+
+-Upgrade has removed port 'm_axi_gmem_ARREGION'
+
+-Upgrade has removed port 'm_axi_gmem_ARSIZE'
+
+-Upgrade has removed port 'm_axi_gmem_ARVALID'
+
+-Upgrade has removed port 'm_axi_gmem_AWADDR'
+
+-Upgrade has removed port 'm_axi_gmem_AWBURST'
+
+-Upgrade has removed port 'm_axi_gmem_AWCACHE'
+
+-Upgrade has removed port 'm_axi_gmem_AWLEN'
+
+-Upgrade has removed port 'm_axi_gmem_AWLOCK'
+
+-Upgrade has removed port 'm_axi_gmem_AWPROT'
+
+-Upgrade has removed port 'm_axi_gmem_AWQOS'
+
+-Upgrade has removed port 'm_axi_gmem_AWREADY'
+
+-Upgrade has removed port 'm_axi_gmem_AWREGION'
+
+-Upgrade has removed port 'm_axi_gmem_AWSIZE'
+
+-Upgrade has removed port 'm_axi_gmem_AWVALID'
+
+-Upgrade has removed port 'm_axi_gmem_BREADY'
+
+-Upgrade has removed port 'm_axi_gmem_BRESP'
+
+-Upgrade has removed port 'm_axi_gmem_BVALID'
+
+-Upgrade has removed port 'm_axi_gmem_RDATA'
+
+-Upgrade has removed port 'm_axi_gmem_RLAST'
+
+-Upgrade has removed port 'm_axi_gmem_RREADY'
+
+-Upgrade has removed port 'm_axi_gmem_RRESP'
+
+-Upgrade has removed port 'm_axi_gmem_RVALID'
+
+-Upgrade has removed port 'm_axi_gmem_WDATA'
+
+-Upgrade has removed port 'm_axi_gmem_WLAST'
+
+-Upgrade has removed port 'm_axi_gmem_WREADY'
+
+-Upgrade has removed port 'm_axi_gmem_WSTRB'
+
+-Upgrade has removed port 'm_axi_gmem_WVALID'
+
+
+4. Addressing Information
+-------------------------
+
+Detected addressing differences while upgrading 'design_1_relu_combined_3_0'. These changes may impact your design.
+
+
+-Upgrade has removed address space 'Data_m_axi_gmem'
+
+
+5. Customization warnings
+-------------------------
+
+Parameter 'C_M_AXI_GMEM_ENABLE_ID_PORTS' is no longer present on the upgraded IP 'design_1_relu_combined_3_0', and cannot be set to 'false'
+
+Parameter 'C_M_AXI_GMEM_ID_WIDTH' is no longer present on the upgraded IP 'design_1_relu_combined_3_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_GMEM_DATA_WIDTH' is no longer present on the upgraded IP 'design_1_relu_combined_3_0', and cannot be set to '32'
+
+Parameter 'C_M_AXI_GMEM_ENABLE_USER_PORTS' is no longer present on the upgraded IP 'design_1_relu_combined_3_0', and cannot be set to 'false'
+
+Parameter 'C_M_AXI_GMEM_AWUSER_WIDTH' is no longer present on the upgraded IP 'design_1_relu_combined_3_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_GMEM_WUSER_WIDTH' is no longer present on the upgraded IP 'design_1_relu_combined_3_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_GMEM_BUSER_WIDTH' is no longer present on the upgraded IP 'design_1_relu_combined_3_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_GMEM_ARUSER_WIDTH' is no longer present on the upgraded IP 'design_1_relu_combined_3_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_GMEM_RUSER_WIDTH' is no longer present on the upgraded IP 'design_1_relu_combined_3_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_GMEM_USER_VALUE' is no longer present on the upgraded IP 'design_1_relu_combined_3_0', and cannot be set to '0x00000000'
+
+Parameter 'C_M_AXI_GMEM_PROT_VALUE' is no longer present on the upgraded IP 'design_1_relu_combined_3_0', and cannot be set to '"000"'
+
+Parameter 'C_M_AXI_GMEM_CACHE_VALUE' is no longer present on the upgraded IP 'design_1_relu_combined_3_0', and cannot be set to '"0011"'
+
+
+6. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:hls:relu_combined:1.0 -user_name design_1_relu_combined_3_0
+set_property -dict "\
+  CONFIG.Component_Name {design_1_relu_combined_3_0} \
+  CONFIG.II {x} \
+  CONFIG.ap_clk.ASSOCIATED_BUSIF {s_axi_control:m_axi_gmem} \
+  CONFIG.ap_clk.ASSOCIATED_RESET {ap_rst_n} \
+  CONFIG.ap_clk.CLK_DOMAIN {design_1_processing_system7_0_0_FCLK_CLK0} \
+  CONFIG.ap_clk.FREQ_HZ {100000000} \
+  CONFIG.ap_clk.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.ap_clk.INSERT_VIP {0} \
+  CONFIG.ap_clk.PHASE {0.000} \
+  CONFIG.ap_rst_n.INSERT_VIP {0} \
+  CONFIG.ap_rst_n.POLARITY {ACTIVE_LOW} \
+  CONFIG.clk_period {10} \
+  CONFIG.combinational {0} \
+  CONFIG.dx_PORTA.MASTER_TYPE {OTHER} \
+  CONFIG.dx_PORTA.MEM_ECC {NONE} \
+  CONFIG.dx_PORTA.MEM_SIZE {2} \
+  CONFIG.dx_PORTA.MEM_WIDTH {16} \
+  CONFIG.dx_PORTA.READ_LATENCY {1} \
+  CONFIG.dx_PORTA.READ_WRITE_MODE {} \
+  CONFIG.dy_PORTA.MASTER_TYPE {OTHER} \
+  CONFIG.dy_PORTA.MEM_ECC {NONE} \
+  CONFIG.dy_PORTA.MEM_SIZE {2} \
+  CONFIG.dy_PORTA.MEM_WIDTH {16} \
+  CONFIG.dy_PORTA.READ_LATENCY {1} \
+  CONFIG.dy_PORTA.READ_WRITE_MODE {} \
+  CONFIG.interrupt.PortWidth {1} \
+  CONFIG.interrupt.SENSITIVITY {LEVEL_HIGH} \
+  CONFIG.latency {1} \
+  CONFIG.machine {64} \
+  CONFIG.s_axi_control.ADDR_WIDTH {6} \
+  CONFIG.s_axi_control.ARUSER_WIDTH {0} \
+  CONFIG.s_axi_control.AWUSER_WIDTH {0} \
+  CONFIG.s_axi_control.BUSER_WIDTH {0} \
+  CONFIG.s_axi_control.CLK_DOMAIN {design_1_processing_system7_0_0_FCLK_CLK0} \
+  CONFIG.s_axi_control.DATA_WIDTH {32} \
+  CONFIG.s_axi_control.FREQ_HZ {100000000} \
+  CONFIG.s_axi_control.HAS_BRESP {1} \
+  CONFIG.s_axi_control.HAS_BURST {0} \
+  CONFIG.s_axi_control.HAS_CACHE {0} \
+  CONFIG.s_axi_control.HAS_LOCK {0} \
+  CONFIG.s_axi_control.HAS_PROT {0} \
+  CONFIG.s_axi_control.HAS_QOS {0} \
+  CONFIG.s_axi_control.HAS_REGION {0} \
+  CONFIG.s_axi_control.HAS_RRESP {1} \
+  CONFIG.s_axi_control.HAS_WSTRB {1} \
+  CONFIG.s_axi_control.ID_WIDTH {0} \
+  CONFIG.s_axi_control.INSERT_VIP {0} \
+  CONFIG.s_axi_control.MAX_BURST_LENGTH {1} \
+  CONFIG.s_axi_control.NUM_READ_OUTSTANDING {1} \
+  CONFIG.s_axi_control.NUM_READ_THREADS {1} \
+  CONFIG.s_axi_control.NUM_WRITE_OUTSTANDING {1} \
+  CONFIG.s_axi_control.NUM_WRITE_THREADS {1} \
+  CONFIG.s_axi_control.PHASE {0.000} \
+  CONFIG.s_axi_control.PROTOCOL {AXI4LITE} \
+  CONFIG.s_axi_control.READ_WRITE_MODE {READ_WRITE} \
+  CONFIG.s_axi_control.RUSER_BITS_PER_BYTE {0} \
+  CONFIG.s_axi_control.RUSER_WIDTH {0} \
+  CONFIG.s_axi_control.SUPPORTS_NARROW_BURST {0} \
+  CONFIG.s_axi_control.WUSER_BITS_PER_BYTE {0} \
+  CONFIG.s_axi_control.WUSER_WIDTH {0} \
+  CONFIG.x_PORTA.MASTER_TYPE {OTHER} \
+  CONFIG.x_PORTA.MEM_ECC {NONE} \
+  CONFIG.x_PORTA.MEM_SIZE {2} \
+  CONFIG.x_PORTA.MEM_WIDTH {16} \
+  CONFIG.x_PORTA.READ_LATENCY {1} \
+  CONFIG.x_PORTA.READ_WRITE_MODE {} \
+  CONFIG.y_PORTA.MASTER_TYPE {BRAM_CTRL} \
+  CONFIG.y_PORTA.MEM_ECC {NONE} \
+  CONFIG.y_PORTA.MEM_SIZE {2} \
+  CONFIG.y_PORTA.MEM_WIDTH {16} \
+  CONFIG.y_PORTA.READ_LATENCY {1} \
+  CONFIG.y_PORTA.READ_WRITE_MODE {} " [get_ips design_1_relu_combined_3_0]
+
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Sun Jun  5 15:34:01 2022
+| Host         : anubhav-acer running 64-bit Ubuntu 20.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_relu_combined_2_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_relu_combined_2_0 (xilinx.com:hls:relu_combined:1.0) from (Rev. 2112535102) to (Rev. 2112536493)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'design_1_relu_combined_2_0'.
+
+
+-Upgrade has removed interface 'm_axi_gmem'
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_relu_combined_2_0'. These changes may impact your design.
+
+
+-Upgraded port 's_axi_control_ARADDR' width 5 differs from original width 6
+
+-Upgraded port 's_axi_control_AWADDR' width 5 differs from original width 6
+
+-Upgrade has removed port 'm_axi_gmem_ARADDR'
+
+-Upgrade has removed port 'm_axi_gmem_ARBURST'
+
+-Upgrade has removed port 'm_axi_gmem_ARCACHE'
+
+-Upgrade has removed port 'm_axi_gmem_ARLEN'
+
+-Upgrade has removed port 'm_axi_gmem_ARLOCK'
+
+-Upgrade has removed port 'm_axi_gmem_ARPROT'
+
+-Upgrade has removed port 'm_axi_gmem_ARQOS'
+
+-Upgrade has removed port 'm_axi_gmem_ARREADY'
+
+-Upgrade has removed port 'm_axi_gmem_ARREGION'
+
+-Upgrade has removed port 'm_axi_gmem_ARSIZE'
+
+-Upgrade has removed port 'm_axi_gmem_ARVALID'
+
+-Upgrade has removed port 'm_axi_gmem_AWADDR'
+
+-Upgrade has removed port 'm_axi_gmem_AWBURST'
+
+-Upgrade has removed port 'm_axi_gmem_AWCACHE'
+
+-Upgrade has removed port 'm_axi_gmem_AWLEN'
+
+-Upgrade has removed port 'm_axi_gmem_AWLOCK'
+
+-Upgrade has removed port 'm_axi_gmem_AWPROT'
+
+-Upgrade has removed port 'm_axi_gmem_AWQOS'
+
+-Upgrade has removed port 'm_axi_gmem_AWREADY'
+
+-Upgrade has removed port 'm_axi_gmem_AWREGION'
+
+-Upgrade has removed port 'm_axi_gmem_AWSIZE'
+
+-Upgrade has removed port 'm_axi_gmem_AWVALID'
+
+-Upgrade has removed port 'm_axi_gmem_BREADY'
+
+-Upgrade has removed port 'm_axi_gmem_BRESP'
+
+-Upgrade has removed port 'm_axi_gmem_BVALID'
+
+-Upgrade has removed port 'm_axi_gmem_RDATA'
+
+-Upgrade has removed port 'm_axi_gmem_RLAST'
+
+-Upgrade has removed port 'm_axi_gmem_RREADY'
+
+-Upgrade has removed port 'm_axi_gmem_RRESP'
+
+-Upgrade has removed port 'm_axi_gmem_RVALID'
+
+-Upgrade has removed port 'm_axi_gmem_WDATA'
+
+-Upgrade has removed port 'm_axi_gmem_WLAST'
+
+-Upgrade has removed port 'm_axi_gmem_WREADY'
+
+-Upgrade has removed port 'm_axi_gmem_WSTRB'
+
+-Upgrade has removed port 'm_axi_gmem_WVALID'
+
+
+4. Addressing Information
+-------------------------
+
+Detected addressing differences while upgrading 'design_1_relu_combined_2_0'. These changes may impact your design.
+
+
+-Upgrade has removed address space 'Data_m_axi_gmem'
+
+
+5. Customization warnings
+-------------------------
+
+Parameter 'C_M_AXI_GMEM_ENABLE_ID_PORTS' is no longer present on the upgraded IP 'design_1_relu_combined_2_0', and cannot be set to 'false'
+
+Parameter 'C_M_AXI_GMEM_ID_WIDTH' is no longer present on the upgraded IP 'design_1_relu_combined_2_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_GMEM_DATA_WIDTH' is no longer present on the upgraded IP 'design_1_relu_combined_2_0', and cannot be set to '32'
+
+Parameter 'C_M_AXI_GMEM_ENABLE_USER_PORTS' is no longer present on the upgraded IP 'design_1_relu_combined_2_0', and cannot be set to 'false'
+
+Parameter 'C_M_AXI_GMEM_AWUSER_WIDTH' is no longer present on the upgraded IP 'design_1_relu_combined_2_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_GMEM_WUSER_WIDTH' is no longer present on the upgraded IP 'design_1_relu_combined_2_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_GMEM_BUSER_WIDTH' is no longer present on the upgraded IP 'design_1_relu_combined_2_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_GMEM_ARUSER_WIDTH' is no longer present on the upgraded IP 'design_1_relu_combined_2_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_GMEM_RUSER_WIDTH' is no longer present on the upgraded IP 'design_1_relu_combined_2_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_GMEM_USER_VALUE' is no longer present on the upgraded IP 'design_1_relu_combined_2_0', and cannot be set to '0x00000000'
+
+Parameter 'C_M_AXI_GMEM_PROT_VALUE' is no longer present on the upgraded IP 'design_1_relu_combined_2_0', and cannot be set to '"000"'
+
+Parameter 'C_M_AXI_GMEM_CACHE_VALUE' is no longer present on the upgraded IP 'design_1_relu_combined_2_0', and cannot be set to '"0011"'
+
+
+6. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:hls:relu_combined:1.0 -user_name design_1_relu_combined_2_0
+set_property -dict "\
+  CONFIG.Component_Name {design_1_relu_combined_2_0} \
+  CONFIG.II {x} \
+  CONFIG.ap_clk.ASSOCIATED_BUSIF {s_axi_control:m_axi_gmem} \
+  CONFIG.ap_clk.ASSOCIATED_RESET {ap_rst_n} \
+  CONFIG.ap_clk.CLK_DOMAIN {design_1_processing_system7_0_0_FCLK_CLK0} \
+  CONFIG.ap_clk.FREQ_HZ {100000000} \
+  CONFIG.ap_clk.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.ap_clk.INSERT_VIP {0} \
+  CONFIG.ap_clk.PHASE {0.000} \
+  CONFIG.ap_rst_n.INSERT_VIP {0} \
+  CONFIG.ap_rst_n.POLARITY {ACTIVE_LOW} \
+  CONFIG.clk_period {10} \
+  CONFIG.combinational {0} \
+  CONFIG.dx_PORTA.MASTER_TYPE {OTHER} \
+  CONFIG.dx_PORTA.MEM_ECC {NONE} \
+  CONFIG.dx_PORTA.MEM_SIZE {2} \
+  CONFIG.dx_PORTA.MEM_WIDTH {16} \
+  CONFIG.dx_PORTA.READ_LATENCY {1} \
+  CONFIG.dx_PORTA.READ_WRITE_MODE {} \
+  CONFIG.dy_PORTA.MASTER_TYPE {OTHER} \
+  CONFIG.dy_PORTA.MEM_ECC {NONE} \
+  CONFIG.dy_PORTA.MEM_SIZE {2} \
+  CONFIG.dy_PORTA.MEM_WIDTH {16} \
+  CONFIG.dy_PORTA.READ_LATENCY {1} \
+  CONFIG.dy_PORTA.READ_WRITE_MODE {} \
+  CONFIG.interrupt.PortWidth {1} \
+  CONFIG.interrupt.SENSITIVITY {LEVEL_HIGH} \
+  CONFIG.latency {1} \
+  CONFIG.machine {64} \
+  CONFIG.s_axi_control.ADDR_WIDTH {6} \
+  CONFIG.s_axi_control.ARUSER_WIDTH {0} \
+  CONFIG.s_axi_control.AWUSER_WIDTH {0} \
+  CONFIG.s_axi_control.BUSER_WIDTH {0} \
+  CONFIG.s_axi_control.CLK_DOMAIN {design_1_processing_system7_0_0_FCLK_CLK0} \
+  CONFIG.s_axi_control.DATA_WIDTH {32} \
+  CONFIG.s_axi_control.FREQ_HZ {100000000} \
+  CONFIG.s_axi_control.HAS_BRESP {1} \
+  CONFIG.s_axi_control.HAS_BURST {0} \
+  CONFIG.s_axi_control.HAS_CACHE {0} \
+  CONFIG.s_axi_control.HAS_LOCK {0} \
+  CONFIG.s_axi_control.HAS_PROT {0} \
+  CONFIG.s_axi_control.HAS_QOS {0} \
+  CONFIG.s_axi_control.HAS_REGION {0} \
+  CONFIG.s_axi_control.HAS_RRESP {1} \
+  CONFIG.s_axi_control.HAS_WSTRB {1} \
+  CONFIG.s_axi_control.ID_WIDTH {0} \
+  CONFIG.s_axi_control.INSERT_VIP {0} \
+  CONFIG.s_axi_control.MAX_BURST_LENGTH {1} \
+  CONFIG.s_axi_control.NUM_READ_OUTSTANDING {1} \
+  CONFIG.s_axi_control.NUM_READ_THREADS {1} \
+  CONFIG.s_axi_control.NUM_WRITE_OUTSTANDING {1} \
+  CONFIG.s_axi_control.NUM_WRITE_THREADS {1} \
+  CONFIG.s_axi_control.PHASE {0.000} \
+  CONFIG.s_axi_control.PROTOCOL {AXI4LITE} \
+  CONFIG.s_axi_control.READ_WRITE_MODE {READ_WRITE} \
+  CONFIG.s_axi_control.RUSER_BITS_PER_BYTE {0} \
+  CONFIG.s_axi_control.RUSER_WIDTH {0} \
+  CONFIG.s_axi_control.SUPPORTS_NARROW_BURST {0} \
+  CONFIG.s_axi_control.WUSER_BITS_PER_BYTE {0} \
+  CONFIG.s_axi_control.WUSER_WIDTH {0} \
+  CONFIG.x_PORTA.MASTER_TYPE {OTHER} \
+  CONFIG.x_PORTA.MEM_ECC {NONE} \
+  CONFIG.x_PORTA.MEM_SIZE {2} \
+  CONFIG.x_PORTA.MEM_WIDTH {16} \
+  CONFIG.x_PORTA.READ_LATENCY {1} \
+  CONFIG.x_PORTA.READ_WRITE_MODE {} \
+  CONFIG.y_PORTA.MASTER_TYPE {BRAM_CTRL} \
+  CONFIG.y_PORTA.MEM_ECC {NONE} \
+  CONFIG.y_PORTA.MEM_SIZE {2} \
+  CONFIG.y_PORTA.MEM_WIDTH {16} \
+  CONFIG.y_PORTA.READ_LATENCY {1} \
+  CONFIG.y_PORTA.READ_WRITE_MODE {} " [get_ips design_1_relu_combined_2_0]
+
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Sun Jun  5 15:34:01 2022
+| Host         : anubhav-acer running 64-bit Ubuntu 20.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_relu_combined_1_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_relu_combined_1_0 (xilinx.com:hls:relu_combined:1.0) from (Rev. 2112535102) to (Rev. 2112536493)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'design_1_relu_combined_1_0'.
+
+
+-Upgrade has removed interface 'm_axi_gmem'
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_relu_combined_1_0'. These changes may impact your design.
+
+
+-Upgraded port 's_axi_control_ARADDR' width 5 differs from original width 6
+
+-Upgraded port 's_axi_control_AWADDR' width 5 differs from original width 6
+
+-Upgrade has removed port 'm_axi_gmem_ARADDR'
+
+-Upgrade has removed port 'm_axi_gmem_ARBURST'
+
+-Upgrade has removed port 'm_axi_gmem_ARCACHE'
+
+-Upgrade has removed port 'm_axi_gmem_ARLEN'
+
+-Upgrade has removed port 'm_axi_gmem_ARLOCK'
+
+-Upgrade has removed port 'm_axi_gmem_ARPROT'
+
+-Upgrade has removed port 'm_axi_gmem_ARQOS'
+
+-Upgrade has removed port 'm_axi_gmem_ARREADY'
+
+-Upgrade has removed port 'm_axi_gmem_ARREGION'
+
+-Upgrade has removed port 'm_axi_gmem_ARSIZE'
+
+-Upgrade has removed port 'm_axi_gmem_ARVALID'
+
+-Upgrade has removed port 'm_axi_gmem_AWADDR'
+
+-Upgrade has removed port 'm_axi_gmem_AWBURST'
+
+-Upgrade has removed port 'm_axi_gmem_AWCACHE'
+
+-Upgrade has removed port 'm_axi_gmem_AWLEN'
+
+-Upgrade has removed port 'm_axi_gmem_AWLOCK'
+
+-Upgrade has removed port 'm_axi_gmem_AWPROT'
+
+-Upgrade has removed port 'm_axi_gmem_AWQOS'
+
+-Upgrade has removed port 'm_axi_gmem_AWREADY'
+
+-Upgrade has removed port 'm_axi_gmem_AWREGION'
+
+-Upgrade has removed port 'm_axi_gmem_AWSIZE'
+
+-Upgrade has removed port 'm_axi_gmem_AWVALID'
+
+-Upgrade has removed port 'm_axi_gmem_BREADY'
+
+-Upgrade has removed port 'm_axi_gmem_BRESP'
+
+-Upgrade has removed port 'm_axi_gmem_BVALID'
+
+-Upgrade has removed port 'm_axi_gmem_RDATA'
+
+-Upgrade has removed port 'm_axi_gmem_RLAST'
+
+-Upgrade has removed port 'm_axi_gmem_RREADY'
+
+-Upgrade has removed port 'm_axi_gmem_RRESP'
+
+-Upgrade has removed port 'm_axi_gmem_RVALID'
+
+-Upgrade has removed port 'm_axi_gmem_WDATA'
+
+-Upgrade has removed port 'm_axi_gmem_WLAST'
+
+-Upgrade has removed port 'm_axi_gmem_WREADY'
+
+-Upgrade has removed port 'm_axi_gmem_WSTRB'
+
+-Upgrade has removed port 'm_axi_gmem_WVALID'
+
+
+4. Addressing Information
+-------------------------
+
+Detected addressing differences while upgrading 'design_1_relu_combined_1_0'. These changes may impact your design.
+
+
+-Upgrade has removed address space 'Data_m_axi_gmem'
+
+
+5. Customization warnings
+-------------------------
+
+Parameter 'C_M_AXI_GMEM_ENABLE_ID_PORTS' is no longer present on the upgraded IP 'design_1_relu_combined_1_0', and cannot be set to 'false'
+
+Parameter 'C_M_AXI_GMEM_ID_WIDTH' is no longer present on the upgraded IP 'design_1_relu_combined_1_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_GMEM_DATA_WIDTH' is no longer present on the upgraded IP 'design_1_relu_combined_1_0', and cannot be set to '32'
+
+Parameter 'C_M_AXI_GMEM_ENABLE_USER_PORTS' is no longer present on the upgraded IP 'design_1_relu_combined_1_0', and cannot be set to 'false'
+
+Parameter 'C_M_AXI_GMEM_AWUSER_WIDTH' is no longer present on the upgraded IP 'design_1_relu_combined_1_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_GMEM_WUSER_WIDTH' is no longer present on the upgraded IP 'design_1_relu_combined_1_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_GMEM_BUSER_WIDTH' is no longer present on the upgraded IP 'design_1_relu_combined_1_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_GMEM_ARUSER_WIDTH' is no longer present on the upgraded IP 'design_1_relu_combined_1_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_GMEM_RUSER_WIDTH' is no longer present on the upgraded IP 'design_1_relu_combined_1_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_GMEM_USER_VALUE' is no longer present on the upgraded IP 'design_1_relu_combined_1_0', and cannot be set to '0x00000000'
+
+Parameter 'C_M_AXI_GMEM_PROT_VALUE' is no longer present on the upgraded IP 'design_1_relu_combined_1_0', and cannot be set to '"000"'
+
+Parameter 'C_M_AXI_GMEM_CACHE_VALUE' is no longer present on the upgraded IP 'design_1_relu_combined_1_0', and cannot be set to '"0011"'
+
+
+6. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:hls:relu_combined:1.0 -user_name design_1_relu_combined_1_0
+set_property -dict "\
+  CONFIG.Component_Name {design_1_relu_combined_1_0} \
+  CONFIG.II {x} \
+  CONFIG.ap_clk.ASSOCIATED_BUSIF {s_axi_control:m_axi_gmem} \
+  CONFIG.ap_clk.ASSOCIATED_RESET {ap_rst_n} \
+  CONFIG.ap_clk.CLK_DOMAIN {design_1_processing_system7_0_0_FCLK_CLK0} \
+  CONFIG.ap_clk.FREQ_HZ {100000000} \
+  CONFIG.ap_clk.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.ap_clk.INSERT_VIP {0} \
+  CONFIG.ap_clk.PHASE {0.000} \
+  CONFIG.ap_rst_n.INSERT_VIP {0} \
+  CONFIG.ap_rst_n.POLARITY {ACTIVE_LOW} \
+  CONFIG.clk_period {10} \
+  CONFIG.combinational {0} \
+  CONFIG.dx_PORTA.MASTER_TYPE {OTHER} \
+  CONFIG.dx_PORTA.MEM_ECC {NONE} \
+  CONFIG.dx_PORTA.MEM_SIZE {2} \
+  CONFIG.dx_PORTA.MEM_WIDTH {16} \
+  CONFIG.dx_PORTA.READ_LATENCY {1} \
+  CONFIG.dx_PORTA.READ_WRITE_MODE {} \
+  CONFIG.dy_PORTA.MASTER_TYPE {OTHER} \
+  CONFIG.dy_PORTA.MEM_ECC {NONE} \
+  CONFIG.dy_PORTA.MEM_SIZE {2} \
+  CONFIG.dy_PORTA.MEM_WIDTH {16} \
+  CONFIG.dy_PORTA.READ_LATENCY {1} \
+  CONFIG.dy_PORTA.READ_WRITE_MODE {} \
+  CONFIG.interrupt.PortWidth {1} \
+  CONFIG.interrupt.SENSITIVITY {LEVEL_HIGH} \
+  CONFIG.latency {1} \
+  CONFIG.machine {64} \
+  CONFIG.s_axi_control.ADDR_WIDTH {6} \
+  CONFIG.s_axi_control.ARUSER_WIDTH {0} \
+  CONFIG.s_axi_control.AWUSER_WIDTH {0} \
+  CONFIG.s_axi_control.BUSER_WIDTH {0} \
+  CONFIG.s_axi_control.CLK_DOMAIN {design_1_processing_system7_0_0_FCLK_CLK0} \
+  CONFIG.s_axi_control.DATA_WIDTH {32} \
+  CONFIG.s_axi_control.FREQ_HZ {100000000} \
+  CONFIG.s_axi_control.HAS_BRESP {1} \
+  CONFIG.s_axi_control.HAS_BURST {0} \
+  CONFIG.s_axi_control.HAS_CACHE {0} \
+  CONFIG.s_axi_control.HAS_LOCK {0} \
+  CONFIG.s_axi_control.HAS_PROT {0} \
+  CONFIG.s_axi_control.HAS_QOS {0} \
+  CONFIG.s_axi_control.HAS_REGION {0} \
+  CONFIG.s_axi_control.HAS_RRESP {1} \
+  CONFIG.s_axi_control.HAS_WSTRB {1} \
+  CONFIG.s_axi_control.ID_WIDTH {0} \
+  CONFIG.s_axi_control.INSERT_VIP {0} \
+  CONFIG.s_axi_control.MAX_BURST_LENGTH {1} \
+  CONFIG.s_axi_control.NUM_READ_OUTSTANDING {1} \
+  CONFIG.s_axi_control.NUM_READ_THREADS {1} \
+  CONFIG.s_axi_control.NUM_WRITE_OUTSTANDING {1} \
+  CONFIG.s_axi_control.NUM_WRITE_THREADS {1} \
+  CONFIG.s_axi_control.PHASE {0.000} \
+  CONFIG.s_axi_control.PROTOCOL {AXI4LITE} \
+  CONFIG.s_axi_control.READ_WRITE_MODE {READ_WRITE} \
+  CONFIG.s_axi_control.RUSER_BITS_PER_BYTE {0} \
+  CONFIG.s_axi_control.RUSER_WIDTH {0} \
+  CONFIG.s_axi_control.SUPPORTS_NARROW_BURST {0} \
+  CONFIG.s_axi_control.WUSER_BITS_PER_BYTE {0} \
+  CONFIG.s_axi_control.WUSER_WIDTH {0} \
+  CONFIG.x_PORTA.MASTER_TYPE {OTHER} \
+  CONFIG.x_PORTA.MEM_ECC {NONE} \
+  CONFIG.x_PORTA.MEM_SIZE {2} \
+  CONFIG.x_PORTA.MEM_WIDTH {16} \
+  CONFIG.x_PORTA.READ_LATENCY {1} \
+  CONFIG.x_PORTA.READ_WRITE_MODE {} \
+  CONFIG.y_PORTA.MASTER_TYPE {BRAM_CTRL} \
+  CONFIG.y_PORTA.MEM_ECC {NONE} \
+  CONFIG.y_PORTA.MEM_SIZE {2} \
+  CONFIG.y_PORTA.MEM_WIDTH {16} \
+  CONFIG.y_PORTA.READ_LATENCY {1} \
+  CONFIG.y_PORTA.READ_WRITE_MODE {} " [get_ips design_1_relu_combined_1_0]
+
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Sun Jun  5 15:34:01 2022
+| Host         : anubhav-acer running 64-bit Ubuntu 20.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_relu_combined_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_relu_combined_0_0 (xilinx.com:hls:relu_combined:1.0) from (Rev. 2112535102) to (Rev. 2112536493)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'design_1_relu_combined_0_0'.
+
+
+-Upgrade has removed interface 'm_axi_gmem'
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_relu_combined_0_0'. These changes may impact your design.
+
+
+-Upgraded port 's_axi_control_ARADDR' width 5 differs from original width 6
+
+-Upgraded port 's_axi_control_AWADDR' width 5 differs from original width 6
+
+-Upgrade has removed port 'm_axi_gmem_ARADDR'
+
+-Upgrade has removed port 'm_axi_gmem_ARBURST'
+
+-Upgrade has removed port 'm_axi_gmem_ARCACHE'
+
+-Upgrade has removed port 'm_axi_gmem_ARLEN'
+
+-Upgrade has removed port 'm_axi_gmem_ARLOCK'
+
+-Upgrade has removed port 'm_axi_gmem_ARPROT'
+
+-Upgrade has removed port 'm_axi_gmem_ARQOS'
+
+-Upgrade has removed port 'm_axi_gmem_ARREADY'
+
+-Upgrade has removed port 'm_axi_gmem_ARREGION'
+
+-Upgrade has removed port 'm_axi_gmem_ARSIZE'
+
+-Upgrade has removed port 'm_axi_gmem_ARVALID'
+
+-Upgrade has removed port 'm_axi_gmem_AWADDR'
+
+-Upgrade has removed port 'm_axi_gmem_AWBURST'
+
+-Upgrade has removed port 'm_axi_gmem_AWCACHE'
+
+-Upgrade has removed port 'm_axi_gmem_AWLEN'
+
+-Upgrade has removed port 'm_axi_gmem_AWLOCK'
+
+-Upgrade has removed port 'm_axi_gmem_AWPROT'
+
+-Upgrade has removed port 'm_axi_gmem_AWQOS'
+
+-Upgrade has removed port 'm_axi_gmem_AWREADY'
+
+-Upgrade has removed port 'm_axi_gmem_AWREGION'
+
+-Upgrade has removed port 'm_axi_gmem_AWSIZE'
+
+-Upgrade has removed port 'm_axi_gmem_AWVALID'
+
+-Upgrade has removed port 'm_axi_gmem_BREADY'
+
+-Upgrade has removed port 'm_axi_gmem_BRESP'
+
+-Upgrade has removed port 'm_axi_gmem_BVALID'
+
+-Upgrade has removed port 'm_axi_gmem_RDATA'
+
+-Upgrade has removed port 'm_axi_gmem_RLAST'
+
+-Upgrade has removed port 'm_axi_gmem_RREADY'
+
+-Upgrade has removed port 'm_axi_gmem_RRESP'
+
+-Upgrade has removed port 'm_axi_gmem_RVALID'
+
+-Upgrade has removed port 'm_axi_gmem_WDATA'
+
+-Upgrade has removed port 'm_axi_gmem_WLAST'
+
+-Upgrade has removed port 'm_axi_gmem_WREADY'
+
+-Upgrade has removed port 'm_axi_gmem_WSTRB'
+
+-Upgrade has removed port 'm_axi_gmem_WVALID'
+
+
+4. Addressing Information
+-------------------------
+
+Detected addressing differences while upgrading 'design_1_relu_combined_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed address space 'Data_m_axi_gmem'
+
+
+5. Customization warnings
+-------------------------
+
+Parameter 'C_M_AXI_GMEM_ENABLE_ID_PORTS' is no longer present on the upgraded IP 'design_1_relu_combined_0_0', and cannot be set to 'false'
+
+Parameter 'C_M_AXI_GMEM_ID_WIDTH' is no longer present on the upgraded IP 'design_1_relu_combined_0_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_GMEM_DATA_WIDTH' is no longer present on the upgraded IP 'design_1_relu_combined_0_0', and cannot be set to '32'
+
+Parameter 'C_M_AXI_GMEM_ENABLE_USER_PORTS' is no longer present on the upgraded IP 'design_1_relu_combined_0_0', and cannot be set to 'false'
+
+Parameter 'C_M_AXI_GMEM_AWUSER_WIDTH' is no longer present on the upgraded IP 'design_1_relu_combined_0_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_GMEM_WUSER_WIDTH' is no longer present on the upgraded IP 'design_1_relu_combined_0_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_GMEM_BUSER_WIDTH' is no longer present on the upgraded IP 'design_1_relu_combined_0_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_GMEM_ARUSER_WIDTH' is no longer present on the upgraded IP 'design_1_relu_combined_0_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_GMEM_RUSER_WIDTH' is no longer present on the upgraded IP 'design_1_relu_combined_0_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_GMEM_USER_VALUE' is no longer present on the upgraded IP 'design_1_relu_combined_0_0', and cannot be set to '0x00000000'
+
+Parameter 'C_M_AXI_GMEM_PROT_VALUE' is no longer present on the upgraded IP 'design_1_relu_combined_0_0', and cannot be set to '"000"'
+
+Parameter 'C_M_AXI_GMEM_CACHE_VALUE' is no longer present on the upgraded IP 'design_1_relu_combined_0_0', and cannot be set to '"0011"'
+
+
+6. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:hls:relu_combined:1.0 -user_name design_1_relu_combined_0_0
+set_property -dict "\
+  CONFIG.Component_Name {design_1_relu_combined_0_0} \
+  CONFIG.II {x} \
+  CONFIG.ap_clk.ASSOCIATED_BUSIF {s_axi_control:m_axi_gmem} \
+  CONFIG.ap_clk.ASSOCIATED_RESET {ap_rst_n} \
+  CONFIG.ap_clk.CLK_DOMAIN {design_1_processing_system7_0_0_FCLK_CLK0} \
+  CONFIG.ap_clk.FREQ_HZ {100000000} \
+  CONFIG.ap_clk.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.ap_clk.INSERT_VIP {0} \
+  CONFIG.ap_clk.PHASE {0.000} \
+  CONFIG.ap_rst_n.INSERT_VIP {0} \
+  CONFIG.ap_rst_n.POLARITY {ACTIVE_LOW} \
+  CONFIG.clk_period {10} \
+  CONFIG.combinational {0} \
+  CONFIG.dx_PORTA.MASTER_TYPE {OTHER} \
+  CONFIG.dx_PORTA.MEM_ECC {NONE} \
+  CONFIG.dx_PORTA.MEM_SIZE {2} \
+  CONFIG.dx_PORTA.MEM_WIDTH {16} \
+  CONFIG.dx_PORTA.READ_LATENCY {1} \
+  CONFIG.dx_PORTA.READ_WRITE_MODE {} \
+  CONFIG.dy_PORTA.MASTER_TYPE {OTHER} \
+  CONFIG.dy_PORTA.MEM_ECC {NONE} \
+  CONFIG.dy_PORTA.MEM_SIZE {2} \
+  CONFIG.dy_PORTA.MEM_WIDTH {16} \
+  CONFIG.dy_PORTA.READ_LATENCY {1} \
+  CONFIG.dy_PORTA.READ_WRITE_MODE {} \
+  CONFIG.interrupt.PortWidth {1} \
+  CONFIG.interrupt.SENSITIVITY {LEVEL_HIGH} \
+  CONFIG.latency {1} \
+  CONFIG.machine {64} \
+  CONFIG.s_axi_control.ADDR_WIDTH {6} \
+  CONFIG.s_axi_control.ARUSER_WIDTH {0} \
+  CONFIG.s_axi_control.AWUSER_WIDTH {0} \
+  CONFIG.s_axi_control.BUSER_WIDTH {0} \
+  CONFIG.s_axi_control.CLK_DOMAIN {design_1_processing_system7_0_0_FCLK_CLK0} \
+  CONFIG.s_axi_control.DATA_WIDTH {32} \
+  CONFIG.s_axi_control.FREQ_HZ {100000000} \
+  CONFIG.s_axi_control.HAS_BRESP {1} \
+  CONFIG.s_axi_control.HAS_BURST {0} \
+  CONFIG.s_axi_control.HAS_CACHE {0} \
+  CONFIG.s_axi_control.HAS_LOCK {0} \
+  CONFIG.s_axi_control.HAS_PROT {0} \
+  CONFIG.s_axi_control.HAS_QOS {0} \
+  CONFIG.s_axi_control.HAS_REGION {0} \
+  CONFIG.s_axi_control.HAS_RRESP {1} \
+  CONFIG.s_axi_control.HAS_WSTRB {1} \
+  CONFIG.s_axi_control.ID_WIDTH {0} \
+  CONFIG.s_axi_control.INSERT_VIP {0} \
+  CONFIG.s_axi_control.MAX_BURST_LENGTH {1} \
+  CONFIG.s_axi_control.NUM_READ_OUTSTANDING {1} \
+  CONFIG.s_axi_control.NUM_READ_THREADS {1} \
+  CONFIG.s_axi_control.NUM_WRITE_OUTSTANDING {1} \
+  CONFIG.s_axi_control.NUM_WRITE_THREADS {1} \
+  CONFIG.s_axi_control.PHASE {0.000} \
+  CONFIG.s_axi_control.PROTOCOL {AXI4LITE} \
+  CONFIG.s_axi_control.READ_WRITE_MODE {READ_WRITE} \
+  CONFIG.s_axi_control.RUSER_BITS_PER_BYTE {0} \
+  CONFIG.s_axi_control.RUSER_WIDTH {0} \
+  CONFIG.s_axi_control.SUPPORTS_NARROW_BURST {0} \
+  CONFIG.s_axi_control.WUSER_BITS_PER_BYTE {0} \
+  CONFIG.s_axi_control.WUSER_WIDTH {0} \
+  CONFIG.x_PORTA.MASTER_TYPE {OTHER} \
+  CONFIG.x_PORTA.MEM_ECC {NONE} \
+  CONFIG.x_PORTA.MEM_SIZE {2} \
+  CONFIG.x_PORTA.MEM_WIDTH {16} \
+  CONFIG.x_PORTA.READ_LATENCY {1} \
+  CONFIG.x_PORTA.READ_WRITE_MODE {} \
+  CONFIG.y_PORTA.MASTER_TYPE {BRAM_CTRL} \
+  CONFIG.y_PORTA.MEM_ECC {NONE} \
+  CONFIG.y_PORTA.MEM_SIZE {2} \
+  CONFIG.y_PORTA.MEM_WIDTH {16} \
+  CONFIG.y_PORTA.READ_LATENCY {1} \
+  CONFIG.y_PORTA.READ_WRITE_MODE {} " [get_ips design_1_relu_combined_0_0]
+
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Sun Jun  5 15:34:01 2022
+| Host         : anubhav-acer running 64-bit Ubuntu 20.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_conv_combined_1_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_conv_combined_1_0 (xilinx.com:hls:conv_combined:1.0) from (Rev. 2112535098) to (Rev. 2112536490)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'design_1_conv_combined_1_0'.
+
+
+-Upgrade has removed interface 'm_axi_gmem2'
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_conv_combined_1_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'm_axi_gmem2_ARADDR'
+
+-Upgrade has removed port 'm_axi_gmem2_ARBURST'
+
+-Upgrade has removed port 'm_axi_gmem2_ARCACHE'
+
+-Upgrade has removed port 'm_axi_gmem2_ARLEN'
+
+-Upgrade has removed port 'm_axi_gmem2_ARLOCK'
+
+-Upgrade has removed port 'm_axi_gmem2_ARPROT'
+
+-Upgrade has removed port 'm_axi_gmem2_ARQOS'
+
+-Upgrade has removed port 'm_axi_gmem2_ARREADY'
+
+-Upgrade has removed port 'm_axi_gmem2_ARREGION'
+
+-Upgrade has removed port 'm_axi_gmem2_ARSIZE'
+
+-Upgrade has removed port 'm_axi_gmem2_ARVALID'
+
+-Upgrade has removed port 'm_axi_gmem2_AWADDR'
+
+-Upgrade has removed port 'm_axi_gmem2_AWBURST'
+
+-Upgrade has removed port 'm_axi_gmem2_AWCACHE'
+
+-Upgrade has removed port 'm_axi_gmem2_AWLEN'
+
+-Upgrade has removed port 'm_axi_gmem2_AWLOCK'
+
+-Upgrade has removed port 'm_axi_gmem2_AWPROT'
+
+-Upgrade has removed port 'm_axi_gmem2_AWQOS'
+
+-Upgrade has removed port 'm_axi_gmem2_AWREADY'
+
+-Upgrade has removed port 'm_axi_gmem2_AWREGION'
+
+-Upgrade has removed port 'm_axi_gmem2_AWSIZE'
+
+-Upgrade has removed port 'm_axi_gmem2_AWVALID'
+
+-Upgrade has removed port 'm_axi_gmem2_BREADY'
+
+-Upgrade has removed port 'm_axi_gmem2_BRESP'
+
+-Upgrade has removed port 'm_axi_gmem2_BVALID'
+
+-Upgrade has removed port 'm_axi_gmem2_RDATA'
+
+-Upgrade has removed port 'm_axi_gmem2_RLAST'
+
+-Upgrade has removed port 'm_axi_gmem2_RREADY'
+
+-Upgrade has removed port 'm_axi_gmem2_RRESP'
+
+-Upgrade has removed port 'm_axi_gmem2_RVALID'
+
+-Upgrade has removed port 'm_axi_gmem2_WDATA'
+
+-Upgrade has removed port 'm_axi_gmem2_WLAST'
+
+-Upgrade has removed port 'm_axi_gmem2_WREADY'
+
+-Upgrade has removed port 'm_axi_gmem2_WSTRB'
+
+-Upgrade has removed port 'm_axi_gmem2_WVALID'
+
+
+4. Addressing Information
+-------------------------
+
+Detected addressing differences while upgrading 'design_1_conv_combined_1_0'. These changes may impact your design.
+
+
+-Upgrade has removed address space 'Data_m_axi_gmem2'
+
+
+5. Customization warnings
+-------------------------
+
+Parameter 'C_M_AXI_GMEM2_ENABLE_ID_PORTS' is no longer present on the upgraded IP 'design_1_conv_combined_1_0', and cannot be set to 'false'
+
+Parameter 'C_M_AXI_GMEM2_ID_WIDTH' is no longer present on the upgraded IP 'design_1_conv_combined_1_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_GMEM2_DATA_WIDTH' is no longer present on the upgraded IP 'design_1_conv_combined_1_0', and cannot be set to '32'
+
+Parameter 'C_M_AXI_GMEM2_ENABLE_USER_PORTS' is no longer present on the upgraded IP 'design_1_conv_combined_1_0', and cannot be set to 'false'
+
+Parameter 'C_M_AXI_GMEM2_AWUSER_WIDTH' is no longer present on the upgraded IP 'design_1_conv_combined_1_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_GMEM2_WUSER_WIDTH' is no longer present on the upgraded IP 'design_1_conv_combined_1_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_GMEM2_BUSER_WIDTH' is no longer present on the upgraded IP 'design_1_conv_combined_1_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_GMEM2_ARUSER_WIDTH' is no longer present on the upgraded IP 'design_1_conv_combined_1_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_GMEM2_RUSER_WIDTH' is no longer present on the upgraded IP 'design_1_conv_combined_1_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_GMEM2_USER_VALUE' is no longer present on the upgraded IP 'design_1_conv_combined_1_0', and cannot be set to '0x00000000'
+
+Parameter 'C_M_AXI_GMEM2_PROT_VALUE' is no longer present on the upgraded IP 'design_1_conv_combined_1_0', and cannot be set to '"000"'
+
+Parameter 'C_M_AXI_GMEM2_CACHE_VALUE' is no longer present on the upgraded IP 'design_1_conv_combined_1_0', and cannot be set to '"0011"'
+
+
+6. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:hls:conv_combined:1.0 -user_name design_1_conv_combined_1_0
+set_property -dict "\
+  CONFIG.C_M_AXI_GMEM_ARUSER_WIDTH {1} \
+  CONFIG.C_M_AXI_GMEM_AWUSER_WIDTH {1} \
+  CONFIG.C_M_AXI_GMEM_BUSER_WIDTH {1} \
+  CONFIG.C_M_AXI_GMEM_CACHE_VALUE {"0011"} \
+  CONFIG.C_M_AXI_GMEM_DATA_WIDTH {32} \
+  CONFIG.C_M_AXI_GMEM_ENABLE_ID_PORTS {false} \
+  CONFIG.C_M_AXI_GMEM_ENABLE_USER_PORTS {false} \
+  CONFIG.C_M_AXI_GMEM_ID_WIDTH {1} \
+  CONFIG.C_M_AXI_GMEM_PROT_VALUE {"000"} \
+  CONFIG.C_M_AXI_GMEM_RUSER_WIDTH {1} \
+  CONFIG.C_M_AXI_GMEM_USER_VALUE {0x00000000} \
+  CONFIG.C_M_AXI_GMEM_WUSER_WIDTH {1} \
+  CONFIG.Component_Name {design_1_conv_combined_1_0} \
+  CONFIG.II {x} \
+  CONFIG.ap_clk.ASSOCIATED_BUSIF {s_axi_control:m_axi_gmem:m_axi_gmem2} \
+  CONFIG.ap_clk.ASSOCIATED_RESET {ap_rst_n} \
+  CONFIG.ap_clk.CLK_DOMAIN {design_1_processing_system7_0_0_FCLK_CLK0} \
+  CONFIG.ap_clk.FREQ_HZ {100000000} \
+  CONFIG.ap_clk.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.ap_clk.INSERT_VIP {0} \
+  CONFIG.ap_clk.PHASE {0.000} \
+  CONFIG.ap_rst_n.INSERT_VIP {0} \
+  CONFIG.ap_rst_n.POLARITY {ACTIVE_LOW} \
+  CONFIG.clk_period {10} \
+  CONFIG.combinational {0} \
+  CONFIG.dx_PORTA.MASTER_TYPE {OTHER} \
+  CONFIG.dx_PORTA.MEM_ECC {NONE} \
+  CONFIG.dx_PORTA.MEM_SIZE {2} \
+  CONFIG.dx_PORTA.MEM_WIDTH {16} \
+  CONFIG.dx_PORTA.READ_LATENCY {1} \
+  CONFIG.dx_PORTA.READ_WRITE_MODE {} \
+  CONFIG.dy_PORTA.MASTER_TYPE {OTHER} \
+  CONFIG.dy_PORTA.MEM_ECC {NONE} \
+  CONFIG.dy_PORTA.MEM_SIZE {2} \
+  CONFIG.dy_PORTA.MEM_WIDTH {16} \
+  CONFIG.dy_PORTA.READ_LATENCY {1} \
+  CONFIG.dy_PORTA.READ_WRITE_MODE {} \
+  CONFIG.interrupt.PortWidth {1} \
+  CONFIG.interrupt.SENSITIVITY {LEVEL_HIGH} \
+  CONFIG.latency {undef} \
+  CONFIG.m_axi_gmem.ADDR_WIDTH {32} \
+  CONFIG.m_axi_gmem.ARUSER_WIDTH {0} \
+  CONFIG.m_axi_gmem.AWUSER_WIDTH {0} \
+  CONFIG.m_axi_gmem.BUSER_WIDTH {0} \
+  CONFIG.m_axi_gmem.CLK_DOMAIN {design_1_processing_system7_0_0_FCLK_CLK0} \
+  CONFIG.m_axi_gmem.DATA_WIDTH {32} \
+  CONFIG.m_axi_gmem.FREQ_HZ {100000000} \
+  CONFIG.m_axi_gmem.HAS_BRESP {1} \
+  CONFIG.m_axi_gmem.HAS_BURST {0} \
+  CONFIG.m_axi_gmem.HAS_CACHE {1} \
+  CONFIG.m_axi_gmem.HAS_LOCK {1} \
+  CONFIG.m_axi_gmem.HAS_PROT {1} \
+  CONFIG.m_axi_gmem.HAS_QOS {1} \
+  CONFIG.m_axi_gmem.HAS_REGION {1} \
+  CONFIG.m_axi_gmem.HAS_RRESP {1} \
+  CONFIG.m_axi_gmem.HAS_WSTRB {1} \
+  CONFIG.m_axi_gmem.ID_WIDTH {0} \
+  CONFIG.m_axi_gmem.INSERT_VIP {0} \
+  CONFIG.m_axi_gmem.MAX_BURST_LENGTH {256} \
+  CONFIG.m_axi_gmem.MAX_READ_BURST_LENGTH {16} \
+  CONFIG.m_axi_gmem.MAX_WRITE_BURST_LENGTH {16} \
+  CONFIG.m_axi_gmem.NUM_READ_OUTSTANDING {16} \
+  CONFIG.m_axi_gmem.NUM_READ_THREADS {1} \
+  CONFIG.m_axi_gmem.NUM_WRITE_OUTSTANDING {16} \
+  CONFIG.m_axi_gmem.NUM_WRITE_THREADS {1} \
+  CONFIG.m_axi_gmem.PHASE {0.000} \
+  CONFIG.m_axi_gmem.PROTOCOL {AXI4} \
+  CONFIG.m_axi_gmem.READ_WRITE_MODE {READ_WRITE} \
+  CONFIG.m_axi_gmem.RUSER_BITS_PER_BYTE {0} \
+  CONFIG.m_axi_gmem.RUSER_WIDTH {0} \
+  CONFIG.m_axi_gmem.SUPPORTS_NARROW_BURST {0} \
+  CONFIG.m_axi_gmem.WUSER_BITS_PER_BYTE {0} \
+  CONFIG.m_axi_gmem.WUSER_WIDTH {0} \
+  CONFIG.machine {64} \
+  CONFIG.s_axi_control.ADDR_WIDTH {7} \
+  CONFIG.s_axi_control.ARUSER_WIDTH {0} \
+  CONFIG.s_axi_control.AWUSER_WIDTH {0} \
+  CONFIG.s_axi_control.BUSER_WIDTH {0} \
+  CONFIG.s_axi_control.CLK_DOMAIN {design_1_processing_system7_0_0_FCLK_CLK0} \
+  CONFIG.s_axi_control.DATA_WIDTH {32} \
+  CONFIG.s_axi_control.FREQ_HZ {100000000} \
+  CONFIG.s_axi_control.HAS_BRESP {1} \
+  CONFIG.s_axi_control.HAS_BURST {0} \
+  CONFIG.s_axi_control.HAS_CACHE {0} \
+  CONFIG.s_axi_control.HAS_LOCK {0} \
+  CONFIG.s_axi_control.HAS_PROT {0} \
+  CONFIG.s_axi_control.HAS_QOS {0} \
+  CONFIG.s_axi_control.HAS_REGION {0} \
+  CONFIG.s_axi_control.HAS_RRESP {1} \
+  CONFIG.s_axi_control.HAS_WSTRB {1} \
+  CONFIG.s_axi_control.ID_WIDTH {0} \
+  CONFIG.s_axi_control.INSERT_VIP {0} \
+  CONFIG.s_axi_control.MAX_BURST_LENGTH {1} \
+  CONFIG.s_axi_control.NUM_READ_OUTSTANDING {1} \
+  CONFIG.s_axi_control.NUM_READ_THREADS {1} \
+  CONFIG.s_axi_control.NUM_WRITE_OUTSTANDING {1} \
+  CONFIG.s_axi_control.NUM_WRITE_THREADS {1} \
+  CONFIG.s_axi_control.PHASE {0.000} \
+  CONFIG.s_axi_control.PROTOCOL {AXI4LITE} \
+  CONFIG.s_axi_control.READ_WRITE_MODE {READ_WRITE} \
+  CONFIG.s_axi_control.RUSER_BITS_PER_BYTE {0} \
+  CONFIG.s_axi_control.RUSER_WIDTH {0} \
+  CONFIG.s_axi_control.SUPPORTS_NARROW_BURST {0} \
+  CONFIG.s_axi_control.WUSER_BITS_PER_BYTE {0} \
+  CONFIG.s_axi_control.WUSER_WIDTH {0} \
+  CONFIG.x_PORTA.MASTER_TYPE {OTHER} \
+  CONFIG.x_PORTA.MEM_ECC {NONE} \
+  CONFIG.x_PORTA.MEM_SIZE {2} \
+  CONFIG.x_PORTA.MEM_WIDTH {16} \
+  CONFIG.x_PORTA.READ_LATENCY {1} \
+  CONFIG.x_PORTA.READ_WRITE_MODE {} \
+  CONFIG.y_PORTA.MASTER_TYPE {BRAM_CTRL} \
+  CONFIG.y_PORTA.MEM_ECC {NONE} \
+  CONFIG.y_PORTA.MEM_SIZE {2} \
+  CONFIG.y_PORTA.MEM_WIDTH {16} \
+  CONFIG.y_PORTA.READ_LATENCY {1} \
+  CONFIG.y_PORTA.READ_WRITE_MODE {} " [get_ips design_1_conv_combined_1_0]
+
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Sun Jun  5 15:34:01 2022
+| Host         : anubhav-acer running 64-bit Ubuntu 20.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_conv_combined_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_conv_combined_0_0 (xilinx.com:hls:conv_combined:1.0) from (Rev. 2112535098) to (Rev. 2112536490)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'design_1_conv_combined_0_0'.
+
+
+-Upgrade has removed interface 'm_axi_gmem2'
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_conv_combined_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'm_axi_gmem2_ARADDR'
+
+-Upgrade has removed port 'm_axi_gmem2_ARBURST'
+
+-Upgrade has removed port 'm_axi_gmem2_ARCACHE'
+
+-Upgrade has removed port 'm_axi_gmem2_ARLEN'
+
+-Upgrade has removed port 'm_axi_gmem2_ARLOCK'
+
+-Upgrade has removed port 'm_axi_gmem2_ARPROT'
+
+-Upgrade has removed port 'm_axi_gmem2_ARQOS'
+
+-Upgrade has removed port 'm_axi_gmem2_ARREADY'
+
+-Upgrade has removed port 'm_axi_gmem2_ARREGION'
+
+-Upgrade has removed port 'm_axi_gmem2_ARSIZE'
+
+-Upgrade has removed port 'm_axi_gmem2_ARVALID'
+
+-Upgrade has removed port 'm_axi_gmem2_AWADDR'
+
+-Upgrade has removed port 'm_axi_gmem2_AWBURST'
+
+-Upgrade has removed port 'm_axi_gmem2_AWCACHE'
+
+-Upgrade has removed port 'm_axi_gmem2_AWLEN'
+
+-Upgrade has removed port 'm_axi_gmem2_AWLOCK'
+
+-Upgrade has removed port 'm_axi_gmem2_AWPROT'
+
+-Upgrade has removed port 'm_axi_gmem2_AWQOS'
+
+-Upgrade has removed port 'm_axi_gmem2_AWREADY'
+
+-Upgrade has removed port 'm_axi_gmem2_AWREGION'
+
+-Upgrade has removed port 'm_axi_gmem2_AWSIZE'
+
+-Upgrade has removed port 'm_axi_gmem2_AWVALID'
+
+-Upgrade has removed port 'm_axi_gmem2_BREADY'
+
+-Upgrade has removed port 'm_axi_gmem2_BRESP'
+
+-Upgrade has removed port 'm_axi_gmem2_BVALID'
+
+-Upgrade has removed port 'm_axi_gmem2_RDATA'
+
+-Upgrade has removed port 'm_axi_gmem2_RLAST'
+
+-Upgrade has removed port 'm_axi_gmem2_RREADY'
+
+-Upgrade has removed port 'm_axi_gmem2_RRESP'
+
+-Upgrade has removed port 'm_axi_gmem2_RVALID'
+
+-Upgrade has removed port 'm_axi_gmem2_WDATA'
+
+-Upgrade has removed port 'm_axi_gmem2_WLAST'
+
+-Upgrade has removed port 'm_axi_gmem2_WREADY'
+
+-Upgrade has removed port 'm_axi_gmem2_WSTRB'
+
+-Upgrade has removed port 'm_axi_gmem2_WVALID'
+
+
+4. Addressing Information
+-------------------------
+
+Detected addressing differences while upgrading 'design_1_conv_combined_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed address space 'Data_m_axi_gmem2'
+
+
+5. Customization warnings
+-------------------------
+
+Parameter 'C_M_AXI_GMEM2_ENABLE_ID_PORTS' is no longer present on the upgraded IP 'design_1_conv_combined_0_0', and cannot be set to 'false'
+
+Parameter 'C_M_AXI_GMEM2_ID_WIDTH' is no longer present on the upgraded IP 'design_1_conv_combined_0_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_GMEM2_DATA_WIDTH' is no longer present on the upgraded IP 'design_1_conv_combined_0_0', and cannot be set to '32'
+
+Parameter 'C_M_AXI_GMEM2_ENABLE_USER_PORTS' is no longer present on the upgraded IP 'design_1_conv_combined_0_0', and cannot be set to 'false'
+
+Parameter 'C_M_AXI_GMEM2_AWUSER_WIDTH' is no longer present on the upgraded IP 'design_1_conv_combined_0_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_GMEM2_WUSER_WIDTH' is no longer present on the upgraded IP 'design_1_conv_combined_0_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_GMEM2_BUSER_WIDTH' is no longer present on the upgraded IP 'design_1_conv_combined_0_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_GMEM2_ARUSER_WIDTH' is no longer present on the upgraded IP 'design_1_conv_combined_0_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_GMEM2_RUSER_WIDTH' is no longer present on the upgraded IP 'design_1_conv_combined_0_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_GMEM2_USER_VALUE' is no longer present on the upgraded IP 'design_1_conv_combined_0_0', and cannot be set to '0x00000000'
+
+Parameter 'C_M_AXI_GMEM2_PROT_VALUE' is no longer present on the upgraded IP 'design_1_conv_combined_0_0', and cannot be set to '"000"'
+
+Parameter 'C_M_AXI_GMEM2_CACHE_VALUE' is no longer present on the upgraded IP 'design_1_conv_combined_0_0', and cannot be set to '"0011"'
+
+
+6. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:hls:conv_combined:1.0 -user_name design_1_conv_combined_0_0
+set_property -dict "\
+  CONFIG.C_M_AXI_GMEM_ARUSER_WIDTH {1} \
+  CONFIG.C_M_AXI_GMEM_AWUSER_WIDTH {1} \
+  CONFIG.C_M_AXI_GMEM_BUSER_WIDTH {1} \
+  CONFIG.C_M_AXI_GMEM_CACHE_VALUE {"0011"} \
+  CONFIG.C_M_AXI_GMEM_DATA_WIDTH {32} \
+  CONFIG.C_M_AXI_GMEM_ENABLE_ID_PORTS {false} \
+  CONFIG.C_M_AXI_GMEM_ENABLE_USER_PORTS {false} \
+  CONFIG.C_M_AXI_GMEM_ID_WIDTH {1} \
+  CONFIG.C_M_AXI_GMEM_PROT_VALUE {"000"} \
+  CONFIG.C_M_AXI_GMEM_RUSER_WIDTH {1} \
+  CONFIG.C_M_AXI_GMEM_USER_VALUE {0x00000000} \
+  CONFIG.C_M_AXI_GMEM_WUSER_WIDTH {1} \
+  CONFIG.Component_Name {design_1_conv_combined_0_0} \
+  CONFIG.II {x} \
+  CONFIG.ap_clk.ASSOCIATED_BUSIF {s_axi_control:m_axi_gmem:m_axi_gmem2} \
+  CONFIG.ap_clk.ASSOCIATED_RESET {ap_rst_n} \
+  CONFIG.ap_clk.CLK_DOMAIN {design_1_processing_system7_0_0_FCLK_CLK0} \
+  CONFIG.ap_clk.FREQ_HZ {100000000} \
+  CONFIG.ap_clk.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.ap_clk.INSERT_VIP {0} \
+  CONFIG.ap_clk.PHASE {0.000} \
+  CONFIG.ap_rst_n.INSERT_VIP {0} \
+  CONFIG.ap_rst_n.POLARITY {ACTIVE_LOW} \
+  CONFIG.clk_period {10} \
+  CONFIG.combinational {0} \
+  CONFIG.dx_PORTA.MASTER_TYPE {OTHER} \
+  CONFIG.dx_PORTA.MEM_ECC {NONE} \
+  CONFIG.dx_PORTA.MEM_SIZE {2} \
+  CONFIG.dx_PORTA.MEM_WIDTH {16} \
+  CONFIG.dx_PORTA.READ_LATENCY {1} \
+  CONFIG.dx_PORTA.READ_WRITE_MODE {} \
+  CONFIG.dy_PORTA.MASTER_TYPE {OTHER} \
+  CONFIG.dy_PORTA.MEM_ECC {NONE} \
+  CONFIG.dy_PORTA.MEM_SIZE {2} \
+  CONFIG.dy_PORTA.MEM_WIDTH {16} \
+  CONFIG.dy_PORTA.READ_LATENCY {1} \
+  CONFIG.dy_PORTA.READ_WRITE_MODE {} \
+  CONFIG.interrupt.PortWidth {1} \
+  CONFIG.interrupt.SENSITIVITY {LEVEL_HIGH} \
+  CONFIG.latency {undef} \
+  CONFIG.m_axi_gmem.ADDR_WIDTH {32} \
+  CONFIG.m_axi_gmem.ARUSER_WIDTH {0} \
+  CONFIG.m_axi_gmem.AWUSER_WIDTH {0} \
+  CONFIG.m_axi_gmem.BUSER_WIDTH {0} \
+  CONFIG.m_axi_gmem.CLK_DOMAIN {design_1_processing_system7_0_0_FCLK_CLK0} \
+  CONFIG.m_axi_gmem.DATA_WIDTH {32} \
+  CONFIG.m_axi_gmem.FREQ_HZ {100000000} \
+  CONFIG.m_axi_gmem.HAS_BRESP {1} \
+  CONFIG.m_axi_gmem.HAS_BURST {0} \
+  CONFIG.m_axi_gmem.HAS_CACHE {1} \
+  CONFIG.m_axi_gmem.HAS_LOCK {1} \
+  CONFIG.m_axi_gmem.HAS_PROT {1} \
+  CONFIG.m_axi_gmem.HAS_QOS {1} \
+  CONFIG.m_axi_gmem.HAS_REGION {1} \
+  CONFIG.m_axi_gmem.HAS_RRESP {1} \
+  CONFIG.m_axi_gmem.HAS_WSTRB {1} \
+  CONFIG.m_axi_gmem.ID_WIDTH {0} \
+  CONFIG.m_axi_gmem.INSERT_VIP {0} \
+  CONFIG.m_axi_gmem.MAX_BURST_LENGTH {256} \
+  CONFIG.m_axi_gmem.MAX_READ_BURST_LENGTH {16} \
+  CONFIG.m_axi_gmem.MAX_WRITE_BURST_LENGTH {16} \
+  CONFIG.m_axi_gmem.NUM_READ_OUTSTANDING {16} \
+  CONFIG.m_axi_gmem.NUM_READ_THREADS {1} \
+  CONFIG.m_axi_gmem.NUM_WRITE_OUTSTANDING {16} \
+  CONFIG.m_axi_gmem.NUM_WRITE_THREADS {1} \
+  CONFIG.m_axi_gmem.PHASE {0.000} \
+  CONFIG.m_axi_gmem.PROTOCOL {AXI4} \
+  CONFIG.m_axi_gmem.READ_WRITE_MODE {READ_WRITE} \
+  CONFIG.m_axi_gmem.RUSER_BITS_PER_BYTE {0} \
+  CONFIG.m_axi_gmem.RUSER_WIDTH {0} \
+  CONFIG.m_axi_gmem.SUPPORTS_NARROW_BURST {0} \
+  CONFIG.m_axi_gmem.WUSER_BITS_PER_BYTE {0} \
+  CONFIG.m_axi_gmem.WUSER_WIDTH {0} \
+  CONFIG.machine {64} \
+  CONFIG.s_axi_control.ADDR_WIDTH {7} \
+  CONFIG.s_axi_control.ARUSER_WIDTH {0} \
+  CONFIG.s_axi_control.AWUSER_WIDTH {0} \
+  CONFIG.s_axi_control.BUSER_WIDTH {0} \
+  CONFIG.s_axi_control.CLK_DOMAIN {design_1_processing_system7_0_0_FCLK_CLK0} \
+  CONFIG.s_axi_control.DATA_WIDTH {32} \
+  CONFIG.s_axi_control.FREQ_HZ {100000000} \
+  CONFIG.s_axi_control.HAS_BRESP {1} \
+  CONFIG.s_axi_control.HAS_BURST {0} \
+  CONFIG.s_axi_control.HAS_CACHE {0} \
+  CONFIG.s_axi_control.HAS_LOCK {0} \
+  CONFIG.s_axi_control.HAS_PROT {0} \
+  CONFIG.s_axi_control.HAS_QOS {0} \
+  CONFIG.s_axi_control.HAS_REGION {0} \
+  CONFIG.s_axi_control.HAS_RRESP {1} \
+  CONFIG.s_axi_control.HAS_WSTRB {1} \
+  CONFIG.s_axi_control.ID_WIDTH {0} \
+  CONFIG.s_axi_control.INSERT_VIP {0} \
+  CONFIG.s_axi_control.MAX_BURST_LENGTH {1} \
+  CONFIG.s_axi_control.NUM_READ_OUTSTANDING {1} \
+  CONFIG.s_axi_control.NUM_READ_THREADS {1} \
+  CONFIG.s_axi_control.NUM_WRITE_OUTSTANDING {1} \
+  CONFIG.s_axi_control.NUM_WRITE_THREADS {1} \
+  CONFIG.s_axi_control.PHASE {0.000} \
+  CONFIG.s_axi_control.PROTOCOL {AXI4LITE} \
+  CONFIG.s_axi_control.READ_WRITE_MODE {READ_WRITE} \
+  CONFIG.s_axi_control.RUSER_BITS_PER_BYTE {0} \
+  CONFIG.s_axi_control.RUSER_WIDTH {0} \
+  CONFIG.s_axi_control.SUPPORTS_NARROW_BURST {0} \
+  CONFIG.s_axi_control.WUSER_BITS_PER_BYTE {0} \
+  CONFIG.s_axi_control.WUSER_WIDTH {0} \
+  CONFIG.x_PORTA.MASTER_TYPE {OTHER} \
+  CONFIG.x_PORTA.MEM_ECC {NONE} \
+  CONFIG.x_PORTA.MEM_SIZE {2} \
+  CONFIG.x_PORTA.MEM_WIDTH {16} \
+  CONFIG.x_PORTA.READ_LATENCY {1} \
+  CONFIG.x_PORTA.READ_WRITE_MODE {} \
+  CONFIG.y_PORTA.MASTER_TYPE {BRAM_CTRL} \
+  CONFIG.y_PORTA.MEM_ECC {NONE} \
+  CONFIG.y_PORTA.MEM_SIZE {2} \
+  CONFIG.y_PORTA.MEM_WIDTH {16} \
+  CONFIG.y_PORTA.READ_LATENCY {1} \
+  CONFIG.y_PORTA.READ_WRITE_MODE {} " [get_ips design_1_conv_combined_0_0]
+
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Sun Jun  5 15:13:07 2022
+| Host         : anubhav-acer running 64-bit Ubuntu 20.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_fcc_combined_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_fcc_combined_1_0 (xilinx.com:hls:fcc_combined:1.0) from (Rev. 2112536354) to (Rev. 2112536472)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Sun Jun  5 15:13:07 2022
+| Host         : anubhav-acer running 64-bit Ubuntu 20.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_fcc_combined_0_2'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_fcc_combined_0_2 (xilinx.com:hls:fcc_combined:1.0) from (Rev. 2112536354) to (Rev. 2112536472)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Sun Jun  5 15:13:07 2022
+| Host         : anubhav-acer running 64-bit Ubuntu 20.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_fcc_combined_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_fcc_combined_0_1 (xilinx.com:hls:fcc_combined:1.0) from (Rev. 2112536354) to (Rev. 2112536472)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Sun Jun  5 13:15:23 2022
+| Host         : anubhav-acer running 64-bit Ubuntu 20.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_fcc_combined_1_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_fcc_combined_1_0 (xilinx.com:hls:fcc_combined:1.0) from (Rev. 2112535100) to (Rev. 2112536354)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'design_1_fcc_combined_1_0'.
+
+
+-Upgrade has removed interface 'm_axi_gmem2'
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_fcc_combined_1_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'm_axi_gmem2_ARADDR'
+
+-Upgrade has removed port 'm_axi_gmem2_ARBURST'
+
+-Upgrade has removed port 'm_axi_gmem2_ARCACHE'
+
+-Upgrade has removed port 'm_axi_gmem2_ARLEN'
+
+-Upgrade has removed port 'm_axi_gmem2_ARLOCK'
+
+-Upgrade has removed port 'm_axi_gmem2_ARPROT'
+
+-Upgrade has removed port 'm_axi_gmem2_ARQOS'
+
+-Upgrade has removed port 'm_axi_gmem2_ARREADY'
+
+-Upgrade has removed port 'm_axi_gmem2_ARREGION'
+
+-Upgrade has removed port 'm_axi_gmem2_ARSIZE'
+
+-Upgrade has removed port 'm_axi_gmem2_ARVALID'
+
+-Upgrade has removed port 'm_axi_gmem2_AWADDR'
+
+-Upgrade has removed port 'm_axi_gmem2_AWBURST'
+
+-Upgrade has removed port 'm_axi_gmem2_AWCACHE'
+
+-Upgrade has removed port 'm_axi_gmem2_AWLEN'
+
+-Upgrade has removed port 'm_axi_gmem2_AWLOCK'
+
+-Upgrade has removed port 'm_axi_gmem2_AWPROT'
+
+-Upgrade has removed port 'm_axi_gmem2_AWQOS'
+
+-Upgrade has removed port 'm_axi_gmem2_AWREADY'
+
+-Upgrade has removed port 'm_axi_gmem2_AWREGION'
+
+-Upgrade has removed port 'm_axi_gmem2_AWSIZE'
+
+-Upgrade has removed port 'm_axi_gmem2_AWVALID'
+
+-Upgrade has removed port 'm_axi_gmem2_BREADY'
+
+-Upgrade has removed port 'm_axi_gmem2_BRESP'
+
+-Upgrade has removed port 'm_axi_gmem2_BVALID'
+
+-Upgrade has removed port 'm_axi_gmem2_RDATA'
+
+-Upgrade has removed port 'm_axi_gmem2_RLAST'
+
+-Upgrade has removed port 'm_axi_gmem2_RREADY'
+
+-Upgrade has removed port 'm_axi_gmem2_RRESP'
+
+-Upgrade has removed port 'm_axi_gmem2_RVALID'
+
+-Upgrade has removed port 'm_axi_gmem2_WDATA'
+
+-Upgrade has removed port 'm_axi_gmem2_WLAST'
+
+-Upgrade has removed port 'm_axi_gmem2_WREADY'
+
+-Upgrade has removed port 'm_axi_gmem2_WSTRB'
+
+-Upgrade has removed port 'm_axi_gmem2_WVALID'
+
+
+4. Addressing Information
+-------------------------
+
+Detected addressing differences while upgrading 'design_1_fcc_combined_1_0'. These changes may impact your design.
+
+
+-Upgrade has removed address space 'Data_m_axi_gmem2'
+
+
+5. Customization warnings
+-------------------------
+
+Parameter 'C_M_AXI_GMEM2_ENABLE_ID_PORTS' is no longer present on the upgraded IP 'design_1_fcc_combined_1_0', and cannot be set to 'false'
+
+Parameter 'C_M_AXI_GMEM2_ID_WIDTH' is no longer present on the upgraded IP 'design_1_fcc_combined_1_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_GMEM2_DATA_WIDTH' is no longer present on the upgraded IP 'design_1_fcc_combined_1_0', and cannot be set to '32'
+
+Parameter 'C_M_AXI_GMEM2_ENABLE_USER_PORTS' is no longer present on the upgraded IP 'design_1_fcc_combined_1_0', and cannot be set to 'false'
+
+Parameter 'C_M_AXI_GMEM2_AWUSER_WIDTH' is no longer present on the upgraded IP 'design_1_fcc_combined_1_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_GMEM2_WUSER_WIDTH' is no longer present on the upgraded IP 'design_1_fcc_combined_1_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_GMEM2_BUSER_WIDTH' is no longer present on the upgraded IP 'design_1_fcc_combined_1_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_GMEM2_ARUSER_WIDTH' is no longer present on the upgraded IP 'design_1_fcc_combined_1_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_GMEM2_RUSER_WIDTH' is no longer present on the upgraded IP 'design_1_fcc_combined_1_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_GMEM2_USER_VALUE' is no longer present on the upgraded IP 'design_1_fcc_combined_1_0', and cannot be set to '0x00000000'
+
+Parameter 'C_M_AXI_GMEM2_PROT_VALUE' is no longer present on the upgraded IP 'design_1_fcc_combined_1_0', and cannot be set to '"000"'
+
+Parameter 'C_M_AXI_GMEM2_CACHE_VALUE' is no longer present on the upgraded IP 'design_1_fcc_combined_1_0', and cannot be set to '"0011"'
+
+
+6. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:hls:fcc_combined:1.0 -user_name design_1_fcc_combined_1_0
+set_property -dict "\
+  CONFIG.C_M_AXI_GMEM_ARUSER_WIDTH {1} \
+  CONFIG.C_M_AXI_GMEM_AWUSER_WIDTH {1} \
+  CONFIG.C_M_AXI_GMEM_BUSER_WIDTH {1} \
+  CONFIG.C_M_AXI_GMEM_CACHE_VALUE {"0011"} \
+  CONFIG.C_M_AXI_GMEM_DATA_WIDTH {32} \
+  CONFIG.C_M_AXI_GMEM_ENABLE_ID_PORTS {false} \
+  CONFIG.C_M_AXI_GMEM_ENABLE_USER_PORTS {false} \
+  CONFIG.C_M_AXI_GMEM_ID_WIDTH {1} \
+  CONFIG.C_M_AXI_GMEM_PROT_VALUE {"000"} \
+  CONFIG.C_M_AXI_GMEM_RUSER_WIDTH {1} \
+  CONFIG.C_M_AXI_GMEM_USER_VALUE {0x00000000} \
+  CONFIG.C_M_AXI_GMEM_WUSER_WIDTH {1} \
+  CONFIG.Component_Name {design_1_fcc_combined_1_0} \
+  CONFIG.II {x} \
+  CONFIG.ap_clk.ASSOCIATED_BUSIF {s_axi_control:m_axi_gmem:m_axi_gmem2} \
+  CONFIG.ap_clk.ASSOCIATED_RESET {ap_rst_n} \
+  CONFIG.ap_clk.CLK_DOMAIN {} \
+  CONFIG.ap_clk.FREQ_HZ {100000000} \
+  CONFIG.ap_clk.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.ap_clk.INSERT_VIP {0} \
+  CONFIG.ap_clk.PHASE {0.000} \
+  CONFIG.ap_rst_n.INSERT_VIP {0} \
+  CONFIG.ap_rst_n.POLARITY {ACTIVE_LOW} \
+  CONFIG.clk_period {10} \
+  CONFIG.combinational {0} \
+  CONFIG.dx_PORTA.MASTER_TYPE {OTHER} \
+  CONFIG.dx_PORTA.MEM_ECC {NONE} \
+  CONFIG.dx_PORTA.MEM_SIZE {2} \
+  CONFIG.dx_PORTA.MEM_WIDTH {16} \
+  CONFIG.dx_PORTA.READ_LATENCY {1} \
+  CONFIG.dx_PORTA.READ_WRITE_MODE {} \
+  CONFIG.dy_PORTA.MASTER_TYPE {OTHER} \
+  CONFIG.dy_PORTA.MEM_ECC {NONE} \
+  CONFIG.dy_PORTA.MEM_SIZE {2} \
+  CONFIG.dy_PORTA.MEM_WIDTH {16} \
+  CONFIG.dy_PORTA.READ_LATENCY {1} \
+  CONFIG.dy_PORTA.READ_WRITE_MODE {} \
+  CONFIG.interrupt.PortWidth {1} \
+  CONFIG.interrupt.SENSITIVITY {LEVEL_HIGH} \
+  CONFIG.latency {undef} \
+  CONFIG.m_axi_gmem.ADDR_WIDTH {32} \
+  CONFIG.m_axi_gmem.ARUSER_WIDTH {0} \
+  CONFIG.m_axi_gmem.AWUSER_WIDTH {0} \
+  CONFIG.m_axi_gmem.BUSER_WIDTH {0} \
+  CONFIG.m_axi_gmem.CLK_DOMAIN {} \
+  CONFIG.m_axi_gmem.DATA_WIDTH {32} \
+  CONFIG.m_axi_gmem.FREQ_HZ {100000000} \
+  CONFIG.m_axi_gmem.HAS_BRESP {1} \
+  CONFIG.m_axi_gmem.HAS_BURST {0} \
+  CONFIG.m_axi_gmem.HAS_CACHE {1} \
+  CONFIG.m_axi_gmem.HAS_LOCK {1} \
+  CONFIG.m_axi_gmem.HAS_PROT {1} \
+  CONFIG.m_axi_gmem.HAS_QOS {1} \
+  CONFIG.m_axi_gmem.HAS_REGION {1} \
+  CONFIG.m_axi_gmem.HAS_RRESP {1} \
+  CONFIG.m_axi_gmem.HAS_WSTRB {1} \
+  CONFIG.m_axi_gmem.ID_WIDTH {0} \
+  CONFIG.m_axi_gmem.INSERT_VIP {0} \
+  CONFIG.m_axi_gmem.MAX_BURST_LENGTH {256} \
+  CONFIG.m_axi_gmem.MAX_READ_BURST_LENGTH {16} \
+  CONFIG.m_axi_gmem.MAX_WRITE_BURST_LENGTH {16} \
+  CONFIG.m_axi_gmem.NUM_READ_OUTSTANDING {16} \
+  CONFIG.m_axi_gmem.NUM_READ_THREADS {1} \
+  CONFIG.m_axi_gmem.NUM_WRITE_OUTSTANDING {16} \
+  CONFIG.m_axi_gmem.NUM_WRITE_THREADS {1} \
+  CONFIG.m_axi_gmem.PHASE {0.000} \
+  CONFIG.m_axi_gmem.PROTOCOL {AXI4} \
+  CONFIG.m_axi_gmem.READ_WRITE_MODE {READ_WRITE} \
+  CONFIG.m_axi_gmem.RUSER_BITS_PER_BYTE {0} \
+  CONFIG.m_axi_gmem.RUSER_WIDTH {0} \
+  CONFIG.m_axi_gmem.SUPPORTS_NARROW_BURST {0} \
+  CONFIG.m_axi_gmem.WUSER_BITS_PER_BYTE {0} \
+  CONFIG.m_axi_gmem.WUSER_WIDTH {0} \
+  CONFIG.machine {64} \
+  CONFIG.s_axi_control.ADDR_WIDTH {7} \
+  CONFIG.s_axi_control.ARUSER_WIDTH {0} \
+  CONFIG.s_axi_control.AWUSER_WIDTH {0} \
+  CONFIG.s_axi_control.BUSER_WIDTH {0} \
+  CONFIG.s_axi_control.CLK_DOMAIN {} \
+  CONFIG.s_axi_control.DATA_WIDTH {32} \
+  CONFIG.s_axi_control.FREQ_HZ {100000000} \
+  CONFIG.s_axi_control.HAS_BRESP {1} \
+  CONFIG.s_axi_control.HAS_BURST {0} \
+  CONFIG.s_axi_control.HAS_CACHE {0} \
+  CONFIG.s_axi_control.HAS_LOCK {0} \
+  CONFIG.s_axi_control.HAS_PROT {0} \
+  CONFIG.s_axi_control.HAS_QOS {0} \
+  CONFIG.s_axi_control.HAS_REGION {0} \
+  CONFIG.s_axi_control.HAS_RRESP {1} \
+  CONFIG.s_axi_control.HAS_WSTRB {1} \
+  CONFIG.s_axi_control.ID_WIDTH {0} \
+  CONFIG.s_axi_control.INSERT_VIP {0} \
+  CONFIG.s_axi_control.MAX_BURST_LENGTH {1} \
+  CONFIG.s_axi_control.NUM_READ_OUTSTANDING {1} \
+  CONFIG.s_axi_control.NUM_READ_THREADS {1} \
+  CONFIG.s_axi_control.NUM_WRITE_OUTSTANDING {1} \
+  CONFIG.s_axi_control.NUM_WRITE_THREADS {1} \
+  CONFIG.s_axi_control.PHASE {0.000} \
+  CONFIG.s_axi_control.PROTOCOL {AXI4LITE} \
+  CONFIG.s_axi_control.READ_WRITE_MODE {READ_WRITE} \
+  CONFIG.s_axi_control.RUSER_BITS_PER_BYTE {0} \
+  CONFIG.s_axi_control.RUSER_WIDTH {0} \
+  CONFIG.s_axi_control.SUPPORTS_NARROW_BURST {0} \
+  CONFIG.s_axi_control.WUSER_BITS_PER_BYTE {0} \
+  CONFIG.s_axi_control.WUSER_WIDTH {0} \
+  CONFIG.x_PORTA.MASTER_TYPE {OTHER} \
+  CONFIG.x_PORTA.MEM_ECC {NONE} \
+  CONFIG.x_PORTA.MEM_SIZE {2} \
+  CONFIG.x_PORTA.MEM_WIDTH {16} \
+  CONFIG.x_PORTA.READ_LATENCY {1} \
+  CONFIG.x_PORTA.READ_WRITE_MODE {} \
+  CONFIG.y_PORTA.MASTER_TYPE {BRAM_CTRL} \
+  CONFIG.y_PORTA.MEM_ECC {NONE} \
+  CONFIG.y_PORTA.MEM_SIZE {2} \
+  CONFIG.y_PORTA.MEM_WIDTH {16} \
+  CONFIG.y_PORTA.READ_LATENCY {1} \
+  CONFIG.y_PORTA.READ_WRITE_MODE {} " [get_ips design_1_fcc_combined_1_0]
+
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Sun Jun  5 13:15:23 2022
+| Host         : anubhav-acer running 64-bit Ubuntu 20.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_fcc_combined_0_2'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_fcc_combined_0_2 (xilinx.com:hls:fcc_combined:1.0) from (Rev. 2112535100) to (Rev. 2112536354)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'design_1_fcc_combined_0_2'.
+
+
+-Upgrade has removed interface 'm_axi_gmem2'
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_fcc_combined_0_2'. These changes may impact your design.
+
+
+-Upgrade has removed port 'm_axi_gmem2_ARADDR'
+
+-Upgrade has removed port 'm_axi_gmem2_ARBURST'
+
+-Upgrade has removed port 'm_axi_gmem2_ARCACHE'
+
+-Upgrade has removed port 'm_axi_gmem2_ARLEN'
+
+-Upgrade has removed port 'm_axi_gmem2_ARLOCK'
+
+-Upgrade has removed port 'm_axi_gmem2_ARPROT'
+
+-Upgrade has removed port 'm_axi_gmem2_ARQOS'
+
+-Upgrade has removed port 'm_axi_gmem2_ARREADY'
+
+-Upgrade has removed port 'm_axi_gmem2_ARREGION'
+
+-Upgrade has removed port 'm_axi_gmem2_ARSIZE'
+
+-Upgrade has removed port 'm_axi_gmem2_ARVALID'
+
+-Upgrade has removed port 'm_axi_gmem2_AWADDR'
+
+-Upgrade has removed port 'm_axi_gmem2_AWBURST'
+
+-Upgrade has removed port 'm_axi_gmem2_AWCACHE'
+
+-Upgrade has removed port 'm_axi_gmem2_AWLEN'
+
+-Upgrade has removed port 'm_axi_gmem2_AWLOCK'
+
+-Upgrade has removed port 'm_axi_gmem2_AWPROT'
+
+-Upgrade has removed port 'm_axi_gmem2_AWQOS'
+
+-Upgrade has removed port 'm_axi_gmem2_AWREADY'
+
+-Upgrade has removed port 'm_axi_gmem2_AWREGION'
+
+-Upgrade has removed port 'm_axi_gmem2_AWSIZE'
+
+-Upgrade has removed port 'm_axi_gmem2_AWVALID'
+
+-Upgrade has removed port 'm_axi_gmem2_BREADY'
+
+-Upgrade has removed port 'm_axi_gmem2_BRESP'
+
+-Upgrade has removed port 'm_axi_gmem2_BVALID'
+
+-Upgrade has removed port 'm_axi_gmem2_RDATA'
+
+-Upgrade has removed port 'm_axi_gmem2_RLAST'
+
+-Upgrade has removed port 'm_axi_gmem2_RREADY'
+
+-Upgrade has removed port 'm_axi_gmem2_RRESP'
+
+-Upgrade has removed port 'm_axi_gmem2_RVALID'
+
+-Upgrade has removed port 'm_axi_gmem2_WDATA'
+
+-Upgrade has removed port 'm_axi_gmem2_WLAST'
+
+-Upgrade has removed port 'm_axi_gmem2_WREADY'
+
+-Upgrade has removed port 'm_axi_gmem2_WSTRB'
+
+-Upgrade has removed port 'm_axi_gmem2_WVALID'
+
+
+4. Addressing Information
+-------------------------
+
+Detected addressing differences while upgrading 'design_1_fcc_combined_0_2'. These changes may impact your design.
+
+
+-Upgrade has removed address space 'Data_m_axi_gmem2'
+
+
+5. Customization warnings
+-------------------------
+
+Parameter 'C_M_AXI_GMEM2_ENABLE_ID_PORTS' is no longer present on the upgraded IP 'design_1_fcc_combined_0_2', and cannot be set to 'false'
+
+Parameter 'C_M_AXI_GMEM2_ID_WIDTH' is no longer present on the upgraded IP 'design_1_fcc_combined_0_2', and cannot be set to '1'
+
+Parameter 'C_M_AXI_GMEM2_DATA_WIDTH' is no longer present on the upgraded IP 'design_1_fcc_combined_0_2', and cannot be set to '32'
+
+Parameter 'C_M_AXI_GMEM2_ENABLE_USER_PORTS' is no longer present on the upgraded IP 'design_1_fcc_combined_0_2', and cannot be set to 'false'
+
+Parameter 'C_M_AXI_GMEM2_AWUSER_WIDTH' is no longer present on the upgraded IP 'design_1_fcc_combined_0_2', and cannot be set to '1'
+
+Parameter 'C_M_AXI_GMEM2_WUSER_WIDTH' is no longer present on the upgraded IP 'design_1_fcc_combined_0_2', and cannot be set to '1'
+
+Parameter 'C_M_AXI_GMEM2_BUSER_WIDTH' is no longer present on the upgraded IP 'design_1_fcc_combined_0_2', and cannot be set to '1'
+
+Parameter 'C_M_AXI_GMEM2_ARUSER_WIDTH' is no longer present on the upgraded IP 'design_1_fcc_combined_0_2', and cannot be set to '1'
+
+Parameter 'C_M_AXI_GMEM2_RUSER_WIDTH' is no longer present on the upgraded IP 'design_1_fcc_combined_0_2', and cannot be set to '1'
+
+Parameter 'C_M_AXI_GMEM2_USER_VALUE' is no longer present on the upgraded IP 'design_1_fcc_combined_0_2', and cannot be set to '0x00000000'
+
+Parameter 'C_M_AXI_GMEM2_PROT_VALUE' is no longer present on the upgraded IP 'design_1_fcc_combined_0_2', and cannot be set to '"000"'
+
+Parameter 'C_M_AXI_GMEM2_CACHE_VALUE' is no longer present on the upgraded IP 'design_1_fcc_combined_0_2', and cannot be set to '"0011"'
+
+
+6. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:hls:fcc_combined:1.0 -user_name design_1_fcc_combined_0_2
+set_property -dict "\
+  CONFIG.C_M_AXI_GMEM_ARUSER_WIDTH {1} \
+  CONFIG.C_M_AXI_GMEM_AWUSER_WIDTH {1} \
+  CONFIG.C_M_AXI_GMEM_BUSER_WIDTH {1} \
+  CONFIG.C_M_AXI_GMEM_CACHE_VALUE {"0011"} \
+  CONFIG.C_M_AXI_GMEM_DATA_WIDTH {32} \
+  CONFIG.C_M_AXI_GMEM_ENABLE_ID_PORTS {false} \
+  CONFIG.C_M_AXI_GMEM_ENABLE_USER_PORTS {false} \
+  CONFIG.C_M_AXI_GMEM_ID_WIDTH {1} \
+  CONFIG.C_M_AXI_GMEM_PROT_VALUE {"000"} \
+  CONFIG.C_M_AXI_GMEM_RUSER_WIDTH {1} \
+  CONFIG.C_M_AXI_GMEM_USER_VALUE {0x00000000} \
+  CONFIG.C_M_AXI_GMEM_WUSER_WIDTH {1} \
+  CONFIG.Component_Name {design_1_fcc_combined_0_2} \
+  CONFIG.II {x} \
+  CONFIG.ap_clk.ASSOCIATED_BUSIF {s_axi_control:m_axi_gmem:m_axi_gmem2} \
+  CONFIG.ap_clk.ASSOCIATED_RESET {ap_rst_n} \
+  CONFIG.ap_clk.CLK_DOMAIN {} \
+  CONFIG.ap_clk.FREQ_HZ {100000000} \
+  CONFIG.ap_clk.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.ap_clk.INSERT_VIP {0} \
+  CONFIG.ap_clk.PHASE {0.000} \
+  CONFIG.ap_rst_n.INSERT_VIP {0} \
+  CONFIG.ap_rst_n.POLARITY {ACTIVE_LOW} \
+  CONFIG.clk_period {10} \
+  CONFIG.combinational {0} \
+  CONFIG.dx_PORTA.MASTER_TYPE {OTHER} \
+  CONFIG.dx_PORTA.MEM_ECC {NONE} \
+  CONFIG.dx_PORTA.MEM_SIZE {2} \
+  CONFIG.dx_PORTA.MEM_WIDTH {16} \
+  CONFIG.dx_PORTA.READ_LATENCY {1} \
+  CONFIG.dx_PORTA.READ_WRITE_MODE {} \
+  CONFIG.dy_PORTA.MASTER_TYPE {OTHER} \
+  CONFIG.dy_PORTA.MEM_ECC {NONE} \
+  CONFIG.dy_PORTA.MEM_SIZE {2} \
+  CONFIG.dy_PORTA.MEM_WIDTH {16} \
+  CONFIG.dy_PORTA.READ_LATENCY {1} \
+  CONFIG.dy_PORTA.READ_WRITE_MODE {} \
+  CONFIG.interrupt.PortWidth {1} \
+  CONFIG.interrupt.SENSITIVITY {LEVEL_HIGH} \
+  CONFIG.latency {undef} \
+  CONFIG.m_axi_gmem.ADDR_WIDTH {32} \
+  CONFIG.m_axi_gmem.ARUSER_WIDTH {0} \
+  CONFIG.m_axi_gmem.AWUSER_WIDTH {0} \
+  CONFIG.m_axi_gmem.BUSER_WIDTH {0} \
+  CONFIG.m_axi_gmem.CLK_DOMAIN {} \
+  CONFIG.m_axi_gmem.DATA_WIDTH {32} \
+  CONFIG.m_axi_gmem.FREQ_HZ {100000000} \
+  CONFIG.m_axi_gmem.HAS_BRESP {1} \
+  CONFIG.m_axi_gmem.HAS_BURST {0} \
+  CONFIG.m_axi_gmem.HAS_CACHE {1} \
+  CONFIG.m_axi_gmem.HAS_LOCK {1} \
+  CONFIG.m_axi_gmem.HAS_PROT {1} \
+  CONFIG.m_axi_gmem.HAS_QOS {1} \
+  CONFIG.m_axi_gmem.HAS_REGION {1} \
+  CONFIG.m_axi_gmem.HAS_RRESP {1} \
+  CONFIG.m_axi_gmem.HAS_WSTRB {1} \
+  CONFIG.m_axi_gmem.ID_WIDTH {0} \
+  CONFIG.m_axi_gmem.INSERT_VIP {0} \
+  CONFIG.m_axi_gmem.MAX_BURST_LENGTH {256} \
+  CONFIG.m_axi_gmem.MAX_READ_BURST_LENGTH {16} \
+  CONFIG.m_axi_gmem.MAX_WRITE_BURST_LENGTH {16} \
+  CONFIG.m_axi_gmem.NUM_READ_OUTSTANDING {16} \
+  CONFIG.m_axi_gmem.NUM_READ_THREADS {1} \
+  CONFIG.m_axi_gmem.NUM_WRITE_OUTSTANDING {16} \
+  CONFIG.m_axi_gmem.NUM_WRITE_THREADS {1} \
+  CONFIG.m_axi_gmem.PHASE {0.000} \
+  CONFIG.m_axi_gmem.PROTOCOL {AXI4} \
+  CONFIG.m_axi_gmem.READ_WRITE_MODE {READ_WRITE} \
+  CONFIG.m_axi_gmem.RUSER_BITS_PER_BYTE {0} \
+  CONFIG.m_axi_gmem.RUSER_WIDTH {0} \
+  CONFIG.m_axi_gmem.SUPPORTS_NARROW_BURST {0} \
+  CONFIG.m_axi_gmem.WUSER_BITS_PER_BYTE {0} \
+  CONFIG.m_axi_gmem.WUSER_WIDTH {0} \
+  CONFIG.machine {64} \
+  CONFIG.s_axi_control.ADDR_WIDTH {7} \
+  CONFIG.s_axi_control.ARUSER_WIDTH {0} \
+  CONFIG.s_axi_control.AWUSER_WIDTH {0} \
+  CONFIG.s_axi_control.BUSER_WIDTH {0} \
+  CONFIG.s_axi_control.CLK_DOMAIN {} \
+  CONFIG.s_axi_control.DATA_WIDTH {32} \
+  CONFIG.s_axi_control.FREQ_HZ {100000000} \
+  CONFIG.s_axi_control.HAS_BRESP {1} \
+  CONFIG.s_axi_control.HAS_BURST {0} \
+  CONFIG.s_axi_control.HAS_CACHE {0} \
+  CONFIG.s_axi_control.HAS_LOCK {0} \
+  CONFIG.s_axi_control.HAS_PROT {0} \
+  CONFIG.s_axi_control.HAS_QOS {0} \
+  CONFIG.s_axi_control.HAS_REGION {0} \
+  CONFIG.s_axi_control.HAS_RRESP {1} \
+  CONFIG.s_axi_control.HAS_WSTRB {1} \
+  CONFIG.s_axi_control.ID_WIDTH {0} \
+  CONFIG.s_axi_control.INSERT_VIP {0} \
+  CONFIG.s_axi_control.MAX_BURST_LENGTH {1} \
+  CONFIG.s_axi_control.NUM_READ_OUTSTANDING {1} \
+  CONFIG.s_axi_control.NUM_READ_THREADS {1} \
+  CONFIG.s_axi_control.NUM_WRITE_OUTSTANDING {1} \
+  CONFIG.s_axi_control.NUM_WRITE_THREADS {1} \
+  CONFIG.s_axi_control.PHASE {0.000} \
+  CONFIG.s_axi_control.PROTOCOL {AXI4LITE} \
+  CONFIG.s_axi_control.READ_WRITE_MODE {READ_WRITE} \
+  CONFIG.s_axi_control.RUSER_BITS_PER_BYTE {0} \
+  CONFIG.s_axi_control.RUSER_WIDTH {0} \
+  CONFIG.s_axi_control.SUPPORTS_NARROW_BURST {0} \
+  CONFIG.s_axi_control.WUSER_BITS_PER_BYTE {0} \
+  CONFIG.s_axi_control.WUSER_WIDTH {0} \
+  CONFIG.x_PORTA.MASTER_TYPE {OTHER} \
+  CONFIG.x_PORTA.MEM_ECC {NONE} \
+  CONFIG.x_PORTA.MEM_SIZE {2} \
+  CONFIG.x_PORTA.MEM_WIDTH {16} \
+  CONFIG.x_PORTA.READ_LATENCY {1} \
+  CONFIG.x_PORTA.READ_WRITE_MODE {} \
+  CONFIG.y_PORTA.MASTER_TYPE {BRAM_CTRL} \
+  CONFIG.y_PORTA.MEM_ECC {NONE} \
+  CONFIG.y_PORTA.MEM_SIZE {2} \
+  CONFIG.y_PORTA.MEM_WIDTH {16} \
+  CONFIG.y_PORTA.READ_LATENCY {1} \
+  CONFIG.y_PORTA.READ_WRITE_MODE {} " [get_ips design_1_fcc_combined_0_2]
+
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Sun Jun  5 13:15:23 2022
+| Host         : anubhav-acer running 64-bit Ubuntu 20.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_fcc_combined_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_fcc_combined_0_1 (xilinx.com:hls:fcc_combined:1.0) from (Rev. 2112535100) to (Rev. 2112536354)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'design_1_fcc_combined_0_1'.
+
+
+-Upgrade has removed interface 'm_axi_gmem2'
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_fcc_combined_0_1'. These changes may impact your design.
+
+
+-Upgrade has removed port 'm_axi_gmem2_ARADDR'
+
+-Upgrade has removed port 'm_axi_gmem2_ARBURST'
+
+-Upgrade has removed port 'm_axi_gmem2_ARCACHE'
+
+-Upgrade has removed port 'm_axi_gmem2_ARLEN'
+
+-Upgrade has removed port 'm_axi_gmem2_ARLOCK'
+
+-Upgrade has removed port 'm_axi_gmem2_ARPROT'
+
+-Upgrade has removed port 'm_axi_gmem2_ARQOS'
+
+-Upgrade has removed port 'm_axi_gmem2_ARREADY'
+
+-Upgrade has removed port 'm_axi_gmem2_ARREGION'
+
+-Upgrade has removed port 'm_axi_gmem2_ARSIZE'
+
+-Upgrade has removed port 'm_axi_gmem2_ARVALID'
+
+-Upgrade has removed port 'm_axi_gmem2_AWADDR'
+
+-Upgrade has removed port 'm_axi_gmem2_AWBURST'
+
+-Upgrade has removed port 'm_axi_gmem2_AWCACHE'
+
+-Upgrade has removed port 'm_axi_gmem2_AWLEN'
+
+-Upgrade has removed port 'm_axi_gmem2_AWLOCK'
+
+-Upgrade has removed port 'm_axi_gmem2_AWPROT'
+
+-Upgrade has removed port 'm_axi_gmem2_AWQOS'
+
+-Upgrade has removed port 'm_axi_gmem2_AWREADY'
+
+-Upgrade has removed port 'm_axi_gmem2_AWREGION'
+
+-Upgrade has removed port 'm_axi_gmem2_AWSIZE'
+
+-Upgrade has removed port 'm_axi_gmem2_AWVALID'
+
+-Upgrade has removed port 'm_axi_gmem2_BREADY'
+
+-Upgrade has removed port 'm_axi_gmem2_BRESP'
+
+-Upgrade has removed port 'm_axi_gmem2_BVALID'
+
+-Upgrade has removed port 'm_axi_gmem2_RDATA'
+
+-Upgrade has removed port 'm_axi_gmem2_RLAST'
+
+-Upgrade has removed port 'm_axi_gmem2_RREADY'
+
+-Upgrade has removed port 'm_axi_gmem2_RRESP'
+
+-Upgrade has removed port 'm_axi_gmem2_RVALID'
+
+-Upgrade has removed port 'm_axi_gmem2_WDATA'
+
+-Upgrade has removed port 'm_axi_gmem2_WLAST'
+
+-Upgrade has removed port 'm_axi_gmem2_WREADY'
+
+-Upgrade has removed port 'm_axi_gmem2_WSTRB'
+
+-Upgrade has removed port 'm_axi_gmem2_WVALID'
+
+
+4. Addressing Information
+-------------------------
+
+Detected addressing differences while upgrading 'design_1_fcc_combined_0_1'. These changes may impact your design.
+
+
+-Upgrade has removed address space 'Data_m_axi_gmem2'
+
+
+5. Customization warnings
+-------------------------
+
+Parameter 'C_M_AXI_GMEM2_ENABLE_ID_PORTS' is no longer present on the upgraded IP 'design_1_fcc_combined_0_1', and cannot be set to 'false'
+
+Parameter 'C_M_AXI_GMEM2_ID_WIDTH' is no longer present on the upgraded IP 'design_1_fcc_combined_0_1', and cannot be set to '1'
+
+Parameter 'C_M_AXI_GMEM2_DATA_WIDTH' is no longer present on the upgraded IP 'design_1_fcc_combined_0_1', and cannot be set to '32'
+
+Parameter 'C_M_AXI_GMEM2_ENABLE_USER_PORTS' is no longer present on the upgraded IP 'design_1_fcc_combined_0_1', and cannot be set to 'false'
+
+Parameter 'C_M_AXI_GMEM2_AWUSER_WIDTH' is no longer present on the upgraded IP 'design_1_fcc_combined_0_1', and cannot be set to '1'
+
+Parameter 'C_M_AXI_GMEM2_WUSER_WIDTH' is no longer present on the upgraded IP 'design_1_fcc_combined_0_1', and cannot be set to '1'
+
+Parameter 'C_M_AXI_GMEM2_BUSER_WIDTH' is no longer present on the upgraded IP 'design_1_fcc_combined_0_1', and cannot be set to '1'
+
+Parameter 'C_M_AXI_GMEM2_ARUSER_WIDTH' is no longer present on the upgraded IP 'design_1_fcc_combined_0_1', and cannot be set to '1'
+
+Parameter 'C_M_AXI_GMEM2_RUSER_WIDTH' is no longer present on the upgraded IP 'design_1_fcc_combined_0_1', and cannot be set to '1'
+
+Parameter 'C_M_AXI_GMEM2_USER_VALUE' is no longer present on the upgraded IP 'design_1_fcc_combined_0_1', and cannot be set to '0x00000000'
+
+Parameter 'C_M_AXI_GMEM2_PROT_VALUE' is no longer present on the upgraded IP 'design_1_fcc_combined_0_1', and cannot be set to '"000"'
+
+Parameter 'C_M_AXI_GMEM2_CACHE_VALUE' is no longer present on the upgraded IP 'design_1_fcc_combined_0_1', and cannot be set to '"0011"'
+
+
+6. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:hls:fcc_combined:1.0 -user_name design_1_fcc_combined_0_1
+set_property -dict "\
+  CONFIG.C_M_AXI_GMEM_ARUSER_WIDTH {1} \
+  CONFIG.C_M_AXI_GMEM_AWUSER_WIDTH {1} \
+  CONFIG.C_M_AXI_GMEM_BUSER_WIDTH {1} \
+  CONFIG.C_M_AXI_GMEM_CACHE_VALUE {"0011"} \
+  CONFIG.C_M_AXI_GMEM_DATA_WIDTH {32} \
+  CONFIG.C_M_AXI_GMEM_ENABLE_ID_PORTS {false} \
+  CONFIG.C_M_AXI_GMEM_ENABLE_USER_PORTS {false} \
+  CONFIG.C_M_AXI_GMEM_ID_WIDTH {1} \
+  CONFIG.C_M_AXI_GMEM_PROT_VALUE {"000"} \
+  CONFIG.C_M_AXI_GMEM_RUSER_WIDTH {1} \
+  CONFIG.C_M_AXI_GMEM_USER_VALUE {0x00000000} \
+  CONFIG.C_M_AXI_GMEM_WUSER_WIDTH {1} \
+  CONFIG.Component_Name {design_1_fcc_combined_0_1} \
+  CONFIG.II {x} \
+  CONFIG.ap_clk.ASSOCIATED_BUSIF {s_axi_control:m_axi_gmem:m_axi_gmem2} \
+  CONFIG.ap_clk.ASSOCIATED_RESET {ap_rst_n} \
+  CONFIG.ap_clk.CLK_DOMAIN {} \
+  CONFIG.ap_clk.FREQ_HZ {100000000} \
+  CONFIG.ap_clk.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.ap_clk.INSERT_VIP {0} \
+  CONFIG.ap_clk.PHASE {0.000} \
+  CONFIG.ap_rst_n.INSERT_VIP {0} \
+  CONFIG.ap_rst_n.POLARITY {ACTIVE_LOW} \
+  CONFIG.clk_period {10} \
+  CONFIG.combinational {0} \
+  CONFIG.dx_PORTA.MASTER_TYPE {OTHER} \
+  CONFIG.dx_PORTA.MEM_ECC {NONE} \
+  CONFIG.dx_PORTA.MEM_SIZE {2} \
+  CONFIG.dx_PORTA.MEM_WIDTH {16} \
+  CONFIG.dx_PORTA.READ_LATENCY {1} \
+  CONFIG.dx_PORTA.READ_WRITE_MODE {} \
+  CONFIG.dy_PORTA.MASTER_TYPE {OTHER} \
+  CONFIG.dy_PORTA.MEM_ECC {NONE} \
+  CONFIG.dy_PORTA.MEM_SIZE {2} \
+  CONFIG.dy_PORTA.MEM_WIDTH {16} \
+  CONFIG.dy_PORTA.READ_LATENCY {1} \
+  CONFIG.dy_PORTA.READ_WRITE_MODE {} \
+  CONFIG.interrupt.PortWidth {1} \
+  CONFIG.interrupt.SENSITIVITY {LEVEL_HIGH} \
+  CONFIG.latency {undef} \
+  CONFIG.m_axi_gmem.ADDR_WIDTH {32} \
+  CONFIG.m_axi_gmem.ARUSER_WIDTH {0} \
+  CONFIG.m_axi_gmem.AWUSER_WIDTH {0} \
+  CONFIG.m_axi_gmem.BUSER_WIDTH {0} \
+  CONFIG.m_axi_gmem.CLK_DOMAIN {} \
+  CONFIG.m_axi_gmem.DATA_WIDTH {32} \
+  CONFIG.m_axi_gmem.FREQ_HZ {100000000} \
+  CONFIG.m_axi_gmem.HAS_BRESP {1} \
+  CONFIG.m_axi_gmem.HAS_BURST {0} \
+  CONFIG.m_axi_gmem.HAS_CACHE {1} \
+  CONFIG.m_axi_gmem.HAS_LOCK {1} \
+  CONFIG.m_axi_gmem.HAS_PROT {1} \
+  CONFIG.m_axi_gmem.HAS_QOS {1} \
+  CONFIG.m_axi_gmem.HAS_REGION {1} \
+  CONFIG.m_axi_gmem.HAS_RRESP {1} \
+  CONFIG.m_axi_gmem.HAS_WSTRB {1} \
+  CONFIG.m_axi_gmem.ID_WIDTH {0} \
+  CONFIG.m_axi_gmem.INSERT_VIP {0} \
+  CONFIG.m_axi_gmem.MAX_BURST_LENGTH {256} \
+  CONFIG.m_axi_gmem.MAX_READ_BURST_LENGTH {16} \
+  CONFIG.m_axi_gmem.MAX_WRITE_BURST_LENGTH {16} \
+  CONFIG.m_axi_gmem.NUM_READ_OUTSTANDING {16} \
+  CONFIG.m_axi_gmem.NUM_READ_THREADS {1} \
+  CONFIG.m_axi_gmem.NUM_WRITE_OUTSTANDING {16} \
+  CONFIG.m_axi_gmem.NUM_WRITE_THREADS {1} \
+  CONFIG.m_axi_gmem.PHASE {0.000} \
+  CONFIG.m_axi_gmem.PROTOCOL {AXI4} \
+  CONFIG.m_axi_gmem.READ_WRITE_MODE {READ_WRITE} \
+  CONFIG.m_axi_gmem.RUSER_BITS_PER_BYTE {0} \
+  CONFIG.m_axi_gmem.RUSER_WIDTH {0} \
+  CONFIG.m_axi_gmem.SUPPORTS_NARROW_BURST {0} \
+  CONFIG.m_axi_gmem.WUSER_BITS_PER_BYTE {0} \
+  CONFIG.m_axi_gmem.WUSER_WIDTH {0} \
+  CONFIG.machine {64} \
+  CONFIG.s_axi_control.ADDR_WIDTH {7} \
+  CONFIG.s_axi_control.ARUSER_WIDTH {0} \
+  CONFIG.s_axi_control.AWUSER_WIDTH {0} \
+  CONFIG.s_axi_control.BUSER_WIDTH {0} \
+  CONFIG.s_axi_control.CLK_DOMAIN {} \
+  CONFIG.s_axi_control.DATA_WIDTH {32} \
+  CONFIG.s_axi_control.FREQ_HZ {100000000} \
+  CONFIG.s_axi_control.HAS_BRESP {1} \
+  CONFIG.s_axi_control.HAS_BURST {0} \
+  CONFIG.s_axi_control.HAS_CACHE {0} \
+  CONFIG.s_axi_control.HAS_LOCK {0} \
+  CONFIG.s_axi_control.HAS_PROT {0} \
+  CONFIG.s_axi_control.HAS_QOS {0} \
+  CONFIG.s_axi_control.HAS_REGION {0} \
+  CONFIG.s_axi_control.HAS_RRESP {1} \
+  CONFIG.s_axi_control.HAS_WSTRB {1} \
+  CONFIG.s_axi_control.ID_WIDTH {0} \
+  CONFIG.s_axi_control.INSERT_VIP {0} \
+  CONFIG.s_axi_control.MAX_BURST_LENGTH {1} \
+  CONFIG.s_axi_control.NUM_READ_OUTSTANDING {1} \
+  CONFIG.s_axi_control.NUM_READ_THREADS {1} \
+  CONFIG.s_axi_control.NUM_WRITE_OUTSTANDING {1} \
+  CONFIG.s_axi_control.NUM_WRITE_THREADS {1} \
+  CONFIG.s_axi_control.PHASE {0.000} \
+  CONFIG.s_axi_control.PROTOCOL {AXI4LITE} \
+  CONFIG.s_axi_control.READ_WRITE_MODE {READ_WRITE} \
+  CONFIG.s_axi_control.RUSER_BITS_PER_BYTE {0} \
+  CONFIG.s_axi_control.RUSER_WIDTH {0} \
+  CONFIG.s_axi_control.SUPPORTS_NARROW_BURST {0} \
+  CONFIG.s_axi_control.WUSER_BITS_PER_BYTE {0} \
+  CONFIG.s_axi_control.WUSER_WIDTH {0} \
+  CONFIG.x_PORTA.MASTER_TYPE {OTHER} \
+  CONFIG.x_PORTA.MEM_ECC {NONE} \
+  CONFIG.x_PORTA.MEM_SIZE {2} \
+  CONFIG.x_PORTA.MEM_WIDTH {16} \
+  CONFIG.x_PORTA.READ_LATENCY {1} \
+  CONFIG.x_PORTA.READ_WRITE_MODE {} \
+  CONFIG.y_PORTA.MASTER_TYPE {BRAM_CTRL} \
+  CONFIG.y_PORTA.MEM_ECC {NONE} \
+  CONFIG.y_PORTA.MEM_SIZE {2} \
+  CONFIG.y_PORTA.MEM_WIDTH {16} \
+  CONFIG.y_PORTA.READ_LATENCY {1} \
+  CONFIG.y_PORTA.READ_WRITE_MODE {} " [get_ips design_1_fcc_combined_0_1]
+
+

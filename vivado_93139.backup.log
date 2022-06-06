@@ -1,0 +1,793 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Jun  4 16:06:17 2022
+# Process ID: 93139
+# Current directory: /home/anubhav/xilinx_projects
+# Command line: vivado
+# Log file: /home/anubhav/xilinx_projects/vivado.log
+# Journal file: /home/anubhav/xilinx_projects/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project promethean /home/anubhav/xilinx_projects/promethean -part xc7z020clg400-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 7221.395 ; gain = 45.027 ; free physical = 23174 ; free virtual = 30018
+set_property board_part tul.com.tw:pynq-z2:part0:1.0 [current_project]
+create_bd_design "design_1"
+Wrote  : </home/anubhav/xilinx_projects/promethean/promethean.srcs/sources_1/bd/design_1/design_1.bd> 
+create_bd_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 7265.207 ; gain = 27.805 ; free physical = 23049 ; free virtual = 29962
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" apply_board_preset "1" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0]
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+set_property  ip_repo_paths  /home/anubhav/xilinx_projects/ip_repo [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/anubhav/xilinx_projects/ip_repo'.
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+set_property  ip_repo_paths  {} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+set_property  ip_repo_paths  /home/anubhav/xilinx_projects/ip_repo_promethean [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/anubhav/xilinx_projects/ip_repo_promethean'.
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:fcc_combined:1.0 fcc_combined_0
+endgroup
+delete_bd_objs [get_bd_cells fcc_combined_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:InputLayer:1.0 InputLayer_0
+endgroup
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.051 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.006 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.051 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.006 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+startgroup
+set_property -dict [list CONFIG.PCW_USE_S_AXI_HP0 {1}] [get_bd_cells processing_system7_0]
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.051 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.006 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "New Blk_Mem_Gen" }  [get_bd_intf_pins InputLayer_0/bram_dx_PORTA]
+apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "New Blk_Mem_Gen" }  [get_bd_intf_pins InputLayer_0/bram_x_PORTA]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/InputLayer_0/s_axi_control} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins InputLayer_0/s_axi_control]
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+Slave segment '/InputLayer_0/s_axi_control/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x4000_0000 [ 64K ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/InputLayer_0/m_axi_gmem} Slave {/processing_system7_0/S_AXI_HP0} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins processing_system7_0/S_AXI_HP0]
+Slave segment '/processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM' is being assigned into address space '/InputLayer_0/Data_m_axi_gmem' at <0x0000_0000 [ 512M ]>.
+endgroup
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+set_property -dict [list CONFIG.Memory_Type {True_Dual_Port_RAM} CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Assume_Synchronous_Clk {true} CONFIG.Write_Width_A {16} CONFIG.Write_Depth_A {512} CONFIG.Read_Width_A {16} CONFIG.Write_Width_B {16} CONFIG.Read_Width_B {16} CONFIG.Enable_B {Use_ENB_Pin} CONFIG.Register_PortA_Output_of_Memory_Primitives {true} CONFIG.Register_PortB_Output_of_Memory_Primitives {true} CONFIG.Use_RSTA_Pin {false} CONFIG.Use_RSTB_Pin {false} CONFIG.Port_B_Clock {100} CONFIG.Port_B_Write_Rate {50} CONFIG.Port_B_Enable_Rate {100} CONFIG.use_bram_block {Stand_Alone} CONFIG.EN_SAFETY_CKT {false}] [get_bd_cells InputLayer_0_bram_0]
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:conv_combined:1.0 conv_combined_0
+endgroup
+set_property name x [get_bd_cells InputLayer_0_bram_0]
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+set_property -dict [list CONFIG.Memory_Type {True_Dual_Port_RAM} CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Assume_Synchronous_Clk {true} CONFIG.Write_Width_A {16} CONFIG.Write_Depth_A {512} CONFIG.Read_Width_A {16} CONFIG.Write_Width_B {16} CONFIG.Read_Width_B {16} CONFIG.Enable_B {Use_ENB_Pin} CONFIG.Register_PortA_Output_of_Memory_Primitives {true} CONFIG.Register_PortB_Output_of_Memory_Primitives {true} CONFIG.Use_RSTA_Pin {false} CONFIG.Port_B_Clock {100} CONFIG.Port_B_Write_Rate {50} CONFIG.Port_B_Enable_Rate {100} CONFIG.use_bram_block {Stand_Alone} CONFIG.EN_SAFETY_CKT {false}] [get_bd_cells InputLayer_0_bram]
+endgroup
+set_property name dx [get_bd_cells InputLayer_0_bram]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "/dx" }  [get_bd_intf_pins conv_combined_0/dx_PORTA]
+apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "New Blk_Mem_Gen" }  [get_bd_intf_pins conv_combined_0/dy_PORTA]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/conv_combined_0/m_axi_gmem} Slave {/processing_system7_0/S_AXI_HP0} ddr_seg {Auto} intc_ip {/axi_mem_intercon} master_apm {0}}  [get_bd_intf_pins conv_combined_0/m_axi_gmem]
+Slave segment '/processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM' is being assigned into address space '/conv_combined_0/Data_m_axi_gmem' at <0x0000_0000 [ 512M ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/conv_combined_0/m_axi_gmem2} Slave {/processing_system7_0/S_AXI_HP0} ddr_seg {Auto} intc_ip {/axi_mem_intercon} master_apm {0}}  [get_bd_intf_pins conv_combined_0/m_axi_gmem2]
+Slave segment '/processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM' is being assigned into address space '/conv_combined_0/Data_m_axi_gmem2' at <0x0000_0000 [ 512M ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/conv_combined_0/s_axi_control} ddr_seg {Auto} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins conv_combined_0/s_axi_control]
+Slave segment '/conv_combined_0/s_axi_control/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x4001_0000 [ 64K ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "/x" }  [get_bd_intf_pins conv_combined_0/x_PORTA]
+apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "New Blk_Mem_Gen" }  [get_bd_intf_pins conv_combined_0/y_PORTA]
+endgroup
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+set_property -dict [list CONFIG.Memory_Type {True_Dual_Port_RAM} CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Assume_Synchronous_Clk {true} CONFIG.Write_Width_A {16} CONFIG.Write_Depth_A {512} CONFIG.Read_Width_A {16} CONFIG.Write_Width_B {16} CONFIG.Read_Width_B {16} CONFIG.Enable_B {Use_ENB_Pin} CONFIG.Register_PortA_Output_of_Memory_Primitives {true} CONFIG.Register_PortB_Output_of_Memory_Primitives {true} CONFIG.Use_RSTA_Pin {false} CONFIG.Port_B_Clock {100} CONFIG.Port_B_Write_Rate {50} CONFIG.Port_B_Enable_Rate {100} CONFIG.use_bram_block {Stand_Alone} CONFIG.EN_SAFETY_CKT {false}] [get_bd_cells conv_combined_0_bram]
+endgroup
+set_property name conv1_y [get_bd_cells conv_combined_0_bram]
+set_property name conv1_dy [get_bd_cells conv_combined_0_bram_0]
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+set_property -dict [list CONFIG.Memory_Type {True_Dual_Port_RAM} CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Assume_Synchronous_Clk {true} CONFIG.Write_Width_A {16} CONFIG.Write_Depth_A {512} CONFIG.Read_Width_A {16} CONFIG.Write_Width_B {16} CONFIG.Read_Width_B {16} CONFIG.Enable_B {Use_ENB_Pin} CONFIG.Register_PortA_Output_of_Memory_Primitives {true} CONFIG.Register_PortB_Output_of_Memory_Primitives {true} CONFIG.Use_RSTA_Pin {false} CONFIG.Port_B_Clock {100} CONFIG.Port_B_Write_Rate {50} CONFIG.Port_B_Enable_Rate {100} CONFIG.use_bram_block {Stand_Alone} CONFIG.EN_SAFETY_CKT {false}] [get_bd_cells conv1_dy]
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:relu_combined:1.0 relu_combined_0
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "/conv1_dy" }  [get_bd_intf_pins relu_combined_0/dx_PORTA]
+apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "New Blk_Mem_Gen" }  [get_bd_intf_pins relu_combined_0/dy_PORTA]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/relu_combined_0/m_axi_gmem} Slave {/processing_system7_0/S_AXI_HP0} ddr_seg {Auto} intc_ip {/axi_mem_intercon} master_apm {0}}  [get_bd_intf_pins relu_combined_0/m_axi_gmem]
+Slave segment '/processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM' is being assigned into address space '/relu_combined_0/Data_m_axi_gmem' at <0x0000_0000 [ 512M ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/relu_combined_0/s_axi_control} ddr_seg {Auto} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins relu_combined_0/s_axi_control]
+Slave segment '/relu_combined_0/s_axi_control/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x4002_0000 [ 64K ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "/conv1_y" }  [get_bd_intf_pins relu_combined_0/x_PORTA]
+apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "New Blk_Mem_Gen" }  [get_bd_intf_pins relu_combined_0/y_PORTA]
+endgroup
+set_property name relu1_dy [get_bd_cells relu_combined_0_bram]
+set_property name relu1_y [get_bd_cells relu_combined_0_bram_0]
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+set_property -dict [list CONFIG.Memory_Type {True_Dual_Port_RAM} CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Assume_Synchronous_Clk {true} CONFIG.Write_Width_A {16} CONFIG.Write_Depth_A {512} CONFIG.Read_Width_A {16} CONFIG.Write_Width_B {16} CONFIG.Read_Width_B {16} CONFIG.Enable_B {Use_ENB_Pin} CONFIG.Register_PortA_Output_of_Memory_Primitives {true} CONFIG.Register_PortB_Output_of_Memory_Primitives {true} CONFIG.Use_RSTA_Pin {false} CONFIG.Port_B_Clock {100} CONFIG.Port_B_Write_Rate {50} CONFIG.Port_B_Enable_Rate {100} CONFIG.use_bram_block {Stand_Alone} CONFIG.EN_SAFETY_CKT {false}] [get_bd_cells relu1_dy]
+endgroup
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+set_property -dict [list CONFIG.Memory_Type {True_Dual_Port_RAM} CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Assume_Synchronous_Clk {true} CONFIG.Write_Width_A {16} CONFIG.Write_Depth_A {512} CONFIG.Read_Width_A {16} CONFIG.Write_Width_B {16} CONFIG.Read_Width_B {16} CONFIG.Enable_B {Use_ENB_Pin} CONFIG.Register_PortA_Output_of_Memory_Primitives {true} CONFIG.Register_PortB_Output_of_Memory_Primitives {true} CONFIG.Use_RSTA_Pin {false} CONFIG.Port_B_Clock {100} CONFIG.Port_B_Write_Rate {50} CONFIG.Port_B_Enable_Rate {100} CONFIG.use_bram_block {Stand_Alone} CONFIG.EN_SAFETY_CKT {false}] [get_bd_cells relu1_y]
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:conv_combined:1.0 conv_combined_1
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "/relu1_dy" }  [get_bd_intf_pins conv_combined_1/dx_PORTA]
+apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "New Blk_Mem_Gen" }  [get_bd_intf_pins conv_combined_1/dy_PORTA]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/conv_combined_1/m_axi_gmem} Slave {/processing_system7_0/S_AXI_HP0} ddr_seg {Auto} intc_ip {/axi_mem_intercon} master_apm {0}}  [get_bd_intf_pins conv_combined_1/m_axi_gmem]
+Slave segment '/processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM' is being assigned into address space '/conv_combined_1/Data_m_axi_gmem' at <0x0000_0000 [ 512M ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/conv_combined_1/m_axi_gmem2} Slave {/processing_system7_0/S_AXI_HP0} ddr_seg {Auto} intc_ip {/axi_mem_intercon} master_apm {0}}  [get_bd_intf_pins conv_combined_1/m_axi_gmem2]
+Slave segment '/processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM' is being assigned into address space '/conv_combined_1/Data_m_axi_gmem2' at <0x0000_0000 [ 512M ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/conv_combined_1/s_axi_control} ddr_seg {Auto} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins conv_combined_1/s_axi_control]
+Slave segment '/conv_combined_1/s_axi_control/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x4003_0000 [ 64K ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "/relu1_y" }  [get_bd_intf_pins conv_combined_1/x_PORTA]
+apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "New Blk_Mem_Gen" }  [get_bd_intf_pins conv_combined_1/y_PORTA]
+endgroup
+set_property name conv2_y [get_bd_cells conv_combined_1_bram_0]
+set_property name conv2_dy [get_bd_cells conv_combined_1_bram]
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+set_property -dict [list CONFIG.Memory_Type {True_Dual_Port_RAM} CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Assume_Synchronous_Clk {true} CONFIG.Write_Width_A {16} CONFIG.Write_Depth_A {512} CONFIG.Read_Width_A {16} CONFIG.Write_Width_B {16} CONFIG.Read_Width_B {16} CONFIG.Enable_B {Use_ENB_Pin} CONFIG.Register_PortA_Output_of_Memory_Primitives {true} CONFIG.Register_PortB_Output_of_Memory_Primitives {true} CONFIG.Use_RSTA_Pin {false} CONFIG.Use_RSTB_Pin {false} CONFIG.Port_B_Clock {100} CONFIG.Port_B_Write_Rate {50} CONFIG.Port_B_Enable_Rate {100} CONFIG.use_bram_block {Stand_Alone} CONFIG.EN_SAFETY_CKT {false}] [get_bd_cells conv2_y]
+endgroup
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+set_property -dict [list CONFIG.Memory_Type {True_Dual_Port_RAM} CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Assume_Synchronous_Clk {true} CONFIG.Write_Width_A {16} CONFIG.Write_Depth_A {512} CONFIG.Read_Width_A {16} CONFIG.Write_Width_B {16} CONFIG.Read_Width_B {16} CONFIG.Enable_B {Use_ENB_Pin} CONFIG.Register_PortA_Output_of_Memory_Primitives {true} CONFIG.Register_PortB_Output_of_Memory_Primitives {true} CONFIG.Use_RSTA_Pin {false} CONFIG.Port_B_Clock {100} CONFIG.Port_B_Write_Rate {50} CONFIG.Port_B_Enable_Rate {100} CONFIG.use_bram_block {Stand_Alone} CONFIG.EN_SAFETY_CKT {false}] [get_bd_cells conv2_dy]
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:relu_combined:1.0 relu_combined_1
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "/conv2_dy" }  [get_bd_intf_pins relu_combined_1/dx_PORTA]
+apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "New Blk_Mem_Gen" }  [get_bd_intf_pins relu_combined_1/dy_PORTA]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/relu_combined_1/m_axi_gmem} Slave {/processing_system7_0/S_AXI_HP0} ddr_seg {Auto} intc_ip {/axi_mem_intercon} master_apm {0}}  [get_bd_intf_pins relu_combined_1/m_axi_gmem]
+Slave segment '/processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM' is being assigned into address space '/relu_combined_1/Data_m_axi_gmem' at <0x0000_0000 [ 512M ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/relu_combined_1/s_axi_control} ddr_seg {Auto} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins relu_combined_1/s_axi_control]
+Slave segment '/relu_combined_1/s_axi_control/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x4004_0000 [ 64K ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "/conv2_y" }  [get_bd_intf_pins relu_combined_1/x_PORTA]
+apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "New Blk_Mem_Gen" }  [get_bd_intf_pins relu_combined_1/y_PORTA]
+endgroup
+set_property name relu2_y [get_bd_cells relu_combined_1_bram_0]
+set_property name relu2_dy [get_bd_intf_nets relu_combined_1_dy_PORTA]
+relu2_dy
+set_property name relu2_dy [get_bd_cells relu_combined_1_bram]
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+set_property -dict [list CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Assume_Synchronous_Clk {true} CONFIG.Write_Width_A {16} CONFIG.Read_Width_A {16} CONFIG.Write_Width_B {16} CONFIG.Read_Width_B {16} CONFIG.Register_PortA_Output_of_Memory_Primitives {true} CONFIG.Register_PortB_Output_of_Memory_Primitives {true} CONFIG.Use_RSTA_Pin {false} CONFIG.Use_RSTB_Pin {false} CONFIG.use_bram_block {Stand_Alone} CONFIG.EN_SAFETY_CKT {false}] [get_bd_cells relu1_dy]
+endgroup
+regenerate_bd_layout
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:fcc_combined:1.0 fcc_combined_0
+endgroup
+set_property location {1 313 335} [get_bd_cells fcc_combined_0]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "/relu2_dy" }  [get_bd_intf_pins fcc_combined_0/dx_PORTA]
+apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "New Blk_Mem_Gen" }  [get_bd_intf_pins fcc_combined_0/dy_PORTA]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/fcc_combined_0/m_axi_gmem} Slave {/processing_system7_0/S_AXI_HP0} ddr_seg {Auto} intc_ip {/axi_mem_intercon} master_apm {0}}  [get_bd_intf_pins fcc_combined_0/m_axi_gmem]
+Slave segment '/processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM' is being assigned into address space '/fcc_combined_0/Data_m_axi_gmem' at <0x0000_0000 [ 512M ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/fcc_combined_0/m_axi_gmem2} Slave {/processing_system7_0/S_AXI_HP0} ddr_seg {Auto} intc_ip {/axi_mem_intercon} master_apm {0}}  [get_bd_intf_pins fcc_combined_0/m_axi_gmem2]
+Slave segment '/processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM' is being assigned into address space '/fcc_combined_0/Data_m_axi_gmem2' at <0x0000_0000 [ 512M ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/fcc_combined_0/s_axi_control} ddr_seg {Auto} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins fcc_combined_0/s_axi_control]
+Slave segment '/fcc_combined_0/s_axi_control/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x4005_0000 [ 64K ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "/relu2_y" }  [get_bd_intf_pins fcc_combined_0/x_PORTA]
+apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "New Blk_Mem_Gen" }  [get_bd_intf_pins fcc_combined_0/y_PORTA]
+endgroup
+set_property name fcc1_y [get_bd_cells fcc_combined_0_bram_0]
+set_property name fcc1_dy [get_bd_cells fcc_combined_0_bram]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:relu_combined:1.0 relu_combined_2
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "/fcc1_dy" }  [get_bd_intf_pins relu_combined_2/dx_PORTA]
+apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "New Blk_Mem_Gen" }  [get_bd_intf_pins relu_combined_2/dy_PORTA]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/relu_combined_2/m_axi_gmem} Slave {/processing_system7_0/S_AXI_HP0} ddr_seg {Auto} intc_ip {/axi_mem_intercon} master_apm {0}}  [get_bd_intf_pins relu_combined_2/m_axi_gmem]
+Slave segment '/processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM' is being assigned into address space '/relu_combined_2/Data_m_axi_gmem' at <0x0000_0000 [ 512M ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/relu_combined_2/s_axi_control} ddr_seg {Auto} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins relu_combined_2/s_axi_control]
+Slave segment '/relu_combined_2/s_axi_control/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x4006_0000 [ 64K ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "/fcc1_y" }  [get_bd_intf_pins relu_combined_2/x_PORTA]
+apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "New Blk_Mem_Gen" }  [get_bd_intf_pins relu_combined_2/y_PORTA]
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:fcc_combined:1.0 fcc_combined_1
+endgroup
+set_property name relu3_y [get_bd_cells relu_combined_2_bram_0]
+set_property name relu3_dy [get_bd_cells relu_combined_2_bram]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "/relu3_dy" }  [get_bd_intf_pins fcc_combined_1/dx_PORTA]
+apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "New Blk_Mem_Gen" }  [get_bd_intf_pins fcc_combined_1/dy_PORTA]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/fcc_combined_1/m_axi_gmem} Slave {/processing_system7_0/S_AXI_HP0} ddr_seg {Auto} intc_ip {/axi_mem_intercon} master_apm {0}}  [get_bd_intf_pins fcc_combined_1/m_axi_gmem]
+Slave segment '/processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM' is being assigned into address space '/fcc_combined_1/Data_m_axi_gmem' at <0x0000_0000 [ 512M ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/fcc_combined_1/m_axi_gmem2} Slave {/processing_system7_0/S_AXI_HP0} ddr_seg {Auto} intc_ip {/axi_mem_intercon} master_apm {0}}  [get_bd_intf_pins fcc_combined_1/m_axi_gmem2]
+Slave segment '/processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM' is being assigned into address space '/fcc_combined_1/Data_m_axi_gmem2' at <0x0000_0000 [ 512M ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/fcc_combined_1/s_axi_control} ddr_seg {Auto} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins fcc_combined_1/s_axi_control]
+Slave segment '/fcc_combined_1/s_axi_control/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x4007_0000 [ 64K ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "/relu3_y" }  [get_bd_intf_pins fcc_combined_1/x_PORTA]
+apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "New Blk_Mem_Gen" }  [get_bd_intf_pins fcc_combined_1/y_PORTA]
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:relu_combined:1.0 relu_combined_3
+endgroup
+set_property name conv1 [get_bd_cells conv_combined_0]
+set_property name conv2 [get_bd_cells conv_combined_1]
+set_property name relu1 [get_bd_cells relu_combined_0]
+set_property name relu2 [get_bd_cells relu_combined_1]
+set_property name relu3 [get_bd_cells relu_combined_2]
+set_property name relu4 [get_bd_cells relu_combined_3]
+set_property name fcc1 [get_bd_cells fcc_combined_0]
+set_property name fcc2 [get_bd_cells fcc_combined_1]
+set_property name fcc2_dy [get_bd_cells fcc_combined_1_bram]
+set_property name fcc2_y [get_bd_cells fcc_combined_1_bram_0]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "/fcc2_dy" }  [get_bd_intf_pins relu4/dx_PORTA]
+apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "New Blk_Mem_Gen" }  [get_bd_intf_pins relu4/dy_PORTA]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/relu4/m_axi_gmem} Slave {/processing_system7_0/S_AXI_HP0} ddr_seg {Auto} intc_ip {/axi_mem_intercon} master_apm {0}}  [get_bd_intf_pins relu4/m_axi_gmem]
+Slave segment '/processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM' is being assigned into address space '/relu4/Data_m_axi_gmem' at <0x0000_0000 [ 512M ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/relu4/s_axi_control} ddr_seg {Auto} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins relu4/s_axi_control]
+Slave segment '/relu4/s_axi_control/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x4008_0000 [ 64K ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "/fcc2_y" }  [get_bd_intf_pins relu4/x_PORTA]
+apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "New Blk_Mem_Gen" }  [get_bd_intf_pins relu4/y_PORTA]
+endgroup
+set_property name relu4_y [get_bd_cells relu4_bram_0]
+set_property name relu4_dy [get_bd_cells relu4_bram]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:fcc_combined:1.0 fcc_combined_0
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "/relu4_dy" }  [get_bd_intf_pins fcc_combined_0/dx_PORTA]
+apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "New Blk_Mem_Gen" }  [get_bd_intf_pins fcc_combined_0/dy_PORTA]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/fcc_combined_0/m_axi_gmem} Slave {/processing_system7_0/S_AXI_HP0} ddr_seg {Auto} intc_ip {/axi_mem_intercon} master_apm {0}}  [get_bd_intf_pins fcc_combined_0/m_axi_gmem]
+Slave segment '/processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM' is being assigned into address space '/fcc_combined_0/Data_m_axi_gmem' at <0x0000_0000 [ 512M ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/fcc_combined_0/m_axi_gmem2} Slave {/processing_system7_0/S_AXI_HP0} ddr_seg {Auto} intc_ip {/axi_mem_intercon} master_apm {0}}  [get_bd_intf_pins fcc_combined_0/m_axi_gmem2]
+Slave segment '/processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM' is being assigned into address space '/fcc_combined_0/Data_m_axi_gmem2' at <0x0000_0000 [ 512M ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/fcc_combined_0/s_axi_control} ddr_seg {Auto} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins fcc_combined_0/s_axi_control]
+Slave segment '/fcc_combined_0/s_axi_control/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x4009_0000 [ 64K ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "/relu4_y" }  [get_bd_intf_pins fcc_combined_0/x_PORTA]
+apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "New Blk_Mem_Gen" }  [get_bd_intf_pins fcc_combined_0/y_PORTA]
+endgroup
+set_property name fcc3 [get_bd_cells fcc_combined_0]
+set_property name fcc3_dy [get_bd_cells fcc_combined_0_bram]
+set_property name fcc3_y [get_bd_intf_nets fcc_combined_0_y_PORTA1]
+fcc3_y
+regenerate_bd_layout
+set_property name fcc3_y [get_bd_cells fcc_combined_0_bram_0]
+set_property location {3 1007 219} [get_bd_cells conv1]
+set_property location {3 950 1240} [get_bd_cells relu2]
+set_property location {3 931 973} [get_bd_cells conv2]
+set_property location {3 986 441} [get_bd_cells relu1]
+set_property location {3 972 854} [get_bd_cells conv2]
+set_property location {3 972 1048} [get_bd_cells relu2]
+set_property location {3 1030 2002} [get_bd_cells fcc2]
+set_property location {3 981 2678} [get_bd_cells InputLayer_0]
+set_property location {3 1008 2227} [get_bd_cells relu4]
+set_property location {3 949 3012} [get_bd_cells InputLayer_0]
+set_property location {3 972 2588} [get_bd_cells fcc3]
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/anubhav/xilinx_projects/ip_repo_promethean'.
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+set_property  ip_repo_paths  {} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+set_property  ip_repo_paths  /home/anubhav/xilinx_projects/ip_repo_promethean [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/anubhav/xilinx_projects/ip_repo_promethean'.
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/anubhav/xilinx_projects/ip_repo_promethean'.
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:loss_derivative:1.0 loss_derivative_0
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "/fcc3_dy" }  [get_bd_intf_pins loss_derivative_0/dx_PORTA]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/loss_derivative_0/m_axi_gmem} Slave {/processing_system7_0/S_AXI_HP0} ddr_seg {Auto} intc_ip {/axi_mem_intercon} master_apm {0}}  [get_bd_intf_pins loss_derivative_0/m_axi_gmem]
+Slave segment '/processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM' is being assigned into address space '/loss_derivative_0/Data_m_axi_gmem' at <0x0000_0000 [ 512M ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/loss_derivative_0/s_axi_control} ddr_seg {Auto} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins loss_derivative_0/s_axi_control]
+Slave segment '/loss_derivative_0/s_axi_control/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x400A_0000 [ 64K ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "/fcc3_y" }  [get_bd_intf_pins loss_derivative_0/x_PORTA]
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:update_weights:1.0 update_weights_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/update_weights_0/s_axi_control} ddr_seg {Auto} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins update_weights_0/s_axi_control]
+Slave segment '/update_weights_0/s_axi_control/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x400B_0000 [ 64K ]>.
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.051 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.006 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: /home/anubhav/xilinx_projects/ip_repo_promethean/fcc_combined/solution1/impl/ip/component.xml. It will be created.
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/anubhav/xilinx_projects/ip_repo_promethean'.
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+report_ip_status -name ip_status
+upgrade_ip [get_ips  {design_1_fcc_combined_0_1 design_1_fcc_combined_1_0 design_1_fcc_combined_0_2}] -log ip_upgrade.log
+Upgrading '/home/anubhav/xilinx_projects/promethean/promethean.srcs/sources_1/bd/design_1/design_1.bd'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM2_ENABLE_ID_PORTS' is no longer present on the upgraded IP 'design_1_fcc_combined_0_1', and cannot be set to 'false'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM2_ID_WIDTH' is no longer present on the upgraded IP 'design_1_fcc_combined_0_1', and cannot be set to '1'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM2_DATA_WIDTH' is no longer present on the upgraded IP 'design_1_fcc_combined_0_1', and cannot be set to '32'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM2_ENABLE_USER_PORTS' is no longer present on the upgraded IP 'design_1_fcc_combined_0_1', and cannot be set to 'false'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM2_AWUSER_WIDTH' is no longer present on the upgraded IP 'design_1_fcc_combined_0_1', and cannot be set to '1'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM2_WUSER_WIDTH' is no longer present on the upgraded IP 'design_1_fcc_combined_0_1', and cannot be set to '1'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM2_BUSER_WIDTH' is no longer present on the upgraded IP 'design_1_fcc_combined_0_1', and cannot be set to '1'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM2_ARUSER_WIDTH' is no longer present on the upgraded IP 'design_1_fcc_combined_0_1', and cannot be set to '1'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM2_RUSER_WIDTH' is no longer present on the upgraded IP 'design_1_fcc_combined_0_1', and cannot be set to '1'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM2_USER_VALUE' is no longer present on the upgraded IP 'design_1_fcc_combined_0_1', and cannot be set to '0x00000000'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM2_PROT_VALUE' is no longer present on the upgraded IP 'design_1_fcc_combined_0_1', and cannot be set to '"000"'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM2_CACHE_VALUE' is no longer present on the upgraded IP 'design_1_fcc_combined_0_1', and cannot be set to '"0011"'
+INFO: [IP_Flow 19-3422] Upgraded design_1_fcc_combined_0_1 (Fcc_combined 1.0) from revision 2112535100 to revision 2112536354
+WARNING: [IP_Flow 19-4699] Upgrade has removed interface 'm_axi_gmem2'
+WARNING: [IP_Flow 19-3670] Detected external interface differences while upgrading 'design_1_fcc_combined_0_1'.
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_ARADDR'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_ARBURST'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_ARCACHE'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_ARLEN'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_ARLOCK'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_ARPROT'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_ARQOS'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_ARREADY'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_ARREGION'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_ARSIZE'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_ARVALID'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_AWADDR'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_AWBURST'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_AWCACHE'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_AWLEN'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_AWLOCK'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_AWPROT'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_AWQOS'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_AWREADY'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_AWREGION'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_AWSIZE'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_AWVALID'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_BREADY'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_BRESP'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_BVALID'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_RDATA'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_RLAST'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_RREADY'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_RRESP'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_RVALID'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_WDATA'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_WLAST'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_WREADY'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_WSTRB'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_WVALID'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'design_1_fcc_combined_0_1'. These changes may impact your design.
+WARNING: [IP_Flow 19-7054] Upgrade has removed address space 'Data_m_axi_gmem2'
+WARNING: [IP_Flow 19-5891] Detected addressing differences while upgrading 'design_1_fcc_combined_0_1'. These changes may impact your design.
+CRITICAL WARNING: [BD 41-1165] The interface pin 'm_axi_gmem2' with bus definition 'xilinx.com:interface:aximm:1.0' is not found on the upgraded version of the cell '/fcc1'. Its connection to the interface net 'fcc_combined_0_m_axi_gmem2' has been removed. 
+CRITICAL WARNING: [BD 41-1172] Cannot restore assignment <0x0000_0000 [ 512M ]> from slave segment '/processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM' to address space '/fcc1/Data_m_axi_gmem2'. This address space no longer exists.
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM2_ENABLE_ID_PORTS' is no longer present on the upgraded IP 'design_1_fcc_combined_0_2', and cannot be set to 'false'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM2_ID_WIDTH' is no longer present on the upgraded IP 'design_1_fcc_combined_0_2', and cannot be set to '1'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM2_DATA_WIDTH' is no longer present on the upgraded IP 'design_1_fcc_combined_0_2', and cannot be set to '32'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM2_ENABLE_USER_PORTS' is no longer present on the upgraded IP 'design_1_fcc_combined_0_2', and cannot be set to 'false'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM2_AWUSER_WIDTH' is no longer present on the upgraded IP 'design_1_fcc_combined_0_2', and cannot be set to '1'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM2_WUSER_WIDTH' is no longer present on the upgraded IP 'design_1_fcc_combined_0_2', and cannot be set to '1'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM2_BUSER_WIDTH' is no longer present on the upgraded IP 'design_1_fcc_combined_0_2', and cannot be set to '1'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM2_ARUSER_WIDTH' is no longer present on the upgraded IP 'design_1_fcc_combined_0_2', and cannot be set to '1'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM2_RUSER_WIDTH' is no longer present on the upgraded IP 'design_1_fcc_combined_0_2', and cannot be set to '1'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM2_USER_VALUE' is no longer present on the upgraded IP 'design_1_fcc_combined_0_2', and cannot be set to '0x00000000'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM2_PROT_VALUE' is no longer present on the upgraded IP 'design_1_fcc_combined_0_2', and cannot be set to '"000"'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM2_CACHE_VALUE' is no longer present on the upgraded IP 'design_1_fcc_combined_0_2', and cannot be set to '"0011"'
+INFO: [IP_Flow 19-3422] Upgraded design_1_fcc_combined_0_2 (Fcc_combined 1.0) from revision 2112535100 to revision 2112536354
+WARNING: [IP_Flow 19-4699] Upgrade has removed interface 'm_axi_gmem2'
+WARNING: [IP_Flow 19-3670] Detected external interface differences while upgrading 'design_1_fcc_combined_0_2'.
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_ARADDR'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_ARBURST'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_ARCACHE'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_ARLEN'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_ARLOCK'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_ARPROT'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_ARQOS'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_ARREADY'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_ARREGION'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_ARSIZE'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_ARVALID'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_AWADDR'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_AWBURST'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_AWCACHE'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_AWLEN'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_AWLOCK'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_AWPROT'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_AWQOS'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_AWREADY'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_AWREGION'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_AWSIZE'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_AWVALID'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_BREADY'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_BRESP'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_BVALID'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_RDATA'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_RLAST'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_RREADY'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_RRESP'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_RVALID'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_WDATA'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_WLAST'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_WREADY'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_WSTRB'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_WVALID'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'design_1_fcc_combined_0_2'. These changes may impact your design.
+WARNING: [IP_Flow 19-7054] Upgrade has removed address space 'Data_m_axi_gmem2'
+WARNING: [IP_Flow 19-5891] Detected addressing differences while upgrading 'design_1_fcc_combined_0_2'. These changes may impact your design.
+CRITICAL WARNING: [BD 41-1165] The interface pin 'm_axi_gmem2' with bus definition 'xilinx.com:interface:aximm:1.0' is not found on the upgraded version of the cell '/fcc3'. Its connection to the interface net 'fcc_combined_0_m_axi_gmem3' has been removed. 
+CRITICAL WARNING: [BD 41-1172] Cannot restore assignment <0x0000_0000 [ 512M ]> from slave segment '/processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM' to address space '/fcc3/Data_m_axi_gmem2'. This address space no longer exists.
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM2_ENABLE_ID_PORTS' is no longer present on the upgraded IP 'design_1_fcc_combined_1_0', and cannot be set to 'false'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM2_ID_WIDTH' is no longer present on the upgraded IP 'design_1_fcc_combined_1_0', and cannot be set to '1'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM2_DATA_WIDTH' is no longer present on the upgraded IP 'design_1_fcc_combined_1_0', and cannot be set to '32'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM2_ENABLE_USER_PORTS' is no longer present on the upgraded IP 'design_1_fcc_combined_1_0', and cannot be set to 'false'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM2_AWUSER_WIDTH' is no longer present on the upgraded IP 'design_1_fcc_combined_1_0', and cannot be set to '1'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM2_WUSER_WIDTH' is no longer present on the upgraded IP 'design_1_fcc_combined_1_0', and cannot be set to '1'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM2_BUSER_WIDTH' is no longer present on the upgraded IP 'design_1_fcc_combined_1_0', and cannot be set to '1'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM2_ARUSER_WIDTH' is no longer present on the upgraded IP 'design_1_fcc_combined_1_0', and cannot be set to '1'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM2_RUSER_WIDTH' is no longer present on the upgraded IP 'design_1_fcc_combined_1_0', and cannot be set to '1'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM2_USER_VALUE' is no longer present on the upgraded IP 'design_1_fcc_combined_1_0', and cannot be set to '0x00000000'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM2_PROT_VALUE' is no longer present on the upgraded IP 'design_1_fcc_combined_1_0', and cannot be set to '"000"'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM2_CACHE_VALUE' is no longer present on the upgraded IP 'design_1_fcc_combined_1_0', and cannot be set to '"0011"'
+INFO: [IP_Flow 19-3422] Upgraded design_1_fcc_combined_1_0 (Fcc_combined 1.0) from revision 2112535100 to revision 2112536354
+WARNING: [IP_Flow 19-4699] Upgrade has removed interface 'm_axi_gmem2'
+WARNING: [IP_Flow 19-3670] Detected external interface differences while upgrading 'design_1_fcc_combined_1_0'.
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_ARADDR'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_ARBURST'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_ARCACHE'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_ARLEN'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_ARLOCK'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_ARPROT'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_ARQOS'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_ARREADY'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_ARREGION'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_ARSIZE'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_ARVALID'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_AWADDR'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_AWBURST'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_AWCACHE'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_AWLEN'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_AWLOCK'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_AWPROT'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_AWQOS'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_AWREADY'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_AWREGION'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_AWSIZE'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_AWVALID'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_BREADY'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_BRESP'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_BVALID'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_RDATA'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_RLAST'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_RREADY'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_RRESP'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_RVALID'
+INFO: [Common 17-14] Message 'IP_Flow 19-4700' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'design_1_fcc_combined_1_0'. These changes may impact your design.
+WARNING: [IP_Flow 19-7054] Upgrade has removed address space 'Data_m_axi_gmem2'
+WARNING: [IP_Flow 19-5891] Detected addressing differences while upgrading 'design_1_fcc_combined_1_0'. These changes may impact your design.
+CRITICAL WARNING: [BD 41-1165] The interface pin 'm_axi_gmem2' with bus definition 'xilinx.com:interface:aximm:1.0' is not found on the upgraded version of the cell '/fcc2'. Its connection to the interface net 'fcc_combined_1_m_axi_gmem2' has been removed. 
+CRITICAL WARNING: [BD 41-1172] Cannot restore assignment <0x0000_0000 [ 512M ]> from slave segment '/processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM' to address space '/fcc2/Data_m_axi_gmem2'. This address space no longer exists.
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'design_1_fcc_combined_0_1' has identified issues that may require user intervention. Please review the upgrade log '/home/anubhav/xilinx_projects/promethean/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'design_1_fcc_combined_0_2' has identified issues that may require user intervention. Please review the upgrade log '/home/anubhav/xilinx_projects/promethean/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'design_1_fcc_combined_1_0' has identified issues that may require user intervention. Please review the upgrade log '/home/anubhav/xilinx_projects/promethean/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+Wrote  : </home/anubhav/xilinx_projects/promethean/promethean.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : </home/anubhav/xilinx_projects/promethean/promethean.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to '/home/anubhav/xilinx_projects/promethean/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips {design_1_fcc_combined_0_1 design_1_fcc_combined_1_0 design_1_fcc_combined_0_2}] -no_script -sync -force -quiet
+set_property synth_checkpoint_mode None [get_files  /home/anubhav/xilinx_projects/promethean/promethean.srcs/sources_1/bd/design_1/design_1.bd]
+generate_target all [get_files  /home/anubhav/xilinx_projects/promethean/promethean.srcs/sources_1/bd/design_1/design_1.bd]
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_M_AXI_GP0_FREQMHZ(10) on '/processing_system7_0' with propagated value(100). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_S_AXI_HP0_FREQMHZ(10) on '/processing_system7_0' with propagated value(100). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter WRITE_WIDTH_A(32) on '/dx' with propagated value(16). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter READ_WIDTH_A(32) on '/dx' with propagated value(16). Command ignored
+divide by zero
+ERROR: [BD 41-1273] Error running post_propagate TCL procedure: divide by zero
+    ::xilinx.com_ip_blk_mem_gen_8.4::post_propagate Line 68
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter WRITE_WIDTH_A(32) on '/x' with propagated value(16). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter READ_WIDTH_A(32) on '/x' with propagated value(16). Command ignored
+divide by zero
+ERROR: [BD 41-1273] Error running post_propagate TCL procedure: divide by zero
+    ::xilinx.com_ip_blk_mem_gen_8.4::post_propagate Line 68
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter WRITE_WIDTH_A(32) on '/conv1_y' with propagated value(16). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter READ_WIDTH_A(32) on '/conv1_y' with propagated value(16). Command ignored
+divide by zero
+ERROR: [BD 41-1273] Error running post_propagate TCL procedure: divide by zero
+    ::xilinx.com_ip_blk_mem_gen_8.4::post_propagate Line 68
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter WRITE_WIDTH_A(32) on '/conv1_dy' with propagated value(16). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter READ_WIDTH_A(32) on '/conv1_dy' with propagated value(16). Command ignored
+divide by zero
+ERROR: [BD 41-1273] Error running post_propagate TCL procedure: divide by zero
+    ::xilinx.com_ip_blk_mem_gen_8.4::post_propagate Line 68
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter WRITE_WIDTH_A(32) on '/relu1_y' with propagated value(16). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter READ_WIDTH_A(32) on '/relu1_y' with propagated value(16). Command ignored
+divide by zero
+ERROR: [BD 41-1273] Error running post_propagate TCL procedure: divide by zero
+    ::xilinx.com_ip_blk_mem_gen_8.4::post_propagate Line 68
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter WRITE_WIDTH_A(32) on '/conv2_dy' with propagated value(16). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter READ_WIDTH_A(32) on '/conv2_dy' with propagated value(16). Command ignored
+divide by zero
+ERROR: [BD 41-1273] Error running post_propagate TCL procedure: divide by zero
+    ::xilinx.com_ip_blk_mem_gen_8.4::post_propagate Line 68
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter WRITE_WIDTH_A(32) on '/conv2_y' with propagated value(16). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter READ_WIDTH_A(32) on '/conv2_y' with propagated value(16). Command ignored
+divide by zero
+ERROR: [BD 41-1273] Error running post_propagate TCL procedure: divide by zero
+    ::xilinx.com_ip_blk_mem_gen_8.4::post_propagate Line 68
+ERROR: [IP_Flow 19-3458] Validation failed for parameter 'Write Width A(Write_Width_A)' for BD Cell 'relu2_dy'. Value '16' is out of the range (32,1024)
+INFO: [IP_Flow 19-3438] Customization errors found on 'relu2_dy'. Restoring to previous valid configuration.
+ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+ERROR: [BD 41-1273] Error running post_propagate TCL procedure: ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+    ::xilinx.com_ip_blk_mem_gen_8.4::post_propagate Line 46
+ERROR: [IP_Flow 19-3458] Validation failed for parameter 'Write Width A(Write_Width_A)' for BD Cell 'relu2_y'. Value '16' is out of the range (32,1024)
+INFO: [IP_Flow 19-3438] Customization errors found on 'relu2_y'. Restoring to previous valid configuration.
+ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+ERROR: [BD 41-1273] Error running post_propagate TCL procedure: ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+    ::xilinx.com_ip_blk_mem_gen_8.4::post_propagate Line 46
+ERROR: [IP_Flow 19-3458] Validation failed for parameter 'Write Width A(Write_Width_A)' for BD Cell 'fcc1_dy'. Value '16' is out of the range (32,1024)
+INFO: [IP_Flow 19-3438] Customization errors found on 'fcc1_dy'. Restoring to previous valid configuration.
+ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+ERROR: [BD 41-1273] Error running post_propagate TCL procedure: ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+    ::xilinx.com_ip_blk_mem_gen_8.4::post_propagate Line 46
+ERROR: [IP_Flow 19-3458] Validation failed for parameter 'Write Width A(Write_Width_A)' for BD Cell 'fcc1_y'. Value '16' is out of the range (32,1024)
+INFO: [IP_Flow 19-3438] Customization errors found on 'fcc1_y'. Restoring to previous valid configuration.
+ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+ERROR: [BD 41-1273] Error running post_propagate TCL procedure: ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+    ::xilinx.com_ip_blk_mem_gen_8.4::post_propagate Line 46
+ERROR: [IP_Flow 19-3458] Validation failed for parameter 'Write Width A(Write_Width_A)' for BD Cell 'relu3_dy'. Value '16' is out of the range (32,1024)
+INFO: [IP_Flow 19-3438] Customization errors found on 'relu3_dy'. Restoring to previous valid configuration.
+ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+ERROR: [BD 41-1273] Error running post_propagate TCL procedure: ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+    ::xilinx.com_ip_blk_mem_gen_8.4::post_propagate Line 46
+ERROR: [IP_Flow 19-3458] Validation failed for parameter 'Write Width A(Write_Width_A)' for BD Cell 'relu3_y'. Value '16' is out of the range (32,1024)
+INFO: [IP_Flow 19-3438] Customization errors found on 'relu3_y'. Restoring to previous valid configuration.
+ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+ERROR: [BD 41-1273] Error running post_propagate TCL procedure: ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+    ::xilinx.com_ip_blk_mem_gen_8.4::post_propagate Line 46
+ERROR: [IP_Flow 19-3458] Validation failed for parameter 'Write Width A(Write_Width_A)' for BD Cell 'fcc2_dy'. Value '16' is out of the range (32,1024)
+INFO: [IP_Flow 19-3438] Customization errors found on 'fcc2_dy'. Restoring to previous valid configuration.
+ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+ERROR: [BD 41-1273] Error running post_propagate TCL procedure: ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+    ::xilinx.com_ip_blk_mem_gen_8.4::post_propagate Line 46
+ERROR: [IP_Flow 19-3458] Validation failed for parameter 'Write Width A(Write_Width_A)' for BD Cell 'fcc2_y'. Value '16' is out of the range (32,1024)
+INFO: [IP_Flow 19-3438] Customization errors found on 'fcc2_y'. Restoring to previous valid configuration.
+ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+ERROR: [BD 41-1273] Error running post_propagate TCL procedure: ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+    ::xilinx.com_ip_blk_mem_gen_8.4::post_propagate Line 46
+ERROR: [IP_Flow 19-3458] Validation failed for parameter 'Write Width A(Write_Width_A)' for BD Cell 'relu4_dy'. Value '16' is out of the range (32,1024)
+INFO: [IP_Flow 19-3438] Customization errors found on 'relu4_dy'. Restoring to previous valid configuration.
+ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+ERROR: [BD 41-1273] Error running post_propagate TCL procedure: ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+    ::xilinx.com_ip_blk_mem_gen_8.4::post_propagate Line 46
+ERROR: [IP_Flow 19-3458] Validation failed for parameter 'Write Width A(Write_Width_A)' for BD Cell 'relu4_y'. Value '16' is out of the range (32,1024)
+INFO: [IP_Flow 19-3438] Customization errors found on 'relu4_y'. Restoring to previous valid configuration.
+ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+ERROR: [BD 41-1273] Error running post_propagate TCL procedure: ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+    ::xilinx.com_ip_blk_mem_gen_8.4::post_propagate Line 46
+ERROR: [IP_Flow 19-3458] Validation failed for parameter 'Write Width A(Write_Width_A)' for BD Cell 'fcc3_dy'. Value '16' is out of the range (32,1024)
+INFO: [IP_Flow 19-3438] Customization errors found on 'fcc3_dy'. Restoring to previous valid configuration.
+ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+ERROR: [BD 41-1273] Error running post_propagate TCL procedure: ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+    ::xilinx.com_ip_blk_mem_gen_8.4::post_propagate Line 46
+ERROR: [IP_Flow 19-3458] Validation failed for parameter 'Write Width A(Write_Width_A)' for BD Cell 'fcc3_y'. Value '16' is out of the range (32,1024)
+INFO: [IP_Flow 19-3438] Customization errors found on 'fcc3_y'. Restoring to previous valid configuration.
+ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+ERROR: [BD 41-1273] Error running post_propagate TCL procedure: ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+    ::xilinx.com_ip_blk_mem_gen_8.4::post_propagate Line 46
+WARNING: [BD 41-2180] Resetting the memory initialization file of </conv1_y> to default.
+WARNING: [BD 41-2180] Resetting the memory initialization file of </x> to default.
+WARNING: [BD 41-2180] Resetting the memory initialization file of </fcc2_y> to default.
+WARNING: [BD 41-2180] Resetting the memory initialization file of </fcc2_dy> to default.
+WARNING: [BD 41-2180] Resetting the memory initialization file of </relu1_y> to default.
+WARNING: [BD 41-2180] Resetting the memory initialization file of </dx> to default.
+WARNING: [BD 41-2180] Resetting the memory initialization file of </fcc3_dy> to default.
+WARNING: [BD 41-2180] Resetting the memory initialization file of </relu3_dy> to default.
+WARNING: [BD 41-2180] Resetting the memory initialization file of </relu4_dy> to default.
+WARNING: [BD 41-2180] Resetting the memory initialization file of </conv2_dy> to default.
+WARNING: [BD 41-2180] Resetting the memory initialization file of </conv1_dy> to default.
+WARNING: [BD 41-2180] Resetting the memory initialization file of </conv2_y> to default.
+WARNING: [BD 41-2180] Resetting the memory initialization file of </relu4_y> to default.
+WARNING: [BD 41-2180] Resetting the memory initialization file of </fcc1_dy> to default.
+WARNING: [BD 41-2180] Resetting the memory initialization file of </relu1_dy> to default.
+WARNING: [BD 41-2180] Resetting the memory initialization file of </fcc1_y> to default.
+WARNING: [BD 41-2180] Resetting the memory initialization file of </relu2_dy> to default.
+WARNING: [BD 41-2180] Resetting the memory initialization file of </relu2_y> to default.
+WARNING: [BD 41-2180] Resetting the memory initialization file of </fcc3_y> to default.
+WARNING: [BD 41-2180] Resetting the memory initialization file of </relu3_y> to default.
+ERROR: [BD 41-241] Message from IP propagation TCL of /fcc2_y: set_property error: Validation failed for parameter 'Write Width A(Write_Width_A)' for BD Cell 'fcc2_y'. Value '16' is out of the range (32,1024)
+Customization errors found on 'fcc2_y'. Restoring to previous valid configuration.
+
+ERROR: [BD 41-241] Message from IP propagation TCL of /fcc2_dy: set_property error: Validation failed for parameter 'Write Width A(Write_Width_A)' for BD Cell 'fcc2_dy'. Value '16' is out of the range (32,1024)
+Customization errors found on 'fcc2_dy'. Restoring to previous valid configuration.
+
+ERROR: [BD 41-241] Message from IP propagation TCL of /fcc3_dy: set_property error: Validation failed for parameter 'Write Width A(Write_Width_A)' for BD Cell 'fcc3_dy'. Value '16' is out of the range (32,1024)
+Customization errors found on 'fcc3_dy'. Restoring to previous valid configuration.
+
+ERROR: [BD 41-241] Message from IP propagation TCL of /relu3_dy: set_property error: Validation failed for parameter 'Write Width A(Write_Width_A)' for BD Cell 'relu3_dy'. Value '16' is out of the range (32,1024)
+Customization errors found on 'relu3_dy'. Restoring to previous valid configuration.
+
+ERROR: [BD 41-241] Message from IP propagation TCL of /relu4_dy: set_property error: Validation failed for parameter 'Write Width A(Write_Width_A)' for BD Cell 'relu4_dy'. Value '16' is out of the range (32,1024)
+Customization errors found on 'relu4_dy'. Restoring to previous valid configuration.
+
+ERROR: [BD 41-241] Message from IP propagation TCL of /relu4_y: set_property error: Validation failed for parameter 'Write Width A(Write_Width_A)' for BD Cell 'relu4_y'. Value '16' is out of the range (32,1024)
+Customization errors found on 'relu4_y'. Restoring to previous valid configuration.
+
+ERROR: [BD 41-241] Message from IP propagation TCL of /fcc1_dy: set_property error: Validation failed for parameter 'Write Width A(Write_Width_A)' for BD Cell 'fcc1_dy'. Value '16' is out of the range (32,1024)
+Customization errors found on 'fcc1_dy'. Restoring to previous valid configuration.
+
+ERROR: [BD 41-241] Message from IP propagation TCL of /fcc1_y: set_property error: Validation failed for parameter 'Write Width A(Write_Width_A)' for BD Cell 'fcc1_y'. Value '16' is out of the range (32,1024)
+Customization errors found on 'fcc1_y'. Restoring to previous valid configuration.
+
+ERROR: [BD 41-241] Message from IP propagation TCL of /relu2_dy: set_property error: Validation failed for parameter 'Write Width A(Write_Width_A)' for BD Cell 'relu2_dy'. Value '16' is out of the range (32,1024)
+Customization errors found on 'relu2_dy'. Restoring to previous valid configuration.
+
+ERROR: [BD 41-241] Message from IP propagation TCL of /relu2_y: set_property error: Validation failed for parameter 'Write Width A(Write_Width_A)' for BD Cell 'relu2_y'. Value '16' is out of the range (32,1024)
+Customization errors found on 'relu2_y'. Restoring to previous valid configuration.
+
+ERROR: [BD 41-241] Message from IP propagation TCL of /fcc3_y: set_property error: Validation failed for parameter 'Write Width A(Write_Width_A)' for BD Cell 'fcc3_y'. Value '16' is out of the range (32,1024)
+Customization errors found on 'fcc3_y'. Restoring to previous valid configuration.
+
+ERROR: [BD 41-241] Message from IP propagation TCL of /relu3_y: set_property error: Validation failed for parameter 'Write Width A(Write_Width_A)' for BD Cell 'relu3_y'. Value '16' is out of the range (32,1024)
+Customization errors found on 'relu3_y'. Restoring to previous valid configuration.
+
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /x/BRAM_PORTB(BRAM_CTRL) and /conv1/x_PORTA(OTHER)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /dx/BRAM_PORTB(BRAM_CTRL) and /conv1/dx_PORTA(OTHER)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /conv1_y/BRAM_PORTA(BRAM_CTRL) and /conv1/dy_PORTA(OTHER)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /conv1_y/BRAM_PORTB(BRAM_CTRL) and /relu1/x_PORTA(OTHER)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /conv1_dy/BRAM_PORTB(BRAM_CTRL) and /relu1/dx_PORTA(OTHER)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /relu1_y/BRAM_PORTB(BRAM_CTRL) and /conv2/x_PORTA(OTHER)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /conv2_dy/BRAM_PORTA(BRAM_CTRL) and /conv2/dy_PORTA(OTHER)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /conv2_y/BRAM_PORTB(BRAM_CTRL) and /relu2/x_PORTA(OTHER)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /conv2_dy/BRAM_PORTB(BRAM_CTRL) and /relu2/dx_PORTA(OTHER)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /relu2_dy/BRAM_PORTA(BRAM_CTRL) and /relu2/dy_PORTA(OTHER)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /fcc1_y/BRAM_PORTB(BRAM_CTRL) and /relu3/x_PORTA(OTHER)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /fcc1_dy/BRAM_PORTB(BRAM_CTRL) and /relu3/dx_PORTA(OTHER)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /relu3_dy/BRAM_PORTA(BRAM_CTRL) and /relu3/dy_PORTA(OTHER)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /fcc2_y/BRAM_PORTB(BRAM_CTRL) and /relu4/x_PORTA(OTHER)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /fcc2_dy/BRAM_PORTB(BRAM_CTRL) and /relu4/dx_PORTA(OTHER)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /relu4_dy/BRAM_PORTA(BRAM_CTRL) and /relu4/dy_PORTA(OTHER)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /relu2_y/BRAM_PORTB(BRAM_CTRL) and /fcc1/x_PORTA(OTHER)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /relu2_dy/BRAM_PORTB(BRAM_CTRL) and /fcc1/dx_PORTA(OTHER)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /fcc1_dy/BRAM_PORTA(BRAM_CTRL) and /fcc1/dy_PORTA(OTHER)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /relu4_y/BRAM_PORTB(BRAM_CTRL) and /fcc3/x_PORTA(OTHER)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /relu4_dy/BRAM_PORTB(BRAM_CTRL) and /fcc3/dx_PORTA(OTHER)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /fcc3_dy/BRAM_PORTA(BRAM_CTRL) and /fcc3/dy_PORTA(OTHER)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /relu3_y/BRAM_PORTB(BRAM_CTRL) and /fcc2/x_PORTA(OTHER)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /relu3_dy/BRAM_PORTB(BRAM_CTRL) and /fcc2/dx_PORTA(OTHER)
+CRITICAL WARNING: [BD 41-237] Bus Interface property MASTER_TYPE does not match between /fcc2_dy/BRAM_PORTA(BRAM_CTRL) and /fcc2/dy_PORTA(OTHER)
+ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design /home/anubhav/xilinx_projects/promethean/promethean.srcs/sources_1/bd/design_1/design_1.bd 
+generate_target: Time (s): cpu = 00:00:29 ; elapsed = 00:00:19 . Memory (MB): peak = 9733.473 ; gain = 0.000 ; free physical = 17698 ; free virtual = 26248
+ERROR: [Common 17-39] 'generate_target' failed due to earlier errors.
+report_ip_status -name ip_status 
+delete_bd_objs [get_bd_intf_nets loss_derivative_0_m_axi_gmem]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_slave {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/loss_derivative_0/m_axi_gmem} Slave {/processing_system7_0/S_AXI_HP0} ddr_seg {Auto} intc_ip {/axi_mem_intercon} master_apm {0}}  [get_bd_intf_pins loss_derivative_0/m_axi_gmem]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_slave {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/update_weights_0/m_axi_gmem} Slave {/processing_system7_0/S_AXI_HP0} ddr_seg {Auto} intc_ip {/axi_mem_intercon} master_apm {0}}  [get_bd_intf_pins update_weights_0/m_axi_gmem]
+Slave segment '/processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM' is being assigned into address space '/update_weights_0/Data_m_axi_gmem' at <0x0000_0000 [ 512M ]>.
+endgroup
+regenerate_bd_layout
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+set_property -dict [list CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Assume_Synchronous_Clk {true} CONFIG.Write_Width_A {16} CONFIG.Read_Width_A {16} CONFIG.Write_Width_B {16} CONFIG.Read_Width_B {16} CONFIG.Register_PortA_Output_of_Memory_Primitives {true} CONFIG.Register_PortB_Output_of_Memory_Primitives {true} CONFIG.Use_RSTA_Pin {false} CONFIG.Use_RSTB_Pin {false} CONFIG.use_bram_block {Stand_Alone} CONFIG.EN_SAFETY_CKT {false}] [get_bd_cells conv2_dy]
+endgroup
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+set_property -dict [list CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Assume_Synchronous_Clk {true} CONFIG.Write_Width_A {16} CONFIG.Read_Width_A {16} CONFIG.Write_Width_B {16} CONFIG.Read_Width_B {16} CONFIG.Register_PortA_Output_of_Memory_Primitives {true} CONFIG.Register_PortB_Output_of_Memory_Primitives {true} CONFIG.Use_RSTA_Pin {false} CONFIG.Use_RSTB_Pin {false} CONFIG.use_bram_block {Stand_Alone} CONFIG.EN_SAFETY_CKT {false}] [get_bd_cells conv2_y]
+endgroup
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+set_property -dict [list CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Assume_Synchronous_Clk {true} CONFIG.Write_Width_A {16} CONFIG.Read_Width_A {16} CONFIG.Write_Width_B {16} CONFIG.Read_Width_B {16} CONFIG.Register_PortA_Output_of_Memory_Primitives {true} CONFIG.Register_PortB_Output_of_Memory_Primitives {true} CONFIG.Use_RSTA_Pin {false} CONFIG.Use_RSTB_Pin {false} CONFIG.use_bram_block {Stand_Alone} CONFIG.EN_SAFETY_CKT {false}] [get_bd_cells relu1_y]
+endgroup
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+set_property -dict [list CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Assume_Synchronous_Clk {true} CONFIG.Write_Width_A {16} CONFIG.Read_Width_A {16} CONFIG.Write_Width_B {16} CONFIG.Read_Width_B {16} CONFIG.Register_PortA_Output_of_Memory_Primitives {true} CONFIG.Register_PortB_Output_of_Memory_Primitives {true} CONFIG.Use_RSTA_Pin {false} CONFIG.Use_RSTB_Pin {false} CONFIG.use_bram_block {Stand_Alone} CONFIG.EN_SAFETY_CKT {false}] [get_bd_cells conv1_y]
+endgroup
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+set_property -dict [list CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Assume_Synchronous_Clk {true} CONFIG.Write_Width_A {16} CONFIG.Read_Width_A {16} CONFIG.Write_Width_B {16} CONFIG.Read_Width_B {16} CONFIG.Register_PortA_Output_of_Memory_Primitives {true} CONFIG.Register_PortB_Output_of_Memory_Primitives {true} CONFIG.Use_RSTA_Pin {false} CONFIG.Use_RSTB_Pin {false} CONFIG.use_bram_block {Stand_Alone} CONFIG.EN_SAFETY_CKT {false}] [get_bd_cells conv1_dy]
+endgroup
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+set_property -dict [list CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Assume_Synchronous_Clk {true} CONFIG.Write_Width_A {16} CONFIG.Write_Depth_A {512} CONFIG.Read_Width_A {16} CONFIG.Write_Width_B {16} CONFIG.Read_Width_B {16} CONFIG.Register_PortA_Output_of_Memory_Primitives {true} CONFIG.Register_PortB_Output_of_Memory_Primitives {true} CONFIG.Use_RSTA_Pin {false} CONFIG.Use_RSTB_Pin {false} CONFIG.use_bram_block {Stand_Alone} CONFIG.EN_SAFETY_CKT {false}] [get_bd_cells relu2_dy]
+endgroup
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+set_property -dict [list CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Assume_Synchronous_Clk {true} CONFIG.Write_Width_A {16} CONFIG.Write_Depth_A {512} CONFIG.Read_Width_A {16} CONFIG.Write_Width_B {16} CONFIG.Read_Width_B {16} CONFIG.Register_PortA_Output_of_Memory_Primitives {true} CONFIG.Register_PortB_Output_of_Memory_Primitives {true} CONFIG.Use_RSTA_Pin {false} CONFIG.Use_RSTB_Pin {false} CONFIG.use_bram_block {Stand_Alone} CONFIG.EN_SAFETY_CKT {false}] [get_bd_cells relu2_y]
+endgroup
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+set_property -dict [list CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Assume_Synchronous_Clk {true} CONFIG.Write_Width_A {16} CONFIG.Write_Depth_A {512} CONFIG.Read_Width_A {16} CONFIG.Write_Width_B {16} CONFIG.Read_Width_B {16} CONFIG.Register_PortA_Output_of_Memory_Primitives {true} CONFIG.Register_PortB_Output_of_Memory_Primitives {true} CONFIG.Use_RSTA_Pin {false} CONFIG.Use_RSTB_Pin {false} CONFIG.use_bram_block {Stand_Alone} CONFIG.EN_SAFETY_CKT {false}] [get_bd_cells fcc1_dy]
+endgroup
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+set_property -dict [list CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Assume_Synchronous_Clk {true} CONFIG.Write_Width_A {16} CONFIG.Write_Depth_A {512} CONFIG.Read_Width_A {16} CONFIG.Write_Width_B {16} CONFIG.Read_Width_B {16} CONFIG.Register_PortA_Output_of_Memory_Primitives {true} CONFIG.Register_PortB_Output_of_Memory_Primitives {true} CONFIG.Use_RSTA_Pin {false} CONFIG.Use_RSTB_Pin {false} CONFIG.use_bram_block {Stand_Alone} CONFIG.EN_SAFETY_CKT {false}] [get_bd_cells fcc1_y]
+endgroup
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+set_property -dict [list CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Assume_Synchronous_Clk {true} CONFIG.Write_Width_A {16} CONFIG.Read_Width_A {16} CONFIG.Write_Width_B {16} CONFIG.Read_Width_B {16} CONFIG.Register_PortA_Output_of_Memory_Primitives {true} CONFIG.Register_PortB_Output_of_Memory_Primitives {true} CONFIG.Use_RSTA_Pin {false} CONFIG.Use_RSTB_Pin {false} CONFIG.use_bram_block {Stand_Alone} CONFIG.EN_SAFETY_CKT {false}] [get_bd_cells dx]
+endgroup
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+set_property -dict [list CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Assume_Synchronous_Clk {true} CONFIG.Write_Width_A {16} CONFIG.Write_Depth_A {512} CONFIG.Read_Width_A {16} CONFIG.Write_Width_B {16} CONFIG.Read_Width_B {16} CONFIG.Register_PortA_Output_of_Memory_Primitives {true} CONFIG.Register_PortB_Output_of_Memory_Primitives {true} CONFIG.Use_RSTA_Pin {false} CONFIG.Use_RSTB_Pin {false} CONFIG.use_bram_block {Stand_Alone} CONFIG.EN_SAFETY_CKT {false}] [get_bd_cells relu3_dy]
+endgroup
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+set_property -dict [list CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Assume_Synchronous_Clk {true} CONFIG.Write_Width_A {16} CONFIG.Write_Depth_A {512} CONFIG.Read_Width_A {16} CONFIG.Write_Width_B {16} CONFIG.Read_Width_B {16} CONFIG.Register_PortA_Output_of_Memory_Primitives {true} CONFIG.Register_PortB_Output_of_Memory_Primitives {true} CONFIG.Use_RSTA_Pin {false} CONFIG.Use_RSTB_Pin {false} CONFIG.use_bram_block {Stand_Alone} CONFIG.EN_SAFETY_CKT {false}] [get_bd_cells relu3_y]
+endgroup
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+set_property -dict [list CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Assume_Synchronous_Clk {true} CONFIG.Write_Width_A {16} CONFIG.Read_Width_A {16} CONFIG.Write_Width_B {16} CONFIG.Read_Width_B {16} CONFIG.Register_PortA_Output_of_Memory_Primitives {true} CONFIG.Register_PortB_Output_of_Memory_Primitives {true} CONFIG.Use_RSTA_Pin {false} CONFIG.Use_RSTB_Pin {false} CONFIG.use_bram_block {Stand_Alone} CONFIG.EN_SAFETY_CKT {false}] [get_bd_cells x]
+endgroup
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+set_property -dict [list CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Assume_Synchronous_Clk {true} CONFIG.Write_Width_A {16} CONFIG.Write_Depth_A {512} CONFIG.Read_Width_A {16} CONFIG.Write_Width_B {16} CONFIG.Read_Width_B {16} CONFIG.Register_PortA_Output_of_Memory_Primitives {true} CONFIG.Register_PortB_Output_of_Memory_Primitives {true} CONFIG.Use_RSTA_Pin {false} CONFIG.Use_RSTB_Pin {false} CONFIG.use_bram_block {Stand_Alone} CONFIG.EN_SAFETY_CKT {false}] [get_bd_cells fcc2_dy]
+endgroup
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+set_property -dict [list CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Assume_Synchronous_Clk {true} CONFIG.Write_Width_A {16} CONFIG.Write_Depth_A {512} CONFIG.Read_Width_A {16} CONFIG.Write_Width_B {16} CONFIG.Read_Width_B {16} CONFIG.Register_PortA_Output_of_Memory_Primitives {true} CONFIG.Register_PortB_Output_of_Memory_Primitives {true} CONFIG.Use_RSTA_Pin {false} CONFIG.Use_RSTB_Pin {false} CONFIG.use_bram_block {Stand_Alone} CONFIG.EN_SAFETY_CKT {false}] [get_bd_cells fcc2_y]
+endgroup
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+set_property -dict [list CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Assume_Synchronous_Clk {true} CONFIG.Write_Width_A {16} CONFIG.Write_Depth_A {512} CONFIG.Read_Width_A {16} CONFIG.Write_Width_B {16} CONFIG.Read_Width_B {16} CONFIG.Register_PortA_Output_of_Memory_Primitives {true} CONFIG.Register_PortB_Output_of_Memory_Primitives {true} CONFIG.Use_RSTA_Pin {false} CONFIG.Use_RSTB_Pin {false} CONFIG.use_bram_block {Stand_Alone} CONFIG.EN_SAFETY_CKT {false}] [get_bd_cells fcc3_dy]
+endgroup
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+can't use empty string as operand of "*"
+can't use empty string as operand of "*"
+can't use empty string as operand of "*"
+can't use empty string as operand of "*"
+can't use empty string as operand of "*"
+can't use empty string as operand of "*"

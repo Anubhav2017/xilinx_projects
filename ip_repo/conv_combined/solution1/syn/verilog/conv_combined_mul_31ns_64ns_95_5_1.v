@@ -5,7 +5,7 @@
 
 `timescale 1 ns / 1 ps
 
-module conv_combined_mul_31ns_64ns_95_5_1_Multiplier_1(clk, ce, a, b, p);
+module conv_combined_mul_31ns_64ns_95_5_1_Multiplier_2(clk, ce, a, b, p);
 input clk;
 input ce;
 input[31 - 1 : 0] a; 
@@ -54,7 +54,7 @@ output[dout_WIDTH - 1:0] dout;
 
 
 
-conv_combined_mul_31ns_64ns_95_5_1_Multiplier_1 conv_combined_mul_31ns_64ns_95_5_1_Multiplier_1_U(
+conv_combined_mul_31ns_64ns_95_5_1_Multiplier_2 conv_combined_mul_31ns_64ns_95_5_1_Multiplier_2_U(
     .clk( clk ),
     .ce( ce ),
     .a( din0 ),

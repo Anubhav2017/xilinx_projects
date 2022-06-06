@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Wed May 25 22:14:20 2022
-# Process ID: 1290719
+# Start of session at: Sat May 28 19:22:53 2022
+# Process ID: 49201
 # Current directory: /home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1
 # Command line: vivado -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
 # Log file: /home/anubhav/xilinx_projects/mnist_eval/mnist_eval.runs/synth_1/design_1_wrapper.vds

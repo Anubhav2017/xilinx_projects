@@ -2,8 +2,8 @@
 #include<string.h>
 #include <ap_fixed.h>
 
-#define MAX_SIZE 1024
-#define BUFFER_SIZE 50
+#define MAX_SIZE 1000
+#define BUFFER_SIZE 32
 typedef ap_fixed<16,3> fixed_t;
 
 
@@ -62,6 +62,10 @@ void fcc_combined(fixed_t x[MAX_SIZE], fixed_t dx[MAX_SIZE], fixed_t* wt, fixed_
 
 		if (fwprop == true){
 
+			for(int i=0;i<xdim;i++){
+				dx[i]=0;
+			}
+
 			for(int i=0;i<ub;i++){
 				for(int j=0;j<xdim;j++){
 					wbuf[i][j] = wt[(i+k*BUFFER_SIZE)*xdim+j];
@@ -91,7 +95,7 @@ void fcc_combined(fixed_t x[MAX_SIZE], fixed_t dx[MAX_SIZE], fixed_t* wt, fixed_
 
 				for(int i=0;i<ub;i++){
 					    for(int j=0;j<xdim;j++){
-					        dx[j] = dy[i] * wbuf[i][j];
+					        dx[j] += dy[i] * wbuf[i][j];
 					        dwbuf[i][j] += dy[(i+k*BUFFER_SIZE)]*x[j];
 					    }
 				}
@@ -112,7 +116,7 @@ void fcc_combined(fixed_t x[MAX_SIZE], fixed_t dx[MAX_SIZE], fixed_t* wt, fixed_
 
 	if(debugip == true){
 
-		for(int i=0;i<xdim*ydim;i++){
+		for(int i=0;i<xdim;i++){
 			debug_x[i]=x[i];
 			debug_dx[i]=dx[i];
 

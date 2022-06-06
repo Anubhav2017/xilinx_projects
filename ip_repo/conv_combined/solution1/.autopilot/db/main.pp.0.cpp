@@ -5639,13 +5639,17 @@ __attribute__((sdx_kernel("conv_combined", 0))) void conv_combined(fixed_t x[550
 
  if(fwprop == true){
 
-  VITIS_LOOP_70_6: for(int f=0;f<F;f++){
-          VITIS_LOOP_71_7: for(int c=0;c<C;c++){
-              VITIS_LOOP_72_8: for(int h=0;h<outH;h++){
-                  VITIS_LOOP_73_9: for(int w=0;w<outW;w++){
+  VITIS_LOOP_70_6: for(int i=0;i<C*H*W;i++){
+   dx[i]=0;
+  }
+
+  VITIS_LOOP_74_7: for(int f=0;f<F;f++){
+          VITIS_LOOP_75_8: for(int c=0;c<C;c++){
+              VITIS_LOOP_76_9: for(int h=0;h<outH;h++){
+                  VITIS_LOOP_77_10: for(int w=0;w<outW;w++){
                       y[f*outH*outW+h*outW+w]=bbuf[f];
-                      VITIS_LOOP_75_10: for(int fh=0;fh<FH;fh++){
-                          VITIS_LOOP_76_11: for(int fw=0;fw<FW;fw++){
+                      VITIS_LOOP_79_11: for(int fh=0;fh<FH;fh++){
+                          VITIS_LOOP_80_12: for(int fw=0;fw<FW;fw++){
                               y[f*outH*outW+h*outW+w] += x[c*H*W+(h+fh)*W+w+fw]*wbuf[f*C*FH*FW+c*FH*FW+fh*FW+fw];
                           }
                       }
@@ -5657,27 +5661,27 @@ __attribute__((sdx_kernel("conv_combined", 0))) void conv_combined(fixed_t x[550
  }
  else{
 
-  VITIS_LOOP_88_12: for(int i=0;i<F;i++){
+  VITIS_LOOP_92_13: for(int i=0;i<F;i++){
      dbbuf[i] = db[i];
   }
 
 
-  VITIS_LOOP_93_13: for(int i=0;i<F;i++){
-          VITIS_LOOP_94_14: for(int j=0;j<C;j++){
-              VITIS_LOOP_95_15: for(int k=0;k<FH;k++){
-                  VITIS_LOOP_96_16: for(int l=0;l<FW;l++){
+  VITIS_LOOP_97_14: for(int i=0;i<F;i++){
+          VITIS_LOOP_98_15: for(int j=0;j<C;j++){
+              VITIS_LOOP_99_16: for(int k=0;k<FH;k++){
+                  VITIS_LOOP_100_17: for(int l=0;l<FW;l++){
                       dwbuf[i][j][k][l] = dwt[i*C*FH*FW+j*FH*FW+k*FW+l];
                   }
               }
           }
       }
 
-  VITIS_LOOP_103_17: for(int f=0;f<F;f++){
-          VITIS_LOOP_104_18: for(int h=0;h<outH;h++){
-              VITIS_LOOP_105_19: for(int w=0;w<outW;w++){
-                  VITIS_LOOP_106_20: for(int c=0;c<C;c++){
-                      VITIS_LOOP_107_21: for(int fh=0;fh<FH;fh++){
-                          VITIS_LOOP_108_22: for(int fw=0;fw<FW;fw++){
+  VITIS_LOOP_107_18: for(int f=0;f<F;f++){
+          VITIS_LOOP_108_19: for(int h=0;h<outH;h++){
+              VITIS_LOOP_109_20: for(int w=0;w<outW;w++){
+                  VITIS_LOOP_110_21: for(int c=0;c<C;c++){
+                      VITIS_LOOP_111_22: for(int fh=0;fh<FH;fh++){
+                          VITIS_LOOP_112_23: for(int fw=0;fw<FW;fw++){
                               dwbuf[f][c][fh][fw] += dy[f*outH*outW+h*outW+w]*x[c*H*W+(h+fh)*W+w+fw];
                               dx[c*H*W+(h+fh)*W+w+fw] += dy[f*outH*outW+h*outW+w]*wbuf[f][c][fh][fw];
                           }
@@ -5689,10 +5693,10 @@ __attribute__((sdx_kernel("conv_combined", 0))) void conv_combined(fixed_t x[550
       }
 
 
-  VITIS_LOOP_120_23: for(int i=0;i<F;i++){
-            VITIS_LOOP_121_24: for(int j=0;j<C;j++){
-                VITIS_LOOP_122_25: for(int k=0;k<FH;k++){
-                    VITIS_LOOP_123_26: for(int l=0;l<FW;l++){
+  VITIS_LOOP_124_24: for(int i=0;i<F;i++){
+            VITIS_LOOP_125_25: for(int j=0;j<C;j++){
+                VITIS_LOOP_126_26: for(int k=0;k<FH;k++){
+                    VITIS_LOOP_127_27: for(int l=0;l<FW;l++){
                        dwt[i*C*FH*FW+j*FH*FW+k*FW+l]=dwbuf[i][j][k][l];
                     }
                 }
@@ -5700,7 +5704,7 @@ __attribute__((sdx_kernel("conv_combined", 0))) void conv_combined(fixed_t x[550
         }
 
 
-  VITIS_LOOP_131_27: for(int i=0;i<F;i++){
+  VITIS_LOOP_135_28: for(int i=0;i<F;i++){
           db[i] = dbbuf[i];
       }
 
@@ -5709,7 +5713,7 @@ __attribute__((sdx_kernel("conv_combined", 0))) void conv_combined(fixed_t x[550
 
  if(debugip == true){
 
-  VITIS_LOOP_140_28: for(int i=0;i<C*H*W;i++){
+  VITIS_LOOP_144_29: for(int i=0;i<C*H*W;i++){
    debug_x[i]=x[i];
    debug_dx[i]=dx[i];
 

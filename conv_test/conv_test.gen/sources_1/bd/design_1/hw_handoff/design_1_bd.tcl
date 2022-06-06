@@ -166,8 +166,8 @@ proc create_root_design { parentCell } {
   # Create instance: InputLayer_0, and set properties
   set InputLayer_0 [ create_bd_cell -type ip -vlnv xilinx.com:hls:InputLayer:1.0 InputLayer_0 ]
 
-  # Create instance: OutputLayer_0, and set properties
-  set OutputLayer_0 [ create_bd_cell -type ip -vlnv xilinx.com:hls:OutputLayer:1.0 OutputLayer_0 ]
+  # Create instance: InputLayer_1, and set properties
+  set InputLayer_1 [ create_bd_cell -type ip -vlnv xilinx.com:hls:InputLayer:1.0 InputLayer_1 ]
 
   # Create instance: axi_mem_intercon, and set properties
   set axi_mem_intercon [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 axi_mem_intercon ]
@@ -222,6 +222,7 @@ proc create_root_design { parentCell } {
    CONFIG.Use_Byte_Write_Enable {false} \
    CONFIG.Use_RSTA_Pin {false} \
    CONFIG.Use_RSTB_Pin {false} \
+   CONFIG.Write_Depth_A {4096} \
    CONFIG.Write_Width_A {16} \
    CONFIG.Write_Width_B {16} \
    CONFIG.use_bram_block {Stand_Alone} \
@@ -271,6 +272,7 @@ proc create_root_design { parentCell } {
    CONFIG.Use_Byte_Write_Enable {false} \
    CONFIG.Use_RSTA_Pin {false} \
    CONFIG.Use_RSTB_Pin {false} \
+   CONFIG.Write_Depth_A {4096} \
    CONFIG.Write_Width_A {16} \
    CONFIG.Write_Width_B {16} \
    CONFIG.use_bram_block {Stand_Alone} \
@@ -1089,34 +1091,36 @@ proc create_root_design { parentCell } {
   connect_bd_intf_net -intf_net InputLayer_0_bram_dx_PORTA [get_bd_intf_pins InputLayer_0/bram_dx_PORTA] [get_bd_intf_pins conv_dx/BRAM_PORTB]
   connect_bd_intf_net -intf_net InputLayer_0_bram_x_PORTA [get_bd_intf_pins InputLayer_0/bram_x_PORTA] [get_bd_intf_pins conv_x/BRAM_PORTB]
   connect_bd_intf_net -intf_net InputLayer_0_m_axi_gmem [get_bd_intf_pins InputLayer_0/m_axi_gmem] [get_bd_intf_pins axi_mem_intercon/S00_AXI]
-  connect_bd_intf_net -intf_net OutputLayer_0_bram_dy_PORTA [get_bd_intf_pins OutputLayer_0/bram_dy_PORTA] [get_bd_intf_pins conv_dy/BRAM_PORTB]
-  connect_bd_intf_net -intf_net OutputLayer_0_bram_y_PORTA [get_bd_intf_pins OutputLayer_0/bram_y_PORTA] [get_bd_intf_pins conv_y/BRAM_PORTB]
-  connect_bd_intf_net -intf_net OutputLayer_0_m_axi_gmem [get_bd_intf_pins OutputLayer_0/m_axi_gmem] [get_bd_intf_pins axi_mem_intercon/S03_AXI]
+  connect_bd_intf_net -intf_net InputLayer_1_bram_dx_PORTA [get_bd_intf_pins InputLayer_1/bram_dx_PORTA] [get_bd_intf_pins conv_dy/BRAM_PORTB]
+  connect_bd_intf_net -intf_net InputLayer_1_bram_x_PORTA [get_bd_intf_pins InputLayer_1/bram_x_PORTA] [get_bd_intf_pins conv_y/BRAM_PORTB]
+  connect_bd_intf_net -intf_net InputLayer_1_m_axi_gmem [get_bd_intf_pins InputLayer_1/m_axi_gmem] [get_bd_intf_pins axi_mem_intercon/S02_AXI]
   connect_bd_intf_net -intf_net axi_mem_intercon_M00_AXI [get_bd_intf_pins axi_mem_intercon/M00_AXI] [get_bd_intf_pins processing_system7_0/S_AXI_HP0]
   connect_bd_intf_net -intf_net conv_combined_0_dx_PORTA [get_bd_intf_pins conv_combined_0/dx_PORTA] [get_bd_intf_pins conv_dx/BRAM_PORTA]
   connect_bd_intf_net -intf_net conv_combined_0_dy_PORTA [get_bd_intf_pins conv_combined_0/dy_PORTA] [get_bd_intf_pins conv_dy/BRAM_PORTA]
   connect_bd_intf_net -intf_net conv_combined_0_m_axi_gmem [get_bd_intf_pins axi_mem_intercon/S01_AXI] [get_bd_intf_pins conv_combined_0/m_axi_gmem]
+  connect_bd_intf_net -intf_net conv_combined_0_m_axi_gmem2 [get_bd_intf_pins axi_mem_intercon/S03_AXI] [get_bd_intf_pins conv_combined_0/m_axi_gmem2]
   connect_bd_intf_net -intf_net conv_combined_0_x_PORTA [get_bd_intf_pins conv_combined_0/x_PORTA] [get_bd_intf_pins conv_x/BRAM_PORTA]
   connect_bd_intf_net -intf_net conv_combined_0_y_PORTA [get_bd_intf_pins conv_combined_0/y_PORTA] [get_bd_intf_pins conv_y/BRAM_PORTA]
   connect_bd_intf_net -intf_net processing_system7_0_DDR [get_bd_intf_ports DDR] [get_bd_intf_pins processing_system7_0/DDR]
   connect_bd_intf_net -intf_net processing_system7_0_FIXED_IO [get_bd_intf_ports FIXED_IO] [get_bd_intf_pins processing_system7_0/FIXED_IO]
   connect_bd_intf_net -intf_net processing_system7_0_M_AXI_GP0 [get_bd_intf_pins processing_system7_0/M_AXI_GP0] [get_bd_intf_pins ps7_0_axi_periph/S00_AXI]
-  connect_bd_intf_net -intf_net ps7_0_axi_periph_M00_AXI [get_bd_intf_pins conv_combined_0/s_axi_CRTL_BUS] [get_bd_intf_pins ps7_0_axi_periph/M00_AXI]
-  connect_bd_intf_net -intf_net ps7_0_axi_periph_M01_AXI [get_bd_intf_pins InputLayer_0/s_axi_CTRL] [get_bd_intf_pins ps7_0_axi_periph/M01_AXI]
-  connect_bd_intf_net -intf_net ps7_0_axi_periph_M04_AXI [get_bd_intf_pins OutputLayer_0/s_axi_CTRL] [get_bd_intf_pins ps7_0_axi_periph/M04_AXI]
+  connect_bd_intf_net -intf_net ps7_0_axi_periph_M00_AXI [get_bd_intf_pins conv_combined_0/s_axi_control] [get_bd_intf_pins ps7_0_axi_periph/M00_AXI]
+  connect_bd_intf_net -intf_net ps7_0_axi_periph_M01_AXI [get_bd_intf_pins InputLayer_0/s_axi_control] [get_bd_intf_pins ps7_0_axi_periph/M01_AXI]
+  connect_bd_intf_net -intf_net ps7_0_axi_periph_M02_AXI [get_bd_intf_pins InputLayer_1/s_axi_control] [get_bd_intf_pins ps7_0_axi_periph/M02_AXI]
 
   # Create port connections
-  connect_bd_net -net processing_system7_0_FCLK_CLK0 [get_bd_pins InputLayer_0/ap_clk] [get_bd_pins OutputLayer_0/ap_clk] [get_bd_pins axi_mem_intercon/ACLK] [get_bd_pins axi_mem_intercon/M00_ACLK] [get_bd_pins axi_mem_intercon/S00_ACLK] [get_bd_pins axi_mem_intercon/S01_ACLK] [get_bd_pins axi_mem_intercon/S02_ACLK] [get_bd_pins axi_mem_intercon/S03_ACLK] [get_bd_pins conv_combined_0/ap_clk] [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins processing_system7_0/S_AXI_HP0_ACLK] [get_bd_pins ps7_0_axi_periph/ACLK] [get_bd_pins ps7_0_axi_periph/M00_ACLK] [get_bd_pins ps7_0_axi_periph/M01_ACLK] [get_bd_pins ps7_0_axi_periph/M02_ACLK] [get_bd_pins ps7_0_axi_periph/M03_ACLK] [get_bd_pins ps7_0_axi_periph/M04_ACLK] [get_bd_pins ps7_0_axi_periph/S00_ACLK] [get_bd_pins rst_ps7_0_100M/slowest_sync_clk]
+  connect_bd_net -net processing_system7_0_FCLK_CLK0 [get_bd_pins InputLayer_0/ap_clk] [get_bd_pins InputLayer_1/ap_clk] [get_bd_pins axi_mem_intercon/ACLK] [get_bd_pins axi_mem_intercon/M00_ACLK] [get_bd_pins axi_mem_intercon/S00_ACLK] [get_bd_pins axi_mem_intercon/S01_ACLK] [get_bd_pins axi_mem_intercon/S02_ACLK] [get_bd_pins axi_mem_intercon/S03_ACLK] [get_bd_pins conv_combined_0/ap_clk] [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins processing_system7_0/S_AXI_HP0_ACLK] [get_bd_pins ps7_0_axi_periph/ACLK] [get_bd_pins ps7_0_axi_periph/M00_ACLK] [get_bd_pins ps7_0_axi_periph/M01_ACLK] [get_bd_pins ps7_0_axi_periph/M02_ACLK] [get_bd_pins ps7_0_axi_periph/M03_ACLK] [get_bd_pins ps7_0_axi_periph/M04_ACLK] [get_bd_pins ps7_0_axi_periph/S00_ACLK] [get_bd_pins rst_ps7_0_100M/slowest_sync_clk]
   connect_bd_net -net processing_system7_0_FCLK_RESET0_N [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins rst_ps7_0_100M/ext_reset_in]
-  connect_bd_net -net rst_ps7_0_100M_peripheral_aresetn [get_bd_pins InputLayer_0/ap_rst_n] [get_bd_pins OutputLayer_0/ap_rst_n] [get_bd_pins axi_mem_intercon/ARESETN] [get_bd_pins axi_mem_intercon/M00_ARESETN] [get_bd_pins axi_mem_intercon/S00_ARESETN] [get_bd_pins axi_mem_intercon/S01_ARESETN] [get_bd_pins axi_mem_intercon/S02_ARESETN] [get_bd_pins axi_mem_intercon/S03_ARESETN] [get_bd_pins conv_combined_0/ap_rst_n] [get_bd_pins ps7_0_axi_periph/ARESETN] [get_bd_pins ps7_0_axi_periph/M00_ARESETN] [get_bd_pins ps7_0_axi_periph/M01_ARESETN] [get_bd_pins ps7_0_axi_periph/M02_ARESETN] [get_bd_pins ps7_0_axi_periph/M03_ARESETN] [get_bd_pins ps7_0_axi_periph/M04_ARESETN] [get_bd_pins ps7_0_axi_periph/S00_ARESETN] [get_bd_pins rst_ps7_0_100M/peripheral_aresetn]
+  connect_bd_net -net rst_ps7_0_100M_peripheral_aresetn [get_bd_pins InputLayer_0/ap_rst_n] [get_bd_pins InputLayer_1/ap_rst_n] [get_bd_pins axi_mem_intercon/ARESETN] [get_bd_pins axi_mem_intercon/M00_ARESETN] [get_bd_pins axi_mem_intercon/S00_ARESETN] [get_bd_pins axi_mem_intercon/S01_ARESETN] [get_bd_pins axi_mem_intercon/S02_ARESETN] [get_bd_pins axi_mem_intercon/S03_ARESETN] [get_bd_pins conv_combined_0/ap_rst_n] [get_bd_pins ps7_0_axi_periph/ARESETN] [get_bd_pins ps7_0_axi_periph/M00_ARESETN] [get_bd_pins ps7_0_axi_periph/M01_ARESETN] [get_bd_pins ps7_0_axi_periph/M02_ARESETN] [get_bd_pins ps7_0_axi_periph/M03_ARESETN] [get_bd_pins ps7_0_axi_periph/M04_ARESETN] [get_bd_pins ps7_0_axi_periph/S00_ARESETN] [get_bd_pins rst_ps7_0_100M/peripheral_aresetn]
 
   # Create address segments
   assign_bd_address -offset 0x00000000 -range 0x20000000 -target_address_space [get_bd_addr_spaces InputLayer_0/Data_m_axi_gmem] [get_bd_addr_segs processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM] -force
-  assign_bd_address -offset 0x00000000 -range 0x20000000 -target_address_space [get_bd_addr_spaces OutputLayer_0/Data_m_axi_gmem] [get_bd_addr_segs processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM] -force
+  assign_bd_address -offset 0x00000000 -range 0x20000000 -target_address_space [get_bd_addr_spaces InputLayer_1/Data_m_axi_gmem] [get_bd_addr_segs processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM] -force
   assign_bd_address -offset 0x00000000 -range 0x20000000 -target_address_space [get_bd_addr_spaces conv_combined_0/Data_m_axi_gmem] [get_bd_addr_segs processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM] -force
-  assign_bd_address -offset 0x40010000 -range 0x00010000 -target_address_space [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs InputLayer_0/s_axi_CTRL/Reg] -force
-  assign_bd_address -offset 0x40040000 -range 0x00010000 -target_address_space [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs OutputLayer_0/s_axi_CTRL/Reg] -force
-  assign_bd_address -offset 0x40000000 -range 0x00010000 -target_address_space [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs conv_combined_0/s_axi_CRTL_BUS/Reg] -force
+  assign_bd_address -offset 0x00000000 -range 0x20000000 -target_address_space [get_bd_addr_spaces conv_combined_0/Data_m_axi_gmem2] [get_bd_addr_segs processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM] -force
+  assign_bd_address -offset 0x40010000 -range 0x00010000 -target_address_space [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs InputLayer_0/s_axi_control/Reg] -force
+  assign_bd_address -offset 0x40020000 -range 0x00010000 -target_address_space [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs InputLayer_1/s_axi_control/Reg] -force
+  assign_bd_address -offset 0x40000000 -range 0x00010000 -target_address_space [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs conv_combined_0/s_axi_control/Reg] -force
 
 
   # Restore current instance

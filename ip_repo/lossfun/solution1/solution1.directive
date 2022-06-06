@@ -5,6 +5,11 @@
                 <option name="name" value="loss_derivative"/>
             </pragma>
         </directive>
+        <directive functionName="loss_derivative" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="loss_derivative"/>
+            </pragma>
+        </directive>
     </sourceFile>
 </AutoPilot:ProjectResources>
 

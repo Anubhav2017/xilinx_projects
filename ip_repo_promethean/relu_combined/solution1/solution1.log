@@ -1,0 +1,429 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=0
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: set_directive_top -name relu_combined relu_combined 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 155.899 MB.
+INFO: [HLS 200-10] Analyzing design file 'relu_combined/main.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 3.24 seconds. CPU system time: 0.23 seconds. Elapsed time: 2.83 seconds; current allocated memory: 157.064 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'relu_combined(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, bool, bool)' (relu_combined/main.cpp:5:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'relu_combined(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, bool, bool)' (relu_combined/main.cpp:5:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2.71 seconds. CPU system time: 0.18 seconds. Elapsed time: 2.88 seconds; current allocated memory: 158.939 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 158.941 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 166.921 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.17 seconds; current allocated memory: 177.542 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_23_1' (relu_combined/main.cpp:23) in function 'relu_combined' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_34_2' (relu_combined/main.cpp:34) in function 'relu_combined' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_46_3' (relu_combined/main.cpp:46) in function 'relu_combined' automatically.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.22 seconds. CPU system time: 0 seconds. Elapsed time: 0.23 seconds; current allocated memory: 209.727 MB.
+INFO: [HLS 200-472] Inferring partial write operation for 'y' (relu_combined/main.cpp:25:19)
+INFO: [HLS 200-472] Inferring partial write operation for 'dx' (relu_combined/main.cpp:36:22)
+INFO: [HLS 200-472] Inferring partial write operation for 'dx' (relu_combined/main.cpp:39:22)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.15 seconds. CPU system time: 0 seconds. Elapsed time: 0.14 seconds; current allocated memory: 208.175 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'relu_combined' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'relu_combined' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_34_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 7, loop 'VITIS_LOOP_34_2'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_23_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'VITIS_LOOP_23_1'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_46_3'.
+WARNING: [HLS 200-885] Unable to schedule bus request on port 'gmem' (relu_combined/main.cpp:48) due to limited memory ports. Please consider using a memory core with more ports or partitioning the array.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 2, Depth = 10, loop 'VITIS_LOOP_46_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 208.734 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 209.348 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'relu_combined' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'relu_combined/gmem' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'relu_combined/x' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'relu_combined/dx' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'relu_combined/y' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'relu_combined/dy' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'relu_combined/debug_x' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'relu_combined/debug_dx' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'relu_combined/dim' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'relu_combined/fwprop' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'relu_combined/debugip' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'relu_combined' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'debug_x', 'debug_dx', 'dim', 'fwprop', 'debugip' and 'return' to AXI-Lite port control.
+WARNING: [RTGEN 206-101] Setting dangling out port 'relu_combined/x_WEN_A' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'relu_combined/x_Din_A' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'relu_combined/dy_WEN_A' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'relu_combined/dy_Din_A' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'relu_combined'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 210.750 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1.05 seconds. CPU system time: 0.02 seconds. Elapsed time: 1.06 seconds; current allocated memory: 221.106 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=0
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: set_directive_top -name relu_combined relu_combined 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 155.897 MB.
+INFO: [HLS 200-10] Analyzing design file 'relu_combined/main.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 3.26 seconds. CPU system time: 0.23 seconds. Elapsed time: 2.85 seconds; current allocated memory: 157.063 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'relu_combined(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, bool, bool)' (relu_combined/main.cpp:5:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'relu_combined(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, bool, bool)' (relu_combined/main.cpp:5:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2.72 seconds. CPU system time: 0.19 seconds. Elapsed time: 2.91 seconds; current allocated memory: 158.939 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 158.941 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 166.921 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 177.541 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_23_1' (relu_combined/main.cpp:23) in function 'relu_combined' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_34_2' (relu_combined/main.cpp:34) in function 'relu_combined' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_46_3' (relu_combined/main.cpp:46) in function 'relu_combined' automatically.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.21 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.22 seconds; current allocated memory: 209.733 MB.
+INFO: [HLS 200-472] Inferring partial write operation for 'y' (relu_combined/main.cpp:25:19)
+INFO: [HLS 200-472] Inferring partial write operation for 'dx' (relu_combined/main.cpp:36:22)
+INFO: [HLS 200-472] Inferring partial write operation for 'dx' (relu_combined/main.cpp:39:22)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.14 seconds. CPU system time: 0 seconds. Elapsed time: 0.13 seconds; current allocated memory: 208.175 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'relu_combined' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'relu_combined' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_34_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 7, loop 'VITIS_LOOP_34_2'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_23_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'VITIS_LOOP_23_1'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_46_3'.
+WARNING: [HLS 200-885] Unable to schedule bus request on port 'gmem' (relu_combined/main.cpp:48) due to limited memory ports. Please consider using a memory core with more ports or partitioning the array.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 2, Depth = 10, loop 'VITIS_LOOP_46_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.07 seconds; current allocated memory: 208.735 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 209.348 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'relu_combined' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'relu_combined/gmem' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'relu_combined/x' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'relu_combined/dx' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'relu_combined/y' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'relu_combined/dy' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'relu_combined/debug_x' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'relu_combined/debug_dx' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'relu_combined/dim' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'relu_combined/fwprop' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'relu_combined/debugip' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'relu_combined' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'debug_x', 'debug_dx', 'dim', 'fwprop', 'debugip' and 'return' to AXI-Lite port control.
+WARNING: [RTGEN 206-101] Setting dangling out port 'relu_combined/x_WEN_A' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'relu_combined/x_Din_A' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'relu_combined/dy_WEN_A' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'relu_combined/dy_Din_A' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'relu_combined'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 210.749 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1.05 seconds. CPU system time: 0.02 seconds. Elapsed time: 1.07 seconds; current allocated memory: 221.106 MB.
+INFO==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=0
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: set_directive_top -name relu_combined relu_combined 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 155.887 MB.
+INFO: [HLS 200-10] Analyzing design file 'relu_combined/main.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 3.29 seconds. CPU system time: 0.21 seconds. Elapsed time: 2.84 seconds; current allocated memory: 157.069 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'relu_combined(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, bool, bool)' (relu_combined/main.cpp:5:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'relu_combined(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, bool, bool)' (relu_combined/main.cpp:5:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2.79 seconds. CPU system time: 0.13 seconds. Elapsed time: 2.93 seconds; current allocated memory: 158.961 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 158.963 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 166.924 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 177.544 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_23_1' (relu_combined/main.cpp:23) in function 'relu_combined' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_34_2' (relu_combined/main.cpp:34) in function 'relu_combined' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_46_3' (relu_combined/main.cpp:46) in function 'relu_combined' automatically.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.21 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.22 seconds; current allocated memory: 209.747 MB.
+INFO: [HLS 200-472] Inferring partial write operation for 'y' (relu_combined/main.cpp:25:19)
+INFO: [HLS 200-472] Inferring partial write operation for 'dx' (relu_combined/main.cpp:36:22)
+INFO: [HLS 200-472] Inferring partial write operation for 'dx' (relu_combined/main.cpp:39:22)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.14 seconds. CPU system time: 0 seconds. Elapsed time: 0.14 seconds; current allocated memory: 208.182 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'relu_combined' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'relu_combined' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_34_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 7, loop 'VITIS_LOOP_34_2'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_23_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'VITIS_LOOP_23_1'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_46_3'.
+WARNING: [HLS 200-885] Unable to schedule bus request on port 'gmem' (relu_combined/main.cpp:48) due to limited memory ports. Please consider using a memory core with more ports or partitioning the array.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 2, Depth = 10, loop 'VITIS_LOOP_46_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 208.757 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 209.353 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'relu_combined' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'relu_combined/gmem' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'relu_combined/x' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'relu_combined/dx' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'relu_combined/y' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'relu_combined/dy' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'relu_combined/debug_x' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'relu_combined/debug_dx' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'relu_combined/dim' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'relu_combined/fwprop' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'relu_combined/debugip' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'relu_combined' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'debug_x', 'debug_dx', 'dim', 'fwprop', 'debugip' and 'return' to AXI-Lite port control.
+WARNING: [RTGEN 206-101] Setting dangling out port 'relu_combined/x_WEN_A' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'relu_combined/x_Din_A' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'relu_combined/dy_WEN_A' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'relu_combined/dy_Din_A' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'relu_combined'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 210.740 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1.02 seconds. CPU system time: 0.03 seconds. Elapsed time: 1.04 seconds; current allocated memory: 221.127 MB.
+INFO: ==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=0
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: set_directive_top -name relu_combined relu_combined 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 155.900 MB.
+INFO: [HLS 200-10] Analyzing design file 'relu_combined/main.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 3.16 seconds. CPU system time: 0.29 seconds. Elapsed time: 2.77 seconds; current allocated memory: 157.082 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'relu_combined(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, bool)' (relu_combined/main.cpp:5:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'relu_combined(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, bool)' (relu_combined/main.cpp:5:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'relu_combined(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, bool)' (relu_combined/main.cpp:5:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'relu_combined(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, bool)' (relu_combined/main.cpp:5:0)
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 16 in loop 'VITIS_LOOP_23_1'(relu_combined/main.cpp:23:18) has been inferred on port 'gmem' (relu_combined/main.cpp:23:18)
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 16 in loop 'VITIS_LOOP_26_2'(relu_combined/main.cpp:26:18) has been inferred on port 'gmem' (relu_combined/main.cpp:26:18)
+INFO: [HLS 214-115] Multiple burst writes of variable length and bit width 16 in loop 'VITIS_LOOP_42_4'(relu_combined/main.cpp:42:20) has been inferred on port 'gmem' (relu_combined/main.cpp:42:20)
+INFO: [HLS 214-115] Multiple burst writes of variable length and bit width 16 in loop 'VITIS_LOOP_56_6'(relu_combined/main.cpp:56:20) has been inferred on port 'gmem' (relu_combined/main.cpp:56:20)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i16.s_struct.ap_fixeds' into 'relu_combined(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, bool)' (relu_combined/main.cpp:43:10)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i16.s_struct.ap_fixeds' into 'relu_combined(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, bool)' (relu_combined/main.cpp:57:9)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2.83 seconds. CPU system time: 0.21 seconds. Elapsed time: 3.05 seconds; current allocated memory: 159.390 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 159.392 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 167.401 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 178.031 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_23_1' (relu_combined/main.cpp:23) in function 'relu_combined' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_26_2' (relu_combined/main.cpp:26) in function 'relu_combined' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_33_3' (relu_combined/main.cpp:33) in function 'relu_combined' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_42_4' (relu_combined/main.cpp:42) in function 'relu_combined' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_48_5' (relu_combined/main.cpp:48) in function 'relu_combined' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_56_6' (relu_combined/main.cpp:56) in function 'relu_combined' automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (relu_combined/main.cpp:48:28) in function 'relu_combined'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.23 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.24 seconds; current allocated memory: 210.330 MB.
+INFO: [HLS 200-472] Inferring partial write operation for 'xbuf.V' (relu_combined/main.cpp:24:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'dybuf.V' (relu_combined/main.cpp:27:10)
+INFO: [HLS 200-472] Inferring partial write operation for 'ybuf.V' (relu_combined/main.cpp:35:22)
+INFO: [HLS 200-472] Inferring partial write operation for 'dxbuf.V' (relu_combined/main.cpp:50:25)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.15 seconds. CPU system time: 0 seconds. Elapsed time: 0.15 seconds; current allocated memory: 208.964 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'relu_combined' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'relu_combined' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_23_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_23_1'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_26_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_26_2'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_48_5'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_48_5'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_56_6'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_56_6'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_33_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_33_3'
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================

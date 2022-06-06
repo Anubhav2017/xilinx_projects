@@ -93,7 +93,6 @@ OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib /home/anubhav/xilinx_projects/conv_test/conv_test.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
 add_files /home/anubhav/xilinx_projects/conv_test/conv_test.srcs/sources_1/bd/design_1/design_1.bd
 set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/conv_test/conv_test.gen/sources_1/bd/design_1/ip/design_1_InputLayer_0_0/constraints/InputLayer_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/conv_test/conv_test.gen/sources_1/bd/design_1/ip/design_1_OutputLayer_0_0/constraints/OutputLayer_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/conv_test/conv_test.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/conv_test/conv_test.gen/sources_1/bd/design_1/ip/design_1_conv_combined_0_0/constraints/conv_combined_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/conv_test/conv_test.gen/sources_1/bd/design_1/ip/design_1_conv_dy_0/design_1_conv_dy_0_ooc.xdc]
@@ -105,6 +104,7 @@ set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_p
 set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/conv_test/conv_test.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_board.xdc]
 set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/conv_test/conv_test.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xdc]
 set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/conv_test/conv_test.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/conv_test/conv_test.gen/sources_1/bd/design_1/ip/design_1_InputLayer_1_0/constraints/InputLayer_ooc.xdc]
 set_property used_in_synthesis false [get_files -all /home/anubhav/xilinx_projects/conv_test/conv_test.gen/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/conv_test/conv_test.gen/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/conv_test/conv_test.gen/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_ooc.xdc]
@@ -114,6 +114,9 @@ set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_p
 set_property used_in_synthesis false [get_files -all /home/anubhav/xilinx_projects/conv_test/conv_test.gen/sources_1/bd/design_1/ip/design_1_auto_us_2/design_1_auto_us_2_clocks.xdc]
 set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/conv_test/conv_test.gen/sources_1/bd/design_1/ip/design_1_auto_us_2/design_1_auto_us_2_clocks.xdc]
 set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/conv_test/conv_test.gen/sources_1/bd/design_1/ip/design_1_auto_us_2/design_1_auto_us_2_ooc.xdc]
+set_property used_in_synthesis false [get_files -all /home/anubhav/xilinx_projects/conv_test/conv_test.gen/sources_1/bd/design_1/ip/design_1_auto_us_3/design_1_auto_us_3_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/conv_test/conv_test.gen/sources_1/bd/design_1/ip/design_1_auto_us_3/design_1_auto_us_3_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/conv_test/conv_test.gen/sources_1/bd/design_1/ip/design_1_auto_us_3/design_1_auto_us_3_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/conv_test/conv_test.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/conv_test/conv_test.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/conv_test/conv_test.gen/sources_1/bd/design_1/design_1_ooc.xdc]

@@ -1,0 +1,2 @@
+bram_switch_control_s_axi
+bram_switch

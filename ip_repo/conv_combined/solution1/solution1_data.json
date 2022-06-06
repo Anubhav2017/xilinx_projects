@@ -1834,13 +1834,20 @@
             "PipelineDepth": "3"
           },
           {
-            "Name": "VITIS_LOOP_70_6_VITIS_LOOP_72_8_VITIS_LOOP_73_9",
+            "Name": "VITIS_LOOP_70_6",
+            "TripCount": "",
+            "Latency": "",
+            "PipelineII": "1",
+            "PipelineDepth": "3"
+          },
+          {
+            "Name": "VITIS_LOOP_74_7_VITIS_LOOP_76_9_VITIS_LOOP_77_10",
             "TripCount": "",
             "Latency": "",
             "PipelineII": "",
             "PipelineDepth": "",
             "Loops": [{
-                "Name": "VITIS_LOOP_75_10",
+                "Name": "VITIS_LOOP_79_11",
                 "TripCount": "",
                 "Latency": "",
                 "PipelineII": "",
@@ -1848,7 +1855,7 @@
                 "PipelineDepthMax": "?",
                 "PipelineDepth": "5 ~ ?",
                 "Loops": [{
-                    "Name": "VITIS_LOOP_76_11",
+                    "Name": "VITIS_LOOP_80_12",
                     "TripCount": "",
                     "LatencyMin": "3",
                     "LatencyMax": "?",
@@ -1859,7 +1866,7 @@
               }]
           },
           {
-            "Name": "VITIS_LOOP_88_12",
+            "Name": "VITIS_LOOP_92_13",
             "TripCount": "",
             "LatencyMin": "2",
             "LatencyMax": "?",
@@ -1868,7 +1875,7 @@
             "PipelineDepth": "3"
           },
           {
-            "Name": "VITIS_LOOP_93_13_VITIS_LOOP_94_14_VITIS_LOOP_95_15",
+            "Name": "VITIS_LOOP_97_14_VITIS_LOOP_98_15_VITIS_LOOP_99_16",
             "TripCount": "",
             "Latency": "",
             "PipelineII": "",
@@ -1876,7 +1883,7 @@
             "PipelineDepthMax": "?",
             "PipelineDepth": "8 ~ ?",
             "Loops": [{
-                "Name": "VITIS_LOOP_96_16",
+                "Name": "VITIS_LOOP_100_17",
                 "TripCount": "",
                 "LatencyMin": "2",
                 "LatencyMax": "?",
@@ -1886,19 +1893,19 @@
               }]
           },
           {
-            "Name": "VITIS_LOOP_103_17_VITIS_LOOP_104_18",
+            "Name": "VITIS_LOOP_107_18_VITIS_LOOP_108_19",
             "TripCount": "",
             "Latency": "",
             "PipelineII": "",
             "PipelineDepth": "",
             "Loops": [{
-                "Name": "VITIS_LOOP_105_19",
+                "Name": "VITIS_LOOP_109_20",
                 "TripCount": "",
                 "Latency": "",
                 "PipelineII": "",
                 "PipelineDepth": "",
                 "Loops": [{
-                    "Name": "VITIS_LOOP_106_20_VITIS_LOOP_107_21_VITIS_LOOP_108_22",
+                    "Name": "VITIS_LOOP_110_21_VITIS_LOOP_111_22_VITIS_LOOP_112_23",
                     "TripCount": "",
                     "Latency": "",
                     "PipelineII": "2",
@@ -1907,7 +1914,7 @@
               }]
           },
           {
-            "Name": "VITIS_LOOP_120_23_VITIS_LOOP_121_24_VITIS_LOOP_122_25",
+            "Name": "VITIS_LOOP_124_24_VITIS_LOOP_125_25_VITIS_LOOP_126_26",
             "TripCount": "",
             "Latency": "",
             "PipelineII": "",
@@ -1915,7 +1922,7 @@
             "PipelineDepthMax": "?",
             "PipelineDepth": "8 ~ ?",
             "Loops": [{
-                "Name": "VITIS_LOOP_123_26",
+                "Name": "VITIS_LOOP_127_27",
                 "TripCount": "",
                 "LatencyMin": "2",
                 "LatencyMax": "?",
@@ -1925,7 +1932,7 @@
               }]
           },
           {
-            "Name": "VITIS_LOOP_131_27",
+            "Name": "VITIS_LOOP_135_28",
             "TripCount": "",
             "LatencyMin": "2",
             "LatencyMax": "?",
@@ -1934,11 +1941,9 @@
             "PipelineDepth": "3"
           },
           {
-            "Name": "VITIS_LOOP_140_28",
+            "Name": "VITIS_LOOP_144_29",
             "TripCount": "",
-            "LatencyMin": "9",
-            "LatencyMax": "?",
-            "Latency": "9 ~ ?",
+            "Latency": "",
             "PipelineII": "2",
             "PipelineDepth": "10"
           }
@@ -1950,10 +1955,10 @@
           "DSP": "24",
           "AVAIL_DSP": "220",
           "UTIL_DSP": "10",
-          "FF": "14293",
+          "FF": "14304",
           "AVAIL_FF": "106400",
           "UTIL_FF": "13",
-          "LUT": "12398",
+          "LUT": "12534",
           "AVAIL_LUT": "53200",
           "UTIL_LUT": "23",
           "URAM": "0",
@@ -1965,7 +1970,7 @@
   "GenerateBdFiles": "0",
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2022-05-25 16:36:22 IST",
+    "Time": "2022-05-28 19:08:52 IST",
     "ToolName": "vivado_hls",
     "ToolVersion": "2020.2"
   }

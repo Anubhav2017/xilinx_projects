@@ -1,0 +1,164 @@
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|               clk_fpga_0 |               clk_fpga_0 |                                      design_1_i/fcc2/inst/gmem_m_axi_U/wreq_throttle/throttl_cnt_reg[8]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                      design_1_i/fcc3/inst/gmem_m_axi_U/wreq_throttle/throttl_cnt_reg[8]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                       design_1_i/fcc3/inst/gmem_m_axi_U/bus_write/fifo_wreq/pout_reg[2]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                      design_1_i/loss_derivative_0/inst/gmem_m_axi_U/bus_write/buff_wdata/mOutPtr_reg[5]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                       design_1_i/fcc3/inst/gmem_m_axi_U/bus_write/fifo_wreq/pout_reg[1]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                       design_1_i/fcc3/inst/gmem_m_axi_U/bus_write/fifo_wreq/pout_reg[0]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                      design_1_i/fcc3/inst/gmem_m_axi_U/bus_write/fifo_wreq/data_vld_reg/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                       design_1_i/fcc1/inst/gmem_m_axi_U/bus_write/fifo_resp/pout_reg[3]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                       design_1_i/fcc1/inst/gmem_m_axi_U/bus_write/fifo_resp/pout_reg[2]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                        design_1_i/fcc3/inst/gmem_m_axi_U/bus_write/fifo_wreq/full_n_reg/D|
+|               clk_fpga_0 |               clk_fpga_0 |                        design_1_i/fcc1/inst/gmem_m_axi_U/bus_write/bus_wide_gen.fifo_burst/data_vld_reg/D|
+|               clk_fpga_0 |               clk_fpga_0 |                       design_1_i/update_weights_0/inst/gmem_m_axi_U/bus_write/buff_wdata/mOutPtr_reg[5]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                       design_1_i/fcc2/inst/gmem_m_axi_U/bus_write/fifo_wreq/pout_reg[0]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                      design_1_i/fcc2/inst/gmem_m_axi_U/bus_write/fifo_wreq/data_vld_reg/D|
+|               clk_fpga_0 |               clk_fpga_0 |                         design_1_i/fcc1/inst/gmem_m_axi_U/bus_write/bus_wide_gen.fifo_burst/pout_reg[0]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                         design_1_i/fcc1/inst/gmem_m_axi_U/bus_write/bus_wide_gen.fifo_burst/pout_reg[2]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                       design_1_i/fcc2/inst/gmem_m_axi_U/bus_write/fifo_wreq/pout_reg[1]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                       design_1_i/fcc2/inst/gmem_m_axi_U/bus_write/fifo_wreq/pout_reg[2]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                      design_1_i/fcc2/inst/gmem_m_axi_U/wreq_throttle/throttl_cnt_reg[1]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                       design_1_i/fcc3/inst/gmem_m_axi_U/bus_write/fifo_resp/pout_reg[3]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                               design_1_i/InputLayer_0/inst/gmem_m_axi_U/bus_write/fifo_resp/pout_reg[2]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                               design_1_i/InputLayer_0/inst/gmem_m_axi_U/bus_write/fifo_resp/pout_reg[3]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                           design_1_i/update_weights_0/inst/gmem_m_axi_U/bus_write/fifo_resp/pout_reg[3]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                           design_1_i/update_weights_0/inst/gmem_m_axi_U/bus_write/fifo_resp/pout_reg[2]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                      design_1_i/fcc3/inst/gmem_m_axi_U/wreq_throttle/throttl_cnt_reg[1]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                          design_1_i/fcc1/inst/gmem_m_axi_U/bus_write/bus_wide_gen.fifo_burst/full_n_reg/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                        design_1_i/fcc2/inst/gmem_m_axi_U/bus_write/fifo_wreq/full_n_reg/D|
+|               clk_fpga_0 |               clk_fpga_0 |                              design_1_i/InputLayer_0/inst/gmem_m_axi_U/bus_write/fifo_wreq/data_vld_reg/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                   design_1_i/fcc1/inst/gmem_m_axi_U/bus_write/buff_wdata/mOutPtr_reg[6]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                       design_1_i/fcc1/inst/gmem_m_axi_U/bus_write/fifo_wreq/pout_reg[1]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                       design_1_i/fcc1/inst/gmem_m_axi_U/bus_write/fifo_wreq/pout_reg[0]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                       design_1_i/fcc1/inst/gmem_m_axi_U/bus_write/fifo_wreq/pout_reg[2]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                      design_1_i/fcc1/inst/gmem_m_axi_U/bus_write/fifo_wreq/data_vld_reg/D|
+|               clk_fpga_0 |               clk_fpga_0 |                               design_1_i/InputLayer_0/inst/gmem_m_axi_U/bus_write/fifo_wreq/pout_reg[0]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                      design_1_i/conv2/inst/gmem_m_axi_U/bus_write/fifo_wreq/pout_reg[1]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                      design_1_i/conv2/inst/gmem_m_axi_U/bus_write/fifo_wreq/pout_reg[2]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                         design_1_i/fcc1/inst/gmem_m_axi_U/bus_write/bus_wide_gen.fifo_burst/pout_reg[1]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                               design_1_i/InputLayer_0/inst/gmem_m_axi_U/bus_write/fifo_wreq/pout_reg[1]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                               design_1_i/InputLayer_0/inst/gmem_m_axi_U/bus_write/fifo_wreq/pout_reg[2]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                         design_1_i/fcc3/inst/gmem_m_axi_U/bus_write/bus_wide_gen.fifo_burst/pout_reg[1]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                         design_1_i/fcc3/inst/gmem_m_axi_U/bus_write/bus_wide_gen.fifo_burst/pout_reg[2]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                      design_1_i/conv2/inst/gmem_m_axi_U/bus_write/fifo_wreq/pout_reg[0]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                     design_1_i/conv2/inst/gmem_m_axi_U/bus_write/fifo_wreq/data_vld_reg/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                   design_1_i/fcc1/inst/gmem_m_axi_U/bus_write/buff_wdata/mOutPtr_reg[5]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                          design_1_i/fcc2/inst/gmem_m_axi_U/bus_write/bus_wide_gen.fifo_burst/full_n_reg/D|
+|               clk_fpga_0 |               clk_fpga_0 |                         design_1_i/fcc2/inst/gmem_m_axi_U/bus_write/bus_wide_gen.fifo_burst/pout_reg[0]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                        design_1_i/fcc2/inst/gmem_m_axi_U/bus_write/bus_wide_gen.fifo_burst/data_vld_reg/D|
+|               clk_fpga_0 |               clk_fpga_0 |                          design_1_i/loss_derivative_0/inst/gmem_m_axi_U/bus_write/fifo_wreq/pout_reg[0]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                      design_1_i/conv2/inst/gmem_m_axi_U/bus_write/fifo_resp/pout_reg[3]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                      design_1_i/conv2/inst/gmem_m_axi_U/bus_write/fifo_resp/pout_reg[2]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                 design_1_i/InputLayer_0/inst/gmem_m_axi_U/bus_write/bus_wide_gen.fifo_burst/pout_reg[2]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                        design_1_i/fcc1/inst/gmem_m_axi_U/bus_write/fifo_wreq/full_n_reg/D|
+|               clk_fpga_0 |               clk_fpga_0 |                  design_1_i/InputLayer_0/inst/gmem_m_axi_U/bus_write/bus_wide_gen.fifo_burst/full_n_reg/D|
+|               clk_fpga_0 |               clk_fpga_0 |                         design_1_i/fcc3/inst/gmem_m_axi_U/bus_write/bus_wide_gen.fifo_burst/pout_reg[0]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                        design_1_i/fcc3/inst/gmem_m_axi_U/bus_write/bus_wide_gen.fifo_burst/data_vld_reg/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                design_1_i/InputLayer_0/inst/gmem_m_axi_U/bus_write/fifo_wreq/full_n_reg/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                             design_1_i/fcc1/inst/gmem_m_axi_U/bus_write/sect_cnt_reg[4]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                   design_1_i/fcc1/inst/gmem_m_axi_U/bus_write/buff_wdata/mOutPtr_reg[4]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                          design_1_i/fcc3/inst/gmem_m_axi_U/bus_write/bus_wide_gen.fifo_burst/full_n_reg/D|
+|               clk_fpga_0 |               clk_fpga_0 |                          design_1_i/loss_derivative_0/inst/gmem_m_axi_U/bus_write/fifo_resp/pout_reg[3]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                          design_1_i/loss_derivative_0/inst/gmem_m_axi_U/bus_write/fifo_resp/pout_reg[2]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                 design_1_i/InputLayer_0/inst/gmem_m_axi_U/bus_write/bus_wide_gen.fifo_burst/pout_reg[1]/D|
+|               clk_fpga_0 |               clk_fpga_0 |design_1_i/axi_mem_intercon/s13_couplers/auto_us/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/si_register_slice_inst/aw.aw_pipe/s_ready_i_reg/D|
+|               clk_fpga_0 |               clk_fpga_0 |                 design_1_i/InputLayer_0/inst/gmem_m_axi_U/bus_write/bus_wide_gen.fifo_burst/pout_reg[0]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                             design_1_i/fcc1/inst/gmem_m_axi_U/bus_write/sect_cnt_reg[1]/D|
+|               clk_fpga_0 |               clk_fpga_0 |             design_1_i/update_weights_0/inst/gmem_m_axi_U/bus_write/bus_wide_gen.fifo_burst/pout_reg[0]/D|
+|               clk_fpga_0 |               clk_fpga_0 |            design_1_i/update_weights_0/inst/gmem_m_axi_U/bus_write/bus_wide_gen.fifo_burst/data_vld_reg/D|
+|               clk_fpga_0 |               clk_fpga_0 |                          design_1_i/loss_derivative_0/inst/gmem_m_axi_U/bus_write/fifo_wreq/pout_reg[1]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                          design_1_i/loss_derivative_0/inst/gmem_m_axi_U/bus_write/fifo_wreq/pout_reg[2]/D|
+|               clk_fpga_0 |               clk_fpga_0 |design_1_i/axi_mem_intercon/s13_couplers/auto_us/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/si_register_slice_inst/aw.aw_pipe/m_valid_i_reg_inv/D|
+|               clk_fpga_0 |               clk_fpga_0 |                         design_1_i/fcc2/inst/gmem_m_axi_U/bus_write/bus_wide_gen.fifo_burst/pout_reg[2]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                         design_1_i/fcc2/inst/gmem_m_axi_U/bus_write/bus_wide_gen.fifo_burst/pout_reg[1]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                            design_1_i/update_weights_0/inst/gmem_m_axi_U/bus_write/fifo_wreq/full_n_reg/D|
+|               clk_fpga_0 |               clk_fpga_0 |             design_1_i/update_weights_0/inst/gmem_m_axi_U/bus_write/bus_wide_gen.fifo_burst/pout_reg[1]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                         design_1_i/fcc2/inst/gmem_m_axi_U/bus_write/sect_len_buf_reg[5]/D|
+|               clk_fpga_0 |               clk_fpga_0 |design_1_i/axi_mem_intercon/s08_couplers/auto_us/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/si_register_slice_inst/aw.aw_pipe/m_valid_i_reg_inv/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                         design_1_i/fcc2/inst/gmem_m_axi_U/bus_write/sect_len_buf_reg[9]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                      design_1_i/conv1/inst/gmem_m_axi_U/bus_write/fifo_wreq/pout_reg[1]/D|
+|               clk_fpga_0 |               clk_fpga_0 |design_1_i/axi_mem_intercon/s10_couplers/auto_us/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/si_register_slice_inst/aw.aw_pipe/s_ready_i_reg/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                      design_1_i/conv1/inst/gmem_m_axi_U/bus_write/fifo_wreq/pout_reg[2]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                         design_1_i/loss_derivative_0/inst/gmem_m_axi_U/bus_write/fifo_wreq/data_vld_reg/D|
+|               clk_fpga_0 |               clk_fpga_0 |             design_1_i/update_weights_0/inst/gmem_m_axi_U/bus_write/bus_wide_gen.fifo_burst/pout_reg[2]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                   design_1_i/fcc1/inst/gmem_m_axi_U/bus_write/buff_wdata/mOutPtr_reg[2]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                       design_1_i/conv1/inst/gmem_m_axi_U/bus_write/fifo_wreq/full_n_reg/D|
+|               clk_fpga_0 |               clk_fpga_0 |design_1_i/axi_mem_intercon/s10_couplers/auto_us/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/si_register_slice_inst/aw.aw_pipe/m_valid_i_reg_inv/D|
+|               clk_fpga_0 |               clk_fpga_0 |                        design_1_i/fcc2/inst/gmem_m_axi_U/bus_write/could_multi_bursts.sect_handling_reg/D|
+|               clk_fpga_0 |               clk_fpga_0 |                        design_1_i/fcc2/inst/gmem_m_axi_U/bus_write/could_multi_bursts.AWVALID_Dummy_reg/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                         design_1_i/fcc2/inst/gmem_m_axi_U/bus_write/sect_len_buf_reg[8]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                           design_1_i/update_weights_0/inst/gmem_m_axi_U/bus_write/fifo_wreq/pout_reg[0]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                          design_1_i/update_weights_0/inst/gmem_m_axi_U/bus_write/fifo_wreq/data_vld_reg/D|
+|               clk_fpga_0 |               clk_fpga_0 |                           design_1_i/update_weights_0/inst/gmem_m_axi_U/bus_write/fifo_wreq/pout_reg[1]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                           design_1_i/update_weights_0/inst/gmem_m_axi_U/bus_write/fifo_wreq/pout_reg[2]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                      design_1_i/fcc3/inst/gmem_m_axi_U/bus_write/fifo_resp/data_vld_reg/D|
+|               clk_fpga_0 |               clk_fpga_0 |design_1_i/axi_mem_intercon/s01_couplers/auto_us/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/si_register_slice_inst/aw.aw_pipe/s_ready_i_reg/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                design_1_i/update_weights_0/inst/gmem_m_axi_U/bus_write/sect_cnt_reg[15]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                         design_1_i/fcc2/inst/gmem_m_axi_U/bus_write/sect_end_buf_reg[1]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                      design_1_i/conv1/inst/gmem_m_axi_U/bus_write/fifo_wreq/pout_reg[0]/D|
+|               clk_fpga_0 |               clk_fpga_0 |design_1_i/axi_mem_intercon/s00_couplers/auto_us/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/si_register_slice_inst/aw.aw_pipe/s_ready_i_reg/D|
+|               clk_fpga_0 |               clk_fpga_0 |design_1_i/axi_mem_intercon/s01_couplers/auto_us/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/si_register_slice_inst/aw.aw_pipe/m_valid_i_reg_inv/D|
+|               clk_fpga_0 |               clk_fpga_0 |                           design_1_i/loss_derivative_0/inst/gmem_m_axi_U/bus_write/fifo_wreq/full_n_reg/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                     design_1_i/conv1/inst/gmem_m_axi_U/bus_write/fifo_wreq/data_vld_reg/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                         design_1_i/fcc2/inst/gmem_m_axi_U/bus_write/sect_len_buf_reg[6]/D|
+|               clk_fpga_0 |               clk_fpga_0 |              design_1_i/update_weights_0/inst/gmem_m_axi_U/bus_write/bus_wide_gen.fifo_burst/full_n_reg/D|
+|               clk_fpga_0 |               clk_fpga_0 |design_1_i/axi_mem_intercon/s00_couplers/auto_us/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/si_register_slice_inst/aw.aw_pipe/m_valid_i_reg_inv/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                         design_1_i/fcc3/inst/gmem_m_axi_U/bus_write/sect_end_buf_reg[1]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                         design_1_i/fcc2/inst/gmem_m_axi_U/bus_write/sect_len_buf_reg[7]/D|
+|               clk_fpga_0 |               clk_fpga_0 |design_1_i/axi_mem_intercon/s04_couplers/auto_us/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/si_register_slice_inst/aw.aw_pipe/s_ready_i_reg/D|
+|               clk_fpga_0 |               clk_fpga_0 |                        design_1_i/fcc1/inst/gmem_m_axi_U/bus_write/could_multi_bursts.AWVALID_Dummy_reg/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                       design_1_i/conv2/inst/gmem_m_axi_U/bus_write/fifo_wreq/full_n_reg/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                       design_1_i/fcc3/inst/gmem_m_axi_U/bus_write/fifo_resp/pout_reg[1]/D|
+|               clk_fpga_0 |               clk_fpga_0 |  design_1_i/axi_mem_intercon/xbar/inst/gen_samd.crossbar_samd/addr_arbiter_ar/gen_arbiter.any_grant_reg/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                         design_1_i/fcc3/inst/gmem_m_axi_U/bus_write/sect_len_buf_reg[1]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                        design_1_i/fcc3/inst/gmem_m_axi_U/bus_write/could_multi_bursts.sect_handling_reg/D|
+|               clk_fpga_0 |               clk_fpga_0 |                         design_1_i/loss_derivative_0/inst/gmem_m_axi_U/bus_write/buff_wdata/empty_n_reg/D|
+|               clk_fpga_0 |               clk_fpga_0 |design_1_i/axi_mem_intercon/s04_couplers/auto_us/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/si_register_slice_inst/aw.aw_pipe/m_valid_i_reg_inv/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                         design_1_i/fcc2/inst/gmem_m_axi_U/bus_write/sect_len_buf_reg[4]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                      design_1_i/fcc3/inst/gmem_m_axi_U/bus_write/buff_wdata/empty_n_reg/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                      design_1_i/fcc3/inst/gmem_m_axi_U/wreq_throttle/throttl_cnt_reg[0]/D|
+|               clk_fpga_0 |               clk_fpga_0 |            design_1_i/loss_derivative_0/inst/gmem_m_axi_U/bus_write/bus_wide_gen.fifo_burst/pout_reg[1]/D|
+|               clk_fpga_0 |               clk_fpga_0 |            design_1_i/loss_derivative_0/inst/gmem_m_axi_U/bus_write/bus_wide_gen.fifo_burst/pout_reg[2]/D|
+|               clk_fpga_0 |               clk_fpga_0 |            design_1_i/loss_derivative_0/inst/gmem_m_axi_U/bus_write/bus_wide_gen.fifo_burst/pout_reg[0]/D|
+|               clk_fpga_0 |               clk_fpga_0 |           design_1_i/loss_derivative_0/inst/gmem_m_axi_U/bus_write/bus_wide_gen.fifo_burst/data_vld_reg/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                 design_1_i/InputLayer_0/inst/gmem_m_axi_U/bus_write/sect_end_buf_reg[1]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                       design_1_i/fcc2/inst/gmem_m_axi_U/bus_write/fifo_resp/pout_reg[1]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                design_1_i/InputLayer_0/inst/gmem_m_axi_U/bus_write/fifo_resp/full_n_reg/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                        design_1_i/fcc1/inst/gmem_m_axi_U/bus_write/fifo_resp/full_n_reg/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                         design_1_i/fcc2/inst/gmem_m_axi_U/bus_write/sect_len_buf_reg[0]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                            design_1_i/update_weights_0/inst/gmem_m_axi_U/bus_write/fifo_resp/full_n_reg/D|
+|               clk_fpga_0 |               clk_fpga_0 |                        design_1_i/fcc1/inst/gmem_m_axi_U/bus_write/could_multi_bursts.sect_handling_reg/D|
+|               clk_fpga_0 |               clk_fpga_0 |                         design_1_i/conv2/inst/gmem_m_axi_U/bus_write/bus_wide_gen.fifo_burst/full_n_reg/D|
+|               clk_fpga_0 |               clk_fpga_0 |                               design_1_i/InputLayer_0/inst/gmem_m_axi_U/bus_write/fifo_resp/pout_reg[1]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                        design_1_i/conv2/inst/gmem_m_axi_U/bus_write/bus_wide_gen.fifo_burst/pout_reg[1]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                        design_1_i/conv2/inst/gmem_m_axi_U/bus_write/bus_wide_gen.fifo_burst/pout_reg[2]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                       design_1_i/fcc1/inst/gmem_m_axi_U/bus_write/buff_wdata/full_n_reg/D|
+|               clk_fpga_0 |               clk_fpga_0 |                            design_1_i/loss_derivative_0/inst/gmem_m_axi_U/bus_write/sect_end_buf_reg[1]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                        design_1_i/fcc3/inst/gmem_m_axi_U/bus_write/fifo_resp/full_n_reg/D|
+|               clk_fpga_0 |               clk_fpga_0 |                        design_1_i/conv1/inst/gmem_m_axi_U/bus_write/bus_wide_gen.fifo_burst/pout_reg[2]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                        design_1_i/conv1/inst/gmem_m_axi_U/bus_write/bus_wide_gen.fifo_burst/pout_reg[1]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                  design_1_i/conv2/inst/gmem_m_axi_U/bus_write/buff_wdata/mOutPtr_reg[5]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                design_1_i/InputLayer_0/inst/gmem_m_axi_U/bus_write/could_multi_bursts.sect_handling_reg/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                      design_1_i/fcc1/inst/gmem_m_axi_U/bus_write/fifo_resp/data_vld_reg/D|
+|               clk_fpga_0 |               clk_fpga_0 |             design_1_i/loss_derivative_0/inst/gmem_m_axi_U/bus_write/bus_wide_gen.fifo_burst/full_n_reg/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                       design_1_i/fcc1/inst/gmem_m_axi_U/bus_write/fifo_resp/pout_reg[1]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                         design_1_i/fcc1/inst/gmem_m_axi_U/bus_write/sect_end_buf_reg[1]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                       design_1_i/conv1/inst/gmem_m_axi_U/bus_write/bus_wide_gen.fifo_burst/data_vld_reg/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                      design_1_i/fcc1/inst/gmem_m_axi_U/wreq_throttle/throttl_cnt_reg[0]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                 design_1_i/InputLayer_0/inst/gmem_m_axi_U/bus_write/sect_len_buf_reg[9]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                              design_1_i/InputLayer_0/inst/gmem_m_axi_U/bus_write/fifo_resp/data_vld_reg/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                      design_1_i/fcc1/inst/gmem_m_axi_U/bus_write/buff_wdata/empty_n_reg/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                      design_1_i/conv1/inst/gmem_m_axi_U/bus_write/fifo_resp/pout_reg[1]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                        design_1_i/conv2/inst/gmem_m_axi_U/bus_write/bus_wide_gen.fifo_burst/pout_reg[0]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                       design_1_i/conv2/inst/gmem_m_axi_U/bus_write/bus_wide_gen.fifo_burst/data_vld_reg/D|
+|               clk_fpga_0 |               clk_fpga_0 |                          design_1_i/update_weights_0/inst/gmem_m_axi_U/bus_write/fifo_resp/data_vld_reg/D|
+|               clk_fpga_0 |               clk_fpga_0 |                           design_1_i/update_weights_0/inst/gmem_m_axi_U/bus_write/fifo_resp/pout_reg[1]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                         design_1_i/fcc1/inst/gmem_m_axi_U/bus_write/sect_len_buf_reg[0]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                 design_1_i/InputLayer_0/inst/gmem_m_axi_U/bus_write/sect_len_buf_reg[0]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                   design_1_i/fcc1/inst/gmem_m_axi_U/bus_write/buff_wdata/show_ahead_reg/D|
+|               clk_fpga_0 |               clk_fpga_0 |                         design_1_i/conv1/inst/gmem_m_axi_U/bus_write/bus_wide_gen.fifo_burst/full_n_reg/D|
+|               clk_fpga_0 |               clk_fpga_0 |                        design_1_i/conv1/inst/gmem_m_axi_U/bus_write/bus_wide_gen.fifo_burst/pout_reg[0]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                        design_1_i/loss_derivative_0/inst/gmem_m_axi_U/bus_write/buff_wdata/raddr_reg[3]/D|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+

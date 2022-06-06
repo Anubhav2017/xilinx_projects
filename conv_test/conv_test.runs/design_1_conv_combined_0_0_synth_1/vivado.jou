@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Mon May 16 03:44:59 2022
-# Process ID: 1936464
+# Start of session at: Sat May 28 21:28:35 2022
+# Process ID: 145275
 # Current directory: /home/anubhav/xilinx_projects/conv_test/conv_test.runs/design_1_conv_combined_0_0_synth_1
 # Command line: vivado -log design_1_conv_combined_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_conv_combined_0_0.tcl
 # Log file: /home/anubhav/xilinx_projects/conv_test/conv_test.runs/design_1_conv_combined_0_0_synth_1/design_1_conv_combined_0_0.vds

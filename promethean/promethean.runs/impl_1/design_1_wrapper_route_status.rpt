@@ -1,0 +1,44 @@
+Design Route Status
+                                               :      # nets :
+   ------------------------------------------- : ----------- :
+   # of logical nets.......................... :      139729 :
+       # of nets not needing routing.......... :       46178 :
+           # of internally routed nets........ :       46131 :
+           # of nets with no loads............ :          47 :
+       # of routable nets..................... :       93551 :
+           # of fully routed nets............. :       93538 :
+       # of nets with routing errors.......... :          13 :
+           # of nets with resource conflicts.. :          13 :
+   ------------------------------------------- : ----------- :
+
+
+Nets with Routing Errors:
+  design_1_i/conv1/inst/mul_32ns_32ns_64_2_1_U27/conv_combined_mul_32ns_32ns_64_2_1_Multiplier_0_U/p_reg__0_0[2]
+    Conflicting Routing Nodes: INT_R_X29Y8/SW6BEG3
+  design_1_i/fcc2/inst/trunc_ln5_reg_1495[3]
+    Conflicting Routing Nodes:
+      INT_R_X31Y1/SL1BEG2
+      INT_R_X33Y5/SW6BEG2
+  design_1_i/fcc3/inst/D[5]_alias
+    Conflicting Routing Nodes: INT_R_X33Y5/SW6BEG2
+  design_1_i/fcc3/inst/dwbuf_V_U/fcc_combined_dwbuf_V_ram_U/q1[14]
+    Conflicting Routing Nodes: INT_L_X32Y3/WW2BEG0
+  design_1_i/fcc3/inst/gmem_m_axi_U/bus_read/fifo_rreq/q_reg[61]_0[46]
+    Conflicting Routing Nodes: INT_R_X29Y15/SR1BEG3
+  design_1_i/fcc3/inst/gmem_m_axi_U/bus_read/sect_len_buf_reg_n_9_[1]
+    Conflicting Routing Nodes: INT_L_X30Y12/ER1BEG_S0
+  design_1_i/fcc3/inst/gmem_m_axi_U/bus_read/start_addr_reg_n_9_[13]
+    Conflicting Routing Nodes: INT_R_X29Y15/SR1BEG3
+  design_1_i/fcc3/inst/i_7_reg_511_reg_n_9_[3]
+    Conflicting Routing Nodes: INT_L_X32Y3/WW2BEG0
+  design_1_i/fcc3/inst/mul_31s_31s_31_2_1_U4/fcc_combined_mul_31s_31s_31_2_1_Multiplier_0_U/fwprop_read_reg_1240_reg[0][0]
+    Conflicting Routing Nodes: INT_R_X31Y1/SL1BEG2
+  design_1_i/fcc3/inst/mul_31s_31s_31_2_1_U6/fcc_combined_mul_31s_31s_31_2_1_Multiplier_0_U/p_reg_0[8]
+    Conflicting Routing Nodes: INT_L_X34Y1/NW6BEG1
+  design_1_i/fcc3/inst/ydim_read_reg_1244[12]
+    Conflicting Routing Nodes: INT_R_X29Y8/SW6BEG3
+  design_1_i/loss_derivative_0/inst/i_2_reg_468_reg[23]
+    Conflicting Routing Nodes: INT_L_X30Y12/ER1BEG_S0
+  design_1_i/relu3/inst/y_Din_A[11]
+    Conflicting Routing Nodes: INT_L_X34Y1/NW6BEG1
+

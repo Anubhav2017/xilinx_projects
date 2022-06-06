@@ -26,5 +26,5 @@
   <xd:arg xd:name="fwprop" xd:originalName="fwprop" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:dataWidth="1" xd:offset="0x70" xd:handshakeRef="ap_none"/>
   <xd:arg xd:name="debugip" xd:originalName="debugip" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:dataWidth="1" xd:offset="0x78" xd:handshakeRef="ap_none"/>
   <xd:latencyEstimates xd:best-case="undef" xd:worst-case="undef" xd:average-case="undef"/>
-  <xd:resourceEstimates xd:LUT="12398" xd:FF="14293" xd:BRAM="6" xd:DSP="24"/>
+  <xd:resourceEstimates xd:LUT="12534" xd:FF="14304" xd:BRAM="6" xd:DSP="24"/>
 </xd:acceleratorMap>

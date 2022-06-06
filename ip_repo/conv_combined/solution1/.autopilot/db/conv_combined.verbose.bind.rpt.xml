@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'conv_combined'" level="0">
-<item name = "Date">Wed May 25 16:36:17 2022
+<item name = "Date">Sat May 28 19:08:47 2022
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)</item>
 <item name = "Project">conv_combined</item>
@@ -38,19 +38,20 @@
 <column name="- VITIS_LOOP_49_1_VITIS_LOOP_50_2_VITIS_LOOP_51_3">?, ?, 13 ~ ?, -, -, ?, no</column>
 <column name=" + VITIS_LOOP_52_4">2, ?, 3, 1, 1, 1 ~ ?, yes</column>
 <column name="- VITIS_LOOP_62_5">2, ?, 3, 1, 1, 1 ~ ?, yes</column>
-<column name="- VITIS_LOOP_70_6_VITIS_LOOP_72_8_VITIS_LOOP_73_9">?, ?, ?, -, -, ?, no</column>
-<column name=" + VITIS_LOOP_75_10">?, ?, 5 ~ ?, -, -, ?, no</column>
-<column name="  ++ VITIS_LOOP_76_11">3, ?, 3, 1, 1, 1 ~ ?, yes</column>
-<column name="- VITIS_LOOP_88_12">2, ?, 3, 1, 1, 1 ~ ?, yes</column>
-<column name="- VITIS_LOOP_93_13_VITIS_LOOP_94_14_VITIS_LOOP_95_15">?, ?, 8 ~ ?, -, -, ?, no</column>
-<column name=" + VITIS_LOOP_96_16">2, ?, 3, 1, 1, 1 ~ ?, yes</column>
-<column name="- VITIS_LOOP_103_17_VITIS_LOOP_104_18">?, ?, ?, -, -, ?, no</column>
-<column name=" + VITIS_LOOP_105_19">?, ?, ?, -, -, ?, no</column>
-<column name="  ++ VITIS_LOOP_106_20_VITIS_LOOP_107_21_VITIS_LOOP_108_22">?, ?, 13, 2, 1, ?, yes</column>
-<column name="- VITIS_LOOP_120_23_VITIS_LOOP_121_24_VITIS_LOOP_122_25">?, ?, 8 ~ ?, -, -, ?, no</column>
-<column name=" + VITIS_LOOP_123_26">2, ?, 3, 1, 1, 1 ~ ?, yes</column>
-<column name="- VITIS_LOOP_131_27">2, ?, 3, 1, 1, 1 ~ ?, yes</column>
-<column name="- VITIS_LOOP_140_28">9, ?, 10, 2, 1, 1 ~ ?, yes</column>
+<column name="- VITIS_LOOP_70_6">?, ?, 3, 1, 1, ?, yes</column>
+<column name="- VITIS_LOOP_74_7_VITIS_LOOP_76_9_VITIS_LOOP_77_10">?, ?, ?, -, -, ?, no</column>
+<column name=" + VITIS_LOOP_79_11">?, ?, 5 ~ ?, -, -, ?, no</column>
+<column name="  ++ VITIS_LOOP_80_12">3, ?, 3, 1, 1, 1 ~ ?, yes</column>
+<column name="- VITIS_LOOP_92_13">2, ?, 3, 1, 1, 1 ~ ?, yes</column>
+<column name="- VITIS_LOOP_97_14_VITIS_LOOP_98_15_VITIS_LOOP_99_16">?, ?, 8 ~ ?, -, -, ?, no</column>
+<column name=" + VITIS_LOOP_100_17">2, ?, 3, 1, 1, 1 ~ ?, yes</column>
+<column name="- VITIS_LOOP_107_18_VITIS_LOOP_108_19">?, ?, ?, -, -, ?, no</column>
+<column name=" + VITIS_LOOP_109_20">?, ?, ?, -, -, ?, no</column>
+<column name="  ++ VITIS_LOOP_110_21_VITIS_LOOP_111_22_VITIS_LOOP_112_23">?, ?, 13, 2, 1, ?, yes</column>
+<column name="- VITIS_LOOP_124_24_VITIS_LOOP_125_25_VITIS_LOOP_126_26">?, ?, 8 ~ ?, -, -, ?, no</column>
+<column name=" + VITIS_LOOP_127_27">2, ?, 3, 1, 1, 1 ~ ?, yes</column>
+<column name="- VITIS_LOOP_135_28">2, ?, 3, 1, 1, 1 ~ ?, yes</column>
+<column name="- VITIS_LOOP_144_29">?, ?, 10, 2, 1, ?, yes</column>
 </table>
 </item>
 </section>

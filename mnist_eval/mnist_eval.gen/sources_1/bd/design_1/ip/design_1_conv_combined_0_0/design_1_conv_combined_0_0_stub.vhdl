@@ -1,7 +1,7 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
--- Date        : Wed May 25 17:13:55 2022
+-- Date        : Sat May 28 19:13:31 2022
 -- Host        : anubhav-acer running 64-bit Ubuntu 20.04.4 LTS
 -- Command     : write_vhdl -force -mode synth_stub
 --               /home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/ip/design_1_conv_combined_0_0/design_1_conv_combined_0_0_stub.vhdl

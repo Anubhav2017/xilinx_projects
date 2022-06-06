@@ -1,0 +1,4 @@
+bram_test_bram_x14
+bram_test_CTRL_s_axi
+bram_test_gmem_m_axi
+bram_test

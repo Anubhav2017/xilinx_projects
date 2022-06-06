@@ -1,0 +1,6 @@
+update_weights_mac_mulsub_16s_16s_29ns_29_4_1
+update_weights_wbuf_V
+update_weights_dwbuf_V
+update_weights_control_s_axi
+update_weights_gmem_m_axi
+update_weights

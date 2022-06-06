@@ -70,7 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 3
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z020clg400-1
 
@@ -110,8 +109,8 @@ set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_p
 set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/ip/design_1_fcc_combined_0_bram_0/design_1_fcc_combined_0_bram_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/ip/design_1_fcc_combined_0_bram_0_0/design_1_fcc_combined_0_bram_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/ip/design_1_loss_derivative_0_0/constraints/loss_derivative_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/ip/design_1_fcc_combined_0_1/constraints/fcc_combined_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/ip/design_1_update_weights_0_0/constraints/update_weights_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/ip/design_1_fcc_combined_0_2/constraints/fcc_combined_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc]
 set_property used_in_synthesis false [get_files -all /home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all /home/anubhav/xilinx_projects/mnist_eval/mnist_eval.gen/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_clocks.xdc]
